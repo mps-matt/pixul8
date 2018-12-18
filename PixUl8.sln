@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixUl8.iOS", "PixUl8\PixUl8.iOS\PixUl8.iOS.csproj", "{D8331C93-8BE5-43BE-B052-61B617CA6151}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "PixUl8", "PixUl8\PixUl8\PixUl8.shproj", "{A1C29F6D-1930-4B5A-B91C-6C6E42D35952}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		PixUl8\PixUl8\PixUl8.projitems*{a1c29f6d-1930-4b5a-b91c-6c6e42d35952}*SharedItemsImports = 13
+		PixUl8\PixUl8\PixUl8.projitems*{d8331c93-8be5-43be-b052-61b617ca6151}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhone = Debug|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8331C93-8BE5-43BE-B052-61B617CA6151}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{D8331C93-8BE5-43BE-B052-61B617CA6151}.Debug|iPhone.Build.0 = Debug|iPhone
+		{D8331C93-8BE5-43BE-B052-61B617CA6151}.Debug|iPhone.Deploy.0 = Debug|iPhone
+		{D8331C93-8BE5-43BE-B052-61B617CA6151}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{D8331C93-8BE5-43BE-B052-61B617CA6151}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{D8331C93-8BE5-43BE-B052-61B617CA6151}.Debug|iPhoneSimulator.Deploy.0 = Debug|iPhoneSimulator
+		{D8331C93-8BE5-43BE-B052-61B617CA6151}.Release|iPhone.ActiveCfg = Release|iPhone
+		{D8331C93-8BE5-43BE-B052-61B617CA6151}.Release|iPhone.Build.0 = Release|iPhone
+		{D8331C93-8BE5-43BE-B052-61B617CA6151}.Release|iPhone.Deploy.0 = Release|iPhone
+		{D8331C93-8BE5-43BE-B052-61B617CA6151}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{D8331C93-8BE5-43BE-B052-61B617CA6151}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{D8331C93-8BE5-43BE-B052-61B617CA6151}.Release|iPhoneSimulator.Deploy.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35483F17-ACE6-48DD-ABAB-0E212920AEEA}
+	EndGlobalSection
+EndGlobal
