@@ -7,6 +7,7 @@ using Xamarin.Forms;
 
 using PixUl8.Models;
 using PixUl8.Views;
+using PixUl8.Services;
 
 namespace PixUl8.ViewModels
 {
@@ -17,6 +18,7 @@ namespace PixUl8.ViewModels
 
         public ItemsViewModel()
         {
+       
             Title = "Browse";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
@@ -31,28 +33,31 @@ namespace PixUl8.ViewModels
 
         async Task ExecuteLoadItemsCommand()
         {
-            if (IsBusy)
-                return;
+            var nativeNavigationService = DependencyService.Get<INativeNavigateService>();
+            nativeNavigationService.Navigate();
 
-            IsBusy = true;
+            //if (IsBusy)
+            //    return;
 
-            try
-            {
-                Items.Clear();
-                var items = await DataStore.GetItemsAsync(true);
-                foreach (var item in items)
-                {
-                    Items.Add(item);
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-            }
-            finally
-            {
-                IsBusy = false;
-            }
+            //IsBusy = true;
+
+            //try
+            //{
+            //    Items.Clear();
+            //    var items = await DataStore.GetItemsAsync(true);
+            //    foreach (var item in items)
+            //    {
+            //        Items.Add(item);
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Debug.WriteLine(ex);
+            //}
+            //finally
+            //{
+            //    IsBusy = false;
+            //}
         }
     }
 }

@@ -38,6 +38,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\NewItemPage.xaml.cs">
       <DependentUpon>NewItemPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Services\INativeNavigateService.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml">

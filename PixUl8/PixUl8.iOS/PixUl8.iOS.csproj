@@ -48,9 +48,10 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: Matt Stark (VHHF36Q4Y4)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>pixul8-dev</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -69,6 +70,9 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewControllers\CameraViewController.cs" />
+    <Compile Include="ViewControllers\CameraViewController.designer.cs" />
+    <Compile Include="Services\NativeNavigateService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
@@ -123,6 +127,18 @@
     <BundleResource Include="Resources\xamarin_logo%402x.png" />
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="ViewControllers\CameraStoryboard.storyboard" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\Default-Portrait.png" />
+    <BundleResource Include="Resources\Default-Portrait%402x.png" />
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\FlashButton.png" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <BundleResource Include="Resources\NoFlashButton.png" />
+    <BundleResource Include="Resources\TakePhotoButton.png" />
+    <BundleResource Include="Resources\ToggleCameraButton.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -132,6 +148,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewControllers\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\PixUl8\PixUl8.projitems" Label="Shared" />

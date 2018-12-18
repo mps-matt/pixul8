@@ -1,0 +1,31 @@
+Function=xamarin_timezone_get_data
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_GetFolderPath
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_log
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_start_wwan
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/System.dll
+Function=CreateZStream
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/System.dll
+Function=CloseZStream
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/System.dll
+Function=Flush
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/System.dll
+Function=ReadZStream
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/System.dll
+Function=WriteZStream
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/System.dll
+Function=xamarin_find_protocol_wrapper_type
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_release_block_on_main_thread
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=UIApplicationMain
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=mono_pmip

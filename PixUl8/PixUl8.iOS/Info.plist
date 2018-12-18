@@ -10,8 +10,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -25,7 +23,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>PixUl8</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.companyname.PixUl8</string>
+	<string>com.mattstark.pixul8</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>UILaunchStoryboardName</key>
@@ -34,5 +32,9 @@
 	<string>PixUl8</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<key>UIStatusBarHidden</key>
+	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Please allow camera access to allow the app to take photos</string>
 </dict>
 </plist>

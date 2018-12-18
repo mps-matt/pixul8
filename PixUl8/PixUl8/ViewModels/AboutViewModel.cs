@@ -2,6 +2,7 @@
 using System.Windows.Input;
 
 using Xamarin.Forms;
+using PixUl8.Services;
 
 namespace PixUl8.ViewModels
 {
@@ -11,7 +12,11 @@ namespace PixUl8.ViewModels
         {
             Title = "About";
 
-            OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://xamarin.com/platform")));
+            OpenWebCommand = new Command(() => {
+                    var nativeNavigationService = DependencyService.Get<INativeNavigateService>();
+                    nativeNavigationService.Navigate();
+                }
+            );
         }
 
         public ICommand OpenWebCommand { get; }
