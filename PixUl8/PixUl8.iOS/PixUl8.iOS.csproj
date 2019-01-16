@@ -73,6 +73,8 @@
     <Compile Include="ViewControllers\CameraViewController.cs" />
     <Compile Include="ViewControllers\CameraViewController.designer.cs" />
     <Compile Include="Services\NativeNavigateService.cs" />
+    <Compile Include="CustomRenderers\CameraFeedPreviewRenderer.cs" />
+    <Compile Include="UIViews\UICameraPreview.cs" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
@@ -152,6 +154,8 @@
   <ItemGroup>
     <Folder Include="ViewControllers\" />
     <Folder Include="Services\" />
+    <Folder Include="CustomRenderers\" />
+    <Folder Include="UIViews\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\PixUl8\PixUl8.projitems" Label="Shared" />

@@ -12,7 +12,9 @@ using PixUl8.ViewModels;
 
 namespace PixUl8.Views
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
+    //Code for ther native view being rendered in Forms was developed by using the following
+    //tutorial https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/custom-renderer/view
+    [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class HomePage : ContentPage
 	{
         HomeViewModel viewModel;
@@ -22,9 +24,6 @@ namespace PixUl8.Views
             InitializeComponent();
             BindingContext = viewModel = new HomeViewModel();
         }
-
-
-
 
         protected override void OnAppearing()
         {

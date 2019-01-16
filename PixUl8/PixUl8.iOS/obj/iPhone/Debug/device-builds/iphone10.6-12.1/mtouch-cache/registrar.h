@@ -34,6 +34,10 @@
 @class __MonoMac_NSAsyncSynchronizationContextDispatcher;
 @class Xamarin_Forms_Platform_iOS_FormsApplicationDelegate;
 @class AppDelegate;
+@class Xamarin_Forms_Platform_iOS_VisualElementRenderer_1;
+@class Xamarin_Forms_Platform_iOS_ViewRenderer_2;
+@class PixUl8_iOS_CustomRenderers_CameraFeedPreviewRenderer;
+@class PixUl8_iOS_UIViews_UICameraPreview;
 @class CameraViewController;
 @class OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource;
 @class OpenTK_Platform_iPhoneOS_iPhoneOSGameView;
@@ -62,8 +66,6 @@
 @class Xamarin_Forms_Platform_iOS_GlobalCloseContextGestureRecognizer;
 @class Xamarin_Forms_Platform_iOS_ModalWrapper;
 @class Xamarin_Forms_Platform_iOS_PlatformRenderer;
-@class Xamarin_Forms_Platform_iOS_VisualElementRenderer_1;
-@class Xamarin_Forms_Platform_iOS_ViewRenderer_2;
 @class Xamarin_Forms_Platform_iOS_ViewRenderer;
 @class Xamarin_Forms_Platform_iOS_CellTableViewCell;
 @class Xamarin_Forms_Platform_iOS_ActivityIndicatorRenderer;
@@ -199,6 +201,43 @@
 	-(id) init;
 @end
 
+@interface Xamarin_Forms_Platform_iOS_VisualElementRenderer_1 : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(UIColor *) backgroundColor;
+	-(void) setBackgroundColor:(UIColor *)p0;
+	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(void) layoutSubviews;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_ViewRenderer_2 : Xamarin_Forms_Platform_iOS_VisualElementRenderer_1 {
+}
+	-(void) layoutSubviews;
+	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(id) init;
+@end
+
+@interface PixUl8_iOS_CustomRenderers_CameraFeedPreviewRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface PixUl8_iOS_UIViews_UICameraPreview : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) drawRect:(CGRect)p0;
+	-(void) touchesBegan:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
 @interface CameraViewController : UIViewController {
 }
 	@property (nonatomic, assign) UIButton * flashButton;
@@ -280,27 +319,6 @@
 	-(UIColor *) barTintColor;
 	-(NSDictionary *) largeTitleTextAttributes;
 	-(NSDictionary *) titleTextAttributes;
-@end
-
-@interface Xamarin_Forms_Platform_iOS_VisualElementRenderer_1 : UIView {
-}
-	-(void) release;
-	-(id) retain;
-	-(int) xamarinGetGCHandle;
-	-(void) xamarinSetGCHandle: (int) gchandle;
-	-(UIColor *) backgroundColor;
-	-(void) setBackgroundColor:(UIColor *)p0;
-	-(CGSize) sizeThatFits:(CGSize)p0;
-	-(void) layoutSubviews;
-	-(BOOL) conformsToProtocol:(void *)p0;
-	-(id) init;
-@end
-
-@interface Xamarin_Forms_Platform_iOS_ViewRenderer_2 : Xamarin_Forms_Platform_iOS_VisualElementRenderer_1 {
-}
-	-(void) layoutSubviews;
-	-(CGSize) sizeThatFits:(CGSize)p0;
-	-(id) init;
 @end
 
 @interface Xamarin_Forms_Platform_iOS_ViewRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {

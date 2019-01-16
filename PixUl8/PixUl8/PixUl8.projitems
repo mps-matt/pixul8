@@ -21,6 +21,8 @@
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Services\INativeNavigateService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\NativeViews\CameraView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\CameraOptions.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\HomePage.xaml">
@@ -29,5 +31,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Models\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Views\NativeViews\" />
   </ItemGroup>
 </Project>

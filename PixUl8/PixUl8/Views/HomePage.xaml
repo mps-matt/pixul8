@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:NativeViews="clr-namespace:PixUl8.Views.NativeViews"
              x:Class="PixUl8.Views.HomePage"
               Title="{Binding Title}"
              x:Name="HomePage">
     <ContentPage.Content>
+        <NativeViews:CameraView Camera="Rear" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
     </ContentPage.Content>
 </ContentPage>
