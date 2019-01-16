@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8/ViewModels/ItemsViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8/ViewModels/BaseViewModel.cs">
     <Files>
-      <File FileName="PixUl8/PixUl8/ViewModels/AboutViewModel.cs" Line="17" Column="56" />
-      <File FileName="PixUl8/PixUl8/ViewModels/ItemsViewModel.cs" Line="25" Column="13" />
-      <File FileName="PixUl8/PixUl8.iOS/Services/NativeNavigateService.cs" Line="19" Column="1" />
+      <File FileName="PixUl8/PixUl8/ViewModels/BaseViewModel.cs" Line="19" Column="24" />
+      <File FileName="PixUl8/PixUl8/ViewModels/HomeViewModel.cs" Line="16" Column="6" />
+      <File FileName="PixUl8/PixUl8/Views/HomePage.xaml.cs" Line="26" Column="1" />
+      <File FileName="PixUl8/PixUl8/Views/HomePage.xaml" Line="9" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.594cc34fe22a6ae2a5ef467001700a60305909ef" />

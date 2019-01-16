@@ -6711,14 +6711,14 @@ exception_handling:;
 	-(BOOL) application:(UIApplication *)p0 didFinishLaunchingWithOptions:(NSDictionary *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, p0, p1, 0x7500);
+		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, p0, p1, 0x1800);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0x7600);
+		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0x1900);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [Xamarin_Forms_Platform_iOS_FormsApplicationDelegate class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -6755,79 +6755,79 @@ exception_handling:;
 	-(UIButton *) flashButton
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, 0x8000);
+		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, 0x2300);
 	}
 
 	-(void) setFlashButton:(UIButton *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, 0x8100);
+		native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, 0x2400);
 	}
 
 	-(UIView *) liveCameraStream
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_14 (self, _cmd, &managed_method, 0x8200);
+		return native_to_managed_trampoline_14 (self, _cmd, &managed_method, 0x2500);
 	}
 
 	-(void) setLiveCameraStream:(UIView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_15 (self, _cmd, &managed_method, p0, 0x8300);
+		native_to_managed_trampoline_15 (self, _cmd, &managed_method, p0, 0x2600);
 	}
 
 	-(UIButton *) switchCameraButton
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, 0x8400);
+		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, 0x2700);
 	}
 
 	-(void) setSwitchCameraButton:(UIButton *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, 0x8500);
+		native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, 0x2800);
 	}
 
 	-(UIButton *) takePhotoButton
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, 0x8600);
+		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, 0x2900);
 	}
 
 	-(void) setTakePhotoButton:(UIButton *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, 0x8700);
+		native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, 0x2A00);
 	}
 
 	-(void) viewDidLoad
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x7A00);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x1D00);
 	}
 
 	-(void) didReceiveMemoryWarning
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x7B00);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, 0x1E00);
 	}
 
 	-(void) FlashButtonTapped:(UIButton *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, 0x8800);
+		native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, 0x2B00);
 	}
 
 	-(void) SwitchCameraButtonTapped:(UIButton *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, 0x8900);
+		native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, 0x2C00);
 	}
 
 	-(void) TakePhotoButtonTapped:(UIButton *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, 0x8A00);
+		native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, 0x2D00);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -11681,8 +11681,8 @@ exception_handling:;
 		{ NULL, 0x20814 /* #138 'AVCaptureDevice' => 'AVFoundation.AVCaptureDevice, Xamarin.iOS' */ },
 		{ NULL, 0x21114 /* #139 'AVCaptureStillImageOutput' => 'AVFoundation.AVCaptureStillImageOutput, Xamarin.iOS' */ },
 		{ NULL, 0x1122 /* #140 'Xamarin_Forms_Platform_iOS_FormsApplicationDelegate' => 'Xamarin.Forms.Platform.iOS.FormsApplicationDelegate, Xamarin.Forms.Platform.iOS' */ },
-		{ NULL, 0x2100 /* #141 'AppDelegate' => 'PixUl8.iOS.AppDelegate, PixUl8.iOS' */ },
-		{ NULL, 0x2300 /* #142 'CameraViewController' => 'PixUl8.iOS.ViewControllers.CameraViewController, PixUl8.iOS' */ },
+		{ NULL, 0x800 /* #141 'AppDelegate' => 'PixUl8.iOS.AppDelegate, PixUl8.iOS' */ },
+		{ NULL, 0xA00 /* #142 'CameraViewController' => 'PixUl8.iOS.ViewControllers.CameraViewController, PixUl8.iOS' */ },
 		{ NULL, 0x4A12 /* #143 'OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource' => 'OpenTK.Platform.iPhoneOS.CADisplayLinkTimeSource, OpenTK-1.0' */ },
 		{ NULL, 0x4C12 /* #144 'OpenTK_Platform_iPhoneOS_iPhoneOSGameView' => 'OpenTK.Platform.iPhoneOS.iPhoneOSGameView, OpenTK-1.0' */ },
 		{ NULL, 0x7314 /* #145 'GLKit_GLKView__GLKViewDelegate' => 'GLKit.GLKView+_GLKViewDelegate, Xamarin.iOS' */ },

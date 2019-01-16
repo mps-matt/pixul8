@@ -5,15 +5,12 @@ using System.Runtime.CompilerServices;
 
 using Xamarin.Forms;
 
-using PixUl8.Models;
 using PixUl8.Services;
 
 namespace PixUl8.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>() ?? new MockDataStore();
-
         bool isBusy = false;
         public bool IsBusy
         {

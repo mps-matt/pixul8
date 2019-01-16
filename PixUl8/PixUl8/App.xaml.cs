@@ -14,7 +14,7 @@ namespace PixUl8
 			InitializeComponent();
 
 
-			MainPage = new MainPage();
+			MainPage = new HomePage();
 		}
 
 		protected override void OnStart ()
