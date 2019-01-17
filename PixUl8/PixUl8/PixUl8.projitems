@@ -32,5 +32,12 @@
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Models\" />
     <Folder Include="$(MSBuildThisFileDirectory)Views\NativeViews\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="$(MSBuildThisFileDirectory)Resources\ToggleCameraButton.png" />
+    <BundleResource Include="$(MSBuildThisFileDirectory)Resources\TakePhotoButton.png" />
+    <BundleResource Include="$(MSBuildThisFileDirectory)Resources\NoFlashButton.png" />
+    <BundleResource Include="$(MSBuildThisFileDirectory)Resources\FlashButton.png" />
   </ItemGroup>
 </Project>

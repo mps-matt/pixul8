@@ -74,19 +74,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		sKCMaqgGm/4Sb/dQZKgJYUJz0yY=
-		</data>
-		<key>CameraStoryboard.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
-		<data>
-		k5EPiVa0MZg4A2OBbf2Yv3tS3nQ=
-		</data>
-		<key>CameraStoryboard.storyboardc/Info.plist</key>
-		<data>
-		MDrKFvFWroTb0+KEbQShBcoBvo4=
-		</data>
-		<key>CameraStoryboard.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
-		<data>
-		/LkYEFb1qDu2YuOeUgGth5p3sR8=
+		hcsrzOa6YA6+J0jXZnAKjvqJhVk=
 		</data>
 		<key>Default-568h@2x.png</key>
 		<data>
@@ -118,7 +106,7 @@
 		</data>
 		<key>LaunchScreen.nib</key>
 		<data>
-		5mVh+NnuD5BG1EANIuwJbkSxUgk=
+		EgGNYOElgpSLhJLGFY3/iyfPMBk=
 		</data>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -126,15 +114,15 @@
 		</data>
 		<key>LaunchScreen.storyboardc/UIViewController-X5k-f2-b5h.nib</key>
 		<data>
-		sNbgC2JjolfHjzln3ddQbGCw8l4=
+		x7K2IMvtbxpV2kjb7i1OtWxk0jw=
 		</data>
 		<key>LaunchScreen.storyboardc/X5k-f2-b5h-view-yd7-JS-zBw.nib</key>
 		<data>
-		XngJ/WVhJ1cx+0PALkjpc3iwTCs=
+		UQzNo8xTG4Ye9ucxoSYOhlUyRmg=
 		</data>
 		<key>Mono.Security.aotdata.arm64</key>
 		<data>
-		FWLjdEMEeNdU3sW1dlqb1JOilO0=
+		mIDDQojBk9kCppi4sreAXZqN04M=
 		</data>
 		<key>Mono.Security.dll</key>
 		<data>
@@ -158,7 +146,7 @@
 		</data>
 		<key>OpenTK-1.0.aotdata.arm64</key>
 		<data>
-		bSmWMadTWtLtzKNmVQwVRxqEZQg=
+		eQYeUau3+m3j5aQA54zAy6OEe98=
 		</data>
 		<key>OpenTK-1.0.dll</key>
 		<data>
@@ -174,15 +162,15 @@
 		</data>
 		<key>PixUl8.iOS.aotdata.arm64</key>
 		<data>
-		cdgN/fUvfAMtvSl9rkzVjySW5SA=
+		h0Z1Fm7JfcK+gIhg4UUtgLeWDaA=
 		</data>
 		<key>PixUl8.iOS.exe</key>
 		<data>
-		K1OOLKltTOnihSn9rEqmiF8T+j8=
+		FrJNwZjoZOEO3mqVE9m5rZa2tfo=
 		</data>
 		<key>PixUl8.iOS.pdb</key>
 		<data>
-		LTMFs402xQgyotHVUz8s6yxYPOY=
+		GE+weDfGlR46iYHVn5ioqbGZwzA=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -194,19 +182,19 @@
 		</data>
 		<key>System.Core.aotdata.arm64</key>
 		<data>
-		NPJ/rGrztdWnJJauTaCbiSyQlAQ=
+		LKCQlkiI2nEZk042bzJUFN662/8=
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-		ypGcaS728ZbYwoHaTs3sBNDiqRM=
+		E3OCGZooR2QLSBtCgLcps99ExFI=
 		</data>
 		<key>System.Core.pdb</key>
 		<data>
-		K16etRSF9iBDN+t2kmey2HtovuU=
+		mq8aiyAI70L8Aq+KMu38sCl9ay4=
 		</data>
 		<key>System.Data.aotdata.arm64</key>
 		<data>
-		DhElhex+YrS3zMMhSc5aBzloK+s=
+		C2VayVBCs+doPSJ6hZd8mUokC3E=
 		</data>
 		<key>System.Data.dll</key>
 		<data>
@@ -218,7 +206,7 @@
 		</data>
 		<key>System.Net.Http.aotdata.arm64</key>
 		<data>
-		2kjrljdYo+MpdpCdFs3DQRelogk=
+		FRk55JoQMyhEhhuFPWOu5WBK4AY=
 		</data>
 		<key>System.Net.Http.dll</key>
 		<data>
@@ -230,7 +218,7 @@
 		</data>
 		<key>System.Numerics.aotdata.arm64</key>
 		<data>
-		Gn/0vImRHyzBqDeRI/Va5/+PT6k=
+		kX54FJfvS70sOmvn6uowkS5gCwk=
 		</data>
 		<key>System.Numerics.dll</key>
 		<data>
@@ -242,7 +230,7 @@
 		</data>
 		<key>System.Runtime.Serialization.aotdata.arm64</key>
 		<data>
-		hsB5IK9KcDKf+okITUeI+ZMPNrE=
+		hYnporugEGIAEvwEu0MhGdjH1Vs=
 		</data>
 		<key>System.Runtime.Serialization.dll</key>
 		<data>
@@ -254,7 +242,7 @@
 		</data>
 		<key>System.ServiceModel.Internals.aotdata.arm64</key>
 		<data>
-		4AkmF7vnYfjSxfQsgLk29nMkzKs=
+		tOTMlcIzbQ/Xh4aAcdH7AokNTNk=
 		</data>
 		<key>System.ServiceModel.Internals.dll</key>
 		<data>
@@ -266,7 +254,7 @@
 		</data>
 		<key>System.Web.Services.aotdata.arm64</key>
 		<data>
-		8xnVgoO9O1gBR8tBEuW/4B6UmX0=
+		NjP+9yqIrlr+wnjm3IX/KKlLfkE=
 		</data>
 		<key>System.Web.Services.dll</key>
 		<data>
@@ -278,7 +266,7 @@
 		</data>
 		<key>System.Xml.Linq.aotdata.arm64</key>
 		<data>
-		MM4cafm5UvKG5SUXBAYeDx4PTPQ=
+		C49QJjLTwdMPUSUyLBiNZLv8obU=
 		</data>
 		<key>System.Xml.Linq.dll</key>
 		<data>
@@ -290,7 +278,7 @@
 		</data>
 		<key>System.Xml.aotdata.arm64</key>
 		<data>
-		Bo0meIaRZPdtaI9EoNhOwFO6DDA=
+		ihPJzT1+91EGyuEwctTxtP4pDHQ=
 		</data>
 		<key>System.Xml.dll</key>
 		<data>
@@ -302,15 +290,15 @@
 		</data>
 		<key>System.aotdata.arm64</key>
 		<data>
-		bDGOUC6p6KNAgIrhVGUJ2VWyyIc=
+		LKvySIDFaSkp3MfBxYDxPlWzagQ=
 		</data>
 		<key>System.dll</key>
 		<data>
-		iw8nMD/pbbCryqoYDmVT6MOY84M=
+		WieazbOuqSf7Dj1YsTruttIszNU=
 		</data>
 		<key>System.pdb</key>
 		<data>
-		MhitpJAyUfqINb8R2lTChzAsVa4=
+		USFm3AZ6O85fHbYgde/yefF6Zwc=
 		</data>
 		<key>TakePhotoButton.png</key>
 		<data>
@@ -322,63 +310,63 @@
 		</data>
 		<key>Xamarin.Forms.Core.aotdata.arm64</key>
 		<data>
-		PMy5RvmtDIC2mQAYdRIeXo6QcRk=
+		QEfahdu+eVVIfUVfSHq3edtVKEM=
 		</data>
 		<key>Xamarin.Forms.Core.dll</key>
 		<data>
-		ijkRCkPKwGm2N10xd8+X15bOZSU=
+		YwtgouTh6MI2PhQShlAvoWaq5F4=
 		</data>
 		<key>Xamarin.Forms.Core.pdb</key>
 		<data>
-		VCSu1uRVUnA1jtucoG8yr1vx/4w=
+		xXAkoRZrK8AfXu2Al5JZeCPWROM=
 		</data>
 		<key>Xamarin.Forms.Platform.aotdata.arm64</key>
 		<data>
-		QjB11cs+OBfWDGUk9FK9MxEunnc=
+		PPenoQkqvGR9S+UWMOtJ72ZC0Go=
 		</data>
 		<key>Xamarin.Forms.Platform.dll</key>
 		<data>
-		jNFls8/X6WBRDbEFPmba/a1eUbw=
+		m5KR9c3leqLbTX4gOXDJ/M86/ak=
 		</data>
 		<key>Xamarin.Forms.Platform.iOS.aotdata.arm64</key>
 		<data>
-		+MJhQlgN0Pi8L03x7oc5BPgEilc=
+		5NhVTcluQ/IZcHmnp638vBb9YGo=
 		</data>
 		<key>Xamarin.Forms.Platform.iOS.dll</key>
 		<data>
-		oxecUS/C84c9dNxvE9a+Nr4FyzQ=
+		PKQcVlgYk4NTtG4SNyOjAHuwAbg=
 		</data>
 		<key>Xamarin.Forms.Platform.iOS.pdb</key>
 		<data>
-		JhaBlepN1MlihcNlahXov7MGTpc=
+		cdKqh+XtDVokrKfeFGs5hvrDm00=
 		</data>
 		<key>Xamarin.Forms.Xaml.aotdata.arm64</key>
 		<data>
-		VD+TGp0jd7wS6io6oNK7ZpSZebg=
+		9x3VYz3zo+X4yQDIR4PKCWyc+wo=
 		</data>
 		<key>Xamarin.Forms.Xaml.dll</key>
 		<data>
-		rrZAumnoqh0xUs0j4KfWWdvuEHM=
+		apXOjX1kkbwhNeFHjmqyz2aAA2k=
 		</data>
 		<key>Xamarin.Forms.Xaml.pdb</key>
 		<data>
-		BpUjnCt+44OV8cW1xhBTAkiLtWU=
+		ElNqUv1Jj5VVo01bnmHlAG+IZzA=
 		</data>
 		<key>Xamarin.iOS.aotdata.arm64</key>
 		<data>
-		Pamefapiyad7e8geZwL5aWKD4tU=
+		lk59YFVQtC/VkM9kVqIotpehYXU=
 		</data>
 		<key>Xamarin.iOS.dll</key>
 		<data>
-		hqyKPA3I5D+0/RHvApTLYjuPIZo=
+		8PNdCS9qRbbuehKll2QNq0Hy3HY=
 		</data>
 		<key>Xamarin.iOS.pdb</key>
 		<data>
-		Habt5S/0MxOIllkyi9qQkyMmx4k=
+		JxEdAfLjVUHwDTmzMSB2HDae/OE=
 		</data>
 		<key>ar/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		QFVvizPeqP2UarxAGdtkIP3S1RA=
+		0ozq9Q9n78cvblpYLGGGJckcNh0=
 		</data>
 		<key>archived-expanded-entitlements.xcent</key>
 		<data>
@@ -386,23 +374,23 @@
 		</data>
 		<key>ca/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		jz1zmfjxF+OwW1l8UGdJ2AcPGfo=
+		EDIPDwDlB9RFXLfy+LuHTgyV0EA=
 		</data>
 		<key>cs/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		Cw6/tH5JpagBhKFFR+QptHv8Ha0=
+		KJv06CUlbcc/RlBXX3i6hjdegeU=
 		</data>
 		<key>da/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		mH41mPAi70CshExlM+N7PCH9jgI=
+		qObSjqq4JZKCHEPOFeq7RcZ8aQg=
 		</data>
 		<key>de/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		Nwwslx951VVPI0uejcAr+pGg0vc=
+		fTb3yF2hzGPY9BwUUbsUMCerajc=
 		</data>
 		<key>el/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		7zkQ8tm7ARHYekqfJqjvUf9ljP4=
+		cjUmcOJc1ERPMIOmK891nyi8+ec=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -410,99 +398,99 @@
 		</data>
 		<key>es/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		t085pX6bCNaL5G3m55iou83A9EI=
+		jvRkusYHMBugX0A0Lz++E3INOvg=
 		</data>
 		<key>fi/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		83fkU4AYbhI65ByY/kbN7X80JTg=
+		QMSOCSw7ZyFSFV0T4DNtL3Ic9O8=
 		</data>
 		<key>fr/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		IYVn+CM311yA5VE40REENG/S960=
+		nMv4G0ijwAmxEjqTTcJ+gR7bAqY=
 		</data>
 		<key>he/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		tG/ex0y3JZIWPVEkAGa+hPOIAL0=
+		dNUmIF1syFRr6G4G8SR1gfC/DKU=
 		</data>
 		<key>hi/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		Dnqr2teizgtPyMwzCOJ21tC6Md8=
+		nHEAjxgWjfUujhLwEkJQvcOnluM=
 		</data>
 		<key>hr/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		51w+Q8vswPYdGGMGkR62WBsu6WM=
+		E06Itb8H3fx4U2bMh+3kSwNd/lE=
 		</data>
 		<key>hu/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		9DEFMfnJF0EShIoipGhTknagM9Y=
+		SA6RyGO8a5eZ6pJ+SKMKExI9RUw=
 		</data>
 		<key>id/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		67UOgBxOdOKDhNa3X6UmC9lhKbo=
+		QEpCbnukReE8jbZdUZ3Mq65aaIQ=
 		</data>
 		<key>it/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		pj1+MwHWiDKs5urKbyoqi9Q9mOc=
+		zUQRNbvhoqV45O/Di4WknaYvkug=
 		</data>
 		<key>ja/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		J2N8J42Z5j2q3STpcF2IJgG/hF4=
+		gj+hPgpq01yIj90RwRKORkx4f3U=
 		</data>
 		<key>ko/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		fdVhxg4GAMiOwu39XIrQe0KQ6rQ=
+		ANnNoW/giJHLKH9dyBGhRJdvaV8=
 		</data>
 		<key>ms/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		RM6IW+lmtPlMoucsy4bnlUk7vdA=
+		oI78mc61R+X1iHsL1jMDXWvC6Tc=
 		</data>
 		<key>mscorlib.aotdata.arm64</key>
 		<data>
-		+oksQva6Fx/vG2S4qdEQPmR0B7U=
+		DAorybhbycYsbPDEq/TYO6E/q8U=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		OdIyOaatYl21HxtHPoGEb3Oqbs8=
+		Tc41Pu5Q6T/7UjHuviZD/onJ054=
 		</data>
 		<key>mscorlib.pdb</key>
 		<data>
-		SHX+snPrV97zZSxRHUz0oTMgZP0=
+		P39bpbQivA/1r7tqL04YynDHEek=
 		</data>
 		<key>nb/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		Ei4RAKa7F4MS2tYnkJqaRg8V4sg=
+		TJx3T1ZESN9EH7LneQkNQA4cZK8=
 		</data>
 		<key>nl/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		Ef5/NE7JfSSmc45gBwV1yo8wq58=
+		zuGpxAG8JUFCJe2eu9EfleOHjrY=
 		</data>
 		<key>pl/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		+GcBszoFPe+OcR4CVN8HaCRNjAY=
+		8rZyQh7eFE6DPQXslSKD1hj1KIY=
 		</data>
 		<key>pt-BR/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		EC6M0i7dOjx2tzxehxEgbEoJjKE=
+		ptIO+gcEf9IUlRlPwUb0QoZNLy8=
 		</data>
 		<key>pt/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		PYIxyjhVRyAXGuw90yXtZoo+Fo0=
+		pUVKwwVkSGj/c1zsjTjopxd/9SE=
 		</data>
 		<key>ro/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		6CyrSYILMzSnLkqAH9ZnZXsoWfE=
+		cLkt7qdvNYYrdDqCyiL5DiPUilg=
 		</data>
 		<key>ru/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		ncK+1KqeWuD8R//FSZ9BMqO9HXQ=
+		vg37KbgIZzVkYPk1DAnAWeWl1iA=
 		</data>
 		<key>sk/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		6bLditZzsjZpZjYZ+OK7Z17bhxw=
+		5dOo7lbwzcJ019ZQXfXhr1TarsQ=
 		</data>
 		<key>sv/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		UW4HBymt5jHTMJ2+/eCKgG66suo=
+		+mVhmmdD2ZaDTpVllsNhXSWKuGc=
 		</data>
 		<key>tab_about.png</key>
 		<data>
@@ -530,19 +518,19 @@
 		</data>
 		<key>th/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		DVw7Wq0Xjzi1grvgrUgY1nBFDXk=
+		lFYZTGKVFTK4Tw7ItPHiQGOjXKo=
 		</data>
 		<key>tr/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		kvk+aWqj6fsGQPpVmQ2GhfAfROs=
+		9nNy6RrISJubKNPSU54soY9m7EA=
 		</data>
 		<key>uk/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		x1EJtKg+U4f/PO7TzrDQRPpfGHw=
+		eCCDLnfM4sUv4V7F7ZaAZnzdxaU=
 		</data>
 		<key>vi/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		WKx6nW5qKqkLcJL8lP923Uk70Es=
+		RFi5sm/R8+08XenvWgMV3396hZ4=
 		</data>
 		<key>xamarin_logo.png</key>
 		<data>
@@ -558,15 +546,15 @@
 		</data>
 		<key>zh-HK/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		M6RBQcloi4LkF1otwXCZJ70yc+Q=
+		zrGbHUNWFszpfJz4ya7tmNjdtaY=
 		</data>
 		<key>zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		7/Aqxu+pVR0gnVp/UOMaPYD5OUU=
+		XyywGPCL9eWsFaq1h4+fhgNvH4g=
 		</data>
 		<key>zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
-		9ornsUiGYyFZmt8oj1jfBsf8o34=
+		2//8JvrjhnLpQ/IPXK+4piS9MtA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -762,44 +750,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sKCMaqgGm/4Sb/dQZKgJYUJz0yY=
+			hcsrzOa6YA6+J0jXZnAKjvqJhVk=
 			</data>
 			<key>hash2</key>
 			<data>
-			WJ/6oDgZKZVegeWaNonqeL7lDsRty0fV0RFhGi4EciI=
-			</data>
-		</dict>
-		<key>CameraStoryboard.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			k5EPiVa0MZg4A2OBbf2Yv3tS3nQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			ianPA25+gV0iPGQp3qvuApw62KEQ//Rc8S++/W1DV2Q=
-			</data>
-		</dict>
-		<key>CameraStoryboard.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MDrKFvFWroTb0+KEbQShBcoBvo4=
-			</data>
-			<key>hash2</key>
-			<data>
-			PpvapAjR62rl6Ym4E6hkTgpKmBICxTaQXeUqcpHmmqQ=
-			</data>
-		</dict>
-		<key>CameraStoryboard.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/LkYEFb1qDu2YuOeUgGth5p3sR8=
-			</data>
-			<key>hash2</key>
-			<data>
-			D6Wgh0TSD6wIJqw0vz5sgwqgcApFuYwABaX3qb0K6Lk=
+			YQSP0XqKxhPRn8ulDfXww6GK5zRgwYtuo4Gzq3aMBG4=
 			</data>
 		</dict>
 		<key>Default-568h@2x.png</key>
@@ -872,11 +827,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5mVh+NnuD5BG1EANIuwJbkSxUgk=
+			EgGNYOElgpSLhJLGFY3/iyfPMBk=
 			</data>
 			<key>hash2</key>
 			<data>
-			ePNk1PM6/WsQT1pF7zSfLGQ3evDJwfBDVgMbtTvHV3w=
+			f54qERqVYzZKsFv1hJGe3iQK0h4U3wECxMDaydiBF2k=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
@@ -894,33 +849,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sNbgC2JjolfHjzln3ddQbGCw8l4=
+			x7K2IMvtbxpV2kjb7i1OtWxk0jw=
 			</data>
 			<key>hash2</key>
 			<data>
-			hk+z7JorrB+MRE7KQvmWrF6s3eoVDspUDmwSrrcdZBc=
+			bB17/UoOjBT2BQfJ+4/gJkD1AGBR4bPRRFQp2cymSxs=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/X5k-f2-b5h-view-yd7-JS-zBw.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XngJ/WVhJ1cx+0PALkjpc3iwTCs=
+			UQzNo8xTG4Ye9ucxoSYOhlUyRmg=
 			</data>
 			<key>hash2</key>
 			<data>
-			222p74XRJ+QpKYoHBDb7SKERjZ+0KbhrRfa9XCdaqkY=
+			KXWAZzbbs8uMggbZXlvXsKDyS6B1BHx2Yaf6S0EjroE=
 			</data>
 		</dict>
 		<key>Mono.Security.aotdata.arm64</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FWLjdEMEeNdU3sW1dlqb1JOilO0=
+			mIDDQojBk9kCppi4sreAXZqN04M=
 			</data>
 			<key>hash2</key>
 			<data>
-			E5fsP0GbK4jl5a2RTsQSKnRA1AUQS59LvlrawiQiF1Y=
+			l0/xF5nG94exS7igT05LSpr/F/ejZOF32yrzpbmM2ZA=
 			</data>
 		</dict>
 		<key>Mono.Security.dll</key>
@@ -982,11 +937,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bSmWMadTWtLtzKNmVQwVRxqEZQg=
+			eQYeUau3+m3j5aQA54zAy6OEe98=
 			</data>
 			<key>hash2</key>
 			<data>
-			B5XI3+N1toLF+ioKV7xJgWZfq8lmb0wDU8xg6otU9cE=
+			9/HYf0sZv0KGLx3D74SZoEe6WGveB4V0VhCjRiJj1sA=
 			</data>
 		</dict>
 		<key>OpenTK-1.0.dll</key>
@@ -1026,33 +981,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cdgN/fUvfAMtvSl9rkzVjySW5SA=
+			h0Z1Fm7JfcK+gIhg4UUtgLeWDaA=
 			</data>
 			<key>hash2</key>
 			<data>
-			cxYqJ5iOCQstJABHfo9xhZSUEVfHpdQVTWgRsT310Zg=
+			J00OHenBhR8ZAROvwKFde2Ov04FRvzDT7ni7pXQOGlU=
 			</data>
 		</dict>
 		<key>PixUl8.iOS.exe</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			K1OOLKltTOnihSn9rEqmiF8T+j8=
+			FrJNwZjoZOEO3mqVE9m5rZa2tfo=
 			</data>
 			<key>hash2</key>
 			<data>
-			IdyeYUv/xvuM8gnWjA5LeJ/nZmwhmU28+P1EvyxdwVg=
+			hgLWfhLhDL7xt/ZDq9eqiT38p0VAX0AVcBLuND/+4lk=
 			</data>
 		</dict>
 		<key>PixUl8.iOS.pdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LTMFs402xQgyotHVUz8s6yxYPOY=
+			GE+weDfGlR46iYHVn5ioqbGZwzA=
 			</data>
 			<key>hash2</key>
 			<data>
-			rizYabtV99WWC3L8NpTAG9YqPvKqox1a54PRt/GLJZU=
+			dGlus7So8LX10A1lu9M9Ash2kQabUghybYv7+DduQSo=
 			</data>
 		</dict>
 		<key>Settings.bundle/Root.plist</key>
@@ -1070,44 +1025,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NPJ/rGrztdWnJJauTaCbiSyQlAQ=
+			LKCQlkiI2nEZk042bzJUFN662/8=
 			</data>
 			<key>hash2</key>
 			<data>
-			glLcx3Y8fS5km2qTwr5zK1IIJ1Nc2qFxeStaou5OZ38=
+			wrilKki8YENrXeIo63U1xxj9ztteM5z3JG/48XSNZSc=
 			</data>
 		</dict>
 		<key>System.Core.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ypGcaS728ZbYwoHaTs3sBNDiqRM=
+			E3OCGZooR2QLSBtCgLcps99ExFI=
 			</data>
 			<key>hash2</key>
 			<data>
-			dChGTcHKKRWoBBFAAqwo1VbG1n2ElHVxPDUhLmseNx8=
+			KmP4RhrhghdfUav/dmqdcPz/EmjkAaFMsW6sNAS919g=
 			</data>
 		</dict>
 		<key>System.Core.pdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			K16etRSF9iBDN+t2kmey2HtovuU=
+			mq8aiyAI70L8Aq+KMu38sCl9ay4=
 			</data>
 			<key>hash2</key>
 			<data>
-			GqO+ITvT7A3G2DMs0UCfXu0kITjT6lKc5AMcgBk5zM8=
+			HJnrYU3u5+qd2pnZo/c5Gw0qUcguzUzhZR49GjAYzjo=
 			</data>
 		</dict>
 		<key>System.Data.aotdata.arm64</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DhElhex+YrS3zMMhSc5aBzloK+s=
+			C2VayVBCs+doPSJ6hZd8mUokC3E=
 			</data>
 			<key>hash2</key>
 			<data>
-			xuWlvNpZw8t32k7IJ1iTVgZ8MJwk5HXFydc+rfFd6pk=
+			Yv3He3KQ2pie0LU8QudeCeVloBLLIV1TQNu/1bElGEE=
 			</data>
 		</dict>
 		<key>System.Data.dll</key>
@@ -1136,11 +1091,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2kjrljdYo+MpdpCdFs3DQRelogk=
+			FRk55JoQMyhEhhuFPWOu5WBK4AY=
 			</data>
 			<key>hash2</key>
 			<data>
-			tnJSj8KoQ52fuID+J5aM1Z+bBosPrNnvRhJz9P1/NDw=
+			6cdm/NqDh4mSDkpu2w2uzHZRjQRCfydiZeIlb0e8CRw=
 			</data>
 		</dict>
 		<key>System.Net.Http.dll</key>
@@ -1169,11 +1124,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Gn/0vImRHyzBqDeRI/Va5/+PT6k=
+			kX54FJfvS70sOmvn6uowkS5gCwk=
 			</data>
 			<key>hash2</key>
 			<data>
-			ujbVtd/ufErTOJ2p7QfHgVX8marF8b7GBj43wSb0HoU=
+			H4RHXoYxFuNdExY81eqdIJUdPxnAIEAhZFizeEjyTGs=
 			</data>
 		</dict>
 		<key>System.Numerics.dll</key>
@@ -1202,11 +1157,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hsB5IK9KcDKf+okITUeI+ZMPNrE=
+			hYnporugEGIAEvwEu0MhGdjH1Vs=
 			</data>
 			<key>hash2</key>
 			<data>
-			A9S+Pp+EPSHG8jSLr7Xolc/2hTY6m/iresn5/7L1efg=
+			Sd9VPrVUo5pClaamcm2AGQLIokWIEHmT/rcSPnJZLlQ=
 			</data>
 		</dict>
 		<key>System.Runtime.Serialization.dll</key>
@@ -1235,11 +1190,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4AkmF7vnYfjSxfQsgLk29nMkzKs=
+			tOTMlcIzbQ/Xh4aAcdH7AokNTNk=
 			</data>
 			<key>hash2</key>
 			<data>
-			wbosegqIc6gTCRcUA4bVbzOdsslvL5n+IT/xzoenE1I=
+			mDaBtvlQbbqVYGnRal7ZUEO0yo1H8u4V8izb0+ePmtE=
 			</data>
 		</dict>
 		<key>System.ServiceModel.Internals.dll</key>
@@ -1268,11 +1223,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8xnVgoO9O1gBR8tBEuW/4B6UmX0=
+			NjP+9yqIrlr+wnjm3IX/KKlLfkE=
 			</data>
 			<key>hash2</key>
 			<data>
-			NkDWtM7D/wwsKEuQOts+IlczAgAd88webEtujk70YF4=
+			u22RvUihkGuNAG0vhRM0jevxXf6e86K+sB8q71sXE7g=
 			</data>
 		</dict>
 		<key>System.Web.Services.dll</key>
@@ -1301,11 +1256,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MM4cafm5UvKG5SUXBAYeDx4PTPQ=
+			C49QJjLTwdMPUSUyLBiNZLv8obU=
 			</data>
 			<key>hash2</key>
 			<data>
-			r+BcbE/ZTxbtmoNFbFg6d/90/0lmniDgCivvxUCHnmg=
+			qUZQz9e8zonlqq5IQGYkRdim0DPtRjtzOXarzSBwk+g=
 			</data>
 		</dict>
 		<key>System.Xml.Linq.dll</key>
@@ -1334,11 +1289,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Bo0meIaRZPdtaI9EoNhOwFO6DDA=
+			ihPJzT1+91EGyuEwctTxtP4pDHQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			/RgBmXnHJlDp3QVcyV1Cu0LGNY10MKyF9/IwsYNc7Mg=
+			7C/GRXobl8PKQPwY4eCiBkUvFADtxF8iZyOaQ3vBMo8=
 			</data>
 		</dict>
 		<key>System.Xml.dll</key>
@@ -1367,33 +1322,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bDGOUC6p6KNAgIrhVGUJ2VWyyIc=
+			LKvySIDFaSkp3MfBxYDxPlWzagQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			CXXk2Sv+ncuxhOUvyuk/0si3G9eqYBJf8o1DaRaK8zQ=
+			F7kswB8R0D7NeF/WYfvY3zEYhOVmAqvndL71pD1MUsI=
 			</data>
 		</dict>
 		<key>System.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iw8nMD/pbbCryqoYDmVT6MOY84M=
+			WieazbOuqSf7Dj1YsTruttIszNU=
 			</data>
 			<key>hash2</key>
 			<data>
-			g+w/0wH5OmWE5Ddk7wvgsNGfd0F7ewE6U3ZTRoEfcIU=
+			WbgJCqxAjWz4T0NEcNlE0QrWzFZQLygcnrVhBrjKur4=
 			</data>
 		</dict>
 		<key>System.pdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MhitpJAyUfqINb8R2lTChzAsVa4=
+			USFm3AZ6O85fHbYgde/yefF6Zwc=
 			</data>
 			<key>hash2</key>
 			<data>
-			9JpgcCHmm6mQ+YovT53Uq+Vs6PVCeYWurKJBHC6uq1A=
+			h5hbJTTMGjitbMxlszx6wrVcXskBDGZzojj5Le4SiAs=
 			</data>
 		</dict>
 		<key>TakePhotoButton.png</key>
@@ -1422,165 +1377,165 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PMy5RvmtDIC2mQAYdRIeXo6QcRk=
+			QEfahdu+eVVIfUVfSHq3edtVKEM=
 			</data>
 			<key>hash2</key>
 			<data>
-			C3pZw9d1+1UsnBwfaQWISsWynSFaDUapcA6z8P374sQ=
+			d7BW95JSH2OGaWFWmxL3n4hpeUScw4oR2oKh1yXHP/A=
 			</data>
 		</dict>
 		<key>Xamarin.Forms.Core.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ijkRCkPKwGm2N10xd8+X15bOZSU=
+			YwtgouTh6MI2PhQShlAvoWaq5F4=
 			</data>
 			<key>hash2</key>
 			<data>
-			HUXR+c7AKb9R+wfn4SiSDvSSwSZQZ0NLypPqcfXu6HA=
+			lpVTo6I5Cg0ORwTl1Uo+92t1iJZ3jTJ+wFX99eGQlMQ=
 			</data>
 		</dict>
 		<key>Xamarin.Forms.Core.pdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VCSu1uRVUnA1jtucoG8yr1vx/4w=
+			xXAkoRZrK8AfXu2Al5JZeCPWROM=
 			</data>
 			<key>hash2</key>
 			<data>
-			XGDE+zI4r8i1qmdMpAzRvKN84YyxLkZf6E0DDDnOekY=
+			mRmwbzXqJ7la88Pmv9a08fEV8+j+vEpv0JHGz9ibl/Q=
 			</data>
 		</dict>
 		<key>Xamarin.Forms.Platform.aotdata.arm64</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QjB11cs+OBfWDGUk9FK9MxEunnc=
+			PPenoQkqvGR9S+UWMOtJ72ZC0Go=
 			</data>
 			<key>hash2</key>
 			<data>
-			OsL63CkQa/c2G/QsR/LC4dgZ0c6UAgiPx1EsdaJZnZk=
+			gCEpzpSofK0gL9Nk9DdaYZ+egenZW3txV8oXcT5WlMU=
 			</data>
 		</dict>
 		<key>Xamarin.Forms.Platform.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jNFls8/X6WBRDbEFPmba/a1eUbw=
+			m5KR9c3leqLbTX4gOXDJ/M86/ak=
 			</data>
 			<key>hash2</key>
 			<data>
-			eDtjEp9YNIRkiio5Tb1rFtkJW1y6eMlUREuIu+II+UA=
+			+MZFv/75udUb2016t++hfexbEDpbfIL+UhmUogFUhJE=
 			</data>
 		</dict>
 		<key>Xamarin.Forms.Platform.iOS.aotdata.arm64</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+MJhQlgN0Pi8L03x7oc5BPgEilc=
+			5NhVTcluQ/IZcHmnp638vBb9YGo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Vpwyk98K4Ke3ObribnB8DuxhV0CZqX9NJxy88holbT4=
+			mwBURp4hkjD06W0HbQsmj+kQ1hbdKzS9GMHQ4rlHp6o=
 			</data>
 		</dict>
 		<key>Xamarin.Forms.Platform.iOS.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oxecUS/C84c9dNxvE9a+Nr4FyzQ=
+			PKQcVlgYk4NTtG4SNyOjAHuwAbg=
 			</data>
 			<key>hash2</key>
 			<data>
-			sd8X8eJCWK1+kSIrwafHEx6ob5xF88wVtjnvKLzYGtM=
+			fbuf/Oi6TOjIAnrHVROlQYcnvM8JdyqqdwGxyrWUuJA=
 			</data>
 		</dict>
 		<key>Xamarin.Forms.Platform.iOS.pdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JhaBlepN1MlihcNlahXov7MGTpc=
+			cdKqh+XtDVokrKfeFGs5hvrDm00=
 			</data>
 			<key>hash2</key>
 			<data>
-			e0zk7mwi+eWlC2qMTYcT8tm0v+UQaed3mEYEQYs+0+g=
+			TI/N6xV5vLkXQP6NXvBOYPqp5DFmGDdOMTbGwivffn0=
 			</data>
 		</dict>
 		<key>Xamarin.Forms.Xaml.aotdata.arm64</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VD+TGp0jd7wS6io6oNK7ZpSZebg=
+			9x3VYz3zo+X4yQDIR4PKCWyc+wo=
 			</data>
 			<key>hash2</key>
 			<data>
-			6tjAQD3+3q6ELj6FNvCf2qQ0DiQJwKiBsycsudjv4nU=
+			DkX/KhTW9uIULF5WMAlNDeI8OCLYK1PyBI93tTPuKaM=
 			</data>
 		</dict>
 		<key>Xamarin.Forms.Xaml.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rrZAumnoqh0xUs0j4KfWWdvuEHM=
+			apXOjX1kkbwhNeFHjmqyz2aAA2k=
 			</data>
 			<key>hash2</key>
 			<data>
-			HMK8GsJ9nK2gOe6p9X45NpHd5BWObbIaPEDXjaRYGyQ=
+			J7x5Mx6PzlDnlhWBXYDB7bvsOF1fYsCRggplyVdTztE=
 			</data>
 		</dict>
 		<key>Xamarin.Forms.Xaml.pdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BpUjnCt+44OV8cW1xhBTAkiLtWU=
+			ElNqUv1Jj5VVo01bnmHlAG+IZzA=
 			</data>
 			<key>hash2</key>
 			<data>
-			/p2z59xdQ4GUAm2PLe0eIzyM4n8HFNJ32elPooG0k04=
+			uY5Ralh6GrfRDR/79Bjwl2g3h1bcXkMcB9Q+x9JdksQ=
 			</data>
 		</dict>
 		<key>Xamarin.iOS.aotdata.arm64</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Pamefapiyad7e8geZwL5aWKD4tU=
+			lk59YFVQtC/VkM9kVqIotpehYXU=
 			</data>
 			<key>hash2</key>
 			<data>
-			9wfkNFxzjGQ2wJtXiCWOpvJj7WTHc/+KrjB5BiJeq9k=
+			NegxUvnxm2ufOLsxkYAC/HWV5mE2Ve0Qza2RxINU7ec=
 			</data>
 		</dict>
 		<key>Xamarin.iOS.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hqyKPA3I5D+0/RHvApTLYjuPIZo=
+			8PNdCS9qRbbuehKll2QNq0Hy3HY=
 			</data>
 			<key>hash2</key>
 			<data>
-			7JzwaBqtlSmohD+kriyEKYReNP8Fwruky8zyEuk2g1c=
+			7kbLTLgFo+nOTFmktLhqSxSm+CrZu5fCXMT0fb2ImtI=
 			</data>
 		</dict>
 		<key>Xamarin.iOS.pdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Habt5S/0MxOIllkyi9qQkyMmx4k=
+			JxEdAfLjVUHwDTmzMSB2HDae/OE=
 			</data>
 			<key>hash2</key>
 			<data>
-			6EdMH6CaqvFNmlOcQnCPZ4Gl9V9BAiBh37r0kyf8OKg=
+			6Eca8nInLCJOqQYp/mpR4Lc3gGr++s2vN+8DB6dUD+w=
 			</data>
 		</dict>
 		<key>ar/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QFVvizPeqP2UarxAGdtkIP3S1RA=
+			0ozq9Q9n78cvblpYLGGGJckcNh0=
 			</data>
 			<key>hash2</key>
 			<data>
-			nAhkHSDArKOW3CVFe1NSMnzfMA/EZPB2i3TN+w/vtzg=
+			fDyGpybGba2shlxe2chrHVYG67/LXQhnFk8U8A/QMKs=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -1598,55 +1553,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jz1zmfjxF+OwW1l8UGdJ2AcPGfo=
+			EDIPDwDlB9RFXLfy+LuHTgyV0EA=
 			</data>
 			<key>hash2</key>
 			<data>
-			I6A7/b8us4vCZsutpUA1t2qBpiljkM2EF1hCQ9iEvQA=
+			Z3RNqTxYw07bbHaGpCNPYC+G5UVNkGNd/LDUtG8jBqg=
 			</data>
 		</dict>
 		<key>cs/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Cw6/tH5JpagBhKFFR+QptHv8Ha0=
+			KJv06CUlbcc/RlBXX3i6hjdegeU=
 			</data>
 			<key>hash2</key>
 			<data>
-			PTGaWjxWAtMcFCD7qINjS4vuWvtqy1kC1O4OG4U30Gs=
+			0lwCk1K2amuIfrgODixb1tBTQFZ7IDOYm7kZrtL3Rz4=
 			</data>
 		</dict>
 		<key>da/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mH41mPAi70CshExlM+N7PCH9jgI=
+			qObSjqq4JZKCHEPOFeq7RcZ8aQg=
 			</data>
 			<key>hash2</key>
 			<data>
-			88CBJ9XMgqdNjkmRk5bRE67Vi1mxoJ4Spn8hLbOtLbI=
+			cO00EqyzDjAvh313nJalL45FlD/PPh8jSk6SBf6gmPg=
 			</data>
 		</dict>
 		<key>de/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Nwwslx951VVPI0uejcAr+pGg0vc=
+			fTb3yF2hzGPY9BwUUbsUMCerajc=
 			</data>
 			<key>hash2</key>
 			<data>
-			R8pV2PyCG17zDe6C2b9g7yoUGTfkE2fLNUzgHuymVv0=
+			f5yWAxUSW8/CNZgE0CSSdQZLSOOYsLEqSuf7AmQxyY4=
 			</data>
 		</dict>
 		<key>el/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7zkQ8tm7ARHYekqfJqjvUf9ljP4=
+			cjUmcOJc1ERPMIOmK891nyi8+ec=
 			</data>
 			<key>hash2</key>
 			<data>
-			xfrJO0AFPUGNyq31a0KavgQiLfySutPVjzujdymGUOw=
+			WgvHut97/0kS9HHzG4pmhWJ3qgWWlTXv5gfg67xZ+jE=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
@@ -1664,264 +1619,264 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			t085pX6bCNaL5G3m55iou83A9EI=
+			jvRkusYHMBugX0A0Lz++E3INOvg=
 			</data>
 			<key>hash2</key>
 			<data>
-			okOZs9IzRF3R2tPTvr/SNZVHlV+ygweUBp1R7o+rTtY=
+			CEP2W95EtgaLlEYTmBEhMvnrKCqDUl9r1gc63/1EUQ4=
 			</data>
 		</dict>
 		<key>fi/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			83fkU4AYbhI65ByY/kbN7X80JTg=
+			QMSOCSw7ZyFSFV0T4DNtL3Ic9O8=
 			</data>
 			<key>hash2</key>
 			<data>
-			qCIrEb10zRB5sIgqopgibSJ4wjHRyTs9xZ06h4vyZ0U=
+			4wL+drTfptAbYvhjHm+wZaSM2T8+zZinbfxdP6TIQyE=
 			</data>
 		</dict>
 		<key>fr/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IYVn+CM311yA5VE40REENG/S960=
+			nMv4G0ijwAmxEjqTTcJ+gR7bAqY=
 			</data>
 			<key>hash2</key>
 			<data>
-			1sQUHlskHr6I7afEL0/63oZ47WRctC769KCh0F4DVD8=
+			EuXv5Yi3UrM4BYvwrnRBs3kZvM+LBSf0m8lQIcee4Ig=
 			</data>
 		</dict>
 		<key>he/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tG/ex0y3JZIWPVEkAGa+hPOIAL0=
+			dNUmIF1syFRr6G4G8SR1gfC/DKU=
 			</data>
 			<key>hash2</key>
 			<data>
-			HBVPtL5MtSBINFZvpy4Hu7NSCOd4qnDKjeqEe6xN5LE=
+			K6MgzJzDDXue2b5sJjxR4q6EJ7cygzMB9e6gu9dw2z0=
 			</data>
 		</dict>
 		<key>hi/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Dnqr2teizgtPyMwzCOJ21tC6Md8=
+			nHEAjxgWjfUujhLwEkJQvcOnluM=
 			</data>
 			<key>hash2</key>
 			<data>
-			/a408ngqmuvLUrkaLDuZgt/gXJtlndNBwRzNzBetLYE=
+			NtTtqCw57/ML+LwRSs54kHAGrLGPd9+beNnqX9/VcTU=
 			</data>
 		</dict>
 		<key>hr/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			51w+Q8vswPYdGGMGkR62WBsu6WM=
+			E06Itb8H3fx4U2bMh+3kSwNd/lE=
 			</data>
 			<key>hash2</key>
 			<data>
-			eCTSe9k6Mgm2gMkJnAE1IANhH4vamKLyfNiAjMu/y/E=
+			w2sTb0D6EAC5Y34pLpOpO5+tQIpB3O9qOsV94fugKA8=
 			</data>
 		</dict>
 		<key>hu/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9DEFMfnJF0EShIoipGhTknagM9Y=
+			SA6RyGO8a5eZ6pJ+SKMKExI9RUw=
 			</data>
 			<key>hash2</key>
 			<data>
-			6qf/BX5mpCqni3rLDS2BwhRtEsvv+DuBBdonsvL7mDg=
+			OkhwtpVg/L9CNYzSuoLPGR51l+GgrLO2Y6zLBsA4/FM=
 			</data>
 		</dict>
 		<key>id/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			67UOgBxOdOKDhNa3X6UmC9lhKbo=
+			QEpCbnukReE8jbZdUZ3Mq65aaIQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			RwQLbeDDGujKRSKKjFV/gDf/xe7ytPE1U0oEgCAEpB0=
+			ordOLwjk/YWyPFx2tl55r6mKLR9Hc3ZWWTZJ9+3HPKY=
 			</data>
 		</dict>
 		<key>it/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pj1+MwHWiDKs5urKbyoqi9Q9mOc=
+			zUQRNbvhoqV45O/Di4WknaYvkug=
 			</data>
 			<key>hash2</key>
 			<data>
-			Nn+IhZXFPAyV5d6JREe91Gq1VNDJl9ynE83f+nrs97c=
+			jV1mDHXxPRK7RnA8wkBRhv560PwpZJHQjb+q1vv6v+E=
 			</data>
 		</dict>
 		<key>ja/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J2N8J42Z5j2q3STpcF2IJgG/hF4=
+			gj+hPgpq01yIj90RwRKORkx4f3U=
 			</data>
 			<key>hash2</key>
 			<data>
-			cvem+TAnCKxfesOTp0pRtXhOz1+jzNHocwc2hynMedQ=
+			jBb71YG1b/AYDzCGYapRbww97WEowOCpZpoC6ws9dd8=
 			</data>
 		</dict>
 		<key>ko/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fdVhxg4GAMiOwu39XIrQe0KQ6rQ=
+			ANnNoW/giJHLKH9dyBGhRJdvaV8=
 			</data>
 			<key>hash2</key>
 			<data>
-			fY+TRIzN469URSXpUA4f/2TEHtVCo924W1UbP0tviGw=
+			A9LddVxQ4X8y+1oGr5HOOMg8KXmrCso47S+vu4174Ic=
 			</data>
 		</dict>
 		<key>ms/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RM6IW+lmtPlMoucsy4bnlUk7vdA=
+			oI78mc61R+X1iHsL1jMDXWvC6Tc=
 			</data>
 			<key>hash2</key>
 			<data>
-			jDQCKyvmVjIwIIFN4/6urW+US1NCuoJoNth1aM55GkI=
+			ad3zZ7kkrPUSvlWGNEFL3qQmNgsw+yj+4BxBx4Dlzvc=
 			</data>
 		</dict>
 		<key>mscorlib.aotdata.arm64</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+oksQva6Fx/vG2S4qdEQPmR0B7U=
+			DAorybhbycYsbPDEq/TYO6E/q8U=
 			</data>
 			<key>hash2</key>
 			<data>
-			SX0to8jv10JcnE3pNeTG94N4mtOyWLi+P0RH48ZHBM8=
+			FHP2sPyxbNI9cA2HrMtvq9RrtWuU6b4bvgCuCLWQbZY=
 			</data>
 		</dict>
 		<key>mscorlib.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OdIyOaatYl21HxtHPoGEb3Oqbs8=
+			Tc41Pu5Q6T/7UjHuviZD/onJ054=
 			</data>
 			<key>hash2</key>
 			<data>
-			ExbxTAKG9dcaLgjv3lrkhgtSXEZd/43MEOTrwLf3OCc=
+			mhIXr0cq2J0yKXhXBrPwYJXaSeElfqWIwzuXHV3SRhY=
 			</data>
 		</dict>
 		<key>mscorlib.pdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SHX+snPrV97zZSxRHUz0oTMgZP0=
+			P39bpbQivA/1r7tqL04YynDHEek=
 			</data>
 			<key>hash2</key>
 			<data>
-			lY9mGcQy04RbY9LfXDHwVl+Mnxsfx/AYWSSDKkRvDfw=
+			HN2WVc8z8hfLm77i03MEiERNHKqdhKzAsUCpkKn55Gw=
 			</data>
 		</dict>
 		<key>nb/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ei4RAKa7F4MS2tYnkJqaRg8V4sg=
+			TJx3T1ZESN9EH7LneQkNQA4cZK8=
 			</data>
 			<key>hash2</key>
 			<data>
-			GceiqEalL44hc0p76InF2XMboLxkCN8omnMl1FmyHaM=
+			WGeXnGU6SdaxfE7bEbD5AXZy8H+ZiqoRCmph+3a1BQk=
 			</data>
 		</dict>
 		<key>nl/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ef5/NE7JfSSmc45gBwV1yo8wq58=
+			zuGpxAG8JUFCJe2eu9EfleOHjrY=
 			</data>
 			<key>hash2</key>
 			<data>
-			jEKl3MCltVsuBXYLR3VStv04ndxqF7/U4jzxan5GQQ4=
+			ljGZ2dzmYRe9zbPFeBcmqs6yTGzrB+bAsO4QcRYJoX0=
 			</data>
 		</dict>
 		<key>pl/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+GcBszoFPe+OcR4CVN8HaCRNjAY=
+			8rZyQh7eFE6DPQXslSKD1hj1KIY=
 			</data>
 			<key>hash2</key>
 			<data>
-			mhtZ3Pe+7OB/eHjJ1M5ImTLCs+XaobAhg4q7H1uisQs=
+			DuMD6EDeMCjhp2CT1JV1Gthhr/HmCJNOO8xmtrE5lpc=
 			</data>
 		</dict>
 		<key>pt-BR/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EC6M0i7dOjx2tzxehxEgbEoJjKE=
+			ptIO+gcEf9IUlRlPwUb0QoZNLy8=
 			</data>
 			<key>hash2</key>
 			<data>
-			zzSAVoU4Sj2RxpkBpXfABxLwBfYRLHhNiCIkfNWtGNM=
+			EtMCsX8PViznvQNDKs4Hh3OzinSPItd6+6mG3kJZvXE=
 			</data>
 		</dict>
 		<key>pt/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PYIxyjhVRyAXGuw90yXtZoo+Fo0=
+			pUVKwwVkSGj/c1zsjTjopxd/9SE=
 			</data>
 			<key>hash2</key>
 			<data>
-			EDvXzpqmJ+6wjYoXxcAjgAhOk2mOcwK5Sljz5vVfWwM=
+			zA2Jl4CiMCQnKKlSBLGJBm3Ls9YMKm4qql1S+EyerAw=
 			</data>
 		</dict>
 		<key>ro/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6CyrSYILMzSnLkqAH9ZnZXsoWfE=
+			cLkt7qdvNYYrdDqCyiL5DiPUilg=
 			</data>
 			<key>hash2</key>
 			<data>
-			CzV174fPMFEE1YJb85DMvqtPU18TaiaZt7S6+mcdVME=
+			TI5dNn7Tfv//Jgtr8kG4ziSj7eMLu/eblSyJJ6W3BxY=
 			</data>
 		</dict>
 		<key>ru/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ncK+1KqeWuD8R//FSZ9BMqO9HXQ=
+			vg37KbgIZzVkYPk1DAnAWeWl1iA=
 			</data>
 			<key>hash2</key>
 			<data>
-			HYfF0ZTsoeZP0ukIwC8wJXwNAXA76OdjsEsvjXjV8fg=
+			o9cKIasahgIOp0pDE7DlM7qJK/QFasHZzTRKd7iA8VQ=
 			</data>
 		</dict>
 		<key>sk/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6bLditZzsjZpZjYZ+OK7Z17bhxw=
+			5dOo7lbwzcJ019ZQXfXhr1TarsQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			49H0N1A27uYqpjA4/0Vf6N5CAGuf3fvucDhf5YWNt/w=
+			8nhM5fa1IXqy1+7S3Ja4VUBuBWmfAnbBV+0LnEGGpls=
 			</data>
 		</dict>
 		<key>sv/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UW4HBymt5jHTMJ2+/eCKgG66suo=
+			+mVhmmdD2ZaDTpVllsNhXSWKuGc=
 			</data>
 			<key>hash2</key>
 			<data>
-			4nd0NNzLigXnHdMvW7rlDvw8j44nX2jEUPXEUjmlqgk=
+			FqvYkKcqz6oP0kcx/TIwgvE1z9cNbfex+jLuvUH074s=
 			</data>
 		</dict>
 		<key>tab_about.png</key>
@@ -1994,44 +1949,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DVw7Wq0Xjzi1grvgrUgY1nBFDXk=
+			lFYZTGKVFTK4Tw7ItPHiQGOjXKo=
 			</data>
 			<key>hash2</key>
 			<data>
-			nwc1hCgIzYax+Sb55k6+W6vKdV6UH3OvJp5dbzClHkE=
+			YTJWDVyFPCuO+gpmsI0DlrgxgJsCpyz/7TZfrWom6xA=
 			</data>
 		</dict>
 		<key>tr/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kvk+aWqj6fsGQPpVmQ2GhfAfROs=
+			9nNy6RrISJubKNPSU54soY9m7EA=
 			</data>
 			<key>hash2</key>
 			<data>
-			IVqTLysCZXHYoDXYeiNB4PwoOAWTo8/YTPJtnpC2LuY=
+			yMRpQbUWxWsidcGIP32+3yinhSd97EGTAz3MYcyNujg=
 			</data>
 		</dict>
 		<key>uk/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			x1EJtKg+U4f/PO7TzrDQRPpfGHw=
+			eCCDLnfM4sUv4V7F7ZaAZnzdxaU=
 			</data>
 			<key>hash2</key>
 			<data>
-			wnuE7q3CoQHZ1X+jU0rFsk2cJiLJUyPxnYxqri5HEWU=
+			lx0Q+N81VOVH+KRahL9cIVXDfTVm3GnkYduiO8n4cVc=
 			</data>
 		</dict>
 		<key>vi/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WKx6nW5qKqkLcJL8lP923Uk70Es=
+			RFi5sm/R8+08XenvWgMV3396hZ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			+DJid49lvCUQsQaX1cl0SN9XHXCiIkxNfci7Vu1A8hU=
+			wZltRcJBqgZWylZG2cDzft2Lh3QDZcy5aamRdD9qhtY=
 			</data>
 		</dict>
 		<key>xamarin_logo.png</key>
@@ -2071,33 +2026,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M6RBQcloi4LkF1otwXCZJ70yc+Q=
+			zrGbHUNWFszpfJz4ya7tmNjdtaY=
 			</data>
 			<key>hash2</key>
 			<data>
-			C8Asc17Dt3Tp78/dq3ks4TtTiGQJ9Vo/GdD7ve9X350=
+			V7bzykc38lfN1QuYn0oCRdC/pXptkewXcEQP3+QPCWk=
 			</data>
 		</dict>
 		<key>zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7/Aqxu+pVR0gnVp/UOMaPYD5OUU=
+			XyywGPCL9eWsFaq1h4+fhgNvH4g=
 			</data>
 			<key>hash2</key>
 			<data>
-			OukDCTR+rn28W6qkrembXdCA/XbS+DT+Aq+sRFPHgKA=
+			WjeKbX8+9802SIGIfvOaWjbXmjPyAdm/Wxx3GhXcyNw=
 			</data>
 		</dict>
 		<key>zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9ornsUiGYyFZmt8oj1jfBsf8o34=
+			2//8JvrjhnLpQ/IPXK+4piS9MtA=
 			</data>
 			<key>hash2</key>
 			<data>
-			cAzlXO0bd750peWCkFQB0Nk3tY9acNoFJRuODCcn1u8=
+			wyQ7C5ZS13Wuh/blxHP1wqAA1sU2H1xayKfLP4YiuN8=
 			</data>
 		</dict>
 	</dict>

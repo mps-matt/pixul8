@@ -16,7 +16,7 @@ namespace PixUl8 {
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8/App.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(App));
         }

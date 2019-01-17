@@ -70,8 +70,6 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewControllers\CameraViewController.cs" />
-    <Compile Include="ViewControllers\CameraViewController.designer.cs" />
     <Compile Include="Services\NativeNavigateService.cs" />
     <Compile Include="CustomRenderers\CameraFeedPreviewRenderer.cs" />
     <Compile Include="UIViews\UICameraPreview.cs" />
@@ -129,17 +127,12 @@
     <BundleResource Include="Resources\xamarin_logo%402x.png" />
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
-    <InterfaceDefinition Include="ViewControllers\CameraStoryboard.storyboard" />
     <BundleResource Include="Resources\Default-568h%402x.png" />
     <BundleResource Include="Resources\Default-Portrait.png" />
     <BundleResource Include="Resources\Default-Portrait%402x.png" />
     <BundleResource Include="Resources\Default.png" />
     <BundleResource Include="Resources\Default%402x.png" />
-    <BundleResource Include="Resources\FlashButton.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
-    <BundleResource Include="Resources\NoFlashButton.png" />
-    <BundleResource Include="Resources\TakePhotoButton.png" />
-    <BundleResource Include="Resources\ToggleCameraButton.png" />
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
   </ItemGroup>
   <ItemGroup>
@@ -149,10 +142,9 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1009999" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ViewControllers\" />
     <Folder Include="Services\" />
     <Folder Include="CustomRenderers\" />
     <Folder Include="UIViews\" />

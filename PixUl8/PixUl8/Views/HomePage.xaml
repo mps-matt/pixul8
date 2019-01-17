@@ -4,8 +4,94 @@
              xmlns:NativeViews="clr-namespace:PixUl8.Views.NativeViews"
              x:Class="PixUl8.Views.HomePage"
               Title="{Binding Title}"
-             x:Name="HomePage">
+             x:Name="Home">
     <ContentPage.Content>
-        <NativeViews:CameraView Camera="Rear" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+        <Grid>
+             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+                     
+            <NativeViews:CameraView Grid.Column="0" Grid.Row="0" 
+                                    Camera="{Binding CameraPosition}" 
+                                    HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            
+            
+            <StackLayout Grid.Column="0" Grid.Row="0">
+                <Grid> 
+                     <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                         <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    
+                    <Button x:Name="leftHandBtn" 
+                            Grid.Column="0" 
+                            IsVisible="{Binding CameraSlideLeft}" 
+                            Grid.Row="2"  
+
+                            Margin="-25,100,-25,50" 
+                            WidthRequest="60" 
+                            HeightRequest="100" 
+                            BorderRadius="10"
+                            BorderWidth="5"
+                            BorderColor="White"
+                            HorizontalOptions="Start" 
+                            VerticalOptions="End" />
+                    
+                     <Button Grid.Column="0" 
+                             BorderColor="White"
+                             Command="{Binding ToggleCameraPositionCommand}"
+                             BorderWidth="10"
+                             Margin="0,100,0,0"
+                             IsVisible="{Binding CameraSlideLeft}" 
+                             HorizontalOptions="StartAndExpand" 
+                             VerticalOptions="End"
+                             WidthRequest="120"
+                             HeightRequest="200"
+                             Grid.Row="2" >
+                        <Button.GestureRecognizers>
+                            <SwipeGestureRecognizer Direction="Right" Swiped="OnRightSwipe"/>
+                        </Button.GestureRecognizers>
+                    </Button>
+                        
+                    
+                    <Button x:Name="rightHandBtn"
+                            Grid.Column="1" 
+                            IsVisible="{Binding CameraSlideRight}" 
+                            Grid.Row="2"                    
+                            Margin="-25,100,-25,50" 
+                            WidthRequest="60" 
+                            HeightRequest="100"
+                            BorderWidth="5"
+                            BorderRadius="10"
+                            BorderColor="White"
+                            HorizontalOptions="End" 
+                            VerticalOptions="End"  />
+
+                     <Button Grid.Column="1" 
+                             BorderColor="White"
+                             BorderWidth="10"
+                             Margin="0,100,0,0"
+                             Command="{Binding ToggleCameraPositionCommand}"
+                             IsVisible="{Binding CameraSlideRight}" 
+                             HorizontalOptions="End" 
+                             VerticalOptions="EndAndExpand"
+                             WidthRequest="120"
+                             HeightRequest="200"
+                             Grid.Row="2" >         
+                        <Button.GestureRecognizers>
+                            <SwipeGestureRecognizer Direction="Left" Swiped="OnLeftSwipe"/>
+                        </Button.GestureRecognizers>
+                    </Button>
+                </Grid>
+            </StackLayout>
+            
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
