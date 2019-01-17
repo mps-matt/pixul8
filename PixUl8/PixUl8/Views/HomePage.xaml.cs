@@ -29,27 +29,5 @@ namespace PixUl8.Views
         {
             base.OnAppearing();
         }
-
-        private async void OnRightSwipe(object sender, SwipedEventArgs e)
-        {
-            var oldX = leftHandBtn.X;
-            var oldY = leftHandBtn.Y;
-
-            await leftHandBtn.TranslateTo(leftHandBtn.X - 200, rightHandBtn.Y, length: 2000);
-            await Task.Delay(200);
-
-            await leftHandBtn.TranslateTo(oldX, oldY);
-        }
-
-        private async void OnLeftSwipe(object sender, SwipedEventArgs e)
-        {
-            var oldX = leftHandBtn.X;
-            var oldY = leftHandBtn.Y;
-
-            await leftHandBtn.TranslateTo(leftHandBtn.X + 200, rightHandBtn.Y, length: 2000);
-            await Task.Delay(200);
-
-            await leftHandBtn.TranslateTo(oldX, oldY);
-        }
     }
 }

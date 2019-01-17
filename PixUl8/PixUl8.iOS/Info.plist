@@ -5,7 +5,6 @@
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
-		<integer>2</integer>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
@@ -36,5 +35,7 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>Please allow camera access to allow the app to take photos</string>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 </dict>
 </plist>

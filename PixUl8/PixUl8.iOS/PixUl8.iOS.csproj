@@ -70,7 +70,6 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\NativeNavigateService.cs" />
     <Compile Include="CustomRenderers\CameraFeedPreviewRenderer.cs" />
     <Compile Include="UIViews\UICameraPreview.cs" />
   </ItemGroup>

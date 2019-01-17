@@ -2,6 +2,7 @@
 
 extern void *mono_aot_module_PixUl8_iOS_info;
 extern void *mono_aot_module_mscorlib_info;
+extern void *mono_aot_module_Xamarin_Forms_Platform_iOS_info;
 extern void *mono_aot_module_Xamarin_Forms_Core_info;
 extern void *mono_aot_module_System_Core_info;
 extern void *mono_aot_module_System_info;
@@ -17,13 +18,13 @@ extern void *mono_aot_module_System_ServiceModel_Internals_info;
 extern void *mono_aot_module_System_Web_Services_info;
 extern void *mono_aot_module_System_Xml_Linq_info;
 extern void *mono_aot_module_Xamarin_Forms_Platform_info;
-extern void *mono_aot_module_Xamarin_Forms_Platform_iOS_info;
 extern void *mono_aot_module_Xamarin_Forms_Xaml_info;
 
 void xamarin_register_modules_impl ()
 {
 	mono_aot_register_module (mono_aot_module_PixUl8_iOS_info);
 	mono_aot_register_module (mono_aot_module_mscorlib_info);
+	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Platform_iOS_info);
 	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Core_info);
 	mono_aot_register_module (mono_aot_module_System_Core_info);
 	mono_aot_register_module (mono_aot_module_System_info);
@@ -39,7 +40,6 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_System_Web_Services_info);
 	mono_aot_register_module (mono_aot_module_System_Xml_Linq_info);
 	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Platform_info);
-	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Platform_iOS_info);
 	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Xaml_info);
 
 }

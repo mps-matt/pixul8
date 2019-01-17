@@ -5,8 +5,6 @@ using System.Runtime.CompilerServices;
 
 using Xamarin.Forms;
 
-using PixUl8.Services;
-
 namespace PixUl8.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged

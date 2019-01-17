@@ -7,6 +7,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 using System.ComponentModel;
 using System.Diagnostics;
+using UIKit;
 
 [assembly: ExportRenderer(typeof(CameraView), typeof(CameraFeedPreviewRenderer))]
 namespace PixUl8.iOS.CustomRenderers
@@ -21,11 +22,11 @@ namespace PixUl8.iOS.CustomRenderers
 
             switch (e.PropertyName)
             {
-                case nameof(CameraView.Camera):
-                    var options = (Element as CameraView)?.Camera;
-                    uiCameraPreview.Dispose();
-                    uiCameraPreview = new UICameraPreview(options.Value);
-                    SetNativeControl(uiCameraPreview);
+                case nameof(CameraView.Activated):
+                    bool activated = (Element as CameraView).Activated;
+                    uiCameraPreview.Activated = activated;
+                    if (activated)
+                        SetNativeControl(uiCameraPreview);
                     break;
 
                 default:
@@ -41,33 +42,23 @@ namespace PixUl8.iOS.CustomRenderers
 
             if (Control == null)
             {
-                uiCameraPreview = new UICameraPreview(e.NewElement.Camera);
-                SetNativeControl(uiCameraPreview);
-            }
-            if (e.OldElement != null)
-            {
-                // Unsubscribe
-                uiCameraPreview.Tapped -= OnCameraPreviewTapped;
-            }
-            if (e.NewElement != null)
-            {
-                // Subscribe
-                uiCameraPreview.Tapped += OnCameraPreviewTapped;
+                SetUpCamera(e.NewElement.Activated, e.NewElement.Camera);
             }
         }
 
-        private void OnCameraPreviewTapped(object sender, EventArgs e)
+
+        private void SetUpCamera(bool currentlyActive, CameraOptions options)
         {
-            if (uiCameraPreview.IsPreviewing)
-            {
-                uiCameraPreview.CaptureSession.StopRunning();
-                uiCameraPreview.IsPreviewing = false;
-            }
-            else
-            {
-                uiCameraPreview.CaptureSession.StartRunning();
-                uiCameraPreview.IsPreviewing = true;
-            }
+            //if (!currentlyActive)
+                //return;
+
+            uiCameraPreview?.Dispose();
+            uiCameraPreview = new UICameraPreview(options);
+            uiCameraPreview.Activated = currentlyActive;
+            if (currentlyActive)
+                SetNativeControl(uiCameraPreview);
         }
+
+
     }
 }

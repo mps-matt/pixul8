@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 
 using PixUl8.Views;
-using PixUl8.Services;
 using System.Windows.Input;
 using PixUl8.Models;
+using PixUl8.iOS.UIViews;
 
 namespace PixUl8.ViewModels
 {
@@ -17,29 +17,26 @@ namespace PixUl8.ViewModels
         public HomeViewModel()
         {
             Title = "Home";
+            MessagingCenter.Subscribe<UICameraPreview>(this, "PerformCameraSwitch", (sender) => {
+                ToggleCameraPosition();
+            });
         }
 
         #region Bindable Properties
 
-        private CameraOptions _cameraPosition = CameraOptions.Front;
-        public CameraOptions CameraPosition { 
-            get { return _cameraPosition; }
+        private bool _isFrontFacing = false;
+        public bool IsFrontFacingActive
+        {
+            get { return _isFrontFacing; }
             set 
             { 
-                SetProperty(ref _cameraPosition, value);
-                OnPropertyChanged("CameraSlideLeft");
-                OnPropertyChanged("CameraSlideRight");
+                SetProperty(ref _isFrontFacing, value); 
+                OnPropertyChanged("IsBackFacingActive");
             }
         }
-
-        public bool CameraSlideLeft
+        public bool IsBackFacingActive
         {
-            get { return _cameraPosition == CameraOptions.Front; }
-        }
-
-        public bool CameraSlideRight
-        {
-            get { return _cameraPosition == CameraOptions.Rear; }
+            get { return !_isFrontFacing; }
         }
 
 
@@ -53,8 +50,7 @@ namespace PixUl8.ViewModels
         public void ToggleCameraPosition()
         {
             //Simply invert this value, the property changed events will sort the rest!
-            var newOptions = CameraPosition == CameraOptions.Rear ? CameraOptions.Front : CameraOptions.Rear;
-            CameraPosition = newOptions;
+            IsFrontFacingActive = !IsFrontFacingActive;
         }
 
 

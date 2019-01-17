@@ -9,23 +9,23 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
+#import <WebKit/WebKit.h>
 #import <CoreSpotlight/CoreSpotlight.h>
 #import <QuartzCore/QuartzCore.h>
-#import <WebKit/WebKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
 @class UIApplicationDelegate;
-@class GLKViewDelegate;
-@class WKNavigationDelegate;
-@class UIKit_UIControlEventProxy;
-@class UIActionSheetDelegate;
-@class UICollectionViewDataSource;
-@class UIPickerViewModel;
 @class UIScrollViewDelegate;
-@class UISplitViewControllerDelegate;
 @class UITableViewSource;
+@class UIActionSheetDelegate;
+@class GLKViewDelegate;
+@class UIPickerViewModel;
+@class UISplitViewControllerDelegate;
 @class UIWebViewDelegate;
+@class WKNavigationDelegate;
+@class UICollectionViewDataSource;
+@class UIKit_UIControlEventProxy;
 @class Foundation_InternalNSNotificationHandler;
 @class Foundation_NSDispatcher;
 @class __MonoMac_NSActionDispatcher;
@@ -40,31 +40,6 @@
 @class Xamarin_Forms_Platform_iOS_ViewRenderer_2;
 @class PixUl8_iOS_CustomRenderers_CameraFeedPreviewRenderer;
 @class PixUl8_iOS_UIViews_UICameraPreview;
-@class OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource;
-@class OpenTK_Platform_iPhoneOS_iPhoneOSGameView;
-@class GLKit_GLKView__GLKViewDelegate;
-@class UIKit_UIBarButtonItem_Callback;
-@class UIKit_UIView_UIViewAppearance;
-@class UIKit_UIControl_UIControlAppearance;
-@class UIKit_UIButton_UIButtonAppearance;
-@class __UIGestureRecognizerToken;
-@class __UIGestureRecognizerParameterlessToken;
-@class UIKit_UIGestureRecognizer__UIGestureRecognizerDelegate;
-@class __UILongPressGestureRecognizer;
-@class __UITapGestureRecognizer;
-@class __UIPanGestureRecognizer;
-@class __UIPinchGestureRecognizer;
-@class UIKit_UINavigationBar_UINavigationBarAppearance;
-@class UIKit_UISearchBar__UISearchBarDelegate;
-@class UIKit_UITextField__UITextFieldDelegate;
-@class UIKit_UIScrollView__UIScrollViewDelegate;
-@class UIKit_UITextView__UITextViewDelegate;
-@class UIKit_UISplitViewController__UISplitViewControllerDelegate;
-@class UIKit_UISwitch_UISwitchAppearance;
-@class UIKit_UITabBarController__UITabBarControllerDelegate;
-@class UIKit_UIWebView__UIWebViewDelegate;
-@class __NSObject_Disposer;
-@class __XamarinObjectObserver;
 @class Xamarin_Forms_Platform_iOS_iOS7ButtonContainer;
 @class Xamarin_Forms_Platform_iOS_GlobalCloseContextGestureRecognizer;
 @class Xamarin_Forms_Platform_iOS_ModalWrapper;
@@ -139,33 +114,33 @@
 @class Xamarin_Forms_Platform_iOS_NavigationMenuRenderer_DataSource;
 @class Xamarin_Forms_Platform_iOS_NavigationRenderer_SecondaryToolbar;
 @class Xamarin_Forms_Platform_iOS_NavigationRenderer_ParentingViewController;
+@class OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource;
+@class OpenTK_Platform_iPhoneOS_iPhoneOSGameView;
+@class GLKit_GLKView__GLKViewDelegate;
+@class UIKit_UIBarButtonItem_Callback;
+@class UIKit_UIView_UIViewAppearance;
+@class UIKit_UIControl_UIControlAppearance;
+@class UIKit_UIButton_UIButtonAppearance;
+@class __UIGestureRecognizerToken;
+@class __UIGestureRecognizerParameterlessToken;
+@class UIKit_UIGestureRecognizer__UIGestureRecognizerDelegate;
+@class __UILongPressGestureRecognizer;
+@class __UITapGestureRecognizer;
+@class __UIPanGestureRecognizer;
+@class __UIPinchGestureRecognizer;
+@class UIKit_UINavigationBar_UINavigationBarAppearance;
+@class UIKit_UISearchBar__UISearchBarDelegate;
+@class UIKit_UITextField__UITextFieldDelegate;
+@class UIKit_UIScrollView__UIScrollViewDelegate;
+@class UIKit_UITextView__UITextViewDelegate;
+@class UIKit_UISplitViewController__UISplitViewControllerDelegate;
+@class UIKit_UISwitch_UISwitchAppearance;
+@class UIKit_UITabBarController__UITabBarControllerDelegate;
+@class UIKit_UIWebView__UIWebViewDelegate;
+@class __NSObject_Disposer;
+@class __XamarinObjectObserver;
 
 @interface UIApplicationDelegate : NSObject<UIApplicationDelegate> {
-}
-	-(id) init;
-@end
-
-@interface GLKViewDelegate : NSObject<GLKViewDelegate> {
-}
-	-(id) init;
-@end
-
-@interface WKNavigationDelegate : NSObject<WKNavigationDelegate> {
-}
-	-(id) init;
-@end
-
-@interface UIActionSheetDelegate : NSObject<UIActionSheetDelegate> {
-}
-	-(id) init;
-@end
-
-@interface UICollectionViewDataSource : NSObject<UICollectionViewDataSource> {
-}
-	-(id) init;
-@end
-
-@interface UIPickerViewModel : NSObject<UIPickerViewDataSource, UIPickerViewDelegate> {
 }
 	-(id) init;
 @end
@@ -175,17 +150,42 @@
 	-(id) init;
 @end
 
-@interface UISplitViewControllerDelegate : NSObject<UISplitViewControllerDelegate> {
-}
-	-(id) init;
-@end
-
 @interface UITableViewSource : NSObject<UIScrollViewDelegate> {
 }
 	-(id) init;
 @end
 
+@interface UIActionSheetDelegate : NSObject<UIActionSheetDelegate> {
+}
+	-(id) init;
+@end
+
+@interface GLKViewDelegate : NSObject<GLKViewDelegate> {
+}
+	-(id) init;
+@end
+
+@interface UIPickerViewModel : NSObject<UIPickerViewDataSource, UIPickerViewDelegate> {
+}
+	-(id) init;
+@end
+
+@interface UISplitViewControllerDelegate : NSObject<UISplitViewControllerDelegate> {
+}
+	-(id) init;
+@end
+
 @interface UIWebViewDelegate : NSObject<UIWebViewDelegate> {
+}
+	-(id) init;
+@end
+
+@interface WKNavigationDelegate : NSObject<WKNavigationDelegate> {
+}
+	-(id) init;
+@end
+
+@interface UICollectionViewDataSource : NSObject<UICollectionViewDataSource> {
 }
 	-(id) init;
 @end
@@ -255,68 +255,6 @@
 	-(void) drawRect:(CGRect)p0;
 	-(void) touchesBegan:(NSSet *)p0 withEvent:(UIEvent *)p1;
 	-(BOOL) conformsToProtocol:(void *)p0;
-@end
-
-@interface OpenTK_Platform_iPhoneOS_iPhoneOSGameView : UIView {
-}
-	-(void) release;
-	-(id) retain;
-	-(int) xamarinGetGCHandle;
-	-(void) xamarinSetGCHandle: (int) gchandle;
-	+(Class) layerClass;
-	-(void) layoutSubviews;
-	-(void) willMoveToWindow:(UIWindow *)p0;
-	-(BOOL) conformsToProtocol:(void *)p0;
-	-(id) initWithCoder:(NSCoder *)p0;
-	-(id) initWithFrame:(CGRect)p0;
-@end
-
-@interface UIKit_UIView_UIViewAppearance : NSObject {
-}
-	-(void) release;
-	-(id) retain;
-	-(int) xamarinGetGCHandle;
-	-(void) xamarinSetGCHandle: (int) gchandle;
-	-(UIColor *) tintColor;
-	-(BOOL) conformsToProtocol:(void *)p0;
-@end
-
-@interface UIKit_UIControl_UIControlAppearance : UIKit_UIView_UIViewAppearance {
-}
-@end
-
-@interface UIKit_UIButton_UIButtonAppearance : UIKit_UIControl_UIControlAppearance {
-}
-	-(UIImage *) backgroundImageForState:(NSUInteger)p0;
-	-(UIColor *) titleColorForState:(NSUInteger)p0;
-	-(UIColor *) titleShadowColorForState:(NSUInteger)p0;
-@end
-
-@interface __UIGestureRecognizerToken : NSObject {
-}
-	-(void) release;
-	-(id) retain;
-	-(int) xamarinGetGCHandle;
-	-(void) xamarinSetGCHandle: (int) gchandle;
-	-(BOOL) conformsToProtocol:(void *)p0;
-	-(id) init;
-@end
-
-@interface __UIGestureRecognizerParameterlessToken : __UIGestureRecognizerToken {
-}
-	-(void) target;
-@end
-
-@interface UIKit_UINavigationBar_UINavigationBarAppearance : UIKit_UIView_UIViewAppearance {
-}
-	-(UIColor *) barTintColor;
-	-(NSDictionary *) largeTitleTextAttributes;
-	-(NSDictionary *) titleTextAttributes;
-@end
-
-@interface UIKit_UISwitch_UISwitchAppearance : UIKit_UIControl_UIControlAppearance {
-}
-	-(UIColor *) onTintColor;
 @end
 
 @interface Xamarin_Forms_Platform_iOS_ViewRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
@@ -619,6 +557,68 @@
 }
 	-(CGSize) sizeThatFits:(CGSize)p0;
 	-(id) init;
+@end
+
+@interface OpenTK_Platform_iPhoneOS_iPhoneOSGameView : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	+(Class) layerClass;
+	-(void) layoutSubviews;
+	-(void) willMoveToWindow:(UIWindow *)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) initWithCoder:(NSCoder *)p0;
+	-(id) initWithFrame:(CGRect)p0;
+@end
+
+@interface UIKit_UIView_UIViewAppearance : NSObject {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(UIColor *) tintColor;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface UIKit_UIControl_UIControlAppearance : UIKit_UIView_UIViewAppearance {
+}
+@end
+
+@interface UIKit_UIButton_UIButtonAppearance : UIKit_UIControl_UIControlAppearance {
+}
+	-(UIImage *) backgroundImageForState:(NSUInteger)p0;
+	-(UIColor *) titleColorForState:(NSUInteger)p0;
+	-(UIColor *) titleShadowColorForState:(NSUInteger)p0;
+@end
+
+@interface __UIGestureRecognizerToken : NSObject {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface __UIGestureRecognizerParameterlessToken : __UIGestureRecognizerToken {
+}
+	-(void) target;
+@end
+
+@interface UIKit_UINavigationBar_UINavigationBarAppearance : UIKit_UIView_UIViewAppearance {
+}
+	-(UIColor *) barTintColor;
+	-(NSDictionary *) largeTitleTextAttributes;
+	-(NSDictionary *) titleTextAttributes;
+@end
+
+@interface UIKit_UISwitch_UISwitchAppearance : UIKit_UIControl_UIControlAppearance {
+}
+	-(UIColor *) onTintColor;
 @end
 
 
