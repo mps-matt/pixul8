@@ -18,7 +18,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>8.0</string>
+	<string>10.0</string>
 	<key>CFBundleDisplayName</key>
 	<string>PixUl8</string>
 	<key>CFBundleIdentifier</key>
@@ -28,7 +28,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
-	<string>PixUl8</string>
+	<string>PixUL8</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>UIStatusBarHidden</key>
@@ -37,5 +37,11 @@
 	<string>Please allow camera access to allow the app to take photos</string>
 	<key>UIRequiresFullScreen</key>
 	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Please allow Photo Library access to save photos</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Please allow Photo Library access to save photos</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Please allow Photo Library access to save photos</string>
 </dict>
 </plist>

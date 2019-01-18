@@ -8,14 +8,16 @@
 #include <objc/message.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 #import <GLKit/GLKit.h>
 #import <WebKit/WebKit.h>
+#import <Photos/Photos.h>
 #import <CoreSpotlight/CoreSpotlight.h>
 #import <QuartzCore/QuartzCore.h>
-#import <AVFoundation/AVFoundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
 @class UIApplicationDelegate;
+@class AVCapturePhotoCaptureDelegate;
 @class UIScrollViewDelegate;
 @class UITableViewSource;
 @class UIActionSheetDelegate;
@@ -39,6 +41,7 @@
 @class Xamarin_Forms_Platform_iOS_VisualElementRenderer_1;
 @class Xamarin_Forms_Platform_iOS_ViewRenderer_2;
 @class PixUl8_iOS_CustomRenderers_CameraFeedPreviewRenderer;
+@class PixUl8_iOS_Delegates_PhotoCaptureDelegate;
 @class PixUl8_iOS_UIViews_UICameraPreview;
 @class Xamarin_Forms_Platform_iOS_iOS7ButtonContainer;
 @class Xamarin_Forms_Platform_iOS_GlobalCloseContextGestureRecognizer;
@@ -145,6 +148,11 @@
 	-(id) init;
 @end
 
+@interface AVCapturePhotoCaptureDelegate : NSObject<AVCapturePhotoCaptureDelegate> {
+}
+	-(id) init;
+@end
+
 @interface UIScrollViewDelegate : NSObject<UIScrollViewDelegate> {
 }
 	-(id) init;
@@ -246,6 +254,17 @@
 	-(id) init;
 @end
 
+@interface PixUl8_iOS_Delegates_PhotoCaptureDelegate : NSObject<AVCapturePhotoCaptureDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) captureOutput:(AVCapturePhotoOutput *)p0 didFinishProcessingPhotoSampleBuffer:(id)p1 previewPhotoSampleBuffer:(id)p2 resolvedSettings:(AVCaptureResolvedPhotoSettings *)p3 bracketSettings:(AVCaptureBracketedStillImageSettings *)p4 error:(NSError *)p5;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
 @interface PixUl8_iOS_UIViews_UICameraPreview : UIView {
 }
 	-(void) release;
@@ -253,7 +272,10 @@
 	-(int) xamarinGetGCHandle;
 	-(void) xamarinSetGCHandle: (int) gchandle;
 	-(void) drawRect:(CGRect)p0;
-	-(void) touchesBegan:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(void) touchesMoved:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(void) touchesEnded:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(void) didMoveToWindow;
+	-(void) observeValueForKeyPath:(NSString *)p0 ofObject:(NSObject *)p1 change:(NSDictionary *)p2 context:(void *)p3;
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 

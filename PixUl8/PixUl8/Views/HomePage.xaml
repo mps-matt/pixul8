@@ -29,17 +29,16 @@
                                             Camera="Rear" 
                                             Activated="{Binding IsBackFacingActive}"
                                             HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
-                       
                     <Button
                         Grid.Row="1"
-                        Grid.Column="2"
+                        Grid.Column="0"
                         BorderColor="White"
                         BorderWidth="5"
                         BorderRadius="10"
-                        Margin="30, 0, -10, 50"
+                        Margin="-12, 0, 30, 50"
                         HeightRequest="100"
                         WidthRequest="20"
-                        HorizontalOptions="End"
+                        HorizontalOptions="Start"
                         VerticalOptions="End"
                         BackgroundColor="White"
                         TextColor="Maroon"
@@ -48,9 +47,11 @@
                         Command="{Binding ToggleCameraPositionCommand}"
                     >
                     <Button.GestureRecognizers>
-                            <SwipeGestureRecognizer Direction="Left" Threshold="2" Command="{Binding ToggleCameraPositionCommand}"/>
+                            <SwipeGestureRecognizer Direction="Right" Threshold="2" Command="{Binding ToggleCameraPositionCommand}"/>
                     </Button.GestureRecognizers>
-                    </Button>         
+                    </Button>  
+                    
+                    
                 </Grid>             
           </ExtensionViews:XFFlipView.FrontView>
           
@@ -72,27 +73,27 @@
                                                 Activated="{Binding IsFrontFacingActive}"
                                                 HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
                         
-                        <Button
-                            Grid.Row="1"
-                            Grid.Column="0"
-                            BorderColor="White"
-                            BorderWidth="5"
-                            BorderRadius="10"
-                            Margin="-12, 0, 30, 50"
-                            HeightRequest="100"
-                            WidthRequest="20"
-                            HorizontalOptions="Start"
-                            VerticalOptions="End"
-                            BackgroundColor="White"
-                            TextColor="Maroon"
-                            Text="REAR"
-                            FontSize="Small"
-                            Command="{Binding ToggleCameraPositionCommand}"
-                        >
-                        <Button.GestureRecognizers>
-                                <SwipeGestureRecognizer Direction="Right" Threshold="2" Command="{Binding ToggleCameraPositionCommand}"/>
-                        </Button.GestureRecognizers>
-                        </Button>                        
+                    <Button
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        BorderColor="White"
+                        BorderWidth="5"
+                        BorderRadius="10"
+                        Margin="30, 0, -10, 50"
+                        HeightRequest="100"
+                        WidthRequest="20"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"
+                        BackgroundColor="White"
+                        TextColor="Maroon"
+                        Text="BACK"
+                        FontSize="Small"
+                        Command="{Binding ToggleCameraPositionCommand}"
+                    >
+                    <Button.GestureRecognizers>
+                            <SwipeGestureRecognizer Direction="Left" Threshold="2" Command="{Binding ToggleCameraPositionCommand}"/>
+                    </Button.GestureRecognizers>
+                    </Button>                       
                     </Grid>
           </ExtensionViews:XFFlipView.BackView>
             

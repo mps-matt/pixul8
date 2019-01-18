@@ -1,13 +1,19 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading.Tasks;
 using AVFoundation;
 using CoreGraphics;
+using CoreMedia;
 using Foundation;
+using PixUl8.Interfaces;
 using PixUl8.Models;
 using UIKit;
 using Xamarin.Forms;
-
+using CoreFoundation;
+using CoreVideo;
+using Photos;
+using PixUl8.iOS.Delegates;
 
 //This code came from https://github.com/xamarin/xamarin-forms-samples/blob/master/CustomRenderers/View/iOS/UICameraPreview.cs
 // - It seems that the tutorial i was following assumes this is built intro xamarin but i didn't have it so found it myself!
@@ -24,6 +30,9 @@ namespace PixUl8.iOS.UIViews
         private AVCaptureVideoPreviewLayer _previewLayer;
         private AVCaptureDevice _device;
         private AVCaptureDeviceInput _input;
+        private AVCapturePhotoOutput _photoOutput;
+        private PhotoCaptureDelegate _delegate;
+        private bool _forcePressed = false;
 
         private readonly CameraOptions _cameraOptions;
 
@@ -45,9 +54,6 @@ namespace PixUl8.iOS.UIViews
         }
 
 
-        public event EventHandler<EventArgs> Tapped;
-
-        //public AVCaptureDeviceInput CurrentInput;
         public AVCaptureSession CaptureSession = new AVCaptureSession();
 
 
@@ -64,33 +70,66 @@ namespace PixUl8.iOS.UIViews
             _previewLayer.Frame = rect;
         }
 
-        public override void TouchesBegan (NSSet touches, UIEvent evt)
+        public override void TouchesMoved(NSSet touches, UIEvent evt)
         {
-            base.TouchesBegan (touches, evt);
-            OnTapped ();
-        }
+            base.TouchesMoved(touches, evt);
+            UITouch touch = touches.AnyObject as UITouch;
+            if (touch != null)
+            {
+                var force = touch.Force;
+                var maxForce = touch.MaximumPossibleForce;
+                if (force == maxForce && !_forcePressed)
+                {
+                    DependencyService.Get<IHapticService>().InvokeHeavyHaptic();
+                    _forcePressed = true;
+                }
+                else
+                {
+                    TapToFocus();
+                }
 
-        protected virtual void OnTapped ()
-        {
-            var eventHandler = Tapped;
-            if (eventHandler != null) {
-                eventHandler (this, new EventArgs ());
             }
         }
+
+        public override void TouchesEnded (NSSet touches, UIEvent evt)
+        {
+            base.TouchesEnded(touches, evt);
+
+            if (_forcePressed)
+            {                
+                TakePhoto();
+                _forcePressed = false;
+            }
+
+        }
+
+        private void TakePhoto()
+        {
+            //First Invoke the haptic engine and play sound effect, let the user know they triggered 
+            //a picture in feeling and sound
+            DependencyService.Get<IHapticService>().InvokeHeavyHaptic();
+
+            this.Layer.Opacity = 0;
+            UIView.Animate(0.25, () => {
+                this.Layer.Opacity = 1;
+            });
+
+
+            _photoOutput.CapturePhoto(GetCurrentPhotoSettings(), _delegate);
+        }
+
+
+
+        private void TapToFocus()
+        {
+
+        }
+
 
         private void StartRunning()
         {
             CaptureSession.StartRunning();
-            //CaptureSession.StopRunning();
-            //if (CurrentInput != null)
-            //{
-            //    CaptureSession.RemoveInput(CurrentInput);
-            //}
-
-            //CurrentInput = _input;
-            //CaptureSession.AddInput(CurrentInput);
-            //CaptureSession.StartRunning();
-            //Layer.AddSublayer(_previewLayer);
+            StartObservers();
         }
 
         private void StopRunning()
@@ -109,17 +148,25 @@ namespace PixUl8.iOS.UIViews
 
             var videoDevices = AVCaptureDevice.DevicesWithMediaType(AVMediaType.Video);
             var cameraPosition = (_cameraOptions == CameraOptions.Front) ? AVCaptureDevicePosition.Front : AVCaptureDevicePosition.Back;
-            var device = videoDevices.FirstOrDefault(d => d.Position == cameraPosition);
+            _device = videoDevices.FirstOrDefault(d => d.Position == cameraPosition);
 
-            if (device == null)
+            if (_device == null)
             {
                 return;
             }
 
             NSError error;
-            var input = new AVCaptureDeviceInput(device, out error);
+            var input = new AVCaptureDeviceInput(_device, out error);
             CaptureSession.AddInput(input);
+
+            _photoOutput = new AVCapturePhotoOutput();
+            _photoOutput.IsHighResolutionCaptureEnabled = true;
+            CaptureSession.AddOutput(_photoOutput);
+
+
             Layer.AddSublayer(_previewLayer);
+
+            _delegate = new PhotoCaptureDelegate();
 
 
             #region Handle For Swiping Gestures - This is needed as the Forms gestures seems too buggy, an I can't get to recognise the gestures correctly
@@ -142,16 +189,52 @@ namespace PixUl8.iOS.UIViews
             #endregion
         }
 
+        public override void MovedToWindow()
+        {
+            base.MovedToWindow();
+            if (Activated)
+                StartObservers();
+        }
+
+        public void StartObservers()
+        {
+            var session = AVAudioSession.SharedInstance();
+            session.SetActive(true);
+            session.AddObserver(this, "outputVolume", NSKeyValueObservingOptions.New, IntPtr.Zero);
+        }
+
+        public override void ObserveValue(NSString keyPath, NSObject ofObject, NSDictionary change, IntPtr context)
+        {
+            TakePhoto();
+        }
+
 
         private void SwipeHandler(SwipeType type)
         {
             //If correct swipe for camera in use
-            if ( (type == SwipeType.Left && _cameraOptions == CameraOptions.Rear) ||
-                    (type == SwipeType.Right && _cameraOptions == CameraOptions.Front) )
+            if ( (type == SwipeType.Left && _cameraOptions == CameraOptions.Front) ||
+                    (type == SwipeType.Right && _cameraOptions == CameraOptions.Rear) )
             {
                 //raise camera switched event via message center
                 MessagingCenter.Send<UICameraPreview>(this, "PerformCameraSwitch");
             }
+        }
+
+
+
+
+
+
+
+        private AVCapturePhotoSettings GetCurrentPhotoSettings()
+        {
+            AVCapturePhotoSettings photoSettings = null;
+
+            photoSettings = AVCapturePhotoSettings.Create();
+            photoSettings.FlashMode = AVCaptureFlashMode.Off;
+            photoSettings.IsHighResolutionPhotoEnabled = true;
+
+            return photoSettings;
         }
 
     }

@@ -2,13 +2,20 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-
+using PixUl8.Interfaces;
 using Xamarin.Forms;
 
 namespace PixUl8.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
+        protected IHapticService _hapticService;
+        public BaseViewModel(IHapticService hapticService)
+        {
+            _hapticService = hapticService ?? DependencyService.Get<IHapticService>();
+        }
+
+
         bool isBusy = false;
         public bool IsBusy
         {

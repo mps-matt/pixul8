@@ -23,6 +23,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\NativeViews\CameraView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\CameraOptions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\ExtensionViews\XFFlipView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IHapticService.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\HomePage.xaml">
@@ -35,6 +36,7 @@
     <Folder Include="$(MSBuildThisFileDirectory)Resources\" />
     <Folder Include="$(MSBuildThisFileDirectory)Services\" />
     <Folder Include="$(MSBuildThisFileDirectory)Views\ExtensionViews\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="$(MSBuildThisFileDirectory)Resources\ToggleCameraButton.png" />
