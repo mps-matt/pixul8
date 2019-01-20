@@ -12,6 +12,7 @@
 #import <GLKit/GLKit.h>
 #import <WebKit/WebKit.h>
 #import <Photos/Photos.h>
+#import <MediaPlayer/MediaPlayer.h>
 #import <CoreSpotlight/CoreSpotlight.h>
 #import <QuartzCore/QuartzCore.h>
 #import <CoreGraphics/CoreGraphics.h>
@@ -36,11 +37,11 @@
 @class Foundation_NSAsyncDispatcher;
 @class __MonoMac_NSAsyncActionDispatcher;
 @class __MonoMac_NSAsyncSynchronizationContextDispatcher;
-@class Xamarin_Forms_Platform_iOS_FormsApplicationDelegate;
-@class AppDelegate;
 @class Xamarin_Forms_Platform_iOS_VisualElementRenderer_1;
 @class Xamarin_Forms_Platform_iOS_ViewRenderer_2;
 @class PixUl8_iOS_CustomRenderers_CameraFeedPreviewRenderer;
+@class Xamarin_Forms_Platform_iOS_FormsApplicationDelegate;
+@class AppDelegate;
 @class PixUl8_iOS_Delegates_PhotoCaptureDelegate;
 @class PixUl8_iOS_UIViews_UICameraPreview;
 @class Xamarin_Forms_Platform_iOS_iOS7ButtonContainer;
@@ -198,33 +199,6 @@
 	-(id) init;
 @end
 
-@interface Xamarin_Forms_Platform_iOS_FormsApplicationDelegate : NSObject<UIApplicationDelegate> {
-}
-	-(void) release;
-	-(id) retain;
-	-(int) xamarinGetGCHandle;
-	-(void) xamarinSetGCHandle: (int) gchandle;
-	-(UIWindow *) window;
-	-(void) setWindow:(UIWindow *)p0;
-	-(BOOL) application:(UIApplication *)p0 continueUserActivity:(NSUserActivity *)p1 restorationHandler:(id)p2;
-	-(void) applicationDidEnterBackground:(UIApplication *)p0;
-	-(BOOL) application:(UIApplication *)p0 didFinishLaunchingWithOptions:(NSDictionary *)p1;
-	-(void) applicationDidBecomeActive:(UIApplication *)p0;
-	-(void) applicationWillResignActive:(UIApplication *)p0;
-	-(void) application:(UIApplication *)p0 didUpdateUserActivity:(NSUserActivity *)p1;
-	-(void) applicationWillEnterForeground:(UIApplication *)p0;
-	-(BOOL) application:(UIApplication *)p0 willFinishLaunchingWithOptions:(NSDictionary *)p1;
-	-(void) applicationWillTerminate:(UIApplication *)p0;
-	-(BOOL) conformsToProtocol:(void *)p0;
-	-(id) init;
-@end
-
-@interface AppDelegate : Xamarin_Forms_Platform_iOS_FormsApplicationDelegate<UIApplicationDelegate> {
-}
-	-(BOOL) application:(UIApplication *)p0 didFinishLaunchingWithOptions:(NSDictionary *)p1;
-	-(id) init;
-@end
-
 @interface Xamarin_Forms_Platform_iOS_VisualElementRenderer_1 : UIView {
 }
 	-(void) release;
@@ -254,6 +228,36 @@
 	-(id) init;
 @end
 
+@interface Xamarin_Forms_Platform_iOS_FormsApplicationDelegate : NSObject<UIApplicationDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(UIWindow *) window;
+	-(void) setWindow:(UIWindow *)p0;
+	-(BOOL) application:(UIApplication *)p0 continueUserActivity:(NSUserActivity *)p1 restorationHandler:(id)p2;
+	-(void) applicationDidEnterBackground:(UIApplication *)p0;
+	-(BOOL) application:(UIApplication *)p0 didFinishLaunchingWithOptions:(NSDictionary *)p1;
+	-(void) applicationDidBecomeActive:(UIApplication *)p0;
+	-(void) applicationWillResignActive:(UIApplication *)p0;
+	-(void) application:(UIApplication *)p0 didUpdateUserActivity:(NSUserActivity *)p1;
+	-(void) applicationWillEnterForeground:(UIApplication *)p0;
+	-(BOOL) application:(UIApplication *)p0 willFinishLaunchingWithOptions:(NSDictionary *)p1;
+	-(void) applicationWillTerminate:(UIApplication *)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface AppDelegate : Xamarin_Forms_Platform_iOS_FormsApplicationDelegate<UIApplicationDelegate> {
+}
+	-(BOOL) application:(UIApplication *)p0 didFinishLaunchingWithOptions:(NSDictionary *)p1;
+	-(void) applicationDidEnterBackground:(UIApplication *)p0;
+	-(void) applicationWillEnterForeground:(UIApplication *)p0;
+	-(void) observeValueForKeyPath:(NSString *)p0 ofObject:(NSObject *)p1 change:(NSDictionary *)p2 context:(void *)p3;
+	-(id) init;
+@end
+
 @interface PixUl8_iOS_Delegates_PhotoCaptureDelegate : NSObject<AVCapturePhotoCaptureDelegate> {
 }
 	-(void) release;
@@ -274,8 +278,6 @@
 	-(void) drawRect:(CGRect)p0;
 	-(void) touchesMoved:(NSSet *)p0 withEvent:(UIEvent *)p1;
 	-(void) touchesEnded:(NSSet *)p0 withEvent:(UIEvent *)p1;
-	-(void) didMoveToWindow;
-	-(void) observeValueForKeyPath:(NSString *)p0 ofObject:(NSObject *)p1 change:(NSDictionary *)p2 context:(void *)p3;
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 

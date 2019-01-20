@@ -19,17 +19,17 @@ namespace PixUl8
 
 		protected override void OnStart ()
 		{
-			// Handle when your app starts
-		}
+            MessagingCenter.Send<App>(this, "OnStart");
+        }
 
 		protected override void OnSleep ()
 		{
-			// Handle when your app sleeps
-		}
+            MessagingCenter.Send<App>(this, "OnSleep");
+        }
 
 		protected override void OnResume ()
 		{
-			// Handle when your app resumes
+            MessagingCenter.Send<App>(this, "OnResume");
 		}
 	}
 }

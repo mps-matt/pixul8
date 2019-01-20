@@ -14,6 +14,8 @@ using CoreFoundation;
 using CoreVideo;
 using Photos;
 using PixUl8.iOS.Delegates;
+using MediaPlayer;
+using System.Threading;
 
 //This code came from https://github.com/xamarin/xamarin-forms-samples/blob/master/CustomRenderers/View/iOS/UICameraPreview.cs
 // - It seems that the tutorial i was following assumes this is built intro xamarin but i didn't have it so found it myself!
@@ -29,10 +31,11 @@ namespace PixUl8.iOS.UIViews
     {
         private AVCaptureVideoPreviewLayer _previewLayer;
         private AVCaptureDevice _device;
-        private AVCaptureDeviceInput _input;
+
         private AVCapturePhotoOutput _photoOutput;
         private PhotoCaptureDelegate _delegate;
         private bool _forcePressed = false;
+        private bool _canTakePicture = true;
 
         private readonly CameraOptions _cameraOptions;
 
@@ -96,7 +99,8 @@ namespace PixUl8.iOS.UIViews
             base.TouchesEnded(touches, evt);
 
             if (_forcePressed)
-            {                
+            {
+                DependencyService.Get<IHapticService>().InvokeHeavyHaptic();
                 TakePhoto();
                 _forcePressed = false;
             }
@@ -105,17 +109,34 @@ namespace PixUl8.iOS.UIViews
 
         private void TakePhoto()
         {
-            //First Invoke the haptic engine and play sound effect, let the user know they triggered 
-            //a picture in feeling and sound
-            DependencyService.Get<IHapticService>().InvokeHeavyHaptic();
+            if (!Activated)
+                return;
+
+            if (!_canTakePicture)
+                return;
+
+
 
             this.Layer.Opacity = 0;
-            UIView.Animate(0.25, () => {
+            UIView.Animate(0.25, () =>
+            {
                 this.Layer.Opacity = 1;
             });
 
 
+            //First Invoke the haptic engine and play sound effect, let the user know they triggered 
+            //a picture in feeling and sound
+            DependencyService.Get<IHapticService>().InvokeLightHaptic();
+
             _photoOutput.CapturePhoto(GetCurrentPhotoSettings(), _delegate);
+            _canTakePicture = false;
+
+            //In 300ms time, re-enable picture taking
+            Task.Run(async () =>
+            {
+                await Task.Delay(300);
+                _canTakePicture = true;
+            });
         }
 
 
@@ -129,7 +150,6 @@ namespace PixUl8.iOS.UIViews
         private void StartRunning()
         {
             CaptureSession.StartRunning();
-            StartObservers();
         }
 
         private void StopRunning()
@@ -169,6 +189,13 @@ namespace PixUl8.iOS.UIViews
             _delegate = new PhotoCaptureDelegate();
 
 
+            //Subscribe to the volume change event, to abstractit ouf of here
+            MessagingCenter.Subscribe<AppDelegate>(this, "VolumeChange", (de) => { TakePhoto(); });
+
+
+
+
+
             #region Handle For Swiping Gestures - This is needed as the Forms gestures seems too buggy, an I can't get to recognise the gestures correctly
 
             UIButton leftHandButton = new UIButton();
@@ -189,25 +216,6 @@ namespace PixUl8.iOS.UIViews
             #endregion
         }
 
-        public override void MovedToWindow()
-        {
-            base.MovedToWindow();
-            if (Activated)
-                StartObservers();
-        }
-
-        public void StartObservers()
-        {
-            var session = AVAudioSession.SharedInstance();
-            session.SetActive(true);
-            session.AddObserver(this, "outputVolume", NSKeyValueObservingOptions.New, IntPtr.Zero);
-        }
-
-        public override void ObserveValue(NSString keyPath, NSObject ofObject, NSDictionary change, IntPtr context)
-        {
-            TakePhoto();
-        }
-
 
         private void SwipeHandler(SwipeType type)
         {
@@ -219,12 +227,6 @@ namespace PixUl8.iOS.UIViews
                 MessagingCenter.Send<UICameraPreview>(this, "PerformCameraSwitch");
             }
         }
-
-
-
-
-
-
 
         private AVCapturePhotoSettings GetCurrentPhotoSettings()
         {

@@ -42520,7 +42520,7 @@ _mono_aot_file_info:
 	.long 720,5840,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 145,44,128,213,158,1,157,118,143,140,48,192,24,254,147,71
+	.byte 74,116,169,14,124,144,201,229,88,67,72,119,222,33,151,105
 	.globl _mono_aot_module_Mono_Security_info
 	.align 3
 _mono_aot_module_Mono_Security_info:
