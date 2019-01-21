@@ -29,6 +29,8 @@ namespace PixUl8.iOS.UIViews
 
     public class UICameraPreview : UIView
     {
+        public static CGRect BOUNDS;
+
         private AVCaptureVideoPreviewLayer _previewLayer;
         private AVCaptureDevice _device;
 
@@ -71,6 +73,7 @@ namespace PixUl8.iOS.UIViews
         {
             base.Draw (rect);
             _previewLayer.Frame = rect;
+            BOUNDS = rect;
         }
 
         public override void TouchesMoved(NSSet touches, UIEvent evt)
@@ -127,6 +130,7 @@ namespace PixUl8.iOS.UIViews
             //First Invoke the haptic engine and play sound effect, let the user know they triggered 
             //a picture in feeling and sound
             DependencyService.Get<IHapticService>().InvokeLightHaptic();
+            
 
             _photoOutput.CapturePhoto(GetCurrentPhotoSettings(), _delegate);
             _canTakePicture = false;
@@ -162,7 +166,6 @@ namespace PixUl8.iOS.UIViews
             CaptureSession = new AVCaptureSession();
             _previewLayer = new AVCaptureVideoPreviewLayer(CaptureSession)
             {
-                Frame = Bounds,
                 VideoGravity = AVLayerVideoGravity.ResizeAspectFill
             };
 
@@ -234,7 +237,7 @@ namespace PixUl8.iOS.UIViews
 
             photoSettings = AVCapturePhotoSettings.Create();
             photoSettings.FlashMode = AVCaptureFlashMode.Off;
-            photoSettings.IsHighResolutionPhotoEnabled = true;
+            photoSettings.IsHighResolutionPhotoEnabled = false;
 
             return photoSettings;
         }
