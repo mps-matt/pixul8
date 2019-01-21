@@ -16,6 +16,7 @@ using Photos;
 using PixUl8.iOS.Delegates;
 using MediaPlayer;
 using System.Threading;
+using MoreLinq;
 
 //This code came from https://github.com/xamarin/xamarin-forms-samples/blob/master/CustomRenderers/View/iOS/UICameraPreview.cs
 // - It seems that the tutorial i was following assumes this is built intro xamarin but i didn't have it so found it myself!
@@ -163,20 +164,60 @@ namespace PixUl8.iOS.UIViews
 
         void Initialize ()
         {
+            AVCaptureDeviceType[] allTypes = new AVCaptureDeviceType[]
+            {
+                AVCaptureDeviceType.BuiltInDualCamera,
+                AVCaptureDeviceType.BuiltInMicrophone,
+                AVCaptureDeviceType.BuiltInTelephotoCamera,
+                AVCaptureDeviceType.BuiltInTrueDepthCamera,
+                AVCaptureDeviceType.BuiltInWideAngleCamera
+            };
+
+
             CaptureSession = new AVCaptureSession();
             _previewLayer = new AVCaptureVideoPreviewLayer(CaptureSession)
             {
-                VideoGravity = AVLayerVideoGravity.ResizeAspectFill
+                VideoGravity = AVLayerVideoGravity.ResizeAspectFill,
+                DrawsAsynchronously = true,
+                Speed = 1
             };
+            
 
-            var videoDevices = AVCaptureDevice.DevicesWithMediaType(AVMediaType.Video);
-            var cameraPosition = (_cameraOptions == CameraOptions.Front) ? AVCaptureDevicePosition.Front : AVCaptureDevicePosition.Back;
-            _device = videoDevices.FirstOrDefault(d => d.Position == cameraPosition);
+            var deviceSession = AVCaptureDeviceDiscoverySession.Create(allTypes, AVMediaType.Video, 
+                (_cameraOptions == CameraOptions.Front) ? AVCaptureDevicePosition.Front : AVCaptureDevicePosition.Back);
+ 
+            //Get best device, first one isi usually most hightech avaiable. 
+            //Only issue i see happening is iphon 2g only had a rear cameras but let's be real here.
+            //This app SHOULD NEVER be ran on an orignal iphone!!
+            var videoDevices = deviceSession.Devices;
+            _device = videoDevices[0];
 
             if (_device == null)
             {
                 return;
             }
+
+
+            NSError lockErr;
+            _device.LockForConfiguration(out lockErr);
+            #region Set up Device Variables
+
+            //Get the best format for this device - will select format that allows highest MINIMUM FPS possible
+            //Then by the highest resolution possible for highest fps
+
+            _device.ActiveFormat = _device.Formats.MaxBy(format => format.VideoSupportedFrameRateRanges.Max(fps => fps.MinFrameRate))
+            .MaxBy(format => format.HighResolutionStillImageDimensions.Width)
+            .MaxBy(format => format.HighResolutionStillImageDimensions.Height)
+            .First();
+
+            //Get the frame rates allowed by this format type (whetherr telophoto, treudedepth etc)
+            var highestFrameRate = _device.ActiveFormat.VideoSupportedFrameRateRanges.MaxBy(fps => fps.MinFrameRate);
+            _device.ActiveVideoMinFrameDuration = highestFrameRate.First().MinFrameDuration;
+            _device.ActiveVideoMaxFrameDuration = highestFrameRate.First().MaxFrameDuration;
+            
+            #endregion
+            _device.UnlockForConfiguration();
+
 
             NSError error;
             var input = new AVCaptureDeviceInput(_device, out error);

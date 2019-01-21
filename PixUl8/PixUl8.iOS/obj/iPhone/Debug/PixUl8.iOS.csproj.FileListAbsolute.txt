@@ -73,3 +73,5 @@
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/XamlC.stamp
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/PixUl8.iOS.csproj.CopyComplete
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/PixUl8.iOS.csprojAssemblyReference.cache
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/MoreLinq.dll
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/MoreLinq.pdb

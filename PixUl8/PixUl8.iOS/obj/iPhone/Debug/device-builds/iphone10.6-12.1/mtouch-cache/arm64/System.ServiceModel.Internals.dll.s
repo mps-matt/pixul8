@@ -951,7 +951,7 @@ bl _p_34
 adrp x16, mono_aot_System_ServiceModel_Internals_got@PAGE+0
 add x16, x16, mono_aot_System_ServiceModel_Internals_got@PAGEOFF
 ldr x15, [x16, #384]
-.word 0x928000f0
+.word 0x928008f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -10836,7 +10836,7 @@ bl _p_178
 adrp x16, mono_aot_System_ServiceModel_Internals_got@PAGE+0
 add x16, x16, mono_aot_System_ServiceModel_Internals_got@PAGEOFF
 ldr x15, [x16, #1544]
-.word 0x928005f0
+.word 0x928007f0
 .word 0xf2bffff0
 .word 0xf8706850
 .word 0xd63f0200
@@ -10847,7 +10847,7 @@ ldr x15, [x16, #1544]
 adrp x16, mono_aot_System_ServiceModel_Internals_got@PAGE+0
 add x16, x16, mono_aot_System_ServiceModel_Internals_got@PAGEOFF
 ldr x15, [x16, #1552]
-.word 0x928006f0
+.word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -10860,7 +10860,7 @@ ldr x15, [x16, #1552]
 adrp x16, mono_aot_System_ServiceModel_Internals_got@PAGE+0
 add x16, x16, mono_aot_System_ServiceModel_Internals_got@PAGEOFF
 ldr x15, [x16, #1560]
-.word 0x928000f0
+.word 0x928008f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -18941,7 +18941,7 @@ _mono_aot_file_info:
 	.long 368,3288,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 21,147,215,167,62,72,54,224,124,102,62,46,152,147,66,67
+	.byte 38,81,162,140,140,13,158,161,15,199,6,8,212,243,5,108
 	.globl _mono_aot_module_System_ServiceModel_Internals_info
 	.align 3
 _mono_aot_module_System_ServiceModel_Internals_info:
