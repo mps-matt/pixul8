@@ -65005,7 +65005,7 @@ _mono_aot_file_info:
 	.long 1248,16168,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 109,120,174,84,247,105,131,88,26,116,252,202,177,210,224,27
+	.byte 92,224,27,122,13,185,86,251,132,79,76,65,250,27,34,97
 	.globl _mono_aot_module_System_Net_Http_info
 	.align 3
 _mono_aot_module_System_Net_Http_info:

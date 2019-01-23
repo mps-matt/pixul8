@@ -129,10 +129,6 @@ namespace PixUl8.iOS.UIViews
                     DependencyService.Get<IHapticService>().InvokeHeavyHaptic();
                     _forcePressed = true;
                 }
-                else
-                {
-                    TapToFocus();
-                }
 
             }
         }
@@ -146,6 +142,11 @@ namespace PixUl8.iOS.UIViews
                 DependencyService.Get<IHapticService>().InvokeHeavyHaptic();
                 TakePhoto();
                 _forcePressed = false;
+            }
+            else
+            {
+                UITouch touch = touches.AnyObject as UITouch;
+                TapToFocus(touch.LocationInView(this));
             }
 
         }
@@ -185,12 +186,6 @@ namespace PixUl8.iOS.UIViews
 
 
 
-        private void TapToFocus()
-        {
-
-        }
-
-
         private void StartRunning()
         {
             CaptureSession.StartRunning();
@@ -212,8 +207,12 @@ namespace PixUl8.iOS.UIViews
                 AVCaptureDeviceType.BuiltInWideAngleCamera
             };
 
+            #region Gestures Handlers For Whole View
+
             UIPinchGestureRecognizer pinchToZoom = new UIPinchGestureRecognizer((obj) => PinchHandlerZoom(obj));
             this.AddGestureRecognizer(pinchToZoom);
+
+            #endregion
 
 
             CaptureSession = new AVCaptureSession();
@@ -328,6 +327,34 @@ namespace PixUl8.iOS.UIViews
             #endregion
         }
 
+
+        private void TapToFocus(CGPoint focusPoint)
+        {
+       
+            CGRect screenRect = UIScreen.MainScreen.Bounds;
+            var screenWidth = screenRect.Size.Width;
+            var screenHeight = screenRect.Size.Height;
+            double focus_x = (screenWidth-focusPoint.X) / screenWidth;
+            double focus_y = focusPoint.Y / screenHeight;
+
+
+            NSError err;
+            var interestPoint = new CGPoint(focus_x, focus_y);
+            _device.LockForConfiguration(out err);
+
+            if (_device.FocusPointOfInterestSupported)
+                _device.FocusPointOfInterest = interestPoint;
+
+            if (_device.ExposurePointOfInterestSupported)
+                _device.ExposurePointOfInterest = interestPoint;
+
+            //Might have to set auto exposure and focus BACK ON here
+            //_device.ExposureMode = AVCaptureExposureMode.AutoExpose;
+            //_device.FocusMode = AVCaptureFocusMode.AutoFocus;
+
+            _device.UnlockForConfiguration();
+
+        }
 
         private void PinchHandlerZoom(UIPinchGestureRecognizer recognizer)
         {
