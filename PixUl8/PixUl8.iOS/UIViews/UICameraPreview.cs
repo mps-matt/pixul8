@@ -70,6 +70,35 @@ namespace PixUl8.iOS.UIViews
         }
 
 
+        private double _maxZoomFactor = 1.0;
+        private double _minimumZoomFactor = 1.0;
+        private double _zoomFactor = 1.0;
+        public double ZoomFactor
+        {
+            get { return _zoomFactor; }
+            set
+            {
+                //It seems some camera allow supoer close up pixalated messes
+                //Restricting to 10x like the stock camera, at least for now!
+                if (value >= _minimumZoomFactor && value <= _maxZoomFactor && value <= 6.0)
+                {
+                    _zoomFactor = value;
+                }
+                else if (value < _minimumZoomFactor)
+                    _zoomFactor = _minimumZoomFactor;
+                else if (value > (6))
+                    _zoomFactor = 6;
+
+                NSError err;
+                _device.LockForConfiguration(out err);
+
+                _device.VideoZoomFactor = (nfloat)_zoomFactor;
+
+                _device.UnlockForConfiguration();
+            }
+        }
+
+
         public AVCaptureSession CaptureSession = new AVCaptureSession();
 
 
@@ -183,6 +212,9 @@ namespace PixUl8.iOS.UIViews
                 AVCaptureDeviceType.BuiltInWideAngleCamera
             };
 
+            UIPinchGestureRecognizer pinchToZoom = new UIPinchGestureRecognizer((obj) => PinchHandlerZoom(obj));
+            this.AddGestureRecognizer(pinchToZoom);
+
 
             CaptureSession = new AVCaptureSession();
             _previewLayer = new AVCaptureVideoPreviewLayer(CaptureSession)
@@ -224,6 +256,9 @@ namespace PixUl8.iOS.UIViews
             var highestFrameRate = _device.ActiveFormat.VideoSupportedFrameRateRanges.MaxBy(fps => fps.MinFrameRate);
             _device.ActiveVideoMinFrameDuration = highestFrameRate.First().MinFrameDuration;
             _device.ActiveVideoMaxFrameDuration = highestFrameRate.First().MaxFrameDuration;
+
+            _minimumZoomFactor = _device.MinAvailableVideoZoomFactor;
+            _maxZoomFactor = _device.MaxAvailableVideoZoomFactor;
             
             #endregion
             _device.UnlockForConfiguration();
@@ -243,7 +278,7 @@ namespace PixUl8.iOS.UIViews
             _delegate = new PhotoCaptureDelegate();
 
 
-            //Subscribe to the volume change event, to abstractit ouf of here
+            //Subscribe to the volume change event, to abstract it ouf of here
             MessagingCenter.Subscribe<AppDelegate>(this, "VolumeChange", (de) => { TakePhoto(); });
 
 
@@ -293,6 +328,17 @@ namespace PixUl8.iOS.UIViews
             #endregion
         }
 
+
+        private void PinchHandlerZoom(UIPinchGestureRecognizer recognizer)
+        {
+            if (recognizer.State == UIGestureRecognizerState.Began || recognizer.State == UIGestureRecognizerState.Changed)
+            {
+                ZoomFactor += recognizer.Scale > 1 ? 0.05 : -0.2;
+                //recognizer.View.Transform *= CGAffineTransform.MakeScale(recognizer.Scale, recognizer.Scale);
+                // Reset the gesture recognizer's scale - the next callback will get a delta from the current scale.
+                //recognizer.Scale = 1;
+            }
+        }
 
         private void SwipeHandlerSwitchCamera(SwipeType type)
         {
