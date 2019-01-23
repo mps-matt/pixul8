@@ -59,6 +59,16 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
+        private bool _flashOn = false;
+        public bool FlashOn
+        {
+            get { return _flashOn; }
+            set
+            {
+                _flashOn = value;
+            }
+        }
+
 
         public AVCaptureSession CaptureSession = new AVCaptureSession();
 
@@ -242,10 +252,12 @@ namespace PixUl8.iOS.UIViews
 
             #region Handle For Swiping Gestures - This is needed as the Forms gestures seems too buggy, an I can't get to recognise the gestures correctly
 
+            #region Swap Camera Buttons
+
             UIButton leftHandButton = new UIButton();
             leftHandButton.BackgroundColor = UIColor.Clear;
             leftHandButton.Frame = new CGRect(-50, 600, 150, 250);
-            var rightSwipeGesture = new UISwipeGestureRecognizer(() => SwipeHandler(SwipeType.Right)) { Direction = UISwipeGestureRecognizerDirection.Right };
+            var rightSwipeGesture = new UISwipeGestureRecognizer(() => SwipeHandlerSwitchCamera(SwipeType.Right)) { Direction = UISwipeGestureRecognizerDirection.Right };
             leftHandButton.AddGestureRecognizer(rightSwipeGesture);
             this.AddSubview(leftHandButton);
 
@@ -253,15 +265,36 @@ namespace PixUl8.iOS.UIViews
             UIButton rightHandButton = new UIButton();
             rightHandButton.BackgroundColor = UIColor.Clear;
             rightHandButton.Frame = new CGRect(275, 600, 100, 250);
-            var leftSwipeGesture = new UISwipeGestureRecognizer(() => SwipeHandler(SwipeType.Left)) { Direction = UISwipeGestureRecognizerDirection.Left };
+            var leftSwipeGesture = new UISwipeGestureRecognizer(() => SwipeHandlerSwitchCamera(SwipeType.Left)) { Direction = UISwipeGestureRecognizerDirection.Left };
             rightHandButton.AddGestureRecognizer(leftSwipeGesture);
             this.AddSubview(rightHandButton);
+
+            #endregion
+
+            #region Activate Flash Buttons
+
+            UIButton leftHandFlashButton = new UIButton();
+            leftHandFlashButton.BackgroundColor = UIColor.Clear;
+            leftHandFlashButton.Frame = new CGRect(-50, 400, 150, 200);
+            var rightSwipeFlashGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleFlash(SwipeType.Right)) { Direction = UISwipeGestureRecognizerDirection.Right };
+            leftHandFlashButton.AddGestureRecognizer(rightSwipeFlashGesture);
+            this.AddSubview(leftHandFlashButton);
+
+
+            UIButton rightHandFlashButton = new UIButton();
+            rightHandFlashButton.BackgroundColor = UIColor.Clear;
+            rightHandFlashButton.Frame = new CGRect(275, 400, 100, 200);
+            var leftSwipeFlashGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleFlash(SwipeType.Left)) { Direction = UISwipeGestureRecognizerDirection.Left };
+            rightHandFlashButton.AddGestureRecognizer(leftSwipeFlashGesture);
+            this.AddSubview(rightHandFlashButton);
+
+            #endregion 
 
             #endregion
         }
 
 
-        private void SwipeHandler(SwipeType type)
+        private void SwipeHandlerSwitchCamera(SwipeType type)
         {
             //If correct swipe for camera in use
             if ( (type == SwipeType.Left && _cameraOptions == CameraOptions.Front) ||
@@ -272,12 +305,20 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
+        private void SwipeHanlderToggleFlash(SwipeType type)
+        {
+            //If correct swipe for current flash settings
+            if ((type == SwipeType.Left && FlashOn == true) ||
+                (type == SwipeType.Right && FlashOn == false))
+                MessagingCenter.Send<UICameraPreview>(this, "PerformFlashSwitch");
+        }
+
         private AVCapturePhotoSettings GetCurrentPhotoSettings()
         {
             AVCapturePhotoSettings photoSettings = null;
 
             photoSettings = AVCapturePhotoSettings.Create();
-            photoSettings.FlashMode = AVCaptureFlashMode.Off;
+            photoSettings.FlashMode = FlashOn ? AVCaptureFlashMode.On : AVCaptureFlashMode.Off;
             photoSettings.IsHighResolutionPhotoEnabled = false;
 
             return photoSettings;

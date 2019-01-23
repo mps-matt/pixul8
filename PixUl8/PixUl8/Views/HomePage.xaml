@@ -27,8 +27,60 @@
                     <NativeViews:CameraView Grid.RowSpan="2" Grid.ColumnSpan="3"
                                             Grid.Row="0" Grid.Column="0"
                                             Camera="Rear" 
+                                            FlashOn="{Binding IsFlashActive}"
                                             Activated="{Binding IsBackFacingActive}"
                                             HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    
+<!--                    Turn on FLASH left-->
+                    <Button
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        IsVisible="{Binding IsFlashNotActive}"
+                        BorderColor="White"
+                        BorderWidth="5"
+                        BorderRadius="10"
+                        Margin="-12, 0, 30, 250"
+                        HeightRequest="100"
+                        WidthRequest="20"
+                        HorizontalOptions="Start"
+                        VerticalOptions="End"
+                        BackgroundColor="White"
+                        TextColor="Maroon"
+                        Text="FLASH ON"
+                        FontSize="Small"
+                        Command="{Binding ToggleFlashCommand}"
+                    >
+                    <Button.GestureRecognizers>
+                            <SwipeGestureRecognizer Direction="Right" Threshold="2" Command="{Binding ToggleFlashCommand}"/>
+                    </Button.GestureRecognizers>
+                    </Button> 
+                    
+<!--                    Turn off FLASH right-->
+                    <Button
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        BorderColor="White"
+                        IsVisible="{Binding IsFlashActive}"
+                        BorderWidth="5"
+                        BorderRadius="10"
+                        Margin="30, 0, -10, 250"
+                        HeightRequest="100"
+                        WidthRequest="20"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"
+                        BackgroundColor="White"
+                        TextColor="Maroon"
+                        Text="FLASH OFF"
+                        FontSize="Small"
+                        Command="{Binding ToggleFlashCommand}"
+                    >
+                    <Button.GestureRecognizers>
+                            <SwipeGestureRecognizer Direction="Left" Threshold="2" Command="{Binding ToggleFlashCommand}"/>
+                    </Button.GestureRecognizers>
+                    </Button> 
+                    
+                    
+<!--                    Toggle Camera Position-->
                     <Button
                         Grid.Row="1"
                         Grid.Column="0"
@@ -70,9 +122,60 @@
                         <NativeViews:CameraView Grid.RowSpan="2" Grid.ColumnSpan="3"
                                                 Grid.Row="0" Grid.Column="0"
                                                 Camera="Front" 
+                                                FlashOn="{Binding IsFlashActive}"
                                                 Activated="{Binding IsFrontFacingActive}"
                                                 HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
                         
+                    
+<!--                    Turn on FLASH left-->
+                    <Button
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        IsVisible="{Binding IsFlashNotActive}"
+                        BorderColor="White"
+                        BorderWidth="5"
+                        BorderRadius="10"
+                        Margin="-12, 0, 30, 250"
+                        HeightRequest="100"
+                        WidthRequest="20"
+                        HorizontalOptions="Start"
+                        VerticalOptions="End"
+                        BackgroundColor="White"
+                        TextColor="Maroon"
+                        Text="FLASH ON"
+                        FontSize="Small"
+                        Command="{Binding ToggleFlashCommand}"
+                    >
+                    <Button.GestureRecognizers>
+                            <SwipeGestureRecognizer Direction="Right" Threshold="2" Command="{Binding ToggleFlashCommand}"/>
+                    </Button.GestureRecognizers>
+                    </Button> 
+                    
+<!--                    Turn off FLASH right-->
+                    <Button
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        BorderColor="White"
+                        IsVisible="{Binding IsFlashActive}"
+                        BorderWidth="5"
+                        BorderRadius="10"
+                        Margin="30, 0, -10, 250"
+                        HeightRequest="100"
+                        WidthRequest="20"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"
+                        BackgroundColor="White"
+                        TextColor="Maroon"
+                        Text="FLASH OFF"
+                        FontSize="Small"
+                        Command="{Binding ToggleFlashCommand}"
+                    >
+                    <Button.GestureRecognizers>
+                            <SwipeGestureRecognizer Direction="Left" Threshold="2" Command="{Binding ToggleFlashCommand}"/>
+                    </Button.GestureRecognizers>
+                    </Button> 
+                    
+                    <!--                    Toggle Camera Position-->
                     <Button
                         Grid.Row="1"
                         Grid.Column="2"

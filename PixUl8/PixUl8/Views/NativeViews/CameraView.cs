@@ -29,6 +29,17 @@ namespace PixUl8.Views.NativeViews
                 view.Activated = (bool)newValue;
             });
 
+        public static readonly BindableProperty FlashOnProperty = BindableProperty.Create(
+            propertyName: "FlashOn",
+            returnType: typeof(bool),
+            declaringType: typeof(bool),
+            defaultValue: false,
+            defaultBindingMode: BindingMode.TwoWay,
+            propertyChanged: (bindable, oldValue, newValue) => {
+                var view = (CameraView)bindable;
+                view.FlashOn = (bool)newValue;
+            });
+
         public CameraOptions Camera {
             get { return (CameraOptions)GetValue (CameraProperty); }
             set { SetValue (CameraProperty, value); }
@@ -39,7 +50,12 @@ namespace PixUl8.Views.NativeViews
             set { SetValue (ActivatedProperty, value); }
         }
 
-        
-          
+        public bool FlashOn
+        {
+            get { return (bool)GetValue(FlashOnProperty); }
+            set { SetValue(FlashOnProperty, value); }
+        }
+
+
     }
 }

@@ -172,17 +172,17 @@
 		<data>
 		cKHpeNrTI5NDr9bTVHuK5ACXFf8=
 		</data>
-		<key>PixUL8.iOS.aotdata.arm64</key>
+		<key>PixUl8.iOS.aotdata.arm64</key>
 		<data>
-		cxLVXFoDr/UTey89lvsqumvr+9w=
+		znY7NATe54UU2jMH2J936YSWurE=
 		</data>
-		<key>PixUL8.iOS.exe</key>
+		<key>PixUl8.iOS.exe</key>
 		<data>
-		GQ8gf4snJoQ+QYm3FQFVhCWGmyM=
+		9lUHR2kRF7xI8W3UBt+nUGBTu4M=
 		</data>
-		<key>PixUL8.iOS.pdb</key>
+		<key>PixUl8.iOS.pdb</key>
 		<data>
-		hLZF8lcnqjeCqqc6izw9Zdr2AO8=
+		LIcvfXmeo2MqNWOhuu2gkNHlY2I=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -374,7 +374,7 @@
 		</data>
 		<key>Xamarin.iOS.pdb</key>
 		<data>
-		ZwOSvQ2Ta5GrKvx0J3rA0W3+lBk=
+		RrFYBRVa9o+6TKo/2ZRVgvImkC4=
 		</data>
 		<key>ar/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
@@ -1022,37 +1022,37 @@
 			rd7OUpdKib5Um271QtvJNLpTX4zcb0Owg/6lrvV/37w=
 			</data>
 		</dict>
-		<key>PixUL8.iOS.aotdata.arm64</key>
+		<key>PixUl8.iOS.aotdata.arm64</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cxLVXFoDr/UTey89lvsqumvr+9w=
+			znY7NATe54UU2jMH2J936YSWurE=
 			</data>
 			<key>hash2</key>
 			<data>
-			l3ijdKfLoQzkBwfzZ751bzSODaWFDBjQmbFuk7FCGW0=
+			xZeJkceJNTakNnsBNmLfiMSe1E4tydlsHR3ITDdgj/k=
 			</data>
 		</dict>
-		<key>PixUL8.iOS.exe</key>
+		<key>PixUl8.iOS.exe</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GQ8gf4snJoQ+QYm3FQFVhCWGmyM=
+			9lUHR2kRF7xI8W3UBt+nUGBTu4M=
 			</data>
 			<key>hash2</key>
 			<data>
-			4g1ddT3uXO4w8z6EZmNWsqaStt4tgsKnKJbqqYGfxH8=
+			grYBsvPE2MNZiN24LJlNWc12n1l4CejYplnJFq2IrXo=
 			</data>
 		</dict>
-		<key>PixUL8.iOS.pdb</key>
+		<key>PixUl8.iOS.pdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hLZF8lcnqjeCqqc6izw9Zdr2AO8=
+			LIcvfXmeo2MqNWOhuu2gkNHlY2I=
 			</data>
 			<key>hash2</key>
 			<data>
-			CN/TnM/Pep8HJr6+OqEgykcSNMND7eXt/jiE9fIMO/g=
+			/uS+7euC7Pgss4THdUTM5/FN4Qla3Lk2fnOCD2QA6SQ=
 			</data>
 		</dict>
 		<key>Settings.bundle/Root.plist</key>
@@ -1565,11 +1565,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZwOSvQ2Ta5GrKvx0J3rA0W3+lBk=
+			RrFYBRVa9o+6TKo/2ZRVgvImkC4=
 			</data>
 			<key>hash2</key>
 			<data>
-			cTx9wOt5FVwaJpIesa4dJosVLAzDFKG8X7uXoL1wCOY=
+			JblqJVtQlJPWZnH6snOZ/sJHRFHhBrlYBSJWYAgVVAM=
 			</data>
 		</dict>
 		<key>ar/Xamarin.Forms.Platform.iOS.resources.dll</key>

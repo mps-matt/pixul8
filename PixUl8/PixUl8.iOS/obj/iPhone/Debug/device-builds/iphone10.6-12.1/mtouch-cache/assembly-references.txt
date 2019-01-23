@@ -1,4 +1,4 @@
-/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/PixUL8.iOS.exe
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/PixUl8.iOS.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.2.1.13/lib/mono/Xamarin.iOS/mscorlib.dll
 /Users/mattstark/.nuget/packages/xamarin.forms/3.4.0.1009999/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll
 /Users/mattstark/.nuget/packages/xamarin.forms/3.4.0.1009999/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll

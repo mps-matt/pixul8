@@ -7089,7 +7089,7 @@ exception_handling:;
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0x9000);
+		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0xA800);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [Xamarin_Forms_Platform_iOS_ViewRenderer_2 class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -7214,32 +7214,32 @@ exception_handling:;
 	-(BOOL) application:(UIApplication *)p0 didFinishLaunchingWithOptions:(NSDictionary *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_17 (self, _cmd, &managed_method, p0, p1, 0x5500);
+		return native_to_managed_trampoline_17 (self, _cmd, &managed_method, p0, p1, 0x6800);
 	}
 
 	-(void) applicationDidEnterBackground:(UIApplication *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_16 (self, _cmd, &managed_method, p0, 0x5600);
+		native_to_managed_trampoline_16 (self, _cmd, &managed_method, p0, 0x6900);
 	}
 
 	-(void) applicationWillEnterForeground:(UIApplication *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_16 (self, _cmd, &managed_method, p0, 0x5700);
+		native_to_managed_trampoline_16 (self, _cmd, &managed_method, p0, 0x6A00);
 	}
 
 	-(void) observeValueForKeyPath:(NSString *)p0 ofObject:(NSObject *)p1 change:(NSDictionary *)p2 context:(void *)p3
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_19 (self, _cmd, &managed_method, p0, p1, p2, p3, 0x5800);
+		native_to_managed_trampoline_19 (self, _cmd, &managed_method, p0, p1, p2, p3, 0x6B00);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0x5D00);
+		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0x7000);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [Xamarin_Forms_Platform_iOS_FormsApplicationDelegate class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -7276,7 +7276,7 @@ exception_handling:;
 	-(void) captureOutput:(AVCapturePhotoOutput *)p0 didFinishProcessingPhotoSampleBuffer:(id)p1 previewPhotoSampleBuffer:(id)p2 resolvedSettings:(AVCaptureResolvedPhotoSettings *)p3 bracketSettings:(AVCaptureBracketedStillImageSettings *)p4 error:(NSError *)p5
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_20 (self, _cmd, &managed_method, p0, p1, p2, p3, p4, p5, 0x6200);
+		native_to_managed_trampoline_20 (self, _cmd, &managed_method, p0, p1, p2, p3, p4, p5, 0x7500);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -7289,7 +7289,7 @@ exception_handling:;
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0x6500);
+		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0x7800);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -7326,19 +7326,19 @@ exception_handling:;
 	-(void) drawRect:(CGRect)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_21 (self, _cmd, &managed_method, p0, 0x7400);
+		native_to_managed_trampoline_21 (self, _cmd, &managed_method, p0, 0x8900);
 	}
 
 	-(void) touchesMoved:(NSSet *)p0 withEvent:(UIEvent *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_22 (self, _cmd, &managed_method, p0, p1, 0x7500);
+		native_to_managed_trampoline_22 (self, _cmd, &managed_method, p0, p1, 0x8A00);
 	}
 
 	-(void) touchesEnded:(NSSet *)p0 withEvent:(UIEvent *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_22 (self, _cmd, &managed_method, p0, p1, 0x7600);
+		native_to_managed_trampoline_22 (self, _cmd, &managed_method, p0, p1, 0x8B00);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -12630,11 +12630,11 @@ exception_handling:;
 		{ NULL, 0x23B16 /* #170 'AVCaptureVideoPreviewLayer' => 'AVFoundation.AVCaptureVideoPreviewLayer, Xamarin.iOS' */ },
 		{ NULL, 0x1E04 /* #171 'Xamarin_Forms_Platform_iOS_VisualElementRenderer_1' => 'Xamarin.Forms.Platform.iOS.VisualElementRenderer`1, Xamarin.Forms.Platform.iOS' */ },
 		{ NULL, 0x1B04 /* #172 'Xamarin_Forms_Platform_iOS_ViewRenderer_2' => 'Xamarin.Forms.Platform.iOS.ViewRenderer`2, Xamarin.Forms.Platform.iOS' */ },
-		{ NULL, 0x1E00 /* #173 'PixUl8_iOS_CustomRenderers_CameraFeedPreviewRenderer' => 'PixUl8.iOS.CustomRenderers.CameraFeedPreviewRenderer, PixUL8.iOS' */ },
+		{ NULL, 0x2100 /* #173 'PixUl8_iOS_CustomRenderers_CameraFeedPreviewRenderer' => 'PixUl8.iOS.CustomRenderers.CameraFeedPreviewRenderer, PixUl8.iOS' */ },
 		{ NULL, 0x1104 /* #174 'Xamarin_Forms_Platform_iOS_FormsApplicationDelegate' => 'Xamarin.Forms.Platform.iOS.FormsApplicationDelegate, Xamarin.Forms.Platform.iOS' */ },
-		{ NULL, 0x1400 /* #175 'AppDelegate' => 'PixUl8.iOS.AppDelegate, PixUL8.iOS' */ },
-		{ NULL, 0x1600 /* #176 'PixUl8_iOS_Delegates_PhotoCaptureDelegate' => 'PixUl8.iOS.Delegates.PhotoCaptureDelegate, PixUL8.iOS' */ },
-		{ NULL, 0x1B00 /* #177 'PixUl8_iOS_UIViews_UICameraPreview' => 'PixUl8.iOS.UIViews.UICameraPreview, PixUL8.iOS' */ },
+		{ NULL, 0x1700 /* #175 'AppDelegate' => 'PixUl8.iOS.AppDelegate, PixUl8.iOS' */ },
+		{ NULL, 0x1900 /* #176 'PixUl8_iOS_Delegates_PhotoCaptureDelegate' => 'PixUl8.iOS.Delegates.PhotoCaptureDelegate, PixUl8.iOS' */ },
+		{ NULL, 0x1E00 /* #177 'PixUl8_iOS_UIViews_UICameraPreview' => 'PixUl8.iOS.UIViews.UICameraPreview, PixUl8.iOS' */ },
 		{ NULL, 0xA04 /* #178 'Xamarin_Forms_Platform_iOS_iOS7ButtonContainer' => 'Xamarin.Forms.Platform.iOS.iOS7ButtonContainer, Xamarin.Forms.Platform.iOS' */ },
 		{ NULL, 0xC04 /* #179 'Xamarin_Forms_Platform_iOS_GlobalCloseContextGestureRecognizer' => 'Xamarin.Forms.Platform.iOS.GlobalCloseContextGestureRecognizer, Xamarin.Forms.Platform.iOS' */ },
 		{ NULL, 0x1404 /* #180 'Xamarin_Forms_Platform_iOS_ModalWrapper' => 'Xamarin.Forms.Platform.iOS.ModalWrapper, Xamarin.Forms.Platform.iOS' */ },
@@ -12738,7 +12738,7 @@ exception_handling:;
 	};
 
 	static const char *__xamarin_registration_assemblies []= {
-		"PixUL8.iOS", 
+		"PixUl8.iOS", 
 		"mscorlib", 
 		"Xamarin.Forms.Platform.iOS", 
 		"Xamarin.Forms.Core", 

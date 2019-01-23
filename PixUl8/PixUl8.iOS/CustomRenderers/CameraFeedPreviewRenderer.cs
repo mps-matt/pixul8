@@ -29,6 +29,11 @@ namespace PixUl8.iOS.CustomRenderers
                         SetNativeControl(uiCameraPreview);
                     break;
 
+                case nameof(CameraView.FlashOn):
+                    bool flashOn = (Element as CameraView).FlashOn;
+                    uiCameraPreview.FlashOn = flashOn;
+                    break;
+
                 default:
                     Debug.WriteLine($"Unknown Property Changed: {e.PropertyName}");
                     break;

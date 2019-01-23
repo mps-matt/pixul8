@@ -1,5 +1,5 @@
 --cache=/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache
---dev=/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/device-builds/iphone10.6-12.1/PixUL8.iOS.app
+--dev=/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/device-builds/iphone10.6-12.1/PixUl8.iOS.app
 --executable=PixUl8.iOS
 --debug
 --linksdkonly
@@ -197,5 +197,5 @@
 -r=/Users/mattstark/.nuget/packages/xamarin.forms/3.4.0.1009999/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/mattstark/.nuget/packages/xamarin.forms/3.4.0.1009999/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
 --target-framework=Xamarin.iOS,v1.0
---root-assembly=/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/PixUL8.iOS.exe
+--root-assembly=/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/PixUl8.iOS.exe
 
