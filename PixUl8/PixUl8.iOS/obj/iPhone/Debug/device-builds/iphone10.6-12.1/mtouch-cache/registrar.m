@@ -6488,7 +6488,7 @@ exception_handling:;
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0xEC216);
+		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0xEC616);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -7008,7 +7008,7 @@ exception_handling:;
 	-(void) drawRect:(CGRect)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_6 (self, _cmd, &managed_method, p0, 0xAA00);
+		native_to_managed_trampoline_6 (self, _cmd, &managed_method, p0, 0xAC00);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -7046,7 +7046,7 @@ exception_handling:;
 	-(void) drawRect:(CGRect)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_6 (self, _cmd, &managed_method, p0, 0xAF00);
+		native_to_managed_trampoline_6 (self, _cmd, &managed_method, p0, 0xB100);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -7165,7 +7165,7 @@ exception_handling:;
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0xB600);
+		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0xB800);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [Xamarin_Forms_Platform_iOS_ViewRenderer_2 class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -12537,7 +12537,7 @@ exception_handling:;
 		{ NULL, 0x18216 /* #1 'UIResponder' => 'UIKit.UIResponder, Xamarin.iOS' */ },
 		{ NULL, 0xFE16 /* #2 'UIView' => 'UIKit.UIView, Xamarin.iOS' */ },
 		{ NULL, 0x13916 /* #3 'UIApplicationDelegate' => 'UIKit.UIApplicationDelegate, Xamarin.iOS' */ },
-		{ NULL, 0x24E16 /* #4 'AVCapturePhotoCaptureDelegate' => 'AVFoundation.AVCapturePhotoCaptureDelegate, Xamarin.iOS' */ },
+		{ NULL, 0x25016 /* #4 'AVCapturePhotoCaptureDelegate' => 'AVFoundation.AVCapturePhotoCaptureDelegate, Xamarin.iOS' */ },
 		{ NULL, 0xD416 /* #5 'UIGestureRecognizer' => 'UIKit.UIGestureRecognizer, Xamarin.iOS' */ },
 		{ NULL, 0x10316 /* #6 'UIViewController' => 'UIKit.UIViewController, Xamarin.iOS' */ },
 		{ NULL, 0xF416 /* #7 'UITableViewCell' => 'UIKit.UITableViewCell, Xamarin.iOS' */ },
@@ -12675,18 +12675,18 @@ exception_handling:;
 		{ NULL, 0x22D16 /* #139 'NSNotification' => 'Foundation.NSNotification, Xamarin.iOS' */ },
 		{ NULL, 0x23C16 /* #140 'AVAudioSession' => 'AVFoundation.AVAudioSession, Xamarin.iOS' */ },
 		{ NULL, 0x23D16 /* #141 'AVCaptureDeviceDiscoverySession' => 'AVFoundation.AVCaptureDeviceDiscoverySession, Xamarin.iOS' */ },
-		{ NULL, 0x24A16 /* #142 'AVCaptureInput' => 'AVFoundation.AVCaptureInput, Xamarin.iOS' */ },
+		{ NULL, 0x24C16 /* #142 'AVCaptureInput' => 'AVFoundation.AVCaptureInput, Xamarin.iOS' */ },
 		{ NULL, 0x23E16 /* #143 'AVCaptureDeviceInput' => 'AVFoundation.AVCaptureDeviceInput, Xamarin.iOS' */ },
 		{ NULL, 0x24216 /* #144 'AVPlayerLayer' => 'AVFoundation.AVPlayerLayer, Xamarin.iOS' */ },
 		{ NULL, 0x24316 /* #145 'AVCaptureBracketedStillImageSettings' => 'AVFoundation.AVCaptureBracketedStillImageSettings, Xamarin.iOS' */ },
 		{ NULL, 0x24416 /* #146 'AVCaptureDevice' => 'AVFoundation.AVCaptureDevice, Xamarin.iOS' */ },
 		{ NULL, 0x24516 /* #147 'AVCaptureDeviceFormat' => 'AVFoundation.AVCaptureDeviceFormat, Xamarin.iOS' */ },
-		{ NULL, 0x24B16 /* #148 'AVCaptureOutput' => 'AVFoundation.AVCaptureOutput, Xamarin.iOS' */ },
-		{ NULL, 0x24F16 /* #149 'AVCapturePhotoOutput' => 'AVFoundation.AVCapturePhotoOutput, Xamarin.iOS' */ },
-		{ NULL, 0x25016 /* #150 'AVCapturePhotoSettings' => 'AVFoundation.AVCapturePhotoSettings, Xamarin.iOS' */ },
-		{ NULL, 0x25116 /* #151 'AVCaptureResolvedPhotoSettings' => 'AVFoundation.AVCaptureResolvedPhotoSettings, Xamarin.iOS' */ },
-		{ NULL, 0x25216 /* #152 'AVCaptureSession' => 'AVFoundation.AVCaptureSession, Xamarin.iOS' */ },
-		{ NULL, 0x25316 /* #153 'AVFrameRateRange' => 'AVFoundation.AVFrameRateRange, Xamarin.iOS' */ },
+		{ NULL, 0x24D16 /* #148 'AVCaptureOutput' => 'AVFoundation.AVCaptureOutput, Xamarin.iOS' */ },
+		{ NULL, 0x25116 /* #149 'AVCapturePhotoOutput' => 'AVFoundation.AVCapturePhotoOutput, Xamarin.iOS' */ },
+		{ NULL, 0x25216 /* #150 'AVCapturePhotoSettings' => 'AVFoundation.AVCapturePhotoSettings, Xamarin.iOS' */ },
+		{ NULL, 0x25316 /* #151 'AVCaptureResolvedPhotoSettings' => 'AVFoundation.AVCaptureResolvedPhotoSettings, Xamarin.iOS' */ },
+		{ NULL, 0x25416 /* #152 'AVCaptureSession' => 'AVFoundation.AVCaptureSession, Xamarin.iOS' */ },
+		{ NULL, 0x25516 /* #153 'AVFrameRateRange' => 'AVFoundation.AVFrameRateRange, Xamarin.iOS' */ },
 		{ NULL, 0x8316 /* #154 'GLKView' => 'GLKit.GLKView, Xamarin.iOS' */ },
 		{ NULL, 0xBB16 /* #155 'UIActionSheet' => 'UIKit.UIActionSheet, Xamarin.iOS' */ },
 		{ NULL, 0xBF16 /* #156 'UIApplication' => 'UIKit.UIApplication, Xamarin.iOS' */ },
@@ -12871,7 +12871,7 @@ exception_handling:;
 		{ 0x1D916 /* UIKit.IUIViewControllerTransitioningDelegate */, 0x1DA16 /* UIViewControllerTransitioningDelegateWrapper */ },
 		{ 0x1E016 /* UIKit.IUIWebViewDelegate */, 0x1E116 /* UIWebViewDelegateWrapper */ },
 		{ 0x22E16 /* Foundation.INSObjectProtocol */, 0x22F16 /* NSObjectProtocolWrapper */ },
-		{ 0x24C16 /* AVFoundation.IAVCapturePhotoCaptureDelegate */, 0x24D16 /* AVCapturePhotoCaptureDelegateWrapper */ },
+		{ 0x24E16 /* AVFoundation.IAVCapturePhotoCaptureDelegate */, 0x24F16 /* AVCapturePhotoCaptureDelegateWrapper */ },
 	};
 
 	static struct MTRegistrationMap __xamarin_registration_map = {

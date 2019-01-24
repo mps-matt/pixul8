@@ -359,13 +359,30 @@ namespace PixUl8.iOS.UIViews
             if (_device.ExposurePointOfInterestSupported)
                 _device.ExposurePointOfInterest = interestPoint;
 
-            //Might have to set auto exposure and focus BACK ON here
-            //_device.ExposureMode = AVCaptureExposureMode.AutoExpose;
-            //_device.FocusMode = AVCaptureFocusMode.AutoFocus;
+
+            if (_device.IsExposureModeSupported(AVCaptureExposureMode.AutoExpose))
+            _device.ExposureMode = AVCaptureExposureMode.AutoExpose;
+
+            if (_device.IsFocusModeSupported(AVCaptureFocusMode.AutoFocus))
+                _device.FocusMode = AVCaptureFocusMode.AutoFocus;
 
             _device.UnlockForConfiguration();
 
-            _focusWheel.ShowAt(focusPoint.X, focusPoint.Y);
+            _focusWheel.ShowAt(focusPoint.X, focusPoint.Y, completionHandler: () => { ResetCameraOptics(); });
+        }
+
+        private void ResetCameraOptics()
+        {
+            NSError err;
+            _device.LockForConfiguration(out err);
+
+            if (_device.IsExposureModeSupported(AVCaptureExposureMode.ContinuousAutoExposure))
+                _device.ExposureMode = AVCaptureExposureMode.ContinuousAutoExposure;
+
+            if (_device.IsFocusModeSupported(AVCaptureFocusMode.ContinuousAutoFocus))
+                _device.FocusMode = AVCaptureFocusMode.ContinuousAutoFocus;
+
+            _device.UnlockForConfiguration();
         }
 
         private void PinchHandlerZoom(UIPinchGestureRecognizer recognizer)

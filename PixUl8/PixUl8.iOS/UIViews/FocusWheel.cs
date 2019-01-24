@@ -44,7 +44,7 @@ namespace PixUl8.iOS.UIViews
 
         }
 
-        public void ShowAt(double x, double y)
+        public void ShowAt(double x, double y, Action completionHandler)
         {
             var midX = x - (this.Frame.Width / 2);
             var midY = y - (this.Frame.Height / 2);
@@ -52,16 +52,12 @@ namespace PixUl8.iOS.UIViews
             this.Frame = new CGRect(midX, midY, this.Frame.Width, this.Frame.Height);
 
 
-
-
-
-            this.Alpha = 0.8f;
-
+            this.Alpha = 0.6f;
 
             UIView.Animate(3, 4, UIViewAnimationOptions.AllowUserInteraction, () =>
             {
                 this.Alpha = 0;
-            }, null);
+            }, completionHandler);
         }
     }
 }
