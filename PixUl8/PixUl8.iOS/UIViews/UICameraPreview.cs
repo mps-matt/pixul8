@@ -39,6 +39,7 @@ namespace PixUl8.iOS.UIViews
         private PhotoCaptureDelegate _delegate;
         private bool _forcePressed = false;
         private bool _canTakePicture = true;
+        private CircleZoomPercentage _percentage;
 
         private readonly CameraOptions _cameraOptions;
 
@@ -281,6 +282,11 @@ namespace PixUl8.iOS.UIViews
             MessagingCenter.Subscribe<AppDelegate>(this, "VolumeChange", (de) => { TakePhoto(); });
 
 
+            float x = (float)UIScreen.MainScreen.Bounds.Width;
+            float y = (float)UIScreen.MainScreen.Bounds.Height;
+            var rect = new CGRect((x) - 90, (y / 4) - 180, 85, 85);
+            _percentage = new CircleZoomPercentage(rect, 1);
+            this.AddSubview(_percentage);
 
 
 
@@ -361,10 +367,8 @@ namespace PixUl8.iOS.UIViews
             if (recognizer.State == UIGestureRecognizerState.Began || recognizer.State == UIGestureRecognizerState.Changed)
             {
                 ZoomFactor += recognizer.Scale > 1 ? 0.05 : -0.2;
-                //recognizer.View.Transform *= CGAffineTransform.MakeScale(recognizer.Scale, recognizer.Scale);
-                // Reset the gesture recognizer's scale - the next callback will get a delta from the current scale.
-                //recognizer.Scale = 1;
             }
+            _percentage.UpdateDisplayZoomFactor((float)Math.Round(ZoomFactor, 1));
         }
 
         private void SwipeHandlerSwitchCamera(SwipeType type)

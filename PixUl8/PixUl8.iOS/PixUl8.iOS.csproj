@@ -76,6 +76,8 @@
     <Compile Include="UIViews\UICameraPreview.cs" />
     <Compile Include="Services\HapticService.cs" />
     <Compile Include="Delegates\PhotoCaptureDelegate.cs" />
+    <Compile Include="UIViews\CircleZoomPercentage.cs" />
+    <Compile Include="UIViews\FocusWheel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">

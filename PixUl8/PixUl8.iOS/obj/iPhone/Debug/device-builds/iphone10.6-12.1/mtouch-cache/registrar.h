@@ -37,6 +37,7 @@
 @class Foundation_NSAsyncDispatcher;
 @class __MonoMac_NSAsyncActionDispatcher;
 @class __MonoMac_NSAsyncSynchronizationContextDispatcher;
+@class PixUl8_iOS_UIViews_CircleZoomPercentage;
 @class Xamarin_Forms_Platform_iOS_VisualElementRenderer_1;
 @class Xamarin_Forms_Platform_iOS_ViewRenderer_2;
 @class PixUl8_iOS_CustomRenderers_CameraFeedPreviewRenderer;
@@ -197,6 +198,16 @@
 @interface UICollectionViewDataSource : NSObject<UICollectionViewDataSource> {
 }
 	-(id) init;
+@end
+
+@interface PixUl8_iOS_UIViews_CircleZoomPercentage : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) drawRect:(CGRect)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 
 @interface Xamarin_Forms_Platform_iOS_VisualElementRenderer_1 : UIView {
