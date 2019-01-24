@@ -40,6 +40,7 @@ namespace PixUl8.iOS.UIViews
         private bool _forcePressed = false;
         private bool _canTakePicture = true;
         private CircleZoomPercentage _percentage;
+        private FocusWheel _focusWheel;
 
         private readonly CameraOptions _cameraOptions;
 
@@ -284,10 +285,14 @@ namespace PixUl8.iOS.UIViews
 
             float x = (float)UIScreen.MainScreen.Bounds.Width;
             float y = (float)UIScreen.MainScreen.Bounds.Height;
-            var rect = new CGRect((x) - 90, (y / 4) - 180, 85, 85);
-            _percentage = new CircleZoomPercentage(rect, 1);
-            this.AddSubview(_percentage);
+            var zoomRect = new CGRect((x) - 90, (y / 4) - 180, 85, 85);
+            _percentage = new CircleZoomPercentage(zoomRect, 1);
 
+            var focusRect = new CGRect(0,0, 150, 150);
+            _focusWheel = new FocusWheel(focusRect, 2);
+
+            this.AddSubview(_percentage);
+            this.AddSubview(_focusWheel);
 
 
             #region Handle For Swiping Gestures - This is needed as the Forms gestures seems too buggy, an I can't get to recognise the gestures correctly
@@ -360,6 +365,7 @@ namespace PixUl8.iOS.UIViews
 
             _device.UnlockForConfiguration();
 
+            _focusWheel.ShowAt(focusPoint.X, focusPoint.Y);
         }
 
         private void PinchHandlerZoom(UIPinchGestureRecognizer recognizer)

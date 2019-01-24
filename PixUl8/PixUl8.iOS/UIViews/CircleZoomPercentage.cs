@@ -13,7 +13,6 @@ namespace PixUl8.iOS.UIViews
         private int _radius = 10;
         private int _lineWidth = 10;
         private UIColor _backColor = UIColor.White;
-        private UIColor _frontColor = UIColor.White;
 
         public CircleZoomPercentage (CGRect frame, int lineWidth)
         {
@@ -51,14 +50,6 @@ namespace PixUl8.iOS.UIViews
             g.AddPath (path);
             g.DrawPath (CGPathDrawingMode.Stroke);
 
-
-
-            // Draw overlay circle
-            var pathStatus = new CGPath ();
-            _frontColor.SetStroke ();
-            //pathStatus.AddArc(x0, y0, _radius, 0, _degrees * (float)Math.PI, false);
-            g.AddPath (pathStatus);
-            g.DrawPath (CGPathDrawingMode.Stroke);
 
         }
 
