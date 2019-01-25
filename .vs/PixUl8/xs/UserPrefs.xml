@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/UIViews/FocusWheel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/UIViews/SwipeButton.cs">
     <Files>
       <File FileName="PixUl8/PixUl8/Views/HomePage.xaml" Line="125" Column="82" />
       <File FileName="PixUl8/PixUl8/ViewModels/HomeViewModel.cs" Line="30" Column="10" />
       <File FileName="PixUl8/PixUl8/Views/NativeViews/CameraView.cs" Line="39" Column="1" />
       <File FileName="PixUl8/PixUl8.iOS/CustomRenderers/CameraFeedPreviewRenderer.cs" Line="35" Column="27" />
-      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="368" Column="14" />
-      <File FileName="PixUl8/PixUl8.iOS/UIViews/CircleZoomPercentage.cs" Line="15" Column="52" />
-      <File FileName="PixUl8/PixUl8.iOS/UIViews/FocusWheel.cs" Line="49" Column="24" />
+      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="305" Column="48" />
+      <File FileName="PixUl8/PixUl8.iOS/UIViews/CircleZoomPercentage.cs" Line="69" Column="9" />
+      <File FileName="PixUl8/PixUl8.iOS/UIViews/FocusWheel.cs" Line="47" Column="72" />
+      <File FileName="PixUl8/PixUl8.iOS/UIViews/SwipeButton.cs" Line="6" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.594cc34fe22a6ae2a5ef467001700a60305909ef" />

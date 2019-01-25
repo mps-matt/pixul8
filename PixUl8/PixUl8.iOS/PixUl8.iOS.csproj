@@ -78,6 +78,7 @@
     <Compile Include="Delegates\PhotoCaptureDelegate.cs" />
     <Compile Include="UIViews\CircleZoomPercentage.cs" />
     <Compile Include="UIViews\FocusWheel.cs" />
+    <Compile Include="UIViews\SwipeButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">

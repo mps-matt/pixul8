@@ -65,5 +65,7 @@ namespace PixUl8.iOS.UIViews
                 this.Alpha = 0;
             }, null);
         }
+
+        
     }
 }

@@ -299,7 +299,12 @@ namespace PixUl8.iOS.UIViews
 
             #region Swap Camera Buttons
 
-            UIButton leftHandButton = new UIButton();
+            SwipeButton leftHandButton = new SwipeButton();
+            leftHandButton.SetTouchCallback((touches) =>
+            {
+                UITouch touch = touches.AnyObject as UITouch;
+                TapToFocus(touch.LocationInView(this));
+            });
             leftHandButton.BackgroundColor = UIColor.Clear;
             leftHandButton.Frame = new CGRect(-50, 600, 150, 250);
             var rightSwipeGesture = new UISwipeGestureRecognizer(() => SwipeHandlerSwitchCamera(SwipeType.Right)) { Direction = UISwipeGestureRecognizerDirection.Right };
@@ -307,7 +312,12 @@ namespace PixUl8.iOS.UIViews
             this.AddSubview(leftHandButton);
 
 
-            UIButton rightHandButton = new UIButton();
+            SwipeButton rightHandButton = new SwipeButton();
+            rightHandButton.SetTouchCallback((touches) =>
+            {
+                UITouch touch = touches.AnyObject as UITouch;
+                TapToFocus(touch.LocationInView(this));
+            });
             rightHandButton.BackgroundColor = UIColor.Clear;
             rightHandButton.Frame = new CGRect(275, 600, 100, 250);
             var leftSwipeGesture = new UISwipeGestureRecognizer(() => SwipeHandlerSwitchCamera(SwipeType.Left)) { Direction = UISwipeGestureRecognizerDirection.Left };
@@ -318,7 +328,12 @@ namespace PixUl8.iOS.UIViews
 
             #region Activate Flash Buttons
 
-            UIButton leftHandFlashButton = new UIButton();
+            SwipeButton leftHandFlashButton = new SwipeButton();
+            leftHandFlashButton.SetTouchCallback((touches) =>
+            {
+                UITouch touch = touches.AnyObject as UITouch;
+                TapToFocus(touch.LocationInView(this));
+            });
             leftHandFlashButton.BackgroundColor = UIColor.Clear;
             leftHandFlashButton.Frame = new CGRect(-50, 400, 150, 200);
             var rightSwipeFlashGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleFlash(SwipeType.Right)) { Direction = UISwipeGestureRecognizerDirection.Right };
@@ -326,7 +341,12 @@ namespace PixUl8.iOS.UIViews
             this.AddSubview(leftHandFlashButton);
 
 
-            UIButton rightHandFlashButton = new UIButton();
+            SwipeButton rightHandFlashButton = new SwipeButton();
+            rightHandFlashButton.SetTouchCallback((touches) =>
+            {
+                UITouch touch = touches.AnyObject as UITouch;
+                TapToFocus(touch.LocationInView(this));
+            });
             rightHandFlashButton.BackgroundColor = UIColor.Clear;
             rightHandFlashButton.Frame = new CGRect(275, 400, 100, 200);
             var leftSwipeFlashGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleFlash(SwipeType.Left)) { Direction = UISwipeGestureRecognizerDirection.Left };
