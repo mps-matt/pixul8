@@ -33,7 +33,9 @@
                     
 <!--                    Turn on FLASH left-->
                     <Button
+                        x:Name="FlashOnLeft1"
                         Grid.Row="1"
+                        InputTransparent="true"
                         Grid.Column="0"
                         IsVisible="{Binding IsFlashNotActive}"
                         BorderColor="White"
@@ -51,14 +53,16 @@
                         Command="{Binding ToggleFlashCommand}"
                     >
                     <Button.GestureRecognizers>
-                            <SwipeGestureRecognizer Direction="Right" Threshold="2" Command="{Binding ToggleFlashCommand}"/>
+                            <SwipeGestureRecognizer Direction="Right" Threshold="2" Command="{Binding ToggleFlashCommand}" CommandParameter=""/>
                     </Button.GestureRecognizers>
                     </Button> 
                     
 <!--                    Turn off FLASH right-->
                     <Button
+                        x:Name="FlashOnRight1"
                         Grid.Row="1"
                         Grid.Column="2"
+                        InputTransparent="true"
                         BorderColor="White"
                         IsVisible="{Binding IsFlashActive}"
                         BorderWidth="5"
@@ -75,15 +79,17 @@
                         Command="{Binding ToggleFlashCommand}"
                     >
                     <Button.GestureRecognizers>
-                            <SwipeGestureRecognizer Direction="Left" Threshold="2" Command="{Binding ToggleFlashCommand}"/>
+                            <SwipeGestureRecognizer Direction="Left" Threshold="2" Command="{Binding ToggleFlashCommand}" CommandParameter=""/>
                     </Button.GestureRecognizers>
                     </Button> 
                     
                     
 <!--                    Toggle Camera Position-->
                     <Button
+                        x:Name="ToggleCamera1"
                         Grid.Row="1"
                         Grid.Column="0"
+                        InputTransparent="true"
                         BorderColor="White"
                         BorderWidth="5"
                         BorderRadius="10"
@@ -99,7 +105,7 @@
                         Command="{Binding ToggleCameraPositionCommand}"
                     >
                     <Button.GestureRecognizers>
-                            <SwipeGestureRecognizer Direction="Right" Threshold="2" Command="{Binding ToggleCameraPositionCommand}"/>
+                            <SwipeGestureRecognizer Direction="Right" Threshold="2" Command="{Binding ToggleCameraPositionCommand}" CommandParameter=""/>
                     </Button.GestureRecognizers>
                     </Button>  
                     
@@ -129,8 +135,10 @@
                     
 <!--                    Turn on FLASH left-->
                     <Button
+                        x:Name="FlashOnLeft2"
                         Grid.Row="1"
                         Grid.Column="0"
+                        InputTransparent="true"
                         IsVisible="{Binding IsFlashNotActive}"
                         BorderColor="White"
                         BorderWidth="5"
@@ -147,15 +155,17 @@
                         Command="{Binding ToggleFlashCommand}"
                     >
                     <Button.GestureRecognizers>
-                            <SwipeGestureRecognizer Direction="Right" Threshold="2" Command="{Binding ToggleFlashCommand}"/>
+                            <SwipeGestureRecognizer Direction="Right" Threshold="2" Command="{Binding ToggleFlashCommand}" CommandParameter=""/>
                     </Button.GestureRecognizers>
                     </Button> 
                     
 <!--                    Turn off FLASH right-->
                     <Button
+                        x:Name="FlashOnRight2"
                         Grid.Row="1"
                         Grid.Column="2"
                         BorderColor="White"
+                        InputTransparent="true"
                         IsVisible="{Binding IsFlashActive}"
                         BorderWidth="5"
                         BorderRadius="10"
@@ -171,14 +181,16 @@
                         Command="{Binding ToggleFlashCommand}"
                     >
                     <Button.GestureRecognizers>
-                            <SwipeGestureRecognizer Direction="Left" Threshold="2" Command="{Binding ToggleFlashCommand}"/>
+                            <SwipeGestureRecognizer Direction="Left" Threshold="2" Command="{Binding ToggleFlashCommand}" CommandParameter=""/>
                     </Button.GestureRecognizers>
                     </Button> 
                     
                     <!--                    Toggle Camera Position-->
                     <Button
+                        x:Name="ToggleCamera2"
                         Grid.Row="1"
                         Grid.Column="2"
+                        InputTransparent="true"
                         BorderColor="White"
                         BorderWidth="5"
                         BorderRadius="10"
@@ -194,7 +206,7 @@
                         Command="{Binding ToggleCameraPositionCommand}"
                     >
                     <Button.GestureRecognizers>
-                            <SwipeGestureRecognizer Direction="Left" Threshold="2" Command="{Binding ToggleCameraPositionCommand}"/>
+                            <SwipeGestureRecognizer Direction="Left" Threshold="2" Command="{Binding ToggleCameraPositionCommand}" CommandParameter=""/>
                     </Button.GestureRecognizers>
                     </Button>                       
                     </Grid>
