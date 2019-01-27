@@ -45,7 +45,7 @@
 	<string>Resources/Images.xcassets/AppIcons.appiconset</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>&quot;Get Show.tff&quot;</string>
+		<string>Get Show.tff</string>
 	</array>
 </dict>
 </plist>

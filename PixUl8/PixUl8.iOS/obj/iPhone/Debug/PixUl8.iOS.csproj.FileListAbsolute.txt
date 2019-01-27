@@ -111,3 +111,4 @@
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/optimized/logos/ios/AppIcon.appiconset/Icon-App-76x76@2x.png
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/optimized/logos/ios/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/optimized/logos/ios/AppIcon.appiconset/ItunesArtwork@2x.png
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/optimized/loading.png

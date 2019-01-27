@@ -142,7 +142,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		/QVZSTlm44iNGLHwFYAZZqcwQys=
+		v8U14/JX7ynHG4ozPeeosUtePis=
 		</data>
 		<key>Default-568h@2x.png</key>
 		<data>
@@ -178,7 +178,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mv72m9iOaFgBzF6kFHcS8mfxM80=
+		RLing6UyYpAGsjNmrbj0zY3Mdnk=
 		</data>
 		<key>LaunchScreen.nib</key>
 		<data>
@@ -190,11 +190,11 @@
 		</data>
 		<key>LaunchScreen.storyboardc/UIViewController-X5k-f2-b5h.nib</key>
 		<data>
-		Za/LthYyfl2fkFKNd4IcxAiArUo=
+		R7vcBOyZcL3DvPVUv2ikoZXXdBE=
 		</data>
 		<key>LaunchScreen.storyboardc/X5k-f2-b5h-view-yd7-JS-zBw.nib</key>
 		<data>
-		+PcVrwQVuwP/C2j0DFskDeiCcEQ=
+		zlAwNLkt5+GQKBSzSk3koIt4bu0=
 		</data>
 		<key>Mono.Security.aotdata.arm64</key>
 		<data>
@@ -250,15 +250,15 @@
 		</data>
 		<key>PixUl8.iOS.aotdata.arm64</key>
 		<data>
-		AfzmSokPO2ZioRSnvJIr1x4mIT4=
+		SkJMJwoC+KpoENSuVTH5U6YJUn8=
 		</data>
 		<key>PixUl8.iOS.exe</key>
 		<data>
-		OUu4yW4dqpmI1coorkgk+apqbV8=
+		+PMgPVct/WuSoXlqnvSqZdgz4mg=
 		</data>
 		<key>PixUl8.iOS.pdb</key>
 		<data>
-		EMsYzBq4jqyn+jabwKw5eR7YdRs=
+		avho20lYZUMnBUix5lrRWP11TUw=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -486,7 +486,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		PTlGxWlSl0m54bnMIvGgyBPoDA8=
+		7IdZfQad6JPUcZTGdS59Wl6fme8=
 		</data>
 		<key>es/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
@@ -531,6 +531,10 @@
 		<key>ko/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
 		ANnNoW/giJHLKH9dyBGhRJdvaV8=
+		</data>
+		<key>loading.png</key>
+		<data>
+		hfXP2fnRZVaUC6J3iyhzSUHN0Lo=
 		</data>
 		<key>logos/android/mipmap-hdpi/ic_launcher.png</key>
 		<data>
@@ -1181,11 +1185,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/QVZSTlm44iNGLHwFYAZZqcwQys=
+			v8U14/JX7ynHG4ozPeeosUtePis=
 			</data>
 			<key>hash2</key>
 			<data>
-			2Tp0pawVNBjFnuucAcsLIGnQ+ifEwpIkisj0IqbxWiM=
+			jaf5yHbf1DawfZsBTvg2Sz/vZ4Xn3AD5VlGUIbinKH8=
 			</data>
 		</dict>
 		<key>Default-568h@2x.png</key>
@@ -1302,22 +1306,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Za/LthYyfl2fkFKNd4IcxAiArUo=
+			R7vcBOyZcL3DvPVUv2ikoZXXdBE=
 			</data>
 			<key>hash2</key>
 			<data>
-			sz9huh2C4iZQ7myObYYwHJpEBGkKLMaj7UgW7A3i+lA=
+			bVWzRY4PlHLxYlcNWSWfXl83dOxZVT4S80F28xHm9x4=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/X5k-f2-b5h-view-yd7-JS-zBw.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+PcVrwQVuwP/C2j0DFskDeiCcEQ=
+			zlAwNLkt5+GQKBSzSk3koIt4bu0=
 			</data>
 			<key>hash2</key>
 			<data>
-			6ItcBNSjgX7Tf+LsUgSAJp9wBvz/bk2XM/GkXTFB0GI=
+			rscxRVyayxWZ+c5E3gzQN1OmqCwEBBOK8n4SxEwtDlU=
 			</data>
 		</dict>
 		<key>Mono.Security.aotdata.arm64</key>
@@ -1467,33 +1471,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AfzmSokPO2ZioRSnvJIr1x4mIT4=
+			SkJMJwoC+KpoENSuVTH5U6YJUn8=
 			</data>
 			<key>hash2</key>
 			<data>
-			NRBzL9xpzwjNuDcOKaU/WLjF2Ty0hbEvmxwtfezuSi8=
+			y0ZXHbRgFl48My1TAxxqLEZOgNkss9j7VJvMaG36wPE=
 			</data>
 		</dict>
 		<key>PixUl8.iOS.exe</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OUu4yW4dqpmI1coorkgk+apqbV8=
+			+PMgPVct/WuSoXlqnvSqZdgz4mg=
 			</data>
 			<key>hash2</key>
 			<data>
-			zpgHYMk2qRgXhk+fdnDPf24/Hb/WYg/1X+lVSdFNnpQ=
+			GvrHb39VjhKRDHlJnFt1BZ8uswknyuWgj8Npld9G8z8=
 			</data>
 		</dict>
 		<key>PixUl8.iOS.pdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EMsYzBq4jqyn+jabwKw5eR7YdRs=
+			avho20lYZUMnBUix5lrRWP11TUw=
 			</data>
 			<key>hash2</key>
 			<data>
-			nFVVmPo119JdKSlnShh+J21JWKW98yh8dIiCpNuNs9Q=
+			MngV+923uH76F/sFWX38QJPH9WmX72+xrbyU+AUXnTs=
 			</data>
 		</dict>
 		<key>Settings.bundle/Root.plist</key>
@@ -2105,11 +2109,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PTlGxWlSl0m54bnMIvGgyBPoDA8=
+			7IdZfQad6JPUcZTGdS59Wl6fme8=
 			</data>
 			<key>hash2</key>
 			<data>
-			yfOgWETjcpgYaUYh7crjzHAFbxaSWC2hhlHzT0T1qbo=
+			2jn6Y8VTGO0CXWoLfdvVl2gMP1oz7OdtmVJwk4cms4k=
 			</data>
 		</dict>
 		<key>es/Xamarin.Forms.Platform.iOS.resources.dll</key>
@@ -2231,6 +2235,17 @@
 			<key>hash2</key>
 			<data>
 			A9LddVxQ4X8y+1oGr5HOOMg8KXmrCso47S+vu4174Ic=
+			</data>
+		</dict>
+		<key>loading.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hfXP2fnRZVaUC6J3iyhzSUHN0Lo=
+			</data>
+			<key>hash2</key>
+			<data>
+			AxVVLxbPhJHO3ynxnM/0MXhX8hkCQCO5ofuR/Kv8rR8=
 			</data>
 		</dict>
 		<key>logos/android/mipmap-hdpi/ic_launcher.png</key>
