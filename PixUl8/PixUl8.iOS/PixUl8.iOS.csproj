@@ -140,6 +140,64 @@
     <BundleResource Include="Resources\Default%402x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-App-40x40%401x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-App-20x20%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-App-29x29%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-App-29x29%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-App-40x40%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-App-60x60%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-App-60x60%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-App-20x20%401x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-App-20x20%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-App-29x29%401x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-App-76x76%401x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-App-76x76%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-App-83.5x83.5%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ItunesArtwork%402x.png" />
+    <BundleResource Include="Resources\logos\android\playstore-icon.png" />
+    <BundleResource Include="Resources\logos\android\mipmap-hdpi\ic_launcher.png" />
+    <BundleResource Include="Resources\logos\android\mipmap-ldpi\ic_launcher.png" />
+    <BundleResource Include="Resources\logos\android\mipmap-mdpi\ic_launcher.png" />
+    <BundleResource Include="Resources\logos\android\mipmap-xhdpi\ic_launcher.png" />
+    <BundleResource Include="Resources\logos\android\mipmap-xxhdpi\ic_launcher.png" />
+    <BundleResource Include="Resources\logos\android\mipmap-xxxhdpi\ic_launcher.png" />
+    <BundleResource Include="Resources\logos\imessenger\icon-messages-app-27x20%401x.png" />
+    <BundleResource Include="Resources\logos\imessenger\icon-messages-app-27x20%402x.png" />
+    <BundleResource Include="Resources\logos\imessenger\icon-messages-app-27x20%403x.png" />
+    <BundleResource Include="Resources\logos\imessenger\icon-messages-app-iPadAir-67x50%402x.png" />
+    <BundleResource Include="Resources\logos\imessenger\icon-messages-app-iPadAir-74x55%402x.png" />
+    <BundleResource Include="Resources\logos\imessenger\icon-messages-app-iPhone-60x45%401x.png" />
+    <BundleResource Include="Resources\logos\imessenger\icon-messages-app-iPhone-60x45%402x.png" />
+    <BundleResource Include="Resources\logos\imessenger\icon-messages-app-iPhone-60x45%403x.png" />
+    <BundleResource Include="Resources\logos\imessenger\icon-messages-app-store-1024x768.png" />
+    <BundleResource Include="Resources\logos\imessenger\icon-messages-transcript-32x24%401x.png" />
+    <BundleResource Include="Resources\logos\imessenger\icon-messages-transcript-32x24%402x.png" />
+    <BundleResource Include="Resources\logos\imessenger\icon-messages-transcript-32x24%403x.png" />
+    <BundleResource Include="Resources\logos\ios\README.md" />
+    <BundleResource Include="Resources\logos\ios\iTunesArtwork%401x.png" />
+    <BundleResource Include="Resources\logos\ios\iTunesArtwork%403x.png" />
+    <BundleResource Include="Resources\logos\ios\AppIcon.appiconset\Contents.json" />
+    <BundleResource Include="Resources\logos\ios\AppIcon.appiconset\Icon-App-20x20%401x.png" />
+    <BundleResource Include="Resources\logos\ios\AppIcon.appiconset\Icon-App-20x20%402x.png" />
+    <BundleResource Include="Resources\logos\ios\AppIcon.appiconset\Icon-App-20x20%403x.png" />
+    <BundleResource Include="Resources\logos\ios\AppIcon.appiconset\Icon-App-29x29%401x.png" />
+    <BundleResource Include="Resources\logos\ios\AppIcon.appiconset\Icon-App-29x29%402x.png" />
+    <BundleResource Include="Resources\logos\ios\AppIcon.appiconset\Icon-App-29x29%403x.png" />
+    <BundleResource Include="Resources\logos\ios\AppIcon.appiconset\Icon-App-40x40%401x.png" />
+    <BundleResource Include="Resources\logos\ios\AppIcon.appiconset\Icon-App-40x40%402x.png" />
+    <BundleResource Include="Resources\logos\ios\AppIcon.appiconset\Icon-App-40x40%403x.png" />
+    <BundleResource Include="Resources\logos\ios\AppIcon.appiconset\Icon-App-60x60%402x.png" />
+    <BundleResource Include="Resources\logos\ios\AppIcon.appiconset\Icon-App-60x60%403x.png" />
+    <BundleResource Include="Resources\logos\ios\AppIcon.appiconset\Icon-App-76x76%401x.png" />
+    <BundleResource Include="Resources\logos\ios\AppIcon.appiconset\Icon-App-76x76%402x.png" />
+    <BundleResource Include="Resources\logos\ios\AppIcon.appiconset\Icon-App-83.5x83.5%402x.png" />
+    <BundleResource Include="Resources\logos\ios\AppIcon.appiconset\ItunesArtwork%402x.png" />
+    <BundleResource Include="Resources\danielbd.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Get Show.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -158,6 +216,10 @@
     <Folder Include="CustomRenderers\" />
     <Folder Include="UIViews\" />
     <Folder Include="Delegates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\PixUl8\PixUl8.projitems" Label="Shared" />

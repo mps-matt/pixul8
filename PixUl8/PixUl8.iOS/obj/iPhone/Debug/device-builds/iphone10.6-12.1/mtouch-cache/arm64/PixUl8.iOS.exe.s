@@ -65960,7 +65960,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "49E714D2-BE1C-44FA-9790-1807B3332356"
+	.asciz "EA8BE3BD-BD29-4BC5-ACF4-E3E30BA4C457"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -66045,7 +66045,7 @@ _mono_aot_file_info:
 	.long 608,10680,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 179,212,186,25,105,144,11,112,148,233,76,173,70,81,184,55
+	.byte 85,204,13,24,52,41,143,107,110,236,118,12,8,168,131,103
 	.globl _mono_aot_module_PixUl8_iOS_info
 	.align 3
 _mono_aot_module_PixUl8_iOS_info:

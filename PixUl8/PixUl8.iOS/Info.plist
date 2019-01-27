@@ -28,9 +28,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
-	<string>PixU-L8</string>
-	<key>XSAppIconAssets</key>
-	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<string>PixUl8</string>
 	<key>UIStatusBarHidden</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
@@ -43,5 +41,11 @@
 	<string>Please allow Photo Library access to save photos</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Please allow Photo Library access to save photos</string>
+	<key>XSAppIconAssets</key>
+	<string>Resources/Images.xcassets/AppIcons.appiconset</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>&quot;Get Show.tff&quot;</string>
+	</array>
 </dict>
 </plist>
