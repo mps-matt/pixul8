@@ -51,7 +51,7 @@
     <CodesignKey>iPhone Developer: Matt Stark (VHHF36Q4Y4)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignProvision>pixul8-dev</CodesignProvision>
+    <CodesignProvision>pixul8-Dev</CodesignProvision>
     <AssemblyName>PixUl8.iOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">

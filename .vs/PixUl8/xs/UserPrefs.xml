@@ -1,10 +1,5 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/Resources/LaunchScreen.storyboard">
-    <Files>
-      <File FileName="PixUl8/PixUl8/Views/HomePage.xaml" Line="221" Column="15" />
-      <File FileName="PixUl8/PixUl8.iOS/Resources/LaunchScreen.storyboard" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.594cc34fe22a6ae2a5ef467001700a60305909ef" />
   <MonoDevelop.Ide.ItemProperties.PixUl8 HideGettingStarted="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
