@@ -79,6 +79,7 @@
     <Compile Include="UIViews\CircleZoomPercentage.cs" />
     <Compile Include="UIViews\FocusWheel.cs" />
     <Compile Include="UIViews\SwipeButton.cs" />
+    <Compile Include="Models\EventArgsT.cs" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
@@ -219,6 +220,7 @@
     <Folder Include="CustomRenderers\" />
     <Folder Include="UIViews\" />
     <Folder Include="Delegates\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />

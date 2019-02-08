@@ -17,6 +17,10 @@ using PixUl8.iOS.Delegates;
 using MediaPlayer;
 using System.Threading;
 using MoreLinq;
+using System.Collections.Generic;
+using PixUl8.iOS.Models;
+using CoreAnimation;
+using Vision;
 
 //This code came from https://github.com/xamarin/xamarin-forms-samples/blob/master/CustomRenderers/View/iOS/UICameraPreview.cs
 // - It seems that the tutorial i was following assumes this is built intro xamarin but i didn't have it so found it myself!
@@ -28,19 +32,34 @@ namespace PixUl8.iOS.UIViews
         Right
     }
 
-    public class UICameraPreview : UIView
+    public class UICameraPreview : UIView, IAVCaptureVideoDataOutputSampleBufferDelegate
     {
         public static CGRect BOUNDS;
 
         private AVCaptureVideoPreviewLayer _previewLayer;
         private AVCaptureDevice _device;
 
+        private CGSize _captureDeviceResolution;
+        private CGSize _captureDeviceBounds;
+
         private AVCapturePhotoOutput _photoOutput;
-        private PhotoCaptureDelegate _delegate;
+        private AVCaptureVideoDataOutput _videoOutput;
+        private PhotoCaptureDelegate _imageDelegate;
         private bool _forcePressed = false;
         private bool _canTakePicture = true;
         private CircleZoomPercentage _percentage;
         private FocusWheel _focusWheel;
+
+
+        private CALayer _detectionOverlayLayer;
+        private CAShapeLayer _detectedFaceRectangleShapeLayer;
+        private CAShapeLayer _detectedFaceLandmarksShapeLayer;
+
+        private List<VNTrackObjectRequest> _trackingRequests = new List<VNTrackObjectRequest>();
+        private List<VNDetectFaceRectanglesRequest> _detectRequests = new List<VNDetectFaceRectanglesRequest>();
+        private VNSequenceRequestHandler _sequenceRequestHandler = new VNSequenceRequestHandler();
+
+
 
         private readonly CameraOptions _cameraOptions;
 
@@ -175,7 +194,7 @@ namespace PixUl8.iOS.UIViews
             DependencyService.Get<IHapticService>().InvokeLightHaptic();
             
 
-            _photoOutput.CapturePhoto(GetCurrentPhotoSettings(), _delegate);
+            _photoOutput.CapturePhoto(GetCurrentPhotoSettings(), _imageDelegate);
             _canTakePicture = false;
 
             //In 300ms time, re-enable picture taking
@@ -189,7 +208,7 @@ namespace PixUl8.iOS.UIViews
 
 
         private void StartRunning()
-        {
+        { 
             CaptureSession.StartRunning();
         }
 
@@ -222,13 +241,15 @@ namespace PixUl8.iOS.UIViews
             {
                 VideoGravity = AVLayerVideoGravity.ResizeAspectFill,
                 DrawsAsynchronously = true,
-                Speed = 1
+                Speed = 1,
+                Orientation = AVCaptureVideoOrientation.Portrait
             };
             
 
             var deviceSession = AVCaptureDeviceDiscoverySession.Create(allTypes, AVMediaType.Video, 
                 (_cameraOptions == CameraOptions.Front) ? AVCaptureDevicePosition.Front : AVCaptureDevicePosition.Back);
  
+
             //Get best device, first one isi usually most hightech avaiable. 
             //Only issue i see happening is iphon 2g only had a rear cameras but let's be real here.
             //This app SHOULD NEVER be ran on an orignal iphone!!
@@ -260,23 +281,36 @@ namespace PixUl8.iOS.UIViews
 
             _minimumZoomFactor = _device.MinAvailableVideoZoomFactor;
             _maxZoomFactor = _device.MaxAvailableVideoZoomFactor;
-            
+             
+            //This is so the focus circle can follow the object but it throws an exception!
+           // _observer = _device.AddObserver("FocusPointOfInterest", NSKeyValueObservingOptions.New, FocusChange);
+
             #endregion
             _device.UnlockForConfiguration();
 
+
+            _imageDelegate = new PhotoCaptureDelegate();
 
             NSError error;
             var input = new AVCaptureDeviceInput(_device, out error);
             CaptureSession.AddInput(input);
 
+           
             _photoOutput = new AVCapturePhotoOutput();
             _photoOutput.IsHighResolutionCaptureEnabled = true;
+
             CaptureSession.AddOutput(_photoOutput);
 
 
-            Layer.AddSublayer(_previewLayer);
+            _videoOutput = new AVCaptureVideoDataOutput();
+            _videoOutput.AlwaysDiscardsLateVideoFrames = true;
+            DispatchQueue videoQueue = new DispatchQueue($"videoQueue-{_cameraOptions}");
+            _videoOutput.SetSampleBufferDelegateQueue(this, videoQueue);
+            
+            CaptureSession.AddOutput(_videoOutput);
+            
 
-            _delegate = new PhotoCaptureDelegate();
+            Layer.AddSublayer(_previewLayer);
 
 
             //Subscribe to the volume change event, to abstract it ouf of here
@@ -293,6 +327,10 @@ namespace PixUl8.iOS.UIViews
 
             this.AddSubview(_percentage);
             this.AddSubview(_focusWheel);
+
+            _captureDeviceResolution = new CGSize(x* UIScreen.MainScreen.Scale, y* UIScreen.MainScreen.Scale);
+            _captureDeviceBounds = new CGSize(x, y);
+
 
 
             #region Handle For Swiping Gestures - This is needed as the Forms gestures seems too buggy, an I can't get to recognise the gestures correctly
@@ -353,10 +391,19 @@ namespace PixUl8.iOS.UIViews
             rightHandFlashButton.AddGestureRecognizer(leftSwipeFlashGesture);
             this.AddSubview(rightHandFlashButton);
 
-            #endregion 
+            #endregion
 
             #endregion
+
+            PrepareVisionRequest();
+
         }
+
+        private void FocusChange(NSObservedChange evt)
+        {
+            Debug.WriteLine(evt.ToString());
+        }
+
 
 
         private void TapToFocus(CGPoint focusPoint)
@@ -385,6 +432,8 @@ namespace PixUl8.iOS.UIViews
 
             if (_device.IsFocusModeSupported(AVCaptureFocusMode.AutoFocus))
                 _device.FocusMode = AVCaptureFocusMode.AutoFocus;
+
+            
 
             _device.UnlockForConfiguration();
 
@@ -444,5 +493,339 @@ namespace PixUl8.iOS.UIViews
             return photoSettings;
         }
 
+
+
+
+
+
+
+        ///////////////////////////////////////////////////////////////////////////////
+        /// Delegate Functions
+        /// 
+        ///
+
+        [Export("captureOutput:didOutputSampleBuffer:fromConnection:")]
+        public void DidOutputSampleBuffer(AVCaptureOutput captureOutput, CMSampleBuffer sampleBuffer, AVCaptureConnection connection)
+        {
+            if (!Activated)
+                return;
+
+            CVPixelBuffer pixelBuffer = null;
+            try
+            {
+
+                connection.VideoOrientation = AVCaptureVideoOrientation.PortraitUpsideDown;
+                if (_cameraOptions == CameraOptions.Rear)
+                    connection.VideoMirrored = true;
+
+                pixelBuffer = sampleBuffer.GetImageBuffer() as CVPixelBuffer;
+
+                NSError error;
+
+
+                if (_trackingRequests.Count == 0)
+                {
+                   
+
+
+                    var imageRequestHandler = new VNImageRequestHandler(pixelBuffer,
+                                                new VNImageOptions());
+                   
+                    var detectArray = _detectRequests.ToArray();
+                    bool result = imageRequestHandler.Perform(detectArray, out error);
+                    _detectRequests = detectArray.ToList();
+
+                    if (!result)
+                    {
+                        _detectedFaceRectangleShapeLayer.Path = new CGPath();
+                        _detectedFaceLandmarksShapeLayer.Path = new CGPath();
+
+                        _detectedFaceRectangleShapeLayer.Hidden = true;
+                        _detectedFaceLandmarksShapeLayer.Hidden = true;
+                    }
+                    return;
+                }
+                else
+                {
+                    var trackArray = _trackingRequests.ToArray();
+                    _sequenceRequestHandler.Perform(trackArray,
+                                     pixelBuffer,
+                                     out error);
+                    _trackingRequests = trackArray.ToList();
+
+                    //Setup next round of tracking
+                    var newTrackingRequests = new List<VNTrackObjectRequest>();
+                    foreach (var request in _trackingRequests)
+                    {
+                        var results = request.GetResults<VNDetectedObjectObservation>();
+                        if (results.Length == 0)
+                        {
+                            _detectedFaceRectangleShapeLayer.Path = new CGPath();
+                            _detectedFaceLandmarksShapeLayer.Path = new CGPath();
+
+                            _detectedFaceRectangleShapeLayer.Hidden = true;
+                            _detectedFaceLandmarksShapeLayer.Hidden = true;
+                            continue;
+                        }
+
+                        var observation = results[0];
+                        if (!request.LastFrame)
+                        {
+                            if (observation.Confidence > 0.3)
+                            {
+                                request.InputObservation = observation;
+                            }
+                            else
+                            {
+                                request.LastFrame = true;
+                                _detectedFaceRectangleShapeLayer.Path = new CGPath();
+                                _detectedFaceLandmarksShapeLayer.Path = new CGPath();
+
+                                _detectedFaceRectangleShapeLayer.Hidden = true;
+                                _detectedFaceLandmarksShapeLayer.Hidden = true;
+                            }
+                            newTrackingRequests.Add(request);
+                        }
+                        else
+                        {
+                            _detectedFaceRectangleShapeLayer.Path = new CGPath();
+                            _detectedFaceLandmarksShapeLayer.Path = new CGPath();
+
+                            _detectedFaceRectangleShapeLayer.Hidden = true;
+                            _detectedFaceLandmarksShapeLayer.Hidden = true;
+                        }
+                    }
+
+                    _trackingRequests = newTrackingRequests;
+                    if (_trackingRequests.Count == 0)
+                    {
+                        _detectedFaceRectangleShapeLayer.Path = new CGPath();
+                        _detectedFaceLandmarksShapeLayer.Path = new CGPath();
+
+                        _detectedFaceRectangleShapeLayer.Hidden = true;
+                        _detectedFaceLandmarksShapeLayer.Hidden = true;
+                        return;
+                    }
+                }
+
+
+                var faceLandmarkRequests = new List<VNDetectFaceLandmarksRequest>();
+                foreach (var trackingRequest in _trackingRequests)
+                {
+                    var faceLandmarksRequest = new VNDetectFaceLandmarksRequest((request, err) =>
+                    {
+
+                        var results = request.GetResults<VNFaceObservation>();
+
+                        // Perform all UI updates (drawing) on the main queue, not the background queue on which this handler is being called.
+                        DispatchQueue.MainQueue.DispatchAsync(() =>
+                        {
+                            DrawFaceObservations(results);
+                        });
+                    });
+
+                    var trackingResults = trackingRequest.GetResults<VNDetectedObjectObservation>();
+                    if (trackingResults.Length == 0)
+                        return;
+
+                    var observation = trackingResults[0];
+                    var faceObservation = VNFaceObservation.FromBoundingBox(observation.BoundingBox);
+                    faceLandmarksRequest.InputFaceObservations = new VNFaceObservation[] { faceObservation };
+
+
+                    // Continue to track detected facial landmarks.
+                    faceLandmarkRequests.Add(faceLandmarksRequest);
+
+
+                    var imageRequestHandler = new VNImageRequestHandler(pixelBuffer,
+                                                            new VNImageOptions());
+
+                    var faceArray = faceLandmarkRequests.ToArray();
+                    imageRequestHandler.Perform(faceArray, out error);
+                    faceLandmarkRequests = faceArray.ToList();
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.ToString());
+                _detectedFaceRectangleShapeLayer.Path = new CGPath();
+                _detectedFaceLandmarksShapeLayer.Path = new CGPath();
+
+                _detectedFaceRectangleShapeLayer.Hidden = true;
+                _detectedFaceLandmarksShapeLayer.Hidden = true;
+            }
+            finally
+            {
+                pixelBuffer?.Dispose();
+            }
+
+        }
+
+        private void PrepareVisionRequest()
+        {
+            var requests = new List<VNTrackObjectRequest>();
+            var faceDetectionRequest = new VNDetectFaceRectanglesRequest((request, error) =>
+            {
+                var results = request.GetResults<VNFaceObservation>();
+                DispatchQueue.MainQueue.DispatchAsync(() =>
+                {
+                    // Add the observations to the tracking list
+                    foreach (var observation in results)
+                    {
+                        var faceTrackingRequest = new VNTrackObjectRequest(observation);
+                        requests.Add(faceTrackingRequest);
+                    }
+                    _trackingRequests = requests;
+                });
+            });
+
+
+            // Start with detection.  Find face, then track it.
+            _detectRequests.Add(faceDetectionRequest);
+            _sequenceRequestHandler = new VNSequenceRequestHandler();
+            SetupVisionDrawingLayers();
+        }
+
+
+        private void SetupVisionDrawingLayers()
+        {
+            var captureDeviceBounds = new CGRect(x: 0,
+                                         y: 0,
+                                         width: _captureDeviceResolution.Width,
+                                         height: _captureDeviceResolution.Height);
+
+            var captureDeviceBoundsCenterPoint = new CGPoint(x: _captureDeviceResolution.Width,
+                                                     y: _captureDeviceResolution.Height);
+
+
+            var normalizedCenterPoint = new CGPoint(x: 0.5, y: 0.5);
+
+            var overlayLayer = new CALayer();
+            overlayLayer.Name = "DetectionOverlay";
+            overlayLayer.MasksToBounds = true;
+            overlayLayer.AnchorPoint = normalizedCenterPoint;
+            overlayLayer.Bounds = captureDeviceBounds;
+            overlayLayer.Position = new CGPoint(x: _previewLayer.Bounds.GetMidX(), y: _previewLayer.Bounds.GetMidY());
+
+            var faceRectangleShapeLayer = new CAShapeLayer();
+            faceRectangleShapeLayer.Name = "RectangleOutlineLayer";
+            faceRectangleShapeLayer.Bounds = captureDeviceBounds;
+            faceRectangleShapeLayer.AnchorPoint = normalizedCenterPoint;
+            faceRectangleShapeLayer.Position = captureDeviceBoundsCenterPoint;
+            faceRectangleShapeLayer.FillColor = null;
+            faceRectangleShapeLayer.StrokeColor = UIColor.Green.ColorWithAlpha(0.7f).CGColor;
+            faceRectangleShapeLayer.LineWidth = 5;
+            faceRectangleShapeLayer.ShadowOpacity = 0.7f;
+            faceRectangleShapeLayer.ShadowRadius = 5;
+
+
+            var faceLandmarksShapeLayer = new CAShapeLayer();
+            faceLandmarksShapeLayer.Name = "FaceLandmarksLayer";
+            faceLandmarksShapeLayer.Bounds = captureDeviceBounds;
+            faceLandmarksShapeLayer.AnchorPoint = normalizedCenterPoint;
+            faceLandmarksShapeLayer.Position = captureDeviceBoundsCenterPoint;
+            faceLandmarksShapeLayer.FillColor = null;
+            faceLandmarksShapeLayer.StrokeColor = UIColor.Yellow.ColorWithAlpha(0.7f).CGColor;
+            faceLandmarksShapeLayer.LineWidth = 3;
+            faceLandmarksShapeLayer.ShadowOpacity = 0.7f;
+            faceLandmarksShapeLayer.ShadowRadius = 5;
+
+
+            overlayLayer.AddSublayer(faceRectangleShapeLayer);
+            faceRectangleShapeLayer.AddSublayer(faceLandmarksShapeLayer);
+            Layer.InsertSublayer(overlayLayer, 100);
+
+            _detectionOverlayLayer = overlayLayer;
+            _detectedFaceRectangleShapeLayer = faceRectangleShapeLayer;
+            _detectedFaceLandmarksShapeLayer = faceLandmarksShapeLayer;
+
+
+        }
+
+        private void DrawFaceObservations(VNFaceObservation[] faceObservations)
+        {
+            var faceRectangleShapeLayer = _detectedFaceRectangleShapeLayer;
+            var faceLandmarksShapeLayer = _detectedFaceLandmarksShapeLayer;
+
+            CATransaction.Begin();
+
+            var faceRectanglePath = new CGPath();
+            var faceLandmarksPath = new CGPath();
+
+            foreach (var faceOnservation in faceObservations)
+            {
+                AddIndicators(faceRectanglePath, faceLandmarksPath, faceOnservation);
+            }
+            faceRectangleShapeLayer.Hidden = false;
+            faceLandmarksShapeLayer.Hidden = false;
+
+            faceRectangleShapeLayer.Path = faceRectanglePath;
+            faceLandmarksShapeLayer.Path = faceLandmarksPath;
+
+            //this.UpdateLayerGeometry();
+
+            CATransaction.Commit();
+        }
+
+        private void AddIndicators(CGPath faceRectanglePath, CGPath faceLandmarksPath, VNFaceObservation faceObservation)
+        {
+            var displaySize = _captureDeviceBounds;
+            var faceBounds = VNUtils.GetImageRect(faceObservation.BoundingBox, (nuint)displaySize.Width, (nuint)displaySize.Height);
+
+            faceRectanglePath.AddRect(faceBounds);
+
+            var landmarks = faceObservation.Landmarks;
+
+            //var affineTransform = new CGAffineTransform(faceBounds.X, faceBounds.Y, 0, 0, 0, 0);
+            //affineTransform.Scale(faceBounds.Size.Width, faceBounds.Size.Height);
+
+            // Treat eyebrows and lines as open-ended regions when drawing paths.
+            var openLandmarkRegions = new List<VNFaceLandmarkRegion2D>()
+            {
+                landmarks.LeftEyebrow,
+                landmarks.RightEyebrow,
+                landmarks.FaceContour,
+                landmarks.NoseCrest,
+                landmarks.MedianLine
+            };
+
+            foreach (var openLandmarkRegion in openLandmarkRegions.Where(r => r != null))
+            {
+                //AddPoints(openLandmarkRegion, faceLandmarksPath, affineTransform, false);
+            }
+
+
+            // Draw eyes, lips, and nose as closed regions.
+            var closedLandmarkRegions = new List<VNFaceLandmarkRegion2D>()
+            {
+                landmarks.LeftEye,
+                landmarks.RightEye,
+                landmarks.OuterLips,
+                landmarks.InnerLips,
+                landmarks.Nose
+            };
+
+            foreach (var closedLandmarkRegion in closedLandmarkRegions.Where(r => r != null))
+            {
+                //AddPoints(closedLandmarkRegion, faceLandmarksPath, affineTransform, true);
+            }
+
+        }
+
+        private void AddPoints(VNFaceLandmarkRegion2D landmarkRegion, CGPath path, CGAffineTransform affineTransform, bool closePath)
+        {
+            var pointCount = landmarkRegion.PointCount;
+            if (pointCount > 1)
+            {
+                var points = landmarkRegion.NormalizedPoints;
+                path.MoveToPoint(affineTransform, points[0]);
+                path.AddLines(affineTransform, points);
+                if (closePath)
+                {
+                    path.AddLineToPoint(affineTransform, points[0]);
+                    path.CloseSubpath();
+                }
+            }
+        }
     }
 }

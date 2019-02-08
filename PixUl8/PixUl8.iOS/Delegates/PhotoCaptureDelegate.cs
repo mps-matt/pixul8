@@ -16,6 +16,7 @@ namespace PixUl8.iOS.Delegates
     //From https://github.com/xamarin/ios-samples/blob/master/ios10/AVCamManual/AVCamManual/AVCamManual/AVCamManualCameraViewController.cs
     public class PhotoCaptureDelegate : AVCapturePhotoCaptureDelegate
     {
+
         [Export ("captureOutput:didFinishProcessingPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:")]
         public override void DidFinishProcessingPhoto (AVCapturePhotoOutput captureOutput,
                                        CMSampleBuffer photoSampleBuffer, CMSampleBuffer previewPhotoSampleBuffer,

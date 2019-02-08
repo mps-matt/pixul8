@@ -23,8 +23,6 @@ namespace PixUl8.Views
         {
             InitializeComponent();
             BindingContext = viewModel = new HomeViewModel();
-
-            var thing = FlashOnLeft1.GestureRecognizers;
         }
 
 

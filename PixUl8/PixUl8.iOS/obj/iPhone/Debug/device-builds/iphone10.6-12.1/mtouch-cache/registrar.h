@@ -11,6 +11,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <GLKit/GLKit.h>
 #import <WebKit/WebKit.h>
+#import <Vision/Vision.h>
 #import <Photos/Photos.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <CoreSpotlight/CoreSpotlight.h>
@@ -303,7 +304,7 @@
 	-(id) init;
 @end
 
-@interface PixUl8_iOS_UIViews_UICameraPreview : UIView {
+@interface PixUl8_iOS_UIViews_UICameraPreview : UIView<AVCaptureVideoDataOutputSampleBufferDelegate> {
 }
 	-(void) release;
 	-(id) retain;
@@ -312,6 +313,7 @@
 	-(void) drawRect:(CGRect)p0;
 	-(void) touchesMoved:(NSSet *)p0 withEvent:(UIEvent *)p1;
 	-(void) touchesEnded:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(void) captureOutput:(AVCaptureOutput *)p0 didOutputSampleBuffer:(id)p1 fromConnection:(AVCaptureConnection *)p2;
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 
