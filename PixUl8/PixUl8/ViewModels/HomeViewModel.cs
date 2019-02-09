@@ -27,6 +27,16 @@ namespace PixUl8.ViewModels
             MessagingCenter.Subscribe<UICameraPreview>(this, "PerformFlashSwitch", async (sender) => {
                 await ToggleFlashAsync();
             });
+
+            Task.Run(SetupCameras);
+        }
+
+        public async Task SetupCameras()
+        {
+            await Task.Delay(250);
+            IsFrontFacingActive = true;
+            await Task.Delay(250);
+            IsFrontFacingActive = false;
         }
 
         #region Bindable Properties
