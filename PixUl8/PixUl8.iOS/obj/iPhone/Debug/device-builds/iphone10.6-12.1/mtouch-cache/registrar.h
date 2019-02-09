@@ -39,7 +39,6 @@
 @class __MonoMac_NSAsyncActionDispatcher;
 @class __MonoMac_NSAsyncSynchronizationContextDispatcher;
 @class PixUl8_iOS_UIViews_CircleZoomPercentage;
-@class PixUl8_iOS_UIViews_FocusWheel;
 @class PixUl8_iOS_UIViews_SwipeButton;
 @class Xamarin_Forms_Platform_iOS_VisualElementRenderer_1;
 @class Xamarin_Forms_Platform_iOS_ViewRenderer_2;
@@ -48,6 +47,7 @@
 @class AppDelegate;
 @class PixUl8_iOS_Delegates_PhotoCaptureDelegate;
 @class PixUl8_iOS_UIViews_UICameraPreview;
+@class PixUl8_iOS_UIViews_FocusWheel;
 @class Xamarin_Forms_Platform_iOS_iOS7ButtonContainer;
 @class Xamarin_Forms_Platform_iOS_GlobalCloseContextGestureRecognizer;
 @class Xamarin_Forms_Platform_iOS_ModalWrapper;
@@ -213,16 +213,6 @@
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 
-@interface PixUl8_iOS_UIViews_FocusWheel : UIView {
-}
-	-(void) release;
-	-(id) retain;
-	-(int) xamarinGetGCHandle;
-	-(void) xamarinSetGCHandle: (int) gchandle;
-	-(void) drawRect:(CGRect)p0;
-	-(BOOL) conformsToProtocol:(void *)p0;
-@end
-
 @interface PixUl8_iOS_UIViews_SwipeButton : UIButton {
 }
 	-(void) release;
@@ -314,6 +304,16 @@
 	-(void) touchesMoved:(NSSet *)p0 withEvent:(UIEvent *)p1;
 	-(void) touchesEnded:(NSSet *)p0 withEvent:(UIEvent *)p1;
 	-(void) captureOutput:(AVCaptureOutput *)p0 didOutputSampleBuffer:(id)p1 fromConnection:(AVCaptureConnection *)p2;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface PixUl8_iOS_UIViews_FocusWheel : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) drawRect:(CGRect)p0;
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 

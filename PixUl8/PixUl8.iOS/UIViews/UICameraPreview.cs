@@ -36,6 +36,8 @@ namespace PixUl8.iOS.UIViews
     {
         public static CGRect BOUNDS;
 
+        private bool _manualFocusing = false;
+
         private AVCaptureVideoPreviewLayer _previewLayer;
         private AVCaptureDevice _device;
 
@@ -208,7 +210,7 @@ namespace PixUl8.iOS.UIViews
 
 
         private void StartRunning()
-        { 
+        {
             CaptureSession.StartRunning();
         }
 
@@ -408,7 +410,7 @@ namespace PixUl8.iOS.UIViews
 
         private void TapToFocus(CGPoint focusPoint)
         {
-       
+            HideBoxes(manualFocus: true);
             CGRect screenRect = UIScreen.MainScreen.Bounds;
             var screenWidth = screenRect.Size.Width;
             var screenHeight = screenRect.Size.Height;
@@ -451,6 +453,7 @@ namespace PixUl8.iOS.UIViews
             if (_device.IsFocusModeSupported(AVCaptureFocusMode.ContinuousAutoFocus))
                 _device.FocusMode = AVCaptureFocusMode.ContinuousAutoFocus;
 
+            UnhideBoxes();
             _device.UnlockForConfiguration();
         }
 
@@ -461,6 +464,9 @@ namespace PixUl8.iOS.UIViews
                 ZoomFactor += recognizer.Scale > 1 ? 0.05 : -0.2;
             }
             _percentage.UpdateDisplayZoomFactor((float)Math.Round(ZoomFactor, 1));
+
+            _trackingRequests.Clear();
+            
         }
 
         private void SwipeHandlerSwitchCamera(SwipeType type)
@@ -496,7 +502,7 @@ namespace PixUl8.iOS.UIViews
 
 
 
-
+        #region Capture Video Deegate Functions
 
 
         ///////////////////////////////////////////////////////////////////////////////
@@ -507,16 +513,20 @@ namespace PixUl8.iOS.UIViews
         [Export("captureOutput:didOutputSampleBuffer:fromConnection:")]
         public void DidOutputSampleBuffer(AVCaptureOutput captureOutput, CMSampleBuffer sampleBuffer, AVCaptureConnection connection)
         {
-            if (!Activated)
-                return;
-
             CVPixelBuffer pixelBuffer = null;
+            //CMSampleBuffer bufferCopy = null;
             try
             {
+                if (!Activated)
+                {
+                    HideBoxes();
+                    return;
+                }
 
                 connection.VideoOrientation = AVCaptureVideoOrientation.PortraitUpsideDown;
                 if (_cameraOptions == CameraOptions.Rear)
                     connection.VideoMirrored = true;
+                   
 
                 pixelBuffer = sampleBuffer.GetImageBuffer() as CVPixelBuffer;
 
@@ -525,8 +535,6 @@ namespace PixUl8.iOS.UIViews
 
                 if (_trackingRequests.Count == 0)
                 {
-                   
-
 
                     var imageRequestHandler = new VNImageRequestHandler(pixelBuffer,
                                                 new VNImageOptions());
@@ -535,79 +543,51 @@ namespace PixUl8.iOS.UIViews
                     bool result = imageRequestHandler.Perform(detectArray, out error);
                     _detectRequests = detectArray.ToList();
 
-                    if (!result)
-                    {
-                        _detectedFaceRectangleShapeLayer.Path = new CGPath();
-                        _detectedFaceLandmarksShapeLayer.Path = new CGPath();
-
-                        _detectedFaceRectangleShapeLayer.Hidden = true;
-                        _detectedFaceLandmarksShapeLayer.Hidden = true;
-                    }
+                    HideBoxes();
                     return;
                 }
-                else
+
+                var trackArray = _trackingRequests.ToArray();
+                _sequenceRequestHandler.Perform(trackArray,
+                                 pixelBuffer,
+                                 out error);
+                _trackingRequests = trackArray.ToList();
+
+                //Setup next round of tracking
+                var newTrackingRequests = new List<VNTrackObjectRequest>();
+                foreach (var request in _trackingRequests)
                 {
-                    var trackArray = _trackingRequests.ToArray();
-                    _sequenceRequestHandler.Perform(trackArray,
-                                     pixelBuffer,
-                                     out error);
-                    _trackingRequests = trackArray.ToList();
-
-                    //Setup next round of tracking
-                    var newTrackingRequests = new List<VNTrackObjectRequest>();
-                    foreach (var request in _trackingRequests)
+                    var results = request.GetResults<VNDetectedObjectObservation>();
+                    if (results.Length == 0)
                     {
-                        var results = request.GetResults<VNDetectedObjectObservation>();
-                        if (results.Length == 0)
+                        continue;
+                    }
+
+                    var observation = results[0];
+                    if (!request.LastFrame)
+                    {
+                        if (observation.Confidence > 0.3)
                         {
-                            _detectedFaceRectangleShapeLayer.Path = new CGPath();
-                            _detectedFaceLandmarksShapeLayer.Path = new CGPath();
-
-                            _detectedFaceRectangleShapeLayer.Hidden = true;
-                            _detectedFaceLandmarksShapeLayer.Hidden = true;
-                            continue;
-                        }
-
-                        var observation = results[0];
-                        if (!request.LastFrame)
-                        {
-                            if (observation.Confidence > 0.3)
-                            {
-                                request.InputObservation = observation;
-                            }
-                            else
-                            {
-                                request.LastFrame = true;
-                                _detectedFaceRectangleShapeLayer.Path = new CGPath();
-                                _detectedFaceLandmarksShapeLayer.Path = new CGPath();
-
-                                _detectedFaceRectangleShapeLayer.Hidden = true;
-                                _detectedFaceLandmarksShapeLayer.Hidden = true;
-                            }
+                            request.InputObservation = observation;
                             newTrackingRequests.Add(request);
                         }
                         else
                         {
-                            _detectedFaceRectangleShapeLayer.Path = new CGPath();
-                            _detectedFaceLandmarksShapeLayer.Path = new CGPath();
-
-                            _detectedFaceRectangleShapeLayer.Hidden = true;
-                            _detectedFaceLandmarksShapeLayer.Hidden = true;
+                            request.LastFrame = true;
                         }
+                       
                     }
-
-                    _trackingRequests = newTrackingRequests;
-                    if (_trackingRequests.Count == 0)
-                    {
-                        _detectedFaceRectangleShapeLayer.Path = new CGPath();
-                        _detectedFaceLandmarksShapeLayer.Path = new CGPath();
-
-                        _detectedFaceRectangleShapeLayer.Hidden = true;
-                        _detectedFaceLandmarksShapeLayer.Hidden = true;
-                        return;
+                    else
+                    { 
                     }
                 }
 
+                _trackingRequests = newTrackingRequests;
+                if (_trackingRequests.Count == 0)
+                {
+                    HideBoxes();
+                    return;
+                }
 
                 var faceLandmarkRequests = new List<VNDetectFaceLandmarksRequest>();
                 foreach (var trackingRequest in _trackingRequests)
@@ -622,11 +602,15 @@ namespace PixUl8.iOS.UIViews
                         {
                             DrawFaceObservations(results);
                         });
+
                     });
 
                     var trackingResults = trackingRequest.GetResults<VNDetectedObjectObservation>();
                     if (trackingResults.Length == 0)
+                    {
+                        HideBoxes();
                         return;
+                    }
 
                     var observation = trackingResults[0];
                     var faceObservation = VNFaceObservation.FromBoundingBox(observation.BoundingBox);
@@ -648,17 +632,41 @@ namespace PixUl8.iOS.UIViews
             catch (Exception e)
             {
                 Debug.WriteLine(e.ToString());
-                _detectedFaceRectangleShapeLayer.Path = new CGPath();
-                _detectedFaceLandmarksShapeLayer.Path = new CGPath();
-
-                _detectedFaceRectangleShapeLayer.Hidden = true;
-                _detectedFaceLandmarksShapeLayer.Hidden = true;
+                HideBoxes();
             }
             finally
             {
+                sampleBuffer?.Dispose();
                 pixelBuffer?.Dispose();
+              
             }
 
+        }
+
+        private void HideBoxes(bool manualFocus = false)
+        {
+
+            DispatchQueue.MainQueue.DispatchAsync(() =>
+            {
+                if (!manualFocus)
+                {
+                    _detectedFaceRectangleShapeLayer.Path = null;
+                    _detectedFaceLandmarksShapeLayer.Path = null;
+                }
+                else
+                    _manualFocusing = true;
+                _detectionOverlayLayer.Hidden = true;
+            });
+            //CaptureSession.StartRunning();
+        }
+
+        private void UnhideBoxes()
+        {
+            DispatchQueue.MainQueue.DispatchAsync(() =>
+            {
+                _manualFocusing = false;
+                _detectionOverlayLayer.Hidden = false;
+            });
         }
 
         private void PrepareVisionRequest()
@@ -713,10 +721,10 @@ namespace PixUl8.iOS.UIViews
             faceRectangleShapeLayer.AnchorPoint = normalizedCenterPoint;
             faceRectangleShapeLayer.Position = captureDeviceBoundsCenterPoint;
             faceRectangleShapeLayer.FillColor = null;
-            faceRectangleShapeLayer.StrokeColor = UIColor.Green.ColorWithAlpha(0.7f).CGColor;
-            faceRectangleShapeLayer.LineWidth = 5;
-            faceRectangleShapeLayer.ShadowOpacity = 0.7f;
-            faceRectangleShapeLayer.ShadowRadius = 5;
+            faceRectangleShapeLayer.StrokeColor = UIColor.Green.ColorWithAlpha(0.5f).CGColor;
+            faceRectangleShapeLayer.LineWidth = 3;
+            faceRectangleShapeLayer.ShadowOpacity = 0.5f;
+            faceRectangleShapeLayer.ShadowRadius = 3;
 
 
             var faceLandmarksShapeLayer = new CAShapeLayer();
@@ -725,10 +733,10 @@ namespace PixUl8.iOS.UIViews
             faceLandmarksShapeLayer.AnchorPoint = normalizedCenterPoint;
             faceLandmarksShapeLayer.Position = captureDeviceBoundsCenterPoint;
             faceLandmarksShapeLayer.FillColor = null;
-            faceLandmarksShapeLayer.StrokeColor = UIColor.Yellow.ColorWithAlpha(0.7f).CGColor;
-            faceLandmarksShapeLayer.LineWidth = 3;
-            faceLandmarksShapeLayer.ShadowOpacity = 0.7f;
-            faceLandmarksShapeLayer.ShadowRadius = 5;
+            faceLandmarksShapeLayer.StrokeColor = UIColor.Yellow.ColorWithAlpha(0.5f).CGColor;
+            faceLandmarksShapeLayer.LineWidth = 1;
+            faceLandmarksShapeLayer.ShadowOpacity = 0.5f;
+            faceLandmarksShapeLayer.ShadowRadius = 3;
 
 
             overlayLayer.AddSublayer(faceRectangleShapeLayer);
@@ -744,40 +752,88 @@ namespace PixUl8.iOS.UIViews
 
         private void DrawFaceObservations(VNFaceObservation[] faceObservations)
         {
-            var faceRectangleShapeLayer = _detectedFaceRectangleShapeLayer;
-            var faceLandmarksShapeLayer = _detectedFaceLandmarksShapeLayer;
-
-            CATransaction.Begin();
-
-            var faceRectanglePath = new CGPath();
-            var faceLandmarksPath = new CGPath();
-
-            foreach (var faceOnservation in faceObservations)
+            try
             {
-                AddIndicators(faceRectanglePath, faceLandmarksPath, faceOnservation);
+                if (!_manualFocusing)
+                    _detectionOverlayLayer.Hidden = false;
+
+                var faceRectangleShapeLayer = _detectedFaceRectangleShapeLayer;
+                var faceLandmarksShapeLayer = _detectedFaceLandmarksShapeLayer;
+
+                CATransaction.Begin();
+
+                var faceRectanglePath = new CGPath();
+                var faceLandmarksPath = new CGPath();
+
+                foreach (var faceOnservation in faceObservations ?? new VNFaceObservation[] { })
+                {
+                    AddIndicators(faceRectanglePath, faceLandmarksPath, faceOnservation);
+                }
+
+
+                if (!_manualFocusing)
+                {
+                    var first = (faceObservations ?? new VNFaceObservation[] { }).FirstOrDefault();
+
+                    if (first != null)
+                    {
+                        NSError err;
+                        _device.LockForConfiguration(out err);
+
+                        if (_device.FocusPointOfInterestSupported)
+                            _device.FocusPointOfInterest = first.BoundingBox.Location;
+
+                        if (_device.ExposurePointOfInterestSupported)
+                            _device.ExposurePointOfInterest = first.BoundingBox.Location;
+
+                        if (_device.IsExposureModeSupported(AVCaptureExposureMode.AutoExpose))
+                            _device.ExposureMode = AVCaptureExposureMode.AutoExpose;
+
+                        if (_device.IsFocusModeSupported(AVCaptureFocusMode.AutoFocus))
+                            _device.FocusMode = AVCaptureFocusMode.AutoFocus;
+
+                        _device.UnlockForConfiguration();
+                    }
+                }
+
+                faceRectangleShapeLayer.Path = faceRectanglePath;
+                faceLandmarksShapeLayer.Path = faceLandmarksPath;
+
+                //this.UpdateLayerGeometry();
+
+                CATransaction.Commit();
             }
-            faceRectangleShapeLayer.Hidden = false;
-            faceLandmarksShapeLayer.Hidden = false;
-
-            faceRectangleShapeLayer.Path = faceRectanglePath;
-            faceLandmarksShapeLayer.Path = faceLandmarksPath;
-
-            //this.UpdateLayerGeometry();
-
-            CATransaction.Commit();
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
         }
 
         private void AddIndicators(CGPath faceRectanglePath, CGPath faceLandmarksPath, VNFaceObservation faceObservation)
         {
             var displaySize = _captureDeviceBounds;
-            var faceBounds = VNUtils.GetImageRect(faceObservation.BoundingBox, (nuint)displaySize.Width, (nuint)displaySize.Height);
+
+            var boundingBox = faceObservation.BoundingBox;
+
+            var faceBounds = VNUtils.GetImageRect(boundingBox, (nuint)displaySize.Width, (nuint)displaySize.Height);
+
+            var oldHeight = faceBounds.Height;
+            if (faceBounds.Height > faceBounds.Width)
+                faceBounds.Height = faceBounds.Width;
+            else if (faceBounds.Width > faceBounds.Height)
+                faceBounds.Width = faceBounds.Height;
+
+            if (faceBounds.Height*2 < oldHeight)
+            {
+                faceBounds.Height *= 2;
+                faceBounds.Width *= 2;
+                faceBounds.X -= faceBounds.Width / 2;
+                faceBounds.Y += faceBounds.Height / 2;
+            }
 
             faceRectanglePath.AddRect(faceBounds);
 
             var landmarks = faceObservation.Landmarks;
-
-            //var affineTransform = new CGAffineTransform(faceBounds.X, faceBounds.Y, 0, 0, 0, 0);
-            //affineTransform.Scale(faceBounds.Size.Width, faceBounds.Size.Height);
 
             // Treat eyebrows and lines as open-ended regions when drawing paths.
             var openLandmarkRegions = new List<VNFaceLandmarkRegion2D>()
@@ -791,7 +847,7 @@ namespace PixUl8.iOS.UIViews
 
             foreach (var openLandmarkRegion in openLandmarkRegions.Where(r => r != null))
             {
-                //AddPoints(openLandmarkRegion, faceLandmarksPath, affineTransform, false);
+                //AddPoints(openLandmarkRegion, faceLandmarksPath, false);
             }
 
 
@@ -807,25 +863,28 @@ namespace PixUl8.iOS.UIViews
 
             foreach (var closedLandmarkRegion in closedLandmarkRegions.Where(r => r != null))
             {
-                //AddPoints(closedLandmarkRegion, faceLandmarksPath, affineTransform, true);
+                //AddPoints(closedLandmarkRegion, faceLandmarksPath, true);
             }
 
         }
 
-        private void AddPoints(VNFaceLandmarkRegion2D landmarkRegion, CGPath path, CGAffineTransform affineTransform, bool closePath)
+        private void AddPoints(VNFaceLandmarkRegion2D landmarkRegion, CGPath path, bool closePath)
         {
             var pointCount = landmarkRegion.PointCount;
             if (pointCount > 1)
             {
                 var points = landmarkRegion.NormalizedPoints;
-                path.MoveToPoint(affineTransform, points[0]);
-                path.AddLines(affineTransform, points);
+                path.MoveToPoint(points[0]);
+                path.AddLines(points);
                 if (closePath)
                 {
-                    path.AddLineToPoint(affineTransform, points[0]);
+                    path.AddLineToPoint(points[0]);
                     path.CloseSubpath();
                 }
             }
         }
+
+
+        #endregion
     }
 }

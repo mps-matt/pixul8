@@ -26,7 +26,7 @@
                     
                     <NativeViews:CameraView Grid.RowSpan="2" Grid.ColumnSpan="3"
                                             Grid.Row="0" Grid.Column="0"
-                                            Camera="Front" 
+                                            Camera="Rear" 
                                             FlashOn="{Binding IsFlashActive}"
                                             Activated="{Binding IsBackFacingActive}"
                                             HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
@@ -127,7 +127,7 @@
                     </Grid.RowDefinitions>                     
                         <NativeViews:CameraView Grid.RowSpan="2" Grid.ColumnSpan="3"
                                                 Grid.Row="0" Grid.Column="0"
-                                                Camera="Rear" 
+                                                Camera="Front" 
                                                 FlashOn="{Binding IsFlashActive}"
                                                 Activated="{Binding IsFrontFacingActive}"
                                                 HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />

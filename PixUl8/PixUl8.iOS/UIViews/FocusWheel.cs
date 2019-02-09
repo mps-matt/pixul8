@@ -54,10 +54,17 @@ namespace PixUl8.iOS.UIViews
 
             this.Alpha = 0.6f;
 
-            UIView.Animate(3, 4, UIViewAnimationOptions.AllowUserInteraction, () =>
+            UIView.AnimateNotify(3, 4, UIViewAnimationOptions.AllowUserInteraction, () =>
             {
                 this.Alpha = 0;
-            }, completionHandler);
+            }, (finished) => Completion(finished, completionHandler));
+         
+        }
+
+        public void Completion(bool success, Action completionHandler)
+        {
+            if (success)
+                completionHandler.Invoke();
         }
     }
 }

@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/UIViews/FocusWheel.cs">
     <Files>
-      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="831" Column="1" />
-      <File FileName="PixUl8/PixUl8/ViewModels/HomeViewModel.cs" Line="54" Column="17" />
-      <File FileName="PixUl8/PixUl8/Views/HomePage.xaml" Line="130" Column="54" />
+      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="825" Column="13" />
+      <File FileName="PixUl8/PixUl8/Views/HomePage.xaml" Line="30" Column="44" />
       <File FileName="PixUl8/PixUl8.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="PixUl8/PixUl8.iOS/UIViews/FocusWheel.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.594cc34fe22a6ae2a5ef467001700a60305909ef" />
