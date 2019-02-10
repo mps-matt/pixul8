@@ -29,7 +29,51 @@
                                             Camera="Rear" 
                                             FlashOn="{Binding IsFlashActive}"
                                             Activated="{Binding IsBackFacingActive}"
+                                            HdrEnabled="{Binding IsHDRActive}"
                                             HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                    
+<!--                    Turn on HDR left-->
+                    <Button
+                        x:Name="HDROnLeft1"
+                        Grid.Row="0"
+                        InputTransparent="true"
+                        Grid.Column="0"
+                        IsVisible="{Binding IsHDRNotActive}"
+                        BorderColor="White"
+                        BorderWidth="5"
+                        BorderRadius="10"
+                        Margin="-12, 0, 30, 40"
+                        HeightRequest="100"
+                        WidthRequest="20"
+                        HorizontalOptions="Start"
+                        VerticalOptions="End"
+                        BackgroundColor="White"
+                        TextColor="Maroon"
+                        Text="HDR ON"
+                        FontSize="Small"
+                    />
+                    
+<!--                    Turn off HDR right-->
+                    <Button
+                        x:Name="HDROnRight1"
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        InputTransparent="true"
+                        BorderColor="White"
+                        IsVisible="{Binding IsHDRActive}"
+                        BorderWidth="5"
+                        BorderRadius="10"
+                        Margin="30, 0, -10, 40"
+                        HeightRequest="100"
+                        WidthRequest="20"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"
+                        BackgroundColor="White"
+                        TextColor="Maroon"
+                        Text="HDR OFF"
+                        FontSize="Small"
+                    />
+                    
                     
 <!--                    Turn on FLASH left-->
                     <Button
@@ -129,9 +173,52 @@
                                                 Grid.Row="0" Grid.Column="0"
                                                 Camera="Front" 
                                                 FlashOn="{Binding IsFlashActive}"
+                                                HdrEnabled="{Binding IsHDRActive}"
                                                 Activated="{Binding IsFrontFacingActive}"
                                                 HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
                         
+                    
+<!--                     -                    Turn on HDR left-->
+                    <Button
+                        x:Name="HDROnLeft2"
+                        Grid.Row="0"
+                        InputTransparent="true"
+                        Grid.Column="0"
+                        IsVisible="{Binding IsHDRNotActive}"
+                        BorderColor="White"
+                        BorderWidth="5"
+                        BorderRadius="10"
+                        Margin="-12, 0, 30, 40"
+                        HeightRequest="100"
+                        WidthRequest="20"
+                        HorizontalOptions="Start"
+                        VerticalOptions="End"
+                        BackgroundColor="White"
+                        TextColor="Maroon"
+                        Text="HDR ON"
+                        FontSize="Small"
+                    />
+                    
+<!--                    Turn off HDR right-->
+                    <Button
+                        x:Name="HDROnRight2"
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        InputTransparent="true"
+                        BorderColor="White"
+                        IsVisible="{Binding IsHDRActive}"
+                        BorderWidth="5"
+                        BorderRadius="10"
+                        Margin="30, 0, -10, 40"
+                        HeightRequest="100"
+                        WidthRequest="20"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"
+                        BackgroundColor="White"
+                        TextColor="Maroon"
+                        Text="HDR OFF"
+                        FontSize="Small"
+                    />
                     
 <!--                    Turn on FLASH left-->
                     <Button

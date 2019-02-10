@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 using AVFoundation;
 using Foundation;
 using MediaPlayer;
+using PixUl8.iOS.Delegates;
 using UIKit;
+using UserNotifications;
 using Xamarin.Forms;
 
 namespace PixUl8.iOS
@@ -48,10 +50,15 @@ namespace PixUl8.iOS
             });
 
 
+            UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert, (approved, err) => {
+            });
+
+            // Watch for notifications while the app is active
+            UNUserNotificationCenter.Current.Delegate = new UserNotificationCenterDelegate();
+
+
             return result;
         }
-
-  
 
         public override void DidEnterBackground(UIApplication uiApplication)
         {

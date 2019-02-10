@@ -21,6 +21,7 @@ using System.Collections.Generic;
 using PixUl8.iOS.Models;
 using CoreAnimation;
 using Vision;
+using UserNotifications;
 
 //This code came from https://github.com/xamarin/xamarin-forms-samples/blob/master/CustomRenderers/View/iOS/UICameraPreview.cs
 // - It seems that the tutorial i was following assumes this is built intro xamarin but i didn't have it so found it myself!
@@ -46,6 +47,7 @@ namespace PixUl8.iOS.UIViews
 
         private AVCapturePhotoOutput _photoOutput;
         private PhotoCaptureDelegate _imageDelegate;
+        private HDRPhotoCaptureDelegate _hdrImageDelegate;
         private bool _forcePressed = false;
         private bool _canTakePicture = true;
         private CircleZoomPercentage _percentage;
@@ -63,7 +65,7 @@ namespace PixUl8.iOS.UIViews
         public bool Activated
         {
             get { return _activated; }
-            set 
+            set
             {
                 bool oldValue = _activated;
                 _activated = value;
@@ -83,6 +85,16 @@ namespace PixUl8.iOS.UIViews
             set
             {
                 _flashOn = value;
+            }
+        }
+
+        private bool _hdrOn = false;
+        public bool HdrEnabled
+        {
+            get { return _hdrOn; }
+            set
+            {
+                _hdrOn = value;
             }
         }
 
@@ -119,16 +131,16 @@ namespace PixUl8.iOS.UIViews
         public AVCaptureSession CaptureSession = new AVCaptureSession();
 
 
-        public UICameraPreview (CameraOptions options)
+        public UICameraPreview(CameraOptions options)
         {
             _cameraOptions = options;
 
-            Initialize ();
+            Initialize();
         }
 
-        public override void Draw (CGRect rect)
+        public override void Draw(CGRect rect)
         {
-            base.Draw (rect);
+            base.Draw(rect);
             _previewLayer.Frame = rect;
             BOUNDS = rect;
         }
@@ -150,7 +162,7 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
-        public override void TouchesEnded (NSSet touches, UIEvent evt)
+        public override void TouchesEnded(NSSet touches, UIEvent evt)
         {
             base.TouchesEnded(touches, evt);
 
@@ -188,9 +200,12 @@ namespace PixUl8.iOS.UIViews
             //First Invoke the haptic engine and play sound effect, let the user know they triggered 
             //a picture in feeling and sound
             DependencyService.Get<IHapticService>().InvokeLightHaptic();
-            
 
-            _photoOutput.CapturePhoto(GetCurrentPhotoSettings(), _imageDelegate);
+            if (HdrEnabled)
+                _photoOutput.CapturePhoto(GetCurrentBracketedSettings(), _hdrImageDelegate);
+            else
+                _photoOutput.CapturePhoto(GetCurrentPhotoSettings(), _imageDelegate);
+
             _canTakePicture = false;
 
             //In 300ms time, re-enable picture taking
@@ -213,7 +228,7 @@ namespace PixUl8.iOS.UIViews
             CaptureSession.StopRunning();
         }
 
-        void Initialize ()
+        void Initialize()
         {
             AVCaptureDeviceType[] allTypes = new AVCaptureDeviceType[]
             {
@@ -239,11 +254,11 @@ namespace PixUl8.iOS.UIViews
                 DrawsAsynchronously = true,
                 Speed = 1
             };
-            
 
-            var deviceSession = AVCaptureDeviceDiscoverySession.Create(allTypes, AVMediaType.Video, 
+
+            var deviceSession = AVCaptureDeviceDiscoverySession.Create(allTypes, AVMediaType.Video,
                 (_cameraOptions == CameraOptions.Front) ? AVCaptureDevicePosition.Front : AVCaptureDevicePosition.Back);
- 
+
 
             //Get best device, first one isi usually most hightech avaiable. 
             //Only issue i see happening is iphon 2g only had a rear cameras but let's be real here.
@@ -265,9 +280,14 @@ namespace PixUl8.iOS.UIViews
             //Then by the highest resolution possible for highest fps
 
             _device.ActiveFormat = _device.Formats.MaxBy(format => format.VideoSupportedFrameRateRanges.Max(fps => fps.MinFrameRate))
-            .MaxBy(format => format.HighResolutionStillImageDimensions.Width)
-            .MaxBy(format => format.HighResolutionStillImageDimensions.Height)
-            .First();
+                .MaxBy(format => format.HighResolutionStillImageDimensions.Width)
+                .MaxBy(format => format.HighResolutionStillImageDimensions.Height)
+                .FirstOrDefault(format => format.videoHDRSupportedVideoHDREnabled) 
+                ??
+                _device.Formats.MaxBy(format => format.VideoSupportedFrameRateRanges.Max(fps => fps.MinFrameRate))
+                .MaxBy(format => format.HighResolutionStillImageDimensions.Width)
+                .MaxBy(format => format.HighResolutionStillImageDimensions.Height)
+                .First();
 
             //Get the frame rates allowed by this format type (whetherr telophoto, treudedepth etc)
             var highestFrameRate = _device.ActiveFormat.VideoSupportedFrameRateRanges.MaxBy(fps => fps.MinFrameRate);
@@ -276,25 +296,32 @@ namespace PixUl8.iOS.UIViews
 
             _minimumZoomFactor = _device.MinAvailableVideoZoomFactor;
             _maxZoomFactor = _device.MaxAvailableVideoZoomFactor;
-            
-             
+
+            if (_device.ActiveFormat.videoHDRSupportedVideoHDREnabled)
+            {
+                _device.VideoHdrEnabled = true;
+                _device.AutomaticallyAdjustsVideoHdrEnabled = false;
+            }
+
+
             //This is so the focus circle can follow the object but it throws an exception!
-           // _observer = _device.AddObserver("FocusPointOfInterest", NSKeyValueObservingOptions.New, FocusChange);
+            // _observer = _device.AddObserver("FocusPointOfInterest", NSKeyValueObservingOptions.New, FocusChange);
 
             #endregion
             _device.UnlockForConfiguration();
 
 
             _imageDelegate = new PhotoCaptureDelegate();
+            _hdrImageDelegate = new HDRPhotoCaptureDelegate();
 
             NSError error;
             var input = new AVCaptureDeviceInput(_device, out error);
-            
+
             CaptureSession.AddInput(input);
 
-           
+
             _photoOutput = new AVCapturePhotoOutput();
-            
+
             _photoOutput.IsHighResolutionCaptureEnabled = true;
 
             CaptureSession.AddOutput(_photoOutput);
@@ -305,9 +332,9 @@ namespace PixUl8.iOS.UIViews
 
             CaptureSession.AddOutput(metadataoutput);
 
-            metadataoutput.MetadataObjectTypes = AVMetadataObjectType.QRCode | 
-            AVMetadataObjectType.AztecCode | 
-                AVMetadataObjectType.Code128Code | 
+            metadataoutput.MetadataObjectTypes = AVMetadataObjectType.QRCode |
+            AVMetadataObjectType.AztecCode |
+                AVMetadataObjectType.Code128Code |
             AVMetadataObjectType.Code39Code |
                 AVMetadataObjectType.Code39Mod43Code | AVMetadataObjectType.Code93Code |
             AVMetadataObjectType.DataMatrixCode | AVMetadataObjectType.EAN13Code |
@@ -326,13 +353,13 @@ namespace PixUl8.iOS.UIViews
             var zoomRect = new CGRect((x) - 90, (y / 4) - 180, 85, 85);
             _percentage = new CircleZoomPercentage(zoomRect, 1);
 
-            var focusRect = new CGRect(0,0, 150, 150);
+            var focusRect = new CGRect(0, 0, 150, 150);
             _focusWheel = new FocusWheel(focusRect, 2);
 
             this.AddSubview(_percentage);
             this.AddSubview(_focusWheel);
 
-            _captureDeviceResolution = new CGSize(x* UIScreen.MainScreen.Scale, y* UIScreen.MainScreen.Scale);
+            _captureDeviceResolution = new CGSize(x * UIScreen.MainScreen.Scale, y * UIScreen.MainScreen.Scale);
             _captureDeviceBounds = new CGSize(x, y);
 
 
@@ -397,6 +424,35 @@ namespace PixUl8.iOS.UIViews
 
             #endregion
 
+            #region Activate HDR Buttons
+
+            SwipeButton leftHandHDRButton = new SwipeButton();
+            leftHandHDRButton.SetTouchCallback((touches) =>
+            {
+                UITouch touch = touches.AnyObject as UITouch;
+                TapToFocus(touch.LocationInView(this));
+            });
+            leftHandHDRButton.BackgroundColor = UIColor.Clear;
+            leftHandHDRButton.Frame = new CGRect(-50, 200, 150, 200);
+            var rightSwipeHDRGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleHDR(SwipeType.Right)) { Direction = UISwipeGestureRecognizerDirection.Right };
+            leftHandHDRButton.AddGestureRecognizer(rightSwipeHDRGesture);
+            this.AddSubview(leftHandHDRButton);
+
+
+            SwipeButton rightHandHDRButton = new SwipeButton();
+            rightHandHDRButton.SetTouchCallback((touches) =>
+            {
+                UITouch touch = touches.AnyObject as UITouch;
+                TapToFocus(touch.LocationInView(this));
+            });
+            rightHandHDRButton.BackgroundColor = UIColor.Clear;
+            rightHandHDRButton.Frame = new CGRect(275, 200, 100, 200);
+            var leftSwipeHDRGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleHDR(SwipeType.Left)) { Direction = UISwipeGestureRecognizerDirection.Left };
+            rightHandHDRButton.AddGestureRecognizer(leftSwipeHDRGesture);
+            this.AddSubview(rightHandHDRButton);
+
+            #endregion
+
             #endregion
 
             SetupVisionDrawingLayers();
@@ -415,7 +471,7 @@ namespace PixUl8.iOS.UIViews
             CGRect screenRect = UIScreen.MainScreen.Bounds;
             var screenWidth = screenRect.Size.Width;
             var screenHeight = screenRect.Size.Height;
-            double focus_x = (screenWidth-focusPoint.X) / screenWidth;
+            double focus_x = (screenWidth - focusPoint.X) / screenWidth;
             double focus_y = focusPoint.Y / screenHeight;
 
 
@@ -431,12 +487,12 @@ namespace PixUl8.iOS.UIViews
 
 
             if (_device.IsExposureModeSupported(AVCaptureExposureMode.AutoExpose))
-            _device.ExposureMode = AVCaptureExposureMode.AutoExpose;
+                _device.ExposureMode = AVCaptureExposureMode.AutoExpose;
 
             if (_device.IsFocusModeSupported(AVCaptureFocusMode.AutoFocus))
                 _device.FocusMode = AVCaptureFocusMode.AutoFocus;
 
-            
+
 
             _device.UnlockForConfiguration();
 
@@ -471,8 +527,8 @@ namespace PixUl8.iOS.UIViews
         private void SwipeHandlerSwitchCamera(SwipeType type)
         {
             //If correct swipe for camera in use
-            if ( (type == SwipeType.Left && _cameraOptions == CameraOptions.Front) ||
-                    (type == SwipeType.Right && _cameraOptions == CameraOptions.Rear) )
+            if ((type == SwipeType.Left && _cameraOptions == CameraOptions.Front) ||
+                    (type == SwipeType.Right && _cameraOptions == CameraOptions.Rear))
             {
                 //raise camera switched event via message center
                 MessagingCenter.Send<UICameraPreview>(this, "PerformCameraSwitch");
@@ -485,6 +541,47 @@ namespace PixUl8.iOS.UIViews
             if ((type == SwipeType.Left && FlashOn == true) ||
                 (type == SwipeType.Right && FlashOn == false))
                 MessagingCenter.Send<UICameraPreview>(this, "PerformFlashSwitch");
+        }
+
+        private void SwipeHanlderToggleHDR(SwipeType type)
+        {
+            //If correct swipe for current flash settings
+            if ((type == SwipeType.Left && HdrEnabled == true) ||
+                (type == SwipeType.Right && HdrEnabled == false))
+                MessagingCenter.Send<UICameraPreview>(this, "PerformHDRSwitch");
+        }
+
+        private AVCapturePhotoBracketSettings GetCurrentBracketedSettings()
+        {
+            // Get AVCaptureBracketedStillImageSettings for a set of exposure values.
+            var exposureValues = new float[] { -2, 0, +2 };
+            var exposureSettings = new List<AVCaptureAutoExposureBracketedStillImageSettings>();
+            var makeAutoExposureSettings = AVCaptureAutoExposureBracketedStillImageSettings.Create(_device.ExposureTargetBias);
+            foreach (var exposureValue in exposureValues)
+            {
+                exposureSettings.Add(AVCaptureAutoExposureBracketedStillImageSettings
+                    .Create(_device.ExposureTargetBias + exposureValue)
+                );
+            }
+
+            //var processedFormat = new Dictionary<NSString, NSObject>();
+            //processedFormat.Add(new NSString(AVVideoCodecType.Hevc.ToString()), new NSObject());
+
+            AVCapturePhotoBracketSettings bracketSettings = AVCapturePhotoBracketSettings.FromPhotoBracketSettings(
+                rawPixelFormatType: 0,
+                rawFileType: AVVideoCodecType.Hevc.ToString(),
+                processedFormat: null,
+                processedFileType: null,
+                bracketedSettings: exposureSettings.ToArray()
+            );
+         
+            bracketSettings.FlashMode = FlashOn ? AVCaptureFlashMode.On : AVCaptureFlashMode.Off;
+            bracketSettings.IsHighResolutionPhotoEnabled = false;
+
+            if (_photoOutput.IsLensStabilizationDuringBracketedCaptureSupported)
+                bracketSettings.IsLensStabilizationEnabled = true;
+
+            return bracketSettings;
         }
 
         private AVCapturePhotoSettings GetCurrentPhotoSettings()
@@ -526,18 +623,20 @@ namespace PixUl8.iOS.UIViews
                 {
                     var barcode = (AVMetadataMachineReadableCodeObject)m;
 
-                    //Create Alert
-                    var okCancelAlertController = UIAlertController.Create("Barcode Found", barcode.StringValue, UIAlertControllerStyle.Alert);
+                    var content = new UNMutableNotificationContent();
+                    content.Title = "Barcode Found";
+                    content.Subtitle = "";
+                    content.Body = barcode?.StringValue ?? "";
+                    content.Badge = 0;
 
-                    //Add Actions
-                    if (barcode.StringValue.Contains("www") || barcode.StringValue.Contains("http") || barcode.StringValue.Contains("com") | barcode.StringValue.Contains("co") || barcode.StringValue.Contains("org"))
-                        okCancelAlertController.AddAction(UIAlertAction.Create("Open In Browser", UIAlertActionStyle.Default, alert => UIApplication.SharedApplication.OpenUrl(new NSUrl(barcode.StringValue))));
+                    var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(0.1, false);
 
-                    okCancelAlertController.AddAction(UIAlertAction.Create("Cancel", UIAlertActionStyle.Cancel, alert => { }));
+                    var requestID = barcode.StringValue;
+                    var request = UNNotificationRequest.FromIdentifier(requestID, content, trigger);
 
-                    //Present Alert
-                    var topController = UIApplication.SharedApplication.KeyWindow.RootViewController;
-                    topController.PresentViewController(okCancelAlertController, true, null);
+                    UNUserNotificationCenter.Current.AddNotificationRequest(request, (err) =>
+                    {
+                    });
                 }
 
                 DrawFaces(faces);
@@ -655,7 +754,8 @@ namespace PixUl8.iOS.UIViews
 
         private void DrawFaces(List<AVMetadataFaceObject> faces)
         {
-            DispatchQueue.MainQueue.DispatchAsync(() => {
+            DispatchQueue.MainQueue.DispatchAsync(() =>
+            {
 
                 if (!_manualFocusing)
                     _detectionOverlayLayer.Hidden = false;

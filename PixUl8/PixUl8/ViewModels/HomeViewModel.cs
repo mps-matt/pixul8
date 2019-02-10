@@ -27,6 +27,10 @@ namespace PixUl8.ViewModels
             MessagingCenter.Subscribe<UICameraPreview>(this, "PerformFlashSwitch", async (sender) => {
                 await ToggleFlashAsync();
             });
+
+            MessagingCenter.Subscribe<UICameraPreview>(this, "PerformHDRSwitch", async (sender) => {
+                await ToggleHDRAsync();
+            });
         }
 
 
@@ -47,6 +51,23 @@ namespace PixUl8.ViewModels
         public bool IsFlashNotActive
         {
             get { return !_isFlashActive; }
+        }
+
+
+        private bool _isHDRActive = false;
+        public bool IsHDRActive
+        {
+            get { return _isHDRActive; }
+            set
+            {
+                SetProperty(ref _isHDRActive, value);
+                OnPropertyChanged("IsHDRNotActive");
+            }
+        }
+
+        public bool IsHDRNotActive
+        {
+            get { return !_isHDRActive; }
         }
 
         private bool _isFrontFacing = false;
@@ -94,6 +115,14 @@ namespace PixUl8.ViewModels
         {
             _hapticService.InvokeHeavyHaptic();
             IsFlashActive = !IsFlashActive;
+        }
+
+        private ICommand _toggleHDRCommand;
+        public ICommand ToggleHDRCommand { get { return _toggleHDRCommand = _toggleHDRCommand ?? new Command(async () => await ToggleHDRAsync()); } }
+        public async Task ToggleHDRAsync()
+        {
+            _hapticService.InvokeHeavyHaptic();
+            IsHDRActive = !IsHDRActive;
         }
 
 

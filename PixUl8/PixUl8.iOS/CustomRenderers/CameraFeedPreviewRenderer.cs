@@ -34,6 +34,11 @@ namespace PixUl8.iOS.CustomRenderers
                     uiCameraPreview.FlashOn = flashOn;
                     break;
 
+                case (nameof(CameraView.HdrEnabled)):
+                    bool hdr = (Element as CameraView).HdrEnabled;
+                    uiCameraPreview.HdrEnabled = hdr;
+                    break;
+
                 default:
                     Debug.WriteLine($"Unknown Property Changed: {e.PropertyName}");
                     break;

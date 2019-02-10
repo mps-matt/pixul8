@@ -7,6 +7,7 @@
 #include <objc/runtime.h>
 #include <objc/message.h>
 #import <Foundation/Foundation.h>
+#import <UserNotifications/UserNotifications.h>
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <GLKit/GLKit.h>
@@ -17,6 +18,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import <CoreGraphics/CoreGraphics.h>
 
+@class UNUserNotificationCenterDelegate;
 @class UIApplicationDelegate;
 @class AVCapturePhotoCaptureDelegate;
 @class UIScrollViewDelegate;
@@ -37,6 +39,7 @@
 @class Foundation_NSAsyncDispatcher;
 @class __MonoMac_NSAsyncActionDispatcher;
 @class __MonoMac_NSAsyncSynchronizationContextDispatcher;
+@class PixUl8_iOS_Delegates_UserNotificationCenterDelegate;
 @class PixUl8_iOS_UIViews_CircleZoomPercentage;
 @class PixUl8_iOS_UIViews_SwipeButton;
 @class Xamarin_Forms_Platform_iOS_VisualElementRenderer_1;
@@ -45,6 +48,7 @@
 @class Xamarin_Forms_Platform_iOS_FormsApplicationDelegate;
 @class AppDelegate;
 @class PixUl8_iOS_Delegates_PhotoCaptureDelegate;
+@class PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate;
 @class PixUl8_iOS_UIViews_UICameraPreview;
 @class PixUl8_iOS_UIViews_FocusWheel;
 @class Xamarin_Forms_Platform_iOS_iOS7ButtonContainer;
@@ -147,6 +151,11 @@
 @class __NSObject_Disposer;
 @class __XamarinObjectObserver;
 
+@interface UNUserNotificationCenterDelegate : NSObject<UNUserNotificationCenterDelegate> {
+}
+	-(id) init;
+@end
+
 @interface UIApplicationDelegate : NSObject<UIApplicationDelegate> {
 }
 	-(id) init;
@@ -199,6 +208,18 @@
 
 @interface UICollectionViewDataSource : NSObject<UICollectionViewDataSource> {
 }
+	-(id) init;
+@end
+
+@interface PixUl8_iOS_Delegates_UserNotificationCenterDelegate : NSObject<UNUserNotificationCenterDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) userNotificationCenter:(UNUserNotificationCenter *)p0 willPresentNotification:(UNNotification *)p1 withCompletionHandler:(id)p2;
+	-(void) userNotificationCenter:(UNUserNotificationCenter *)p0 didReceiveNotificationResponse:(UNNotificationResponse *)p1 withCompletionHandler:(id)p2;
+	-(BOOL) conformsToProtocol:(void *)p0;
 	-(id) init;
 @end
 
@@ -283,6 +304,17 @@
 @end
 
 @interface PixUl8_iOS_Delegates_PhotoCaptureDelegate : NSObject<AVCapturePhotoCaptureDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) captureOutput:(AVCapturePhotoOutput *)p0 didFinishProcessingPhotoSampleBuffer:(id)p1 previewPhotoSampleBuffer:(id)p2 resolvedSettings:(AVCaptureResolvedPhotoSettings *)p3 bracketSettings:(AVCaptureBracketedStillImageSettings *)p4 error:(NSError *)p5;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate : NSObject<AVCapturePhotoCaptureDelegate> {
 }
 	-(void) release;
 	-(id) retain;
