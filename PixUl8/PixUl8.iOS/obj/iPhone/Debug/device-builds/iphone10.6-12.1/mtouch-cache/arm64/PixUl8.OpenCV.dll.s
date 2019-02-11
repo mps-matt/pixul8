@@ -652,59 +652,54 @@ bl _p_3
 Lme_8:
 .text
 	.align 4
-	.no_dead_strip PixUl8_Native_OpenCV_Fuse_UIKit_UIImage_UIKit_UIImage_UIKit_UIImage
-PixUl8_Native_OpenCV_Fuse_UIKit_UIImage_UIKit_UIImage_UIKit_UIImage:
+	.no_dead_strip PixUl8_Native_OpenCV_Fuse_Foundation_NSArray
+PixUl8_Native_OpenCV_Fuse_Foundation_NSArray:
 .loc 2 84 0 prologue_end
-.word 0xa9b57bfd
+.word 0xa9b87bfd
 .word 0x910003fd
-.word 0xa90153b3
-.word 0xa9025bb5
-.word 0xa90363b7
-.word 0xa9046bb9
-.word 0xaa0003f7
-.word 0xaa0103f8
-.word 0xaa0203f9
-.word 0xf9002ba3
+.word 0xa9015fb6
+.word 0xa90267b8
+.word 0xf9001bba
+.word 0xaa0003f9
+.word 0xaa0103fa
 
 adrp x16, mono_aot_PixUl8_OpenCV_got@PAGE+0
 add x16, x16, mono_aot_PixUl8_OpenCV_got@PAGEOFF
 ldr x16, [x16, #280]
-.word 0xf9002fb0
+.word 0xf9001fb0
 .word 0xf9400a11
-.word 0xf90033b1
+.word 0xf90023b1
+.word 0xd2800018
+.word 0xd2800017
 .word 0xd2800016
-.word 0xd2800015
-.word 0xd2800014
-.word 0xd2800013
-.word 0xd280001a
-.word 0xf9402fb1
-.word 0xf9406231
+.word 0xf9401fb1
+.word 0xf9404e31
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf94033b1
+.word 0xf94023b1
 .word 0xf9400231
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf9402fb1
-.word 0xf9408231
+.word 0xf9401fb1
+.word 0xf9406e31
 .word 0xb4000051
 .word 0xd63f0220
 .loc 2 85 0
-.word 0xf9402fb1
-.word 0xf9409231
+.word 0xf9401fb1
+.word 0xf9407e31
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xaa1803e0
+.word 0xaa1a03e0
 .word 0xd2800000
-.word 0xeb00031f
+.word 0xeb00035f
 .word 0x9a9f17e0
 .word 0x53001c00
-.word 0xaa0003f6
-.word 0xaa1603e0
+.word 0xaa0003f8
+.word 0xaa1803e0
 .word 0x34000240
 .loc 2 86 0
-.word 0xf9402fb1
-.word 0xf940c231
+.word 0xf9401fb1
+.word 0xf940ae31
 .word 0xb4000051
 .word 0xd63f0220
 
@@ -722,254 +717,149 @@ bl _p_10
 bl _mono_create_corlib_exception_1
 bl _p_11
 .loc 2 87 0
-.word 0xf9402fb1
-.word 0xf9410631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1903e0
-.word 0xd2800000
-.word 0xeb00033f
-.word 0x9a9f17e0
-.word 0x53001c00
-.word 0xaa0003f5
-.word 0xaa1503e0
-.word 0x34000240
-.loc 2 88 0
-.word 0xf9402fb1
-.word 0xf9413631
-.word 0xb4000051
-.word 0xd63f0220
-
-adrp x16, mono_aot_PixUl8_OpenCV_got@PAGE+0
-add x16, x16, mono_aot_PixUl8_OpenCV_got@PAGEOFF
-ldr x0, [x16, #0]
-.word 0xd2800321
-.word 0xd2800321
-bl _p_10
-.word 0xaa0003e1
-.word 0xd2801560
-.word 0xf2a04000
-.word 0xd2801560
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_11
-.loc 2 89 0
-.word 0xf9402fb1
-.word 0xf9417a31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9402ba0
-.word 0xd2800001
-.word 0xeb01001f
-.word 0x9a9f17e0
-.word 0x53001c00
-.word 0xaa0003f4
-.word 0xaa1403e0
-.word 0x34000240
-.loc 2 90 0
-.word 0xf9402fb1
-.word 0xf941aa31
-.word 0xb4000051
-.word 0xd63f0220
-
-adrp x16, mono_aot_PixUl8_OpenCV_got@PAGE+0
-add x16, x16, mono_aot_PixUl8_OpenCV_got@PAGEOFF
-ldr x0, [x16, #0]
-.word 0xd28004e1
-.word 0xd28004e1
-bl _p_10
-.word 0xaa0003e1
-.word 0xd2801560
-.word 0xf2a04000
-.word 0xd2801560
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_11
-.loc 2 91 0
-.word 0xf9402fb1
-.word 0xf941ee31
+.word 0xf9401fb1
+.word 0xf940f231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xd2800020
 .word 0x53001c00
-.word 0xaa0003f3
-.word 0xaa1303e0
-.word 0x34000980
-.word 0xf9402fb1
-.word 0xf9421231
+.word 0xaa0003f7
+.word 0xaa1703e0
+.word 0x34000700
+.word 0xf9401fb1
+.word 0xf9411631
 .word 0xb4000051
 .word 0xd63f0220
-.loc 2 92 0
-.word 0xf9402fb1
+.loc 2 88 0
+.word 0xf9401fb1
+.word 0xf9412631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1903e0
+.word 0xaa1903e0
+bl _p_4
+.word 0xf90033a0
+.word 0xf9401fb1
+.word 0xf9414631
+.word 0xb4000051
+.word 0xd63f0220
+adrp x0, L_OBJC_SELECTOR_REFERENCES_1@PAGE
+add x0, x0, L_OBJC_SELECTOR_REFERENCES_1@PAGEOFF
+ldr x0, [x0]
+.word 0xf90037a0
+.word 0xf9401fb1
+.word 0xf9416631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1a03e0
+.word 0xaa1a03e0
+.word 0x3940035e
+bl _p_4
+.word 0xf9003ba0
+.word 0xf9401fb1
+.word 0xf9418a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94033a0
+.word 0xf94037a1
+.word 0xf9403ba2
+bl _p_12
+.word 0xf9002fa0
+.word 0xf9401fb1
+.word 0xf941ae31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9402fa0
+
+adrp x16, mono_aot_PixUl8_OpenCV_got@PAGE+0
+add x16, x16, mono_aot_PixUl8_OpenCV_got@PAGEOFF
+ldr x15, [x16, #288]
+bl _p_13
+.word 0xf9002ba0
+.word 0xf9401fb1
+.word 0xf941d631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9402ba0
+.word 0xaa0003f6
+.word 0x14000037
+.loc 2 89 0
+.word 0xf9401fb1
+.word 0xf941f231
+.word 0xb4000051
+.word 0xd63f0220
+.loc 2 90 0
+.word 0xf9401fb1
+.word 0xf9420231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1903e0
+.word 0xaa1903e0
+bl _p_7
+.word 0xf90033a0
+.word 0xf9401fb1
 .word 0xf9422231
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xaa1703e0
-.word 0xaa1703e0
-bl _p_4
-.word 0xf90043a0
-.word 0xf9402fb1
+adrp x0, L_OBJC_SELECTOR_REFERENCES_1@PAGE
+add x0, x0, L_OBJC_SELECTOR_REFERENCES_1@PAGEOFF
+ldr x0, [x0]
+.word 0xf90037a0
+.word 0xf9401fb1
 .word 0xf9424231
 .word 0xb4000051
 .word 0xd63f0220
-adrp x0, L_OBJC_SELECTOR_REFERENCES_1@PAGE
-add x0, x0, L_OBJC_SELECTOR_REFERENCES_1@PAGEOFF
-ldr x0, [x0]
-.word 0xf90047a0
-.word 0xf9402fb1
-.word 0xf9426231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1803e0
-.word 0xaa1803e0
-.word 0x3940031e
+.word 0xaa1a03e0
+.word 0xaa1a03e0
+.word 0x3940035e
 bl _p_4
-.word 0xf9004ba0
-.word 0xf9402fb1
-.word 0xf9428631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1903e0
-.word 0xaa1903e0
-.word 0x3940033e
-bl _p_4
-.word 0xf9004fa0
-.word 0xf9402fb1
-.word 0xf942aa31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9402ba1
-.word 0xaa0103e0
-.word 0x3940003e
-bl _p_4
-.word 0xf90053a0
-.word 0xf9402fb1
-.word 0xf942ce31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94043a0
-.word 0xf94047a1
-.word 0xf9404ba2
-.word 0xf9404fa3
-.word 0xf94053a4
-bl _p_12
-.word 0xf9003fa0
-.word 0xf9402fb1
-.word 0xf942fa31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9403fa0
-
-adrp x16, mono_aot_PixUl8_OpenCV_got@PAGE+0
-add x16, x16, mono_aot_PixUl8_OpenCV_got@PAGEOFF
-ldr x15, [x16, #288]
-bl _p_13
 .word 0xf9003ba0
-.word 0xf9402fb1
-.word 0xf9432231
+.word 0xf9401fb1
+.word 0xf9426631
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf9403ba0
-.word 0xaa0003fa
-.word 0x1400004b
-.loc 2 93 0
-.word 0xf9402fb1
-.word 0xf9433e31
-.word 0xb4000051
-.word 0xd63f0220
-.loc 2 94 0
-.word 0xf9402fb1
-.word 0xf9434e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1703e0
-.word 0xaa1703e0
-bl _p_7
-.word 0xf90043a0
-.word 0xf9402fb1
-.word 0xf9436e31
-.word 0xb4000051
-.word 0xd63f0220
-adrp x0, L_OBJC_SELECTOR_REFERENCES_1@PAGE
-add x0, x0, L_OBJC_SELECTOR_REFERENCES_1@PAGEOFF
-ldr x0, [x0]
-.word 0xf90047a0
-.word 0xf9402fb1
-.word 0xf9438e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1803e0
-.word 0xaa1803e0
-.word 0x3940031e
-bl _p_4
-.word 0xf9004ba0
-.word 0xf9402fb1
-.word 0xf943b231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1903e0
-.word 0xaa1903e0
-.word 0x3940033e
-bl _p_4
-.word 0xf9004fa0
-.word 0xf9402fb1
-.word 0xf943d631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9402ba1
-.word 0xaa0103e0
-.word 0x3940003e
-bl _p_4
-.word 0xf90053a0
-.word 0xf9402fb1
-.word 0xf943fa31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94043a0
-.word 0xf94047a1
-.word 0xf9404ba2
-.word 0xf9404fa3
-.word 0xf94053a4
+.word 0xf94033a0
+.word 0xf94037a1
+.word 0xf9403ba2
 bl _p_14
-.word 0xf9003fa0
-.word 0xf9402fb1
-.word 0xf9442631
+.word 0xf9002fa0
+.word 0xf9401fb1
+.word 0xf9428a31
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf9403fa0
+.word 0xf9402fa0
 
 adrp x16, mono_aot_PixUl8_OpenCV_got@PAGE+0
 add x16, x16, mono_aot_PixUl8_OpenCV_got@PAGEOFF
 ldr x15, [x16, #288]
 bl _p_13
-.word 0xf9003ba0
-.word 0xf9402fb1
-.word 0xf9444e31
+.word 0xf9002ba0
+.word 0xf9401fb1
+.word 0xf942b231
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf9403ba0
-.word 0xaa0003fa
-.loc 2 96 0
-.word 0xf94033b1
+.word 0xf9402ba0
+.word 0xaa0003f6
+.loc 2 92 0
+.word 0xf94023b1
 .word 0xf9400231
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf9402fb1
-.word 0xf9447631
+.word 0xf9401fb1
+.word 0xf942da31
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xaa1a03e0
-.word 0xaa1a03e0
-.word 0xf9402fb1
-.word 0xf9448e31
+.word 0xaa1603e0
+.word 0xaa1603e0
+.word 0xf9401fb1
+.word 0xf942f231
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xa94153b3
-.word 0xa9425bb5
-.word 0xa94363b7
-.word 0xa9446bb9
+.word 0xa9415fb6
+.word 0xa94267b8
+.word 0xf9401bba
 .word 0x910003bf
-.word 0xa8cb7bfd
+.word 0xa8c87bfd
 .word 0xd65f03c0
 
 Lme_9:
@@ -977,7 +867,7 @@ Lme_9:
 	.align 4
 	.no_dead_strip PixUl8_Native_OpenCV_Version
 PixUl8_Native_OpenCV_Version:
-.loc 2 101 0 prologue_end
+.loc 2 97 0 prologue_end
 .word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xa90167b8
@@ -1004,7 +894,7 @@ ldr x16, [x16, #296]
 .word 0xf9406231
 .word 0xb4000051
 .word 0xd63f0220
-.loc 2 102 0
+.loc 2 98 0
 .word 0xf94017b1
 .word 0xf9407231
 .word 0xb4000051
@@ -1018,7 +908,7 @@ ldr x16, [x16, #296]
 .word 0xf9409631
 .word 0xb4000051
 .word 0xd63f0220
-.loc 2 103 0
+.loc 2 99 0
 .word 0xf94017b1
 .word 0xf940a631
 .word 0xb4000051
@@ -1061,12 +951,12 @@ bl _p_15
 .word 0xf94023a0
 .word 0xaa0003f8
 .word 0x1400002d
-.loc 2 104 0
+.loc 2 100 0
 .word 0xf94017b1
 .word 0xf9414a31
 .word 0xb4000051
 .word 0xd63f0220
-.loc 2 105 0
+.loc 2 101 0
 .word 0xf94017b1
 .word 0xf9415a31
 .word 0xb4000051
@@ -1108,7 +998,7 @@ bl _p_15
 .word 0xd63f0220
 .word 0xf94023a0
 .word 0xaa0003f8
-.loc 2 107 0
+.loc 2 103 0
 .word 0xf9401bb1
 .word 0xf9400231
 .word 0xb4000051
@@ -1347,173 +1237,169 @@ bl _p_11
 Lme_e:
 .text
 	.align 4
-	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr
-wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr:
-.word 0xa9b17bfd
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_intptr_intptr_intptr
+wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_intptr_intptr_intptr:
+.word 0xa9b37bfd
 .word 0x910003fd
 .word 0x1000001e
-.word 0xf90033be
-.word 0xa906d3b3
-.word 0xa907dbb5
-.word 0xa908e3b7
-.word 0xa909ebb9
-.word 0xa90af3bb
-.word 0xf9005fbd
+.word 0xf9002bbe
+.word 0xa905d3b3
+.word 0xa906dbb5
+.word 0xa907e3b7
+.word 0xa908ebb9
+.word 0xa909f3bb
+.word 0xf90057bd
 .word 0x910003f1
-.word 0xf90063b1
+.word 0xf9005bb1
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
-.word 0xf90017a3
-.word 0xf9001ba4
 
 adrp x16, mono_aot_PixUl8_OpenCV_got@PAGE+0
 add x16, x16, mono_aot_PixUl8_OpenCV_got@PAGEOFF
 ldr x16, [x16, #352]
-.word 0xf9001fb0
+.word 0xf90017b0
 .word 0xf9400a11
-.word 0xf90023b1
-.word 0xf90067bf
-.word 0xf9006bbf
-.word 0x390363bf
-.word 0xd2800014
+.word 0xf9001bb1
+.word 0xf9005fbf
+.word 0xf90063bf
+.word 0x390323bf
+.word 0xd2800016
 
 adrp x16, mono_aot_PixUl8_OpenCV_got@PAGE+0
 add x16, x16, mono_aot_PixUl8_OpenCV_got@PAGEOFF
 ldr x0, [x16, #112]
 .word 0xd63f0000
-.word 0xaa0003f3
-.word 0x910143a0
-.word 0xf9400261
-.word 0xf9002ba1
-.word 0xf9000260
-.word 0xf9401fb1
-.word 0xf9409e31
+.word 0xaa0003f5
+.word 0x910103a0
+.word 0xf94002a1
+.word 0xf90023a1
+.word 0xf90002a0
+.word 0xf94017b1
+.word 0xf9409631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xd2800000
 .word 0x53001c01
-.word 0x390363a0
+.word 0x390323a0
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-.word 0xf94017a3
-.word 0xf9401ba4
 bl _p_20
-.word 0xaa0003f4
+.word 0xaa0003f6
 
 adrp x16, mono_aot_PixUl8_OpenCV_got@PAGE+0
 add x16, x16, mono_aot_PixUl8_OpenCV_got@PAGEOFF
 ldr x0, [x16, #336]
 .word 0xb9400000
-.word 0x34000140
+.word 0x34000160
 bl _p_18
-.word 0xf90073a0
-.word 0xf94073a1
-.word 0xf94073a0
-.word 0xf90077a1
-.word 0xb4000060
-.word 0xf94077a0
+.word 0xaa0003f4
+.word 0xaa1403e0
+.word 0xaa1403e1
+.word 0xaa0003f3
+.word 0xb4000094
+.word 0xaa1303e0
+.word 0xaa1303e0
 bl _p_11
-.word 0xf94077a0
-.word 0xaa1403e0
-.word 0x910143a0
-.word 0xf9402ba0
-.word 0xf9000260
-.word 0xaa1403e0
-.word 0xf9401fb1
-.word 0xf9412231
+.word 0xaa1303e0
+.word 0xaa1603e0
+.word 0x910103a0
+.word 0xf94023a0
+.word 0xf90002a0
+.word 0xaa1603e0
+.word 0xf94017b1
+.word 0xf9411631
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xa946d3b3
+.word 0xa945d3b3
+.word 0xa946dbb5
 .word 0x910003bf
-.word 0xa8cf7bfd
+.word 0xa8cd7bfd
 .word 0xd65f03c0
 
 Lme_f:
 .text
 	.align 4
-	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr
-wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr:
-.word 0xa9b17bfd
+	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_intptr_intptr_intptr
+wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_intptr_intptr_intptr:
+.word 0xa9b37bfd
 .word 0x910003fd
 .word 0x1000001e
-.word 0xf90033be
-.word 0xa906d3b3
-.word 0xa907dbb5
-.word 0xa908e3b7
-.word 0xa909ebb9
-.word 0xa90af3bb
-.word 0xf9005fbd
+.word 0xf9002bbe
+.word 0xa905d3b3
+.word 0xa906dbb5
+.word 0xa907e3b7
+.word 0xa908ebb9
+.word 0xa909f3bb
+.word 0xf90057bd
 .word 0x910003f1
-.word 0xf90063b1
+.word 0xf9005bb1
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
-.word 0xf90017a3
-.word 0xf9001ba4
 
 adrp x16, mono_aot_PixUl8_OpenCV_got@PAGE+0
 add x16, x16, mono_aot_PixUl8_OpenCV_got@PAGEOFF
 ldr x16, [x16, #360]
-.word 0xf9001fb0
+.word 0xf90017b0
 .word 0xf9400a11
-.word 0xf90023b1
-.word 0xf90067bf
-.word 0xf9006bbf
-.word 0x390363bf
-.word 0xd2800014
+.word 0xf9001bb1
+.word 0xf9005fbf
+.word 0xf90063bf
+.word 0x390323bf
+.word 0xd2800016
 
 adrp x16, mono_aot_PixUl8_OpenCV_got@PAGE+0
 add x16, x16, mono_aot_PixUl8_OpenCV_got@PAGEOFF
 ldr x0, [x16, #112]
 .word 0xd63f0000
-.word 0xaa0003f3
-.word 0x910143a0
-.word 0xf9400261
-.word 0xf9002ba1
-.word 0xf9000260
-.word 0xf9401fb1
-.word 0xf9409e31
+.word 0xaa0003f5
+.word 0x910103a0
+.word 0xf94002a1
+.word 0xf90023a1
+.word 0xf90002a0
+.word 0xf94017b1
+.word 0xf9409631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xd2800000
 .word 0x53001c01
-.word 0x390363a0
+.word 0x390323a0
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-.word 0xf94017a3
-.word 0xf9401ba4
 bl _p_21
-.word 0xaa0003f4
+.word 0xaa0003f6
 
 adrp x16, mono_aot_PixUl8_OpenCV_got@PAGE+0
 add x16, x16, mono_aot_PixUl8_OpenCV_got@PAGEOFF
 ldr x0, [x16, #336]
 .word 0xb9400000
-.word 0x34000140
+.word 0x34000160
 bl _p_18
-.word 0xf90073a0
-.word 0xf94073a1
-.word 0xf94073a0
-.word 0xf90077a1
-.word 0xb4000060
-.word 0xf94077a0
+.word 0xaa0003f4
+.word 0xaa1403e0
+.word 0xaa1403e1
+.word 0xaa0003f3
+.word 0xb4000094
+.word 0xaa1303e0
+.word 0xaa1303e0
 bl _p_11
-.word 0xf94077a0
-.word 0xaa1403e0
-.word 0x910143a0
-.word 0xf9402ba0
-.word 0xf9000260
-.word 0xaa1403e0
-.word 0xf9401fb1
-.word 0xf9412231
+.word 0xaa1303e0
+.word 0xaa1603e0
+.word 0x910103a0
+.word 0xf94023a0
+.word 0xf90002a0
+.word 0xaa1603e0
+.word 0xf94017b1
+.word 0xf9411631
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xa946d3b3
+.word 0xa945d3b3
+.word 0xa946dbb5
 .word 0x910003bf
-.word 0xa8cf7bfd
+.word 0xa8cd7bfd
 .word 0xd65f03c0
 
 Lme_10:
@@ -1535,14 +1421,14 @@ bl PixUl8_Native_OpenCV_get_ClassHandle
 bl PixUl8_Native_OpenCV__ctor
 bl PixUl8_Native_OpenCV__ctor_Foundation_NSObjectFlag
 bl PixUl8_Native_OpenCV__ctor_intptr
-bl PixUl8_Native_OpenCV_Fuse_UIKit_UIImage_UIKit_UIImage_UIKit_UIImage
+bl PixUl8_Native_OpenCV_Fuse_Foundation_NSArray
 bl PixUl8_Native_OpenCV_Version
 bl PixUl8_Native_OpenCV__cctor
 bl method_addresses
 bl wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_intptr_intptr
 bl wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_intptr_intptr
-bl wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr
-bl wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr
+bl wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_intptr_intptr_intptr
+bl wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_intptr_intptr_intptr
 method_addresses_end:
 
 .section __TEXT, __const
@@ -1562,11 +1448,11 @@ unwind_info:
 
 	.byte 13,12,31,0,68,14,64,157,8,158,7,68,13,29,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6,18
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10,154,9,16,12,31,0,68,14,96,157,12,158,11,68,13,29
-	.byte 68,153,10,34,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,147,20,148,19,68,149,18,150,17,68,151,16,152
-	.byte 15,68,153,14,154,13,21,12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,153,9,68,154,8,39,12,31,0
-	.byte 68,14,208,1,157,26,158,25,68,13,29,76,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10,154,9,68
-	.byte 155,8,156,7,39,12,31,0,68,14,240,1,157,30,158,29,68,13,29,76,147,17,148,16,68,149,15,150,14,68,151,13
-	.byte 152,12,68,153,11,154,10,68,155,9,156,8
+	.byte 68,153,10,27,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,150,14,151,13,68,152,12,153,11,68,154,10,21
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,153,9,68,154,8,39,12,31,0,68,14,208,1,157,26,158
+	.byte 25,68,13,29,76,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10,154,9,68,155,8,156,7,39,12,31
+	.byte 0,68,14,208,1,157,26,158,25,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9,154,8
+	.byte 68,155,7,156,6
 
 .text
 	.align 4
@@ -1660,8 +1546,8 @@ add x16, x16, mono_aot_PixUl8_OpenCV_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
 .word 523
-	.no_dead_strip plt_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr
-plt_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr:
+	.no_dead_strip plt_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_intptr_intptr_intptr
+plt_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_intptr_intptr_intptr:
 _p_12:
 adrp x16, mono_aot_PixUl8_OpenCV_got@PAGE+0
 add x16, x16, mono_aot_PixUl8_OpenCV_got@PAGEOFF
@@ -1676,8 +1562,8 @@ add x16, x16, mono_aot_PixUl8_OpenCV_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
 .word 553
-	.no_dead_strip plt_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr
-plt_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr:
+	.no_dead_strip plt_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_intptr_intptr_intptr
+plt_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_intptr_intptr_intptr:
 _p_14:
 adrp x16, mono_aot_PixUl8_OpenCV_got@PAGE+0
 add x16, x16, mono_aot_PixUl8_OpenCV_got@PAGEOFF
@@ -1724,16 +1610,16 @@ add x16, x16, mono_aot_PixUl8_OpenCV_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
 .word 624
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr:
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_intptr_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_intptr_intptr_intptr:
 _p_20:
 adrp x16, mono_aot_PixUl8_OpenCV_got@PAGE+0
 add x16, x16, mono_aot_PixUl8_OpenCV_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
 .word 626
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr:
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_intptr_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_intptr_intptr_intptr:
 _p_21:
 adrp x16, mono_aot_PixUl8_OpenCV_got@PAGE+0
 add x16, x16, mono_aot_PixUl8_OpenCV_got@PAGEOFF
@@ -1760,7 +1646,7 @@ L_OBJC_SELECTOR_REFERENCES_2:
 L_OBJC_METH_VAR_NAME_0:
 .asciz "init"
 L_OBJC_METH_VAR_NAME_1:
-.asciz "fuse:withThis:andThat:"
+.asciz "fuse:"
 L_OBJC_METH_VAR_NAME_2:
 .asciz "version"
 .section	__DATA,__objc_imageinfo,regular,no_dead_strip
@@ -1789,7 +1675,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "2459697C-7C2E-4273-B33B-3984A9BEBEA2"
+	.asciz "710C292F-DD69-4E27-A4AD-80C30A1D5BE6"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -1868,13 +1754,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 46,544,22,17,70,387000831,0,2743
-	.long 128,8,8,8,0,25,3464,712
+	.long 46,544,22,17,70,387000831,0,2537
+	.long 128,8,8,8,0,25,3256,712
 	.long 440,232,0,360,416,280,0,192
 	.long 48,704,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 145,40,254,40,13,16,174,110,27,175,52,133,75,83,42,219
+	.byte 89,98,81,217,250,209,95,220,221,150,55,139,44,189,2,248
 	.globl _mono_aot_module_PixUl8_OpenCV_info
 	.align 3
 _mono_aot_module_PixUl8_OpenCV_info:
@@ -2265,13 +2151,13 @@ Lfde4_end:
 LTDIE_7:
 
 	.byte 5
-	.asciz "UIKit_UIImage"
+	.asciz "Foundation_NSArray"
 
 	.byte 40,16
 LDIFF_SYM52=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM52
 	.byte 2,35,0,0,7
-	.asciz "UIKit_UIImage"
+	.asciz "Foundation_NSArray"
 
 LDIFF_SYM53=LTDIE_7 - Ldebug_info_start
 	.long LDIFF_SYM53
@@ -2285,60 +2171,63 @@ LTDIE_7_REFERENCE:
 	.byte 14
 LDIFF_SYM55=LTDIE_7 - Ldebug_info_start
 	.long LDIFF_SYM55
+LTDIE_8:
+
+	.byte 5
+	.asciz "UIKit_UIImage"
+
+	.byte 40,16
+LDIFF_SYM56=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM56
+	.byte 2,35,0,0,7
+	.asciz "UIKit_UIImage"
+
+LDIFF_SYM57=LTDIE_8 - Ldebug_info_start
+	.long LDIFF_SYM57
+LTDIE_8_POINTER:
+
+	.byte 13
+LDIFF_SYM58=LTDIE_8 - Ldebug_info_start
+	.long LDIFF_SYM58
+LTDIE_8_REFERENCE:
+
+	.byte 14
+LDIFF_SYM59=LTDIE_8 - Ldebug_info_start
+	.long LDIFF_SYM59
 	.byte 2
 	.asciz "PixUl8.Native.OpenCV:Fuse"
-	.asciz "PixUl8_Native_OpenCV_Fuse_UIKit_UIImage_UIKit_UIImage_UIKit_UIImage"
+	.asciz "PixUl8_Native_OpenCV_Fuse_Foundation_NSArray"
 
 	.byte 2,84
-	.quad PixUl8_Native_OpenCV_Fuse_UIKit_UIImage_UIKit_UIImage_UIKit_UIImage
+	.quad PixUl8_Native_OpenCV_Fuse_Foundation_NSArray
 	.quad Lme_9
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM56=LTDIE_0_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM56
-	.byte 1,103,3
-	.asciz "image1"
-
-LDIFF_SYM57=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM57
-	.byte 1,104,3
-	.asciz "image2"
-
-LDIFF_SYM58=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM58
-	.byte 1,105,3
-	.asciz "image3"
-
-LDIFF_SYM59=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM59
-	.byte 3,141,208,0,11
-	.asciz "V_0"
-
-LDIFF_SYM60=LDIE_BOOLEAN - Ldebug_info_start
+LDIFF_SYM60=LTDIE_0_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM60
-	.byte 1,102,11
-	.asciz "V_1"
+	.byte 1,105,3
+	.asciz "imageArray"
 
-LDIFF_SYM61=LDIE_BOOLEAN - Ldebug_info_start
+LDIFF_SYM61=LTDIE_7_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM61
-	.byte 1,101,11
-	.asciz "V_2"
+	.byte 1,106,11
+	.asciz "V_0"
 
 LDIFF_SYM62=LDIE_BOOLEAN - Ldebug_info_start
 	.long LDIFF_SYM62
-	.byte 1,100,11
-	.asciz "V_3"
+	.byte 1,104,11
+	.asciz "V_1"
 
 LDIFF_SYM63=LDIE_BOOLEAN - Ldebug_info_start
 	.long LDIFF_SYM63
-	.byte 1,99,11
-	.asciz "V_4"
+	.byte 1,103,11
+	.asciz "V_2"
 
-LDIFF_SYM64=LTDIE_7_REFERENCE - Ldebug_info_start
+LDIFF_SYM64=LTDIE_8_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM64
-	.byte 1,106,0
+	.byte 1,102,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -2348,18 +2237,17 @@ Lfde5_start:
 
 	.long 0
 	.align 3
-	.quad PixUl8_Native_OpenCV_Fuse_UIKit_UIImage_UIKit_UIImage_UIKit_UIImage
+	.quad PixUl8_Native_OpenCV_Fuse_Foundation_NSArray
 
-LDIFF_SYM66=Lme_9 - PixUl8_Native_OpenCV_Fuse_UIKit_UIImage_UIKit_UIImage_UIKit_UIImage
+LDIFF_SYM66=Lme_9 - PixUl8_Native_OpenCV_Fuse_Foundation_NSArray
 	.long LDIFF_SYM66
 	.long 0
-	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,147,20,148,19,68,149,18,150,17,68,151,16,152,15,68,153,14
-	.byte 154,13
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,150,14,151,13,68,152,12,153,11,68,154,10
 	.align 3
 Lfde5_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_8:
+LTDIE_9:
 
 	.byte 5
 	.asciz "Foundation_NSString"
@@ -2370,23 +2258,23 @@ LDIFF_SYM67=LTDIE_1 - Ldebug_info_start
 	.byte 2,35,0,0,7
 	.asciz "Foundation_NSString"
 
-LDIFF_SYM68=LTDIE_8 - Ldebug_info_start
+LDIFF_SYM68=LTDIE_9 - Ldebug_info_start
 	.long LDIFF_SYM68
-LTDIE_8_POINTER:
+LTDIE_9_POINTER:
 
 	.byte 13
-LDIFF_SYM69=LTDIE_8 - Ldebug_info_start
+LDIFF_SYM69=LTDIE_9 - Ldebug_info_start
 	.long LDIFF_SYM69
-LTDIE_8_REFERENCE:
+LTDIE_9_REFERENCE:
 
 	.byte 14
-LDIFF_SYM70=LTDIE_8 - Ldebug_info_start
+LDIFF_SYM70=LTDIE_9 - Ldebug_info_start
 	.long LDIFF_SYM70
 	.byte 2
 	.asciz "PixUl8.Native.OpenCV:Version"
 	.asciz "PixUl8_Native_OpenCV_Version"
 
-	.byte 2,101
+	.byte 2,97
 	.quad PixUl8_Native_OpenCV_Version
 	.quad Lme_a
 
@@ -2403,7 +2291,7 @@ LDIFF_SYM72=LDIE_BOOLEAN - Ldebug_info_start
 	.byte 1,105,11
 	.asciz "V_1"
 
-LDIFF_SYM73=LTDIE_8_REFERENCE - Ldebug_info_start
+LDIFF_SYM73=LTDIE_9_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM73
 	.byte 1,104,0
 
@@ -2576,11 +2464,11 @@ Lfde9_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:IntPtr_objc_msgSend_IntPtr_IntPtr_IntPtr"
-	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:IntPtr_objc_msgSend_IntPtr"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_intptr_intptr_intptr"
 
 	.byte 0,0
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_intptr_intptr_intptr
 	.quad Lme_f
 
 	.byte 2,118,16,3
@@ -2598,128 +2486,108 @@ LDIFF_SYM95=LDIE_I - Ldebug_info_start
 
 LDIFF_SYM96=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM96
-	.byte 2,141,32,3
-	.asciz "param3"
+	.byte 2,141,32,11
+	.asciz "V_0"
 
 LDIFF_SYM97=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM97
-	.byte 2,141,40,3
-	.asciz "param4"
+	.byte 3,141,184,1,11
+	.asciz "V_1"
 
 LDIFF_SYM98=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM98
-	.byte 2,141,48,11
-	.asciz "V_0"
+	.byte 3,141,192,1,11
+	.asciz "V_2"
 
-LDIFF_SYM99=LDIE_I - Ldebug_info_start
+LDIFF_SYM99=LDIE_BOOLEAN - Ldebug_info_start
 	.long LDIFF_SYM99
 	.byte 3,141,200,1,11
-	.asciz "V_1"
+	.asciz "V_3"
 
 LDIFF_SYM100=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM100
-	.byte 3,141,208,1,11
-	.asciz "V_2"
-
-LDIFF_SYM101=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM101
-	.byte 3,141,216,1,11
-	.asciz "V_3"
-
-LDIFF_SYM102=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM102
-	.byte 1,100,0
+	.byte 1,102,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM103=Lfde10_end - Lfde10_start
-	.long LDIFF_SYM103
+LDIFF_SYM101=Lfde10_end - Lfde10_start
+	.long LDIFF_SYM101
 Lfde10_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_intptr_intptr_intptr
 
-LDIFF_SYM104=Lme_f - wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr
-	.long LDIFF_SYM104
+LDIFF_SYM102=Lme_f - wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_intptr_intptr_intptr
+	.long LDIFF_SYM102
 	.long 0
-	.byte 12,31,0,68,14,240,1,157,30,158,29,68,13,29,76,147,17,148,16,68,149,15,150,14,68,151,13,152,12,68,153,11
-	.byte 154,10,68,155,9,156,8
+	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
+	.byte 154,8,68,155,7,156,6
 	.align 3
 Lfde10_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:IntPtr_objc_msgSendSuper_IntPtr_IntPtr_IntPtr"
-	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_ApiDefinition.Messaging:IntPtr_objc_msgSendSuper_IntPtr"
+	.asciz "wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_intptr_intptr_intptr"
 
 	.byte 0,0
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_intptr_intptr_intptr
 	.quad Lme_10
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM105=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM105
+LDIFF_SYM103=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM103
 	.byte 2,141,16,3
 	.asciz "param1"
 
-LDIFF_SYM106=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM106
+LDIFF_SYM104=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM104
 	.byte 2,141,24,3
 	.asciz "param2"
 
+LDIFF_SYM105=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM105
+	.byte 2,141,32,11
+	.asciz "V_0"
+
+LDIFF_SYM106=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM106
+	.byte 3,141,184,1,11
+	.asciz "V_1"
+
 LDIFF_SYM107=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM107
-	.byte 2,141,32,3
-	.asciz "param3"
+	.byte 3,141,192,1,11
+	.asciz "V_2"
 
-LDIFF_SYM108=LDIE_I - Ldebug_info_start
+LDIFF_SYM108=LDIE_BOOLEAN - Ldebug_info_start
 	.long LDIFF_SYM108
-	.byte 2,141,40,3
-	.asciz "param4"
+	.byte 3,141,200,1,11
+	.asciz "V_3"
 
 LDIFF_SYM109=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM109
-	.byte 2,141,48,11
-	.asciz "V_0"
-
-LDIFF_SYM110=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM110
-	.byte 3,141,200,1,11
-	.asciz "V_1"
-
-LDIFF_SYM111=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM111
-	.byte 3,141,208,1,11
-	.asciz "V_2"
-
-LDIFF_SYM112=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM112
-	.byte 3,141,216,1,11
-	.asciz "V_3"
-
-LDIFF_SYM113=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM113
-	.byte 1,100,0
+	.byte 1,102,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM114=Lfde11_end - Lfde11_start
-	.long LDIFF_SYM114
+LDIFF_SYM110=Lfde11_end - Lfde11_start
+	.long LDIFF_SYM110
 Lfde11_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr
+	.quad wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_intptr_intptr_intptr
 
-LDIFF_SYM115=Lme_10 - wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_IntPtr_IntPtr_intptr_intptr_intptr_intptr_intptr
-	.long LDIFF_SYM115
+LDIFF_SYM111=Lme_10 - wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_IntPtr_intptr_intptr_intptr
+	.long LDIFF_SYM111
 	.long 0
-	.byte 12,31,0,68,14,240,1,157,30,158,29,68,13,29,76,147,17,148,16,68,149,15,150,14,68,151,13,152,12,68,153,11
-	.byte 154,10,68,155,9,156,8
+	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
+	.byte 154,8,68,155,7,156,6
 	.align 3
 Lfde11_end:
 

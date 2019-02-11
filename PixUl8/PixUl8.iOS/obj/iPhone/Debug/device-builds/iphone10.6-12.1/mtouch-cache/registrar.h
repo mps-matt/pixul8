@@ -715,7 +715,7 @@
 
 @interface OpenCV : NSObject {
 }
-	-(UIImage *) fuse:(UIImage *)p0 withThis:(UIImage *)p1 andThat:(UIImage *)p2;
+	-(UIImage *) fuse:(NSArray *)p0;
 	-(NSString *) version;
 	-(id) init;
 @end

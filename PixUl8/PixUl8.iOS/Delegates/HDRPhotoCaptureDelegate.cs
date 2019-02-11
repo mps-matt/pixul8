@@ -50,13 +50,13 @@ namespace PixUl8.iOS.Delegates
 
         public UIImage MergeImages(List<UIImage> images)
         {
-            if (images.Count < 3)
-                return images[0];
-
             OpenCV openCV = new OpenCV();
-            var ret = openCV.Fuse(images[0], images[1], images[2]);
 
+            var imageArray = NSArray.FromObjects(images.ToArray());
+
+            var ret = openCV.Fuse(imageArray);
             ret = new UIImage(ret.CGImage, 1, images[0].Orientation);
+
             return ret;
         }
 

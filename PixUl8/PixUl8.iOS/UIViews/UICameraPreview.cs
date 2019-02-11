@@ -554,7 +554,7 @@ namespace PixUl8.iOS.UIViews
         private AVCapturePhotoBracketSettings GetCurrentBracketedSettings()
         {
             // Get AVCaptureBracketedStillImageSettings for a set of exposure values.
-            var exposureValues = new float[] { -2, 0, +2 };
+            var exposureValues = new float[] { -4, -2, 0, +2 };
             var exposureSettings = new List<AVCaptureAutoExposureBracketedStillImageSettings>();
             var makeAutoExposureSettings = AVCaptureAutoExposureBracketedStillImageSettings.Create(_device.ExposureTargetBias);
             foreach (var exposureValue in exposureValues)
