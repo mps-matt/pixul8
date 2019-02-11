@@ -10,6 +10,7 @@ using Foundation;
 using Photos;
 using PixUl8.iOS.UIViews;
 using UIKit;
+using PixUl8.Native;
 
 namespace PixUl8.iOS.Delegates
 {
@@ -19,7 +20,7 @@ namespace PixUl8.iOS.Delegates
     {
         private List<UIImage> _imagesInBracket = new List<UIImage>();
 
-
+        
         [Export ("captureOutput:didFinishProcessingPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:")]
         public override void DidFinishProcessingPhoto (AVCapturePhotoOutput captureOutput,
                                        CMSampleBuffer photoSampleBuffer, CMSampleBuffer previewPhotoSampleBuffer,
@@ -49,7 +50,14 @@ namespace PixUl8.iOS.Delegates
 
         public UIImage MergeImages(List<UIImage> images)
         {
+            //MergeMertens mertens = new MergeMertens();
+            OpenCV openCV = new OpenCV();
 
+            Debug.WriteLine(openCV.Version());
+            var version = openCV.Version();
+
+
+            return new UIImage();
         }
 
 
@@ -88,7 +96,12 @@ namespace PixUl8.iOS.Delegates
             }
             finally
             {
+                foreach (var image in _imagesInBracket)
+                    image.Dispose();
+
                 _imagesInBracket.Clear();
+
+                finale.Dispose();
             }
         }
 

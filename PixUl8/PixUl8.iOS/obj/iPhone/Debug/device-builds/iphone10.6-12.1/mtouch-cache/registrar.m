@@ -7289,7 +7289,7 @@ exception_handling:;
 	-(void) drawRect:(CGRect)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, 0xFC00);
+		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, 0xFD00);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -7327,7 +7327,7 @@ exception_handling:;
 	-(void) touchesEnded:(NSSet *)p0 withEvent:(UIEvent *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, p1, 0x10900);
+		native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, p1, 0x10A00);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -7340,7 +7340,7 @@ exception_handling:;
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0x10A00);
+		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0x10B00);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [UIButton class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -7458,7 +7458,7 @@ exception_handling:;
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0x10E00);
+		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0x10F00);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [Xamarin_Forms_Platform_iOS_ViewRenderer_2 class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -7708,7 +7708,7 @@ exception_handling:;
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0x9E00);
+		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0x9F00);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -7745,25 +7745,25 @@ exception_handling:;
 	-(void) drawRect:(CGRect)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, 0xB300);
+		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, 0xB400);
 	}
 
 	-(void) touchesMoved:(NSSet *)p0 withEvent:(UIEvent *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, p1, 0xB400);
+		native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, p1, 0xB500);
 	}
 
 	-(void) touchesEnded:(NSSet *)p0 withEvent:(UIEvent *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, p1, 0xB500);
+		native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, p1, 0xB600);
 	}
 
 	-(void) captureOutput:(AVCaptureMetadataOutput *)p0 didOutputMetadataObjects:(NSArray *)p1 fromConnection:(AVCaptureConnection *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_25 (self, _cmd, &managed_method, p0, p1, p2, 0xC300);
+		native_to_managed_trampoline_25 (self, _cmd, &managed_method, p0, p1, p2, 0xC400);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -7801,7 +7801,7 @@ exception_handling:;
 	-(void) drawRect:(CGRect)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, 0x10100);
+		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, 0x10200);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -12919,6 +12919,7 @@ exception_handling:;
 	}
 @end
 
+
 	static MTClassMap __xamarin_class_map [] = {
 		{ NULL, 0x23716 /* #0 'NSObject' => 'Foundation.NSObject, Xamarin.iOS' */ },
 		{ NULL, 0x8716 /* #1 'UNUserNotificationCenterDelegate' => 'UserNotifications.UNUserNotificationCenterDelegate, Xamarin.iOS' */ },
@@ -13219,6 +13220,7 @@ exception_handling:;
 		{ NULL, 0x1F316 /* #296 'UIKit_UIWebView__UIWebViewDelegate' => 'UIKit.UIWebView+_UIWebViewDelegate, Xamarin.iOS' */ },
 		{ NULL, 0x23916 /* #297 '__NSObject_Disposer' => 'Foundation.NSObject+NSObject_Disposer, Xamarin.iOS' */ },
 		{ NULL, 0x23A16 /* #298 '__XamarinObjectObserver' => 'Foundation.NSObject+Observer, Xamarin.iOS' */ },
+		{ NULL, 0x326 /* #299 'OpenCV' => 'PixUl8.Native.OpenCV, PixUl8.OpenCV' */ },
 		{ NULL, 0 },
 	};
 
@@ -13246,6 +13248,7 @@ exception_handling:;
 		"System.Xml.Linq", 
 		"Xamarin.Forms.Platform", 
 		"Xamarin.Forms.Xaml", 
+		"PixUl8.OpenCV", 
 		"MoreLinq"
 	};
 
@@ -13294,9 +13297,9 @@ exception_handling:;
 		__xamarin_skipped_map,
 		__xamarin_protocol_wrapper_map,
 		{ NULL, NULL },
-		20,
-		299,
-		111,
+		21,
+		300,
+		112,
 		0,
 		1,
 		35,
@@ -13603,6 +13606,7 @@ void xamarin_create_classes () {
 	__xamarin_class_map [296].handle = objc_getClass ("UIKit_UIWebView__UIWebViewDelegate");
 	__xamarin_class_map [297].handle = objc_getClass ("__NSObject_Disposer");
 	__xamarin_class_map [298].handle = objc_getClass ("__XamarinObjectObserver");
+	__xamarin_class_map [299].handle = [OpenCV class];
 	xamarin_add_registration_map (&__xamarin_registration_map);
 }
 

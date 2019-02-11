@@ -150,6 +150,7 @@
 @class UIKit_UIWebView__UIWebViewDelegate;
 @class __NSObject_Disposer;
 @class __XamarinObjectObserver;
+@class OpenCV;
 
 @interface UNUserNotificationCenterDelegate : NSObject<UNUserNotificationCenterDelegate> {
 }
@@ -710,6 +711,12 @@
 @interface UIKit_UISwitch_UISwitchAppearance : UIKit_UIControl_UIControlAppearance {
 }
 	-(UIColor *) onTintColor;
+@end
+
+@interface OpenCV : NSObject {
+}
+	-(NSString *) version;
+	-(id) init;
 @end
 
 
