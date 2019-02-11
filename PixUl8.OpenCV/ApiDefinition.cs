@@ -71,5 +71,7 @@ namespace PixUl8.Native
         [Export("version")]
         NSString Version();
 
+        [Export("fuse:withThis:andThat:")]
+        UIImage Fuse(UIImage image1, UIImage image2, UIImage image3);
     }
 }

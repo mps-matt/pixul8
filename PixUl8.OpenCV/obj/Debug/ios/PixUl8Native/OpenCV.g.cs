@@ -78,6 +78,23 @@ namespace PixUl8.Native {
 			IsDirectBinding = GetType ().Assembly == global::ApiDefinition.Messaging.this_assembly;
 		}
 
+		[Export ("fuse:withThis:andThat:")]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		public virtual global::UIKit.UIImage Fuse (global::UIKit.UIImage image1, global::UIKit.UIImage image2, global::UIKit.UIImage image3)
+		{
+			if (image1 == null)
+				throw new ArgumentNullException ("image1");
+			if (image2 == null)
+				throw new ArgumentNullException ("image2");
+			if (image3 == null)
+				throw new ArgumentNullException ("image3");
+			if (IsDirectBinding) {
+				return  Runtime.GetNSObject<global::UIKit.UIImage> (global::ApiDefinition.Messaging.IntPtr_objc_msgSend_IntPtr_IntPtr_IntPtr (this.Handle, Selector.GetHandle ("fuse:withThis:andThat:"), image1.Handle, image2.Handle, image3.Handle));
+			} else {
+				return  Runtime.GetNSObject<global::UIKit.UIImage> (global::ApiDefinition.Messaging.IntPtr_objc_msgSendSuper_IntPtr_IntPtr_IntPtr (this.SuperHandle, Selector.GetHandle ("fuse:withThis:andThat:"), image1.Handle, image2.Handle, image3.Handle));
+			}
+		}
+		
 		[Export ("version")]
 		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual NSString Version ()

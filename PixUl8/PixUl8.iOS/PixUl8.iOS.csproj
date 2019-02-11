@@ -229,9 +229,9 @@
     <ITunesArtwork Include="iTunesArtwork%402x" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\PixUl8.OpenCV\PixUl8.OpenCV.csproj">
+    <ProjectReference Include="..\..\PixUl8.OpenCV\PixUl8.Native.csproj">
       <Project>{24A1287B-4F7F-440F-9E85-822D242CDF17}</Project>
-      <Name>PixUl8.OpenCV</Name>
+      <Name>PixUl8.Native</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

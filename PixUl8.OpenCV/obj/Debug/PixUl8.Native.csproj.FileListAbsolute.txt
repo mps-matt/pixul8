@@ -1,0 +1,6 @@
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.OpenCV/bin/Debug/PixUl8.OpenCV.dll
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.OpenCV/bin/Debug/PixUl8.OpenCV.pdb
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.OpenCV/obj/Debug/PixUl8.Native.csprojAssemblyReference.cache
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.OpenCV/obj/Debug/PixUl8.Native.csproj.CoreCompileInputs.cache
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.OpenCV/obj/Debug/PixUl8.OpenCV.dll
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.OpenCV/obj/Debug/PixUl8.OpenCV.pdb

@@ -1,26 +1,10 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8.OpenCV/ApiDefinition.cs">
     <Files>
-      <File FileName="PixUl8/PixUl8.iOS/Delegates/HDRPhotoCaptureDelegate.cs" Line="58" Column="13" />
+      <File FileName="PixUl8/PixUl8.iOS/Delegates/HDRPhotoCaptureDelegate.cs" Line="58" Column="1" />
       <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="583" Column="1" />
       <File FileName="PixUl8.OpenCV/ApiDefinition.cs" Line="76" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="PixUl8" expanded="True" selected="True">
-            <Node name="PixUl8.iOS" expanded="True">
-              <Node name="References" expanded="True" />
-              <Node name="Delegates" expanded="True" />
-              <Node name="UIViews" expanded="True" />
-            </Node>
-            <Node name="PixUl8.OpenCV" expanded="True">
-              <Node name="NativeReferenceFolder" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.594cc34fe22a6ae2a5ef467001700a60305909ef" />
   <MonoDevelop.Ide.ItemProperties.PixUl8 HideGettingStarted="True" />

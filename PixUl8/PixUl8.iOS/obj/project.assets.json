@@ -133,15 +133,6 @@
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
         }
-      },
-      "PixUl8.OpenCV/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/PixUl8.OpenCV.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/PixUl8.OpenCV.dll": {}
-        }
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
@@ -275,15 +266,6 @@
         "build": {
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
-        }
-      },
-      "PixUl8.OpenCV/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/PixUl8.OpenCV.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/PixUl8.OpenCV.dll": {}
         }
       }
     },
@@ -419,15 +401,6 @@
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
         }
-      },
-      "PixUl8.OpenCV/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/PixUl8.OpenCV.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/PixUl8.OpenCV.dll": {}
-        }
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
@@ -561,15 +534,6 @@
         "build": {
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
-        }
-      },
-      "PixUl8.OpenCV/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/PixUl8.OpenCV.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/PixUl8.OpenCV.dll": {}
         }
       }
     }
@@ -740,16 +704,10 @@
         "xamarin.forms.3.4.0.1009999.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
-    },
-    "PixUl8.OpenCV/1.0.0": {
-      "type": "project",
-      "path": "../../PixUl8.OpenCV/PixUl8.OpenCV.csproj",
-      "msbuildProject": "../../PixUl8.OpenCV/PixUl8.OpenCV.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
-      "PixUl8.OpenCV >= 1.0.0",
       "Xamarin.Forms >= 3.4.0.1009999",
       "morelinq >= 3.1.0"
     ]
@@ -777,11 +735,7 @@
       },
       "frameworks": {
         "xamarinios10": {
-          "projectReferences": {
-            "/Users/mattstark/Documents/GitHub/pixul8/PixUl8.OpenCV/PixUl8.OpenCV.csproj": {
-              "projectPath": "/Users/mattstark/Documents/GitHub/pixul8/PixUl8.OpenCV/PixUl8.OpenCV.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       }
     },

@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixUl8.iOS", "PixUl8\PixUl8
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "PixUl8", "PixUl8\PixUl8\PixUl8.shproj", "{A1C29F6D-1930-4B5A-B91C-6C6E42D35952}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixUl8.OpenCV", "PixUl8.OpenCV\PixUl8.OpenCV.csproj", "{24A1287B-4F7F-440F-9E85-822D242CDF17}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixUl8.Native", "PixUl8.OpenCV\PixUl8.Native.csproj", "{24A1287B-4F7F-440F-9E85-822D242CDF17}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
