@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using AVFoundation;
@@ -63,6 +63,11 @@ namespace PixUl8.iOS
         public override void DidEnterBackground(UIApplication uiApplication)
         {
             base.DidEnterBackground(uiApplication);
+        }
+
+        public override void ReceiveMemoryWarning(UIApplication uiApplication)
+        {
+            Debug.WriteLine("MEMORY WARNING RECEIVED");
         }
 
         public override void WillEnterForeground(UIApplication app)

@@ -207,16 +207,24 @@ namespace PixUl8.iOS.UIViews
             //a picture in feeling and sound
             DependencyService.Get<IHapticService>().InvokeLightHaptic();
 
+
             if (HdrEnabled)
             {
-                
-                for (int i = 1; i <= HDRCAPTURECOUNT; i+=3)
+
+                for (int i = 1; i <= HDRCAPTURECOUNT; i += 3)
                 {
-                    _photoOutput.CapturePhoto(GetCurrentBracketedSettings(i, HDRCAPTURECOUNT), _hdrImageDelegate);
+                    AVCapturePhotoBracketSettings settings = GetCurrentBracketedSettings(i, HDRCAPTURECOUNT);
+                    _photoOutput.CapturePhoto(settings, _hdrImageDelegate);
+                    settings.Dispose();
                 }
             }
             else
-                _photoOutput.CapturePhoto(GetCurrentPhotoSettings(), _imageDelegate);
+            {
+                AVCapturePhotoBracketSettings settings = GetCurrentPhotoSettings();
+                _photoOutput.CapturePhoto(settings, _imageDelegate);
+                settings.Dispose();
+            }
+
 
             _canTakePicture = false;
 
@@ -633,36 +641,43 @@ namespace PixUl8.iOS.UIViews
             return bracketSettings;
         }
 
-        private AVCapturePhotoSettings GetCurrentPhotoSettings()
+        private AVCapturePhotoBracketSettings GetCurrentPhotoSettings()
         {
-            AVCapturePhotoSettings photoSettings = null;
-
-            var format = CVPixelFormatType.CV32BGRA;
-
-
-            var keys = new[]
+            // Get AVCaptureBracketedStillImageSettings for a set of exposure values.
+            var exposureValues = new float[] { -2, 0, +2 };
+            var exposureSettings = new List<AVCaptureAutoExposureBracketedStillImageSettings>();
+            using (var makeAutoExposureSettings = AVCaptureAutoExposureBracketedStillImageSettings.Create(_device.ExposureTargetBias))
             {
-                CVPixelBuffer.PixelFormatTypeKey,
-            };
+                foreach (var exposureValue in exposureValues)
+                {
+                    exposureSettings.Add(AVCaptureAutoExposureBracketedStillImageSettings
+                        .Create(_device.ExposureTargetBias + exposureValue)
+                    );
+                }
 
-            var objects = new NSObject[]
-            {
-                new NSNumber((int)format),
-            };
+                AVCapturePhotoBracketSettings bracketSettings = AVCapturePhotoBracketSettings.FromPhotoBracketSettings(
+                    rawPixelFormatType: 0,
+                    rawFileType: AVVideoCodecType.Jpeg.ToString(),
+                    processedFormat: null,
+                    processedFileType: null,
+                    bracketedSettings: exposureSettings.ToArray()
+                );
 
+                bracketSettings.FlashMode = FlashOn ? AVCaptureFlashMode.On : AVCaptureFlashMode.Off;
+                bracketSettings.IsHighResolutionPhotoEnabled = true;
 
-            photoSettings = AVCapturePhotoSettings.FromFormat(new NSDictionary<NSString, NSObject>(keys, objects));
+                if (_photoOutput.IsLensStabilizationDuringBracketedCaptureSupported)
+                    bracketSettings.IsLensStabilizationEnabled = true;
+                    
 
-            photoSettings.FlashMode = FlashOn ? AVCaptureFlashMode.On : AVCaptureFlashMode.Off;
-            photoSettings.IsHighResolutionPhotoEnabled = true;
-
-            return photoSettings;
+                return bracketSettings;
+            }
         }
 
 
 
 
-        #region Capture Video Deegate Functions
+        #region Capture Video Delegate Functions
 
 
         ///////////////////////////////////////////////////////////////////////////////

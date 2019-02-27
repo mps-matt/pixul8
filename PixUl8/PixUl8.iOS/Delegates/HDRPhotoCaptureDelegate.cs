@@ -16,7 +16,6 @@ using System.Collections.Concurrent;
 namespace PixUl8.iOS.Delegates
 {
 
-    //From https://github.com/xamarin/ios-samples/blob/master/ios10/AVCamManual/AVCamManual/AVCamManual/AVCamManualCameraViewController.cs
     public class HDRPhotoCaptureDelegate : AVCapturePhotoCaptureDelegate
     {
         private ConcurrentBag<UIImage> _imagesInBracket = new ConcurrentBag<UIImage>();

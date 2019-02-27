@@ -15,7 +15,6 @@
 #import <Photos/Photos.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <CoreSpotlight/CoreSpotlight.h>
-#import <CoreImage/CoreImage.h>
 #import <QuartzCore/QuartzCore.h>
 #import <CoreGraphics/CoreGraphics.h>
 
@@ -300,6 +299,7 @@
 }
 	-(BOOL) application:(UIApplication *)p0 didFinishLaunchingWithOptions:(NSDictionary *)p1;
 	-(void) applicationDidEnterBackground:(UIApplication *)p0;
+	-(void) applicationDidReceiveMemoryWarning:(UIApplication *)p0;
 	-(void) applicationWillEnterForeground:(UIApplication *)p0;
 	-(void) observeValueForKeyPath:(NSString *)p0 ofObject:(NSObject *)p1 change:(NSDictionary *)p2 context:(void *)p3;
 	-(id) init;
@@ -311,7 +311,7 @@
 	-(id) retain;
 	-(int) xamarinGetGCHandle;
 	-(void) xamarinSetGCHandle: (int) gchandle;
-	-(void) captureOutput:(AVCapturePhotoOutput *)p0 didFinishProcessingPhoto:(AVCapturePhoto *)p1 error:(NSError *)p2;
+	-(void) captureOutput:(AVCapturePhotoOutput *)p0 didFinishProcessingPhotoSampleBuffer:(id)p1 previewPhotoSampleBuffer:(id)p2 resolvedSettings:(AVCaptureResolvedPhotoSettings *)p3 bracketSettings:(AVCaptureBracketedStillImageSettings *)p4 error:(NSError *)p5;
 	-(BOOL) conformsToProtocol:(void *)p0;
 	-(id) init;
 @end
