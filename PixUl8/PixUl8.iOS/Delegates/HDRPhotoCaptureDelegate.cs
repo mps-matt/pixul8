@@ -11,6 +11,7 @@ using Photos;
 using PixUl8.iOS.UIViews;
 using UIKit;
 using PixUl8.Native;
+using System.Collections.Concurrent;
 
 namespace PixUl8.iOS.Delegates
 {
@@ -18,7 +19,8 @@ namespace PixUl8.iOS.Delegates
     //From https://github.com/xamarin/ios-samples/blob/master/ios10/AVCamManual/AVCamManual/AVCamManual/AVCamManualCameraViewController.cs
     public class HDRPhotoCaptureDelegate : AVCapturePhotoCaptureDelegate
     {
-        private List<UIImage> _imagesInBracket = new List<UIImage>();
+        private ConcurrentBag<UIImage> _imagesInBracket = new ConcurrentBag<UIImage>();
+        private ConcurrentBag<UIImage> _finishedBracket = new ConcurrentBag<UIImage>();
 
         
         [Export ("captureOutput:didFinishProcessingPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:")]
@@ -39,22 +41,45 @@ namespace PixUl8.iOS.Delegates
             _imagesInBracket.Add(image);
 
 
-            if (_imagesInBracket.Count == (int)resolvedSettings.ExpectedPhotoCount)
+            if (_imagesInBracket.Count == 3)
             {
                 //Combine into one photo
-                var finale = MergeImages(_imagesInBracket);
+                var bracketFinale = MergeImages(_imagesInBracket.ToArray());
+                _finishedBracket.Add(bracketFinale);
+
+                foreach (var item in _imagesInBracket)
+                    item.Dispose();
+                _imagesInBracket.Clear();
+            }
+
+            if (_finishedBracket.Count == (UICameraPreview.HDRCAPTURECOUNT/3) )
+            {
+                //Combine into one photo
+                var finale = MergeImagesAndAllign(_finishedBracket.ToArray());
                 //Save Output
                 SaveFinalImage(finale);
             }
         }
 
-        public UIImage MergeImages(List<UIImage> images)
+        public UIImage MergeImages(UIImage[] images)
         {
             OpenCV openCV = new OpenCV();
 
-            var imageArray = NSArray.FromObjects(images.ToArray());
+            var imageArray = NSArray.FromObjects(images);
 
             var ret = openCV.Fuse(imageArray);
+            ret = new UIImage(ret.CGImage, 1, images[0].Orientation);
+
+            return ret;
+        }
+
+        public UIImage MergeImagesAndAllign(UIImage[] images)
+        {
+            OpenCV openCV = new OpenCV();
+
+            var imageArray = NSArray.FromObjects(images);
+
+            var ret = openCV.FuseAllign(imageArray, 2);
             ret = new UIImage(ret.CGImage, 1, images[0].Orientation);
 
             return ret;
@@ -96,10 +121,10 @@ namespace PixUl8.iOS.Delegates
             }
             finally
             {
-                foreach (var image in _imagesInBracket)
+                foreach (var image in _finishedBracket)
                     image.Dispose();
 
-                _imagesInBracket.Clear();
+                _finishedBracket.Clear();
 
                 finale.Dispose();
             }

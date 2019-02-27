@@ -26282,7 +26282,7 @@ bl _p_244
 adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x15, [x16, #4056]
-.word 0x928011f0
+.word 0x928000f0
 .word 0xf2bffff0
 .word 0xf8706850
 .word 0xd63f0200
@@ -26370,7 +26370,7 @@ ldr x15, [x16, #4056]
 adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x15, [x16, #4064]
-.word 0x92800cf0
+.word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706870
 .word 0xd63f0200
@@ -26987,7 +26987,7 @@ bl _p_270
 adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x15, [x16, #4056]
-.word 0x928011f0
+.word 0x928000f0
 .word 0xf2bffff0
 .word 0xf8706850
 .word 0xd63f0200
@@ -27082,7 +27082,7 @@ ldr x15, [x16, #4056]
 adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x15, [x16, #4064]
-.word 0x92800cf0
+.word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706870
 .word 0xd63f0200
@@ -27370,7 +27370,7 @@ bl _p_244
 adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x15, [x16, #4056]
-.word 0x928011f0
+.word 0x928000f0
 .word 0xf2bffff0
 .word 0xf8706850
 .word 0xd63f0200
@@ -27461,7 +27461,7 @@ ldr x15, [x16, #4056]
 adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x15, [x16, #4064]
-.word 0x92800cf0
+.word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706870
 .word 0xd63f0200
@@ -29027,7 +29027,7 @@ bl _p_284
 adrp x16, mono_aot_OpenTK_1_0_got@PAGE+0
 add x16, x16, mono_aot_OpenTK_1_0_got@PAGEOFF
 ldr x15, [x16, #4056]
-.word 0x928011f0
+.word 0x928000f0
 .word 0xf2bffff0
 .word 0xf8706850
 .word 0xd63f0200
@@ -32807,7 +32807,7 @@ _mono_aot_file_info:
 	.long 1000,10824,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 45,231,87,163,48,27,126,136,12,12,144,190,110,127,147,187
+	.byte 128,131,189,126,227,21,222,84,142,189,199,116,128,71,37,106
 	.globl _mono_aot_module_OpenTK_1_0_info
 	.align 3
 _mono_aot_module_OpenTK_1_0_info:

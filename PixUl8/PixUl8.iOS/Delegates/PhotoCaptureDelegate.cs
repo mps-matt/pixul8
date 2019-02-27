@@ -4,6 +4,7 @@ using System.Drawing;
 using AVFoundation;
 using CoreFoundation;
 using CoreGraphics;
+using CoreImage;
 using CoreMedia;
 using Foundation;
 using Photos;
@@ -17,22 +18,57 @@ namespace PixUl8.iOS.Delegates
     public class PhotoCaptureDelegate : AVCapturePhotoCaptureDelegate
     {
 
-        [Export ("captureOutput:didFinishProcessingPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:")]
-        public override void DidFinishProcessingPhoto (AVCapturePhotoOutput captureOutput,
-                                       CMSampleBuffer photoSampleBuffer, CMSampleBuffer previewPhotoSampleBuffer,
-                                       AVCaptureResolvedPhotoSettings resolvedSettings, AVCaptureBracketedStillImageSettings bracketSettings,
-                                       NSError error)
+        //[Export ("captureOutput:didFinishProcessingPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:")]
+        //public override void DidFinishProcessingPhoto (AVCapturePhotoOutput captureOutput,
+        //                               CMSampleBuffer photoSampleBuffer, CMSampleBuffer previewPhotoSampleBuffer,
+        //                               AVCaptureResolvedPhotoSettings resolvedSettings, AVCaptureBracketedStillImageSettings bracketSettings,
+        //                               NSError error)
+        //{
+        //    if (photoSampleBuffer == null) {
+        //        Console.WriteLine ($"Error occurred while capturing photo: {error}");
+        //        return;
+        //    }
+
+        //    NSData imageData = AVCapturePhotoOutput.GetJpegPhotoDataRepresentation (photoSampleBuffer, previewPhotoSampleBuffer);
+
+        //    //CIImage image = new CIImage(photoSampleBuffer);
+
+        //    UIImage uncropped = new UIImage(imageData, 1.0f);
+        //    UIImage cropped = CropToBounds(uncropped, UICameraPreview.BOUNDS.Size);
+        //    var imageAsData = cropped.AsPNG();
+
+        //    PHPhotoLibrary.RequestAuthorization (status => {
+        //        if (status == PHAuthorizationStatus.Authorized) {
+        //            PHPhotoLibrary.SharedPhotoLibrary.PerformChanges (() => {
+        //                PHAssetCreationRequest.CreationRequestForAsset ().AddResource (PHAssetResourceType.Photo, imageAsData, null);
+        //            }, (success, err) => {
+        //                if (!success) {
+        //                    Debug.WriteLine ($"Error occurred while saving photo to photo library: {err}");
+        //                } else {
+        //                    Debug.WriteLine ("Photo was saved to photo library");
+        //                }
+        //            });
+        //        } else {
+        //            Debug.WriteLine ("Not authorized to save photo");
+        //        }
+        //    });
+        //}
+
+        public override void DidFinishProcessingPhoto(AVCapturePhotoOutput output, AVCapturePhoto photo, NSError error)
         {
-            if (photoSampleBuffer == null) {
-                Console.WriteLine ($"Error occurred while capturing photo: {error}");
-                return;
-            }
+            // Create a CIImage from the pixel buffer
+            var image = new CIImage(imageBuffer: photo.PixelBuffer);
+            var context = CIContext.Create();
 
-            NSData imageData = AVCapturePhotoOutput.GetJpegPhotoDataRepresentation (photoSampleBuffer, previewPhotoSampleBuffer);
+            var imageOrientation = ImageIO.CGImagePropertyOrientation.Right;
+            var filteredImage = image.CreateByApplyingOrientation(imageOrientation);
 
-            UIImage uncropped = new UIImage(imageData, 1.0f);
+            var pngData = context.GetPngRepresentation(filteredImage, CIFormat.kBGRA8, CGColorSpace.CreateGenericRgb(), new CIImageRepresentationOptions() { LossyCompressionQuality = 0f });
+
+            UIImage uncropped = new UIImage(pngData, 0);
             UIImage cropped = CropToBounds(uncropped, UICameraPreview.BOUNDS.Size);
             var imageAsData = cropped.AsPNG();
+
 
             PHPhotoLibrary.RequestAuthorization (status => {
                 if (status == PHAuthorizationStatus.Authorized) {
@@ -96,7 +132,7 @@ namespace PixUl8.iOS.Delegates
         private UIImage CropImage(UIImage sourceImage, int crop_x, int crop_y, int width, int height)
         {
             var imgSize = sourceImage.Size;
-            UIGraphics.BeginImageContextWithOptions(new SizeF(width, height), false, UIScreen.MainScreen.Scale);
+            UIGraphics.BeginImageContextWithOptions(new SizeF(width, height), false, 0);
             var context = UIGraphics.GetCurrentContext();
             var clippedRect = new RectangleF(0, 0, width, height);
             context.ClipToRect(clippedRect);

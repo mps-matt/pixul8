@@ -35,6 +35,9 @@ namespace PixUl8.iOS.UIViews
 
     public class UICameraPreview : UIView, IAVCaptureMetadataOutputObjectsDelegate
     {
+        public static readonly int HDRCAPTURECOUNT = 15;
+
+
         public static CGRect BOUNDS;
 
         private bool _manualFocusing = false;
@@ -136,6 +139,9 @@ namespace PixUl8.iOS.UIViews
             _cameraOptions = options;
 
             Initialize();
+
+            if (HDRCAPTURECOUNT % 3 != 0 || HDRCAPTURECOUNT % 2 == 0)
+                throw new Exception("NON-DIVISABLE CAPTURE COUNT");
         }
 
         public override void Draw(CGRect rect)
@@ -202,7 +208,13 @@ namespace PixUl8.iOS.UIViews
             DependencyService.Get<IHapticService>().InvokeLightHaptic();
 
             if (HdrEnabled)
-                _photoOutput.CapturePhoto(GetCurrentBracketedSettings(), _hdrImageDelegate);
+            {
+                
+                for (int i = 1; i <= HDRCAPTURECOUNT; i+=3)
+                {
+                    _photoOutput.CapturePhoto(GetCurrentBracketedSettings(i, HDRCAPTURECOUNT), _hdrImageDelegate);
+                }
+            }
             else
                 _photoOutput.CapturePhoto(GetCurrentPhotoSettings(), _imageDelegate);
 
@@ -248,6 +260,9 @@ namespace PixUl8.iOS.UIViews
 
 
             CaptureSession = new AVCaptureSession();
+            CaptureSession.SessionPreset = AVCaptureSession.PresetPhoto;
+
+
             _previewLayer = new AVCaptureVideoPreviewLayer(CaptureSession)
             {
                 VideoGravity = AVLayerVideoGravity.ResizeAspectFill,
@@ -258,7 +273,7 @@ namespace PixUl8.iOS.UIViews
 
             var deviceSession = AVCaptureDeviceDiscoverySession.Create(allTypes, AVMediaType.Video,
                 (_cameraOptions == CameraOptions.Front) ? AVCaptureDevicePosition.Front : AVCaptureDevicePosition.Back);
-
+                
 
             //Get best device, first one isi usually most hightech avaiable. 
             //Only issue i see happening is iphon 2g only had a rear cameras but let's be real here.
@@ -271,6 +286,23 @@ namespace PixUl8.iOS.UIViews
                 return;
             }
 
+            //if (CaptureSession.CanSetSessionPreset(AVCaptureSession.Preset3840x2160) && _device.SupportsAVCaptureSessionPreset(AVCaptureSession.Preset3840x2160))
+            //{
+            //    CaptureSession.SessionPreset = AVCaptureSession.Preset3840x2160;
+            //}
+            //else if (CaptureSession.CanSetSessionPreset(AVCaptureSession.Preset1920x1080) && _device.SupportsAVCaptureSessionPreset(AVCaptureSession.Preset1920x1080))
+            //{
+            //    CaptureSession.SessionPreset = AVCaptureSession.Preset1920x1080;
+            //}
+            //else if (CaptureSession.CanSetSessionPreset(AVCaptureSession.Preset1280x720) && _device.SupportsAVCaptureSessionPreset(AVCaptureSession.Preset1280x720))
+            //{
+            //    CaptureSession.SessionPreset = AVCaptureSession.Preset1280x720;
+            //}
+            //else
+            //{
+            //    CaptureSession.SessionPreset = AVCaptureSession.PresetPhoto;
+            //}
+
 
             NSError lockErr;
             _device.LockForConfiguration(out lockErr);
@@ -279,15 +311,22 @@ namespace PixUl8.iOS.UIViews
             //Get the best format for this device - will select format that allows highest MINIMUM FPS possible
             //Then by the highest resolution possible for highest fps
 
-            _device.ActiveFormat = _device.Formats.MaxBy(format => format.VideoSupportedFrameRateRanges.Max(fps => fps.MinFrameRate))
-                .MaxBy(format => format.HighResolutionStillImageDimensions.Width)
-                .MaxBy(format => format.HighResolutionStillImageDimensions.Height)
-                .FirstOrDefault(format => format.videoHDRSupportedVideoHDREnabled) 
-                ??
-                _device.Formats.MaxBy(format => format.VideoSupportedFrameRateRanges.Max(fps => fps.MinFrameRate))
-                .MaxBy(format => format.HighResolutionStillImageDimensions.Width)
-                .MaxBy(format => format.HighResolutionStillImageDimensions.Height)
-                .First();
+
+            //_device.ActiveFormat = _device.Formats.MaxBy(format => format.HighResolutionStillImageDimensions.Width)
+            //.FirstOrDefault(format => format.videoHDRSupportedVideoHDREnabled);
+
+
+            //_device.ActiveFormat = _device.Formats.MaxBy(format => format.VideoSupportedFrameRateRanges.Max(fps => fps.MinFrameRate))
+            //.MaxBy(format => format.HighResolutionStillImageDimensions.Width)
+            //.MaxBy(format => format.HighResolutionStillImageDimensions.Height)
+            //.FirstOrDefault(format => format.videoHDRSupportedVideoHDREnabled) 
+            //??
+            //_device.Formats.MaxBy(format => format.VideoSupportedFrameRateRanges.Max(fps => fps.MinFrameRate))
+            //.MaxBy(format => format.HighResolutionStillImageDimensions.Width)
+            //.MaxBy(format => format.HighResolutionStillImageDimensions.Height)
+            //.First();
+
+
 
             //Get the frame rates allowed by this format type (whetherr telophoto, treudedepth etc)
             var highestFrameRate = _device.ActiveFormat.VideoSupportedFrameRateRanges.MaxBy(fps => fps.MinFrameRate);
@@ -316,7 +355,7 @@ namespace PixUl8.iOS.UIViews
 
             NSError error;
             var input = new AVCaptureDeviceInput(_device, out error);
-
+            
             CaptureSession.AddInput(input);
 
 
@@ -551,16 +590,26 @@ namespace PixUl8.iOS.UIViews
                 MessagingCenter.Send<UICameraPreview>(this, "PerformHDRSwitch");
         }
 
-        private AVCapturePhotoBracketSettings GetCurrentBracketedSettings()
+        private AVCapturePhotoBracketSettings GetCurrentBracketedSettings(int currentIndex, int maxIndex)
         {
             // Get AVCaptureBracketedStillImageSettings for a set of exposure values.
-            var exposureValues = new float[] { -4, -2, 0, +2 };
-            var exposureSettings = new List<AVCaptureAutoExposureBracketedStillImageSettings>();
+
+            int limiter = (maxIndex - 1) / 2;
+            List<int> exposureRange = Enumerable.Range((-limiter), maxIndex).ToList();
+
+            var exposureValues = new float[] { exposureRange[currentIndex-1], exposureRange[currentIndex], exposureRange[currentIndex + 1] };            var exposureSettings = new List<AVCaptureAutoExposureBracketedStillImageSettings>();
             var makeAutoExposureSettings = AVCaptureAutoExposureBracketedStillImageSettings.Create(_device.ExposureTargetBias);
             foreach (var exposureValue in exposureValues)
             {
+                var target = _device.ExposureTargetBias + exposureValue;
+
+                if (_device.MinExposureTargetBias > target)
+                    target = _device.MinExposureTargetBias;
+                else if (_device.MaxExposureTargetBias < target)
+                    target = _device.MaxExposureTargetBias;
+
                 exposureSettings.Add(AVCaptureAutoExposureBracketedStillImageSettings
-                    .Create(_device.ExposureTargetBias + exposureValue)
+                    .Create(target)
                 );
             }
 
@@ -588,9 +637,24 @@ namespace PixUl8.iOS.UIViews
         {
             AVCapturePhotoSettings photoSettings = null;
 
-            photoSettings = AVCapturePhotoSettings.Create();
+            var format = CVPixelFormatType.CV32BGRA;
+
+
+            var keys = new[]
+            {
+                CVPixelBuffer.PixelFormatTypeKey,
+            };
+
+            var objects = new NSObject[]
+            {
+                new NSNumber((int)format),
+            };
+
+
+            photoSettings = AVCapturePhotoSettings.FromFormat(new NSDictionary<NSString, NSObject>(keys, objects));
+
             photoSettings.FlashMode = FlashOn ? AVCaptureFlashMode.On : AVCaptureFlashMode.Off;
-            photoSettings.IsHighResolutionPhotoEnabled = false;
+            photoSettings.IsHighResolutionPhotoEnabled = true;
 
             return photoSettings;
         }

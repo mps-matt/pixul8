@@ -15,6 +15,7 @@
 #import <Photos/Photos.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <CoreSpotlight/CoreSpotlight.h>
+#import <CoreImage/CoreImage.h>
 #import <QuartzCore/QuartzCore.h>
 #import <CoreGraphics/CoreGraphics.h>
 
@@ -310,7 +311,7 @@
 	-(id) retain;
 	-(int) xamarinGetGCHandle;
 	-(void) xamarinSetGCHandle: (int) gchandle;
-	-(void) captureOutput:(AVCapturePhotoOutput *)p0 didFinishProcessingPhotoSampleBuffer:(id)p1 previewPhotoSampleBuffer:(id)p2 resolvedSettings:(AVCaptureResolvedPhotoSettings *)p3 bracketSettings:(AVCaptureBracketedStillImageSettings *)p4 error:(NSError *)p5;
+	-(void) captureOutput:(AVCapturePhotoOutput *)p0 didFinishProcessingPhoto:(AVCapturePhoto *)p1 error:(NSError *)p2;
 	-(BOOL) conformsToProtocol:(void *)p0;
 	-(id) init;
 @end
@@ -716,6 +717,7 @@
 @interface OpenCV : NSObject {
 }
 	-(UIImage *) fuse:(NSArray *)p0;
+	-(UIImage *) fuseAllign:(NSArray *)p0 at:(int)p1;
 	-(NSString *) version;
 	-(id) init;
 @end

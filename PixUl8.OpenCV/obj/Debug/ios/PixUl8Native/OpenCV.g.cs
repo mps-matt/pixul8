@@ -91,6 +91,19 @@ namespace PixUl8.Native {
 			}
 		}
 		
+		[Export ("fuseAllign:at:")]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		public virtual global::UIKit.UIImage FuseAllign (NSArray imageArray, int alligner)
+		{
+			if (imageArray == null)
+				throw new ArgumentNullException ("imageArray");
+			if (IsDirectBinding) {
+				return  Runtime.GetNSObject<global::UIKit.UIImage> (global::ApiDefinition.Messaging.IntPtr_objc_msgSend_IntPtr_int (this.Handle, Selector.GetHandle ("fuseAllign:at:"), imageArray.Handle, alligner));
+			} else {
+				return  Runtime.GetNSObject<global::UIKit.UIImage> (global::ApiDefinition.Messaging.IntPtr_objc_msgSendSuper_IntPtr_int (this.SuperHandle, Selector.GetHandle ("fuseAllign:at:"), imageArray.Handle, alligner));
+			}
+		}
+		
 		[Export ("version")]
 		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual NSString Version ()
