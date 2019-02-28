@@ -626,14 +626,14 @@ namespace PixUl8.iOS.UIViews
 
             AVCapturePhotoBracketSettings bracketSettings = AVCapturePhotoBracketSettings.FromPhotoBracketSettings(
                 rawPixelFormatType: 0,
-                rawFileType: AVVideoCodecType.Hevc.ToString(),
+                rawFileType: AVVideoCodecType.Jpeg.ToString(),
                 processedFormat: null,
                 processedFileType: null,
                 bracketedSettings: exposureSettings.ToArray()
             );
          
             bracketSettings.FlashMode = FlashOn ? AVCaptureFlashMode.On : AVCaptureFlashMode.Off;
-            bracketSettings.IsHighResolutionPhotoEnabled = false;
+            bracketSettings.IsHighResolutionPhotoEnabled = true;
 
             if (_photoOutput.IsLensStabilizationDuringBracketedCaptureSupported)
                 bracketSettings.IsLensStabilizationEnabled = true;
@@ -644,7 +644,7 @@ namespace PixUl8.iOS.UIViews
         private AVCapturePhotoBracketSettings GetCurrentPhotoSettings()
         {
             // Get AVCaptureBracketedStillImageSettings for a set of exposure values.
-            var exposureValues = new float[] { -2, 0, +2 };
+            var exposureValues = new float[] { -2, 0, +1 };
             var exposureSettings = new List<AVCaptureAutoExposureBracketedStillImageSettings>();
             using (var makeAutoExposureSettings = AVCaptureAutoExposureBracketedStillImageSettings.Create(_device.ExposureTargetBias))
             {

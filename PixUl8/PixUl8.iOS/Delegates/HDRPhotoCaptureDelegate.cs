@@ -12,111 +12,162 @@ using PixUl8.iOS.UIViews;
 using UIKit;
 using PixUl8.Native;
 using System.Collections.Concurrent;
+using System.Threading.Tasks;
 
 namespace PixUl8.iOS.Delegates
 {
 
     public class HDRPhotoCaptureDelegate : AVCapturePhotoCaptureDelegate
     {
-        private ConcurrentBag<UIImage> _imagesInBracket = new ConcurrentBag<UIImage>();
-        private ConcurrentBag<UIImage> _finishedBracket = new ConcurrentBag<UIImage>();
+        private List<UIImage> _imagesInBracket = new List<UIImage>();
+        private List<UIImage> _finishedBracket = new List<UIImage>();
 
         
         [Export ("captureOutput:didFinishProcessingPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:")]
-        public override void DidFinishProcessingPhoto (AVCapturePhotoOutput captureOutput,
+        public override async void DidFinishProcessingPhoto (AVCapturePhotoOutput captureOutput,
                                        CMSampleBuffer photoSampleBuffer, CMSampleBuffer previewPhotoSampleBuffer,
                                        AVCaptureResolvedPhotoSettings resolvedSettings, AVCaptureBracketedStillImageSettings bracketSettings,
                                        NSError error)
         {
-            if (photoSampleBuffer == null) {
-                Console.WriteLine ($"Error occurred while capturing photo: {error}");
-                return;
+            NSData imageData = null;
+
+            try
+            { 
+
+                if (photoSampleBuffer == null) {
+                    Console.WriteLine ($"Error occurred while capturing photo: {error}");
+                    return;
+                }
+
+                imageData = AVCapturePhotoOutput.GetJpegPhotoDataRepresentation (photoSampleBuffer, previewPhotoSampleBuffer);
+
+
+                UIImage image = new UIImage(imageData, 1.0f);
+                _imagesInBracket.Add(image);
+
+
+                if (_imagesInBracket.Count == 3)
+                {
+                    //Combine into one photo
+                    var bracketFinale = MergeImages(_imagesInBracket);
+                    _finishedBracket.Add(bracketFinale);
+
+                    foreach (var item in _imagesInBracket)
+                        item.Dispose();
+                    _imagesInBracket.Clear();
+                }
+
+                if (_finishedBracket.Count == (UICameraPreview.HDRCAPTURECOUNT/3) )
+                {
+                    //Combine into one photo
+                    var finale = MergeImagesAndAllign(_finishedBracket);
+                    //Save Output
+
+                    await SaveFinalImageAsync(finale);
+                }
+
             }
-
-            NSData imageData = AVCapturePhotoOutput.GetJpegPhotoDataRepresentation (photoSampleBuffer, previewPhotoSampleBuffer);
-
-
-            UIImage image = new UIImage(imageData, 1.0f);
-            _imagesInBracket.Add(image);
-
-
-            if (_imagesInBracket.Count == 3)
+            finally
             {
-                //Combine into one photo
-                var bracketFinale = MergeImages(_imagesInBracket.ToArray());
-                _finishedBracket.Add(bracketFinale);
+                imageData?.Dispose();
 
-                foreach (var item in _imagesInBracket)
-                    item.Dispose();
-                _imagesInBracket.Clear();
-            }
-
-            if (_finishedBracket.Count == (UICameraPreview.HDRCAPTURECOUNT/3) )
-            {
-                //Combine into one photo
-                var finale = MergeImagesAndAllign(_finishedBracket.ToArray());
-                //Save Output
-                SaveFinalImage(finale);
+                photoSampleBuffer?.Dispose();
+                previewPhotoSampleBuffer?.Dispose();
+                resolvedSettings?.Dispose();
+                bracketSettings?.Dispose();
             }
         }
 
-        public UIImage MergeImages(UIImage[] images)
+
+
+
+        public UIImage MergeImagesAndAllign(List<UIImage> images)
         {
-            OpenCV openCV = new OpenCV();
+            UIImage fused = null;
+            UIImage fixedRet = null;
 
-            var imageArray = NSArray.FromObjects(images);
-
-            var ret = openCV.Fuse(imageArray);
-            ret = new UIImage(ret.CGImage, 1, images[0].Orientation);
-
-            return ret;
-        }
-
-        public UIImage MergeImagesAndAllign(UIImage[] images)
-        {
-            OpenCV openCV = new OpenCV();
-
-            var imageArray = NSArray.FromObjects(images);
-
-            var ret = openCV.FuseAllign(imageArray, 2);
-            ret = new UIImage(ret.CGImage, 1, images[0].Orientation);
-
-            return ret;
-        }
-
-
-        public void SaveFinalImage(UIImage finale)
-        {
             try
             {
-                UIImage uncropped = finale;
-                UIImage cropped = CropToBounds(uncropped, UICameraPreview.BOUNDS.Size);
-                var imageAsData = cropped.AsPNG();
 
-                PHPhotoLibrary.RequestAuthorization(status =>
+                using (var openCV = new OpenCV())
                 {
-                    if (status == PHAuthorizationStatus.Authorized)
+                    var imageArray = NSArray.FromObjects(images.ToArray());
+
+                    fused = openCV.FuseAllign(imageArray, 2);
+                    fixedRet = new UIImage(fused.CGImage, 1, images[0].Orientation);
+
+                    return fixedRet;
+                }
+            }
+            finally
+            {
+                fused?.Dispose();
+            }
+        }
+
+
+
+        public UIImage MergeImages(List<UIImage> images)
+        {
+            UIImage fused = null;
+            UIImage fixedRet = null;
+
+            try
+            {
+
+                using (var openCV = new OpenCV())
+                {
+                    var imageArray = NSArray.FromObjects(images.ToArray());
+
+                    fused = openCV.Fuse(imageArray);
+                    fixedRet = new UIImage(fused.CGImage, 1, images[0].Orientation);
+
+                    return fixedRet;
+                }
+            }
+            finally
+            {
+                fused?.Dispose();
+            }
+        }
+
+        public async Task SaveFinalImageAsync(UIImage finale)
+        {
+            NSData imageAsData = null;
+            UIImage uncropped = null;
+            UIImage cropped = null;
+
+            try
+            {
+                uncropped = finale;
+                cropped = CropToBounds(uncropped, UICameraPreview.BOUNDS.Size);
+                imageAsData = cropped.AsJPEG();
+
+                var status = await PHPhotoLibrary.RequestAuthorizationAsync();
+
+                if (status == PHAuthorizationStatus.Authorized)
+                {
+                    NSError err;
+                    bool success = PHPhotoLibrary.SharedPhotoLibrary.PerformChangesAndWait(() =>
                     {
-                        PHPhotoLibrary.SharedPhotoLibrary.PerformChanges(() =>
-                        {
-                            PHAssetCreationRequest.CreationRequestForAsset().AddResource(PHAssetResourceType.Photo, imageAsData, null);
-                        }, (success, err) =>
-                        {
-                            if (!success)
-                            {
-                                Debug.WriteLine($"Error occurred while saving photo to photo library: {err}");
-                            }
-                            else
-                            {
-                                Debug.WriteLine("Photo was saved to photo library");
-                            }
-                        });
+                        PHAssetCreationRequest.CreationRequestForAsset().AddResource(PHAssetResourceType.Photo, imageAsData, null);
+                    }, out err);
+
+                    if (!success)
+                    {
+                        Debug.WriteLine($"Error occurred while saving photo to photo library: {err}");
                     }
                     else
                     {
-                        Debug.WriteLine("Not authorized to save photo");
+                        Debug.WriteLine("Photo was saved to photo library");
                     }
-                });
+
+                }
+                else
+                {
+                    Debug.WriteLine("Not authorized to save photo");
+                }
+
             }
             finally
             {
@@ -125,47 +176,58 @@ namespace PixUl8.iOS.Delegates
 
                 _finishedBracket.Clear();
 
-                finale.Dispose();
+                finale?.Dispose();
+                imageAsData?.Dispose();
+                uncropped?.Dispose();
+                cropped?.Dispose();
             }
         }
 
 
         public UIImage CropToBounds(UIImage image, CGSize size)
         {
-            var pixelWidth = size.Width * UIScreen.MainScreen.Scale;
-            var pixelHeight = size.Height * UIScreen.MainScreen.Scale;
-
-            var originalWidth = image.Size.Width;
-            var originalHeight = image.Size.Height;
-            var originalRatio = originalWidth / originalHeight;
-
-            var targetRatio = pixelWidth / pixelHeight;
-
-
-            var targetHeight = originalHeight;
-            var targetWidth = originalWidth;
-
-            if (originalRatio > targetRatio)
+            try
             {
-                //Crop width
-                targetHeight = originalHeight;
-                targetWidth = targetHeight * targetRatio;
+                var pixelWidth = size.Width * UIScreen.MainScreen.Scale;
+                var pixelHeight = size.Height * UIScreen.MainScreen.Scale;
+
+                var originalWidth = image.Size.Width;
+                var originalHeight = image.Size.Height;
+                var originalRatio = originalWidth / originalHeight;
+
+                var targetRatio = pixelWidth / pixelHeight;
+
+
+                var targetHeight = originalHeight;
+                var targetWidth = originalWidth;
+
+                if (originalRatio > targetRatio)
+                {
+                    //Crop width
+                    targetHeight = originalHeight;
+                    targetWidth = targetHeight * targetRatio;
+                }
+                else if (originalRatio < targetRatio)
+                {
+                    //Crop height
+                    targetWidth = originalWidth;
+                    targetHeight = targetWidth / targetRatio;
+
+                }
+
+                //Now we find the difference to perform a crop
+                var cropWidth = originalWidth - targetWidth;
+                var cropHeight = originalHeight - targetHeight;
+
+                //Perform crop itself
+                //(Truncate any decimal amounts, because you can't have 0.5 of a pixel!)
+                return CropImage(image, (int)cropWidth, (int)cropHeight, (int)targetWidth, (int)targetHeight);
             }
-            else if (originalRatio < targetRatio)
+            finally
             {
-                //Crop height
-                targetWidth = originalWidth;
-                targetHeight = targetWidth / targetRatio;
-
+                image?.Dispose();
             }
 
-            //Now we find the difference to perform a crop
-            var cropWidth = originalWidth - targetWidth;
-            var cropHeight = originalHeight - targetHeight;
-
-            //Perform crop itself
-            //(Truncate any decimal amounts, because you can't have 0.5 of a decimal!)
-            return CropImage(image, (int)cropWidth, (int)cropHeight, (int)targetWidth, (int)targetHeight);
         }
 
 
@@ -173,16 +235,24 @@ namespace PixUl8.iOS.Delegates
         // crop the image, without resizing
         private UIImage CropImage(UIImage sourceImage, int crop_x, int crop_y, int width, int height)
         {
+            UIImage modifiedImage = null;
             var imgSize = sourceImage.Size;
-            UIGraphics.BeginImageContextWithOptions(new SizeF(width, height), false, UIScreen.MainScreen.Scale);
-            var context = UIGraphics.GetCurrentContext();
-            var clippedRect = new RectangleF(0, 0, width, height);
-            context.ClipToRect(clippedRect);
-            var drawRect = new RectangleF((float)(-1*(crop_x*0.5)), (float)(-1*(crop_y*0.5)), (float)imgSize.Width, (float)imgSize.Height);
-            sourceImage.Draw(drawRect);
-            var modifiedImage = UIGraphics.GetImageFromCurrentImageContext();
-            UIGraphics.EndImageContext();
+            UIGraphics.BeginImageContextWithOptions(new SizeF(width, height), false, 0);
+            using (var context = UIGraphics.GetCurrentContext())
+            {
+                var clippedRect = new RectangleF(0, 0, width, height);
+                context.ClipToRect(clippedRect);
+                var drawRect = new RectangleF((float)(-1 * (crop_x * 0.5)), (float)(-1 * (crop_y * 0.5)), (float)imgSize.Width, (float)imgSize.Height);
+                sourceImage.Draw(drawRect);
+                modifiedImage = UIGraphics.GetImageFromCurrentImageContext();
+                UIGraphics.EndImageContext();
+            }
+
+
             return modifiedImage;
         }
+
+
+
     }
 }
