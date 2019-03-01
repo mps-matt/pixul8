@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using AVFoundation;
 using Foundation;
@@ -57,7 +58,19 @@ namespace PixUl8.iOS
             UNUserNotificationCenter.Current.Delegate = new UserNotificationCenterDelegate();
 
 
+
+            // Create the delegate that invokes methods for the timer.
+            //TimerCallback timerDelegate = new TimerCallback(OutputGC);
+            // Create a timer that waits one second, then invokes every second.
+            //Timer timer = new Timer(timerDelegate, null, 1000, 1000);
+
+
             return result;
+        }
+
+        public void OutputGC(object state)
+        {
+            //Debug.WriteLine($"GC- {Math.Round(GC.GetTotalMemory(false)/(double)1000000, 2)} MB");
         }
 
         public override void DidEnterBackground(UIApplication uiApplication)

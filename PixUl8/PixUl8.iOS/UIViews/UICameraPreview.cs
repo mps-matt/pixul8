@@ -240,6 +240,13 @@ namespace PixUl8.iOS.UIViews
 
         private void StartRunning()
         {
+            List<AVCapturePhotoSettings> settings = new List<AVCapturePhotoSettings>();
+            settings.Add(GetCurrentPhotoSettings());
+            for (int i = 1; i <= HDRCAPTURECOUNT; i += 3)
+                settings.Add(GetCurrentBracketedSettings(i, HDRCAPTURECOUNT));
+
+            _photoOutput.SetPreparedPhotoSettingsAsync(settings.ToArray());
+
             CaptureSession.StartRunning();
         }
 
@@ -690,42 +697,51 @@ namespace PixUl8.iOS.UIViews
         [Export("captureOutput:didOutputMetadataObjects:fromConnection:")]
         public void DidOutputMetadataObjects(AVCaptureMetadataOutput captureOutput, AVMetadataObject[] metadataObjects, AVCaptureConnection connection)
         {
-            List<AVMetadataFaceObject> faces = new List<AVMetadataFaceObject>();
-            foreach (var m in metadataObjects)
+            try
             {
-                if (m is AVMetadataFaceObject)
+                List<AVMetadataFaceObject> faces = new List<AVMetadataFaceObject>();
+                foreach (var m in metadataObjects)
                 {
-                    var face = (AVMetadataFaceObject)m;
-                    faces.Add(face);
-                }
-                else
-                {
-                    var barcode = (AVMetadataMachineReadableCodeObject)m;
-
-                    var content = new UNMutableNotificationContent();
-                    content.Title = "Barcode Found";
-                    content.Subtitle = "";
-                    content.Body = barcode?.StringValue ?? "";
-                    content.Badge = 0;
-
-                    var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(0.1, false);
-
-                    var requestID = barcode.StringValue;
-                    var request = UNNotificationRequest.FromIdentifier(requestID, content, trigger);
-
-                    UNUserNotificationCenter.Current.AddNotificationRequest(request, (err) =>
+                    if (m is AVMetadataFaceObject)
                     {
-                    });
+                        var face = (AVMetadataFaceObject)m;
+                        faces.Add(face);
+                    }
+                    else
+                    {
+                        var barcode = (AVMetadataMachineReadableCodeObject)m;
+
+                        var content = new UNMutableNotificationContent();
+                        content.Title = "Barcode Found";
+                        content.Subtitle = "";
+                        content.Body = barcode?.StringValue ?? "";
+                        content.Badge = 0;
+
+                        var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(0.1, false);
+
+                        var requestID = barcode.StringValue;
+                        var request = UNNotificationRequest.FromIdentifier(requestID, content, trigger);
+
+                        UNUserNotificationCenter.Current.AddNotificationRequest(request, (err) =>
+                        {
+                        });
+                    }
+
+                    DrawFaces(faces);
+
+                    tokenSource.Cancel();
+                    tokenSource.Dispose();
+
+                    tokenSource = new CancellationTokenSource();
+
+                    Task.Run(() => StartHideTask(tokenSource.Token));
+
                 }
-
-                DrawFaces(faces);
-
-                tokenSource.Cancel();
-                tokenSource.Dispose();
-
-                tokenSource = new CancellationTokenSource();
-
-                Task.Run(() => StartHideTask(tokenSource.Token));
+            }
+            finally
+            {
+                foreach (var obj in metadataObjects)
+                    obj.Dispose();
             }
 
 

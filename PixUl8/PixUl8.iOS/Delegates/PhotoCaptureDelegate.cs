@@ -62,6 +62,8 @@ namespace PixUl8.iOS.Delegates
                 previewPhotoSampleBuffer?.Dispose();
                 resolvedSettings?.Dispose();
                 bracketSettings?.Dispose();
+
+                GC.Collect();
             }
         }
 
@@ -86,6 +88,7 @@ namespace PixUl8.iOS.Delegates
             finally
             {
                 fused?.Dispose();
+                GC.Collect();
             }
         }
 
@@ -138,6 +141,8 @@ namespace PixUl8.iOS.Delegates
                 imageAsData?.Dispose();
                 uncropped?.Dispose();
                 cropped?.Dispose();
+
+                GC.Collect();
             }
         }
 

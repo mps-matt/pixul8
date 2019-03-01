@@ -42,7 +42,7 @@ namespace PixUl8.iOS.Delegates
                 imageData = AVCapturePhotoOutput.GetJpegPhotoDataRepresentation (photoSampleBuffer, previewPhotoSampleBuffer);
 
 
-                UIImage image = new UIImage(imageData, 1.0f);
+                UIImage image = new UIImage(imageData, 1f);
                 _imagesInBracket.Add(image);
 
 
@@ -75,6 +75,8 @@ namespace PixUl8.iOS.Delegates
                 previewPhotoSampleBuffer?.Dispose();
                 resolvedSettings?.Dispose();
                 bracketSettings?.Dispose();
+
+                GC.Collect();
             }
         }
 
@@ -93,15 +95,19 @@ namespace PixUl8.iOS.Delegates
                 {
                     var imageArray = NSArray.FromObjects(images.ToArray());
 
-                    fused = openCV.FuseAllign(imageArray, 2);
-                    fixedRet = new UIImage(fused.CGImage, 1, images[0].Orientation);
+                    //fused = openCV.FuseAllign(imageArray, 2);
+                    //fixedRet = new UIImage(fused.CGImage, 1, images[0].Orientation);
 
-                    return fixedRet;
+                    //return fixedRet;
+
+                    return images[0];
+
                 }
             }
             finally
             {
                 fused?.Dispose();
+                GC.Collect();
             }
         }
 
@@ -128,6 +134,7 @@ namespace PixUl8.iOS.Delegates
             finally
             {
                 fused?.Dispose();
+                GC.Collect();
             }
         }
 
@@ -180,6 +187,8 @@ namespace PixUl8.iOS.Delegates
                 imageAsData?.Dispose();
                 uncropped?.Dispose();
                 cropped?.Dispose();
+
+                GC.Collect();
             }
         }
 
