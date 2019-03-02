@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/AppDelegate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/Main.cs">
     <Files>
-      <File FileName="PixUl8/PixUl8.iOS/Delegates/HDRPhotoCaptureDelegate.cs" Line="85" Column="24" />
-      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="649" Column="13" />
-      <File FileName="PixUl8/PixUl8.iOS/Delegates/PhotoCaptureDelegate.cs" Line="45" Column="49" />
-      <File FileName="PixUl8/PixUl8.iOS/AppDelegate.cs" Line="68" Column="30" />
+      <File FileName="PixUl8/PixUl8.iOS/Delegates/HDRPhotoCaptureDelegate.cs" Line="102" Column="21" />
+      <File FileName="PixUl8/PixUl8.iOS/Delegates/PhotoCaptureDelegate.cs" Line="57" Column="26" />
+      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="248" Column="76" />
+      <File FileName="PixUl8/PixUl8.iOS/AppDelegate.cs" Line="63" Column="15" />
+      <File FileName="PixUl8/PixUl8/Views/HomePage.xaml" Line="25" Column="21" />
+      <File FileName="PixUl8/PixUl8.iOS/Main.cs" Line="17" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.594cc34fe22a6ae2a5ef467001700a60305909ef" />
@@ -12,9 +14,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/Delegates/PhotoCaptureDelegate.cs" relfile="PixUl8/PixUl8.iOS/Delegates/PhotoCaptureDelegate.cs" line="45" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

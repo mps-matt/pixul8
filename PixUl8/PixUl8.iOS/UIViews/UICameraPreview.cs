@@ -35,7 +35,9 @@ namespace PixUl8.iOS.UIViews
 
     public class UICameraPreview : UIView, IAVCaptureMetadataOutputObjectsDelegate
     {
-        public static readonly int HDRCAPTURECOUNT = 15;
+        public static readonly int HDRCAPTURECOUNT = 9;
+
+        public static nfloat SCALE = 0;
 
 
         public static CGRect BOUNDS;
@@ -98,6 +100,10 @@ namespace PixUl8.iOS.UIViews
             set
             {
                 _hdrOn = value;
+                if (_hdrOn)
+                    CaptureSession.SessionPreset = AVCaptureSession.Preset1920x1080;
+                else
+                    CaptureSession.SessionPreset = AVCaptureSession.PresetPhoto;
             }
         }
 
@@ -137,6 +143,7 @@ namespace PixUl8.iOS.UIViews
         public UICameraPreview(CameraOptions options)
         {
             _cameraOptions = options;
+            SCALE = UIScreen.MainScreen.Scale;
 
             Initialize();
 
@@ -662,9 +669,11 @@ namespace PixUl8.iOS.UIViews
                     );
                 }
 
+                var types = _photoOutput.GetAvailablePhotoFileTypes;
+
                 AVCapturePhotoBracketSettings bracketSettings = AVCapturePhotoBracketSettings.FromPhotoBracketSettings(
                     rawPixelFormatType: 0,
-                    rawFileType: AVVideoCodecType.Jpeg.ToString(),
+                    rawFileType: AVVideoCodecType.Hevc.GetConstant(),
                     processedFormat: null,
                     processedFileType: null,
                     bracketedSettings: exposureSettings.ToArray()

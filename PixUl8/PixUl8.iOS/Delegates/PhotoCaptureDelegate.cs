@@ -24,7 +24,7 @@ namespace PixUl8.iOS.Delegates
 
 
         [Export("captureOutput:didFinishProcessingPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:")]
-        public override async void DidFinishProcessingPhoto(AVCapturePhotoOutput captureOutput,
+        public override void DidFinishProcessingPhoto(AVCapturePhotoOutput captureOutput,
                                        CMSampleBuffer photoSampleBuffer, CMSampleBuffer previewPhotoSampleBuffer,
                                        AVCaptureResolvedPhotoSettings resolvedSettings, AVCaptureBracketedStillImageSettings bracketSettings,
                                        NSError error)
@@ -48,10 +48,19 @@ namespace PixUl8.iOS.Delegates
 
                 if (_imagesInBracket.Count == (int)3)
                 {
-                    //Combine into one photo
-                    var finale = MergeImages(_imagesInBracket);
-                    //Save Output
-                    await SaveFinalImageAsync(finale);
+                    //Run in background so control can return to app
+                    var arr = _imagesInBracket.ToArray();
+                    _imagesInBracket.Clear();
+
+                    Task.Run(async () =>
+                    {
+                        //Combine into one photo
+                        var finale = MergeImages(arr);
+                        //Save Output
+                        await SaveFinalImageAsync(finale, arr);
+                    });
+
+                   
                 }
             }
             finally
@@ -67,7 +76,7 @@ namespace PixUl8.iOS.Delegates
             }
         }
 
-        public UIImage MergeImages(List<UIImage> images)
+        public UIImage MergeImages(UIImage[] images)
         {
             UIImage fused = null;
             UIImage fixedRet = null;
@@ -77,7 +86,7 @@ namespace PixUl8.iOS.Delegates
 
                 using (var openCV = new OpenCV())
                 {
-                    var imageArray = NSArray.FromObjects(images.ToArray());
+                    var imageArray = NSArray.FromObjects(images);
 
                     fused = openCV.Fuse(imageArray);
                     fixedRet = new UIImage(fused.CGImage, 1, images[0].Orientation);
@@ -92,7 +101,7 @@ namespace PixUl8.iOS.Delegates
             }
         }
 
-        public async Task SaveFinalImageAsync(UIImage finale)
+        public async Task SaveFinalImageAsync(UIImage finale, UIImage[] arr)
         {
             NSData imageAsData = null;
             UIImage uncropped = null;
@@ -132,10 +141,10 @@ namespace PixUl8.iOS.Delegates
             }
             finally
             {
-                foreach (var image in _imagesInBracket)
+                foreach (var image in arr)
                     image.Dispose();
 
-                _imagesInBracket.Clear();
+                arr = null;
 
                 finale?.Dispose();
                 imageAsData?.Dispose();
@@ -151,8 +160,8 @@ namespace PixUl8.iOS.Delegates
         {
             try
             {
-                var pixelWidth = size.Width * UIScreen.MainScreen.Scale;
-                var pixelHeight = size.Height * UIScreen.MainScreen.Scale;
+                var pixelWidth = size.Width * UICameraPreview.SCALE;
+                var pixelHeight = size.Height * UICameraPreview.SCALE;
 
                 var originalWidth = image.Size.Width;
                 var originalHeight = image.Size.Height;

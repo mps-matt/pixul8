@@ -1949,7 +1949,7 @@ bl _p_40
 .word 0xf94013a1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0x928004f0
+.word 0x928010f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -26482,7 +26482,7 @@ _mono_aot_file_info:
 	.long 496,4464,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 163,31,201,65,106,204,104,36,1,35,188,129,147,219,121,96
+	.byte 228,227,136,38,25,0,127,177,73,64,191,146,132,97,221,116
 	.globl _mono_aot_module_System_Xml_Linq_info
 	.align 3
 _mono_aot_module_System_Xml_Linq_info:
