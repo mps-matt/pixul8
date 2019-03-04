@@ -18935,13 +18935,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 222,3816,255,247,66,387000831,0,33802
-	.long 128,8,8,8,0,25,37104,3296
+	.long 222,3816,255,247,66,387000831,0,33806
+	.long 128,8,8,8,0,25,37112,3296
 	.long 2904,1696,0,2360,2816,2048,0,1384
 	.long 368,3288,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 194,190,107,151,155,51,170,178,189,237,52,79,212,255,30,110
+	.byte 205,208,159,51,147,138,16,3,10,109,96,222,230,210,77,244
 	.globl _mono_aot_module_System_ServiceModel_Internals_info
 	.align 3
 _mono_aot_module_System_ServiceModel_Internals_info:

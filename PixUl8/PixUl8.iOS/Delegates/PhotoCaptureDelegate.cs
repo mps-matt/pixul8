@@ -20,7 +20,27 @@ namespace PixUl8.iOS.Delegates
     public class PhotoCaptureDelegate : AVCapturePhotoCaptureDelegate
     {
 
-        private List<UIImage> _imagesInBracket = new List<UIImage>();
+        public static bool CanTakePhoto
+        {
+            get
+            {
+                return _imagesInBracket.Count == 0;
+            }
+        }
+
+        public static Task AwaitPhotoOppotunity
+        {
+            get
+            {
+                return Task.Run(async () =>
+                {
+                    while (!CanTakePhoto)
+                        await Task.Delay(300);
+                });
+            }
+        }
+
+        private static List<UIImage> _imagesInBracket = new List<UIImage>();
 
 
         [Export("captureOutput:didFinishProcessingPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:")]
@@ -50,7 +70,6 @@ namespace PixUl8.iOS.Delegates
                 {
                     //Run in background so control can return to app
                     var arr = _imagesInBracket.ToArray();
-                    _imagesInBracket.Clear();
 
                     Task.Run(async () =>
                     {
@@ -58,6 +77,7 @@ namespace PixUl8.iOS.Delegates
                         var finale = MergeImages(arr);
                         //Save Output
                         await SaveFinalImageAsync(finale, arr);
+                        _imagesInBracket.Clear();
                     });
 
                    

@@ -2186,13 +2186,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 49,600,26,22,70,387000831,0,3135
-	.long 128,8,8,8,0,25,3904,760
+	.long 49,600,26,22,70,387000831,0,3139
+	.long 128,8,8,8,0,25,3912,760
 	.long 488,264,0,400,464,312,0,208
 	.long 56,752,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 18,92,209,232,171,115,82,247,163,239,81,162,10,230,145,23
+	.byte 147,216,236,27,78,172,65,139,10,100,48,171,129,28,77,185
 	.globl _mono_aot_module_PixUl8_OpenCV_info
 	.align 3
 _mono_aot_module_PixUl8_OpenCV_info:

@@ -24,3 +24,5 @@
 /Users/mattstark/.nuget/packages/xamarin.forms/3.4.0.1009999/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8.OpenCV/bin/Debug/PixUl8.OpenCV.dll
 /Users/mattstark/.nuget/packages/morelinq/3.1.0/lib/netstandard2.0/MoreLinq.dll
+/Users/mattstark/.nuget/packages/acr.userdialogs/7.0.3/lib/xamarinios10/Acr.UserDialogs.dll
+/Users/mattstark/.nuget/packages/btprogresshud/1.2.0.6/lib/Xamarin.iOS10/BTProgressHUD.dll

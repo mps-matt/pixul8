@@ -100,6 +100,9 @@ namespace PixUl8.ViewModels
             //Simply invert this value, the property changed events will sort the rest!
             IsFrontFacingActive = !IsFrontFacingActive;
 
+            if (IsFrontFacingActive && IsFlashActive)
+                await ToggleFlashAsync();
+
             for (int i = 0; i < 5; i++)
             {
                 await Task.Delay(250);

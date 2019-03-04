@@ -151,6 +151,9 @@
 @class __NSObject_Disposer;
 @class __XamarinObjectObserver;
 @class OpenCV;
+@class TTG_TTGSnackbar;
+@class AIDatePickerController;
+@class BigTed_ProgressHUD;
 
 @interface UNUserNotificationCenterDelegate : NSObject<UNUserNotificationCenterDelegate> {
 }
@@ -719,6 +722,42 @@
 	-(UIImage *) fuse:(NSArray *)p0;
 	-(UIImage *) fuseAllign:(NSArray *)p0 at:(int)p1;
 	-(NSString *) version;
+	-(id) init;
+@end
+
+@interface TTG_TTGSnackbar : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface AIDatePickerController : UIViewController<UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) viewDidLoad;
+	-(double) transitionDuration:(id)p0;
+	-(void) animateTransition:(id)p0;
+	-(id) animationControllerForPresentedController:(UIViewController *)p0 presentingController:(UIViewController *)p1 sourceController:(UIViewController *)p2;
+	-(id) animationControllerForDismissedController:(UIViewController *)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface BigTed_ProgressHUD : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) drawRect:(CGRect)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
 	-(id) init;
 @end
 

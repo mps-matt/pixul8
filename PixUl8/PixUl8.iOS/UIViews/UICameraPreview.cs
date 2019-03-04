@@ -22,6 +22,8 @@ using PixUl8.iOS.Models;
 using CoreAnimation;
 using Vision;
 using UserNotifications;
+using Acr.UserDialogs;
+
 
 //This code came from https://github.com/xamarin/xamarin-forms-samples/blob/master/CustomRenderers/View/iOS/UICameraPreview.cs
 // - It seems that the tutorial i was following assumes this is built intro xamarin but i didn't have it so found it myself!
@@ -90,6 +92,19 @@ namespace PixUl8.iOS.UIViews
             set
             {
                 _flashOn = value;
+
+                NSError err;
+                _device.LockForConfiguration(out err);
+                if (_flashOn)
+                {
+                    if (_device.IsTorchModeSupported(AVCaptureTorchMode.On))
+                        _device.TorchMode = AVCaptureTorchMode.On;
+                }
+                else
+                    if (_device.IsTorchModeSupported(AVCaptureTorchMode.Off))
+                        _device.TorchMode = AVCaptureTorchMode.Off;
+                _device.UnlockForConfiguration();
+
             }
         }
 
@@ -100,10 +115,10 @@ namespace PixUl8.iOS.UIViews
             set
             {
                 _hdrOn = value;
-                if (_hdrOn)
-                    CaptureSession.SessionPreset = AVCaptureSession.Preset1920x1080;
-                else
-                    CaptureSession.SessionPreset = AVCaptureSession.PresetPhoto;
+                //if (_hdrOn)
+                //    CaptureSession.SessionPreset = AVCaptureSession.Preset1920x1080;
+                //else
+                    //CaptureSession.SessionPreset = AVCaptureSession.PresetPhoto;
             }
         }
 
@@ -175,14 +190,14 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
-        public override void TouchesEnded(NSSet touches, UIEvent evt)
+        public override async void TouchesEnded(NSSet touches, UIEvent evt)
         {
             base.TouchesEnded(touches, evt);
 
             if (_forcePressed)
             {
                 DependencyService.Get<IHapticService>().InvokeHeavyHaptic();
-                TakePhoto();
+                await TakePhotoAsync();
                 _forcePressed = false;
             }
             else
@@ -193,13 +208,25 @@ namespace PixUl8.iOS.UIViews
 
         }
 
-        private void TakePhoto()
+        private async Task TakePhotoAsync()
         {
             if (!Activated)
                 return;
 
             if (!_canTakePicture)
                 return;
+
+            if (!HDRPhotoCaptureDelegate.CanTakePhoto || !PhotoCaptureDelegate.CanTakePhoto)
+            {
+                DependencyService.Get<IHapticService>().InvokeHeavyHaptic();
+                UserDialogs.Instance.ShowLoading(title: "Finialising Previous Image Capture");
+                await Task.WhenAll(
+                    PhotoCaptureDelegate.AwaitPhotoOppotunity,
+                    HDRPhotoCaptureDelegate.AwaitPhotoOppotunity
+                );
+                UserDialogs.Instance.HideLoading();
+                return;
+            }
 
 
 
@@ -217,7 +244,6 @@ namespace PixUl8.iOS.UIViews
 
             if (HdrEnabled)
             {
-
                 for (int i = 1; i <= HDRCAPTURECOUNT; i += 3)
                 {
                     AVCapturePhotoBracketSettings settings = GetCurrentBracketedSettings(i, HDRCAPTURECOUNT);
@@ -236,7 +262,7 @@ namespace PixUl8.iOS.UIViews
             _canTakePicture = false;
 
             //In 300ms time, re-enable picture taking
-            Task.Run(async () =>
+            var resetTask = Task.Run(async () =>
             {
                 await Task.Delay(300);
                 _canTakePicture = true;
@@ -282,7 +308,11 @@ namespace PixUl8.iOS.UIViews
 
 
             CaptureSession = new AVCaptureSession();
-            CaptureSession.SessionPreset = AVCaptureSession.PresetPhoto;
+
+            if (_cameraOptions == CameraOptions.Rear)
+                CaptureSession.SessionPreset = AVCaptureSession.PresetHigh;
+            else
+                CaptureSession.SessionPreset = AVCaptureSession.PresetPhoto;
 
 
             _previewLayer = new AVCaptureVideoPreviewLayer(CaptureSession)
@@ -334,22 +364,6 @@ namespace PixUl8.iOS.UIViews
             //Then by the highest resolution possible for highest fps
 
 
-            //_device.ActiveFormat = _device.Formats.MaxBy(format => format.HighResolutionStillImageDimensions.Width)
-            //.FirstOrDefault(format => format.videoHDRSupportedVideoHDREnabled);
-
-
-            //_device.ActiveFormat = _device.Formats.MaxBy(format => format.VideoSupportedFrameRateRanges.Max(fps => fps.MinFrameRate))
-            //.MaxBy(format => format.HighResolutionStillImageDimensions.Width)
-            //.MaxBy(format => format.HighResolutionStillImageDimensions.Height)
-            //.FirstOrDefault(format => format.videoHDRSupportedVideoHDREnabled) 
-            //??
-            //_device.Formats.MaxBy(format => format.VideoSupportedFrameRateRanges.Max(fps => fps.MinFrameRate))
-            //.MaxBy(format => format.HighResolutionStillImageDimensions.Width)
-            //.MaxBy(format => format.HighResolutionStillImageDimensions.Height)
-            //.First();
-
-
-
             //Get the frame rates allowed by this format type (whetherr telophoto, treudedepth etc)
             var highestFrameRate = _device.ActiveFormat.VideoSupportedFrameRateRanges.MaxBy(fps => fps.MinFrameRate);
             _device.ActiveVideoMinFrameDuration = highestFrameRate.First().MinFrameDuration;
@@ -360,10 +374,10 @@ namespace PixUl8.iOS.UIViews
 
             if (_device.ActiveFormat.videoHDRSupportedVideoHDREnabled)
             {
-                _device.VideoHdrEnabled = true;
                 _device.AutomaticallyAdjustsVideoHdrEnabled = false;
+                _device.VideoHdrEnabled = true;
+                Debug.WriteLine("Video HDR on for " + _cameraOptions);
             }
-
 
             //This is so the focus circle can follow the object but it throws an exception!
             // _observer = _device.AddObserver("FocusPointOfInterest", NSKeyValueObservingOptions.New, FocusChange);
@@ -406,7 +420,7 @@ namespace PixUl8.iOS.UIViews
             Layer.AddSublayer(_previewLayer);
 
             //Subscribe to the volume change event, to abstract it ouf of here
-            MessagingCenter.Subscribe<AppDelegate>(this, "VolumeChange", (de) => { TakePhoto(); });
+            MessagingCenter.Subscribe<AppDelegate>(this, "VolumeChange", async (de) => { await TakePhotoAsync(); });
 
 
             float x = (float)UIScreen.MainScreen.Bounds.Width;
@@ -599,9 +613,13 @@ namespace PixUl8.iOS.UIViews
         private void SwipeHanlderToggleFlash(SwipeType type)
         {
             //If correct swipe for current flash settings
-            if ((type == SwipeType.Left && FlashOn == true) ||
-                (type == SwipeType.Right && FlashOn == false))
-                MessagingCenter.Send<UICameraPreview>(this, "PerformFlashSwitch");
+            if (_cameraOptions != CameraOptions.Front)
+            {
+
+                if ((type == SwipeType.Left && FlashOn == true) ||
+                    (type == SwipeType.Right && FlashOn == false))
+                    MessagingCenter.Send<UICameraPreview>(this, "PerformFlashSwitch");
+            }
         }
 
         private void SwipeHanlderToggleHDR(SwipeType type)
@@ -646,7 +664,7 @@ namespace PixUl8.iOS.UIViews
                 bracketedSettings: exposureSettings.ToArray()
             );
          
-            bracketSettings.FlashMode = FlashOn ? AVCaptureFlashMode.On : AVCaptureFlashMode.Off;
+            //bracketSettings.FlashMode = FlashOn ? AVCaptureFlashMode.On : AVCaptureFlashMode.Off;
             bracketSettings.IsHighResolutionPhotoEnabled = true;
 
             if (_photoOutput.IsLensStabilizationDuringBracketedCaptureSupported)
@@ -658,7 +676,7 @@ namespace PixUl8.iOS.UIViews
         private AVCapturePhotoBracketSettings GetCurrentPhotoSettings()
         {
             // Get AVCaptureBracketedStillImageSettings for a set of exposure values.
-            var exposureValues = new float[] { -2, 0, +1 };
+            var exposureValues = new float[] { -2, 0, +2 };
             var exposureSettings = new List<AVCaptureAutoExposureBracketedStillImageSettings>();
             using (var makeAutoExposureSettings = AVCaptureAutoExposureBracketedStillImageSettings.Create(_device.ExposureTargetBias))
             {
@@ -673,13 +691,13 @@ namespace PixUl8.iOS.UIViews
 
                 AVCapturePhotoBracketSettings bracketSettings = AVCapturePhotoBracketSettings.FromPhotoBracketSettings(
                     rawPixelFormatType: 0,
-                    rawFileType: AVVideoCodecType.Hevc.GetConstant(),
+                    rawFileType: AVVideoCodecType.Jpeg.GetConstant(),
                     processedFormat: null,
                     processedFileType: null,
                     bracketedSettings: exposureSettings.ToArray()
                 );
 
-                bracketSettings.FlashMode = FlashOn ? AVCaptureFlashMode.On : AVCaptureFlashMode.Off;
+                //bracketSettings.FlashMode = FlashOn ? AVCaptureFlashMode.On : AVCaptureFlashMode.Off;
                 bracketSettings.IsHighResolutionPhotoEnabled = true;
 
                 if (_photoOutput.IsLensStabilizationDuringBracketedCaptureSupported)
@@ -749,8 +767,8 @@ namespace PixUl8.iOS.UIViews
             }
             finally
             {
-                foreach (var obj in metadataObjects)
-                    obj.Dispose();
+                //foreach (var obj in metadataObjects)
+                    //obj.Dispose();
             }
 
 

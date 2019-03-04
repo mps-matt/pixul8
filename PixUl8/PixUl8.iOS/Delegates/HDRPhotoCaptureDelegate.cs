@@ -19,10 +19,32 @@ namespace PixUl8.iOS.Delegates
 
     public class HDRPhotoCaptureDelegate : AVCapturePhotoCaptureDelegate
     {
-        private List<UIImage> _imagesInBracket = new List<UIImage>();
-        private List<UIImage> _finishedBracket = new List<UIImage>();
+        public static bool CanTakePhoto
+        {
+            get
+            {
+                return _imagesInBracket.Count == 0 &&
+                _finishedBracket.Count == 0;
+            }
+        }
 
-        
+        public static Task AwaitPhotoOppotunity
+        {
+            get
+            {
+                return Task.Run(async () =>
+                {
+                    while (!CanTakePhoto)
+                        await Task.Delay(300);
+                });
+            }
+        }
+
+
+        private static List<UIImage> _imagesInBracket = new List<UIImage>();
+        private static List<UIImage> _finishedBracket = new List<UIImage>();
+
+
         [Export ("captureOutput:didFinishProcessingPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:")]
         public override void DidFinishProcessingPhoto (AVCapturePhotoOutput captureOutput,
                                        CMSampleBuffer photoSampleBuffer, CMSampleBuffer previewPhotoSampleBuffer,
@@ -61,7 +83,6 @@ namespace PixUl8.iOS.Delegates
                 {
                     //Run in background so control can return to app
                     var arr = _finishedBracket.ToArray();
-                    _finishedBracket.Clear();
 
                     Task.Run(async () =>
                     {
@@ -69,6 +90,8 @@ namespace PixUl8.iOS.Delegates
                         var finale = MergeImagesAndAllign(arr);
                         //Save Output
                         await SaveFinalImageAsync(finale, arr);
+                        _finishedBracket.Clear();
+
                     });
                 }
 
