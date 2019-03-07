@@ -115,10 +115,6 @@ namespace PixUl8.iOS.UIViews
             set
             {
                 _hdrOn = value;
-                //if (_hdrOn)
-                //    CaptureSession.SessionPreset = AVCaptureSession.Preset1920x1080;
-                //else
-                    //CaptureSession.SessionPreset = AVCaptureSession.PresetPhoto;
             }
         }
 
@@ -309,10 +305,7 @@ namespace PixUl8.iOS.UIViews
 
             CaptureSession = new AVCaptureSession();
 
-            if (_cameraOptions == CameraOptions.Rear)
-                CaptureSession.SessionPreset = AVCaptureSession.PresetHigh;
-            else
-                CaptureSession.SessionPreset = AVCaptureSession.PresetPhoto;
+            CaptureSession.SessionPreset = AVCaptureSession.PresetPhoto;
 
 
             _previewLayer = new AVCaptureVideoPreviewLayer(CaptureSession)
@@ -338,23 +331,6 @@ namespace PixUl8.iOS.UIViews
                 return;
             }
 
-            //if (CaptureSession.CanSetSessionPreset(AVCaptureSession.Preset3840x2160) && _device.SupportsAVCaptureSessionPreset(AVCaptureSession.Preset3840x2160))
-            //{
-            //    CaptureSession.SessionPreset = AVCaptureSession.Preset3840x2160;
-            //}
-            //else if (CaptureSession.CanSetSessionPreset(AVCaptureSession.Preset1920x1080) && _device.SupportsAVCaptureSessionPreset(AVCaptureSession.Preset1920x1080))
-            //{
-            //    CaptureSession.SessionPreset = AVCaptureSession.Preset1920x1080;
-            //}
-            //else if (CaptureSession.CanSetSessionPreset(AVCaptureSession.Preset1280x720) && _device.SupportsAVCaptureSessionPreset(AVCaptureSession.Preset1280x720))
-            //{
-            //    CaptureSession.SessionPreset = AVCaptureSession.Preset1280x720;
-            //}
-            //else
-            //{
-            //    CaptureSession.SessionPreset = AVCaptureSession.PresetPhoto;
-            //}
-
 
             NSError lockErr;
             _device.LockForConfiguration(out lockErr);
@@ -371,6 +347,8 @@ namespace PixUl8.iOS.UIViews
 
             _minimumZoomFactor = _device.MinAvailableVideoZoomFactor;
             _maxZoomFactor = _device.MaxAvailableVideoZoomFactor;
+
+           
 
             if (_device.ActiveFormat.videoHDRSupportedVideoHDREnabled)
             {

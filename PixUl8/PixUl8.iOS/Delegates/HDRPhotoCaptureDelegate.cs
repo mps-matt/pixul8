@@ -44,6 +44,8 @@ namespace PixUl8.iOS.Delegates
         private static List<UIImage> _imagesInBracket = new List<UIImage>();
         private static List<UIImage> _finishedBracket = new List<UIImage>();
 
+        private OpenCV _openCV = new OpenCV();
+
 
         [Export ("captureOutput:didFinishProcessingPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:")]
         public override void DidFinishProcessingPhoto (AVCapturePhotoOutput captureOutput,
@@ -64,14 +66,15 @@ namespace PixUl8.iOS.Delegates
                 imageData = AVCapturePhotoOutput.GetJpegPhotoDataRepresentation (photoSampleBuffer, previewPhotoSampleBuffer);
 
 
-                UIImage image = new UIImage(imageData, 1f);
+                UIImage image = new UIImage(imageData, 1.0f);
+                image = ScaleImageToBounds(image, new CGSize(2320, 3088));
                 _imagesInBracket.Add(image);
 
 
                 if (_imagesInBracket.Count == 3)
                 {
                     //Combine into one photo
-                    var bracketFinale = MergeImages(_imagesInBracket.ToArray());
+                    var bracketFinale = MergeImages(_imagesInBracket);
                     _finishedBracket.Add(bracketFinale);
 
                     foreach (var item in _imagesInBracket)
@@ -82,14 +85,13 @@ namespace PixUl8.iOS.Delegates
                 if (_finishedBracket.Count == (UICameraPreview.HDRCAPTURECOUNT/3) )
                 {
                     //Run in background so control can return to app
-                    var arr = _finishedBracket.ToArray();
 
                     Task.Run(async () =>
                     {
                         //Combine into one photo
-                        var finale = MergeImagesAndAllign(arr);
+                        var finale = MergeImagesAndAllign(_finishedBracket);
                         //Save Output
-                        await SaveFinalImageAsync(finale, arr);
+                        await SaveFinalImageAsync(finale, _finishedBracket);
                         _finishedBracket.Clear();
 
                     });
@@ -109,32 +111,55 @@ namespace PixUl8.iOS.Delegates
             }
         }
 
-
-
-
-        public UIImage MergeImagesAndAllign(UIImage[] images)
+        public UIImage ScaleImageToBounds(UIImage image, CGSize size)
         {
-            UIImage fused = null;
-            UIImage fixedRet = null;
-
             try
             {
-
-                using (var openCV = new OpenCV())
+                if (size.Width == image.Size.Width)
                 {
-                    var imageArray = NSArray.FromObjects(images);
+                    var ret = image;
+                    return ret;
+                }
+                else
+                {
+                    var rect = new RectangleF(0, 0, (float)size.Width, (float)size.Height);
+                    UIGraphics.BeginImageContextWithOptions(size, false, 1.0f);
 
-                    fused = openCV.FuseAllign(imageArray, 2);
-                    fixedRet = new UIImage(fused.CGImage, 1, images[0].Orientation);
+                    image.Draw(rect);
 
-                    return fixedRet;
-
-                    //return images[0];
-
+                    var ret = UIGraphics.GetImageFromCurrentImageContext();
+                    UIGraphics.EndImageContext();
+                    return ret;
                 }
             }
             finally
             {
+                image.Dispose();
+            }
+        }
+
+
+
+        public UIImage MergeImagesAndAllign(List<UIImage> images)
+        {
+            UIImage fused = null;
+            UIImage fixedRet = null;
+            NSArray imageArray = null;
+
+            try
+            {
+
+                imageArray = NSArray.FromObjects(images.ToArray());
+
+                fused = _openCV.FuseAllign(imageArray, 2.4f);
+                fixedRet = new UIImage(fused.CGImage, 1, images[0].Orientation);
+
+                return fixedRet;
+
+            }
+            finally
+            {
+                imageArray?.Dispose();
                 fused?.Dispose();
                 GC.Collect();
             }
@@ -142,32 +167,32 @@ namespace PixUl8.iOS.Delegates
 
 
 
-        public UIImage MergeImages(UIImage[] images)
+        public UIImage MergeImages(List<UIImage> images)
         {
             UIImage fused = null;
             UIImage fixedRet = null;
+            NSArray imageArray = null;
 
             try
             {
 
-                using (var openCV = new OpenCV())
-                {
-                    var imageArray = NSArray.FromObjects(images);
+                imageArray = NSArray.FromObjects(images.ToArray());
 
-                    fused = openCV.Fuse(imageArray);
-                    fixedRet = new UIImage(fused.CGImage, 1, images[0].Orientation);
+                fused = _openCV.Fuse(imageArray);
+                fixedRet = new UIImage(fused.CGImage, 1, images[0].Orientation);
 
-                    return fixedRet;
-                }
+                return fixedRet;
+
             }
             finally
             {
+                imageArray?.Dispose();
                 fused?.Dispose();
                 GC.Collect();
             }
         }
 
-        public async Task SaveFinalImageAsync(UIImage finale, UIImage[] arr)
+        public async Task SaveFinalImageAsync(UIImage finale, List<UIImage> arr)
         {
             NSData imageAsData = null;
             UIImage uncropped = null;
@@ -209,8 +234,7 @@ namespace PixUl8.iOS.Delegates
             {
                 foreach (var image in arr)
                     image.Dispose();
-
-                arr = null;
+                   
 
                 finale?.Dispose();
                 imageAsData?.Dispose();
@@ -275,7 +299,7 @@ namespace PixUl8.iOS.Delegates
         {
             UIImage modifiedImage = null;
             var imgSize = sourceImage.Size;
-            UIGraphics.BeginImageContextWithOptions(new SizeF(width, height), false, 0);
+            UIGraphics.BeginImageContextWithOptions(new SizeF(width, height), false, 1.0f);
             using (var context = UIGraphics.GetCurrentContext())
             {
                 var clippedRect = new RectangleF(0, 0, width, height);

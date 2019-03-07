@@ -75,6 +75,6 @@ namespace PixUl8.Native
         UIImage Fuse(NSArray imageArray);
 
         [Export("fuseAllign:at:")]
-        UIImage FuseAllign(NSArray imageArray, int alligner);
+        UIImage FuseAllign(NSArray imageArray, float alligner);
     }
 }

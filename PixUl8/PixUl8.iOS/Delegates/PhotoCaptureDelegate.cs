@@ -41,6 +41,7 @@ namespace PixUl8.iOS.Delegates
         }
 
         private static List<UIImage> _imagesInBracket = new List<UIImage>();
+        private OpenCV _openCV = new OpenCV();
 
 
         [Export("captureOutput:didFinishProcessingPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:")]
@@ -60,23 +61,28 @@ namespace PixUl8.iOS.Delegates
                     Debug.WriteLine($"Error occurred while capturing photo: {error}");
                     return;
                 }
-
+                
                 imageData = AVCapturePhotoOutput.GetJpegPhotoDataRepresentation(photoSampleBuffer, previewPhotoSampleBuffer);
 
                 UIImage img = new UIImage(imageData, 1.0f);
+                img = ScaleImageToBounds(img, new CGSize(2320, 3088));
+               
+
                 _imagesInBracket.Add(img);
 
+ 
                 if (_imagesInBracket.Count == (int)3)
                 {
                     //Run in background so control can return to app
-                    var arr = _imagesInBracket.ToArray();
 
                     Task.Run(async () =>
                     {
                         //Combine into one photo
-                        var finale = MergeImages(arr);
+                        var finale = MergeImages(_imagesInBracket);
+
                         //Save Output
-                        await SaveFinalImageAsync(finale, arr);
+                        await SaveFinalImageAsync(finale, _imagesInBracket);
+                        
                         _imagesInBracket.Clear();
                     });
 
@@ -96,32 +102,32 @@ namespace PixUl8.iOS.Delegates
             }
         }
 
-        public UIImage MergeImages(UIImage[] images)
+        public UIImage MergeImages(List<UIImage> images)
         {
             UIImage fused = null;
             UIImage fixedRet = null;
+            NSArray imageArray = null;
 
             try
             {
+          
+                imageArray = NSArray.FromObjects(images.ToArray());
 
-                using (var openCV = new OpenCV())
-                {
-                    var imageArray = NSArray.FromObjects(images);
+                fused = _openCV.Fuse(imageArray);
+                fixedRet = new UIImage(fused.CGImage, 1, images[0].Orientation);
 
-                    fused = openCV.Fuse(imageArray);
-                    fixedRet = new UIImage(fused.CGImage, 1, images[0].Orientation);
+                return fixedRet;
 
-                    return fixedRet;
-                }
             }
             finally
             {
+                imageArray?.Dispose();
                 fused?.Dispose();
                 GC.Collect();
             }
         }
 
-        public async Task SaveFinalImageAsync(UIImage finale, UIImage[] arr)
+        public async Task SaveFinalImageAsync(UIImage finale, List<UIImage> arr)
         {
             NSData imageAsData = null;
             UIImage uncropped = null;
@@ -164,8 +170,6 @@ namespace PixUl8.iOS.Delegates
                 foreach (var image in arr)
                     image.Dispose();
 
-                arr = null;
-
                 finale?.Dispose();
                 imageAsData?.Dispose();
                 uncropped?.Dispose();
@@ -175,6 +179,32 @@ namespace PixUl8.iOS.Delegates
             }
         }
 
+        public UIImage ScaleImageToBounds(UIImage image, CGSize size)
+        {
+            try
+            {
+                if (size.Width == image.Size.Width)
+                {
+                    var ret = image;
+                    return ret;
+                }
+                else
+                {
+                    var rect = new RectangleF(0, 0, (float)size.Width, (float)size.Height);
+                    UIGraphics.BeginImageContextWithOptions(size, false, 1.0f);
+
+                    image.Draw(rect);
+
+                    var ret = UIGraphics.GetImageFromCurrentImageContext();
+                    UIGraphics.EndImageContext();
+                    return ret;
+                }
+            }
+            finally
+            {
+                image.Dispose();
+            }
+        }
 
         public UIImage CropToBounds(UIImage image, CGSize size)
         {
@@ -229,7 +259,7 @@ namespace PixUl8.iOS.Delegates
         {
             UIImage modifiedImage = null;
             var imgSize = sourceImage.Size;
-            UIGraphics.BeginImageContextWithOptions(new SizeF(width, height), false, 0);
+            UIGraphics.BeginImageContextWithOptions(new SizeF(width, height), false, 1.0f);
             using (var context = UIGraphics.GetCurrentContext())
             {
                 var clippedRect = new RectangleF(0, 0, width, height);

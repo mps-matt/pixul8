@@ -720,7 +720,7 @@
 @interface OpenCV : NSObject {
 }
 	-(UIImage *) fuse:(NSArray *)p0;
-	-(UIImage *) fuseAllign:(NSArray *)p0 at:(int)p1;
+	-(UIImage *) fuseAllign:(NSArray *)p0 at:(float)p1;
 	-(NSString *) version;
 	-(id) init;
 @end

@@ -48,7 +48,7 @@
       <Frameworks>Accelerate AssetsLibrary AVFoundation CoreGraphics CoreImage CoreMedia CoreVideo QuartzCore UIKit Foundation</Frameworks>
       <IsCxx>True</IsCxx>
     </NativeReference>
-    <NativeReference Include="..\PixUl8\OpenCV\libOpenCVUniserval.a">
+    <NativeReference Include="..\PixUl8\OpenCV\libOpenCVUniversal.a">
       <Kind>Static</Kind>
       <SmartLink>False</SmartLink>
       <IsCxx>True</IsCxx>
