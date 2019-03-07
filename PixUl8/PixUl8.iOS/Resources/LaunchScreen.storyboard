@@ -19,11 +19,15 @@
                     <view key="view" contentMode="scaleToFill" id="yd7-JS-zBw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
-                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.996078431372549" green="0.32156862745098042" blue="0" alpha="1"/>
+                        <color key="tintColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.96470588235294119" green="0.25882352941176473" blue="0.023529411764705882" alpha="1"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2818" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="loading.png">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3022" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" highlightedImage="logos/ios/iTunesArtwork.png" image="logos/ios/iTunesArtwork.png">
+                                <rect key="frame" x="20" y="160" width="334" height="241"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="7153" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="title.png">
+                                <rect key="frame" x="68" y="541" width="240" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -35,6 +39,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="loading.png" width="236" height="486"/>
+        <image name="logos/ios/iTunesArtwork.png" width="512" height="512"/>
+        <image name="title.png" width="722" height="260"/>
     </resources>
+    <color key="tintColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
 </document>

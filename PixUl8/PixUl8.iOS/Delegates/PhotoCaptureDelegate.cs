@@ -55,6 +55,8 @@ namespace PixUl8.iOS.Delegates
 
             try
             {
+                var orientation = UIDevice.CurrentDevice.Orientation;
+
 
                 if (photoSampleBuffer == null)
                 {
@@ -81,7 +83,7 @@ namespace PixUl8.iOS.Delegates
                         var finale = MergeImages(_imagesInBracket);
 
                         //Save Output
-                        await SaveFinalImageAsync(finale, _imagesInBracket);
+                        await SaveFinalImageAsync(finale, _imagesInBracket, orientation);
                         
                         _imagesInBracket.Clear();
                     });
@@ -127,16 +129,37 @@ namespace PixUl8.iOS.Delegates
             }
         }
 
-        public async Task SaveFinalImageAsync(UIImage finale, List<UIImage> arr)
+        public async Task SaveFinalImageAsync(UIImage finale, List<UIImage> arr, UIDeviceOrientation orientation)
         {
             NSData imageAsData = null;
             UIImage uncropped = null;
             UIImage cropped = null;
 
+
             try
             {
                 uncropped = finale;
                 cropped = CropToBounds(uncropped, UICameraPreview.BOUNDS.Size);
+
+                switch(orientation)
+                {
+                    case UIDeviceOrientation.LandscapeLeft:
+                        cropped = new UIImage(cropped.CGImage, 1, UIImageOrientation.Left);
+                        break;
+
+                    case UIDeviceOrientation.LandscapeRight:
+                        cropped = new UIImage(cropped.CGImage, 1, UIImageOrientation.Right);
+                        break;
+
+                    case UIDeviceOrientation.PortraitUpsideDown:
+                        cropped = new UIImage(cropped.CGImage, 1, UIImageOrientation.Down);
+                        break;
+
+                    default:
+                        break;
+                }
+
+          
                 imageAsData = cropped.AsJPEG();
 
                 var status = await PHPhotoLibrary.RequestAuthorizationAsync(); 

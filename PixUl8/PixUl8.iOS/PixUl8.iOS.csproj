@@ -198,12 +198,15 @@
     <BundleResource Include="Resources\danielbd.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </BundleResource>
-    <BundleResource Include="Resources\Get Show.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </BundleResource>
     <BundleResource Include="Resources\loading.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </BundleResource>
+    <BundleResource Include="Resources\P.png" />
+    <BundleResource Include="Resources\test.png" />
+    <BundleResource Include="Resources\Get Show.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\title.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

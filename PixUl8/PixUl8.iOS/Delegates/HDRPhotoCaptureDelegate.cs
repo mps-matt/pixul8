@@ -63,6 +63,8 @@ namespace PixUl8.iOS.Delegates
                     return;
                 }
 
+                var orientation = UIDevice.CurrentDevice.Orientation;
+
                 imageData = AVCapturePhotoOutput.GetJpegPhotoDataRepresentation (photoSampleBuffer, previewPhotoSampleBuffer);
 
 
@@ -91,7 +93,7 @@ namespace PixUl8.iOS.Delegates
                         //Combine into one photo
                         var finale = MergeImagesAndAllign(_finishedBracket);
                         //Save Output
-                        await SaveFinalImageAsync(finale, _finishedBracket);
+                        await SaveFinalImageAsync(finale, _finishedBracket, orientation);
                         _finishedBracket.Clear();
 
                     });
@@ -192,7 +194,7 @@ namespace PixUl8.iOS.Delegates
             }
         }
 
-        public async Task SaveFinalImageAsync(UIImage finale, List<UIImage> arr)
+        public async Task SaveFinalImageAsync(UIImage finale, List<UIImage> arr, UIDeviceOrientation orientation)
         {
             NSData imageAsData = null;
             UIImage uncropped = null;
@@ -202,6 +204,25 @@ namespace PixUl8.iOS.Delegates
             {
                 uncropped = finale;
                 cropped = CropToBounds(uncropped, UICameraPreview.BOUNDS.Size);
+
+                switch (orientation)
+                {
+                    case UIDeviceOrientation.LandscapeLeft:
+                        cropped = new UIImage(cropped.CGImage, 1, UIImageOrientation.Left);
+                        break;
+
+                    case UIDeviceOrientation.LandscapeRight:
+                        cropped = new UIImage(cropped.CGImage, 1, UIImageOrientation.Right);
+                        break;
+
+                    case UIDeviceOrientation.PortraitUpsideDown:
+                        cropped = new UIImage(cropped.CGImage, 1, UIImageOrientation.Down);
+                        break;
+
+                    default:
+                        break;
+                }
+
                 imageAsData = cropped.AsJPEG();
 
                 var status = await PHPhotoLibrary.RequestAuthorizationAsync();

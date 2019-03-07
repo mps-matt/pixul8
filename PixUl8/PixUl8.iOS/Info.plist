@@ -32,15 +32,15 @@
 	<key>UIStatusBarHidden</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Please allow camera access to allow the app to take photos</string>
+	<string>Please allow PixUl8 access to your camera</string>
 	<key>UIRequiresFullScreen</key>
 	<true/>
 	<key>NSAppleMusicUsageDescription</key>
-	<string>Please allow Photo Library access to save photos</string>
+	<string>Please allow PixUl8 access to save photos</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Please allow Photo Library access to save photos</string>
+	<string>Please allow PixUl8 access to save photos</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Please allow Photo Library access to save photos</string>
+	<string>Please allow PixUl8 access to save photos</string>
 	<key>XSAppIconAssets</key>
 	<string>Resources/Images.xcassets/AppIcons.appiconset</string>
 	<key>UIAppFonts</key>
