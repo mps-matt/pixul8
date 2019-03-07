@@ -115,10 +115,9 @@ namespace PixUl8.iOS.Delegates
         {
             try
             {
-                if (size.Width == image.Size.Width)
+                if (size.Width >= image.Size.Width)
                 {
-                    var ret = image;
-                    return ret;
+                    return image;
                 }
                 else
                 {
@@ -129,12 +128,13 @@ namespace PixUl8.iOS.Delegates
 
                     var ret = UIGraphics.GetImageFromCurrentImageContext();
                     UIGraphics.EndImageContext();
+                    image.Dispose();
+
                     return ret;
                 }
             }
             finally
             {
-                image.Dispose();
             }
         }
 
