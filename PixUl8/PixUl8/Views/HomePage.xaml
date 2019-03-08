@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:NativeViews="clr-namespace:PixUl8.Views.NativeViews"
              xmlns:ExtensionViews="clr-namespace:PixUl8.Views.ExtensionViews"
+             xmlns:DK="clr-namespace:DK.SlidingPanel.Interfaces"
              x:Class="PixUl8.Views.HomePage"
              Title="{Binding Title}"
              BackgroundColor="Black"
@@ -152,6 +153,12 @@
                             <SwipeGestureRecognizer Direction="Right" Threshold="2" Command="{Binding ToggleCameraPositionCommand}" CommandParameter=""/>
                     </Button.GestureRecognizers>
                     </Button>  
+                    
+                 
+                    
+                    
+                  
+                        
                     
                     
                 </Grid>             

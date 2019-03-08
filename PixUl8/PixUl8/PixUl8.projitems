@@ -10,6 +10,10 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ExtensionViews\SlideMenuUpView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -24,6 +28,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\CameraOptions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\ExtensionViews\XFFlipView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IHapticService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\SlideUpPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ExtensionViews\SlideMenuUpView.xaml.cs">
+      <DependentUpon>SlideMenuUpView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\HomePage.xaml">
@@ -37,6 +45,7 @@
     <Folder Include="$(MSBuildThisFileDirectory)Services\" />
     <Folder Include="$(MSBuildThisFileDirectory)Views\ExtensionViews\" />
     <Folder Include="$(MSBuildThisFileDirectory)Interfaces\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="$(MSBuildThisFileDirectory)Resources\ToggleCameraButton.png" />

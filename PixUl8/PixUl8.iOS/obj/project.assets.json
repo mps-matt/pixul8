@@ -35,6 +35,17 @@
           "lib/netstandard2.0/MoreLinq.dll": {}
         }
       },
+      "SlideOverKit/2.1.6.2": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/SlideOverKit.dll": {},
+          "lib/Xamarin.iOS10/SlideOverKit.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/SlideOverKit.dll": {},
+          "lib/Xamarin.iOS10/SlideOverKit.iOS.dll": {}
+        }
+      },
       "Xamarin.Forms/3.4.0.1009999": {
         "type": "package",
         "compile": {
@@ -200,6 +211,17 @@
         },
         "runtime": {
           "lib/netstandard2.0/MoreLinq.dll": {}
+        }
+      },
+      "SlideOverKit/2.1.6.2": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/SlideOverKit.dll": {},
+          "lib/Xamarin.iOS10/SlideOverKit.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/SlideOverKit.dll": {},
+          "lib/Xamarin.iOS10/SlideOverKit.iOS.dll": {}
         }
       },
       "Xamarin.Forms/3.4.0.1009999": {
@@ -369,6 +391,17 @@
           "lib/netstandard2.0/MoreLinq.dll": {}
         }
       },
+      "SlideOverKit/2.1.6.2": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/SlideOverKit.dll": {},
+          "lib/Xamarin.iOS10/SlideOverKit.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/SlideOverKit.dll": {},
+          "lib/Xamarin.iOS10/SlideOverKit.iOS.dll": {}
+        }
+      },
       "Xamarin.Forms/3.4.0.1009999": {
         "type": "package",
         "compile": {
@@ -534,6 +567,17 @@
         },
         "runtime": {
           "lib/netstandard2.0/MoreLinq.dll": {}
+        }
+      },
+      "SlideOverKit/2.1.6.2": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/SlideOverKit.dll": {},
+          "lib/Xamarin.iOS10/SlideOverKit.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/SlideOverKit.dll": {},
+          "lib/Xamarin.iOS10/SlideOverKit.iOS.dll": {}
         }
       },
       "Xamarin.Forms/3.4.0.1009999": {
@@ -723,6 +767,35 @@
         "morelinq.nuspec"
       ]
     },
+    "SlideOverKit/2.1.6.2": {
+      "sha512": "sgFyLbO9t4g5ks2NnDU3nBCjPBRzdFdm4nZ+D+O53u0Pdcy+XW2H/f5W71IdvIoKT4KzJO2zEreLu9vbzfwghg==",
+      "type": "package",
+      "path": "slideoverkit/2.1.6.2",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid10/SlideOverKit.Droid.dll",
+        "lib/MonoAndroid10/SlideOverKit.Droid.pdb",
+        "lib/MonoAndroid10/SlideOverKit.dll",
+        "lib/MonoAndroid10/SlideOverKit.pdb",
+        "lib/Xamarin.iOS10/SlideOverKit.dll",
+        "lib/Xamarin.iOS10/SlideOverKit.iOS.dll",
+        "lib/Xamarin.iOS10/SlideOverKit.iOS.pdb",
+        "lib/Xamarin.iOS10/SlideOverKit.pdb",
+        "lib/netstandard1.0/SlideOverKit.deps.json",
+        "lib/netstandard1.0/SlideOverKit.dll",
+        "lib/netstandard1.0/SlideOverKit.pdb",
+        "lib/netstandard2.0/SlideOverKit.deps.json",
+        "lib/netstandard2.0/SlideOverKit.dll",
+        "lib/netstandard2.0/SlideOverKit.pdb",
+        "lib/uap10.0/SlideOverKit.UWP.dll",
+        "lib/uap10.0/SlideOverKit.UWP.pdb",
+        "lib/uap10.0/SlideOverKit.UWP.pri",
+        "lib/uap10.0/SlideOverKit.dll",
+        "lib/uap10.0/SlideOverKit.pdb",
+        "slideoverkit.2.1.6.2.nupkg.sha512",
+        "slideoverkit.nuspec"
+      ]
+    },
     "Xamarin.Forms/3.4.0.1009999": {
       "sha512": "pgqRxgD23FJHG2B7zOxf4Fm+KYgoWctUJp8hNtdZgAt43RIiK3VgM11wJf3S0SkMIsXQCUL0yYQmR8gR/njltA==",
       "type": "package",
@@ -880,6 +953,7 @@
     "Xamarin.iOS,Version=v1.0": [
       "Acr.UserDialogs >= 7.0.3",
       "PixUl8.Native >= 1.0.0",
+      "SlideOverKit >= 2.1.6.2",
       "Xamarin.Forms >= 3.4.0.1009999",
       "morelinq >= 3.1.0"
     ]
@@ -921,6 +995,10 @@
           "Acr.UserDialogs": {
             "target": "Package",
             "version": "[7.0.3, )"
+          },
+          "SlideOverKit": {
+            "target": "Package",
+            "version": "[2.1.6.2, )"
           },
           "Xamarin.Forms": {
             "target": "Package",

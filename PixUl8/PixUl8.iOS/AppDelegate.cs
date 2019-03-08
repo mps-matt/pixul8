@@ -8,6 +8,7 @@ using AVFoundation;
 using Foundation;
 using MediaPlayer;
 using PixUl8.iOS.Delegates;
+using SlideOverKit.iOS;
 using UIKit;
 using UserNotifications;
 using Xamarin.Forms;
@@ -38,6 +39,8 @@ namespace PixUl8.iOS
 
             var result = base.FinishedLaunching(app, options);
 
+            SlideOverKit.iOS.SlideOverKit.Init();
+
             //Hide default volume hud (needed for use as camera shutter)
             _volumeView = new MPVolumeView();
             _volumeView.Alpha = (nfloat)0.000001;
@@ -64,6 +67,7 @@ namespace PixUl8.iOS
             // Create a timer that waits one second, then invokes every second.
             //Timer timer = new Timer(timerDelegate, null, 1000, 1000);
 
+            var mc = new MenuContainerPageiOSRenderer();
 
             return result;
         }

@@ -150,6 +150,8 @@
 @class UIKit_UIWebView__UIWebViewDelegate;
 @class __NSObject_Disposer;
 @class __XamarinObjectObserver;
+@class SlideOverKit_iOS_MenuContainerPageiOSRenderer;
+@class SlideOverKit_iOS_SlidePopupViewRendereriOS;
 @class OpenCV;
 @class TTG_TTGSnackbar;
 @class AIDatePickerController;
@@ -715,6 +717,20 @@
 @interface UIKit_UISwitch_UISwitchAppearance : UIKit_UIControl_UIControlAppearance {
 }
 	-(UIColor *) onTintColor;
+@end
+
+@interface SlideOverKit_iOS_MenuContainerPageiOSRenderer : Xamarin_Forms_Platform_iOS_PageRenderer {
+}
+	-(void) viewDidLayoutSubviews;
+	-(void) viewDidAppear:(BOOL)p0;
+	-(void) viewDidDisappear:(BOOL)p0;
+	-(void) viewWillTransitionToSize:(CGSize)p0 withTransitionCoordinator:(id)p1;
+	-(id) init;
+@end
+
+@interface SlideOverKit_iOS_SlidePopupViewRendereriOS : Xamarin_Forms_Platform_iOS_VisualElementRenderer_1 {
+}
+	-(id) init;
 @end
 
 @interface OpenCV : NSObject {

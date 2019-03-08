@@ -13680,7 +13680,7 @@ bl _p_185
 .loc 21 377 0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf9415430
+.word 0xf9416c30
 .word 0xd63f0200
 .word 0x14000005
 .loc 21 378 0
@@ -13716,7 +13716,7 @@ bl _p_185
 .loc 21 384 0
 .word 0xaa1803e0
 .word 0xf9400301
-.word 0xf9415430
+.word 0xf9416c30
 .word 0xd63f0200
 .word 0xf94013a1
 bl _p_11
@@ -13726,7 +13726,7 @@ bl _p_11
 .word 0xaa1803e0
 .word 0xf94013a1
 .word 0xf9400302
-.word 0xf9415050
+.word 0xf9416850
 .word 0xd63f0200
 .loc 21 386 0
 
@@ -13736,7 +13736,7 @@ ldr x0, [x16, #3752]
 .word 0xf9400001
 .word 0xaa1903e0
 .word 0xf9400322
-.word 0xf943e450
+.word 0xf943e850
 .word 0xd63f0200
 .loc 21 388 0
 .word 0x14000005
@@ -13860,7 +13860,7 @@ ldr x0, [x16, #3752]
 .word 0xf9400001
 .word 0xaa1903e0
 .word 0xf9400322
-.word 0xf943d850
+.word 0xf943dc50
 .word 0xd63f0200
 .loc 21 416 0
 .word 0xf9400bb9
@@ -13955,7 +13955,7 @@ bl _p_185
 .word 0xb4000120
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf9414030
+.word 0xf9415830
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x34000060
@@ -13998,7 +13998,7 @@ bl _p_185
 .loc 21 460 0
 .word 0xaa1803e0
 .word 0xf9400301
-.word 0xf9414030
+.word 0xf9415830
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x6b1a001f
@@ -14007,7 +14007,7 @@ bl _p_185
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xf9400302
-.word 0xf9413c50
+.word 0xf9415450
 .word 0xd63f0200
 .loc 21 462 0
 
@@ -14017,7 +14017,7 @@ ldr x0, [x16, #3752]
 .word 0xf9400001
 .word 0xaa1903e0
 .word 0xf9400322
-.word 0xf943c850
+.word 0xf943cc50
 .word 0xd63f0200
 .loc 21 466 0
 .word 0xa94167b8
@@ -14224,7 +14224,7 @@ ldr x0, [x16, #3752]
 .word 0xf9400001
 .word 0xaa1a03e0
 .word 0xf9400342
-.word 0xf943b450
+.word 0xf943b850
 .word 0xd63f0200
 .loc 21 506 0
 .word 0xf9400bba
@@ -14608,7 +14608,7 @@ bl _p_193
 .word 0xaa1a03e0
 .word 0xaa1903e1
 .word 0xf9400342
-.word 0xf943ac50
+.word 0xf943b050
 .word 0xd63f0200
 .loc 21 559 0
 .word 0xaa1a03e0
@@ -14997,7 +14997,7 @@ ldr x15, [x16, #1976]
 .loc 21 602 0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf9439830
+.word 0xf9439c30
 .word 0xd63f0200
 .loc 21 604 0
 .word 0xf9401b40
@@ -15098,7 +15098,7 @@ ldr x0, [x16, #3752]
 .word 0xf9400ba0
 .word 0xf9400ba2
 .word 0xf9400042
-.word 0xf943a050
+.word 0xf943a450
 .word 0xd63f0200
 .loc 21 622 0
 .word 0x910003bf
@@ -15179,7 +15179,7 @@ bl _p_202
 .loc 21 642 0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf943a830
+.word 0xf943ac30
 .word 0xd63f0200
 .loc 21 644 0
 .word 0xaa1903e0
@@ -15199,7 +15199,7 @@ ldr x0, [x16, #3752]
 .word 0xf9400001
 .word 0xaa1903e0
 .word 0xf9400322
-.word 0xf9439c50
+.word 0xf943a050
 .word 0xd63f0200
 .loc 21 648 0
 .word 0xf9400bb9
@@ -15358,12 +15358,12 @@ bl _p_205
 .loc 21 681 0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf943a830
+.word 0xf943ac30
 .word 0xd63f0200
 .loc 21 682 0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf943b030
+.word 0xf943b430
 .word 0xd63f0200
 .loc 21 684 0
 .word 0xf9400bba
@@ -15391,7 +15391,7 @@ bl _p_200
 .word 0xf90013a0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf943d430
+.word 0xf943d830
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xf94013a2
@@ -15554,7 +15554,7 @@ ldr x2, [x16, #16]
 .loc 21 724 0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf943b030
+.word 0xf943b430
 .word 0xd63f0200
 .loc 21 725 0
 
@@ -15564,7 +15564,7 @@ ldr x0, [x16, #3752]
 .word 0xf9400001
 .word 0xaa1a03e0
 .word 0xf9400342
-.word 0xf9438850
+.word 0xf9438c50
 .word 0xd63f0200
 .loc 21 726 0
 .word 0xaa1a03e0
@@ -15653,7 +15653,7 @@ ldr x2, [x16, #16]
 .loc 21 747 0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf943b030
+.word 0xf943b430
 .word 0xd63f0200
 .loc 21 748 0
 
@@ -15663,7 +15663,7 @@ ldr x0, [x16, #3752]
 .word 0xf9400001
 .word 0xaa1903e0
 .word 0xf9400322
-.word 0xf9438850
+.word 0xf9438c50
 .word 0xd63f0200
 .loc 21 749 0
 .word 0xaa1903e0
@@ -15761,7 +15761,7 @@ ldr x0, [x16, #3752]
 .word 0xf9400001
 .word 0xaa1a03e0
 .word 0xf9400342
-.word 0xf9438450
+.word 0xf9438850
 .word 0xd63f0200
 .loc 21 768 0
 .word 0xf9400bba
@@ -16274,12 +16274,12 @@ ldr x1, [x16, #3880]
 .loc 21 856 0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf943a830
+.word 0xf943ac30
 .word 0xd63f0200
 .loc 21 857 0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf943b030
+.word 0xf943b430
 .word 0xd63f0200
 .loc 21 860 0
 .word 0xaa1903e0
@@ -16367,7 +16367,7 @@ bl _p_226
 .word 0xf9403741
 .word 0xaa1a03e0
 .word 0xf9400342
-.word 0xf9438050
+.word 0xf9438450
 .word 0xd63f0200
 .loc 21 879 0
 .word 0x91036340
@@ -16445,7 +16445,7 @@ bl _p_226
 .word 0xf9403b41
 .word 0xaa1a03e0
 .word 0xf9400342
-.word 0xf9437c50
+.word 0xf9438050
 .word 0xd63f0200
 .loc 21 889 0
 .word 0x91038340
@@ -16500,7 +16500,7 @@ OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnUnload_System_EventArgs:
 .loc 21 902 0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf943a830
+.word 0xf943ac30
 .word 0xd63f0200
 .loc 21 903 0
 .word 0xb40000d8
@@ -33209,13 +33209,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 540,6608,286,713,66,387000831,0,61664
-	.long 128,8,8,8,0,25,72528,10856
+	.long 540,6608,286,713,66,387000831,0,61668
+	.long 128,8,8,8,0,25,72536,10856
 	.long 10488,7696,0,9136,10344,8416,0,6008
 	.long 1008,10848,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 211,44,35,64,119,23,104,90,98,111,238,46,240,237,179,188
+	.byte 52,158,6,7,59,69,81,96,92,47,228,31,208,251,46,64
 	.globl _mono_aot_module_OpenTK_1_0_info
 	.align 3
 _mono_aot_module_OpenTK_1_0_info:

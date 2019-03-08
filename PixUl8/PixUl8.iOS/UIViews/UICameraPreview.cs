@@ -504,6 +504,13 @@ namespace PixUl8.iOS.UIViews
             rightHandHDRButton.AddGestureRecognizer(leftSwipeHDRGesture);
             this.AddSubview(rightHandHDRButton);
 
+
+            var swipeUpForMenuGesture = new UISwipeGestureRecognizer(() => SwipeHandlerUp())
+            {
+                Direction = UISwipeGestureRecognizerDirection.Up
+            };
+            this.AddGestureRecognizer(swipeUpForMenuGesture);
+
             #endregion
 
             #endregion
@@ -575,6 +582,12 @@ namespace PixUl8.iOS.UIViews
             }
             _percentage.UpdateDisplayZoomFactor((float)Math.Round(ZoomFactor, 1));
 
+        }
+
+        private void SwipeHandlerUp()
+        {
+            //raise menu open event via message center
+            MessagingCenter.Send<UICameraPreview>(this, "PerformMenuSwitch");
         }
 
         private void SwipeHandlerSwitchCamera(SwipeType type)

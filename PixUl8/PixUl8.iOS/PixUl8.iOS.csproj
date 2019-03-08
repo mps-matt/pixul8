@@ -222,6 +222,9 @@
     <PackageReference Include="Acr.UserDialogs">
       <Version>7.0.3</Version>
     </PackageReference>
+    <PackageReference Include="SlideOverKit">
+      <Version>2.1.6.2</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />

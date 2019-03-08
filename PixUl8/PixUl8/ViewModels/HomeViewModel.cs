@@ -11,11 +11,16 @@ using PixUl8.Models;
 using PixUl8.iOS.UIViews;
 using PixUl8.Interfaces;
 using System.Threading;
+using PixUl8.Views.ExtensionViews;
+using PixUl8.Pages;
 
 namespace PixUl8.ViewModels
 {
     public class HomeViewModel : BaseViewModel
     {
+
+        private SlideUpPage _menu = new SlideUpPage();
+
 
         public HomeViewModel(IHapticService hapticService = null) : base(hapticService)
         {
@@ -31,6 +36,10 @@ namespace PixUl8.ViewModels
             MessagingCenter.Subscribe<UICameraPreview>(this, "PerformHDRSwitch", async (sender) => {
                 await ToggleHDRAsync();
             });
+
+            MessagingCenter.Subscribe<UICameraPreview>(this, "PerformMenuSwitch", async (sender) => {
+                await ToggleMenuAsync();
+            });
         }
 
 
@@ -45,6 +54,7 @@ namespace PixUl8.ViewModels
             {
                 SetProperty(ref _isFlashActive, value);
                 OnPropertyChanged("IsFlashNotActive");
+
             }
         }
 
@@ -62,8 +72,28 @@ namespace PixUl8.ViewModels
             {
                 SetProperty(ref _isHDRActive, value);
                 OnPropertyChanged("IsHDRNotActive");
+
             }
         }
+
+        private bool _isMenuShowing = false;
+        public bool IsMenuShowing
+        {
+            get { return _isMenuShowing; }
+            set
+            {
+                SetProperty(ref _isMenuShowing, value);
+                OnPropertyChanged("IsMenuShowing");
+
+                if (IsMenuShowing)
+                    _menu.ShowMenu();
+                else
+                    _menu.HideMenu();
+            }
+        }
+
+
+
 
         public bool IsHDRNotActive
         {
@@ -126,6 +156,13 @@ namespace PixUl8.ViewModels
         {
             _hapticService.InvokeHeavyHaptic();
             IsHDRActive = !IsHDRActive;
+        }
+
+        private ICommand _toogleMenuCommand;
+        public ICommand ToggleMenuCommand { get { return _toogleMenuCommand = _toogleMenuCommand ?? new Command(async () => await ToggleMenuAsync()); } }
+        public async Task ToggleMenuAsync()
+        {
+            IsMenuShowing = !IsMenuShowing;
         }
 
 

@@ -19,6 +19,8 @@ extern void *mono_aot_module_System_Web_Services_info;
 extern void *mono_aot_module_System_Xml_Linq_info;
 extern void *mono_aot_module_Xamarin_Forms_Platform_info;
 extern void *mono_aot_module_Xamarin_Forms_Xaml_info;
+extern void *mono_aot_module_SlideOverKit_info;
+extern void *mono_aot_module_SlideOverKit_iOS_info;
 extern void *mono_aot_module_PixUl8_OpenCV_info;
 extern void *mono_aot_module_MoreLinq_info;
 extern void *mono_aot_module_Acr_UserDialogs_info;
@@ -45,6 +47,8 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_System_Xml_Linq_info);
 	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Platform_info);
 	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Xaml_info);
+	mono_aot_register_module (mono_aot_module_SlideOverKit_info);
+	mono_aot_register_module (mono_aot_module_SlideOverKit_iOS_info);
 	mono_aot_register_module (mono_aot_module_PixUl8_OpenCV_info);
 	mono_aot_register_module (mono_aot_module_MoreLinq_info);
 	mono_aot_register_module (mono_aot_module_Acr_UserDialogs_info);
@@ -56,6 +60,8 @@ void xamarin_register_assemblies_impl ()
 {
 	guint32 exception_gchandle = 0;
 	xamarin_open_and_register ("Xamarin.Forms.Platform.iOS.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
+	xamarin_open_and_register ("SlideOverKit.iOS.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
 	xamarin_open_and_register ("PixUl8.OpenCV.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);

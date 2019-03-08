@@ -1,11 +1,14 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/Resources/LaunchScreen.storyboard">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs">
     <Files>
-      <File FileName="PixUl8/PixUl8.iOS/Delegates/HDRPhotoCaptureDelegate.cs" Line="96" Column="88" />
-      <File FileName="PixUl8/PixUl8.iOS/Delegates/PhotoCaptureDelegate.cs" Line="58" Column="17" />
+      <File FileName="PixUl8/PixUl8/Views/ExtensionViews/SlideUpView.cs" Line="26" Column="1" />
+      <File FileName="PixUl8/PixUl8/ViewModels/HomeViewModel.cs" Line="42" Column="16" />
+      <File FileName="PixUl8/PixUl8/Views/HomePage.xaml" Line="160" Column="19" />
+      <File FileName="PixUl8/PixUl8/Pages/SlideUpPage.cs" Line="26" Column="1" />
+      <File FileName="PixUl8/PixUl8/Views/ExtensionViews/SlideMenuUpView.xaml.cs" Line="22" Column="10" />
+      <File FileName="PixUl8/PixUl8/Views/ExtensionViews/SlideMenuUpView.xaml" Line="1" Column="1" />
+      <File FileName="PixUl8/PixUl8.iOS/AppDelegate.cs" Line="64" Column="13" />
       <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="308" Column="73" />
-      <File FileName="PixUl8.OpenCV/ApiDefinition.cs" Line="1" Column="1" />
-      <File FileName="PixUl8/PixUl8.iOS/Resources/LaunchScreen.storyboard" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.594cc34fe22a6ae2a5ef467001700a60305909ef" />
