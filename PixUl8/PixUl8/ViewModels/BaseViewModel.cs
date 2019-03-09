@@ -10,9 +10,12 @@ namespace PixUl8.ViewModels
     public class BaseViewModel : INotifyPropertyChanged
     {
         protected IHapticService _hapticService;
-        public BaseViewModel(IHapticService hapticService)
+        protected ISettingsService _settingsService;
+
+        public BaseViewModel(IHapticService hapticService, ISettingsService settingsService)
         {
             _hapticService = hapticService ?? DependencyService.Get<IHapticService>();
+            _settingsService = settingsService ?? DependencyService.Get<ISettingsService>();
         }
 
 

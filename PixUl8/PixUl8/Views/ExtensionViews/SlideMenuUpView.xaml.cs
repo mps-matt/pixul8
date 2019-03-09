@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using PixUl8.ViewModels;
 using SlideOverKit;
 using Xamarin.Forms;
 
@@ -7,9 +8,13 @@ namespace PixUl8.Views.ExtensionViews
 {
     public partial class SlideMenuUpView : SlideMenuView
     {
-        public SlideMenuUpView()
+        HomeViewModel viewModel;
+
+        public SlideMenuUpView(HomeViewModel vm)
         {
             InitializeComponent();
+
+            BindingContext = viewModel = vm;
 
             this.MenuOrientations = MenuOrientation.BottomToTop;
             this.AnimationDurationMillisecond = 250;
@@ -19,7 +24,7 @@ namespace PixUl8.Views.ExtensionViews
             this.BackgroundViewColor = Color.Transparent;
 
             IsFullScreen = true;
-            HeightRequest = 300;
+            HeightRequest = 390;
         }
     }
 }

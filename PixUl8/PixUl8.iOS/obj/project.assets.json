@@ -46,6 +46,17 @@
           "lib/Xamarin.iOS10/SlideOverKit.iOS.dll": {}
         }
       },
+      "Xam.Plugins.Settings/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
+        }
+      },
       "Xamarin.Forms/3.4.0.1009999": {
         "type": "package",
         "compile": {
@@ -222,6 +233,17 @@
         "runtime": {
           "lib/Xamarin.iOS10/SlideOverKit.dll": {},
           "lib/Xamarin.iOS10/SlideOverKit.iOS.dll": {}
+        }
+      },
+      "Xam.Plugins.Settings/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Forms/3.4.0.1009999": {
@@ -402,6 +424,17 @@
           "lib/Xamarin.iOS10/SlideOverKit.iOS.dll": {}
         }
       },
+      "Xam.Plugins.Settings/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
+        }
+      },
       "Xamarin.Forms/3.4.0.1009999": {
         "type": "package",
         "compile": {
@@ -578,6 +611,17 @@
         "runtime": {
           "lib/Xamarin.iOS10/SlideOverKit.dll": {},
           "lib/Xamarin.iOS10/SlideOverKit.iOS.dll": {}
+        }
+      },
+      "Xam.Plugins.Settings/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Forms/3.4.0.1009999": {
@@ -796,6 +840,73 @@
         "slideoverkit.nuspec"
       ]
     },
+    "Xam.Plugins.Settings/3.1.1": {
+      "sha512": "Bu7xx61R2xnH+vY0LyFWiDNfuS25OWR3n9Yu3Gdutpgy7T7F/c1JieptS6YxRzz4WXJzaj0ACz/zQ0OwDiyIvw==",
+      "type": "package",
+      "path": "xam.plugins.settings/3.1.1",
+      "files": [
+        ".signature.p7s",
+        "content/MonoAndroid10/Helpers/Settings.cs.pp",
+        "content/UAP10/Helpers/Settings.cs.pp",
+        "content/Xamarin.Mac20/Helpers/Settings.cs.pp",
+        "content/Xamarin.iOS10/Helpers/Settings.cs.pp",
+        "content/net45/Helpers/Settings.cs.pp",
+        "content/netstandard1.0/Helpers/Settings.cs.pp",
+        "content/xamarintvOS/Helpers/Settings.cs.pp",
+        "content/xamarinwatchOS/Helpers/Settings.cs.pp",
+        "lib/MonoAndroid10/Plugin.Settings.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Settings.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Settings.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Settings.dll",
+        "lib/MonoAndroid10/Plugin.Settings.pdb",
+        "lib/MonoAndroid10/Plugin.Settings.xml",
+        "lib/UAP10/Plugin.Settings.Abstractions.dll",
+        "lib/UAP10/Plugin.Settings.Abstractions.pdb",
+        "lib/UAP10/Plugin.Settings.Abstractions.xml",
+        "lib/UAP10/Plugin.Settings.XML",
+        "lib/UAP10/Plugin.Settings.dll",
+        "lib/UAP10/Plugin.Settings.pdb",
+        "lib/UAP10/Plugin.Settings.pri",
+        "lib/Xamarin.Mac20/Plugin.Settings.Abstractions.dll",
+        "lib/Xamarin.Mac20/Plugin.Settings.Abstractions.pdb",
+        "lib/Xamarin.Mac20/Plugin.Settings.Abstractions.xml",
+        "lib/Xamarin.Mac20/Plugin.Settings.XML",
+        "lib/Xamarin.Mac20/Plugin.Settings.dll",
+        "lib/Xamarin.Mac20/Plugin.Settings.pdb",
+        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Settings.dll",
+        "lib/Xamarin.iOS10/Plugin.Settings.xml",
+        "lib/net45/Plugin.Settings.Abstractions.dll",
+        "lib/net45/Plugin.Settings.Abstractions.pdb",
+        "lib/net45/Plugin.Settings.Abstractions.xml",
+        "lib/net45/Plugin.Settings.XML",
+        "lib/net45/Plugin.Settings.dll",
+        "lib/net45/Plugin.Settings.pdb",
+        "lib/netstandard1.0/Plugin.Settings.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.Settings.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.Settings.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.Settings.deps.json",
+        "lib/netstandard1.0/Plugin.Settings.dll",
+        "lib/netstandard1.0/Plugin.Settings.xml",
+        "lib/xamarintvOS/Plugin.Settings.Abstractions.dll",
+        "lib/xamarintvOS/Plugin.Settings.Abstractions.pdb",
+        "lib/xamarintvOS/Plugin.Settings.Abstractions.xml",
+        "lib/xamarintvOS/Plugin.Settings.dll",
+        "lib/xamarintvOS/Plugin.Settings.pdb",
+        "lib/xamarintvOS/Plugin.Settings.xml",
+        "lib/xamarinwatchOS/Plugin.Settings.Abstractions.dll",
+        "lib/xamarinwatchOS/Plugin.Settings.Abstractions.pdb",
+        "lib/xamarinwatchOS/Plugin.Settings.Abstractions.xml",
+        "lib/xamarinwatchOS/Plugin.Settings.dll",
+        "lib/xamarinwatchOS/Plugin.Settings.pdb",
+        "lib/xamarinwatchOS/Plugin.Settings.xml",
+        "readme.txt",
+        "xam.plugins.settings.3.1.1.nupkg.sha512",
+        "xam.plugins.settings.nuspec"
+      ]
+    },
     "Xamarin.Forms/3.4.0.1009999": {
       "sha512": "pgqRxgD23FJHG2B7zOxf4Fm+KYgoWctUJp8hNtdZgAt43RIiK3VgM11wJf3S0SkMIsXQCUL0yYQmR8gR/njltA==",
       "type": "package",
@@ -954,6 +1065,7 @@
       "Acr.UserDialogs >= 7.0.3",
       "PixUl8.Native >= 1.0.0",
       "SlideOverKit >= 2.1.6.2",
+      "Xam.Plugins.Settings >= 3.1.1",
       "Xamarin.Forms >= 3.4.0.1009999",
       "morelinq >= 3.1.0"
     ]
@@ -999,6 +1111,10 @@
           "SlideOverKit": {
             "target": "Package",
             "version": "[2.1.6.2, )"
+          },
+          "Xam.Plugins.Settings": {
+            "target": "Package",
+            "version": "[3.1.1, )"
           },
           "Xamarin.Forms": {
             "target": "Package",

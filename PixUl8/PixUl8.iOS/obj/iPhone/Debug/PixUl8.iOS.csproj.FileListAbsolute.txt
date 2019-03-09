@@ -125,3 +125,6 @@
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/SlideOverKit.iOS.dll
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/SlideOverKit.iOS.pdb
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/Views/ExtensionViews/SlideMenuUpView.xaml.g.cs
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/Plugin.Settings.Abstractions.dll
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/Plugin.Settings.Abstractions.pdb
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/Plugin.Settings.dll

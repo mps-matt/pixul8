@@ -25,6 +25,8 @@ extern void *mono_aot_module_PixUl8_OpenCV_info;
 extern void *mono_aot_module_MoreLinq_info;
 extern void *mono_aot_module_Acr_UserDialogs_info;
 extern void *mono_aot_module_BTProgressHUD_info;
+extern void *mono_aot_module_Plugin_Settings_info;
+extern void *mono_aot_module_Plugin_Settings_Abstractions_info;
 
 void xamarin_register_modules_impl ()
 {
@@ -53,6 +55,8 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_MoreLinq_info);
 	mono_aot_register_module (mono_aot_module_Acr_UserDialogs_info);
 	mono_aot_register_module (mono_aot_module_BTProgressHUD_info);
+	mono_aot_register_module (mono_aot_module_Plugin_Settings_info);
+	mono_aot_register_module (mono_aot_module_Plugin_Settings_Abstractions_info);
 
 }
 

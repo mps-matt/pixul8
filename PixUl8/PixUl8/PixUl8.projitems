@@ -28,10 +28,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\CameraOptions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\ExtensionViews\XFFlipView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IHapticService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\SlideUpPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\ExtensionViews\SlideMenuUpView.xaml.cs">
       <DependentUpon>SlideMenuUpView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Services\SettingsService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\ISettingsService.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\HomePage.xaml">

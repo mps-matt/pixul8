@@ -28,3 +28,6 @@
 /Users/mattstark/.nuget/packages/morelinq/3.1.0/lib/netstandard2.0/MoreLinq.dll
 /Users/mattstark/.nuget/packages/acr.userdialogs/7.0.3/lib/xamarinios10/Acr.UserDialogs.dll
 /Users/mattstark/.nuget/packages/btprogresshud/1.2.0.6/lib/Xamarin.iOS10/BTProgressHUD.dll
+/Users/mattstark/.nuget/packages/xam.plugins.settings/3.1.1/lib/Xamarin.iOS10/Plugin.Settings.dll
+/Users/mattstark/.nuget/packages/xam.plugins.settings/3.1.1/lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.2.1.13/lib/mono/Xamarin.iOS/Facades/System.Runtime.dll

@@ -12,7 +12,6 @@ using PixUl8.iOS.UIViews;
 using PixUl8.Interfaces;
 using System.Threading;
 using PixUl8.Views.ExtensionViews;
-using PixUl8.Pages;
 
 namespace PixUl8.ViewModels
 {
@@ -20,7 +19,7 @@ namespace PixUl8.ViewModels
     {
         public HomePage Page { get; set; }
 
-        public HomeViewModel(IHapticService hapticService = null) : base(hapticService)
+        public HomeViewModel(IHapticService hapticService = null, ISettingsService settingsService = null) : base(hapticService, settingsService)
         {
             Title = "Home";
             MessagingCenter.Subscribe<UICameraPreview>(this, "PerformCameraSwitch", async (sender) => {
@@ -39,7 +38,10 @@ namespace PixUl8.ViewModels
                 await ToggleMenuAsync();
             });
 
-          
+
+            //Read in saved switch info
+            is3DEnabled = _settingsService.Is3DEnabled;
+            is43Enabled = _settingsService.Is43Enabled;
         }
 
 
@@ -96,6 +98,81 @@ namespace PixUl8.ViewModels
         {
             get { return !_isFrontFacing; }
         }
+
+
+        private bool _manualControlsEnabled = false;
+        public bool ManualControlsEnabled
+        {
+            get { return _manualControlsEnabled; }
+            set
+            {
+                SetProperty(ref _manualControlsEnabled, value);
+            }
+        }
+
+        private bool _grayScaleEnabled = false;
+        public bool GrayScaleEnabled
+        {
+            get { return _grayScaleEnabled; }
+            set
+            {
+                SetProperty(ref _grayScaleEnabled, value);
+            }
+        }
+
+        private bool _43Enabled = false;
+        public bool is43Enabled
+        {
+            get { return _43Enabled; }
+            set
+            {
+                SetProperty(ref _43Enabled, value);
+                _settingsService.Is43Enabled = value;
+            }
+        }
+
+        private bool _3dEnabled = false;
+        public bool is3DEnabled
+        {
+            get { return _3dEnabled; }
+            set
+            {
+                SetProperty(ref _3dEnabled, value);
+                _settingsService.Is3DEnabled = value;
+            }
+        }
+
+        private int _exposurePercentage = 0;
+        public int ExposurePercentage
+        {
+            get { return _exposurePercentage; }
+            set
+            {
+                SetProperty(ref _exposurePercentage, value);
+            }
+        }
+
+        private int _isoPercentage = 0;
+        public int ISOPercentage
+        {
+            get { return _isoPercentage; }
+            set
+            {
+                SetProperty(ref _isoPercentage, value);
+            }
+        }
+
+        private int _balancePercentage = 0;
+        public int BalancePercentage
+        {
+            get { return _balancePercentage; }
+            set
+            {
+                SetProperty(ref _balancePercentage, value);
+            }
+        }
+
+
 
 
 

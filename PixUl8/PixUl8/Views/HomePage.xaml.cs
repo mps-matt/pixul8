@@ -25,7 +25,7 @@ namespace PixUl8.Views
         {
             InitializeComponent();
             BindingContext = viewModel = new HomeViewModel();
-            this.SlideMenu = new SlideMenuUpView();
+            this.SlideMenu = new SlideMenuUpView(viewModel);
 
             viewModel.Page = this;
         }

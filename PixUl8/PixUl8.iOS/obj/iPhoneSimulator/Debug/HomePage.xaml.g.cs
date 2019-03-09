@@ -14,10 +14,10 @@ namespace PixUl8.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8/Views/HomePage.xaml")]
-    public partial class HomePage : global::Xamarin.Forms.ContentPage {
+    public partial class HomePage : global::SlideOverKit.MenuContainerPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.ContentPage Home;
+        private global::SlideOverKit.MenuContainerPage Home;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Button HDROnLeft1;
@@ -52,7 +52,7 @@ namespace PixUl8.Views {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(HomePage));
-            Home = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ContentPage>(this, "Home");
+            Home = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SlideOverKit.MenuContainerPage>(this, "Home");
             HDROnLeft1 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "HDROnLeft1");
             HDROnRight1 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "HDROnRight1");
             FlashOnLeft1 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "FlashOnLeft1");
