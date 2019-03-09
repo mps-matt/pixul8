@@ -18,9 +18,7 @@ namespace PixUl8.ViewModels
 {
     public class HomeViewModel : BaseViewModel
     {
-
-        private SlideUpPage _menu = new SlideUpPage();
-
+        public HomePage Page { get; set; }
 
         public HomeViewModel(IHapticService hapticService = null) : base(hapticService)
         {
@@ -40,6 +38,8 @@ namespace PixUl8.ViewModels
             MessagingCenter.Subscribe<UICameraPreview>(this, "PerformMenuSwitch", async (sender) => {
                 await ToggleMenuAsync();
             });
+
+          
         }
 
 
@@ -75,24 +75,6 @@ namespace PixUl8.ViewModels
 
             }
         }
-
-        private bool _isMenuShowing = false;
-        public bool IsMenuShowing
-        {
-            get { return _isMenuShowing; }
-            set
-            {
-                SetProperty(ref _isMenuShowing, value);
-                OnPropertyChanged("IsMenuShowing");
-
-                if (IsMenuShowing)
-                    _menu.ShowMenu();
-                else
-                    _menu.HideMenu();
-            }
-        }
-
-
 
 
         public bool IsHDRNotActive
@@ -162,7 +144,7 @@ namespace PixUl8.ViewModels
         public ICommand ToggleMenuCommand { get { return _toogleMenuCommand = _toogleMenuCommand ?? new Command(async () => await ToggleMenuAsync()); } }
         public async Task ToggleMenuAsync()
         {
-            IsMenuShowing = !IsMenuShowing;
+            Page.ShowMenu();
         }
 
 

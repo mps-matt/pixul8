@@ -2115,7 +2115,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "FF727851-4966-4BE9-9AD7-4CCEB316E19A"
+	.asciz "73A62B7F-C840-4D32-B58F-AECEDBAEB390"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -2200,7 +2200,7 @@ _mono_aot_file_info:
 	.long 56,752,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 114,185,6,18,226,141,213,22,50,73,115,166,214,235,21,121
+	.byte 150,14,195,224,48,29,37,230,88,178,40,138,224,48,74,213
 	.globl _mono_aot_module_PixUl8_OpenCV_info
 	.align 3
 _mono_aot_module_PixUl8_OpenCV_info:

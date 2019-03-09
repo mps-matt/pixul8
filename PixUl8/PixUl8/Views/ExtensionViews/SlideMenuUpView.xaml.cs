@@ -12,13 +12,14 @@ namespace PixUl8.Views.ExtensionViews
             InitializeComponent();
 
             this.MenuOrientations = MenuOrientation.BottomToTop;
-            this.AnimationDurationMillisecond = 1000;
+            this.AnimationDurationMillisecond = 250;
 
             this.BackgroundColor = Color.Black;
+            this.Opacity = 0.7;
             this.BackgroundViewColor = Color.Transparent;
 
             IsFullScreen = true;
-            HeightRequest = 400;
+            HeightRequest = 300;
         }
     }
 }
