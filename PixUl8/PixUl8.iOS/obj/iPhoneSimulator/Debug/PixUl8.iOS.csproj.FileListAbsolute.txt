@@ -112,3 +112,7 @@
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/logos/ios/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/logos/ios/AppIcon.appiconset/ItunesArtwork@2x.png
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/loading.png
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/P.png
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/test.png
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/optimized/title.png
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/Views/ExtensionViews/SlideMenuUpView.xaml.g.cs

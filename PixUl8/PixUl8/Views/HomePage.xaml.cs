@@ -33,7 +33,10 @@ namespace PixUl8.Views
 
         protected override void OnAppearing()
         {
+            viewModel.Appeared();
             base.OnAppearing();
+
+
         }
     }
 }

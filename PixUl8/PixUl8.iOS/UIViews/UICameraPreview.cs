@@ -23,7 +23,7 @@ using CoreAnimation;
 using Vision;
 using UserNotifications;
 using Acr.UserDialogs;
-
+using CoreImage;
 
 //This code came from https://github.com/xamarin/xamarin-forms-samples/blob/master/CustomRenderers/View/iOS/UICameraPreview.cs
 // - It seems that the tutorial i was following assumes this is built intro xamarin but i didn't have it so found it myself!
@@ -53,13 +53,17 @@ namespace PixUl8.iOS.UIViews
         private CGSize _captureDeviceBounds;
 
         private AVCapturePhotoOutput _photoOutput;
+        private AVCaptureVideoDataOutput _videoOutput;
+        private FrameOutputDelegate _frameDelegate;
         private PhotoCaptureDelegate _imageDelegate;
         private HDRPhotoCaptureDelegate _hdrImageDelegate;
         private bool _forcePressed = false;
         private bool _canTakePicture = true;
         private CircleZoomPercentage _percentage;
         private FocusWheel _focusWheel;
+        private TakeImageButton _takeImageButton;
 
+        private UIImageView _videoView;
 
         private CALayer _detectionOverlayLayer;
         private CAShapeLayer _detectedFaceRectangleShapeLayer;
@@ -115,6 +119,83 @@ namespace PixUl8.iOS.UIViews
             set
             {
                 _hdrOn = value;
+            }
+        }
+
+        private bool _manualOn = false;
+        public bool ManualOn
+        {
+            get { return _manualOn; }
+            set
+            {
+                _manualOn = value;
+            }
+        }
+
+        private bool _grayscaleOn = false;
+        public bool GrayscaleOn
+        {
+            get { return _grayscaleOn; }
+            set
+            {
+                _grayscaleOn = value;
+            }
+        }
+
+        private bool _is43On = false;
+        public bool is43On
+        {
+            get { return _is43On; }
+            set
+            {
+                _is43On = value;
+                HDRPhotoCaptureDelegate.Is34Enabled = value;
+                PhotoCaptureDelegate.Is34Enabled = value;
+            }
+        }
+
+        private bool _is3DOn = false;
+        public bool is3DOn
+        {
+            get { return _is3DOn; }
+            set
+            {
+                _is3DOn = value;
+                if (value)
+                    _takeImageButton.Hide();
+                else
+                    _takeImageButton.Show();
+            }
+        }
+
+        private int _exposure = 0;
+        public int Exposure
+        {
+            get { return _exposure; }
+            set
+            {
+                _exposure = value;
+            }
+        }
+
+
+        private int _iso = 0;
+        public int Iso
+        {
+            get { return _iso; }
+            set
+            {
+                _iso = value;
+            }
+        }
+
+        private int _balance = 0;
+        public int Balance
+        {
+            get { return _balance; }
+            set
+            {
+                _balance = value;
             }
         }
 
@@ -177,7 +258,7 @@ namespace PixUl8.iOS.UIViews
             {
                 var force = touch.Force;
                 var maxForce = touch.MaximumPossibleForce;
-                if (force == maxForce && !_forcePressed)
+                if (force == maxForce && !_forcePressed && is3DOn)
                 {
                     DependencyService.Get<IHapticService>().InvokeHeavyHaptic();
                     _forcePressed = true;
@@ -312,7 +393,7 @@ namespace PixUl8.iOS.UIViews
             {
                 VideoGravity = AVLayerVideoGravity.ResizeAspectFill,
                 DrawsAsynchronously = true,
-                Speed = 1
+                Speed = 1,
             };
 
 
@@ -372,13 +453,16 @@ namespace PixUl8.iOS.UIViews
             
             CaptureSession.AddInput(input);
 
-
             _photoOutput = new AVCapturePhotoOutput();
 
             _photoOutput.IsHighResolutionCaptureEnabled = true;
 
             CaptureSession.AddOutput(_photoOutput);
 
+            _videoOutput = new AVCaptureVideoDataOutput();
+            _frameDelegate = new FrameOutputDelegate(_previewLayer);
+            _videoOutput.SetSampleBufferDelegateQueue(_frameDelegate, CoreFoundation.DispatchQueue.MainQueue);
+            CaptureSession.AddOutput(_videoOutput);
 
             var metadataoutput = new AVCaptureMetadataOutput();
             metadataoutput.SetDelegate(this, CoreFoundation.DispatchQueue.MainQueue);
@@ -396,6 +480,7 @@ namespace PixUl8.iOS.UIViews
                 AVMetadataObjectType.UPCECode | AVMetadataObjectType.Face;
 
             Layer.AddSublayer(_previewLayer);
+            //Layer.AddSublayer(_videoView.Layer);
 
             //Subscribe to the volume change event, to abstract it ouf of here
             MessagingCenter.Subscribe<AppDelegate>(this, "VolumeChange", async (de) => { await TakePhotoAsync(); });
@@ -407,10 +492,15 @@ namespace PixUl8.iOS.UIViews
             _percentage = new CircleZoomPercentage(zoomRect, 1);
 
             var focusRect = new CGRect(0, 0, 150, 150);
+            var takeimageRect = new CGRect((x/2)-75, y-170, 150, 150);
+
             _focusWheel = new FocusWheel(focusRect, 2);
+            _takeImageButton = new TakeImageButton(takeimageRect, 4);
+            _takeImageButton.AddTarget(TakeImageButtonHandler, UIControlEvent.TouchUpInside);
 
             this.AddSubview(_percentage);
             this.AddSubview(_focusWheel);
+            this.AddSubview(_takeImageButton);
 
             _captureDeviceResolution = new CGSize(x * UIScreen.MainScreen.Scale, y * UIScreen.MainScreen.Scale);
             _captureDeviceBounds = new CGSize(x, y);
@@ -542,12 +632,16 @@ namespace PixUl8.iOS.UIViews
             if (_device.FocusPointOfInterestSupported)
                 _device.FocusPointOfInterest = interestPoint;
 
-            if (_device.ExposurePointOfInterestSupported)
-                _device.ExposurePointOfInterest = interestPoint;
 
+            if (!ManualOn)
+            {
+                if (_device.ExposurePointOfInterestSupported)
+                    _device.ExposurePointOfInterest = interestPoint;
 
-            if (_device.IsExposureModeSupported(AVCaptureExposureMode.AutoExpose))
-                _device.ExposureMode = AVCaptureExposureMode.AutoExpose;
+                if (_device.IsExposureModeSupported(AVCaptureExposureMode.AutoExpose))
+                    _device.ExposureMode = AVCaptureExposureMode.AutoExpose;
+            }
+
 
             if (_device.IsFocusModeSupported(AVCaptureFocusMode.AutoFocus))
                 _device.FocusMode = AVCaptureFocusMode.AutoFocus;
@@ -572,6 +666,11 @@ namespace PixUl8.iOS.UIViews
 
             UnhideBoxes();
             _device.UnlockForConfiguration();
+        }
+
+        private void TakeImageButtonHandler(object sender, EventArgs e)
+        {
+            TakePhotoAsync();
         }
 
         private void PinchHandlerZoom(UIPinchGestureRecognizer recognizer)
@@ -898,11 +997,15 @@ namespace PixUl8.iOS.UIViews
                         if (_device.FocusPointOfInterestSupported)
                             _device.FocusPointOfInterest = first.Bounds.Location;
 
-                        if (_device.ExposurePointOfInterestSupported)
-                            _device.ExposurePointOfInterest = first.Bounds.Location;
 
-                        if (_device.IsExposureModeSupported(AVCaptureExposureMode.AutoExpose))
-                            _device.ExposureMode = AVCaptureExposureMode.AutoExpose;
+                        if (!ManualOn)
+                        {
+                            if (_device.ExposurePointOfInterestSupported)
+                                _device.ExposurePointOfInterest = first.Bounds.Location;
+
+                            if (_device.IsExposureModeSupported(AVCaptureExposureMode.AutoExpose))
+                                _device.ExposureMode = AVCaptureExposureMode.AutoExpose;
+                        }
 
                         if (_device.IsFocusModeSupported(AVCaptureFocusMode.AutoFocus))
                             _device.FocusMode = AVCaptureFocusMode.AutoFocus;

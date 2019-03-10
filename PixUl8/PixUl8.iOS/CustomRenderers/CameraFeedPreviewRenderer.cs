@@ -34,9 +34,44 @@ namespace PixUl8.iOS.CustomRenderers
                     uiCameraPreview.FlashOn = flashOn;
                     break;
 
-                case (nameof(CameraView.HdrEnabled)):
+                case nameof(CameraView.HdrEnabled):
                     bool hdr = (Element as CameraView).HdrEnabled;
                     uiCameraPreview.HdrEnabled = hdr;
+                    break;
+
+                case nameof(CameraView.ManualOn):
+                    bool manual = (Element as CameraView).ManualOn;
+                    uiCameraPreview.ManualOn = manual;
+                    break;
+
+                case nameof(CameraView.GrayscaleOn):
+                    bool gray = (Element as CameraView).GrayscaleOn;
+                    uiCameraPreview.GrayscaleOn = gray;
+                    break;
+
+                case nameof(CameraView.is43On):
+                    bool is43On = (Element as CameraView).is43On;
+                    uiCameraPreview.is43On = is43On;
+                    break;
+
+                case nameof(CameraView.is3DOn):
+                    bool is3DOn = (Element as CameraView).is3DOn;
+                    uiCameraPreview.is3DOn = is3DOn;
+                    break;
+
+                case nameof(CameraView.Exposure):
+                    int exp = (Element as CameraView).Exposure;
+                    uiCameraPreview.Exposure = exp;
+                    break;
+
+                case nameof(CameraView.ISO):
+                    int iso = (Element as CameraView).ISO;
+                    uiCameraPreview.Iso = iso;
+                    break;
+
+                case nameof(CameraView.Balance):
+                    int balance = (Element as CameraView).Balance;
+                    uiCameraPreview.Balance = balance;
                     break;
 
                 default:

@@ -40,6 +40,11 @@ namespace PixUl8.iOS.Delegates
             }
         }
 
+        public static bool Is34Enabled
+        {
+            get; set;
+        }
+
 
         private static List<UIImage> _imagesInBracket = new List<UIImage>();
         private static List<UIImage> _finishedBracket = new List<UIImage>();
@@ -208,14 +213,17 @@ namespace PixUl8.iOS.Delegates
                 switch (orientation)
                 {
                     case UIDeviceOrientation.LandscapeLeft:
+                        uncropped = new UIImage(uncropped.CGImage, 1, UIImageOrientation.Left);
                         cropped = new UIImage(cropped.CGImage, 1, UIImageOrientation.Left);
                         break;
 
                     case UIDeviceOrientation.LandscapeRight:
+                        uncropped = new UIImage(uncropped.CGImage, 1, UIImageOrientation.Right);
                         cropped = new UIImage(cropped.CGImage, 1, UIImageOrientation.Right);
                         break;
 
                     case UIDeviceOrientation.PortraitUpsideDown:
+                        uncropped = new UIImage(uncropped.CGImage, 1, UIImageOrientation.Down);
                         cropped = new UIImage(cropped.CGImage, 1, UIImageOrientation.Down);
                         break;
 
@@ -223,9 +231,38 @@ namespace PixUl8.iOS.Delegates
                         break;
                 }
 
+                var status = await PHPhotoLibrary.RequestAuthorizationAsync();
+
+                if (Is34Enabled)
+                {
+                    imageAsData = uncropped.AsJPEG();
+
+                    if (status == PHAuthorizationStatus.Authorized)
+                    {
+                        NSError err;
+                        bool success = PHPhotoLibrary.SharedPhotoLibrary.PerformChangesAndWait(() =>
+                        {
+                            PHAssetCreationRequest.CreationRequestForAsset().AddResource(PHAssetResourceType.Photo, imageAsData, null);
+                        }, out err);
+
+                        if (!success)
+                        {
+                            Debug.WriteLine($"Error occurred while saving photo to 4:3 photo library: {err}");
+                        }
+                        else
+                        {
+                            Debug.WriteLine("4:3 Photo was saved to photo library");
+                        }
+
+                    }
+                    else
+                    {
+                        Debug.WriteLine("Not authorized to save 4:3 photo");
+                    }
+                }
+
                 imageAsData = cropped.AsJPEG();
 
-                var status = await PHPhotoLibrary.RequestAuthorizationAsync();
 
                 if (status == PHAuthorizationStatus.Authorized)
                 {
@@ -308,7 +345,6 @@ namespace PixUl8.iOS.Delegates
             }
             finally
             {
-                image?.Dispose();
             }
 
         }

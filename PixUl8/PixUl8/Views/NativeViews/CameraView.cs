@@ -53,6 +53,85 @@ namespace PixUl8.Views.NativeViews
             });
 
 
+        public static readonly BindableProperty ManualOnProperty = BindableProperty.Create(
+            propertyName: "ManualOn",
+            returnType: typeof(bool),
+            declaringType: typeof(bool),
+            defaultValue: false,
+            defaultBindingMode: BindingMode.TwoWay,
+            propertyChanged: (bindable, oldValue, newValue) => {
+                var view = (CameraView)bindable;
+                view.ManualOn = (bool)newValue;
+            });
+
+        public static readonly BindableProperty GrayscaleOnProperty = BindableProperty.Create(
+            propertyName: "GrayscaleOn",
+            returnType: typeof(bool),
+            declaringType: typeof(bool),
+            defaultValue: false,
+            defaultBindingMode: BindingMode.TwoWay,
+            propertyChanged: (bindable, oldValue, newValue) => {
+                var view = (CameraView)bindable;
+                view.GrayscaleOn = (bool)newValue;
+            });
+
+
+        public static readonly BindableProperty is43OnProperty = BindableProperty.Create(
+            propertyName: "is43On",
+            returnType: typeof(bool),
+            declaringType: typeof(bool),
+            defaultValue: false,
+            defaultBindingMode: BindingMode.TwoWay,
+            propertyChanged: (bindable, oldValue, newValue) => {
+                var view = (CameraView)bindable;
+                view.is43On = (bool)newValue;
+            });
+
+        public static readonly BindableProperty is3DOnProperty = BindableProperty.Create(
+            propertyName: "is3DOn",
+            returnType: typeof(bool),
+            declaringType: typeof(bool),
+            defaultValue: false,
+            defaultBindingMode: BindingMode.TwoWay,
+            propertyChanged: (bindable, oldValue, newValue) => {
+                var view = (CameraView)bindable;
+                view.is3DOn = (bool)newValue;
+            });
+
+        public static readonly BindableProperty ExposureProperty = BindableProperty.Create(
+            propertyName: "Exposure",
+            returnType: typeof(int),
+            declaringType: typeof(int),
+            defaultValue: 0,
+            defaultBindingMode: BindingMode.TwoWay,
+            propertyChanged: (bindable, oldValue, newValue) => {
+                var view = (CameraView)bindable;
+                view.Exposure = (int)newValue;
+            });
+
+        public static readonly BindableProperty ISOProperty = BindableProperty.Create(
+            propertyName: "ISO",
+            returnType: typeof(int),
+            declaringType: typeof(int),
+            defaultValue: 0,
+            defaultBindingMode: BindingMode.TwoWay,
+            propertyChanged: (bindable, oldValue, newValue) => {
+                var view = (CameraView)bindable;
+                view.ISO = (int)newValue;
+            });
+
+        public static readonly BindableProperty BalanceProperty = BindableProperty.Create(
+            propertyName: "Balance",
+            returnType: typeof(int),
+            declaringType: typeof(int),
+            defaultValue: 0,
+            defaultBindingMode: BindingMode.TwoWay,
+            propertyChanged: (bindable, oldValue, newValue) => {
+                var view = (CameraView)bindable;
+                view.Balance = (int)newValue;
+            });
+
+
 
         public CameraOptions Camera {
             get { return (CameraOptions)GetValue (CameraProperty); }
@@ -74,6 +153,48 @@ namespace PixUl8.Views.NativeViews
         {
             get { return (bool)GetValue(FlashOnProperty); }
             set { SetValue(FlashOnProperty, value); }
+        }
+
+        public bool ManualOn
+        {
+            get { return (bool)GetValue(ManualOnProperty); }
+            set { SetValue(ManualOnProperty, value); }
+        }
+
+        public bool GrayscaleOn
+        {
+            get { return (bool)GetValue(GrayscaleOnProperty); }
+            set { SetValue(GrayscaleOnProperty, value); }
+        }
+
+        public bool is43On
+        {
+            get { return (bool)GetValue(is43OnProperty); }
+            set { SetValue(is43OnProperty, value); }
+        }
+
+        public bool is3DOn
+        {
+            get { return (bool)GetValue(is3DOnProperty); }
+            set { SetValue(is3DOnProperty, value); }
+        }
+
+        public int Exposure
+        {
+            get { return (int)GetValue(ExposureProperty); }
+            set { SetValue(ExposureProperty, value); }
+        }
+
+        public int ISO
+        {
+            get { return (int)GetValue(ISOProperty); }
+            set { SetValue(ExposureProperty, value); }
+        }
+
+        public int Balance
+        {
+            get { return (int)GetValue(BalanceProperty); }
+            set { SetValue(BalanceProperty, value); }
         }
 
 

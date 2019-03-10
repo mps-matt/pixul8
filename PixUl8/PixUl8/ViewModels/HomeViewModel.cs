@@ -38,10 +38,6 @@ namespace PixUl8.ViewModels
                 await ToggleMenuAsync();
             });
 
-
-            //Read in saved switch info
-            is3DEnabled = _settingsService.Is3DEnabled;
-            is43Enabled = _settingsService.Is43Enabled;
         }
 
 
@@ -222,6 +218,14 @@ namespace PixUl8.ViewModels
         public async Task ToggleMenuAsync()
         {
             Page.ShowMenu();
+        }
+
+        public void Appeared()
+        {
+            //Read in saved switch info
+            is3DEnabled = _settingsService.Is3DEnabled;
+            is43Enabled = _settingsService.Is43Enabled;
+
         }
 
 

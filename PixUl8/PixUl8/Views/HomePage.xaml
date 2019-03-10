@@ -32,6 +32,13 @@
                                             FlashOn="{Binding IsFlashActive}"
                                             Activated="{Binding IsBackFacingActive}"
                                             HdrEnabled="{Binding IsHDRActive}"
+                                            ManualOn="{Binding ManualControlsEnabled}"
+                                            GrayscaleOn="{Binding GrayScaleEnabled}"
+                                            is43On="{Binding is43Enabled}"
+                                            is3DOn="{Binding is3DEnabled}"
+                                            Exposure="{Binding ExposurePercentage}"
+                                            ISO="{Binding ISOPercentage}"
+                                            Balance="{Binding BalancePercentage}"
                                             HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
                     
 <!--                    Turn on HDR left-->
@@ -183,6 +190,13 @@
                                                 FlashOn="{Binding IsFlashActive}"
                                                 HdrEnabled="{Binding IsHDRActive}"
                                                 Activated="{Binding IsFrontFacingActive}"
+                                                ManualOn="{Binding ManualControlsEnabled}"
+                                                GrayscaleOn="{Binding GrayScaleEnabled}"
+                                                is43On="{Binding is43Enabled}"
+                                                is3DOn="{Binding is3DEnabled}"
+                                                Exposure="{Binding ExposurePercentage}"
+                                                ISO="{Binding ISOPercentage}"
+                                                Balance="{Binding BalancePercentage}"
                                                 HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
                         
                     

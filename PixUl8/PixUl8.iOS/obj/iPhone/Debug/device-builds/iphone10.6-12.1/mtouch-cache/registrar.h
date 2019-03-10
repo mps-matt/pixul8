@@ -8,17 +8,19 @@
 #include <objc/message.h>
 #import <Foundation/Foundation.h>
 #import <UserNotifications/UserNotifications.h>
-#import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
 #import <WebKit/WebKit.h>
 #import <Photos/Photos.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <CoreSpotlight/CoreSpotlight.h>
+#import <CoreImage/CoreImage.h>
 #import <QuartzCore/QuartzCore.h>
 #import <CoreGraphics/CoreGraphics.h>
 
 @class UNUserNotificationCenterDelegate;
+@class AVCaptureVideoDataOutputSampleBufferDelegate;
 @class UIApplicationDelegate;
 @class AVCapturePhotoCaptureDelegate;
 @class UIScrollViewDelegate;
@@ -40,8 +42,10 @@
 @class __MonoMac_NSAsyncActionDispatcher;
 @class __MonoMac_NSAsyncSynchronizationContextDispatcher;
 @class PixUl8_iOS_Delegates_UserNotificationCenterDelegate;
+@class PixUl8_iOS_Delegates_FrameOutputDelegate;
 @class PixUl8_iOS_UIViews_CircleZoomPercentage;
 @class PixUl8_iOS_UIViews_SwipeButton;
+@class PixUl8_iOS_UIViews_TakeImageButton;
 @class Xamarin_Forms_Platform_iOS_VisualElementRenderer_1;
 @class Xamarin_Forms_Platform_iOS_ViewRenderer_2;
 @class PixUl8_iOS_CustomRenderers_CameraFeedPreviewRenderer;
@@ -162,6 +166,11 @@
 	-(id) init;
 @end
 
+@interface AVCaptureVideoDataOutputSampleBufferDelegate : NSObject<AVCaptureVideoDataOutputSampleBufferDelegate> {
+}
+	-(id) init;
+@end
+
 @interface UIApplicationDelegate : NSObject<UIApplicationDelegate> {
 }
 	-(id) init;
@@ -229,6 +238,16 @@
 	-(id) init;
 @end
 
+@interface PixUl8_iOS_Delegates_FrameOutputDelegate : NSObject<AVCaptureVideoDataOutputSampleBufferDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) captureOutput:(AVCaptureOutput *)p0 didOutputSampleBuffer:(id)p1 fromConnection:(AVCaptureConnection *)p2;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
 @interface PixUl8_iOS_UIViews_CircleZoomPercentage : UIView {
 }
 	-(void) release;
@@ -248,6 +267,16 @@
 	-(void) touchesEnded:(NSSet *)p0 withEvent:(UIEvent *)p1;
 	-(BOOL) conformsToProtocol:(void *)p0;
 	-(id) init;
+@end
+
+@interface PixUl8_iOS_UIViews_TakeImageButton : UIButton {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) drawRect:(CGRect)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 
 @interface Xamarin_Forms_Platform_iOS_VisualElementRenderer_1 : UIView {
