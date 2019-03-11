@@ -389,13 +389,13 @@ namespace PixUl8.iOS.UIViews
             CaptureSession.SessionPreset = AVCaptureSession.PresetPhoto;
 
 
-            _previewLayer = new AVCaptureVideoPreviewLayer(CaptureSession)
+            _previewLayer = new AVCaptureVideoPreviewLayer()
             {
                 VideoGravity = AVLayerVideoGravity.ResizeAspectFill,
                 DrawsAsynchronously = true,
                 Speed = 1,
             };
-
+            //_videoView = new UIImageView();
 
             var deviceSession = AVCaptureDeviceDiscoverySession.Create(allTypes, AVMediaType.Video,
                 (_cameraOptions == CameraOptions.Front) ? AVCaptureDevicePosition.Front : AVCaptureDevicePosition.Back);
@@ -480,7 +480,7 @@ namespace PixUl8.iOS.UIViews
                 AVMetadataObjectType.UPCECode | AVMetadataObjectType.Face;
 
             Layer.AddSublayer(_previewLayer);
-            //Layer.AddSublayer(_videoView.Layer);
+            //this.AddSubview(_videoView);
 
             //Subscribe to the volume change event, to abstract it ouf of here
             MessagingCenter.Subscribe<AppDelegate>(this, "VolumeChange", async (de) => { await TakePhotoAsync(); });
