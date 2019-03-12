@@ -19,19 +19,19 @@
         <Switch IsToggled="{Binding ManualControlsEnabled}" x:Name="controlsSwitch" Grid.Column="3" Grid.ColumnSpan="2" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
         
         <Label Text="Exposure" Grid.ColumnSpan="2" Font="Bold" Grid.Row="1" XAlign="End" YAlign="Center" TextColor="White"/>
-        <Label Text="Min" FontSize="12" Grid.Column="2" Grid.Row="1" XAlign="Center" YAlign="Center" TextColor="White"/>
+        <Label Text="Dark" FontSize="12" Grid.Column="2" Grid.Row="1" XAlign="Center" YAlign="Center" TextColor="White"/>
         <Slider Value="{Binding ExposurePercentage}" IsEnabled="{Binding ManualControlsEnabled}" x:Name="exposureSlider" Maximum="100" Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="1" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
-        <Label Text="Max" FontSize="12" Grid.Column="4" Grid.Row="1" XAlign="Center" YAlign="Center" TextColor="White"/>
+        <Label Text="Light" FontSize="12" Grid.Column="4" Grid.Row="1" XAlign="Center" YAlign="Center" TextColor="White"/>
         
         <Label Text="Focus" Grid.ColumnSpan="2" Font="Bold" Grid.Row="2" XAlign="End" YAlign="Center" TextColor="White"/>
-        <Label Text="Min" FontSize="12" Grid.Column="2" Grid.Row="2" XAlign="Center" YAlign="Center" TextColor="White"/>
+        <Label Text="Near" FontSize="12" Grid.Column="2" Grid.Row="2" XAlign="Center" YAlign="Center" TextColor="White"/>
         <Slider Value="{Binding FocusPercentage}" IsEnabled="{Binding ManualControlsEnabled}" x:Name="focusSlider" Maximum="100" Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="2" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
-        <Label Text="Max" FontSize="12" Grid.Column="4" Grid.Row="2" XAlign="Center" YAlign="Center" TextColor="White"/>
+        <Label Text="Far" FontSize="12" Grid.Column="4" Grid.Row="2" XAlign="Center" YAlign="Center" TextColor="White"/>
         
-        <Label Text="Color Temperature" Grid.ColumnSpan="2" Font="Bold" Grid.Row="3" XAlign="End" YAlign="Center" TextColor="White"/>
-        <Label Text="Min" FontSize="12" Grid.Column="2" Grid.Row="3" XAlign="Center" YAlign="Center" TextColor="White"/>
+        <Label Text="Temperature" Grid.ColumnSpan="2" Font="Bold" Grid.Row="3" XAlign="End" YAlign="Center" TextColor="White"/>
+        <Label Text="Cold" FontSize="12" Grid.Column="2" Grid.Row="3" XAlign="Center" YAlign="Center" TextColor="White"/>
         <Slider Value="{Binding BalancePercentage}" IsEnabled="{Binding ManualControlsEnabled}" x:Name="balanceSlider" Maximum="100" Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="3" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
-        <Label Text="Max" FontSize="12" Grid.Column="4" Grid.Row="3" XAlign="Center" YAlign="Center" TextColor="White"/>
+        <Label Text="Warm" FontSize="12" Grid.Column="4" Grid.Row="3" XAlign="Center" YAlign="Center" TextColor="White"/>
         
         <Label Text="Save 4:3" Font="Bold" Grid.Row="4" Grid.ColumnSpan="2" XAlign="Center" YAlign="Center" TextColor="White" />
         <Switch IsToggled="{Binding is43Enabled}" x:Name="the43switch" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="4" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />

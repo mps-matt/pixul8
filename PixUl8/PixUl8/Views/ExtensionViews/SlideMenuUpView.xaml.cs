@@ -25,6 +25,7 @@ namespace PixUl8.Views.ExtensionViews
 
             IsFullScreen = true;
             HeightRequest = 390;
+
         }
     }
 }

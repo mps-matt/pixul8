@@ -244,7 +244,7 @@ namespace PixUl8.iOS.UIViews
                     NSError err;
                     _device.LockForConfiguration(out err);
 
-                    var min = 0f;
+                    var min = 2000f;
                     var max = 10000f;
 
                     var dif = max - min;
