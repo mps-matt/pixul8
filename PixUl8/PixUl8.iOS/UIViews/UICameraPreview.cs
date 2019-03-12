@@ -63,8 +63,6 @@ namespace PixUl8.iOS.UIViews
         private FocusWheel _focusWheel;
         private TakeImageButton _takeImageButton;
 
-        private UIImageView _videoView;
-
         private CALayer _detectionOverlayLayer;
         private CAShapeLayer _detectedFaceRectangleShapeLayer;
         private CAShapeLayer _detectedFaceLandmarksShapeLayer;
@@ -129,6 +127,12 @@ namespace PixUl8.iOS.UIViews
             set
             {
                 _manualOn = value;
+                if (_manualOn)
+                {
+                    LockCameraOptics();
+                }
+                else
+                    ResetCameraOptics();
             }
         }
 
@@ -168,34 +172,96 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
-        private int _exposure = 0;
+        private float _exposureBias;
+        private int _exposure = 50;
         public int Exposure
         {
             get { return _exposure; }
             set
             {
                 _exposure = value;
+
+                if (ManualOn)
+                {
+                    try
+                    {
+                        var min = _device.MinExposureTargetBias;
+                        var max = _device.MaxExposureTargetBias;
+
+                        var dif = max - min;
+                        var increase = dif * (_exposure / (float)100);
+
+                        _exposureBias = min + increase;
+
+                        NSError err;
+                        _device.LockForConfiguration(out err);
+                        _device.SetExposureTargetBias(_exposureBias, null);
+                        _device.UnlockForConfiguration();
+                    }
+                    catch (Exception e)
+                    {
+                    }
+                }
             }
         }
 
-
-        private int _iso = 0;
-        public int Iso
+        private int _focus = 50;
+        public int Focus
         {
-            get { return _iso; }
+            get { return _focus; }
             set
             {
-                _iso = value;
+                _focus = value;
+
+                try
+                {
+                    if (ManualOn)
+                    {
+                        NSError err;
+                        _device.LockForConfiguration(out err);
+                        var focalLength = _focus / (float)100;
+                        _device.SetFocusModeLocked(focalLength, null);
+                        _device.UnlockForConfiguration();
+                    }
+                }
+                catch (Exception e)
+                {
+                    //Debug.WriteLine($"{_cameraOptions} - Adjusting focus failed");
+                }
             }
         }
 
-        private int _balance = 0;
+        private int _balance = 50;
         public int Balance
         {
             get { return _balance; }
             set
             {
                 _balance = value;
+
+                try
+                {
+                    NSError err;
+                    _device.LockForConfiguration(out err);
+
+                    var min = 0f;
+                    var max = 10000f;
+
+                    var dif = max - min;
+                    var increase = dif * (_balance / (float)100);
+                    var currentTemp = min + increase;
+
+                    var tempAndTint = new AVCaptureWhiteBalanceTemperatureAndTintValues(currentTemp, 0f);
+                    var gains = _device.GetDeviceWhiteBalanceGains(tempAndTint);
+                    var result = NormalizeGains(gains);
+
+                    _device.SetWhiteBalanceModeLockedWithDeviceWhiteBalanceGains(result, null);
+                    _device.UnlockForConfiguration();
+                }
+                catch (Exception e)
+                {
+                    Debug.WriteLine($"{_cameraOptions} - Adjusting White balance");
+                }
             }
         }
 
@@ -248,6 +314,20 @@ namespace PixUl8.iOS.UIViews
             base.Draw(rect);
             _previewLayer.Frame = rect;
             BOUNDS = rect;
+        }
+
+        private AVCaptureWhiteBalanceGains NormalizeGains(AVCaptureWhiteBalanceGains gains)
+        {
+            gains.RedGain = Math.Max(1, gains.RedGain);
+            gains.BlueGain = Math.Max(1, gains.BlueGain);
+            gains.GreenGain = Math.Max(1, gains.GreenGain);
+
+            float maxGain = _device.MaxWhiteBalanceGain;
+            gains.RedGain = Math.Min(maxGain, gains.RedGain);
+            gains.BlueGain = Math.Min(maxGain, gains.BlueGain);
+            gains.GreenGain = Math.Min(maxGain, gains.GreenGain);
+
+            return gains;
         }
 
         public override void TouchesMoved(NSSet touches, UIEvent evt)
@@ -405,20 +485,30 @@ namespace PixUl8.iOS.UIViews
             //Only issue i see happening is iphon 2g only had a rear cameras but let's be real here.
             //This app SHOULD NEVER be ran on an orignal iphone!!
             var videoDevices = deviceSession.Devices;
-            _device = videoDevices[0];
+
+            var devices = videoDevices.Where(d => d.LockingFocusWithCustomLensPositionSupported && d.LockingWhiteBalanceWithCustomDeviceGainsSupported).ToList();
+
+            _device = videoDevices.FirstOrDefault(d => d.LockingFocusWithCustomLensPositionSupported && d.LockingWhiteBalanceWithCustomDeviceGainsSupported);
+            if (_device == null)
+                _device = videoDevices.FirstOrDefault(d => d.LockingWhiteBalanceWithCustomDeviceGainsSupported);
+
+            if (_device == null)
+                _device = videoDevices[0];
 
             if (_device == null)
             {
                 return;
             }
 
+            if (devices.Count > 1)
+                _device = devices[1];
+
 
             NSError lockErr;
             _device.LockForConfiguration(out lockErr);
             #region Set up Device Variables
 
-            //Get the best format for this device - will select format that allows highest MINIMUM FPS possible
-            //Then by the highest resolution possible for highest fps
+            //Debug.WriteLine(_device.LockingFocusWithCustomLensPositionSupported);
 
 
             //Get the frame rates allowed by this format type (whetherr telophoto, treudedepth etc)
@@ -601,6 +691,8 @@ namespace PixUl8.iOS.UIViews
             };
             this.AddGestureRecognizer(swipeUpForMenuGesture);
 
+            _exposureBias = _device.ExposureTargetBias;
+
             #endregion
 
             #endregion
@@ -617,40 +709,45 @@ namespace PixUl8.iOS.UIViews
 
         private void TapToFocus(CGPoint focusPoint)
         {
-            HideBoxes(manualFocus: true);
-            CGRect screenRect = UIScreen.MainScreen.Bounds;
-            var screenWidth = screenRect.Size.Width;
-            var screenHeight = screenRect.Size.Height;
-            double focus_x = (screenWidth - focusPoint.X) / screenWidth;
-            double focus_y = focusPoint.Y / screenHeight;
-
-
-            NSError err;
-            var interestPoint = new CGPoint(focus_x, focus_y);
-            _device.LockForConfiguration(out err);
-
-            if (_device.FocusPointOfInterestSupported)
-                _device.FocusPointOfInterest = interestPoint;
-
-
             if (!ManualOn)
             {
+
+                HideBoxes(manualFocus: true);
+                CGRect screenRect = UIScreen.MainScreen.Bounds;
+                var screenWidth = screenRect.Size.Width;
+                var screenHeight = screenRect.Size.Height;
+                double focus_x = (screenWidth - focusPoint.X) / screenWidth;
+                double focus_y = focusPoint.Y / screenHeight;
+
+
+                NSError err;
+                var interestPoint = new CGPoint(focus_x, focus_y);
+                _device.LockForConfiguration(out err);
+
+                if (_device.FocusPointOfInterestSupported)
+                    _device.FocusPointOfInterest = interestPoint;
+
+
+
                 if (_device.ExposurePointOfInterestSupported)
                     _device.ExposurePointOfInterest = interestPoint;
 
                 if (_device.IsExposureModeSupported(AVCaptureExposureMode.AutoExpose))
                     _device.ExposureMode = AVCaptureExposureMode.AutoExpose;
+
+
+
+                if (_device.IsFocusModeSupported(AVCaptureFocusMode.AutoFocus))
+                    _device.FocusMode = AVCaptureFocusMode.AutoFocus;
+
+                if (_device.IsWhiteBalanceModeSupported(AVCaptureWhiteBalanceMode.AutoWhiteBalance))
+                    _device.WhiteBalanceMode = AVCaptureWhiteBalanceMode.AutoWhiteBalance;
+
+
+                _device.UnlockForConfiguration();
+
+                _focusWheel.ShowAt(focusPoint.X, focusPoint.Y, completionHandler: () => { ResetCameraOptics(); });
             }
-
-
-            if (_device.IsFocusModeSupported(AVCaptureFocusMode.AutoFocus))
-                _device.FocusMode = AVCaptureFocusMode.AutoFocus;
-
-
-
-            _device.UnlockForConfiguration();
-
-            _focusWheel.ShowAt(focusPoint.X, focusPoint.Y, completionHandler: () => { ResetCameraOptics(); });
         }
 
         private void ResetCameraOptics()
@@ -658,11 +755,56 @@ namespace PixUl8.iOS.UIViews
             NSError err;
             _device.LockForConfiguration(out err);
 
-            if (_device.IsExposureModeSupported(AVCaptureExposureMode.ContinuousAutoExposure))
-                _device.ExposureMode = AVCaptureExposureMode.ContinuousAutoExposure;
 
-            if (_device.IsFocusModeSupported(AVCaptureFocusMode.ContinuousAutoFocus))
-                _device.FocusMode = AVCaptureFocusMode.ContinuousAutoFocus;
+            if (!ManualOn)
+            {
+                if (_device.IsExposureModeSupported(AVCaptureExposureMode.ContinuousAutoExposure))
+                    _device.ExposureMode = AVCaptureExposureMode.ContinuousAutoExposure;
+                else if (_device.IsExposureModeSupported(AVCaptureExposureMode.AutoExpose))
+                {
+                    _device.ExposureMode = AVCaptureExposureMode.AutoExpose;
+                }
+
+                _device.SetExposureTargetBias(0, null);
+
+                if (_device.IsFocusModeSupported(AVCaptureFocusMode.ContinuousAutoFocus))
+                    _device.FocusMode = AVCaptureFocusMode.ContinuousAutoFocus;
+                else if (_device.IsFocusModeSupported(AVCaptureFocusMode.AutoFocus))
+                    _device.FocusMode = AVCaptureFocusMode.AutoFocus;
+
+                if (_device.IsWhiteBalanceModeSupported(AVCaptureWhiteBalanceMode.ContinuousAutoWhiteBalance))
+                    _device.WhiteBalanceMode = AVCaptureWhiteBalanceMode.ContinuousAutoWhiteBalance;
+                else if (_device.IsWhiteBalanceModeSupported(AVCaptureWhiteBalanceMode.AutoWhiteBalance))
+                    _device.WhiteBalanceMode = AVCaptureWhiteBalanceMode.AutoWhiteBalance;
+            }
+
+            UnhideBoxes();
+            _device.UnlockForConfiguration();
+        }
+
+        private void LockCameraOptics()
+        {
+            NSError err;
+            _device.LockForConfiguration(out err);
+
+            if (_device.IsExposureModeSupported(AVCaptureExposureMode.Locked))
+                _device.ExposureMode = AVCaptureExposureMode.Locked;
+
+
+            if (_device.IsFocusModeSupported(AVCaptureFocusMode.Locked))
+                _device.FocusMode = AVCaptureFocusMode.Locked;
+
+            if (_device.IsWhiteBalanceModeSupported(AVCaptureWhiteBalanceMode.Locked))
+                _device.WhiteBalanceMode = AVCaptureWhiteBalanceMode.Locked;
+
+
+            Focus = Focus;
+            Balance = Balance;
+            Task.Run(async () =>
+            {
+                await Task.Delay(150);
+                Exposure = Exposure;
+            });
 
             UnhideBoxes();
             _device.UnlockForConfiguration();
@@ -772,8 +914,16 @@ namespace PixUl8.iOS.UIViews
             {
                 foreach (var exposureValue in exposureValues)
                 {
+                    var target = _device.ExposureTargetBias + exposureValue;
+
+                    if (_device.MinExposureTargetBias > target)
+                        target = _device.MinExposureTargetBias;
+                    else if (_device.MaxExposureTargetBias < target)
+                        target = _device.MaxExposureTargetBias;
+
+
                     exposureSettings.Add(AVCaptureAutoExposureBracketedStillImageSettings
-                        .Create(_device.ExposureTargetBias + exposureValue)
+                        .Create(target)
                     );
                 }
 
@@ -821,8 +971,11 @@ namespace PixUl8.iOS.UIViews
                 {
                     if (m is AVMetadataFaceObject)
                     {
-                        var face = (AVMetadataFaceObject)m;
-                        faces.Add(face);
+                        if (!ManualOn)
+                        {
+                            var face = (AVMetadataFaceObject)m;
+                            faces.Add(face);
+                        }
                     }
                     else
                     {
@@ -854,6 +1007,10 @@ namespace PixUl8.iOS.UIViews
                     Task.Run(() => StartHideTask(tokenSource.Token));
 
                 }
+            }
+            catch (Exception e)
+            {
+
             }
             finally
             {
@@ -994,21 +1151,26 @@ namespace PixUl8.iOS.UIViews
                         NSError err;
                         _device.LockForConfiguration(out err);
 
-                        if (_device.FocusPointOfInterestSupported)
-                            _device.FocusPointOfInterest = first.Bounds.Location;
-
-
                         if (!ManualOn)
                         {
+                            if (_device.FocusPointOfInterestSupported)
+                                _device.FocusPointOfInterest = first.Bounds.Location;
+                                
+
                             if (_device.ExposurePointOfInterestSupported)
                                 _device.ExposurePointOfInterest = first.Bounds.Location;
 
                             if (_device.IsExposureModeSupported(AVCaptureExposureMode.AutoExpose))
                                 _device.ExposureMode = AVCaptureExposureMode.AutoExpose;
+
+
+                            if (_device.IsFocusModeSupported(AVCaptureFocusMode.AutoFocus))
+                                _device.FocusMode = AVCaptureFocusMode.AutoFocus;
+
+                            if (_device.IsWhiteBalanceModeSupported(AVCaptureWhiteBalanceMode.AutoWhiteBalance))
+                                _device.WhiteBalanceMode = AVCaptureWhiteBalanceMode.AutoWhiteBalance;
                         }
 
-                        if (_device.IsFocusModeSupported(AVCaptureFocusMode.AutoFocus))
-                            _device.FocusMode = AVCaptureFocusMode.AutoFocus;
 
                         _device.UnlockForConfiguration();
                     }

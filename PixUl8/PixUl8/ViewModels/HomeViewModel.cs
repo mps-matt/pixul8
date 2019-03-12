@@ -138,7 +138,7 @@ namespace PixUl8.ViewModels
             }
         }
 
-        private int _exposurePercentage = 0;
+        private int _exposurePercentage = 50;
         public int ExposurePercentage
         {
             get { return _exposurePercentage; }
@@ -148,17 +148,17 @@ namespace PixUl8.ViewModels
             }
         }
 
-        private int _isoPercentage = 0;
-        public int ISOPercentage
+        private int _focusPercentage = 50;
+        public int FocusPercentage
         {
-            get { return _isoPercentage; }
+            get { return _focusPercentage; }
             set
             {
-                SetProperty(ref _isoPercentage, value);
+                SetProperty(ref _focusPercentage, value);
             }
         }
 
-        private int _balancePercentage = 0;
+        private int _balancePercentage = 50;
         public int BalancePercentage
         {
             get { return _balancePercentage; }

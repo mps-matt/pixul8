@@ -109,15 +109,15 @@ namespace PixUl8.Views.NativeViews
                 view.Exposure = (int)newValue;
             });
 
-        public static readonly BindableProperty ISOProperty = BindableProperty.Create(
-            propertyName: "ISO",
+        public static readonly BindableProperty FocusProperty = BindableProperty.Create(
+            propertyName: "Focus",
             returnType: typeof(int),
             declaringType: typeof(int),
             defaultValue: 0,
             defaultBindingMode: BindingMode.TwoWay,
             propertyChanged: (bindable, oldValue, newValue) => {
                 var view = (CameraView)bindable;
-                view.ISO = (int)newValue;
+                view.Focus = (int)newValue;
             });
 
         public static readonly BindableProperty BalanceProperty = BindableProperty.Create(
@@ -185,10 +185,10 @@ namespace PixUl8.Views.NativeViews
             set { SetValue(ExposureProperty, value); }
         }
 
-        public int ISO
+        public int Focus
         {
-            get { return (int)GetValue(ISOProperty); }
-            set { SetValue(ISOProperty, value); }
+            get { return (int)GetValue(FocusProperty); }
+            set { SetValue(FocusProperty, value); }
         }
 
         public int Balance

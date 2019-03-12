@@ -64,9 +64,9 @@ namespace PixUl8.iOS.CustomRenderers
                     uiCameraPreview.Exposure = exp;
                     break;
 
-                case nameof(CameraView.ISO):
-                    int iso = (Element as CameraView).ISO;
-                    uiCameraPreview.Iso = iso;
+                case nameof(CameraView.Focus):
+                    int focus = (Element as CameraView).Focus;
+                    uiCameraPreview.Focus = focus;
                     break;
 
                 case nameof(CameraView.Balance):

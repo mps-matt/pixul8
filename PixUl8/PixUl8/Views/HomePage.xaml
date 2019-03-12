@@ -37,7 +37,7 @@
                                             is43On="{Binding is43Enabled}"
                                             is3DOn="{Binding is3DEnabled}"
                                             Exposure="{Binding ExposurePercentage}"
-                                            ISO="{Binding ISOPercentage}"
+                                            Focus="{Binding FocusPercentage}"
                                             Balance="{Binding BalancePercentage}"
                                             HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
                     
@@ -195,7 +195,7 @@
                                                 is43On="{Binding is43Enabled}"
                                                 is3DOn="{Binding is3DEnabled}"
                                                 Exposure="{Binding ExposurePercentage}"
-                                                ISO="{Binding ISOPercentage}"
+                                                Focus="{Binding FocusPercentage}"
                                                 Balance="{Binding BalancePercentage}"
                                                 HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
                         

@@ -1,13 +1,9 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8/Views/NativeViews/CameraView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8/Views/ExtensionViews/SlideMenuUpView.xaml">
     <Files>
-      <File FileName="PixUl8/PixUl8/ViewModels/HomeViewModel.cs" Line="227" Column="56" />
-      <File FileName="PixUl8/PixUl8.iOS/Delegates/HDRPhotoCaptureDelegate.cs" Line="222" Column="7" />
-      <File FileName="PixUl8/PixUl8.iOS/Delegates/PhotoCaptureDelegate.cs" Line="195" Column="26" />
-      <File FileName="PixUl8/PixUl8.iOS/Delegates/FrameOutputDelegate.cs" Line="43" Column="38" />
-      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="396" Column="27" />
-      <File FileName="PixUl8/PixUl8/Views/ExtensionViews/SlideMenuUpView.xaml" Line="39" Column="67" />
-      <File FileName="PixUl8/PixUl8/Views/NativeViews/CameraView.cs" Line="1" Column="1" />
+      <File FileName="PixUl8/PixUl8/ViewModels/HomeViewModel.cs" Line="161" Column="45" />
+      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="254" Column="36" />
+      <File FileName="PixUl8/PixUl8/Views/ExtensionViews/SlideMenuUpView.xaml" Line="43" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.594cc34fe22a6ae2a5ef467001700a60305909ef" />
