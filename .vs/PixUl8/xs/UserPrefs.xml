@@ -1,18 +1,19 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/Delegates/PhotoCaptureDelegate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8/Views/NativeViews/CameraView.cs">
     <Files>
       <File FileName="PixUl8/PixUl8/ViewModels/HomeViewModel.cs" Line="227" Column="56" />
       <File FileName="PixUl8/PixUl8.iOS/Delegates/HDRPhotoCaptureDelegate.cs" Line="222" Column="7" />
-      <File FileName="PixUl8/PixUl8.iOS/Delegates/PhotoCaptureDelegate.cs" Line="176" Column="1" />
-      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="397" Column="15" />
-      <File FileName="PixUl8/PixUl8.iOS/Delegates/FrameOutputDelegate.cs" Line="40" Column="46" />
-      <File FileName="PixUl8/PixUl8.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="PixUl8/PixUl8.iOS/Delegates/PhotoCaptureDelegate.cs" Line="195" Column="26" />
+      <File FileName="PixUl8/PixUl8.iOS/Delegates/FrameOutputDelegate.cs" Line="43" Column="38" />
+      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="396" Column="27" />
+      <File FileName="PixUl8/PixUl8/Views/ExtensionViews/SlideMenuUpView.xaml" Line="39" Column="67" />
+      <File FileName="PixUl8/PixUl8/Views/NativeViews/CameraView.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8F26E343-5B98-43A5-ADA7-D6CBE05F5DB9" />
+  <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.594cc34fe22a6ae2a5ef467001700a60305909ef" />
   <MonoDevelop.Ide.ItemProperties.PixUl8 HideGettingStarted="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

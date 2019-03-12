@@ -33,15 +33,11 @@
         <Slider Value="{Binding BalancePercentage}" x:Name="balanceSlider" Maximum="100" Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="3" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
         <Label Text="Max" FontSize="12" Grid.Column="4" Grid.Row="3" XAlign="Center" YAlign="Center" TextColor="White"/>
         
+        <Label Text="Save 4:3" Font="Bold" Grid.Row="4" Grid.ColumnSpan="2" XAlign="Center" YAlign="Center" TextColor="White" />
+        <Switch IsToggled="{Binding is43Enabled}" x:Name="the43switch" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="4" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
         
-        <Label Text="GrayScale" Font="Bold" Grid.Row="4" Grid.ColumnSpan="4" XAlign="Center" YAlign="Center" TextColor="White" />
-        <Switch IsToggled="{Binding GrayScaleEnabled}" x:Name="grayscaleSwitch" Grid.Column="3" Grid.Row="4" Grid.ColumnSpan="2" HorizontalOptions="Start" VerticalOptions="Center" />
-        
-        <Label Text="Save 4:3" Font="Bold" Grid.Row="5" Grid.ColumnSpan="2" XAlign="Center" YAlign="Center" TextColor="White" />
-        <Switch IsToggled="{Binding is43Enabled}" x:Name="the43switch" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="5" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
-        
-        <Label Text="3D Touch Capture" Grid.Column="2" Grid.Row="5" Font="Bold" Grid.ColumnSpan="2" XAlign="Center" YAlign="Center" TextColor="White" />
-        <Switch IsToggled="{Binding is3DEnabled}" x:Name="the3dswitch" Grid.Column="3" Grid.Row="5" Grid.ColumnSpan="2" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
+        <Label Text="3D Touch Capture" Grid.Column="2" Grid.Row="4" Font="Bold" Grid.ColumnSpan="2" XAlign="Center" YAlign="Center" TextColor="White" />
+        <Switch IsToggled="{Binding is3DEnabled}" x:Name="the3dswitch" Grid.Column="3" Grid.Row="4" Grid.ColumnSpan="2" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
         
     </Grid>
 </t:SlideMenuView >

@@ -389,7 +389,7 @@ namespace PixUl8.iOS.UIViews
             CaptureSession.SessionPreset = AVCaptureSession.PresetPhoto;
 
 
-            _previewLayer = new AVCaptureVideoPreviewLayer()
+            _previewLayer = new AVCaptureVideoPreviewLayer(CaptureSession)
             {
                 VideoGravity = AVLayerVideoGravity.ResizeAspectFill,
                 DrawsAsynchronously = true,

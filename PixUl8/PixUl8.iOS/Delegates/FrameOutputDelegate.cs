@@ -29,29 +29,29 @@ namespace PixUl8.iOS.Delegates
 
             try 
             {
-                Debug.WriteLine("HIT");
+                //Debug.WriteLine("HIT");
         
-                // Do something with the buffer
-                using (var pixelBuffer = sampleBuffer.GetImageBuffer())
-                {
+                //// Do something with the buffer
+                //using (var pixelBuffer = sampleBuffer.GetImageBuffer())
+                //{
 
-                    image = CIImage.FromImageBuffer(pixelBuffer);
+                //    image = CIImage.FromImageBuffer(pixelBuffer);
                     
 
-                    //filter = CIFilter.FromName("CIComicEffect");
-                    //filter.Image = image;
-                    //outImage = filter.OutputImage;
+                //    //filter = CIFilter.FromName("CIComicEffect");
+                //    //filter.Image = image;
+                //    //outImage = filter.OutputImage;
 
 
-                    using (var context = new CIContext())
-                    {
-                        var rect = new CGRect(0, 0, image.Extent.Height, image.Extent.Width);
-                        var cgImage = context.CreateCGImage(image, rect);
-                        var finale = cgImage;
-                        //_layer.Contents = cgImage;
-                        _layer.Contents = finale;
-                    }
-                }
+                //    using (var context = new CIContext())
+                //    {
+                //        var rect = new CGRect(0, 0, image.Extent.Height, image.Extent.Width);
+                //        var cgImage = context.CreateCGImage(image, rect);
+                //        var finale = cgImage;
+                //        //_layer.Contents = cgImage;
+                //        _layer.Contents = finale;
+                //    }
+                //}
 
 
             } 

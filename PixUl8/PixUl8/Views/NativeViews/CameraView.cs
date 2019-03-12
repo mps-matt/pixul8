@@ -188,7 +188,7 @@ namespace PixUl8.Views.NativeViews
         public int ISO
         {
             get { return (int)GetValue(ISOProperty); }
-            set { SetValue(ExposureProperty, value); }
+            set { SetValue(ISOProperty, value); }
         }
 
         public int Balance
