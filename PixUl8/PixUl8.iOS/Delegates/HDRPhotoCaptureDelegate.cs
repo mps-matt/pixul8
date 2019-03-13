@@ -45,6 +45,10 @@ namespace PixUl8.iOS.Delegates
             get; set;
         }
 
+        public bool IsFrontFacing
+        {
+            get; set;
+        }
 
         private static List<UIImage> _imagesInBracket = new List<UIImage>();
         private static List<UIImage> _finishedBracket = new List<UIImage>();

@@ -8,19 +8,17 @@
 #include <objc/message.h>
 #import <Foundation/Foundation.h>
 #import <UserNotifications/UserNotifications.h>
-#import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 #import <GLKit/GLKit.h>
 #import <WebKit/WebKit.h>
 #import <Photos/Photos.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <CoreSpotlight/CoreSpotlight.h>
-#import <CoreImage/CoreImage.h>
 #import <QuartzCore/QuartzCore.h>
 #import <CoreGraphics/CoreGraphics.h>
 
 @class UNUserNotificationCenterDelegate;
-@class AVCaptureVideoDataOutputSampleBufferDelegate;
 @class UIApplicationDelegate;
 @class AVCapturePhotoCaptureDelegate;
 @class UIScrollViewDelegate;
@@ -42,7 +40,6 @@
 @class __MonoMac_NSAsyncActionDispatcher;
 @class __MonoMac_NSAsyncSynchronizationContextDispatcher;
 @class PixUl8_iOS_Delegates_UserNotificationCenterDelegate;
-@class PixUl8_iOS_Delegates_FrameOutputDelegate;
 @class PixUl8_iOS_UIViews_CircleZoomPercentage;
 @class PixUl8_iOS_UIViews_SwipeButton;
 @class PixUl8_iOS_UIViews_TakeImageButton;
@@ -166,11 +163,6 @@
 	-(id) init;
 @end
 
-@interface AVCaptureVideoDataOutputSampleBufferDelegate : NSObject<AVCaptureVideoDataOutputSampleBufferDelegate> {
-}
-	-(id) init;
-@end
-
 @interface UIApplicationDelegate : NSObject<UIApplicationDelegate> {
 }
 	-(id) init;
@@ -236,16 +228,6 @@
 	-(void) userNotificationCenter:(UNUserNotificationCenter *)p0 didReceiveNotificationResponse:(UNNotificationResponse *)p1 withCompletionHandler:(id)p2;
 	-(BOOL) conformsToProtocol:(void *)p0;
 	-(id) init;
-@end
-
-@interface PixUl8_iOS_Delegates_FrameOutputDelegate : NSObject<AVCaptureVideoDataOutputSampleBufferDelegate> {
-}
-	-(void) release;
-	-(id) retain;
-	-(int) xamarinGetGCHandle;
-	-(void) xamarinSetGCHandle: (int) gchandle;
-	-(void) captureOutput:(AVCaptureOutput *)p0 didOutputSampleBuffer:(id)p1 fromConnection:(AVCaptureConnection *)p2;
-	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 
 @interface PixUl8_iOS_UIViews_CircleZoomPercentage : UIView {

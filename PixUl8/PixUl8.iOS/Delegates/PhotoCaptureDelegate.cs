@@ -47,6 +47,11 @@ namespace PixUl8.iOS.Delegates
 
 
 
+        public bool IsFrontFacing
+        {
+            get; set;
+        }
+
         private static List<UIImage> _imagesInBracket = new List<UIImage>();
         private OpenCV _openCV = new OpenCV();
 
@@ -153,13 +158,29 @@ namespace PixUl8.iOS.Delegates
                 switch(orientation)
                 {
                     case UIDeviceOrientation.LandscapeLeft:
-                        uncropped = new UIImage(uncropped.CGImage, 1, UIImageOrientation.Left);
-                        cropped = new UIImage(cropped.CGImage, 1, UIImageOrientation.Left);
+                        if (IsFrontFacing)
+                        {
+                            uncropped = new UIImage(uncropped.CGImage, 1, UIImageOrientation.Down);
+                            cropped = new UIImage(cropped.CGImage, 1, UIImageOrientation.Right);
+                        }
+                        else
+                        {
+                            uncropped = new UIImage(uncropped.CGImage, 1, UIImageOrientation.Left);
+                            cropped = new UIImage(cropped.CGImage, 1, UIImageOrientation.Left);
+                        }
                         break;
 
                     case UIDeviceOrientation.LandscapeRight:
-                        uncropped = new UIImage(uncropped.CGImage, 1, UIImageOrientation.Right);
-                        cropped = new UIImage(cropped.CGImage, 1, UIImageOrientation.Right);
+                        if (IsFrontFacing)
+                        {
+                            uncropped = new UIImage(uncropped.CGImage, 1, UIImageOrientation.Up);
+                            cropped = new UIImage(cropped.CGImage, 1, UIImageOrientation.Left);
+                        }
+                        else
+                        {
+                            uncropped = new UIImage(uncropped.CGImage, 1, UIImageOrientation.Right);
+                            cropped = new UIImage(cropped.CGImage, 1, UIImageOrientation.Right);
+                        }
                         break;
 
                     case UIDeviceOrientation.PortraitUpsideDown:

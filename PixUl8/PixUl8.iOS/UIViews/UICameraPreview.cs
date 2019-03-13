@@ -54,7 +54,6 @@ namespace PixUl8.iOS.UIViews
 
         private AVCapturePhotoOutput _photoOutput;
         private AVCaptureVideoDataOutput _videoOutput;
-        private FrameOutputDelegate _frameDelegate;
         private PhotoCaptureDelegate _imageDelegate;
         private HDRPhotoCaptureDelegate _hdrImageDelegate;
         private bool _forcePressed = false;
@@ -404,6 +403,7 @@ namespace PixUl8.iOS.UIViews
                 for (int i = 1; i <= HDRCAPTURECOUNT; i += 3)
                 {
                     AVCapturePhotoBracketSettings settings = GetCurrentBracketedSettings(i, HDRCAPTURECOUNT);
+                    _hdrImageDelegate.IsFrontFacing = _cameraOptions == CameraOptions.Front;
                     _photoOutput.CapturePhoto(settings, _hdrImageDelegate);
                     settings.Dispose();
                 }
@@ -411,6 +411,7 @@ namespace PixUl8.iOS.UIViews
             else
             {
                 AVCapturePhotoBracketSettings settings = GetCurrentPhotoSettings();
+                _imageDelegate.IsFrontFacing = _cameraOptions == CameraOptions.Front;
                 _photoOutput.CapturePhoto(settings, _imageDelegate);
                 settings.Dispose();
             }
@@ -548,11 +549,6 @@ namespace PixUl8.iOS.UIViews
             _photoOutput.IsHighResolutionCaptureEnabled = true;
 
             CaptureSession.AddOutput(_photoOutput);
-
-            _videoOutput = new AVCaptureVideoDataOutput();
-            _frameDelegate = new FrameOutputDelegate(_previewLayer);
-            _videoOutput.SetSampleBufferDelegateQueue(_frameDelegate, CoreFoundation.DispatchQueue.MainQueue);
-            CaptureSession.AddOutput(_videoOutput);
 
             var metadataoutput = new AVCaptureMetadataOutput();
             metadataoutput.SetDelegate(this, CoreFoundation.DispatchQueue.MainQueue);

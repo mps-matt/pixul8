@@ -83,7 +83,6 @@
     <Compile Include="Delegates\UserNotificationCenterDelegate.cs" />
     <Compile Include="Delegates\HDRPhotoCaptureDelegate.cs" />
     <Compile Include="UIViews\TakeImageButton.cs" />
-    <Compile Include="Delegates\FrameOutputDelegate.cs" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">

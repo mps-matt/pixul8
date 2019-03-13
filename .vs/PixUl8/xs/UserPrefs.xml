@@ -1,17 +1,16 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8/Views/ExtensionViews/SlideMenuUpView.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/Delegates/PhotoCaptureDelegate.cs">
     <Files>
       <File FileName="PixUl8/PixUl8/ViewModels/HomeViewModel.cs" Line="161" Column="45" />
-      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="249" Column="21" />
-      <File FileName="PixUl8/PixUl8/Views/ExtensionViews/SlideMenuUpView.xaml" Line="34" Column="31" />
-      <File FileName="PixUl8/PixUl8.iOS/Delegates/FrameOutputDelegate.cs" Line="25" Column="1" />
-      <File FileName="PixUl8/PixUl8/Views/ExtensionViews/SlideMenuUpView.xaml.cs" Line="29" Column="20" />
+      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="414" Column="45" />
+      <File FileName="PixUl8/PixUl8.iOS/Delegates/PhotoCaptureDelegate.cs" Line="56" Column="47" />
+      <File FileName="PixUl8/PixUl8.iOS/Delegates/HDRPhotoCaptureDelegate.cs" Line="51" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.594cc34fe22a6ae2a5ef467001700a60305909ef" />
+  <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8F26E343-5B98-43A5-ADA7-D6CBE05F5DB9" />
   <MonoDevelop.Ide.ItemProperties.PixUl8 HideGettingStarted="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
