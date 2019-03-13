@@ -1,14 +1,17 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8.OpenCV/ApiDefinition.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8/App.xaml.cs">
     <Files>
       <File FileName="PixUl8/PixUl8/ViewModels/HomeViewModel.cs" Line="15" Column="3" />
       <File FileName="PixUl8/PixUl8/Views/HomePage.xaml" Line="191" Column="42" />
       <File FileName="PixUl8/PixUl8.iOS/Info.plist" />
       <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/iOS/Xamarin.iOS.Common.targets" Line="1333" Column="3" />
-      <File FileName="PixUl8.OpenCV/ApiDefinition.cs" Line="70" Column="9" />
+      <File FileName="PixUl8.OpenCV/ApiDefinition.cs" Line="79" Column="6" />
+      <File FileName="PixUl8/PixUl8.iOS/CustomRenderers/CameraFeedPreviewRenderer.cs" Line="16" Column="6" />
+      <File FileName="PixUl8/PixUl8.iOS/Services/HapticService.cs" Line="7" Column="12" />
+      <File FileName="PixUl8/PixUl8/App.xaml.cs" Line="6" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.594cc34fe22a6ae2a5ef467001700a60305909ef" />
+  <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
   <MonoDevelop.Ide.ItemProperties.PixUl8 HideGettingStarted="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
