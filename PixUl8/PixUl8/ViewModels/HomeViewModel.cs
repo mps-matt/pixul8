@@ -12,6 +12,7 @@ using PixUl8.iOS.UIViews;
 using PixUl8.Interfaces;
 using System.Threading;
 using PixUl8.Views.ExtensionViews;
+//using Acr.UserDialogs;
 
 namespace PixUl8.ViewModels
 {
@@ -224,7 +225,11 @@ namespace PixUl8.ViewModels
         public ICommand HelpCommand { get { return _helpCommand = _helpCommand ?? new Command(async () => await HelpAsync()); } }
         public async Task HelpAsync()
         {
-            Page.ShowMenu();
+            //var toastConfig = new ToastConfig("Toasting...");
+            //toastConfig.SetDuration(3000);
+            //toastConfig.SetBackgroundColor(System.Drawing.Color.FromArgb(12, 131, 193));
+
+            //UserDialogs.Instance.Toast(toastConfig);
         }
 
         public void Appeared()

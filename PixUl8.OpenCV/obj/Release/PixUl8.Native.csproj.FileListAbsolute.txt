@@ -1,0 +1,3 @@
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.OpenCV/bin/Release/PixUl8.OpenCV.dll
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.OpenCV/obj/Release/PixUl8.Native.csproj.CoreCompileInputs.cache
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.OpenCV/obj/Release/PixUl8.OpenCV.dll
