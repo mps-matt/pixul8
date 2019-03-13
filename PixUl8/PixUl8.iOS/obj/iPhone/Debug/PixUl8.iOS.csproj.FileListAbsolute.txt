@@ -128,3 +128,6 @@
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/Plugin.Settings.Abstractions.dll
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/Plugin.Settings.Abstractions.pdb
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/Plugin.Settings.dll
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/optimized/settings.png
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/optimized/newsettings.png
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/optimized/updatedsettings.png

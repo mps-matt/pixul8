@@ -41,130 +41,114 @@
                                             Balance="{Binding BalancePercentage}"
                                             HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
                     
+                    <Label 
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        TextColor="White"
+                        Text="?"
+                        
+                        Margin="35, 35, 0, 0"
+                        Font="50"
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start"
+                    >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding HelpCommand}" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    
+                    
 <!--                    Turn on HDR left-->
-                    <Button
+                    <Label
                         x:Name="HDROnLeft1"
                         Grid.Row="0"
                         InputTransparent="true"
                         Grid.Column="0"
                         IsVisible="{Binding IsHDRNotActive}"
-                        BorderColor="White"
-                        BorderWidth="5"
-                        BorderRadius="10"
-                        Margin="-12, 0, 30, 40"
+                        Margin="6, 0, 30, 40"
                         HeightRequest="100"
-                        WidthRequest="20"
+                        WidthRequest="5"
                         HorizontalOptions="Start"
                         VerticalOptions="End"
                         BackgroundColor="White"
-                        TextColor="Maroon"
-                        Text="HDR ON"
-                        FontSize="Small"
                     />
                     
 <!--                    Turn off HDR right-->
-                    <Button
+                    <Label
                         x:Name="HDROnRight1"
                         Grid.Row="0"
                         Grid.Column="2"
-                        InputTransparent="true"
-                        BorderColor="White"
                         IsVisible="{Binding IsHDRActive}"
-                        BorderWidth="5"
-                        BorderRadius="10"
-                        Margin="30, 0, -10, 40"
+                        Margin="110, 0, -10, 40"
                         HeightRequest="100"
-                        WidthRequest="20"
-                        HorizontalOptions="End"
+                        WidthRequest="5"
+                        HorizontalOptions="Start"
                         VerticalOptions="End"
                         BackgroundColor="White"
-                        TextColor="Maroon"
-                        Text="HDR OFF"
-                        FontSize="Small"
                     />
                     
                     
 <!--                    Turn on FLASH left-->
-                    <Button
+                    <Label
                         x:Name="FlashOnLeft1"
                         Grid.Row="1"
-                        InputTransparent="true"
                         Grid.Column="0"
                         IsVisible="{Binding IsFlashNotActive}"
-                        BorderColor="White"
-                        BorderWidth="5"
-                        BorderRadius="10"
-                        Margin="-12, 0, 30, 250"
+                        Margin="6, 0, 30, 250"
                         HeightRequest="100"
-                        WidthRequest="20"
+                        WidthRequest="5"
                         HorizontalOptions="Start"
                         VerticalOptions="End"
                         BackgroundColor="White"
-                        TextColor="Maroon"
-                        Text="FLASH ON"
-                        FontSize="Small"
-                        Command="{Binding ToggleFlashCommand}"
                     >
-                    <Button.GestureRecognizers>
-                            <SwipeGestureRecognizer Direction="Right" Threshold="2" Command="{Binding ToggleFlashCommand}" CommandParameter=""/>
-                    </Button.GestureRecognizers>
-                    </Button> 
+                    </Label> 
                     
 <!--                    Turn off FLASH right-->
-                    <Button
+                    <Label
                         x:Name="FlashOnRight1"
                         Grid.Row="1"
                         Grid.Column="2"
-                        InputTransparent="true"
-                        BorderColor="White"
                         IsVisible="{Binding IsFlashActive}"
-                        BorderWidth="5"
-                        BorderRadius="10"
-                        Margin="30, 0, -10, 250"
+                        Margin="110, 0, -10, 250"
                         HeightRequest="100"
-                        WidthRequest="20"
-                        HorizontalOptions="End"
-                        VerticalOptions="End"
-                        BackgroundColor="White"
-                        TextColor="Maroon"
-                        Text="FLASH OFF"
-                        FontSize="Small"
-                        Command="{Binding ToggleFlashCommand}"
-                    >
-                    <Button.GestureRecognizers>
-                            <SwipeGestureRecognizer Direction="Left" Threshold="2" Command="{Binding ToggleFlashCommand}" CommandParameter=""/>
-                    </Button.GestureRecognizers>
-                    </Button> 
-                    
-                    
-<!--                    Toggle Camera Position-->
-                    <Button
-                        x:Name="ToggleCamera1"
-                        Grid.Row="1"
-                        Grid.Column="0"
-                        InputTransparent="true"
-                        BorderColor="White"
-                        BorderWidth="5"
-                        BorderRadius="10"
-                        Margin="-12, 0, 30, 50"
-                        HeightRequest="100"
-                        WidthRequest="20"
+                        WidthRequest="5"
                         HorizontalOptions="Start"
                         VerticalOptions="End"
                         BackgroundColor="White"
-                        TextColor="Maroon"
-                        Text="FRONT"
-                        FontSize="Small"
-                        Command="{Binding ToggleCameraPositionCommand}"
                     >
-                    <Button.GestureRecognizers>
-                            <SwipeGestureRecognizer Direction="Right" Threshold="2" Command="{Binding ToggleCameraPositionCommand}" CommandParameter=""/>
-                    </Button.GestureRecognizers>
-                    </Button>  
+                    </Label> 
+                    
+                    
+<!--                    Toggle Camera Position-->
+                    <Label
+                        x:Name="ToggleCamera1"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Margin="6, 0, 30, 50"
+                        HeightRequest="100"
+                        WidthRequest="5"
+                        HorizontalOptions="Start"
+                        VerticalOptions="End"
+                        BackgroundColor="White"
+                    >
+                    </Label>  
                     
                  
                     
-                    
+                   <ImageButton Source="updatedsettings.png"
+                           WidthRequest = "60"
+                            HeightRequest = "60"
+                            MinimumHeightRequest = "60"
+                            MinimumWidthRequest = "60"
+                            Grid.Row="1"
+                            Margin="0, -40, 25, 45"
+                            Grid.Column="2"
+                            VerticalOptions = "End"
+                            HorizontalOptions = "End"
+                            Aspect = "AspectFill"
+                            Command="{Binding ToggleMenuCommand}"
+                           >                       
+                    </ImageButton>   
                   
                         
                     
@@ -198,126 +182,105 @@
                                                 Focus="{Binding FocusPercentage}"
                                                 Balance="{Binding BalancePercentage}"
                                                 HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
-                        
+                     
                     
-<!--                     -                    Turn on HDR left-->
-                    <Button
+                    
+                    <Label 
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        TextColor="White"
+                        Text="?"
+                        
+                        Margin="35, 35, 0, 0"
+                        Font="50"
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start"
+                    >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding HelpCommand}" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    
+                    
+<!--                    Turn on HDR left-->
+                    <Label
                         x:Name="HDROnLeft2"
                         Grid.Row="0"
                         InputTransparent="true"
                         Grid.Column="0"
                         IsVisible="{Binding IsHDRNotActive}"
-                        BorderColor="White"
-                        BorderWidth="5"
-                        BorderRadius="10"
-                        Margin="-12, 0, 30, 40"
+                        Margin="6, 0, 30, 40"
                         HeightRequest="100"
-                        WidthRequest="20"
+                        WidthRequest="5"
                         HorizontalOptions="Start"
                         VerticalOptions="End"
                         BackgroundColor="White"
-                        TextColor="Maroon"
-                        Text="HDR ON"
-                        FontSize="Small"
                     />
                     
 <!--                    Turn off HDR right-->
-                    <Button
+                    <Label
                         x:Name="HDROnRight2"
                         Grid.Row="0"
                         Grid.Column="2"
-                        InputTransparent="true"
-                        BorderColor="White"
                         IsVisible="{Binding IsHDRActive}"
-                        BorderWidth="5"
-                        BorderRadius="10"
-                        Margin="30, 0, -10, 40"
+                        Margin="110, 0, -10, 40"
                         HeightRequest="100"
-                        WidthRequest="20"
-                        HorizontalOptions="End"
-                        VerticalOptions="End"
-                        BackgroundColor="White"
-                        TextColor="Maroon"
-                        Text="HDR OFF"
-                        FontSize="Small"
-                    />
-                    
-<!--                    Turn on FLASH left-->
-                    <Button
-                        x:Name="FlashOnLeft2"
-                        Grid.Row="1"
-                        Grid.Column="0"
-                        InputTransparent="true"
-                        IsVisible="{Binding IsFlashNotActive}"
-                        BorderColor="White"
-                        BorderWidth="5"
-                        BorderRadius="10"
-                        Margin="-12, 0, 30, 250"
-                        HeightRequest="100"
-                        WidthRequest="20"
+                        WidthRequest="5"
                         HorizontalOptions="Start"
                         VerticalOptions="End"
                         BackgroundColor="White"
-                        TextColor="Maroon"
-                        Text="FLASH ON"
-                        FontSize="Small"
-                        Command="{Binding ToggleFlashCommand}"
-                    >
-                    <Button.GestureRecognizers>
-                            <SwipeGestureRecognizer Direction="Right" Threshold="2" Command="{Binding ToggleFlashCommand}" CommandParameter=""/>
-                    </Button.GestureRecognizers>
-                    </Button> 
+                    />
                     
-<!--                    Turn off FLASH right-->
-                    <Button
-                        x:Name="FlashOnRight2"
+                    
+<!--                    Turn on FLASH left-->
+                    <Label
+                        x:Name="FlashOnLeft2"
                         Grid.Row="1"
-                        Grid.Column="2"
-                        BorderColor="White"
-                        InputTransparent="true"
-                        IsVisible="{Binding IsFlashActive}"
-                        BorderWidth="5"
-                        BorderRadius="10"
-                        Margin="30, 0, -10, 250"
+                        Grid.Column="0"
+                        IsVisible="{Binding IsFlashNotActive}"
+                        Margin="6, 0, 30, 250"
                         HeightRequest="100"
-                        WidthRequest="20"
-                        HorizontalOptions="End"
+                        WidthRequest="5"
+                        HorizontalOptions="Start"
                         VerticalOptions="End"
-                        BackgroundColor="White"
-                        TextColor="Maroon"
-                        Text="FLASH OFF"
-                        FontSize="Small"
-                        Command="{Binding ToggleFlashCommand}"
+                        BackgroundColor="DarkGray"
                     >
-                    <Button.GestureRecognizers>
-                            <SwipeGestureRecognizer Direction="Left" Threshold="2" Command="{Binding ToggleFlashCommand}" CommandParameter=""/>
-                    </Button.GestureRecognizers>
-                    </Button> 
+                    </Label> 
+                   
+                    
                     
                     <!--                    Toggle Camera Position-->
-                    <Button
+                    <Label
                         x:Name="ToggleCamera2"
                         Grid.Row="1"
                         Grid.Column="2"
-                        InputTransparent="true"
-                        BorderColor="White"
-                        BorderWidth="5"
-                        BorderRadius="10"
-                        Margin="30, 0, -10, 50"
+                        Margin="80, 0, 7, 50"
                         HeightRequest="100"
-                        WidthRequest="20"
+                        WidthRequest="5"
                         HorizontalOptions="End"
                         VerticalOptions="End"
                         BackgroundColor="White"
-                        TextColor="Maroon"
-                        Text="BACK"
-                        FontSize="Small"
-                        Command="{Binding ToggleCameraPositionCommand}"
                     >
-                    <Button.GestureRecognizers>
-                            <SwipeGestureRecognizer Direction="Left" Threshold="2" Command="{Binding ToggleCameraPositionCommand}" CommandParameter=""/>
-                    </Button.GestureRecognizers>
-                    </Button>                       
+                    </Label>  
+                    
+                    
+                    
+                   <ImageButton Source="updatedsettings.png"
+                           WidthRequest = "60"
+                            HeightRequest = "60"
+                            MinimumHeightRequest = "60"
+                            MinimumWidthRequest = "60"
+                            Grid.Row="1"
+                            Margin="0, -40, 25, 45"
+                            Grid.Column="2"
+                            VerticalOptions = "End"
+                            HorizontalOptions = "End"
+                            Aspect = "AspectFill"
+                            Command="{Binding ToggleMenuCommand}"
+                           >                       
+                    </ImageButton>   
+                    
+                    
                     </Grid>
           </ExtensionViews:XFFlipView.BackView>
             

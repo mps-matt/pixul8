@@ -220,6 +220,13 @@ namespace PixUl8.ViewModels
             Page.ShowMenu();
         }
 
+        private ICommand _helpCommand;
+        public ICommand HelpCommand { get { return _helpCommand = _helpCommand ?? new Command(async () => await HelpAsync()); } }
+        public async Task HelpAsync()
+        {
+            Page.ShowMenu();
+        }
+
         public void Appeared()
         {
             //Read in saved switch info
