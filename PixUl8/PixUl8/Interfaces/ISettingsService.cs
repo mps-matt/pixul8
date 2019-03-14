@@ -5,5 +5,6 @@ namespace PixUl8.Interfaces
     {
         bool Is43Enabled { get; set; }
         bool Is3DEnabled { get; set; }
+        bool StartupAnimation { get; set; }
     }
 }

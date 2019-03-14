@@ -130,6 +130,17 @@ namespace PixUl8.ViewModels
             }
         }
 
+        private bool _startupAnimation = false;
+        public bool StartupAnimation
+        {
+            get { return _startupAnimation; }
+            set
+            {
+                SetProperty(ref _startupAnimation, value);
+                _settingsService.StartupAnimation = value;
+            }
+        }
+
         private bool _3dEnabled = false;
         public bool is3DEnabled
         {
@@ -238,6 +249,7 @@ namespace PixUl8.ViewModels
         public void Appeared()
         {
             //Read in saved switch info
+            StartupAnimation = _settingsService.StartupAnimation;
             is3DEnabled = _settingsService.Is3DEnabled;
             is43Enabled = _settingsService.Is43Enabled;
 

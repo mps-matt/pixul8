@@ -19,9 +19,9 @@
         <Switch IsToggled="{Binding ManualControlsEnabled}" x:Name="controlsSwitch" Grid.Column="3" Grid.ColumnSpan="2" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
         
         <Label Text="Exposure" Grid.ColumnSpan="2" Font="Bold" Grid.Row="1" XAlign="End" YAlign="Center" TextColor="White"/>
-        <Label Text="Dark" FontSize="12" Grid.Column="2" Grid.Row="1" XAlign="Center" YAlign="Center" TextColor="White"/>
+        <Label Text="Low" FontSize="12" Grid.Column="2" Grid.Row="1" XAlign="Center" YAlign="Center" TextColor="White"/>
         <Slider Value="{Binding ExposurePercentage}" IsEnabled="{Binding ManualControlsEnabled}" x:Name="exposureSlider" Maximum="100" Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="1" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
-        <Label Text="Light" FontSize="12" Grid.Column="4" Grid.Row="1" XAlign="Center" YAlign="Center" TextColor="White"/>
+        <Label Text="High" FontSize="12" Grid.Column="4" Grid.Row="1" XAlign="Center" YAlign="Center" TextColor="White"/>
         
         <Label Text="Focus" Grid.ColumnSpan="2" Font="Bold" Grid.Row="2" XAlign="End" YAlign="Center" TextColor="White"/>
         <Label Text="Near" FontSize="12" Grid.Column="2" Grid.Row="2" XAlign="Center" YAlign="Center" TextColor="White"/>
@@ -38,6 +38,10 @@
         
         <Label Text="3D Touch Capture" Grid.Column="2" Grid.Row="4" Font="Bold" Grid.ColumnSpan="2" XAlign="Center" YAlign="Center" TextColor="White" />
         <Switch IsToggled="{Binding is3DEnabled}" x:Name="the3dswitch" Grid.Column="3" Grid.Row="4" Grid.ColumnSpan="2" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
+        
+        <Label Text="Arrow Animation" Grid.Column="1" Grid.Row="5" Font="Bold" Grid.ColumnSpan="2" XAlign="Center" YAlign="Center" TextColor="White" />
+        <Switch IsToggled="{Binding StartupAnimation}" x:Name="arrowAnimation" Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2" HorizontalOptions="End" VerticalOptions="Center" />
+        
         
     </Grid>
 </t:SlideMenuView >

@@ -28,15 +28,124 @@ namespace PixUl8.Views
             this.SlideMenu = new SlideMenuUpView(viewModel);
 
             viewModel.Page = this;
+
+           
+        }
+
+        private bool firstTime = true;
+        private async Task BeginHideAnimationsAsync()
+        {
+            if (!firstTime)
+                return;
+
+            firstTime = false;
+
+
+            if (!viewModel.StartupAnimation)
+            {
+                arrow1.IsVisible = false;
+                arrow2.IsVisible = false;
+                arrow3.IsVisible = false;
+            }
+            else
+            {
+
+                var tasks = new List<Task>();
+
+                #region Fade Out Flash
+
+                tasks.Add(arrow1.FadeTo(0.2));
+                tasks.Add(arrow2.FadeTo(0.2));
+                tasks.Add(arrow3.FadeTo(0.2));
+
+                await Task.WhenAll(tasks);
+                tasks.Clear();
+                #endregion
+
+                #region Fade In Flash
+
+                tasks.Add(arrow1.FadeTo(1));
+                tasks.Add(arrow2.FadeTo(1));
+                tasks.Add(arrow3.FadeTo(1));
+
+                await Task.WhenAll(tasks);
+                tasks.Clear();
+                #endregion
+
+                #region Fade Out Flash
+
+                tasks.Add(arrow1.FadeTo(0.2));
+                tasks.Add(arrow2.FadeTo(0.2));
+                tasks.Add(arrow3.FadeTo(0.2));
+
+                await Task.WhenAll(tasks);
+                tasks.Clear();
+                #endregion
+
+                #region Fade In Flash
+
+                tasks.Add(arrow1.FadeTo(1));
+                tasks.Add(arrow2.FadeTo(1));
+                tasks.Add(arrow3.FadeTo(1));
+
+                await Task.WhenAll(tasks);
+                tasks.Clear();
+                #endregion
+
+                #region Fade Out Flash
+
+                tasks.Add(arrow1.FadeTo(0.2));
+                tasks.Add(arrow2.FadeTo(0.2));
+                tasks.Add(arrow3.FadeTo(0.2));
+
+                await Task.WhenAll(tasks);
+                tasks.Clear();
+                #endregion
+
+                #region Fade In Flash
+
+                tasks.Add(arrow1.FadeTo(1));
+                tasks.Add(arrow2.FadeTo(1));
+                tasks.Add(arrow3.FadeTo(1));
+
+                await Task.WhenAll(tasks);
+                tasks.Clear();
+                #endregion
+
+                #region Fade Out Flash
+
+                tasks.Add(arrow1.FadeTo(0.2));
+                tasks.Add(arrow2.FadeTo(0.2));
+                tasks.Add(arrow3.FadeTo(0.2));
+
+                await Task.WhenAll(tasks);
+                tasks.Clear();
+                #endregion
+
+                #region Fade In Flash
+
+                tasks.Add(arrow1.FadeTo(1));
+                tasks.Add(arrow2.FadeTo(1));
+                tasks.Add(arrow3.FadeTo(1));
+
+                await Task.WhenAll(tasks);
+                tasks.Clear();
+                #endregion
+
+                tasks.Add(arrow1.FadeTo(0));
+                tasks.Add(arrow2.FadeTo(0));
+                tasks.Add(arrow3.FadeTo(0));
+
+                await Task.WhenAll(tasks);
+            }
         }
 
 
         protected override void OnAppearing()
         {
             viewModel.Appeared();
+            BeginHideAnimationsAsync();
             base.OnAppearing();
-
-
         }
     }
 }

@@ -73,6 +73,24 @@
                         BackgroundColor="White"
                     />
                     
+                    <Label
+                        x:Name="arrow1"
+                        Grid.Row="0"
+                        InputTransparent="true"
+                        Grid.Column="0"
+                        Text="→"
+                        Font="50"
+                        TextColor="White"
+                        IsVisible="{Binding IsHDRNotActive}"
+                        Margin="30, -70, 30, 65"
+                        HeightRequest="40"
+                        WidthRequest="100"
+                        HorizontalOptions="Start"
+                        VerticalOptions="End"
+                    />
+                    
+                    
+                    
 <!--                    Turn off HDR right-->
                     <Label
                         x:Name="HDROnRight1"
@@ -86,7 +104,7 @@
                         VerticalOptions="End"
                         BackgroundColor="White"
                     />
-                    
+                   
                     
 <!--                    Turn on FLASH left-->
                     <Label
@@ -102,6 +120,22 @@
                         BackgroundColor="White"
                     >
                     </Label> 
+                    
+                    <Label
+                        x:Name="arrow2"
+                        Grid.Row="1"
+                        InputTransparent="true"
+                        Grid.Column="0"
+                        Text="→"
+                        Font="50"
+                        TextColor="White"
+                        IsVisible="{Binding IsHDRNotActive}"
+                        Margin="30, -0, 30, 275"
+                        HeightRequest="40"
+                        WidthRequest="100"
+                        HorizontalOptions="Start"
+                        VerticalOptions="End"
+                    />
                     
 <!--                    Turn off FLASH right-->
                     <Label
@@ -133,6 +167,21 @@
                     >
                     </Label>  
                     
+                    <Label
+                        x:Name="arrow3"
+                        Grid.Row="1"
+                        InputTransparent="true"
+                        Grid.Column="0"
+                        Text="→"
+                        Font="50"
+                        TextColor="White"
+                        IsVisible="{Binding IsHDRNotActive}"
+                        Margin="30, -0, 30, 75"
+                        HeightRequest="40"
+                        WidthRequest="100"
+                        HorizontalOptions="Start"
+                        VerticalOptions="End"
+                    />
                  
                     
                    <ImageButton Source="updatedsettings.png"

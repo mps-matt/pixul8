@@ -15,6 +15,9 @@ namespace PixUl8.Services
         private const string is3DEnabledKey = "3DKey_key";
         private const bool is3DEnabledDefault = false;
 
+        private const string StartupKey = "StartUp_key";
+        private const bool StartUpDefault = true;
+
         public bool Is43Enabled
         {
             get { return Plugin.Settings.CrossSettings.Current.GetValueOrDefault(is43EnabledKey, is43EnabledDefault); }
@@ -25,6 +28,12 @@ namespace PixUl8.Services
         {
             get { return Plugin.Settings.CrossSettings.Current.GetValueOrDefault(is3DEnabledKey, is3DEnabledDefault); }
             set { Plugin.Settings.CrossSettings.Current.AddOrUpdateValue(is3DEnabledKey, value); }
+        }
+
+        public bool StartupAnimation
+        {
+            get { return Plugin.Settings.CrossSettings.Current.GetValueOrDefault(StartupKey, StartUpDefault); }
+            set { Plugin.Settings.CrossSettings.Current.AddOrUpdateValue(StartupKey, value); }
         }
     }
 }
