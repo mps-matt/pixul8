@@ -238,6 +238,9 @@
     <PackageReference Include="Xam.Plugins.Settings">
       <Version>3.1.1</Version>
     </PackageReference>
+    <PackageReference Include="Toasts.Forms.Plugin">
+      <Version>3.3.2</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />

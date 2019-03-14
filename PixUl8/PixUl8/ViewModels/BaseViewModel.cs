@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using PixUl8.Interfaces;
+using Plugin.Toasts;
 using Xamarin.Forms;
 
 namespace PixUl8.ViewModels
@@ -11,11 +12,14 @@ namespace PixUl8.ViewModels
     {
         protected IHapticService _hapticService;
         protected ISettingsService _settingsService;
+        protected IToastNotificator _toaster;
 
-        public BaseViewModel(IHapticService hapticService, ISettingsService settingsService)
+        public BaseViewModel(IHapticService hapticService, ISettingsService settingsService, IToastNotificator toaster)
         {
             _hapticService = hapticService ?? DependencyService.Get<IHapticService>();
             _settingsService = settingsService ?? DependencyService.Get<ISettingsService>();
+            //_toaster = toaster ?? DependencyService.Get<IToastNotificator>();
+            _toaster = toaster ?? new ToastNotification();
         }
 
 

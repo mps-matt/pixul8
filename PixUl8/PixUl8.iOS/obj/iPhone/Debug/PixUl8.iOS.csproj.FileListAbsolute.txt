@@ -131,3 +131,6 @@
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/optimized/NoFlashButton.png
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/optimized/FlashButton.png
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/optimized/
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/Toasts.Forms.Plugin.Abstractions.dll
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/Toasts.Forms.Plugin.Abstractions.pdb
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/Toasts.Forms.Plugin.iOS.dll

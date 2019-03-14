@@ -12,6 +12,8 @@ using PixUl8.iOS.UIViews;
 using PixUl8.Interfaces;
 using System.Threading;
 using PixUl8.Views.ExtensionViews;
+using Acr.UserDialogs;
+using Plugin.Toasts;
 //using Acr.UserDialogs;
 
 namespace PixUl8.ViewModels
@@ -20,7 +22,7 @@ namespace PixUl8.ViewModels
     {
         public HomePage Page { get; set; }
 
-        public HomeViewModel(IHapticService hapticService = null, ISettingsService settingsService = null) : base(hapticService, settingsService)
+        public HomeViewModel(IHapticService hapticService = null, ISettingsService settingsService = null, IToastNotificator toaster = null) : base(hapticService, settingsService, toaster)
         {
             Title = "Home";
             MessagingCenter.Subscribe<UICameraPreview>(this, "PerformCameraSwitch", async (sender) => {
@@ -195,6 +197,7 @@ namespace PixUl8.ViewModels
                 _hapticService.InvokeLightHaptic();
             }
 
+
         }
 
 
@@ -204,6 +207,8 @@ namespace PixUl8.ViewModels
         {
             _hapticService.InvokeHeavyHaptic();
             IsFlashActive = !IsFlashActive;
+
+            ShowToast($"Torch {(IsFlashActive ? "ON" : "OFF")}");
         }
 
         private ICommand _toggleHDRCommand;
@@ -212,6 +217,8 @@ namespace PixUl8.ViewModels
         {
             _hapticService.InvokeHeavyHaptic();
             IsHDRActive = !IsHDRActive;
+
+            ShowToast($"Super Fusion {(IsHDRActive ? "ON" : "OFF")}");
         }
 
         private ICommand _toogleMenuCommand;
@@ -225,11 +232,7 @@ namespace PixUl8.ViewModels
         public ICommand HelpCommand { get { return _helpCommand = _helpCommand ?? new Command(async () => await HelpAsync()); } }
         public async Task HelpAsync()
         {
-            //var toastConfig = new ToastConfig("Toasting...");
-            //toastConfig.SetDuration(3000);
-            //toastConfig.SetBackgroundColor(System.Drawing.Color.FromArgb(12, 131, 193));
 
-            //UserDialogs.Instance.Toast(toastConfig);
         }
 
         public void Appeared()
@@ -238,6 +241,16 @@ namespace PixUl8.ViewModels
             is3DEnabled = _settingsService.Is3DEnabled;
             is43Enabled = _settingsService.Is43Enabled;
 
+        }
+
+        public void ShowToast(string text)
+        {
+            var toastConfig = new ToastConfig(text);
+
+            toastConfig.Position = ToastPosition.Top;
+            toastConfig.SetDuration(1000);
+            toastConfig.SetBackgroundColor(System.Drawing.Color.FromArgb(229, 145, 0));
+            UserDialogs.Instance.Toast(toastConfig);
         }
 
 

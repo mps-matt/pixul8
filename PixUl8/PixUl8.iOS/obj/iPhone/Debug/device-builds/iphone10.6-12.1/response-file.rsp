@@ -164,6 +164,8 @@
 -r=/Users/mattstark/.nuget/packages/morelinq/3.1.0/lib/netstandard2.0/MoreLinq.dll
 -r=/Users/mattstark/.nuget/packages/slideoverkit/2.1.6.2/lib/Xamarin.iOS10/SlideOverKit.dll
 -r=/Users/mattstark/.nuget/packages/slideoverkit/2.1.6.2/lib/Xamarin.iOS10/SlideOverKit.iOS.dll
+-r=/Users/mattstark/.nuget/packages/toasts.forms.plugin/3.3.2/lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.dll
+-r=/Users/mattstark/.nuget/packages/toasts.forms.plugin/3.3.2/lib/Xamarin.iOS10/Toasts.Forms.Plugin.iOS.dll
 -r=/Users/mattstark/.nuget/packages/xam.plugins.settings/3.1.1/lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll
 -r=/Users/mattstark/.nuget/packages/xam.plugins.settings/3.1.1/lib/Xamarin.iOS10/Plugin.Settings.dll
 -r=/Users/mattstark/.nuget/packages/xamarin.forms/3.4.0.1009999/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll

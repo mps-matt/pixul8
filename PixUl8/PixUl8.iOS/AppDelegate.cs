@@ -8,6 +8,7 @@ using AVFoundation;
 using Foundation;
 using MediaPlayer;
 using PixUl8.iOS.Delegates;
+using Plugin.Toasts;
 using SlideOverKit.iOS;
 using UIKit;
 using UserNotifications;
@@ -68,6 +69,9 @@ namespace PixUl8.iOS
             //Timer timer = new Timer(timerDelegate, null, 1000, 1000);
 
             var mc = new MenuContainerPageiOSRenderer();
+
+            DependencyService.Register<ToastNotification>(); // Register your dependency
+            ToastNotification.Init();
 
             return result;
         }

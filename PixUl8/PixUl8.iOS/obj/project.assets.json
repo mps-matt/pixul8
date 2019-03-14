@@ -46,6 +46,17 @@
           "lib/Xamarin.iOS10/SlideOverKit.iOS.dll": {}
         }
       },
+      "Toasts.Forms.Plugin/3.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Toasts.Forms.Plugin.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Toasts.Forms.Plugin.iOS.dll": {}
+        }
+      },
       "Xam.Plugins.Settings/3.1.1": {
         "type": "package",
         "compile": {
@@ -233,6 +244,17 @@
         "runtime": {
           "lib/Xamarin.iOS10/SlideOverKit.dll": {},
           "lib/Xamarin.iOS10/SlideOverKit.iOS.dll": {}
+        }
+      },
+      "Toasts.Forms.Plugin/3.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Toasts.Forms.Plugin.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Toasts.Forms.Plugin.iOS.dll": {}
         }
       },
       "Xam.Plugins.Settings/3.1.1": {
@@ -424,6 +446,17 @@
           "lib/Xamarin.iOS10/SlideOverKit.iOS.dll": {}
         }
       },
+      "Toasts.Forms.Plugin/3.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Toasts.Forms.Plugin.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Toasts.Forms.Plugin.iOS.dll": {}
+        }
+      },
       "Xam.Plugins.Settings/3.1.1": {
         "type": "package",
         "compile": {
@@ -611,6 +644,17 @@
         "runtime": {
           "lib/Xamarin.iOS10/SlideOverKit.dll": {},
           "lib/Xamarin.iOS10/SlideOverKit.iOS.dll": {}
+        }
+      },
+      "Toasts.Forms.Plugin/3.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Toasts.Forms.Plugin.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Toasts.Forms.Plugin.iOS.dll": {}
         }
       },
       "Xam.Plugins.Settings/3.1.1": {
@@ -840,6 +884,29 @@
         "slideoverkit.nuspec"
       ]
     },
+    "Toasts.Forms.Plugin/3.3.2": {
+      "sha512": "saIl6R4GeW9MbqdZLEWm6EAl+YQARDEpjOYXtiwtHqmklaMDG7tOJmC0Qwtr6AuukgFu57L3HiLw/Eo2WRDf9g==",
+      "type": "package",
+      "path": "toasts.forms.plugin/3.3.2",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid10/Toasts.Forms.Plugin.Abstractions.dll",
+        "lib/MonoAndroid10/Toasts.Forms.Plugin.Abstractions.pdb",
+        "lib/MonoAndroid10/Toasts.Forms.Plugin.Droid.dll",
+        "lib/MonoAndroid10/Toasts.Forms.Plugin.Droid.pdb",
+        "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.dll",
+        "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Toasts.Forms.Plugin.iOS.dll",
+        "lib/netstandard1.1/Toasts.Forms.Plugin.Abstractions.dll",
+        "lib/netstandard1.1/Toasts.Forms.Plugin.Abstractions.pdb",
+        "lib/uap10.0/Toasts.Forms.Plugin.Abstractions.dll",
+        "lib/uap10.0/Toasts.Forms.Plugin.Abstractions.pdb",
+        "lib/uap10.0/Toasts.Forms.Plugin.UWP.dll",
+        "lib/uap10.0/Toasts.Forms.Plugin.UWP.pdb",
+        "toasts.forms.plugin.3.3.2.nupkg.sha512",
+        "toasts.forms.plugin.nuspec"
+      ]
+    },
     "Xam.Plugins.Settings/3.1.1": {
       "sha512": "Bu7xx61R2xnH+vY0LyFWiDNfuS25OWR3n9Yu3Gdutpgy7T7F/c1JieptS6YxRzz4WXJzaj0ACz/zQ0OwDiyIvw==",
       "type": "package",
@@ -1065,6 +1132,7 @@
       "Acr.UserDialogs >= 7.0.3",
       "PixUl8.Native >= 1.0.0",
       "SlideOverKit >= 2.1.6.2",
+      "Toasts.Forms.Plugin >= 3.3.2",
       "Xam.Plugins.Settings >= 3.1.1",
       "Xamarin.Forms >= 3.4.0.1009999",
       "morelinq >= 3.1.0"
@@ -1111,6 +1179,10 @@
           "SlideOverKit": {
             "target": "Package",
             "version": "[2.1.6.2, )"
+          },
+          "Toasts.Forms.Plugin": {
+            "target": "Package",
+            "version": "[3.3.2, )"
           },
           "Xam.Plugins.Settings": {
             "target": "Package",
