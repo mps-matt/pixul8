@@ -23,9 +23,17 @@
 /Users/mattstark/.nuget/packages/xamarin.forms/3.4.0.1009999/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll
 /Users/mattstark/.nuget/packages/xamarin.forms/3.4.0.1009999/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
 /Users/mattstark/.nuget/packages/slideoverkit/2.1.6.2/lib/Xamarin.iOS10/SlideOverKit.dll
-/Users/mattstark/.nuget/packages/toasts.forms.plugin/3.3.2/lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.dll
+/Users/mattstark/.nuget/packages/rg.plugins.popup/1.1.5.188/lib/Xamarin.IOS/Rg.Plugins.Popup.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.2.1.13/lib/mono/Xamarin.iOS/Facades/System.Runtime.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.2.1.13/lib/mono/Xamarin.iOS/Facades/System.Threading.Tasks.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.2.1.13/lib/mono/Xamarin.iOS/Facades/System.Collections.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.2.1.13/lib/mono/Xamarin.iOS/Facades/System.Diagnostics.Debug.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.2.1.13/lib/mono/Xamarin.iOS/Facades/System.Reflection.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.2.1.13/lib/mono/Xamarin.iOS/Facades/System.Threading.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.2.1.13/lib/mono/Xamarin.iOS/Facades/System.Runtime.Extensions.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.2.1.13/lib/mono/Xamarin.iOS/Facades/System.Reflection.Extensions.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.2.1.13/lib/mono/Xamarin.iOS/Facades/System.Linq.dll
+/Users/mattstark/.nuget/packages/toasts.forms.plugin/3.3.2/lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.2.1.13/lib/mono/Xamarin.iOS/Facades/System.Collections.Concurrent.dll
 /Users/mattstark/.nuget/packages/acr.userdialogs/7.0.3/lib/xamarinios10/Acr.UserDialogs.dll
 /Users/mattstark/.nuget/packages/btprogresshud/1.2.0.6/lib/Xamarin.iOS10/BTProgressHUD.dll
@@ -35,3 +43,4 @@
 /Users/mattstark/.nuget/packages/xam.plugins.settings/3.1.1/lib/Xamarin.iOS10/Plugin.Settings.dll
 /Users/mattstark/.nuget/packages/xam.plugins.settings/3.1.1/lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll
 /Users/mattstark/.nuget/packages/toasts.forms.plugin/3.3.2/lib/Xamarin.iOS10/Toasts.Forms.Plugin.iOS.dll
+/Users/mattstark/.nuget/packages/rg.plugins.popup/1.1.5.188/lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll

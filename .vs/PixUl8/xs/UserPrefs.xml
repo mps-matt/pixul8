@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8/ViewModels/HomeViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8/Views/ExtensionViews/HelpPage.xaml">
     <Files>
-      <File FileName="PixUl8/PixUl8/ViewModels/HomeViewModel.cs" Line="132" Column="9" />
+      <File FileName="PixUl8/PixUl8/ViewModels/HomeViewModel.cs" Line="146" Column="10" />
       <File FileName="PixUl8/PixUl8/Views/HomePage.xaml" Line="181" Column="43" />
-      <File FileName="PixUl8/PixUl8/Views/HomePage.xaml.cs" Line="144" Column="2" />
-      <File FileName="PixUl8/PixUl8/Views/ExtensionViews/SlideMenuUpView.xaml" Line="40" Column="54" />
+      <File FileName="PixUl8/PixUl8/Views/HomePage.xaml.cs" Line="34" Column="1" />
+      <File FileName="PixUl8/PixUl8.iOS/AppDelegate.cs" Line="57" Column="43" />
+      <File FileName="PixUl8/PixUl8/Views/ExtensionViews/HelpPage.xaml" Line="7" Column="42" />
+      <File FileName="PixUl8/PixUl8/Views/ExtensionViews/HelpPage.xaml.cs" Line="13" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.594cc34fe22a6ae2a5ef467001700a60305909ef" />
@@ -12,7 +14,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8/Views/ExtensionViews/HelpPage.xaml" relfile="PixUl8/PixUl8/Views/ExtensionViews/HelpPage.xaml" line="2" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

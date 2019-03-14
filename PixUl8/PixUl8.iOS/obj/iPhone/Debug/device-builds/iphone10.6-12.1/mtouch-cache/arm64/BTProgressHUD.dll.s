@@ -19759,7 +19759,7 @@ bl _p_70
 .word 0xaa1903e0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf941f030
+.word 0xf941f830
 .word 0xd63f0200
 .word 0xf9401fb1
 .word 0xf9474a31
@@ -24565,7 +24565,7 @@ _mono_aot_file_info:
 	.long 200,1912,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 160,249,231,85,102,55,181,100,66,140,219,120,57,37,188,103
+	.byte 100,228,115,25,151,161,45,221,69,198,103,20,45,126,203,178
 	.globl _mono_aot_module_BTProgressHUD_info
 	.align 3
 _mono_aot_module_BTProgressHUD_info:

@@ -20,6 +20,7 @@ namespace PixUl8.ViewModels
 {
     public class HomeViewModel : BaseViewModel
     {
+        private HelpPage _helpPage = new HelpPage();
         public HomePage Page { get; set; }
 
         public HomeViewModel(IHapticService hapticService = null, ISettingsService settingsService = null, IToastNotificator toaster = null) : base(hapticService, settingsService, toaster)
@@ -243,7 +244,7 @@ namespace PixUl8.ViewModels
         public ICommand HelpCommand { get { return _helpCommand = _helpCommand ?? new Command(async () => await HelpAsync()); } }
         public async Task HelpAsync()
         {
-
+            await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PushAsync(_helpPage);
         }
 
         public void Appeared()

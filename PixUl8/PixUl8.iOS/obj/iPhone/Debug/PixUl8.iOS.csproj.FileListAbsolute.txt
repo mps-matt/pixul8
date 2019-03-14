@@ -134,3 +134,9 @@
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/Toasts.Forms.Plugin.Abstractions.dll
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/Toasts.Forms.Plugin.Abstractions.pdb
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/Toasts.Forms.Plugin.iOS.dll
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/Rg.Plugins.Popup.IOS.dll
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/Rg.Plugins.Popup.IOS.pdb
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/Rg.Plugins.Popup.dll
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/Rg.Plugins.Popup.pdb
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/Views/ExtensionViews/HelpPage.xaml.g.cs
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/optimized/helppage.png

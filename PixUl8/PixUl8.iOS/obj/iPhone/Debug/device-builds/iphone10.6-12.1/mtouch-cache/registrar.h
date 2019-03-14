@@ -158,6 +158,9 @@
 @class SlideOverKit_iOS_SlidePopupViewRendereriOS;
 @class OpenCV;
 @class Plugin_Toasts_UNNotificationManager_UserNotificationCenterDelegate;
+@class RgPopupPlatformRenderer;
+@class RgPopupWindow;
+@class Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer;
 
 @interface UNUserNotificationCenterDelegate : NSObject<UNUserNotificationCenterDelegate> {
 }
@@ -786,6 +789,16 @@
 	-(UIImage *) fuse:(NSArray *)p0;
 	-(UIImage *) fuseAllign:(NSArray *)p0 at:(float)p1;
 	-(NSString *) version;
+	-(id) init;
+@end
+
+@interface Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer : Xamarin_Forms_Platform_iOS_PageRenderer {
+}
+	-(void) viewDidLoad;
+	-(void) viewDidUnload;
+	-(void) viewWillAppear:(BOOL)p0;
+	-(void) viewWillDisappear:(BOOL)p0;
+	-(void) viewDidLayoutSubviews;
 	-(id) init;
 @end
 

@@ -54,6 +54,7 @@ namespace PixUl8.iOS
                 StartObservers();
             });
 
+            Rg.Plugins.Popup.Popup.Init();
 
             UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert, (approved, err) => {
             });
