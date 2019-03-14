@@ -1,18 +1,15 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8/Views/ExtensionViews/HelpPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs">
     <Files>
-      <File FileName="PixUl8/PixUl8/ViewModels/HomeViewModel.cs" Line="146" Column="10" />
-      <File FileName="PixUl8/PixUl8/Views/HomePage.xaml" Line="181" Column="43" />
-      <File FileName="PixUl8/PixUl8/Views/HomePage.xaml.cs" Line="34" Column="1" />
-      <File FileName="PixUl8/PixUl8.iOS/AppDelegate.cs" Line="57" Column="43" />
-      <File FileName="PixUl8/PixUl8/Views/ExtensionViews/HelpPage.xaml" Line="7" Column="42" />
-      <File FileName="PixUl8/PixUl8/Views/ExtensionViews/HelpPage.xaml.cs" Line="13" Column="9" />
+      <File FileName="PixUl8/PixUl8/ViewModels/HomeViewModel.cs" Line="247" Column="13" />
+      <File FileName="PixUl8/PixUl8/Views/HomePage.xaml" Line="191" Column="13" />
+      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="725" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.594cc34fe22a6ae2a5ef467001700a60305909ef" />
+  <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E8C4F676-51C3-477F-82CB-767FBDB8A944" />
   <MonoDevelop.Ide.ItemProperties.PixUl8 HideGettingStarted="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8/Views/ExtensionViews/HelpPage.xaml" relfile="PixUl8/PixUl8/Views/ExtensionViews/HelpPage.xaml" line="2" column="1" />

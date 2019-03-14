@@ -42,15 +42,15 @@
     <ObjcBindingCoreSource Include="Structs.cs" />
   </ItemGroup>
   <ItemGroup>
-    <NativeReference Include="..\OpenCV\opencv2.framework">
-      <Kind>Framework</Kind>
-      <SmartLink>False</SmartLink>
-      <IsCxx>True</IsCxx>
-      <Frameworks>Accelerate AssetsLibrary AVFoundation CoreGraphics CoreImage CoreMedia CoreVideo QuartzCore UIKit Foundation</Frameworks>
-    </NativeReference>
     <NativeReference Include="..\PixUl8\libOpenCVUniversal.a">
       <Kind>Static</Kind>
       <SmartLink>False</SmartLink>
+      <IsCxx>True</IsCxx>
+    </NativeReference>
+    <NativeReference Include="..\PixUl8\OpenCV\opencv2.framework">
+      <Kind>Framework</Kind>
+      <SmartLink>False</SmartLink>
+      <Frameworks>Accelerate AssetsLibrary AVFoundation CoreGraphics CoreImage CoreMedia CoreVideo QuartzCore UIKit Foundation</Frameworks>
       <IsCxx>True</IsCxx>
     </NativeReference>
   </ItemGroup>

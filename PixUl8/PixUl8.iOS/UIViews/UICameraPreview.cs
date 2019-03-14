@@ -431,6 +431,10 @@ namespace PixUl8.iOS.UIViews
 
         private void StartRunning()
         {
+            if (_device == null)
+                return;
+
+
             List<AVCapturePhotoSettings> settings = new List<AVCapturePhotoSettings>();
             settings.Add(GetCurrentPhotoSettings());
             for (int i = 1; i <= HDRCAPTURECOUNT; i += 3)
@@ -443,6 +447,9 @@ namespace PixUl8.iOS.UIViews
 
         private void StopRunning()
         {
+            if (_device == null)
+                return;
+
             CaptureSession.StopRunning();
         }
 
@@ -478,6 +485,255 @@ namespace PixUl8.iOS.UIViews
             };
             //_videoView = new UIImageView();
 
+            #region Layers
+
+            //320x568 is the 5s line
+            float x = (float)UIScreen.MainScreen.Bounds.Width;
+            float y = (float)UIScreen.MainScreen.Bounds.Height;
+            if ((int)x == 320 && (int)y == 568)
+            {
+                #region 5s Line Boxes
+
+                var zoomRect = new CGRect((x) - 90, (y / 4) - 180, 85, 85);
+                _percentage = new CircleZoomPercentage(zoomRect, 1);
+
+                var focusRect = new CGRect(0, 0, 150, 150);
+                var takeimageRect = new CGRect((x / 2) - 75, y - 170, 150, 150);
+
+                _focusWheel = new FocusWheel(focusRect, 2);
+                _takeImageButton = new TakeImageButton(takeimageRect, 4);
+                _takeImageButton.AddTarget(TakeImageButtonHandler, UIControlEvent.TouchUpInside);
+
+                this.AddSubview(_percentage);
+                this.AddSubview(_focusWheel);
+                this.AddSubview(_takeImageButton);
+
+                _captureDeviceResolution = new CGSize(x * UIScreen.MainScreen.Scale, y * UIScreen.MainScreen.Scale);
+                _captureDeviceBounds = new CGSize(x, y);
+
+
+
+                #region Handle For Swiping Gestures - This is needed as the Forms gestures seems too buggy, an I can't get to recognise the gestures correctly
+
+                #region Swap Camera Buttons
+
+                SwipeButton leftHandButton = new SwipeButton();
+                leftHandButton.SetTouchCallback((touches) =>
+                {
+                    UITouch touch = touches.AnyObject as UITouch;
+                    TapToFocus(touch.LocationInView(this));
+                });
+                leftHandButton.BackgroundColor = UIColor.Clear;
+                leftHandButton.Frame = new CGRect(-50, y - 200, 150, 200);
+                var rightSwipeGesture = new UISwipeGestureRecognizer(() => SwipeHandlerSwitchCamera(SwipeType.Right)) { Direction = UISwipeGestureRecognizerDirection.Right };
+                leftHandButton.AddGestureRecognizer(rightSwipeGesture);
+                this.AddSubview(leftHandButton);
+
+
+                SwipeButton rightHandButton = new SwipeButton();
+                rightHandButton.SetTouchCallback((touches) =>
+                {
+                    UITouch touch = touches.AnyObject as UITouch;
+                    TapToFocus(touch.LocationInView(this));
+                });
+                rightHandButton.BackgroundColor = UIColor.Clear;
+
+                rightHandButton.Frame = new CGRect(x - 100, y - 200, 100, 200);
+                var leftSwipeGesture = new UISwipeGestureRecognizer(() => SwipeHandlerSwitchCamera(SwipeType.Left)) { Direction = UISwipeGestureRecognizerDirection.Left };
+                rightHandButton.AddGestureRecognizer(leftSwipeGesture);
+                this.AddSubview(rightHandButton);
+
+                #endregion
+
+                #region Activate Flash Buttons
+
+                SwipeButton leftHandFlashButton = new SwipeButton();
+                leftHandFlashButton.SetTouchCallback((touches) =>
+                {
+                    UITouch touch = touches.AnyObject as UITouch;
+                    TapToFocus(touch.LocationInView(this));
+                });
+                leftHandFlashButton.BackgroundColor = UIColor.Clear;
+                leftHandFlashButton.Frame = new CGRect(-50, y - 350, 150, 150);
+                var rightSwipeFlashGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleFlash(SwipeType.Right)) { Direction = UISwipeGestureRecognizerDirection.Right };
+                leftHandFlashButton.AddGestureRecognizer(rightSwipeFlashGesture);
+                this.AddSubview(leftHandFlashButton);
+
+
+                SwipeButton rightHandFlashButton = new SwipeButton();
+                rightHandFlashButton.SetTouchCallback((touches) =>
+                {
+                    UITouch touch = touches.AnyObject as UITouch;
+                    TapToFocus(touch.LocationInView(this));
+                });
+                rightHandFlashButton.BackgroundColor = UIColor.Clear;
+                rightHandFlashButton.Frame = new CGRect(x - 100, y - 350, 100, 150);
+                var leftSwipeFlashGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleFlash(SwipeType.Left)) { Direction = UISwipeGestureRecognizerDirection.Left };
+                rightHandFlashButton.AddGestureRecognizer(leftSwipeFlashGesture);
+                this.AddSubview(rightHandFlashButton);
+
+                #endregion
+
+                #region Activate HDR Buttons
+
+                SwipeButton leftHandHDRButton = new SwipeButton();
+                leftHandHDRButton.SetTouchCallback((touches) =>
+                {
+                    UITouch touch = touches.AnyObject as UITouch;
+                    TapToFocus(touch.LocationInView(this));
+                });
+                leftHandHDRButton.BackgroundColor = UIColor.Clear;
+                leftHandHDRButton.Frame = new CGRect(-50, y - 500, 150, 150);
+                var rightSwipeHDRGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleHDR(SwipeType.Right)) { Direction = UISwipeGestureRecognizerDirection.Right };
+                leftHandHDRButton.AddGestureRecognizer(rightSwipeHDRGesture);
+                this.AddSubview(leftHandHDRButton);
+
+
+                SwipeButton rightHandHDRButton = new SwipeButton();
+                rightHandHDRButton.SetTouchCallback((touches) =>
+                {
+                    UITouch touch = touches.AnyObject as UITouch;
+                    TapToFocus(touch.LocationInView(this));
+                });
+                rightHandHDRButton.BackgroundColor = UIColor.Clear;
+                rightHandHDRButton.Frame = new CGRect(x - 100, y - 500, 100, 150);
+                var leftSwipeHDRGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleHDR(SwipeType.Left)) { Direction = UISwipeGestureRecognizerDirection.Left };
+                rightHandHDRButton.AddGestureRecognizer(leftSwipeHDRGesture);
+                this.AddSubview(rightHandHDRButton);
+
+
+                var swipeUpForMenuGesture = new UISwipeGestureRecognizer(() => SwipeHandlerUp())
+                {
+                    Direction = UISwipeGestureRecognizerDirection.Up
+                };
+                this.AddGestureRecognizer(swipeUpForMenuGesture);
+
+
+                #endregion
+                #endregion
+                #endregion
+            }
+            else
+            {
+            
+                var zoomRect = new CGRect((x) - 90, (y / 4) - 180, 85, 85);
+                _percentage = new CircleZoomPercentage(zoomRect, 1);
+
+                var focusRect = new CGRect(0, 0, 150, 150);
+                var takeimageRect = new CGRect((x/2)-75, y-170, 150, 150);
+
+                _focusWheel = new FocusWheel(focusRect, 2);
+                _takeImageButton = new TakeImageButton(takeimageRect, 4);
+                _takeImageButton.AddTarget(TakeImageButtonHandler, UIControlEvent.TouchUpInside);
+
+                this.AddSubview(_percentage);
+                this.AddSubview(_focusWheel);
+                this.AddSubview(_takeImageButton);
+
+                _captureDeviceResolution = new CGSize(x * UIScreen.MainScreen.Scale, y * UIScreen.MainScreen.Scale);
+                _captureDeviceBounds = new CGSize(x, y);
+
+
+
+                #region Handle For Swiping Gestures - This is needed as the Forms gestures seems too buggy, an I can't get to recognise the gestures correctly
+
+                #region Swap Camera Buttons
+
+                SwipeButton leftHandButton = new SwipeButton();
+                leftHandButton.SetTouchCallback((touches) =>
+                {
+                    UITouch touch = touches.AnyObject as UITouch;
+                    TapToFocus(touch.LocationInView(this));
+                });
+                leftHandButton.BackgroundColor = UIColor.Clear;
+                leftHandButton.Frame = new CGRect(-50, y-250, 150, 250);
+                var rightSwipeGesture = new UISwipeGestureRecognizer(() => SwipeHandlerSwitchCamera(SwipeType.Right)) { Direction = UISwipeGestureRecognizerDirection.Right };
+                leftHandButton.AddGestureRecognizer(rightSwipeGesture);
+                this.AddSubview(leftHandButton);
+
+
+                SwipeButton rightHandButton = new SwipeButton();
+                rightHandButton.SetTouchCallback((touches) =>
+                {
+                    UITouch touch = touches.AnyObject as UITouch;
+                    TapToFocus(touch.LocationInView(this));
+                });
+                rightHandButton.BackgroundColor = UIColor.Clear;
+
+                rightHandButton.Frame = new CGRect(x-100, y-250, 100, 250);
+                var leftSwipeGesture = new UISwipeGestureRecognizer(() => SwipeHandlerSwitchCamera(SwipeType.Left)) { Direction = UISwipeGestureRecognizerDirection.Left };
+                rightHandButton.AddGestureRecognizer(leftSwipeGesture);
+                this.AddSubview(rightHandButton);
+
+                #endregion
+
+                #region Activate Flash Buttons
+
+                SwipeButton leftHandFlashButton = new SwipeButton();
+                leftHandFlashButton.SetTouchCallback((touches) =>
+                {
+                    UITouch touch = touches.AnyObject as UITouch;
+                    TapToFocus(touch.LocationInView(this));
+                });
+                leftHandFlashButton.BackgroundColor = UIColor.Clear;
+                leftHandFlashButton.Frame = new CGRect(-50, y-400, 150, 200);
+                var rightSwipeFlashGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleFlash(SwipeType.Right)) { Direction = UISwipeGestureRecognizerDirection.Right };
+                leftHandFlashButton.AddGestureRecognizer(rightSwipeFlashGesture);
+                this.AddSubview(leftHandFlashButton);
+
+
+                SwipeButton rightHandFlashButton = new SwipeButton();
+                rightHandFlashButton.SetTouchCallback((touches) =>
+                {
+                    UITouch touch = touches.AnyObject as UITouch;
+                    TapToFocus(touch.LocationInView(this));
+                });
+                rightHandFlashButton.BackgroundColor = UIColor.Clear;
+                rightHandFlashButton.Frame = new CGRect(x-100, y-400, 100, 200);
+                var leftSwipeFlashGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleFlash(SwipeType.Left)) { Direction = UISwipeGestureRecognizerDirection.Left };
+                rightHandFlashButton.AddGestureRecognizer(leftSwipeFlashGesture);
+                this.AddSubview(rightHandFlashButton);
+
+                #endregion
+
+                #region Activate HDR Buttons
+
+                SwipeButton leftHandHDRButton = new SwipeButton();
+                leftHandHDRButton.SetTouchCallback((touches) =>
+                {
+                    UITouch touch = touches.AnyObject as UITouch;
+                    TapToFocus(touch.LocationInView(this));
+                });
+                leftHandHDRButton.BackgroundColor = UIColor.Clear;
+                leftHandHDRButton.Frame = new CGRect(-50, y-600, 150, 200);
+                var rightSwipeHDRGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleHDR(SwipeType.Right)) { Direction = UISwipeGestureRecognizerDirection.Right };
+                leftHandHDRButton.AddGestureRecognizer(rightSwipeHDRGesture);
+                this.AddSubview(leftHandHDRButton);
+
+
+                SwipeButton rightHandHDRButton = new SwipeButton();
+                rightHandHDRButton.SetTouchCallback((touches) =>
+                {
+                    UITouch touch = touches.AnyObject as UITouch;
+                    TapToFocus(touch.LocationInView(this));
+                });
+                rightHandHDRButton.BackgroundColor = UIColor.Clear;
+                rightHandHDRButton.Frame = new CGRect(x-100, y-600, 100, 200);
+                var leftSwipeHDRGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleHDR(SwipeType.Left)) { Direction = UISwipeGestureRecognizerDirection.Left };
+                rightHandHDRButton.AddGestureRecognizer(leftSwipeHDRGesture);
+                this.AddSubview(rightHandHDRButton);
+
+
+                var swipeUpForMenuGesture = new UISwipeGestureRecognizer(() => SwipeHandlerUp())
+                {
+                    Direction = UISwipeGestureRecognizerDirection.Up
+                };
+                this.AddGestureRecognizer(swipeUpForMenuGesture);
+
+            }
+            #endregion
+
+
             var deviceSession = AVCaptureDeviceDiscoverySession.Create(allTypes, AVMediaType.Video,
                 (_cameraOptions == CameraOptions.Front) ? AVCaptureDevicePosition.Front : AVCaptureDevicePosition.Back);
                 
@@ -494,7 +750,7 @@ namespace PixUl8.iOS.UIViews
                 _device = videoDevices.FirstOrDefault(d => d.LockingWhiteBalanceWithCustomDeviceGainsSupported);
 
             if (_device == null)
-                _device = videoDevices[0];
+                _device = videoDevices.ElementAtOrDefault(0);
 
             if (_device == null)
             {
@@ -572,120 +828,6 @@ namespace PixUl8.iOS.UIViews
             MessagingCenter.Subscribe<AppDelegate>(this, "VolumeChange", async (de) => { await TakePhotoAsync(); });
 
 
-            float x = (float)UIScreen.MainScreen.Bounds.Width;
-            float y = (float)UIScreen.MainScreen.Bounds.Height;
-            var zoomRect = new CGRect((x) - 90, (y / 4) - 180, 85, 85);
-            _percentage = new CircleZoomPercentage(zoomRect, 1);
-
-            var focusRect = new CGRect(0, 0, 150, 150);
-            var takeimageRect = new CGRect((x/2)-75, y-170, 150, 150);
-
-            _focusWheel = new FocusWheel(focusRect, 2);
-            _takeImageButton = new TakeImageButton(takeimageRect, 4);
-            _takeImageButton.AddTarget(TakeImageButtonHandler, UIControlEvent.TouchUpInside);
-
-            this.AddSubview(_percentage);
-            this.AddSubview(_focusWheel);
-            this.AddSubview(_takeImageButton);
-
-            _captureDeviceResolution = new CGSize(x * UIScreen.MainScreen.Scale, y * UIScreen.MainScreen.Scale);
-            _captureDeviceBounds = new CGSize(x, y);
-
-
-
-            #region Handle For Swiping Gestures - This is needed as the Forms gestures seems too buggy, an I can't get to recognise the gestures correctly
-
-            #region Swap Camera Buttons
-
-            SwipeButton leftHandButton = new SwipeButton();
-            leftHandButton.SetTouchCallback((touches) =>
-            {
-                UITouch touch = touches.AnyObject as UITouch;
-                TapToFocus(touch.LocationInView(this));
-            });
-            leftHandButton.BackgroundColor = UIColor.Clear;
-            leftHandButton.Frame = new CGRect(-50, 600, 150, 250);
-            var rightSwipeGesture = new UISwipeGestureRecognizer(() => SwipeHandlerSwitchCamera(SwipeType.Right)) { Direction = UISwipeGestureRecognizerDirection.Right };
-            leftHandButton.AddGestureRecognizer(rightSwipeGesture);
-            this.AddSubview(leftHandButton);
-
-
-            SwipeButton rightHandButton = new SwipeButton();
-            rightHandButton.SetTouchCallback((touches) =>
-            {
-                UITouch touch = touches.AnyObject as UITouch;
-                TapToFocus(touch.LocationInView(this));
-            });
-            rightHandButton.BackgroundColor = UIColor.Clear;
-            rightHandButton.Frame = new CGRect(275, 600, 100, 250);
-            var leftSwipeGesture = new UISwipeGestureRecognizer(() => SwipeHandlerSwitchCamera(SwipeType.Left)) { Direction = UISwipeGestureRecognizerDirection.Left };
-            rightHandButton.AddGestureRecognizer(leftSwipeGesture);
-            this.AddSubview(rightHandButton);
-
-            #endregion
-
-            #region Activate Flash Buttons
-
-            SwipeButton leftHandFlashButton = new SwipeButton();
-            leftHandFlashButton.SetTouchCallback((touches) =>
-            {
-                UITouch touch = touches.AnyObject as UITouch;
-                TapToFocus(touch.LocationInView(this));
-            });
-            leftHandFlashButton.BackgroundColor = UIColor.Clear;
-            leftHandFlashButton.Frame = new CGRect(-50, 400, 150, 200);
-            var rightSwipeFlashGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleFlash(SwipeType.Right)) { Direction = UISwipeGestureRecognizerDirection.Right };
-            leftHandFlashButton.AddGestureRecognizer(rightSwipeFlashGesture);
-            this.AddSubview(leftHandFlashButton);
-
-
-            SwipeButton rightHandFlashButton = new SwipeButton();
-            rightHandFlashButton.SetTouchCallback((touches) =>
-            {
-                UITouch touch = touches.AnyObject as UITouch;
-                TapToFocus(touch.LocationInView(this));
-            });
-            rightHandFlashButton.BackgroundColor = UIColor.Clear;
-            rightHandFlashButton.Frame = new CGRect(275, 400, 100, 200);
-            var leftSwipeFlashGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleFlash(SwipeType.Left)) { Direction = UISwipeGestureRecognizerDirection.Left };
-            rightHandFlashButton.AddGestureRecognizer(leftSwipeFlashGesture);
-            this.AddSubview(rightHandFlashButton);
-
-            #endregion
-
-            #region Activate HDR Buttons
-
-            SwipeButton leftHandHDRButton = new SwipeButton();
-            leftHandHDRButton.SetTouchCallback((touches) =>
-            {
-                UITouch touch = touches.AnyObject as UITouch;
-                TapToFocus(touch.LocationInView(this));
-            });
-            leftHandHDRButton.BackgroundColor = UIColor.Clear;
-            leftHandHDRButton.Frame = new CGRect(-50, 200, 150, 200);
-            var rightSwipeHDRGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleHDR(SwipeType.Right)) { Direction = UISwipeGestureRecognizerDirection.Right };
-            leftHandHDRButton.AddGestureRecognizer(rightSwipeHDRGesture);
-            this.AddSubview(leftHandHDRButton);
-
-
-            SwipeButton rightHandHDRButton = new SwipeButton();
-            rightHandHDRButton.SetTouchCallback((touches) =>
-            {
-                UITouch touch = touches.AnyObject as UITouch;
-                TapToFocus(touch.LocationInView(this));
-            });
-            rightHandHDRButton.BackgroundColor = UIColor.Clear;
-            rightHandHDRButton.Frame = new CGRect(275, 200, 100, 200);
-            var leftSwipeHDRGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleHDR(SwipeType.Left)) { Direction = UISwipeGestureRecognizerDirection.Left };
-            rightHandHDRButton.AddGestureRecognizer(leftSwipeHDRGesture);
-            this.AddSubview(rightHandHDRButton);
-
-
-            var swipeUpForMenuGesture = new UISwipeGestureRecognizer(() => SwipeHandlerUp())
-            {
-                Direction = UISwipeGestureRecognizerDirection.Up
-            };
-            this.AddGestureRecognizer(swipeUpForMenuGesture);
 
             _exposureBias = _device.ExposureTargetBias;
 
@@ -705,6 +847,9 @@ namespace PixUl8.iOS.UIViews
 
         private void TapToFocus(CGPoint focusPoint)
         {
+            if (_device == null)
+                return;
+
             if (!ManualOn)
             {
 
@@ -860,6 +1005,10 @@ namespace PixUl8.iOS.UIViews
 
         private AVCapturePhotoBracketSettings GetCurrentBracketedSettings(int currentIndex, int maxIndex)
         {
+            if (_device == null)
+                return null;
+
+
             // Get AVCaptureBracketedStillImageSettings for a set of exposure values.
 
             int limiter = (maxIndex - 1) / 2;
@@ -903,6 +1052,10 @@ namespace PixUl8.iOS.UIViews
 
         private AVCapturePhotoBracketSettings GetCurrentPhotoSettings()
         {
+            if (_device == null)
+                return null;
+
+
             // Get AVCaptureBracketedStillImageSettings for a set of exposure values.
             var exposureValues = new float[] { -2, 0, +2 };
             var exposureSettings = new List<AVCaptureAutoExposureBracketedStillImageSettings>();
@@ -1213,11 +1366,7 @@ namespace PixUl8.iOS.UIViews
         }
 
 
-
-
-
-
-
         #endregion
+
     }
 }

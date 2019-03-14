@@ -7540,7 +7540,7 @@ exception_handling:;
 	-(void) drawRect:(CGRect)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, 0x1A900);
+		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, 0x1B600);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -7578,7 +7578,7 @@ exception_handling:;
 	-(void) touchesEnded:(NSSet *)p0 withEvent:(UIEvent *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, p1, 0x1B600);
+		native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, p1, 0x1C300);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -7591,7 +7591,7 @@ exception_handling:;
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0x1B700);
+		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0x1C400);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [UIButton class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -7628,7 +7628,7 @@ exception_handling:;
 	-(void) drawRect:(CGRect)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, 0x1B900);
+		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, 0x1C600);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -7747,7 +7747,7 @@ exception_handling:;
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0x1C000);
+		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0x1CD00);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [Xamarin_Forms_Platform_iOS_ViewRenderer_2 class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -8096,7 +8096,7 @@ exception_handling:;
 	-(void) drawRect:(CGRect)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, 0x1AE00);
+		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, 0x1BB00);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
