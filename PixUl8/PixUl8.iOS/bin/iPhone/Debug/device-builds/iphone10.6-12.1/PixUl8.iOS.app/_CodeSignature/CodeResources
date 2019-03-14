@@ -18,15 +18,15 @@
 		</data>
 		<key>AppIcons60x60@2x.png</key>
 		<data>
-		dFMYoAJQDrMc73RFN41RxuLqov4=
+		PjuMNVbGHD5TCTh0wI37JhsXvGs=
 		</data>
 		<key>AppIcons76x76@2x~ipad.png</key>
 		<data>
-		mMC0BRWOIvxzaLJO2JOJrsTZktI=
+		ZHnQSZxo9ZPfNHgkXiACyuknfdc=
 		</data>
 		<key>Assets.car</key>
 		<data>
-		O9t80D4qh8txjEQucKJDCQmJiKY=
+		vEyzHzPhu8LZmvBd3FVUBxJajL4=
 		</data>
 		<key>BTProgressHUD.aotdata.arm64</key>
 		<data>
@@ -110,11 +110,11 @@
 		</data>
 		<key>LaunchScreen.storyboardc/UIViewController-X5k-f2-b5h.nib</key>
 		<data>
-		OfUqPWykrvsSkUZJmM7IDWuxBsM=
+		uhl1qTa5WNChoOvDSgnCIDLHTNg=
 		</data>
 		<key>LaunchScreen.storyboardc/X5k-f2-b5h-view-yd7-JS-zBw.nib</key>
 		<data>
-		ym5TR3GHkGcw8usbecC1NmyLXmI=
+		LoxiW0afX3DlR2V/kzQ0y4utwaQ=
 		</data>
 		<key>Mono.Security.aotdata.arm64</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>MoreLinq.aotdata.arm64</key>
 		<data>
-		srnudTDp/lGWUnOnHksSebq7ghk=
+		1R9O3cEiqmKe8+nAXRxiPsl9wn8=
 		</data>
 		<key>MoreLinq.dll</key>
 		<data>
@@ -174,27 +174,27 @@
 		</data>
 		<key>PixUl8.OpenCV.aotdata.arm64</key>
 		<data>
-		9WObkfP5TrCjkt4LvAOsFjgfMGs=
+		OPuDt+y2wqlSE+ds9ZtNypsDUEc=
 		</data>
 		<key>PixUl8.OpenCV.dll</key>
 		<data>
-		Tkvb/845smXwTeqU+n8C9rpSQYg=
+		z3WkjH7kppis4SYyr0acuXn3XqY=
 		</data>
 		<key>PixUl8.OpenCV.pdb</key>
 		<data>
-		ZwxLOm+cFjS2NIOklMtMStEjqEk=
+		IPzrRfSR3ySZKGQug/1jNoQtbYM=
 		</data>
 		<key>PixUl8.iOS.aotdata.arm64</key>
 		<data>
-		5qlu0fTzIXhcbL2vTIq0dyXXyKg=
+		12XInBwZqGkOqY+1CXJKS+BzOYM=
 		</data>
 		<key>PixUl8.iOS.exe</key>
 		<data>
-		dydej6mhIjWE6WGz7IFSvZOXGh0=
+		CfanbGrL+YUBoAC9U4nYXQkzXI0=
 		</data>
 		<key>PixUl8.iOS.pdb</key>
 		<data>
-		k8btMApXPUKAV8w2qP3BTpCgD80=
+		5AbQMtBL+qpHERdIgLSgSk+M+EI=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -266,15 +266,15 @@
 		</data>
 		<key>System.Core.aotdata.arm64</key>
 		<data>
-		1eD/pkINME5e6sEjcVnn9VBlXfE=
+		5GLSqUSOculKHmYRoZCPNm8dON0=
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-		yOLgB6D0dRG7zvfhoBEYoq2DyBA=
+		5uPPgvgoOygx9l5QOJ/Pi3Egicg=
 		</data>
 		<key>System.Core.pdb</key>
 		<data>
-		vP2moyVkNtIopmr0ett2Xnq/3Wg=
+		FAZCiFBc5wx2FSLPgcrjr1iXik8=
 		</data>
 		<key>System.Data.aotdata.arm64</key>
 		<data>
@@ -290,7 +290,7 @@
 		</data>
 		<key>System.Net.Http.aotdata.arm64</key>
 		<data>
-		4Gc1/saz8Ji9AZ9LGxlnHWZ+Y+s=
+		T9l5vYDJY/BLVtmdf2ZSbYHtwqQ=
 		</data>
 		<key>System.Net.Http.dll</key>
 		<data>
@@ -414,7 +414,7 @@
 		</data>
 		<key>Xamarin.Forms.Core.aotdata.arm64</key>
 		<data>
-		OIUnd+aJy0wA1PErjzQNfaWHcOk=
+		2FBGgA1AVj08uIenAu28B14ZotA=
 		</data>
 		<key>Xamarin.Forms.Core.dll</key>
 		<data>
@@ -434,7 +434,7 @@
 		</data>
 		<key>Xamarin.Forms.Platform.iOS.aotdata.arm64</key>
 		<data>
-		QtkxxwqWxUK75390dVSxkHCjx/E=
+		kQnYzfZ3UXlHG3sxW53+p4Kq/c8=
 		</data>
 		<key>Xamarin.Forms.Platform.iOS.dll</key>
 		<data>
@@ -446,7 +446,7 @@
 		</data>
 		<key>Xamarin.Forms.Xaml.aotdata.arm64</key>
 		<data>
-		hPX6QA/dmPmzFxZKqcohjDGSJ6A=
+		MagQhj89Tp5EZS+wIRTDCPMjJww=
 		</data>
 		<key>Xamarin.Forms.Xaml.dll</key>
 		<data>
@@ -583,6 +583,90 @@
 		<key>logos/android/playstore-icon.png</key>
 		<data>
 		3w1JEU0hQGkM4iMC0exQT0l2STo=
+		</data>
+		<key>logos/icons/100.png</key>
+		<data>
+		90cJqn/0vLE9ev8ZvG2cQ43/HKc=
+		</data>
+		<key>logos/icons/1024.png</key>
+		<data>
+		6rJOapK2KucpnRhEulSLD/Hf5NY=
+		</data>
+		<key>logos/icons/114.png</key>
+		<data>
+		TZtiO3eyWhJ/0znQGgya5dG9ZrQ=
+		</data>
+		<key>logos/icons/120.png</key>
+		<data>
+		PjuMNVbGHD5TCTh0wI37JhsXvGs=
+		</data>
+		<key>logos/icons/144.png</key>
+		<data>
+		Wo1PTwnIv3MppUYcc3f8Jb89qPw=
+		</data>
+		<key>logos/icons/152.png</key>
+		<data>
+		ZHnQSZxo9ZPfNHgkXiACyuknfdc=
+		</data>
+		<key>logos/icons/167.png</key>
+		<data>
+		avUP6/Fgef9BRtOo2uizr+r0DrU=
+		</data>
+		<key>logos/icons/180.png</key>
+		<data>
+		X0udXy+SvBrpQ01otYGVzvSL0hc=
+		</data>
+		<key>logos/icons/20.png</key>
+		<data>
+		puCnEcnoGkJW8N9qfve7GZGutBE=
+		</data>
+		<key>logos/icons/29.png</key>
+		<data>
+		5DxkVXcc1tprjZMyQ6BY/m/bkCE=
+		</data>
+		<key>logos/icons/40.png</key>
+		<data>
+		XBUWu+nKJTjohrxlSJ/aMbSjB1w=
+		</data>
+		<key>logos/icons/50.png</key>
+		<data>
+		CBAcASKNQW18i3CodLIp06LxO8Q=
+		</data>
+		<key>logos/icons/512.png</key>
+		<data>
+		XgBILGN39rwwcEo7GCgra5hnRD4=
+		</data>
+		<key>logos/icons/57.png</key>
+		<data>
+		hZggUmZiLmIjQOgGsnGl9/b+tm4=
+		</data>
+		<key>logos/icons/58.png</key>
+		<data>
+		vHMuEuJPtdZnMDSEgtq649v8Vis=
+		</data>
+		<key>logos/icons/60.png</key>
+		<data>
+		+vxRcmeqvusFvtQ4pTkRU2WdS5U=
+		</data>
+		<key>logos/icons/72.png</key>
+		<data>
+		I996cnZ4PolZmoh5PBHCHbTVcqc=
+		</data>
+		<key>logos/icons/76.png</key>
+		<data>
+		528aR7gV+ZPjbJcb4o1hARKuQBE=
+		</data>
+		<key>logos/icons/80.png</key>
+		<data>
+		+pLeD4F5P0Kx0KmUveUsLA8bZ0U=
+		</data>
+		<key>logos/icons/87.png</key>
+		<data>
+		tHCqd/JW8XEoeNtlJzqmGvjVDHw=
+		</data>
+		<key>logos/icons/Contents.json</key>
+		<data>
+		9mvVM1PieOHz64q0QIpQfxho8FE=
 		</data>
 		<key>logos/imessenger/icon-messages-app-27x20@1x.png</key>
 		<data>
@@ -872,21 +956,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qviK6GRxX/ZxlzeiYdXAbHC/GHrr69umr0NV/LfXf+o=
+			xQexdN4V3Rrgv4Tl05A3FV6v6v/Z48FfRsg89qFiSDw=
 			</data>
 		</dict>
 		<key>AppIcons76x76@2x~ipad.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uMlHBBe0MlIsknhvGOkhn89sSCLX81caosJc9IKPgHk=
+			y8DprcTwVAcDFzSvu8K1GTBkzlYZXHozf7XiyARscT0=
 			</data>
 		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qUoyruGKEyPIUAzjIruomc9tOvK3objyZ9mQbSWQv/A=
+			JNiM+QsvVl9fGC8YVnKIekjKOJe1ELMBael3kHcsgRY=
 			</data>
 		</dict>
 		<key>BTProgressHUD.aotdata.arm64</key>
@@ -1026,14 +1110,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OqMcuvSQyh4zQy4TCbUKxMSzJO2iLtny5l6vJaHMgxw=
+			NCcIms7iXCF5wc0TkRX0SE9VCHyrR0wrW92XMaFlxNk=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/X5k-f2-b5h-view-yd7-JS-zBw.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pMBgKvhO5EGGqPzG/mMQP2Wo3ug1BITsbGjMaB0MpsQ=
+			KHfcWcBbBwpBH95n+1TzaXu6Y7u2VEq9evCADLCHxIY=
 			</data>
 		</dict>
 		<key>Mono.Security.aotdata.arm64</key>
@@ -1068,7 +1152,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OibWUT+cuXDFLnTQdzfKS/0HuQXs930stpP5yqLquyM=
+			8awv15EQ1twVXlP4oow+LhnmTMmn8E2PMlBfSwvz8Fg=
 			</data>
 		</dict>
 		<key>MoreLinq.dll</key>
@@ -1138,42 +1222,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RWkFonsM2CPD3p+wcGq7rVSc1eyJMuDKOzMKKAyeps8=
+			O2PwUKbvOLgXiPaGU512e1o5CYgTTkDaANC672vZVnU=
 			</data>
 		</dict>
 		<key>PixUl8.OpenCV.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W9569UrVTs8QhII553AzBa6jhcKrEcn/Y6343E8NgfY=
+			JBdeSH4P7ew+dz+0n6p0dDJOGnTQu5PNis2Li0tzl1I=
 			</data>
 		</dict>
 		<key>PixUl8.OpenCV.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jXk2IhoMyKnR0+KhwBn35JdBJCTzGNTl1cR3kY/BmBI=
+			WXfVFgslc1dzET3fc0VFg+OCBmM1KhOz+GzARLFqLto=
 			</data>
 		</dict>
 		<key>PixUl8.iOS.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9YxYqLMslbCjFQzeHFI1o3FVf9kNIiOcJ3o5+qpFAOw=
+			WL+x461w8EyiArTsY49jQ8E5jqx5qXVs63K1uTx9ihU=
 			</data>
 		</dict>
 		<key>PixUl8.iOS.exe</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZhQZZJxONU/JPeCoEvh0UNxXitu+bEelwcEvh418vhI=
+			eeYwS3Cjtu2I7WmHwAPfq2D2v+zkF5IclJvOJOt3YUw=
 			</data>
 		</dict>
 		<key>PixUl8.iOS.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NteKD1I8HvL+CzN2rIPr24pRzLkCwh7gK9I/mZ1cq68=
+			X2BkePYRrNC9mdUAgEtx2G1TfgN+ulhL/Wd/YkzC1oQ=
 			</data>
 		</dict>
 		<key>Plugin.Settings.Abstractions.aotdata.arm64</key>
@@ -1292,21 +1376,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PHz6tXboK0wVhyHQi/Mffni1VNCdy6n3nqTkla9LEvk=
+			ZywYHL9xFL/Twt1vOvMG4iy4GvQm+yMlejPgqfpGgHQ=
 			</data>
 		</dict>
 		<key>System.Core.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BdaojuUwiOUIPUQyK27SbmBYBRViSGYJ/yRKJ7+y7fQ=
+			DYgnf+mK6pABP5pzMJmNHnmCCNxf/IzK6oxB6PwoLkg=
 			</data>
 		</dict>
 		<key>System.Core.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D93FW7UdU+mJuXhOVZmi/MhY3QFbYpj86DOEIZ2AQSU=
+			R7JhhE6yMAa2ni0TKtD447z8rDhbAJN8Ejv+7ZHcCH4=
 			</data>
 		</dict>
 		<key>System.Data.aotdata.arm64</key>
@@ -1334,7 +1418,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VYVse/QEOxeOM0qIkyU5IG3EeqyGlhhkGeWkOuFoGs0=
+			Dz5Ajy2l5+SMTOgqs7LOEEtYKrcCxLfiWP/278ZqQGA=
 			</data>
 		</dict>
 		<key>System.Net.Http.dll</key>
@@ -1551,7 +1635,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rJuQvw/aGPOXzZfZaQ5VwIiXzgqu6DHddT3SlvIeESc=
+			cRkp6r1faPJiaALZgfvlqHKQFotUyVpeBwKMtfT6qCQ=
 			</data>
 		</dict>
 		<key>Xamarin.Forms.Core.dll</key>
@@ -1586,7 +1670,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			spyMAym9ckDvvjWh2tIPwG3MQ7lXhF7InQqGRuDZjKs=
+			Y8wT7MBHxvEEWwCHdour+7de8bvZQdbyj0TXz2T4HNQ=
 			</data>
 		</dict>
 		<key>Xamarin.Forms.Platform.iOS.dll</key>
@@ -1607,7 +1691,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0M3NBDvK0UAgIk70fIWhuZ1c0lvKXAbYi5rv+I5leCA=
+			C5JgmoJaYPJQ1RInL07OPbUEeQxK1tfK8sxDNfrjI9A=
 			</data>
 		</dict>
 		<key>Xamarin.Forms.Xaml.dll</key>
@@ -1846,6 +1930,153 @@
 			<key>hash2</key>
 			<data>
 			y+LGiEycumSOyIwT1zCaJTAIGOWKlSKmeEsN7igTqPc=
+			</data>
+		</dict>
+		<key>logos/icons/100.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CKlyBY/DPLW9qp4gNKUjg2YJ3cDLbhDiG7KwK3CDWJo=
+			</data>
+		</dict>
+		<key>logos/icons/1024.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			B/KYrjM967FxTtPVgorU9GAJvIIoMXYpD2JBzyJPGJw=
+			</data>
+		</dict>
+		<key>logos/icons/114.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EVV5Q6EIE0KkWndXyrWSZcYOCt50p97nsDhYBnEN844=
+			</data>
+		</dict>
+		<key>logos/icons/120.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xQexdN4V3Rrgv4Tl05A3FV6v6v/Z48FfRsg89qFiSDw=
+			</data>
+		</dict>
+		<key>logos/icons/144.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			j5WmuYiEyCu19fUO+8a0vydFEvceJYw9cxCYKZM+yo0=
+			</data>
+		</dict>
+		<key>logos/icons/152.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			y8DprcTwVAcDFzSvu8K1GTBkzlYZXHozf7XiyARscT0=
+			</data>
+		</dict>
+		<key>logos/icons/167.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Uersn+kObhIuryiZpVx/lkbqnbZOl6X1Z9K6osPsv38=
+			</data>
+		</dict>
+		<key>logos/icons/180.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n1LfyvgpNheg41twn0L2xDeVARJ3oQw3cW+OMboMoko=
+			</data>
+		</dict>
+		<key>logos/icons/20.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5qNgMT1atRkLgtvcJA08A6osJE8e6wZ1Ehvlis6PMss=
+			</data>
+		</dict>
+		<key>logos/icons/29.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NoqnOxCwxr3+oTPCvSQwntVXG2edGbOMkyBfjULFVX0=
+			</data>
+		</dict>
+		<key>logos/icons/40.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5zPZVtMR+WJ8DlMtVJhkUwaTOMpsdNxgdHJfQu6Eq94=
+			</data>
+		</dict>
+		<key>logos/icons/50.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2JLoxmwNBaBG6n9CZrohKlDWwRSZkQY7KPooxlyuYBY=
+			</data>
+		</dict>
+		<key>logos/icons/512.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/L9vPSpAq9ttAuB3yH5V3ztZ9HMpYft7Am3BQD86UIk=
+			</data>
+		</dict>
+		<key>logos/icons/57.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			96pM+ZO3x9Nyqs73FqBjGfLYqMsJShloEaMLReCnZfA=
+			</data>
+		</dict>
+		<key>logos/icons/58.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+KBY19slQH6ka7N1mt5p89n5uX566DVjB5EYBkoQEOU=
+			</data>
+		</dict>
+		<key>logos/icons/60.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			A13fw7aQeuR7fJQDvhp1PWZ5g+slljCLRicoeA7Fb5g=
+			</data>
+		</dict>
+		<key>logos/icons/72.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1258gX+OE+mXzINK/sWnUkoEcWoO71tk9T7bQE+52KE=
+			</data>
+		</dict>
+		<key>logos/icons/76.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NXAQH0awzE0B24ir+PMG2ECsmAlr0A2NV1q6BLwM4wk=
+			</data>
+		</dict>
+		<key>logos/icons/80.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			up+5CP+5I0mVQwxj280KcmhNCtcVbfsSf6Ek5F4yxuA=
+			</data>
+		</dict>
+		<key>logos/icons/87.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sejZiRftDYkQI1/V1uqBP3vdmEzZMsfoSyqMkW8AAUE=
+			</data>
+		</dict>
+		<key>logos/icons/Contents.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4c8nKUfG0om/dTt23EThw5trSfXCUqZKXMQlKSIRhso=
 			</data>
 		</dict>
 		<key>logos/imessenger/icon-messages-app-27x20@1x.png</key>

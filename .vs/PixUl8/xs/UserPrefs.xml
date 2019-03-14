@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/Resources/LaunchScreen.storyboard">
     <Files>
       <File FileName="PixUl8/PixUl8/ViewModels/HomeViewModel.cs" Line="247" Column="13" />
-      <File FileName="PixUl8/PixUl8/Views/HomePage.xaml" Line="191" Column="13" />
-      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="725" Column="24" />
+      <File FileName="PixUl8/PixUl8/Views/HomePage.xaml" Line="271" Column="45" />
+      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="1368" Column="9" />
+      <File FileName="PixUl8/PixUl8.iOS/Resources/LaunchScreen.storyboard" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E8C4F676-51C3-477F-82CB-767FBDB8A944" />
+  <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8F26E343-5B98-43A5-ADA7-D6CBE05F5DB9" />
   <MonoDevelop.Ide.ItemProperties.PixUl8 HideGettingStarted="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
