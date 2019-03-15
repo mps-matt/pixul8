@@ -11,6 +11,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <GLKit/GLKit.h>
 #import <WebKit/WebKit.h>
+#import <StoreKit/StoreKit.h>
 #import <Photos/Photos.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <CoreSpotlight/CoreSpotlight.h>

@@ -14,6 +14,8 @@ using System.Threading;
 using PixUl8.Views.ExtensionViews;
 using Acr.UserDialogs;
 using Plugin.Toasts;
+using UIKit;
+using Foundation;
 //using Acr.UserDialogs;
 
 namespace PixUl8.ViewModels
@@ -246,6 +248,15 @@ namespace PixUl8.ViewModels
         {
             await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PushAsync(_helpPage);
         }
+
+ 
+        private ICommand _privacyCommand;
+        public ICommand OpenPrivacyPolicyCommand { get { return _privacyCommand = _privacyCommand ?? new Command(async () => await PrivacyAsync()); } }
+        public async Task PrivacyAsync()
+        {
+            UIApplication.SharedApplication.OpenUrl(new NSUrl("https://www.dropbox.com/s/mtx5q9dq0ofoxhj/PixUl8%20Privacy%20Policy.docx?dl=0"));
+        }
+
 
         public void Appeared()
         {
