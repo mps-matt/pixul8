@@ -10,6 +10,7 @@ using MediaPlayer;
 using PixUl8.iOS.Delegates;
 using Plugin.Toasts;
 using SlideOverKit.iOS;
+using StoreKit;
 using UIKit;
 using UserNotifications;
 using Xamarin.Forms;
@@ -73,6 +74,8 @@ namespace PixUl8.iOS
 
             DependencyService.Register<ToastNotification>(); // Register your dependency
             ToastNotification.Init();
+
+            SKStoreReviewController.RequestReview();
 
             return result;
         }

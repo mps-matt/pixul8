@@ -485,6 +485,106 @@ namespace PixUl8.iOS.UIViews
             };
             //_videoView = new UIImageView();
 
+
+
+            var deviceSession = AVCaptureDeviceDiscoverySession.Create(allTypes, AVMediaType.Video,
+                (_cameraOptions == CameraOptions.Front) ? AVCaptureDevicePosition.Front : AVCaptureDevicePosition.Back);
+                
+
+            //Get best device, first one isi usually most hightech avaiable. 
+            //Only issue i see happening is iphon 2g only had a rear cameras but let's be real here.
+            //This app SHOULD NEVER be ran on an orignal iphone!!
+            var videoDevices = deviceSession.Devices;
+
+            var devices = videoDevices.Where(d => d.LockingFocusWithCustomLensPositionSupported && d.LockingWhiteBalanceWithCustomDeviceGainsSupported).ToList();
+
+            _device = videoDevices.FirstOrDefault(d => d.LockingFocusWithCustomLensPositionSupported && d.LockingWhiteBalanceWithCustomDeviceGainsSupported);
+            if (_device == null)
+                _device = videoDevices.FirstOrDefault(d => d.LockingWhiteBalanceWithCustomDeviceGainsSupported);
+
+            if (_device == null)
+                _device = videoDevices.ElementAtOrDefault(0);
+
+            if (_device == null)
+            {
+                return;
+            }
+
+            if (devices.Count > 1)
+                _device = devices[1];
+
+
+            NSError lockErr;
+            _device.LockForConfiguration(out lockErr);
+            #region Set up Device Variables
+
+            //Debug.WriteLine(_device.LockingFocusWithCustomLensPositionSupported);
+
+
+            //Get the frame rates allowed by this format type (whetherr telophoto, treudedepth etc)
+            var highestFrameRate = _device.ActiveFormat.VideoSupportedFrameRateRanges.MaxBy(fps => fps.MinFrameRate);
+            _device.ActiveVideoMinFrameDuration = highestFrameRate.First().MinFrameDuration;
+            _device.ActiveVideoMaxFrameDuration = highestFrameRate.First().MaxFrameDuration;
+
+            _minimumZoomFactor = _device.MinAvailableVideoZoomFactor;
+            _maxZoomFactor = _device.MaxAvailableVideoZoomFactor;
+
+           
+
+            if (_device.ActiveFormat.videoHDRSupportedVideoHDREnabled)
+            {
+                _device.AutomaticallyAdjustsVideoHdrEnabled = false;
+                _device.VideoHdrEnabled = true;
+                Debug.WriteLine("Video HDR on for " + _cameraOptions);
+            }
+
+            //This is so the focus circle can follow the object but it throws an exception!
+            // _observer = _device.AddObserver("FocusPointOfInterest", NSKeyValueObservingOptions.New, FocusChange);
+
+            #endregion
+            _device.UnlockForConfiguration();
+
+
+            _imageDelegate = new PhotoCaptureDelegate();
+            _hdrImageDelegate = new HDRPhotoCaptureDelegate();
+
+            NSError error;
+            var input = new AVCaptureDeviceInput(_device, out error);
+            
+            CaptureSession.AddInput(input);
+
+            _photoOutput = new AVCapturePhotoOutput();
+
+            _photoOutput.IsHighResolutionCaptureEnabled = true;
+
+            CaptureSession.AddOutput(_photoOutput);
+
+            var metadataoutput = new AVCaptureMetadataOutput();
+            metadataoutput.SetDelegate(this, CoreFoundation.DispatchQueue.MainQueue);
+
+            CaptureSession.AddOutput(metadataoutput);
+
+            metadataoutput.MetadataObjectTypes = AVMetadataObjectType.QRCode |
+            AVMetadataObjectType.AztecCode |
+                AVMetadataObjectType.Code128Code |
+            AVMetadataObjectType.Code39Code |
+                AVMetadataObjectType.Code39Mod43Code | AVMetadataObjectType.Code93Code |
+            AVMetadataObjectType.DataMatrixCode | AVMetadataObjectType.EAN13Code |
+                AVMetadataObjectType.EAN8Code | AVMetadataObjectType.Interleaved2of5Code
+            | AVMetadataObjectType.ITF14Code | AVMetadataObjectType.PDF417Code |
+                AVMetadataObjectType.UPCECode | AVMetadataObjectType.Face;
+
+            Layer.AddSublayer(_previewLayer);
+            //this.AddSubview(_videoView);
+
+            //Subscribe to the volume change event, to abstract it ouf of here
+            MessagingCenter.Subscribe<AppDelegate>(this, "VolumeChange", async (de) => { await TakePhotoAsync(); });
+
+
+
+            _exposureBias = _device.ExposureTargetBias;
+
+
             #region Layers
 
             //320x568 is the 5s line
@@ -494,7 +594,7 @@ namespace PixUl8.iOS.UIViews
             {
                 #region 5s Line Boxes
 
-                var zoomRect = new CGRect((x) - 90, (y / 4) - 180, 85, 85);
+                var zoomRect = new CGRect((x) - 95, (y / 4) - 130, 85, 85);
                 _percentage = new CircleZoomPercentage(zoomRect, 1);
 
                 var focusRect = new CGRect(0, 0, 150, 150);
@@ -615,12 +715,12 @@ namespace PixUl8.iOS.UIViews
             }
             else
             {
-            
-                var zoomRect = new CGRect((x) - 90, (y / 4) - 180, 85, 85);
+
+                var zoomRect = new CGRect((x) - 95, (y / 4) - 130, 85, 85);
                 _percentage = new CircleZoomPercentage(zoomRect, 1);
 
                 var focusRect = new CGRect(0, 0, 150, 150);
-                var takeimageRect = new CGRect((x/2)-75, y-170, 150, 150);
+                var takeimageRect = new CGRect((x / 2) - 75, y - 170, 150, 150);
 
                 _focusWheel = new FocusWheel(focusRect, 2);
                 _takeImageButton = new TakeImageButton(takeimageRect, 4);
@@ -646,7 +746,7 @@ namespace PixUl8.iOS.UIViews
                     TapToFocus(touch.LocationInView(this));
                 });
                 leftHandButton.BackgroundColor = UIColor.Clear;
-                leftHandButton.Frame = new CGRect(-50, y-250, 150, 250);
+                leftHandButton.Frame = new CGRect(-50, y - 250, 150, 250);
                 var rightSwipeGesture = new UISwipeGestureRecognizer(() => SwipeHandlerSwitchCamera(SwipeType.Right)) { Direction = UISwipeGestureRecognizerDirection.Right };
                 leftHandButton.AddGestureRecognizer(rightSwipeGesture);
                 this.AddSubview(leftHandButton);
@@ -660,7 +760,7 @@ namespace PixUl8.iOS.UIViews
                 });
                 rightHandButton.BackgroundColor = UIColor.Clear;
 
-                rightHandButton.Frame = new CGRect(x-100, y-250, 100, 250);
+                rightHandButton.Frame = new CGRect(x - 100, y - 250, 100, 250);
                 var leftSwipeGesture = new UISwipeGestureRecognizer(() => SwipeHandlerSwitchCamera(SwipeType.Left)) { Direction = UISwipeGestureRecognizerDirection.Left };
                 rightHandButton.AddGestureRecognizer(leftSwipeGesture);
                 this.AddSubview(rightHandButton);
@@ -676,7 +776,7 @@ namespace PixUl8.iOS.UIViews
                     TapToFocus(touch.LocationInView(this));
                 });
                 leftHandFlashButton.BackgroundColor = UIColor.Clear;
-                leftHandFlashButton.Frame = new CGRect(-50, y-400, 150, 200);
+                leftHandFlashButton.Frame = new CGRect(-50, y - 400, 150, 200);
                 var rightSwipeFlashGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleFlash(SwipeType.Right)) { Direction = UISwipeGestureRecognizerDirection.Right };
                 leftHandFlashButton.AddGestureRecognizer(rightSwipeFlashGesture);
                 this.AddSubview(leftHandFlashButton);
@@ -689,7 +789,7 @@ namespace PixUl8.iOS.UIViews
                     TapToFocus(touch.LocationInView(this));
                 });
                 rightHandFlashButton.BackgroundColor = UIColor.Clear;
-                rightHandFlashButton.Frame = new CGRect(x-100, y-400, 100, 200);
+                rightHandFlashButton.Frame = new CGRect(x - 100, y - 400, 100, 200);
                 var leftSwipeFlashGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleFlash(SwipeType.Left)) { Direction = UISwipeGestureRecognizerDirection.Left };
                 rightHandFlashButton.AddGestureRecognizer(leftSwipeFlashGesture);
                 this.AddSubview(rightHandFlashButton);
@@ -705,7 +805,7 @@ namespace PixUl8.iOS.UIViews
                     TapToFocus(touch.LocationInView(this));
                 });
                 leftHandHDRButton.BackgroundColor = UIColor.Clear;
-                leftHandHDRButton.Frame = new CGRect(-50, y-600, 150, 200);
+                leftHandHDRButton.Frame = new CGRect(-50, y - 600, 150, 200);
                 var rightSwipeHDRGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleHDR(SwipeType.Right)) { Direction = UISwipeGestureRecognizerDirection.Right };
                 leftHandHDRButton.AddGestureRecognizer(rightSwipeHDRGesture);
                 this.AddSubview(leftHandHDRButton);
@@ -718,7 +818,7 @@ namespace PixUl8.iOS.UIViews
                     TapToFocus(touch.LocationInView(this));
                 });
                 rightHandHDRButton.BackgroundColor = UIColor.Clear;
-                rightHandHDRButton.Frame = new CGRect(x-100, y-600, 100, 200);
+                rightHandHDRButton.Frame = new CGRect(x - 100, y - 600, 100, 200);
                 var leftSwipeHDRGesture = new UISwipeGestureRecognizer(() => SwipeHanlderToggleHDR(SwipeType.Left)) { Direction = UISwipeGestureRecognizerDirection.Left };
                 rightHandHDRButton.AddGestureRecognizer(leftSwipeHDRGesture);
                 this.AddSubview(rightHandHDRButton);
@@ -733,103 +833,6 @@ namespace PixUl8.iOS.UIViews
             }
             #endregion
 
-
-            var deviceSession = AVCaptureDeviceDiscoverySession.Create(allTypes, AVMediaType.Video,
-                (_cameraOptions == CameraOptions.Front) ? AVCaptureDevicePosition.Front : AVCaptureDevicePosition.Back);
-                
-
-            //Get best device, first one isi usually most hightech avaiable. 
-            //Only issue i see happening is iphon 2g only had a rear cameras but let's be real here.
-            //This app SHOULD NEVER be ran on an orignal iphone!!
-            var videoDevices = deviceSession.Devices;
-
-            var devices = videoDevices.Where(d => d.LockingFocusWithCustomLensPositionSupported && d.LockingWhiteBalanceWithCustomDeviceGainsSupported).ToList();
-
-            _device = videoDevices.FirstOrDefault(d => d.LockingFocusWithCustomLensPositionSupported && d.LockingWhiteBalanceWithCustomDeviceGainsSupported);
-            if (_device == null)
-                _device = videoDevices.FirstOrDefault(d => d.LockingWhiteBalanceWithCustomDeviceGainsSupported);
-
-            if (_device == null)
-                _device = videoDevices.ElementAtOrDefault(0);
-
-            if (_device == null)
-            {
-                return;
-            }
-
-            if (devices.Count > 1)
-                _device = devices[1];
-
-
-            NSError lockErr;
-            _device.LockForConfiguration(out lockErr);
-            #region Set up Device Variables
-
-            //Debug.WriteLine(_device.LockingFocusWithCustomLensPositionSupported);
-
-
-            //Get the frame rates allowed by this format type (whetherr telophoto, treudedepth etc)
-            var highestFrameRate = _device.ActiveFormat.VideoSupportedFrameRateRanges.MaxBy(fps => fps.MinFrameRate);
-            _device.ActiveVideoMinFrameDuration = highestFrameRate.First().MinFrameDuration;
-            _device.ActiveVideoMaxFrameDuration = highestFrameRate.First().MaxFrameDuration;
-
-            _minimumZoomFactor = _device.MinAvailableVideoZoomFactor;
-            _maxZoomFactor = _device.MaxAvailableVideoZoomFactor;
-
-           
-
-            if (_device.ActiveFormat.videoHDRSupportedVideoHDREnabled)
-            {
-                _device.AutomaticallyAdjustsVideoHdrEnabled = false;
-                _device.VideoHdrEnabled = true;
-                Debug.WriteLine("Video HDR on for " + _cameraOptions);
-            }
-
-            //This is so the focus circle can follow the object but it throws an exception!
-            // _observer = _device.AddObserver("FocusPointOfInterest", NSKeyValueObservingOptions.New, FocusChange);
-
-            #endregion
-            _device.UnlockForConfiguration();
-
-
-            _imageDelegate = new PhotoCaptureDelegate();
-            _hdrImageDelegate = new HDRPhotoCaptureDelegate();
-
-            NSError error;
-            var input = new AVCaptureDeviceInput(_device, out error);
-            
-            CaptureSession.AddInput(input);
-
-            _photoOutput = new AVCapturePhotoOutput();
-
-            _photoOutput.IsHighResolutionCaptureEnabled = true;
-
-            CaptureSession.AddOutput(_photoOutput);
-
-            var metadataoutput = new AVCaptureMetadataOutput();
-            metadataoutput.SetDelegate(this, CoreFoundation.DispatchQueue.MainQueue);
-
-            CaptureSession.AddOutput(metadataoutput);
-
-            metadataoutput.MetadataObjectTypes = AVMetadataObjectType.QRCode |
-            AVMetadataObjectType.AztecCode |
-                AVMetadataObjectType.Code128Code |
-            AVMetadataObjectType.Code39Code |
-                AVMetadataObjectType.Code39Mod43Code | AVMetadataObjectType.Code93Code |
-            AVMetadataObjectType.DataMatrixCode | AVMetadataObjectType.EAN13Code |
-                AVMetadataObjectType.EAN8Code | AVMetadataObjectType.Interleaved2of5Code
-            | AVMetadataObjectType.ITF14Code | AVMetadataObjectType.PDF417Code |
-                AVMetadataObjectType.UPCECode | AVMetadataObjectType.Face;
-
-            Layer.AddSublayer(_previewLayer);
-            //this.AddSubview(_videoView);
-
-            //Subscribe to the volume change event, to abstract it ouf of here
-            MessagingCenter.Subscribe<AppDelegate>(this, "VolumeChange", async (de) => { await TakePhotoAsync(); });
-
-
-
-            _exposureBias = _device.ExposureTargetBias;
 
             #endregion
 
