@@ -65,6 +65,7 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <AssemblyName>PixUL8.iOS</AssemblyName>
+    <CodesignProvision>pixul8-dev-natty</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
