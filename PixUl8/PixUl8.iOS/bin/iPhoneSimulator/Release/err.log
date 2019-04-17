@@ -1,7 +1,0 @@
-MonoTouch: Could not install sigaction override, unexpected sigaction implementation.
-2019-03-15 16:41:14.309925+0000 PixUl8.iOS[1190:119141] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=1190
-2019-03-15 16:41:14.311135+0000 PixUl8.iOS[1190:119141] SecTaskCopyDebugDescription: PixUl8.iOS[1190]/0#-1 LF=0
-2019-03-15 16:41:16.445817+0000 PixUl8.iOS[1190:119141] [MediaRemote] [AVOutputContext] WARNING: AVF context unavailable for +[MRAVOutputContext sharedAudioPresentationContext]_block_invoke
-2019-03-15 16:41:16.446427+0000 PixUl8.iOS[1190:119141] [MediaRemote] [AVOutputContext] WARNING: AVF context unavailable for SYSTEM
-2019-03-15 16:41:17.006263+0000 PixUl8.iOS[1190:119174] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=1190
-2019-03-15 16:41:17.006635+0000 PixUl8.iOS[1190:119174] SecTaskCopyDebugDescription: PixUl8.iOS[1190]/0#-1 LF=0

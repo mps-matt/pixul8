@@ -35,7 +35,7 @@ namespace PixUl8.iOS.UIViews
         Right
     }
 
-    public class UICameraPreview : UIView, IAVCaptureMetadataOutputObjectsDelegate
+    public class UICameraPreview : UIView, IAVCaptureMetadataOutputObjectsDelegate, IUICameraPreview
     {
         public static readonly int HDRCAPTURECOUNT = 9;
 

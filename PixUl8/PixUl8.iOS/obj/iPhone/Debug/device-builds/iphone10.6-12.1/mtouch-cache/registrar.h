@@ -12,6 +12,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <GLKit/GLKit.h>
 #import <WebKit/WebKit.h>
+#import <StoreKit/StoreKit.h>
 #import <Photos/Photos.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <CoreSpotlight/CoreSpotlight.h>
@@ -23,14 +24,18 @@
 @class AVCapturePhotoCaptureDelegate;
 @class UIScrollViewDelegate;
 @class UITableViewSource;
+@class UICollectionViewDelegateFlowLayout;
 @class UIActionSheetDelegate;
 @class GLKViewDelegate;
 @class UIPickerViewModel;
 @class UISplitViewControllerDelegate;
 @class UIWebViewDelegate;
 @class WKNavigationDelegate;
-@class UICollectionViewDataSource;
+@class UIGestureRecognizerDelegate;
+@class UINavigationControllerDelegate;
+@class WKUIDelegate;
 @class UIKit_UIControlEventProxy;
+@class UISearchResultsUpdating;
 @class Foundation_InternalNSNotificationHandler;
 @class Foundation_NSDispatcher;
 @class __MonoMac_NSActionDispatcher;
@@ -60,13 +65,21 @@
 @class Xamarin_Forms_Platform_iOS_CellTableViewCell;
 @class Xamarin_Forms_Platform_iOS_ActivityIndicatorRenderer;
 @class Xamarin_Forms_Platform_iOS_BoxRenderer;
+@class Xamarin_Forms_Platform_iOS_ButtonRenderer;
 @class Xamarin_Forms_Platform_iOS_NoCaretField;
+@class Xamarin_Forms_Platform_iOS_DatePickerRendererBase_1;
+@class Xamarin_Forms_Platform_iOS_DatePickerRenderer;
+@class Xamarin_Forms_Platform_iOS_EditorRendererBase_1;
+@class Xamarin_Forms_Platform_iOS_EditorRenderer;
+@class Xamarin_Forms_Platform_iOS_EntryRendererBase_1;
 @class Xamarin_Forms_Platform_iOS_EntryRenderer;
 @class Xamarin_Forms_Platform_iOS_FrameRenderer;
 @class Xamarin_Forms_Platform_iOS_LabelRenderer;
 @class Xamarin_Forms_Platform_iOS_HeaderWrapperView;
 @class Xamarin_Forms_Platform_iOS_FormsRefreshControl;
 @class Xamarin_Forms_Platform_iOS_ReadOnlyField;
+@class Xamarin_Forms_Platform_iOS_PickerRendererBase_1;
+@class Xamarin_Forms_Platform_iOS_PickerRenderer;
 @class Xamarin_Forms_Platform_iOS_ProgressBarRenderer;
 @class Xamarin_Forms_Platform_iOS_ScrollViewRenderer;
 @class Xamarin_Forms_Platform_iOS_SearchBarRenderer;
@@ -77,7 +90,32 @@
 @class Xamarin_Forms_Platform_iOS_TableViewRenderer;
 @class Xamarin_Forms_Platform_iOS_ChildViewController;
 @class Xamarin_Forms_Platform_iOS_EventedViewController;
+@class Xamarin_Forms_Platform_iOS_TimePickerRendererBase_1;
+@class Xamarin_Forms_Platform_iOS_TimePickerRenderer;
+@class Xamarin_Forms_Platform_iOS_ItemsViewRenderer;
+@class Xamarin_Forms_Platform_iOS_SelectableItemsViewRenderer;
+@class Xamarin_Forms_Platform_iOS_CollectionViewRenderer;
+@class Xamarin_Forms_Platform_iOS_ItemsViewCell;
+@class Xamarin_Forms_Platform_iOS_DefaultCell;
+@class Xamarin_Forms_Platform_iOS_HorizontalDefaultCell;
+@class Xamarin_Forms_Platform_iOS_ItemsViewController;
+@class Xamarin_Forms_Platform_iOS_SelectableItemsViewController;
+@class Xamarin_Forms_Platform_iOS_UICollectionViewDelegator;
+@class Xamarin_Forms_Platform_iOS_VerticalDefaultCell;
+@class Xamarin_Forms_Platform_iOS_ItemsViewLayout;
+@class Xamarin_Forms_Platform_iOS_GridViewLayout;
+@class Xamarin_Forms_Platform_iOS_ListViewLayout;
+@class Xamarin_Forms_Platform_iOS_TemplatedCell;
+@class Xamarin_Forms_Platform_iOS_HorizontalTemplatedCell;
+@class Xamarin_Forms_Platform_iOS_VerticalTemplatedCell;
 @class Xamarin_Forms_Platform_iOS_NativeViewWrapperRenderer;
+@class Xamarin_Forms_Platform_iOS_ShellFlyoutContentRenderer;
+@class Xamarin_Forms_Platform_iOS_ShellItemRenderer;
+@class Xamarin_Forms_Platform_iOS_ShellSearchResultsRenderer;
+@class Xamarin_Forms_Platform_iOS_ShellTableViewController;
+@class Xamarin_Forms_Platform_iOS_TabletShellFlyoutRenderer;
+@class Xamarin_Forms_Platform_iOS_UIContainerCell;
+@class Xamarin_Forms_Platform_iOS_UIContainerView;
 @class Xamarin_Forms_Platform_iOS_NativeViewPropertyListener;
 @class Xamarin_Forms_Platform_iOS_ContextActionsCell_SelectGestureRecognizer;
 @class Xamarin_Forms_Platform_iOS_ContextActionsCell_MoreActionSheetController;
@@ -87,19 +125,14 @@
 @class Xamarin_Forms_Platform_iOS_Platform_DefaultRenderer;
 @class Xamarin_Forms_Platform_iOS_EntryCellRenderer_EntryCellTableViewCell;
 @class Xamarin_Forms_Platform_iOS_ViewCellRenderer_ViewTableCell;
-@class Xamarin_Forms_Platform_iOS_ButtonRenderer;
 @class Xamarin_Forms_Platform_iOS_CarouselPageRenderer_PageContainer;
 @class Xamarin_Forms_Platform_iOS_CarouselPageRenderer;
-@class Xamarin_Forms_Platform_iOS_DatePickerRenderer;
-@class Xamarin_Forms_Platform_iOS_EditorRenderer_FormsUITextView;
-@class Xamarin_Forms_Platform_iOS_EditorRenderer;
+@class Xamarin_Forms_Platform_iOS_EditorRendererBase_1_FormsUITextView;
 @class Xamarin_Forms_Platform_iOS_ImageRenderer;
 @class Xamarin_Forms_Platform_iOS_ListViewRenderer_ListViewDataSource;
 @class Xamarin_Forms_Platform_iOS_ListViewRenderer_UnevenListViewDataSource;
 @class Xamarin_Forms_Platform_iOS_ListViewRenderer;
 @class Xamarin_Forms_Platform_iOS_FormsUITableViewController;
-@class Xamarin_Forms_Platform_iOS_NavigationMenuRenderer_NavigationCell;
-@class Xamarin_Forms_Platform_iOS_NavigationMenuRenderer;
 @class Xamarin_Forms_Platform_iOS_NavigationRenderer_FormsNavigationBar;
 @class Xamarin_Forms_Platform_iOS_NavigationRenderer_Container;
 @class Xamarin_Forms_Platform_iOS_NavigationRenderer;
@@ -108,24 +141,33 @@
 @class Xamarin_Forms_Platform_iOS_PageRenderer;
 @class Xamarin_Forms_Platform_iOS_PhoneMasterDetailRenderer_ChildViewController;
 @class Xamarin_Forms_Platform_iOS_PhoneMasterDetailRenderer;
-@class Xamarin_Forms_Platform_iOS_PickerRenderer_PickerSource;
-@class Xamarin_Forms_Platform_iOS_PickerRenderer;
+@class Xamarin_Forms_Platform_iOS_PickerRendererBase_1_PickerSource;
 @class Xamarin_Forms_Platform_iOS_SliderRenderer;
 @class Xamarin_Forms_Platform_iOS_TabbedRenderer;
 @class Xamarin_Forms_Platform_iOS_TabletMasterDetailRenderer_InnerDelegate;
 @class Xamarin_Forms_Platform_iOS_TabletMasterDetailRenderer;
-@class Xamarin_Forms_Platform_iOS_TimePickerRenderer;
 @class Xamarin_Forms_Platform_iOS_WebViewRenderer_CustomWebViewDelegate;
 @class Xamarin_Forms_Platform_iOS_WebViewRenderer;
-@class Xamarin_Forms_Platform_iOS_WkWebViewRenderer_CustomWebViewDelegate;
+@class Xamarin_Forms_Platform_iOS_WkWebViewRenderer_CustomWebViewNavigationDelegate;
 @class Xamarin_Forms_Platform_iOS_WkWebViewRenderer;
+@class Xamarin_Forms_Platform_iOS_ShellFlyoutRenderer;
+@class Xamarin_Forms_Platform_iOS_ShellPageRendererTracker_TitleViewContainer;
+@class Xamarin_Forms_Platform_iOS_ShellRenderer;
+@class Xamarin_Forms_Platform_iOS_ShellSectionRootHeader_ShellSectionHeaderCell;
+@class Xamarin_Forms_Platform_iOS_ShellSectionRootHeader;
+@class Xamarin_Forms_Platform_iOS_ShellSectionRootRenderer;
+@class Xamarin_Forms_Platform_iOS_ShellSectionRenderer_GestureDelegate;
+@class Xamarin_Forms_Platform_iOS_ShellSectionRenderer_NavDelegate;
+@class Xamarin_Forms_Platform_iOS_ShellSectionRenderer;
+@class Xamarin_Forms_Platform_iOS_ShellTableViewSource_SeparatorView;
+@class Xamarin_Forms_Platform_iOS_ShellTableViewSource;
 @class Xamarin_Forms_Platform_iOS_ImageButtonRenderer;
 @class Xamarin_Forms_Platform_iOS_ToolbarItemExtensions_PrimaryToolbarItem;
 @class Xamarin_Forms_Platform_iOS_ToolbarItemExtensions_SecondaryToolbarItem_SecondaryToolbarItemContent;
 @class Xamarin_Forms_Platform_iOS_ToolbarItemExtensions_SecondaryToolbarItem;
-@class Xamarin_Forms_Platform_iOS_NavigationMenuRenderer_DataSource;
 @class Xamarin_Forms_Platform_iOS_NavigationRenderer_SecondaryToolbar;
 @class Xamarin_Forms_Platform_iOS_NavigationRenderer_ParentingViewController;
+@class Xamarin_Forms_Platform_iOS_WkWebViewRenderer_CustomWebViewUIDelegate;
 @class OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource;
 @class OpenTK_Platform_iPhoneOS_iPhoneOSGameView;
 @class GLKit_GLKView__GLKViewDelegate;
@@ -142,6 +184,7 @@
 @class __UIPinchGestureRecognizer;
 @class UIKit_UINavigationBar_UINavigationBarAppearance;
 @class UIKit_UISearchBar__UISearchBarDelegate;
+@class UIKit_UISearchController___Xamarin_UISearchResultsUpdating;
 @class UIKit_UITextField__UITextFieldDelegate;
 @class UIKit_UIScrollView__UIScrollViewDelegate;
 @class UIKit_UITextView__UITextViewDelegate;
@@ -187,6 +230,11 @@
 	-(id) init;
 @end
 
+@interface UICollectionViewDelegateFlowLayout : NSObject<UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate> {
+}
+	-(id) init;
+@end
+
 @interface UIActionSheetDelegate : NSObject<UIActionSheetDelegate> {
 }
 	-(id) init;
@@ -217,7 +265,22 @@
 	-(id) init;
 @end
 
-@interface UICollectionViewDataSource : NSObject<UICollectionViewDataSource> {
+@interface UIGestureRecognizerDelegate : NSObject<UIGestureRecognizerDelegate> {
+}
+	-(id) init;
+@end
+
+@interface UINavigationControllerDelegate : NSObject<UINavigationControllerDelegate> {
+}
+	-(id) init;
+@end
+
+@interface WKUIDelegate : NSObject<WKUIDelegate> {
+}
+	-(id) init;
+@end
+
+@interface UISearchResultsUpdating : NSObject<UISearchResultsUpdating> {
 }
 	-(id) init;
 @end
@@ -396,7 +459,38 @@
 	-(id) init;
 @end
 
-@interface Xamarin_Forms_Platform_iOS_EntryRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
+@interface Xamarin_Forms_Platform_iOS_ButtonRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
+}
+	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_DatePickerRendererBase_1 : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_DatePickerRenderer : Xamarin_Forms_Platform_iOS_DatePickerRendererBase_1 {
+}
+	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_EditorRendererBase_1 : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_EditorRenderer : Xamarin_Forms_Platform_iOS_EditorRendererBase_1 {
+}
+	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_EntryRendererBase_1 : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_EntryRenderer : Xamarin_Forms_Platform_iOS_EntryRendererBase_1 {
 }
 	-(id) init;
 @end
@@ -422,6 +516,16 @@
 	-(void) setHidden:(BOOL)p0;
 	-(void) beginRefreshing;
 	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_PickerRendererBase_1 : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_PickerRenderer : Xamarin_Forms_Platform_iOS_PickerRendererBase_1 {
+}
+	-(id) init;
 @end
 
 @interface Xamarin_Forms_Platform_iOS_ProgressBarRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
@@ -466,6 +570,7 @@
 	-(UITableViewCell *) tableView:(UITableView *)p0 cellForRowAtIndexPath:(NSIndexPath *)p1;
 	-(CGFloat) tableView:(UITableView *)p0 heightForHeaderInSection:(NSInteger)p1;
 	-(UIView *) tableView:(UITableView *)p0 viewForHeaderInSection:(NSInteger)p1;
+	-(void) tableView:(UITableView *)p0 willDisplayHeaderView:(UIView *)p1 forSection:(NSInteger)p2;
 	-(NSInteger) numberOfSectionsInTableView:(UITableView *)p0;
 	-(void) tableView:(UITableView *)p0 didSelectRowAtIndexPath:(NSIndexPath *)p1;
 	-(NSInteger) tableView:(UITableView *)p0 numberOfRowsInSection:(NSInteger)p1;
@@ -485,6 +590,100 @@
 	-(id) init;
 @end
 
+@interface Xamarin_Forms_Platform_iOS_TimePickerRendererBase_1 : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_TimePickerRenderer : Xamarin_Forms_Platform_iOS_TimePickerRendererBase_1 {
+}
+	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_ItemsViewRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_SelectableItemsViewRenderer : Xamarin_Forms_Platform_iOS_ItemsViewRenderer {
+}
+	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_CollectionViewRenderer : Xamarin_Forms_Platform_iOS_SelectableItemsViewRenderer {
+}
+	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_ItemsViewCell : UICollectionViewCell {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) initWithFrame:(CGRect)p0;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_DefaultCell : Xamarin_Forms_Platform_iOS_ItemsViewCell {
+}
+	-(id) initWithFrame:(CGRect)p0;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_ItemsViewController : UICollectionViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(UICollectionViewCell *) collectionView:(UICollectionView *)p0 cellForItemAtIndexPath:(NSIndexPath *)p1;
+	-(NSInteger) collectionView:(UICollectionView *)p0 numberOfItemsInSection:(NSInteger)p1;
+	-(void) viewDidLoad;
+	-(void) viewWillLayoutSubviews;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_SelectableItemsViewController : Xamarin_Forms_Platform_iOS_ItemsViewController {
+}
+	-(void) collectionView:(UICollectionView *)p0 didSelectItemAtIndexPath:(NSIndexPath *)p1;
+	-(void) collectionView:(UICollectionView *)p0 didDeselectItemAtIndexPath:(NSIndexPath *)p1;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_UICollectionViewDelegator : NSObject<UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) collectionView:(UICollectionView *)p0 willDisplayCell:(UICollectionViewCell *)p1 forItemAtIndexPath:(NSIndexPath *)p2;
+	-(UIEdgeInsets) collectionView:(UICollectionView *)p0 layout:(UICollectionViewLayout *)p1 insetForSectionAtIndex:(NSInteger)p2;
+	-(CGFloat) collectionView:(UICollectionView *)p0 layout:(UICollectionViewLayout *)p1 minimumInteritemSpacingForSectionAtIndex:(NSInteger)p2;
+	-(CGFloat) collectionView:(UICollectionView *)p0 layout:(UICollectionViewLayout *)p1 minimumLineSpacingForSectionAtIndex:(NSInteger)p2;
+	-(void) collectionView:(UICollectionView *)p0 didSelectItemAtIndexPath:(NSIndexPath *)p1;
+	-(void) collectionView:(UICollectionView *)p0 didDeselectItemAtIndexPath:(NSIndexPath *)p1;
+	-(void) collectionView:(UICollectionView *)p0 didEndDisplayingCell:(UICollectionViewCell *)p1 forItemAtIndexPath:(NSIndexPath *)p2;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_ItemsViewLayout : UICollectionViewFlowLayout {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(BOOL) shouldInvalidateLayoutForBoundsChange:(CGRect)p0;
+	-(CGPoint) targetContentOffsetForProposedContentOffset:(CGPoint)p0 withScrollingVelocity:(CGPoint)p1;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_TemplatedCell : Xamarin_Forms_Platform_iOS_ItemsViewCell {
+}
+	-(UICollectionViewLayoutAttributes *) preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)p0;
+	-(BOOL) isSelected;
+	-(void) setSelected:(BOOL)p0;
+	-(id) initWithFrame:(CGRect)p0;
+@end
+
 @interface Xamarin_Forms_Platform_iOS_NativeViewWrapperRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
 }
 	-(void) layoutSubviews;
@@ -492,10 +691,84 @@
 	-(id) init;
 @end
 
-@interface Xamarin_Forms_Platform_iOS_ButtonRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
+@interface Xamarin_Forms_Platform_iOS_ShellFlyoutContentRenderer : UIViewController {
 }
-	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) viewDidLayoutSubviews;
+	-(void) viewDidLoad;
+	-(void) viewWillAppear:(BOOL)p0;
+	-(void) viewWillDisappear:(BOOL)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_ShellItemRenderer : UITabBarController {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(UIViewController *) selectedViewController;
+	-(void) setSelectedViewController:(UIViewController *)p0;
+	-(void) viewDidLayoutSubviews;
+	-(void) viewDidLoad;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_ShellSearchResultsRenderer : UITableViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(UITableViewCell *) tableView:(UITableView *)p0 cellForRowAtIndexPath:(NSIndexPath *)p1;
+	-(void) tableView:(UITableView *)p0 didSelectRowAtIndexPath:(NSIndexPath *)p1;
+	-(NSInteger) numberOfSectionsInTableView:(UITableView *)p0;
+	-(NSInteger) tableView:(UITableView *)p0 numberOfRowsInSection:(NSInteger)p1;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_ShellTableViewController : UITableViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) viewDidLoad;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_TabletShellFlyoutRenderer : UISplitViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) viewDidLoad;
+	-(BOOL) conformsToProtocol:(void *)p0;
 	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_UIContainerCell : UITableViewCell {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) layoutSubviews;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_UIContainerView : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) layoutSubviews;
+	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 
 @interface Xamarin_Forms_Platform_iOS_CarouselPageRenderer : UIViewController {
@@ -515,16 +788,6 @@
 	-(id) init;
 @end
 
-@interface Xamarin_Forms_Platform_iOS_DatePickerRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
-}
-	-(id) init;
-@end
-
-@interface Xamarin_Forms_Platform_iOS_EditorRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
-}
-	-(id) init;
-@end
-
 @interface Xamarin_Forms_Platform_iOS_ImageRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
 }
 	-(id) init;
@@ -533,11 +796,6 @@
 @interface Xamarin_Forms_Platform_iOS_ListViewRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
 }
 	-(void) layoutSubviews;
-	-(id) init;
-@end
-
-@interface Xamarin_Forms_Platform_iOS_NavigationMenuRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer {
-}
 	-(id) init;
 @end
 
@@ -566,6 +824,7 @@
 	-(id) retain;
 	-(int) xamarinGetGCHandle;
 	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) viewDidLayoutSubviews;
 	-(void) viewSafeAreaInsetsDidChange;
 	-(void) viewDidAppear:(BOOL)p0;
 	-(void) viewDidDisappear:(BOOL)p0;
@@ -590,11 +849,6 @@
 	-(void) willRotateToInterfaceOrientation:(NSInteger)p0 duration:(double)p1;
 	-(UIViewController *) childViewControllerForStatusBarHidden;
 	-(BOOL) conformsToProtocol:(void *)p0;
-	-(id) init;
-@end
-
-@interface Xamarin_Forms_Platform_iOS_PickerRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
-}
 	-(id) init;
 @end
 
@@ -639,11 +893,6 @@
 	-(id) init;
 @end
 
-@interface Xamarin_Forms_Platform_iOS_TimePickerRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
-}
-	-(id) init;
-@end
-
 @interface Xamarin_Forms_Platform_iOS_WebViewRenderer : UIWebView {
 }
 	-(void) release;
@@ -664,6 +913,110 @@
 	-(void) layoutSubviews;
 	-(BOOL) conformsToProtocol:(void *)p0;
 	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_ShellFlyoutRenderer : UIViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) viewDidLayoutSubviews;
+	-(void) viewDidLoad;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_ShellPageRendererTracker_TitleViewContainer : Xamarin_Forms_Platform_iOS_UIContainerView {
+}
+	-(CGRect) frame;
+	-(void) setFrame:(CGRect)p0;
+	-(CGSize) intrinsicContentSize;
+	-(CGSize) sizeThatFits:(CGSize)p0;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_ShellRenderer : UIViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) viewDidLayoutSubviews;
+	-(void) viewDidLoad;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_ShellSectionRootHeader_ShellSectionHeaderCell : UICollectionViewCell {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) layoutSubviews;
+	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) initWithFrame:(CGRect)p0;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_ShellSectionRootHeader : UICollectionViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(BOOL) collectionView:(UICollectionView *)p0 canMoveItemAtIndexPath:(NSIndexPath *)p1;
+	-(UICollectionViewCell *) collectionView:(UICollectionView *)p0 cellForItemAtIndexPath:(NSIndexPath *)p1;
+	-(NSInteger) collectionView:(UICollectionView *)p0 numberOfItemsInSection:(NSInteger)p1;
+	-(void) collectionView:(UICollectionView *)p0 didDeselectItemAtIndexPath:(NSIndexPath *)p1;
+	-(void) collectionView:(UICollectionView *)p0 didSelectItemAtIndexPath:(NSIndexPath *)p1;
+	-(NSInteger) numberOfSectionsInCollectionView:(UICollectionView *)p0;
+	-(BOOL) collectionView:(UICollectionView *)p0 shouldSelectItemAtIndexPath:(NSIndexPath *)p1;
+	-(void) viewDidLayoutSubviews;
+	-(void) viewDidLoad;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_ShellSectionRootRenderer : UIViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) viewDidLayoutSubviews;
+	-(void) viewDidLoad;
+	-(void) viewSafeAreaInsetsDidChange;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_ShellSectionRenderer : UINavigationController {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(UIViewController *) popViewControllerAnimated:(BOOL)p0;
+	-(BOOL) navigationBar:(UINavigationBar *)p0 shouldPopItem:(UINavigationItem *)p1;
+	-(void) viewDidLayoutSubviews;
+	-(void) viewDidLoad;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_ShellTableViewSource : NSObject<UIScrollViewDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(UITableViewCell *) tableView:(UITableView *)p0 cellForRowAtIndexPath:(NSIndexPath *)p1;
+	-(CGFloat) tableView:(UITableView *)p0 heightForFooterInSection:(NSInteger)p1;
+	-(UIView *) tableView:(UITableView *)p0 viewForFooterInSection:(NSInteger)p1;
+	-(NSInteger) numberOfSectionsInTableView:(UITableView *)p0;
+	-(void) tableView:(UITableView *)p0 didSelectRowAtIndexPath:(NSIndexPath *)p1;
+	-(NSInteger) tableView:(UITableView *)p0 numberOfRowsInSection:(NSInteger)p1;
+	-(void) scrollViewDidScroll:(UIScrollView *)p0;
+	-(void) tableView:(UITableView *)p0 willDisplayCell:(UITableViewCell *)p1 forRowAtIndexPath:(NSIndexPath *)p2;
+	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 
 @interface Xamarin_Forms_Platform_iOS_ImageButtonRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {

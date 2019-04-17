@@ -1,14 +1,41 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/Delegates/HDRPhotoCaptureDelegate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8/ViewModels/BaseViewModel.cs">
     <Files>
-      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="1" Column="1" />
-      <File FileName="PixUl8/PixUl8.iOS/Delegates/HDRPhotoCaptureDelegate.cs" Line="1" Column="1" />
+      <File FileName="PixUl8/PixUl8/ViewModels/BaseViewModel.cs" Line="25" Column="9" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PixUl8" expanded="True">
+            <Node name="PixUl8" expanded="True">
+              <Node name="ViewModels" expanded="True">
+                <Node name="BaseViewModel.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="PixUl8.Tests" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="PixUl8" expanded="True" selected="True">
+            <Node name="PixUl8.Tests" expanded="True">
+              <Node name="PixUl8" expanded="True">
+                <Node name="Tests" expanded="True">
+                  <Node name="BaseViewModelTests" expanded="True" />
+                  <Node name="HomeViewModelTests" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8F26E343-5B98-43A5-ADA7-D6CBE05F5DB9" />
+  <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.594cc34fe22a6ae2a5ef467001700a60305909ef" />
   <MonoDevelop.Ide.ItemProperties.PixUl8 HideGettingStarted="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8/Views/ExtensionViews/HelpPage.xaml" relfile="PixUl8/PixUl8/Views/ExtensionViews/HelpPage.xaml" line="2" column="1" />

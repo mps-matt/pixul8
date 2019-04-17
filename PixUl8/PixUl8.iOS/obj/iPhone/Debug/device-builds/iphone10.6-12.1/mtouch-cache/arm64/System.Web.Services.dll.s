@@ -17446,7 +17446,7 @@ add x16, x16, mono_aot_System_Web_Services_got@PAGEOFF
 ldr x1, [x16, #1512]
 .word 0xaa0203e0
 .word 0xf9400042
-.word 0xf9406850
+.word 0xf9407850
 .word 0xd63f0200
 .word 0xd2800001
 bl _p_134
@@ -41653,7 +41653,7 @@ add x16, x16, mono_aot_System_Web_Services_got@PAGEOFF
 ldr x1, [x16, #2400]
 .word 0xaa0203e0
 .word 0xf9400042
-.word 0xf9406850
+.word 0xf9407850
 .word 0xd63f0200
 .word 0xd2800001
 bl _p_134
@@ -47090,7 +47090,7 @@ _mono_aot_file_info:
 	.long 912,3968,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 71,28,81,52,247,208,168,98,202,36,42,241,176,76,20,5
+	.byte 103,167,35,103,58,194,133,6,189,193,162,19,183,106,231,43
 	.globl _mono_aot_module_System_Web_Services_info
 	.align 3
 _mono_aot_module_System_Web_Services_info:

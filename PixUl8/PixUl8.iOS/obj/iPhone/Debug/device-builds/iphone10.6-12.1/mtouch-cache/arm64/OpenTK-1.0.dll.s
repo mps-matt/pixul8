@@ -13726,7 +13726,7 @@ bl _p_185
 .loc 21 377 0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf9416c30
+.word 0xf9417430
 .word 0xd63f0200
 .word 0x14000005
 .loc 21 378 0
@@ -13762,7 +13762,7 @@ bl _p_185
 .loc 21 384 0
 .word 0xaa1803e0
 .word 0xf9400301
-.word 0xf9416c30
+.word 0xf9417430
 .word 0xd63f0200
 .word 0xf94013a1
 bl _p_11
@@ -13772,7 +13772,7 @@ bl _p_11
 .word 0xaa1803e0
 .word 0xf94013a1
 .word 0xf9400302
-.word 0xf9416850
+.word 0xf9417050
 .word 0xd63f0200
 .loc 21 386 0
 
@@ -13782,7 +13782,7 @@ ldr x0, [x16, #3752]
 .word 0xf9400001
 .word 0xaa1903e0
 .word 0xf9400322
-.word 0xf943e850
+.word 0xf9441050
 .word 0xd63f0200
 .loc 21 388 0
 .word 0x14000005
@@ -13906,7 +13906,7 @@ ldr x0, [x16, #3752]
 .word 0xf9400001
 .word 0xaa1903e0
 .word 0xf9400322
-.word 0xf943dc50
+.word 0xf9440450
 .word 0xd63f0200
 .loc 21 416 0
 .word 0xf9400bb9
@@ -14001,7 +14001,7 @@ bl _p_185
 .word 0xb4000120
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf9415830
+.word 0xf9415c30
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x34000060
@@ -14044,7 +14044,7 @@ bl _p_185
 .loc 21 460 0
 .word 0xaa1803e0
 .word 0xf9400301
-.word 0xf9415830
+.word 0xf9415c30
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x6b1a001f
@@ -14053,7 +14053,7 @@ bl _p_185
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xf9400302
-.word 0xf9415450
+.word 0xf9415850
 .word 0xd63f0200
 .loc 21 462 0
 
@@ -14063,7 +14063,7 @@ ldr x0, [x16, #3752]
 .word 0xf9400001
 .word 0xaa1903e0
 .word 0xf9400322
-.word 0xf943cc50
+.word 0xf943f450
 .word 0xd63f0200
 .loc 21 466 0
 .word 0xa94167b8
@@ -14270,7 +14270,7 @@ ldr x0, [x16, #3752]
 .word 0xf9400001
 .word 0xaa1a03e0
 .word 0xf9400342
-.word 0xf943b850
+.word 0xf943e050
 .word 0xd63f0200
 .loc 21 506 0
 .word 0xf9400bba
@@ -14555,7 +14555,7 @@ bl _p_190
 .loc 21 552 0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf941bc30
+.word 0xf941d030
 .word 0xd63f0200
 .word 0xaa0003f9
 .word 0xb4000179
@@ -14654,7 +14654,7 @@ bl _p_193
 .word 0xaa1a03e0
 .word 0xaa1903e1
 .word 0xf9400342
-.word 0xf943b050
+.word 0xf943d850
 .word 0xd63f0200
 .loc 21 559 0
 .word 0xaa1a03e0
@@ -14879,7 +14879,7 @@ bl _p_199
 .loc 21 588 0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf9417030
+.word 0xf9417430
 .word 0xd63f0200
 .word 0xf9005fa0
 
@@ -14907,7 +14907,7 @@ ldr x2, [x16, #16]
 .loc 21 589 0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf941bc30
+.word 0xf941d030
 .word 0xd63f0200
 .word 0xf90057a0
 
@@ -15043,7 +15043,7 @@ ldr x15, [x16, #1976]
 .loc 21 602 0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf9439c30
+.word 0xf943c430
 .word 0xd63f0200
 .loc 21 604 0
 .word 0xf9401b40
@@ -15144,7 +15144,7 @@ ldr x0, [x16, #3752]
 .word 0xf9400ba0
 .word 0xf9400ba2
 .word 0xf9400042
-.word 0xf943a450
+.word 0xf943cc50
 .word 0xd63f0200
 .loc 21 622 0
 .word 0x910003bf
@@ -15225,7 +15225,7 @@ bl _p_202
 .loc 21 642 0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf943ac30
+.word 0xf943d430
 .word 0xd63f0200
 .loc 21 644 0
 .word 0xaa1903e0
@@ -15245,7 +15245,7 @@ ldr x0, [x16, #3752]
 .word 0xf9400001
 .word 0xaa1903e0
 .word 0xf9400322
-.word 0xf943a050
+.word 0xf943c850
 .word 0xd63f0200
 .loc 21 648 0
 .word 0xf9400bb9
@@ -15363,7 +15363,7 @@ bl _p_204
 .word 0xf90023a0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf9420430
+.word 0xf9422030
 .word 0xd63f0200
 .word 0xf94023be
 .word 0xfd0003c0
@@ -15404,12 +15404,12 @@ bl _p_205
 .loc 21 681 0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf943ac30
+.word 0xf943d430
 .word 0xd63f0200
 .loc 21 682 0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf943b430
+.word 0xf943dc30
 .word 0xd63f0200
 .loc 21 684 0
 .word 0xf9400bba
@@ -15437,7 +15437,7 @@ bl _p_200
 .word 0xf90013a0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf943d830
+.word 0xf9440030
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xf94013a2
@@ -15600,7 +15600,7 @@ ldr x2, [x16, #16]
 .loc 21 724 0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf943b430
+.word 0xf943dc30
 .word 0xd63f0200
 .loc 21 725 0
 
@@ -15610,7 +15610,7 @@ ldr x0, [x16, #3752]
 .word 0xf9400001
 .word 0xaa1a03e0
 .word 0xf9400342
-.word 0xf9438c50
+.word 0xf943b450
 .word 0xd63f0200
 .loc 21 726 0
 .word 0xaa1a03e0
@@ -15699,7 +15699,7 @@ ldr x2, [x16, #16]
 .loc 21 747 0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf943b430
+.word 0xf943dc30
 .word 0xd63f0200
 .loc 21 748 0
 
@@ -15709,7 +15709,7 @@ ldr x0, [x16, #3752]
 .word 0xf9400001
 .word 0xaa1903e0
 .word 0xf9400322
-.word 0xf9438c50
+.word 0xf943b450
 .word 0xd63f0200
 .loc 21 749 0
 .word 0xaa1903e0
@@ -15807,7 +15807,7 @@ ldr x0, [x16, #3752]
 .word 0xf9400001
 .word 0xaa1a03e0
 .word 0xf9400342
-.word 0xf9438850
+.word 0xf943b050
 .word 0xd63f0200
 .loc 21 768 0
 .word 0xf9400bba
@@ -16031,7 +16031,7 @@ bl _p_214
 .loc 21 822 0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf941e830
+.word 0xf9420430
 .word 0xd63f0200
 .word 0x1e624010
 .word 0x1e22c200
@@ -16290,7 +16290,7 @@ ldr x1, [x16, #3872]
 .word 0x54000561
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf941bc30
+.word 0xf941d030
 .word 0xd63f0200
 .word 0xeb00031f
 .word 0x540002e1
@@ -16320,12 +16320,12 @@ ldr x1, [x16, #3880]
 .loc 21 856 0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf943ac30
+.word 0xf943d430
 .word 0xd63f0200
 .loc 21 857 0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf943b430
+.word 0xf943dc30
 .word 0xd63f0200
 .loc 21 860 0
 .word 0xaa1903e0
@@ -16413,7 +16413,7 @@ bl _p_226
 .word 0xf9403741
 .word 0xaa1a03e0
 .word 0xf9400342
-.word 0xf9438450
+.word 0xf943ac50
 .word 0xd63f0200
 .loc 21 879 0
 .word 0x91036340
@@ -16491,7 +16491,7 @@ bl _p_226
 .word 0xf9403b41
 .word 0xaa1a03e0
 .word 0xf9400342
-.word 0xf9438050
+.word 0xf943a850
 .word 0xd63f0200
 .loc 21 889 0
 .word 0x91038340
@@ -16546,7 +16546,7 @@ OpenTK_Platform_iPhoneOS_iPhoneOSGameView_OnUnload_System_EventArgs:
 .loc 21 902 0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf943ac30
+.word 0xf943d430
 .word 0xd63f0200
 .loc 21 903 0
 .word 0xb40000d8
@@ -33257,13 +33257,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 540,6608,286,714,66,387000831,0,61688
-	.long 128,8,8,8,0,25,72568,10872
+	.long 540,6608,286,714,66,387000831,0,61728
+	.long 128,8,8,8,0,25,72608,10872
 	.long 10504,7704,0,9144,10360,8424,0,6016
 	.long 1016,10864,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 250,84,124,56,97,175,134,119,21,69,228,228,167,97,92,74
+	.byte 2,246,49,121,88,86,244,82,205,183,35,199,195,151,42,156
 	.globl _mono_aot_module_OpenTK_1_0_info
 	.align 3
 _mono_aot_module_OpenTK_1_0_info:

@@ -4516,7 +4516,7 @@ bl _p_69
 .word 0xf94037a2
 .word 0xaa0203e0
 .word 0xf9400042
-.word 0xf9413c50
+.word 0xf9414450
 .word 0xd63f0200
 .word 0x53001c00
 .word 0xf9400fb1
@@ -18924,7 +18924,7 @@ _mono_aot_file_info:
 	.long 96,1536,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 152,200,190,52,64,187,210,60,197,114,87,22,145,254,123,192
+	.byte 143,97,4,130,175,224,137,252,248,10,102,121,76,60,177,185
 	.globl _mono_aot_module_Plugin_Settings_info
 	.align 3
 _mono_aot_module_Plugin_Settings_info:

@@ -8,15 +8,15 @@ using Xamarin.Forms;
 using PixUl8.Views;
 using System.Windows.Input;
 using PixUl8.Models;
-using PixUl8.iOS.UIViews;
 using PixUl8.Interfaces;
 using System.Threading;
 using PixUl8.Views.ExtensionViews;
 using Acr.UserDialogs;
 using Plugin.Toasts;
+using PixUl8.iOS.UIViews;
 using UIKit;
 using Foundation;
-//using Acr.UserDialogs;
+using Acr.UserDialogs;
 
 namespace PixUl8.ViewModels
 {

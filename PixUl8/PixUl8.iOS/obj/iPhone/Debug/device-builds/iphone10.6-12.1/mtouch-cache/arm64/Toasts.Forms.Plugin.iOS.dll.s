@@ -751,7 +751,7 @@ bl _p_17
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0xf9400042
-.word 0xf9413850
+.word 0xf9414050
 .word 0xd63f0200
 .word 0xf94027b1
 .word 0xf9499631
@@ -24472,7 +24472,7 @@ _mono_aot_file_info:
 	.long 288,6224,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 146,102,163,0,114,29,241,133,3,223,27,98,230,58,98,196
+	.byte 192,145,209,156,50,90,243,211,171,98,231,225,225,233,69,78
 	.globl _mono_aot_module_Toasts_Forms_Plugin_iOS_info
 	.align 3
 _mono_aot_module_Toasts_Forms_Plugin_iOS_info:

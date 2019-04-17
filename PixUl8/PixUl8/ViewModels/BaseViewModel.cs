@@ -19,7 +19,8 @@ namespace PixUl8.ViewModels
             _hapticService = hapticService ?? DependencyService.Get<IHapticService>();
             _settingsService = settingsService ?? DependencyService.Get<ISettingsService>();
             //_toaster = toaster ?? DependencyService.Get<IToastNotificator>();
-            _toaster = toaster ?? new ToastNotification();
+            _toaster = toaster ?? new Plugin.Toasts.ToastNotification();
+            //_toaster = toaster;
         }
 
 
