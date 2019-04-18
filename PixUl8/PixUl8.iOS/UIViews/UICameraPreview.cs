@@ -558,7 +558,11 @@ namespace PixUl8.iOS.UIViews
 
             CaptureSession = new AVCaptureSession();
 
-            CaptureSession.SessionPreset = AVCaptureSession.PresetPhoto;
+            if (UIScreen.MainScreen.Scale == 3)
+                CaptureSession.SessionPreset = AVCaptureSession.PresetPhoto;
+            else
+                CaptureSession.SessionPreset = AVCaptureSession.PresetMedium;
+                
 
 
             _previewLayer = new AVCaptureVideoPreviewLayer(CaptureSession)

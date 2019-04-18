@@ -1,17 +1,14 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8/ViewModels/HomeViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs">
     <Files>
-      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="448" Column="82" />
-      <File FileName="PixUl8/PixUl8/ViewModels/HomeViewModel.cs" Line="45" Column="16" />
+      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="564" Column="72" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="PixUl8" expanded="True">
             <Node name="PixUl8" expanded="True">
-              <Node name="ViewModels" expanded="True">
-                <Node name="HomeViewModel.cs" selected="True" />
-              </Node>
+              <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="ExtensionViews" expanded="True">
                   <Node name="SlideMenuUpView.xaml" expanded="True" />
@@ -19,7 +16,9 @@
               </Node>
             </Node>
             <Node name="PixUl8.iOS" expanded="True">
-              <Node name="UIViews" expanded="True" />
+              <Node name="UIViews" expanded="True">
+                <Node name="UICameraPreview.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="PixUl8.Tests" expanded="True" />
           </Node>
@@ -27,15 +26,7 @@
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="PixUl8" expanded="True" selected="True">
-            <Node name="PixUl8.Tests" expanded="True">
-              <Node name="PixUl8" expanded="True">
-                <Node name="Tests" expanded="True">
-                  <Node name="HomeViewModelTests" expanded="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
+          <Node name="PixUl8" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
