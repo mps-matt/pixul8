@@ -240,22 +240,25 @@ namespace PixUl8.iOS.UIViews
 
                 try
                 {
-                    NSError err;
-                    _device.LockForConfiguration(out err);
+                    if (ManualOn)
+                    {
+                        NSError err;
+                        _device.LockForConfiguration(out err);
 
-                    var min = 2000f;
-                    var max = 10000f;
+                        var min = 2000f;
+                        var max = 10000f;
 
-                    var dif = max - min;
-                    var increase = dif * (_balance / (float)100);
-                    var currentTemp = min + increase;
+                        var dif = max - min;
+                        var increase = dif * (_balance / (float)100);
+                        var currentTemp = min + increase;
 
-                    var tempAndTint = new AVCaptureWhiteBalanceTemperatureAndTintValues(currentTemp, 0f);
-                    var gains = _device.GetDeviceWhiteBalanceGains(tempAndTint);
-                    var result = NormalizeGains(gains);
+                        var tempAndTint = new AVCaptureWhiteBalanceTemperatureAndTintValues(currentTemp, 0f);
+                        var gains = _device.GetDeviceWhiteBalanceGains(tempAndTint);
+                        var result = NormalizeGains(gains);
 
-                    _device.SetWhiteBalanceModeLockedWithDeviceWhiteBalanceGains(result, null);
-                    _device.UnlockForConfiguration();
+                        _device.SetWhiteBalanceModeLockedWithDeviceWhiteBalanceGains(result, null);
+                        _device.UnlockForConfiguration();
+                    }
                 }
                 catch (Exception e)
                 {
@@ -435,8 +438,61 @@ namespace PixUl8.iOS.UIViews
             });
         }
 
+        private int GetExposurePercentage()
+        {
+            var current = _device.ExposureTargetBias;
+            var min = _device.MinExposureTargetBias;
+            var max = _device.MaxExposureTargetBias;
+
+            var scaledMax = max - min;
+            var scaledCurrent = current - min;
+
+            var percentage = (scaledCurrent / scaledMax) * 100;
+
+            return (int)Math.Round(percentage);
+        }
+
+        private int GetWhiteBalancePercentage()
+        {
+            var currentTempTint = _device.GetTemperatureAndTintValues(_device.DeviceWhiteBalanceGains);
+            var current = currentTempTint.Temperature;
+            var min = 2000f;
+            var max = 10000f;
+
+            var scaledMax = max - min;
+            var scaledCurrent = current - min;
+
+            var percentage = (scaledCurrent / scaledMax) * 100;
+
+            return (int)Math.Round(percentage);
+        }
+
+        private int GetFocusPercentage()
+        {
+            return (int)Math.Round(_device.LensPosition * 100);
+        }
+
+        private async Task UpdaterAsync(CancellationToken token)
+        {
+            while (!token.IsCancellationRequested)
+            {
 
 
+                int exposureBias = GetExposurePercentage();
+                int wb = GetWhiteBalancePercentage();
+                int focus = GetFocusPercentage();
+
+                MessagingCenter.Send<App, int>((App)App.Current, "exposure", exposureBias);
+                MessagingCenter.Send<App, int>((App)App.Current, "wb", wb);
+                MessagingCenter.Send<App, int>((App)App.Current, "focus", focus);
+
+                await Task.Delay(100, token);
+            }
+
+
+        }
+
+        private CancellationTokenSource srcToken;
         private void StartRunning()
         {
             if (_device == null)
@@ -462,6 +518,11 @@ namespace PixUl8.iOS.UIViews
             _photoOutput.SetPreparedPhotoSettingsAsync(settings.ToArray());
 
             CaptureSession.StartRunning();
+
+
+            if (srcToken != null) srcToken.Cancel();
+            srcToken = new CancellationTokenSource();
+            var ignore = UpdaterAsync(srcToken.Token);
         }
 
         private void StopRunning()
@@ -470,7 +531,10 @@ namespace PixUl8.iOS.UIViews
                 return;
 
             CaptureSession.StopRunning();
-            
+
+            if (srcToken != null) srcToken.Cancel();
+            srcToken = null;
+
         }
 
         void Initialize()

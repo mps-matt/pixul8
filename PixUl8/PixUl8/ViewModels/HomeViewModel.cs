@@ -44,6 +44,19 @@ namespace PixUl8.ViewModels
                 await ToggleMenuAsync();
             });
 
+
+            MessagingCenter.Subscribe<App, int>(this, "exposure", async (sender, value) => {
+                ExposurePercentage = value;
+            });
+
+            MessagingCenter.Subscribe<App, int>(this, "wb", async (sender, value) => {
+                BalancePercentage = value;
+            });
+
+            MessagingCenter.Subscribe<App, int>(this, "focus", async (sender, value) => {
+                FocusPercentage = value;
+            });
+
         }
 
 
