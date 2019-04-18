@@ -28,7 +28,7 @@
         <Slider Value="{Binding FocusPercentage}" IsEnabled="{Binding ManualControlsEnabled}" x:Name="focusSlider" Maximum="100" Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="2" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
         <Label Text="Far" FontSize="12" Grid.Column="4" Grid.Row="2" XAlign="Center" YAlign="Center" TextColor="White"/>
         
-        <Label Text="Temperature" Grid.ColumnSpan="2" Font="Bold" Grid.Row="3" XAlign="End" YAlign="Center" TextColor="White"/>
+        <Label Text="White Balance" Grid.ColumnSpan="2" Font="Bold" Grid.Row="3" XAlign="End" YAlign="Center" TextColor="White"/>
         <Label Text="Cold" FontSize="12" Grid.Column="2" Grid.Row="3" XAlign="Center" YAlign="Center" TextColor="White"/>
         <Slider Value="{Binding BalancePercentage}" IsEnabled="{Binding ManualControlsEnabled}" x:Name="balanceSlider" Maximum="100" Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="3" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
         <Label Text="Warm" FontSize="12" Grid.Column="4" Grid.Row="3" XAlign="Center" YAlign="Center" TextColor="White"/>
@@ -36,7 +36,7 @@
         <Label Text="Save 4:3" Font="Bold" Grid.Row="4" Grid.ColumnSpan="2" XAlign="Center" YAlign="Center" TextColor="White" />
         <Switch IsToggled="{Binding is43Enabled}" x:Name="the43switch" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="4" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
         
-        <Label Text="Hide Button" Grid.Column="2" Grid.Row="4" Font="Bold" Grid.ColumnSpan="2" XAlign="End" YAlign="Center" TextColor="White" />
+        <Label Text="3D Capture" Grid.Column="2" Grid.Row="4" Font="Bold" Grid.ColumnSpan="2" XAlign="End" YAlign="Center" TextColor="White" />
         <Switch IsToggled="{Binding is3DEnabled}" x:Name="the3dswitch" Grid.Column="4" Grid.Row="4" Grid.ColumnSpan="1" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
         
         <Label Text="Arrow Animation" Grid.Column="1" Grid.Row="5" Font="Bold" Grid.ColumnSpan="2" XAlign="Center" YAlign="Center" TextColor="White" />

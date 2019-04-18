@@ -442,6 +442,17 @@ namespace PixUl8.iOS.UIViews
             if (_device == null)
                 return;
 
+            _previewLayer?.RemoveFromSuperLayer();
+            _previewLayer?.Dispose();
+
+            _previewLayer = new AVCaptureVideoPreviewLayer(CaptureSession)
+            {
+                VideoGravity = AVLayerVideoGravity.ResizeAspectFill,
+                DrawsAsynchronously = true,
+                Speed = 1,
+            };
+            Layer.InsertSublayer(_previewLayer, 0);
+
 
             List<AVCapturePhotoSettings> settings = new List<AVCapturePhotoSettings>();
             settings.Add(GetCurrentPhotoSettings());
@@ -459,6 +470,7 @@ namespace PixUl8.iOS.UIViews
                 return;
 
             CaptureSession.StopRunning();
+            
         }
 
         void Initialize()
