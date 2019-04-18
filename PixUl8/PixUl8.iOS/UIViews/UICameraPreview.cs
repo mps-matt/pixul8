@@ -374,6 +374,11 @@ namespace PixUl8.iOS.UIViews
 
             if (!HDRPhotoCaptureDelegate.CanTakePhoto || !PhotoCaptureDelegate.CanTakePhoto)
             {
+                if (HdrEnabled)
+                {
+                    return;
+                }
+
                 DependencyService.Get<IHapticService>().InvokeHeavyHaptic();
                 UserDialogs.Instance.ShowLoading(title: "Finialising Previous Image Capture");
                 await Task.WhenAll(
@@ -407,6 +412,9 @@ namespace PixUl8.iOS.UIViews
                     _photoOutput.CapturePhoto(settings, _hdrImageDelegate);
                     settings.Dispose();
                 }
+
+                UserDialogs.Instance.ShowLoading(title: "Finialising Image Capture");
+
             }
             else
             {
@@ -972,7 +980,7 @@ namespace PixUl8.iOS.UIViews
         private void SwipeHandlerUp()
         {
             //raise menu open event via message center
-            MessagingCenter.Send<UICameraPreview>(this, "PerformMenuSwitch");
+            MessagingCenter.Send<App>((App)App.Current, "PerformMenuSwitch");
         }
 
         private void SwipeHandlerSwitchCamera(SwipeType type)
@@ -982,7 +990,7 @@ namespace PixUl8.iOS.UIViews
                     (type == SwipeType.Right && _cameraOptions == CameraOptions.Rear))
             {
                 //raise camera switched event via message center
-                MessagingCenter.Send<UICameraPreview>(this, "PerformCameraSwitch");
+                MessagingCenter.Send<App>((App)App.Current, "PerformCameraSwitch");
             }
         }
 
@@ -994,7 +1002,7 @@ namespace PixUl8.iOS.UIViews
 
                 if ((type == SwipeType.Left && FlashOn == true) ||
                     (type == SwipeType.Right && FlashOn == false))
-                    MessagingCenter.Send<UICameraPreview>(this, "PerformFlashSwitch");
+                    MessagingCenter.Send<App>((App)App.Current, "PerformFlashSwitch");
             }
         }
 
@@ -1003,7 +1011,7 @@ namespace PixUl8.iOS.UIViews
             //If correct swipe for current flash settings
             if ((type == SwipeType.Left && HdrEnabled == true) ||
                 (type == SwipeType.Right && HdrEnabled == false))
-                MessagingCenter.Send<UICameraPreview>(this, "PerformHDRSwitch");
+                MessagingCenter.Send<App>((App)App.Current, "PerformHDRSwitch");
         }
 
         private AVCapturePhotoBracketSettings GetCurrentBracketedSettings(int currentIndex, int maxIndex)

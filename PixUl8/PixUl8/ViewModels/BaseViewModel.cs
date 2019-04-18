@@ -13,14 +13,16 @@ namespace PixUl8.ViewModels
         protected IHapticService _hapticService;
         protected ISettingsService _settingsService;
         protected IToastNotificator _toaster;
+        protected IURLService _urlService;
 
-        public BaseViewModel(IHapticService hapticService, ISettingsService settingsService, IToastNotificator toaster)
+        public BaseViewModel(IHapticService hapticService, ISettingsService settingsService, IToastNotificator toaster, IURLService urlService)
         {
             _hapticService = hapticService ?? DependencyService.Get<IHapticService>();
             _settingsService = settingsService ?? DependencyService.Get<ISettingsService>();
-            //_toaster = toaster ?? DependencyService.Get<IToastNotificator>();
-            _toaster = toaster ?? new Plugin.Toasts.ToastNotification();
-            //_toaster = toaster;
+            _urlService = urlService ?? DependencyService.Get<IURLService>();
+            _toaster = toaster ?? DependencyService.Get<IToastNotificator>();
+            //_toaster = toaster ?? new ToastNotification();
+       
         }
 
 

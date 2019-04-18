@@ -42,5 +42,5 @@
 /Users/mattstark/.nuget/packages/morelinq/3.1.1/lib/netstandard2.0/MoreLinq.dll
 /Users/mattstark/.nuget/packages/xam.plugins.settings/3.1.1/lib/Xamarin.iOS10/Plugin.Settings.dll
 /Users/mattstark/.nuget/packages/xam.plugins.settings/3.1.1/lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll
-/Users/mattstark/.nuget/packages/toasts.forms.plugin/3.3.2/lib/Xamarin.iOS10/Toasts.Forms.Plugin.iOS.dll
 /Users/mattstark/.nuget/packages/rg.plugins.popup/1.1.5.188/lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll
+/Users/mattstark/.nuget/packages/toasts.forms.plugin/3.3.2/lib/Xamarin.iOS10/Toasts.Forms.Plugin.iOS.dll

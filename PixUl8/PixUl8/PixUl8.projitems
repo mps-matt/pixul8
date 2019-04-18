@@ -41,6 +41,7 @@
       <DependentUpon>HelpPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IUICameraPreview.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IURLService.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\HomePage.xaml">

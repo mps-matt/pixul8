@@ -13,6 +13,7 @@ using UIKit;
 using PixUl8.Native;
 using System.Collections.Concurrent;
 using System.Threading.Tasks;
+using Acr.UserDialogs;
 
 namespace PixUl8.iOS.Delegates
 {
@@ -310,6 +311,8 @@ namespace PixUl8.iOS.Delegates
             }
             finally
             {
+                UserDialogs.Instance.HideLoading();
+
                 foreach (var image in arr)
                     image.Dispose();
                    

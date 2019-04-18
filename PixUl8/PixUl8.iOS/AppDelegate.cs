@@ -72,8 +72,9 @@ namespace PixUl8.iOS
 
             var mc = new MenuContainerPageiOSRenderer();
 
-            DependencyService.Register<ToastNotification>(); // Register your dependency
             ToastNotification.Init();
+            DependencyService.Register<ToastNotification>(); // Register your dependency
+
 
             SKStoreReviewController.RequestReview();
 

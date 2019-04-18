@@ -12,6 +12,7 @@ namespace PixUl8.Tests
         IHapticService hapticService;
         ISettingsService settingsService;
         IToastNotificator toastNotificator;
+        IURLService urlService;
 
         [TestInitialize]
         public void Setup()
@@ -19,18 +20,19 @@ namespace PixUl8.Tests
             hapticService = A.Fake<IHapticService>();
             settingsService = A.Fake<ISettingsService>();
             toastNotificator = A.Fake<IToastNotificator>();
+            urlService = A.Fake<IURLService>();
         }
 
         [TestMethod]
         public void Construction()
         {
-            BaseViewModel vm = new BaseViewModel(hapticService, settingsService, toastNotificator);
+            BaseViewModel vm = new BaseViewModel(hapticService, settingsService, toastNotificator, urlService);
         }
 
         [TestMethod]
         public void TitleGetSet()
         {
-            BaseViewModel vm = new BaseViewModel(hapticService, settingsService, toastNotificator);
+            BaseViewModel vm = new BaseViewModel(hapticService, settingsService, toastNotificator, urlService);
 
             vm.Title = "Testing";
 
@@ -40,7 +42,7 @@ namespace PixUl8.Tests
         [TestMethod]
         public void IsBusyGetSet()
         {
-            BaseViewModel vm = new BaseViewModel(hapticService, settingsService, toastNotificator);
+            BaseViewModel vm = new BaseViewModel(hapticService, settingsService, toastNotificator, urlService);
 
             vm.IsBusy = true;
 

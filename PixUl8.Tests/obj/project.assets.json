@@ -1684,7 +1684,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "Toasts.Forms.Plugin/3.3.2": {
+      "Toasts.Forms.Plugin/3.3.1": {
         "type": "package",
         "compile": {
           "lib/netstandard1.1/Toasts.Forms.Plugin.Abstractions.dll": {}
@@ -1722,6 +1722,20 @@
         "build": {
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Mocks/3.5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.5.0.129452"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.UnitTests.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.UnitTests.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.UnitTests.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.UnitTests.dll": {}
         }
       }
     }
@@ -6074,10 +6088,10 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "Toasts.Forms.Plugin/3.3.2": {
-      "sha512": "saIl6R4GeW9MbqdZLEWm6EAl+YQARDEpjOYXtiwtHqmklaMDG7tOJmC0Qwtr6AuukgFu57L3HiLw/Eo2WRDf9g==",
+    "Toasts.Forms.Plugin/3.3.1": {
+      "sha512": "RnAdunO/Y0RVzN2IdQI4U+9tYHtZ5RGtLNNf1C8/WK53Kqc+zJJ3vjc+/arE8IUmoFGVQF1eeklFJDrtCKGaGg==",
       "type": "package",
-      "path": "toasts.forms.plugin/3.3.2",
+      "path": "toasts.forms.plugin/3.3.1",
       "files": [
         ".signature.p7s",
         "lib/MonoAndroid10/Toasts.Forms.Plugin.Abstractions.dll",
@@ -6093,7 +6107,7 @@
         "lib/uap10.0/Toasts.Forms.Plugin.Abstractions.pdb",
         "lib/uap10.0/Toasts.Forms.Plugin.UWP.dll",
         "lib/uap10.0/Toasts.Forms.Plugin.UWP.pdb",
-        "toasts.forms.plugin.3.3.2.nupkg.sha512",
+        "toasts.forms.plugin.3.3.1.nupkg.sha512",
         "toasts.forms.plugin.nuspec"
       ]
     },
@@ -6327,6 +6341,18 @@
         "xamarin.forms.3.6.0.293080.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "Xamarin.Forms.Mocks/3.5.0.1": {
+      "sha512": "3eqMkmvXAreikK+QNgc5EHopmJRx3Pi2Y5JO2E2HMv/lwh21WFMdxiZcFHw2HvhdHKyIyJ8dRkkUeg0jmQ+REw==",
+      "type": "package",
+      "path": "xamarin.forms.mocks/3.5.0.1",
+      "files": [
+        ".signature.p7s",
+        "lib/netstandard2.0/Xamarin.Forms.Core.UnitTests.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Xaml.UnitTests.dll",
+        "xamarin.forms.mocks.3.5.0.1.nupkg.sha512",
+        "xamarin.forms.mocks.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -6339,9 +6365,10 @@
       "Microsoft.NETCore.App >= 2.1.0",
       "Rg.Plugins.Popup >= 1.1.5.188",
       "SlideOverKit >= 2.1.6.2",
-      "Toasts.Forms.Plugin >= 3.3.2",
+      "Toasts.Forms.Plugin >= 3.3.1",
       "Xam.Plugins.Settings >= 3.1.1",
       "Xamarin.Forms >= 3.6.0.293080",
+      "Xamarin.Forms.Mocks >= 3.5.0.1",
       "morelinq >= 3.1.1"
     ]
   },
@@ -6420,7 +6447,7 @@
           },
           "Toasts.Forms.Plugin": {
             "target": "Package",
-            "version": "[3.3.2, )"
+            "version": "[3.3.1, )"
           },
           "Xam.Plugins.Settings": {
             "target": "Package",
@@ -6429,6 +6456,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[3.6.0.293080, )"
+          },
+          "Xamarin.Forms.Mocks": {
+            "target": "Package",
+            "version": "[3.5.0.1, )"
           },
           "morelinq": {
             "target": "Package",

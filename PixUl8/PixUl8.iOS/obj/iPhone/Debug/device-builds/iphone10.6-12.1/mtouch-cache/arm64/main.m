@@ -29,8 +29,8 @@ extern void *mono_aot_module_PixUl8_OpenCV_info;
 extern void *mono_aot_module_MoreLinq_info;
 extern void *mono_aot_module_Plugin_Settings_info;
 extern void *mono_aot_module_Plugin_Settings_Abstractions_info;
-extern void *mono_aot_module_Toasts_Forms_Plugin_iOS_info;
 extern void *mono_aot_module_Rg_Plugins_Popup_IOS_info;
+extern void *mono_aot_module_Toasts_Forms_Plugin_iOS_info;
 
 void xamarin_register_modules_impl ()
 {
@@ -63,8 +63,8 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_MoreLinq_info);
 	mono_aot_register_module (mono_aot_module_Plugin_Settings_info);
 	mono_aot_register_module (mono_aot_module_Plugin_Settings_Abstractions_info);
-	mono_aot_register_module (mono_aot_module_Toasts_Forms_Plugin_iOS_info);
 	mono_aot_register_module (mono_aot_module_Rg_Plugins_Popup_IOS_info);
+	mono_aot_register_module (mono_aot_module_Toasts_Forms_Plugin_iOS_info);
 
 }
 

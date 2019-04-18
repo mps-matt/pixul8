@@ -200,10 +200,10 @@
 @class SlideOverKit_iOS_MenuContainerPageiOSRenderer;
 @class SlideOverKit_iOS_SlidePopupViewRendereriOS;
 @class OpenCV;
-@class Plugin_Toasts_UNNotificationManager_UserNotificationCenterDelegate;
 @class RgPopupPlatformRenderer;
 @class RgPopupWindow;
 @class Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer;
+@class Plugin_Toasts_UNNotificationManager_UserNotificationCenterDelegate;
 
 @interface UNUserNotificationCenterDelegate : NSObject<UNUserNotificationCenterDelegate> {
 }

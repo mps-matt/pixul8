@@ -13,34 +13,34 @@ using System.Threading;
 using PixUl8.Views.ExtensionViews;
 using Acr.UserDialogs;
 using Plugin.Toasts;
-using PixUl8.iOS.UIViews;
-using UIKit;
-using Foundation;
-using Acr.UserDialogs;
+
 
 namespace PixUl8.ViewModels
 {
     public class HomeViewModel : BaseViewModel
     {
         private HelpPage _helpPage = new HelpPage();
+        private bool _mocked;
         public HomePage Page { get; set; }
 
-        public HomeViewModel(IHapticService hapticService = null, ISettingsService settingsService = null, IToastNotificator toaster = null) : base(hapticService, settingsService, toaster)
+        public HomeViewModel(IHapticService hapticService = null, ISettingsService settingsService = null, IToastNotificator toaster = null, IURLService urlService = null, bool mocked = false) : base(hapticService, settingsService, toaster, urlService)
         {
+            _mocked = mocked;
+
             Title = "Home";
-            MessagingCenter.Subscribe<UICameraPreview>(this, "PerformCameraSwitch", async (sender) => {
+            MessagingCenter.Subscribe<App>(this, "PerformCameraSwitch", async (sender) => {
                 await ToggleCameraPositionAsync();
             });
 
-            MessagingCenter.Subscribe<UICameraPreview>(this, "PerformFlashSwitch", async (sender) => {
+            MessagingCenter.Subscribe<App>(this, "PerformFlashSwitch", async (sender) => {
                 await ToggleFlashAsync();
             });
 
-            MessagingCenter.Subscribe<UICameraPreview>(this, "PerformHDRSwitch", async (sender) => {
+            MessagingCenter.Subscribe<App>(this, "PerformHDRSwitch", async (sender) => {
                 await ToggleHDRAsync();
             });
 
-            MessagingCenter.Subscribe<UICameraPreview>(this, "PerformMenuSwitch", async (sender) => {
+            MessagingCenter.Subscribe<App>(this, "PerformMenuSwitch", async (sender) => {
                 await ToggleMenuAsync();
             });
 
@@ -254,7 +254,7 @@ namespace PixUl8.ViewModels
         public ICommand OpenPrivacyPolicyCommand { get { return _privacyCommand = _privacyCommand ?? new Command(async () => await PrivacyAsync()); } }
         public async Task PrivacyAsync()
         {
-            UIApplication.SharedApplication.OpenUrl(new NSUrl("https://www.dropbox.com/s/mtx5q9dq0ofoxhj/PixUl8%20Privacy%20Policy.docx?dl=0"));
+            _urlService.GoToPrivacyPolicy();
         }
 
 
@@ -269,12 +269,15 @@ namespace PixUl8.ViewModels
 
         public void ShowToast(string text)
         {
-            var toastConfig = new ToastConfig(text);
+            if (!_mocked)
+            {
+                var toastConfig = new ToastConfig(text);
 
-            toastConfig.Position = ToastPosition.Top;
-            toastConfig.SetDuration(1000);
-            toastConfig.SetBackgroundColor(System.Drawing.Color.FromArgb(229, 145, 0));
-            UserDialogs.Instance.Toast(toastConfig);
+                toastConfig.Position = ToastPosition.Top;
+                toastConfig.SetDuration(1000);
+                toastConfig.SetBackgroundColor(System.Drawing.Color.FromArgb(229, 145, 0));
+                UserDialogs.Instance.Toast(toastConfig);
+            }
         }
 
 
