@@ -2200,7 +2200,7 @@ _mono_aot_file_info:
 	.long 56,752,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 135,2,20,161,171,123,130,206,166,161,234,192,246,253,89,66
+	.byte 68,248,6,235,92,146,162,10,114,205,36,32,67,177,93,47
 	.globl _mono_aot_module_PixUl8_OpenCV_info
 	.align 3
 _mono_aot_module_PixUl8_OpenCV_info:

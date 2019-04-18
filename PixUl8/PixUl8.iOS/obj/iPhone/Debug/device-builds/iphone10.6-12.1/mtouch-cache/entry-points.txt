@@ -30,4 +30,20 @@ Function=UIApplicationMain
 	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/Xamarin.iOS.dll
 ObjectiveCClass=OBJC_CLASS_$_OpenCV
 	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/PixUl8.OpenCV.dll
+ObjectiveCClass=OBJC_CLASS_$_TOActivityCroppedImageProvider
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/TOCropViewController.dll
+ObjectiveCClass=OBJC_CLASS_$_TOCropOverlayView
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/TOCropViewController.dll
+ObjectiveCClass=OBJC_CLASS_$_TOCroppedImageAttributes
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/TOCropViewController.dll
+ObjectiveCClass=OBJC_CLASS_$_TOCropScrollView
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/TOCropViewController.dll
+ObjectiveCClass=OBJC_CLASS_$_TOCropToolbar
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/TOCropViewController.dll
+ObjectiveCClass=OBJC_CLASS_$_TOCropView
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/TOCropViewController.dll
+ObjectiveCClass=OBJC_CLASS_$_TOCropViewController
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/TOCropViewController.dll
+ObjectiveCClass=OBJC_CLASS_$_TOCropViewControllerTransitioning
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone10.6-12.1/mtouch-cache/1-Link/TOCropViewController.dll
 Function=mono_pmip

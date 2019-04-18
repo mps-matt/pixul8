@@ -25,6 +25,7 @@ using UserNotifications;
 using Acr.UserDialogs;
 using CoreImage;
 using PixUl8.iOS.UIViewModels;
+using Xamarin.TOCropView;
 
 //This code came from https://github.com/xamarin/xamarin-forms-samples/blob/master/CustomRenderers/View/iOS/UICameraPreview.cs
 // - It seems that the tutorial i was following assumes this is built intro xamarin but i didn't have it so found it myself!
@@ -312,6 +313,8 @@ namespace PixUl8.iOS.UIViews
                 throw new Exception("NON-DIVISABLE CAPTURE COUNT");
         }
 
+       
+
         public override void Draw(CGRect rect)
         {
             base.Draw(rect);
@@ -368,7 +371,8 @@ namespace PixUl8.iOS.UIViews
 
         }
 
-        private ImagePreviewViewController imagePreview = new ImagePreviewViewController();
+
+        private CropperDelegate cropperDelegate = new CropperDelegate();
         private UIImagePickerController imagePicker = new UIImagePickerController();
         private async Task OpenGalleryAsync()
         {
@@ -404,23 +408,30 @@ namespace PixUl8.iOS.UIViews
                 Console.WriteLine("Url:" + referenceURL.ToString());
 
             // if it was an image, get the other image info
+            bool shouldShow = false;
+            TOCropViewController cropper = null;
             if (isImage)
             {
                 // get the original image
                 UIImage originalImage = e.Info[UIImagePickerController.OriginalImage] as UIImage;
                 if (originalImage != null)
                 {
+                    shouldShow = true;
                     // do something with the image
-                    imagePreview.ImageView.Image = originalImage;
+                    cropper = new TOCropViewController(TOCropViewCroppingStyle.Default, originalImage);
+                    cropper.Delegate = cropperDelegate;
 
                 }
+
 
             }
 
             // dismiss the picker
             imagePicker.DismissModalViewController(true);
-            UIApplication.SharedApplication.KeyWindow.
-                    RootViewController.PresentViewControllerAsync(imagePreview, true);
+
+            if (shouldShow)
+                UIApplication.SharedApplication.KeyWindow.
+                    RootViewController.PresentViewController(cropper, true, null);
         }
 
         private async Task TakePhotoAsync()
@@ -498,17 +509,24 @@ namespace PixUl8.iOS.UIViews
 
         private int GetWhiteBalancePercentage()
         {
-            var currentTempTint = _device.GetTemperatureAndTintValues(_device.DeviceWhiteBalanceGains);
-            var current = currentTempTint.Temperature;
-            var min = 2000f;
-            var max = 10000f;
+            try
+            {
+                var currentTempTint = _device.GetTemperatureAndTintValues(_device.DeviceWhiteBalanceGains);
+                var current = currentTempTint.Temperature;
+                var min = 2000f;
+                var max = 10000f;
 
-            var scaledMax = max - min;
-            var scaledCurrent = current - min;
+                var scaledMax = max - min;
+                var scaledCurrent = current - min;
 
-            var percentage = (scaledCurrent / scaledMax) * 100;
+                var percentage = (scaledCurrent / scaledMax) * 100;
 
-            return (int)Math.Round(percentage);
+                return (int)Math.Round(percentage);
+            }
+            catch (Exception e)
+            {
+                return 50;
+            }
         }
 
         private int GetFocusPercentage()
@@ -516,12 +534,10 @@ namespace PixUl8.iOS.UIViews
             return (int)Math.Round(_device.LensPosition * 100);
         }
 
-        private async Task UpdaterAsync(CancellationToken token)
+        private async Task UpdaterAsync()
         {
-            while (!token.IsCancellationRequested)
+            if (Activated)
             {
-
-
                 int exposureBias = GetExposurePercentage();
                 int wb = GetWhiteBalancePercentage();
                 int focus = GetFocusPercentage();
@@ -529,14 +545,10 @@ namespace PixUl8.iOS.UIViews
                 MessagingCenter.Send<App, int>((App)App.Current, "exposure", exposureBias);
                 MessagingCenter.Send<App, int>((App)App.Current, "wb", wb);
                 MessagingCenter.Send<App, int>((App)App.Current, "focus", focus);
-
-                await Task.Delay(100, token);
             }
-
 
         }
 
-        private CancellationTokenSource srcToken;
         private void StartRunning()
         {
             if (_device == null)
@@ -563,10 +575,6 @@ namespace PixUl8.iOS.UIViews
 
             CaptureSession.StartRunning();
 
-
-            if (srcToken != null) srcToken.Cancel();
-            srcToken = new CancellationTokenSource();
-            var ignore = UpdaterAsync(srcToken.Token);
         }
 
         private void StopRunning()
@@ -576,8 +584,6 @@ namespace PixUl8.iOS.UIViews
 
             CaptureSession.StopRunning();
 
-            if (srcToken != null) srcToken.Cancel();
-            srcToken = null;
 
         }
 
@@ -972,6 +978,12 @@ namespace PixUl8.iOS.UIViews
                 };
                 this.AddGestureRecognizer(swipeUpForMenuGesture);
 
+
+                MessagingCenter.Subscribe<AppDelegate>(this, "Updater", async source =>
+                {
+                    await UpdaterAsync();
+                });
+
             }
             #endregion
 
@@ -1028,6 +1040,7 @@ namespace PixUl8.iOS.UIViews
 
                 if (_device.IsWhiteBalanceModeSupported(AVCaptureWhiteBalanceMode.AutoWhiteBalance))
                     _device.WhiteBalanceMode = AVCaptureWhiteBalanceMode.AutoWhiteBalance;
+                    
 
 
                 _device.UnlockForConfiguration();

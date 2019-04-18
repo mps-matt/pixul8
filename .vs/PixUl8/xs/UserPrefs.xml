@@ -1,37 +1,10 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8/Views/HomePage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/Main.cs">
     <Files>
-      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="687" Column="53" />
-      <File FileName="PixUl8/PixUl8.iOS/UIViewControllers/ImagePreviewViewController.cs" Line="14" Column="66" />
-      <File FileName="PixUl8/PixUl8/Views/HomePage.xaml" Line="349" Column="48" />
+      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="534" Column="50" />
+      <File FileName="PixUl8/PixUl8.iOS/AppDelegate.cs" Line="102" Column="32" />
+      <File FileName="PixUl8/PixUl8.iOS/Main.cs" Line="17" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="PixUl8" expanded="True">
-            <Node name="PixUl8" expanded="True">
-              <Node name="ViewModels" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="ExtensionViews" expanded="True">
-                  <Node name="SlideMenuUpView.xaml" expanded="True" />
-                </Node>
-                <Node name="HomePage.xaml" selected="True" />
-              </Node>
-            </Node>
-            <Node name="PixUl8.iOS" expanded="True">
-              <Node name="UIViewControllers" expanded="True" />
-              <Node name="UIViews" expanded="True" />
-            </Node>
-            <Node name="PixUl8.Tests" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="PixUl8" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.594cc34fe22a6ae2a5ef467001700a60305909ef" />
   <MonoDevelop.Ide.ItemProperties.PixUl8 HideGettingStarted="True" />

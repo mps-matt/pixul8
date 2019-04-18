@@ -57,6 +57,9 @@
 @class ImagePreviewViewController;
 @class PixUl8_iOS_Delegates_PhotoCaptureDelegate;
 @class PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate;
+@protocol TOCropViewControllerDelegate;
+@class TOCropViewControllerDelegate;
+@class PixUl8_iOS_Delegates_CropperDelegate;
 @class PixUl8_iOS_UIViews_UICameraPreview;
 @class PixUl8_iOS_UIViews_FocusWheel;
 @class Xamarin_Forms_Platform_iOS_iOS7ButtonContainer;
@@ -191,6 +194,7 @@
 @class UIKit_UITextField__UITextFieldDelegate;
 @class UIKit_UIScrollView__UIScrollViewDelegate;
 @class UIKit_UITextView__UITextViewDelegate;
+@class UIKit_UIScrollView_UIScrollViewAppearance;
 @class UIKit_UISplitViewController__UISplitViewControllerDelegate;
 @class UIKit_UISwitch_UISwitchAppearance;
 @class UIKit_UITabBarController__UITabBarControllerDelegate;
@@ -203,6 +207,20 @@
 @class SlideOverKit_iOS_MenuContainerPageiOSRenderer;
 @class SlideOverKit_iOS_SlidePopupViewRendereriOS;
 @class OpenCV;
+@class TOActivityCroppedImageProvider;
+@class TOCroppedImageAttributes;
+@class TOCropViewController;
+@class TOCropViewControllerTransitioning;
+@protocol TOCropViewDelegate;
+@class TOCropViewDelegate;
+@class Xamarin_TOCropView_TOCropOverlayView_TOCropOverlayViewAppearance;
+@class TOCropOverlayView;
+@class Xamarin_TOCropView_TOCropScrollView_TOCropScrollViewAppearance;
+@class TOCropScrollView;
+@class Xamarin_TOCropView_TOCropToolbar_TOCropToolbarAppearance;
+@class TOCropToolbar;
+@class Xamarin_TOCropView_TOCropView_TOCropViewAppearance;
+@class TOCropView;
 @class RgPopupPlatformRenderer;
 @class RgPopupWindow;
 @class Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer;
@@ -426,6 +444,29 @@
 	-(int) xamarinGetGCHandle;
 	-(void) xamarinSetGCHandle: (int) gchandle;
 	-(void) captureOutput:(AVCapturePhotoOutput *)p0 didFinishProcessingPhotoSampleBuffer:(id)p1 previewPhotoSampleBuffer:(id)p2 resolvedSettings:(AVCaptureResolvedPhotoSettings *)p3 bracketSettings:(AVCaptureBracketedStillImageSettings *)p4 error:(NSError *)p5;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@protocol TOCropViewControllerDelegate
+	@optional -(void) cropViewController:(id)p0 didCropImageToRect:(CGRect)p1 angle:(NSInteger)p2;
+	@optional -(void) cropViewController:(id)p0 didCropToImage:(UIImage *)p1 withRect:(CGRect)p2 angle:(NSInteger)p3;
+	@optional -(void) cropViewController:(id)p0 didCropToCircularImage:(UIImage *)p1 withRect:(CGRect)p2 angle:(NSInteger)p3;
+	@optional -(void) cropViewController:(id)p0 didFinishCancelled:(BOOL)p1;
+@end
+
+@interface TOCropViewControllerDelegate : NSObject<TOCropViewControllerDelegate> {
+}
+	-(id) init;
+@end
+
+@interface PixUl8_iOS_Delegates_CropperDelegate : NSObject<TOCropViewControllerDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) cropViewController:(id)p0 didCropImageToRect:(CGRect)p1 angle:(NSInteger)p2;
 	-(BOOL) conformsToProtocol:(void *)p0;
 	-(id) init;
 @end
@@ -1102,6 +1143,10 @@
 	-(NSDictionary *) titleTextAttributes;
 @end
 
+@interface UIKit_UIScrollView_UIScrollViewAppearance : UIKit_UIView_UIViewAppearance {
+}
+@end
+
 @interface UIKit_UISwitch_UISwitchAppearance : UIKit_UIControl_UIControlAppearance {
 }
 	-(UIColor *) onTintColor;
@@ -1163,6 +1208,274 @@
 	-(UIImage *) fuseAllign:(NSArray *)p0 at:(float)p1;
 	-(NSString *) version;
 	-(id) init;
+@end
+
+@interface TOActivityCroppedImageProvider : UIActivityItemProvider {
+}
+	-(NSInteger) angle;
+	-(BOOL) circular;
+	-(CGRect) cropFrame;
+	-(UIImage *) image;
+	-(id) init;
+	-(id) initWithImage:(UIImage *)p0 cropFrame:(CGRect)p1 angle:(NSInteger)p2 circular:(BOOL)p3;
+@end
+
+@interface TOCroppedImageAttributes : NSObject {
+}
+	-(NSInteger) angle;
+	-(CGRect) croppedFrame;
+	-(CGSize) originalImageSize;
+	-(id) init;
+	-(id) initWithCroppedFrame:(CGRect)p0 angle:(NSInteger)p1 originalImageSize:(CGSize)p2;
+@end
+
+@interface TOCropViewController : UIViewController {
+}
+	-(void) dismissAnimatedFromParentViewController:(UIViewController *)p0 toView:(UIView *)p1 toFrame:(CGRect)p2 setup:(id)p3 completion:(id)p4;
+	-(void) dismissAnimatedFromParentViewController:(UIViewController *)p0 withCroppedImage:(UIImage *)p1 toView:(UIView *)p2 toFrame:(CGRect)p3 setup:(id)p4 completion:(id)p5;
+	-(void) presentAnimatedFromParentViewController:(UIViewController *)p0 fromView:(UIView *)p1 fromFrame:(CGRect)p2 setup:(id)p3 completion:(id)p4;
+	-(void) presentAnimatedFromParentViewController:(UIViewController *)p0 fromImage:(UIImage *)p1 fromView:(UIView *)p2 fromFrame:(CGRect)p3 angle:(NSInteger)p4 toImageFrame:(CGRect)p5 setup:(id)p6 completion:(id)p7;
+	-(void) resetCropViewLayout;
+	-(void) setAspectRatioPreset:(NSInteger)p0 animated:(BOOL)p1;
+	-(NSArray *) activityItems;
+	-(void) setActivityItems:(NSArray *)p0;
+	-(NSInteger) angle;
+	-(void) setAngle:(NSInteger)p0;
+	-(NSArray *) applicationActivities;
+	-(void) setApplicationActivities:(NSArray *)p0;
+	-(BOOL) aspectRatioLockDimensionSwapEnabled;
+	-(void) setAspectRatioLockDimensionSwapEnabled:(BOOL)p0;
+	-(BOOL) aspectRatioLockEnabled;
+	-(void) setAspectRatioLockEnabled:(BOOL)p0;
+	-(BOOL) aspectRatioPickerButtonHidden;
+	-(void) setAspectRatioPickerButtonHidden:(BOOL)p0;
+	-(NSInteger) aspectRatioPreset;
+	-(void) setAspectRatioPreset:(NSInteger)p0;
+	-(NSString *) cancelButtonTitle;
+	-(void) setCancelButtonTitle:(NSString *)p0;
+	-(id) cropView;
+	-(NSInteger) croppingStyle;
+	-(CGSize) customAspectRatio;
+	-(void) setCustomAspectRatio:(CGSize)p0;
+	-(NSString *) doneButtonTitle;
+	-(void) setDoneButtonTitle:(NSString *)p0;
+	-(NSArray *) excludedActivityTypes;
+	-(void) setExcludedActivityTypes:(NSArray *)p0;
+	-(BOOL) hidesNavigationBar;
+	-(void) setHidesNavigationBar:(BOOL)p0;
+	-(UIImage *) image;
+	-(CGRect) imageCropFrame;
+	-(void) setImageCropFrame:(CGRect)p0;
+	-(CGFloat) minimumAspectRatio;
+	-(void) setMinimumAspectRatio:(CGFloat)p0;
+	-(id) onDidCropImageToRect;
+	-(void) setOnDidCropImageToRect:(id)p0;
+	-(id) onDidCropToCircleImage;
+	-(void) setOnDidCropToCircleImage:(id)p0;
+	-(id) onDidCropToRect;
+	-(void) setOnDidCropToRect:(id)p0;
+	-(id) onDidFinishCancelled;
+	-(void) setOnDidFinishCancelled:(id)p0;
+	-(BOOL) resetAspectRatioEnabled;
+	-(void) setResetAspectRatioEnabled:(BOOL)p0;
+	-(BOOL) rotateButtonsHidden;
+	-(void) setRotateButtonsHidden:(BOOL)p0;
+	-(BOOL) rotateClockwiseButtonHidden;
+	-(void) setRotateClockwiseButtonHidden:(BOOL)p0;
+	-(BOOL) showActivitySheetOnDone;
+	-(void) setShowActivitySheetOnDone:(BOOL)p0;
+	-(UILabel *) titleLabel;
+	-(id) toolbar;
+	-(NSInteger) toolbarPosition;
+	-(void) setToolbarPosition:(NSInteger)p0;
+	-(NSObject *) delegate;
+	-(void) setDelegate:(NSObject *)p0;
+	-(id) init;
+	-(id) initWithCoder:(NSCoder *)p0;
+	-(id) initWithImage:(UIImage *)p0;
+	-(id) initWithCroppingStyle:(NSInteger)p0 image:(UIImage *)p1;
+@end
+
+@interface TOCropViewControllerTransitioning : NSObject {
+}
+	-(void) animateTransition:(id)p0;
+	-(void) reset;
+	-(double) transitionDuration:(id)p0;
+	-(CGRect) fromFrame;
+	-(void) setFromFrame:(CGRect)p0;
+	-(UIView *) fromView;
+	-(void) setFromView:(UIView *)p0;
+	-(UIImage *) image;
+	-(void) setImage:(UIImage *)p0;
+	-(BOOL) isDismissing;
+	-(void) setIsDismissing:(BOOL)p0;
+	-(id) prepareForTransitionHandler;
+	-(void) setPrepareForTransitionHandler:(id)p0;
+	-(CGRect) toFrame;
+	-(void) setToFrame:(CGRect)p0;
+	-(UIView *) toView;
+	-(void) setToView:(UIView *)p0;
+	-(id) init;
+@end
+
+@protocol TOCropViewDelegate
+	@required -(void) cropViewDidBecomeResettable:(id)p0;
+	@required -(void) cropViewDidBecomeNonResettable:(id)p0;
+@end
+
+@interface TOCropViewDelegate : NSObject<TOCropViewDelegate> {
+}
+	-(id) init;
+@end
+
+@interface Xamarin_TOCropView_TOCropOverlayView_TOCropOverlayViewAppearance : UIKit_UIView_UIViewAppearance {
+}
+@end
+
+@interface TOCropOverlayView : UIView {
+}
+	-(void) setGridHidden:(BOOL)p0 animated:(BOOL)p1;
+	-(BOOL) displayHorizontalGridLines;
+	-(void) setDisplayHorizontalGridLines:(BOOL)p0;
+	-(BOOL) displayVerticalGridLines;
+	-(void) setDisplayVerticalGridLines:(BOOL)p0;
+	-(BOOL) gridHidden;
+	-(void) setGridHidden:(BOOL)p0;
+	-(id) init;
+	-(id) initWithCoder:(NSCoder *)p0;
+@end
+
+@interface Xamarin_TOCropView_TOCropScrollView_TOCropScrollViewAppearance : UIKit_UIScrollView_UIScrollViewAppearance {
+}
+@end
+
+@interface TOCropScrollView : UIScrollView {
+}
+	-(id) touchesBegan;
+	-(void) setTouchesBegan:(id)p0;
+	-(id) touchesCancelled;
+	-(void) setTouchesCancelled:(id)p0;
+	-(id) touchesEnded;
+	-(void) setTouchesEnded:(id)p0;
+	-(id) init;
+	-(id) initWithCoder:(NSCoder *)p0;
+@end
+
+@interface Xamarin_TOCropView_TOCropToolbar_TOCropToolbarAppearance : UIKit_UIView_UIViewAppearance {
+}
+@end
+
+@interface TOCropToolbar : UIView {
+}
+	-(UIEdgeInsets) backgroundViewOutsets;
+	-(void) setBackgroundViewOutsets:(UIEdgeInsets)p0;
+	-(id) cancelButtonTapped;
+	-(void) setCancelButtonTapped:(id)p0;
+	-(UIButton *) cancelIconButton;
+	-(UIButton *) cancelTextButton;
+	-(NSString *) cancelTextButtonTitle;
+	-(void) setCancelTextButtonTitle:(NSString *)p0;
+	-(UIButton *) clampButton;
+	-(CGRect) clampButtonFrame;
+	-(BOOL) clampButtonGlowing;
+	-(void) setClampButtonGlowing:(BOOL)p0;
+	-(BOOL) clampButtonHidden;
+	-(void) setClampButtonHidden:(BOOL)p0;
+	-(id) clampButtonTapped;
+	-(void) setClampButtonTapped:(id)p0;
+	-(CGRect) doneButtonFrame;
+	-(id) doneButtonTapped;
+	-(void) setDoneButtonTapped:(id)p0;
+	-(UIButton *) doneIconButton;
+	-(UIButton *) doneTextButton;
+	-(NSString *) doneTextButtonTitle;
+	-(void) setDoneTextButtonTitle:(NSString *)p0;
+	-(UIButton *) resetButton;
+	-(BOOL) resetButtonEnabled;
+	-(void) setResetButtonEnabled:(BOOL)p0;
+	-(id) resetButtonTapped;
+	-(void) setResetButtonTapped:(id)p0;
+	-(UIButton *) rotateButton;
+	-(UIButton *) rotateClockwiseButton;
+	-(BOOL) rotateClockwiseButtonHidden;
+	-(void) setRotateClockwiseButtonHidden:(BOOL)p0;
+	-(id) rotateClockwiseButtonTapped;
+	-(void) setRotateClockwiseButtonTapped:(id)p0;
+	-(UIButton *) rotateCounterclockwiseButton;
+	-(BOOL) rotateCounterclockwiseButtonHidden;
+	-(void) setRotateCounterclockwiseButtonHidden:(BOOL)p0;
+	-(id) rotateCounterclockwiseButtonTapped;
+	-(void) setRotateCounterclockwiseButtonTapped:(id)p0;
+	-(CGFloat) statusBarHeightInset;
+	-(void) setStatusBarHeightInset:(CGFloat)p0;
+	-(id) init;
+	-(id) initWithCoder:(NSCoder *)p0;
+@end
+
+@interface Xamarin_TOCropView_TOCropView_TOCropViewAppearance : UIKit_UIView_UIViewAppearance {
+}
+@end
+
+@interface TOCropView : UIView {
+}
+	-(void) moveCroppedContentToCenterAnimated:(BOOL)p0;
+	-(void) performInitialSetup;
+	-(void) performRelayoutForRotation;
+	-(void) prepareforRotation;
+	-(void) resetLayoutToDefaultAnimated:(BOOL)p0;
+	-(void) rotateImageNinetyDegreesAnimated:(BOOL)p0;
+	-(void) rotateImageNinetyDegreesAnimated:(BOOL)p0 clockwise:(BOOL)p1;
+	-(void) setAspectRatio:(CGSize)p0 animated:(BOOL)p1;
+	-(void) setBackgroundImageViewHidden:(BOOL)p0 animated:(BOOL)p1;
+	-(void) setCroppingViewsHidden:(BOOL)p0 animated:(BOOL)p1;
+	-(void) setGridOverlayHidden:(BOOL)p0 animated:(BOOL)p1;
+	-(void) setSimpleRenderMode:(BOOL)p0 animated:(BOOL)p1;
+	-(NSInteger) angle;
+	-(void) setAngle:(NSInteger)p0;
+	-(CGSize) aspectRatio;
+	-(void) setAspectRatio:(CGSize)p0;
+	-(BOOL) aspectRatioLockDimensionSwapEnabled;
+	-(void) setAspectRatioLockDimensionSwapEnabled:(BOOL)p0;
+	-(BOOL) aspectRatioLockEnabled;
+	-(void) setAspectRatioLockEnabled:(BOOL)p0;
+	-(BOOL) canBeReset;
+	-(double) cropAdjustingDelay;
+	-(void) setCropAdjustingDelay:(double)p0;
+	-(BOOL) cropBoxAspectRatioIsPortrait;
+	-(CGRect) cropBoxFrame;
+	-(BOOL) cropBoxResizeEnabled;
+	-(void) setCropBoxResizeEnabled:(BOOL)p0;
+	-(UIEdgeInsets) cropRegionInsets;
+	-(void) setCropRegionInsets:(UIEdgeInsets)p0;
+	-(CGFloat) cropViewPadding;
+	-(void) setCropViewPadding:(CGFloat)p0;
+	-(NSInteger) croppingStyle;
+	-(BOOL) croppingViewsHidden;
+	-(void) setCroppingViewsHidden:(BOOL)p0;
+	-(UIView *) foregroundContainerView;
+	-(BOOL) gridOverlayHidden;
+	-(void) setGridOverlayHidden:(BOOL)p0;
+	-(id) gridOverlayView;
+	-(UIImage *) image;
+	-(CGRect) imageCropFrame;
+	-(void) setImageCropFrame:(CGRect)p0;
+	-(CGRect) imageViewFrame;
+	-(BOOL) internalLayoutDisabled;
+	-(void) setInternalLayoutDisabled:(BOOL)p0;
+	-(CGFloat) maximumZoomScale;
+	-(void) setMaximumZoomScale:(CGFloat)p0;
+	-(CGFloat) minimumAspectRatio;
+	-(void) setMinimumAspectRatio:(CGFloat)p0;
+	-(BOOL) resetAspectRatioEnabled;
+	-(void) setResetAspectRatioEnabled:(BOOL)p0;
+	-(BOOL) simpleRenderMode;
+	-(void) setSimpleRenderMode:(BOOL)p0;
+	-(NSObject *) delegate;
+	-(void) setDelegate:(NSObject *)p0;
+	-(id) init;
+	-(id) initWithCoder:(NSCoder *)p0;
+	-(id) initWithImage:(UIImage *)p0;
+	-(id) initWithCroppingStyle:(NSInteger)p0 image:(UIImage *)p1;
 @end
 
 @interface Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer : Xamarin_Forms_Platform_iOS_PageRenderer {

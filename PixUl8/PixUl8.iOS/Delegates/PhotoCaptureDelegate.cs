@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.Threading.Tasks;
+using Acr.UserDialogs;
 using AVFoundation;
 using CoreFoundation;
 using CoreGraphics;
@@ -240,6 +241,12 @@ namespace PixUl8.iOS.Delegates
                     else
                     {
                         Debug.WriteLine("photo was saved to photo library");
+                        var toastConfig = new ToastConfig("Image Saved to Gallery");
+
+                        toastConfig.Position = ToastPosition.Top;
+                        toastConfig.SetDuration(1000);
+                        toastConfig.SetBackgroundColor(System.Drawing.Color.FromArgb(229, 145, 0));
+                        UserDialogs.Instance.Toast(toastConfig);
                     }
                     
                 }

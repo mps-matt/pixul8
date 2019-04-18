@@ -205,6 +205,19 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.TOCropView/1.1.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/TOCropViewController.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/TOCropViewController.dll": {}
+        }
+      },
       "PixUl8.Native/1.0.0": {
         "type": "project",
         "compile": {
@@ -417,6 +430,19 @@
         "build": {
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.TOCropView/1.1.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/TOCropViewController.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/TOCropViewController.dll": {}
         }
       },
       "PixUl8.Native/1.0.0": {
@@ -633,6 +659,19 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.TOCropView/1.1.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/TOCropViewController.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/TOCropViewController.dll": {}
+        }
+      },
       "PixUl8.Native/1.0.0": {
         "type": "project",
         "compile": {
@@ -845,6 +884,19 @@
         "build": {
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.TOCropView/1.1.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/TOCropViewController.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/TOCropViewController.dll": {}
         }
       },
       "PixUl8.Native/1.0.0": {
@@ -1229,6 +1281,17 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.TOCropView/1.1.0": {
+      "sha512": "llrPqDl+R1x84TxpP9PreJTO3ApWe7M/NFBZ3iGLI+6mfYkM+rkyD1/jSOgCUqXWGveoXpkJ9x5vMkqPBokGvA==",
+      "type": "package",
+      "path": "xamarin.tocropview/1.1.0",
+      "files": [
+        ".signature.p7s",
+        "lib/xamarinios10/TOCropViewController.dll",
+        "xamarin.tocropview.1.1.0.nupkg.sha512",
+        "xamarin.tocropview.nuspec"
+      ]
+    },
     "PixUl8.Native/1.0.0": {
       "type": "project",
       "path": "../../PixUl8.OpenCV/PixUl8.Native.csproj",
@@ -1244,6 +1307,7 @@
       "Toasts.Forms.Plugin >= 3.3.2",
       "Xam.Plugins.Settings >= 3.1.1",
       "Xamarin.Forms >= 3.6.0.293080",
+      "Xamarin.TOCropView >= 1.1.0",
       "morelinq >= 3.1.1"
     ]
   },
@@ -1304,6 +1368,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[3.6.0.293080, )"
+          },
+          "Xamarin.TOCropView": {
+            "target": "Package",
+            "version": "[1.1.0, )"
           },
           "morelinq": {
             "target": "Package",

@@ -77,6 +77,7 @@ namespace PixUl8.iOS
 
 
             SKStoreReviewController.RequestReview();
+            StartSession();
 
             return result;
         }
@@ -100,6 +101,7 @@ namespace PixUl8.iOS
         {
             SaveAndSetVolume();
             StartObservers();
+            StartSession();
         }
 
         public override void ObserveValue(NSString keyPath, NSObject ofObject, NSDictionary change, IntPtr context)
@@ -136,6 +138,26 @@ namespace PixUl8.iOS
             session.SetActive(true);
             session.AddObserver(this, "outputVolume", NSKeyValueObservingOptions.New, IntPtr.Zero);
         }
+
+        private CancellationTokenSource srcToken;
+        private void StartSession()
+        {
+            if (srcToken != null) srcToken.Cancel();
+            srcToken = new CancellationTokenSource();
+            var ignore = UpdaterAsync(srcToken.Token);
+        }
+
+        private async Task UpdaterAsync(CancellationToken token)
+        {
+            while (!token.IsCancellationRequested)
+            {
+                MessagingCenter.Send<AppDelegate>(this, "Updater");
+                await Task.Delay(100, token);
+            }
+
+
+        }
+
 
         #endregion
 

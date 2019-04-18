@@ -208,6 +208,7 @@
 -r=/Users/mattstark/.nuget/packages/xamarin.forms/3.6.0.293080/lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/mattstark/.nuget/packages/xamarin.forms/3.6.0.293080/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/mattstark/.nuget/packages/xamarin.forms/3.6.0.293080/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
+-r=/Users/mattstark/.nuget/packages/xamarin.tocropview/1.1.0/lib/xamarinios10/TOCropViewController.dll
 -r=/Users/mattstark/Documents/GitHub/pixul8/PixUl8.OpenCV/bin/Debug/PixUl8.OpenCV.dll
 --target-framework=Xamarin.iOS,v1.0
 --root-assembly=/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/PixUl8.iOS.exe
