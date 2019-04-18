@@ -35,6 +35,7 @@
 @class UINavigationControllerDelegate;
 @class WKUIDelegate;
 @class UIKit_UIControlEventProxy;
+@class UIImagePickerControllerDelegate;
 @class UISearchResultsUpdating;
 @class Foundation_InternalNSNotificationHandler;
 @class Foundation_NSDispatcher;
@@ -53,6 +54,7 @@
 @class PixUl8_iOS_CustomRenderers_CameraFeedPreviewRenderer;
 @class Xamarin_Forms_Platform_iOS_FormsApplicationDelegate;
 @class AppDelegate;
+@class ImagePreviewViewController;
 @class PixUl8_iOS_Delegates_PhotoCaptureDelegate;
 @class PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate;
 @class PixUl8_iOS_UIViews_UICameraPreview;
@@ -182,6 +184,7 @@
 @class __UITapGestureRecognizer;
 @class __UIPanGestureRecognizer;
 @class __UIPinchGestureRecognizer;
+@class UIKit_UIImagePickerController__UIImagePickerControllerDelegate;
 @class UIKit_UINavigationBar_UINavigationBarAppearance;
 @class UIKit_UISearchBar__UISearchBarDelegate;
 @class UIKit_UISearchController___Xamarin_UISearchResultsUpdating;
@@ -276,6 +279,11 @@
 @end
 
 @interface WKUIDelegate : NSObject<WKUIDelegate> {
+}
+	-(id) init;
+@end
+
+@interface UIImagePickerControllerDelegate : NSObject<UINavigationControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
 }
 	-(id) init;
 @end
@@ -385,6 +393,18 @@
 	-(void) applicationDidReceiveMemoryWarning:(UIApplication *)p0;
 	-(void) applicationWillEnterForeground:(UIApplication *)p0;
 	-(void) observeValueForKeyPath:(NSString *)p0 ofObject:(NSObject *)p1 change:(NSDictionary *)p2 context:(void *)p3;
+	-(id) init;
+@end
+
+@interface ImagePreviewViewController : UIViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) viewDidLoad;
+	-(void) didReceiveMemoryWarning;
+	-(BOOL) conformsToProtocol:(void *)p0;
 	-(id) init;
 @end
 

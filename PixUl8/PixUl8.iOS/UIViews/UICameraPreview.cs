@@ -24,6 +24,7 @@ using Vision;
 using UserNotifications;
 using Acr.UserDialogs;
 using CoreImage;
+using PixUl8.iOS.UIViewModels;
 
 //This code came from https://github.com/xamarin/xamarin-forms-samples/blob/master/CustomRenderers/View/iOS/UICameraPreview.cs
 // - It seems that the tutorial i was following assumes this is built intro xamarin but i didn't have it so found it myself!
@@ -367,6 +368,61 @@ namespace PixUl8.iOS.UIViews
 
         }
 
+        private ImagePreviewViewController imagePreview = new ImagePreviewViewController();
+        private UIImagePickerController imagePicker = new UIImagePickerController();
+        private async Task OpenGalleryAsync()
+        {
+            await UIApplication.SharedApplication.KeyWindow.
+            RootViewController.PresentViewControllerAsync(imagePicker, true);
+
+        }
+
+        private void Handle_Canceled(object sender, EventArgs e)
+        {
+            imagePicker.DismissModalViewController(true);
+        }
+
+        private void Handle_FinishedPickingMedia(object sender, UIImagePickerMediaPickedEventArgs e)
+        {
+
+            //Code adapted from https://stackoverflow.com/questions/38476030/how-to-select-an-image-from-gallery-in-xamarin-ios
+            bool isImage = false;
+            switch (e.Info[UIImagePickerController.MediaType].ToString())
+            {
+                case "public.image":
+                    Console.WriteLine("Image selected");
+                    isImage = true;
+                    break;
+                case "public.video":
+                    Console.WriteLine("Video selected");
+                    break;
+            }
+
+            // get common info (shared between images and video)
+            NSUrl referenceURL = e.Info[new NSString("UIImagePickerControllerReferenceUrl")] as NSUrl;
+            if (referenceURL != null)
+                Console.WriteLine("Url:" + referenceURL.ToString());
+
+            // if it was an image, get the other image info
+            if (isImage)
+            {
+                // get the original image
+                UIImage originalImage = e.Info[UIImagePickerController.OriginalImage] as UIImage;
+                if (originalImage != null)
+                {
+                    // do something with the image
+                    imagePreview.ImageView.Image = originalImage;
+
+                }
+
+            }
+
+            // dismiss the picker
+            imagePicker.DismissModalViewController(true);
+            UIApplication.SharedApplication.KeyWindow.
+                    RootViewController.PresentViewControllerAsync(imagePreview, true);
+        }
+
         private async Task TakePhotoAsync()
         {
             if (!Activated)
@@ -377,18 +433,6 @@ namespace PixUl8.iOS.UIViews
 
             if (!HDRPhotoCaptureDelegate.CanTakePhoto || !PhotoCaptureDelegate.CanTakePhoto)
             {
-                if (HdrEnabled)
-                {
-                    return;
-                }
-
-                DependencyService.Get<IHapticService>().InvokeHeavyHaptic();
-                UserDialogs.Instance.ShowLoading(title: "Finialising Previous Image Capture");
-                await Task.WhenAll(
-                    PhotoCaptureDelegate.AwaitPhotoOppotunity,
-                    HDRPhotoCaptureDelegate.AwaitPhotoOppotunity
-                );
-                UserDialogs.Instance.HideLoading();
                 return;
             }
 
@@ -427,7 +471,6 @@ namespace PixUl8.iOS.UIViews
                 settings.Dispose();
             }
 
-
             _canTakePicture = false;
 
             //In 300ms time, re-enable picture taking
@@ -435,6 +478,7 @@ namespace PixUl8.iOS.UIViews
             {
                 await Task.Delay(300);
                 _canTakePicture = true;
+
             });
         }
 
@@ -630,7 +674,17 @@ namespace PixUl8.iOS.UIViews
             // _observer = _device.AddObserver("FocusPointOfInterest", NSKeyValueObservingOptions.New, FocusChange);
 
             #endregion
+
+
+
             _device.UnlockForConfiguration();
+
+
+            imagePicker.SourceType = UIImagePickerControllerSourceType.PhotoLibrary;
+            imagePicker.MediaTypes = UIImagePickerController.AvailableMediaTypes(UIImagePickerControllerSourceType.PhotoLibrary);
+
+            imagePicker.FinishedPickingMedia += Handle_FinishedPickingMedia;
+            imagePicker.Canceled += Handle_Canceled;
 
 
             _imageDelegate = new PhotoCaptureDelegate();
@@ -1060,7 +1114,8 @@ namespace PixUl8.iOS.UIViews
         private void SwipeHandlerUp()
         {
             //raise menu open event via message center
-            MessagingCenter.Send<App>((App)App.Current, "PerformMenuSwitch");
+            //MessagingCenter.Send<App>((App)App.Current, "PerformMenuSwitch");
+            OpenGalleryAsync();
         }
 
         private void SwipeHandlerSwitchCamera(SwipeType type)

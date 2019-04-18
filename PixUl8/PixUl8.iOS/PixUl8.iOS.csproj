@@ -85,6 +85,10 @@
     <Compile Include="Delegates\HDRPhotoCaptureDelegate.cs" />
     <Compile Include="UIViews\TakeImageButton.cs" />
     <Compile Include="Services\URLService.cs" />
+    <Compile Include="UIViewControllers\ImagePreviewViewController.cs" />
+    <Compile Include="UIViewControllers\ImagePreviewViewController.designer.cs">
+      <DependentUpon>ImagePreviewViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
@@ -264,6 +268,7 @@
     <BundleResource Include="Resources\logos\icons\80.png" />
     <BundleResource Include="Resources\logos\icons\87.png" />
     <BundleResource Include="Resources\logos\icons\Contents.json" />
+    <InterfaceDefinition Include="UIViewControllers\ImagePreviewViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -298,6 +303,7 @@
     <Folder Include="UIViews\" />
     <Folder Include="Delegates\" />
     <Folder Include="Models\" />
+    <Folder Include="UIViewControllers\" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />

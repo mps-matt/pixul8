@@ -24565,7 +24565,7 @@ _mono_aot_file_info:
 	.long 200,1912,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 87,229,33,130,231,223,174,0,141,118,31,20,197,106,232,233
+	.byte 18,181,204,47,45,208,119,32,30,43,246,81,144,167,66,126
 	.globl _mono_aot_module_BTProgressHUD_info
 	.align 3
 _mono_aot_module_BTProgressHUD_info:

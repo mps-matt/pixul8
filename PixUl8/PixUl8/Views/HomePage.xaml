@@ -199,6 +199,19 @@
                            >                       
                     </ImageButton>   
                   
+                    <!--                    Swipe up bar-->
+                    <Label
+                        x:Name="SwipeUpbar1"
+                        Grid.Row="1"
+                        InputTransparent="true"
+                        Grid.Column="1"
+                        Margin="0, 0, 0, 20"
+                        HeightRequest="5"
+                        WidthRequest="100"
+                        HorizontalOptions="Center"
+                        VerticalOptions="End"
+                        BackgroundColor="White"
+                    />
                         
                     
                     
@@ -328,6 +341,20 @@
                             Command="{Binding ToggleMenuCommand}"
                            >                       
                     </ImageButton>   
+                    
+                                        <!--                    Swipe up bar-->
+                    <Label
+                        x:Name="SwipeUpbar2"
+                        Grid.Row="1"
+                        InputTransparent="true"
+                        Grid.Column="1"
+                        Margin="0, 0, 0, 20"
+                        HeightRequest="5"
+                        WidthRequest="100"
+                        HorizontalOptions="Center"
+                        VerticalOptions="End"
+                        BackgroundColor="White"
+                    />
                     
                     
                     </Grid>

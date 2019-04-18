@@ -15106,13 +15106,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 235,2824,118,141,70,387000831,0,21579
-	.long 128,8,8,8,0,25,25240,3648
+	.long 235,2824,118,141,70,387000831,0,21587
+	.long 128,8,8,8,0,25,25248,3648
 	.long 3048,2312,0,2728,3016,2400,0,1664
 	.long 240,3640,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 158,17,68,77,14,14,71,205,239,120,120,76,81,136,8,117
+	.byte 147,105,0,63,200,65,172,15,243,76,104,105,72,210,113,136
 	.globl _mono_aot_module_SlideOverKit_iOS_info
 	.align 3
 _mono_aot_module_SlideOverKit_iOS_info:

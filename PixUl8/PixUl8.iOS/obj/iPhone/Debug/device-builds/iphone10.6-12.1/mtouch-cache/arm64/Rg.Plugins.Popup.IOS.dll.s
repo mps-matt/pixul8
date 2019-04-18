@@ -24944,13 +24944,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 320,4640,260,178,70,387000831,0,37690
-	.long 128,8,8,8,0,25,43712,6016
+	.long 320,4640,260,178,70,387000831,0,37706
+	.long 128,8,8,8,0,25,43728,6016
 	.long 5496,4584,0,5120,5456,4680,0,3560
 	.long 248,6008,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 104,23,228,209,238,206,84,41,57,6,56,129,172,12,18,242
+	.byte 238,29,53,211,82,147,76,191,229,118,127,81,189,27,151,109
 	.globl _mono_aot_module_Rg_Plugins_Popup_IOS_info
 	.align 3
 _mono_aot_module_Rg_Plugins_Popup_IOS_info:
