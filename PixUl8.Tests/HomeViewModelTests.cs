@@ -8,6 +8,9 @@ using Xamarin.Forms;
 
 namespace PixUl8.Tests
 {
+    /// <summary>
+    /// Home view model tests.
+    /// </summary>
     [TestClass]
     public class HomeViewModelTests
     {
@@ -17,6 +20,9 @@ namespace PixUl8.Tests
         IURLService urlService;
         IAdService adService;
 
+        /// <summary>
+        /// Setup this instance.
+        /// </summary>
         [TestInitialize]
         public void Setup()
         {
@@ -27,12 +33,18 @@ namespace PixUl8.Tests
             adService = A.Fake<IAdService>();
         }
 
+        /// <summary>
+        /// Construction this instance.
+        /// </summary>
         [TestMethod]
         public void Construction()
         {
             HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, adService, mocked: true);
         }
 
+        /// <summary>
+        /// Tests get set of flash
+        /// </summary>
         [TestMethod]
         public void FlashGetSet()
         {
@@ -43,6 +55,9 @@ namespace PixUl8.Tests
             Assert.IsTrue(vm.IsFlashActive == true);
         }
 
+        /// <summary>
+        /// Tests Get Set of HDR
+        /// </summary>
         [TestMethod]
         public void HDRGetSet()
         {
@@ -53,6 +68,9 @@ namespace PixUl8.Tests
             Assert.IsTrue(vm.IsHDRActive == true);
         }
 
+        /// <summary>
+        /// Tests the get set of front facing
+        /// </summary>
         [TestMethod]
         public void FrontFacingGetSet()
         {
@@ -63,6 +81,9 @@ namespace PixUl8.Tests
             Assert.IsTrue(vm.IsFrontFacingActive == true);
         }
 
+        /// <summary>
+        /// Tests the Get Set of Manual Mode
+        /// </summary>
         [TestMethod]
         public void ManualGetSet()
         {
@@ -73,6 +94,9 @@ namespace PixUl8.Tests
             Assert.IsTrue(vm.ManualControlsEnabled == true);
         }
 
+        /// <summary>
+        /// Tests the Get Set of 4:3 mode
+        /// </summary>
         [TestMethod]
         public void is43GetSet()
         {
@@ -83,6 +107,9 @@ namespace PixUl8.Tests
             Assert.IsTrue(vm.is43Enabled == true);
         }
 
+        /// <summary>
+        /// Tests the Get Set of Start up Mode
+        /// </summary>
         [TestMethod]
         public void StartUpGetSet()
         {
@@ -93,6 +120,9 @@ namespace PixUl8.Tests
             Assert.IsTrue(vm.StartupAnimation == true);
         }
 
+        /// <summary>
+        /// Tests the get set of 3d touch mode
+        /// </summary>
         [TestMethod]
         public void is3DGetSet()
         {
@@ -103,6 +133,9 @@ namespace PixUl8.Tests
             Assert.IsTrue(vm.is3DEnabled == true);
         }
 
+        /// <summary>
+        /// Tests the get set of exposure
+        /// </summary>
         [TestMethod]
         public void ExposureGetSet()
         {
@@ -113,6 +146,9 @@ namespace PixUl8.Tests
             Assert.IsTrue(vm.ExposurePercentage == 60);
         }
 
+        /// <summary>
+        /// Tests the get set of focus
+        /// </summary>
         [TestMethod]
         public void FocusGetSet()
         {
@@ -123,6 +159,9 @@ namespace PixUl8.Tests
             Assert.IsTrue(vm.FocusPercentage == 30);
         }
 
+        /// <summary>
+        /// Tests the get set of balance
+        /// </summary>
         [TestMethod]
         public void BalanceGetSet()
         {
@@ -133,7 +172,10 @@ namespace PixUl8.Tests
             Assert.IsTrue(vm.BalancePercentage == 90);
         }
 
-
+        /// <summary>
+        /// Tests turning the camera around
+        /// </summary>
+        /// <returns>The camera to back.</returns>
         [TestMethod]
         public async Task TurnCameraToBack()
         { 
@@ -148,6 +190,10 @@ namespace PixUl8.Tests
             Assert.IsTrue(vm.IsFrontFacingActive == false);
         }
 
+        /// <summary>
+        /// Tests turning camera to front
+        /// </summary>
+        /// <returns>The camera to front.</returns>
         [TestMethod]
         public async Task TurnCameraToFront()
         {
@@ -162,6 +208,10 @@ namespace PixUl8.Tests
             Assert.IsTrue(vm.IsFrontFacingActive == true);
         }
 
+        /// <summary>
+        /// Tests turning camera to front while also turning flash off
+        /// </summary>
+        /// <returns>The camera to front and turn off flash.</returns>
         [TestMethod]
         public async Task TurnCameraToFrontAndTurnOffFlash()
         {
@@ -178,6 +228,10 @@ namespace PixUl8.Tests
             Assert.IsTrue(vm.IsFlashActive == false);
         }
 
+        /// <summary>
+        /// Tests toggling flash off
+        /// </summary>
+        /// <returns>The flash off.</returns>
         [TestMethod]
         public async Task ToogleFlashOff()
         {
@@ -190,6 +244,10 @@ namespace PixUl8.Tests
             Assert.IsTrue(vm.IsFlashActive == false);
         }
 
+        /// <summary>
+        /// Tests toggling HDR off
+        /// </summary>
+        /// <returns>The HDRO ff.</returns>
         [TestMethod]
         public async Task ToogleHDROff()
         {

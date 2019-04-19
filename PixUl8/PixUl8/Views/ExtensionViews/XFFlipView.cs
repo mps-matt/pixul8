@@ -12,16 +12,23 @@ namespace PixUl8.Views.ExtensionViews
     ///
     /// Flip View Animation Control built with pure Xamarin.Forms 
     /// 
+    /// 
     public class XFFlipView : ContentView
     {
         private readonly RelativeLayout _contentHolder;
-        
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:PixUl8.Views.ExtensionViews.XFFlipView"/> class.
+        /// </summary>
         public XFFlipView()
         {
             _contentHolder = new RelativeLayout();
             Content = _contentHolder;
         }
 
+        /// <summary>
+        /// The front view property.
+        /// </summary>
         public static readonly BindableProperty FrontViewProperty =
         BindableProperty.Create(
             nameof(FrontView),
@@ -32,6 +39,12 @@ namespace PixUl8.Views.ExtensionViews
             null,
             FrontViewPropertyChanged);
 
+        /// <summary>
+        /// On Front view property changed.
+        /// </summary>
+        /// <param name="bindable">Bindable.</param>
+        /// <param name="oldValue">Old value.</param>
+        /// <param name="newValue">New value.</param>
         private static void FrontViewPropertyChanged(BindableObject bindable, object oldValue, object newValue)
         {
             if (newValue != null)
@@ -58,7 +71,9 @@ namespace PixUl8.Views.ExtensionViews
         }
 
 
-
+        /// <summary>
+        /// The back view property.
+        /// </summary>
         public static readonly BindableProperty BackViewProperty =
         BindableProperty.Create(
             nameof(BackView),
@@ -69,6 +84,12 @@ namespace PixUl8.Views.ExtensionViews
             null,
             BackViewPropertyChanged);
 
+        /// <summary>
+        /// On Back view property changed.
+        /// </summary>
+        /// <param name="bindable">Bindable.</param>
+        /// <param name="oldvalue">Oldvalue.</param>
+        /// <param name="newvalue">Newvalue.</param>
         private static void BackViewPropertyChanged(BindableObject bindable, object oldvalue, object newvalue)
         {
             //Set BackView Rotation before rotating
@@ -98,7 +119,9 @@ namespace PixUl8.Views.ExtensionViews
         }
 
 
-
+        /// <summary>
+        /// The is flipped property.
+        /// </summary>
         public static readonly BindableProperty IsFlippedProperty =
         BindableProperty.Create(
             nameof(IsFlipped),
@@ -119,6 +142,12 @@ namespace PixUl8.Views.ExtensionViews
             set { this.SetValue(IsFlippedProperty, value); }
         }
 
+        /// <summary>
+        /// On Is flipped property changed.
+        /// </summary>
+        /// <param name="bindable">Bindable.</param>
+        /// <param name="oldValue">Old value.</param>
+        /// <param name="newValue">New value.</param>
         private static void IsFlippedPropertyChanged(BindableObject bindable, object oldValue, object newValue)
         {
             if ((bool)newValue)
@@ -161,6 +190,10 @@ namespace PixUl8.Views.ExtensionViews
         
         #region Animation Stuff
 
+        /// <summary>
+        /// Fronts to back rotate.
+        /// </summary>
+        /// <returns>The to back rotate.</returns>
         private async Task<bool> FrontToBackRotate()
         {
             ViewExtensions.CancelAnimations(this);
@@ -172,6 +205,10 @@ namespace PixUl8.Views.ExtensionViews
             return true;
         }
 
+        /// <summary>
+        /// Backs to front rotate.
+        /// </summary>
+        /// <returns>The to front rotate.</returns>
         private async Task<bool> BackToFrontRotate()
         {
             ViewExtensions.CancelAnimations(this);

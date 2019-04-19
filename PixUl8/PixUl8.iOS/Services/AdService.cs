@@ -11,10 +11,17 @@ using Xamarin.Forms;
 [assembly: Dependency(typeof(AdService))]
 namespace PixUl8.iOS.Services
 {
+    /// <summary>
+    /// Ad service.
+    /// </summary>
     public class AdService : NSObject, IAdService, IInterstitialDelegate
     {
         Interstitial _ad;
 
+        /// <summary>
+        /// Shows the ad async.
+        /// </summary>
+        /// <returns>The ad async.</returns>
         public async Task ShowAdAsync()
         {
 

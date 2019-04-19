@@ -12,14 +12,25 @@ using UIKit;
 [assembly: ExportRenderer(typeof(CameraView), typeof(CameraFeedPreviewRenderer))]
 namespace PixUl8.iOS.CustomRenderers
 {
+    /// <summary>
+    /// Camera feed preview renderer. - Renderer for the Xamarin.Forms CameraView class
+    /// </summary>
     public class CameraFeedPreviewRenderer : ViewRenderer<CameraView, UICameraPreview>
     {
+        //Stores an instance of UI view class to be displayed
         UICameraPreview uiCameraPreview;
 
+        /// <summary>
+        /// Ons the element property changed.
+        /// </summary>
+        /// <param name="sender">Sender.</param>
+        /// <param name="e">E.</param>
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             base.OnElementPropertyChanged(sender, e);
 
+            //When different properties change, it should change
+            //these values too!
             switch (e.PropertyName)
             {
                 case nameof(CameraView.Activated):
@@ -80,7 +91,10 @@ namespace PixUl8.iOS.CustomRenderers
             }
         }
 
-
+        /// <summary>
+        /// Ons the element changed.
+        /// </summary>
+        /// <param name="e">E.</param>
         protected override void OnElementChanged(ElementChangedEventArgs<CameraView> e)
         {
             base.OnElementChanged(e);
@@ -91,7 +105,11 @@ namespace PixUl8.iOS.CustomRenderers
             }
         }
 
-
+        /// <summary>
+        /// Sets up camera.
+        /// </summary>
+        /// <param name="currentlyActive">If set to <c>true</c> currently active.</param>
+        /// <param name="options">Options.</param>
         private void SetUpCamera(bool currentlyActive, CameraOptions options)
         {
             //if (!currentlyActive)

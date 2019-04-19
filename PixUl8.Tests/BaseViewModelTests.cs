@@ -6,6 +6,9 @@ using Plugin.Toasts;
 
 namespace PixUl8.Tests
 {
+    /// <summary>
+    /// Base view model tests.
+    /// </summary>
     [TestClass]
     public class BaseViewModelTests
     {
@@ -15,6 +18,9 @@ namespace PixUl8.Tests
         IURLService urlService;
         IAdService adService;
 
+        /// <summary>
+        /// Setup this instance.
+        /// </summary>
         [TestInitialize]
         public void Setup()
         {
@@ -25,12 +31,18 @@ namespace PixUl8.Tests
             adService = A.Fake<IAdService>();
         }
 
+        /// <summary>
+        /// Construction this instance.
+        /// </summary>
         [TestMethod]
         public void Construction()
         {
             BaseViewModel vm = new BaseViewModel(hapticService, settingsService, toastNotificator, urlService, adService);
         }
 
+        /// <summary>
+        /// Tests adding title
+        /// </summary>
         [TestMethod]
         public void TitleGetSet()
         {
@@ -41,6 +53,9 @@ namespace PixUl8.Tests
             Assert.IsTrue(vm.Title == "Testing");
         }
 
+        /// <summary>
+        /// Tests is Busy
+        /// </summary>
         [TestMethod]
         public void IsBusyGetSet()
         {

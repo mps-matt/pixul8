@@ -21,6 +21,9 @@ namespace PixUl8.iOS
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
     // User Interface of the application, as well as listening (and optionally responding) to 
     // application events from iOS.
+    /// <summary>
+    /// App delegate.
+    /// </summary>
     [Register("AppDelegate")]
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
     {
@@ -35,6 +38,12 @@ namespace PixUl8.iOS
         //
         // You have 17 seconds to return from this method, or iOS will terminate your application.
         //
+        /// <summary>
+        /// Finisheds the launching.
+        /// </summary>
+        /// <returns><c>true</c>, if launching was finisheded, <c>false</c> otherwise.</returns>
+        /// <param name="app">App.</param>
+        /// <param name="options">Options.</param>
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
@@ -85,21 +94,37 @@ namespace PixUl8.iOS
             return result;
         }
 
+        /// <summary>
+        /// Outputs the gc.
+        /// </summary>
+        /// <param name="state">State.</param>
         public void OutputGC(object state)
         {
             //Debug.WriteLine($"GC- {Math.Round(GC.GetTotalMemory(false)/(double)1000000, 2)} MB");
         }
 
+        /// <summary>
+        /// Dids the enter background.
+        /// </summary>
+        /// <param name="uiApplication">User interface application.</param>
         public override void DidEnterBackground(UIApplication uiApplication)
         {
             base.DidEnterBackground(uiApplication);
         }
 
+        /// <summary>
+        /// Receives the memory warning.
+        /// </summary>
+        /// <param name="uiApplication">User interface application.</param>
         public override void ReceiveMemoryWarning(UIApplication uiApplication)
         {
             Debug.WriteLine("MEMORY WARNING RECEIVED");
         }
 
+        /// <summary>
+        /// Wills the enter foreground.
+        /// </summary>
+        /// <param name="app">App.</param>
         public override void WillEnterForeground(UIApplication app)
         {
             SaveAndSetVolume();
@@ -107,6 +132,13 @@ namespace PixUl8.iOS
             StartSession();
         }
 
+        /// <summary>
+        /// Observes the value.
+        /// </summary>
+        /// <param name="keyPath">Key path.</param>
+        /// <param name="ofObject">Of object.</param>
+        /// <param name="change">Change.</param>
+        /// <param name="context">Context.</param>
         public override void ObserveValue(NSString keyPath, NSObject ofObject, NSDictionary change, IntPtr context)
         {
             if (GetVolume() != 0.5f)
@@ -119,22 +151,36 @@ namespace PixUl8.iOS
 
         #region Private Helper Audio Functions
 
+        /// <summary>
+        /// Saves the and set volume.
+        /// </summary>
         private void SaveAndSetVolume()
         {
             _startingVolume = GetVolume();
             SetVolume(0.5f);
         }
 
+        /// <summary>
+        /// Sets the volume.
+        /// </summary>
+        /// <param name="volume">Volume.</param>
         private void SetVolume(float volume)
         {
             MPMusicPlayerController.SystemMusicPlayer.Volume = volume;
         }
 
+        /// <summary>
+        /// Gets the volume.
+        /// </summary>
+        /// <returns>The volume.</returns>
         private float GetVolume()
         {
             return AVAudioSession.SharedInstance().OutputVolume;
         }
 
+        /// <summary>
+        /// Starts the observers.
+        /// </summary>
         private void StartObservers()
         {
             var session = AVAudioSession.SharedInstance();
@@ -142,7 +188,13 @@ namespace PixUl8.iOS
             session.AddObserver(this, "outputVolume", NSKeyValueObservingOptions.New, IntPtr.Zero);
         }
 
+        /// <summary>
+        /// The source token.
+        /// </summary>
         private CancellationTokenSource srcToken;
+        /// <summary>
+        /// Starts the session.
+        /// </summary>
         private void StartSession()
         {
             if (srcToken != null) srcToken.Cancel();
@@ -150,6 +202,11 @@ namespace PixUl8.iOS
             var ignore = UpdaterAsync(srcToken.Token);
         }
 
+        /// <summary>
+        /// Updaters - will run constnatly, so the sliders can move aroudn freely as the scene changes
+        /// </summary>
+        /// <returns>The async.</returns>
+        /// <param name="token">Token.</param>
         private async Task UpdaterAsync(CancellationToken token)
         {
             while (!token.IsCancellationRequested)

@@ -31,47 +31,134 @@ using Xamarin.TOCropView;
 // - It seems that the tutorial i was following assumes this is built intro xamarin but i didn't have it so found it myself!
 namespace PixUl8.iOS.UIViews
 {
+    /// <summary>
+    /// Swipe type enum - just more readable than a boolean
+    /// </summary>
     public enum SwipeType
     {
         Left,
         Right
     }
 
-    public class UICameraPreview : UIView, IAVCaptureMetadataOutputObjectsDelegate, IUICameraPreview
+    /// <summary>
+    /// UIC amera preview.
+    /// </summary>
+    public class UICameraPreview : UIView, IAVCaptureMetadataOutputObjectsDelegate
     {
+        /// <summary>
+        /// The hdrcapturecount.
+        /// </summary>
         public static readonly int HDRCAPTURECOUNT = 9;
 
+        /// <summary>
+        /// The scale.
+        /// </summary>
         public static nfloat SCALE = 0;
 
-
+        /// <summary>
+        /// The bounds.
+        /// </summary>
         public static CGRect BOUNDS;
 
+        /// <summary>
+        /// The manual focusing.
+        /// </summary>
         private bool _manualFocusing = false;
 
+        /// <summary>
+        /// The preview layer.
+        /// </summary>
         private AVCaptureVideoPreviewLayer _previewLayer;
+
+        /// <summary>
+        /// The device.
+        /// </summary>
         private AVCaptureDevice _device;
 
+        /// <summary>
+        /// The capture device resolution.
+        /// </summary>
         private CGSize _captureDeviceResolution;
+
+        /// <summary>
+        /// The capture device bounds.
+        /// </summary>
         private CGSize _captureDeviceBounds;
 
+        /// <summary>
+        /// The photo output.
+        /// </summary>
         private AVCapturePhotoOutput _photoOutput;
+
+        /// <summary>
+        /// The video output.
+        /// </summary>
         private AVCaptureVideoDataOutput _videoOutput;
+
+        /// <summary>
+        /// The image delegate.
+        /// </summary>
         private PhotoCaptureDelegate _imageDelegate;
+
+        /// <summary>
+        /// The hdr image delegate.
+        /// </summary>
         private HDRPhotoCaptureDelegate _hdrImageDelegate;
+
+        /// <summary>
+        /// The force pressed.
+        /// </summary>
         private bool _forcePressed = false;
+
+        /// <summary>
+        /// The can take picture.
+        /// </summary>
         private bool _canTakePicture = true;
+
+        /// <summary>
+        /// The percentage.
+        /// </summary>
         private CircleZoomPercentage _percentage;
+
+        /// <summary>
+        /// The focus wheel.
+        /// </summary>
         private FocusWheel _focusWheel;
+
+        /// <summary>
+        /// The take image button.
+        /// </summary>
         private TakeImageButton _takeImageButton;
 
+        /// <summary>
+        /// The detection overlay layer.
+        /// </summary>
         private CALayer _detectionOverlayLayer;
+
+        /// <summary>
+        /// The detected face rectangle shape layer.
+        /// </summary>
         private CAShapeLayer _detectedFaceRectangleShapeLayer;
+
+        /// <summary>
+        /// The detected face landmarks shape layer.
+        /// </summary>
         private CAShapeLayer _detectedFaceLandmarksShapeLayer;
 
-
+        /// <summary>
+        /// The camera options - used to determine if thsi is a front facing or rear facing instance
+        /// of the preview
+        /// </summary>
         private readonly CameraOptions _cameraOptions;
 
+        /// <summary>
+        /// The activated.
+        /// </summary>
         private bool _activated = false;
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="T:PixUl8.iOS.UIViews.UICameraPreview"/> is activated.
+        /// </summary>
+        /// <value><c>true</c> if activated; otherwise, <c>false</c>.</value>
         public bool Activated
         {
             get { return _activated; }
@@ -88,7 +175,14 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
+        /// <summary>
+        /// The flash on.
+        /// </summary>
         private bool _flashOn = false;
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="T:PixUl8.iOS.UIViews.UICameraPreview"/> flash on.
+        /// </summary>
+        /// <value><c>true</c> if flash on; otherwise, <c>false</c>.</value>
         public bool FlashOn
         {
             get { return _flashOn; }
@@ -111,7 +205,14 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
+        /// <summary>
+        /// The hdr on.
+        /// </summary>
         private bool _hdrOn = false;
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="T:PixUl8.iOS.UIViews.UICameraPreview"/> hdr enabled.
+        /// </summary>
+        /// <value><c>true</c> if hdr enabled; otherwise, <c>false</c>.</value>
         public bool HdrEnabled
         {
             get { return _hdrOn; }
@@ -121,7 +222,14 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
+        /// <summary>
+        /// The manual on.
+        /// </summary>
         private bool _manualOn = false;
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="T:PixUl8.iOS.UIViews.UICameraPreview"/> manual on.
+        /// </summary>
+        /// <value><c>true</c> if manual on; otherwise, <c>false</c>.</value>
         public bool ManualOn
         {
             get { return _manualOn; }
@@ -137,7 +245,14 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
+        /// <summary>
+        /// The grayscale on.
+        /// </summary>
         private bool _grayscaleOn = false;
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="T:PixUl8.iOS.UIViews.UICameraPreview"/> grayscale on.
+        /// </summary>
+        /// <value><c>true</c> if grayscale on; otherwise, <c>false</c>.</value>
         public bool GrayscaleOn
         {
             get { return _grayscaleOn; }
@@ -147,7 +262,14 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
+        /// <summary>
+        /// The is43 on.
+        /// </summary>
         private bool _is43On = false;
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="T:PixUl8.iOS.UIViews.UICameraPreview"/> is43 on.
+        /// </summary>
+        /// <value><c>true</c> if is43 on; otherwise, <c>false</c>.</value>
         public bool is43On
         {
             get { return _is43On; }
@@ -159,7 +281,14 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
+        /// <summary>
+        /// The is3 DO.
+        /// </summary>
         private bool _is3DOn = false;
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="T:PixUl8.iOS.UIViews.UICameraPreview"/> is3 DO.
+        /// </summary>
+        /// <value><c>true</c> if is3 DO; otherwise, <c>false</c>.</value>
         public bool is3DOn
         {
             get { return _is3DOn; }
@@ -173,8 +302,18 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
+        /// <summary>
+        /// The exposure bias.
+        /// </summary>
         private float _exposureBias;
+        /// <summary>
+        /// The exposure.
+        /// </summary>
         private int _exposure = 50;
+        /// <summary>
+        /// Gets or sets the exposure.
+        /// </summary>
+        /// <value>The exposure.</value>
         public int Exposure
         {
             get { return _exposure; }
@@ -186,6 +325,7 @@ namespace PixUl8.iOS.UIViews
                 {
                     try
                     {
+                        //Convert from percentage into usgae value
                         var min = _device.MinExposureTargetBias;
                         var max = _device.MaxExposureTargetBias;
 
@@ -206,7 +346,14 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
+        /// <summary>
+        /// The focus.
+        /// </summary>
         private int _focus = 50;
+        /// <summary>
+        /// Gets or sets the focus.
+        /// </summary>
+        /// <value>The focus.</value>
         public int Focus
         {
             get { return _focus; }
@@ -216,6 +363,7 @@ namespace PixUl8.iOS.UIViews
 
                 try
                 {
+                    //Convert from percentage into usage value
                     if (ManualOn)
                     {
                         NSError err;
@@ -232,7 +380,14 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
+        /// <summary>
+        /// The balance.
+        /// </summary>
         private int _balance = 50;
+        /// <summary>
+        /// Gets or sets the balance.
+        /// </summary>
+        /// <value>The balance.</value>
         public int Balance
         {
             get { return _balance; }
@@ -242,6 +397,7 @@ namespace PixUl8.iOS.UIViews
 
                 try
                 {
+                    //Convert from percentage into usage value
                     if (ManualOn)
                     {
                         NSError err;
@@ -269,10 +425,22 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
-
+        /// <summary>
+        /// The max zoom factor.
+        /// </summary>
         private double _maxZoomFactor = 1.0;
+        /// <summary>
+        /// The minimum zoom factor.
+        /// </summary>
         private double _minimumZoomFactor = 1.0;
+        /// <summary>
+        /// The current zoom factor.
+        /// </summary>
         private double _zoomFactor = 1.0;
+        /// <summary>
+        /// Gets or sets the zoom factor.
+        /// </summary>
+        /// <value>The zoom factor.</value>
         public double ZoomFactor
         {
             get { return _zoomFactor; }
@@ -298,10 +466,15 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
-
+        /// <summary>
+        /// The capture session.
+        /// </summary>
         public AVCaptureSession CaptureSession = new AVCaptureSession();
 
-
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:PixUl8.iOS.UIViews.UICameraPreview"/> class.
+        /// </summary>
+        /// <param name="options">Options.</param>
         public UICameraPreview(CameraOptions options)
         {
             _cameraOptions = options;
@@ -314,7 +487,10 @@ namespace PixUl8.iOS.UIViews
         }
 
        
-
+        /// <summary>
+        /// Draw the specified rect.
+        /// </summary>
+        /// <param name="rect">Rect.</param>
         public override void Draw(CGRect rect)
         {
             base.Draw(rect);
@@ -322,6 +498,11 @@ namespace PixUl8.iOS.UIViews
             BOUNDS = rect;
         }
 
+        /// <summary>
+        /// Normalizes the gains. Used for normalizing colour tempreature
+        /// </summary>
+        /// <returns>The gains.</returns>
+        /// <param name="gains">Gains.</param>
         private AVCaptureWhiteBalanceGains NormalizeGains(AVCaptureWhiteBalanceGains gains)
         {
             gains.RedGain = Math.Max(1, gains.RedGain);
@@ -336,6 +517,11 @@ namespace PixUl8.iOS.UIViews
             return gains;
         }
 
+        /// <summary>
+        /// Toucheses the moved.
+        /// </summary>
+        /// <param name="touches">Touches.</param>
+        /// <param name="evt">Evt.</param>
         public override void TouchesMoved(NSSet touches, UIEvent evt)
         {
             base.TouchesMoved(touches, evt);
@@ -353,6 +539,11 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
+        /// <summary>
+        /// Toucheses the ended.
+        /// </summary>
+        /// <param name="touches">Touches.</param>
+        /// <param name="evt">Evt.</param>
         public override async void TouchesEnded(NSSet touches, UIEvent evt)
         {
             base.TouchesEnded(touches, evt);
@@ -371,9 +562,20 @@ namespace PixUl8.iOS.UIViews
 
         }
 
-
+        /// <summary>
+        /// The cropper delegate.
+        /// </summary>
         private CropperDelegate cropperDelegate = new CropperDelegate();
+
+        /// <summary>
+        /// The image picker control that uses the cropped delegate
+        /// </summary>
         private UIImagePickerController imagePicker = new UIImagePickerController();
+
+        /// <summary>
+        /// Opens the gallery async.
+        /// </summary>
+        /// <returns>The gallery async.</returns>
         private async Task OpenGalleryAsync()
         {
             await UIApplication.SharedApplication.KeyWindow.
@@ -381,11 +583,22 @@ namespace PixUl8.iOS.UIViews
 
         }
 
+        /// <summary>
+        /// Handles canceled event from image picker
+        /// </summary>
+        /// <param name="sender">Sender.</param>
+        /// <param name="e">E.</param>
         private void Handle_Canceled(object sender, EventArgs e)
         {
             imagePicker.DismissModalViewController(true);
         }
 
+
+        /// <summary>
+        /// Handles finished picking media event form image picker
+        /// </summary>
+        /// <param name="sender">Sender.</param>
+        /// <param name="e">E.</param>
         private void Handle_FinishedPickingMedia(object sender, UIImagePickerMediaPickedEventArgs e)
         {
 
@@ -433,6 +646,12 @@ namespace PixUl8.iOS.UIViews
 
         }
 
+        /// <summary>
+        /// Handles the response form the image picker to show the action sheet
+        /// </summary>
+        /// <returns>The response.</returns>
+        /// <param name="image">Image.</param>
+        /// <param name="asset">Asset.</param>
         private async Task HandleResponse(UIImage image, PHAsset asset)
         {
             await Task.Delay(700);
@@ -441,6 +660,7 @@ namespace PixUl8.iOS.UIViews
             {
                 new ActionSheetOption("Edit Photo", () =>
                 {
+                    //Open image cropped
                     TOCropViewController cropper = null;
                     cropper = new TOCropViewController(TOCropViewCroppingStyle.Default, image);
                     cropper.Delegate = cropperDelegate;
@@ -448,12 +668,14 @@ namespace PixUl8.iOS.UIViews
                 }),
                 new ActionSheetOption("Delete Photo", async () =>
                 {
+                    //Ask for permission to delete photo
                     var status = await PHPhotoLibrary.RequestAuthorizationAsync();
                     if (status == PHAuthorizationStatus.Authorized)
                     {
                         var lib = PHPhotoLibrary.SharedPhotoLibrary;
                         lib.PerformChanges(() =>
                         {
+                            //Delete photo
                             List<PHAsset> assets = new List<PHAsset>();
                             assets.Add(asset);
                             PHAssetChangeRequest.DeleteAssets(assets.ToArray());
@@ -477,12 +699,19 @@ namespace PixUl8.iOS.UIViews
             };
             actionSheetConfig.Cancel = new ActionSheetOption("Cancel");
 
+            //Display action sheet
             actionSheetConfig.Title = "Select Action";
             var item = UserDialogs.Instance.ActionSheet(actionSheetConfig);
         }
 
+        /// <summary>
+        /// Takes the photo async of the current frame
+        /// </summary>
+        /// <returns>The photo async.</returns>
         private async Task TakePhotoAsync()
         {
+
+            //Veirfy photo can indeed be taken
             if (!Activated)
                 return;
 
@@ -495,7 +724,7 @@ namespace PixUl8.iOS.UIViews
             }
 
 
-
+            //Animte a nice affect for the user
             this.Layer.Opacity = 0;
             UIView.Animate(0.25, () =>
             {
@@ -507,7 +736,7 @@ namespace PixUl8.iOS.UIViews
             //a picture in feeling and sound
             DependencyService.Get<IHapticService>().InvokeLightHaptic();
 
-
+            //If HDR picture
             if (HdrEnabled)
             {
                 for (int i = 1; i <= HDRCAPTURECOUNT; i += 3)
@@ -523,6 +752,8 @@ namespace PixUl8.iOS.UIViews
             }
             else
             {
+                //If not HDR picture
+
                 AVCapturePhotoBracketSettings settings = GetCurrentPhotoSettings();
                 _imageDelegate.IsFrontFacing = _cameraOptions == CameraOptions.Front;
                 _photoOutput.CapturePhoto(settings, _imageDelegate);
@@ -540,6 +771,10 @@ namespace PixUl8.iOS.UIViews
             });
         }
 
+        /// <summary>
+        /// Gets the exposure percentage.
+        /// </summary>
+        /// <returns>The exposure percentage.</returns>
         private int GetExposurePercentage()
         {
             var current = _device.ExposureTargetBias;
@@ -554,6 +789,10 @@ namespace PixUl8.iOS.UIViews
             return (int)Math.Round(percentage);
         }
 
+        /// <summary>
+        /// Gets the white balance percentage.
+        /// </summary>
+        /// <returns>The white balance percentage.</returns>
         private int GetWhiteBalancePercentage()
         {
             try
@@ -576,11 +815,23 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
+        /// <summary>
+        /// Gets the focus percentage.
+        /// </summary>
+        /// <returns>The focus percentage.</returns>
         private int GetFocusPercentage()
         {
             return (int)Math.Round(_device.LensPosition * 100);
         }
 
+
+        /// <summary>
+        /// Updates the listeners of the current values of exposure, 
+        /// white balance and focus.
+        /// 
+        /// Used so the sliders can move along themselves
+        /// </summary>
+        /// <returns>The async.</returns>
         private async Task UpdaterAsync()
         {
             if (Activated)
@@ -596,6 +847,9 @@ namespace PixUl8.iOS.UIViews
 
         }
 
+        /// <summary>
+        /// Starts running. - Called when camera is switched to
+        /// </summary>
         private void StartRunning()
         {
             if (_device == null)
@@ -604,6 +858,7 @@ namespace PixUl8.iOS.UIViews
             _previewLayer?.RemoveFromSuperLayer();
             _previewLayer?.Dispose();
 
+            //Preview layer reefreshed everytime to avoid bug where it wouldn't load sometimes
             _previewLayer = new AVCaptureVideoPreviewLayer(CaptureSession)
             {
                 VideoGravity = AVLayerVideoGravity.ResizeAspectFill,
@@ -624,6 +879,9 @@ namespace PixUl8.iOS.UIViews
 
         }
 
+        /// <summary>
+        /// Stops running. - Called when camera view is switched away from
+        /// </summary>
         private void StopRunning()
         {
             if (_device == null)
@@ -634,6 +892,10 @@ namespace PixUl8.iOS.UIViews
 
         }
 
+        /// <summary>
+        /// Initialize this instance. Massive function creating everything and all layers and gestures
+        /// NEEDS TO BE BROKEN DOWN
+        /// </summary>
         void Initialize()
         {
             AVCaptureDeviceType[] allTypes = new AVCaptureDeviceType[]
@@ -653,6 +915,7 @@ namespace PixUl8.iOS.UIViews
             #endregion
 
 
+            //Create the session fro the camer view
             CaptureSession = new AVCaptureSession();
 
             if (UIScreen.MainScreen.Scale == 3)
@@ -661,7 +924,7 @@ namespace PixUl8.iOS.UIViews
                 CaptureSession.SessionPreset = AVCaptureSession.PresetMedium;
                 
 
-
+            //Creates the layer to display the session
             _previewLayer = new AVCaptureVideoPreviewLayer(CaptureSession)
             {
                 VideoGravity = AVLayerVideoGravity.ResizeAspectFill,
@@ -671,7 +934,7 @@ namespace PixUl8.iOS.UIViews
             //_videoView = new UIImageView();
 
 
-
+            //Gets the devices the session can use
             var deviceSession = AVCaptureDeviceDiscoverySession.Create(allTypes, AVMediaType.Video,
                 (_cameraOptions == CameraOptions.Front) ? AVCaptureDevicePosition.Front : AVCaptureDevicePosition.Back);
                 
@@ -732,14 +995,14 @@ namespace PixUl8.iOS.UIViews
 
             _device.UnlockForConfiguration();
 
-
+            //Set up image picker
             imagePicker.SourceType = UIImagePickerControllerSourceType.PhotoLibrary;
             imagePicker.MediaTypes = UIImagePickerController.AvailableMediaTypes(UIImagePickerControllerSourceType.PhotoLibrary);
 
             imagePicker.FinishedPickingMedia += Handle_FinishedPickingMedia;
             imagePicker.Canceled += Handle_Canceled;
 
-
+            //Set up delegates
             _imageDelegate = new PhotoCaptureDelegate();
             _hdrImageDelegate = new HDRPhotoCaptureDelegate();
 
@@ -747,6 +1010,8 @@ namespace PixUl8.iOS.UIViews
             var input = new AVCaptureDeviceInput(_device, out error);
             
             CaptureSession.AddInput(input);
+
+            //Set up capture session outputs to receive data
 
             _photoOutput = new AVCapturePhotoOutput();
 
@@ -1042,13 +1307,21 @@ namespace PixUl8.iOS.UIViews
             SetupVisionDrawingLayers();
         }
 
+        /// <summary>
+        /// Called when the focus changes.
+        /// This doesn't seem to work. Marked as depereciated
+        /// </summary>
+        /// <param name="evt">Evt.</param>
         private void FocusChange(NSObservedChange evt)
         {
             Debug.WriteLine(evt.ToString());
         }
 
 
-
+        /// <summary>
+        /// Called when the user taps to focus
+        /// </summary>
+        /// <param name="focusPoint">Focus point.</param>
         private void TapToFocus(CGPoint focusPoint)
         {
             if (_device == null)
@@ -1066,6 +1339,7 @@ namespace PixUl8.iOS.UIViews
 
 
                 NSError err;
+                //Sets the focus point to wherever the user tapped
                 var interestPoint = new CGPoint(focus_x, focus_y);
                 _device.LockForConfiguration(out err);
 
@@ -1092,10 +1366,14 @@ namespace PixUl8.iOS.UIViews
 
                 _device.UnlockForConfiguration();
 
+                //move the focus wheel!
                 _focusWheel.ShowAt(focusPoint.X, focusPoint.Y, completionHandler: () => { ResetCameraOptics(); });
             }
         }
 
+        /// <summary>
+        /// Resets the camera optics. sually called afte  tap to focus wears off
+        /// </summary>
         private void ResetCameraOptics()
         {
             NSError err;
@@ -1128,6 +1406,9 @@ namespace PixUl8.iOS.UIViews
             _device.UnlockForConfiguration();
         }
 
+        /// <summary>
+        /// Locks the camera optics. Keeps them as they currently stand so they can only be manualy changed
+        /// </summary>
         private void LockCameraOptics()
         {
             NSError err;
@@ -1156,11 +1437,20 @@ namespace PixUl8.iOS.UIViews
             _device.UnlockForConfiguration();
         }
 
+        /// <summary>
+        /// Handler for image capture
+        /// </summary>
+        /// <param name="sender">Sender.</param>
+        /// <param name="e">E.</param>
         private void TakeImageButtonHandler(object sender, EventArgs e)
         {
             TakePhotoAsync();
         }
 
+        /// <summary>
+        /// Handler for pinching to zoom
+        /// </summary>
+        /// <param name="recognizer">Recognizer.</param>
         private void PinchHandlerZoom(UIPinchGestureRecognizer recognizer)
         {
             if (recognizer.State == UIGestureRecognizerState.Began || recognizer.State == UIGestureRecognizerState.Changed)
@@ -1171,6 +1461,9 @@ namespace PixUl8.iOS.UIViews
 
         }
 
+        /// <summary>
+        /// Hanlder for swiping up 
+        /// </summary>
         private void SwipeHandlerUp()
         {
             //raise menu open event via message center
@@ -1178,6 +1471,10 @@ namespace PixUl8.iOS.UIViews
             OpenGalleryAsync();
         }
 
+        /// <summary>
+        /// Hanlder for swiping to switch cameras
+        /// </summary>
+        /// <param name="type">Type.</param>
         private void SwipeHandlerSwitchCamera(SwipeType type)
         {
             //If correct swipe for camera in use
@@ -1189,6 +1486,10 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
+        /// <summary>
+        /// Handler for toggling flash
+        /// </summary>
+        /// <param name="type">Type.</param>
         private void SwipeHanlderToggleFlash(SwipeType type)
         {
             //If correct swipe for current flash settings
@@ -1201,6 +1502,10 @@ namespace PixUl8.iOS.UIViews
             }
         }
 
+        /// <summary>
+        /// Handler for toggling hdr
+        /// </summary>
+        /// <param name="type">Type.</param>
         private void SwipeHanlderToggleHDR(SwipeType type)
         {
             //If correct swipe for current flash settings
@@ -1209,6 +1514,12 @@ namespace PixUl8.iOS.UIViews
                 MessagingCenter.Send<App>((App)App.Current, "PerformHDRSwitch");
         }
 
+        /// <summary>
+        /// Gets the current bracketed settings.
+        /// </summary>
+        /// <returns>The current bracketed settings.</returns>
+        /// <param name="currentIndex">Current index.</param>
+        /// <param name="maxIndex">Max index.</param>
         private AVCapturePhotoBracketSettings GetCurrentBracketedSettings(int currentIndex, int maxIndex)
         {
             if (_device == null)
@@ -1256,6 +1567,10 @@ namespace PixUl8.iOS.UIViews
             return bracketSettings;
         }
 
+        /// <summary>
+        /// Gets the current photo settings. (NO HDR CAPTURE)
+        /// </summary>
+        /// <returns>The current photo settings.</returns>
         private AVCapturePhotoBracketSettings GetCurrentPhotoSettings()
         {
             if (_device == null)
@@ -1316,6 +1631,12 @@ namespace PixUl8.iOS.UIViews
 
         private CancellationTokenSource tokenSource = new CancellationTokenSource();
 
+        /// <summary>
+        /// Dids the output metadata objects.
+        /// </summary>
+        /// <param name="captureOutput">Capture output.</param>
+        /// <param name="metadataObjects">Metadata objects.</param>
+        /// <param name="connection">Connection.</param>
         [Export("captureOutput:didOutputMetadataObjects:fromConnection:")]
         public void DidOutputMetadataObjects(AVCaptureMetadataOutput captureOutput, AVMetadataObject[] metadataObjects, AVCaptureConnection connection)
         {
@@ -1376,6 +1697,11 @@ namespace PixUl8.iOS.UIViews
 
         }
 
+        /// <summary>
+        /// Starts the hide task.
+        /// </summary>
+        /// <returns>The hide task.</returns>
+        /// <param name="token">Token.</param>
         private async Task StartHideTask(CancellationToken token)
         {
             await Task.Run(async () =>
@@ -1386,6 +1712,10 @@ namespace PixUl8.iOS.UIViews
             });
         }
 
+        /// <summary>
+        /// Hides the boxes.
+        /// </summary>
+        /// <param name="manualFocus">If set to <c>true</c> manual focus.</param>
         private void HideBoxes(bool manualFocus = false)
         {
 
@@ -1402,6 +1732,9 @@ namespace PixUl8.iOS.UIViews
             });
         }
 
+        /// <summary>
+        /// Unhides the boxes.
+        /// </summary>
         private void UnhideBoxes()
         {
             DispatchQueue.MainQueue.DispatchAsync(() =>
@@ -1411,6 +1744,9 @@ namespace PixUl8.iOS.UIViews
             });
         }
 
+        /// <summary>
+        /// Shows the boxes if possible.
+        /// </summary>
         private void ShowBoxesIfPossible()
         {
             DispatchQueue.MainQueue.DispatchAsync(() =>
@@ -1420,7 +1756,9 @@ namespace PixUl8.iOS.UIViews
             });
         }
 
-
+        /// <summary>
+        /// Setups the vision drawing layers.
+        /// </summary>
         private void SetupVisionDrawingLayers()
         {
             var captureDeviceBounds = new CGRect(x: 0,
@@ -1476,6 +1814,10 @@ namespace PixUl8.iOS.UIViews
 
         }
 
+        /// <summary>
+        /// Draws the faces.
+        /// </summary>
+        /// <param name="faces">Faces.</param>
         private void DrawFaces(List<AVMetadataFaceObject> faces)
         {
             DispatchQueue.MainQueue.DispatchAsync(() =>
@@ -1538,6 +1880,12 @@ namespace PixUl8.iOS.UIViews
             });
         }
 
+        /// <summary>
+        /// Draws the face.
+        /// </summary>
+        /// <param name="faceRectanglePath">Face rectangle path.</param>
+        /// <param name="faceLandmarksPath">Face landmarks path.</param>
+        /// <param name="face">Face.</param>
         private void DrawFace(CGPath faceRectanglePath, CGPath faceLandmarksPath, AVMetadataFaceObject face)
         {
             var displaySize = _captureDeviceBounds;

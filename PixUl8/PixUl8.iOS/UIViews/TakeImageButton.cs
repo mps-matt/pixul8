@@ -4,12 +4,32 @@ using UIKit;
 
 namespace PixUl8.iOS.UIViews
 {
+    /// <summary>
+    /// Take image button - the button class extended to display a take image icon
+    /// Allows button to be shown and hidden
+    /// </summary>
     public class TakeImageButton : UIButton
     {
+        /// <summary>
+        /// The radius.
+        /// </summary>
         private int _radius = 10;
+
+        /// <summary>
+        /// The width of the line.
+        /// </summary>
         private int _lineWidth = 10;
+
+        /// <summary>
+        /// The color of the back.
+        /// </summary>
         private UIColor _backColor = UIColor.White;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:PixUl8.iOS.UIViews.TakeImageButton"/> class.
+        /// </summary>
+        /// <param name="frame">Frame.</param>
+        /// <param name="lineWidth">Line width.</param>
         public TakeImageButton (CGRect frame, int lineWidth)
         {
             _lineWidth = lineWidth; 
@@ -19,6 +39,10 @@ namespace PixUl8.iOS.UIViews
             this.Alpha = 1;
         }
 
+        /// <summary>
+        /// Draw the specified rect.
+        /// </summary>
+        /// <param name="rect">Rect.</param>
         public override void Draw (CoreGraphics.CGRect rect)
         {
             base.Draw (rect);
@@ -29,6 +53,12 @@ namespace PixUl8.iOS.UIViews
             };
         }
 
+        /// <summary>
+        /// Draws the graph.
+        /// </summary>
+        /// <param name="g">The green component.</param>
+        /// <param name="x0">X0.</param>
+        /// <param name="y0">Y0.</param>
         public void DrawGraph(CGContext g,nfloat x0,nfloat y0) 
         {
             g.SetLineWidth (_lineWidth);
@@ -49,11 +79,17 @@ namespace PixUl8.iOS.UIViews
 
         }
 
+        /// <summary>
+        /// Show this instance.
+        /// </summary>
         public void Show()
         {
             this.Alpha = 1.0f;         
         }
 
+        /// <summary>
+        /// Hide this instance.
+        /// </summary>
         public void Hide()
         {
             this.Alpha = 0;

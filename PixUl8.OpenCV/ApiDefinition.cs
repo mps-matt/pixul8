@@ -64,16 +64,33 @@ namespace PixUl8.Native
     // For more information, see http://developer.xamarin.com/guides/ios/advanced_topics/binding_objective-c/
     //
 
+    /// <summary>
+    /// Open cv binding library to objective c
+    /// </summary>
     [BaseType(typeof(NSObject))]
     interface OpenCV
     {
-
+        /// <summary>
+        /// Version objctive c function
+        /// </summary>
+        /// <returns>The version.</returns>
         [Export("version")]
         NSString Version();
 
+        /// <summary>
+        /// Fuse objective c function
+        /// </summary>
+        /// <returns>The fuse.</returns>
+        /// <param name="imageArray">Image array.</param>
         [Export("fuse:")]
         UIImage Fuse(NSArray imageArray);
 
+        /// <summary>
+        /// Fuses and Allign objective c function
+        /// </summary>
+        /// <returns>The allign.</returns>
+        /// <param name="imageArray">Image array.</param>
+        /// <param name="alligner">Alligner.</param>
         [Export("fuseAllign:at:")]
         UIImage FuseAllign(NSArray imageArray, float alligner);
     }

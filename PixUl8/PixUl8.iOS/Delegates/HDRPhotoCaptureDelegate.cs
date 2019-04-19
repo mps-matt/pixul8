@@ -17,9 +17,15 @@ using Acr.UserDialogs;
 
 namespace PixUl8.iOS.Delegates
 {
-
+    /// <summary>
+    /// HDR Photo capture delegate. - used by the take image functions to call to on completion
+    /// </summary>
     public class HDRPhotoCaptureDelegate : AVCapturePhotoCaptureDelegate
     {
+        /// <summary>
+        /// Gets a value indicating whether this <see cref="T:PixUl8.iOS.Delegates.HDRPhotoCaptureDelegate"/> can take photo.
+        /// </summary>
+        /// <value><c>true</c> if can take photo; otherwise, <c>false</c>.</value>
         public static bool CanTakePhoto
         {
             get
@@ -29,6 +35,10 @@ namespace PixUl8.iOS.Delegates
             }
         }
 
+        /// <summary>
+        /// Gets the await photo oppotunity.
+        /// </summary>
+        /// <value>The await photo oppotunity.</value>
         public static Task AwaitPhotoOppotunity
         {
             get
@@ -41,22 +51,49 @@ namespace PixUl8.iOS.Delegates
             }
         }
 
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="T:PixUl8.iOS.Delegates.HDRPhotoCaptureDelegate"/>
+        /// is34 enabled.
+        /// </summary>
+        /// <value><c>true</c> if is34 enabled; otherwise, <c>false</c>.</value>
         public static bool Is34Enabled
         {
             get; set;
         }
 
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="T:PixUl8.iOS.Delegates.HDRPhotoCaptureDelegate"/> is
+        /// front facing.
+        /// </summary>
+        /// <value><c>true</c> if is front facing; otherwise, <c>false</c>.</value>
         public bool IsFrontFacing
         {
             get; set;
         }
 
+        /// <summary>
+        /// The images in bracket.
+        /// </summary>
         private static List<UIImage> _imagesInBracket = new List<UIImage>();
+        /// <summary>
+        /// The finished bracket.
+        /// </summary>
         private static List<UIImage> _finishedBracket = new List<UIImage>();
 
+        /// <summary>
+        /// The open cv binding library, programmed in objective c
+        /// </summary>
         private OpenCV _openCV = new OpenCV();
 
-
+        /// <summary>
+        /// Called when the picture has finished by processed
+        /// </summary>
+        /// <param name="captureOutput">Capture output.</param>
+        /// <param name="photoSampleBuffer">Photo sample buffer.</param>
+        /// <param name="previewPhotoSampleBuffer">Preview photo sample buffer.</param>
+        /// <param name="resolvedSettings">Resolved settings.</param>
+        /// <param name="bracketSettings">Bracket settings.</param>
+        /// <param name="error">Error.</param>
         [Export ("captureOutput:didFinishProcessingPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:")]
         public override void DidFinishProcessingPhoto (AVCapturePhotoOutput captureOutput,
                                        CMSampleBuffer photoSampleBuffer, CMSampleBuffer previewPhotoSampleBuffer,
@@ -79,21 +116,24 @@ namespace PixUl8.iOS.Delegates
 
 
                 UIImage image = new UIImage(imageData, 1.0f);
+                //Scale image so that it isn't massive
                 image = ScaleImageToBounds(image, new CGSize(2320, 3088));
                 _imagesInBracket.Add(image);
 
-
+                //After each set of three image, merge them then add the merged image to finished bracket
                 if (_imagesInBracket.Count == 3)
                 {
                     //Combine into one photo
                     var bracketFinale = MergeImages(_imagesInBracket);
                     _finishedBracket.Add(bracketFinale);
 
+                    //Clean up!
                     foreach (var item in _imagesInBracket)
                         item.Dispose();
                     _imagesInBracket.Clear();
                 }
 
+                //If total amount of photos has been processed (9 in the case of most recent version)
                 if (_finishedBracket.Count == (UICameraPreview.HDRCAPTURECOUNT/3) )
                 {
                     //Run in background so control can return to app
@@ -112,6 +152,7 @@ namespace PixUl8.iOS.Delegates
             }
             finally
             {
+                //Clean up!
                 imageData?.Dispose();
 
                 photoSampleBuffer?.Dispose();
@@ -123,6 +164,12 @@ namespace PixUl8.iOS.Delegates
             }
         }
 
+        /// <summary>
+        /// Scales the image to bounds.
+        /// </summary>
+        /// <returns>The image to bounds.</returns>
+        /// <param name="image">Image.</param>
+        /// <param name="size">Size.</param>
         public UIImage ScaleImageToBounds(UIImage image, CGSize size)
         {
             try
@@ -151,7 +198,11 @@ namespace PixUl8.iOS.Delegates
         }
 
 
-
+        /// <summary>
+        /// Merges the images and alligns them - only used for final 3 images.
+        /// </summary>
+        /// <returns>The images and allign.</returns>
+        /// <param name="images">Images.</param>
         public UIImage MergeImagesAndAllign(List<UIImage> images)
         {
             UIImage fused = null;
@@ -163,6 +214,7 @@ namespace PixUl8.iOS.Delegates
 
                 imageArray = NSArray.FromObjects(images.ToArray());
 
+                //Call to the objective c lib here
                 fused = _openCV.FuseAllign(imageArray, 2.4f);
                 fixedRet = new UIImage(fused.CGImage, 1, images[0].Orientation);
 
@@ -178,7 +230,11 @@ namespace PixUl8.iOS.Delegates
         }
 
 
-
+        /// <summary>
+        /// Merges the images.
+        /// </summary>
+        /// <returns>The images.</returns>
+        /// <param name="images">Images.</param>
         public UIImage MergeImages(List<UIImage> images)
         {
             UIImage fused = null;
@@ -190,6 +246,8 @@ namespace PixUl8.iOS.Delegates
 
                 imageArray = NSArray.FromObjects(images.ToArray());
 
+                //Call to objective-c lib
+
                 fused = _openCV.Fuse(imageArray);
                 fixedRet = new UIImage(fused.CGImage, 1, images[0].Orientation);
 
@@ -198,12 +256,20 @@ namespace PixUl8.iOS.Delegates
             }
             finally
             {
+                //Clean up
                 imageArray?.Dispose();
                 fused?.Dispose();
                 GC.Collect();
             }
         }
 
+        /// <summary>
+        /// Saves the final image async.
+        /// </summary>
+        /// <returns>The final image async.</returns>
+        /// <param name="finale">Finale.</param>
+        /// <param name="arr">Arr.</param>
+        /// <param name="orientation">Orientation.</param>
         public async Task SaveFinalImageAsync(UIImage finale, List<UIImage> arr, UIDeviceOrientation orientation)
         {
             NSData imageAsData = null;
@@ -215,6 +281,7 @@ namespace PixUl8.iOS.Delegates
                 uncropped = finale;
                 cropped = CropToBounds(uncropped, UICameraPreview.BOUNDS.Size);
 
+                //Sorts out orientation of the photo
                 switch (orientation)
                 {
                     case UIDeviceOrientation.LandscapeLeft:
@@ -257,7 +324,7 @@ namespace PixUl8.iOS.Delegates
                 if (Is34Enabled)
                 {
                     imageAsData = uncropped.AsJPEG();
-
+                    //Save the photo
                     if (status == PHAuthorizationStatus.Authorized)
                     {
                         NSError err;
@@ -284,7 +351,7 @@ namespace PixUl8.iOS.Delegates
 
                 imageAsData = cropped.AsJPEG();
 
-
+                //Saves the final photo
                 if (status == PHAuthorizationStatus.Authorized)
                 {
                     NSError err;
@@ -317,6 +384,7 @@ namespace PixUl8.iOS.Delegates
             }
             finally
             {
+                //Clean up
                 UserDialogs.Instance.HideLoading();
 
                 foreach (var image in arr)
@@ -332,7 +400,12 @@ namespace PixUl8.iOS.Delegates
             }
         }
 
-
+        /// <summary>
+        /// Crops to bounds.
+        /// </summary>
+        /// <returns>The to bounds.</returns>
+        /// <param name="image">Image.</param>
+        /// <param name="size">Size.</param>
         public UIImage CropToBounds(UIImage image, CGSize size)
         {
             try

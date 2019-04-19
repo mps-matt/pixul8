@@ -5,10 +5,17 @@ using UIKit;
 
 namespace PixUl8.iOS.UIViewModels
 {
+    /// <summary>
+    /// Image preview view controller - obselete
+    /// </summary>
+    [Obsolete]
     public partial class ImagePreviewViewController : UIViewController
     {
         public UIImageView ImageView;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:PixUl8.iOS.UIViewModels.ImagePreviewViewController"/> class.
+        /// </summary>
         public ImagePreviewViewController() : base("ImagePreviewViewController", null)
         {
             this.View.ContentMode = UIViewContentMode.ScaleToFill;
@@ -24,6 +31,9 @@ namespace PixUl8.iOS.UIViewModels
             this.View.AddGestureRecognizer(gesture);
         }
 
+        /// <summary>
+        /// Views the did load.
+        /// </summary>
         public override void ViewDidLoad()
         {
             
@@ -36,12 +46,19 @@ namespace PixUl8.iOS.UIViewModels
             // Perform any additional setup after loading the view, typically from a nib.
         }
 
+        /// <summary>
+        /// Close this instance.
+        /// </summary>
+        /// <returns>The close.</returns>
         public async Task Close()
         {
             await this.DismissViewControllerAsync(true);
             ImageView.Image.Dispose();
         }
 
+        /// <summary>
+        /// Dids the receive memory warning.
+        /// </summary>
         public override void DidReceiveMemoryWarning()
         {
             base.DidReceiveMemoryWarning();

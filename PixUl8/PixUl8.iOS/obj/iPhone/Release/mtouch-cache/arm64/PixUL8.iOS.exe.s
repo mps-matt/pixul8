@@ -44270,7 +44270,7 @@ b PixUl8_iOS_Services_AdService__ShowAdAsyncd__1_MoveNext
 	.no_dead_strip PixUl8_iOS_Services_AdService__ShowAdAsyncd__1_MoveNext
 PixUl8_iOS_Services_AdService__ShowAdAsyncd__1_MoveNext:
 .loc 1 1 0
-.word 0xa9b47bfd
+.word 0xa9b57bfd
 .word 0x910003fd
 .word 0xa9016bb9
 .word 0xf90013a0
@@ -44281,46 +44281,21 @@ PixUl8_iOS_Services_AdService__ShowAdAsyncd__1_MoveNext:
 .word 0xf90017a0
 bl _p_283
 .word 0xaa0003fa
-.word 0xaa1a03e0
-.word 0xf9005ba0
-
-adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
-add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #952]
-.word 0xd2800021
-bl _p_20
-.word 0xaa0003e3
-.word 0xaa0303e0
-.word 0xf90057a0
-
-adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
-add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #960]
-.word 0xaa0303e0
-.word 0xd2800001
-.word 0xf9400063
-.word 0xf9408070
-.word 0xd63f0200
-.word 0xf94057a1
-.word 0xf9405ba2
-.word 0xaa0203e0
-.word 0x3940005e
-bl _p_401
 .word 0xf94017a0
 .word 0xf9004fa0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #968]
+ldr x0, [x16, #952]
 .word 0xf90053a0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #976]
+ldr x0, [x16, #960]
 bl _p_242
 .word 0xf94053a1
 .word 0xf9004ba0
-bl _p_402
+bl _p_401
 .word 0xf9404ba0
 .word 0xf9404fa1
 .word 0xf9001420
@@ -44341,13 +44316,13 @@ ldr x2, [x16, #16]
 .word 0xf94017a1
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_403
+bl _p_402
 .word 0xf94017a0
 .word 0xf9401402
 .word 0xaa0203e0
 .word 0xaa1a03e1
 .word 0x3940005e
-bl _p_404
+bl _p_403
 .word 0xf94017a0
 .word 0xf9401400
 .word 0xf90047a0
@@ -44359,7 +44334,7 @@ bl _p_404
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #984]
+ldr x0, [x16, #968]
 .word 0xd2800e01
 bl _p_3
 .word 0xaa0003e1
@@ -44384,17 +44359,17 @@ ldr x4, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #992]
+ldr x0, [x16, #976]
 .word 0xf9001420
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1000]
+ldr x0, [x16, #984]
 .word 0xf9002020
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1008]
+ldr x0, [x16, #992]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -44402,13 +44377,13 @@ ldr x0, [x16, #1008]
 .word 0x3901803f
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_405
+bl _p_404
 .word 0xf94017a0
 .word 0xf9401402
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1016]
+ldr x0, [x16, #1000]
 .word 0xf9400000
 .word 0xaa0003e1
 .word 0xaa0203fa
@@ -44449,17 +44424,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1024]
+ldr x1, [x16, #1008]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1032]
+ldr x1, [x16, #1016]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1040]
+ldr x1, [x16, #1024]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -44468,13 +44443,13 @@ ldr x1, [x16, #1040]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1016]
+ldr x1, [x16, #1000]
 .word 0xf9000020
 .word 0xaa0003f9
 .word 0xaa1a03e0
 .word 0xaa1903e1
 .word 0x3940035e
-bl _p_406
+bl _p_405
 .word 0x1400000b
 .word 0xf9001fa0
 .word 0xf94017a0
@@ -44514,7 +44489,7 @@ bl _p_71
 bl _p_72
 .word 0xa9416bb9
 .word 0x910003bf
-.word 0xa8cc7bfd
+.word 0xa8cb7bfd
 .word 0xd65f03c0
 .word 0xd2802220
 .word 0xaa1103e1
@@ -44579,13 +44554,13 @@ PixUl8_iOS_UIViews_UICameraPreview_set_Activated_bool:
 .word 0x39438320
 .word 0x35000080
 .word 0xaa1903e0
-bl _p_407
+bl _p_406
 .word 0x14000006
 .word 0x350000b8
 .word 0x39438320
 .word 0x34000060
 .word 0xaa1903e0
-bl _p_408
+bl _p_407
 .word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -44624,38 +44599,38 @@ PixUl8_iOS_UIViews_UICameraPreview_set_FlashOn_bool:
 .word 0x910083a1
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_409
+bl _p_408
 .word 0x39438720
 .word 0x340001c0
 .word 0xf9401f22
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_410
+bl _p_409
 .word 0x53001c00
 .word 0x34000260
 .word 0xf9401f22
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_411
+bl _p_410
 .word 0x1400000d
 .word 0xf9401f22
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
-bl _p_410
+bl _p_409
 .word 0x53001c00
 .word 0x340000c0
 .word 0xf9401f22
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
-bl _p_411
+bl _p_410
 .word 0xf9401f21
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_412
+bl _p_411
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -44724,10 +44699,10 @@ PixUl8_iOS_UIViews_UICameraPreview_set_ManualOn_bool:
 .word 0x39438f20
 .word 0x34000080
 .word 0xaa1903e0
-bl _p_413
+bl _p_412
 .word 0x14000003
 .word 0xaa1903e0
-bl _p_414
+bl _p_413
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -44858,13 +44833,13 @@ PixUl8_iOS_UIViews_UICameraPreview_set_is3DOn_bool:
 .word 0xf9403801
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_415
+bl _p_414
 .word 0x14000006
 .word 0xf9400ba0
 .word 0xf9403801
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_416
+bl _p_415
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -44903,14 +44878,14 @@ PixUl8_iOS_UIViews_UICameraPreview_set_Exposure_int:
 .word 0xf9401f21
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_417
+bl _p_416
 .word 0x1e22c000
 .word 0x1e624010
 .word 0xbd002bb0
 .word 0xf9401f21
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_418
+bl _p_417
 .word 0x1e22c000
 .word 0xbd402bb0
 .word 0x1e22c201
@@ -44937,7 +44912,7 @@ bl _p_418
 .word 0x910083a1
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_409
+bl _p_408
 .word 0xf9401f22
 .word 0xbd40eb30
 .word 0x1e22c200
@@ -44945,11 +44920,11 @@ bl _p_409
 .word 0x1e624000
 .word 0xd2800001
 .word 0x3940005e
-bl _p_419
+bl _p_418
 .word 0xf9401f21
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_412
+bl _p_411
 .word 0x14000009
 .word 0xf9001ba0
 bl _p_70
@@ -44999,7 +44974,7 @@ PixUl8_iOS_UIViews_UICameraPreview_set_Focus_int:
 .word 0x910083a1
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_409
+bl _p_408
 .word 0xb980f320
 .word 0x1e220010
 .word 0x1e22c200
@@ -45017,11 +44992,11 @@ bl _p_409
 .word 0x1e624000
 .word 0xd2800001
 .word 0x3940005e
-bl _p_420
+bl _p_419
 .word 0xf9401f21
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_412
+bl _p_411
 .word 0x14000009
 .word 0xf9001ba0
 bl _p_70
@@ -45079,7 +45054,7 @@ PixUl8_iOS_UIViews_UICameraPreview_set_Balance_int:
 .word 0x910143a1
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_409
+bl _p_408
 .word 0xd280001e
 .word 0xf2a89f5e
 .word 0x9e6703d0
@@ -45143,7 +45118,7 @@ bl _p_409
 .word 0x1e22c201
 .word 0x1e624021
 .word 0x3940003e
-bl _p_421
+bl _p_420
 .word 0xf94033be
 .word 0xbd0003c0
 .word 0xbd0007c1
@@ -45160,7 +45135,7 @@ bl _p_421
 .word 0xbd4043b0
 .word 0x1e22c202
 .word 0x1e624042
-bl _p_422
+bl _p_421
 .word 0xf94033be
 .word 0xbd0003c0
 .word 0xbd0007c1
@@ -45178,11 +45153,11 @@ bl _p_422
 .word 0x1e624042
 .word 0xd2800001
 .word 0x3940005e
-bl _p_423
+bl _p_422
 .word 0xf9401f21
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_412
+bl _p_411
 .word 0x14000009
 .word 0xf90037a0
 bl _p_70
@@ -45263,16 +45238,16 @@ PixUl8_iOS_UIViews_UICameraPreview_set_ZoomFactor_double:
 .word 0x910083a1
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_409
+bl _p_408
 .word 0xf9401f41
 .word 0xfd408740
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_424
+bl _p_423
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_412
+bl _p_411
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -45312,10 +45287,10 @@ PixUl8_iOS_UIViews_UICameraPreview__ctor_PixUl8_Models_CameraOptions:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1048]
+ldr x0, [x16, #1032]
 bl _p_242
 .word 0xf9001fa0
-bl _p_425
+bl _p_424
 .word 0xf9401fa0
 .word 0xf9004b20
 .word 0x91024321
@@ -45333,10 +45308,10 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1056]
+ldr x0, [x16, #1040]
 bl _p_242
 .word 0xf9001ba0
-bl _p_426
+bl _p_425
 .word 0xf9401ba0
 .word 0xf9004f20
 .word 0x91026321
@@ -45354,10 +45329,10 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1064]
+ldr x0, [x16, #1048]
 bl _p_242
 .word 0xf90017a0
-bl _p_427
+bl _p_426
 .word 0xf94017a0
 .word 0xf9005320
 .word 0x91028321
@@ -45395,21 +45370,21 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .word 0xaa1903e0
-bl _p_428
+bl _p_427
 .word 0xb9801ba0
 .word 0xb900df20
 bl _p_290
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_429
+bl _p_428
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x0, [x16, #352]
 .word 0xfd000000
 .word 0xaa1903e0
-bl _p_430
+bl _p_429
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
@@ -45453,8 +45428,8 @@ ldr x0, [x16, #640]
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+0
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd281c241
-bl _p_431
+.word 0xd281ba01
+bl _p_430
 .word 0xaa0003e1
 .word 0xd2801aa0
 .word 0xf2a04000
@@ -45485,7 +45460,7 @@ PixUl8_iOS_UIViews_UICameraPreview_Draw_CoreGraphics_CGRect:
 .word 0xfd4013a1
 .word 0xfd4017a2
 .word 0xfd401ba3
-bl _p_432
+bl _p_431
 .word 0xf9400ba0
 .word 0xf9401801
 .word 0xaa0103e0
@@ -45494,7 +45469,7 @@ bl _p_432
 .word 0xfd4017a2
 .word 0xfd401ba3
 .word 0x3940003e
-bl _p_433
+bl _p_432
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
@@ -45674,7 +45649,7 @@ PixUl8_iOS_UIViews_UICameraPreview_NormalizeGains_AVFoundation_AVCaptureWhiteBal
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_434
+bl _p_433
 .word 0x1e22c000
 .word 0x1e624010
 .word 0xbd00c7b0
@@ -45846,10 +45821,10 @@ PixUl8_iOS_UIViews_UICameraPreview_TouchesMoved_Foundation_NSSet_UIKit_UIEvent:
 .word 0xaa1803e0
 .word 0xaa1903e1
 .word 0xaa1a03e2
-bl _p_435
+bl _p_434
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_436
+bl _p_435
 .word 0xaa0003fa
 .word 0xaa1a03f9
 .word 0xeb1f035f
@@ -45861,7 +45836,7 @@ bl _p_436
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1072]
+ldr x1, [x16, #1056]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800019
@@ -45869,11 +45844,11 @@ ldr x1, [x16, #1072]
 .word 0xb4000479
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_437
+bl _p_436
 .word 0xfd0017a0
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_438
+bl _p_437
 .word 0xfd001ba0
 .word 0xfd4017a0
 .word 0xfd401ba1
@@ -46054,8 +46029,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #1080]
-bl _p_439
+ldr x15, [x16, #1064]
+bl _p_438
 .word 0x910003bf
 .word 0xa8cc7bfd
 .word 0xd65f03c0
@@ -46159,8 +46134,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #1088]
-bl _p_440
+ldr x15, [x16, #1072]
+bl _p_439
 .word 0x910123a0
 .word 0x91002000
 bl _p_38
@@ -46184,7 +46159,7 @@ PixUl8_iOS_UIViews_UICameraPreview_Handle_Canceled_object_System_EventArgs:
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_441
+bl _p_440
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -46208,7 +46183,7 @@ PixUl8_iOS_UIViews_UICameraPreview_Handle_FinishedPickingMedia_object_UIKit_UIIm
 .word 0x3940035e
 .word 0xf9400b40
 .word 0xf90023a0
-bl _p_442
+bl _p_441
 .word 0xaa0003e1
 .word 0xf94023a2
 .word 0xaa0203e0
@@ -46225,23 +46200,23 @@ bl _p_442
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1096]
-bl _p_443
+ldr x1, [x16, #1080]
+bl _p_442
 .word 0x53001c00
 .word 0x35000120
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1104]
+ldr x1, [x16, #1088]
 .word 0xaa1703e0
-bl _p_443
+bl _p_442
 .word 0x53001c00
 .word 0x35000120
 .word 0x1400000c
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1112]
+ldr x0, [x16, #1096]
 bl _p_365
 .word 0xd2800020
 .word 0x53001c18
@@ -46249,7 +46224,7 @@ bl _p_365
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1120]
+ldr x0, [x16, #1104]
 bl _p_365
 .word 0x3940035e
 .word 0xf9400b40
@@ -46257,16 +46232,16 @@ bl _p_365
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1128]
+ldr x0, [x16, #1112]
 .word 0xf9002ba0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1136]
+ldr x0, [x16, #1120]
 bl _p_242
 .word 0xf9402ba1
 .word 0xf90023a0
-bl _p_444
+bl _p_443
 .word 0xf94023a1
 .word 0xf94027a2
 .word 0xaa0203e0
@@ -46284,20 +46259,20 @@ bl _p_444
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1144]
+ldr x1, [x16, #1128]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800016
 .word 0xaa1603f7
 .word 0xaa1603e0
 .word 0xd2800001
-bl _p_445
+bl _p_444
 .word 0x53001c00
 .word 0x340001a0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1136]
 .word 0xf90023a0
 .word 0xaa1703e0
 .word 0xf94002e1
@@ -46305,7 +46280,7 @@ ldr x0, [x16, #1152]
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xf94023a0
-bl _p_446
+bl _p_445
 bl _p_365
 .word 0xd2800000
 .word 0x53001c17
@@ -46314,7 +46289,7 @@ bl _p_365
 .word 0x3940035e
 .word 0xf9400b40
 .word 0xf90023a0
-bl _p_447
+bl _p_446
 .word 0xaa0003e1
 .word 0xf94023a2
 .word 0xaa0203e0
@@ -46332,7 +46307,7 @@ bl _p_447
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1160]
+ldr x1, [x16, #1144]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800016
@@ -46344,15 +46319,15 @@ ldr x1, [x16, #1160]
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_441
+bl _p_440
 .word 0x34000117
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_448
+bl _p_447
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xaa1603e1
-bl _p_449
+bl _p_448
 .word 0xa9415fb6
 .word 0xf94013b8
 .word 0xf94017ba
@@ -46488,8 +46463,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #1168]
-bl _p_450
+ldr x15, [x16, #1152]
+bl _p_449
 .word 0x910163a0
 .word 0x91002000
 bl _p_38
@@ -46595,8 +46570,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #1176]
-bl _p_451
+ldr x15, [x16, #1160]
+bl _p_450
 .word 0x910123a0
 .word 0x91002000
 bl _p_38
@@ -46617,14 +46592,14 @@ PixUl8_iOS_UIViews_UICameraPreview_GetExposurePercentage:
 .word 0xf9401c01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_452
+bl _p_451
 .word 0x1e22c000
 .word 0xfd0013a0
 .word 0xf9400ba0
 .word 0xf9401c01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_417
+bl _p_416
 .word 0x1e22c000
 .word 0x1e624010
 .word 0xbd001bb0
@@ -46632,7 +46607,7 @@ bl _p_417
 .word 0xf9401c01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_418
+bl _p_417
 .word 0x1e22c001
 .word 0xfd4013a0
 .word 0xbd401bb0
@@ -46651,7 +46626,7 @@ bl _p_418
 .word 0x9e6703d0
 .word 0x1e22c201
 .word 0x1e610800
-bl _p_453
+bl _p_452
 .word 0x9e780000
 .word 0x93407c00
 .word 0x910003bf
@@ -46676,7 +46651,7 @@ PixUl8_iOS_UIViews_UICameraPreview_GetWhiteBalancePercentage:
 .word 0xf9001fa0
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_454
+bl _p_453
 .word 0xf9401fbe
 .word 0xbd0003c0
 .word 0xbd0007c1
@@ -46695,7 +46670,7 @@ bl _p_454
 .word 0x1e22c202
 .word 0x1e624042
 .word 0x3940003e
-bl _p_455
+bl _p_454
 .word 0xf9401fbe
 .word 0xbd0003c0
 .word 0xbd0007c1
@@ -46727,7 +46702,7 @@ bl _p_455
 .word 0x9e6703d0
 .word 0x1e22c201
 .word 0x1e610800
-bl _p_453
+bl _p_452
 .word 0x9e780000
 .word 0x93407c00
 .word 0xb90033a0
@@ -46761,14 +46736,14 @@ PixUl8_iOS_UIViews_UICameraPreview_GetFocusPercentage:
 .word 0xf9401c01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_456
+bl _p_455
 .word 0x1e22c000
 .word 0xd280001e
 .word 0xf2a8591e
 .word 0x9e6703d0
 .word 0x1e22c201
 .word 0x1e610800
-bl _p_453
+bl _p_452
 .word 0x9e780000
 .word 0x93407c00
 .word 0x910003bf
@@ -46873,8 +46848,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #1184]
-bl _p_457
+ldr x15, [x16, #1168]
+bl _p_456
 .word 0x910123a0
 .word 0x91002000
 bl _p_38
@@ -46903,7 +46878,7 @@ PixUl8_iOS_UIViews_UICameraPreview_StartRunning:
 .word 0x14000004
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_458
+bl _p_457
 .word 0xf9401b40
 .word 0xaa0003f9
 .word 0xb5000040
@@ -46915,25 +46890,25 @@ bl _p_311
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1192]
+ldr x0, [x16, #1176]
 bl _p_242
 .word 0xf9403fa1
 .word 0xf9003ba0
-bl _p_459
+bl _p_458
 .word 0xf9403ba2
 .word 0xaa0203e0
 .word 0xf90037a0
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_460
+bl _p_459
 .word 0xf94037a2
 .word 0xaa0203e0
 .word 0xf90033a0
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_461
+bl _p_460
 .word 0xf94033a1
 .word 0xaa0103e0
 .word 0xf9002fa0
@@ -46944,7 +46919,7 @@ bl _p_461
 .word 0xaa0103e0
 .word 0x1e624000
 .word 0x3940003e
-bl _p_462
+bl _p_461
 .word 0xf9402fa0
 .word 0xf9001b40
 .word 0x9100c341
@@ -46961,23 +46936,23 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_463
+bl _p_462
 .word 0xaa0003e3
 .word 0xf9401b41
 .word 0xaa0303e0
 .word 0xd2800002
 .word 0x3940007e
-bl _p_464
+bl _p_463
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1200]
+ldr x0, [x16, #1184]
 .word 0xd2800501
 bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1208]
+ldr x1, [x16, #1192]
 .word 0xf9400021
 .word 0xf9000801
 .word 0x91004002
@@ -46995,7 +46970,7 @@ ldr x3, [x16, #16]
 .word 0xaa0003f9
 .word 0xf9002ba0
 .word 0xaa1a03e0
-bl _p_465
+bl _p_464
 .word 0xaa0003e1
 .word 0xf9402ba0
 .word 0xaa0003f8
@@ -47020,7 +46995,7 @@ bl _p_465
 .word 0x14000004
 .word 0xaa1803e0
 .word 0xaa1703e1
-bl _p_466
+bl _p_465
 .word 0xd2800038
 .word 0x14000020
 
@@ -47030,7 +47005,7 @@ ldr x0, [x16, #640]
 .word 0xb9800002
 .word 0xaa1a03e0
 .word 0xaa1803e1
-bl _p_467
+bl _p_466
 .word 0xaa1903f7
 .word 0xaa0003f6
 .word 0x3940033e
@@ -47053,7 +47028,7 @@ bl _p_467
 .word 0x14000004
 .word 0xaa1703e0
 .word 0xaa1603e1
-bl _p_466
+bl _p_465
 .word 0x11000f18
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
@@ -47066,16 +47041,16 @@ ldr x0, [x16, #640]
 .word 0xf9002ba0
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_468
+bl _p_467
 .word 0xaa0003e1
 .word 0xf9402ba2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_469
+bl _p_468
 .word 0xf9404b41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_470
+bl _p_469
 .word 0xa94157b4
 .word 0xa9425fb6
 .word 0xa94367b8
@@ -47100,7 +47075,7 @@ PixUl8_iOS_UIViews_UICameraPreview_StopRunning:
 .word 0xf9404801
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_471
+bl _p_470
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -47161,7 +47136,7 @@ PixUl8_iOS_UIViews_UICameraPreview_Initialize:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1216]
+ldr x0, [x16, #1200]
 .word 0xd28000a1
 bl _p_20
 .word 0xf90303a0
@@ -47169,16 +47144,16 @@ bl _p_20
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1224]
+ldr x1, [x16, #1208]
 .word 0xd2800282
-bl _p_472
+bl _p_471
 .word 0xeb1f035f
 .word 0x10000011
 .word 0x5401e660
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1232]
+ldr x0, [x16, #1216]
 .word 0xd2800e01
 bl _p_3
 .word 0xeb1f035f
@@ -47200,17 +47175,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1240]
+ldr x1, [x16, #1224]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1248]
+ldr x1, [x16, #1232]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1256]
+ldr x1, [x16, #1240]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -47220,11 +47195,11 @@ ldr x1, [x16, #1256]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1264]
+ldr x0, [x16, #1248]
 bl _p_242
 .word 0xf9430fa1
 .word 0xf9030ba0
-bl _p_473
+bl _p_472
 .word 0xf9430ba1
 .word 0xaa1a03e0
 .word 0x3940035e
@@ -47232,10 +47207,10 @@ bl _p_301
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1048]
+ldr x0, [x16, #1032]
 bl _p_242
 .word 0xf90307a0
-bl _p_425
+bl _p_424
 .word 0xf94307a0
 .word 0xf9004b40
 .word 0x91024341
@@ -47254,7 +47229,7 @@ bl _p_290
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_429
+bl _p_428
 .word 0xf94303a1
 .word 0xd2800060
 .word 0x1e620001
@@ -47268,45 +47243,45 @@ bl _p_429
 .word 0x34000140
 .word 0xf9404b40
 .word 0xf90303a0
-bl _p_474
+bl _p_473
 .word 0xaa0003e1
 .word 0xf94303a2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_475
+bl _p_474
 .word 0x14000009
 .word 0xf9404b40
 .word 0xf90303a0
-bl _p_476
+bl _p_475
 .word 0xaa0003e1
 .word 0xf94303a2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_475
+bl _p_474
 .word 0xf9404b40
 .word 0xf90313a0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1192]
+ldr x0, [x16, #1176]
 bl _p_242
 .word 0xf94313a1
 .word 0xf9030fa0
-bl _p_459
+bl _p_458
 .word 0xf9430fa2
 .word 0xaa0203e0
 .word 0xf9030ba0
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_460
+bl _p_459
 .word 0xf9430ba2
 .word 0xaa0203e0
 .word 0xf90307a0
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_461
+bl _p_460
 .word 0xf94307a1
 .word 0xaa0103e0
 .word 0xf90303a0
@@ -47317,7 +47292,7 @@ bl _p_461
 .word 0xaa0103e0
 .word 0x1e624000
 .word 0x3940003e
-bl _p_462
+bl _p_461
 .word 0xf94303a0
 .word 0xf9001b40
 .word 0x9100c341
@@ -47332,8 +47307,8 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
+bl _p_476
 bl _p_477
-bl _p_478
 .word 0xaa0003e2
 .word 0xb980df40
 .word 0xd2800021
@@ -47346,17 +47321,17 @@ bl _p_478
 .word 0xaa1903e0
 .word 0xaa1803e1
 .word 0xaa1703e2
-bl _p_479
+bl _p_478
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_480
+bl _p_479
 .word 0xaa0003f7
 .word 0xaa1703e2
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1272]
+ldr x0, [x16, #1256]
 .word 0xf9400000
 .word 0xaa0003e1
 .word 0xaa0203f9
@@ -47365,7 +47340,7 @@ ldr x0, [x16, #1272]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1280]
+ldr x0, [x16, #1264]
 .word 0xf9400000
 .word 0xf90303a0
 .word 0xeb1f001f
@@ -47374,7 +47349,7 @@ ldr x0, [x16, #1280]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1288]
+ldr x0, [x16, #1272]
 .word 0xd2800e01
 bl _p_3
 .word 0xf94303a1
@@ -47397,17 +47372,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1296]
+ldr x1, [x16, #1280]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1304]
+ldr x1, [x16, #1288]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1312]
+ldr x1, [x16, #1296]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -47416,26 +47391,26 @@ ldr x1, [x16, #1312]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1272]
+ldr x1, [x16, #1256]
 .word 0xf9000020
 .word 0xaa0003f8
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1304]
 .word 0xaa1903e0
 .word 0xaa1803e1
-bl _p_481
+bl _p_480
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #1328]
-bl _p_482
+ldr x15, [x16, #1312]
+bl _p_481
 .word 0xaa0003f6
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1336]
+ldr x0, [x16, #1320]
 .word 0xf9400000
 .word 0xaa0003e1
 .word 0xaa1a03f9
@@ -47445,7 +47420,7 @@ ldr x0, [x16, #1336]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1280]
+ldr x0, [x16, #1264]
 .word 0xf9400000
 .word 0xf90303a0
 .word 0xeb1f001f
@@ -47454,7 +47429,7 @@ ldr x0, [x16, #1280]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1288]
+ldr x0, [x16, #1272]
 .word 0xd2800e01
 bl _p_3
 .word 0xf94303a1
@@ -47477,17 +47452,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1344]
+ldr x1, [x16, #1328]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1352]
+ldr x1, [x16, #1336]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1360]
+ldr x1, [x16, #1344]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -47496,16 +47471,16 @@ ldr x1, [x16, #1360]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1336]
+ldr x1, [x16, #1320]
 .word 0xf9000020
 .word 0xaa0003f5
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #1368]
+ldr x15, [x16, #1352]
 .word 0xaa1803e0
 .word 0xaa1503e1
-bl _p_483
+bl _p_482
 .word 0xf9001f20
 .word 0x9100e321
 .word 0xd349fc21
@@ -47524,7 +47499,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1376]
+ldr x0, [x16, #1360]
 .word 0xf9400000
 .word 0xaa0003e1
 .word 0xaa1a03f9
@@ -47534,7 +47509,7 @@ ldr x0, [x16, #1376]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1280]
+ldr x0, [x16, #1264]
 .word 0xf9400000
 .word 0xf90303a0
 .word 0xeb1f001f
@@ -47543,7 +47518,7 @@ ldr x0, [x16, #1280]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1288]
+ldr x0, [x16, #1272]
 .word 0xd2800e01
 bl _p_3
 .word 0xf94303a1
@@ -47566,17 +47541,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1384]
+ldr x1, [x16, #1368]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1392]
+ldr x1, [x16, #1376]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1400]
+ldr x1, [x16, #1384]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -47585,16 +47560,16 @@ ldr x1, [x16, #1400]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1376]
+ldr x1, [x16, #1360]
 .word 0xf9000020
 .word 0xaa0003f5
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #1368]
+ldr x15, [x16, #1352]
 .word 0xaa1803e0
 .word 0xaa1503e1
-bl _p_483
+bl _p_482
 .word 0xf9001f20
 .word 0x9100e321
 .word 0xd349fc21
@@ -47613,10 +47588,10 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #1408]
+ldr x15, [x16, #1392]
 .word 0xaa1703e0
 .word 0xd2800001
-bl _p_484
+bl _p_483
 .word 0xf9001f40
 .word 0x9100e341
 .word 0xd349fc21
@@ -47640,7 +47615,7 @@ ldr x2, [x16, #16]
 .word 0xaa1603e0
 .word 0xd2800021
 .word 0x394002de
-bl _p_485
+bl _p_484
 .word 0xf9001f40
 .word 0x9100e341
 .word 0xd349fc21
@@ -47658,20 +47633,20 @@ ldr x2, [x16, #16]
 .word 0x911703a1
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_409
+bl _p_408
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_486
+bl _p_485
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_487
+bl _p_486
 .word 0xaa0003e2
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1416]
+ldr x0, [x16, #1400]
 .word 0xf9400000
 .word 0xaa0003e1
 .word 0xaa0203f9
@@ -47680,7 +47655,7 @@ ldr x0, [x16, #1416]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1280]
+ldr x0, [x16, #1264]
 .word 0xf9400000
 .word 0xf90303a0
 .word 0xeb1f001f
@@ -47689,7 +47664,7 @@ ldr x0, [x16, #1280]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1424]
+ldr x0, [x16, #1408]
 .word 0xd2800e01
 bl _p_3
 .word 0xf94303a1
@@ -47712,17 +47687,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1432]
+ldr x1, [x16, #1416]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1440]
+ldr x1, [x16, #1424]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1448]
+ldr x1, [x16, #1432]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -47731,30 +47706,30 @@ ldr x1, [x16, #1448]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1416]
+ldr x1, [x16, #1400]
 .word 0xf9000020
 .word 0xaa0003f8
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #1456]
+ldr x15, [x16, #1440]
 .word 0xaa1903e0
 .word 0xaa1803e1
-bl _p_488
+bl _p_487
 .word 0xaa0003f9
 .word 0xf9401f40
 .word 0xf90307a0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #1464]
+ldr x15, [x16, #1448]
 .word 0xaa1903e0
-bl _p_489
+bl _p_488
 .word 0xaa0003e1
 .word 0x910c23a8
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_490
+bl _p_489
 .word 0xf94307a2
 .word 0xaa0203e0
 .word 0x910bc3a1
@@ -47765,20 +47740,20 @@ bl _p_490
 .word 0xf9418fa3
 .word 0xf90183a3
 .word 0x3940005e
-bl _p_491
+bl _p_490
 .word 0xf9401f40
 .word 0xf90303a0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #1464]
+ldr x15, [x16, #1448]
 .word 0xaa1903e0
-bl _p_489
+bl _p_488
 .word 0xaa0003e1
 .word 0x910b63a8
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_492
+bl _p_491
 .word 0xf94303a2
 .word 0xaa0203e0
 .word 0x910b03a1
@@ -47789,55 +47764,55 @@ bl _p_492
 .word 0xf94177a3
 .word 0xf9016ba3
 .word 0x3940005e
-bl _p_493
+bl _p_492
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_494
+bl _p_493
 .word 0xfd008340
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_495
+bl _p_494
 .word 0xfd007f40
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_486
+bl _p_485
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_496
+bl _p_495
 .word 0x53001c00
 .word 0x34000160
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
-bl _p_497
+bl _p_496
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_498
+bl _p_497
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_412
+bl _p_411
 .word 0xf9405342
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
-bl _p_499
+bl _p_498
 .word 0xf9405340
 .word 0xf9032fa0
 .word 0xd2800000
-bl _p_500
+bl _p_499
 .word 0xaa0003e1
 .word 0xf9432fa2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_501
+bl _p_500
 .word 0xf9405340
 .word 0xf9032ba0
 .word 0xeb1f035f
@@ -47846,7 +47821,7 @@ bl _p_501
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1472]
+ldr x0, [x16, #1456]
 .word 0xd2800e01
 bl _p_3
 .word 0xaa0003e1
@@ -47870,17 +47845,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1480]
+ldr x0, [x16, #1464]
 .word 0xf9001420
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1488]
+ldr x0, [x16, #1472]
 .word 0xf9002020
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1496]
+ldr x0, [x16, #1480]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -47888,7 +47863,7 @@ ldr x0, [x16, #1496]
 .word 0x3901803f
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_502
+bl _p_501
 .word 0xf9405340
 .word 0xf90327a0
 .word 0xeb1f035f
@@ -47921,17 +47896,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1504]
+ldr x0, [x16, #1488]
 .word 0xf9001420
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1512]
+ldr x0, [x16, #1496]
 .word 0xf9002020
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1520]
+ldr x0, [x16, #1504]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -47939,14 +47914,14 @@ ldr x0, [x16, #1520]
 .word 0x3901803f
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_503
+bl _p_502
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x0, [x16, #416]
 bl _p_242
 .word 0xf90323a0
-bl _p_504
+bl _p_503
 .word 0xf94323a0
 .word 0xf9002b40
 .word 0x91014341
@@ -47967,7 +47942,7 @@ add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x0, [x16, #744]
 bl _p_242
 .word 0xf9031fa0
-bl _p_505
+bl _p_504
 .word 0xf9431fa0
 .word 0xf9002f40
 .word 0x91016341
@@ -47989,26 +47964,26 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1528]
+ldr x0, [x16, #1512]
 bl _p_242
 .word 0xf94317a1
 .word 0xf9431ba2
 .word 0xf90313a0
-bl _p_506
+bl _p_505
 .word 0xf94313a0
 .word 0xaa0003f9
 .word 0xf9404b42
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
-bl _p_507
+bl _p_506
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1536]
+ldr x0, [x16, #1520]
 bl _p_242
 .word 0xf9030fa0
-bl _p_508
+bl _p_507
 .word 0xf9430fa0
 .word 0xf9002340
 .word 0x91010341
@@ -48027,47 +48002,47 @@ ldr x2, [x16, #16]
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_509
+bl _p_508
 .word 0xf9404b42
 .word 0xf9402341
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_510
+bl _p_509
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1544]
+ldr x0, [x16, #1528]
 bl _p_242
 .word 0xf9030ba0
-bl _p_511
+bl _p_510
 .word 0xf9430ba0
 .word 0xaa0003f9
 .word 0xaa1903e0
 .word 0xf90307a0
-bl _p_512
+bl _p_511
 .word 0xaa0003e2
 .word 0xf94307a3
 .word 0xaa0303e0
 .word 0xaa1a03e1
 .word 0x3940007e
-bl _p_513
+bl _p_512
 .word 0xf9404b42
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
-bl _p_510
+bl _p_509
 .word 0xaa1903e0
 .word 0xd287ffe1
 .word 0x3940033e
-bl _p_514
+bl _p_513
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_463
+bl _p_462
 .word 0xaa0003e2
 .word 0xf9401b41
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_515
+bl _p_514
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
@@ -48079,7 +48054,7 @@ ldr x0, [x16, #40]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1552]
+ldr x0, [x16, #1536]
 .word 0xd2800e01
 bl _p_3
 .word 0xaa0003e2
@@ -48103,17 +48078,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1560]
+ldr x0, [x16, #1544]
 .word 0xf9001440
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1568]
+ldr x0, [x16, #1552]
 .word 0xf9002040
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1576]
+ldr x0, [x16, #1560]
 .word 0xf9401403
 .word 0xf9000c43
 .word 0xf9401000
@@ -48122,14 +48097,14 @@ ldr x0, [x16, #1576]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #1584]
+ldr x15, [x16, #1568]
 .word 0xaa1a03e0
 .word 0xd2800003
-bl _p_516
+bl _p_515
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_452
+bl _p_451
 .word 0x1e22c000
 .word 0x1e624010
 .word 0xbd00eb50
@@ -48213,7 +48188,7 @@ bl _p_291
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_517
+bl _p_516
 .word 0xf942c3a0
 .word 0xf90153a0
 .word 0xf942c7a0
@@ -48225,7 +48200,7 @@ bl _p_517
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1592]
+ldr x0, [x16, #1576]
 bl _p_242
 .word 0xf9039fa0
 .word 0xfd4153a0
@@ -48233,7 +48208,7 @@ bl _p_242
 .word 0xfd415ba2
 .word 0xfd415fa3
 .word 0xd2800021
-bl _p_518
+bl _p_517
 .word 0xf9439fa0
 .word 0xf9003340
 .word 0x91018341
@@ -48267,7 +48242,7 @@ ldr x2, [x16, #16]
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_517
+bl _p_516
 .word 0x911503a0
 .word 0xbd45e3b0
 .word 0x1e22c200
@@ -48300,7 +48275,7 @@ bl _p_517
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_517
+bl _p_516
 .word 0xf942b3a0
 .word 0xf90143a0
 .word 0xf942b7a0
@@ -48312,7 +48287,7 @@ bl _p_517
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1600]
+ldr x0, [x16, #1584]
 bl _p_242
 .word 0xf9039ba0
 .word 0xfd4143a0
@@ -48320,7 +48295,7 @@ bl _p_242
 .word 0xfd414ba2
 .word 0xfd414fa3
 .word 0xd2800041
-bl _p_519
+bl _p_518
 .word 0xf9439ba0
 .word 0xf9003740
 .word 0x9101a341
@@ -48346,7 +48321,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1608]
+ldr x0, [x16, #1592]
 bl _p_242
 .word 0xf90397a0
 .word 0xfd4133a0
@@ -48354,7 +48329,7 @@ bl _p_242
 .word 0xfd413ba2
 .word 0xfd413fa3
 .word 0xd2800081
-bl _p_520
+bl _p_519
 .word 0xf94397a0
 .word 0xf9003b40
 .word 0x9101c341
@@ -48401,17 +48376,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1616]
+ldr x0, [x16, #1600]
 .word 0xf9001420
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1624]
+ldr x0, [x16, #1608]
 .word 0xf9002020
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1632]
+ldr x0, [x16, #1616]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -48420,7 +48395,7 @@ ldr x0, [x16, #1632]
 .word 0xaa0303e0
 .word 0xd2800802
 .word 0x3940007e
-bl _p_521
+bl _p_520
 .word 0xf9403341
 .word 0xaa1a03e0
 .word 0x3940035e
@@ -48440,7 +48415,7 @@ bl _p_290
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_429
+bl _p_428
 .word 0x1e604001
 .word 0xfd438fa0
 .word 0x1e610800
@@ -48452,7 +48427,7 @@ bl _p_290
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_429
+bl _p_428
 .word 0x1e604002
 .word 0xfd4387a0
 .word 0xfd438ba1
@@ -48494,10 +48469,10 @@ bl _p_319
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1640]
+ldr x0, [x16, #1624]
 bl _p_242
 .word 0xf90383a0
-bl _p_522
+bl _p_521
 .word 0xf94383a0
 .word 0xaa0003f9
 .word 0xaa1903e0
@@ -48508,7 +48483,7 @@ bl _p_522
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1648]
+ldr x0, [x16, #1632]
 .word 0xd2800e01
 bl _p_3
 .word 0xf9437fa2
@@ -48531,17 +48506,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1656]
+ldr x1, [x16, #1640]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1664]
+ldr x1, [x16, #1648]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1672]
+ldr x1, [x16, #1656]
 .word 0xf9401423
 .word 0xf9000c03
 .word 0xf9401021
@@ -48562,7 +48537,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-bl _p_523
+bl _p_522
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xf9400322
@@ -48597,7 +48572,7 @@ bl _p_523
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_517
+bl _p_516
 .word 0xf94253a0
 .word 0xf90113a0
 .word 0xf94257a0
@@ -48642,17 +48617,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1680]
+ldr x1, [x16, #1664]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1688]
+ldr x1, [x16, #1672]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1696]
+ldr x1, [x16, #1680]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -48662,18 +48637,18 @@ ldr x1, [x16, #1696]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1704]
+ldr x0, [x16, #1688]
 bl _p_242
 .word 0xf9437ba1
 .word 0xf90377a0
-bl _p_524
+bl _p_523
 .word 0xf94377a2
 .word 0xaa0203e0
 .word 0xf90373a0
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_525
+bl _p_524
 .word 0xf94373a0
 .word 0xaa0003f8
 .word 0xaa1903e0
@@ -48687,10 +48662,10 @@ bl _p_245
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1640]
+ldr x0, [x16, #1624]
 bl _p_242
 .word 0xf9036fa0
-bl _p_522
+bl _p_521
 .word 0xf9436fa0
 .word 0xaa0003f9
 .word 0xaa1903e0
@@ -48701,7 +48676,7 @@ bl _p_522
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1648]
+ldr x0, [x16, #1632]
 .word 0xd2800e01
 bl _p_3
 .word 0xf9436ba2
@@ -48724,17 +48699,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1712]
+ldr x1, [x16, #1696]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1720]
+ldr x1, [x16, #1704]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1728]
+ldr x1, [x16, #1712]
 .word 0xf9401423
 .word 0xf9000c03
 .word 0xf9401021
@@ -48755,7 +48730,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-bl _p_523
+bl _p_522
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xf9400322
@@ -48793,7 +48768,7 @@ bl _p_523
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_517
+bl _p_516
 .word 0xf94243a0
 .word 0xf90103a0
 .word 0xf94247a0
@@ -48838,17 +48813,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1736]
+ldr x1, [x16, #1720]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1744]
+ldr x1, [x16, #1728]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1752]
+ldr x1, [x16, #1736]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -48858,18 +48833,18 @@ ldr x1, [x16, #1752]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1704]
+ldr x0, [x16, #1688]
 bl _p_242
 .word 0xf94367a1
 .word 0xf90363a0
-bl _p_524
+bl _p_523
 .word 0xf94363a2
 .word 0xaa0203e0
 .word 0xf9035fa0
 .word 0xaa0203e0
 .word 0xd2800041
 .word 0x3940005e
-bl _p_525
+bl _p_524
 .word 0xf9435fa0
 .word 0xaa0003f8
 .word 0xaa1903e0
@@ -48883,10 +48858,10 @@ bl _p_245
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1640]
+ldr x0, [x16, #1624]
 bl _p_242
 .word 0xf9035ba0
-bl _p_522
+bl _p_521
 .word 0xf9435ba0
 .word 0xaa0003f9
 .word 0xaa1903e0
@@ -48897,7 +48872,7 @@ bl _p_522
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1648]
+ldr x0, [x16, #1632]
 .word 0xd2800e01
 bl _p_3
 .word 0xf94357a2
@@ -48920,17 +48895,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1760]
+ldr x1, [x16, #1744]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1768]
+ldr x1, [x16, #1752]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1776]
+ldr x1, [x16, #1760]
 .word 0xf9401423
 .word 0xf9000c03
 .word 0xf9401021
@@ -48951,7 +48926,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-bl _p_523
+bl _p_522
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xf9400322
@@ -48986,7 +48961,7 @@ bl _p_523
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_517
+bl _p_516
 .word 0xf94233a0
 .word 0xf900f3a0
 .word 0xf94237a0
@@ -49031,17 +49006,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1784]
+ldr x1, [x16, #1768]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1792]
+ldr x1, [x16, #1776]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1800]
+ldr x1, [x16, #1784]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -49051,18 +49026,18 @@ ldr x1, [x16, #1800]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1704]
+ldr x0, [x16, #1688]
 bl _p_242
 .word 0xf94353a1
 .word 0xf9034fa0
-bl _p_524
+bl _p_523
 .word 0xf9434fa2
 .word 0xaa0203e0
 .word 0xf9034ba0
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_525
+bl _p_524
 .word 0xf9434ba0
 .word 0xaa0003f8
 .word 0xaa1903e0
@@ -49076,10 +49051,10 @@ bl _p_245
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1640]
+ldr x0, [x16, #1624]
 bl _p_242
 .word 0xf90347a0
-bl _p_522
+bl _p_521
 .word 0xf94347a0
 .word 0xaa0003f9
 .word 0xaa1903e0
@@ -49090,7 +49065,7 @@ bl _p_522
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1648]
+ldr x0, [x16, #1632]
 .word 0xd2800e01
 bl _p_3
 .word 0xf94343a2
@@ -49113,17 +49088,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1808]
+ldr x1, [x16, #1792]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1816]
+ldr x1, [x16, #1800]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1824]
+ldr x1, [x16, #1808]
 .word 0xf9401423
 .word 0xf9000c03
 .word 0xf9401021
@@ -49144,7 +49119,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-bl _p_523
+bl _p_522
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xf9400322
@@ -49182,7 +49157,7 @@ bl _p_523
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_517
+bl _p_516
 .word 0xf94223a0
 .word 0xf900e3a0
 .word 0xf94227a0
@@ -49227,17 +49202,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1832]
+ldr x1, [x16, #1816]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1840]
+ldr x1, [x16, #1824]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1848]
+ldr x1, [x16, #1832]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -49247,18 +49222,18 @@ ldr x1, [x16, #1848]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1704]
+ldr x0, [x16, #1688]
 bl _p_242
 .word 0xf9433fa1
 .word 0xf9033ba0
-bl _p_524
+bl _p_523
 .word 0xf9433ba2
 .word 0xaa0203e0
 .word 0xf90337a0
 .word 0xaa0203e0
 .word 0xd2800041
 .word 0x3940005e
-bl _p_525
+bl _p_524
 .word 0xf94337a0
 .word 0xaa0003f8
 .word 0xaa1903e0
@@ -49272,10 +49247,10 @@ bl _p_245
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1640]
+ldr x0, [x16, #1624]
 bl _p_242
 .word 0xf90333a0
-bl _p_522
+bl _p_521
 .word 0xf94333a0
 .word 0xaa0003f9
 .word 0xaa1903e0
@@ -49286,7 +49261,7 @@ bl _p_522
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1648]
+ldr x0, [x16, #1632]
 .word 0xd2800e01
 bl _p_3
 .word 0xf9432fa2
@@ -49309,17 +49284,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1856]
+ldr x1, [x16, #1840]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1864]
+ldr x1, [x16, #1848]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1872]
+ldr x1, [x16, #1856]
 .word 0xf9401423
 .word 0xf9000c03
 .word 0xf9401021
@@ -49340,7 +49315,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-bl _p_523
+bl _p_522
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xf9400322
@@ -49375,7 +49350,7 @@ bl _p_523
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_517
+bl _p_516
 .word 0xf94213a0
 .word 0xf900d3a0
 .word 0xf94217a0
@@ -49420,17 +49395,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1880]
+ldr x1, [x16, #1864]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1888]
+ldr x1, [x16, #1872]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1896]
+ldr x1, [x16, #1880]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -49440,18 +49415,18 @@ ldr x1, [x16, #1896]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1704]
+ldr x0, [x16, #1688]
 bl _p_242
 .word 0xf9432ba1
 .word 0xf90327a0
-bl _p_524
+bl _p_523
 .word 0xf94327a2
 .word 0xaa0203e0
 .word 0xf90323a0
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_525
+bl _p_524
 .word 0xf94323a0
 .word 0xaa0003f8
 .word 0xaa1903e0
@@ -49465,10 +49440,10 @@ bl _p_245
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1640]
+ldr x0, [x16, #1624]
 bl _p_242
 .word 0xf9031fa0
-bl _p_522
+bl _p_521
 .word 0xf9431fa0
 .word 0xaa0003f9
 .word 0xaa1903e0
@@ -49479,7 +49454,7 @@ bl _p_522
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1648]
+ldr x0, [x16, #1632]
 .word 0xd2800e01
 bl _p_3
 .word 0xf9431ba2
@@ -49502,17 +49477,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1904]
+ldr x1, [x16, #1888]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1912]
+ldr x1, [x16, #1896]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1920]
+ldr x1, [x16, #1904]
 .word 0xf9401423
 .word 0xf9000c03
 .word 0xf9401021
@@ -49533,7 +49508,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-bl _p_523
+bl _p_522
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xf9400322
@@ -49571,7 +49546,7 @@ bl _p_523
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_517
+bl _p_516
 .word 0xf94203a0
 .word 0xf900c3a0
 .word 0xf94207a0
@@ -49616,17 +49591,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1928]
+ldr x1, [x16, #1912]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1936]
+ldr x1, [x16, #1920]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1944]
+ldr x1, [x16, #1928]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -49636,18 +49611,18 @@ ldr x1, [x16, #1944]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1704]
+ldr x0, [x16, #1688]
 bl _p_242
 .word 0xf94317a1
 .word 0xf90313a0
-bl _p_524
+bl _p_523
 .word 0xf94313a2
 .word 0xaa0203e0
 .word 0xf9030fa0
 .word 0xaa0203e0
 .word 0xd2800041
 .word 0x3940005e
-bl _p_525
+bl _p_524
 .word 0xf9430fa0
 .word 0xaa0003f8
 .word 0xaa1903e0
@@ -49686,17 +49661,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1952]
+ldr x1, [x16, #1936]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1960]
+ldr x1, [x16, #1944]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1968]
+ldr x1, [x16, #1952]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -49706,18 +49681,18 @@ ldr x1, [x16, #1968]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1704]
+ldr x0, [x16, #1688]
 bl _p_242
 .word 0xf9430ba1
 .word 0xf90307a0
-bl _p_524
+bl _p_523
 .word 0xf94307a2
 .word 0xaa0203e0
 .word 0xf90303a0
 .word 0xaa0203e0
 .word 0xd2800081
 .word 0x3940005e
-bl _p_525
+bl _p_524
 .word 0xf94303a0
 .word 0xaa0003f9
 .word 0xaa1a03e0
@@ -49757,7 +49732,7 @@ bl _p_301
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_517
+bl _p_516
 .word 0xf94293a0
 .word 0xf900b3a0
 .word 0xf94297a0
@@ -49769,7 +49744,7 @@ bl _p_517
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1592]
+ldr x0, [x16, #1576]
 bl _p_242
 .word 0xf903aba0
 .word 0xfd40b3a0
@@ -49777,7 +49752,7 @@ bl _p_242
 .word 0xfd40bba2
 .word 0xfd40bfa3
 .word 0xd2800021
-bl _p_518
+bl _p_517
 .word 0xf943aba0
 .word 0xf9003340
 .word 0x91018341
@@ -49811,7 +49786,7 @@ ldr x2, [x16, #16]
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_517
+bl _p_516
 .word 0x911383a0
 .word 0xbd45e3b0
 .word 0x1e22c200
@@ -49844,7 +49819,7 @@ bl _p_517
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_517
+bl _p_516
 .word 0xf94283a0
 .word 0xf900a3a0
 .word 0xf94287a0
@@ -49856,7 +49831,7 @@ bl _p_517
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1600]
+ldr x0, [x16, #1584]
 bl _p_242
 .word 0xf9039fa0
 .word 0xfd40a3a0
@@ -49864,7 +49839,7 @@ bl _p_242
 .word 0xfd40aba2
 .word 0xfd40afa3
 .word 0xd2800041
-bl _p_519
+bl _p_518
 .word 0xf9439fa0
 .word 0xf9003740
 .word 0x9101a341
@@ -49890,7 +49865,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1608]
+ldr x0, [x16, #1592]
 bl _p_242
 .word 0xf9039ba0
 .word 0xfd4093a0
@@ -49898,7 +49873,7 @@ bl _p_242
 .word 0xfd409ba2
 .word 0xfd409fa3
 .word 0xd2800081
-bl _p_520
+bl _p_519
 .word 0xf9439ba0
 .word 0xf9003b40
 .word 0x9101c341
@@ -49945,17 +49920,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1616]
+ldr x0, [x16, #1600]
 .word 0xf9001420
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1624]
+ldr x0, [x16, #1608]
 .word 0xf9002020
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1632]
+ldr x0, [x16, #1616]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -49964,7 +49939,7 @@ ldr x0, [x16, #1632]
 .word 0xaa0303e0
 .word 0xd2800802
 .word 0x3940007e
-bl _p_521
+bl _p_520
 .word 0xf9403341
 .word 0xaa1a03e0
 .word 0x3940035e
@@ -49984,7 +49959,7 @@ bl _p_290
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_429
+bl _p_428
 .word 0x1e604001
 .word 0xfd43a7a0
 .word 0x1e610800
@@ -49996,7 +49971,7 @@ bl _p_290
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_429
+bl _p_428
 .word 0x1e604002
 .word 0xfd438ba0
 .word 0xfd438fa1
@@ -50038,10 +50013,10 @@ bl _p_319
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1640]
+ldr x0, [x16, #1624]
 bl _p_242
 .word 0xf903a3a0
-bl _p_522
+bl _p_521
 .word 0xf943a3a0
 .word 0xaa0003f9
 .word 0xaa1903e0
@@ -50052,7 +50027,7 @@ bl _p_522
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1648]
+ldr x0, [x16, #1632]
 .word 0xd2800e01
 bl _p_3
 .word 0xf94383a2
@@ -50075,17 +50050,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1976]
+ldr x1, [x16, #1960]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1984]
+ldr x1, [x16, #1968]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1992]
+ldr x1, [x16, #1976]
 .word 0xf9401423
 .word 0xf9000c03
 .word 0xf9401021
@@ -50106,7 +50081,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-bl _p_523
+bl _p_522
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xf9400322
@@ -50141,7 +50116,7 @@ bl _p_523
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_517
+bl _p_516
 .word 0xf941e3a0
 .word 0xf90073a0
 .word 0xf941e7a0
@@ -50186,17 +50161,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2000]
+ldr x1, [x16, #1984]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2008]
+ldr x1, [x16, #1992]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2016]
+ldr x1, [x16, #2000]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -50206,18 +50181,18 @@ ldr x1, [x16, #2016]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1704]
+ldr x0, [x16, #1688]
 bl _p_242
 .word 0xf9437fa1
 .word 0xf9037ba0
-bl _p_524
+bl _p_523
 .word 0xf9437ba2
 .word 0xaa0203e0
 .word 0xf90377a0
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_525
+bl _p_524
 .word 0xf94377a0
 .word 0xaa0003f8
 .word 0xaa1903e0
@@ -50231,10 +50206,10 @@ bl _p_245
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1640]
+ldr x0, [x16, #1624]
 bl _p_242
 .word 0xf90373a0
-bl _p_522
+bl _p_521
 .word 0xf94373a0
 .word 0xaa0003f9
 .word 0xaa1903e0
@@ -50245,7 +50220,7 @@ bl _p_522
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1648]
+ldr x0, [x16, #1632]
 .word 0xd2800e01
 bl _p_3
 .word 0xf9436fa2
@@ -50268,17 +50243,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2024]
+ldr x1, [x16, #2008]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2032]
+ldr x1, [x16, #2016]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2040]
+ldr x1, [x16, #2024]
 .word 0xf9401423
 .word 0xf9000c03
 .word 0xf9401021
@@ -50299,7 +50274,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-bl _p_523
+bl _p_522
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xf9400322
@@ -50337,7 +50312,7 @@ bl _p_523
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_517
+bl _p_516
 .word 0xf941d3a0
 .word 0xf90063a0
 .word 0xf941d7a0
@@ -50382,17 +50357,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2048]
+ldr x1, [x16, #2032]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2056]
+ldr x1, [x16, #2040]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2064]
+ldr x1, [x16, #2048]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -50402,18 +50377,18 @@ ldr x1, [x16, #2064]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1704]
+ldr x0, [x16, #1688]
 bl _p_242
 .word 0xf9436ba1
 .word 0xf90367a0
-bl _p_524
+bl _p_523
 .word 0xf94367a2
 .word 0xaa0203e0
 .word 0xf90363a0
 .word 0xaa0203e0
 .word 0xd2800041
 .word 0x3940005e
-bl _p_525
+bl _p_524
 .word 0xf94363a0
 .word 0xaa0003f8
 .word 0xaa1903e0
@@ -50427,10 +50402,10 @@ bl _p_245
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1640]
+ldr x0, [x16, #1624]
 bl _p_242
 .word 0xf9035fa0
-bl _p_522
+bl _p_521
 .word 0xf9435fa0
 .word 0xaa0003f9
 .word 0xaa1903e0
@@ -50441,7 +50416,7 @@ bl _p_522
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1648]
+ldr x0, [x16, #1632]
 .word 0xd2800e01
 bl _p_3
 .word 0xf9435ba2
@@ -50464,17 +50439,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2072]
+ldr x1, [x16, #2056]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2080]
+ldr x1, [x16, #2064]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2088]
+ldr x1, [x16, #2072]
 .word 0xf9401423
 .word 0xf9000c03
 .word 0xf9401021
@@ -50495,7 +50470,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-bl _p_523
+bl _p_522
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xf9400322
@@ -50530,7 +50505,7 @@ bl _p_523
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_517
+bl _p_516
 .word 0xf941c3a0
 .word 0xf90053a0
 .word 0xf941c7a0
@@ -50575,17 +50550,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2096]
+ldr x1, [x16, #2080]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2104]
+ldr x1, [x16, #2088]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2112]
+ldr x1, [x16, #2096]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -50595,18 +50570,18 @@ ldr x1, [x16, #2112]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1704]
+ldr x0, [x16, #1688]
 bl _p_242
 .word 0xf94357a1
 .word 0xf90353a0
-bl _p_524
+bl _p_523
 .word 0xf94353a2
 .word 0xaa0203e0
 .word 0xf9034fa0
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_525
+bl _p_524
 .word 0xf9434fa0
 .word 0xaa0003f8
 .word 0xaa1903e0
@@ -50620,10 +50595,10 @@ bl _p_245
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1640]
+ldr x0, [x16, #1624]
 bl _p_242
 .word 0xf9034ba0
-bl _p_522
+bl _p_521
 .word 0xf9434ba0
 .word 0xaa0003f9
 .word 0xaa1903e0
@@ -50634,7 +50609,7 @@ bl _p_522
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1648]
+ldr x0, [x16, #1632]
 .word 0xd2800e01
 bl _p_3
 .word 0xf94347a2
@@ -50657,17 +50632,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2120]
+ldr x1, [x16, #2104]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2128]
+ldr x1, [x16, #2112]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2136]
+ldr x1, [x16, #2120]
 .word 0xf9401423
 .word 0xf9000c03
 .word 0xf9401021
@@ -50688,7 +50663,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-bl _p_523
+bl _p_522
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xf9400322
@@ -50726,7 +50701,7 @@ bl _p_523
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_517
+bl _p_516
 .word 0xf941b3a0
 .word 0xf90043a0
 .word 0xf941b7a0
@@ -50771,17 +50746,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2144]
+ldr x1, [x16, #2128]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2152]
+ldr x1, [x16, #2136]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2160]
+ldr x1, [x16, #2144]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -50791,18 +50766,18 @@ ldr x1, [x16, #2160]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1704]
+ldr x0, [x16, #1688]
 bl _p_242
 .word 0xf94343a1
 .word 0xf9033fa0
-bl _p_524
+bl _p_523
 .word 0xf9433fa2
 .word 0xaa0203e0
 .word 0xf9033ba0
 .word 0xaa0203e0
 .word 0xd2800041
 .word 0x3940005e
-bl _p_525
+bl _p_524
 .word 0xf9433ba0
 .word 0xaa0003f8
 .word 0xaa1903e0
@@ -50816,10 +50791,10 @@ bl _p_245
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1640]
+ldr x0, [x16, #1624]
 bl _p_242
 .word 0xf90337a0
-bl _p_522
+bl _p_521
 .word 0xf94337a0
 .word 0xaa0003f9
 .word 0xaa1903e0
@@ -50830,7 +50805,7 @@ bl _p_522
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1648]
+ldr x0, [x16, #1632]
 .word 0xd2800e01
 bl _p_3
 .word 0xf94333a2
@@ -50853,17 +50828,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2168]
+ldr x1, [x16, #2152]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2176]
+ldr x1, [x16, #2160]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2184]
+ldr x1, [x16, #2168]
 .word 0xf9401423
 .word 0xf9000c03
 .word 0xf9401021
@@ -50884,7 +50859,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-bl _p_523
+bl _p_522
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xf9400322
@@ -50919,7 +50894,7 @@ bl _p_523
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_517
+bl _p_516
 .word 0xf941a3a0
 .word 0xf90033a0
 .word 0xf941a7a0
@@ -50964,17 +50939,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2192]
+ldr x1, [x16, #2176]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2200]
+ldr x1, [x16, #2184]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2208]
+ldr x1, [x16, #2192]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -50984,18 +50959,18 @@ ldr x1, [x16, #2208]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1704]
+ldr x0, [x16, #1688]
 bl _p_242
 .word 0xf9432fa1
 .word 0xf9032ba0
-bl _p_524
+bl _p_523
 .word 0xf9432ba2
 .word 0xaa0203e0
 .word 0xf90327a0
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_525
+bl _p_524
 .word 0xf94327a0
 .word 0xaa0003f8
 .word 0xaa1903e0
@@ -51009,10 +50984,10 @@ bl _p_245
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1640]
+ldr x0, [x16, #1624]
 bl _p_242
 .word 0xf90323a0
-bl _p_522
+bl _p_521
 .word 0xf94323a0
 .word 0xaa0003f9
 .word 0xaa1903e0
@@ -51023,7 +50998,7 @@ bl _p_522
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1648]
+ldr x0, [x16, #1632]
 .word 0xd2800e01
 bl _p_3
 .word 0xf9431fa2
@@ -51046,17 +51021,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2216]
+ldr x1, [x16, #2200]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2224]
+ldr x1, [x16, #2208]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2232]
+ldr x1, [x16, #2216]
 .word 0xf9401423
 .word 0xf9000c03
 .word 0xf9401021
@@ -51077,7 +51052,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-bl _p_523
+bl _p_522
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xf9400322
@@ -51115,7 +51090,7 @@ bl _p_523
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_517
+bl _p_516
 .word 0xf94193a0
 .word 0xf90023a0
 .word 0xf94197a0
@@ -51160,17 +51135,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2240]
+ldr x1, [x16, #2224]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2248]
+ldr x1, [x16, #2232]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2256]
+ldr x1, [x16, #2240]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -51180,18 +51155,18 @@ ldr x1, [x16, #2256]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1704]
+ldr x0, [x16, #1688]
 bl _p_242
 .word 0xf9431ba1
 .word 0xf90317a0
-bl _p_524
+bl _p_523
 .word 0xf94317a2
 .word 0xaa0203e0
 .word 0xf90313a0
 .word 0xaa0203e0
 .word 0xd2800041
 .word 0x3940005e
-bl _p_525
+bl _p_524
 .word 0xf94313a0
 .word 0xaa0003f8
 .word 0xaa1903e0
@@ -51230,17 +51205,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2264]
+ldr x1, [x16, #2248]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2272]
+ldr x1, [x16, #2256]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2280]
+ldr x1, [x16, #2264]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -51250,18 +51225,18 @@ ldr x1, [x16, #2280]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1704]
+ldr x0, [x16, #1688]
 bl _p_242
 .word 0xf9430fa1
 .word 0xf9030ba0
-bl _p_524
+bl _p_523
 .word 0xf9430ba2
 .word 0xaa0203e0
 .word 0xf90307a0
 .word 0xaa0203e0
 .word 0xd2800081
 .word 0x3940005e
-bl _p_525
+bl _p_524
 .word 0xf94307a0
 .word 0xaa0003f9
 .word 0xaa1a03e0
@@ -51279,7 +51254,7 @@ ldr x0, [x16, #104]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1552]
+ldr x0, [x16, #1536]
 .word 0xd2800e01
 bl _p_3
 .word 0xaa0003e2
@@ -51303,17 +51278,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2288]
+ldr x0, [x16, #2272]
 .word 0xf9001440
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2296]
+ldr x0, [x16, #2280]
 .word 0xf9002040
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2304]
+ldr x0, [x16, #2288]
 .word 0xf9401403
 .word 0xf9000c43
 .word 0xf9401000
@@ -51322,12 +51297,12 @@ ldr x0, [x16, #2304]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #1584]
+ldr x15, [x16, #1568]
 .word 0xaa1a03e0
 .word 0xd2800003
-bl _p_516
+bl _p_515
 .word 0xaa1a03e0
-bl _p_526
+bl _p_525
 .word 0xa9415bb5
 .word 0xa94263b7
 .word 0xa9436bb9
@@ -51389,7 +51364,7 @@ PixUl8_iOS_UIViews_UICameraPreview_TapToFocus_CoreGraphics_CGPoint:
 .word 0x35001760
 .word 0xaa1a03e0
 .word 0xd2800021
-bl _p_527
+bl _p_526
 bl _p_290
 .word 0xaa0003e1
 .word 0x9102e3a0
@@ -51443,16 +51418,16 @@ bl _p_291
 .word 0x9102a3a0
 .word 0xfd4077a0
 .word 0xfd407ba1
-bl _p_528
+bl _p_527
 .word 0xf9401f42
 .word 0x910363a1
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_409
+bl _p_408
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_529
+bl _p_528
 .word 0x53001c00
 .word 0x34000160
 .word 0xf9401f41
@@ -51464,11 +51439,11 @@ bl _p_529
 .word 0xfd4037a0
 .word 0xfd403ba1
 .word 0x3940003e
-bl _p_530
+bl _p_529
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_531
+bl _p_530
 .word 0x53001c00
 .word 0x34000160
 .word 0xf9401f41
@@ -51480,47 +51455,47 @@ bl _p_531
 .word 0xfd402fa0
 .word 0xfd4033a1
 .word 0x3940003e
+bl _p_531
+.word 0xf9401f42
+.word 0xaa0203e0
+.word 0xd2800021
+.word 0x3940005e
 bl _p_532
+.word 0x53001c00
+.word 0x340000c0
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
 bl _p_533
-.word 0x53001c00
-.word 0x340000c0
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
 bl _p_534
+.word 0x53001c00
+.word 0x340000c0
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
 bl _p_535
-.word 0x53001c00
-.word 0x340000c0
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
 bl _p_536
-.word 0xf9401f42
-.word 0xaa0203e0
-.word 0xd2800021
-.word 0x3940005e
-bl _p_537
 .word 0x53001c00
 .word 0x340000c0
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_538
+bl _p_537
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_412
+bl _p_411
 .word 0xf9403740
 .word 0xf90083a0
 .word 0xfd400fa0
@@ -51559,17 +51534,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2312]
+ldr x0, [x16, #2296]
 .word 0xf9001420
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2320]
+ldr x0, [x16, #2304]
 .word 0xf9002020
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2328]
+ldr x0, [x16, #2312]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -51577,7 +51552,7 @@ ldr x0, [x16, #2328]
 .word 0x3901803f
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_539
+bl _p_538
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8d27bfd
@@ -51604,34 +51579,34 @@ PixUl8_iOS_UIViews_UICameraPreview_ResetCameraOptics:
 .word 0x910063a1
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_409
+bl _p_408
 .word 0x39438f40
 .word 0x35000aa0
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800041
 .word 0x3940005e
-bl _p_533
+bl _p_532
 .word 0x53001c00
 .word 0x340000e0
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800041
 .word 0x3940005e
-bl _p_534
+bl _p_533
 .word 0x1400000d
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_533
+bl _p_532
 .word 0x53001c00
 .word 0x340000c0
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_534
+bl _p_533
 .word 0xf9401f42
 .word 0xd280001e
 .word 0x9e6703d0
@@ -51640,63 +51615,63 @@ bl _p_534
 .word 0x1e624000
 .word 0xd2800001
 .word 0x3940005e
-bl _p_419
+bl _p_418
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800041
 .word 0x3940005e
-bl _p_535
+bl _p_534
 .word 0x53001c00
 .word 0x340000e0
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800041
 .word 0x3940005e
-bl _p_536
+bl _p_535
 .word 0x1400000d
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_535
+bl _p_534
 .word 0x53001c00
 .word 0x340000c0
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_536
+bl _p_535
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800041
 .word 0x3940005e
-bl _p_537
+bl _p_536
 .word 0x53001c00
 .word 0x340000e0
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800041
 .word 0x3940005e
-bl _p_538
+bl _p_537
 .word 0x1400000d
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_537
+bl _p_536
 .word 0x53001c00
 .word 0x340000c0
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_538
+bl _p_537
 .word 0xaa1a03e0
-bl _p_540
+bl _p_539
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_412
+bl _p_411
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -51717,49 +51692,49 @@ PixUl8_iOS_UIViews_UICameraPreview_LockCameraOptics:
 .word 0x910063a1
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_409
+bl _p_408
+.word 0xf9401f42
+.word 0xaa0203e0
+.word 0xd2800001
+.word 0x3940005e
+bl _p_532
+.word 0x53001c00
+.word 0x340000c0
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
 bl _p_533
-.word 0x53001c00
-.word 0x340000c0
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
 bl _p_534
+.word 0x53001c00
+.word 0x340000c0
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
 bl _p_535
-.word 0x53001c00
-.word 0x340000c0
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
 bl _p_536
-.word 0xf9401f42
-.word 0xaa0203e0
-.word 0xd2800001
-.word 0x3940005e
-bl _p_537
 .word 0x53001c00
 .word 0x340000c0
 .word 0xf9401f42
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
-bl _p_538
+bl _p_537
 .word 0xb980f341
 .word 0xaa1a03e0
-bl _p_541
+bl _p_540
 .word 0xb980f741
 .word 0xaa1a03e0
-bl _p_542
+bl _p_541
 .word 0xeb1f035f
 .word 0x10000011
 .word 0x54000660
@@ -51788,17 +51763,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2336]
+ldr x1, [x16, #2320]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2344]
+ldr x1, [x16, #2328]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2352]
+ldr x1, [x16, #2336]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -51806,11 +51781,11 @@ ldr x1, [x16, #2352]
 .word 0x3901801f
 bl _p_187
 .word 0xaa1a03e0
-bl _p_540
+bl _p_539
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_412
+bl _p_411
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -51834,7 +51809,7 @@ PixUl8_iOS_UIViews_UICameraPreview_TakeImageButtonHandler_object_System_EventArg
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf9400ba0
-bl _p_543
+bl _p_542
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -51852,13 +51827,13 @@ PixUl8_iOS_UIViews_UICameraPreview_PinchHandlerZoom_UIKit_UIPinchGestureRecogniz
 .word 0xaa0103fa
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_544
+bl _p_543
 .word 0xd2800021
 .word 0xeb01001f
 .word 0x540000e0
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_544
+bl _p_543
 .word 0xd2800041
 .word 0xeb01001f
 .word 0x54000521
@@ -51866,7 +51841,7 @@ bl _p_544
 .word 0xfd0023a0
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_545
+bl _p_544
 .word 0x1e604001
 .word 0xfd4023a0
 .word 0xd2800020
@@ -51901,19 +51876,19 @@ bl _p_545
 .word 0xfd401ba1
 .word 0x1e612800
 .word 0xaa1a03e0
-bl _p_546
+bl _p_545
 .word 0xf9403320
 .word 0xf90027a0
 .word 0xfd408720
 .word 0xd2800020
-bl _p_547
+bl _p_546
 .word 0xf94027a1
 .word 0x1e624010
 .word 0x1e22c200
 .word 0xaa0103e0
 .word 0x1e624000
 .word 0x3940003e
-bl _p_548
+bl _p_547
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -51929,7 +51904,7 @@ PixUl8_iOS_UIViews_UICameraPreview_SwipeHandlerUp:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_549
+bl _p_548
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -51960,14 +51935,14 @@ PixUl8_iOS_UIViews_UICameraPreview_SwipeHandlerSwitchCamera_PixUl8_iOS_UIViews_S
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2360]
+ldr x0, [x16, #2344]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2368]
+ldr x0, [x16, #2352]
 .word 0xf940001a
 .word 0xb400017a
 .word 0xf9400340
@@ -51977,7 +51952,7 @@ ldr x0, [x16, #2368]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2376]
+ldr x1, [x16, #2360]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540001a1
@@ -52028,14 +52003,14 @@ PixUl8_iOS_UIViews_UICameraPreview_SwipeHanlderToggleFlash_PixUl8_iOS_UIViews_Sw
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2360]
+ldr x0, [x16, #2344]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2368]
+ldr x0, [x16, #2352]
 .word 0xf940001a
 .word 0xb400017a
 .word 0xf9400340
@@ -52045,7 +52020,7 @@ ldr x0, [x16, #2368]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2376]
+ldr x1, [x16, #2360]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540001a1
@@ -52091,14 +52066,14 @@ PixUl8_iOS_UIViews_UICameraPreview_SwipeHanlderToggleHDR_PixUl8_iOS_UIViews_Swip
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2360]
+ldr x0, [x16, #2344]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2368]
+ldr x0, [x16, #2352]
 .word 0xf940001a
 .word 0xb400017a
 .word 0xf9400340
@@ -52108,7 +52083,7 @@ ldr x0, [x16, #2368]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2376]
+ldr x1, [x16, #2360]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540001a1
@@ -52155,17 +52130,17 @@ PixUl8_iOS_UIViews_UICameraPreview_GetCurrentBracketedSettings_int_int:
 .word 0x13017c00
 .word 0x4b0003e0
 .word 0xaa1a03e1
-bl _p_550
+bl _p_549
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #2384]
-bl _p_551
+ldr x15, [x16, #2368]
+bl _p_550
 .word 0xaa0003fa
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2392]
+ldr x0, [x16, #2376]
 .word 0xd2800061
 bl _p_20
 .word 0xf90057a0
@@ -52175,7 +52150,7 @@ bl _p_20
 .word 0x51000721
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_552
+bl _p_551
 .word 0x93407c00
 .word 0xaa0003e2
 .word 0xf94053a0
@@ -52197,7 +52172,7 @@ bl _p_552
 .word 0xaa1a03e0
 .word 0xaa1903e1
 .word 0x3940035e
-bl _p_552
+bl _p_551
 .word 0x93407c00
 .word 0xaa0003e4
 .word 0xf94043a0
@@ -52220,7 +52195,7 @@ bl _p_552
 .word 0x11000721
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_552
+bl _p_551
 .word 0x93407c00
 .word 0xaa0003e3
 .word 0xf94037a0
@@ -52237,13 +52212,13 @@ bl _p_552
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2400]
+ldr x0, [x16, #2384]
 .word 0xd2800501
 bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2408]
+ldr x1, [x16, #2392]
 .word 0xf9400021
 .word 0xf9000801
 .word 0x91004002
@@ -52262,10 +52237,10 @@ ldr x3, [x16, #16]
 .word 0xf9401f01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_452
+bl _p_451
 .word 0x1e22c000
 .word 0x1e624000
-bl _p_553
+bl _p_552
 .word 0xaa0003e1
 .word 0xf94033a0
 .word 0xaa0003f9
@@ -52286,7 +52261,7 @@ bl _p_553
 .word 0xf9401f01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_452
+bl _p_451
 .word 0x1e22c000
 .word 0xbd4053b0
 .word 0x1e22c201
@@ -52296,7 +52271,7 @@ bl _p_452
 .word 0xf9401f01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_417
+bl _p_416
 .word 0x1e22c000
 .word 0xbd4053b0
 .word 0x1e22c201
@@ -52306,7 +52281,7 @@ bl _p_417
 .word 0xf9401f01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_417
+bl _p_416
 .word 0x1e22c000
 .word 0x1e624010
 .word 0xbd0053b0
@@ -52314,7 +52289,7 @@ bl _p_417
 .word 0xf9401f01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_418
+bl _p_417
 .word 0x1e22c000
 .word 0xbd4053b0
 .word 0x1e22c201
@@ -52323,14 +52298,14 @@ bl _p_418
 .word 0xf9401f01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_418
+bl _p_417
 .word 0x1e22c000
 .word 0x1e624010
 .word 0xbd0053b0
 .word 0xbd4053b0
 .word 0x1e22c200
 .word 0x1e624000
-bl _p_553
+bl _p_552
 .word 0xaa1a03f6
 .word 0xaa0003f5
 .word 0x3940035e
@@ -52353,7 +52328,7 @@ bl _p_553
 .word 0x14000004
 .word 0xaa1603e0
 .word 0xaa1503e1
-bl _p_554
+bl _p_553
 .word 0x110006f7
 .word 0xb9801b20
 .word 0x6b0002ff
@@ -52362,7 +52337,7 @@ bl _p_554
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2416]
+ldr x0, [x16, #2400]
 .word 0xd2800281
 bl _p_3
 .word 0xaa0003e1
@@ -52370,34 +52345,34 @@ bl _p_3
 .word 0xb900103e
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_555
+bl _p_554
 .word 0xf90033a0
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_556
+bl _p_555
 .word 0xaa0003fa
 .word 0xf94033a1
 .word 0xaa1a03e4
 .word 0xd2800000
 .word 0xd2800002
 .word 0xd2800003
-bl _p_557
+bl _p_556
 .word 0xaa0003fa
 .word 0xaa1a03e2
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_558
+bl _p_557
 .word 0xf9402301
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_559
+bl _p_558
 .word 0x53001c00
 .word 0x340000a0
 .word 0xaa1a03e0
 .word 0xd2800021
 .word 0x3940035e
-bl _p_560
+bl _p_559
 .word 0xaa1a03e0
 .word 0xa94153b3
 .word 0xa9425bb5
@@ -52431,7 +52406,7 @@ PixUl8_iOS_UIViews_UICameraPreview_GetCurrentPhotoSettings:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2392]
+ldr x0, [x16, #2376]
 .word 0xd2800061
 bl _p_20
 .word 0xaa0003e1
@@ -52462,13 +52437,13 @@ bl _p_20
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2400]
+ldr x0, [x16, #2384]
 .word 0xd2800501
 bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2408]
+ldr x1, [x16, #2392]
 .word 0xf9400021
 .word 0xf9000801
 .word 0x91004002
@@ -52487,10 +52462,10 @@ ldr x3, [x16, #16]
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_452
+bl _p_451
 .word 0x1e22c000
 .word 0x1e624000
-bl _p_553
+bl _p_552
 .word 0xf9002ba0
 .word 0xaa1903f7
 .word 0xd2800019
@@ -52510,7 +52485,7 @@ bl _p_553
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_452
+bl _p_451
 .word 0x1e22c000
 .word 0xbd405bb0
 .word 0x1e22c201
@@ -52520,7 +52495,7 @@ bl _p_452
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_417
+bl _p_416
 .word 0x1e22c000
 .word 0xbd405bb0
 .word 0x1e22c201
@@ -52530,7 +52505,7 @@ bl _p_417
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_417
+bl _p_416
 .word 0x1e22c000
 .word 0x1e624010
 .word 0xbd005bb0
@@ -52538,7 +52513,7 @@ bl _p_417
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_418
+bl _p_417
 .word 0x1e22c000
 .word 0xbd405bb0
 .word 0x1e22c201
@@ -52547,14 +52522,14 @@ bl _p_418
 .word 0xf9401f41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_418
+bl _p_417
 .word 0x1e22c000
 .word 0x1e624010
 .word 0xbd005bb0
 .word 0xbd405bb0
 .word 0x1e22c200
 .word 0x1e624000
-bl _p_553
+bl _p_552
 .word 0xaa1803f6
 .word 0xaa0003f5
 .word 0x3940031e
@@ -52577,7 +52552,7 @@ bl _p_553
 .word 0x14000005
 .word 0xaa1603e0
 .word 0xaa1503e1
-bl _p_554
+bl _p_553
 .word 0x14000001
 .word 0x11000739
 .word 0xb9801ae0
@@ -52586,37 +52561,37 @@ bl _p_554
 .word 0xf9402341
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_561
+bl _p_560
 .word 0xd2800020
-bl _p_562
-bl _p_478
+bl _p_561
+bl _p_477
 .word 0xf90043a0
 .word 0xaa1803e0
 .word 0x3940031e
-bl _p_556
+bl _p_555
 .word 0xaa0003f9
 .word 0xf94043a1
 .word 0xaa1903e4
 .word 0xd2800000
 .word 0xd2800002
 .word 0xd2800003
-bl _p_557
+bl _p_556
 .word 0xaa0003f9
 .word 0xaa1903e2
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_558
+bl _p_557
 .word 0xf9402341
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_559
+bl _p_558
 .word 0x53001c00
 .word 0x340000a0
 .word 0xaa1903e0
 .word 0xd2800021
 .word 0x3940033e
-bl _p_560
+bl _p_559
 .word 0xaa1903fa
 .word 0xf90033bf
 .word 0x94000005
@@ -52671,13 +52646,13 @@ PixUl8_iOS_UIViews_UICameraPreview_DidOutputMetadataObjects_AVFoundation_AVCaptu
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2424]
+ldr x0, [x16, #2408]
 .word 0xd2800501
 bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2432]
+ldr x1, [x16, #2416]
 .word 0xf9400021
 .word 0xf9000801
 .word 0x91004002
@@ -52716,7 +52691,7 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2440]
+ldr x1, [x16, #2424]
 .word 0xeb01001f
 .word 0x54000060
 .word 0xd2800014
@@ -52732,7 +52707,7 @@ ldr x1, [x16, #2440]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2440]
+ldr x1, [x16, #2424]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54002081
@@ -52759,7 +52734,7 @@ ldr x1, [x16, #2440]
 .word 0x14000005
 .word 0xaa1603e0
 .word 0xaa1403e1
-bl _p_563
+bl _p_562
 .word 0x14000001
 .word 0x14000089
 .word 0xb4000176
@@ -52770,7 +52745,7 @@ bl _p_563
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2448]
+ldr x1, [x16, #2432]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54001be1
@@ -52778,34 +52753,34 @@ ldr x1, [x16, #2448]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2456]
+ldr x0, [x16, #2440]
 bl _p_242
 .word 0xf9004ba0
-bl _p_564
+bl _p_563
 .word 0xf9404ba0
 .word 0xaa0003f6
 .word 0xaa1603e2
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2464]
+ldr x1, [x16, #2448]
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_565
+bl _p_564
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+0
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x1, [x16, #416]
 .word 0xaa1603e0
 .word 0x394002de
-bl _p_566
+bl _p_565
 .word 0xaa1603f4
 .word 0xb5000075
 .word 0xd2800013
 .word 0x14000005
 .word 0xaa1503e0
 .word 0x394002be
-bl _p_567
+bl _p_566
 .word 0xaa0003f3
 .word 0xb5000093
 
@@ -52815,34 +52790,34 @@ ldr x19, [x16, #416]
 .word 0xaa1403e0
 .word 0xaa1303e1
 .word 0x3940029e
-bl _p_568
+bl _p_567
 .word 0xd2800000
-bl _p_569
+bl _p_568
 .word 0xaa0003e1
 .word 0xaa1603e0
 .word 0x394002de
-bl _p_570
+bl _p_569
 .word 0xd293335e
 .word 0xf2b3333e
 .word 0xf2d3333e
 .word 0xf2e7f73e
 .word 0x9e6703c0
 .word 0xd2800000
-bl _p_571
+bl _p_570
 .word 0xaa0003f4
 .word 0xaa1503e0
 .word 0x394002be
-bl _p_567
+bl _p_566
 .word 0xaa1603e1
 .word 0xaa1403e2
-bl _p_572
+bl _p_571
 .word 0xaa0003f6
 bl _p_247
 .word 0xaa0003e2
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2472]
+ldr x0, [x16, #2456]
 .word 0xf9400000
 .word 0xaa0003e1
 .word 0xaa0203f4
@@ -52852,7 +52827,7 @@ ldr x0, [x16, #2472]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1280]
+ldr x0, [x16, #1264]
 .word 0xf9400000
 .word 0xf9004ba0
 .word 0xeb1f001f
@@ -52861,7 +52836,7 @@ ldr x0, [x16, #1280]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2480]
+ldr x0, [x16, #2464]
 .word 0xd2800e01
 bl _p_3
 .word 0xf9404ba1
@@ -52884,17 +52859,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2488]
+ldr x1, [x16, #2472]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2496]
+ldr x1, [x16, #2480]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2504]
+ldr x1, [x16, #2488]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -52903,17 +52878,17 @@ ldr x1, [x16, #2504]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2472]
+ldr x1, [x16, #2456]
 .word 0xf9000020
 .word 0xaa0003f6
 .word 0xaa1403e0
 .word 0xaa1303e1
 .word 0xaa1603e2
 .word 0x3940029e
-bl _p_573
+bl _p_572
 .word 0xaa1903e0
 .word 0xaa1803e1
-bl _p_574
+bl _p_573
 .word 0xf9405721
 .word 0xaa0103e0
 .word 0x3940003e
@@ -52921,7 +52896,7 @@ bl _p_266
 .word 0xf9405721
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_575
+bl _p_574
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
@@ -52972,17 +52947,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2512]
+ldr x1, [x16, #2496]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2520]
+ldr x1, [x16, #2504]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2528]
+ldr x1, [x16, #2512]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -53139,8 +53114,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #2536]
-bl _p_576
+ldr x15, [x16, #2520]
+bl _p_575
 .word 0x910163a0
 .word 0x91002000
 bl _p_38
@@ -53161,7 +53136,7 @@ PixUl8_iOS_UIViews_UICameraPreview_HideBoxes_bool:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2544]
+ldr x0, [x16, #2528]
 .word 0xd2800401
 bl _p_3
 .word 0xaa0003e1
@@ -53183,7 +53158,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-bl _p_512
+bl _p_511
 .word 0xaa0003e1
 .word 0xf9401ba0
 .word 0xf90017a1
@@ -53219,17 +53194,17 @@ ldr x4, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2552]
+ldr x0, [x16, #2536]
 .word 0xf9001420
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2560]
+ldr x0, [x16, #2544]
 .word 0xf9002020
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2568]
+ldr x0, [x16, #2552]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -53237,7 +53212,7 @@ ldr x0, [x16, #2568]
 .word 0x3901803f
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_577
+bl _p_576
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -53258,7 +53233,7 @@ PixUl8_iOS_UIViews_UICameraPreview_UnhideBoxes:
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xaa0003fa
-bl _p_512
+bl _p_511
 .word 0xf90013a0
 .word 0xeb1f035f
 .word 0x10000011
@@ -53290,17 +53265,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2576]
+ldr x0, [x16, #2560]
 .word 0xf9001420
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2584]
+ldr x0, [x16, #2568]
 .word 0xf9002020
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2592]
+ldr x0, [x16, #2576]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -53308,7 +53283,7 @@ ldr x0, [x16, #2592]
 .word 0x3901803f
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_577
+bl _p_576
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -53330,7 +53305,7 @@ PixUl8_iOS_UIViews_UICameraPreview_ShowBoxesIfPossible:
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xaa0003fa
-bl _p_512
+bl _p_511
 .word 0xf90013a0
 .word 0xeb1f035f
 .word 0x10000011
@@ -53362,17 +53337,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2600]
+ldr x0, [x16, #2584]
 .word 0xf9001420
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2608]
+ldr x0, [x16, #2592]
 .word 0xf9002020
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2616]
+ldr x0, [x16, #2600]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -53380,7 +53355,7 @@ ldr x0, [x16, #2616]
 .word 0x3901803f
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_577
+bl _p_576
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -53457,30 +53432,30 @@ bl _p_297
 .word 0xd280001e
 .word 0xf2e7fc1e
 .word 0x9e6703c1
-bl _p_528
+bl _p_527
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2624]
+ldr x0, [x16, #2608]
 bl _p_242
 .word 0xf9014fa0
-bl _p_578
+bl _p_577
 .word 0xf9414fa0
 .word 0xf9014ba0
 .word 0xaa0003e2
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2632]
+ldr x1, [x16, #2616]
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_579
+bl _p_578
 .word 0xf9414ba2
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
 .word 0xf90147a2
-bl _p_580
+bl _p_579
 .word 0xf94147a1
 .word 0xf94097a0
 .word 0xf90087a0
@@ -53491,7 +53466,7 @@ bl _p_580
 .word 0xfd408ba1
 .word 0x3940003e
 .word 0xf90143a1
-bl _p_581
+bl _p_580
 .word 0xf94143a1
 .word 0xf940a7a0
 .word 0xf90077a0
@@ -53508,13 +53483,13 @@ bl _p_581
 .word 0xfd4083a3
 .word 0x3940003e
 .word 0xf9013ba1
-bl _p_582
+bl _p_581
 .word 0xf9401b41
 .word 0x910323a0
 .word 0xf900bfa0
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_583
+bl _p_582
 .word 0xf940bfbe
 .word 0xfd0003c0
 .word 0xfd0007c1
@@ -53524,14 +53499,14 @@ bl _p_583
 .word 0xfd406ba1
 .word 0xfd406fa2
 .word 0xfd4073a3
-bl _p_584
+bl _p_583
 .word 0xfd013fa0
 .word 0xf9401b41
 .word 0x9102a3a0
 .word 0xf900bfa0
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_583
+bl _p_582
 .word 0xf940bfbe
 .word 0xfd0003c0
 .word 0xfd0007c1
@@ -53541,7 +53516,7 @@ bl _p_583
 .word 0xfd405ba1
 .word 0xfd405fa2
 .word 0xfd4063a3
-bl _p_585
+bl _p_584
 .word 0xf9413ba1
 .word 0xfd413fa1
 .word 0xd2800000
@@ -53563,20 +53538,20 @@ bl _p_585
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2640]
+ldr x0, [x16, #2624]
 bl _p_242
 .word 0xf90137a0
-bl _p_586
+bl _p_585
 .word 0xf94137a0
 .word 0xf90133a0
 .word 0xaa0003e2
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2648]
+ldr x1, [x16, #2632]
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_579
+bl _p_578
 .word 0xf94133a1
 .word 0xf940a7a0
 .word 0xf9003fa0
@@ -53593,7 +53568,7 @@ bl _p_579
 .word 0xfd404ba3
 .word 0x3940003e
 .word 0xf9012fa1
-bl _p_582
+bl _p_581
 .word 0xf9412fa1
 .word 0xf94097a0
 .word 0xf90037a0
@@ -53604,7 +53579,7 @@ bl _p_582
 .word 0xfd403ba1
 .word 0x3940003e
 .word 0xf9012ba1
-bl _p_581
+bl _p_580
 .word 0xf9412ba1
 .word 0xf9409fa0
 .word 0xf9002fa0
@@ -53622,8 +53597,8 @@ bl _p_581
 .word 0xd2800001
 .word 0x3940005e
 .word 0xf90123a2
+bl _p_586
 bl _p_587
-bl _p_588
 .word 0xaa0003e1
 .word 0xd280001e
 .word 0xf2a7e01e
@@ -53631,17 +53606,17 @@ bl _p_588
 .word 0x1e22c200
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_589
+bl _p_588
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_590
+bl _p_589
 .word 0xaa0003e1
 .word 0xf94123a2
 .word 0xaa0203e0
 .word 0x3940005e
 .word 0xf9011fa2
-bl _p_591
+bl _p_590
 .word 0xf9411fa1
 .word 0xd2800060
 .word 0x1e620000
@@ -53652,7 +53627,7 @@ bl _p_591
 .word 0xaa0103e0
 .word 0x3940003e
 .word 0xf9011ba1
-bl _p_592
+bl _p_591
 .word 0xf9411ba1
 .word 0xd280001e
 .word 0xf2a7e01e
@@ -53662,7 +53637,7 @@ bl _p_592
 .word 0x1e624000
 .word 0x3940003e
 .word 0xf90117a1
-bl _p_593
+bl _p_592
 .word 0xf94117a1
 .word 0xd2800060
 .word 0x1e620000
@@ -53673,24 +53648,24 @@ bl _p_593
 .word 0xaa0103e0
 .word 0x3940003e
 .word 0xf900eba1
-bl _p_594
+bl _p_593
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2640]
+ldr x0, [x16, #2624]
 bl _p_242
 .word 0xf90113a0
-bl _p_586
+bl _p_585
 .word 0xf94113a0
 .word 0xf9010fa0
 .word 0xaa0003e2
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2656]
+ldr x1, [x16, #2640]
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_579
+bl _p_578
 .word 0xf9410fa1
 .word 0xf940a7a0
 .word 0xf9001fa0
@@ -53707,7 +53682,7 @@ bl _p_579
 .word 0xfd402ba3
 .word 0x3940003e
 .word 0xf9010ba1
-bl _p_582
+bl _p_581
 .word 0xf9410ba1
 .word 0xf94097a0
 .word 0xf90017a0
@@ -53718,7 +53693,7 @@ bl _p_582
 .word 0xfd401ba1
 .word 0x3940003e
 .word 0xf90107a1
-bl _p_581
+bl _p_580
 .word 0xf94107a1
 .word 0xf9409fa0
 .word 0xf9000fa0
@@ -53736,8 +53711,8 @@ bl _p_581
 .word 0xd2800001
 .word 0x3940005e
 .word 0xf900ffa2
-bl _p_587
-bl _p_595
+bl _p_586
+bl _p_594
 .word 0xaa0003e1
 .word 0xd280001e
 .word 0xf2a7e01e
@@ -53745,17 +53720,17 @@ bl _p_595
 .word 0x1e22c200
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_589
+bl _p_588
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_590
+bl _p_589
 .word 0xaa0003e1
 .word 0xf940ffa2
 .word 0xaa0203e0
 .word 0x3940005e
 .word 0xf900fba2
-bl _p_591
+bl _p_590
 .word 0xf940fba1
 .word 0xd2800020
 .word 0x1e620000
@@ -53766,7 +53741,7 @@ bl _p_591
 .word 0xaa0103e0
 .word 0x3940003e
 .word 0xf900f7a1
-bl _p_592
+bl _p_591
 .word 0xf940f7a1
 .word 0xd280001e
 .word 0xf2a7e01e
@@ -53776,7 +53751,7 @@ bl _p_592
 .word 0x1e624000
 .word 0x3940003e
 .word 0xf900f3a1
-bl _p_593
+bl _p_592
 .word 0xf940f3a1
 .word 0xd2800060
 .word 0x1e620000
@@ -53787,31 +53762,31 @@ bl _p_593
 .word 0xaa0103e0
 .word 0x3940003e
 .word 0xf900e3a1
-bl _p_594
+bl _p_593
 .word 0xf940eba1
 .word 0xf940efa2
 .word 0xaa0203e0
 .word 0xf900e7a1
 .word 0x3940005e
 .word 0xf900dfa2
-bl _p_515
+bl _p_514
 .word 0xf940e3a1
 .word 0xf940e7a2
 .word 0xaa0203e0
 .word 0xf900d3a1
 .word 0x3940005e
 .word 0xf900d7a2
-bl _p_515
+bl _p_514
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_463
+bl _p_462
 .word 0xaa0003e3
 .word 0xf940dfa1
 .word 0xaa0303e0
 .word 0xf900dba1
 .word 0xd2800c82
 .word 0x3940007e
-bl _p_464
+bl _p_463
 .word 0xf940d3a0
 .word 0xf940d7a1
 .word 0xf940dba2
@@ -53879,7 +53854,7 @@ PixUl8_iOS_UIViews_UICameraPreview_DrawFaces_System_Collections_Generic_List_1_A
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2664]
+ldr x0, [x16, #2648]
 .word 0xd2800401
 bl _p_3
 .word 0xaa0003e1
@@ -53913,7 +53888,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-bl _p_512
+bl _p_511
 .word 0xaa0003e1
 .word 0xf9401ba0
 .word 0xf90017a1
@@ -53949,17 +53924,17 @@ ldr x4, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2672]
+ldr x0, [x16, #2656]
 .word 0xf9001420
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2680]
+ldr x0, [x16, #2664]
 .word 0xf9002020
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2688]
+ldr x0, [x16, #2672]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -53967,7 +53942,7 @@ ldr x0, [x16, #2688]
 .word 0x3901803f
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_577
+bl _p_576
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -54014,7 +53989,7 @@ PixUl8_iOS_UIViews_UICameraPreview_DrawFace_CoreGraphics_CGPath_CoreGraphics_CGP
 .word 0xf94017a0
 .word 0xf94017a1
 .word 0x3940003e
-bl _p_596
+bl _p_595
 .word 0xf94063be
 .word 0xfd0003c0
 .word 0xfd0007c1
@@ -54041,10 +54016,10 @@ bl _p_596
 .word 0xf94057a0
 .word 0xf90037a0
 .word 0xfd405ba0
-bl _p_597
+bl _p_596
 .word 0xf9006ba0
 .word 0xfd405fa0
-bl _p_597
+bl _p_596
 .word 0xaa0003e1
 .word 0xf9406ba0
 .word 0x9101c3a2
@@ -54053,7 +54028,7 @@ bl _p_597
 .word 0xfd402fa1
 .word 0xfd4033a2
 .word 0xfd4037a3
-bl _p_598
+bl _p_597
 .word 0xf94063be
 .word 0xfd0003c0
 .word 0xfd0007c1
@@ -54116,7 +54091,7 @@ bl _p_598
 .word 0xfd4027a3
 .word 0xf9400fa1
 .word 0x3940003e
-bl _p_599
+bl _p_598
 .word 0x910003bf
 .word 0xa8ce7bfd
 .word 0xd65f03c0
@@ -54164,7 +54139,7 @@ PixUl8_iOS_UIViews_UICameraPreview__n__0_Foundation_NSSet_UIKit_UIEvent:
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_600
+bl _p_599
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -54181,7 +54156,7 @@ PixUl8_iOS_UIViews_UICameraPreview__TakePhotoAsyncb__80_0:
 .word 0xf9400ba0
 .word 0xf9400ba1
 .word 0x3940003e
-bl _p_463
+bl _p_462
 .word 0xaa0003e1
 .word 0xd280001e
 .word 0xf2a7f01e
@@ -54190,7 +54165,7 @@ bl _p_463
 .word 0xaa0103e0
 .word 0x1e624000
 .word 0x3940003e
-bl _p_601
+bl _p_600
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -54294,8 +54269,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #2696]
-bl _p_602
+ldr x15, [x16, #2680]
+bl _p_601
 .word 0x910123a0
 .word 0x91002000
 bl _p_38
@@ -54315,7 +54290,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_0_UIKit_UIPinchGestureRecogn
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400fa1
-bl _p_603
+bl _p_602
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -54438,8 +54413,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #2704]
-bl _p_604
+ldr x15, [x16, #2688]
+bl _p_603
 .word 0x910003bf
 .word 0xa8cb7bfd
 .word 0xd65f03c0
@@ -54458,7 +54433,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_6_Foundation_NSSet:
 .word 0xaa0103fa
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_436
+bl _p_435
 .word 0xaa0003fa
 .word 0xaa1a03f8
 .word 0xeb1f035f
@@ -54470,7 +54445,7 @@ bl _p_436
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1072]
+ldr x1, [x16, #1056]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -54480,14 +54455,14 @@ ldr x1, [x16, #1072]
 .word 0xaa1803e0
 .word 0xf94013a1
 .word 0x3940031e
-bl _p_605
+bl _p_604
 .word 0xf9401fbe
 .word 0xfd0003c0
 .word 0xfd0007c1
 .word 0xf94013a0
 .word 0xfd4017a0
 .word 0xfd401ba1
-bl _p_606
+bl _p_605
 .word 0xf9400bb8
 .word 0xf9400fba
 .word 0x910003bf
@@ -54505,7 +54480,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_12:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xd2800021
-bl _p_607
+bl _p_606
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -54524,7 +54499,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_7_Foundation_NSSet:
 .word 0xaa0103fa
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_436
+bl _p_435
 .word 0xaa0003fa
 .word 0xaa1a03f8
 .word 0xeb1f035f
@@ -54536,7 +54511,7 @@ bl _p_436
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1072]
+ldr x1, [x16, #1056]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -54546,14 +54521,14 @@ ldr x1, [x16, #1072]
 .word 0xaa1803e0
 .word 0xf94013a1
 .word 0x3940031e
-bl _p_605
+bl _p_604
 .word 0xf9401fbe
 .word 0xfd0003c0
 .word 0xfd0007c1
 .word 0xf94013a0
 .word 0xfd4017a0
 .word 0xfd401ba1
-bl _p_606
+bl _p_605
 .word 0xf9400bb8
 .word 0xf9400fba
 .word 0x910003bf
@@ -54571,7 +54546,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_13:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xd2800001
-bl _p_607
+bl _p_606
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -54590,7 +54565,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_8_Foundation_NSSet:
 .word 0xaa0103fa
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_436
+bl _p_435
 .word 0xaa0003fa
 .word 0xaa1a03f8
 .word 0xeb1f035f
@@ -54602,7 +54577,7 @@ bl _p_436
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1072]
+ldr x1, [x16, #1056]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -54612,14 +54587,14 @@ ldr x1, [x16, #1072]
 .word 0xaa1803e0
 .word 0xf94013a1
 .word 0x3940031e
-bl _p_605
+bl _p_604
 .word 0xf9401fbe
 .word 0xfd0003c0
 .word 0xfd0007c1
 .word 0xf94013a0
 .word 0xfd4017a0
 .word 0xfd401ba1
-bl _p_606
+bl _p_605
 .word 0xf9400bb8
 .word 0xf9400fba
 .word 0x910003bf
@@ -54637,7 +54612,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_14:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xd2800021
-bl _p_608
+bl _p_607
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -54656,7 +54631,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_9_Foundation_NSSet:
 .word 0xaa0103fa
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_436
+bl _p_435
 .word 0xaa0003fa
 .word 0xaa1a03f8
 .word 0xeb1f035f
@@ -54668,7 +54643,7 @@ bl _p_436
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1072]
+ldr x1, [x16, #1056]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -54678,14 +54653,14 @@ ldr x1, [x16, #1072]
 .word 0xaa1803e0
 .word 0xf94013a1
 .word 0x3940031e
-bl _p_605
+bl _p_604
 .word 0xf9401fbe
 .word 0xfd0003c0
 .word 0xfd0007c1
 .word 0xf94013a0
 .word 0xfd4017a0
 .word 0xfd401ba1
-bl _p_606
+bl _p_605
 .word 0xf9400bb8
 .word 0xf9400fba
 .word 0x910003bf
@@ -54703,7 +54678,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_15:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xd2800001
-bl _p_608
+bl _p_607
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -54722,7 +54697,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_10_Foundation_NSSet:
 .word 0xaa0103fa
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_436
+bl _p_435
 .word 0xaa0003fa
 .word 0xaa1a03f8
 .word 0xeb1f035f
@@ -54734,7 +54709,7 @@ bl _p_436
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1072]
+ldr x1, [x16, #1056]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -54744,14 +54719,14 @@ ldr x1, [x16, #1072]
 .word 0xaa1803e0
 .word 0xf94013a1
 .word 0x3940031e
-bl _p_605
+bl _p_604
 .word 0xf9401fbe
 .word 0xfd0003c0
 .word 0xfd0007c1
 .word 0xf94013a0
 .word 0xfd4017a0
 .word 0xfd401ba1
-bl _p_606
+bl _p_605
 .word 0xf9400bb8
 .word 0xf9400fba
 .word 0x910003bf
@@ -54769,7 +54744,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_16:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xd2800021
-bl _p_609
+bl _p_608
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -54788,7 +54763,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_11_Foundation_NSSet:
 .word 0xaa0103fa
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_436
+bl _p_435
 .word 0xaa0003fa
 .word 0xaa1a03f8
 .word 0xeb1f035f
@@ -54800,7 +54775,7 @@ bl _p_436
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1072]
+ldr x1, [x16, #1056]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -54810,14 +54785,14 @@ ldr x1, [x16, #1072]
 .word 0xaa1803e0
 .word 0xf94013a1
 .word 0x3940031e
-bl _p_605
+bl _p_604
 .word 0xf9401fbe
 .word 0xfd0003c0
 .word 0xfd0007c1
 .word 0xf94013a0
 .word 0xfd4017a0
 .word 0xfd401ba1
-bl _p_606
+bl _p_605
 .word 0xf9400bb8
 .word 0xf9400fba
 .word 0x910003bf
@@ -54835,7 +54810,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_17:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xd2800001
-bl _p_609
+bl _p_608
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -54850,7 +54825,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_18:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_610
+bl _p_609
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -54869,7 +54844,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_19_Foundation_NSSet:
 .word 0xaa0103fa
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_436
+bl _p_435
 .word 0xaa0003fa
 .word 0xaa1a03f8
 .word 0xeb1f035f
@@ -54881,7 +54856,7 @@ bl _p_436
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1072]
+ldr x1, [x16, #1056]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -54891,14 +54866,14 @@ ldr x1, [x16, #1072]
 .word 0xaa1803e0
 .word 0xf94013a1
 .word 0x3940031e
-bl _p_605
+bl _p_604
 .word 0xf9401fbe
 .word 0xfd0003c0
 .word 0xfd0007c1
 .word 0xf94013a0
 .word 0xfd4017a0
 .word 0xfd401ba1
-bl _p_606
+bl _p_605
 .word 0xf9400bb8
 .word 0xf9400fba
 .word 0x910003bf
@@ -54916,7 +54891,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_26:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xd2800021
-bl _p_607
+bl _p_606
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -54935,7 +54910,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_20_Foundation_NSSet:
 .word 0xaa0103fa
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_436
+bl _p_435
 .word 0xaa0003fa
 .word 0xaa1a03f8
 .word 0xeb1f035f
@@ -54947,7 +54922,7 @@ bl _p_436
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1072]
+ldr x1, [x16, #1056]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -54957,14 +54932,14 @@ ldr x1, [x16, #1072]
 .word 0xaa1803e0
 .word 0xf94013a1
 .word 0x3940031e
-bl _p_605
+bl _p_604
 .word 0xf9401fbe
 .word 0xfd0003c0
 .word 0xfd0007c1
 .word 0xf94013a0
 .word 0xfd4017a0
 .word 0xfd401ba1
-bl _p_606
+bl _p_605
 .word 0xf9400bb8
 .word 0xf9400fba
 .word 0x910003bf
@@ -54982,7 +54957,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_27:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xd2800001
-bl _p_607
+bl _p_606
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -55001,7 +54976,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_21_Foundation_NSSet:
 .word 0xaa0103fa
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_436
+bl _p_435
 .word 0xaa0003fa
 .word 0xaa1a03f8
 .word 0xeb1f035f
@@ -55013,7 +54988,7 @@ bl _p_436
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1072]
+ldr x1, [x16, #1056]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -55023,14 +54998,14 @@ ldr x1, [x16, #1072]
 .word 0xaa1803e0
 .word 0xf94013a1
 .word 0x3940031e
-bl _p_605
+bl _p_604
 .word 0xf9401fbe
 .word 0xfd0003c0
 .word 0xfd0007c1
 .word 0xf94013a0
 .word 0xfd4017a0
 .word 0xfd401ba1
-bl _p_606
+bl _p_605
 .word 0xf9400bb8
 .word 0xf9400fba
 .word 0x910003bf
@@ -55048,7 +55023,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_28:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xd2800021
-bl _p_608
+bl _p_607
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -55067,7 +55042,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_22_Foundation_NSSet:
 .word 0xaa0103fa
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_436
+bl _p_435
 .word 0xaa0003fa
 .word 0xaa1a03f8
 .word 0xeb1f035f
@@ -55079,7 +55054,7 @@ bl _p_436
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1072]
+ldr x1, [x16, #1056]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -55089,14 +55064,14 @@ ldr x1, [x16, #1072]
 .word 0xaa1803e0
 .word 0xf94013a1
 .word 0x3940031e
-bl _p_605
+bl _p_604
 .word 0xf9401fbe
 .word 0xfd0003c0
 .word 0xfd0007c1
 .word 0xf94013a0
 .word 0xfd4017a0
 .word 0xfd401ba1
-bl _p_606
+bl _p_605
 .word 0xf9400bb8
 .word 0xf9400fba
 .word 0x910003bf
@@ -55114,7 +55089,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_29:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xd2800001
-bl _p_608
+bl _p_607
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -55133,7 +55108,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_23_Foundation_NSSet:
 .word 0xaa0103fa
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_436
+bl _p_435
 .word 0xaa0003fa
 .word 0xaa1a03f8
 .word 0xeb1f035f
@@ -55145,7 +55120,7 @@ bl _p_436
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1072]
+ldr x1, [x16, #1056]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -55155,14 +55130,14 @@ ldr x1, [x16, #1072]
 .word 0xaa1803e0
 .word 0xf94013a1
 .word 0x3940031e
-bl _p_605
+bl _p_604
 .word 0xf9401fbe
 .word 0xfd0003c0
 .word 0xfd0007c1
 .word 0xf94013a0
 .word 0xfd4017a0
 .word 0xfd401ba1
-bl _p_606
+bl _p_605
 .word 0xf9400bb8
 .word 0xf9400fba
 .word 0x910003bf
@@ -55180,7 +55155,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_30:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xd2800021
-bl _p_609
+bl _p_608
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -55199,7 +55174,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_24_Foundation_NSSet:
 .word 0xaa0103fa
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_436
+bl _p_435
 .word 0xaa0003fa
 .word 0xaa1a03f8
 .word 0xeb1f035f
@@ -55211,7 +55186,7 @@ bl _p_436
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1072]
+ldr x1, [x16, #1056]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -55221,14 +55196,14 @@ ldr x1, [x16, #1072]
 .word 0xaa1803e0
 .word 0xf94013a1
 .word 0x3940031e
-bl _p_605
+bl _p_604
 .word 0xf9401fbe
 .word 0xfd0003c0
 .word 0xfd0007c1
 .word 0xf94013a0
 .word 0xfd4017a0
 .word 0xfd401ba1
-bl _p_606
+bl _p_605
 .word 0xf9400bb8
 .word 0xf9400fba
 .word 0x910003bf
@@ -55246,7 +55221,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_31:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xd2800001
-bl _p_609
+bl _p_608
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -55261,7 +55236,7 @@ PixUl8_iOS_UIViews_UICameraPreview__Initializeb__87_32:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_610
+bl _p_609
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -55384,8 +55359,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #2712]
-bl _p_611
+ldr x15, [x16, #2696]
+bl _p_610
 .word 0x910003bf
 .word 0xa8cb7bfd
 .word 0xd65f03c0
@@ -55400,7 +55375,7 @@ PixUl8_iOS_UIViews_UICameraPreview__TapToFocusb__89_0:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_414
+bl _p_413
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -55504,8 +55479,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #2720]
-bl _p_612
+ldr x15, [x16, #2704]
+bl _p_611
 .word 0x910123a0
 .word 0x91002000
 bl _p_38
@@ -55558,7 +55533,7 @@ ldr x1, [x16, #16]
 .word 0xf90013a0
 .word 0xf9401ba0
 .word 0xf94013a1
-bl _p_613
+bl _p_612
 .word 0xf9400bb8
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -55579,7 +55554,7 @@ PixUl8_iOS_UIViews_UICameraPreview__UnhideBoxesb__104_0:
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
-bl _p_614
+bl _p_613
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -55601,7 +55576,7 @@ PixUl8_iOS_UIViews_UICameraPreview__ShowBoxesIfPossibleb__105_0:
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
-bl _p_614
+bl _p_613
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -55633,7 +55608,7 @@ PixUl8_iOS_UIViews_UICameraPreview__TouchesEndedd__73_MoveNext:
 .word 0xf94017a0
 .word 0xf9401c02
 .word 0xaa1903e0
-bl _p_615
+bl _p_614
 .word 0x39436320
 .word 0x34000b80
 
@@ -55654,7 +55629,7 @@ ldr x15, [x16, #3848]
 .word 0xf8706830
 .word 0xd63f0200
 .word 0xaa1903e0
-bl _p_543
+bl _p_542
 .word 0xaa0003e1
 .word 0x3940003e
 .word 0xf90027bf
@@ -55714,8 +55689,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #2728]
-bl _p_616
+ldr x15, [x16, #2712]
+bl _p_615
 .word 0x1400004c
 .word 0xf94017a0
 .word 0x91010000
@@ -55736,7 +55711,7 @@ bl _p_67
 .word 0xf9401801
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_436
+bl _p_435
 .word 0xaa0003fa
 .word 0xaa1a03f8
 .word 0xeb1f035f
@@ -55748,7 +55723,7 @@ bl _p_436
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #1072]
+ldr x1, [x16, #1056]
 .word 0xeb01001f
 .word 0x54000060
 .word 0xd2800018
@@ -55759,14 +55734,14 @@ ldr x1, [x16, #1072]
 .word 0xaa1803e0
 .word 0xaa1903e1
 .word 0x3940031e
-bl _p_605
+bl _p_604
 .word 0xf94033be
 .word 0xfd0003c0
 .word 0xfd0007c1
 .word 0xaa1903e0
 .word 0xfd401ba0
 .word 0xfd401fa1
-bl _p_606
+bl _p_605
 .word 0x14000013
 .word 0xf90037a0
 .word 0xf94037a0
@@ -55858,7 +55833,7 @@ bl _p_289
 .word 0xaa0303e0
 .word 0xd2800022
 .word 0x3940007e
-bl _p_617
+bl _p_616
 .word 0xaa0003e1
 .word 0x3940003e
 .word 0xf90017bf
@@ -55918,8 +55893,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #2736]
-bl _p_618
+ldr x15, [x16, #2720]
+bl _p_617
 .word 0x14000028
 .word 0xf9400fa0
 .word 0x9100a000
@@ -56015,12 +55990,12 @@ PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass79_0__HandleResponseb__0:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2744]
+ldr x0, [x16, #2728]
 bl _p_242
 .word 0xf9401ba2
 .word 0xf90017a0
 .word 0xd2800001
-bl _p_619
+bl _p_618
 .word 0xf94017a0
 .word 0xf90013a0
 .word 0xaa0003e2
@@ -56029,7 +56004,7 @@ bl _p_619
 .word 0xf9404c01
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_620
+bl _p_619
 bl _p_287
 .word 0xaa0003e1
 .word 0xaa0103e0
@@ -56045,7 +56020,7 @@ bl _p_289
 .word 0xd2800022
 .word 0xd2800003
 .word 0x3940009e
-bl _p_621
+bl _p_620
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -56167,8 +56142,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #2752]
-bl _p_622
+ldr x15, [x16, #2736]
+bl _p_621
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
@@ -56188,13 +56163,13 @@ PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass79_0__HandleResponseb__2:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2760]
+ldr x0, [x16, #2744]
 .word 0xd2800501
 bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2768]
+ldr x1, [x16, #2752]
 .word 0xf9400021
 .word 0xf9000801
 .word 0x91004002
@@ -56233,11 +56208,11 @@ ldr x3, [x16, #16]
 .word 0x14000004
 .word 0xaa1a03e0
 .word 0xaa1803e1
-bl _p_623
+bl _p_622
 .word 0xaa1903e0
 .word 0x3940033e
+bl _p_623
 bl _p_624
-bl _p_625
 .word 0xa9415fb6
 .word 0xa94267b8
 .word 0xf9401bba
@@ -56321,8 +56296,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #2776]
-bl _p_626
+ldr x15, [x16, #2760]
+bl _p_625
 .word 0x140000a7
 .word 0xf94017a0
 .word 0x9100c000
@@ -56379,17 +56354,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2784]
+ldr x1, [x16, #2768]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2792]
+ldr x1, [x16, #2776]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2800]
+ldr x1, [x16, #2784]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -56413,14 +56388,14 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2808]
+ldr x0, [x16, #2792]
 .word 0xf9400000
 .word 0xaa0003f9
 .word 0xb5000660
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1280]
+ldr x0, [x16, #1264]
 .word 0xf9400000
 .word 0xf90043a0
 .word 0xeb1f001f
@@ -56452,17 +56427,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2816]
+ldr x1, [x16, #2800]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2824]
+ldr x1, [x16, #2808]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2832]
+ldr x1, [x16, #2816]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -56471,14 +56446,14 @@ ldr x1, [x16, #2832]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2808]
+ldr x1, [x16, #2792]
 .word 0xf9000020
 .word 0xaa0003f9
 .word 0xaa1a03e0
 .word 0xaa1803e1
 .word 0xaa1903e2
 .word 0x3940035e
-bl _p_627
+bl _p_626
 .word 0x14000013
 .word 0xf9002ba0
 .word 0xf9402ba0
@@ -56550,14 +56525,14 @@ PixUl8_iOS_UIViews_UICameraPreview__c__cctor:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2840]
+ldr x0, [x16, #2824]
 .word 0xd2800201
 bl _p_3
 .word 0xaa0003e1
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #1280]
+ldr x0, [x16, #1264]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -56604,12 +56579,12 @@ PixUl8_iOS_UIViews_UICameraPreview__c__Initializeb__87_1_AVFoundation_AVCaptureD
 .word 0xaa0103fa
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_628
+bl _p_627
 .word 0x53001c00
 .word 0x340000c0
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_629
+bl _p_628
 .word 0x53001c00
 .word 0x14000002
 .word 0xd2800000
@@ -56631,12 +56606,12 @@ PixUl8_iOS_UIViews_UICameraPreview__c__Initializeb__87_2_AVFoundation_AVCaptureD
 .word 0xaa0103fa
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_628
+bl _p_627
 .word 0x53001c00
 .word 0x340000c0
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_629
+bl _p_628
 .word 0x53001c00
 .word 0x14000002
 .word 0xd2800000
@@ -56658,7 +56633,7 @@ PixUl8_iOS_UIViews_UICameraPreview__c__Initializeb__87_3_AVFoundation_AVCaptureD
 .word 0xf9400fa0
 .word 0xf9400fa1
 .word 0x3940003e
-bl _p_629
+bl _p_628
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -56677,7 +56652,7 @@ PixUl8_iOS_UIViews_UICameraPreview__c__Initializeb__87_4_AVFoundation_AVFrameRat
 .word 0xf9400fa0
 .word 0xf9400fa1
 .word 0x3940003e
-bl _p_630
+bl _p_629
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -56723,7 +56698,7 @@ PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_MoveNext:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2848]
+ldr x0, [x16, #2832]
 .word 0xd2800601
 bl _p_3
 .word 0xf94057a1
@@ -56852,8 +56827,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #2856]
-bl _p_631
+ldr x15, [x16, #2840]
+bl _p_630
 .word 0x14000136
 .word 0xf94027a0
 .word 0x91010000
@@ -56871,24 +56846,24 @@ bl _p_67
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2864]
+ldr x0, [x16, #2848]
 .word 0xd2800a01
 bl _p_3
 .word 0xf90067a0
-bl _p_632
+bl _p_631
 .word 0xf94067a0
 .word 0xaa0003fa
 .word 0xaa1a03f9
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2872]
+ldr x0, [x16, #2856]
 .word 0xd2800501
 bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2880]
+ldr x1, [x16, #2864]
 .word 0xf9400021
 .word 0xf9000801
 .word 0x91004002
@@ -56908,7 +56883,7 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2888]
+ldr x0, [x16, #2872]
 .word 0xf9005ba0
 .word 0xf94027a0
 .word 0xf9401c00
@@ -56942,17 +56917,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2896]
+ldr x1, [x16, #2880]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2904]
+ldr x1, [x16, #2888]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2912]
+ldr x1, [x16, #2896]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -56962,14 +56937,14 @@ ldr x1, [x16, #2912]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2920]
+ldr x0, [x16, #2904]
 .word 0xd2800501
 bl _p_3
 .word 0xf9405ba1
 .word 0xf9405fa2
 .word 0xf90053a0
 .word 0xd2800003
-bl _p_633
+bl _p_632
 .word 0xf94053a0
 .word 0xf94057a1
 .word 0xaa0103f7
@@ -56994,13 +56969,13 @@ bl _p_633
 .word 0x14000005
 .word 0xaa1703e0
 .word 0xaa1603e1
-bl _p_634
+bl _p_633
 .word 0x14000001
 .word 0xaa1803f7
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2928]
+ldr x0, [x16, #2912]
 .word 0xf90057a0
 .word 0xf94027a0
 .word 0xf9401c00
@@ -57034,17 +57009,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2936]
+ldr x1, [x16, #2920]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2944]
+ldr x1, [x16, #2928]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2952]
+ldr x1, [x16, #2936]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -57054,14 +57029,14 @@ ldr x1, [x16, #2952]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2920]
+ldr x0, [x16, #2904]
 .word 0xd2800501
 bl _p_3
 .word 0xf94057a1
 .word 0xf9405ba2
 .word 0xf90053a0
 .word 0xd2800003
-bl _p_633
+bl _p_632
 .word 0xf94053a0
 .word 0xaa1803f6
 .word 0xaa0003f5
@@ -57085,7 +57060,7 @@ bl _p_633
 .word 0x14000005
 .word 0xaa1603e0
 .word 0xaa1503e1
-bl _p_634
+bl _p_633
 .word 0x14000001
 .word 0x3940033e
 .word 0xf9001b37
@@ -57104,19 +57079,19 @@ ldr x1, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2960]
+ldr x0, [x16, #2944]
 .word 0xf90057a0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2920]
+ldr x0, [x16, #2904]
 .word 0xd2800501
 bl _p_3
 .word 0xf94057a1
 .word 0xf90053a0
 .word 0xd2800002
 .word 0xd2800003
-bl _p_633
+bl _p_632
 .word 0xf94053a0
 .word 0x3940035e
 .word 0xf9001340
@@ -57135,7 +57110,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2968]
+ldr x0, [x16, #2952]
 .word 0x3940035e
 .word 0xf9000b40
 .word 0x91004341
@@ -57158,7 +57133,7 @@ bl _p_193
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #2976]
+ldr x15, [x16, #2960]
 .word 0x928003f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -57276,7 +57251,7 @@ ldr x0, [x16, #248]
 .word 0x140000ce
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_463
+bl _p_462
 .word 0xaa0003e1
 .word 0xd280001e
 .word 0x9e6703d0
@@ -57284,7 +57259,7 @@ bl _p_463
 .word 0xaa0103e0
 .word 0x1e624000
 .word 0x3940003e
-bl _p_601
+bl _p_600
 .word 0xeb1f035f
 .word 0x10000011
 .word 0x540019e0
@@ -57313,17 +57288,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2984]
+ldr x1, [x16, #2968]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2992]
+ldr x1, [x16, #2976]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3000]
+ldr x1, [x16, #2984]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -57332,7 +57307,7 @@ ldr x1, [x16, #3000]
 .word 0xd280001e
 .word 0xf2e7fa1e
 .word 0x9e6703c0
-bl _p_635
+bl _p_634
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+0
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
@@ -57361,7 +57336,7 @@ ldr x0, [x16, #640]
 .word 0xb9800002
 .word 0xaa1a03e0
 .word 0xaa1903e1
-bl _p_467
+bl _p_466
 .word 0xaa0003f8
 .word 0xf9402f40
 .word 0xb980df41
@@ -57375,7 +57350,7 @@ bl _p_467
 .word 0xaa0303e0
 .word 0xaa1803e1
 .word 0x3940007e
-bl _p_636
+bl _p_635
 .word 0xaa1803e0
 .word 0x3940031e
 bl _p_311
@@ -57392,7 +57367,7 @@ bl _p_193
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3008]
+ldr x1, [x16, #2992]
 .word 0xb9003bbf
 .word 0xb9003fbf
 .word 0xb9803ba0
@@ -57405,14 +57380,14 @@ ldr x1, [x16, #3008]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3016]
+ldr x15, [x16, #3000]
 .word 0x92800df0
 .word 0xf2bffff0
 .word 0xf8706870
 .word 0xd63f0200
 .word 0x14000014
 .word 0xaa1a03e0
-bl _p_465
+bl _p_464
 .word 0xaa0003f9
 .word 0xf9402b40
 .word 0xb980df41
@@ -57426,7 +57401,7 @@ bl _p_465
 .word 0xaa0303e0
 .word 0xaa1903e1
 .word 0x3940007e
-bl _p_636
+bl _p_635
 .word 0xaa1903e0
 .word 0x3940033e
 bl _p_311
@@ -57459,17 +57434,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3024]
+ldr x1, [x16, #3008]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3032]
+ldr x1, [x16, #3016]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3040]
+ldr x1, [x16, #3024]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -57557,28 +57532,28 @@ PixUl8_iOS_UIViews_UICameraPreview__UpdaterAsyncd__84_MoveNext:
 .word 0x39438340
 .word 0x34000ce0
 .word 0xaa1a03e0
-bl _p_637
+bl _p_636
 .word 0x93407c00
 .word 0xaa0003f9
 .word 0xaa1a03e0
-bl _p_638
+bl _p_637
 .word 0x93407c00
 .word 0xb9003ba0
 .word 0xaa1a03e0
-bl _p_639
+bl _p_638
 .word 0x93407c00
 .word 0xaa0003fa
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2360]
+ldr x0, [x16, #2344]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2368]
+ldr x0, [x16, #2352]
 .word 0xf9400017
 .word 0xb4000177
 .word 0xf94002e0
@@ -57588,7 +57563,7 @@ ldr x0, [x16, #2368]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2376]
+ldr x1, [x16, #2360]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000ca1
@@ -57599,21 +57574,21 @@ ldr x1, [x16, #3312]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3048]
+ldr x15, [x16, #3032]
 .word 0xaa1703e0
 .word 0xaa1903e2
-bl _p_640
+bl _p_639
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2360]
+ldr x0, [x16, #2344]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2368]
+ldr x0, [x16, #2352]
 .word 0xf9400019
 .word 0xb4000179
 .word 0xf9400320
@@ -57623,7 +57598,7 @@ ldr x0, [x16, #2368]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2376]
+ldr x1, [x16, #2360]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540008e1
@@ -57634,21 +57609,21 @@ ldr x1, [x16, #3360]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3048]
+ldr x15, [x16, #3032]
 .word 0xaa1903e0
 .word 0xb9803ba2
-bl _p_640
+bl _p_639
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2360]
+ldr x0, [x16, #2344]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #2368]
+ldr x0, [x16, #2352]
 .word 0xf9400019
 .word 0xb4000179
 .word 0xf9400320
@@ -57658,7 +57633,7 @@ ldr x0, [x16, #2368]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #2376]
+ldr x1, [x16, #2360]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000521
@@ -57669,10 +57644,10 @@ ldr x1, [x16, #3392]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3048]
+ldr x15, [x16, #3032]
 .word 0xaa1903e0
 .word 0xaa1a03e2
-bl _p_640
+bl _p_639
 .word 0x14000013
 .word 0xf90023a0
 .word 0xf94023a0
@@ -57842,8 +57817,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3056]
-bl _p_641
+ldr x15, [x16, #3040]
+bl _p_640
 .word 0x910123a0
 .word 0x91002000
 bl _p_38
@@ -57933,8 +57908,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3064]
-bl _p_642
+ldr x15, [x16, #3048]
+bl _p_641
 .word 0x14000032
 .word 0xf94013a0
 .word 0x9100a000
@@ -57958,7 +57933,7 @@ bl _p_275
 .word 0x35000080
 .word 0xf9400f20
 .word 0xd2800001
-bl _p_527
+bl _p_526
 .word 0x14000013
 .word 0xf90027a0
 .word 0xf94027a0
@@ -58037,7 +58012,7 @@ PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_MoveNext:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3072]
+ldr x0, [x16, #3056]
 .word 0xd2800401
 bl _p_3
 .word 0xf9400fa1
@@ -58105,17 +58080,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3080]
+ldr x1, [x16, #3064]
 .word 0xf9001401
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3088]
+ldr x1, [x16, #3072]
 .word 0xf9002001
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3096]
+ldr x1, [x16, #3080]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -58181,8 +58156,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3104]
-bl _p_643
+ldr x15, [x16, #3088]
+bl _p_642
 .word 0x14000028
 .word 0xf9400fa0
 .word 0x9100c000
@@ -58286,13 +58261,13 @@ PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass103_0__HideBoxesb__0:
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
-bl _p_644
+bl _p_643
 .word 0xf9400b40
 .word 0xf9404402
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
-bl _p_644
+bl _p_643
 .word 0x14000004
 .word 0xf9400b40
 .word 0xd280003e
@@ -58302,7 +58277,7 @@ bl _p_644
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_614
+bl _p_613
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -58351,52 +58326,52 @@ PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass107_0__DrawFacesb__0:
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
-bl _p_614
+bl _p_613
 .word 0xf9400b40
 .word 0xf9404019
 .word 0xf9400b40
 .word 0xf9404418
-bl _p_645
+bl _p_644
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3112]
+ldr x0, [x16, #3096]
 bl _p_242
 .word 0xf9007fa0
-bl _p_646
+bl _p_645
 .word 0xf9407fa0
 .word 0xaa0003f7
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3112]
+ldr x0, [x16, #3096]
 bl _p_242
 .word 0xf9007ba0
-bl _p_646
+bl _p_645
 .word 0xf9407ba0
 .word 0xaa0003f6
 .word 0xf9400f41
 .word 0x910283a8
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_647
+bl _p_646
 .word 0x1400000a
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3120]
+ldr x0, [x16, #3104]
 .word 0xf9405bb5
 .word 0xf9400b40
 .word 0xaa1703e1
 .word 0xaa1603e2
 .word 0xaa1503e3
-bl _p_648
+bl _p_647
 .word 0x910283a0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3120]
-bl _p_649
+ldr x15, [x16, #3104]
+bl _p_648
 .word 0x53001c00
 .word 0x35fffe20
 .word 0xf90063bf
@@ -58410,7 +58385,7 @@ bl _p_316
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3120]
+ldr x1, [x16, #3104]
 .word 0xf90067a0
 .word 0xf94077be
 .word 0xd61f03c0
@@ -58421,8 +58396,8 @@ ldr x1, [x16, #3120]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3128]
-bl _p_650
+ldr x15, [x16, #3112]
+bl _p_649
 .word 0xaa0003f5
 .word 0xaa1503e0
 .word 0xb40010a0
@@ -58431,7 +58406,7 @@ bl _p_650
 .word 0x9102e3a1
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_409
+bl _p_408
 .word 0xf9400b40
 .word 0x39438c00
 .word 0x35000ee0
@@ -58439,7 +58414,7 @@ bl _p_409
 .word 0xf9401c01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_529
+bl _p_528
 .word 0x53001c00
 .word 0x34000400
 .word 0xf9400b40
@@ -58449,7 +58424,7 @@ bl _p_529
 .word 0xf9006ba0
 .word 0xaa1503e0
 .word 0x394002be
-bl _p_596
+bl _p_595
 .word 0xf9406bbe
 .word 0xfd0003c0
 .word 0xfd0007c1
@@ -58472,12 +58447,12 @@ bl _p_596
 .word 0xfd402ba0
 .word 0xfd402fa1
 .word 0x3940003e
-bl _p_530
+bl _p_529
 .word 0xf9400b40
 .word 0xf9401c01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_531
+bl _p_530
 .word 0x53001c00
 .word 0x34000400
 .word 0xf9400b40
@@ -58487,7 +58462,7 @@ bl _p_531
 .word 0xf9006ba0
 .word 0xaa1503e0
 .word 0x394002be
-bl _p_596
+bl _p_595
 .word 0xf9406bbe
 .word 0xfd0003c0
 .word 0xfd0007c1
@@ -58510,41 +58485,41 @@ bl _p_596
 .word 0xfd4023a0
 .word 0xfd4027a1
 .word 0x3940003e
+bl _p_531
+.word 0xf9400b40
+.word 0xf9401c02
+.word 0xaa0203e0
+.word 0xd2800021
+.word 0x3940005e
 bl _p_532
+.word 0x53001c00
+.word 0x340000e0
 .word 0xf9400b40
 .word 0xf9401c02
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
 bl _p_533
-.word 0x53001c00
-.word 0x340000e0
 .word 0xf9400b40
 .word 0xf9401c02
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
 bl _p_534
+.word 0x53001c00
+.word 0x340000e0
 .word 0xf9400b40
 .word 0xf9401c02
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
 bl _p_535
-.word 0x53001c00
-.word 0x340000e0
 .word 0xf9400b40
 .word 0xf9401c02
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
 bl _p_536
-.word 0xf9400b40
-.word 0xf9401c02
-.word 0xaa0203e0
-.word 0xd2800021
-.word 0x3940005e
-bl _p_537
 .word 0x53001c00
 .word 0x340000e0
 .word 0xf9400b40
@@ -58552,21 +58527,21 @@ bl _p_537
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_538
+bl _p_537
 .word 0xf9400b40
 .word 0xf9401c01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_412
+bl _p_411
 .word 0xaa1903e0
 .word 0xaa1703e1
 .word 0x3940033e
-bl _p_644
+bl _p_643
 .word 0xaa1803e0
 .word 0xaa1603e1
 .word 0x3940031e
-bl _p_644
-bl _p_651
+bl _p_643
+bl _p_650
 .word 0xa9415bb5
 .word 0xa94263b7
 .word 0xa9436bb9
@@ -58657,8 +58632,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3136]
-bl _p_652
+ldr x15, [x16, #3120]
+bl _p_651
 .word 0x1400002b
 .word 0xf9400fa0
 .word 0x9100a000
@@ -58752,7 +58727,7 @@ PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_5d_MoveNext:
 .word 0xf90023a0
 .word 0x340007da
 .word 0xf94023a0
-bl _p_543
+bl _p_542
 .word 0xaa0003e1
 .word 0x3940003e
 .word 0xf90017bf
@@ -58812,8 +58787,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3144]
-bl _p_653
+ldr x15, [x16, #3128]
+bl _p_652
 .word 0x14000028
 .word 0xf9400fa0
 .word 0x9100c000
@@ -58904,7 +58879,7 @@ PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_25d_MoveNext:
 .word 0xf90023a0
 .word 0x340007da
 .word 0xf94023a0
-bl _p_654
+bl _p_653
 .word 0xaa0003e1
 .word 0x3940003e
 .word 0xf90017bf
@@ -58964,8 +58939,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3152]
-bl _p_655
+ldr x15, [x16, #3136]
+bl _p_654
 .word 0x14000028
 .word 0xf9400fa0
 .word 0x9100c000
@@ -59115,8 +59090,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3160]
-bl _p_656
+ldr x15, [x16, #3144]
+bl _p_655
 .word 0x1400002b
 .word 0xf94013a0
 .word 0x9100a000
@@ -59133,7 +59108,7 @@ bl _p_656
 bl _p_67
 .word 0xb980ef21
 .word 0xaa1903e0
-bl _p_657
+bl _p_656
 .word 0x14000013
 .word 0xf90027a0
 .word 0xf94027a0
@@ -59206,7 +59181,7 @@ PixUl8_iOS_UIViews_CircleZoomPercentage__ctor_CoreGraphics_CGRect_int:
 .word 0xb900473e
 .word 0xd280015e
 .word 0xb9004b3e
-bl _p_658
+bl _p_657
 .word 0xf9001f20
 .word 0x9100e321
 .word 0xd349fc21
@@ -59221,7 +59196,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .word 0xaa1903e0
-bl _p_428
+bl _p_427
 .word 0xb9805ba0
 .word 0xb9004b20
 .word 0xfd400fa0
@@ -59251,7 +59226,7 @@ bl _p_297
 .word 0xf9400321
 .word 0xf941b830
 .word 0xd63f0200
-bl _p_523
+bl _p_522
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xf9400322
@@ -59283,7 +59258,7 @@ bl _p_523
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_517
+bl _p_516
 .word 0xf94053a0
 .word 0xf90033a0
 .word 0xf94057a0
@@ -59295,14 +59270,14 @@ bl _p_517
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3168]
+ldr x0, [x16, #3152]
 bl _p_242
 .word 0xf9007fa0
 .word 0xfd4033a0
 .word 0xfd4037a1
 .word 0xfd403ba2
 .word 0xfd403fa3
-bl _p_659
+bl _p_658
 .word 0xf9407fa0
 .word 0xf9001b20
 .word 0x9100c321
@@ -59321,23 +59296,23 @@ ldr x2, [x16, #16]
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_660
+bl _p_659
 .word 0xf9401b20
 .word 0xf9007ba0
-bl _p_658
+bl _p_657
 .word 0xaa0003e1
 .word 0xf9407ba2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_661
+bl _p_660
 .word 0xf9401b22
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3176]
+ldr x1, [x16, #3160]
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_662
+bl _p_661
 .word 0xf9401b21
 .word 0xaa1903e0
 .word 0x3940033e
@@ -59381,7 +59356,7 @@ PixUl8_iOS_UIViews_CircleZoomPercentage_Draw_CoreGraphics_CGRect:
 .word 0xfd4013a1
 .word 0xfd4017a2
 .word 0xfd401ba3
-bl _p_432
+bl _p_431
 bl _p_342
 .word 0xf9005fa0
 .word 0x910263a0
@@ -59418,7 +59393,7 @@ bl _p_296
 .word 0xfd4043a1
 .word 0xfd4047a2
 .word 0xfd404ba3
-bl _p_584
+bl _p_583
 .word 0xfd007fa0
 .word 0x910163a0
 .word 0xf90063a0
@@ -59434,12 +59409,12 @@ bl _p_296
 .word 0xfd4033a1
 .word 0xfd4037a2
 .word 0xfd403ba3
-bl _p_585
+bl _p_584
 .word 0x1e604001
 .word 0xf9407ba1
 .word 0xfd407fa0
 .word 0xaa1a03e0
-bl _p_663
+bl _p_662
 .word 0xf90067bf
 .word 0x94000005
 .word 0xf94067a0
@@ -59489,21 +59464,21 @@ PixUl8_iOS_UIViews_CircleZoomPercentage_DrawGraph_CoreGraphics_CGContext_System_
 .word 0xfd401ba0
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_664
+bl _p_663
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3112]
+ldr x0, [x16, #3096]
 bl _p_242
 .word 0xf90033a0
-bl _p_646
+bl _p_645
 .word 0xf94033a0
 .word 0xf9002fa0
 .word 0xf9400fa0
 .word 0xf9401c01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_665
+bl _p_664
 .word 0xf9402fa2
 .word 0xfd4013a0
 .word 0xfd4017a1
@@ -59528,15 +59503,15 @@ bl _p_665
 .word 0xd2800021
 .word 0x3940005e
 .word 0xf9002ba2
-bl _p_666
+bl _p_665
 .word 0xf9402ba1
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_667
+bl _p_666
 .word 0xaa1a03e0
 .word 0xd2800041
 .word 0x3940035e
-bl _p_668
+bl _p_667
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c77bfd
@@ -59563,18 +59538,18 @@ PixUl8_iOS_UIViews_CircleZoomPercentage_UpdateDisplayZoomFactor_single:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3184]
-bl _p_669
+ldr x1, [x16, #3168]
+bl _p_668
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+0
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x1, [x16, #432]
-bl _p_446
+bl _p_445
 .word 0xaa0003e1
 .word 0xf9401ba2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_662
+bl _p_661
 .word 0xd2800020
 .word 0x1e620000
 .word 0x9e6703e1
@@ -59613,17 +59588,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3192]
+ldr x0, [x16, #3176]
 .word 0xf9001420
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3200]
+ldr x0, [x16, #3184]
 .word 0xf9002020
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3208]
+ldr x0, [x16, #3192]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -59635,7 +59610,7 @@ ldr x0, [x16, #3208]
 .word 0x9e6703e1
 .word 0xd2800040
 .word 0xd2800002
-bl _p_670
+bl _p_669
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -59689,7 +59664,7 @@ PixUl8_iOS_UIViews_FocusWheel__ctor_CoreGraphics_CGRect_int:
 .word 0xb9003b3e
 .word 0xd280015e
 .word 0xb9003f3e
-bl _p_595
+bl _p_594
 .word 0xf9001b20
 .word 0x9100c321
 .word 0xd349fc21
@@ -59704,7 +59679,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .word 0xaa1903e0
-bl _p_428
+bl _p_427
 .word 0xb9805ba0
 .word 0xb9003f20
 .word 0xfd400fa0
@@ -59734,7 +59709,7 @@ bl _p_297
 .word 0xf9400321
 .word 0xf941b830
 .word 0xd63f0200
-bl _p_523
+bl _p_522
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xf9400322
@@ -59779,7 +59754,7 @@ PixUl8_iOS_UIViews_FocusWheel_Draw_CoreGraphics_CGRect:
 .word 0xfd4013a1
 .word 0xfd4017a2
 .word 0xfd401ba3
-bl _p_432
+bl _p_431
 bl _p_342
 .word 0xf9005fa0
 .word 0x910263a0
@@ -59816,7 +59791,7 @@ bl _p_296
 .word 0xfd4043a1
 .word 0xfd4047a2
 .word 0xfd404ba3
-bl _p_584
+bl _p_583
 .word 0xfd007fa0
 .word 0x910163a0
 .word 0xf90063a0
@@ -59832,12 +59807,12 @@ bl _p_296
 .word 0xfd4033a1
 .word 0xfd4037a2
 .word 0xfd403ba3
-bl _p_585
+bl _p_584
 .word 0x1e604001
 .word 0xf9407ba1
 .word 0xfd407fa0
 .word 0xaa1a03e0
-bl _p_671
+bl _p_670
 .word 0xf90067bf
 .word 0x94000005
 .word 0xf94067a0
@@ -59887,21 +59862,21 @@ PixUl8_iOS_UIViews_FocusWheel_DrawGraph_CoreGraphics_CGContext_System_nfloat_Sys
 .word 0xfd401ba0
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_664
+bl _p_663
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3112]
+ldr x0, [x16, #3096]
 bl _p_242
 .word 0xf90033a0
-bl _p_646
+bl _p_645
 .word 0xf94033a0
 .word 0xf9002fa0
 .word 0xf9400fa0
 .word 0xf9401801
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_665
+bl _p_664
 .word 0xf9402fa2
 .word 0xfd4013a0
 .word 0xfd4017a1
@@ -59926,15 +59901,15 @@ bl _p_665
 .word 0xd2800021
 .word 0x3940005e
 .word 0xf9002ba2
-bl _p_666
+bl _p_665
 .word 0xf9402ba1
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_667
+bl _p_666
 .word 0xaa1a03e0
 .word 0xd2800041
 .word 0x3940035e
-bl _p_668
+bl _p_667
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c77bfd
@@ -59961,7 +59936,7 @@ PixUl8_iOS_UIViews_FocusWheel_ShowAt_double_double_System_Action:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3216]
+ldr x0, [x16, #3200]
 .word 0xd2800401
 bl _p_3
 .word 0xaa0003e1
@@ -60078,7 +60053,7 @@ ldr x2, [x16, #16]
 .word 0xf90033a0
 .word 0xf90037a0
 .word 0x910143a0
-bl _p_672
+bl _p_671
 .word 0xf9402ba0
 .word 0xf9001ba0
 .word 0xf9402fa0
@@ -60134,17 +60109,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #3224]
+ldr x2, [x16, #3208]
 .word 0xf9001422
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #3232]
+ldr x2, [x16, #3216]
 .word 0xf9002022
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #3240]
+ldr x2, [x16, #3224]
 .word 0xf9401443
 .word 0xf9000c23
 .word 0xf9401042
@@ -60158,7 +60133,7 @@ ldr x2, [x16, #3240]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3248]
+ldr x0, [x16, #3232]
 .word 0xd2800e01
 bl _p_3
 .word 0xaa0003e2
@@ -60183,17 +60158,17 @@ ldr x4, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3256]
+ldr x0, [x16, #3240]
 .word 0xf9001440
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3264]
+ldr x0, [x16, #3248]
 .word 0xf9002040
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3272]
+ldr x0, [x16, #3256]
 .word 0xf9401403
 .word 0xf9000c43
 .word 0xf9401000
@@ -60206,7 +60181,7 @@ ldr x0, [x16, #3272]
 .word 0xf2e8021e
 .word 0x9e6703c1
 .word 0xd2800040
-bl _p_673
+bl _p_672
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8d07bfd
@@ -60291,7 +60266,7 @@ PixUl8_iOS_UIViews_FocusWheel__c__DisplayClass6_0__ShowAtb__1_bool:
 .word 0xf9400820
 .word 0xf9400c22
 .word 0x394063a1
-bl _p_674
+bl _p_673
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -60339,7 +60314,7 @@ PixUl8_iOS_UIViews_SwipeButton_TouchesEnded_Foundation_NSSet_UIKit_UIEvent:
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_600
+bl _p_599
 .word 0xf9400ba0
 .word 0xf9401800
 .word 0xb4000120
@@ -60365,7 +60340,7 @@ PixUl8_iOS_UIViews_SwipeButton__ctor:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_675
+bl _p_674
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -60389,7 +60364,7 @@ PixUl8_iOS_UIViews_TakeImageButton__ctor_CoreGraphics_CGRect_int:
 .word 0xb9003b3e
 .word 0xd280015e
 .word 0xb9003f3e
-bl _p_658
+bl _p_657
 .word 0xf9001b20
 .word 0x9100c321
 .word 0xd349fc21
@@ -60404,7 +60379,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .word 0xaa1903e0
-bl _p_675
+bl _p_674
 .word 0xb9805ba0
 .word 0xb9003f20
 .word 0xfd400fa0
@@ -60434,7 +60409,7 @@ bl _p_297
 .word 0xf9400321
 .word 0xf941b830
 .word 0xd63f0200
-bl _p_523
+bl _p_522
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xf9400322
@@ -60479,7 +60454,7 @@ PixUl8_iOS_UIViews_TakeImageButton_Draw_CoreGraphics_CGRect:
 .word 0xfd4013a1
 .word 0xfd4017a2
 .word 0xfd401ba3
-bl _p_432
+bl _p_431
 bl _p_342
 .word 0xf9005fa0
 .word 0x910263a0
@@ -60516,7 +60491,7 @@ bl _p_296
 .word 0xfd4043a1
 .word 0xfd4047a2
 .word 0xfd404ba3
-bl _p_584
+bl _p_583
 .word 0xfd007fa0
 .word 0x910163a0
 .word 0xf90063a0
@@ -60532,12 +60507,12 @@ bl _p_296
 .word 0xfd4033a1
 .word 0xfd4037a2
 .word 0xfd403ba3
-bl _p_585
+bl _p_584
 .word 0x1e604001
 .word 0xf9407ba1
 .word 0xfd407fa0
 .word 0xaa1a03e0
-bl _p_676
+bl _p_675
 .word 0xf90067bf
 .word 0x94000005
 .word 0xf94067a0
@@ -60586,20 +60561,20 @@ PixUl8_iOS_UIViews_TakeImageButton_DrawGraph_CoreGraphics_CGContext_System_nfloa
 .word 0xfd401ba0
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_664
+bl _p_663
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3112]
+ldr x0, [x16, #3096]
 bl _p_242
 .word 0xf9003ba0
-bl _p_646
+bl _p_645
 .word 0xf9403ba0
 .word 0xf90037a0
 .word 0xf9401b21
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_665
+bl _p_664
 .word 0xf94037a2
 .word 0xfd4013a0
 .word 0xfd4017a1
@@ -60623,12 +60598,12 @@ bl _p_665
 .word 0xd2800021
 .word 0x3940005e
 .word 0xf90033a2
-bl _p_666
+bl _p_665
 .word 0xf94033a1
 .word 0xaa1a03e0
 .word 0xf9002fa1
 .word 0x3940035e
-bl _p_667
+bl _p_666
 .word 0xf9402fa2
 .word 0xfd4013a0
 .word 0xfd4017a1
@@ -60654,15 +60629,15 @@ bl _p_667
 .word 0xd2800021
 .word 0x3940005e
 .word 0xf9002ba2
-bl _p_666
+bl _p_665
 .word 0xf9402ba1
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_667
+bl _p_666
 .word 0xaa1a03e0
 .word 0xd2800041
 .word 0x3940035e
-bl _p_668
+bl _p_667
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c87bfd
@@ -60728,11 +60703,11 @@ PixUl8_iOS_CustomRenderers_CameraFeedPreviewRenderer_OnElementPropertyChanged_ob
 .word 0xaa1803e0
 .word 0xaa1903e1
 .word 0xaa1a03e2
-bl _p_677
+bl _p_676
 .word 0x3940035e
 .word 0xf9400b59
 .word 0xaa1903e0
-bl _p_678
+bl _p_677
 .word 0xaa0003fa
 .word 0xaa1a03e0
 .word 0xd287bfc1
@@ -60796,7 +60771,7 @@ adrp x16, mono_aot_PixUL8_iOS_got@PAGE+0
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x1, [x16, #2744]
 .word 0xaa1903e0
-bl _p_443
+bl _p_442
 .word 0x53001c00
 .word 0x35000940
 .word 0x140000c0
@@ -60805,7 +60780,7 @@ adrp x16, mono_aot_PixUL8_iOS_got@PAGE+0
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x1, [x16, #2776]
 .word 0xaa1903e0
-bl _p_443
+bl _p_442
 .word 0x53001c00
 .word 0x35000a40
 .word 0x140000b8
@@ -60814,7 +60789,7 @@ adrp x16, mono_aot_PixUL8_iOS_got@PAGE+0
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x1, [x16, #2712]
 .word 0xaa1903e0
-bl _p_443
+bl _p_442
 .word 0x53001c00
 .word 0x35000ac0
 .word 0x140000b0
@@ -60823,7 +60798,7 @@ adrp x16, mono_aot_PixUL8_iOS_got@PAGE+0
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x1, [x16, #2808]
 .word 0xaa1903e0
-bl _p_443
+bl _p_442
 .word 0x53001c00
 .word 0x35000b00
 .word 0x140000a8
@@ -60832,7 +60807,7 @@ adrp x16, mono_aot_PixUL8_iOS_got@PAGE+0
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x1, [x16, #2840]
 .word 0xaa1903e0
-bl _p_443
+bl _p_442
 .word 0x53001c00
 .word 0x35000b80
 .word 0x140000a0
@@ -60841,7 +60816,7 @@ adrp x16, mono_aot_PixUL8_iOS_got@PAGE+0
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x1, [x16, #2872]
 .word 0xaa1903e0
-bl _p_443
+bl _p_442
 .word 0x53001c00
 .word 0x35000bc0
 .word 0x14000098
@@ -60850,7 +60825,7 @@ adrp x16, mono_aot_PixUL8_iOS_got@PAGE+0
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x1, [x16, #2904]
 .word 0xaa1903e0
-bl _p_443
+bl _p_442
 .word 0x53001c00
 .word 0x35000c40
 .word 0x14000090
@@ -60859,7 +60834,7 @@ adrp x16, mono_aot_PixUL8_iOS_got@PAGE+0
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x1, [x16, #2216]
 .word 0xaa1903e0
-bl _p_443
+bl _p_442
 .word 0x53001c00
 .word 0x35000cc0
 .word 0x14000088
@@ -60868,7 +60843,7 @@ adrp x16, mono_aot_PixUL8_iOS_got@PAGE+0
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x1, [x16, #2280]
 .word 0xaa1903e0
-bl _p_443
+bl _p_442
 .word 0x53001c00
 .word 0x35000d40
 .word 0x14000080
@@ -60877,42 +60852,42 @@ adrp x16, mono_aot_PixUL8_iOS_got@PAGE+0
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x1, [x16, #2992]
 .word 0xaa1903e0
-bl _p_443
+bl _p_442
 .word 0x53001c00
 .word 0x35000dc0
 .word 0x14000078
 .word 0xf9403f01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_679
+bl _p_678
 .word 0x53001c00
 .word 0x53001c1a
 .word 0xf9407702
 .word 0xaa0203e0
 .word 0xaa1a03e1
 .word 0x3940005e
-bl _p_680
+bl _p_679
 .word 0x34000d9a
 .word 0xf9407701
 .word 0xaa1803e0
-bl _p_681
+bl _p_680
 .word 0x14000068
 .word 0xf9403f01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_682
+bl _p_681
 .word 0x53001c00
 .word 0x53001c1a
 .word 0xf9407702
 .word 0xaa0203e0
 .word 0xaa1a03e1
 .word 0x3940005e
-bl _p_683
+bl _p_682
 .word 0x1400005c
 .word 0xf9403f01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_684
+bl _p_683
 .word 0x53001c01
 .word 0x53001c3a
 .word 0xf9407700
@@ -60922,19 +60897,19 @@ bl _p_684
 .word 0xf9403f01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_685
+bl _p_684
 .word 0x53001c00
 .word 0x53001c1a
 .word 0xf9407702
 .word 0xaa0203e0
 .word 0xaa1a03e1
 .word 0x3940005e
-bl _p_686
+bl _p_685
 .word 0x14000046
 .word 0xf9403f01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_687
+bl _p_686
 .word 0x53001c01
 .word 0x53001c3a
 .word 0xf9407700
@@ -60944,27 +60919,39 @@ bl _p_687
 .word 0xf9403f01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_688
+bl _p_687
 .word 0x53001c00
 .word 0x53001c1a
 .word 0xf9407702
 .word 0xaa0203e0
 .word 0xaa1a03e1
 .word 0x3940005e
-bl _p_689
+bl _p_688
 .word 0x14000030
 .word 0xf9403f01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_690
+bl _p_689
 .word 0x53001c00
 .word 0x53001c1a
 .word 0xf9407702
 .word 0xaa0203e0
 .word 0xaa1a03e1
 .word 0x3940005e
-bl _p_691
+bl _p_690
 .word 0x14000024
+.word 0xf9403f01
+.word 0xaa0103e0
+.word 0x3940003e
+bl _p_691
+.word 0x93407c00
+.word 0xaa0003fa
+.word 0xf9407702
+.word 0xaa0203e0
+.word 0xaa1a03e1
+.word 0x3940005e
+bl _p_656
+.word 0x14000018
 .word 0xf9403f01
 .word 0xaa0103e0
 .word 0x3940003e
@@ -60975,8 +60962,8 @@ bl _p_692
 .word 0xaa0203e0
 .word 0xaa1a03e1
 .word 0x3940005e
-bl _p_657
-.word 0x14000018
+bl _p_540
+.word 0x1400000c
 .word 0xf9403f01
 .word 0xaa0103e0
 .word 0x3940003e
@@ -60988,18 +60975,6 @@ bl _p_693
 .word 0xaa1a03e1
 .word 0x3940005e
 bl _p_541
-.word 0x1400000c
-.word 0xf9403f01
-.word 0xaa0103e0
-.word 0x3940003e
-bl _p_694
-.word 0x93407c00
-.word 0xaa0003fa
-.word 0xf9407702
-.word 0xaa0203e0
-.word 0xaa1a03e1
-.word 0x3940005e
-bl _p_542
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
@@ -61019,7 +60994,7 @@ PixUl8_iOS_CustomRenderers_CameraFeedPreviewRenderer_OnElementChanged_Xamarin_Fo
 .word 0xaa0103fa
 .word 0xf9400fa0
 .word 0xaa1a03e1
-bl _p_695
+bl _p_694
 .word 0xf9400fa0
 .word 0xf9406c00
 .word 0xb5000240
@@ -61027,19 +61002,19 @@ bl _p_695
 .word 0xf9400b41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_679
+bl _p_678
 .word 0x53001c00
 .word 0xf90013a0
 .word 0x3940035e
 .word 0xf9400b41
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_696
+bl _p_695
 .word 0x93407c00
 .word 0xaa0003e2
 .word 0xf94013a1
 .word 0xf9400fa0
-bl _p_697
+bl _p_696
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -61067,11 +61042,11 @@ bl _p_311
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3280]
+ldr x0, [x16, #3264]
 bl _p_242
 .word 0xf9001ba0
 .word 0xb98023a1
-bl _p_698
+bl _p_697
 .word 0xf9401ba0
 .word 0xf9007700
 .word 0x9103a301
@@ -61090,12 +61065,12 @@ ldr x2, [x16, #16]
 .word 0xaa0203e0
 .word 0x394063a1
 .word 0x3940005e
-bl _p_680
+bl _p_679
 .word 0x394063a0
 .word 0x34000080
 .word 0xf9407701
 .word 0xaa1803e0
-bl _p_681
+bl _p_680
 .word 0xf9400bb8
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -61111,7 +61086,7 @@ PixUl8_iOS_CustomRenderers_CameraFeedPreviewRenderer__ctor:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_699
+bl _p_698
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -61176,7 +61151,7 @@ PixUl8_ViewModels_BaseViewModel_SetProperty_T_GSHAREDVT_T_GSHAREDVT__T_GSHAREDVT
 .word 0xf90023a3
 .word 0xaa0403fa
 .word 0xf94027a0
-bl _p_700
+bl _p_699
 .word 0xaa0003f6
 .word 0xb98002c0
 .word 0x91003c10
@@ -61194,10 +61169,10 @@ bl _p_700
 .word 0x17fffffc
 .word 0x910003f5
 .word 0xf94027a0
-bl _p_701
+bl _p_700
 .word 0xf9002fa0
 .word 0xf94027a0
-bl _p_702
+bl _p_701
 .word 0xf9402faf
 .word 0xd63f0000
 .word 0xf9002ba0
@@ -61209,7 +61184,7 @@ bl _p_702
 .word 0xf9400ac3
 .word 0xd63f0060
 .word 0xf94027a0
-bl _p_703
+bl _p_702
 .word 0xaa0003e3
 .word 0xf9402ba0
 .word 0xb9801ac2
@@ -61228,7 +61203,7 @@ bl _p_703
 .word 0xf94006c0
 .word 0xf9400ac0
 .word 0xf94027a0
-bl _p_704
+bl _p_703
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402fa1
@@ -61260,7 +61235,7 @@ PixUl8_iOS_Models_EventArgsT_1_T_GSHAREDVT_get_Value:
 .word 0xf90017a0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_705
+bl _p_704
 .word 0xaa0003fa
 .word 0xb9800340
 .word 0x91003c10
@@ -61296,7 +61271,7 @@ bl _p_705
 .word 0xf9400f40
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_706
+bl _p_705
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xf9401fa1
@@ -61319,12 +61294,12 @@ PixUl8_iOS_Models_EventArgsT_1_T_GSHAREDVT__ctor_T_GSHAREDVT:
 .word 0xf90013a1
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_707
+bl _p_706
 .word 0xaa0003fa
 .word 0xb9800340
 .word 0xf90017bf
 .word 0xf9400fa0
-bl _p_708
+bl _p_707
 .word 0xf9400fa0
 .word 0xf9400741
 .word 0xd1000421
@@ -61337,7 +61312,7 @@ bl _p_708
 .word 0xf9400f40
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_709
+bl _p_708
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xf9401fa1
@@ -61363,10 +61338,10 @@ PixUl8_ViewModels_BaseViewModel_SetProperty_T_BOOL_T_BOOL__T_BOOL_string_System_
 .word 0xf9001ba3
 .word 0xaa0403fa
 .word 0xf9401fa0
-bl _p_710
+bl _p_709
 .word 0xf90023a0
 .word 0xf9401fa0
-bl _p_711
+bl _p_710
 .word 0xf94023af
 .word 0xd63f0000
 .word 0xaa0003e3
@@ -61413,10 +61388,10 @@ PixUl8_ViewModels_BaseViewModel_SetProperty_T_INT_T_INT__T_INT_string_System_Act
 .word 0xf9001ba3
 .word 0xaa0403fa
 .word 0xf9401fa0
-bl _p_712
+bl _p_711
 .word 0xf90023a0
 .word 0xf9401fa0
-bl _p_713
+bl _p_712
 .word 0xf94023af
 .word 0xd63f0000
 .word 0xaa0003e3
@@ -61462,7 +61437,7 @@ wrapper_delegate_invoke_System_Func_2_System_Type_string_invoke_TResult_T_System
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -61515,7 +61490,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -61643,7 +61618,7 @@ System_Array_InternalArray__ICollection_Contains_T_REF_T_REF:
 .word 0x14000016
 .loc 2 99 0
 .word 0xf9401fa0
-bl _p_715
+bl _p_714
 .word 0x93407ee0
 .word 0xd37df000
 .word 0x8b000320
@@ -61716,7 +61691,7 @@ System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int:
 .word 0xaa1603e1
 .word 0xf94013a2
 .word 0xb9802ba3
-bl _p_716
+bl _p_715
 .loc 2 119 0
 .word 0xf9400bb6
 .word 0x910003bf
@@ -61738,12 +61713,12 @@ System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF:
 .word 0x35000140
 .loc 2 71 0
 .word 0xf9401fa0
-bl _p_717
+bl _p_716
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 .word 0xf9401fa0
-bl _p_718
+bl _p_717
 .word 0xf9400000
 .word 0x14000025
 .loc 2 73 0
@@ -61753,17 +61728,17 @@ bl _p_718
 .word 0x9100a3a0
 .word 0xf90023a0
 .word 0xf9401fa0
-bl _p_719
+bl _p_718
 .word 0xaa0003ef
 .word 0xf94023a0
 .word 0xf9400ba1
-bl _p_720
+bl _p_719
 .word 0xf94017a0
 .word 0xf9000fa0
 .word 0xf9401ba0
 .word 0xf90013a0
 .word 0xf9401fa0
-bl _p_719
+bl _p_718
 .word 0xd2800401
 bl _p_3
 .word 0x91004003
@@ -61803,7 +61778,7 @@ wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_ColumnDefinition_invoke
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x350006c0
 .word 0x14000001
@@ -61859,7 +61834,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffc9
@@ -61882,7 +61857,7 @@ wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_ColumnDefinition_invoke_vo
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -61933,7 +61908,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -61957,7 +61932,7 @@ wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_ColumnDefinition_invok
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -62016,7 +61991,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
@@ -62039,7 +62014,7 @@ wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_RowDefinition_invoke_bo
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x350006c0
 .word 0x14000001
@@ -62095,7 +62070,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffc9
@@ -62118,7 +62093,7 @@ wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_RowDefinition_invoke_void_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -62169,7 +62144,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -62193,7 +62168,7 @@ wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_RowDefinition_invoke_i
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -62252,7 +62227,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
@@ -62275,7 +62250,7 @@ wrapper_delegate_invoke_System_Predicate_1_System_Threading_Tasks_Task_invoke_bo
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x350006c0
 .word 0x14000001
@@ -62331,7 +62306,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffc9
@@ -62354,7 +62329,7 @@ wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_invoke_void_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -62405,7 +62380,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -62429,7 +62404,7 @@ wrapper_delegate_invoke_System_Comparison_1_System_Threading_Tasks_Task_invoke_i
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -62488,7 +62463,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
@@ -62511,7 +62486,7 @@ wrapper_delegate_invoke_System_Func_2_Xamarin_Forms_RelativeLayout_double_invoke
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -62564,7 +62539,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -62654,7 +62629,7 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_SetStateMa
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400fa1
-bl _p_721
+bl _p_720
 .loc 3 486 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -62681,12 +62656,12 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_get_Task:
 .word 0xaa1903e0
 .word 0xb5000380
 .word 0xf94013a0
-bl _p_722
+bl _p_721
 .word 0xd2800a01
 bl _p_3
 .word 0xf9001fa0
 .word 0xf94013a0
-bl _p_723
+bl _p_722
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -62738,10 +62713,10 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_SetResult_
 .word 0xb5000300
 .loc 3 593 0
 .word 0xf94017a0
-bl _p_724
+bl _p_723
 .word 0xf9001ba0
 .word 0xf94017a0
-bl _p_725
+bl _p_724
 .word 0xaa0003e1
 .word 0xf9401baf
 .word 0x394083a0
@@ -62769,19 +62744,19 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3296]
+ldr x0, [x16, #3280]
 .word 0x39400000
 .word 0x340000c0
 .loc 3 605 0
 .word 0xaa1803e0
 .word 0x3940031e
-bl _p_726
+bl _p_725
 .word 0x93407c00
-bl _p_727
+bl _p_726
 .loc 3 608 0
 .word 0x3940031e
 .word 0xf94017a0
-bl _p_728
+bl _p_727
 .word 0xaa0003e2
 .word 0xaa1803e0
 .word 0x394083a1
@@ -62841,11 +62816,11 @@ ldr x2, [x16, #16]
 .word 0x1400000c
 .loc 3 636 0
 .word 0xf94013a0
-bl _p_729
+bl _p_728
 .word 0xf9001ba0
 .word 0x3940033e
 .word 0xf94013a0
-bl _p_730
+bl _p_729
 .word 0xaa0003e2
 .word 0xf9401baf
 .word 0xaa1903e0
@@ -62882,11 +62857,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_SetExcepti
 .word 0xb5000180
 .loc 3 657 0
 .word 0xf9401fa0
-bl _p_731
+bl _p_730
 .word 0xf90023a0
 .word 0x3940033e
 .word 0xf9401fa0
-bl _p_732
+bl _p_731
 .word 0xaa0003e1
 .word 0xf94023af
 .word 0xaa1903e0
@@ -62903,7 +62878,7 @@ bl _p_732
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3304]
+ldr x1, [x16, #3288]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800019
@@ -62913,7 +62888,7 @@ ldr x1, [x16, #3304]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0x3940031e
-bl _p_733
+bl _p_732
 .word 0x53001c1a
 .word 0x1400000b
 .word 0x394002fe
@@ -62924,7 +62899,7 @@ bl _p_733
 .word 0xf9401ba1
 .word 0xaa1703e2
 .word 0x3940031e
-bl _p_734
+bl _p_733
 .word 0x53001c1a
 .loc 3 673 0
 .word 0x340001da
@@ -62971,17 +62946,17 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL_GetTaskFor
 .word 0x14000001
 .loc 3 755 0
 .word 0xf94013a0
-bl _p_735
+bl _p_734
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3312]
+ldr x1, [x16, #3296]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000440
 .loc 3 757 0
 .word 0xf94013a0
-bl _p_736
+bl _p_735
 .word 0xd2800301
 bl _p_3
 .word 0x3900401a
@@ -63005,32 +62980,32 @@ ldr x2, [x16, #1736]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3320]
+ldr x0, [x16, #3304]
 .word 0xf940001a
 .word 0x14000005
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3328]
+ldr x0, [x16, #3312]
 .word 0xf940001a
 .word 0xf94013a0
 .loc 3 759 0
-bl _p_737
+bl _p_736
 .word 0xaa1a03e0
 .word 0x14000180
 .loc 3 762 0
 .word 0xf94013a0
-bl _p_735
+bl _p_734
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3336]
+ldr x1, [x16, #3320]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000640
 .loc 3 767 0
 .word 0xf94013a0
-bl _p_736
+bl _p_735
 .word 0xd2800301
 bl _p_3
 .word 0x3900401a
@@ -63062,7 +63037,7 @@ ldr x2, [x16, #2648]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3344]
+ldr x0, [x16, #3328]
 .word 0xf9400000
 .word 0x9280001e
 .word 0xf2bffffe
@@ -63079,22 +63054,22 @@ ldr x0, [x16, #3344]
 .word 0xf9001ba0
 .word 0xf94013a0
 .loc 3 772 0
-bl _p_737
+bl _p_736
 .word 0xaa0003e1
 .word 0xf9401ba0
 .word 0x14000147
 .loc 3 776 0
 .word 0xf94013a0
-bl _p_735
+bl _p_734
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3352]
+ldr x1, [x16, #3336]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340002a0
 .word 0xf94013a0
-bl _p_736
+bl _p_735
 .word 0xd2800301
 bl _p_3
 .word 0x3900401a
@@ -63115,16 +63090,16 @@ ldr x2, [x16, #2552]
 .word 0xb9401000
 .word 0x34002160
 .word 0xf94013a0
-bl _p_735
+bl _p_734
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3360]
+ldr x1, [x16, #3344]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340002a0
 .word 0xf94013a0
-bl _p_736
+bl _p_735
 .word 0xd2800301
 bl _p_3
 .word 0x3900401a
@@ -63138,23 +63113,23 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #3368]
+ldr x2, [x16, #3352]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x540022a1
 .word 0x39404000
 .word 0x34001de0
 .word 0xf94013a0
-bl _p_735
+bl _p_734
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3376]
+ldr x1, [x16, #3360]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340002a0
 .word 0xf94013a0
-bl _p_736
+bl _p_735
 .word 0xd2800301
 bl _p_3
 .word 0x3900401a
@@ -63168,23 +63143,23 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #3384]
+ldr x2, [x16, #3368]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54001f21
 .word 0x39804000
 .word 0x34001a60
 .word 0xf94013a0
-bl _p_735
+bl _p_734
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3392]
+ldr x1, [x16, #3376]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340002a0
 .word 0xf94013a0
-bl _p_736
+bl _p_735
 .word 0xd2800301
 bl _p_3
 .word 0x3900401a
@@ -63198,23 +63173,23 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #3400]
+ldr x2, [x16, #3384]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54001ba1
 .word 0x79402000
 .word 0x340016e0
 .word 0xf94013a0
-bl _p_735
+bl _p_734
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3408]
+ldr x1, [x16, #3392]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340002a0
 .word 0xf94013a0
-bl _p_736
+bl _p_735
 .word 0xd2800301
 bl _p_3
 .word 0x3900401a
@@ -63228,23 +63203,23 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #3416]
+ldr x2, [x16, #3400]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54001821
 .word 0xf9400800
 .word 0xb4001360
 .word 0xf94013a0
-bl _p_735
+bl _p_734
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3424]
+ldr x1, [x16, #3408]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340002a0
 .word 0xf94013a0
-bl _p_736
+bl _p_735
 .word 0xd2800301
 bl _p_3
 .word 0x3900401a
@@ -63258,23 +63233,23 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #3432]
+ldr x2, [x16, #3416]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x540014a1
 .word 0xf9400800
 .word 0xb4000fe0
 .word 0xf94013a0
-bl _p_735
+bl _p_734
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3440]
+ldr x1, [x16, #3424]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340002a0
 .word 0xf94013a0
-bl _p_736
+bl _p_735
 .word 0xd2800301
 bl _p_3
 .word 0x3900401a
@@ -63288,23 +63263,23 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #3448]
+ldr x2, [x16, #3432]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54001121
 .word 0x79802000
 .word 0x34000c60
 .word 0xf94013a0
-bl _p_735
+bl _p_734
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3456]
+ldr x1, [x16, #3440]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340002a0
 .word 0xf94013a0
-bl _p_736
+bl _p_735
 .word 0xd2800301
 bl _p_3
 .word 0x3900401a
@@ -63318,18 +63293,18 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #3464]
+ldr x2, [x16, #3448]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54000da1
 .word 0x79402000
 .word 0x340008e0
 .word 0xf94013a0
-bl _p_735
+bl _p_734
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3472]
+ldr x1, [x16, #3456]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000380
@@ -63337,7 +63312,7 @@ ldr x1, [x16, #3472]
 .word 0x93407c00
 .word 0xf9001ba0
 .word 0xf94013a0
-bl _p_736
+bl _p_735
 .word 0xd2800301
 bl _p_3
 .word 0xaa0003e1
@@ -63353,7 +63328,7 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x3, [x16, #3480]
+ldr x3, [x16, #3464]
 .word 0xeb03005f
 .word 0x10000011
 .word 0x54000981
@@ -63362,11 +63337,11 @@ ldr x3, [x16, #3480]
 .word 0x9a9f17e0
 .word 0x35000480
 .word 0xf94013a0
-bl _p_735
+bl _p_734
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3488]
+ldr x1, [x16, #3472]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340005e0
@@ -63374,7 +63349,7 @@ ldr x1, [x16, #3488]
 .word 0x2a0003e0
 .word 0xf9001ba0
 .word 0xf94013a0
-bl _p_736
+bl _p_735
 .word 0xd2800301
 bl _p_3
 .word 0xaa0003e1
@@ -63390,7 +63365,7 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x3, [x16, #3496]
+ldr x3, [x16, #3480]
 .word 0xeb03005f
 .word 0x10000011
 .word 0x54000521
@@ -63400,34 +63375,34 @@ ldr x3, [x16, #3496]
 .word 0x34000280
 .loc 3 791 0
 .word 0xf94013a0
-bl _p_738
+bl _p_737
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 .word 0xf94013a0
-bl _p_739
+bl _p_738
 .word 0xf9400000
 .word 0x14000018
 .loc 3 794 0
 .word 0x1400000a
 .loc 3 796 0
 .word 0xf94013a0
-bl _p_738
+bl _p_737
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 .word 0xf94013a0
-bl _p_739
+bl _p_738
 .word 0xf9400000
 .word 0x1400000e
 .loc 3 800 0
 .word 0xf94013a0
-bl _p_740
+bl _p_739
 .word 0xd2800a01
 bl _p_3
 .word 0xf9001fa0
 .word 0xf94013a0
-bl _p_741
+bl _p_740
 .word 0xaa0003e2
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -63459,17 +63434,17 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_BOOL__cctor:
 .word 0x910003fd
 .word 0xf9000baf
 .word 0xf9400ba0
-bl _p_742
+bl _p_741
 .word 0xf90017a0
 .word 0xf9400ba0
-bl _p_743
+bl _p_742
 .word 0xaa0003e1
 .word 0xf94017af
 .word 0xd2800000
 .word 0xd63f0020
 .word 0xf90013a0
 .word 0xf9400ba0
-bl _p_744
+bl _p_743
 .word 0xf94013a1
 .word 0xf9000001
 .word 0x910003bf
@@ -63487,7 +63462,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_745
+bl _p_744
 .loc 4 86 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -63508,7 +63483,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_object_System_Threading_Tasks_T
 .word 0xf9400fa1
 .word 0xb98023a2
 .word 0xd2800023
-bl _p_746
+bl _p_745
 .loc 4 92 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -63529,7 +63504,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL:
 .word 0xd2800001
 .word 0xd2800002
 .word 0xf94013a3
-bl _p_747
+bl _p_746
 .loc 4 99 0
 .word 0xf9400ba0
 .word 0x394063a1
@@ -63556,7 +63531,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_bool_TResult_BOOL_System_Thread
 .word 0x394063a1
 .word 0xb9802ba2
 .word 0xf9401ba3
-bl _p_747
+bl _p_746
 .loc 4 105 0
 .word 0x394063a0
 .word 0x35000080
@@ -63603,7 +63578,7 @@ ldr x0, [x16, #48]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3504]
+ldr x1, [x16, #3488]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -63621,7 +63596,7 @@ ldr x1, [x16, #3504]
 .word 0x394002fe
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_748
+bl _p_747
 .word 0xaa0003e9
 .word 0xaa1703e0
 .word 0xf9402ba1
@@ -63634,7 +63609,7 @@ bl _p_748
 .word 0xd63f0120
 .loc 4 303 0
 .word 0xf94017a0
-bl _p_749
+bl _p_748
 .loc 4 304 0
 .word 0xa94163b7
 .word 0xf94013b9
@@ -63665,10 +63640,10 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_System_Func_1_TResult_BOOL_Syst
 .word 0xb9803ba5
 .word 0xb98043a6
 .word 0xf94027a7
-bl _p_750
+bl _p_749
 .loc 4 319 0
 .word 0xf9400ba0
-bl _p_749
+bl _p_748
 .loc 4 320 0
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -63698,10 +63673,10 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_System_Delegate_object_System_T
 .word 0xb98043a5
 .word 0xb9804ba6
 .word 0xf9402ba7
-bl _p_750
+bl _p_749
 .loc 4 337 0
 .word 0xf9400ba0
-bl _p_749
+bl _p_748
 .loc 4 338 0
 .word 0x910003bf
 .word 0xa8c67bfd
@@ -63733,12 +63708,12 @@ System_Threading_Tasks_Task_1_TResult_BOOL_StartNew_System_Threading_Tasks_Task_
 .word 0x2a1e0000
 .word 0xf90037a0
 .word 0xf94027a0
-bl _p_751
+bl _p_750
 .word 0xd2800a01
 bl _p_3
 .word 0xf90033a0
 .word 0xf94027a0
-bl _p_752
+bl _p_751
 .word 0xaa0003e7
 .word 0xf94033a0
 .word 0xf94037a5
@@ -63756,7 +63731,7 @@ bl _p_752
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
-bl _p_753
+bl _p_752
 .word 0xf9402ba0
 .loc 4 358 0
 .word 0x910003bf
@@ -63808,12 +63783,12 @@ System_Threading_Tasks_Task_1_TResult_BOOL_StartNew_System_Threading_Tasks_Task_
 .word 0x2a1e0000
 .word 0xf9003fa0
 .word 0xf9402ba0
-bl _p_754
+bl _p_753
 .word 0xd2800a01
 bl _p_3
 .word 0xf9003ba0
 .word 0xf9402ba0
-bl _p_755
+bl _p_754
 .word 0xaa0003e9
 .word 0xf9403ba0
 .word 0xf9403fa6
@@ -63832,7 +63807,7 @@ bl _p_755
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
-bl _p_753
+bl _p_752
 .word 0xf94033a0
 .loc 4 378 0
 .word 0x910003bf
@@ -63888,7 +63863,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_TrySetResult_TResult_BOOL:
 .word 0xf2a08001
 .word 0xd2800002
 .word 0xf2a0ac02
-bl _p_756
+bl _p_755
 .word 0x53001c00
 .word 0x34000460
 .loc 4 419 0
@@ -63924,10 +63899,10 @@ bl _p_756
 .word 0xb4000080
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_757
+bl _p_756
 .loc 4 433 0
 .word 0xf9400fa0
-bl _p_758
+bl _p_757
 .loc 4 435 0
 .word 0xd2800020
 .word 0x14000002
@@ -63960,7 +63935,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_DangerousSetResult_TResult_BOOL:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_759
+bl _p_758
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0x394063a1
@@ -64023,7 +63998,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_get_Result:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_760
+bl _p_759
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xd2800021
@@ -64078,20 +64053,20 @@ System_Threading_Tasks_Task_1_TResult_BOOL_GetResultCore_bool:
 .word 0x92800001
 .word 0xf2bfffe1
 .word 0xf94013a2
-bl _p_761
+bl _p_760
 .loc 4 504 0
 .word 0x394063a0
 .word 0x34000060
 .word 0xf9400ba0
-bl _p_762
+bl _p_761
 .loc 4 507 0
 .word 0xf9400ba0
-bl _p_763
+bl _p_762
 .word 0x53001c00
 .word 0x35000080
 .word 0xf9400ba0
 .word 0xd2800021
-bl _p_764
+bl _p_763
 .loc 4 512 0
 .word 0xf9400ba0
 .word 0x39412000
@@ -64109,20 +64084,20 @@ System_Threading_Tasks_Task_1_TResult_BOOL_get_Factory:
 .word 0x910003fd
 .word 0xf9000baf
 .word 0xf9400ba0
-bl _p_765
+bl _p_764
 .word 0xf9400000
 .word 0xb5000500
 .loc 4 528 0
 .word 0xf9400ba0
-bl _p_765
+bl _p_764
 .word 0xf90017a0
 .word 0xf9400ba0
-bl _p_766
+bl _p_765
 .word 0xd2800501
 bl _p_3
 .word 0xf9001fa0
 .word 0xf9400ba0
-bl _p_767
+bl _p_766
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xf90013a0
@@ -64130,7 +64105,7 @@ bl _p_767
 .word 0xd2800000
 .word 0xf9001ba0
 .word 0xf9400ba0
-bl _p_768
+bl _p_767
 .word 0xaa0003e3
 .word 0xf94013a0
 .word 0xf94017a1
@@ -64155,7 +64130,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 4 529 0
 .word 0xf9400ba0
-bl _p_765
+bl _p_764
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -64176,11 +64151,11 @@ System_Threading_Tasks_Task_1_TResult_BOOL_InnerInvoke:
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_769
+bl _p_768
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400441
-bl _p_770
+bl _p_769
 .word 0xaa0003fa
 .loc 4 543 0
 .word 0xaa1a03e0
@@ -64202,11 +64177,11 @@ bl _p_770
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_771
+bl _p_770
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400441
-bl _p_770
+bl _p_769
 .word 0xaa0003fa
 .loc 4 549 0
 .word 0xaa1a03e0
@@ -64244,11 +64219,11 @@ System_Threading_Tasks_Task_1_TResult_BOOL_GetAwaiter:
 .word 0xf9001ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_772
+bl _p_771
 .word 0xf90023a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_773
+bl _p_772
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xf9401fa1
@@ -64280,11 +64255,11 @@ System_Threading_Tasks_Task_1_TResult_BOOL_ConfigureAwait_bool:
 .word 0xf90023a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_774
+bl _p_773
 .word 0xf9002ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_775
+bl _p_774
 .word 0xaa0003e3
 .word 0xf94023a0
 .word 0xf94027a1
@@ -64313,7 +64288,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_T
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf90023a0
-bl _p_776
+bl _p_775
 .word 0xaa0003e1
 .word 0xf94023a0
 .word 0xf9001fa1
@@ -64322,7 +64297,7 @@ bl _p_776
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_777
+bl _p_776
 .word 0xaa0003e5
 .word 0xf9401ba0
 .word 0xf9401fa2
@@ -64351,7 +64326,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_T
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_778
+bl _p_777
 .word 0xaa0003e5
 .word 0xf9401ba0
 .word 0xf9400fa1
@@ -64381,7 +64356,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_T
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_779
+bl _p_778
 .word 0xaa0003e5
 .word 0xf94023a0
 .word 0xf9400fa1
@@ -64417,7 +64392,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_T
 .word 0x910103a1
 .word 0x910123a2
 .word 0xb9803ba0
-bl _p_780
+bl _p_779
 .loc 4 755 0
 .word 0xf9400fa0
 .word 0xf90033a0
@@ -64427,13 +64402,13 @@ bl _p_780
 .word 0xf9003ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_781
+bl _p_780
 .word 0xd2800a01
 bl _p_3
 .word 0xf9002fa0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_782
+bl _p_781
 .word 0xaa0003e6
 .word 0xf9402fa0
 .word 0xf94033a1
@@ -64451,7 +64426,7 @@ bl _p_782
 .word 0xf94013a2
 .word 0xf94017a3
 .word 0xb9803ba4
-bl _p_783
+bl _p_782
 .loc 4 764 0
 .word 0xaa1803e0
 .word 0xf9400bb8
@@ -64493,7 +64468,7 @@ System_Threading_Tasks_TaskFactory_1_TResult_BOOL__ctor:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_784
+bl _p_783
 .word 0xaa0003e5
 .word 0xf94013a0
 .word 0xf9400fa1
@@ -64520,7 +64495,7 @@ System_Threading_Tasks_TaskFactory_1_TResult_BOOL__ctor_System_Threading_Cancell
 .word 0xf9001ba3
 .word 0xf9001fa4
 .word 0xb98033a0
-bl _p_785
+bl _p_784
 .loc 5 211 0
 .word 0xb9802ba0
 .word 0x92800bfe
@@ -64682,7 +64657,7 @@ bl _p_316
 .word 0xaa0303e0
 .word 0xf9401fa1
 .word 0x3940007e
-bl _p_734
+bl _p_733
 .loc 5 548 0
 .word 0x14000039
 .loc 5 549 0
@@ -64693,7 +64668,7 @@ bl _p_734
 .word 0xf9402ba1
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_733
+bl _p_732
 .loc 5 556 0
 .word 0x14000031
 .loc 5 559 0
@@ -64712,18 +64687,18 @@ bl _p_733
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3512]
+ldr x0, [x16, #3496]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3296]
+ldr x0, [x16, #3280]
 .word 0x39400000
 .word 0x34000060
 .word 0xf9403fa0
-bl _p_786
+bl _p_785
 .loc 5 563 0
 .word 0x3940c3a0
 .word 0x340001a0
@@ -64734,7 +64709,7 @@ bl _p_786
 .word 0x3940001e
 .word 0xf9007ba0
 .word 0xf94027a0
-bl _p_787
+bl _p_786
 .word 0xaa0003e2
 .word 0xf9407ba0
 .word 0xf9407fa1
@@ -64748,7 +64723,7 @@ bl _p_787
 .word 0x3940001e
 .word 0xf9007ba0
 .word 0xf94027a0
-bl _p_788
+bl _p_787
 .word 0xaa0003e2
 .word 0xf9407ba0
 .word 0xf9407fa1
@@ -64779,11 +64754,11 @@ System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsync_System_Func_3_System
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_789
+bl _p_788
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_790
+bl _p_789
 .word 0xaa0003e5
 .word 0xf9401ba4
 .word 0xf9401faf
@@ -64815,12 +64790,12 @@ System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsyncImpl_System_Func_3_Sy
 .word 0xf90023bf
 .word 0x390123bf
 .word 0xf9401fa0
-bl _p_791
+bl _p_790
 .word 0xd2800501
 bl _p_3
 .word 0xf90057a0
 .word 0xf9401fa0
-bl _p_792
+bl _p_791
 .word 0xaa0003e1
 .word 0xf94057a0
 .word 0xf90053a0
@@ -64869,17 +64844,17 @@ ldr x2, [x16, #16]
 .loc 5 778 0
 .word 0xaa1a03e0
 .word 0xd2800021
-bl _p_793
+bl _p_792
 .loc 5 780 0
 .word 0xf94023a0
 .word 0xf90057a0
 .word 0xf9401fa0
-bl _p_794
+bl _p_793
 .word 0xd2800a01
 bl _p_3
 .word 0xf9005ba0
 .word 0xf9401fa0
-bl _p_795
+bl _p_794
 .word 0xaa0003e3
 .word 0xf9405ba0
 .word 0xf90053a0
@@ -64910,18 +64885,18 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3512]
+ldr x0, [x16, #3496]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3296]
+ldr x0, [x16, #3280]
 .word 0x39400000
 .word 0x34000080
 .word 0xaa1a03e0
-bl _p_796
+bl _p_795
 .word 0x14000001
 .loc 5 788 0
 .word 0xf94023a0
@@ -64932,7 +64907,7 @@ bl _p_796
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3520]
+ldr x0, [x16, #3504]
 .word 0xd2800e01
 bl _p_3
 .word 0xaa0003e1
@@ -64955,19 +64930,19 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .word 0xf9401fa0
-bl _p_797
+bl _p_796
 .word 0xaa0003e1
 .word 0xf94057a0
 .word 0xf9001401
 .word 0xf90053a0
 .word 0xf9401fa0
-bl _p_798
+bl _p_797
 .word 0xf94053a1
 .word 0xf9002020
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3528]
+ldr x0, [x16, #3512]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -64985,7 +64960,7 @@ ldr x0, [x16, #3528]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3536]
+ldr x15, [x16, #3520]
 .word 0x928003f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -65003,10 +64978,10 @@ ldr x15, [x16, #3536]
 .word 0xf9401000
 .word 0xf9005ba0
 .word 0xf9401fa0
-bl _p_799
+bl _p_798
 .word 0xf9005fa0
 .word 0xf9401fa0
-bl _p_800
+bl _p_799
 .word 0xaa0003e5
 .word 0xf94053a1
 .word 0xf94057a2
@@ -65036,18 +65011,18 @@ bl _p_800
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3512]
+ldr x0, [x16, #3496]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3296]
+ldr x0, [x16, #3280]
 .word 0x39400000
 .word 0x34000060
 .word 0xf9403fa0
-bl _p_786
+bl _p_785
 .loc 5 806 0
 .word 0xf94023a0
 .word 0xf9401000
@@ -65057,14 +65032,14 @@ bl _p_786
 .word 0x3940001e
 .word 0xf90053a0
 .word 0xf9401fa0
-bl _p_801
+bl _p_800
 .word 0xaa0003e2
 .word 0xf94053a0
 .word 0xf94057a1
 .word 0xd63f0040
 .loc 5 807 0
 .word 0xf9402ba0
-bl _p_802
+bl _p_801
 .loc 5 810 0
 .word 0xf94023a0
 .word 0xf9401000
@@ -65185,7 +65160,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL_OnCompleted_System_Ac
 .word 0xf9400fa1
 .word 0xd2800022
 .word 0xd2800023
-bl _p_803
+bl _p_802
 .loc 6 290 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -65211,7 +65186,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL_UnsafeOnCompleted_Sys
 .word 0xf9400fa1
 .word 0xd2800022
 .word 0xd2800003
-bl _p_803
+bl _p_802
 .loc 6 300 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -65233,7 +65208,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL_GetResult:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_804
+bl _p_803
 .loc 6 311 0
 .word 0xf9400ba0
 .word 0xf9400000
@@ -65314,7 +65289,7 @@ System_Array_InternalArray__IndexOf_T_REF_T_REF:
 .word 0x14000024
 .loc 2 154 0
 .word 0xf9401fa0
-bl _p_805
+bl _p_804
 .word 0x93407ee0
 .word 0xd37df000
 .word 0x8b000320
@@ -65397,7 +65372,7 @@ System_Array_InternalArray__get_Item_T_REF_int:
 .word 0x540001c2
 .loc 2 179 0
 .word 0xf94013a0
-bl _p_806
+bl _p_805
 .word 0x93407f40
 .word 0xd37df001
 .word 0xf9400fa0
@@ -65454,13 +65429,13 @@ System_Array_InternalArray__set_Item_T_REF_int_T_REF:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3544]
+ldr x1, [x16, #3528]
 .word 0xeb01001f
 .word 0x540000e1
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3552]
+ldr x0, [x16, #3536]
 .word 0xeb0002df
 .word 0x54000040
 .word 0xd2800017
@@ -65478,7 +65453,7 @@ ldr x0, [x16, #3552]
 .word 0x14000014
 .loc 2 193 0
 .word 0xf9401fa0
-bl _p_807
+bl _p_806
 .word 0xb9802ba0
 .word 0x93407c00
 .word 0xd37df000
@@ -65527,7 +65502,7 @@ wrapper_delegate_invoke_System_Action_1_PixUl8_App_invoke_void_T_PixUl8_App:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -65578,7 +65553,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -65602,7 +65577,7 @@ wrapper_delegate_invoke_System_Action_2_PixUl8_App_int_invoke_void_T1_T2_PixUl8_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000680
 .word 0x14000001
@@ -65656,7 +65631,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
@@ -65677,7 +65652,7 @@ wrapper_delegate_invoke_System_Func_1_System_Threading_Tasks_Task_invoke_TResult
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x350005e0
 .word 0x14000001
@@ -65726,7 +65701,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
@@ -65845,7 +65820,7 @@ System_Nullable_1_Acr_UserDialogs_ToastPosition_Equals_object:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3560]
+ldr x1, [x16, #3544]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -65861,7 +65836,7 @@ ldr x15, [x16, #3728]
 .word 0x9100a3a0
 .word 0xf9001ba0
 .word 0xaa1a03e0
-bl _p_808
+bl _p_807
 .word 0xf9401bbe
 .word 0xf90003c0
 
@@ -65870,7 +65845,7 @@ add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x15, [x16, #3728]
 .word 0xf94013a0
 .word 0xf94017a1
-bl _p_809
+bl _p_808
 .word 0x53001c00
 .word 0xf9400bb8
 .word 0xf9400fba
@@ -65914,7 +65889,7 @@ System_Nullable_1_Acr_UserDialogs_ToastPosition_Equals_System_Nullable_1_Acr_Use
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3568]
+ldr x0, [x16, #3552]
 .word 0xd2800281
 bl _p_3
 .word 0xf94023a1
@@ -65925,7 +65900,7 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3568]
+ldr x0, [x16, #3552]
 .word 0xd2800281
 bl _p_3
 .word 0xaa0003e2
@@ -65934,7 +65909,7 @@ bl _p_3
 .word 0xb9001040
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_810
+bl _p_809
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -66009,7 +65984,7 @@ System_Nullable_1_Acr_UserDialogs_ToastPosition_ToString:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3568]
+ldr x0, [x16, #3552]
 .word 0xd2800281
 bl _p_3
 .word 0xaa0003e1
@@ -66017,7 +65992,7 @@ bl _p_3
 .word 0xb9001020
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_555
+bl _p_554
 .word 0x14000005
 .loc 7 155 0
 
@@ -66053,7 +66028,7 @@ System_Nullable_1_Acr_UserDialogs_ToastPosition_Box_System_Nullable_1_Acr_UserDi
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3568]
+ldr x0, [x16, #3552]
 .word 0xd2800281
 bl _p_3
 .word 0xf94013a1
@@ -66155,7 +66130,7 @@ System_Nullable_1_Acr_UserDialogs_ToastPosition_UnboxExact_object:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3576]
+ldr x1, [x16, #3560]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0xd2800001
@@ -66220,7 +66195,7 @@ wrapper_delegate_invoke_System_Action_2_bool_Foundation_NSError_invoke_void_T1_T
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000680
 .word 0x14000001
@@ -66274,7 +66249,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
@@ -66298,7 +66273,7 @@ wrapper_delegate_invoke_System_EventHandler_1_System_ComponentModel_PropertyChan
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000680
 .word 0x14000001
@@ -66352,7 +66327,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
@@ -66482,20 +66457,20 @@ ldr x1, [x16, #1736]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3584]
+ldr x15, [x16, #3568]
 .word 0x9100a3a0
 .word 0xf9001ba0
 .word 0xaa1a03e0
-bl _p_811
+bl _p_810
 .word 0xf9401bbe
 .word 0xf90003c0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3584]
+ldr x15, [x16, #3568]
 .word 0xf94013a0
 .word 0xf94017a1
-bl _p_812
+bl _p_811
 .word 0x53001c00
 .word 0xf9400bb8
 .word 0xf9400fba
@@ -66548,7 +66523,7 @@ bl _p_3
 .word 0xf9401ba0
 .word 0xf9401fa2
 .word 0x39004022
-bl _p_813
+bl _p_812
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -66628,12 +66603,12 @@ System_Nullable_1_bool_ToString:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x26, [x16, #3592]
+ldr x26, [x16, #3576]
 .word 0x14000004
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x26, [x16, #3600]
+ldr x26, [x16, #3584]
 .word 0xaa1a03e0
 .word 0x14000005
 .loc 7 155 0
@@ -66728,8 +66703,8 @@ ldr x2, [x16, #1736]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3584]
-bl _p_814
+ldr x15, [x16, #3568]
+bl _p_813
 .word 0x3980a3a0
 .word 0x390043a0
 .word 0x3980a7a0
@@ -66773,7 +66748,7 @@ System_Nullable_1_bool_UnboxExact_object:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3608]
+ldr x1, [x16, #3592]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0xd2800001
@@ -66802,8 +66777,8 @@ ldr x1, [x16, #1736]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3584]
-bl _p_814
+ldr x15, [x16, #3568]
+bl _p_813
 .word 0x3980a3a0
 .word 0x390063a0
 .word 0x3980a7a0
@@ -66838,7 +66813,7 @@ wrapper_delegate_invoke_System_EventHandler_1_Xamarin_Forms_Platform_iOS_VisualE
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000680
 .word 0x14000001
@@ -66892,7 +66867,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
@@ -66916,7 +66891,7 @@ wrapper_delegate_invoke_System_EventHandler_1_Xamarin_Forms_Platform_iOS_Element
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000680
 .word 0x14000001
@@ -66970,7 +66945,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
@@ -66993,7 +66968,7 @@ wrapper_delegate_invoke_System_Predicate_1_System_EventHandler_1_Xamarin_Forms_P
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x350006c0
 .word 0x14000001
@@ -67049,7 +67024,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffc9
@@ -67072,7 +67047,7 @@ wrapper_delegate_invoke_System_Action_1_System_EventHandler_1_Xamarin_Forms_Plat
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -67123,7 +67098,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -67147,7 +67122,7 @@ wrapper_delegate_invoke_System_Comparison_1_System_EventHandler_1_Xamarin_Forms_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -67206,7 +67181,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
@@ -67229,7 +67204,7 @@ wrapper_delegate_invoke_System_Predicate_1_UIKit_UIImage_invoke_bool_T_UIKit_UII
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x350006c0
 .word 0x14000001
@@ -67285,7 +67260,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffc9
@@ -67308,7 +67283,7 @@ wrapper_delegate_invoke_System_Action_1_UIKit_UIImage_invoke_void_T_UIKit_UIImag
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -67359,7 +67334,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -67383,7 +67358,7 @@ wrapper_delegate_invoke_System_Comparison_1_UIKit_UIImage_invoke_int_T_T_UIKit_U
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -67442,7 +67417,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
@@ -67460,7 +67435,7 @@ System_Threading_Tasks_Task_1_TResult_LONG__ctor:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_745
+bl _p_744
 .loc 4 86 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -67481,7 +67456,7 @@ System_Threading_Tasks_Task_1_TResult_LONG__ctor_object_System_Threading_Tasks_T
 .word 0xf9400fa1
 .word 0xb98023a2
 .word 0xd2800023
-bl _p_746
+bl _p_745
 .loc 4 92 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -67502,7 +67477,7 @@ System_Threading_Tasks_Task_1_TResult_LONG__ctor_TResult_LONG:
 .word 0xd2800001
 .word 0xd2800002
 .word 0xf94013a3
-bl _p_747
+bl _p_746
 .loc 4 99 0
 .word 0xf9400ba0
 .word 0xf9400fa1
@@ -67529,7 +67504,7 @@ System_Threading_Tasks_Task_1_TResult_LONG__ctor_bool_TResult_LONG_System_Thread
 .word 0x394063a1
 .word 0xb9802ba2
 .word 0xf9401ba3
-bl _p_747
+bl _p_746
 .loc 4 105 0
 .word 0x394063a0
 .word 0x35000080
@@ -67576,7 +67551,7 @@ ldr x0, [x16, #48]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3504]
+ldr x1, [x16, #3488]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -67594,7 +67569,7 @@ ldr x1, [x16, #3504]
 .word 0x394002fe
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_815
+bl _p_814
 .word 0xaa0003e9
 .word 0xaa1703e0
 .word 0xf9402ba1
@@ -67607,7 +67582,7 @@ bl _p_815
 .word 0xd63f0120
 .loc 4 303 0
 .word 0xf94017a0
-bl _p_749
+bl _p_748
 .loc 4 304 0
 .word 0xa94163b7
 .word 0xf94013b9
@@ -67638,10 +67613,10 @@ System_Threading_Tasks_Task_1_TResult_LONG__ctor_System_Func_1_TResult_LONG_Syst
 .word 0xb9803ba5
 .word 0xb98043a6
 .word 0xf94027a7
-bl _p_750
+bl _p_749
 .loc 4 319 0
 .word 0xf9400ba0
-bl _p_749
+bl _p_748
 .loc 4 320 0
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -67671,10 +67646,10 @@ System_Threading_Tasks_Task_1_TResult_LONG__ctor_System_Delegate_object_System_T
 .word 0xb98043a5
 .word 0xb9804ba6
 .word 0xf9402ba7
-bl _p_750
+bl _p_749
 .loc 4 337 0
 .word 0xf9400ba0
-bl _p_749
+bl _p_748
 .loc 4 338 0
 .word 0x910003bf
 .word 0xa8c67bfd
@@ -67706,12 +67681,12 @@ System_Threading_Tasks_Task_1_TResult_LONG_StartNew_System_Threading_Tasks_Task_
 .word 0x2a1e0000
 .word 0xf90037a0
 .word 0xf94027a0
-bl _p_816
+bl _p_815
 .word 0xd2800a01
 bl _p_3
 .word 0xf90033a0
 .word 0xf94027a0
-bl _p_817
+bl _p_816
 .word 0xaa0003e7
 .word 0xf94033a0
 .word 0xf94037a5
@@ -67729,7 +67704,7 @@ bl _p_817
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
-bl _p_753
+bl _p_752
 .word 0xf9402ba0
 .loc 4 358 0
 .word 0x910003bf
@@ -67781,12 +67756,12 @@ System_Threading_Tasks_Task_1_TResult_LONG_StartNew_System_Threading_Tasks_Task_
 .word 0x2a1e0000
 .word 0xf9003fa0
 .word 0xf9402ba0
-bl _p_818
+bl _p_817
 .word 0xd2800a01
 bl _p_3
 .word 0xf9003ba0
 .word 0xf9402ba0
-bl _p_819
+bl _p_818
 .word 0xaa0003e9
 .word 0xf9403ba0
 .word 0xf9403fa6
@@ -67805,7 +67780,7 @@ bl _p_819
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
-bl _p_753
+bl _p_752
 .word 0xf94033a0
 .loc 4 378 0
 .word 0x910003bf
@@ -67861,7 +67836,7 @@ System_Threading_Tasks_Task_1_TResult_LONG_TrySetResult_TResult_LONG:
 .word 0xf2a08001
 .word 0xd2800002
 .word 0xf2a0ac02
-bl _p_756
+bl _p_755
 .word 0x53001c00
 .word 0x34000460
 .loc 4 419 0
@@ -67897,10 +67872,10 @@ bl _p_756
 .word 0xb4000080
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_757
+bl _p_756
 .loc 4 433 0
 .word 0xf9400fa0
-bl _p_758
+bl _p_757
 .loc 4 435 0
 .word 0xd2800020
 .word 0x14000002
@@ -67933,7 +67908,7 @@ System_Threading_Tasks_Task_1_TResult_LONG_DangerousSetResult_TResult_LONG:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_820
+bl _p_819
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400fa1
@@ -67996,7 +67971,7 @@ System_Threading_Tasks_Task_1_TResult_LONG_get_Result:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_821
+bl _p_820
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xd2800021
@@ -68050,20 +68025,20 @@ System_Threading_Tasks_Task_1_TResult_LONG_GetResultCore_bool:
 .word 0x92800001
 .word 0xf2bfffe1
 .word 0xf94013a2
-bl _p_761
+bl _p_760
 .loc 4 504 0
 .word 0x394063a0
 .word 0x34000060
 .word 0xf9400ba0
-bl _p_762
+bl _p_761
 .loc 4 507 0
 .word 0xf9400ba0
-bl _p_763
+bl _p_762
 .word 0x53001c00
 .word 0x35000080
 .word 0xf9400ba0
 .word 0xd2800021
-bl _p_764
+bl _p_763
 .loc 4 512 0
 .word 0xf9400ba0
 .word 0xf9402400
@@ -68081,20 +68056,20 @@ System_Threading_Tasks_Task_1_TResult_LONG_get_Factory:
 .word 0x910003fd
 .word 0xf9000baf
 .word 0xf9400ba0
-bl _p_822
+bl _p_821
 .word 0xf9400000
 .word 0xb5000500
 .loc 4 528 0
 .word 0xf9400ba0
-bl _p_822
+bl _p_821
 .word 0xf90017a0
 .word 0xf9400ba0
-bl _p_823
+bl _p_822
 .word 0xd2800501
 bl _p_3
 .word 0xf9001fa0
 .word 0xf9400ba0
-bl _p_824
+bl _p_823
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xf90013a0
@@ -68102,7 +68077,7 @@ bl _p_824
 .word 0xd2800000
 .word 0xf9001ba0
 .word 0xf9400ba0
-bl _p_825
+bl _p_824
 .word 0xaa0003e3
 .word 0xf94013a0
 .word 0xf94017a1
@@ -68127,7 +68102,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 4 529 0
 .word 0xf9400ba0
-bl _p_822
+bl _p_821
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -68148,11 +68123,11 @@ System_Threading_Tasks_Task_1_TResult_LONG_InnerInvoke:
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_826
+bl _p_825
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400441
-bl _p_770
+bl _p_769
 .word 0xaa0003fa
 .loc 4 543 0
 .word 0xaa1a03e0
@@ -68174,11 +68149,11 @@ bl _p_770
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_827
+bl _p_826
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400441
-bl _p_770
+bl _p_769
 .word 0xaa0003fa
 .loc 4 549 0
 .word 0xaa1a03e0
@@ -68216,11 +68191,11 @@ System_Threading_Tasks_Task_1_TResult_LONG_GetAwaiter:
 .word 0xf9001ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_828
+bl _p_827
 .word 0xf90023a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_829
+bl _p_828
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xf9401fa1
@@ -68252,11 +68227,11 @@ System_Threading_Tasks_Task_1_TResult_LONG_ConfigureAwait_bool:
 .word 0xf90023a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_830
+bl _p_829
 .word 0xf9002ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_831
+bl _p_830
 .word 0xaa0003e3
 .word 0xf94023a0
 .word 0xf94027a1
@@ -68285,7 +68260,7 @@ System_Threading_Tasks_Task_1_TResult_LONG_ContinueWith_System_Action_1_System_T
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf90023a0
-bl _p_776
+bl _p_775
 .word 0xaa0003e1
 .word 0xf94023a0
 .word 0xf9001fa1
@@ -68294,7 +68269,7 @@ bl _p_776
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_832
+bl _p_831
 .word 0xaa0003e5
 .word 0xf9401ba0
 .word 0xf9401fa2
@@ -68323,7 +68298,7 @@ System_Threading_Tasks_Task_1_TResult_LONG_ContinueWith_System_Action_1_System_T
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_833
+bl _p_832
 .word 0xaa0003e5
 .word 0xf9401ba0
 .word 0xf9400fa1
@@ -68353,7 +68328,7 @@ System_Threading_Tasks_Task_1_TResult_LONG_ContinueWith_System_Action_1_System_T
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_834
+bl _p_833
 .word 0xaa0003e5
 .word 0xf94023a0
 .word 0xf9400fa1
@@ -68389,7 +68364,7 @@ System_Threading_Tasks_Task_1_TResult_LONG_ContinueWith_System_Action_1_System_T
 .word 0x910103a1
 .word 0x910123a2
 .word 0xb9803ba0
-bl _p_780
+bl _p_779
 .loc 4 755 0
 .word 0xf9400fa0
 .word 0xf90033a0
@@ -68399,13 +68374,13 @@ bl _p_780
 .word 0xf9003ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_835
+bl _p_834
 .word 0xd2800a01
 bl _p_3
 .word 0xf9002fa0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_836
+bl _p_835
 .word 0xaa0003e6
 .word 0xf9402fa0
 .word 0xf94033a1
@@ -68423,7 +68398,7 @@ bl _p_836
 .word 0xf94013a2
 .word 0xf94017a3
 .word 0xb9803ba4
-bl _p_783
+bl _p_782
 .loc 4 764 0
 .word 0xaa1803e0
 .word 0xf9400bb8
@@ -68464,7 +68439,7 @@ System_Threading_Tasks_TaskFactory_1_TResult_LONG__ctor:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_837
+bl _p_836
 .word 0xaa0003e5
 .word 0xf94013a0
 .word 0xf9400fa1
@@ -68491,7 +68466,7 @@ System_Threading_Tasks_TaskFactory_1_TResult_LONG__ctor_System_Threading_Cancell
 .word 0xf9001ba3
 .word 0xf9001fa4
 .word 0xb98033a0
-bl _p_785
+bl _p_784
 .loc 5 211 0
 .word 0xb9802ba0
 .word 0x92800bfe
@@ -68652,7 +68627,7 @@ bl _p_316
 .word 0xaa0303e0
 .word 0xf9401fa1
 .word 0x3940007e
-bl _p_734
+bl _p_733
 .loc 5 548 0
 .word 0x14000039
 .loc 5 549 0
@@ -68663,7 +68638,7 @@ bl _p_734
 .word 0xf9402ba1
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_733
+bl _p_732
 .loc 5 556 0
 .word 0x14000031
 .loc 5 559 0
@@ -68682,18 +68657,18 @@ bl _p_733
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3512]
+ldr x0, [x16, #3496]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3296]
+ldr x0, [x16, #3280]
 .word 0x39400000
 .word 0x34000060
 .word 0xf9403fa0
-bl _p_786
+bl _p_785
 .loc 5 563 0
 .word 0x3940c3a0
 .word 0x340001a0
@@ -68704,7 +68679,7 @@ bl _p_786
 .word 0x3940001e
 .word 0xf9007ba0
 .word 0xf94027a0
-bl _p_838
+bl _p_837
 .word 0xaa0003e2
 .word 0xf9407ba0
 .word 0xf9407fa1
@@ -68718,7 +68693,7 @@ bl _p_838
 .word 0x3940001e
 .word 0xf9007ba0
 .word 0xf94027a0
-bl _p_839
+bl _p_838
 .word 0xaa0003e2
 .word 0xf9407ba0
 .word 0xf9407fa1
@@ -68749,11 +68724,11 @@ System_Threading_Tasks_TaskFactory_1_TResult_LONG_FromAsync_System_Func_3_System
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_840
+bl _p_839
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_841
+bl _p_840
 .word 0xaa0003e5
 .word 0xf9401ba4
 .word 0xf9401faf
@@ -68785,12 +68760,12 @@ System_Threading_Tasks_TaskFactory_1_TResult_LONG_FromAsyncImpl_System_Func_3_Sy
 .word 0xf90023bf
 .word 0xf90027bf
 .word 0xf9401fa0
-bl _p_842
+bl _p_841
 .word 0xd2800501
 bl _p_3
 .word 0xf90057a0
 .word 0xf9401fa0
-bl _p_843
+bl _p_842
 .word 0xaa0003e1
 .word 0xf94057a0
 .word 0xf90053a0
@@ -68839,17 +68814,17 @@ ldr x2, [x16, #16]
 .loc 5 778 0
 .word 0xaa1a03e0
 .word 0xd2800021
-bl _p_793
+bl _p_792
 .loc 5 780 0
 .word 0xf94023a0
 .word 0xf90057a0
 .word 0xf9401fa0
-bl _p_844
+bl _p_843
 .word 0xd2800a01
 bl _p_3
 .word 0xf9005ba0
 .word 0xf9401fa0
-bl _p_845
+bl _p_844
 .word 0xaa0003e3
 .word 0xf9405ba0
 .word 0xf90053a0
@@ -68880,18 +68855,18 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3512]
+ldr x0, [x16, #3496]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3296]
+ldr x0, [x16, #3280]
 .word 0x39400000
 .word 0x34000080
 .word 0xaa1a03e0
-bl _p_796
+bl _p_795
 .word 0x14000001
 .loc 5 788 0
 .word 0xf94023a0
@@ -68902,7 +68877,7 @@ bl _p_796
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3520]
+ldr x0, [x16, #3504]
 .word 0xd2800e01
 bl _p_3
 .word 0xaa0003e1
@@ -68925,19 +68900,19 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .word 0xf9401fa0
-bl _p_846
+bl _p_845
 .word 0xaa0003e1
 .word 0xf94057a0
 .word 0xf9001401
 .word 0xf90053a0
 .word 0xf9401fa0
-bl _p_847
+bl _p_846
 .word 0xf94053a1
 .word 0xf9002020
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3528]
+ldr x0, [x16, #3512]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -68955,7 +68930,7 @@ ldr x0, [x16, #3528]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3536]
+ldr x15, [x16, #3520]
 .word 0x928003f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -68973,10 +68948,10 @@ ldr x15, [x16, #3536]
 .word 0xf9401000
 .word 0xf9005ba0
 .word 0xf9401fa0
-bl _p_848
+bl _p_847
 .word 0xf9005fa0
 .word 0xf9401fa0
-bl _p_849
+bl _p_848
 .word 0xaa0003e5
 .word 0xf94053a1
 .word 0xf94057a2
@@ -69006,18 +68981,18 @@ bl _p_849
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3512]
+ldr x0, [x16, #3496]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3296]
+ldr x0, [x16, #3280]
 .word 0x39400000
 .word 0x34000060
 .word 0xf9403fa0
-bl _p_786
+bl _p_785
 .loc 5 806 0
 .word 0xf94023a0
 .word 0xf9401000
@@ -69027,14 +69002,14 @@ bl _p_786
 .word 0x3940001e
 .word 0xf90053a0
 .word 0xf9401fa0
-bl _p_850
+bl _p_849
 .word 0xaa0003e2
 .word 0xf94053a0
 .word 0xf94057a1
 .word 0xd63f0040
 .loc 5 807 0
 .word 0xf9402ba0
-bl _p_802
+bl _p_801
 .loc 5 810 0
 .word 0xf94023a0
 .word 0xf9401000
@@ -69154,7 +69129,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_TResult_LONG_OnCompleted_System_Ac
 .word 0xf9400fa1
 .word 0xd2800022
 .word 0xd2800023
-bl _p_803
+bl _p_802
 .loc 6 290 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -69180,7 +69155,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_TResult_LONG_UnsafeOnCompleted_Sys
 .word 0xf9400fa1
 .word 0xd2800022
 .word 0xd2800003
-bl _p_803
+bl _p_802
 .loc 6 300 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -69202,7 +69177,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_TResult_LONG_GetResult:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_804
+bl _p_803
 .loc 6 311 0
 .word 0xf9400ba0
 .word 0xf9400000
@@ -69228,7 +69203,7 @@ wrapper_delegate_invoke_System_Action_1_UserNotifications_UNNotificationPresenta
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -69279,7 +69254,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -69303,7 +69278,7 @@ wrapper_delegate_invoke_System_EventHandler_1_Google_MobileAds_InterstitialDidFa
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000680
 .word 0x14000001
@@ -69357,7 +69332,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
@@ -69380,7 +69355,7 @@ wrapper_delegate_invoke_System_Predicate_1_AVFoundation_AVCapturePhotoSettings_i
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x350006c0
 .word 0x14000001
@@ -69436,7 +69411,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffc9
@@ -69459,7 +69434,7 @@ wrapper_delegate_invoke_System_Action_1_AVFoundation_AVCapturePhotoSettings_invo
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -69510,7 +69485,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -69534,7 +69509,7 @@ wrapper_delegate_invoke_System_Comparison_1_AVFoundation_AVCapturePhotoSettings_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -69593,7 +69568,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
@@ -69616,7 +69591,7 @@ wrapper_delegate_invoke_System_Action_1_UIKit_UIPinchGestureRecognizer_invoke_vo
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -69667,7 +69642,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -69690,7 +69665,7 @@ wrapper_delegate_invoke_System_Func_2_AVFoundation_AVCaptureDevice_bool_invoke_T
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x350006c0
 .word 0x14000001
@@ -69746,7 +69721,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffc9
@@ -69769,7 +69744,7 @@ wrapper_delegate_invoke_System_Predicate_1_AVFoundation_AVCaptureDevice_invoke_b
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x350006c0
 .word 0x14000001
@@ -69825,7 +69800,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffc9
@@ -69848,7 +69823,7 @@ wrapper_delegate_invoke_System_Action_1_AVFoundation_AVCaptureDevice_invoke_void
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -69899,7 +69874,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -69923,7 +69898,7 @@ wrapper_delegate_invoke_System_Comparison_1_AVFoundation_AVCaptureDevice_invoke_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -69982,7 +69957,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
@@ -70005,7 +69980,7 @@ wrapper_delegate_invoke_System_Func_2_AVFoundation_AVFrameRateRange_double_invok
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -70058,7 +70033,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -70082,7 +70057,7 @@ wrapper_delegate_invoke_System_EventHandler_1_UIKit_UIImagePickerMediaPickedEven
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000680
 .word 0x14000001
@@ -70136,7 +70111,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
@@ -70159,7 +70134,7 @@ wrapper_delegate_invoke_System_Action_1_PixUl8_iOS_AppDelegate_invoke_void_T_Pix
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -70210,7 +70185,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -70233,7 +70208,7 @@ wrapper_delegate_invoke_System_Action_1_Foundation_NSSet_invoke_void_T_Foundatio
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -70284,7 +70259,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -70306,13 +70281,13 @@ System_Collections_Generic_List_1_T_INT__ctor:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_851
+bl _p_850
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_852
+bl _p_851
 .word 0xf94013a1
 .word 0xf9400000
 .word 0xf9000820
@@ -70355,13 +70330,13 @@ System_Collections_Generic_List_1_T_INT__ctor_int:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_853
+bl _p_852
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_854
+bl _p_853
 .word 0xf94013a1
 .word 0xf9400000
 .word 0xf9000820
@@ -70383,7 +70358,7 @@ ldr x2, [x16, #16]
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_855
+bl _p_854
 .word 0xb9801ba1
 bl _p_20
 .word 0xf94013a1
@@ -70407,7 +70382,7 @@ ldr x2, [x16, #16]
 .loc 8 52 0
 .word 0xd2800180
 .word 0xd2800081
-bl _p_856
+bl _p_855
 .word 0x17ffffca
 
 Lme_2b9:
@@ -70425,11 +70400,11 @@ System_Collections_Generic_List_1_T_INT__ctor_System_Collections_Generic_IEnumer
 .loc 8 69 0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_857
+bl _p_856
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1a03e0
-bl _p_770
+bl _p_769
 .word 0xaa0003f9
 .loc 8 70 0
 .word 0xaa1903e0
@@ -70437,7 +70412,7 @@ bl _p_770
 .loc 8 72 0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_858
+bl _p_857
 .word 0xaa0003ef
 .word 0xaa1903e0
 .word 0xf9400321
@@ -70455,13 +70430,13 @@ bl _p_858
 .word 0xf9001ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_859
+bl _p_858
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_860
+bl _p_859
 .word 0xf9401ba1
 .word 0xf9400000
 .word 0xf9000820
@@ -70484,7 +70459,7 @@ ldr x2, [x16, #16]
 .word 0xf9001fa0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_861
+bl _p_860
 .word 0xaa1a03e1
 bl _p_20
 .word 0xf9401fa1
@@ -70507,7 +70482,7 @@ ldr x2, [x16, #16]
 .word 0xf9001ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_862
+bl _p_861
 .word 0xaa0003ef
 .word 0xf9401ba1
 .word 0xaa1903e0
@@ -70530,13 +70505,13 @@ bl _p_862
 .word 0xf9001fa0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_859
+bl _p_858
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_860
+bl _p_859
 .word 0xf9401fa1
 .word 0xf9400000
 .word 0xf9000820
@@ -70558,7 +70533,7 @@ ldr x2, [x16, #16]
 .word 0xf9001ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_863
+bl _p_862
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xaa1a03e1
@@ -70570,7 +70545,7 @@ bl _p_863
 .word 0xd65f03c0
 .loc 8 67 0
 .word 0xd28000c0
-bl _p_864
+bl _p_863
 .word 0x17ffff7d
 
 Lme_2ba:
@@ -70617,7 +70592,7 @@ System_Collections_Generic_List_1_T_INT_set_Capacity_int:
 .loc 8 113 0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_865
+bl _p_864
 .word 0xaa1a03e1
 bl _p_20
 .word 0xaa0003fa
@@ -70635,7 +70610,7 @@ bl _p_20
 .word 0xd2800001
 .word 0xaa1a03e2
 .word 0xd2800003
-bl _p_716
+bl _p_715
 .loc 8 118 0
 .word 0xf9400fa0
 .word 0xf900081a
@@ -70658,13 +70633,13 @@ ldr x1, [x16, #16]
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_866
+bl _p_865
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_867
+bl _p_866
 .word 0xf94013a1
 .word 0xf9400000
 .word 0xf9000820
@@ -70688,7 +70663,7 @@ ldr x2, [x16, #16]
 .loc 8 106 0
 .word 0xd28001e0
 .word 0xd28002a1
-bl _p_856
+bl _p_855
 .word 0x17ffffb7
 
 Lme_2bc:
@@ -70784,7 +70759,7 @@ System_Collections_Generic_List_1_T_INT_System_Collections_ICollection_get_SyncR
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3616]
+ldr x0, [x16, #3600]
 .word 0xd2800201
 bl _p_3
 .word 0xf94013a1
@@ -70792,7 +70767,7 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x3, [x16, #3624]
+ldr x3, [x16, #3608]
 .word 0xc85f7c30
 .word 0xeb02021f
 .word 0x54000061
@@ -70853,7 +70828,7 @@ System_Collections_Generic_List_1_T_INT_get_Item_int:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 8 180 0
-bl _p_868
+bl _p_867
 .word 0x17fffff0
 .word 0xd2801f60
 .word 0xaa1103e1
@@ -70900,7 +70875,7 @@ System_Collections_Generic_List_1_T_INT_set_Item_int_T_INT:
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 8 189 0
-bl _p_868
+bl _p_867
 .word 0x17ffffea
 .word 0xd2801f60
 .word 0xaa1103e1
@@ -70917,16 +70892,16 @@ System_Collections_Generic_List_1_T_INT_IsCompatibleObject_object:
 .word 0xf9000faf
 .word 0xf9000ba0
 .word 0xf9400fa0
-bl _p_869
+bl _p_868
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xf9400ba0
-bl _p_770
+bl _p_769
 .word 0xb50001c0
 .word 0xf9400ba0
 .word 0xb5000140
 .word 0xf9400fa0
-bl _p_870
+bl _p_869
 .word 0xd2800301
 bl _p_3
 .word 0xb900101f
@@ -70956,7 +70931,7 @@ System_Collections_Generic_List_1_T_INT_System_Collections_IList_get_Item_int:
 .word 0xf90017a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_871
+bl _p_870
 .word 0xaa0003e2
 .word 0xf94017a0
 .word 0xb9801ba1
@@ -70965,7 +70940,7 @@ bl _p_871
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_872
+bl _p_871
 .word 0xd2800301
 bl _p_3
 .word 0xf94013a1
@@ -70989,11 +70964,11 @@ System_Collections_Generic_List_1_T_INT_System_Collections_IList_set_Item_int_ob
 .word 0xf9002ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_873
+bl _p_872
 .word 0xf9002fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_874
+bl _p_873
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402faf
@@ -71014,7 +70989,7 @@ bl _p_874
 .word 0xf9003ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_875
+bl _p_874
 .word 0xaa0003e3
 .word 0xf94033a0
 .word 0xf94037a1
@@ -71028,7 +71003,7 @@ bl _p_875
 .word 0xf9002ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_876
+bl _p_875
 .word 0xaa0003e3
 .word 0xf9402ba0
 .word 0xf9402fa2
@@ -71042,10 +71017,10 @@ bl _p_876
 .word 0xf9002ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_877
+bl _p_876
 .word 0xaa0003e1
 .word 0xf9402ba0
-bl _p_878
+bl _p_877
 .loc 8 220 0
 bl _p_70
 .word 0xf90027a0
@@ -71111,7 +71086,7 @@ System_Collections_Generic_List_1_T_INT_Add_T_INT:
 .word 0xf9001ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_879
+bl _p_878
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xb9802ba1
@@ -71146,7 +71121,7 @@ System_Collections_Generic_List_1_T_INT_AddWithResize_T_INT:
 .word 0xf90017a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_880
+bl _p_879
 .word 0xaa0003e2
 .word 0xf94017a0
 .word 0xf9401ba1
@@ -71191,11 +71166,11 @@ System_Collections_Generic_List_1_T_INT_System_Collections_IList_Add_object:
 .word 0xf9002ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_881
+bl _p_880
 .word 0xf9002fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_882
+bl _p_881
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402faf
@@ -71216,7 +71191,7 @@ bl _p_882
 .word 0xf9003ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_883
+bl _p_882
 .word 0xaa0003e3
 .word 0xf94033a0
 .word 0xf94037a1
@@ -71230,7 +71205,7 @@ bl _p_883
 .word 0xf9002ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_884
+bl _p_883
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402fa1
@@ -71243,10 +71218,10 @@ bl _p_884
 .word 0xf9002ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_885
+bl _p_884
 .word 0xaa0003e1
 .word 0xf9402ba0
-bl _p_878
+bl _p_877
 .loc 8 266 0
 bl _p_70
 .word 0xf90023a0
@@ -71261,7 +71236,7 @@ bl _p_71
 .word 0xf9002ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_886
+bl _p_885
 .word 0xaa0003e1
 .word 0xf9402ba0
 .word 0xd63f0020
@@ -71292,7 +71267,7 @@ System_Collections_Generic_List_1_T_INT_AddRange_System_Collections_Generic_IEnu
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_887
+bl _p_886
 .word 0xaa0003e3
 .word 0xf94013a0
 .word 0xf94017a1
@@ -71316,13 +71291,13 @@ System_Collections_Generic_List_1_T_INT_AsReadOnly:
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_888
+bl _p_887
 .word 0xd2800401
 bl _p_3
 .word 0xf90017a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_889
+bl _p_888
 .word 0xaa0003e2
 .word 0xf94017a0
 .word 0xf9401ba1
@@ -71369,11 +71344,11 @@ System_Collections_Generic_List_1_T_INT_BinarySearch_int_int_T_INT_System_Collec
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_890
+bl _p_889
 .word 0xf90027a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_891
+bl _p_890
 .word 0xaa0003e5
 .word 0xf94023a0
 .word 0xf94027af
@@ -71387,16 +71362,16 @@ bl _p_891
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .loc 8 308 0
-bl _p_892
+bl _p_891
 .word 0x17ffffde
 .loc 8 310 0
 .word 0xd2800200
 .word 0xd2800081
-bl _p_856
+bl _p_855
 .word 0x17ffffde
 .loc 8 312 0
 .word 0xd28002e0
-bl _p_893
+bl _p_892
 .word 0x17ffffe2
 
 Lme_2cd:
@@ -71417,7 +71392,7 @@ System_Collections_Generic_List_1_T_INT_BinarySearch_T_INT_System_Collections_Ge
 .word 0xf90027a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_894
+bl _p_893
 .word 0xaa0003e1
 .word 0xf94027a0
 .word 0xd63f0020
@@ -71429,7 +71404,7 @@ bl _p_894
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_895
+bl _p_894
 .word 0xaa0003e5
 .word 0xf9401ba0
 .word 0xf9401fa2
@@ -71453,7 +71428,7 @@ System_Collections_Generic_List_1_T_INT_Clear:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_896
+bl _p_895
 .word 0xd2800000
 .word 0x6b1f001f
 .loc 8 344 0
@@ -71488,7 +71463,7 @@ System_Collections_Generic_List_1_T_INT_Contains_T_INT:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_897
+bl _p_896
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xb9801ba1
@@ -71519,11 +71494,11 @@ System_Collections_Generic_List_1_T_INT_System_Collections_IList_Contains_object
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_898
+bl _p_897
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_899
+bl _p_898
 .word 0xaa0003e1
 .word 0xf94013af
 .word 0xf9400fa0
@@ -71544,7 +71519,7 @@ bl _p_899
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_900
+bl _p_899
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xf9401fa1
@@ -71558,7 +71533,7 @@ bl _p_900
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_901
+bl _p_900
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf94017a1
@@ -71589,7 +71564,7 @@ System_Collections_Generic_List_1_T_INT_CopyTo_T_INT__:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_902
+bl _p_901
 .word 0xaa0003e3
 .word 0xf94013a0
 .word 0xf9400fa1
@@ -71627,7 +71602,7 @@ System_Collections_Generic_List_1_T_INT_System_Collections_ICollection_CopyTo_Sy
 .word 0xd2800001
 .word 0xf9400fa2
 .word 0xb98023a3
-bl _p_716
+bl _p_715
 .loc 8 411 0
 .word 0x14000010
 .word 0xf90017a0
@@ -71653,7 +71628,7 @@ bl _p_71
 .word 0xd65f03c0
 .loc 8 404 0
 .word 0xd28000e0
-bl _p_893
+bl _p_892
 .word 0x17ffffe3
 
 Lme_2d3:
@@ -71683,14 +71658,14 @@ System_Collections_Generic_List_1_T_INT_CopyTo_int_T_INT___int_int:
 .word 0xf94013a2
 .word 0xb9802ba3
 .word 0xb98033a4
-bl _p_716
+bl _p_715
 .loc 8 431 0
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 8 426 0
 .word 0xd28002e0
-bl _p_893
+bl _p_892
 .word 0x17fffff4
 
 Lme_2d4:
@@ -71711,7 +71686,7 @@ System_Collections_Generic_List_1_T_INT_CopyTo_T_INT___int:
 .word 0xd2800001
 .word 0xf9400fa2
 .word 0xb98023a3
-bl _p_716
+bl _p_715
 .loc 8 437 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -71764,7 +71739,7 @@ System_Collections_Generic_List_1_T_INT_EnsureCapacity_int:
 .word 0xf9001ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_903
+bl _p_902
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xaa1803e1
@@ -71834,7 +71809,7 @@ System_Collections_Generic_List_1_T_INT_Find_System_Predicate_1_T_INT:
 .word 0xd65f03c0
 .loc 8 470 0
 .word 0xd2800100
-bl _p_864
+bl _p_863
 .word 0x17ffffd6
 .word 0xd2801f60
 .word 0xaa1103e1
@@ -71898,7 +71873,7 @@ System_Collections_Generic_List_1_T_INT_ForEach_System_Action_1_T_INT:
 .word 0xd65f03c0
 .loc 8 608 0
 .word 0xd2800420
-bl _p_864
+bl _p_863
 .word 0x17ffffda
 .loc 8 623 0
 .word 0xd2858540
@@ -71934,11 +71909,11 @@ System_Collections_Generic_List_1_T_INT_GetEnumerator:
 .word 0xf9002ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_904
+bl _p_903
 .word 0xf90033a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_905
+bl _p_904
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402fa1
@@ -71993,11 +71968,11 @@ System_Collections_Generic_List_1_T_INT_System_Collections_Generic_IEnumerable_T
 .word 0xf9002ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_906
+bl _p_905
 .word 0xf90033a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_907
+bl _p_906
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402fa1
@@ -72011,7 +71986,7 @@ bl _p_907
 .word 0xf90017a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_906
+bl _p_905
 .word 0xd2800501
 bl _p_3
 .word 0x91004003
@@ -72058,11 +72033,11 @@ System_Collections_Generic_List_1_T_INT_System_Collections_IEnumerable_GetEnumer
 .word 0xf9002ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_908
+bl _p_907
 .word 0xf90033a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_909
+bl _p_908
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402fa1
@@ -72076,7 +72051,7 @@ bl _p_909
 .word 0xf90017a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_908
+bl _p_907
 .word 0xd2800501
 bl _p_3
 .word 0x91004003
@@ -72122,11 +72097,11 @@ System_Collections_Generic_List_1_T_INT_IndexOf_T_INT:
 .word 0xf90017a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_910
+bl _p_909
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_911
+bl _p_910
 .word 0xaa0003e4
 .word 0xf94013a0
 .word 0xf94017a3
@@ -72151,11 +72126,11 @@ System_Collections_Generic_List_1_T_INT_System_Collections_IList_IndexOf_object:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_912
+bl _p_911
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_913
+bl _p_912
 .word 0xaa0003e1
 .word 0xf94013af
 .word 0xf9400fa0
@@ -72176,7 +72151,7 @@ bl _p_913
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_914
+bl _p_913
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xf9401fa1
@@ -72190,7 +72165,7 @@ bl _p_914
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_915
+bl _p_914
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf94017a1
@@ -72234,11 +72209,11 @@ System_Collections_Generic_List_1_T_INT_IndexOf_T_INT_int:
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_916
+bl _p_915
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_917
+bl _p_916
 .word 0xaa0003e4
 .word 0xf9401ba0
 .word 0xf9401fa3
@@ -72251,7 +72226,7 @@ bl _p_917
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .loc 8 704 0
-bl _p_868
+bl _p_867
 .word 0x17ffffe5
 
 Lme_2de:
@@ -72289,11 +72264,11 @@ System_Collections_Generic_List_1_T_INT_IndexOf_T_INT_int_int:
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_918
+bl _p_917
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_919
+bl _p_918
 .word 0xaa0003e4
 .word 0xf9401ba0
 .word 0xf9401faf
@@ -72306,10 +72281,10 @@ bl _p_919
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 8 720 0
-bl _p_868
+bl _p_867
 .word 0x17ffffdf
 .loc 8 723 0
-bl _p_920
+bl _p_919
 .word 0x17ffffe8
 
 Lme_2df:
@@ -72345,7 +72320,7 @@ System_Collections_Generic_List_1_T_INT_Insert_int_T_INT:
 .word 0xf9001ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_921
+bl _p_920
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xf9401fa1
@@ -72365,7 +72340,7 @@ bl _p_921
 .word 0xb9802021
 .word 0x4b190024
 .word 0xaa1903e1
-bl _p_716
+bl _p_715
 .loc 8 744 0
 .word 0xf9400fa0
 .word 0xf9400800
@@ -72399,7 +72374,7 @@ bl _p_716
 .loc 8 737 0
 .word 0xd28001a0
 .word 0xd2800361
-bl _p_856
+bl _p_855
 .word 0x17ffffc0
 .word 0xd2801f60
 .word 0xaa1103e1
@@ -72420,11 +72395,11 @@ System_Collections_Generic_List_1_T_INT_System_Collections_IList_Insert_int_obje
 .word 0xf9002ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_922
+bl _p_921
 .word 0xf9002fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_923
+bl _p_922
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402faf
@@ -72445,7 +72420,7 @@ bl _p_923
 .word 0xf9003ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_924
+bl _p_923
 .word 0xaa0003e3
 .word 0xf94033a0
 .word 0xf94037a1
@@ -72459,7 +72434,7 @@ bl _p_924
 .word 0xf9002ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_925
+bl _p_924
 .word 0xaa0003e3
 .word 0xf9402ba0
 .word 0xf9402fa2
@@ -72473,10 +72448,10 @@ bl _p_925
 .word 0xf9002ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_926
+bl _p_925
 .word 0xaa0003e1
 .word 0xf9402ba0
-bl _p_878
+bl _p_877
 .loc 8 760 0
 bl _p_70
 .word 0xf90027a0
@@ -72516,11 +72491,11 @@ System_Collections_Generic_List_1_T_INT_InsertRange_int_System_Collections_Gener
 .loc 8 780 0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_927
+bl _p_926
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1a03e0
-bl _p_770
+bl _p_769
 .word 0xaa0003f8
 .loc 8 781 0
 .word 0xaa1803e0
@@ -72528,7 +72503,7 @@ bl _p_770
 .loc 8 783 0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_928
+bl _p_927
 .word 0xaa0003ef
 .word 0xaa1803e0
 .word 0xf9400301
@@ -72553,7 +72528,7 @@ bl _p_928
 .word 0xf90033a0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_929
+bl _p_928
 .word 0xaa0003e2
 .word 0xf94033a0
 .word 0xf94037a1
@@ -72573,7 +72548,7 @@ bl _p_929
 .word 0xb9802021
 .word 0x4b190024
 .word 0xaa1903e1
-bl _p_716
+bl _p_715
 .loc 8 793 0
 .word 0xf94017a0
 .word 0xeb18001f
@@ -72586,7 +72561,7 @@ bl _p_716
 .word 0xd2800001
 .word 0xaa1903e3
 .word 0xaa1903e4
-bl _p_716
+bl _p_715
 .loc 8 798 0
 .word 0xf94017a0
 .word 0xf9400800
@@ -72597,7 +72572,7 @@ bl _p_716
 .word 0xf94017a4
 .word 0xb9802084
 .word 0x4b190084
-bl _p_716
+bl _p_715
 .loc 8 799 0
 .word 0x14000010
 .loc 8 802 0
@@ -72606,7 +72581,7 @@ bl _p_716
 .word 0xf90033a0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_930
+bl _p_929
 .word 0xaa0003ef
 .word 0xf94033a1
 .word 0xaa1803e0
@@ -72632,7 +72607,7 @@ bl _p_930
 .loc 8 810 0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_931
+bl _p_930
 .word 0xaa0003ef
 .word 0xaa1a03e0
 .word 0xf9400341
@@ -72652,7 +72627,7 @@ bl _p_931
 .word 0xf90043a0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_932
+bl _p_931
 .word 0xaa0003ef
 .word 0xf94043a1
 .word 0xaa0103e0
@@ -72669,7 +72644,7 @@ bl _p_932
 .word 0xf90033a0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_933
+bl _p_932
 .word 0xaa0003e3
 .word 0xf94033a0
 .word 0xf94037a1
@@ -72682,7 +72657,7 @@ bl _p_933
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3632]
+ldr x15, [x16, #3616]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -72718,7 +72693,7 @@ ldr x15, [x16, #360]
 .word 0xf90033a0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_934
+bl _p_933
 .word 0xaa0003e2
 .word 0xf94033a0
 .word 0xaa1a03e1
@@ -72736,11 +72711,11 @@ bl _p_934
 .word 0xa8c97bfd
 .word 0xd65f03c0
 .loc 8 777 0
-bl _p_868
+bl _p_867
 .word 0x17ffff39
 .loc 8 772 0
 .word 0xd28000c0
-bl _p_864
+bl _p_863
 .word 0x17ffff32
 
 Lme_2e2:
@@ -72759,7 +72734,7 @@ System_Collections_Generic_List_1_T_INT_Remove_T_INT:
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_935
+bl _p_934
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xaa1a03e1
@@ -72777,7 +72752,7 @@ bl _p_935
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_936
+bl _p_935
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xaa1a03e1
@@ -72804,11 +72779,11 @@ System_Collections_Generic_List_1_T_INT_System_Collections_IList_Remove_object:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_937
+bl _p_936
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_938
+bl _p_937
 .word 0xaa0003e1
 .word 0xf94013af
 .word 0xf9400fa0
@@ -72829,7 +72804,7 @@ bl _p_938
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_939
+bl _p_938
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xf9401fa1
@@ -72843,7 +72818,7 @@ bl _p_939
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_940
+bl _p_939
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf94017a1
@@ -72966,7 +72941,7 @@ System_Collections_Generic_List_1_T_INT_RemoveAll_System_Predicate_1_T_INT:
 .loc 8 951 0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_941
+bl _p_940
 .word 0xd2800000
 .word 0x6b1f001f
 .loc 8 956 0
@@ -72990,7 +72965,7 @@ bl _p_941
 .word 0xd65f03c0
 .loc 8 929 0
 .word 0xd2800100
-bl _p_864
+bl _p_863
 .word 0x17ffff94
 .word 0xd2801f60
 .word 0xaa1103e1
@@ -73032,11 +73007,11 @@ System_Collections_Generic_List_1_T_INT_RemoveAt_int:
 .word 0xb9802063
 .word 0x4b1a0064
 .word 0xaa1a03e3
-bl _p_716
+bl _p_715
 .loc 8 975 0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_942
+bl _p_941
 .word 0xd2800000
 .word 0x6b1f001f
 .loc 8 979 0
@@ -73051,7 +73026,7 @@ bl _p_942
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 8 968 0
-bl _p_868
+bl _p_867
 .word 0x17ffffde
 
 Lme_2e6:
@@ -73107,7 +73082,7 @@ System_Collections_Generic_List_1_T_INT_RemoveRange_int_int:
 .word 0xb9802063
 .word 0x4b190064
 .word 0xaa1903e3
-bl _p_716
+bl _p_715
 .loc 8 1007 0
 .word 0xf94013a0
 .word 0xf94013a1
@@ -73117,7 +73092,7 @@ bl _p_716
 .loc 8 1008 0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_943
+bl _p_942
 .word 0xd2800000
 .word 0x6b1f001f
 .loc 8 1013 0
@@ -73126,16 +73101,16 @@ bl _p_943
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 8 987 0
-bl _p_892
+bl _p_891
 .word 0x17ffffd1
 .loc 8 992 0
 .word 0xd2800200
 .word 0xd2800081
-bl _p_856
+bl _p_855
 .word 0x17ffffd0
 .loc 8 996 0
 .word 0xd28002e0
-bl _p_893
+bl _p_892
 .word 0x17ffffd2
 
 Lme_2e7:
@@ -73154,7 +73129,7 @@ System_Collections_Generic_List_1_T_INT_Reverse:
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_944
+bl _p_943
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xd63f0020
@@ -73166,7 +73141,7 @@ bl _p_944
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_945
+bl _p_944
 .word 0xaa0003e3
 .word 0xf94013a0
 .word 0xf94017a2
@@ -73214,11 +73189,11 @@ System_Collections_Generic_List_1_T_INT_Reverse_int_int:
 .word 0xf9001ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_946
+bl _p_945
 .word 0xf9001fa0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_947
+bl _p_946
 .word 0xaa0003e3
 .word 0xf9401ba0
 .word 0xf9401faf
@@ -73237,16 +73212,16 @@ bl _p_947
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 8 1030 0
-bl _p_892
+bl _p_891
 .word 0x17ffffda
 .loc 8 1035 0
 .word 0xd2800200
 .word 0xd2800081
-bl _p_856
+bl _p_855
 .word 0x17ffffd9
 .loc 8 1039 0
 .word 0xd28002e0
-bl _p_893
+bl _p_892
 .word 0x17ffffdc
 
 Lme_2e9:
@@ -73266,7 +73241,7 @@ System_Collections_Generic_List_1_T_INT_Sort_System_Collections_Generic_ICompare
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_948
+bl _p_947
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xd63f0020
@@ -73278,7 +73253,7 @@ bl _p_948
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_949
+bl _p_948
 .word 0xaa0003e4
 .word 0xf94013a0
 .word 0xf94017a2
@@ -73328,11 +73303,11 @@ System_Collections_Generic_List_1_T_INT_Sort_int_int_System_Collections_Generic_
 .word 0xf9001ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_950
+bl _p_949
 .word 0xf9001fa0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_951
+bl _p_950
 .word 0xaa0003e4
 .word 0xf9401ba0
 .word 0xf9401faf
@@ -73352,16 +73327,16 @@ bl _p_951
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 8 1074 0
-bl _p_892
+bl _p_891
 .word 0x17ffffd9
 .loc 8 1079 0
 .word 0xd2800200
 .word 0xd2800081
-bl _p_856
+bl _p_855
 .word 0x17ffffd8
 .loc 8 1083 0
 .word 0xd28002e0
-bl _p_893
+bl _p_892
 .word 0x17ffffdb
 
 Lme_2eb:
@@ -73391,11 +73366,11 @@ System_Collections_Generic_List_1_T_INT_Sort_System_Comparison_1_T_INT:
 .word 0xf90017a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_952
+bl _p_951
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_953
+bl _p_952
 .word 0xaa0003e4
 .word 0xf94013a0
 .word 0xf94017a2
@@ -73415,7 +73390,7 @@ bl _p_953
 .word 0xd65f03c0
 .loc 8 1096 0
 .word 0xd2800440
-bl _p_864
+bl _p_863
 .word 0x17ffffdd
 
 Lme_2ec:
@@ -73434,13 +73409,13 @@ System_Collections_Generic_List_1_T_INT_ToArray:
 .loc 8 1112 0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_954
+bl _p_953
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_955
+bl _p_954
 .word 0xf9400000
 .word 0x14000013
 .loc 8 1115 0
@@ -73449,7 +73424,7 @@ bl _p_955
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_956
+bl _p_955
 .word 0xf94013a1
 bl _p_20
 .word 0xaa0003fa
@@ -73461,7 +73436,7 @@ bl _p_20
 .word 0xd2800001
 .word 0xaa1a03e2
 .word 0xd2800003
-bl _p_716
+bl _p_715
 .loc 8 1117 0
 .word 0xaa1a03e0
 .word 0xf9400bba
@@ -73504,7 +73479,7 @@ System_Collections_Generic_List_1_T_INT_TrimExcess:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_957
+bl _p_956
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf94017a1
@@ -73528,7 +73503,7 @@ System_Collections_Generic_List_1_T_INT_AddEnumerable_System_Collections_Generic
 .word 0xf90017bf
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_958
+bl _p_957
 .word 0xaa0003ef
 .word 0xaa1a03e0
 .word 0xf9400341
@@ -73549,7 +73524,7 @@ bl _p_958
 .word 0xf9002ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_959
+bl _p_958
 .word 0xaa0003ef
 .word 0xf9402ba1
 .word 0xaa0103e0
@@ -73578,7 +73553,7 @@ bl _p_959
 .word 0xf9002ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_960
+bl _p_959
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402fa1
@@ -73608,7 +73583,7 @@ bl _p_960
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3632]
+ldr x15, [x16, #3616]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -73657,12 +73632,12 @@ System_Collections_Generic_List_1_T_INT__cctor:
 .word 0x910003fd
 .word 0xf9000baf
 .word 0xf9400ba0
-bl _p_961
+bl _p_960
 .word 0xd2800001
 bl _p_20
 .word 0xf90013a0
 .word 0xf9400ba0
-bl _p_962
+bl _p_961
 .word 0xf94013a1
 .word 0xf9000001
 .word 0x910003bf
@@ -73684,7 +73659,7 @@ wrapper_delegate_invoke_System_Predicate_1_AVFoundation_AVCaptureAutoExposureBra
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x350006c0
 .word 0x14000001
@@ -73740,7 +73715,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffc9
@@ -73763,7 +73738,7 @@ wrapper_delegate_invoke_System_Action_1_AVFoundation_AVCaptureAutoExposureBracke
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -73814,7 +73789,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -73838,7 +73813,7 @@ wrapper_delegate_invoke_System_Comparison_1_AVFoundation_AVCaptureAutoExposureBr
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -73897,7 +73872,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
@@ -73920,7 +73895,7 @@ wrapper_delegate_invoke_System_Predicate_1_AVFoundation_AVMetadataFaceObject_inv
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x350006c0
 .word 0x14000001
@@ -73976,7 +73951,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffc9
@@ -73999,7 +73974,7 @@ wrapper_delegate_invoke_System_Action_1_AVFoundation_AVMetadataFaceObject_invoke
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -74050,7 +74025,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -74074,7 +74049,7 @@ wrapper_delegate_invoke_System_Comparison_1_AVFoundation_AVMetadataFaceObject_in
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -74133,7 +74108,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
@@ -74156,7 +74131,7 @@ wrapper_delegate_invoke_System_Action_1_Foundation_NSError_invoke_void_T_Foundat
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -74207,7 +74182,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -74230,7 +74205,7 @@ wrapper_delegate_invoke_System_Predicate_1_Photos_PHAsset_invoke_bool_T_Photos_P
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x350006c0
 .word 0x14000001
@@ -74286,7 +74261,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffc9
@@ -74309,7 +74284,7 @@ wrapper_delegate_invoke_System_Action_1_Photos_PHAsset_invoke_void_T_Photos_PHAs
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -74360,7 +74335,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -74384,7 +74359,7 @@ wrapper_delegate_invoke_System_Comparison_1_Photos_PHAsset_invoke_int_T_T_Photos
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -74443,7 +74418,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
@@ -74466,7 +74441,7 @@ wrapper_delegate_invoke_System_Predicate_1_Acr_UserDialogs_ActionSheetOption_inv
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x350006c0
 .word 0x14000001
@@ -74522,7 +74497,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffc9
@@ -74545,7 +74520,7 @@ wrapper_delegate_invoke_System_Action_1_Acr_UserDialogs_ActionSheetOption_invoke
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -74596,7 +74571,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -74620,7 +74595,7 @@ wrapper_delegate_invoke_System_Comparison_1_Acr_UserDialogs_ActionSheetOption_in
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -74679,7 +74654,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
@@ -74797,7 +74772,7 @@ System_Nullable_1_Acr_UserDialogs_MaskType_Equals_object:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3640]
+ldr x1, [x16, #3624]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -74809,20 +74784,20 @@ ldr x1, [x16, #3640]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3648]
+ldr x15, [x16, #3632]
 .word 0x9100a3a0
 .word 0xf9001ba0
 .word 0xaa1a03e0
-bl _p_963
+bl _p_962
 .word 0xf9401bbe
 .word 0xf90003c0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3648]
+ldr x15, [x16, #3632]
 .word 0xf94013a0
 .word 0xf94017a1
-bl _p_964
+bl _p_963
 .word 0x53001c00
 .word 0xf9400bb8
 .word 0xf9400fba
@@ -74866,7 +74841,7 @@ System_Nullable_1_Acr_UserDialogs_MaskType_Equals_System_Nullable_1_Acr_UserDial
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3656]
+ldr x0, [x16, #3640]
 .word 0xd2800281
 bl _p_3
 .word 0xf94023a1
@@ -74877,7 +74852,7 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3656]
+ldr x0, [x16, #3640]
 .word 0xd2800281
 bl _p_3
 .word 0xaa0003e2
@@ -74886,7 +74861,7 @@ bl _p_3
 .word 0xb9001040
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_810
+bl _p_809
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -74961,7 +74936,7 @@ System_Nullable_1_Acr_UserDialogs_MaskType_ToString:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3656]
+ldr x0, [x16, #3640]
 .word 0xd2800281
 bl _p_3
 .word 0xaa0003e1
@@ -74969,7 +74944,7 @@ bl _p_3
 .word 0xb9001020
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_555
+bl _p_554
 .word 0x14000005
 .loc 7 155 0
 
@@ -75005,7 +74980,7 @@ System_Nullable_1_Acr_UserDialogs_MaskType_Box_System_Nullable_1_Acr_UserDialogs
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3656]
+ldr x0, [x16, #3640]
 .word 0xd2800281
 bl _p_3
 .word 0xf94013a1
@@ -75062,8 +75037,8 @@ ldr x2, [x16, #2648]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3648]
-bl _p_965
+ldr x15, [x16, #3632]
+bl _p_964
 .word 0xb9802ba0
 .word 0xb90013a0
 .word 0xb9802fa0
@@ -75107,7 +75082,7 @@ System_Nullable_1_Acr_UserDialogs_MaskType_UnboxExact_object:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3664]
+ldr x1, [x16, #3648]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0xd2800001
@@ -75136,8 +75111,8 @@ ldr x1, [x16, #2648]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3648]
-bl _p_965
+ldr x15, [x16, #3632]
+bl _p_964
 .word 0xb9802ba0
 .word 0xb9001ba0
 .word 0xb9802fa0
@@ -75172,7 +75147,7 @@ wrapper_delegate_invoke_System_EventHandler_1_Xamarin_Forms_Platform_iOS_Element
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000680
 .word 0x14000001
@@ -75226,7 +75201,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
@@ -75249,7 +75224,7 @@ wrapper_delegate_invoke_System_Action_1_System_IAsyncResult_invoke_void_T_System
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -75300,7 +75275,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -75324,7 +75299,7 @@ wrapper_delegate_invoke_System_Func_3_System_AsyncCallback_object_System_IAsyncR
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x350006c0
 .word 0x14000001
@@ -75380,7 +75355,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc9
@@ -75439,10 +75414,10 @@ bl _p_71
 .word 0xf9003ba0
 .loc 3 315 0
 .word 0x910163a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_967
+bl _p_966
 .loc 3 317 0
 .word 0xf9003fbf
 .word 0x94000005
@@ -75453,7 +75428,7 @@ bl _p_316
 .word 0xf9004bbe
 .loc 3 320 0
 .word 0x910163a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf9404bbe
 .word 0xd61f03c0
@@ -75480,11 +75455,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3672]
+ldr x15, [x16, #3656]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_969
+bl _p_968
 .loc 3 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -75508,7 +75483,7 @@ System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_TStateMachine_GSHAR
 .word 0xf90017a0
 .word 0xf9001ba1
 .word 0xf9401fa0
-bl _p_970
+bl _p_969
 .word 0xaa0003f9
 .word 0xb9800320
 .word 0x91003c10
@@ -75544,8 +75519,8 @@ bl _p_970
 .word 0xeb1e02ff
 .word 0x54000320
 .word 0xf9401fa0
+bl _p_970
 bl _p_971
-bl _p_972
 .word 0xb9802b21
 .word 0x8b010301
 .word 0xf9004ba1
@@ -75555,7 +75530,7 @@ bl _p_972
 .word 0xf9400f20
 .word 0xf9401320
 .word 0xf9401fa0
-bl _p_973
+bl _p_972
 .word 0xaa0003e2
 .word 0xf94047a0
 .word 0xf9404ba1
@@ -75580,24 +75555,24 @@ bl _mono_gsharedvt_value_copy
 .word 0xf9002ba0
 .word 0xf9002fa0
 .loc 3 80 0
-bl _p_974
+bl _p_973
 .loc 3 83 0
 .word 0x910103a0
-bl _p_966
+bl _p_965
 .loc 3 84 0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3680]
+ldr x0, [x16, #3664]
 .word 0xf90043a0
 .word 0xf9401fa0
-bl _p_973
+bl _p_972
 .word 0xaa0003e2
 .word 0xf94043a1
 .word 0xf9401ba0
 .word 0xd2800003
 .word 0xd2800004
-bl _p_975
+bl _p_974
 .loc 3 85 0
 .word 0xf90033bf
 .word 0x94000005
@@ -75608,7 +75583,7 @@ bl _p_316
 .word 0xf9003fbe
 .loc 3 88 0
 .word 0x910103a0
-bl _p_968
+bl _p_967
 .loc 3 89 0
 .word 0xf9403fbe
 .word 0xd61f03c0
@@ -75677,10 +75652,10 @@ bl _p_71
 .word 0xf90037a0
 .loc 3 470 0
 .word 0x910143a0
-bl _p_966
+bl _p_965
 .loc 3 471 0
 .word 0xf9400fa0
-bl _p_976
+bl _p_975
 .loc 3 472 0
 .word 0xf9003bbf
 .word 0x94000005
@@ -75691,7 +75666,7 @@ bl _p_316
 .word 0xf90047be
 .loc 3 475 0
 .word 0x910143a0
-bl _p_968
+bl _p_967
 .loc 3 476 0
 .word 0xf94047be
 .word 0xd61f03c0
@@ -75749,10 +75724,10 @@ bl _p_71
 .word 0xf90037a0
 .loc 3 470 0
 .word 0x910143a0
-bl _p_966
+bl _p_965
 .loc 3 471 0
 .word 0xf9400fa0
-bl _p_977
+bl _p_976
 .loc 3 472 0
 .word 0xf9003bbf
 .word 0x94000005
@@ -75763,7 +75738,7 @@ bl _p_316
 .word 0xf90047be
 .loc 3 475 0
 .word 0x910143a0
-bl _p_968
+bl _p_967
 .loc 3 476 0
 .word 0xf94047be
 .word 0xd61f03c0
@@ -75793,7 +75768,7 @@ System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TA
 .word 0xf90023a1
 .word 0xaa0203fa
 .word 0xf94027a0
-bl _p_978
+bl _p_977
 .word 0xaa0003f7
 .word 0xb98002e0
 .word 0x91003c10
@@ -75815,7 +75790,7 @@ bl _p_978
 .loc 3 162 0
 .word 0x91002300
 .word 0xf90043a0
-bl _p_979
+bl _p_978
 .word 0xf94043a1
 .word 0x53001c00
 .word 0xaa0103f5
@@ -75824,48 +75799,48 @@ bl _p_979
 .word 0xd2800015
 .word 0x14000005
 .word 0xaa1803e0
-bl _p_980
+bl _p_979
 .word 0xaa1503f4
 .word 0xaa0003f5
 .word 0x910143a2
 .word 0xaa1403e0
 .word 0xaa1503e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f5
 .loc 3 166 0
 .word 0xf9400700
 .word 0xb5000b40
 .loc 3 168 0
-bl _p_979
+bl _p_978
 .word 0x53001c00
 .word 0x340004c0
 .loc 3 169 0
 .word 0xaa1803e0
-bl _p_980
+bl _p_979
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_726
+bl _p_725
 .word 0x93407c00
 .word 0xf90043a0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3688]
+ldr x0, [x16, #3672]
 .word 0xf90047a0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3696]
+ldr x0, [x16, #3680]
 .word 0xf9004ba0
 .word 0xf94027a0
-bl _p_982
+bl _p_981
 .word 0xaa0003e2
 .word 0xf9404ba1
 .word 0xaa1a03e0
 .word 0xd2800003
 .word 0xd2800004
-bl _p_975
+bl _p_974
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf9400021
@@ -75873,12 +75848,12 @@ bl _p_975
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xf94047a0
-bl _p_446
+bl _p_445
 .word 0xaa0003e2
 .word 0xf94043a1
 .word 0xd2800000
 .word 0xd2800003
-bl _p_983
+bl _p_982
 .loc 3 174 0
 .word 0x91002314
 .word 0xb9802ae0
@@ -75895,8 +75870,8 @@ bl _p_983
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf94027a0
-bl _p_984
-bl _p_972
+bl _p_983
+bl _p_971
 .word 0xb9802ae1
 .word 0x8b0102c1
 .word 0xf9004ba1
@@ -75906,7 +75881,7 @@ bl _p_972
 .word 0xf9400ee0
 .word 0xf94012e0
 .word 0xf94027a0
-bl _p_982
+bl _p_981
 .word 0xaa0003e2
 .word 0xf94047a0
 .word 0xf9404ba1
@@ -75928,15 +75903,15 @@ bl _mono_gsharedvt_value_copy
 .word 0xaa1403e0
 .word 0xaa1a03e1
 .word 0xd2800003
-bl _p_985
+bl _p_984
 .loc 3 177 0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3704]
+ldr x0, [x16, #3688]
 .word 0xf90043a0
 .word 0xf94027a0
-bl _p_986
+bl _p_985
 .word 0xaa0003e2
 .word 0xf94043a1
 .word 0xd10043ff
@@ -75945,14 +75920,14 @@ bl _p_986
 .word 0xf9000095
 .word 0xf94023a0
 .word 0xd2800003
-bl _p_975
+bl _p_974
 .loc 3 178 0
 .word 0x1400000c
 .word 0xf9002fa0
 .word 0xf9402fa0
 .loc 3 181 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 182 0
 bl _p_70
 .word 0xf9003fa0
@@ -76007,7 +75982,7 @@ bl _p_90
 .word 0x9101a3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -76037,7 +76012,7 @@ bl _p_90
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3712]
+ldr x0, [x16, #3696]
 .word 0xd2800801
 bl _p_3
 .word 0x9100e3a1
@@ -76049,7 +76024,7 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf94037a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+0
@@ -76057,14 +76032,14 @@ add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x15, [x16, #1920]
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_988
+bl _p_987
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf9003ba0
 .word 0xf9403ba0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf9004ba0
@@ -76117,7 +76092,7 @@ bl _p_90
 .word 0x9101a3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -76147,7 +76122,7 @@ bl _p_90
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3720]
+ldr x0, [x16, #3704]
 .word 0xd2800801
 bl _p_3
 .word 0x9100e3a1
@@ -76159,7 +76134,7 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf94037a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+0
@@ -76167,14 +76142,14 @@ add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x15, [x16, #1920]
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_988
+bl _p_987
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf9003ba0
 .word 0xf9403ba0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf9004ba0
@@ -76239,10 +76214,10 @@ bl _p_71
 .word 0xf90037a0
 .loc 3 315 0
 .word 0x910143a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_989
+bl _p_988
 .loc 3 317 0
 .word 0xf9003bbf
 .word 0x94000005
@@ -76253,7 +76228,7 @@ bl _p_316
 .word 0xf90047be
 .loc 3 320 0
 .word 0x910143a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94047be
 .word 0xd61f03c0
@@ -76274,22 +76249,22 @@ System_Collections_Generic_EqualityComparer_1_T_REF_get_Default:
 .word 0xf9000bba
 .word 0xf9000faf
 .word 0xf9400fa0
-bl _p_990
+bl _p_989
 .word 0xf940001a
 .loc 9 33 0
 .word 0xaa1a03e0
 .word 0xb50001e0
 .loc 9 34 0
 .word 0xf9400fa0
-bl _p_991
+bl _p_990
 .word 0xaa0003ef
-bl _p_992
+bl _p_991
 .word 0xaa0003fa
 .loc 9 35 0
 .word 0xaa1a03e0
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_990
+bl _p_989
 .word 0xf90013a0
 .word 0xf94017a1
 .word 0xd5033bbf
@@ -76320,11 +76295,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3728]
+ldr x15, [x16, #3712]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_993
+bl _p_992
 .loc 3 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -76347,20 +76322,20 @@ Xamarin_Forms_MessagingCenter_Subscribe_TSender_REF_TArgs_INT_object_string_Syst
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3736]
+ldr x0, [x16, #3720]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3744]
+ldr x0, [x16, #3728]
 .word 0xf9400000
 .word 0xf90023a0
 .word 0xf9401ba0
-bl _p_994
+bl _p_993
 .word 0xf9401ba0
-bl _p_995
+bl _p_994
 .word 0xaa0003ef
 .word 0xf94023a5
 .word 0xaa0503e0
@@ -76429,10 +76404,10 @@ bl _p_71
 .word 0xf9003ba0
 .loc 3 315 0
 .word 0x910163a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_996
+bl _p_995
 .loc 3 317 0
 .word 0xf9003fbf
 .word 0x94000005
@@ -76443,7 +76418,7 @@ bl _p_316
 .word 0xf9004bbe
 .loc 3 320 0
 .word 0x910163a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf9404bbe
 .word 0xd61f03c0
@@ -76499,10 +76474,10 @@ bl _p_71
 .word 0xf90033a0
 .loc 3 315 0
 .word 0x910123a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_997
+bl _p_996
 .loc 3 317 0
 .word 0xf90037bf
 .word 0x94000005
@@ -76513,7 +76488,7 @@ bl _p_316
 .word 0xf90043be
 .loc 3 320 0
 .word 0x910123a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94043be
 .word 0xd61f03c0
@@ -76569,10 +76544,10 @@ bl _p_71
 .word 0xf90033a0
 .loc 3 315 0
 .word 0x910123a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_998
+bl _p_997
 .loc 3 317 0
 .word 0xf90037bf
 .word 0x94000005
@@ -76583,7 +76558,7 @@ bl _p_316
 .word 0xf90043be
 .loc 3 320 0
 .word 0x910123a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94043be
 .word 0xd61f03c0
@@ -76639,10 +76614,10 @@ bl _p_71
 .word 0xf90033a0
 .loc 3 315 0
 .word 0x910123a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_999
+bl _p_998
 .loc 3 317 0
 .word 0xf90037bf
 .word 0x94000005
@@ -76653,7 +76628,7 @@ bl _p_316
 .word 0xf90043be
 .loc 3 320 0
 .word 0x910123a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94043be
 .word 0xd61f03c0
@@ -76711,10 +76686,10 @@ bl _p_71
 .word 0xf90037a0
 .loc 3 315 0
 .word 0x910143a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1000
+bl _p_999
 .loc 3 317 0
 .word 0xf9003bbf
 .word 0x94000005
@@ -76725,7 +76700,7 @@ bl _p_316
 .word 0xf90047be
 .loc 3 320 0
 .word 0x910143a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94047be
 .word 0xd61f03c0
@@ -76781,10 +76756,10 @@ bl _p_71
 .word 0xf90033a0
 .loc 3 315 0
 .word 0x910123a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1001
+bl _p_1000
 .loc 3 317 0
 .word 0xf90037bf
 .word 0x94000005
@@ -76795,7 +76770,7 @@ bl _p_316
 .word 0xf90043be
 .loc 3 320 0
 .word 0x910123a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94043be
 .word 0xd61f03c0
@@ -76822,11 +76797,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3752]
+ldr x15, [x16, #3736]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_1002
+bl _p_1001
 .loc 3 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -76850,11 +76825,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3760]
+ldr x15, [x16, #3744]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_1003
+bl _p_1002
 .loc 3 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -76911,10 +76886,10 @@ bl _p_71
 .word 0xf9003ba0
 .loc 3 315 0
 .word 0x910163a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1004
+bl _p_1003
 .loc 3 317 0
 .word 0xf9003fbf
 .word 0x94000005
@@ -76925,7 +76900,7 @@ bl _p_316
 .word 0xf9004bbe
 .loc 3 320 0
 .word 0x910163a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf9404bbe
 .word 0xd61f03c0
@@ -76983,10 +76958,10 @@ bl _p_71
 .word 0xf90037a0
 .loc 3 315 0
 .word 0x910143a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1005
+bl _p_1004
 .loc 3 317 0
 .word 0xf9003bbf
 .word 0x94000005
@@ -76997,7 +76972,7 @@ bl _p_316
 .word 0xf90047be
 .loc 3 320 0
 .word 0x910143a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94047be
 .word 0xd61f03c0
@@ -77024,11 +76999,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3768]
+ldr x15, [x16, #3752]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_1006
+bl _p_1005
 .loc 3 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -77052,11 +77027,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3776]
+ldr x15, [x16, #3760]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_1007
+bl _p_1006
 .loc 3 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -77111,10 +77086,10 @@ bl _p_71
 .word 0xf90037a0
 .loc 3 315 0
 .word 0x910143a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1008
+bl _p_1007
 .loc 3 317 0
 .word 0xf9003bbf
 .word 0x94000005
@@ -77125,7 +77100,7 @@ bl _p_316
 .word 0xf90047be
 .loc 3 320 0
 .word 0x910143a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94047be
 .word 0xd61f03c0
@@ -77152,11 +77127,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3784]
+ldr x15, [x16, #3768]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_1009
+bl _p_1008
 .loc 3 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -77184,7 +77159,7 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_Delegate
 .word 0xf9400fa1
 .word 0x910083a0
 .word 0xd2800c02
-bl _p_472
+bl _p_471
 .word 0x14000009
 .word 0xd2924b80
 .word 0xf2a00020
@@ -77202,10 +77177,10 @@ bl _p_71
 .word 0xf9004fa0
 .loc 3 315 0
 .word 0x910203a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1010
+bl _p_1009
 .loc 3 317 0
 .word 0xf90053bf
 .word 0x94000005
@@ -77216,7 +77191,7 @@ bl _p_316
 .word 0xf9005fbe
 .loc 3 320 0
 .word 0x910203a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf9405fbe
 .word 0xd61f03c0
@@ -77272,10 +77247,10 @@ bl _p_71
 .word 0xf90033a0
 .loc 3 315 0
 .word 0x910123a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1011
+bl _p_1010
 .loc 3 317 0
 .word 0xf90037bf
 .word 0x94000005
@@ -77286,7 +77261,7 @@ bl _p_316
 .word 0xf90043be
 .loc 3 320 0
 .word 0x910123a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94043be
 .word 0xd61f03c0
@@ -77313,11 +77288,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3792]
+ldr x15, [x16, #3776]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_1012
+bl _p_1011
 .loc 3 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -77372,10 +77347,10 @@ bl _p_71
 .word 0xf90037a0
 .loc 3 315 0
 .word 0x910143a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1013
+bl _p_1012
 .loc 3 317 0
 .word 0xf9003bbf
 .word 0x94000005
@@ -77386,7 +77361,7 @@ bl _p_316
 .word 0xf90047be
 .loc 3 320 0
 .word 0x910143a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94047be
 .word 0xd61f03c0
@@ -77413,11 +77388,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3800]
+ldr x15, [x16, #3784]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_1014
+bl _p_1013
 .loc 3 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -77441,11 +77416,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3808]
+ldr x15, [x16, #3792]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_1015
+bl _p_1014
 .loc 3 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -77473,7 +77448,7 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_Delegate
 .word 0xf9400fa1
 .word 0x910083a0
 .word 0xd2800c02
-bl _p_472
+bl _p_471
 .word 0x14000009
 .word 0xd2924b80
 .word 0xf2a00020
@@ -77491,10 +77466,10 @@ bl _p_71
 .word 0xf9004fa0
 .loc 3 315 0
 .word 0x910203a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1016
+bl _p_1015
 .loc 3 317 0
 .word 0xf90053bf
 .word 0x94000005
@@ -77505,7 +77480,7 @@ bl _p_316
 .word 0xf9005fbe
 .loc 3 320 0
 .word 0x910203a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf9405fbe
 .word 0xd61f03c0
@@ -77561,10 +77536,10 @@ bl _p_71
 .word 0xf90033a0
 .loc 3 315 0
 .word 0x910123a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1017
+bl _p_1016
 .loc 3 317 0
 .word 0xf90037bf
 .word 0x94000005
@@ -77575,7 +77550,7 @@ bl _p_316
 .word 0xf90043be
 .loc 3 320 0
 .word 0x910123a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94043be
 .word 0xd61f03c0
@@ -77602,11 +77577,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3816]
+ldr x15, [x16, #3800]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_1018
+bl _p_1017
 .loc 3 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -77661,10 +77636,10 @@ bl _p_71
 .word 0xf90037a0
 .loc 3 315 0
 .word 0x910143a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1019
+bl _p_1018
 .loc 3 317 0
 .word 0xf9003bbf
 .word 0x94000005
@@ -77675,7 +77650,7 @@ bl _p_316
 .word 0xf90047be
 .loc 3 320 0
 .word 0x910143a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94047be
 .word 0xd61f03c0
@@ -77702,11 +77677,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3824]
+ldr x15, [x16, #3808]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_1020
+bl _p_1019
 .loc 3 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -77730,11 +77705,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3832]
+ldr x15, [x16, #3816]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_1021
+bl _p_1020
 .loc 3 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -77787,10 +77762,10 @@ bl _p_71
 .word 0xf90033a0
 .loc 3 315 0
 .word 0x910123a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1022
+bl _p_1021
 .loc 3 317 0
 .word 0xf90037bf
 .word 0x94000005
@@ -77801,7 +77776,7 @@ bl _p_316
 .word 0xf90043be
 .loc 3 320 0
 .word 0x910123a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94043be
 .word 0xd61f03c0
@@ -77859,10 +77834,10 @@ bl _p_71
 .word 0xf90037a0
 .loc 3 315 0
 .word 0x910143a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1023
+bl _p_1022
 .loc 3 317 0
 .word 0xf9003bbf
 .word 0x94000005
@@ -77873,7 +77848,7 @@ bl _p_316
 .word 0xf90047be
 .loc 3 320 0
 .word 0x910143a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94047be
 .word 0xd61f03c0
@@ -77937,10 +77912,10 @@ bl _p_71
 .word 0xf90043a0
 .loc 3 315 0
 .word 0x9101a3a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1024
+bl _p_1023
 .loc 3 317 0
 .word 0xf90047bf
 .word 0x94000005
@@ -77951,7 +77926,7 @@ bl _p_316
 .word 0xf90053be
 .loc 3 320 0
 .word 0x9101a3a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94053be
 .word 0xd61f03c0
@@ -78007,10 +77982,10 @@ bl _p_71
 .word 0xf90033a0
 .loc 3 315 0
 .word 0x910123a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1025
+bl _p_1024
 .loc 3 317 0
 .word 0xf90037bf
 .word 0x94000005
@@ -78021,7 +77996,7 @@ bl _p_316
 .word 0xf90043be
 .loc 3 320 0
 .word 0x910123a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94043be
 .word 0xd61f03c0
@@ -78077,10 +78052,10 @@ bl _p_71
 .word 0xf90033a0
 .loc 3 315 0
 .word 0x910123a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1026
+bl _p_1025
 .loc 3 317 0
 .word 0xf90037bf
 .word 0x94000005
@@ -78091,7 +78066,7 @@ bl _p_316
 .word 0xf90043be
 .loc 3 320 0
 .word 0x910123a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94043be
 .word 0xd61f03c0
@@ -78113,10 +78088,10 @@ MoreLinq_MoreEnumerable_MaxBy_TSource_REF_TKey_DOUBLE_System_Collections_Generic
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf94013a0
-bl _p_1027
+bl _p_1026
 .word 0xf9001ba0
 .word 0xf94013a0
-bl _p_1028
+bl _p_1027
 .word 0xaa0003e3
 .word 0xf9401baf
 .word 0xf9400ba0
@@ -78143,27 +78118,27 @@ System_Linq_Enumerable_ToList_TSource_INT_System_Collections_Generic_IEnumerable
 .word 0xb4000560
 .loc 12 30 0
 .word 0xf94013a0
-bl _p_1029
+bl _p_1028
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xf9400fa0
-bl _p_770
+bl _p_769
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xaa0103f9
 .word 0xb5000280
 .word 0xf94013a0
-bl _p_1030
+bl _p_1029
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 .word 0xf94013a0
-bl _p_1030
+bl _p_1029
 .word 0xd2800501
 bl _p_3
 .word 0xf9001fa0
 .word 0xf94013a0
-bl _p_1031
+bl _p_1030
 .word 0xaa0003e2
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -78172,7 +78147,7 @@ bl _p_1031
 .word 0xf9401ba0
 .word 0x1400000a
 .word 0xf94013a0
-bl _p_1032
+bl _p_1031
 .word 0xaa0003ef
 .word 0xaa1903e0
 .word 0xf9400321
@@ -78188,10 +78163,10 @@ bl _p_1032
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3840]
+ldr x0, [x16, #3824]
 .word 0xd280ff61
-bl _p_431
-bl _p_1033
+bl _p_430
+bl _p_1032
 bl _p_71
 
 Lme_338:
@@ -78334,7 +78309,7 @@ System_Array_InternalEnumerator_1_T_INT_get_Current:
 .word 0x4b010000
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_1034
+bl _p_1033
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xf9001ba1
@@ -78342,7 +78317,7 @@ bl _p_1034
 .word 0x3940001e
 .word 0xf90013a0
 .word 0xf9400fa0
-bl _p_1035
+bl _p_1034
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf94017a1
@@ -78408,12 +78383,12 @@ System_Array_InternalEnumerator_1_T_INT_System_Collections_IEnumerator_get_Curre
 .word 0xf9000faf
 .word 0xf9000ba0
 .word 0xf9400fa0
-bl _p_1036
+bl _p_1035
 .word 0xf90017a0
 .word 0xf9400ba0
 .word 0x3940001e
 .word 0xf9400fa0
-bl _p_1037
+bl _p_1036
 .word 0xaa0003e1
 .word 0xf94017af
 .word 0xf9400ba0
@@ -78421,7 +78396,7 @@ bl _p_1037
 .word 0x93407c00
 .word 0xf90013a0
 .word 0xf9400fa0
-bl _p_1038
+bl _p_1037
 .word 0xd2800301
 bl _p_3
 .word 0xf94013a1
@@ -78445,12 +78420,12 @@ System_Array_InternalArray__IEnumerable_GetEnumerator_T_INT:
 .word 0x35000140
 .loc 2 71 0
 .word 0xf9401fa0
-bl _p_1039
+bl _p_1038
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 .word 0xf9401fa0
-bl _p_1040
+bl _p_1039
 .word 0xf9400000
 .word 0x14000029
 .loc 2 73 0
@@ -78460,10 +78435,10 @@ bl _p_1040
 .word 0x9100a3a0
 .word 0xf90023a0
 .word 0xf9401fa0
-bl _p_1041
+bl _p_1040
 .word 0xf90027a0
 .word 0xf9401fa0
-bl _p_1042
+bl _p_1041
 .word 0xaa0003e2
 .word 0xf94023a0
 .word 0xf94027af
@@ -78474,7 +78449,7 @@ bl _p_1042
 .word 0xf9401ba0
 .word 0xf90013a0
 .word 0xf9401fa0
-bl _p_1041
+bl _p_1040
 .word 0xd2800401
 bl _p_3
 .word 0x91004003
@@ -78550,10 +78525,10 @@ bl _p_71
 .word 0xf9003ba0
 .loc 3 315 0
 .word 0x910163a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1043
+bl _p_1042
 .loc 3 317 0
 .word 0xf9003fbf
 .word 0x94000005
@@ -78564,7 +78539,7 @@ bl _p_316
 .word 0xf9004bbe
 .loc 3 320 0
 .word 0x910163a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf9404bbe
 .word 0xd61f03c0
@@ -78622,10 +78597,10 @@ bl _p_71
 .word 0xf90037a0
 .loc 3 315 0
 .word 0x910143a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1044
+bl _p_1043
 .loc 3 317 0
 .word 0xf9003bbf
 .word 0x94000005
@@ -78636,7 +78611,7 @@ bl _p_316
 .word 0xf90047be
 .loc 3 320 0
 .word 0x910143a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94047be
 .word 0xd61f03c0
@@ -78694,10 +78669,10 @@ bl _p_71
 .word 0xf90037a0
 .loc 3 315 0
 .word 0x910143a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1045
+bl _p_1044
 .loc 3 317 0
 .word 0xf9003bbf
 .word 0x94000005
@@ -78708,7 +78683,7 @@ bl _p_316
 .word 0xf90047be
 .loc 3 320 0
 .word 0x910143a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94047be
 .word 0xd61f03c0
@@ -78735,11 +78710,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3848]
+ldr x15, [x16, #3832]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_1046
+bl _p_1045
 .loc 3 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -78763,11 +78738,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3856]
+ldr x15, [x16, #3840]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_1047
+bl _p_1046
 .loc 3 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -78788,20 +78763,20 @@ Xamarin_Forms_MessagingCenter_Send_TSender_REF_TArgs_INT_TSender_REF_string_TArg
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3736]
+ldr x0, [x16, #3720]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3744]
+ldr x0, [x16, #3728]
 .word 0xf9400000
 .word 0xf9001ba0
 .word 0xf94017a0
-bl _p_1048
+bl _p_1047
 .word 0xf94017a0
-bl _p_1049
+bl _p_1048
 .word 0xaa0003ef
 .word 0xf9401ba4
 .word 0xaa0403e0
@@ -78867,10 +78842,10 @@ bl _p_71
 .word 0xf90037a0
 .loc 3 315 0
 .word 0x910143a0
-bl _p_966
+bl _p_965
 .loc 3 316 0
 .word 0xf9400fa0
-bl _p_1050
+bl _p_1049
 .loc 3 317 0
 .word 0xf9003bbf
 .word 0x94000005
@@ -78881,7 +78856,7 @@ bl _p_316
 .word 0xf90047be
 .loc 3 320 0
 .word 0x910143a0
-bl _p_968
+bl _p_967
 .loc 3 321 0
 .word 0xf94047be
 .word 0xd61f03c0
@@ -78908,11 +78883,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3864]
+ldr x15, [x16, #3848]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_1051
+bl _p_1050
 .loc 3 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -78936,11 +78911,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3872]
+ldr x15, [x16, #3856]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_1052
+bl _p_1051
 .loc 3 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -78964,11 +78939,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3880]
+ldr x15, [x16, #3864]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_1053
+bl _p_1052
 .loc 3 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -78992,11 +78967,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3888]
+ldr x15, [x16, #3872]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_1054
+bl _p_1053
 .loc 3 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -79013,17 +78988,17 @@ System_Collections_Generic_EqualityComparer_1_T_BOOL_get_Default:
 .word 0xf9000bba
 .word 0xf9000faf
 .word 0xf9400fa0
-bl _p_1055
+bl _p_1054
 .word 0xf940001a
 .loc 9 33 0
 .word 0xaa1a03e0
 .word 0xb5000240
 .loc 9 34 0
 .word 0xf9400fa0
-bl _p_1056
+bl _p_1055
 .word 0xf9001ba0
 .word 0xf9400fa0
-bl _p_1057
+bl _p_1056
 .word 0xf9401baf
 .word 0xd63f0000
 .word 0xaa0003fa
@@ -79031,7 +79006,7 @@ bl _p_1057
 .word 0xaa1a03e0
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_1055
+bl _p_1054
 .word 0xf90013a0
 .word 0xf94017a1
 .word 0xd5033bbf
@@ -79055,17 +79030,17 @@ System_Collections_Generic_EqualityComparer_1_T_INT_get_Default:
 .word 0xf9000bba
 .word 0xf9000faf
 .word 0xf9400fa0
-bl _p_1058
+bl _p_1057
 .word 0xf940001a
 .loc 9 33 0
 .word 0xaa1a03e0
 .word 0xb5000240
 .loc 9 34 0
 .word 0xf9400fa0
-bl _p_1059
+bl _p_1058
 .word 0xf9001ba0
 .word 0xf9400fa0
-bl _p_1060
+bl _p_1059
 .word 0xf9401baf
 .word 0xd63f0000
 .word 0xaa0003fa
@@ -79073,7 +79048,7 @@ bl _p_1060
 .word 0xaa1a03e0
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_1058
+bl _p_1057
 .word 0xf90013a0
 .word 0xf94017a1
 .word 0xd5033bbf
@@ -79136,12 +79111,12 @@ System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_TResult_BOOL_
 .word 0xf9000ba0
 .word 0xf9000fbf
 .word 0xf94013a0
-bl _p_1061
+bl _p_1060
 .word 0xd2800a01
 bl _p_3
 .word 0xf9001fa0
 .word 0xf94013a0
-bl _p_1062
+bl _p_1061
 .word 0xaa0003e5
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -79177,10 +79152,10 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_TResult_BOOL__ctor_Sys
 .word 0x9100e3a0
 .word 0xf9002ba0
 .word 0xf94027a0
-bl _p_1063
+bl _p_1062
 .word 0xf9002fa0
 .word 0xf94027a0
-bl _p_1064
+bl _p_1063
 .word 0xaa0003e3
 .word 0xf9402ba0
 .word 0xf9402faf
@@ -79251,7 +79226,7 @@ ldr x0, [x16, #48]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3504]
+ldr x1, [x16, #3488]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -79277,7 +79252,7 @@ ldr x1, [x16, #3504]
 .word 0xb9803ba5
 .word 0xb98043a6
 .word 0xd2800007
-bl _p_750
+bl _p_749
 .loc 13 134 0
 .word 0xf94013a1
 .word 0xf94017a0
@@ -79296,7 +79271,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 13 135 0
 .word 0xf94013a0
-bl _p_749
+bl _p_748
 .loc 13 136 0
 .word 0xa94163b7
 .word 0x910003bf
@@ -79337,10 +79312,10 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_TResult_LONG__ctor_Sys
 .word 0x9100e3a0
 .word 0xf9002ba0
 .word 0xf94027a0
-bl _p_1065
+bl _p_1064
 .word 0xf9002fa0
 .word 0xf94027a0
-bl _p_1066
+bl _p_1065
 .word 0xaa0003e3
 .word 0xf9402ba0
 .word 0xf9402faf
@@ -79410,7 +79385,7 @@ ldr x0, [x16, #48]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3504]
+ldr x1, [x16, #3488]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -79436,7 +79411,7 @@ ldr x1, [x16, #3504]
 .word 0xb9803ba5
 .word 0xb98043a6
 .word 0xd2800007
-bl _p_750
+bl _p_749
 .loc 13 134 0
 .word 0xf94013a1
 .word 0xf94017a0
@@ -79455,7 +79430,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 13 135 0
 .word 0xf94013a0
-bl _p_749
+bl _p_748
 .loc 13 136 0
 .word 0xa94163b7
 .word 0x910003bf
@@ -79491,7 +79466,7 @@ System_ThrowHelper_IfNullAndNullsAreIllegalThenThrow_T_INT_object_System_Excepti
 .word 0x14000001
 .loc 14 196 0
 .word 0xb9801ba0
-bl _p_864
+bl _p_863
 .loc 14 197 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -79532,7 +79507,7 @@ ldr x2, [x16, #16]
 .word 0xd65f03c0
 .loc 15 26 0
 .word 0xd28000e0
-bl _p_864
+bl _p_863
 .word 0x17ffffed
 
 Lme_35a:
@@ -79569,12 +79544,12 @@ System_Array_BinarySearch_T_INT_T_INT___int_int_T_INT_System_Collections_Generic
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x26, [x16, #3896]
+ldr x26, [x16, #3880]
 .word 0x14000005
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x26, [x16, #3904]
+ldr x26, [x16, #3888]
 .word 0x14000001
 .word 0xd2848fc0
 bl _p_268
@@ -79593,10 +79568,10 @@ bl _p_71
 .word 0x5400036b
 .loc 16 564 0
 .word 0xf9401fa0
-bl _p_1067
+bl _p_1066
 .word 0xf90023a0
 .word 0xf9401fa0
-bl _p_1068
+bl _p_1067
 .word 0xaa0003e5
 .word 0xf94023af
 .word 0xf94013a0
@@ -79706,10 +79681,10 @@ System_Array_IndexOf_T_INT_T_INT___T_INT_int_int:
 .word 0x540004ac
 .loc 16 696 0
 .word 0xf9401ba0
-bl _p_1069
+bl _p_1068
 .word 0xf90023a0
 .word 0xf9401ba0
-bl _p_1070
+bl _p_1069
 .word 0xaa0003e4
 .word 0xf94023af
 .word 0xaa1703e0
@@ -79785,12 +79760,12 @@ System_Array_Reverse_T_INT_T_INT___int_int:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x26, [x16, #3896]
+ldr x26, [x16, #3880]
 .word 0x14000005
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x26, [x16, #3904]
+ldr x26, [x16, #3888]
 .word 0x14000001
 .word 0xd2848fc0
 bl _p_268
@@ -79914,12 +79889,12 @@ System_Array_Sort_T_INT_T_INT___int_int_System_Collections_Generic_IComparer_1_T
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x26, [x16, #3904]
+ldr x26, [x16, #3888]
 .word 0x14000005
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x26, [x16, #3896]
+ldr x26, [x16, #3880]
 .word 0x14000001
 .word 0xd2848fc0
 bl _p_268
@@ -79942,10 +79917,10 @@ bl _p_71
 .word 0x540001ad
 .loc 16 1105 0
 .word 0xf9401ba0
-bl _p_1071
+bl _p_1070
 .word 0xf90023a0
 .word 0xf9401ba0
-bl _p_1072
+bl _p_1071
 .word 0xaa0003e4
 .word 0xf94023af
 .word 0xf94013a0
@@ -79993,10 +79968,10 @@ System_Collections_Generic_ArraySortHelper_1_T_INT_Sort_T_INT___int_int_System_C
 .word 0xf94017a0
 .word 0xf90053a0
 .word 0xf9401ba0
-bl _p_1073
+bl _p_1072
 .word 0xf90057a0
 .word 0xf9401ba0
-bl _p_1074
+bl _p_1073
 .word 0xaa0003e4
 .word 0xf94053a3
 .word 0xf94057af
@@ -80009,7 +79984,7 @@ bl _p_1074
 .word 0xf90023a0
 .loc 17 102 0
 .word 0xf94017a0
-bl _p_1075
+bl _p_1074
 .loc 17 103 0
 bl _p_70
 .word 0xf9004ba0
@@ -80029,11 +80004,11 @@ bl _p_268
 .word 0xf9401fa0
 .word 0xf9005ba0
 .word 0xd2802040
-bl _p_1076
+bl _p_1075
 .word 0xf94057a1
 .word 0xf9405ba2
 .word 0xf90053a0
-bl _p_1077
+bl _p_1076
 .word 0xf94053a0
 bl _p_71
 .loc 17 108 0
@@ -80070,15 +80045,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101c3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -80087,9 +80062,9 @@ bl _p_981
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f6
 .loc 3 556 0
 .word 0xf9401ba0
@@ -80110,7 +80085,7 @@ bl _p_1078
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3920]
+ldr x0, [x16, #3904]
 .word 0xd2800901
 bl _p_3
 .word 0x9100e3a1
@@ -80122,18 +80097,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf9403ba2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_1079
+bl _p_1078
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf9003fa0
 .word 0xf9403fa0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf9004fa0
@@ -80159,7 +80134,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_745
+bl _p_744
 .loc 4 86 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -80180,7 +80155,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_object
 .word 0xf9400fa1
 .word 0xb98023a2
 .word 0xd2800023
-bl _p_746
+bl _p_745
 .loc 4 92 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -80201,7 +80176,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System
 .word 0xd2800001
 .word 0xd2800002
 .word 0xf94017a3
-bl _p_747
+bl _p_746
 .loc 4 99 0
 .word 0xf9400ba0
 .word 0x91012000
@@ -80229,7 +80204,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_S
 .word 0x394063a1
 .word 0xb98033a2
 .word 0xf9401fa3
-bl _p_747
+bl _p_746
 .loc 4 105 0
 .word 0x394063a0
 .word 0x350000a0
@@ -80277,7 +80252,7 @@ ldr x0, [x16, #48]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3504]
+ldr x1, [x16, #3488]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -80300,10 +80275,10 @@ ldr x1, [x16, #3504]
 .word 0xb98043a5
 .word 0xd2800006
 .word 0xd2800007
-bl _p_1080
+bl _p_1079
 .loc 4 303 0
 .word 0xf94013a0
-bl _p_749
+bl _p_748
 .loc 4 304 0
 .word 0xa94167b8
 .word 0x910003bf
@@ -80333,10 +80308,10 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System
 .word 0xb9803ba5
 .word 0xb98043a6
 .word 0xf94027a7
-bl _p_750
+bl _p_749
 .loc 4 319 0
 .word 0xf9400ba0
-bl _p_749
+bl _p_748
 .loc 4 320 0
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -80366,10 +80341,10 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System
 .word 0xb98043a5
 .word 0xb9804ba6
 .word 0xf9402ba7
-bl _p_750
+bl _p_749
 .loc 4 337 0
 .word 0xf9400ba0
-bl _p_749
+bl _p_748
 .loc 4 338 0
 .word 0x910003bf
 .word 0xa8c67bfd
@@ -80402,7 +80377,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_Sys
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3928]
+ldr x0, [x16, #3912]
 .word 0xd2800a01
 bl _p_3
 .word 0xf94033a5
@@ -80412,7 +80387,7 @@ bl _p_3
 .word 0xf94013a3
 .word 0xb98033a4
 .word 0xf94023a6
-bl _p_1081
+bl _p_1080
 .word 0xf9402fa2
 .loc 4 357 0
 .word 0xaa0203e0
@@ -80420,7 +80395,7 @@ bl _p_1081
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
-bl _p_753
+bl _p_752
 .word 0xf9402ba0
 .loc 4 358 0
 .word 0x910003bf
@@ -80473,7 +80448,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_Sys
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3928]
+ldr x0, [x16, #3912]
 .word 0xd2800a01
 bl _p_3
 .word 0xf94033a6
@@ -80484,7 +80459,7 @@ bl _p_3
 .word 0xf94017a4
 .word 0xb9803ba5
 .word 0xf94027a7
-bl _p_1080
+bl _p_1079
 .word 0xf9402fa2
 .loc 4 377 0
 .word 0xaa0203e0
@@ -80492,7 +80467,7 @@ bl _p_1080
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0x3940005e
-bl _p_753
+bl _p_752
 .word 0xf9402ba0
 .loc 4 378 0
 .word 0x910003bf
@@ -80547,7 +80522,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult
 .word 0xf2a08001
 .word 0xd2800002
 .word 0xf2a0ac02
-bl _p_756
+bl _p_755
 .word 0x53001c00
 .word 0x34000420
 .loc 4 419 0
@@ -80581,10 +80556,10 @@ bl _p_756
 .word 0xb4000080
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_757
+bl _p_756
 .loc 4 433 0
 .word 0xaa1a03e0
-bl _p_758
+bl _p_757
 .loc 4 435 0
 .word 0xd2800020
 .word 0x14000002
@@ -80614,7 +80589,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_DangerousSet
 .loc 4 454 0
 .word 0xaa1a03e0
 .word 0xf9400fa1
-bl _p_1082
+bl _p_1081
 .loc 4 458 0
 .word 0x1400000f
 .loc 4 461 0
@@ -80673,7 +80648,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_get_Result:
 .word 0xf90017a0
 .word 0xf94013a0
 .word 0xd2800021
-bl _p_1083
+bl _p_1082
 .word 0xf94017be
 .word 0xf90003c0
 .word 0xf9400ba0
@@ -80729,20 +80704,20 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCor
 .word 0x92800001
 .word 0xf2bfffe1
 .word 0xf9401ba2
-bl _p_761
+bl _p_760
 .loc 4 504 0
 .word 0x3940a3a0
 .word 0x34000060
 .word 0xaa1903e0
-bl _p_762
+bl _p_761
 .loc 4 507 0
 .word 0xaa1903e0
-bl _p_763
+bl _p_762
 .word 0x53001c00
 .word 0x35000080
 .word 0xaa1903e0
 .word 0xd2800021
-bl _p_764
+bl _p_763
 .loc 4 512 0
 .word 0x91012320
 .word 0x39800000
@@ -80764,30 +80739,30 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_get_Factory:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3936]
+ldr x0, [x16, #3920]
 .word 0xf9400000
 .word 0xb5000460
 .loc 4 528 0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3936]
+ldr x0, [x16, #3920]
 .word 0xf9000fa0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3944]
+ldr x0, [x16, #3928]
 .word 0xd2800501
 bl _p_3
 .word 0xf9000ba0
-bl _p_1084
+bl _p_1083
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xd2800002
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x3, [x16, #3952]
+ldr x3, [x16, #3936]
 .word 0xc85f7c30
 .word 0xeb02021f
 .word 0x54000061
@@ -80810,7 +80785,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3936]
+ldr x0, [x16, #3920]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -80838,7 +80813,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_InnerInvoke:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3960]
+ldr x1, [x16, #3944]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -80863,12 +80838,12 @@ ldr x1, [x16, #3960]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3968]
+ldr x1, [x16, #3952]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #3976]
-bl _p_770
+ldr x2, [x16, #3960]
+bl _p_769
 .word 0xaa0003f9
 .loc 4 549 0
 .word 0xaa1903e0
@@ -80906,9 +80881,9 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetAwaiter:
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3984]
+ldr x15, [x16, #3968]
 .word 0xf94013a1
-bl _p_1085
+bl _p_1084
 .word 0xf94017a0
 .word 0xf9000ba0
 .word 0xf9400ba0
@@ -80933,10 +80908,10 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ConfigureAwa
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3992]
+ldr x15, [x16, #3976]
 .word 0xf94013a1
 .word 0x3940a3a2
-bl _p_1086
+bl _p_1085
 .word 0xf9401ba0
 .word 0xf9000ba0
 .word 0xf9401fa0
@@ -80957,14 +80932,14 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-bl _p_776
+bl _p_775
 .word 0xaa0003e2
 .word 0xf90013bf
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a3
 .word 0xd2800004
-bl _p_1087
+bl _p_1086
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -80986,7 +80961,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith
 .word 0xf94013a2
 .word 0xf94017a3
 .word 0xd2800004
-bl _p_1087
+bl _p_1086
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -81009,7 +80984,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith
 .word 0xf9401fa2
 .word 0xf94013a3
 .word 0xb98033a4
-bl _p_1087
+bl _p_1086
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -81038,7 +81013,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith
 .word 0x910103a1
 .word 0x910123a2
 .word 0xb9803ba0
-bl _p_780
+bl _p_779
 .loc 4 755 0
 .word 0xb98043a0
 .word 0xf9002fa0
@@ -81047,7 +81022,7 @@ bl _p_780
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4000]
+ldr x0, [x16, #3984]
 .word 0xd2800a01
 bl _p_3
 .word 0xf9402fa4
@@ -81056,7 +81031,7 @@ bl _p_3
 .word 0xf9400fa1
 .word 0xaa1803e2
 .word 0xd2800003
-bl _p_1088
+bl _p_1087
 .word 0xf9402ba0
 .word 0xaa0003f8
 .loc 4 762 0
@@ -81065,7 +81040,7 @@ bl _p_1088
 .word 0xf94013a2
 .word 0xf94017a3
 .word 0xb9803ba4
-bl _p_783
+bl _p_782
 .loc 4 764 0
 .word 0xaa1803e0
 .word 0xf9400bb8
@@ -81106,7 +81081,7 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor
 .word 0xd2800002
 .word 0xd2800003
 .word 0xd2800004
-bl _p_1089
+bl _p_1088
 .loc 5 95 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -81127,7 +81102,7 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor
 .word 0xf9001ba3
 .word 0xf9001fa4
 .word 0xb98033a0
-bl _p_785
+bl _p_784
 .loc 5 211 0
 .word 0xb9802ba0
 .word 0x92800bfe
@@ -81289,7 +81264,7 @@ bl _p_316
 .word 0xaa0303e0
 .word 0xf94027a1
 .word 0x3940007e
-bl _p_734
+bl _p_733
 .loc 5 548 0
 .word 0x14000031
 .loc 5 549 0
@@ -81300,7 +81275,7 @@ bl _p_734
 .word 0xf94037a1
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_733
+bl _p_732
 .loc 5 556 0
 .word 0x14000029
 .loc 5 559 0
@@ -81319,18 +81294,18 @@ bl _p_733
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3512]
+ldr x0, [x16, #3496]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3296]
+ldr x0, [x16, #3280]
 .word 0x39400000
 .word 0x34000060
 .word 0xf94047a0
-bl _p_786
+bl _p_785
 .loc 5 563 0
 .word 0x3940c3a0
 .word 0x34000120
@@ -81341,7 +81316,7 @@ bl _p_786
 .word 0xaa0203e0
 .word 0xf94023a1
 .word 0x3940005e
-bl _p_1082
+bl _p_1081
 .loc 5 566 0
 .word 0x14000008
 .loc 5 569 0
@@ -81351,7 +81326,7 @@ bl _p_1082
 .word 0xaa0203e0
 .word 0xf9401fa1
 .word 0x3940005e
-bl _p_1090
+bl _p_1089
 .loc 5 572 0
 .word 0xf94077be
 .word 0xd61f03c0
@@ -81378,12 +81353,12 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromA
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3944]
+ldr x15, [x16, #3928]
 .word 0xf9400fa0
 .word 0xf94013a1
 .word 0xd2800002
 .word 0xf94017a3
-bl _p_1091
+bl _p_1090
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -81408,7 +81383,7 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromA
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4008]
+ldr x0, [x16, #3992]
 .word 0xd2800501
 bl _p_3
 .word 0xf90023a0
@@ -81454,20 +81429,20 @@ ldr x2, [x16, #16]
 .loc 5 778 0
 .word 0xaa1a03e0
 .word 0xd2800021
-bl _p_793
+bl _p_792
 .loc 5 780 0
 .word 0xf94023a0
 .word 0xf90057a0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3928]
+ldr x0, [x16, #3912]
 .word 0xd2800a01
 bl _p_3
 .word 0xf90053a0
 .word 0xf9401ba1
 .word 0xaa1a03e2
-bl _p_1092
+bl _p_1091
 .word 0xf94053a0
 .word 0xf94057a1
 .word 0xf9001020
@@ -81492,18 +81467,18 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3512]
+ldr x0, [x16, #3496]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3296]
+ldr x0, [x16, #3280]
 .word 0x39400000
 .word 0x34000080
 .word 0xaa1a03e0
-bl _p_796
+bl _p_795
 .word 0x14000001
 .loc 5 788 0
 .word 0xf94023a0
@@ -81514,7 +81489,7 @@ bl _p_796
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3520]
+ldr x0, [x16, #3504]
 .word 0xd2800e01
 bl _p_3
 .word 0xaa0003e1
@@ -81538,17 +81513,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4016]
+ldr x0, [x16, #4000]
 .word 0xf9001420
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4024]
+ldr x0, [x16, #4008]
 .word 0xf9002020
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4032]
+ldr x0, [x16, #4016]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -81566,7 +81541,7 @@ ldr x0, [x16, #4032]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3536]
+ldr x15, [x16, #3520]
 .word 0x928003f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -81583,10 +81558,10 @@ ldr x15, [x16, #3536]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3944]
+ldr x15, [x16, #3928]
 .word 0xaa1a03e0
 .word 0xd2800004
-bl _p_1093
+bl _p_1092
 .loc 5 798 0
 .word 0x14000026
 .word 0xf90027a0
@@ -81608,18 +81583,18 @@ bl _p_1093
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3512]
+ldr x0, [x16, #3496]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_106
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3296]
+ldr x0, [x16, #3280]
 .word 0x39400000
 .word 0x34000060
 .word 0xf9403ba0
-bl _p_786
+bl _p_785
 .loc 5 806 0
 .word 0xf94023a0
 .word 0xf9401002
@@ -81629,10 +81604,10 @@ bl _p_786
 .word 0xaa0203e0
 .word 0xf9404ba1
 .word 0x3940005e
-bl _p_1082
+bl _p_1081
 .loc 5 807 0
 .word 0xf94027a0
-bl _p_802
+bl _p_801
 .loc 5 810 0
 .word 0xf94023a0
 .word 0xf9401000
@@ -81745,7 +81720,7 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400fa1
-bl _p_721
+bl _p_720
 .loc 3 486 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -81773,11 +81748,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3928]
+ldr x0, [x16, #3912]
 .word 0xd2800a01
 bl _p_3
 .word 0xf90013a0
-bl _p_1094
+bl _p_1093
 .word 0xf94013a1
 .word 0xaa0103e0
 .word 0xaa0103f9
@@ -81826,9 +81801,9 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xf94013a0
-bl _p_1095
+bl _p_1094
 .word 0xf9400fa1
 .word 0xf9000820
 .word 0x91004021
@@ -81852,20 +81827,20 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3296]
+ldr x0, [x16, #3280]
 .word 0x39400000
 .word 0x340000c0
 .loc 3 605 0
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_726
+bl _p_725
 .word 0x93407c00
-bl _p_727
+bl _p_726
 .loc 3 608 0
 .word 0xaa1903e0
 .word 0xf94013a1
 .word 0x3940033e
-bl _p_1082
+bl _p_1081
 .word 0x53001c00
 .word 0x340000a0
 .loc 3 613 0
@@ -81926,10 +81901,10 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1903e0
 .word 0xf94013a1
-bl _p_1096
+bl _p_1095
 .loc 3 638 0
 .word 0xf9400bb9
 .word 0x910003bf
@@ -81962,9 +81937,9 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1903e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f8
 .loc 3 661 0
 .word 0xaa1a03f9
@@ -81977,7 +81952,7 @@ bl _p_1078
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3304]
+ldr x1, [x16, #3288]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800019
@@ -81987,7 +81962,7 @@ ldr x1, [x16, #3304]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0x3940031e
-bl _p_733
+bl _p_732
 .word 0x53001c1a
 .word 0x1400000b
 .word 0x394002fe
@@ -81998,7 +81973,7 @@ bl _p_733
 .word 0xf9401ba1
 .word 0xaa1703e2
 .word 0x3940031e
-bl _p_734
+bl _p_733
 .word 0x53001c1a
 .loc 3 673 0
 .word 0x340001da
@@ -82046,11 +82021,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4040]
+ldr x0, [x16, #4024]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #4048]
+ldr x1, [x16, #4032]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340004c0
@@ -82058,7 +82033,7 @@ ldr x1, [x16, #4048]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4056]
+ldr x0, [x16, #4040]
 .word 0xd2800221
 bl _p_3
 .word 0x91004001
@@ -82084,30 +82059,30 @@ ldr x2, [x16, #1736]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3320]
+ldr x0, [x16, #3304]
 .word 0xf940001a
 .word 0x14000005
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3328]
+ldr x0, [x16, #3312]
 .word 0xf940001a
 .loc 3 759 0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4064]
+ldr x0, [x16, #4048]
 .word 0xaa1a03e0
 .word 0x1400019e
 .loc 3 762 0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4040]
+ldr x0, [x16, #4024]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #4072]
+ldr x1, [x16, #4056]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000660
@@ -82115,7 +82090,7 @@ ldr x1, [x16, #4072]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4056]
+ldr x0, [x16, #4040]
 .word 0xd2800221
 bl _p_3
 .word 0x91004001
@@ -82149,7 +82124,7 @@ ldr x2, [x16, #2648]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3344]
+ldr x0, [x16, #3328]
 .word 0xf9400000
 .word 0x9280001e
 .word 0xf2bffffe
@@ -82167,24 +82142,24 @@ ldr x0, [x16, #3344]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #4064]
+ldr x1, [x16, #4048]
 .word 0x14000163
 .loc 3 776 0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4040]
+ldr x0, [x16, #4024]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #4080]
+ldr x1, [x16, #4064]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000300
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4056]
+ldr x0, [x16, #4040]
 .word 0xd2800221
 bl _p_3
 .word 0x91004001
@@ -82209,18 +82184,18 @@ ldr x2, [x16, #2552]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4040]
+ldr x0, [x16, #4024]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #4088]
+ldr x1, [x16, #4072]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000300
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4056]
+ldr x0, [x16, #4040]
 .word 0xd2800221
 bl _p_3
 .word 0x91004001
@@ -82236,7 +82211,7 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #3368]
+ldr x2, [x16, #3352]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54002521
@@ -82245,18 +82220,18 @@ ldr x2, [x16, #3368]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4040]
+ldr x0, [x16, #4024]
 
-adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
+adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #0]
+ldr x1, [x16, #4080]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000300
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4056]
+ldr x0, [x16, #4040]
 .word 0xd2800221
 bl _p_3
 .word 0x91004001
@@ -82272,7 +82247,7 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #3384]
+ldr x2, [x16, #3368]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54002121
@@ -82281,18 +82256,18 @@ ldr x2, [x16, #3384]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4040]
+ldr x0, [x16, #4024]
 
-adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
+adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #8]
+ldr x1, [x16, #4088]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000300
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4056]
+ldr x0, [x16, #4040]
 .word 0xd2800221
 bl _p_3
 .word 0x91004001
@@ -82308,7 +82283,7 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #3400]
+ldr x2, [x16, #3384]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54001d21
@@ -82317,18 +82292,18 @@ ldr x2, [x16, #3400]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4040]
+ldr x0, [x16, #4024]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #16]
+ldr x1, [x16, #0]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000300
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4056]
+ldr x0, [x16, #4040]
 .word 0xd2800221
 bl _p_3
 .word 0x91004001
@@ -82344,7 +82319,7 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #3416]
+ldr x2, [x16, #3400]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54001921
@@ -82353,18 +82328,18 @@ ldr x2, [x16, #3416]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4040]
+ldr x0, [x16, #4024]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #24]
+ldr x1, [x16, #8]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000300
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4056]
+ldr x0, [x16, #4040]
 .word 0xd2800221
 bl _p_3
 .word 0x91004001
@@ -82380,7 +82355,7 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #3432]
+ldr x2, [x16, #3416]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54001521
@@ -82389,18 +82364,18 @@ ldr x2, [x16, #3432]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4040]
+ldr x0, [x16, #4024]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #32]
+ldr x1, [x16, #16]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000300
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4056]
+ldr x0, [x16, #4040]
 .word 0xd2800221
 bl _p_3
 .word 0x91004001
@@ -82416,7 +82391,7 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #3448]
+ldr x2, [x16, #3432]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54001121
@@ -82425,18 +82400,18 @@ ldr x2, [x16, #3448]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4040]
+ldr x0, [x16, #4024]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #40]
+ldr x1, [x16, #24]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000300
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4056]
+ldr x0, [x16, #4040]
 .word 0xd2800221
 bl _p_3
 .word 0x91004001
@@ -82452,7 +82427,7 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #3464]
+ldr x2, [x16, #3448]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54000d21
@@ -82461,11 +82436,11 @@ ldr x2, [x16, #3464]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4040]
+ldr x0, [x16, #4024]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #48]
+ldr x1, [x16, #32]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340003e0
@@ -82475,7 +82450,7 @@ ldr x1, [x16, #48]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4056]
+ldr x0, [x16, #4040]
 .word 0xd2800221
 bl _p_3
 .word 0xaa0003e1
@@ -82493,7 +82468,7 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x3, [x16, #3480]
+ldr x3, [x16, #3464]
 .word 0xeb03005f
 .word 0x10000011
 .word 0x54000881
@@ -82504,11 +82479,11 @@ ldr x3, [x16, #3480]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4040]
+ldr x0, [x16, #4024]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #56]
+ldr x1, [x16, #40]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000540
@@ -82518,7 +82493,7 @@ ldr x1, [x16, #56]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #4056]
+ldr x0, [x16, #4040]
 .word 0xd2800221
 bl _p_3
 .word 0xaa0003e1
@@ -82536,7 +82511,7 @@ bl _p_3
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x3, [x16, #3496]
+ldr x3, [x16, #3480]
 .word 0xeb03005f
 .word 0x10000011
 .word 0x540003a1
@@ -82548,7 +82523,7 @@ ldr x3, [x16, #3496]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #64]
+ldr x0, [x16, #48]
 .word 0xf9400000
 .word 0x14000010
 .loc 3 794 0
@@ -82557,19 +82532,19 @@ ldr x0, [x16, #64]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #64]
+ldr x0, [x16, #48]
 .word 0xf9400000
 .word 0x1400000a
 .loc 3 800 0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3928]
+ldr x0, [x16, #3912]
 .word 0xd2800a01
 bl _p_3
 .word 0xf9001ba0
 .word 0xf9400fa1
-bl _p_1097
+bl _p_1096
 .word 0xf9401ba0
 .word 0xf9400bba
 .word 0x910003bf
@@ -82598,14 +82573,14 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #72]
+ldr x15, [x16, #56]
 .word 0xf9400ba0
-bl _p_1098
+bl _p_1097
 .word 0xaa0003e1
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #64]
+ldr x0, [x16, #48]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -82623,7 +82598,7 @@ System_Collections_Generic_EqualityComparer_1_T_REF_CreateComparer:
 .word 0xf90013ba
 .word 0xf90017af
 .word 0xf94017a0
-bl _p_1099
+bl _p_1098
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -82633,7 +82608,7 @@ bl _p_1099
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #80]
+ldr x1, [x16, #64]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54002341
@@ -82642,7 +82617,7 @@ ldr x1, [x16, #80]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #88]
+ldr x0, [x16, #72]
 .word 0xeb00035f
 .word 0x9a9f17e0
 .word 0x34000280
@@ -82650,12 +82625,12 @@ ldr x0, [x16, #88]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #96]
+ldr x0, [x16, #80]
 .word 0xd2800201
 bl _p_3
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1100
+bl _p_1099
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -82671,7 +82646,7 @@ bl _p_1100
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #104]
+ldr x0, [x16, #88]
 .word 0xeb00033f
 .word 0x9a9f17e0
 .word 0x34000280
@@ -82679,12 +82654,12 @@ ldr x0, [x16, #104]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #112]
+ldr x0, [x16, #96]
 .word 0xd2800201
 bl _p_3
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1100
+bl _p_1099
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -82698,7 +82673,7 @@ bl _p_1100
 .word 0x140000e2
 .loc 9 62 0
 .word 0xf94017a0
-bl _p_1101
+bl _p_1100
 .word 0xaa0003e2
 .word 0xaa0203e0
 .word 0xaa1903e1
@@ -82711,12 +82686,12 @@ bl _p_1101
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #120]
+ldr x0, [x16, #104]
 .word 0xaa1903e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1100
+bl _p_1099
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -82742,7 +82717,7 @@ bl _p_1100
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #128]
+ldr x1, [x16, #112]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000940
@@ -82765,7 +82740,7 @@ ldr x1, [x16, #128]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #80]
+ldr x1, [x16, #64]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540014a1
@@ -82774,12 +82749,12 @@ ldr x1, [x16, #80]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #136]
+ldr x0, [x16, #120]
 .word 0xf9001fa0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #144]
+ldr x0, [x16, #128]
 .word 0xd2800021
 bl _p_20
 .word 0xaa0003e3
@@ -82809,12 +82784,12 @@ bl _p_20
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #152]
+ldr x0, [x16, #136]
 .word 0xaa1803e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1100
+bl _p_1099
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -82835,8 +82810,8 @@ bl _p_1100
 .word 0x34000be0
 .loc 9 83 0
 .word 0xaa1903e0
+bl _p_1102
 bl _p_1103
-bl _p_1104
 .word 0x93407c00
 .word 0xaa0003fa
 .loc 9 88 0
@@ -82850,7 +82825,7 @@ bl _p_1104
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #160]
+ldr x0, [x16, #144]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -82858,12 +82833,12 @@ ldr x0, [x16, #160]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #168]
+ldr x0, [x16, #152]
 .word 0xaa1903e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1100
+bl _p_1099
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -82879,12 +82854,12 @@ bl _p_1100
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #176]
+ldr x0, [x16, #160]
 .word 0xaa1903e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1100
+bl _p_1099
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -82900,12 +82875,12 @@ bl _p_1100
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #184]
+ldr x0, [x16, #168]
 .word 0xaa1903e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1100
+bl _p_1099
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -82921,12 +82896,12 @@ bl _p_1100
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #192]
+ldr x0, [x16, #176]
 .word 0xaa1903e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1100
+bl _p_1099
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -82940,11 +82915,11 @@ bl _p_1100
 .word 0x14000008
 .loc 9 120 0
 .word 0xf94017a0
-bl _p_1105
+bl _p_1104
 .word 0xd2800201
 bl _p_3
 .word 0xf9001ba0
-bl _p_1106
+bl _p_1105
 .word 0xf9401ba0
 .word 0xa94167b8
 .word 0xf94013ba
@@ -82987,15 +82962,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101a3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -83004,9 +82979,9 @@ bl _p_981
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f6
 .loc 3 556 0
 .word 0xf9401ba0
@@ -83025,7 +83000,7 @@ bl _p_1078
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #184]
 .word 0xd2800801
 bl _p_3
 .word 0x9100e3a1
@@ -83037,18 +83012,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf94037a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_1079
+bl _p_1078
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf9003ba0
 .word 0xf9403ba0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf9004ba0
@@ -83093,15 +83068,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101c3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -83110,9 +83085,9 @@ bl _p_981
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f6
 .loc 3 556 0
 .word 0xf9401ba0
@@ -83133,7 +83108,7 @@ bl _p_1078
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #192]
 .word 0xd2800901
 bl _p_3
 .word 0x9100e3a1
@@ -83145,18 +83120,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf9403ba2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_1079
+bl _p_1078
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf9003fa0
 .word 0xf9403fa0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf9004fa0
@@ -83201,15 +83176,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101a3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -83218,9 +83193,9 @@ bl _p_981
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f6
 .loc 3 556 0
 .word 0xf9401ba0
@@ -83239,7 +83214,7 @@ bl _p_1078
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #200]
 .word 0xd2800801
 bl _p_3
 .word 0x9100e3a1
@@ -83251,18 +83226,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf94037a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_1079
+bl _p_1078
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf9003ba0
 .word 0xf9403ba0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf9004ba0
@@ -83307,15 +83282,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101c3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -83324,9 +83299,9 @@ bl _p_981
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f6
 .loc 3 556 0
 .word 0xf9401ba0
@@ -83347,7 +83322,7 @@ bl _p_1078
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #208]
 .word 0xd2800901
 bl _p_3
 .word 0x9100e3a1
@@ -83359,18 +83334,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf9403ba2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_1079
+bl _p_1078
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf9003fa0
 .word 0xf9403fa0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf9004fa0
@@ -83415,15 +83390,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101a3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -83432,9 +83407,9 @@ bl _p_981
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f6
 .loc 3 556 0
 .word 0xf9401ba0
@@ -83453,7 +83428,7 @@ bl _p_1078
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #216]
 .word 0xd2800801
 bl _p_3
 .word 0x9100e3a1
@@ -83465,18 +83440,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf94037a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_1079
+bl _p_1078
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf9003ba0
 .word 0xf9403ba0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf9004ba0
@@ -83521,15 +83496,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101a3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -83538,9 +83513,9 @@ bl _p_981
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f6
 .loc 3 556 0
 .word 0xf9401ba0
@@ -83559,7 +83534,7 @@ bl _p_1078
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #224]
 .word 0xd2800801
 bl _p_3
 .word 0x9100e3a1
@@ -83571,18 +83546,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf94037a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_1079
+bl _p_1078
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf9003ba0
 .word 0xf9403ba0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf9004ba0
@@ -83627,15 +83602,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x910183a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -83644,9 +83619,9 @@ bl _p_981
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f6
 .loc 3 556 0
 .word 0xf9401ba0
@@ -83663,7 +83638,7 @@ bl _p_1078
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #248]
+ldr x0, [x16, #232]
 .word 0xd2800701
 bl _p_3
 .word 0xaa0003e1
@@ -83730,18 +83705,18 @@ ldr x3, [x16, #16]
 .word 0xf94033a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_1079
+bl _p_1078
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf90037a0
 .word 0xf94037a0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf90047a0
@@ -83786,15 +83761,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101a3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -83803,9 +83778,9 @@ bl _p_981
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f6
 .loc 3 556 0
 .word 0xf9401ba0
@@ -83824,7 +83799,7 @@ bl _p_1078
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #256]
+ldr x0, [x16, #240]
 .word 0xd2800801
 bl _p_3
 .word 0x9100e3a1
@@ -83836,18 +83811,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf94037a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_1079
+bl _p_1078
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf9003ba0
 .word 0xf9403ba0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf9004ba0
@@ -83892,15 +83867,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x910263a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -83909,19 +83884,19 @@ bl _p_981
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f6
 .loc 3 556 0
 .word 0xf9401ba1
 .word 0x9100e3a0
 .word 0xd2800c02
-bl _p_472
+bl _p_471
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #264]
+ldr x0, [x16, #248]
 .word 0xd2800e01
 bl _p_3
 .word 0x9100e3a1
@@ -83933,7 +83908,7 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf9404fa2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
@@ -83941,14 +83916,14 @@ add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x15, [x16, #472]
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_1107
+bl _p_1106
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf90053a0
 .word 0xf94053a0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf90063a0
@@ -83993,15 +83968,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x910183a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -84010,9 +83985,9 @@ bl _p_981
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f6
 .loc 3 556 0
 .word 0xf9401ba0
@@ -84029,7 +84004,7 @@ bl _p_1078
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #272]
+ldr x0, [x16, #256]
 .word 0xd2800701
 bl _p_3
 .word 0xaa0003e1
@@ -84096,18 +84071,18 @@ ldr x3, [x16, #16]
 .word 0xf94033a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_1079
+bl _p_1078
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf90037a0
 .word 0xf94037a0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf90047a0
@@ -84152,15 +84127,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101a3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -84169,9 +84144,9 @@ bl _p_981
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f6
 .loc 3 556 0
 .word 0xf9401ba0
@@ -84190,7 +84165,7 @@ bl _p_1078
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #280]
+ldr x0, [x16, #264]
 .word 0xd2800801
 bl _p_3
 .word 0x9100e3a1
@@ -84202,18 +84177,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf94037a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_1079
+bl _p_1078
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf9003ba0
 .word 0xf9403ba0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf9004ba0
@@ -84258,15 +84233,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x910263a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -84275,19 +84250,19 @@ bl _p_981
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f6
 .loc 3 556 0
 .word 0xf9401ba1
 .word 0x9100e3a0
 .word 0xd2800c02
-bl _p_472
+bl _p_471
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #272]
 .word 0xd2800e01
 bl _p_3
 .word 0x9100e3a1
@@ -84299,7 +84274,7 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf9404fa2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
@@ -84307,14 +84282,14 @@ add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x15, [x16, #472]
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_1107
+bl _p_1106
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf90053a0
 .word 0xf94053a0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf90063a0
@@ -84345,12 +84320,12 @@ MoreLinq_MoreEnumerable_MaxBy_TSource_REF_TKey_DOUBLE_System_Collections_Generic
 .word 0xf9001ba1
 .word 0xaa0203fa
 .word 0xf9401fa0
-bl _p_1108
+bl _p_1107
 .word 0xd2800301
 bl _p_3
 .word 0xf90027a0
 .word 0xf9401fa0
-bl _p_1109
+bl _p_1108
 .word 0xaa0003e1
 .word 0xf94027a0
 .word 0xf90023a0
@@ -84384,10 +84359,10 @@ ldr x1, [x16, #16]
 .word 0xaa0103f6
 .word 0xb5000120
 .word 0xf9401fa0
-bl _p_1110
+bl _p_1109
 .word 0xf90023a0
 .word 0xf9401fa0
-bl _p_1111
+bl _p_1110
 .word 0xf94023af
 .word 0xd63f0000
 .word 0xaa0003f6
@@ -84409,16 +84384,16 @@ ldr x1, [x16, #16]
 .word 0x10000011
 .word 0x54000740
 .word 0xf9401fa0
+bl _p_1111
 bl _p_1112
-bl _p_1113
 .word 0xf90033a0
 .word 0xf9401fa0
-bl _p_1114
+bl _p_1113
 .word 0xd2800e01
 bl _p_3
 .word 0xf9002fa0
 .word 0xf9401fa0
-bl _p_1115
+bl _p_1114
 .word 0xaa0003e3
 .word 0xf9402fa0
 .word 0xf94033a2
@@ -84426,12 +84401,12 @@ bl _p_1115
 .word 0xaa1703e1
 .word 0xd63f0060
 .word 0xf9401fa0
-bl _p_1116
+bl _p_1115
 .word 0xd2800501
 bl _p_3
 .word 0xf90027a0
 .word 0xf9401fa0
-bl _p_1117
+bl _p_1116
 .word 0xaa0003e4
 .word 0xf94027a0
 .word 0xf9402ba3
@@ -84449,9 +84424,9 @@ bl _p_1117
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #280]
 .word 0xd2809601
-bl _p_431
+bl _p_430
 .word 0xaa0003e1
 .word 0xd2801520
 .word 0xf2a04000
@@ -84460,10 +84435,10 @@ bl _p_71
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #280]
 .loc 11 214 0
 .word 0xd28011e1
-bl _p_431
+bl _p_430
 .word 0xaa0003e1
 .word 0xd2801520
 .word 0xf2a04000
@@ -84491,7 +84466,7 @@ System_Array_InternalArray__get_Item_T_INT_int:
 .word 0x540001c2
 .loc 2 179 0
 .word 0xf94013a0
-bl _p_1118
+bl _p_1117
 .word 0x93407f40
 .word 0xd37ef401
 .word 0xf9400fa0
@@ -84542,15 +84517,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101a3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -84559,9 +84534,9 @@ bl _p_981
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f6
 .loc 3 556 0
 .word 0xf9401ba0
@@ -84580,7 +84555,7 @@ bl _p_1078
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #304]
+ldr x0, [x16, #288]
 .word 0xd2800801
 bl _p_3
 .word 0x9100e3a1
@@ -84592,18 +84567,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf94037a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_1079
+bl _p_1078
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf9003ba0
 .word 0xf9403ba0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf9004ba0
@@ -84648,15 +84623,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x910203a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -84665,9 +84640,9 @@ bl _p_981
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f6
 .loc 3 556 0
 .word 0xf9401ba0
@@ -84692,7 +84667,7 @@ bl _p_1078
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #312]
+ldr x0, [x16, #296]
 .word 0xd2800b01
 bl _p_3
 .word 0x9100e3a1
@@ -84704,18 +84679,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf94043a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_1079
+bl _p_1078
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf90047a0
 .word 0xf94047a0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf90057a0
@@ -84760,15 +84735,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101a3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -84777,9 +84752,9 @@ bl _p_981
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f6
 .loc 3 556 0
 .word 0xf9401ba0
@@ -84798,7 +84773,7 @@ bl _p_1078
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #320]
+ldr x0, [x16, #304]
 .word 0xd2800801
 bl _p_3
 .word 0x9100e3a1
@@ -84810,18 +84785,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf94037a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_1079
+bl _p_1078
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf9003ba0
 .word 0xf9403ba0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf9004ba0
@@ -84866,15 +84841,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101c3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -84883,9 +84858,9 @@ bl _p_981
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f6
 .loc 3 556 0
 .word 0xf9401ba0
@@ -84906,7 +84881,7 @@ bl _p_1078
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #312]
 .word 0xd2800901
 bl _p_3
 .word 0x9100e3a1
@@ -84918,18 +84893,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf9403ba2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_1079
+bl _p_1078
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf9003fa0
 .word 0xf9403fa0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf9004fa0
@@ -84974,15 +84949,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101a3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -84991,9 +84966,9 @@ bl _p_981
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f6
 .loc 3 556 0
 .word 0xf9401ba0
@@ -85012,7 +84987,7 @@ bl _p_1078
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #320]
 .word 0xd2800801
 bl _p_3
 .word 0x9100e3a1
@@ -85024,18 +84999,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf94037a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_1079
+bl _p_1078
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf9003ba0
 .word 0xf9403ba0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf9004ba0
@@ -85080,15 +85055,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101a3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_981
+bl _p_980
 .word 0xaa0003f7
 .loc 3 547 0
 .word 0xf9400300
@@ -85097,9 +85072,9 @@ bl _p_981
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3912]
+ldr x15, [x16, #3896]
 .word 0xaa1803e0
-bl _p_1078
+bl _p_1077
 .word 0xaa0003f6
 .loc 3 556 0
 .word 0xf9401ba0
@@ -85118,7 +85093,7 @@ bl _p_1078
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #344]
+ldr x0, [x16, #328]
 .word 0xd2800801
 bl _p_3
 .word 0x9100e3a1
@@ -85130,18 +85105,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf94037a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_985
+bl _p_984
 .loc 3 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_1079
+bl _p_1078
 .loc 3 560 0
 .word 0x1400000c
 .word 0xf9003ba0
 .word 0xf9403ba0
 .loc 3 563 0
 .word 0xd2800001
-bl _p_987
+bl _p_986
 .loc 3 564 0
 bl _p_70
 .word 0xf9004ba0
@@ -85169,7 +85144,7 @@ System_Collections_Generic_EqualityComparer_1_T_BOOL_CreateComparer:
 .word 0xf90013ba
 .word 0xf90017af
 .word 0xf94017a0
-bl _p_1119
+bl _p_1118
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -85179,7 +85154,7 @@ bl _p_1119
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #80]
+ldr x1, [x16, #64]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540023e1
@@ -85188,7 +85163,7 @@ ldr x1, [x16, #80]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #352]
+ldr x0, [x16, #336]
 .word 0xeb00035f
 .word 0x9a9f17e0
 .word 0x34000280
@@ -85196,12 +85171,12 @@ ldr x0, [x16, #352]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #96]
+ldr x0, [x16, #80]
 .word 0xd2800201
 bl _p_3
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1120
+bl _p_1119
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -85217,7 +85192,7 @@ bl _p_1120
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #360]
+ldr x0, [x16, #344]
 .word 0xeb00033f
 .word 0x9a9f17e0
 .word 0x34000280
@@ -85225,12 +85200,12 @@ ldr x0, [x16, #360]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #112]
+ldr x0, [x16, #96]
 .word 0xd2800201
 bl _p_3
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1120
+bl _p_1119
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -85244,7 +85219,7 @@ bl _p_1120
 .word 0x140000e7
 .loc 9 62 0
 .word 0xf94017a0
-bl _p_1121
+bl _p_1120
 .word 0xaa0003e2
 .word 0xaa0203e0
 .word 0xaa1903e1
@@ -85257,12 +85232,12 @@ bl _p_1121
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #368]
+ldr x0, [x16, #352]
 .word 0xaa1903e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1120
+bl _p_1119
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -85288,7 +85263,7 @@ bl _p_1120
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #376]
+ldr x1, [x16, #360]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000940
@@ -85311,7 +85286,7 @@ ldr x1, [x16, #376]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #80]
+ldr x1, [x16, #64]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54001541
@@ -85320,12 +85295,12 @@ ldr x1, [x16, #80]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #384]
+ldr x0, [x16, #368]
 .word 0xf9001fa0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #144]
+ldr x0, [x16, #128]
 .word 0xd2800021
 bl _p_20
 .word 0xaa0003e3
@@ -85355,12 +85330,12 @@ bl _p_20
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #392]
+ldr x0, [x16, #376]
 .word 0xaa1803e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1120
+bl _p_1119
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -85381,8 +85356,8 @@ bl _p_1120
 .word 0x34000be0
 .loc 9 83 0
 .word 0xaa1903e0
+bl _p_1102
 bl _p_1103
-bl _p_1104
 .word 0x93407c00
 .word 0xaa0003fa
 .loc 9 88 0
@@ -85396,7 +85371,7 @@ bl _p_1104
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #400]
+ldr x0, [x16, #384]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -85404,12 +85379,12 @@ ldr x0, [x16, #400]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #392]
 .word 0xaa1903e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1120
+bl _p_1119
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -85425,12 +85400,12 @@ bl _p_1120
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #416]
+ldr x0, [x16, #400]
 .word 0xaa1903e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1120
+bl _p_1119
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -85446,12 +85421,12 @@ bl _p_1120
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #408]
 .word 0xaa1903e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1120
+bl _p_1119
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -85467,12 +85442,12 @@ bl _p_1120
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #432]
+ldr x0, [x16, #416]
 .word 0xaa1903e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1120
+bl _p_1119
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -85486,12 +85461,12 @@ bl _p_1120
 .word 0x1400000d
 .loc 9 120 0
 .word 0xf94017a0
-bl _p_1122
+bl _p_1121
 .word 0xd2800201
 bl _p_3
 .word 0xf9001fa0
 .word 0xf94017a0
-bl _p_1123
+bl _p_1122
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -85521,7 +85496,7 @@ System_Collections_Generic_EqualityComparer_1_T_INT_CreateComparer:
 .word 0xf90013ba
 .word 0xf90017af
 .word 0xf94017a0
-bl _p_1124
+bl _p_1123
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -85531,7 +85506,7 @@ bl _p_1124
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #80]
+ldr x1, [x16, #64]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540023e1
@@ -85540,7 +85515,7 @@ ldr x1, [x16, #80]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #424]
 .word 0xeb00035f
 .word 0x9a9f17e0
 .word 0x34000280
@@ -85548,12 +85523,12 @@ ldr x0, [x16, #440]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #96]
+ldr x0, [x16, #80]
 .word 0xd2800201
 bl _p_3
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1125
+bl _p_1124
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -85569,7 +85544,7 @@ bl _p_1125
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #448]
+ldr x0, [x16, #432]
 .word 0xeb00033f
 .word 0x9a9f17e0
 .word 0x34000280
@@ -85577,12 +85552,12 @@ ldr x0, [x16, #448]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #112]
+ldr x0, [x16, #96]
 .word 0xd2800201
 bl _p_3
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1125
+bl _p_1124
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -85596,7 +85571,7 @@ bl _p_1125
 .word 0x140000e7
 .loc 9 62 0
 .word 0xf94017a0
-bl _p_1126
+bl _p_1125
 .word 0xaa0003e2
 .word 0xaa0203e0
 .word 0xaa1903e1
@@ -85609,12 +85584,12 @@ bl _p_1126
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #456]
+ldr x0, [x16, #440]
 .word 0xaa1903e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1125
+bl _p_1124
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -85640,7 +85615,7 @@ bl _p_1125
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #464]
+ldr x1, [x16, #448]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000940
@@ -85663,7 +85638,7 @@ ldr x1, [x16, #464]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #80]
+ldr x1, [x16, #64]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54001541
@@ -85672,12 +85647,12 @@ ldr x1, [x16, #80]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #472]
+ldr x0, [x16, #456]
 .word 0xf9001fa0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #144]
+ldr x0, [x16, #128]
 .word 0xd2800021
 bl _p_20
 .word 0xaa0003e3
@@ -85707,12 +85682,12 @@ bl _p_20
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #480]
+ldr x0, [x16, #464]
 .word 0xaa1803e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1125
+bl _p_1124
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -85733,8 +85708,8 @@ bl _p_1125
 .word 0x34000be0
 .loc 9 83 0
 .word 0xaa1903e0
+bl _p_1102
 bl _p_1103
-bl _p_1104
 .word 0x93407c00
 .word 0xaa0003fa
 .loc 9 88 0
@@ -85748,7 +85723,7 @@ bl _p_1104
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #488]
+ldr x0, [x16, #472]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -85756,12 +85731,12 @@ ldr x0, [x16, #488]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #496]
+ldr x0, [x16, #480]
 .word 0xaa1903e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1125
+bl _p_1124
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -85777,12 +85752,12 @@ bl _p_1125
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #504]
+ldr x0, [x16, #488]
 .word 0xaa1903e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1125
+bl _p_1124
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -85798,12 +85773,12 @@ bl _p_1125
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #512]
+ldr x0, [x16, #496]
 .word 0xaa1903e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1125
+bl _p_1124
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -85819,12 +85794,12 @@ bl _p_1125
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #520]
+ldr x0, [x16, #504]
 .word 0xaa1903e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_1125
+bl _p_1124
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -85838,12 +85813,12 @@ bl _p_1125
 .word 0x1400000d
 .loc 9 120 0
 .word 0xf94017a0
-bl _p_1127
+bl _p_1126
 .word 0xd2800201
 bl _p_3
 .word 0xf9001fa0
 .word 0xf94017a0
-bl _p_1128
+bl _p_1127
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -85956,19 +85931,19 @@ System_Collections_Generic_ArraySortHelper_1_T_INT_BinarySearch_T_INT___int_int_
 .word 0xb500013a
 .loc 17 76 0
 .word 0xf9401fa0
-bl _p_1129
+bl _p_1128
 .word 0xf9003ba0
 .word 0xf9401fa0
-bl _p_1130
+bl _p_1129
 .word 0xf9403baf
 .word 0xd63f0000
 .word 0xaa0003fa
 .loc 17 79 0
 .word 0xf9401fa0
-bl _p_1131
+bl _p_1130
 .word 0xf9003ba0
 .word 0xf9401fa0
-bl _p_1132
+bl _p_1131
 .word 0xaa0003e5
 .word 0xf9403baf
 .word 0xf9400fa0
@@ -85991,11 +85966,11 @@ bl _p_268
 .word 0xf94023a0
 .word 0xf90043a0
 .word 0xd2802040
-bl _p_1076
+bl _p_1075
 .word 0xf9403fa1
 .word 0xf94043a2
 .word 0xf9003ba0
-bl _p_1077
+bl _p_1076
 .word 0xf9403ba0
 bl _p_71
 .loc 17 85 0
@@ -86020,10 +85995,10 @@ System_Array_IndexOfImpl_T_INT_T_INT___T_INT_int_int:
 .word 0xf90013a2
 .word 0xf90017a3
 .word 0xf9401ba0
-bl _p_1133
+bl _p_1132
 .word 0xf90023a0
 .word 0xf9401ba0
-bl _p_1134
+bl _p_1133
 .word 0xf94023af
 .word 0xd63f0000
 .word 0xaa0003e5
@@ -86058,10 +86033,10 @@ System_Collections_Generic_ArraySortHelper_1_T_INT_Sort_T_INT___int_int_System_C
 .word 0xb5000120
 .loc 17 55 0
 .word 0xf9401ba0
-bl _p_1135
+bl _p_1134
 .word 0xf90053a0
 .word 0xf9401ba0
-bl _p_1136
+bl _p_1135
 .word 0xf94053af
 .word 0xd63f0000
 .word 0xf90017a0
@@ -86070,18 +86045,18 @@ bl _p_1136
 .word 0xf90067a0
 .word 0xf9005fa0
 .word 0xf9401ba0
-bl _p_1137
+bl _p_1136
 .word 0xaa0003e1
 .word 0xf94067a0
-bl _p_1138
+bl _p_1137
 .word 0xf90063a0
 .word 0xf9401ba0
-bl _p_1139
+bl _p_1138
 .word 0xd2800e01
 bl _p_3
 .word 0xf9005ba0
 .word 0xf9401ba0
-bl _p_1140
+bl _p_1139
 .word 0xaa0003e3
 .word 0xf9405ba0
 .word 0xf9405fa1
@@ -86089,10 +86064,10 @@ bl _p_1140
 .word 0xf90053a0
 .word 0xd63f0060
 .word 0xf9401ba0
-bl _p_1141
+bl _p_1140
 .word 0xf90057a0
 .word 0xf9401ba0
-bl _p_1142
+bl _p_1141
 .word 0xaa0003e4
 .word 0xf94053a3
 .word 0xf94057af
@@ -86105,7 +86080,7 @@ bl _p_1142
 .word 0xf90023a0
 .loc 17 62 0
 .word 0xf94017a0
-bl _p_1075
+bl _p_1074
 .loc 17 63 0
 bl _p_70
 .word 0xf9004ba0
@@ -86125,11 +86100,11 @@ bl _p_268
 .word 0xf9401fa0
 .word 0xf9005ba0
 .word 0xd2802040
-bl _p_1076
+bl _p_1075
 .word 0xf94057a1
 .word 0xf9405ba2
 .word 0xf90053a0
-bl _p_1077
+bl _p_1076
 .word 0xf94053a0
 bl _p_71
 .loc 17 68 0
@@ -86175,10 +86150,10 @@ System_Collections_Generic_ArraySortHelper_1_T_INT_IntrospectiveSort_T_INT___int
 .word 0x1b177f00
 .word 0xf9002ba0
 .word 0xf9401fa0
-bl _p_1143
+bl _p_1142
 .word 0xf9002fa0
 .word 0xf9401fa0
-bl _p_1144
+bl _p_1143
 .word 0xaa0003e5
 .word 0xf9402ba3
 .word 0xf9402faf
@@ -86209,7 +86184,7 @@ wrapper_delegate_invoke_System_Func_1_System_Threading_Tasks_VoidTaskResult_invo
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x350007c0
 .word 0x14000001
@@ -86273,7 +86248,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffc1
@@ -86364,7 +86339,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskRes
 .word 0xf9400fa1
 .word 0xd2800022
 .word 0xd2800023
-bl _p_803
+bl _p_802
 .loc 6 290 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -86389,7 +86364,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskRes
 .word 0xf9400fa1
 .word 0xd2800022
 .word 0xd2800003
-bl _p_803
+bl _p_802
 .loc 6 300 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -86410,7 +86385,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskRes
 .word 0xf90013a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_804
+bl _p_803
 .loc 6 311 0
 .word 0xf94013a0
 .word 0xf9400000
@@ -86446,10 +86421,10 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tasks
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #528]
+ldr x15, [x16, #512]
 .word 0xf9400fa1
 .word 0x394083a2
-bl _p_1145
+bl _p_1144
 .word 0xf9401fa0
 .word 0xf90017a0
 .word 0xf94023a0
@@ -86588,7 +86563,7 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_
 .word 0x39402022
 .word 0xf9400fa1
 .word 0xd2800023
-bl _p_803
+bl _p_802
 .loc 6 464 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -86613,7 +86588,7 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_
 .word 0x39402022
 .word 0xf9400fa1
 .word 0xd2800003
-bl _p_803
+bl _p_802
 .loc 6 474 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -86634,7 +86609,7 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_
 .word 0xf90013a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_804
+bl _p_803
 .loc 6 485 0
 .word 0xf94013a0
 .word 0xf9400000
@@ -86663,7 +86638,7 @@ wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Thr
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -86714,7 +86689,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -86758,7 +86733,7 @@ ldr x0, [x16, #48]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #3504]
+ldr x1, [x16, #3488]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -86784,7 +86759,7 @@ ldr x1, [x16, #3504]
 .word 0xb9803ba5
 .word 0xb98043a6
 .word 0xd2800007
-bl _p_750
+bl _p_749
 .loc 13 134 0
 .word 0xf94017a0
 .word 0xf90026a0
@@ -86802,7 +86777,7 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 13 135 0
 .word 0xaa1503e0
-bl _p_749
+bl _p_748
 .loc 13 136 0
 .word 0xf9400bb5
 .word 0xa941e3b7
@@ -86827,18 +86802,18 @@ System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_V
 .loc 13 151 0
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_762
+bl _p_761
 .loc 13 155 0
 .word 0xf9400b40
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #536]
+ldr x1, [x16, #520]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #544]
-bl _p_770
+ldr x2, [x16, #528]
+bl _p_769
 .word 0xaa0003f8
 .loc 13 156 0
 .word 0xaa1803e0
@@ -86855,12 +86830,12 @@ bl _p_770
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #552]
+ldr x1, [x16, #536]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x2, [x16, #560]
-bl _p_770
+ldr x2, [x16, #544]
+bl _p_769
 .word 0xaa0003f8
 .loc 13 162 0
 .word 0xaa1803e0
@@ -86894,7 +86869,7 @@ wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Threading_Tasks
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3288]
+ldr x0, [x16, #3272]
 .word 0xb9400000
 .word 0x35000840
 .word 0x14000001
@@ -86962,7 +86937,7 @@ ldr x0, [x16, #3288]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_71
-bl _p_714
+bl _p_713
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffbd
@@ -86998,7 +86973,7 @@ System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3536]
+ldr x15, [x16, #3520]
 .word 0x928003f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -87013,10 +86988,10 @@ ldr x15, [x16, #3536]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x15, [x16, #3944]
+ldr x15, [x16, #3928]
 .word 0xf9400fa0
 .word 0xd2800024
-bl _p_1093
+bl _p_1092
 .loc 5 792 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -87035,7 +87010,7 @@ System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_System_Thread
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+4096
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #3928]
+ldr x0, [x16, #3912]
 .word 0xd2800a01
 bl _p_3
 .word 0xf9001ba0
@@ -87043,7 +87018,7 @@ bl _p_3
 .word 0xf9400ba2
 .word 0xd2880003
 .word 0xf94013a4
-bl _p_1146
+bl _p_1145
 .word 0xf9401ba0
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -87137,17 +87112,17 @@ System_Collections_Generic_Comparer_1_T_DOUBLE_get_Default:
 .word 0xf9000bba
 .word 0xf9000faf
 .word 0xf9400fa0
-bl _p_1147
+bl _p_1146
 .word 0xf940001a
 .loc 18 29 0
 .word 0xaa1a03e0
 .word 0xb5000240
 .loc 18 30 0
 .word 0xf9400fa0
-bl _p_1148
+bl _p_1147
 .word 0xf9001ba0
 .word 0xf9400fa0
-bl _p_1149
+bl _p_1148
 .word 0xf9401baf
 .word 0xd63f0000
 .word 0xaa0003fa
@@ -87155,7 +87130,7 @@ bl _p_1149
 .word 0xaa1a03e0
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_1147
+bl _p_1146
 .word 0xf90013a0
 .word 0xf94017a1
 .word 0xd5033bbf
@@ -87243,7 +87218,7 @@ System_Collections_Generic_ArraySortHelper_1_T_INT_InternalBinarySearch_T_INT___
 .word 0xb9800000
 .word 0xf9002ba0
 .word 0xf94027a0
-bl _p_1150
+bl _p_1149
 .word 0xaa0003ef
 .word 0xf9402ba1
 .word 0xaa1a03e0
@@ -87297,17 +87272,17 @@ System_Collections_Generic_Comparer_1_T_INT_get_Default:
 .word 0xf9000bba
 .word 0xf9000faf
 .word 0xf9400fa0
-bl _p_1151
+bl _p_1150
 .word 0xf940001a
 .loc 18 29 0
 .word 0xaa1a03e0
 .word 0xb5000240
 .loc 18 30 0
 .word 0xf9400fa0
-bl _p_1152
+bl _p_1151
 .word 0xf9001ba0
 .word 0xf9400fa0
-bl _p_1153
+bl _p_1152
 .word 0xf9401baf
 .word 0xd63f0000
 .word 0xaa0003fa
@@ -87315,7 +87290,7 @@ bl _p_1153
 .word 0xaa1a03e0
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_1151
+bl _p_1150
 .word 0xf90013a0
 .word 0xf94017a1
 .word 0xd5033bbf
@@ -87364,10 +87339,10 @@ System_Collections_Generic_ArraySortHelper_1_T_INT_IntroSort_T_INT___int_int_int
 .word 0x540001c1
 .loc 17 192 0
 .word 0xf94023a0
-bl _p_1154
+bl _p_1153
 .word 0xf9002ba0
 .word 0xf94023a0
-bl _p_1155
+bl _p_1154
 .word 0xaa0003e4
 .word 0xf9402baf
 .word 0xaa1603e0
@@ -87385,10 +87360,10 @@ bl _p_1155
 .word 0x51000700
 .word 0xf90037a0
 .word 0xf94023a0
-bl _p_1154
+bl _p_1153
 .word 0xf9003ba0
 .word 0xf94023a0
-bl _p_1155
+bl _p_1154
 .word 0xaa0003e4
 .word 0xf94037a3
 .word 0xf9403baf
@@ -87398,10 +87373,10 @@ bl _p_1155
 .word 0xd63f0080
 .loc 17 198 0
 .word 0xf94023a0
-bl _p_1154
+bl _p_1153
 .word 0xf90033a0
 .word 0xf94023a0
-bl _p_1155
+bl _p_1154
 .word 0xaa0003e4
 .word 0xf94033af
 .word 0xaa1603e0
@@ -87413,10 +87388,10 @@ bl _p_1155
 .word 0x51000700
 .word 0xf9002ba0
 .word 0xf94023a0
-bl _p_1154
+bl _p_1153
 .word 0xf9002fa0
 .word 0xf94023a0
-bl _p_1155
+bl _p_1154
 .word 0xaa0003e4
 .word 0xf9402ba2
 .word 0xf9402faf
@@ -87428,10 +87403,10 @@ bl _p_1155
 .word 0x1400003d
 .loc 17 203 0
 .word 0xf94023a0
-bl _p_1154
+bl _p_1153
 .word 0xf9002ba0
 .word 0xf94023a0
-bl _p_1156
+bl _p_1155
 .word 0xaa0003e4
 .word 0xf9402baf
 .word 0xaa1603e0
@@ -87445,10 +87420,10 @@ bl _p_1156
 .word 0x350001d9
 .loc 17 209 0
 .word 0xf94023a0
-bl _p_1154
+bl _p_1153
 .word 0xf9002ba0
 .word 0xf94023a0
-bl _p_1157
+bl _p_1156
 .word 0xaa0003e4
 .word 0xf9402baf
 .word 0xaa1603e0
@@ -87462,10 +87437,10 @@ bl _p_1157
 .word 0x51000739
 .loc 17 214 0
 .word 0xf94023a0
-bl _p_1154
+bl _p_1153
 .word 0xf90033a0
 .word 0xf94023a0
-bl _p_1158
+bl _p_1157
 .word 0xaa0003e4
 .word 0xf94033af
 .word 0xaa1603e0
@@ -87479,10 +87454,10 @@ bl _p_1158
 .word 0x110006a0
 .word 0xf9002ba0
 .word 0xf94023a0
-bl _p_1154
+bl _p_1153
 .word 0xf9002fa0
 .word 0xf94023a0
-bl _p_1159
+bl _p_1158
 .word 0xaa0003e5
 .word 0xf9402ba1
 .word 0xf9402faf
@@ -87515,7 +87490,7 @@ System_Collections_Generic_Comparer_1_T_DOUBLE_CreateComparer:
 .word 0xa9016bb9
 .word 0xf90013af
 .word 0xf94013a0
-bl _p_1160
+bl _p_1159
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -87525,14 +87500,14 @@ bl _p_1160
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #80]
+ldr x1, [x16, #64]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54001101
 .word 0xaa1a03f9
 .loc 18 65 0
 .word 0xf94013a0
-bl _p_1161
+bl _p_1160
 .word 0xaa0003e2
 .word 0xaa0203e0
 .word 0xaa1a03e1
@@ -87545,12 +87520,12 @@ bl _p_1161
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #552]
 .word 0xaa1903e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94013a0
-bl _p_1162
+bl _p_1161
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -87576,7 +87551,7 @@ bl _p_1162
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #576]
+ldr x1, [x16, #560]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000940
@@ -87599,7 +87574,7 @@ ldr x1, [x16, #576]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #80]
+ldr x1, [x16, #64]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540008a1
@@ -87608,12 +87583,12 @@ ldr x1, [x16, #80]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #584]
+ldr x0, [x16, #568]
 .word 0xf9001fa0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #144]
+ldr x0, [x16, #128]
 .word 0xd2800021
 bl _p_20
 .word 0xaa0003e3
@@ -87643,12 +87618,12 @@ bl _p_20
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #592]
+ldr x0, [x16, #576]
 .word 0xaa1903e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94013a0
-bl _p_1162
+bl _p_1161
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -87662,12 +87637,12 @@ bl _p_1162
 .word 0x1400000d
 .loc 18 85 0
 .word 0xf94013a0
-bl _p_1163
+bl _p_1162
 .word 0xd2800201
 bl _p_3
 .word 0xf9001fa0
 .word 0xf94013a0
-bl _p_1164
+bl _p_1163
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -87695,7 +87670,7 @@ System_Collections_Generic_Comparer_1_T_INT_CreateComparer:
 .word 0xa9016bb9
 .word 0xf90013af
 .word 0xf94013a0
-bl _p_1165
+bl _p_1164
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -87705,14 +87680,14 @@ bl _p_1165
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #80]
+ldr x1, [x16, #64]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54001101
 .word 0xaa1a03f9
 .loc 18 65 0
 .word 0xf94013a0
-bl _p_1166
+bl _p_1165
 .word 0xaa0003e2
 .word 0xaa0203e0
 .word 0xaa1a03e1
@@ -87725,12 +87700,12 @@ bl _p_1166
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #600]
+ldr x0, [x16, #584]
 .word 0xaa1903e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94013a0
-bl _p_1167
+bl _p_1166
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -87756,7 +87731,7 @@ bl _p_1167
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #608]
+ldr x1, [x16, #592]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000940
@@ -87779,7 +87754,7 @@ ldr x1, [x16, #608]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x1, [x16, #80]
+ldr x1, [x16, #64]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540008a1
@@ -87788,12 +87763,12 @@ ldr x1, [x16, #80]
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #600]
 .word 0xf9001fa0
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #144]
+ldr x0, [x16, #128]
 .word 0xd2800021
 bl _p_20
 .word 0xaa0003e3
@@ -87823,12 +87798,12 @@ bl _p_20
 
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x0, [x16, #624]
+ldr x0, [x16, #608]
 .word 0xaa1903e1
-bl _p_1102
+bl _p_1101
 .word 0xaa0003fa
 .word 0xf94013a0
-bl _p_1167
+bl _p_1166
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -87842,12 +87817,12 @@ bl _p_1167
 .word 0x1400000d
 .loc 18 85 0
 .word 0xf94013a0
-bl _p_1168
+bl _p_1167
 .word 0xd2800201
 bl _p_3
 .word 0xf9001fa0
 .word 0xf94013a0
-bl _p_1169
+bl _p_1168
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -87888,10 +87863,10 @@ System_Collections_Generic_ArraySortHelper_1_T_INT_PickPivotAndPartition_T_INT__
 .word 0xf90047a0
 .loc 17 233 0
 .word 0xf94023a0
-bl _p_1170
+bl _p_1169
 .word 0xf9004ba0
 .word 0xf94023a0
-bl _p_1171
+bl _p_1170
 .word 0xaa0003e4
 .word 0xf94047a3
 .word 0xf9404baf
@@ -87902,10 +87877,10 @@ bl _p_1171
 .word 0xd63f0080
 .loc 17 234 0
 .word 0xf94023a0
-bl _p_1170
+bl _p_1169
 .word 0xf90043a0
 .word 0xf94023a0
-bl _p_1171
+bl _p_1170
 .word 0xaa0003e4
 .word 0xf94043af
 .word 0xaa1703e0
@@ -87915,10 +87890,10 @@ bl _p_1171
 .word 0xd63f0080
 .loc 17 235 0
 .word 0xf94023a0
-bl _p_1170
+bl _p_1169
 .word 0xf9003fa0
 .word 0xf94023a0
-bl _p_1171
+bl _p_1170
 .word 0xaa0003e4
 .word 0xf9403ba2
 .word 0xf9403faf
@@ -87943,10 +87918,10 @@ bl _p_1171
 .word 0x51000720
 .word 0xf9002fa0
 .word 0xf94023a0
-bl _p_1170
+bl _p_1169
 .word 0xf90033a0
 .word 0xf94023a0
-bl _p_1172
+bl _p_1171
 .word 0xaa0003e3
 .word 0xf9402ba1
 .word 0xf9402fa2
@@ -88004,10 +87979,10 @@ bl _p_1172
 .word 0x540001ca
 .loc 17 249 0
 .word 0xf94023a0
-bl _p_1170
+bl _p_1169
 .word 0xf9002ba0
 .word 0xf94023a0
-bl _p_1172
+bl _p_1171
 .word 0xaa0003e3
 .word 0xf9402baf
 .word 0xaa1703e0
@@ -88021,10 +87996,10 @@ bl _p_1172
 .word 0x51000720
 .word 0xf9002ba0
 .word 0xf94023a0
-bl _p_1170
+bl _p_1169
 .word 0xf9002fa0
 .word 0xf94023a0
-bl _p_1172
+bl _p_1171
 .word 0xaa0003e3
 .word 0xf9402ba2
 .word 0xf9402faf
@@ -88069,10 +88044,10 @@ System_Collections_Generic_ArraySortHelper_1_T_INT_Heapsort_T_INT___int_int_Syst
 .word 0x1400000f
 .loc 17 268 0
 .word 0xf9401fa0
-bl _p_1173
+bl _p_1172
 .word 0xf90023a0
 .word 0xf9401fa0
-bl _p_1174
+bl _p_1173
 .word 0xaa0003e5
 .word 0xf94023af
 .word 0xaa1703e0
@@ -88094,10 +88069,10 @@ bl _p_1174
 .word 0x51000400
 .word 0xf9002ba0
 .word 0xf9401fa0
-bl _p_1173
+bl _p_1172
 .word 0xf9002fa0
 .word 0xf9401fa0
-bl _p_1175
+bl _p_1174
 .word 0xaa0003e3
 .word 0xf9402ba2
 .word 0xf9402faf
@@ -88108,10 +88083,10 @@ bl _p_1175
 .word 0x510006c0
 .word 0xf90023a0
 .word 0xf9401fa0
-bl _p_1173
+bl _p_1172
 .word 0xf90027a0
 .word 0xf9401fa0
-bl _p_1174
+bl _p_1173
 .word 0xaa0003e5
 .word 0xf94023a2
 .word 0xf94027af
@@ -89884,7 +89859,7 @@ unwind_info:
 	.byte 68,154,37,22,12,31,0,84,14,224,4,157,76,158,75,68,13,29,68,152,74,153,73,68,154,72,29,12,31,0,68,14
 	.byte 144,2,157,34,158,33,68,13,29,68,149,32,150,31,68,151,30,152,29,68,153,28,154,27,14,12,31,0,68,14,176,2
 	.byte 157,38,158,37,68,13,29,17,12,31,0,68,14,160,2,157,36,158,35,68,13,29,68,150,34,17,12,31,0,68,14,144
-	.byte 2,157,34,158,33,68,13,29,68,154,32,19,12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,153,22,154,21,18
+	.byte 2,157,34,158,33,68,13,29,68,154,32,19,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,153,20,154,19,18
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,16,12,31,0,68,14,96,157,12,158,11,68,13,29
 	.byte 68,153,10,17,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,153,16,16,12,31,0,68,14,64,157,8,158,7
 	.byte 68,13,29,68,153,6,19,12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,153,28,154,27,24,12,31,0,68,14
@@ -89943,9405 +89918,9397 @@ plt_Xamarin_Forms_Application__ctor:
 _p_1:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #640]
+ldr x16, [x16, #624]
 br x16
-.word 24803
+.word 24789
 	.no_dead_strip plt_PixUl8_App_InitializeComponent
 plt_PixUl8_App_InitializeComponent:
 _p_2:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #648]
+ldr x16, [x16, #632]
 br x16
-.word 24808
+.word 24794
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_3:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #656]
+ldr x16, [x16, #640]
 br x16
-.word 24810
+.word 24796
 	.no_dead_strip plt_PixUl8_Views_HomePage__ctor
 plt_PixUl8_Views_HomePage__ctor:
 _p_4:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #664]
+ldr x16, [x16, #648]
 br x16
-.word 24818
+.word 24804
 	.no_dead_strip plt_Xamarin_Forms_Application_set_MainPage_Xamarin_Forms_Page
 plt_Xamarin_Forms_Application_set_MainPage_Xamarin_Forms_Page:
 _p_5:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #672]
+ldr x16, [x16, #656]
 br x16
-.word 24820
+.word 24806
 	.no_dead_strip plt_Xamarin_Forms_MessagingCenter_Send_PixUl8_App_PixUl8_App_string
 plt_Xamarin_Forms_MessagingCenter_Send_PixUl8_App_PixUl8_App_string:
 _p_6:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #680]
+ldr x16, [x16, #664]
 br x16
-.word 24825
+.word 24811
 	.no_dead_strip plt_System_Reflection_IntrospectionExtensions_GetTypeInfo_System_Type
 plt_System_Reflection_IntrospectionExtensions_GetTypeInfo_System_Type:
 _p_7:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #688]
+ldr x16, [x16, #672]
 br x16
-.word 24837
+.word 24823
 	.no_dead_strip plt_System_Reflection_Assembly_GetName
 plt_System_Reflection_Assembly_GetName:
 _p_8:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #696]
+ldr x16, [x16, #680]
 br x16
-.word 24842
+.word 24828
 	.no_dead_strip plt_Xamarin_Forms_Internals_ResourceLoader_CanProvideContentFor_Xamarin_Forms_Internals_ResourceLoader_ResourceLoadingQuery
 plt_Xamarin_Forms_Internals_ResourceLoader_CanProvideContentFor_Xamarin_Forms_Internals_ResourceLoader_ResourceLoadingQuery:
 _p_9:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #704]
+ldr x16, [x16, #688]
 br x16
-.word 24847
+.word 24833
 	.no_dead_strip plt_PixUl8_App___InitComponentRuntime
 plt_PixUl8_App___InitComponentRuntime:
 _p_10:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #712]
+ldr x16, [x16, #696]
 br x16
-.word 24852
+.word 24838
 	.no_dead_strip plt_Xamarin_Forms_Color__ctor_double_double_double_double
 plt_Xamarin_Forms_Color__ctor_double_double_double_double:
 _p_11:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #720]
+ldr x16, [x16, #704]
 br x16
-.word 24854
+.word 24840
 	.no_dead_strip plt_Xamarin_Forms_Setter__ctor
 plt_Xamarin_Forms_Setter__ctor:
 _p_12:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #728]
+ldr x16, [x16, #712]
 br x16
-.word 24859
+.word 24845
 	.no_dead_strip plt_Xamarin_Forms_Style__ctor_System_Type
 plt_Xamarin_Forms_Style__ctor_System_Type:
 _p_13:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #736]
+ldr x16, [x16, #720]
 br x16
-.word 24864
+.word 24850
 	.no_dead_strip plt_Xamarin_Forms_ResourceDictionary__ctor
 plt_Xamarin_Forms_ResourceDictionary__ctor:
 _p_14:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #744]
+ldr x16, [x16, #728]
 br x16
-.word 24869
+.word 24855
 	.no_dead_strip plt_Xamarin_Forms_Internals_NameScope__ctor
 plt_Xamarin_Forms_Internals_NameScope__ctor:
 _p_15:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #752]
+ldr x16, [x16, #736]
 br x16
-.word 24874
+.word 24860
 	.no_dead_strip plt_Xamarin_Forms_Internals_NameScope_SetNameScope_Xamarin_Forms_BindableObject_Xamarin_Forms_Internals_INameScope
 plt_Xamarin_Forms_Internals_NameScope_SetNameScope_Xamarin_Forms_BindableObject_Xamarin_Forms_Internals_INameScope:
 _p_16:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #760]
+ldr x16, [x16, #744]
 br x16
-.word 24879
+.word 24865
 	.no_dead_strip plt_Xamarin_Forms_Application_set_Resources_Xamarin_Forms_ResourceDictionary
 plt_Xamarin_Forms_Application_set_Resources_Xamarin_Forms_ResourceDictionary:
 _p_17:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #768]
+ldr x16, [x16, #752]
 br x16
-.word 24884
+.word 24870
 	.no_dead_strip plt_Xamarin_Forms_ResourceDictionary_Add_string_object
 plt_Xamarin_Forms_ResourceDictionary_Add_string_object:
 _p_18:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #776]
+ldr x16, [x16, #760]
 br x16
-.word 24889
+.word 24875
 	.no_dead_strip plt_Xamarin_Forms_Xaml_Internals_XamlServiceProvider__ctor
 plt_Xamarin_Forms_Xaml_Internals_XamlServiceProvider__ctor:
 _p_19:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #784]
+ldr x16, [x16, #768]
 br x16
-.word 24894
+.word 24880
 	.no_dead_strip plt_wrapper_alloc_object_AllocVector_intptr_intptr
 plt_wrapper_alloc_object_AllocVector_intptr_intptr:
 _p_20:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #792]
+ldr x16, [x16, #776]
 br x16
-.word 24899
+.word 24885
 	.no_dead_strip plt_System_Reflection_RuntimeReflectionExtensions_GetRuntimeProperty_System_Type_string
 plt_System_Reflection_RuntimeReflectionExtensions_GetRuntimeProperty_System_Type_string:
 _p_21:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #800]
+ldr x16, [x16, #784]
 br x16
-.word 24907
+.word 24893
 	.no_dead_strip plt_Xamarin_Forms_Xaml_Internals_SimpleValueTargetProvider__ctor_object___object_Xamarin_Forms_Internals_INameScope
 plt_Xamarin_Forms_Xaml_Internals_SimpleValueTargetProvider__ctor_object___object_Xamarin_Forms_Internals_INameScope:
 _p_22:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #808]
+ldr x16, [x16, #792]
 br x16
-.word 24912
+.word 24898
 	.no_dead_strip plt_Xamarin_Forms_Xaml_Internals_XamlServiceProvider_Add_System_Type_object
 plt_Xamarin_Forms_Xaml_Internals_XamlServiceProvider_Add_System_Type_object:
 _p_23:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #816]
+ldr x16, [x16, #800]
 br x16
-.word 24917
+.word 24903
 	.no_dead_strip plt_Xamarin_Forms_Xaml_Internals_XmlNamespaceResolver__ctor
 plt_Xamarin_Forms_Xaml_Internals_XmlNamespaceResolver__ctor:
 _p_24:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #824]
+ldr x16, [x16, #808]
 br x16
-.word 24922
+.word 24908
 	.no_dead_strip plt_Xamarin_Forms_Xaml_Internals_XmlNamespaceResolver_Add_string_string
 plt_Xamarin_Forms_Xaml_Internals_XmlNamespaceResolver_Add_string_string:
 _p_25:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #832]
+ldr x16, [x16, #816]
 br x16
-.word 24927
+.word 24913
 	.no_dead_strip plt_Xamarin_Forms_Xaml_Internals_XamlTypeResolver__ctor_System_Xml_IXmlNamespaceResolver_System_Reflection_Assembly
 plt_Xamarin_Forms_Xaml_Internals_XamlTypeResolver__ctor_System_Xml_IXmlNamespaceResolver_System_Reflection_Assembly:
 _p_26:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #840]
+ldr x16, [x16, #824]
 br x16
-.word 24932
+.word 24918
 	.no_dead_strip plt_Xamarin_Forms_Xaml_XmlLineInfo__ctor_int_int
 plt_Xamarin_Forms_Xaml_XmlLineInfo__ctor_int_int:
 _p_27:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #848]
+ldr x16, [x16, #832]
 br x16
-.word 24937
+.word 24923
 	.no_dead_strip plt_Xamarin_Forms_ResourceDictionary_Add_Xamarin_Forms_Style
 plt_Xamarin_Forms_ResourceDictionary_Add_Xamarin_Forms_Style:
 _p_28:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #856]
+ldr x16, [x16, #840]
 br x16
-.word 24942
+.word 24928
 	.no_dead_strip plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_PixUl8_App_PixUl8_App_System_Type
 plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_PixUl8_App_PixUl8_App_System_Type:
 _p_29:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #864]
+ldr x16, [x16, #848]
 br x16
-.word 24947
+.word 24933
 	.no_dead_strip plt_Plugin_Settings_CrossSettings_get_Current
 plt_Plugin_Settings_CrossSettings_get_Current:
 _p_30:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #872]
+ldr x16, [x16, #856]
 br x16
-.word 24959
+.word 24945
 	.no_dead_strip plt_SlideOverKit_MenuContainerPage__ctor
 plt_SlideOverKit_MenuContainerPage__ctor:
 _p_31:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #880]
+ldr x16, [x16, #864]
 br x16
-.word 24964
+.word 24950
 	.no_dead_strip plt_PixUl8_Views_HomePage_InitializeComponent
 plt_PixUl8_Views_HomePage_InitializeComponent:
 _p_32:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #888]
+ldr x16, [x16, #872]
 br x16
-.word 24969
+.word 24955
 	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel__ctor_PixUl8_Interfaces_IHapticService_PixUl8_Interfaces_ISettingsService_Plugin_Toasts_IToastNotificator_PixUl8_Interfaces_IURLService_PixUl8_Interfaces_IAdService_bool
 plt_PixUl8_ViewModels_HomeViewModel__ctor_PixUl8_Interfaces_IHapticService_PixUl8_Interfaces_ISettingsService_Plugin_Toasts_IToastNotificator_PixUl8_Interfaces_IURLService_PixUl8_Interfaces_IAdService_bool:
 _p_33:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #896]
+ldr x16, [x16, #880]
 br x16
-.word 24971
+.word 24957
 	.no_dead_strip plt_Xamarin_Forms_BindableObject_set_BindingContext_object
 plt_Xamarin_Forms_BindableObject_set_BindingContext_object:
 _p_34:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #904]
+ldr x16, [x16, #888]
 br x16
-.word 24974
+.word 24960
 	.no_dead_strip plt_PixUl8_Views_ExtensionViews_SlideMenuUpView__ctor_PixUl8_ViewModels_HomeViewModel
 plt_PixUl8_Views_ExtensionViews_SlideMenuUpView__ctor_PixUl8_ViewModels_HomeViewModel:
 _p_35:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #912]
+ldr x16, [x16, #896]
 br x16
-.word 24979
+.word 24965
 	.no_dead_strip plt_SlideOverKit_MenuContainerPage_set_SlideMenu_SlideOverKit_SlideMenuView
 plt_SlideOverKit_MenuContainerPage_set_SlideMenu_SlideOverKit_SlideMenuView:
 _p_36:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #920]
+ldr x16, [x16, #904]
 br x16
-.word 24981
+.word 24967
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_:
 _p_37:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #928]
+ldr x16, [x16, #912]
 br x16
-.word 24986
+.word 24972
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_get_Task
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_get_Task:
 _p_38:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #936]
+ldr x16, [x16, #920]
 br x16
-.word 24998
+.word 24984
 	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel_Appeared
 plt_PixUl8_ViewModels_HomeViewModel_Appeared:
 _p_39:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #944]
+ldr x16, [x16, #928]
 br x16
-.word 25003
+.word 24989
 	.no_dead_strip plt_PixUl8_Views_HomePage_BeginHideAnimationsAsync
 plt_PixUl8_Views_HomePage_BeginHideAnimationsAsync:
 _p_40:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #952]
+ldr x16, [x16, #936]
 br x16
-.word 25006
+.word 24992
 	.no_dead_strip plt_PixUl8_Views_HomePage___InitComponentRuntime
 plt_PixUl8_Views_HomePage___InitComponentRuntime:
 _p_41:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #960]
+ldr x16, [x16, #944]
 br x16
-.word 25008
+.word 24994
 	.no_dead_strip plt_Xamarin_Forms_ColumnDefinition__ctor
 plt_Xamarin_Forms_ColumnDefinition__ctor:
 _p_42:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #968]
+ldr x16, [x16, #952]
 br x16
-.word 25010
+.word 24996
 	.no_dead_strip plt_Xamarin_Forms_RowDefinition__ctor
 plt_Xamarin_Forms_RowDefinition__ctor:
 _p_43:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #976]
+ldr x16, [x16, #960]
 br x16
-.word 25015
+.word 25001
 	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView__ctor
 plt_PixUl8_Views_NativeViews_CameraView__ctor:
 _p_44:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #984]
+ldr x16, [x16, #968]
 br x16
-.word 25020
+.word 25006
 	.no_dead_strip plt_Xamarin_Forms_TapGestureRecognizer__ctor
 plt_Xamarin_Forms_TapGestureRecognizer__ctor:
 _p_45:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #992]
+ldr x16, [x16, #976]
 br x16
-.word 25022
+.word 25008
 	.no_dead_strip plt_Xamarin_Forms_Label__ctor
 plt_Xamarin_Forms_Label__ctor:
 _p_46:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1000]
+ldr x16, [x16, #984]
 br x16
-.word 25027
+.word 25013
 	.no_dead_strip plt_Xamarin_Forms_ImageButton__ctor
 plt_Xamarin_Forms_ImageButton__ctor:
 _p_47:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1008]
+ldr x16, [x16, #992]
 br x16
-.word 25032
+.word 25018
 	.no_dead_strip plt_Xamarin_Forms_Grid__ctor
 plt_Xamarin_Forms_Grid__ctor:
 _p_48:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1016]
+ldr x16, [x16, #1000]
 br x16
-.word 25037
+.word 25023
 	.no_dead_strip plt_PixUl8_Views_ExtensionViews_XFFlipView__ctor
 plt_PixUl8_Views_ExtensionViews_XFFlipView__ctor:
 _p_49:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1024]
+ldr x16, [x16, #1008]
 br x16
-.word 25042
+.word 25028
 	.no_dead_strip plt_Xamarin_Forms_Element_set_StyleId_string
 plt_Xamarin_Forms_Element_set_StyleId_string:
 _p_50:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1032]
+ldr x16, [x16, #1016]
 br x16
-.word 25044
+.word 25030
 	.no_dead_strip plt_Xamarin_Forms_BindableObject_SetBinding_Xamarin_Forms_BindableProperty_Xamarin_Forms_BindingBase
 plt_Xamarin_Forms_BindableObject_SetBinding_Xamarin_Forms_BindableProperty_Xamarin_Forms_BindingBase:
 _p_51:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1040]
+ldr x16, [x16, #1024]
 br x16
-.word 25049
+.word 25035
 	.no_dead_strip plt_Xamarin_Forms_BindableObject_SetValue_Xamarin_Forms_BindableProperty_object
 plt_Xamarin_Forms_BindableObject_SetValue_Xamarin_Forms_BindableProperty_object:
 _p_52:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1048]
+ldr x16, [x16, #1032]
 br x16
-.word 25054
+.word 25040
 	.no_dead_strip plt_Xamarin_Forms_BindableObject_GetValue_Xamarin_Forms_BindableProperty
 plt_Xamarin_Forms_BindableObject_GetValue_Xamarin_Forms_BindableProperty:
 _p_53:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1056]
+ldr x16, [x16, #1040]
 br x16
-.word 25059
+.word 25045
 	.no_dead_strip plt_Xamarin_Forms_DefinitionCollection_1_Xamarin_Forms_ColumnDefinition_Add_Xamarin_Forms_ColumnDefinition
 plt_Xamarin_Forms_DefinitionCollection_1_Xamarin_Forms_ColumnDefinition_Add_Xamarin_Forms_ColumnDefinition:
 _p_54:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1064]
+ldr x16, [x16, #1048]
 br x16
-.word 25064
+.word 25050
 	.no_dead_strip plt_Xamarin_Forms_DefinitionCollection_1_Xamarin_Forms_RowDefinition_Add_Xamarin_Forms_RowDefinition
 plt_Xamarin_Forms_DefinitionCollection_1_Xamarin_Forms_RowDefinition_Add_Xamarin_Forms_RowDefinition:
 _p_55:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1072]
+ldr x16, [x16, #1056]
 br x16
-.word 25075
+.word 25061
 	.no_dead_strip plt_Xamarin_Forms_Thickness__ctor_double_double_double_double
 plt_Xamarin_Forms_Thickness__ctor_double_double_double_double:
 _p_56:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1080]
+ldr x16, [x16, #1064]
 br x16
-.word 25086
+.word 25072
 	.no_dead_strip plt_Xamarin_Forms_FontTypeConverter_ConvertFromInvariantString_string
 plt_Xamarin_Forms_FontTypeConverter_ConvertFromInvariantString_string:
 _p_57:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1088]
+ldr x16, [x16, #1072]
 br x16
-.word 25091
+.word 25077
 	.no_dead_strip plt_Xamarin_Forms_ImageSourceConverter_ConvertFromInvariantString_string
 plt_Xamarin_Forms_ImageSourceConverter_ConvertFromInvariantString_string:
 _p_58:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1096]
+ldr x16, [x16, #1080]
 br x16
-.word 25096
+.word 25082
 	.no_dead_strip plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_PixUl8_Views_HomePage_PixUl8_Views_HomePage_System_Type
 plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_PixUl8_Views_HomePage_PixUl8_Views_HomePage_System_Type:
 _p_59:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1104]
+ldr x16, [x16, #1088]
 br x16
-.word 25101
+.word 25087
 	.no_dead_strip plt_Xamarin_Forms_NameScopeExtensions_FindByName_SlideOverKit_MenuContainerPage_Xamarin_Forms_Element_string
 plt_Xamarin_Forms_NameScopeExtensions_FindByName_SlideOverKit_MenuContainerPage_Xamarin_Forms_Element_string:
 _p_60:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1112]
+ldr x16, [x16, #1096]
 br x16
-.word 25113
+.word 25099
 	.no_dead_strip plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_Label_Xamarin_Forms_Element_string
 plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_Label_Xamarin_Forms_Element_string:
 _p_61:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1120]
+ldr x16, [x16, #1104]
 br x16
-.word 25125
+.word 25111
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_IsVisible_bool
 plt_Xamarin_Forms_VisualElement_set_IsVisible_bool:
 _p_62:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1128]
+ldr x16, [x16, #1112]
 br x16
-.word 25137
+.word 25123
 	.no_dead_strip plt_Xamarin_Forms_ViewExtensions_FadeTo_Xamarin_Forms_VisualElement_double_uint_Xamarin_Forms_Easing
 plt_Xamarin_Forms_ViewExtensions_FadeTo_Xamarin_Forms_VisualElement_double_uint_Xamarin_Forms_Easing:
 _p_63:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1136]
+ldr x16, [x16, #1120]
 br x16
-.word 25142
+.word 25128
 	.no_dead_strip plt_System_Collections_Generic_List_1_System_Threading_Tasks_Task_AddWithResize_System_Threading_Tasks_Task
 plt_System_Collections_Generic_List_1_System_Threading_Tasks_Task_AddWithResize_System_Threading_Tasks_Task:
 _p_64:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1144]
+ldr x16, [x16, #1128]
 br x16
-.word 25147
+.word 25133
 	.no_dead_strip plt_System_Threading_Tasks_Task_WhenAll_System_Collections_Generic_IEnumerable_1_System_Threading_Tasks_Task
 plt_System_Threading_Tasks_Task_WhenAll_System_Collections_Generic_IEnumerable_1_System_Threading_Tasks_Task:
 _p_65:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1152]
+ldr x16, [x16, #1136]
 br x16
-.word 25169
+.word 25155
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_:
 _p_66:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1160]
+ldr x16, [x16, #1144]
 br x16
-.word 25174
+.word 25160
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_GetResult:
 _p_67:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1168]
+ldr x16, [x16, #1152]
 br x16
-.word 25186
+.word 25172
 	.no_dead_strip plt_System_Array_Clear_System_Array_int_int
 plt_System_Array_Clear_System_Array_int_int:
 _p_68:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1176]
+ldr x16, [x16, #1160]
 br x16
-.word 25191
+.word 25177
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetException_System_Exception
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetException_System_Exception:
 _p_69:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1184]
+ldr x16, [x16, #1168]
 br x16
-.word 25196
+.word 25182
 	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
 plt__jit_icall_mono_thread_get_undeniable_exception:
 _p_70:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1192]
+ldr x16, [x16, #1176]
 br x16
-.word 25201
+.word 25187
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_71:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1200]
+ldr x16, [x16, #1184]
 br x16
-.word 25240
+.word 25226
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetResult
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetResult:
 _p_72:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1208]
+ldr x16, [x16, #1192]
 br x16
-.word 25268
+.word 25254
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_73:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1216]
+ldr x16, [x16, #1200]
 br x16
-.word 25273
+.word 25259
 	.no_dead_strip plt_Xamarin_Forms_ContentView__ctor
 plt_Xamarin_Forms_ContentView__ctor:
 _p_74:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1224]
+ldr x16, [x16, #1208]
 br x16
-.word 25278
+.word 25264
 	.no_dead_strip plt_PixUl8_Views_AdMobView_InitializeComponent
 plt_PixUl8_Views_AdMobView_InitializeComponent:
 _p_75:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1232]
+ldr x16, [x16, #1216]
 br x16
-.word 25283
+.word 25269
 	.no_dead_strip plt_PixUl8_Views_AdMobView___InitComponentRuntime
 plt_PixUl8_Views_AdMobView___InitComponentRuntime:
 _p_76:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1240]
+ldr x16, [x16, #1224]
 br x16
-.word 25285
+.word 25271
 	.no_dead_strip plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_PixUl8_Views_AdMobView_PixUl8_Views_AdMobView_System_Type
 plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_PixUl8_Views_AdMobView_PixUl8_Views_AdMobView_System_Type:
 _p_77:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1248]
+ldr x16, [x16, #1232]
 br x16
-.word 25287
+.word 25273
 	.no_dead_strip plt_Xamarin_Forms_RelativeLayout__ctor
 plt_Xamarin_Forms_RelativeLayout__ctor:
 _p_78:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1256]
+ldr x16, [x16, #1240]
 br x16
-.word 25299
+.word 25285
 	.no_dead_strip plt_Xamarin_Forms_ContentView_set_Content_Xamarin_Forms_View
 plt_Xamarin_Forms_ContentView_set_Content_Xamarin_Forms_View:
 _p_79:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1264]
+ldr x16, [x16, #1248]
 br x16
-.word 25304
+.word 25290
 	.no_dead_strip plt_PixUl8_Views_ExtensionViews_XFFlipView_get_FrontView
 plt_PixUl8_Views_ExtensionViews_XFFlipView_get_FrontView:
 _p_80:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1272]
+ldr x16, [x16, #1256]
 br x16
-.word 25309
+.word 25295
 	.no_dead_strip plt_Xamarin_Forms_Constraint_Constant_double
 plt_Xamarin_Forms_Constraint_Constant_double:
 _p_81:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1280]
+ldr x16, [x16, #1264]
 br x16
-.word 25311
+.word 25297
 	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
 plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_82:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1288]
+ldr x16, [x16, #1272]
 br x16
-.word 25316
+.word 25302
 	.no_dead_strip plt_PixUl8_Views_ExtensionViews_XFFlipView_get_BackView
 plt_PixUl8_Views_ExtensionViews_XFFlipView_get_BackView:
 _p_83:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1296]
+ldr x16, [x16, #1280]
 br x16
-.word 25351
+.word 25337
 	.no_dead_strip plt_PixUl8_Views_ExtensionViews_XFFlipView_FlipFromFrontToBack
 plt_PixUl8_Views_ExtensionViews_XFFlipView_FlipFromFrontToBack:
 _p_84:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1304]
+ldr x16, [x16, #1288]
 br x16
-.word 25353
+.word 25339
 	.no_dead_strip plt_PixUl8_Views_ExtensionViews_XFFlipView_FlipFromBackToFront
 plt_PixUl8_Views_ExtensionViews_XFFlipView_FlipFromBackToFront:
 _p_85:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1312]
+ldr x16, [x16, #1296]
 br x16
-.word 25355
+.word 25341
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Create
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Create:
 _p_86:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1320]
+ldr x16, [x16, #1304]
 br x16
-.word 25357
+.word 25343
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_Views_ExtensionViews_XFFlipView__FlipFromFrontToBackd__17_PixUl8_Views_ExtensionViews_XFFlipView__FlipFromFrontToBackd__17_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_Views_ExtensionViews_XFFlipView__FlipFromFrontToBackd__17_PixUl8_Views_ExtensionViews_XFFlipView__FlipFromFrontToBackd__17_:
 _p_87:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1328]
+ldr x16, [x16, #1312]
 br x16
-.word 25362
+.word 25348
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_Views_ExtensionViews_XFFlipView__FlipFromBackToFrontd__18_PixUl8_Views_ExtensionViews_XFFlipView__FlipFromBackToFrontd__18_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_Views_ExtensionViews_XFFlipView__FlipFromBackToFrontd__18_PixUl8_Views_ExtensionViews_XFFlipView__FlipFromBackToFrontd__18_:
 _p_88:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1336]
+ldr x16, [x16, #1320]
 br x16
-.word 25374
+.word 25360
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_Start_PixUl8_Views_ExtensionViews_XFFlipView__FrontToBackRotated__19_PixUl8_Views_ExtensionViews_XFFlipView__FrontToBackRotated__19_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_Start_PixUl8_Views_ExtensionViews_XFFlipView__FrontToBackRotated__19_PixUl8_Views_ExtensionViews_XFFlipView__FrontToBackRotated__19_:
 _p_89:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1344]
+ldr x16, [x16, #1328]
 br x16
-.word 25386
+.word 25372
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_get_Task
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_get_Task:
 _p_90:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1352]
+ldr x16, [x16, #1336]
 br x16
-.word 25398
+.word 25384
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_Start_PixUl8_Views_ExtensionViews_XFFlipView__BackToFrontRotated__20_PixUl8_Views_ExtensionViews_XFFlipView__BackToFrontRotated__20_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_Start_PixUl8_Views_ExtensionViews_XFFlipView__BackToFrontRotated__20_PixUl8_Views_ExtensionViews_XFFlipView__BackToFrontRotated__20_:
 _p_91:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1360]
+ldr x16, [x16, #1344]
 br x16
-.word 25409
+.word 25395
 	.no_dead_strip plt_Xamarin_Forms_BindableProperty_Create_string_System_Type_System_Type_object_Xamarin_Forms_BindingMode_Xamarin_Forms_BindableProperty_ValidateValueDelegate_Xamarin_Forms_BindableProperty_BindingPropertyChangedDelegate_Xamarin_Forms_BindableProperty_BindingPropertyChangingDelegate_Xamarin_Forms_BindableProperty_CoerceValueDelegate_Xamarin_Forms_BindableProperty_CreateDefaultValueDelegate
 plt_Xamarin_Forms_BindableProperty_Create_string_System_Type_System_Type_object_Xamarin_Forms_BindingMode_Xamarin_Forms_BindableProperty_ValidateValueDelegate_Xamarin_Forms_BindableProperty_BindingPropertyChangedDelegate_Xamarin_Forms_BindableProperty_BindingPropertyChangingDelegate_Xamarin_Forms_BindableProperty_CoerceValueDelegate_Xamarin_Forms_BindableProperty_CreateDefaultValueDelegate:
 _p_92:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1368]
+ldr x16, [x16, #1352]
 br x16
-.word 25421
+.word 25407
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_Width
 plt_Xamarin_Forms_VisualElement_get_Width:
 _p_93:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1376]
+ldr x16, [x16, #1360]
 br x16
-.word 25426
+.word 25412
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_Height
 plt_Xamarin_Forms_VisualElement_get_Height:
 _p_94:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1384]
+ldr x16, [x16, #1368]
 br x16
-.word 25431
+.word 25417
 	.no_dead_strip plt_PixUl8_Views_ExtensionViews_XFFlipView_FrontToBackRotate
 plt_PixUl8_Views_ExtensionViews_XFFlipView_FrontToBackRotate:
 _p_95:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1392]
+ldr x16, [x16, #1376]
 br x16
-.word 25436
+.word 25422
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_bool_GetAwaiter
 plt_System_Threading_Tasks_Task_1_bool_GetAwaiter:
 _p_96:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1400]
+ldr x16, [x16, #1384]
 br x16
-.word 25438
+.word 25424
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_PixUl8_Views_ExtensionViews_XFFlipView__FlipFromFrontToBackd__17_System_Runtime_CompilerServices_TaskAwaiter_1_bool__PixUl8_Views_ExtensionViews_XFFlipView__FlipFromFrontToBackd__17_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_PixUl8_Views_ExtensionViews_XFFlipView__FlipFromFrontToBackd__17_System_Runtime_CompilerServices_TaskAwaiter_1_bool__PixUl8_Views_ExtensionViews_XFFlipView__FlipFromFrontToBackd__17_:
 _p_97:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1408]
+ldr x16, [x16, #1392]
 br x16
-.word 25449
+.word 25435
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_bool_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_bool_GetResult:
 _p_98:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1416]
+ldr x16, [x16, #1400]
 br x16
-.word 25461
+.word 25447
 	.no_dead_strip plt_PixUl8_Views_ExtensionViews_XFFlipView_BackToFrontRotate
 plt_PixUl8_Views_ExtensionViews_XFFlipView_BackToFrontRotate:
 _p_99:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1424]
+ldr x16, [x16, #1408]
 br x16
-.word 25472
+.word 25458
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetException_System_Exception
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetException_System_Exception:
 _p_100:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1432]
+ldr x16, [x16, #1416]
 br x16
-.word 25474
+.word 25460
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetResult
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetResult:
 _p_101:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1440]
+ldr x16, [x16, #1424]
 br x16
-.word 25479
+.word 25465
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_102:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1448]
+ldr x16, [x16, #1432]
 br x16
-.word 25484
+.word 25470
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_PixUl8_Views_ExtensionViews_XFFlipView__FlipFromBackToFrontd__18_System_Runtime_CompilerServices_TaskAwaiter_1_bool__PixUl8_Views_ExtensionViews_XFFlipView__FlipFromBackToFrontd__18_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_PixUl8_Views_ExtensionViews_XFFlipView__FlipFromBackToFrontd__18_System_Runtime_CompilerServices_TaskAwaiter_1_bool__PixUl8_Views_ExtensionViews_XFFlipView__FlipFromBackToFrontd__18_:
 _p_103:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1456]
+ldr x16, [x16, #1440]
 br x16
-.word 25489
+.word 25475
 	.no_dead_strip plt_Xamarin_Forms_ViewExtensions_CancelAnimations_Xamarin_Forms_VisualElement
 plt_Xamarin_Forms_ViewExtensions_CancelAnimations_Xamarin_Forms_VisualElement:
 _p_104:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1464]
+ldr x16, [x16, #1448]
 br x16
-.word 25501
+.word 25487
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_RotationY_double
 plt_Xamarin_Forms_VisualElement_set_RotationY_double:
 _p_105:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1472]
+ldr x16, [x16, #1456]
 br x16
-.word 25506
+.word 25492
 	.no_dead_strip plt__jit_icall_mono_generic_class_init
 plt__jit_icall_mono_generic_class_init:
 _p_106:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1480]
+ldr x16, [x16, #1464]
 br x16
-.word 25511
+.word 25497
 	.no_dead_strip plt_Xamarin_Forms_ViewExtensions_RotateYTo_Xamarin_Forms_VisualElement_double_uint_Xamarin_Forms_Easing
 plt_Xamarin_Forms_ViewExtensions_RotateYTo_Xamarin_Forms_VisualElement_double_uint_Xamarin_Forms_Easing:
 _p_107:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1488]
+ldr x16, [x16, #1472]
 br x16
-.word 25537
+.word 25523
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_PixUl8_Views_ExtensionViews_XFFlipView__FrontToBackRotated__19_System_Runtime_CompilerServices_TaskAwaiter_1_bool__PixUl8_Views_ExtensionViews_XFFlipView__FrontToBackRotated__19_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_PixUl8_Views_ExtensionViews_XFFlipView__FrontToBackRotated__19_System_Runtime_CompilerServices_TaskAwaiter_1_bool__PixUl8_Views_ExtensionViews_XFFlipView__FrontToBackRotated__19_:
 _p_108:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1496]
+ldr x16, [x16, #1480]
 br x16
-.word 25542
+.word 25528
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetException_System_Exception
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetException_System_Exception:
 _p_109:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1504]
+ldr x16, [x16, #1488]
 br x16
-.word 25554
+.word 25540
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetResult_bool
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetResult_bool:
 _p_110:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1512]
+ldr x16, [x16, #1496]
 br x16
-.word 25565
+.word 25551
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_111:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1520]
+ldr x16, [x16, #1504]
 br x16
-.word 25576
+.word 25562
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_PixUl8_Views_ExtensionViews_XFFlipView__BackToFrontRotated__20_System_Runtime_CompilerServices_TaskAwaiter_1_bool__PixUl8_Views_ExtensionViews_XFFlipView__BackToFrontRotated__20_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_PixUl8_Views_ExtensionViews_XFFlipView__BackToFrontRotated__20_System_Runtime_CompilerServices_TaskAwaiter_1_bool__PixUl8_Views_ExtensionViews_XFFlipView__BackToFrontRotated__20_:
 _p_112:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1528]
+ldr x16, [x16, #1512]
 br x16
-.word 25587
+.word 25573
 	.no_dead_strip plt_SlideOverKit_SlideMenuView__ctor
 plt_SlideOverKit_SlideMenuView__ctor:
 _p_113:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1536]
+ldr x16, [x16, #1520]
 br x16
-.word 25599
+.word 25585
 	.no_dead_strip plt_PixUl8_Views_ExtensionViews_SlideMenuUpView_InitializeComponent
 plt_PixUl8_Views_ExtensionViews_SlideMenuUpView_InitializeComponent:
 _p_114:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1544]
+ldr x16, [x16, #1528]
 br x16
-.word 25604
+.word 25590
 	.no_dead_strip plt_SlideOverKit_SlideMenuView_set_MenuOrientations_SlideOverKit_MenuOrientation
 plt_SlideOverKit_SlideMenuView_set_MenuOrientations_SlideOverKit_MenuOrientation:
 _p_115:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1552]
+ldr x16, [x16, #1536]
 br x16
-.word 25606
+.word 25592
 	.no_dead_strip plt_SlideOverKit_SlideMenuView_set_AnimationDurationMillisecond_int
 plt_SlideOverKit_SlideMenuView_set_AnimationDurationMillisecond_int:
 _p_116:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1560]
+ldr x16, [x16, #1544]
 br x16
-.word 25611
+.word 25597
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_BackgroundColor_Xamarin_Forms_Color
 plt_Xamarin_Forms_VisualElement_set_BackgroundColor_Xamarin_Forms_Color:
 _p_117:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1568]
+ldr x16, [x16, #1552]
 br x16
-.word 25616
+.word 25602
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_Opacity_double
 plt_Xamarin_Forms_VisualElement_set_Opacity_double:
 _p_118:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1576]
+ldr x16, [x16, #1560]
 br x16
-.word 25621
+.word 25607
 	.no_dead_strip plt_SlideOverKit_SlideMenuView_set_BackgroundViewColor_Xamarin_Forms_Color
 plt_SlideOverKit_SlideMenuView_set_BackgroundViewColor_Xamarin_Forms_Color:
 _p_119:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1584]
+ldr x16, [x16, #1568]
 br x16
-.word 25626
+.word 25612
 	.no_dead_strip plt_SlideOverKit_SlideMenuView_set_IsFullScreen_bool
 plt_SlideOverKit_SlideMenuView_set_IsFullScreen_bool:
 _p_120:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1592]
+ldr x16, [x16, #1576]
 br x16
-.word 25631
+.word 25617
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_HeightRequest_double
 plt_Xamarin_Forms_VisualElement_set_HeightRequest_double:
 _p_121:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1600]
+ldr x16, [x16, #1584]
 br x16
-.word 25636
+.word 25622
 	.no_dead_strip plt_PixUl8_Views_ExtensionViews_SlideMenuUpView___InitComponentRuntime
 plt_PixUl8_Views_ExtensionViews_SlideMenuUpView___InitComponentRuntime:
 _p_122:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1608]
+ldr x16, [x16, #1592]
 br x16
-.word 25641
+.word 25627
 	.no_dead_strip plt_Xamarin_Forms_Switch__ctor
 plt_Xamarin_Forms_Switch__ctor:
 _p_123:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1616]
+ldr x16, [x16, #1600]
 br x16
-.word 25643
+.word 25629
 	.no_dead_strip plt_Xamarin_Forms_Slider__ctor
 plt_Xamarin_Forms_Slider__ctor:
 _p_124:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1624]
+ldr x16, [x16, #1608]
 br x16
-.word 25648
+.word 25634
 	.no_dead_strip plt_Xamarin_Forms_Button__ctor
 plt_Xamarin_Forms_Button__ctor:
 _p_125:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1632]
+ldr x16, [x16, #1616]
 br x16
-.word 25653
+.word 25639
 	.no_dead_strip plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_PixUl8_Views_ExtensionViews_SlideMenuUpView_PixUl8_Views_ExtensionViews_SlideMenuUpView_System_Type
 plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_PixUl8_Views_ExtensionViews_SlideMenuUpView_PixUl8_Views_ExtensionViews_SlideMenuUpView_System_Type:
 _p_126:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1640]
+ldr x16, [x16, #1624]
 br x16
-.word 25658
+.word 25644
 	.no_dead_strip plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_Switch_Xamarin_Forms_Element_string
 plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_Switch_Xamarin_Forms_Element_string:
 _p_127:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1648]
+ldr x16, [x16, #1632]
 br x16
-.word 25670
+.word 25656
 	.no_dead_strip plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_Slider_Xamarin_Forms_Element_string
 plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_Slider_Xamarin_Forms_Element_string:
 _p_128:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1656]
+ldr x16, [x16, #1640]
 br x16
-.word 25682
+.word 25668
 	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage__ctor
 plt_Rg_Plugins_Popup_Pages_PopupPage__ctor:
 _p_129:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1664]
+ldr x16, [x16, #1648]
 br x16
-.word 25694
+.word 25680
 	.no_dead_strip plt_PixUl8_Views_ExtensionViews_HelpPage_InitializeComponent
 plt_PixUl8_Views_ExtensionViews_HelpPage_InitializeComponent:
 _p_130:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1672]
+ldr x16, [x16, #1656]
 br x16
-.word 25699
+.word 25685
 	.no_dead_strip plt_Xamarin_Forms_Color_FromHex_string
 plt_Xamarin_Forms_Color_FromHex_string:
 _p_131:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1680]
+ldr x16, [x16, #1664]
 br x16
-.word 25701
+.word 25687
 	.no_dead_strip plt_Xamarin_Forms_TapGestureRecognizer_add_Tapped_System_EventHandler
 plt_Xamarin_Forms_TapGestureRecognizer_add_Tapped_System_EventHandler:
 _p_132:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1688]
+ldr x16, [x16, #1672]
 br x16
-.word 25706
+.word 25692
 	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_OnAppearingAnimationBeginAsync
 plt_Rg_Plugins_Popup_Pages_PopupPage_OnAppearingAnimationBeginAsync:
 _p_133:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1696]
+ldr x16, [x16, #1680]
 br x16
-.word 25711
+.word 25697
 	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_OnAppearingAnimationEndAsync
 plt_Rg_Plugins_Popup_Pages_PopupPage_OnAppearingAnimationEndAsync:
 _p_134:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1704]
+ldr x16, [x16, #1688]
 br x16
-.word 25716
+.word 25702
 	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_OnDisappearingAnimationBeginAsync
 plt_Rg_Plugins_Popup_Pages_PopupPage_OnDisappearingAnimationBeginAsync:
 _p_135:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1712]
+ldr x16, [x16, #1696]
 br x16
-.word 25721
+.word 25707
 	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_OnDisappearingAnimationEndAsync
 plt_Rg_Plugins_Popup_Pages_PopupPage_OnDisappearingAnimationEndAsync:
 _p_136:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1720]
+ldr x16, [x16, #1704]
 br x16
-.word 25726
+.word 25712
 	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_OnBackgroundClicked
 plt_Rg_Plugins_Popup_Pages_PopupPage_OnBackgroundClicked:
 _p_137:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1728]
+ldr x16, [x16, #1712]
 br x16
-.word 25731
+.word 25717
 	.no_dead_strip plt_PixUl8_Views_ExtensionViews_HelpPage___InitComponentRuntime
 plt_PixUl8_Views_ExtensionViews_HelpPage___InitComponentRuntime:
 _p_138:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1736]
+ldr x16, [x16, #1720]
 br x16
-.word 25736
+.word 25722
 	.no_dead_strip plt_Rg_Plugins_Popup_Animations_ScaleAnimation__ctor
 plt_Rg_Plugins_Popup_Animations_ScaleAnimation__ctor:
 _p_139:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1744]
+ldr x16, [x16, #1728]
 br x16
-.word 25738
+.word 25724
 	.no_dead_strip plt_Xamarin_Forms_Image__ctor
 plt_Xamarin_Forms_Image__ctor:
 _p_140:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1752]
+ldr x16, [x16, #1736]
 br x16
-.word 25743
+.word 25729
 	.no_dead_strip plt_Xamarin_Forms_StackLayout__ctor
 plt_Xamarin_Forms_StackLayout__ctor:
 _p_141:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1760]
+ldr x16, [x16, #1744]
 br x16
-.word 25748
+.word 25734
 	.no_dead_strip plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_PixUl8_Views_ExtensionViews_HelpPage_PixUl8_Views_ExtensionViews_HelpPage_System_Type
 plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_PixUl8_Views_ExtensionViews_HelpPage_PixUl8_Views_ExtensionViews_HelpPage_System_Type:
 _p_142:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1768]
+ldr x16, [x16, #1752]
 br x16
-.word 25753
+.word 25739
 	.no_dead_strip plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_Image_Xamarin_Forms_Element_string
 plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_Image_Xamarin_Forms_Element_string:
 _p_143:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1776]
+ldr x16, [x16, #1760]
 br x16
-.word 25765
+.word 25751
 	.no_dead_strip plt_Rg_Plugins_Popup_Services_PopupNavigation_get_Instance
 plt_Rg_Plugins_Popup_Services_PopupNavigation_get_Instance:
 _p_144:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1784]
+ldr x16, [x16, #1768]
 br x16
-.word 25777
+.word 25763
 	.no_dead_strip plt_Xamarin_Forms_View__ctor
 plt_Xamarin_Forms_View__ctor:
 _p_145:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1792]
+ldr x16, [x16, #1776]
 br x16
-.word 25782
+.word 25768
 	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_set_Camera_PixUl8_Models_CameraOptions
 plt_PixUl8_Views_NativeViews_CameraView_set_Camera_PixUl8_Models_CameraOptions:
 _p_146:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1800]
+ldr x16, [x16, #1784]
 br x16
-.word 25787
+.word 25773
 	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_set_HdrEnabled_bool
 plt_PixUl8_Views_NativeViews_CameraView_set_HdrEnabled_bool:
 _p_147:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1808]
+ldr x16, [x16, #1792]
 br x16
-.word 25789
+.word 25775
 	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_set_Activated_bool
 plt_PixUl8_Views_NativeViews_CameraView_set_Activated_bool:
 _p_148:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1816]
+ldr x16, [x16, #1800]
 br x16
-.word 25791
+.word 25777
 	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_set_FlashOn_bool
 plt_PixUl8_Views_NativeViews_CameraView_set_FlashOn_bool:
 _p_149:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1824]
+ldr x16, [x16, #1808]
 br x16
-.word 25793
+.word 25779
 	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_set_ManualOn_bool
 plt_PixUl8_Views_NativeViews_CameraView_set_ManualOn_bool:
 _p_150:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1832]
+ldr x16, [x16, #1816]
 br x16
-.word 25795
+.word 25781
 	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_set_GrayscaleOn_bool
 plt_PixUl8_Views_NativeViews_CameraView_set_GrayscaleOn_bool:
 _p_151:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1840]
+ldr x16, [x16, #1824]
 br x16
-.word 25797
+.word 25783
 	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_set_is43On_bool
 plt_PixUl8_Views_NativeViews_CameraView_set_is43On_bool:
 _p_152:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1848]
+ldr x16, [x16, #1832]
 br x16
-.word 25799
+.word 25785
 	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_set_is3DOn_bool
 plt_PixUl8_Views_NativeViews_CameraView_set_is3DOn_bool:
 _p_153:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1856]
+ldr x16, [x16, #1840]
 br x16
-.word 25801
+.word 25787
 	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_set_Exposure_int
 plt_PixUl8_Views_NativeViews_CameraView_set_Exposure_int:
 _p_154:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1864]
+ldr x16, [x16, #1848]
 br x16
-.word 25803
+.word 25789
 	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_set_Focus_int
 plt_PixUl8_Views_NativeViews_CameraView_set_Focus_int:
 _p_155:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1872]
+ldr x16, [x16, #1856]
 br x16
-.word 25805
+.word 25791
 	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_set_Balance_int
 plt_PixUl8_Views_NativeViews_CameraView_set_Balance_int:
 _p_156:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1880]
+ldr x16, [x16, #1864]
 br x16
-.word 25807
+.word 25793
 	.no_dead_strip plt_Xamarin_Forms_DependencyService_Get_PixUl8_Interfaces_IHapticService_Xamarin_Forms_DependencyFetchTarget
 plt_Xamarin_Forms_DependencyService_Get_PixUl8_Interfaces_IHapticService_Xamarin_Forms_DependencyFetchTarget:
 _p_157:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1888]
+ldr x16, [x16, #1872]
 br x16
-.word 25809
+.word 25795
 	.no_dead_strip plt_Xamarin_Forms_DependencyService_Get_PixUl8_Interfaces_ISettingsService_Xamarin_Forms_DependencyFetchTarget
 plt_Xamarin_Forms_DependencyService_Get_PixUl8_Interfaces_ISettingsService_Xamarin_Forms_DependencyFetchTarget:
 _p_158:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1896]
+ldr x16, [x16, #1880]
 br x16
-.word 25821
+.word 25807
 	.no_dead_strip plt_Xamarin_Forms_DependencyService_Get_PixUl8_Interfaces_IURLService_Xamarin_Forms_DependencyFetchTarget
 plt_Xamarin_Forms_DependencyService_Get_PixUl8_Interfaces_IURLService_Xamarin_Forms_DependencyFetchTarget:
 _p_159:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1904]
+ldr x16, [x16, #1888]
 br x16
-.word 25833
+.word 25819
 	.no_dead_strip plt_Xamarin_Forms_DependencyService_Get_Plugin_Toasts_IToastNotificator_Xamarin_Forms_DependencyFetchTarget
 plt_Xamarin_Forms_DependencyService_Get_Plugin_Toasts_IToastNotificator_Xamarin_Forms_DependencyFetchTarget:
 _p_160:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1912]
+ldr x16, [x16, #1896]
 br x16
-.word 25845
+.word 25831
 	.no_dead_strip plt_Xamarin_Forms_DependencyService_Get_PixUl8_Interfaces_IAdService_Xamarin_Forms_DependencyFetchTarget
 plt_Xamarin_Forms_DependencyService_Get_PixUl8_Interfaces_IAdService_Xamarin_Forms_DependencyFetchTarget:
 _p_161:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1920]
+ldr x16, [x16, #1904]
 br x16
-.word 25857
+.word 25843
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_:
 _p_162:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1928]
+ldr x16, [x16, #1912]
 br x16
-.word 25869
+.word 25855
 	.no_dead_strip plt_PixUl8_ViewModels_BaseViewModel_SetProperty_bool_bool__bool_string_System_Action
 plt_PixUl8_ViewModels_BaseViewModel_SetProperty_bool_bool__bool_string_System_Action:
 _p_163:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1936]
+ldr x16, [x16, #1920]
 br x16
-.word 25881
+.word 25867
 	.no_dead_strip plt_PixUl8_ViewModels_BaseViewModel_SetProperty_string_string__string_string_System_Action
 plt_PixUl8_ViewModels_BaseViewModel_SetProperty_string_string__string_string_System_Action:
 _p_164:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1944]
+ldr x16, [x16, #1928]
 br x16
-.word 25893
+.word 25879
 	.no_dead_strip plt__rgctx_fetch_0
 plt__rgctx_fetch_0:
 _p_165:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1952]
+ldr x16, [x16, #1936]
 br x16
-.word 25941
+.word 25927
 	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_T_REF_get_Default
 plt_System_Collections_Generic_EqualityComparer_1_T_REF_get_Default:
 _p_166:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1960]
+ldr x16, [x16, #1944]
 br x16
-.word 25953
+.word 25939
 	.no_dead_strip plt_PixUl8_ViewModels_BaseViewModel_OnPropertyChanged_string
 plt_PixUl8_ViewModels_BaseViewModel_OnPropertyChanged_string:
 _p_167:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1968]
+ldr x16, [x16, #1952]
 br x16
-.word 25976
+.word 25962
 	.no_dead_strip plt_System_Delegate_Combine_System_Delegate_System_Delegate
 plt_System_Delegate_Combine_System_Delegate_System_Delegate:
 _p_168:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1976]
+ldr x16, [x16, #1960]
 br x16
-.word 25979
+.word 25965
 	.no_dead_strip plt_System_Delegate_Remove_System_Delegate_System_Delegate
 plt_System_Delegate_Remove_System_Delegate_System_Delegate:
 _p_169:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1984]
+ldr x16, [x16, #1968]
 br x16
-.word 25984
+.word 25970
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_:
 _p_170:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1992]
+ldr x16, [x16, #1976]
 br x16
-.word 25989
+.word 25975
 	.no_dead_strip plt_PixUl8_Views_ExtensionViews_HelpPage__ctor
 plt_PixUl8_Views_ExtensionViews_HelpPage__ctor:
 _p_171:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2000]
+ldr x16, [x16, #1984]
 br x16
-.word 26001
+.word 25987
 	.no_dead_strip plt_PixUl8_ViewModels_BaseViewModel__ctor_PixUl8_Interfaces_IHapticService_PixUl8_Interfaces_ISettingsService_Plugin_Toasts_IToastNotificator_PixUl8_Interfaces_IURLService_PixUl8_Interfaces_IAdService
 plt_PixUl8_ViewModels_BaseViewModel__ctor_PixUl8_Interfaces_IHapticService_PixUl8_Interfaces_ISettingsService_Plugin_Toasts_IToastNotificator_PixUl8_Interfaces_IURLService_PixUl8_Interfaces_IAdService:
 _p_172:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2008]
+ldr x16, [x16, #1992]
 br x16
-.word 26003
+.word 25989
 	.no_dead_strip plt_PixUl8_ViewModels_BaseViewModel_set_Title_string
 plt_PixUl8_ViewModels_BaseViewModel_set_Title_string:
 _p_173:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2016]
+ldr x16, [x16, #2000]
 br x16
-.word 26005
+.word 25991
 	.no_dead_strip plt_Xamarin_Forms_MessagingCenter_Subscribe_PixUl8_App_object_string_System_Action_1_PixUl8_App_PixUl8_App
 plt_Xamarin_Forms_MessagingCenter_Subscribe_PixUl8_App_object_string_System_Action_1_PixUl8_App_PixUl8_App:
 _p_174:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2024]
+ldr x16, [x16, #2008]
 br x16
-.word 26008
+.word 25994
 	.no_dead_strip plt_Xamarin_Forms_MessagingCenter_Subscribe_PixUl8_App_int_object_string_System_Action_2_PixUl8_App_int_PixUl8_App
 plt_Xamarin_Forms_MessagingCenter_Subscribe_PixUl8_App_int_object_string_System_Action_2_PixUl8_App_int_PixUl8_App:
 _p_175:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2032]
+ldr x16, [x16, #2016]
 br x16
-.word 26020
+.word 26006
 	.no_dead_strip plt_PixUl8_ViewModels_BaseViewModel_SetProperty_int_int__int_string_System_Action
 plt_PixUl8_ViewModels_BaseViewModel_SetProperty_int_int__int_string_System_Action:
 _p_176:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2040]
+ldr x16, [x16, #2024]
 br x16
-.word 26032
+.word 26018
 	.no_dead_strip plt_Xamarin_Forms_Command__ctor_System_Action
 plt_Xamarin_Forms_Command__ctor_System_Action:
 _p_177:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2048]
+ldr x16, [x16, #2032]
 br x16
-.word 26044
+.word 26030
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_:
 _p_178:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2056]
+ldr x16, [x16, #2040]
 br x16
-.word 26049
+.word 26035
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel__ToggleFlashAsyncd__64_PixUl8_ViewModels_HomeViewModel__ToggleFlashAsyncd__64_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel__ToggleFlashAsyncd__64_PixUl8_ViewModels_HomeViewModel__ToggleFlashAsyncd__64_:
 _p_179:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2064]
+ldr x16, [x16, #2048]
 br x16
-.word 26061
+.word 26047
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel__ToggleHDRAsyncd__68_PixUl8_ViewModels_HomeViewModel__ToggleHDRAsyncd__68_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel__ToggleHDRAsyncd__68_PixUl8_ViewModels_HomeViewModel__ToggleHDRAsyncd__68_:
 _p_180:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2072]
+ldr x16, [x16, #2056]
 br x16
-.word 26073
+.word 26059
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel__ToggleMenuAsyncd__72_PixUl8_ViewModels_HomeViewModel__ToggleMenuAsyncd__72_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel__ToggleMenuAsyncd__72_PixUl8_ViewModels_HomeViewModel__ToggleMenuAsyncd__72_:
 _p_181:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2080]
+ldr x16, [x16, #2064]
 br x16
-.word 26085
+.word 26071
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_:
 _p_182:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2088]
+ldr x16, [x16, #2072]
 br x16
-.word 26097
+.word 26083
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel__PrivacyAsyncd__80_PixUl8_ViewModels_HomeViewModel__PrivacyAsyncd__80_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel__PrivacyAsyncd__80_PixUl8_ViewModels_HomeViewModel__PrivacyAsyncd__80_:
 _p_183:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2096]
+ldr x16, [x16, #2080]
 br x16
-.word 26109
+.word 26095
 	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel_set_StartupAnimation_bool
 plt_PixUl8_ViewModels_HomeViewModel_set_StartupAnimation_bool:
 _p_184:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2104]
+ldr x16, [x16, #2088]
 br x16
-.word 26121
+.word 26107
 	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel_set_is3DEnabled_bool
 plt_PixUl8_ViewModels_HomeViewModel_set_is3DEnabled_bool:
 _p_185:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2112]
+ldr x16, [x16, #2096]
 br x16
-.word 26124
+.word 26110
 	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel_set_is43Enabled_bool
 plt_PixUl8_ViewModels_HomeViewModel_set_is43Enabled_bool:
 _p_186:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2120]
+ldr x16, [x16, #2104]
 br x16
-.word 26127
+.word 26113
 	.no_dead_strip plt_System_Threading_Tasks_Task_Run_System_Func_1_System_Threading_Tasks_Task
 plt_System_Threading_Tasks_Task_Run_System_Func_1_System_Threading_Tasks_Task:
 _p_187:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2128]
+ldr x16, [x16, #2112]
 br x16
-.word 26130
+.word 26116
 	.no_dead_strip plt_Acr_UserDialogs_ToastConfig__ctor_string
 plt_Acr_UserDialogs_ToastConfig__ctor_string:
 _p_188:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2136]
+ldr x16, [x16, #2120]
 br x16
-.word 26135
+.word 26121
 	.no_dead_strip plt_System_Nullable_1_Acr_UserDialogs_ToastPosition__ctor_Acr_UserDialogs_ToastPosition
 plt_System_Nullable_1_Acr_UserDialogs_ToastPosition__ctor_Acr_UserDialogs_ToastPosition:
 _p_189:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2144]
+ldr x16, [x16, #2128]
 br x16
-.word 26140
+.word 26126
 	.no_dead_strip plt_Acr_UserDialogs_ToastConfig_SetDuration_int
 plt_Acr_UserDialogs_ToastConfig_SetDuration_int:
 _p_190:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2152]
+ldr x16, [x16, #2136]
 br x16
-.word 26151
+.word 26137
 	.no_dead_strip plt_System_Drawing_Color_FromArgb_int_int_int
 plt_System_Drawing_Color_FromArgb_int_int_int:
 _p_191:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2160]
+ldr x16, [x16, #2144]
 br x16
-.word 26156
+.word 26142
 	.no_dead_strip plt_Acr_UserDialogs_ToastConfig_SetBackgroundColor_System_Drawing_Color
 plt_Acr_UserDialogs_ToastConfig_SetBackgroundColor_System_Drawing_Color:
 _p_192:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2168]
+ldr x16, [x16, #2152]
 br x16
-.word 26161
+.word 26147
 	.no_dead_strip plt_Acr_UserDialogs_UserDialogs_get_Instance
 plt_Acr_UserDialogs_UserDialogs_get_Instance:
 _p_193:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2176]
+ldr x16, [x16, #2160]
 br x16
-.word 26166
+.word 26152
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel____ctorb__6_0d_PixUl8_ViewModels_HomeViewModel____ctorb__6_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel____ctorb__6_0d_PixUl8_ViewModels_HomeViewModel____ctorb__6_0d_:
 _p_194:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2184]
+ldr x16, [x16, #2168]
 br x16
-.word 26171
+.word 26157
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel____ctorb__6_1d_PixUl8_ViewModels_HomeViewModel____ctorb__6_1d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel____ctorb__6_1d_PixUl8_ViewModels_HomeViewModel____ctorb__6_1d_:
 _p_195:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2192]
+ldr x16, [x16, #2176]
 br x16
-.word 26183
+.word 26169
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel____ctorb__6_2d_PixUl8_ViewModels_HomeViewModel____ctorb__6_2d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel____ctorb__6_2d_PixUl8_ViewModels_HomeViewModel____ctorb__6_2d_:
 _p_196:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2200]
+ldr x16, [x16, #2184]
 br x16
-.word 26195
+.word 26181
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel____ctorb__6_3d_PixUl8_ViewModels_HomeViewModel____ctorb__6_3d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel____ctorb__6_3d_PixUl8_ViewModels_HomeViewModel____ctorb__6_3d_:
 _p_197:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2208]
+ldr x16, [x16, #2192]
 br x16
-.word 26207
+.word 26193
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel____ctorb__6_4d_PixUl8_ViewModels_HomeViewModel____ctorb__6_4d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel____ctorb__6_4d_PixUl8_ViewModels_HomeViewModel____ctorb__6_4d_:
 _p_198:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2216]
+ldr x16, [x16, #2200]
 br x16
-.word 26219
+.word 26205
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel____ctorb__6_5d_PixUl8_ViewModels_HomeViewModel____ctorb__6_5d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel____ctorb__6_5d_PixUl8_ViewModels_HomeViewModel____ctorb__6_5d_:
 _p_199:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2224]
+ldr x16, [x16, #2208]
 br x16
-.word 26231
+.word 26217
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel____ctorb__6_6d_PixUl8_ViewModels_HomeViewModel____ctorb__6_6d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel____ctorb__6_6d_PixUl8_ViewModels_HomeViewModel____ctorb__6_6d_:
 _p_200:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2232]
+ldr x16, [x16, #2216]
 br x16
-.word 26243
+.word 26229
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel___get_ToggleCameraPositionCommandb__59_0d_PixUl8_ViewModels_HomeViewModel___get_ToggleCameraPositionCommandb__59_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel___get_ToggleCameraPositionCommandb__59_0d_PixUl8_ViewModels_HomeViewModel___get_ToggleCameraPositionCommandb__59_0d_:
 _p_201:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2240]
+ldr x16, [x16, #2224]
 br x16
-.word 26255
+.word 26241
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel___get_ToggleFlashCommandb__63_0d_PixUl8_ViewModels_HomeViewModel___get_ToggleFlashCommandb__63_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel___get_ToggleFlashCommandb__63_0d_PixUl8_ViewModels_HomeViewModel___get_ToggleFlashCommandb__63_0d_:
 _p_202:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2248]
+ldr x16, [x16, #2232]
 br x16
-.word 26267
+.word 26253
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel___get_ToggleHDRCommandb__67_0d_PixUl8_ViewModels_HomeViewModel___get_ToggleHDRCommandb__67_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel___get_ToggleHDRCommandb__67_0d_PixUl8_ViewModels_HomeViewModel___get_ToggleHDRCommandb__67_0d_:
 _p_203:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2256]
+ldr x16, [x16, #2240]
 br x16
-.word 26279
+.word 26265
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel___get_ToggleMenuCommandb__71_0d_PixUl8_ViewModels_HomeViewModel___get_ToggleMenuCommandb__71_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel___get_ToggleMenuCommandb__71_0d_PixUl8_ViewModels_HomeViewModel___get_ToggleMenuCommandb__71_0d_:
 _p_204:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2264]
+ldr x16, [x16, #2248]
 br x16
-.word 26291
+.word 26277
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel___get_HelpCommandb__75_0d_PixUl8_ViewModels_HomeViewModel___get_HelpCommandb__75_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel___get_HelpCommandb__75_0d_PixUl8_ViewModels_HomeViewModel___get_HelpCommandb__75_0d_:
 _p_205:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2272]
+ldr x16, [x16, #2256]
 br x16
-.word 26303
+.word 26289
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel___get_OpenPrivacyPolicyCommandb__79_0d_PixUl8_ViewModels_HomeViewModel___get_OpenPrivacyPolicyCommandb__79_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_ViewModels_HomeViewModel___get_OpenPrivacyPolicyCommandb__79_0d_PixUl8_ViewModels_HomeViewModel___get_OpenPrivacyPolicyCommandb__79_0d_:
 _p_206:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2280]
+ldr x16, [x16, #2264]
 br x16
-.word 26315
+.word 26301
 	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel_set_IsFrontFacingActive_bool
 plt_PixUl8_ViewModels_HomeViewModel_set_IsFrontFacingActive_bool:
 _p_207:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2288]
+ldr x16, [x16, #2272]
 br x16
-.word 26327
+.word 26313
 	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel_ToggleFlashAsync
 plt_PixUl8_ViewModels_HomeViewModel_ToggleFlashAsync:
 _p_208:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2296]
+ldr x16, [x16, #2280]
 br x16
-.word 26330
+.word 26316
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_:
 _p_209:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2304]
+ldr x16, [x16, #2288]
 br x16
-.word 26333
+.word 26319
 	.no_dead_strip plt_System_Threading_Tasks_Task_Delay_int
 plt_System_Threading_Tasks_Task_Delay_int:
 _p_210:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2312]
+ldr x16, [x16, #2296]
 br x16
-.word 26345
+.word 26331
 	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel_set_IsFlashActive_bool
 plt_PixUl8_ViewModels_HomeViewModel_set_IsFlashActive_bool:
 _p_211:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2320]
+ldr x16, [x16, #2304]
 br x16
-.word 26350
+.word 26336
 	.no_dead_strip plt_string_Format_string_object
 plt_string_Format_string_object:
 _p_212:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2328]
+ldr x16, [x16, #2312]
 br x16
-.word 26353
+.word 26339
 	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel_ShowToast_string
 plt_PixUl8_ViewModels_HomeViewModel_ShowToast_string:
 _p_213:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2336]
+ldr x16, [x16, #2320]
 br x16
-.word 26358
+.word 26344
 	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel_set_IsHDRActive_bool
 plt_PixUl8_ViewModels_HomeViewModel_set_IsHDRActive_bool:
 _p_214:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2344]
+ldr x16, [x16, #2328]
 br x16
-.word 26361
+.word 26347
 	.no_dead_strip plt_SlideOverKit_MenuContainerPage_ShowMenu
 plt_SlideOverKit_MenuContainerPage_ShowMenu:
 _p_215:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2352]
+ldr x16, [x16, #2336]
 br x16
-.word 26364
+.word 26350
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_:
 _p_216:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2360]
+ldr x16, [x16, #2344]
 br x16
-.word 26369
+.word 26355
 	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel_ToggleCameraPositionAsync
 plt_PixUl8_ViewModels_HomeViewModel_ToggleCameraPositionAsync:
 _p_217:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2368]
+ldr x16, [x16, #2352]
 br x16
-.word 26381
+.word 26367
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel____ctorb__6_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel____ctorb__6_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel____ctorb__6_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel____ctorb__6_0d_:
 _p_218:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2376]
+ldr x16, [x16, #2360]
 br x16
-.word 26384
+.word 26370
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel____ctorb__6_1d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel____ctorb__6_1d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel____ctorb__6_1d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel____ctorb__6_1d_:
 _p_219:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2384]
+ldr x16, [x16, #2368]
 br x16
-.word 26396
+.word 26382
 	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel_ToggleHDRAsync
 plt_PixUl8_ViewModels_HomeViewModel_ToggleHDRAsync:
 _p_220:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2392]
+ldr x16, [x16, #2376]
 br x16
-.word 26408
+.word 26394
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel____ctorb__6_2d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel____ctorb__6_2d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel____ctorb__6_2d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel____ctorb__6_2d_:
 _p_221:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2400]
+ldr x16, [x16, #2384]
 br x16
-.word 26411
+.word 26397
 	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel_ToggleMenuAsync
 plt_PixUl8_ViewModels_HomeViewModel_ToggleMenuAsync:
 _p_222:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2408]
+ldr x16, [x16, #2392]
 br x16
-.word 26423
+.word 26409
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel____ctorb__6_3d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel____ctorb__6_3d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel____ctorb__6_3d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel____ctorb__6_3d_:
 _p_223:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2416]
+ldr x16, [x16, #2400]
 br x16
-.word 26426
+.word 26412
 	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel_set_ExposurePercentage_int
 plt_PixUl8_ViewModels_HomeViewModel_set_ExposurePercentage_int:
 _p_224:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2424]
+ldr x16, [x16, #2408]
 br x16
-.word 26438
+.word 26424
 	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel_set_BalancePercentage_int
 plt_PixUl8_ViewModels_HomeViewModel_set_BalancePercentage_int:
 _p_225:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2432]
+ldr x16, [x16, #2416]
 br x16
-.word 26441
+.word 26427
 	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel_set_FocusPercentage_int
 plt_PixUl8_ViewModels_HomeViewModel_set_FocusPercentage_int:
 _p_226:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2440]
+ldr x16, [x16, #2424]
 br x16
-.word 26444
+.word 26430
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel___get_ToggleCameraPositionCommandb__59_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel___get_ToggleCameraPositionCommandb__59_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel___get_ToggleCameraPositionCommandb__59_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel___get_ToggleCameraPositionCommandb__59_0d_:
 _p_227:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2448]
+ldr x16, [x16, #2432]
 br x16
-.word 26447
+.word 26433
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel___get_ToggleFlashCommandb__63_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel___get_ToggleFlashCommandb__63_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel___get_ToggleFlashCommandb__63_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel___get_ToggleFlashCommandb__63_0d_:
 _p_228:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2456]
+ldr x16, [x16, #2440]
 br x16
-.word 26459
+.word 26445
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel___get_ToggleHDRCommandb__67_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel___get_ToggleHDRCommandb__67_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel___get_ToggleHDRCommandb__67_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel___get_ToggleHDRCommandb__67_0d_:
 _p_229:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2464]
+ldr x16, [x16, #2448]
 br x16
-.word 26471
+.word 26457
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel___get_ToggleMenuCommandb__71_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel___get_ToggleMenuCommandb__71_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel___get_ToggleMenuCommandb__71_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel___get_ToggleMenuCommandb__71_0d_:
 _p_230:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2472]
+ldr x16, [x16, #2456]
 br x16
-.word 26483
+.word 26469
 	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel_HelpAsync
 plt_PixUl8_ViewModels_HomeViewModel_HelpAsync:
 _p_231:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2480]
+ldr x16, [x16, #2464]
 br x16
-.word 26495
+.word 26481
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel___get_HelpCommandb__75_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel___get_HelpCommandb__75_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel___get_HelpCommandb__75_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel___get_HelpCommandb__75_0d_:
 _p_232:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2488]
+ldr x16, [x16, #2472]
 br x16
-.word 26498
+.word 26484
 	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel_PrivacyAsync
 plt_PixUl8_ViewModels_HomeViewModel_PrivacyAsync:
 _p_233:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2496]
+ldr x16, [x16, #2480]
 br x16
-.word 26510
+.word 26496
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel___get_OpenPrivacyPolicyCommandb__79_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel___get_OpenPrivacyPolicyCommandb__79_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel___get_OpenPrivacyPolicyCommandb__79_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel___get_OpenPrivacyPolicyCommandb__79_0d_:
 _p_234:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2504]
+ldr x16, [x16, #2488]
 br x16
-.word 26513
+.word 26499
 	.no_dead_strip plt_UIKit_UIApplication_Main_string___string_string
 plt_UIKit_UIApplication_Main_string___string_string:
 _p_235:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2512]
+ldr x16, [x16, #2496]
 br x16
-.word 26525
+.word 26511
 	.no_dead_strip plt_Xamarin_Forms_Forms_Init
 plt_Xamarin_Forms_Forms_Init:
 _p_236:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2520]
+ldr x16, [x16, #2504]
 br x16
-.word 26530
+.word 26516
 	.no_dead_strip plt_Google_MobileAds_MobileAds_Configure_string
 plt_Google_MobileAds_MobileAds_Configure_string:
 _p_237:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2528]
+ldr x16, [x16, #2512]
 br x16
-.word 26535
+.word 26521
 	.no_dead_strip plt_PixUl8_App__ctor
 plt_PixUl8_App__ctor:
 _p_238:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2536]
+ldr x16, [x16, #2520]
 br x16
-.word 26540
+.word 26526
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_LoadApplication_Xamarin_Forms_Application
 plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_LoadApplication_Xamarin_Forms_Application:
 _p_239:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2544]
+ldr x16, [x16, #2528]
 br x16
-.word 26542
+.word 26528
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_FinishedLaunching_UIKit_UIApplication_Foundation_NSDictionary
 plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_FinishedLaunching_UIKit_UIApplication_Foundation_NSDictionary:
 _p_240:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2552]
+ldr x16, [x16, #2536]
 br x16
-.word 26547
+.word 26533
 	.no_dead_strip plt_SlideOverKit_iOS_SlideOverKit_Init
 plt_SlideOverKit_iOS_SlideOverKit_Init:
 _p_241:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2560]
+ldr x16, [x16, #2544]
 br x16
-.word 26552
+.word 26538
 	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
 plt__jit_icall_ves_icall_object_new_specific:
 _p_242:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2568]
+ldr x16, [x16, #2552]
 br x16
-.word 26557
+.word 26543
 	.no_dead_strip plt_MediaPlayer_MPVolumeView__ctor
 plt_MediaPlayer_MPVolumeView__ctor:
 _p_243:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2576]
+ldr x16, [x16, #2560]
 br x16
-.word 26589
+.word 26575
 	.no_dead_strip plt_UIKit_UIView_set_Alpha_System_nfloat
 plt_UIKit_UIView_set_Alpha_System_nfloat:
 _p_244:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2584]
+ldr x16, [x16, #2568]
 br x16
-.word 26594
+.word 26580
 	.no_dead_strip plt_UIKit_UIView_AddSubview_UIKit_UIView
 plt_UIKit_UIView_AddSubview_UIKit_UIView:
 _p_245:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2592]
+ldr x16, [x16, #2576]
 br x16
-.word 26599
+.word 26585
 	.no_dead_strip plt_Rg_Plugins_Popup_Popup_Init
 plt_Rg_Plugins_Popup_Popup_Init:
 _p_246:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2600]
+ldr x16, [x16, #2584]
 br x16
-.word 26604
+.word 26590
 	.no_dead_strip plt_UserNotifications_UNUserNotificationCenter_get_Current
 plt_UserNotifications_UNUserNotificationCenter_get_Current:
 _p_247:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2608]
+ldr x16, [x16, #2592]
 br x16
-.word 26609
+.word 26595
 	.no_dead_strip plt_UserNotifications_UNUserNotificationCenter_RequestAuthorization_UserNotifications_UNAuthorizationOptions_System_Action_2_bool_Foundation_NSError
 plt_UserNotifications_UNUserNotificationCenter_RequestAuthorization_UserNotifications_UNAuthorizationOptions_System_Action_2_bool_Foundation_NSError:
 _p_248:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2616]
+ldr x16, [x16, #2600]
 br x16
-.word 26614
+.word 26600
 	.no_dead_strip plt_PixUl8_iOS_Delegates_UserNotificationCenterDelegate__ctor
 plt_PixUl8_iOS_Delegates_UserNotificationCenterDelegate__ctor:
 _p_249:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2624]
+ldr x16, [x16, #2608]
 br x16
-.word 26619
+.word 26605
 	.no_dead_strip plt_UserNotifications_UNUserNotificationCenter_set_Delegate_UserNotifications_IUNUserNotificationCenterDelegate
 plt_UserNotifications_UNUserNotificationCenter_set_Delegate_UserNotifications_IUNUserNotificationCenterDelegate:
 _p_250:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2632]
+ldr x16, [x16, #2616]
 br x16
-.word 26622
+.word 26608
 	.no_dead_strip plt_SlideOverKit_iOS_MenuContainerPageiOSRenderer__ctor
 plt_SlideOverKit_iOS_MenuContainerPageiOSRenderer__ctor:
 _p_251:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2640]
+ldr x16, [x16, #2624]
 br x16
-.word 26627
+.word 26613
 	.no_dead_strip plt_Xamarin_Forms_DependencyService_Register_Plugin_Toasts_ToastNotification
 plt_Xamarin_Forms_DependencyService_Register_Plugin_Toasts_ToastNotification:
 _p_252:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2648]
+ldr x16, [x16, #2632]
 br x16
-.word 26632
+.word 26618
 	.no_dead_strip plt_StoreKit_SKStoreReviewController_RequestReview
 plt_StoreKit_SKStoreReviewController_RequestReview:
 _p_253:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2656]
+ldr x16, [x16, #2640]
 br x16
-.word 26644
+.word 26630
 	.no_dead_strip plt_PixUl8_iOS_AppDelegate_StartSession
 plt_PixUl8_iOS_AppDelegate_StartSession:
 _p_254:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2664]
+ldr x16, [x16, #2648]
 br x16
-.word 26649
+.word 26635
 	.no_dead_strip plt_PixUl8_iOS_AppDelegate_SaveAndSetVolume
 plt_PixUl8_iOS_AppDelegate_SaveAndSetVolume:
 _p_255:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2672]
+ldr x16, [x16, #2656]
 br x16
-.word 26652
+.word 26638
 	.no_dead_strip plt_PixUl8_iOS_AppDelegate_StartObservers
 plt_PixUl8_iOS_AppDelegate_StartObservers:
 _p_256:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2680]
+ldr x16, [x16, #2664]
 br x16
-.word 26655
+.word 26641
 	.no_dead_strip plt_PixUl8_iOS_AppDelegate_GetVolume
 plt_PixUl8_iOS_AppDelegate_GetVolume:
 _p_257:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2688]
+ldr x16, [x16, #2672]
 br x16
-.word 26658
+.word 26644
 	.no_dead_strip plt_Xamarin_Forms_MessagingCenter_Send_PixUl8_iOS_AppDelegate_PixUl8_iOS_AppDelegate_string
 plt_Xamarin_Forms_MessagingCenter_Send_PixUl8_iOS_AppDelegate_PixUl8_iOS_AppDelegate_string:
 _p_258:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2696]
+ldr x16, [x16, #2680]
 br x16
-.word 26661
+.word 26647
 	.no_dead_strip plt_PixUl8_iOS_AppDelegate_SetVolume_single
 plt_PixUl8_iOS_AppDelegate_SetVolume_single:
 _p_259:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2704]
+ldr x16, [x16, #2688]
 br x16
-.word 26673
+.word 26659
 	.no_dead_strip plt_MediaPlayer_MPMusicPlayerController_get_SystemMusicPlayer
 plt_MediaPlayer_MPMusicPlayerController_get_SystemMusicPlayer:
 _p_260:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2712]
+ldr x16, [x16, #2696]
 br x16
-.word 26676
+.word 26662
 	.no_dead_strip plt_MediaPlayer_MPMusicPlayerController_set_Volume_single
 plt_MediaPlayer_MPMusicPlayerController_set_Volume_single:
 _p_261:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2720]
+ldr x16, [x16, #2704]
 br x16
-.word 26681
+.word 26667
 	.no_dead_strip plt_AVFoundation_AVAudioSession_SharedInstance
 plt_AVFoundation_AVAudioSession_SharedInstance:
 _p_262:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2728]
+ldr x16, [x16, #2712]
 br x16
-.word 26686
+.word 26672
 	.no_dead_strip plt_AVFoundation_AVAudioSession_get_OutputVolume
 plt_AVFoundation_AVAudioSession_get_OutputVolume:
 _p_263:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2736]
+ldr x16, [x16, #2720]
 br x16
-.word 26691
+.word 26677
 	.no_dead_strip plt_AVFoundation_AVAudioSession_SetActive_bool
 plt_AVFoundation_AVAudioSession_SetActive_bool:
 _p_264:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2744]
+ldr x16, [x16, #2728]
 br x16
-.word 26696
+.word 26682
 	.no_dead_strip plt_Foundation_NSObject_AddObserver_Foundation_NSObject_string_Foundation_NSKeyValueObservingOptions_intptr
 plt_Foundation_NSObject_AddObserver_Foundation_NSObject_string_Foundation_NSKeyValueObservingOptions_intptr:
 _p_265:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2752]
+ldr x16, [x16, #2736]
 br x16
-.word 26701
+.word 26687
 	.no_dead_strip plt_System_Threading_CancellationTokenSource_Cancel
 plt_System_Threading_CancellationTokenSource_Cancel:
 _p_266:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2760]
+ldr x16, [x16, #2744]
 br x16
-.word 26706
+.word 26692
 	.no_dead_strip plt_System_Threading_CancellationTokenSource__ctor
 plt_System_Threading_CancellationTokenSource__ctor:
 _p_267:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2768]
+ldr x16, [x16, #2752]
 br x16
-.word 26711
+.word 26697
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
 plt__jit_icall_mono_helper_ldstr_mscorlib:
 _p_268:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2776]
+ldr x16, [x16, #2760]
 br x16
-.word 26716
+.word 26702
 	.no_dead_strip plt_PixUl8_iOS_AppDelegate_UpdaterAsync_System_Threading_CancellationToken
 plt_PixUl8_iOS_AppDelegate_UpdaterAsync_System_Threading_CancellationToken:
 _p_269:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2784]
+ldr x16, [x16, #2768]
 br x16
-.word 26745
+.word 26731
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_:
 _p_270:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2792]
+ldr x16, [x16, #2776]
 br x16
-.word 26748
+.word 26734
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate__ctor
 plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate__ctor:
 _p_271:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2800]
+ldr x16, [x16, #2784]
 br x16
-.word 26760
+.word 26746
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_:
 _p_272:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2808]
+ldr x16, [x16, #2792]
 br x16
-.word 26765
+.word 26751
 	.no_dead_strip plt_System_Threading_Tasks_Task_Delay_int_System_Threading_CancellationToken
 plt_System_Threading_Tasks_Task_Delay_int_System_Threading_CancellationToken:
 _p_273:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2816]
+ldr x16, [x16, #2800]
 br x16
-.word 26777
+.word 26763
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_:
 _p_274:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2824]
+ldr x16, [x16, #2808]
 br x16
-.word 26782
+.word 26768
 	.no_dead_strip plt_System_Threading_CancellationToken_get_IsCancellationRequested
 plt_System_Threading_CancellationToken_get_IsCancellationRequested:
 _p_275:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2832]
+ldr x16, [x16, #2816]
 br x16
-.word 26794
+.word 26780
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_:
 _p_276:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2840]
+ldr x16, [x16, #2824]
 br x16
-.word 26799
+.word 26785
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_Xamarin_Forms_View_UIKit_UIView_OnElementChanged_Xamarin_Forms_Platform_iOS_ElementChangedEventArgs_1_Xamarin_Forms_View
 plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_Xamarin_Forms_View_UIKit_UIView_OnElementChanged_Xamarin_Forms_Platform_iOS_ElementChangedEventArgs_1_Xamarin_Forms_View:
 _p_277:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2848]
+ldr x16, [x16, #2832]
 br x16
-.word 26811
+.word 26797
 	.no_dead_strip plt_Google_MobileAds_AdSizeCons_get_SmartBannerPortrait
 plt_Google_MobileAds_AdSizeCons_get_SmartBannerPortrait:
 _p_278:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2856]
+ldr x16, [x16, #2840]
 br x16
-.word 26822
+.word 26808
 	.no_dead_strip plt_Google_MobileAds_BannerView__ctor_Google_MobileAds_AdSize
 plt_Google_MobileAds_BannerView__ctor_Google_MobileAds_AdSize:
 _p_279:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2864]
+ldr x16, [x16, #2848]
 br x16
-.word 26827
+.word 26813
 	.no_dead_strip plt_PixUl8_iOS_Renderers_AdMobRenderer_GetRootViewController
 plt_PixUl8_iOS_Renderers_AdMobRenderer_GetRootViewController:
 _p_280:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2872]
+ldr x16, [x16, #2856]
 br x16
-.word 26832
+.word 26818
 	.no_dead_strip plt_Google_MobileAds_BannerView_set_RootViewController_UIKit_UIViewController
 plt_Google_MobileAds_BannerView_set_RootViewController_UIKit_UIViewController:
 _p_281:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2880]
+ldr x16, [x16, #2864]
 br x16
-.word 26835
+.word 26821
 	.no_dead_strip plt_Google_MobileAds_BannerView_add_AdReceived_System_EventHandler
 plt_Google_MobileAds_BannerView_add_AdReceived_System_EventHandler:
 _p_282:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2888]
+ldr x16, [x16, #2872]
 br x16
-.word 26840
+.word 26826
 	.no_dead_strip plt_Google_MobileAds_Request_GetDefaultRequest
 plt_Google_MobileAds_Request_GetDefaultRequest:
 _p_283:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2896]
+ldr x16, [x16, #2880]
 br x16
-.word 26845
+.word 26831
 	.no_dead_strip plt_PixUl8_iOS_Renderers_AdMobRenderer_GetSmartBannerDpHeight
 plt_PixUl8_iOS_Renderers_AdMobRenderer_GetSmartBannerDpHeight:
 _p_284:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2904]
+ldr x16, [x16, #2888]
 br x16
-.word 26850
+.word 26836
 	.no_dead_strip plt_Google_MobileAds_BannerView_LoadRequest_Google_MobileAds_Request
 plt_Google_MobileAds_BannerView_LoadRequest_Google_MobileAds_Request:
 _p_285:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2912]
+ldr x16, [x16, #2896]
 br x16
-.word 26853
+.word 26839
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_Xamarin_Forms_View_UIKit_UIView_SetNativeControl_UIKit_UIView
 plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_Xamarin_Forms_View_UIKit_UIView_SetNativeControl_UIKit_UIView:
 _p_286:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2920]
+ldr x16, [x16, #2904]
 br x16
-.word 26858
+.word 26844
 	.no_dead_strip plt_UIKit_UIApplication_get_SharedApplication
 plt_UIKit_UIApplication_get_SharedApplication:
 _p_287:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2928]
+ldr x16, [x16, #2912]
 br x16
-.word 26869
+.word 26855
 	.no_dead_strip plt_UIKit_UIApplication_get_Windows
 plt_UIKit_UIApplication_get_Windows:
 _p_288:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2936]
+ldr x16, [x16, #2920]
 br x16
-.word 26874
+.word 26860
 	.no_dead_strip plt_UIKit_UIWindow_get_RootViewController
 plt_UIKit_UIWindow_get_RootViewController:
 _p_289:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2944]
+ldr x16, [x16, #2928]
 br x16
-.word 26879
+.word 26865
 	.no_dead_strip plt_UIKit_UIScreen_get_MainScreen
 plt_UIKit_UIScreen_get_MainScreen:
 _p_290:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2952]
+ldr x16, [x16, #2936]
 br x16
-.word 26884
+.word 26870
 	.no_dead_strip plt_UIKit_UIScreen_get_Bounds
 plt_UIKit_UIScreen_get_Bounds:
 _p_291:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2960]
+ldr x16, [x16, #2944]
 br x16
-.word 26889
+.word 26875
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_ViewRenderer__ctor
 plt_Xamarin_Forms_Platform_iOS_ViewRenderer__ctor:
 _p_292:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2968]
+ldr x16, [x16, #2952]
 br x16
-.word 26894
+.word 26880
 	.no_dead_strip plt_UIKit_UIViewController__ctor_string_Foundation_NSBundle
 plt_UIKit_UIViewController__ctor_string_Foundation_NSBundle:
 _p_293:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2976]
+ldr x16, [x16, #2960]
 br x16
-.word 26899
+.word 26885
 	.no_dead_strip plt_UIKit_UIViewController_get_View
 plt_UIKit_UIViewController_get_View:
 _p_294:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2984]
+ldr x16, [x16, #2968]
 br x16
-.word 26904
+.word 26890
 	.no_dead_strip plt_UIKit_UIView_set_ContentMode_UIKit_UIViewContentMode
 plt_UIKit_UIView_set_ContentMode_UIKit_UIViewContentMode:
 _p_295:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #2992]
+ldr x16, [x16, #2976]
 br x16
-.word 26909
+.word 26895
 	.no_dead_strip plt_UIKit_UIView_get_Bounds
 plt_UIKit_UIView_get_Bounds:
 _p_296:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3000]
+ldr x16, [x16, #2984]
 br x16
-.word 26914
+.word 26900
 	.no_dead_strip plt_CoreGraphics_CGRect__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat
 plt_CoreGraphics_CGRect__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat:
 _p_297:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3008]
+ldr x16, [x16, #2992]
 br x16
-.word 26919
+.word 26905
 	.no_dead_strip plt_UIKit_UIImageView__ctor_CoreGraphics_CGRect
 plt_UIKit_UIImageView__ctor_CoreGraphics_CGRect:
 _p_298:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3016]
+ldr x16, [x16, #3000]
 br x16
-.word 26924
+.word 26910
 	.no_dead_strip plt_UIKit_UIViewController_Add_UIKit_UIView
 plt_UIKit_UIViewController_Add_UIKit_UIView:
 _p_299:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3024]
+ldr x16, [x16, #3008]
 br x16
-.word 26929
+.word 26915
 	.no_dead_strip plt_UIKit_UITapGestureRecognizer__ctor_System_Action
 plt_UIKit_UITapGestureRecognizer__ctor_System_Action:
 _p_300:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3032]
+ldr x16, [x16, #3016]
 br x16
-.word 26934
+.word 26920
 	.no_dead_strip plt_UIKit_UIView_AddGestureRecognizer_UIKit_UIGestureRecognizer
 plt_UIKit_UIView_AddGestureRecognizer_UIKit_UIGestureRecognizer:
 _p_301:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3040]
+ldr x16, [x16, #3024]
 br x16
-.word 26939
+.word 26925
 	.no_dead_strip plt_UIKit_UIColor_get_Black
 plt_UIKit_UIColor_get_Black:
 _p_302:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3048]
+ldr x16, [x16, #3032]
 br x16
-.word 26944
+.word 26930
 	.no_dead_strip plt_UIKit_UIView_set_Opaque_bool
 plt_UIKit_UIView_set_Opaque_bool:
 _p_303:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3056]
+ldr x16, [x16, #3040]
 br x16
-.word 26949
+.word 26935
 	.no_dead_strip plt_UIKit_UIViewController_ViewDidLoad
 plt_UIKit_UIViewController_ViewDidLoad:
 _p_304:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3064]
+ldr x16, [x16, #3048]
 br x16
-.word 26954
+.word 26940
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_:
 _p_305:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3072]
+ldr x16, [x16, #3056]
 br x16
-.word 26959
+.word 26945
 	.no_dead_strip plt_UIKit_UIViewController_DidReceiveMemoryWarning
 plt_UIKit_UIViewController_DidReceiveMemoryWarning:
 _p_306:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3080]
+ldr x16, [x16, #3064]
 br x16
-.word 26971
+.word 26957
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_UIViewModels_ImagePreviewViewController____ctorb__1_0d_PixUl8_iOS_UIViewModels_ImagePreviewViewController____ctorb__1_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_UIViewModels_ImagePreviewViewController____ctorb__1_0d_PixUl8_iOS_UIViewModels_ImagePreviewViewController____ctorb__1_0d_:
 _p_307:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3088]
+ldr x16, [x16, #3072]
 br x16
-.word 26976
+.word 26962
 	.no_dead_strip plt_UIKit_UIViewController_DismissViewControllerAsync_bool
 plt_UIKit_UIViewController_DismissViewControllerAsync_bool:
 _p_308:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3096]
+ldr x16, [x16, #3080]
 br x16
-.word 26988
+.word 26974
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_:
 _p_309:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3104]
+ldr x16, [x16, #3088]
 br x16
-.word 26993
+.word 26979
 	.no_dead_strip plt_UIKit_UIImageView_get_Image
 plt_UIKit_UIImageView_get_Image:
 _p_310:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3112]
+ldr x16, [x16, #3096]
 br x16
-.word 27005
+.word 26991
 	.no_dead_strip plt_Foundation_NSObject_Dispose
 plt_Foundation_NSObject_Dispose:
 _p_311:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3120]
+ldr x16, [x16, #3104]
 br x16
-.word 27010
+.word 26996
 	.no_dead_strip plt_PixUl8_iOS_UIViewModels_ImagePreviewViewController_Close
 plt_PixUl8_iOS_UIViewModels_ImagePreviewViewController_Close:
 _p_312:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3128]
+ldr x16, [x16, #3112]
 br x16
-.word 27015
+.word 27001
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViewModels_ImagePreviewViewController____ctorb__1_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViewModels_ImagePreviewViewController____ctorb__1_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViewModels_ImagePreviewViewController____ctorb__1_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViewModels_ImagePreviewViewController____ctorb__1_0d_:
 _p_313:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3136]
+ldr x16, [x16, #3120]
 br x16
-.word 27018
+.word 27004
 	.no_dead_strip plt_UIKit_UIDevice_get_CurrentDevice
 plt_UIKit_UIDevice_get_CurrentDevice:
 _p_314:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3144]
+ldr x16, [x16, #3128]
 br x16
-.word 27030
+.word 27016
 	.no_dead_strip plt_UIKit_UIDevice_get_Orientation
 plt_UIKit_UIDevice_get_Orientation:
 _p_315:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3152]
+ldr x16, [x16, #3136]
 br x16
-.word 27035
+.word 27021
 	.no_dead_strip plt__jit_icall_ves_icall_thread_finish_async_abort
 plt__jit_icall_ves_icall_thread_finish_async_abort:
 _p_316:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3160]
+ldr x16, [x16, #3144]
 br x16
-.word 27040
+.word 27026
 	.no_dead_strip plt_AVFoundation_AVCapturePhotoOutput_GetJpegPhotoDataRepresentation_CoreMedia_CMSampleBuffer_CoreMedia_CMSampleBuffer
 plt_AVFoundation_AVCapturePhotoOutput_GetJpegPhotoDataRepresentation_CoreMedia_CMSampleBuffer_CoreMedia_CMSampleBuffer:
 _p_317:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3168]
+ldr x16, [x16, #3152]
 br x16
-.word 27078
+.word 27064
 	.no_dead_strip plt_UIKit_UIImage__ctor_Foundation_NSData_System_nfloat
 plt_UIKit_UIImage__ctor_Foundation_NSData_System_nfloat:
 _p_318:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3176]
+ldr x16, [x16, #3160]
 br x16
-.word 27083
+.word 27069
 	.no_dead_strip plt_CoreGraphics_CGSize__ctor_single_single
 plt_CoreGraphics_CGSize__ctor_single_single:
 _p_319:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3184]
+ldr x16, [x16, #3168]
 br x16
-.word 27088
+.word 27074
 	.no_dead_strip plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate_ScaleImageToBounds_UIKit_UIImage_CoreGraphics_CGSize
 plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate_ScaleImageToBounds_UIKit_UIImage_CoreGraphics_CGSize:
 _p_320:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3192]
+ldr x16, [x16, #3176]
 br x16
-.word 27093
+.word 27079
 	.no_dead_strip plt_System_Collections_Generic_List_1_UIKit_UIImage_AddWithResize_UIKit_UIImage
 plt_System_Collections_Generic_List_1_UIKit_UIImage_AddWithResize_UIKit_UIImage:
 _p_321:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3200]
+ldr x16, [x16, #3184]
 br x16
-.word 27096
+.word 27082
 	.no_dead_strip plt_CoreMedia_CMSampleBuffer_Dispose
 plt_CoreMedia_CMSampleBuffer_Dispose:
 _p_322:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3208]
+ldr x16, [x16, #3192]
 br x16
-.word 27118
+.word 27104
 	.no_dead_strip plt_System_GC_Collect
 plt_System_GC_Collect:
 _p_323:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3216]
+ldr x16, [x16, #3200]
 br x16
-.word 27123
+.word 27109
 	.no_dead_strip plt_System_Collections_Generic_List_1_UIKit_UIImage_ToArray
 plt_System_Collections_Generic_List_1_UIKit_UIImage_ToArray:
 _p_324:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3224]
+ldr x16, [x16, #3208]
 br x16
-.word 27128
+.word 27114
 	.no_dead_strip plt_Foundation_NSArray_FromObjects_object__
 plt_Foundation_NSArray_FromObjects_object__:
 _p_325:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3232]
+ldr x16, [x16, #3216]
 br x16
-.word 27139
+.word 27125
 	.no_dead_strip plt_PixUl8_Native_OpenCV_Fuse_Foundation_NSArray
 plt_PixUl8_Native_OpenCV_Fuse_Foundation_NSArray:
 _p_326:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3240]
+ldr x16, [x16, #3224]
 br x16
-.word 27144
+.word 27130
 	.no_dead_strip plt_UIKit_UIImage_get_CGImage
 plt_UIKit_UIImage_get_CGImage:
 _p_327:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3248]
+ldr x16, [x16, #3232]
 br x16
-.word 27149
+.word 27135
 	.no_dead_strip plt_System_Collections_Generic_List_1_UIKit_UIImage_get_Item_int
 plt_System_Collections_Generic_List_1_UIKit_UIImage_get_Item_int:
 _p_328:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3256]
+ldr x16, [x16, #3240]
 br x16
-.word 27154
+.word 27140
 	.no_dead_strip plt_UIKit_UIImage_get_Orientation
 plt_UIKit_UIImage_get_Orientation:
 _p_329:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3264]
+ldr x16, [x16, #3248]
 br x16
-.word 27165
+.word 27151
 	.no_dead_strip plt_UIKit_UIImage__ctor_CoreGraphics_CGImage_System_nfloat_UIKit_UIImageOrientation
 plt_UIKit_UIImage__ctor_CoreGraphics_CGImage_System_nfloat_UIKit_UIImageOrientation:
 _p_330:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3272]
+ldr x16, [x16, #3256]
 br x16
-.word 27170
+.word 27156
 	.no_dead_strip plt_string_memset_byte__int_int
 plt_string_memset_byte__int_int:
 _p_331:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3280]
+ldr x16, [x16, #3264]
 br x16
-.word 27175
+.word 27161
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_:
 _p_332:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3288]
+ldr x16, [x16, #3272]
 br x16
-.word 27180
+.word 27166
 	.no_dead_strip plt_UIKit_UIImage_get_Size
 plt_UIKit_UIImage_get_Size:
 _p_333:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3296]
+ldr x16, [x16, #3280]
 br x16
-.word 27192
+.word 27178
 	.no_dead_strip plt_System_Drawing_RectangleF__ctor_single_single_single_single
 plt_System_Drawing_RectangleF__ctor_single_single_single_single:
 _p_334:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3304]
+ldr x16, [x16, #3288]
 br x16
-.word 27197
+.word 27183
 	.no_dead_strip plt_UIKit_UIGraphics_BeginImageContextWithOptions_CoreGraphics_CGSize_bool_System_nfloat
 plt_UIKit_UIGraphics_BeginImageContextWithOptions_CoreGraphics_CGSize_bool_System_nfloat:
 _p_335:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3312]
+ldr x16, [x16, #3296]
 br x16
-.word 27202
+.word 27188
 	.no_dead_strip plt_CoreGraphics_CGRect_op_Implicit_System_Drawing_RectangleF
 plt_CoreGraphics_CGRect_op_Implicit_System_Drawing_RectangleF:
 _p_336:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3320]
+ldr x16, [x16, #3304]
 br x16
-.word 27207
+.word 27193
 	.no_dead_strip plt_UIKit_UIImage_Draw_CoreGraphics_CGRect
 plt_UIKit_UIImage_Draw_CoreGraphics_CGRect:
 _p_337:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3328]
+ldr x16, [x16, #3312]
 br x16
-.word 27212
+.word 27198
 	.no_dead_strip plt_UIKit_UIGraphics_GetImageFromCurrentImageContext
 plt_UIKit_UIGraphics_GetImageFromCurrentImageContext:
 _p_338:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3336]
+ldr x16, [x16, #3320]
 br x16
-.word 27217
+.word 27203
 	.no_dead_strip plt_UIKit_UIGraphics_EndImageContext
 plt_UIKit_UIGraphics_EndImageContext:
 _p_339:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3344]
+ldr x16, [x16, #3328]
 br x16
-.word 27222
+.word 27208
 	.no_dead_strip plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate_CropImage_UIKit_UIImage_int_int_int_int
 plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate_CropImage_UIKit_UIImage_int_int_int_int:
 _p_340:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3352]
+ldr x16, [x16, #3336]
 br x16
-.word 27227
+.word 27213
 	.no_dead_strip plt_CoreGraphics_CGSize_op_Implicit_System_Drawing_SizeF
 plt_CoreGraphics_CGSize_op_Implicit_System_Drawing_SizeF:
 _p_341:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3360]
+ldr x16, [x16, #3344]
 br x16
-.word 27230
+.word 27216
 	.no_dead_strip plt_UIKit_UIGraphics_GetCurrentContext
 plt_UIKit_UIGraphics_GetCurrentContext:
 _p_342:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3368]
+ldr x16, [x16, #3352]
 br x16
-.word 27235
+.word 27221
 	.no_dead_strip plt_CoreGraphics_CGContext_ClipToRect_CoreGraphics_CGRect
 plt_CoreGraphics_CGContext_ClipToRect_CoreGraphics_CGRect:
 _p_343:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3376]
+ldr x16, [x16, #3360]
 br x16
-.word 27240
+.word 27226
 	.no_dead_strip plt_PixUl8_Native_OpenCV__ctor
 plt_PixUl8_Native_OpenCV__ctor:
 _p_344:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3384]
+ldr x16, [x16, #3368]
 br x16
-.word 27245
+.word 27231
 	.no_dead_strip plt_AVFoundation_AVCapturePhotoCaptureDelegate__ctor
 plt_AVFoundation_AVCapturePhotoCaptureDelegate__ctor:
 _p_345:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3392]
+ldr x16, [x16, #3376]
 br x16
-.word 27250
+.word 27236
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_:
 _p_346:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3400]
+ldr x16, [x16, #3384]
 br x16
-.word 27255
+.word 27241
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_:
 _p_347:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3408]
+ldr x16, [x16, #3392]
 br x16
-.word 27267
+.word 27253
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_:
 _p_348:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3416]
+ldr x16, [x16, #3400]
 br x16
-.word 27279
+.word 27265
 	.no_dead_strip plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate_MergeImages_System_Collections_Generic_List_1_UIKit_UIImage
 plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate_MergeImages_System_Collections_Generic_List_1_UIKit_UIImage:
 _p_349:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3424]
+ldr x16, [x16, #3408]
 br x16
-.word 27291
+.word 27277
 	.no_dead_strip plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate_SaveFinalImageAsync_UIKit_UIImage_System_Collections_Generic_List_1_UIKit_UIImage_UIKit_UIDeviceOrientation
 plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate_SaveFinalImageAsync_UIKit_UIImage_System_Collections_Generic_List_1_UIKit_UIImage_UIKit_UIDeviceOrientation:
 _p_350:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3432]
+ldr x16, [x16, #3416]
 br x16
-.word 27294
+.word 27280
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_:
 _p_351:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3440]
+ldr x16, [x16, #3424]
 br x16
-.word 27297
+.word 27283
 	.no_dead_strip plt_Photos_PHAssetCreationRequest_CreationRequestForAsset
 plt_Photos_PHAssetCreationRequest_CreationRequestForAsset:
 _p_352:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3448]
+ldr x16, [x16, #3432]
 br x16
-.word 27309
+.word 27295
 	.no_dead_strip plt_Photos_PHAssetCreationRequest_AddResource_Photos_PHAssetResourceType_Foundation_NSData_Photos_PHAssetResourceCreationOptions
 plt_Photos_PHAssetCreationRequest_AddResource_Photos_PHAssetResourceType_Foundation_NSData_Photos_PHAssetResourceCreationOptions:
 _p_353:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3456]
+ldr x16, [x16, #3440]
 br x16
-.word 27314
+.word 27300
 	.no_dead_strip plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate_CropToBounds_UIKit_UIImage_CoreGraphics_CGSize
 plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate_CropToBounds_UIKit_UIImage_CoreGraphics_CGSize:
 _p_354:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3464]
+ldr x16, [x16, #3448]
 br x16
-.word 27319
+.word 27305
 	.no_dead_strip plt_Photos_PHPhotoLibrary_RequestAuthorizationAsync
 plt_Photos_PHPhotoLibrary_RequestAuthorizationAsync:
 _p_355:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3472]
+ldr x16, [x16, #3456]
 br x16
-.word 27322
+.word 27308
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_Photos_PHAuthorizationStatus_GetAwaiter
 plt_System_Threading_Tasks_Task_1_Photos_PHAuthorizationStatus_GetAwaiter:
 _p_356:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3480]
+ldr x16, [x16, #3464]
 br x16
-.word 27327
+.word 27313
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus__PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus__PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_:
 _p_357:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3488]
+ldr x16, [x16, #3472]
 br x16
-.word 27338
+.word 27324
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_GetResult:
 _p_358:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3496]
+ldr x16, [x16, #3480]
 br x16
-.word 27350
+.word 27336
 	.no_dead_strip plt_UIKit_UIImage_AsJPEG
 plt_UIKit_UIImage_AsJPEG:
 _p_359:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3504]
+ldr x16, [x16, #3488]
 br x16
-.word 27361
+.word 27347
 	.no_dead_strip plt_Photos_PHPhotoLibrary_get_SharedPhotoLibrary
 plt_Photos_PHPhotoLibrary_get_SharedPhotoLibrary:
 _p_360:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3512]
+ldr x16, [x16, #3496]
 br x16
-.word 27366
+.word 27352
 	.no_dead_strip plt_Photos_PHPhotoLibrary_PerformChangesAndWait_System_Action_Foundation_NSError_
 plt_Photos_PHPhotoLibrary_PerformChangesAndWait_System_Action_Foundation_NSError_:
 _p_361:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3520]
+ldr x16, [x16, #3504]
 br x16
-.word 27371
+.word 27357
 	.no_dead_strip plt_System_Collections_Generic_List_1_UIKit_UIImage_GetEnumerator
 plt_System_Collections_Generic_List_1_UIKit_UIImage_GetEnumerator:
 _p_362:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3528]
+ldr x16, [x16, #3512]
 br x16
-.word 27376
+.word 27362
 	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_UIKit_UIImage_MoveNext
 plt_System_Collections_Generic_List_1_Enumerator_UIKit_UIImage_MoveNext:
 _p_363:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3536]
+ldr x16, [x16, #3520]
 br x16
-.word 27387
+.word 27373
 	.no_dead_strip plt_UserNotifications_UNUserNotificationCenterDelegate__ctor
 plt_UserNotifications_UNUserNotificationCenterDelegate__ctor:
 _p_364:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3544]
+ldr x16, [x16, #3528]
 br x16
-.word 27398
+.word 27384
 	.no_dead_strip plt_System_Console_WriteLine_string
 plt_System_Console_WriteLine_string:
 _p_365:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3552]
+ldr x16, [x16, #3536]
 br x16
-.word 27403
+.word 27389
 	.no_dead_strip plt_UserNotifications_UNNotificationResponse_get_Notification
 plt_UserNotifications_UNNotificationResponse_get_Notification:
 _p_366:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3560]
+ldr x16, [x16, #3544]
 br x16
-.word 27408
+.word 27394
 	.no_dead_strip plt_UserNotifications_UNNotification_get_Request
 plt_UserNotifications_UNNotification_get_Request:
 _p_367:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3568]
+ldr x16, [x16, #3552]
 br x16
-.word 27413
+.word 27399
 	.no_dead_strip plt_UserNotifications_UNNotificationRequest_get_Identifier
 plt_UserNotifications_UNNotificationRequest_get_Identifier:
 _p_368:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3576]
+ldr x16, [x16, #3560]
 br x16
-.word 27418
+.word 27404
 	.no_dead_strip plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate_ScaleImageToBounds_UIKit_UIImage_CoreGraphics_CGSize
 plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate_ScaleImageToBounds_UIKit_UIImage_CoreGraphics_CGSize:
 _p_369:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3584]
+ldr x16, [x16, #3568]
 br x16
-.word 27423
+.word 27409
 	.no_dead_strip plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate_MergeImages_System_Collections_Generic_List_1_UIKit_UIImage
 plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate_MergeImages_System_Collections_Generic_List_1_UIKit_UIImage:
 _p_370:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3592]
+ldr x16, [x16, #3576]
 br x16
-.word 27426
+.word 27412
 	.no_dead_strip plt_PixUl8_Native_OpenCV_FuseAllign_Foundation_NSArray_single
 plt_PixUl8_Native_OpenCV_FuseAllign_Foundation_NSArray_single:
 _p_371:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3600]
+ldr x16, [x16, #3584]
 br x16
-.word 27429
+.word 27415
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_:
 _p_372:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3608]
+ldr x16, [x16, #3592]
 br x16
-.word 27434
+.word 27420
 	.no_dead_strip plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate_CropImage_UIKit_UIImage_int_int_int_int
 plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate_CropImage_UIKit_UIImage_int_int_int_int:
 _p_373:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3616]
+ldr x16, [x16, #3600]
 br x16
-.word 27446
+.word 27432
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_:
 _p_374:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3624]
+ldr x16, [x16, #3608]
 br x16
-.word 27449
+.word 27435
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_:
 _p_375:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3632]
+ldr x16, [x16, #3616]
 br x16
-.word 27461
+.word 27447
 	.no_dead_strip plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate_get_CanTakePhoto
 plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate_get_CanTakePhoto:
 _p_376:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3640]
+ldr x16, [x16, #3624]
 br x16
-.word 27473
+.word 27459
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_:
 _p_377:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3648]
+ldr x16, [x16, #3632]
 br x16
-.word 27476
+.word 27462
 	.no_dead_strip plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate_MergeImagesAndAllign_System_Collections_Generic_List_1_UIKit_UIImage
 plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate_MergeImagesAndAllign_System_Collections_Generic_List_1_UIKit_UIImage:
 _p_378:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3656]
+ldr x16, [x16, #3640]
 br x16
-.word 27488
+.word 27474
 	.no_dead_strip plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate_SaveFinalImageAsync_UIKit_UIImage_System_Collections_Generic_List_1_UIKit_UIImage_UIKit_UIDeviceOrientation
 plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate_SaveFinalImageAsync_UIKit_UIImage_System_Collections_Generic_List_1_UIKit_UIImage_UIKit_UIDeviceOrientation:
 _p_379:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3664]
+ldr x16, [x16, #3648]
 br x16
-.word 27491
+.word 27477
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_:
 _p_380:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3672]
+ldr x16, [x16, #3656]
 br x16
-.word 27494
+.word 27480
 	.no_dead_strip plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate_CropToBounds_UIKit_UIImage_CoreGraphics_CGSize
 plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate_CropToBounds_UIKit_UIImage_CoreGraphics_CGSize:
 _p_381:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3680]
+ldr x16, [x16, #3664]
 br x16
-.word 27506
+.word 27492
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus__PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus__PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_:
 _p_382:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3688]
+ldr x16, [x16, #3672]
 br x16
-.word 27509
+.word 27495
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_Delegates_CropperDelegate__DidCropImageToRectd__0_PixUl8_iOS_Delegates_CropperDelegate__DidCropImageToRectd__0_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_Delegates_CropperDelegate__DidCropImageToRectd__0_PixUl8_iOS_Delegates_CropperDelegate__DidCropImageToRectd__0_:
 _p_383:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3696]
+ldr x16, [x16, #3680]
 br x16
-.word 27521
+.word 27507
 	.no_dead_strip plt_UIKit_UIGraphics_BeginImageContext_CoreGraphics_CGSize
 plt_UIKit_UIGraphics_BeginImageContext_CoreGraphics_CGSize:
 _p_384:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3704]
+ldr x16, [x16, #3688]
 br x16
-.word 27533
+.word 27519
 	.no_dead_strip plt_Xamarin_TOCropView_TOCropViewControllerDelegate__ctor
 plt_Xamarin_TOCropView_TOCropViewControllerDelegate__ctor:
 _p_385:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3712]
+ldr x16, [x16, #3696]
 br x16
-.word 27538
+.word 27524
 	.no_dead_strip plt_UIKit_UIViewController_get_PresentingViewController
 plt_UIKit_UIViewController_get_PresentingViewController:
 _p_386:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3720]
+ldr x16, [x16, #3704]
 br x16
-.word 27543
+.word 27529
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_PixUl8_iOS_Delegates_CropperDelegate__DidCropImageToRectd__0_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus__PixUl8_iOS_Delegates_CropperDelegate__DidCropImageToRectd__0_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_PixUl8_iOS_Delegates_CropperDelegate__DidCropImageToRectd__0_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus__PixUl8_iOS_Delegates_CropperDelegate__DidCropImageToRectd__0_:
 _p_387:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3728]
+ldr x16, [x16, #3712]
 br x16
-.word 27548
+.word 27534
 	.no_dead_strip plt_Xamarin_TOCropView_TOCropViewController_get_Image
 plt_Xamarin_TOCropView_TOCropViewController_get_Image:
 _p_388:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3736]
+ldr x16, [x16, #3720]
 br x16
-.word 27560
+.word 27546
 	.no_dead_strip plt_PixUl8_iOS_Delegates_CropperDelegate_CropImage_UIKit_UIImage_int_int_int_int
 plt_PixUl8_iOS_Delegates_CropperDelegate_CropImage_UIKit_UIImage_int_int_int_int:
 _p_389:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3744]
+ldr x16, [x16, #3728]
 br x16
-.word 27565
+.word 27551
 	.no_dead_strip plt_UIKit_UIImpactFeedbackGenerator__ctor_UIKit_UIImpactFeedbackStyle
 plt_UIKit_UIImpactFeedbackGenerator__ctor_UIKit_UIImpactFeedbackStyle:
 _p_390:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3752]
+ldr x16, [x16, #3736]
 br x16
-.word 27568
+.word 27554
 	.no_dead_strip plt_UIKit_UIFeedbackGenerator_Prepare
 plt_UIKit_UIFeedbackGenerator_Prepare:
 _p_391:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3760]
+ldr x16, [x16, #3744]
 br x16
-.word 27573
+.word 27559
 	.no_dead_strip plt_UIKit_UIImpactFeedbackGenerator_ImpactOccurred
 plt_UIKit_UIImpactFeedbackGenerator_ImpactOccurred:
 _p_392:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3768]
+ldr x16, [x16, #3752]
 br x16
-.word 27578
+.word 27564
 	.no_dead_strip plt_Foundation_NSUrl__ctor_string
 plt_Foundation_NSUrl__ctor_string:
 _p_393:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3776]
+ldr x16, [x16, #3760]
 br x16
-.word 27583
+.word 27569
 	.no_dead_strip plt_UIKit_UIApplication_OpenUrl_Foundation_NSUrl
 plt_UIKit_UIApplication_OpenUrl_Foundation_NSUrl:
 _p_394:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3784]
+ldr x16, [x16, #3768]
 br x16
-.word 27588
+.word 27574
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_Services_AdService__ShowAdAsyncd__1_PixUl8_iOS_Services_AdService__ShowAdAsyncd__1_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_Services_AdService__ShowAdAsyncd__1_PixUl8_iOS_Services_AdService__ShowAdAsyncd__1_:
 _p_395:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3792]
+ldr x16, [x16, #3776]
 br x16
-.word 27593
+.word 27579
 	.no_dead_strip plt_Foundation_NSObject__ctor
 plt_Foundation_NSObject__ctor:
 _p_396:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3800]
+ldr x16, [x16, #3784]
 br x16
-.word 27605
+.word 27591
 	.no_dead_strip plt_PixUl8_iOS_Services_AdService_ShowAdAsync
 plt_PixUl8_iOS_Services_AdService_ShowAdAsync:
 _p_397:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3808]
+ldr x16, [x16, #3792]
 br x16
-.word 27610
+.word 27596
 	.no_dead_strip plt_UIKit_UIApplication_get_KeyWindow
 plt_UIKit_UIApplication_get_KeyWindow:
 _p_398:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3816]
+ldr x16, [x16, #3800]
 br x16
-.word 27613
+.word 27599
 	.no_dead_strip plt_Google_MobileAds_Interstitial_PresentFromRootViewController_UIKit_UIViewController
 plt_Google_MobileAds_Interstitial_PresentFromRootViewController_UIKit_UIViewController:
 _p_399:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #3824]
+ldr x16, [x16, #3808]
 br x16
-.word 27618
+.word 27604
 	.no_dead_strip plt_Xamarin_Forms_Device_BeginInvokeOnMainThread_System_Action
 plt_Xamarin_Forms_Device_BeginInvokeOnMainThread_System_Action:
 _p_400:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
+ldr x16, [x16, #3816]
+br x16
+.word 27609
+	.no_dead_strip plt_Google_MobileAds_Interstitial__ctor_string
+plt_Google_MobileAds_Interstitial__ctor_string:
+_p_401:
+adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
+add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
+ldr x16, [x16, #3824]
+br x16
+.word 27614
+	.no_dead_strip plt_Google_MobileAds_Interstitial_set_Delegate_Google_MobileAds_IInterstitialDelegate
+plt_Google_MobileAds_Interstitial_set_Delegate_Google_MobileAds_IInterstitialDelegate:
+_p_402:
+adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
+add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3832]
 br x16
-.word 27623
-	.no_dead_strip plt_Google_MobileAds_Request_set_TestDevices_string__
-plt_Google_MobileAds_Request_set_TestDevices_string__:
-_p_401:
+.word 27619
+	.no_dead_strip plt_Google_MobileAds_Interstitial_LoadRequest_Google_MobileAds_Request
+plt_Google_MobileAds_Interstitial_LoadRequest_Google_MobileAds_Request:
+_p_403:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3840]
 br x16
-.word 27628
-	.no_dead_strip plt_Google_MobileAds_Interstitial__ctor_string
-plt_Google_MobileAds_Interstitial__ctor_string:
-_p_402:
+.word 27624
+	.no_dead_strip plt_Google_MobileAds_Interstitial_add_ReceiveAdFailed_System_EventHandler_1_Google_MobileAds_InterstitialDidFailToReceiveAdWithErrorEventArgs
+plt_Google_MobileAds_Interstitial_add_ReceiveAdFailed_System_EventHandler_1_Google_MobileAds_InterstitialDidFailToReceiveAdWithErrorEventArgs:
+_p_404:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3848]
 br x16
-.word 27633
-	.no_dead_strip plt_Google_MobileAds_Interstitial_set_Delegate_Google_MobileAds_IInterstitialDelegate
-plt_Google_MobileAds_Interstitial_set_Delegate_Google_MobileAds_IInterstitialDelegate:
-_p_403:
+.word 27629
+	.no_dead_strip plt_Google_MobileAds_Interstitial_add_AdReceived_System_EventHandler
+plt_Google_MobileAds_Interstitial_add_AdReceived_System_EventHandler:
+_p_405:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3856]
 br x16
-.word 27638
-	.no_dead_strip plt_Google_MobileAds_Interstitial_LoadRequest_Google_MobileAds_Request
-plt_Google_MobileAds_Interstitial_LoadRequest_Google_MobileAds_Request:
-_p_404:
+.word 27634
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_StopRunning
+plt_PixUl8_iOS_UIViews_UICameraPreview_StopRunning:
+_p_406:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3864]
 br x16
-.word 27643
-	.no_dead_strip plt_Google_MobileAds_Interstitial_add_ReceiveAdFailed_System_EventHandler_1_Google_MobileAds_InterstitialDidFailToReceiveAdWithErrorEventArgs
-plt_Google_MobileAds_Interstitial_add_ReceiveAdFailed_System_EventHandler_1_Google_MobileAds_InterstitialDidFailToReceiveAdWithErrorEventArgs:
-_p_405:
+.word 27639
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_StartRunning
+plt_PixUl8_iOS_UIViews_UICameraPreview_StartRunning:
+_p_407:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3872]
 br x16
-.word 27648
-	.no_dead_strip plt_Google_MobileAds_Interstitial_add_AdReceived_System_EventHandler
-plt_Google_MobileAds_Interstitial_add_AdReceived_System_EventHandler:
-_p_406:
+.word 27642
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_LockForConfiguration_Foundation_NSError_
+plt_AVFoundation_AVCaptureDevice_LockForConfiguration_Foundation_NSError_:
+_p_408:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3880]
 br x16
-.word 27653
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_StopRunning
-plt_PixUl8_iOS_UIViews_UICameraPreview_StopRunning:
-_p_407:
+.word 27645
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_IsTorchModeSupported_AVFoundation_AVCaptureTorchMode
+plt_AVFoundation_AVCaptureDevice_IsTorchModeSupported_AVFoundation_AVCaptureTorchMode:
+_p_409:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3888]
 br x16
-.word 27658
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_StartRunning
-plt_PixUl8_iOS_UIViews_UICameraPreview_StartRunning:
-_p_408:
+.word 27650
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_TorchMode_AVFoundation_AVCaptureTorchMode
+plt_AVFoundation_AVCaptureDevice_set_TorchMode_AVFoundation_AVCaptureTorchMode:
+_p_410:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3896]
 br x16
-.word 27661
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_LockForConfiguration_Foundation_NSError_
-plt_AVFoundation_AVCaptureDevice_LockForConfiguration_Foundation_NSError_:
-_p_409:
+.word 27655
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_UnlockForConfiguration
+plt_AVFoundation_AVCaptureDevice_UnlockForConfiguration:
+_p_411:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3904]
 br x16
-.word 27664
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_IsTorchModeSupported_AVFoundation_AVCaptureTorchMode
-plt_AVFoundation_AVCaptureDevice_IsTorchModeSupported_AVFoundation_AVCaptureTorchMode:
-_p_410:
+.word 27660
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_LockCameraOptics
+plt_PixUl8_iOS_UIViews_UICameraPreview_LockCameraOptics:
+_p_412:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3912]
 br x16
-.word 27669
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_TorchMode_AVFoundation_AVCaptureTorchMode
-plt_AVFoundation_AVCaptureDevice_set_TorchMode_AVFoundation_AVCaptureTorchMode:
-_p_411:
+.word 27665
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_ResetCameraOptics
+plt_PixUl8_iOS_UIViews_UICameraPreview_ResetCameraOptics:
+_p_413:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3920]
 br x16
-.word 27674
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_UnlockForConfiguration
-plt_AVFoundation_AVCaptureDevice_UnlockForConfiguration:
-_p_412:
+.word 27668
+	.no_dead_strip plt_PixUl8_iOS_UIViews_TakeImageButton_Hide
+plt_PixUl8_iOS_UIViews_TakeImageButton_Hide:
+_p_414:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3928]
 br x16
-.word 27679
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_LockCameraOptics
-plt_PixUl8_iOS_UIViews_UICameraPreview_LockCameraOptics:
-_p_413:
+.word 27671
+	.no_dead_strip plt_PixUl8_iOS_UIViews_TakeImageButton_Show
+plt_PixUl8_iOS_UIViews_TakeImageButton_Show:
+_p_415:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3936]
 br x16
-.word 27684
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_ResetCameraOptics
-plt_PixUl8_iOS_UIViews_UICameraPreview_ResetCameraOptics:
-_p_414:
+.word 27674
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_MinExposureTargetBias
+plt_AVFoundation_AVCaptureDevice_get_MinExposureTargetBias:
+_p_416:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3944]
 br x16
-.word 27687
-	.no_dead_strip plt_PixUl8_iOS_UIViews_TakeImageButton_Hide
-plt_PixUl8_iOS_UIViews_TakeImageButton_Hide:
-_p_415:
+.word 27677
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_MaxExposureTargetBias
+plt_AVFoundation_AVCaptureDevice_get_MaxExposureTargetBias:
+_p_417:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3952]
 br x16
-.word 27690
-	.no_dead_strip plt_PixUl8_iOS_UIViews_TakeImageButton_Show
-plt_PixUl8_iOS_UIViews_TakeImageButton_Show:
-_p_416:
+.word 27682
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_SetExposureTargetBias_single_System_Action_1_CoreMedia_CMTime
+plt_AVFoundation_AVCaptureDevice_SetExposureTargetBias_single_System_Action_1_CoreMedia_CMTime:
+_p_418:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3960]
 br x16
-.word 27693
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_MinExposureTargetBias
-plt_AVFoundation_AVCaptureDevice_get_MinExposureTargetBias:
-_p_417:
+.word 27687
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_SetFocusModeLocked_single_System_Action_1_CoreMedia_CMTime
+plt_AVFoundation_AVCaptureDevice_SetFocusModeLocked_single_System_Action_1_CoreMedia_CMTime:
+_p_419:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3968]
 br x16
-.word 27696
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_MaxExposureTargetBias
-plt_AVFoundation_AVCaptureDevice_get_MaxExposureTargetBias:
-_p_418:
+.word 27692
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_GetDeviceWhiteBalanceGains_AVFoundation_AVCaptureWhiteBalanceTemperatureAndTintValues
+plt_AVFoundation_AVCaptureDevice_GetDeviceWhiteBalanceGains_AVFoundation_AVCaptureWhiteBalanceTemperatureAndTintValues:
+_p_420:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3976]
 br x16
-.word 27701
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_SetExposureTargetBias_single_System_Action_1_CoreMedia_CMTime
-plt_AVFoundation_AVCaptureDevice_SetExposureTargetBias_single_System_Action_1_CoreMedia_CMTime:
-_p_419:
+.word 27697
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_NormalizeGains_AVFoundation_AVCaptureWhiteBalanceGains
+plt_PixUl8_iOS_UIViews_UICameraPreview_NormalizeGains_AVFoundation_AVCaptureWhiteBalanceGains:
+_p_421:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3984]
 br x16
-.word 27706
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_SetFocusModeLocked_single_System_Action_1_CoreMedia_CMTime
-plt_AVFoundation_AVCaptureDevice_SetFocusModeLocked_single_System_Action_1_CoreMedia_CMTime:
-_p_420:
+.word 27702
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_SetWhiteBalanceModeLockedWithDeviceWhiteBalanceGains_AVFoundation_AVCaptureWhiteBalanceGains_System_Action_1_CoreMedia_CMTime
+plt_AVFoundation_AVCaptureDevice_SetWhiteBalanceModeLockedWithDeviceWhiteBalanceGains_AVFoundation_AVCaptureWhiteBalanceGains_System_Action_1_CoreMedia_CMTime:
+_p_422:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3992]
 br x16
-.word 27711
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_GetDeviceWhiteBalanceGains_AVFoundation_AVCaptureWhiteBalanceTemperatureAndTintValues
-plt_AVFoundation_AVCaptureDevice_GetDeviceWhiteBalanceGains_AVFoundation_AVCaptureWhiteBalanceTemperatureAndTintValues:
-_p_421:
+.word 27705
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_VideoZoomFactor_System_nfloat
+plt_AVFoundation_AVCaptureDevice_set_VideoZoomFactor_System_nfloat:
+_p_423:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4000]
 br x16
-.word 27716
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_NormalizeGains_AVFoundation_AVCaptureWhiteBalanceGains
-plt_PixUl8_iOS_UIViews_UICameraPreview_NormalizeGains_AVFoundation_AVCaptureWhiteBalanceGains:
-_p_422:
+.word 27710
+	.no_dead_strip plt_AVFoundation_AVCaptureSession__ctor
+plt_AVFoundation_AVCaptureSession__ctor:
+_p_424:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4008]
 br x16
-.word 27721
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_SetWhiteBalanceModeLockedWithDeviceWhiteBalanceGains_AVFoundation_AVCaptureWhiteBalanceGains_System_Action_1_CoreMedia_CMTime
-plt_AVFoundation_AVCaptureDevice_SetWhiteBalanceModeLockedWithDeviceWhiteBalanceGains_AVFoundation_AVCaptureWhiteBalanceGains_System_Action_1_CoreMedia_CMTime:
-_p_423:
+.word 27715
+	.no_dead_strip plt_PixUl8_iOS_Delegates_CropperDelegate__ctor
+plt_PixUl8_iOS_Delegates_CropperDelegate__ctor:
+_p_425:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4016]
 br x16
-.word 27724
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_VideoZoomFactor_System_nfloat
-plt_AVFoundation_AVCaptureDevice_set_VideoZoomFactor_System_nfloat:
-_p_424:
+.word 27720
+	.no_dead_strip plt_UIKit_UIImagePickerController__ctor
+plt_UIKit_UIImagePickerController__ctor:
+_p_426:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4024]
 br x16
-.word 27729
-	.no_dead_strip plt_AVFoundation_AVCaptureSession__ctor
-plt_AVFoundation_AVCaptureSession__ctor:
-_p_425:
+.word 27723
+	.no_dead_strip plt_UIKit_UIView__ctor
+plt_UIKit_UIView__ctor:
+_p_427:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4032]
 br x16
-.word 27734
-	.no_dead_strip plt_PixUl8_iOS_Delegates_CropperDelegate__ctor
-plt_PixUl8_iOS_Delegates_CropperDelegate__ctor:
-_p_426:
+.word 27728
+	.no_dead_strip plt_UIKit_UIScreen_get_Scale
+plt_UIKit_UIScreen_get_Scale:
+_p_428:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4040]
 br x16
-.word 27739
-	.no_dead_strip plt_UIKit_UIImagePickerController__ctor
-plt_UIKit_UIImagePickerController__ctor:
-_p_427:
+.word 27733
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_Initialize
+plt_PixUl8_iOS_UIViews_UICameraPreview_Initialize:
+_p_429:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4048]
 br x16
-.word 27742
-	.no_dead_strip plt_UIKit_UIView__ctor
-plt_UIKit_UIView__ctor:
-_p_428:
+.word 27738
+	.no_dead_strip plt__jit_icall_mono_helper_ldstr
+plt__jit_icall_mono_helper_ldstr:
+_p_430:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4056]
 br x16
-.word 27747
-	.no_dead_strip plt_UIKit_UIScreen_get_Scale
-plt_UIKit_UIScreen_get_Scale:
-_p_429:
+.word 27741
+	.no_dead_strip plt_UIKit_UIView_Draw_CoreGraphics_CGRect
+plt_UIKit_UIView_Draw_CoreGraphics_CGRect:
+_p_431:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4064]
 br x16
-.word 27752
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_Initialize
-plt_PixUl8_iOS_UIViews_UICameraPreview_Initialize:
-_p_430:
+.word 27761
+	.no_dead_strip plt_CoreAnimation_CALayer_set_Frame_CoreGraphics_CGRect
+plt_CoreAnimation_CALayer_set_Frame_CoreGraphics_CGRect:
+_p_432:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4072]
 br x16
-.word 27757
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr
-plt__jit_icall_mono_helper_ldstr:
-_p_431:
+.word 27766
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_MaxWhiteBalanceGain
+plt_AVFoundation_AVCaptureDevice_get_MaxWhiteBalanceGain:
+_p_433:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4080]
 br x16
-.word 27760
-	.no_dead_strip plt_UIKit_UIView_Draw_CoreGraphics_CGRect
-plt_UIKit_UIView_Draw_CoreGraphics_CGRect:
-_p_432:
+.word 27771
+	.no_dead_strip plt_UIKit_UIResponder_TouchesMoved_Foundation_NSSet_UIKit_UIEvent
+plt_UIKit_UIResponder_TouchesMoved_Foundation_NSSet_UIKit_UIEvent:
+_p_434:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+8192
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4088]
 br x16
-.word 27780
-	.no_dead_strip plt_CoreAnimation_CALayer_set_Frame_CoreGraphics_CGRect
-plt_CoreAnimation_CALayer_set_Frame_CoreGraphics_CGRect:
-_p_433:
+.word 27776
+	.no_dead_strip plt_Foundation_NSSet_get_AnyObject
+plt_Foundation_NSSet_get_AnyObject:
+_p_435:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #0]
 br x16
-.word 27785
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_MaxWhiteBalanceGain
-plt_AVFoundation_AVCaptureDevice_get_MaxWhiteBalanceGain:
-_p_434:
+.word 27781
+	.no_dead_strip plt_UIKit_UITouch_get_Force
+plt_UIKit_UITouch_get_Force:
+_p_436:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #8]
 br x16
-.word 27790
-	.no_dead_strip plt_UIKit_UIResponder_TouchesMoved_Foundation_NSSet_UIKit_UIEvent
-plt_UIKit_UIResponder_TouchesMoved_Foundation_NSSet_UIKit_UIEvent:
-_p_435:
+.word 27786
+	.no_dead_strip plt_UIKit_UITouch_get_MaximumPossibleForce
+plt_UIKit_UITouch_get_MaximumPossibleForce:
+_p_437:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #16]
 br x16
-.word 27795
-	.no_dead_strip plt_Foundation_NSSet_get_AnyObject
-plt_Foundation_NSSet_get_AnyObject:
-_p_436:
+.word 27791
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__TouchesEndedd__73_PixUl8_iOS_UIViews_UICameraPreview__TouchesEndedd__73_
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__TouchesEndedd__73_PixUl8_iOS_UIViews_UICameraPreview__TouchesEndedd__73_:
+_p_438:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #24]
 br x16
-.word 27800
-	.no_dead_strip plt_UIKit_UITouch_get_Force
-plt_UIKit_UITouch_get_Force:
-_p_437:
+.word 27796
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_:
+_p_439:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #32]
 br x16
-.word 27805
-	.no_dead_strip plt_UIKit_UITouch_get_MaximumPossibleForce
-plt_UIKit_UITouch_get_MaximumPossibleForce:
-_p_438:
+.word 27808
+	.no_dead_strip plt_UIKit_UIViewController_DismissModalViewController_bool
+plt_UIKit_UIViewController_DismissModalViewController_bool:
+_p_440:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #40]
 br x16
-.word 27810
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__TouchesEndedd__73_PixUl8_iOS_UIViews_UICameraPreview__TouchesEndedd__73_
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__TouchesEndedd__73_PixUl8_iOS_UIViews_UICameraPreview__TouchesEndedd__73_:
-_p_439:
+.word 27820
+	.no_dead_strip plt_UIKit_UIImagePickerController_get_MediaType
+plt_UIKit_UIImagePickerController_get_MediaType:
+_p_441:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #48]
 br x16
-.word 27815
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_:
-_p_440:
+.word 27825
+	.no_dead_strip plt_string_op_Equality_string_string
+plt_string_op_Equality_string_string:
+_p_442:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #56]
 br x16
-.word 27827
-	.no_dead_strip plt_UIKit_UIViewController_DismissModalViewController_bool
-plt_UIKit_UIViewController_DismissModalViewController_bool:
-_p_441:
+.word 27830
+	.no_dead_strip plt_Foundation_NSString__ctor_string
+plt_Foundation_NSString__ctor_string:
+_p_443:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #64]
 br x16
-.word 27839
-	.no_dead_strip plt_UIKit_UIImagePickerController_get_MediaType
-plt_UIKit_UIImagePickerController_get_MediaType:
-_p_442:
+.word 27835
+	.no_dead_strip plt_Foundation_NSUrl_op_Inequality_Foundation_NSUrl_Foundation_NSUrl
+plt_Foundation_NSUrl_op_Inequality_Foundation_NSUrl_Foundation_NSUrl:
+_p_444:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #72]
 br x16
-.word 27844
-	.no_dead_strip plt_string_op_Equality_string_string
-plt_string_op_Equality_string_string:
-_p_443:
+.word 27840
+	.no_dead_strip plt_string_Concat_string_string
+plt_string_Concat_string_string:
+_p_445:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #80]
 br x16
-.word 27849
-	.no_dead_strip plt_Foundation_NSString__ctor_string
-plt_Foundation_NSString__ctor_string:
-_p_444:
+.word 27845
+	.no_dead_strip plt_UIKit_UIImagePickerController_get_OriginalImage
+plt_UIKit_UIImagePickerController_get_OriginalImage:
+_p_446:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #88]
 br x16
-.word 27854
-	.no_dead_strip plt_Foundation_NSUrl_op_Inequality_Foundation_NSUrl_Foundation_NSUrl
-plt_Foundation_NSUrl_op_Inequality_Foundation_NSUrl_Foundation_NSUrl:
-_p_445:
+.word 27850
+	.no_dead_strip plt_UIKit_UIImagePickerMediaPickedEventArgs_get_PHAsset
+plt_UIKit_UIImagePickerMediaPickedEventArgs_get_PHAsset:
+_p_447:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #96]
 br x16
-.word 27859
-	.no_dead_strip plt_string_Concat_string_string
-plt_string_Concat_string_string:
-_p_446:
+.word 27855
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_HandleResponse_UIKit_UIImage_Photos_PHAsset
+plt_PixUl8_iOS_UIViews_UICameraPreview_HandleResponse_UIKit_UIImage_Photos_PHAsset:
+_p_448:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #104]
 br x16
-.word 27864
-	.no_dead_strip plt_UIKit_UIImagePickerController_get_OriginalImage
-plt_UIKit_UIImagePickerController_get_OriginalImage:
-_p_447:
+.word 27860
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_:
+_p_449:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #112]
 br x16
-.word 27869
-	.no_dead_strip plt_UIKit_UIImagePickerMediaPickedEventArgs_get_PHAsset
-plt_UIKit_UIImagePickerMediaPickedEventArgs_get_PHAsset:
-_p_448:
+.word 27863
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__TakePhotoAsyncd__80_PixUl8_iOS_UIViews_UICameraPreview__TakePhotoAsyncd__80_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__TakePhotoAsyncd__80_PixUl8_iOS_UIViews_UICameraPreview__TakePhotoAsyncd__80_:
+_p_450:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #120]
 br x16
-.word 27874
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_HandleResponse_UIKit_UIImage_Photos_PHAsset
-plt_PixUl8_iOS_UIViews_UICameraPreview_HandleResponse_UIKit_UIImage_Photos_PHAsset:
-_p_449:
+.word 27875
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_ExposureTargetBias
+plt_AVFoundation_AVCaptureDevice_get_ExposureTargetBias:
+_p_451:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #128]
 br x16
-.word 27879
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_:
-_p_450:
+.word 27887
+	.no_dead_strip plt_System_Math_Round_double
+plt_System_Math_Round_double:
+_p_452:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #136]
 br x16
-.word 27882
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__TakePhotoAsyncd__80_PixUl8_iOS_UIViews_UICameraPreview__TakePhotoAsyncd__80_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__TakePhotoAsyncd__80_PixUl8_iOS_UIViews_UICameraPreview__TakePhotoAsyncd__80_:
-_p_451:
+.word 27892
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_DeviceWhiteBalanceGains
+plt_AVFoundation_AVCaptureDevice_get_DeviceWhiteBalanceGains:
+_p_453:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #144]
 br x16
-.word 27894
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_ExposureTargetBias
-plt_AVFoundation_AVCaptureDevice_get_ExposureTargetBias:
-_p_452:
+.word 27897
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_GetTemperatureAndTintValues_AVFoundation_AVCaptureWhiteBalanceGains
+plt_AVFoundation_AVCaptureDevice_GetTemperatureAndTintValues_AVFoundation_AVCaptureWhiteBalanceGains:
+_p_454:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #152]
 br x16
-.word 27906
-	.no_dead_strip plt_System_Math_Round_double
-plt_System_Math_Round_double:
-_p_453:
+.word 27902
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_LensPosition
+plt_AVFoundation_AVCaptureDevice_get_LensPosition:
+_p_455:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #160]
 br x16
-.word 27911
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_DeviceWhiteBalanceGains
-plt_AVFoundation_AVCaptureDevice_get_DeviceWhiteBalanceGains:
-_p_454:
+.word 27907
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__UpdaterAsyncd__84_PixUl8_iOS_UIViews_UICameraPreview__UpdaterAsyncd__84_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__UpdaterAsyncd__84_PixUl8_iOS_UIViews_UICameraPreview__UpdaterAsyncd__84_:
+_p_456:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #168]
 br x16
-.word 27916
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_GetTemperatureAndTintValues_AVFoundation_AVCaptureWhiteBalanceGains
-plt_AVFoundation_AVCaptureDevice_GetTemperatureAndTintValues_AVFoundation_AVCaptureWhiteBalanceGains:
-_p_455:
+.word 27912
+	.no_dead_strip plt_CoreAnimation_CALayer_RemoveFromSuperLayer
+plt_CoreAnimation_CALayer_RemoveFromSuperLayer:
+_p_457:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #176]
 br x16
-.word 27921
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_LensPosition
-plt_AVFoundation_AVCaptureDevice_get_LensPosition:
-_p_456:
+.word 27924
+	.no_dead_strip plt_AVFoundation_AVCaptureVideoPreviewLayer__ctor_AVFoundation_AVCaptureSession
+plt_AVFoundation_AVCaptureVideoPreviewLayer__ctor_AVFoundation_AVCaptureSession:
+_p_458:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #184]
 br x16
-.word 27926
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__UpdaterAsyncd__84_PixUl8_iOS_UIViews_UICameraPreview__UpdaterAsyncd__84_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__UpdaterAsyncd__84_PixUl8_iOS_UIViews_UICameraPreview__UpdaterAsyncd__84_:
-_p_457:
+.word 27929
+	.no_dead_strip plt_AVFoundation_AVCaptureVideoPreviewLayer_set_VideoGravity_AVFoundation_AVLayerVideoGravity
+plt_AVFoundation_AVCaptureVideoPreviewLayer_set_VideoGravity_AVFoundation_AVLayerVideoGravity:
+_p_459:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #192]
 br x16
-.word 27931
-	.no_dead_strip plt_CoreAnimation_CALayer_RemoveFromSuperLayer
-plt_CoreAnimation_CALayer_RemoveFromSuperLayer:
-_p_458:
+.word 27934
+	.no_dead_strip plt_CoreAnimation_CALayer_set_DrawsAsynchronously_bool
+plt_CoreAnimation_CALayer_set_DrawsAsynchronously_bool:
+_p_460:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #200]
 br x16
-.word 27943
-	.no_dead_strip plt_AVFoundation_AVCaptureVideoPreviewLayer__ctor_AVFoundation_AVCaptureSession
-plt_AVFoundation_AVCaptureVideoPreviewLayer__ctor_AVFoundation_AVCaptureSession:
-_p_459:
+.word 27939
+	.no_dead_strip plt_CoreAnimation_CALayer_set_Speed_single
+plt_CoreAnimation_CALayer_set_Speed_single:
+_p_461:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #208]
 br x16
-.word 27948
-	.no_dead_strip plt_AVFoundation_AVCaptureVideoPreviewLayer_set_VideoGravity_AVFoundation_AVLayerVideoGravity
-plt_AVFoundation_AVCaptureVideoPreviewLayer_set_VideoGravity_AVFoundation_AVLayerVideoGravity:
-_p_460:
+.word 27944
+	.no_dead_strip plt_UIKit_UIView_get_Layer
+plt_UIKit_UIView_get_Layer:
+_p_462:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #216]
 br x16
-.word 27953
-	.no_dead_strip plt_CoreAnimation_CALayer_set_DrawsAsynchronously_bool
-plt_CoreAnimation_CALayer_set_DrawsAsynchronously_bool:
-_p_461:
+.word 27949
+	.no_dead_strip plt_CoreAnimation_CALayer_InsertSublayer_CoreAnimation_CALayer_int
+plt_CoreAnimation_CALayer_InsertSublayer_CoreAnimation_CALayer_int:
+_p_463:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #224]
 br x16
-.word 27958
-	.no_dead_strip plt_CoreAnimation_CALayer_set_Speed_single
-plt_CoreAnimation_CALayer_set_Speed_single:
-_p_462:
+.word 27954
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_GetCurrentPhotoSettings
+plt_PixUl8_iOS_UIViews_UICameraPreview_GetCurrentPhotoSettings:
+_p_464:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #232]
 br x16
-.word 27963
-	.no_dead_strip plt_UIKit_UIView_get_Layer
-plt_UIKit_UIView_get_Layer:
-_p_463:
+.word 27959
+	.no_dead_strip plt_System_Collections_Generic_List_1_AVFoundation_AVCapturePhotoSettings_AddWithResize_AVFoundation_AVCapturePhotoSettings
+plt_System_Collections_Generic_List_1_AVFoundation_AVCapturePhotoSettings_AddWithResize_AVFoundation_AVCapturePhotoSettings:
+_p_465:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #240]
 br x16
-.word 27968
-	.no_dead_strip plt_CoreAnimation_CALayer_InsertSublayer_CoreAnimation_CALayer_int
-plt_CoreAnimation_CALayer_InsertSublayer_CoreAnimation_CALayer_int:
-_p_464:
+.word 27962
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_GetCurrentBracketedSettings_int_int
+plt_PixUl8_iOS_UIViews_UICameraPreview_GetCurrentBracketedSettings_int_int:
+_p_466:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #248]
 br x16
-.word 27973
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_GetCurrentPhotoSettings
-plt_PixUl8_iOS_UIViews_UICameraPreview_GetCurrentPhotoSettings:
-_p_465:
+.word 27984
+	.no_dead_strip plt_System_Collections_Generic_List_1_AVFoundation_AVCapturePhotoSettings_ToArray
+plt_System_Collections_Generic_List_1_AVFoundation_AVCapturePhotoSettings_ToArray:
+_p_467:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #256]
 br x16
-.word 27978
-	.no_dead_strip plt_System_Collections_Generic_List_1_AVFoundation_AVCapturePhotoSettings_AddWithResize_AVFoundation_AVCapturePhotoSettings
-plt_System_Collections_Generic_List_1_AVFoundation_AVCapturePhotoSettings_AddWithResize_AVFoundation_AVCapturePhotoSettings:
-_p_466:
+.word 27987
+	.no_dead_strip plt_AVFoundation_AVCapturePhotoOutput_SetPreparedPhotoSettingsAsync_AVFoundation_AVCapturePhotoSettings__
+plt_AVFoundation_AVCapturePhotoOutput_SetPreparedPhotoSettingsAsync_AVFoundation_AVCapturePhotoSettings__:
+_p_468:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #264]
 br x16
-.word 27981
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_GetCurrentBracketedSettings_int_int
-plt_PixUl8_iOS_UIViews_UICameraPreview_GetCurrentBracketedSettings_int_int:
-_p_467:
+.word 27998
+	.no_dead_strip plt_AVFoundation_AVCaptureSession_StartRunning
+plt_AVFoundation_AVCaptureSession_StartRunning:
+_p_469:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #272]
 br x16
 .word 28003
-	.no_dead_strip plt_System_Collections_Generic_List_1_AVFoundation_AVCapturePhotoSettings_ToArray
-plt_System_Collections_Generic_List_1_AVFoundation_AVCapturePhotoSettings_ToArray:
-_p_468:
+	.no_dead_strip plt_AVFoundation_AVCaptureSession_StopRunning
+plt_AVFoundation_AVCaptureSession_StopRunning:
+_p_470:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #280]
 br x16
-.word 28006
-	.no_dead_strip plt_AVFoundation_AVCapturePhotoOutput_SetPreparedPhotoSettingsAsync_AVFoundation_AVCapturePhotoSettings__
-plt_AVFoundation_AVCapturePhotoOutput_SetPreparedPhotoSettingsAsync_AVFoundation_AVCapturePhotoSettings__:
-_p_469:
+.word 28008
+	.no_dead_strip plt_string_memcpy_byte__byte__int
+plt_string_memcpy_byte__byte__int:
+_p_471:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #288]
 br x16
-.word 28017
-	.no_dead_strip plt_AVFoundation_AVCaptureSession_StartRunning
-plt_AVFoundation_AVCaptureSession_StartRunning:
-_p_470:
+.word 28013
+	.no_dead_strip plt_UIKit_UIPinchGestureRecognizer__ctor_System_Action_1_UIKit_UIPinchGestureRecognizer
+plt_UIKit_UIPinchGestureRecognizer__ctor_System_Action_1_UIKit_UIPinchGestureRecognizer:
+_p_472:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #296]
 br x16
-.word 28022
-	.no_dead_strip plt_AVFoundation_AVCaptureSession_StopRunning
-plt_AVFoundation_AVCaptureSession_StopRunning:
-_p_471:
+.word 28018
+	.no_dead_strip plt_AVFoundation_AVCaptureSession_get_PresetPhoto
+plt_AVFoundation_AVCaptureSession_get_PresetPhoto:
+_p_473:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #304]
 br x16
-.word 28027
-	.no_dead_strip plt_string_memcpy_byte__byte__int
-plt_string_memcpy_byte__byte__int:
-_p_472:
+.word 28023
+	.no_dead_strip plt_AVFoundation_AVCaptureSession_set_SessionPreset_Foundation_NSString
+plt_AVFoundation_AVCaptureSession_set_SessionPreset_Foundation_NSString:
+_p_474:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #312]
 br x16
-.word 28032
-	.no_dead_strip plt_UIKit_UIPinchGestureRecognizer__ctor_System_Action_1_UIKit_UIPinchGestureRecognizer
-plt_UIKit_UIPinchGestureRecognizer__ctor_System_Action_1_UIKit_UIPinchGestureRecognizer:
-_p_473:
+.word 28028
+	.no_dead_strip plt_AVFoundation_AVCaptureSession_get_PresetMedium
+plt_AVFoundation_AVCaptureSession_get_PresetMedium:
+_p_475:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #320]
 br x16
-.word 28037
-	.no_dead_strip plt_AVFoundation_AVCaptureSession_get_PresetPhoto
-plt_AVFoundation_AVCaptureSession_get_PresetPhoto:
-_p_474:
+.word 28033
+	.no_dead_strip plt_AVFoundation_AVMediaType_get_Video
+plt_AVFoundation_AVMediaType_get_Video:
+_p_476:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #328]
 br x16
-.word 28042
-	.no_dead_strip plt_AVFoundation_AVCaptureSession_set_SessionPreset_Foundation_NSString
-plt_AVFoundation_AVCaptureSession_set_SessionPreset_Foundation_NSString:
-_p_475:
+.word 28038
+	.no_dead_strip plt_Foundation_NSString_op_Implicit_Foundation_NSString
+plt_Foundation_NSString_op_Implicit_Foundation_NSString:
+_p_477:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #336]
 br x16
-.word 28047
-	.no_dead_strip plt_AVFoundation_AVCaptureSession_get_PresetMedium
-plt_AVFoundation_AVCaptureSession_get_PresetMedium:
-_p_476:
+.word 28043
+	.no_dead_strip plt_AVFoundation_AVCaptureDeviceDiscoverySession_Create_AVFoundation_AVCaptureDeviceType___string_AVFoundation_AVCaptureDevicePosition
+plt_AVFoundation_AVCaptureDeviceDiscoverySession_Create_AVFoundation_AVCaptureDeviceType___string_AVFoundation_AVCaptureDevicePosition:
+_p_478:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #344]
 br x16
-.word 28052
-	.no_dead_strip plt_AVFoundation_AVMediaType_get_Video
-plt_AVFoundation_AVMediaType_get_Video:
-_p_477:
+.word 28048
+	.no_dead_strip plt_AVFoundation_AVCaptureDeviceDiscoverySession_get_Devices
+plt_AVFoundation_AVCaptureDeviceDiscoverySession_get_Devices:
+_p_479:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #352]
 br x16
-.word 28057
-	.no_dead_strip plt_Foundation_NSString_op_Implicit_Foundation_NSString
-plt_Foundation_NSString_op_Implicit_Foundation_NSString:
-_p_478:
+.word 28053
+	.no_dead_strip plt_System_Linq_Enumerable_Where_AVFoundation_AVCaptureDevice_System_Collections_Generic_IEnumerable_1_AVFoundation_AVCaptureDevice_System_Func_2_AVFoundation_AVCaptureDevice_bool
+plt_System_Linq_Enumerable_Where_AVFoundation_AVCaptureDevice_System_Collections_Generic_IEnumerable_1_AVFoundation_AVCaptureDevice_System_Func_2_AVFoundation_AVCaptureDevice_bool:
+_p_480:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #360]
 br x16
-.word 28062
-	.no_dead_strip plt_AVFoundation_AVCaptureDeviceDiscoverySession_Create_AVFoundation_AVCaptureDeviceType___string_AVFoundation_AVCaptureDevicePosition
-plt_AVFoundation_AVCaptureDeviceDiscoverySession_Create_AVFoundation_AVCaptureDeviceType___string_AVFoundation_AVCaptureDevicePosition:
-_p_479:
+.word 28058
+	.no_dead_strip plt_System_Linq_Enumerable_ToList_AVFoundation_AVCaptureDevice_System_Collections_Generic_IEnumerable_1_AVFoundation_AVCaptureDevice
+plt_System_Linq_Enumerable_ToList_AVFoundation_AVCaptureDevice_System_Collections_Generic_IEnumerable_1_AVFoundation_AVCaptureDevice:
+_p_481:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #368]
 br x16
-.word 28067
-	.no_dead_strip plt_AVFoundation_AVCaptureDeviceDiscoverySession_get_Devices
-plt_AVFoundation_AVCaptureDeviceDiscoverySession_get_Devices:
-_p_480:
+.word 28070
+	.no_dead_strip plt_System_Linq_Enumerable_FirstOrDefault_AVFoundation_AVCaptureDevice_System_Collections_Generic_IEnumerable_1_AVFoundation_AVCaptureDevice_System_Func_2_AVFoundation_AVCaptureDevice_bool
+plt_System_Linq_Enumerable_FirstOrDefault_AVFoundation_AVCaptureDevice_System_Collections_Generic_IEnumerable_1_AVFoundation_AVCaptureDevice_System_Func_2_AVFoundation_AVCaptureDevice_bool:
+_p_482:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #376]
 br x16
-.word 28072
-	.no_dead_strip plt_System_Linq_Enumerable_Where_AVFoundation_AVCaptureDevice_System_Collections_Generic_IEnumerable_1_AVFoundation_AVCaptureDevice_System_Func_2_AVFoundation_AVCaptureDevice_bool
-plt_System_Linq_Enumerable_Where_AVFoundation_AVCaptureDevice_System_Collections_Generic_IEnumerable_1_AVFoundation_AVCaptureDevice_System_Func_2_AVFoundation_AVCaptureDevice_bool:
-_p_481:
+.word 28082
+	.no_dead_strip plt_System_Linq_Enumerable_ElementAtOrDefault_AVFoundation_AVCaptureDevice_System_Collections_Generic_IEnumerable_1_AVFoundation_AVCaptureDevice_int
+plt_System_Linq_Enumerable_ElementAtOrDefault_AVFoundation_AVCaptureDevice_System_Collections_Generic_IEnumerable_1_AVFoundation_AVCaptureDevice_int:
+_p_483:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #384]
 br x16
-.word 28077
-	.no_dead_strip plt_System_Linq_Enumerable_ToList_AVFoundation_AVCaptureDevice_System_Collections_Generic_IEnumerable_1_AVFoundation_AVCaptureDevice
-plt_System_Linq_Enumerable_ToList_AVFoundation_AVCaptureDevice_System_Collections_Generic_IEnumerable_1_AVFoundation_AVCaptureDevice:
-_p_482:
+.word 28094
+	.no_dead_strip plt_System_Collections_Generic_List_1_AVFoundation_AVCaptureDevice_get_Item_int
+plt_System_Collections_Generic_List_1_AVFoundation_AVCaptureDevice_get_Item_int:
+_p_484:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #392]
 br x16
-.word 28089
-	.no_dead_strip plt_System_Linq_Enumerable_FirstOrDefault_AVFoundation_AVCaptureDevice_System_Collections_Generic_IEnumerable_1_AVFoundation_AVCaptureDevice_System_Func_2_AVFoundation_AVCaptureDevice_bool
-plt_System_Linq_Enumerable_FirstOrDefault_AVFoundation_AVCaptureDevice_System_Collections_Generic_IEnumerable_1_AVFoundation_AVCaptureDevice_System_Func_2_AVFoundation_AVCaptureDevice_bool:
-_p_483:
+.word 28106
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_ActiveFormat
+plt_AVFoundation_AVCaptureDevice_get_ActiveFormat:
+_p_485:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #400]
 br x16
-.word 28101
-	.no_dead_strip plt_System_Linq_Enumerable_ElementAtOrDefault_AVFoundation_AVCaptureDevice_System_Collections_Generic_IEnumerable_1_AVFoundation_AVCaptureDevice_int
-plt_System_Linq_Enumerable_ElementAtOrDefault_AVFoundation_AVCaptureDevice_System_Collections_Generic_IEnumerable_1_AVFoundation_AVCaptureDevice_int:
-_p_484:
+.word 28117
+	.no_dead_strip plt_AVFoundation_AVCaptureDeviceFormat_get_VideoSupportedFrameRateRanges
+plt_AVFoundation_AVCaptureDeviceFormat_get_VideoSupportedFrameRateRanges:
+_p_486:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #408]
 br x16
-.word 28113
-	.no_dead_strip plt_System_Collections_Generic_List_1_AVFoundation_AVCaptureDevice_get_Item_int
-plt_System_Collections_Generic_List_1_AVFoundation_AVCaptureDevice_get_Item_int:
-_p_485:
+.word 28122
+	.no_dead_strip plt_MoreLinq_MoreEnumerable_MaxBy_AVFoundation_AVFrameRateRange_double_System_Collections_Generic_IEnumerable_1_AVFoundation_AVFrameRateRange_System_Func_2_AVFoundation_AVFrameRateRange_double
+plt_MoreLinq_MoreEnumerable_MaxBy_AVFoundation_AVFrameRateRange_double_System_Collections_Generic_IEnumerable_1_AVFoundation_AVFrameRateRange_System_Func_2_AVFoundation_AVFrameRateRange_double:
+_p_487:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #416]
 br x16
-.word 28125
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_ActiveFormat
-plt_AVFoundation_AVCaptureDevice_get_ActiveFormat:
-_p_486:
+.word 28127
+	.no_dead_strip plt_MoreLinq_MoreEnumerable_First_AVFoundation_AVFrameRateRange_MoreLinq_IExtremaEnumerable_1_AVFoundation_AVFrameRateRange
+plt_MoreLinq_MoreEnumerable_First_AVFoundation_AVFrameRateRange_MoreLinq_IExtremaEnumerable_1_AVFoundation_AVFrameRateRange:
+_p_488:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #424]
 br x16
-.word 28136
-	.no_dead_strip plt_AVFoundation_AVCaptureDeviceFormat_get_VideoSupportedFrameRateRanges
-plt_AVFoundation_AVCaptureDeviceFormat_get_VideoSupportedFrameRateRanges:
-_p_487:
+.word 28139
+	.no_dead_strip plt_AVFoundation_AVFrameRateRange_get_MinFrameDuration
+plt_AVFoundation_AVFrameRateRange_get_MinFrameDuration:
+_p_489:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #432]
 br x16
-.word 28141
-	.no_dead_strip plt_MoreLinq_MoreEnumerable_MaxBy_AVFoundation_AVFrameRateRange_double_System_Collections_Generic_IEnumerable_1_AVFoundation_AVFrameRateRange_System_Func_2_AVFoundation_AVFrameRateRange_double
-plt_MoreLinq_MoreEnumerable_MaxBy_AVFoundation_AVFrameRateRange_double_System_Collections_Generic_IEnumerable_1_AVFoundation_AVFrameRateRange_System_Func_2_AVFoundation_AVFrameRateRange_double:
-_p_488:
+.word 28151
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_ActiveVideoMinFrameDuration_CoreMedia_CMTime
+plt_AVFoundation_AVCaptureDevice_set_ActiveVideoMinFrameDuration_CoreMedia_CMTime:
+_p_490:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #440]
 br x16
-.word 28146
-	.no_dead_strip plt_MoreLinq_MoreEnumerable_First_AVFoundation_AVFrameRateRange_MoreLinq_IExtremaEnumerable_1_AVFoundation_AVFrameRateRange
-plt_MoreLinq_MoreEnumerable_First_AVFoundation_AVFrameRateRange_MoreLinq_IExtremaEnumerable_1_AVFoundation_AVFrameRateRange:
-_p_489:
+.word 28156
+	.no_dead_strip plt_AVFoundation_AVFrameRateRange_get_MaxFrameDuration
+plt_AVFoundation_AVFrameRateRange_get_MaxFrameDuration:
+_p_491:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #448]
 br x16
-.word 28158
-	.no_dead_strip plt_AVFoundation_AVFrameRateRange_get_MinFrameDuration
-plt_AVFoundation_AVFrameRateRange_get_MinFrameDuration:
-_p_490:
+.word 28161
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_ActiveVideoMaxFrameDuration_CoreMedia_CMTime
+plt_AVFoundation_AVCaptureDevice_set_ActiveVideoMaxFrameDuration_CoreMedia_CMTime:
+_p_492:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
-.word 28170
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_ActiveVideoMinFrameDuration_CoreMedia_CMTime
-plt_AVFoundation_AVCaptureDevice_set_ActiveVideoMinFrameDuration_CoreMedia_CMTime:
-_p_491:
+.word 28166
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_MinAvailableVideoZoomFactor
+plt_AVFoundation_AVCaptureDevice_get_MinAvailableVideoZoomFactor:
+_p_493:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #464]
 br x16
-.word 28175
-	.no_dead_strip plt_AVFoundation_AVFrameRateRange_get_MaxFrameDuration
-plt_AVFoundation_AVFrameRateRange_get_MaxFrameDuration:
-_p_492:
+.word 28171
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_MaxAvailableVideoZoomFactor
+plt_AVFoundation_AVCaptureDevice_get_MaxAvailableVideoZoomFactor:
+_p_494:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
-.word 28180
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_ActiveVideoMaxFrameDuration_CoreMedia_CMTime
-plt_AVFoundation_AVCaptureDevice_set_ActiveVideoMaxFrameDuration_CoreMedia_CMTime:
-_p_493:
+.word 28176
+	.no_dead_strip plt_AVFoundation_AVCaptureDeviceFormat_get_videoHDRSupportedVideoHDREnabled
+plt_AVFoundation_AVCaptureDeviceFormat_get_videoHDRSupportedVideoHDREnabled:
+_p_495:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #480]
 br x16
-.word 28185
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_MinAvailableVideoZoomFactor
-plt_AVFoundation_AVCaptureDevice_get_MinAvailableVideoZoomFactor:
-_p_494:
+.word 28181
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_AutomaticallyAdjustsVideoHdrEnabled_bool
+plt_AVFoundation_AVCaptureDevice_set_AutomaticallyAdjustsVideoHdrEnabled_bool:
+_p_496:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #488]
 br x16
-.word 28190
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_MaxAvailableVideoZoomFactor
-plt_AVFoundation_AVCaptureDevice_get_MaxAvailableVideoZoomFactor:
-_p_495:
+.word 28186
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_VideoHdrEnabled_bool
+plt_AVFoundation_AVCaptureDevice_set_VideoHdrEnabled_bool:
+_p_497:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 28195
-	.no_dead_strip plt_AVFoundation_AVCaptureDeviceFormat_get_videoHDRSupportedVideoHDREnabled
-plt_AVFoundation_AVCaptureDeviceFormat_get_videoHDRSupportedVideoHDREnabled:
-_p_496:
+.word 28191
+	.no_dead_strip plt_UIKit_UIImagePickerController_set_SourceType_UIKit_UIImagePickerControllerSourceType
+plt_UIKit_UIImagePickerController_set_SourceType_UIKit_UIImagePickerControllerSourceType:
+_p_498:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 28200
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_AutomaticallyAdjustsVideoHdrEnabled_bool
-plt_AVFoundation_AVCaptureDevice_set_AutomaticallyAdjustsVideoHdrEnabled_bool:
-_p_497:
+.word 28196
+	.no_dead_strip plt_UIKit_UIImagePickerController_AvailableMediaTypes_UIKit_UIImagePickerControllerSourceType
+plt_UIKit_UIImagePickerController_AvailableMediaTypes_UIKit_UIImagePickerControllerSourceType:
+_p_499:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 28205
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_VideoHdrEnabled_bool
-plt_AVFoundation_AVCaptureDevice_set_VideoHdrEnabled_bool:
-_p_498:
+.word 28201
+	.no_dead_strip plt_UIKit_UIImagePickerController_set_MediaTypes_string__
+plt_UIKit_UIImagePickerController_set_MediaTypes_string__:
+_p_500:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 28210
-	.no_dead_strip plt_UIKit_UIImagePickerController_set_SourceType_UIKit_UIImagePickerControllerSourceType
-plt_UIKit_UIImagePickerController_set_SourceType_UIKit_UIImagePickerControllerSourceType:
-_p_499:
+.word 28206
+	.no_dead_strip plt_UIKit_UIImagePickerController_add_FinishedPickingMedia_System_EventHandler_1_UIKit_UIImagePickerMediaPickedEventArgs
+plt_UIKit_UIImagePickerController_add_FinishedPickingMedia_System_EventHandler_1_UIKit_UIImagePickerMediaPickedEventArgs:
+_p_501:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 28215
-	.no_dead_strip plt_UIKit_UIImagePickerController_AvailableMediaTypes_UIKit_UIImagePickerControllerSourceType
-plt_UIKit_UIImagePickerController_AvailableMediaTypes_UIKit_UIImagePickerControllerSourceType:
-_p_500:
+.word 28211
+	.no_dead_strip plt_UIKit_UIImagePickerController_add_Canceled_System_EventHandler
+plt_UIKit_UIImagePickerController_add_Canceled_System_EventHandler:
+_p_502:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 28220
-	.no_dead_strip plt_UIKit_UIImagePickerController_set_MediaTypes_string__
-plt_UIKit_UIImagePickerController_set_MediaTypes_string__:
-_p_501:
+.word 28216
+	.no_dead_strip plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate__ctor
+plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate__ctor:
+_p_503:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 28225
-	.no_dead_strip plt_UIKit_UIImagePickerController_add_FinishedPickingMedia_System_EventHandler_1_UIKit_UIImagePickerMediaPickedEventArgs
-plt_UIKit_UIImagePickerController_add_FinishedPickingMedia_System_EventHandler_1_UIKit_UIImagePickerMediaPickedEventArgs:
-_p_502:
+.word 28221
+	.no_dead_strip plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__ctor
+plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__ctor:
+_p_504:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 28230
-	.no_dead_strip plt_UIKit_UIImagePickerController_add_Canceled_System_EventHandler
-plt_UIKit_UIImagePickerController_add_Canceled_System_EventHandler:
-_p_503:
+.word 28224
+	.no_dead_strip plt_AVFoundation_AVCaptureDeviceInput__ctor_AVFoundation_AVCaptureDevice_Foundation_NSError_
+plt_AVFoundation_AVCaptureDeviceInput__ctor_AVFoundation_AVCaptureDevice_Foundation_NSError_:
+_p_505:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 28235
-	.no_dead_strip plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate__ctor
-plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate__ctor:
-_p_504:
+.word 28227
+	.no_dead_strip plt_AVFoundation_AVCaptureSession_AddInput_AVFoundation_AVCaptureInput
+plt_AVFoundation_AVCaptureSession_AddInput_AVFoundation_AVCaptureInput:
+_p_506:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 28240
-	.no_dead_strip plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__ctor
-plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__ctor:
-_p_505:
+.word 28232
+	.no_dead_strip plt_AVFoundation_AVCapturePhotoOutput__ctor
+plt_AVFoundation_AVCapturePhotoOutput__ctor:
+_p_507:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 28243
-	.no_dead_strip plt_AVFoundation_AVCaptureDeviceInput__ctor_AVFoundation_AVCaptureDevice_Foundation_NSError_
-plt_AVFoundation_AVCaptureDeviceInput__ctor_AVFoundation_AVCaptureDevice_Foundation_NSError_:
-_p_506:
+.word 28237
+	.no_dead_strip plt_AVFoundation_AVCapturePhotoOutput_set_IsHighResolutionCaptureEnabled_bool
+plt_AVFoundation_AVCapturePhotoOutput_set_IsHighResolutionCaptureEnabled_bool:
+_p_508:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 28246
-	.no_dead_strip plt_AVFoundation_AVCaptureSession_AddInput_AVFoundation_AVCaptureInput
-plt_AVFoundation_AVCaptureSession_AddInput_AVFoundation_AVCaptureInput:
-_p_507:
+.word 28242
+	.no_dead_strip plt_AVFoundation_AVCaptureSession_AddOutput_AVFoundation_AVCaptureOutput
+plt_AVFoundation_AVCaptureSession_AddOutput_AVFoundation_AVCaptureOutput:
+_p_509:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 28251
-	.no_dead_strip plt_AVFoundation_AVCapturePhotoOutput__ctor
-plt_AVFoundation_AVCapturePhotoOutput__ctor:
-_p_508:
+.word 28247
+	.no_dead_strip plt_AVFoundation_AVCaptureMetadataOutput__ctor
+plt_AVFoundation_AVCaptureMetadataOutput__ctor:
+_p_510:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 28256
-	.no_dead_strip plt_AVFoundation_AVCapturePhotoOutput_set_IsHighResolutionCaptureEnabled_bool
-plt_AVFoundation_AVCapturePhotoOutput_set_IsHighResolutionCaptureEnabled_bool:
-_p_509:
+.word 28252
+	.no_dead_strip plt_CoreFoundation_DispatchQueue_get_MainQueue
+plt_CoreFoundation_DispatchQueue_get_MainQueue:
+_p_511:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 28261
-	.no_dead_strip plt_AVFoundation_AVCaptureSession_AddOutput_AVFoundation_AVCaptureOutput
-plt_AVFoundation_AVCaptureSession_AddOutput_AVFoundation_AVCaptureOutput:
-_p_510:
+.word 28257
+	.no_dead_strip plt_AVFoundation_AVCaptureMetadataOutput_SetDelegate_AVFoundation_IAVCaptureMetadataOutputObjectsDelegate_CoreFoundation_DispatchQueue
+plt_AVFoundation_AVCaptureMetadataOutput_SetDelegate_AVFoundation_IAVCaptureMetadataOutputObjectsDelegate_CoreFoundation_DispatchQueue:
+_p_512:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 28266
-	.no_dead_strip plt_AVFoundation_AVCaptureMetadataOutput__ctor
-plt_AVFoundation_AVCaptureMetadataOutput__ctor:
-_p_511:
+.word 28262
+	.no_dead_strip plt_AVFoundation_AVCaptureMetadataOutput_set_MetadataObjectTypes_AVFoundation_AVMetadataObjectType
+plt_AVFoundation_AVCaptureMetadataOutput_set_MetadataObjectTypes_AVFoundation_AVMetadataObjectType:
+_p_513:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 28271
-	.no_dead_strip plt_CoreFoundation_DispatchQueue_get_MainQueue
-plt_CoreFoundation_DispatchQueue_get_MainQueue:
-_p_512:
+.word 28267
+	.no_dead_strip plt_CoreAnimation_CALayer_AddSublayer_CoreAnimation_CALayer
+plt_CoreAnimation_CALayer_AddSublayer_CoreAnimation_CALayer:
+_p_514:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 28276
-	.no_dead_strip plt_AVFoundation_AVCaptureMetadataOutput_SetDelegate_AVFoundation_IAVCaptureMetadataOutputObjectsDelegate_CoreFoundation_DispatchQueue
-plt_AVFoundation_AVCaptureMetadataOutput_SetDelegate_AVFoundation_IAVCaptureMetadataOutputObjectsDelegate_CoreFoundation_DispatchQueue:
-_p_513:
+.word 28272
+	.no_dead_strip plt_Xamarin_Forms_MessagingCenter_Subscribe_PixUl8_iOS_AppDelegate_object_string_System_Action_1_PixUl8_iOS_AppDelegate_PixUl8_iOS_AppDelegate
+plt_Xamarin_Forms_MessagingCenter_Subscribe_PixUl8_iOS_AppDelegate_object_string_System_Action_1_PixUl8_iOS_AppDelegate_PixUl8_iOS_AppDelegate:
+_p_515:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 28281
-	.no_dead_strip plt_AVFoundation_AVCaptureMetadataOutput_set_MetadataObjectTypes_AVFoundation_AVMetadataObjectType
-plt_AVFoundation_AVCaptureMetadataOutput_set_MetadataObjectTypes_AVFoundation_AVMetadataObjectType:
-_p_514:
+.word 28277
+	.no_dead_strip plt_CoreGraphics_CGRect__ctor_single_single_single_single
+plt_CoreGraphics_CGRect__ctor_single_single_single_single:
+_p_516:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 28286
-	.no_dead_strip plt_CoreAnimation_CALayer_AddSublayer_CoreAnimation_CALayer
-plt_CoreAnimation_CALayer_AddSublayer_CoreAnimation_CALayer:
-_p_515:
+.word 28289
+	.no_dead_strip plt_PixUl8_iOS_UIViews_CircleZoomPercentage__ctor_CoreGraphics_CGRect_int
+plt_PixUl8_iOS_UIViews_CircleZoomPercentage__ctor_CoreGraphics_CGRect_int:
+_p_517:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 28291
-	.no_dead_strip plt_Xamarin_Forms_MessagingCenter_Subscribe_PixUl8_iOS_AppDelegate_object_string_System_Action_1_PixUl8_iOS_AppDelegate_PixUl8_iOS_AppDelegate
-plt_Xamarin_Forms_MessagingCenter_Subscribe_PixUl8_iOS_AppDelegate_object_string_System_Action_1_PixUl8_iOS_AppDelegate_PixUl8_iOS_AppDelegate:
-_p_516:
+.word 28294
+	.no_dead_strip plt_PixUl8_iOS_UIViews_FocusWheel__ctor_CoreGraphics_CGRect_int
+plt_PixUl8_iOS_UIViews_FocusWheel__ctor_CoreGraphics_CGRect_int:
+_p_518:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 28296
-	.no_dead_strip plt_CoreGraphics_CGRect__ctor_single_single_single_single
-plt_CoreGraphics_CGRect__ctor_single_single_single_single:
-_p_517:
+.word 28297
+	.no_dead_strip plt_PixUl8_iOS_UIViews_TakeImageButton__ctor_CoreGraphics_CGRect_int
+plt_PixUl8_iOS_UIViews_TakeImageButton__ctor_CoreGraphics_CGRect_int:
+_p_519:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 28308
-	.no_dead_strip plt_PixUl8_iOS_UIViews_CircleZoomPercentage__ctor_CoreGraphics_CGRect_int
-plt_PixUl8_iOS_UIViews_CircleZoomPercentage__ctor_CoreGraphics_CGRect_int:
-_p_518:
+.word 28300
+	.no_dead_strip plt_UIKit_UIControl_AddTarget_System_EventHandler_UIKit_UIControlEvent
+plt_UIKit_UIControl_AddTarget_System_EventHandler_UIKit_UIControlEvent:
+_p_520:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 28313
-	.no_dead_strip plt_PixUl8_iOS_UIViews_FocusWheel__ctor_CoreGraphics_CGRect_int
-plt_PixUl8_iOS_UIViews_FocusWheel__ctor_CoreGraphics_CGRect_int:
-_p_519:
+.word 28303
+	.no_dead_strip plt_PixUl8_iOS_UIViews_SwipeButton__ctor
+plt_PixUl8_iOS_UIViews_SwipeButton__ctor:
+_p_521:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 28316
-	.no_dead_strip plt_PixUl8_iOS_UIViews_TakeImageButton__ctor_CoreGraphics_CGRect_int
-plt_PixUl8_iOS_UIViews_TakeImageButton__ctor_CoreGraphics_CGRect_int:
-_p_520:
+.word 28308
+	.no_dead_strip plt_UIKit_UIColor_get_Clear
+plt_UIKit_UIColor_get_Clear:
+_p_522:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 28319
-	.no_dead_strip plt_UIKit_UIControl_AddTarget_System_EventHandler_UIKit_UIControlEvent
-plt_UIKit_UIControl_AddTarget_System_EventHandler_UIKit_UIControlEvent:
-_p_521:
+.word 28311
+	.no_dead_strip plt_UIKit_UISwipeGestureRecognizer__ctor_System_Action
+plt_UIKit_UISwipeGestureRecognizer__ctor_System_Action:
+_p_523:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 28322
-	.no_dead_strip plt_PixUl8_iOS_UIViews_SwipeButton__ctor
-plt_PixUl8_iOS_UIViews_SwipeButton__ctor:
-_p_522:
+.word 28316
+	.no_dead_strip plt_UIKit_UISwipeGestureRecognizer_set_Direction_UIKit_UISwipeGestureRecognizerDirection
+plt_UIKit_UISwipeGestureRecognizer_set_Direction_UIKit_UISwipeGestureRecognizerDirection:
+_p_524:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 28327
-	.no_dead_strip plt_UIKit_UIColor_get_Clear
-plt_UIKit_UIColor_get_Clear:
-_p_523:
+.word 28321
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_SetupVisionDrawingLayers
+plt_PixUl8_iOS_UIViews_UICameraPreview_SetupVisionDrawingLayers:
+_p_525:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 28330
-	.no_dead_strip plt_UIKit_UISwipeGestureRecognizer__ctor_System_Action
-plt_UIKit_UISwipeGestureRecognizer__ctor_System_Action:
-_p_524:
+.word 28326
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_HideBoxes_bool
+plt_PixUl8_iOS_UIViews_UICameraPreview_HideBoxes_bool:
+_p_526:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 28335
-	.no_dead_strip plt_UIKit_UISwipeGestureRecognizer_set_Direction_UIKit_UISwipeGestureRecognizerDirection
-plt_UIKit_UISwipeGestureRecognizer_set_Direction_UIKit_UISwipeGestureRecognizerDirection:
-_p_525:
+.word 28329
+	.no_dead_strip plt_CoreGraphics_CGPoint__ctor_double_double
+plt_CoreGraphics_CGPoint__ctor_double_double:
+_p_527:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 28340
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_SetupVisionDrawingLayers
-plt_PixUl8_iOS_UIViews_UICameraPreview_SetupVisionDrawingLayers:
-_p_526:
+.word 28332
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_FocusPointOfInterestSupported
+plt_AVFoundation_AVCaptureDevice_get_FocusPointOfInterestSupported:
+_p_528:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 28345
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_HideBoxes_bool
-plt_PixUl8_iOS_UIViews_UICameraPreview_HideBoxes_bool:
-_p_527:
+.word 28337
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_FocusPointOfInterest_CoreGraphics_CGPoint
+plt_AVFoundation_AVCaptureDevice_set_FocusPointOfInterest_CoreGraphics_CGPoint:
+_p_529:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 28348
-	.no_dead_strip plt_CoreGraphics_CGPoint__ctor_double_double
-plt_CoreGraphics_CGPoint__ctor_double_double:
-_p_528:
+.word 28342
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_ExposurePointOfInterestSupported
+plt_AVFoundation_AVCaptureDevice_get_ExposurePointOfInterestSupported:
+_p_530:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 28351
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_FocusPointOfInterestSupported
-plt_AVFoundation_AVCaptureDevice_get_FocusPointOfInterestSupported:
-_p_529:
+.word 28347
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_ExposurePointOfInterest_CoreGraphics_CGPoint
+plt_AVFoundation_AVCaptureDevice_set_ExposurePointOfInterest_CoreGraphics_CGPoint:
+_p_531:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 28356
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_FocusPointOfInterest_CoreGraphics_CGPoint
-plt_AVFoundation_AVCaptureDevice_set_FocusPointOfInterest_CoreGraphics_CGPoint:
-_p_530:
+.word 28352
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_IsExposureModeSupported_AVFoundation_AVCaptureExposureMode
+plt_AVFoundation_AVCaptureDevice_IsExposureModeSupported_AVFoundation_AVCaptureExposureMode:
+_p_532:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 28361
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_ExposurePointOfInterestSupported
-plt_AVFoundation_AVCaptureDevice_get_ExposurePointOfInterestSupported:
-_p_531:
+.word 28357
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_ExposureMode_AVFoundation_AVCaptureExposureMode
+plt_AVFoundation_AVCaptureDevice_set_ExposureMode_AVFoundation_AVCaptureExposureMode:
+_p_533:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 28366
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_ExposurePointOfInterest_CoreGraphics_CGPoint
-plt_AVFoundation_AVCaptureDevice_set_ExposurePointOfInterest_CoreGraphics_CGPoint:
-_p_532:
+.word 28362
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_IsFocusModeSupported_AVFoundation_AVCaptureFocusMode
+plt_AVFoundation_AVCaptureDevice_IsFocusModeSupported_AVFoundation_AVCaptureFocusMode:
+_p_534:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 28371
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_IsExposureModeSupported_AVFoundation_AVCaptureExposureMode
-plt_AVFoundation_AVCaptureDevice_IsExposureModeSupported_AVFoundation_AVCaptureExposureMode:
-_p_533:
+.word 28367
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_FocusMode_AVFoundation_AVCaptureFocusMode
+plt_AVFoundation_AVCaptureDevice_set_FocusMode_AVFoundation_AVCaptureFocusMode:
+_p_535:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 28376
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_ExposureMode_AVFoundation_AVCaptureExposureMode
-plt_AVFoundation_AVCaptureDevice_set_ExposureMode_AVFoundation_AVCaptureExposureMode:
-_p_534:
+.word 28372
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_IsWhiteBalanceModeSupported_AVFoundation_AVCaptureWhiteBalanceMode
+plt_AVFoundation_AVCaptureDevice_IsWhiteBalanceModeSupported_AVFoundation_AVCaptureWhiteBalanceMode:
+_p_536:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 28381
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_IsFocusModeSupported_AVFoundation_AVCaptureFocusMode
-plt_AVFoundation_AVCaptureDevice_IsFocusModeSupported_AVFoundation_AVCaptureFocusMode:
-_p_535:
+.word 28377
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_WhiteBalanceMode_AVFoundation_AVCaptureWhiteBalanceMode
+plt_AVFoundation_AVCaptureDevice_set_WhiteBalanceMode_AVFoundation_AVCaptureWhiteBalanceMode:
+_p_537:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 28386
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_FocusMode_AVFoundation_AVCaptureFocusMode
-plt_AVFoundation_AVCaptureDevice_set_FocusMode_AVFoundation_AVCaptureFocusMode:
-_p_536:
+.word 28382
+	.no_dead_strip plt_PixUl8_iOS_UIViews_FocusWheel_ShowAt_double_double_System_Action
+plt_PixUl8_iOS_UIViews_FocusWheel_ShowAt_double_double_System_Action:
+_p_538:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 28391
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_IsWhiteBalanceModeSupported_AVFoundation_AVCaptureWhiteBalanceMode
-plt_AVFoundation_AVCaptureDevice_IsWhiteBalanceModeSupported_AVFoundation_AVCaptureWhiteBalanceMode:
-_p_537:
+.word 28387
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_UnhideBoxes
+plt_PixUl8_iOS_UIViews_UICameraPreview_UnhideBoxes:
+_p_539:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 28396
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_set_WhiteBalanceMode_AVFoundation_AVCaptureWhiteBalanceMode
-plt_AVFoundation_AVCaptureDevice_set_WhiteBalanceMode_AVFoundation_AVCaptureWhiteBalanceMode:
-_p_538:
+.word 28390
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_set_Focus_int
+plt_PixUl8_iOS_UIViews_UICameraPreview_set_Focus_int:
+_p_540:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 28401
-	.no_dead_strip plt_PixUl8_iOS_UIViews_FocusWheel_ShowAt_double_double_System_Action
-plt_PixUl8_iOS_UIViews_FocusWheel_ShowAt_double_double_System_Action:
-_p_539:
+.word 28393
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_set_Balance_int
+plt_PixUl8_iOS_UIViews_UICameraPreview_set_Balance_int:
+_p_541:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 28406
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_UnhideBoxes
-plt_PixUl8_iOS_UIViews_UICameraPreview_UnhideBoxes:
-_p_540:
+.word 28396
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_TakePhotoAsync
+plt_PixUl8_iOS_UIViews_UICameraPreview_TakePhotoAsync:
+_p_542:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 28409
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_set_Focus_int
-plt_PixUl8_iOS_UIViews_UICameraPreview_set_Focus_int:
-_p_541:
+.word 28399
+	.no_dead_strip plt_UIKit_UIGestureRecognizer_get_State
+plt_UIKit_UIGestureRecognizer_get_State:
+_p_543:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 28412
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_set_Balance_int
-plt_PixUl8_iOS_UIViews_UICameraPreview_set_Balance_int:
-_p_542:
+.word 28402
+	.no_dead_strip plt_UIKit_UIPinchGestureRecognizer_get_Scale
+plt_UIKit_UIPinchGestureRecognizer_get_Scale:
+_p_544:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 28415
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_TakePhotoAsync
-plt_PixUl8_iOS_UIViews_UICameraPreview_TakePhotoAsync:
-_p_543:
+.word 28407
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_set_ZoomFactor_double
+plt_PixUl8_iOS_UIViews_UICameraPreview_set_ZoomFactor_double:
+_p_545:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 28418
-	.no_dead_strip plt_UIKit_UIGestureRecognizer_get_State
-plt_UIKit_UIGestureRecognizer_get_State:
-_p_544:
+.word 28412
+	.no_dead_strip plt_System_Math_Round_double_int
+plt_System_Math_Round_double_int:
+_p_546:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 28421
-	.no_dead_strip plt_UIKit_UIPinchGestureRecognizer_get_Scale
-plt_UIKit_UIPinchGestureRecognizer_get_Scale:
-_p_545:
+.word 28415
+	.no_dead_strip plt_PixUl8_iOS_UIViews_CircleZoomPercentage_UpdateDisplayZoomFactor_single
+plt_PixUl8_iOS_UIViews_CircleZoomPercentage_UpdateDisplayZoomFactor_single:
+_p_547:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 28426
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_set_ZoomFactor_double
-plt_PixUl8_iOS_UIViews_UICameraPreview_set_ZoomFactor_double:
-_p_546:
+.word 28420
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_OpenGalleryAsync
+plt_PixUl8_iOS_UIViews_UICameraPreview_OpenGalleryAsync:
+_p_548:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 28431
-	.no_dead_strip plt_System_Math_Round_double_int
-plt_System_Math_Round_double_int:
-_p_547:
+.word 28423
+	.no_dead_strip plt_System_Linq_Enumerable_Range_int_int
+plt_System_Linq_Enumerable_Range_int_int:
+_p_549:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 28434
-	.no_dead_strip plt_PixUl8_iOS_UIViews_CircleZoomPercentage_UpdateDisplayZoomFactor_single
-plt_PixUl8_iOS_UIViews_CircleZoomPercentage_UpdateDisplayZoomFactor_single:
-_p_548:
+.word 28426
+	.no_dead_strip plt_System_Linq_Enumerable_ToList_int_System_Collections_Generic_IEnumerable_1_int
+plt_System_Linq_Enumerable_ToList_int_System_Collections_Generic_IEnumerable_1_int:
+_p_550:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 28439
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_OpenGalleryAsync
-plt_PixUl8_iOS_UIViews_UICameraPreview_OpenGalleryAsync:
-_p_549:
+.word 28431
+	.no_dead_strip plt_System_Collections_Generic_List_1_int_get_Item_int
+plt_System_Collections_Generic_List_1_int_get_Item_int:
+_p_551:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 28442
-	.no_dead_strip plt_System_Linq_Enumerable_Range_int_int
-plt_System_Linq_Enumerable_Range_int_int:
-_p_550:
+.word 28443
+	.no_dead_strip plt_AVFoundation_AVCaptureAutoExposureBracketedStillImageSettings_Create_single
+plt_AVFoundation_AVCaptureAutoExposureBracketedStillImageSettings_Create_single:
+_p_552:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 28445
-	.no_dead_strip plt_System_Linq_Enumerable_ToList_int_System_Collections_Generic_IEnumerable_1_int
-plt_System_Linq_Enumerable_ToList_int_System_Collections_Generic_IEnumerable_1_int:
-_p_551:
+.word 28454
+	.no_dead_strip plt_System_Collections_Generic_List_1_AVFoundation_AVCaptureAutoExposureBracketedStillImageSettings_AddWithResize_AVFoundation_AVCaptureAutoExposureBracketedStillImageSettings
+plt_System_Collections_Generic_List_1_AVFoundation_AVCaptureAutoExposureBracketedStillImageSettings_AddWithResize_AVFoundation_AVCaptureAutoExposureBracketedStillImageSettings:
+_p_553:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 28450
-	.no_dead_strip plt_System_Collections_Generic_List_1_int_get_Item_int
-plt_System_Collections_Generic_List_1_int_get_Item_int:
-_p_552:
+.word 28459
+	.no_dead_strip plt_System_Enum_ToString
+plt_System_Enum_ToString:
+_p_554:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 28462
-	.no_dead_strip plt_AVFoundation_AVCaptureAutoExposureBracketedStillImageSettings_Create_single
-plt_AVFoundation_AVCaptureAutoExposureBracketedStillImageSettings_Create_single:
-_p_553:
+.word 28481
+	.no_dead_strip plt_System_Collections_Generic_List_1_AVFoundation_AVCaptureAutoExposureBracketedStillImageSettings_ToArray
+plt_System_Collections_Generic_List_1_AVFoundation_AVCaptureAutoExposureBracketedStillImageSettings_ToArray:
+_p_555:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 28473
-	.no_dead_strip plt_System_Collections_Generic_List_1_AVFoundation_AVCaptureAutoExposureBracketedStillImageSettings_AddWithResize_AVFoundation_AVCaptureAutoExposureBracketedStillImageSettings
-plt_System_Collections_Generic_List_1_AVFoundation_AVCaptureAutoExposureBracketedStillImageSettings_AddWithResize_AVFoundation_AVCaptureAutoExposureBracketedStillImageSettings:
-_p_554:
+.word 28486
+	.no_dead_strip plt_AVFoundation_AVCapturePhotoBracketSettings_FromPhotoBracketSettings_uint_string_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSObject_string_AVFoundation_AVCaptureBracketedStillImageSettings__
+plt_AVFoundation_AVCapturePhotoBracketSettings_FromPhotoBracketSettings_uint_string_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSObject_string_AVFoundation_AVCaptureBracketedStillImageSettings__:
+_p_556:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 28478
-	.no_dead_strip plt_System_Enum_ToString
-plt_System_Enum_ToString:
-_p_555:
+.word 28497
+	.no_dead_strip plt_AVFoundation_AVCapturePhotoSettings_set_IsHighResolutionPhotoEnabled_bool
+plt_AVFoundation_AVCapturePhotoSettings_set_IsHighResolutionPhotoEnabled_bool:
+_p_557:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 28500
-	.no_dead_strip plt_System_Collections_Generic_List_1_AVFoundation_AVCaptureAutoExposureBracketedStillImageSettings_ToArray
-plt_System_Collections_Generic_List_1_AVFoundation_AVCaptureAutoExposureBracketedStillImageSettings_ToArray:
-_p_556:
+.word 28502
+	.no_dead_strip plt_AVFoundation_AVCapturePhotoOutput_get_IsLensStabilizationDuringBracketedCaptureSupported
+plt_AVFoundation_AVCapturePhotoOutput_get_IsLensStabilizationDuringBracketedCaptureSupported:
+_p_558:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 28505
-	.no_dead_strip plt_AVFoundation_AVCapturePhotoBracketSettings_FromPhotoBracketSettings_uint_string_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSObject_string_AVFoundation_AVCaptureBracketedStillImageSettings__
-plt_AVFoundation_AVCapturePhotoBracketSettings_FromPhotoBracketSettings_uint_string_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSObject_string_AVFoundation_AVCaptureBracketedStillImageSettings__:
-_p_557:
+.word 28507
+	.no_dead_strip plt_AVFoundation_AVCapturePhotoBracketSettings_set_IsLensStabilizationEnabled_bool
+plt_AVFoundation_AVCapturePhotoBracketSettings_set_IsLensStabilizationEnabled_bool:
+_p_559:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 28516
-	.no_dead_strip plt_AVFoundation_AVCapturePhotoSettings_set_IsHighResolutionPhotoEnabled_bool
-plt_AVFoundation_AVCapturePhotoSettings_set_IsHighResolutionPhotoEnabled_bool:
-_p_558:
+.word 28512
+	.no_dead_strip plt_AVFoundation_AVCapturePhotoOutput_get_GetAvailablePhotoFileTypes
+plt_AVFoundation_AVCapturePhotoOutput_get_GetAvailablePhotoFileTypes:
+_p_560:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 28521
-	.no_dead_strip plt_AVFoundation_AVCapturePhotoOutput_get_IsLensStabilizationDuringBracketedCaptureSupported
-plt_AVFoundation_AVCapturePhotoOutput_get_IsLensStabilizationDuringBracketedCaptureSupported:
-_p_559:
+.word 28517
+	.no_dead_strip plt_AVFoundation_AVVideoCodecTypeExtensions_GetConstant_AVFoundation_AVVideoCodecType
+plt_AVFoundation_AVVideoCodecTypeExtensions_GetConstant_AVFoundation_AVVideoCodecType:
+_p_561:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 28526
-	.no_dead_strip plt_AVFoundation_AVCapturePhotoBracketSettings_set_IsLensStabilizationEnabled_bool
-plt_AVFoundation_AVCapturePhotoBracketSettings_set_IsLensStabilizationEnabled_bool:
-_p_560:
+.word 28522
+	.no_dead_strip plt_System_Collections_Generic_List_1_AVFoundation_AVMetadataFaceObject_AddWithResize_AVFoundation_AVMetadataFaceObject
+plt_System_Collections_Generic_List_1_AVFoundation_AVMetadataFaceObject_AddWithResize_AVFoundation_AVMetadataFaceObject:
+_p_562:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 28531
-	.no_dead_strip plt_AVFoundation_AVCapturePhotoOutput_get_GetAvailablePhotoFileTypes
-plt_AVFoundation_AVCapturePhotoOutput_get_GetAvailablePhotoFileTypes:
-_p_561:
+.word 28527
+	.no_dead_strip plt_UserNotifications_UNMutableNotificationContent__ctor
+plt_UserNotifications_UNMutableNotificationContent__ctor:
+_p_563:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 28536
-	.no_dead_strip plt_AVFoundation_AVVideoCodecTypeExtensions_GetConstant_AVFoundation_AVVideoCodecType
-plt_AVFoundation_AVVideoCodecTypeExtensions_GetConstant_AVFoundation_AVVideoCodecType:
-_p_562:
+.word 28549
+	.no_dead_strip plt_UserNotifications_UNMutableNotificationContent_set_Title_string
+plt_UserNotifications_UNMutableNotificationContent_set_Title_string:
+_p_564:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 28541
-	.no_dead_strip plt_System_Collections_Generic_List_1_AVFoundation_AVMetadataFaceObject_AddWithResize_AVFoundation_AVMetadataFaceObject
-plt_System_Collections_Generic_List_1_AVFoundation_AVMetadataFaceObject_AddWithResize_AVFoundation_AVMetadataFaceObject:
-_p_563:
+.word 28554
+	.no_dead_strip plt_UserNotifications_UNMutableNotificationContent_set_Subtitle_string
+plt_UserNotifications_UNMutableNotificationContent_set_Subtitle_string:
+_p_565:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 28546
-	.no_dead_strip plt_UserNotifications_UNMutableNotificationContent__ctor
-plt_UserNotifications_UNMutableNotificationContent__ctor:
-_p_564:
+.word 28559
+	.no_dead_strip plt_AVFoundation_AVMetadataMachineReadableCodeObject_get_StringValue
+plt_AVFoundation_AVMetadataMachineReadableCodeObject_get_StringValue:
+_p_566:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 28568
-	.no_dead_strip plt_UserNotifications_UNMutableNotificationContent_set_Title_string
-plt_UserNotifications_UNMutableNotificationContent_set_Title_string:
-_p_565:
+.word 28564
+	.no_dead_strip plt_UserNotifications_UNMutableNotificationContent_set_Body_string
+plt_UserNotifications_UNMutableNotificationContent_set_Body_string:
+_p_567:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 28573
-	.no_dead_strip plt_UserNotifications_UNMutableNotificationContent_set_Subtitle_string
-plt_UserNotifications_UNMutableNotificationContent_set_Subtitle_string:
-_p_566:
+.word 28569
+	.no_dead_strip plt_Foundation_NSNumber_op_Implicit_int
+plt_Foundation_NSNumber_op_Implicit_int:
+_p_568:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 28578
-	.no_dead_strip plt_AVFoundation_AVMetadataMachineReadableCodeObject_get_StringValue
-plt_AVFoundation_AVMetadataMachineReadableCodeObject_get_StringValue:
-_p_567:
+.word 28574
+	.no_dead_strip plt_UserNotifications_UNMutableNotificationContent_set_Badge_Foundation_NSNumber
+plt_UserNotifications_UNMutableNotificationContent_set_Badge_Foundation_NSNumber:
+_p_569:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 28583
-	.no_dead_strip plt_UserNotifications_UNMutableNotificationContent_set_Body_string
-plt_UserNotifications_UNMutableNotificationContent_set_Body_string:
-_p_568:
+.word 28579
+	.no_dead_strip plt_UserNotifications_UNTimeIntervalNotificationTrigger_CreateTrigger_double_bool
+plt_UserNotifications_UNTimeIntervalNotificationTrigger_CreateTrigger_double_bool:
+_p_570:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 28588
-	.no_dead_strip plt_Foundation_NSNumber_op_Implicit_int
-plt_Foundation_NSNumber_op_Implicit_int:
-_p_569:
+.word 28584
+	.no_dead_strip plt_UserNotifications_UNNotificationRequest_FromIdentifier_string_UserNotifications_UNNotificationContent_UserNotifications_UNNotificationTrigger
+plt_UserNotifications_UNNotificationRequest_FromIdentifier_string_UserNotifications_UNNotificationContent_UserNotifications_UNNotificationTrigger:
+_p_571:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 28593
-	.no_dead_strip plt_UserNotifications_UNMutableNotificationContent_set_Badge_Foundation_NSNumber
-plt_UserNotifications_UNMutableNotificationContent_set_Badge_Foundation_NSNumber:
-_p_570:
+.word 28589
+	.no_dead_strip plt_UserNotifications_UNUserNotificationCenter_AddNotificationRequest_UserNotifications_UNNotificationRequest_System_Action_1_Foundation_NSError
+plt_UserNotifications_UNUserNotificationCenter_AddNotificationRequest_UserNotifications_UNNotificationRequest_System_Action_1_Foundation_NSError:
+_p_572:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 28598
-	.no_dead_strip plt_UserNotifications_UNTimeIntervalNotificationTrigger_CreateTrigger_double_bool
-plt_UserNotifications_UNTimeIntervalNotificationTrigger_CreateTrigger_double_bool:
-_p_571:
+.word 28594
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_DrawFaces_System_Collections_Generic_List_1_AVFoundation_AVMetadataFaceObject
+plt_PixUl8_iOS_UIViews_UICameraPreview_DrawFaces_System_Collections_Generic_List_1_AVFoundation_AVMetadataFaceObject:
+_p_573:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 28603
-	.no_dead_strip plt_UserNotifications_UNNotificationRequest_FromIdentifier_string_UserNotifications_UNNotificationContent_UserNotifications_UNNotificationTrigger
-plt_UserNotifications_UNNotificationRequest_FromIdentifier_string_UserNotifications_UNNotificationContent_UserNotifications_UNNotificationTrigger:
-_p_572:
+.word 28599
+	.no_dead_strip plt_System_Threading_CancellationTokenSource_Dispose
+plt_System_Threading_CancellationTokenSource_Dispose:
+_p_574:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 28608
-	.no_dead_strip plt_UserNotifications_UNUserNotificationCenter_AddNotificationRequest_UserNotifications_UNNotificationRequest_System_Action_1_Foundation_NSError
-plt_UserNotifications_UNUserNotificationCenter_AddNotificationRequest_UserNotifications_UNNotificationRequest_System_Action_1_Foundation_NSError:
-_p_573:
+.word 28602
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_:
+_p_575:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 28613
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_DrawFaces_System_Collections_Generic_List_1_AVFoundation_AVMetadataFaceObject
-plt_PixUl8_iOS_UIViews_UICameraPreview_DrawFaces_System_Collections_Generic_List_1_AVFoundation_AVMetadataFaceObject:
-_p_574:
+.word 28607
+	.no_dead_strip plt_CoreFoundation_DispatchQueue_DispatchAsync_System_Action
+plt_CoreFoundation_DispatchQueue_DispatchAsync_System_Action:
+_p_576:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 28618
-	.no_dead_strip plt_System_Threading_CancellationTokenSource_Dispose
-plt_System_Threading_CancellationTokenSource_Dispose:
-_p_575:
+.word 28619
+	.no_dead_strip plt_CoreAnimation_CALayer__ctor
+plt_CoreAnimation_CALayer__ctor:
+_p_577:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 28621
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_:
-_p_576:
+.word 28624
+	.no_dead_strip plt_CoreAnimation_CALayer_set_Name_string
+plt_CoreAnimation_CALayer_set_Name_string:
+_p_578:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 28626
-	.no_dead_strip plt_CoreFoundation_DispatchQueue_DispatchAsync_System_Action
-plt_CoreFoundation_DispatchQueue_DispatchAsync_System_Action:
-_p_577:
+.word 28629
+	.no_dead_strip plt_CoreAnimation_CALayer_set_MasksToBounds_bool
+plt_CoreAnimation_CALayer_set_MasksToBounds_bool:
+_p_579:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 28638
-	.no_dead_strip plt_CoreAnimation_CALayer__ctor
-plt_CoreAnimation_CALayer__ctor:
-_p_578:
+.word 28634
+	.no_dead_strip plt_CoreAnimation_CALayer_set_AnchorPoint_CoreGraphics_CGPoint
+plt_CoreAnimation_CALayer_set_AnchorPoint_CoreGraphics_CGPoint:
+_p_580:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 28643
-	.no_dead_strip plt_CoreAnimation_CALayer_set_Name_string
-plt_CoreAnimation_CALayer_set_Name_string:
-_p_579:
+.word 28639
+	.no_dead_strip plt_CoreAnimation_CALayer_set_Bounds_CoreGraphics_CGRect
+plt_CoreAnimation_CALayer_set_Bounds_CoreGraphics_CGRect:
+_p_581:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 28648
-	.no_dead_strip plt_CoreAnimation_CALayer_set_MasksToBounds_bool
-plt_CoreAnimation_CALayer_set_MasksToBounds_bool:
-_p_580:
+.word 28644
+	.no_dead_strip plt_CoreAnimation_CALayer_get_Bounds
+plt_CoreAnimation_CALayer_get_Bounds:
+_p_582:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 28653
-	.no_dead_strip plt_CoreAnimation_CALayer_set_AnchorPoint_CoreGraphics_CGPoint
-plt_CoreAnimation_CALayer_set_AnchorPoint_CoreGraphics_CGPoint:
-_p_581:
+.word 28649
+	.no_dead_strip plt_CoreGraphics_RectangleFExtensions_GetMidX_CoreGraphics_CGRect
+plt_CoreGraphics_RectangleFExtensions_GetMidX_CoreGraphics_CGRect:
+_p_583:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 28658
-	.no_dead_strip plt_CoreAnimation_CALayer_set_Bounds_CoreGraphics_CGRect
-plt_CoreAnimation_CALayer_set_Bounds_CoreGraphics_CGRect:
-_p_582:
+.word 28654
+	.no_dead_strip plt_CoreGraphics_RectangleFExtensions_GetMidY_CoreGraphics_CGRect
+plt_CoreGraphics_RectangleFExtensions_GetMidY_CoreGraphics_CGRect:
+_p_584:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 28663
-	.no_dead_strip plt_CoreAnimation_CALayer_get_Bounds
-plt_CoreAnimation_CALayer_get_Bounds:
-_p_583:
+.word 28659
+	.no_dead_strip plt_CoreAnimation_CAShapeLayer__ctor
+plt_CoreAnimation_CAShapeLayer__ctor:
+_p_585:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 28668
-	.no_dead_strip plt_CoreGraphics_RectangleFExtensions_GetMidX_CoreGraphics_CGRect
-plt_CoreGraphics_RectangleFExtensions_GetMidX_CoreGraphics_CGRect:
-_p_584:
+.word 28664
+	.no_dead_strip plt_CoreAnimation_CAShapeLayer_set_FillColor_CoreGraphics_CGColor
+plt_CoreAnimation_CAShapeLayer_set_FillColor_CoreGraphics_CGColor:
+_p_586:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 28673
-	.no_dead_strip plt_CoreGraphics_RectangleFExtensions_GetMidY_CoreGraphics_CGRect
-plt_CoreGraphics_RectangleFExtensions_GetMidY_CoreGraphics_CGRect:
-_p_585:
+.word 28669
+	.no_dead_strip plt_UIKit_UIColor_get_Green
+plt_UIKit_UIColor_get_Green:
+_p_587:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 28678
-	.no_dead_strip plt_CoreAnimation_CAShapeLayer__ctor
-plt_CoreAnimation_CAShapeLayer__ctor:
-_p_586:
+.word 28674
+	.no_dead_strip plt_UIKit_UIColor_ColorWithAlpha_System_nfloat
+plt_UIKit_UIColor_ColorWithAlpha_System_nfloat:
+_p_588:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 28683
-	.no_dead_strip plt_CoreAnimation_CAShapeLayer_set_FillColor_CoreGraphics_CGColor
-plt_CoreAnimation_CAShapeLayer_set_FillColor_CoreGraphics_CGColor:
-_p_587:
+.word 28679
+	.no_dead_strip plt_UIKit_UIColor_get_CGColor
+plt_UIKit_UIColor_get_CGColor:
+_p_589:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 28688
-	.no_dead_strip plt_UIKit_UIColor_get_Green
-plt_UIKit_UIColor_get_Green:
-_p_588:
+.word 28684
+	.no_dead_strip plt_CoreAnimation_CAShapeLayer_set_StrokeColor_CoreGraphics_CGColor
+plt_CoreAnimation_CAShapeLayer_set_StrokeColor_CoreGraphics_CGColor:
+_p_590:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 28693
-	.no_dead_strip plt_UIKit_UIColor_ColorWithAlpha_System_nfloat
-plt_UIKit_UIColor_ColorWithAlpha_System_nfloat:
-_p_589:
+.word 28689
+	.no_dead_strip plt_CoreAnimation_CAShapeLayer_set_LineWidth_System_nfloat
+plt_CoreAnimation_CAShapeLayer_set_LineWidth_System_nfloat:
+_p_591:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 28698
-	.no_dead_strip plt_UIKit_UIColor_get_CGColor
-plt_UIKit_UIColor_get_CGColor:
-_p_590:
+.word 28694
+	.no_dead_strip plt_CoreAnimation_CALayer_set_ShadowOpacity_single
+plt_CoreAnimation_CALayer_set_ShadowOpacity_single:
+_p_592:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 28703
-	.no_dead_strip plt_CoreAnimation_CAShapeLayer_set_StrokeColor_CoreGraphics_CGColor
-plt_CoreAnimation_CAShapeLayer_set_StrokeColor_CoreGraphics_CGColor:
-_p_591:
+.word 28699
+	.no_dead_strip plt_CoreAnimation_CALayer_set_ShadowRadius_System_nfloat
+plt_CoreAnimation_CALayer_set_ShadowRadius_System_nfloat:
+_p_593:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 28708
-	.no_dead_strip plt_CoreAnimation_CAShapeLayer_set_LineWidth_System_nfloat
-plt_CoreAnimation_CAShapeLayer_set_LineWidth_System_nfloat:
-_p_592:
+.word 28704
+	.no_dead_strip plt_UIKit_UIColor_get_Yellow
+plt_UIKit_UIColor_get_Yellow:
+_p_594:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 28713
-	.no_dead_strip plt_CoreAnimation_CALayer_set_ShadowOpacity_single
-plt_CoreAnimation_CALayer_set_ShadowOpacity_single:
-_p_593:
+.word 28709
+	.no_dead_strip plt_AVFoundation_AVMetadataObject_get_Bounds
+plt_AVFoundation_AVMetadataObject_get_Bounds:
+_p_595:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 28718
-	.no_dead_strip plt_CoreAnimation_CALayer_set_ShadowRadius_System_nfloat
-plt_CoreAnimation_CALayer_set_ShadowRadius_System_nfloat:
-_p_594:
+.word 28714
+	.no_dead_strip plt__jit_icall___emul_fconv_to_u8
+plt__jit_icall___emul_fconv_to_u8:
+_p_596:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 28723
-	.no_dead_strip plt_UIKit_UIColor_get_Yellow
-plt_UIKit_UIColor_get_Yellow:
-_p_595:
+.word 28719
+	.no_dead_strip plt_Vision_VNUtils_GetImageRect_CoreGraphics_CGRect_System_nuint_System_nuint
+plt_Vision_VNUtils_GetImageRect_CoreGraphics_CGRect_System_nuint_System_nuint:
+_p_597:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 28728
-	.no_dead_strip plt_AVFoundation_AVMetadataObject_get_Bounds
-plt_AVFoundation_AVMetadataObject_get_Bounds:
-_p_596:
+.word 28740
+	.no_dead_strip plt_CoreGraphics_CGPath_AddRect_CoreGraphics_CGRect
+plt_CoreGraphics_CGPath_AddRect_CoreGraphics_CGRect:
+_p_598:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 28733
-	.no_dead_strip plt__jit_icall___emul_fconv_to_u8
-plt__jit_icall___emul_fconv_to_u8:
-_p_597:
+.word 28745
+	.no_dead_strip plt_UIKit_UIResponder_TouchesEnded_Foundation_NSSet_UIKit_UIEvent
+plt_UIKit_UIResponder_TouchesEnded_Foundation_NSSet_UIKit_UIEvent:
+_p_599:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 28738
-	.no_dead_strip plt_Vision_VNUtils_GetImageRect_CoreGraphics_CGRect_System_nuint_System_nuint
-plt_Vision_VNUtils_GetImageRect_CoreGraphics_CGRect_System_nuint_System_nuint:
-_p_598:
+.word 28750
+	.no_dead_strip plt_CoreAnimation_CALayer_set_Opacity_single
+plt_CoreAnimation_CALayer_set_Opacity_single:
+_p_600:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 28759
-	.no_dead_strip plt_CoreGraphics_CGPath_AddRect_CoreGraphics_CGRect
-plt_CoreGraphics_CGPath_AddRect_CoreGraphics_CGRect:
-_p_599:
+.word 28755
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_:
+_p_601:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 28764
-	.no_dead_strip plt_UIKit_UIResponder_TouchesEnded_Foundation_NSSet_UIKit_UIEvent
-plt_UIKit_UIResponder_TouchesEnded_Foundation_NSSet_UIKit_UIEvent:
-_p_600:
+.word 28760
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_PinchHandlerZoom_UIKit_UIPinchGestureRecognizer
+plt_PixUl8_iOS_UIViews_UICameraPreview_PinchHandlerZoom_UIKit_UIPinchGestureRecognizer:
+_p_602:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 28769
-	.no_dead_strip plt_CoreAnimation_CALayer_set_Opacity_single
-plt_CoreAnimation_CALayer_set_Opacity_single:
-_p_601:
+.word 28772
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_5d_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_5d_
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_5d_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_5d_:
+_p_603:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 28774
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_:
-_p_602:
+.word 28775
+	.no_dead_strip plt_UIKit_UITouch_LocationInView_UIKit_UIView
+plt_UIKit_UITouch_LocationInView_UIKit_UIView:
+_p_604:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 28779
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_PinchHandlerZoom_UIKit_UIPinchGestureRecognizer
-plt_PixUl8_iOS_UIViews_UICameraPreview_PinchHandlerZoom_UIKit_UIPinchGestureRecognizer:
-_p_603:
+.word 28787
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_TapToFocus_CoreGraphics_CGPoint
+plt_PixUl8_iOS_UIViews_UICameraPreview_TapToFocus_CoreGraphics_CGPoint:
+_p_605:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 28791
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_5d_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_5d_
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_5d_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_5d_:
-_p_604:
+.word 28792
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_SwipeHandlerSwitchCamera_PixUl8_iOS_UIViews_SwipeType
+plt_PixUl8_iOS_UIViews_UICameraPreview_SwipeHandlerSwitchCamera_PixUl8_iOS_UIViews_SwipeType:
+_p_606:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 28794
-	.no_dead_strip plt_UIKit_UITouch_LocationInView_UIKit_UIView
-plt_UIKit_UITouch_LocationInView_UIKit_UIView:
-_p_605:
+.word 28795
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_SwipeHanlderToggleFlash_PixUl8_iOS_UIViews_SwipeType
+plt_PixUl8_iOS_UIViews_UICameraPreview_SwipeHanlderToggleFlash_PixUl8_iOS_UIViews_SwipeType:
+_p_607:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 28806
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_TapToFocus_CoreGraphics_CGPoint
-plt_PixUl8_iOS_UIViews_UICameraPreview_TapToFocus_CoreGraphics_CGPoint:
-_p_606:
+.word 28798
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_SwipeHanlderToggleHDR_PixUl8_iOS_UIViews_SwipeType
+plt_PixUl8_iOS_UIViews_UICameraPreview_SwipeHanlderToggleHDR_PixUl8_iOS_UIViews_SwipeType:
+_p_608:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 28811
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_SwipeHandlerSwitchCamera_PixUl8_iOS_UIViews_SwipeType
-plt_PixUl8_iOS_UIViews_UICameraPreview_SwipeHandlerSwitchCamera_PixUl8_iOS_UIViews_SwipeType:
-_p_607:
+.word 28801
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_SwipeHandlerUp
+plt_PixUl8_iOS_UIViews_UICameraPreview_SwipeHandlerUp:
+_p_609:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 28814
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_SwipeHanlderToggleFlash_PixUl8_iOS_UIViews_SwipeType
-plt_PixUl8_iOS_UIViews_UICameraPreview_SwipeHanlderToggleFlash_PixUl8_iOS_UIViews_SwipeType:
-_p_608:
+.word 28804
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_25d_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_25d_
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_25d_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_25d_:
+_p_610:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 28817
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_SwipeHanlderToggleHDR_PixUl8_iOS_UIViews_SwipeType
-plt_PixUl8_iOS_UIViews_UICameraPreview_SwipeHanlderToggleHDR_PixUl8_iOS_UIViews_SwipeType:
-_p_609:
+.word 28807
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_:
+_p_611:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 28820
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_SwipeHandlerUp
-plt_PixUl8_iOS_UIViews_UICameraPreview_SwipeHandlerUp:
-_p_610:
+.word 28819
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_StartHideTask_System_Threading_CancellationToken
+plt_PixUl8_iOS_UIViews_UICameraPreview_StartHideTask_System_Threading_CancellationToken:
+_p_612:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 28823
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_25d_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_25d_
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_25d_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_25d_:
-_p_611:
+.word 28831
+	.no_dead_strip plt_CoreAnimation_CALayer_set_Hidden_bool
+plt_CoreAnimation_CALayer_set_Hidden_bool:
+_p_613:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 28826
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_:
-_p_612:
+.word 28834
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview__n__0_Foundation_NSSet_UIKit_UIEvent
+plt_PixUl8_iOS_UIViews_UICameraPreview__n__0_Foundation_NSSet_UIKit_UIEvent:
+_p_614:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 28838
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_StartHideTask_System_Threading_CancellationToken
-plt_PixUl8_iOS_UIViews_UICameraPreview_StartHideTask_System_Threading_CancellationToken:
-_p_613:
+.word 28839
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__TouchesEndedd__73_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__TouchesEndedd__73_
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__TouchesEndedd__73_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__TouchesEndedd__73_:
+_p_615:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 28850
-	.no_dead_strip plt_CoreAnimation_CALayer_set_Hidden_bool
-plt_CoreAnimation_CALayer_set_Hidden_bool:
-_p_614:
+.word 28842
+	.no_dead_strip plt_UIKit_UIViewController_PresentViewControllerAsync_UIKit_UIViewController_bool
+plt_UIKit_UIViewController_PresentViewControllerAsync_UIKit_UIViewController_bool:
+_p_616:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 28853
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview__n__0_Foundation_NSSet_UIKit_UIEvent
-plt_PixUl8_iOS_UIViews_UICameraPreview__n__0_Foundation_NSSet_UIKit_UIEvent:
-_p_615:
+.word 28854
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_:
+_p_617:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 28858
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__TouchesEndedd__73_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__TouchesEndedd__73_
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__TouchesEndedd__73_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__TouchesEndedd__73_:
-_p_616:
+.word 28859
+	.no_dead_strip plt_Xamarin_TOCropView_TOCropViewController__ctor_Xamarin_TOCropView_TOCropViewCroppingStyle_UIKit_UIImage
+plt_Xamarin_TOCropView_TOCropViewController__ctor_Xamarin_TOCropView_TOCropViewCroppingStyle_UIKit_UIImage:
+_p_618:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 28861
-	.no_dead_strip plt_UIKit_UIViewController_PresentViewControllerAsync_UIKit_UIViewController_bool
-plt_UIKit_UIViewController_PresentViewControllerAsync_UIKit_UIViewController_bool:
-_p_617:
+.word 28871
+	.no_dead_strip plt_Xamarin_TOCropView_TOCropViewController_set_Delegate_Xamarin_TOCropView_TOCropViewControllerDelegate
+plt_Xamarin_TOCropView_TOCropViewController_set_Delegate_Xamarin_TOCropView_TOCropViewControllerDelegate:
+_p_619:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 28873
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_:
-_p_618:
+.word 28876
+	.no_dead_strip plt_UIKit_UIViewController_PresentViewController_UIKit_UIViewController_bool_System_Action
+plt_UIKit_UIViewController_PresentViewController_UIKit_UIViewController_bool_System_Action:
+_p_620:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 28878
-	.no_dead_strip plt_Xamarin_TOCropView_TOCropViewController__ctor_Xamarin_TOCropView_TOCropViewCroppingStyle_UIKit_UIImage
-plt_Xamarin_TOCropView_TOCropViewController__ctor_Xamarin_TOCropView_TOCropViewCroppingStyle_UIKit_UIImage:
-_p_619:
+.word 28881
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass79_0___HandleResponseb__1d_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass79_0___HandleResponseb__1d_
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass79_0___HandleResponseb__1d_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass79_0___HandleResponseb__1d_:
+_p_621:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 28890
-	.no_dead_strip plt_Xamarin_TOCropView_TOCropViewController_set_Delegate_Xamarin_TOCropView_TOCropViewControllerDelegate
-plt_Xamarin_TOCropView_TOCropViewController_set_Delegate_Xamarin_TOCropView_TOCropViewControllerDelegate:
-_p_620:
+.word 28886
+	.no_dead_strip plt_System_Collections_Generic_List_1_Photos_PHAsset_AddWithResize_Photos_PHAsset
+plt_System_Collections_Generic_List_1_Photos_PHAsset_AddWithResize_Photos_PHAsset:
+_p_622:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 28895
-	.no_dead_strip plt_UIKit_UIViewController_PresentViewController_UIKit_UIViewController_bool_System_Action
-plt_UIKit_UIViewController_PresentViewController_UIKit_UIViewController_bool_System_Action:
-_p_621:
+.word 28898
+	.no_dead_strip plt_System_Collections_Generic_List_1_Photos_PHAsset_ToArray
+plt_System_Collections_Generic_List_1_Photos_PHAsset_ToArray:
+_p_623:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 28900
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass79_0___HandleResponseb__1d_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass79_0___HandleResponseb__1d_
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass79_0___HandleResponseb__1d_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass79_0___HandleResponseb__1d_:
-_p_622:
+.word 28920
+	.no_dead_strip plt_Photos_PHAssetChangeRequest_DeleteAssets_Photos_PHAsset__
+plt_Photos_PHAssetChangeRequest_DeleteAssets_Photos_PHAsset__:
+_p_624:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 28905
-	.no_dead_strip plt_System_Collections_Generic_List_1_Photos_PHAsset_AddWithResize_Photos_PHAsset
-plt_System_Collections_Generic_List_1_Photos_PHAsset_AddWithResize_Photos_PHAsset:
-_p_623:
+.word 28931
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass79_0___HandleResponseb__1d_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus__PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass79_0___HandleResponseb__1d_
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass79_0___HandleResponseb__1d_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus__PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass79_0___HandleResponseb__1d_:
+_p_625:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 28917
-	.no_dead_strip plt_System_Collections_Generic_List_1_Photos_PHAsset_ToArray
-plt_System_Collections_Generic_List_1_Photos_PHAsset_ToArray:
-_p_624:
+.word 28936
+	.no_dead_strip plt_Photos_PHPhotoLibrary_PerformChanges_System_Action_System_Action_2_bool_Foundation_NSError
+plt_Photos_PHPhotoLibrary_PerformChanges_System_Action_System_Action_2_bool_Foundation_NSError:
+_p_626:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 28939
-	.no_dead_strip plt_Photos_PHAssetChangeRequest_DeleteAssets_Photos_PHAsset__
-plt_Photos_PHAssetChangeRequest_DeleteAssets_Photos_PHAsset__:
-_p_625:
+.word 28948
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_LockingFocusWithCustomLensPositionSupported
+plt_AVFoundation_AVCaptureDevice_get_LockingFocusWithCustomLensPositionSupported:
+_p_627:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 28950
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass79_0___HandleResponseb__1d_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus__PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass79_0___HandleResponseb__1d_
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass79_0___HandleResponseb__1d_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus__PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass79_0___HandleResponseb__1d_:
-_p_626:
+.word 28953
+	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_LockingWhiteBalanceWithCustomDeviceGainsSupported
+plt_AVFoundation_AVCaptureDevice_get_LockingWhiteBalanceWithCustomDeviceGainsSupported:
+_p_628:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 28955
-	.no_dead_strip plt_Photos_PHPhotoLibrary_PerformChanges_System_Action_System_Action_2_bool_Foundation_NSError
-plt_Photos_PHPhotoLibrary_PerformChanges_System_Action_System_Action_2_bool_Foundation_NSError:
-_p_627:
+.word 28958
+	.no_dead_strip plt_AVFoundation_AVFrameRateRange_get_MinFrameRate
+plt_AVFoundation_AVFrameRateRange_get_MinFrameRate:
+_p_629:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 28967
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_LockingFocusWithCustomLensPositionSupported
-plt_AVFoundation_AVCaptureDevice_get_LockingFocusWithCustomLensPositionSupported:
-_p_628:
+.word 28963
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_:
+_p_630:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 28972
-	.no_dead_strip plt_AVFoundation_AVCaptureDevice_get_LockingWhiteBalanceWithCustomDeviceGainsSupported
-plt_AVFoundation_AVCaptureDevice_get_LockingWhiteBalanceWithCustomDeviceGainsSupported:
-_p_629:
+.word 28968
+	.no_dead_strip plt_Acr_UserDialogs_ActionSheetConfig__ctor
+plt_Acr_UserDialogs_ActionSheetConfig__ctor:
+_p_631:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 28977
-	.no_dead_strip plt_AVFoundation_AVFrameRateRange_get_MinFrameRate
-plt_AVFoundation_AVFrameRateRange_get_MinFrameRate:
-_p_630:
+.word 28980
+	.no_dead_strip plt_Acr_UserDialogs_ActionSheetOption__ctor_string_System_Action_string
+plt_Acr_UserDialogs_ActionSheetOption__ctor_string_System_Action_string:
+_p_632:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 28982
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_:
-_p_631:
+.word 28985
+	.no_dead_strip plt_System_Collections_Generic_List_1_Acr_UserDialogs_ActionSheetOption_AddWithResize_Acr_UserDialogs_ActionSheetOption
+plt_System_Collections_Generic_List_1_Acr_UserDialogs_ActionSheetOption_AddWithResize_Acr_UserDialogs_ActionSheetOption:
+_p_633:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 28987
-	.no_dead_strip plt_Acr_UserDialogs_ActionSheetConfig__ctor
-plt_Acr_UserDialogs_ActionSheetConfig__ctor:
-_p_632:
+.word 28990
+	.no_dead_strip plt_UIKit_UIView_Animate_double_System_Action
+plt_UIKit_UIView_Animate_double_System_Action:
+_p_634:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 28999
-	.no_dead_strip plt_Acr_UserDialogs_ActionSheetOption__ctor_string_System_Action_string
-plt_Acr_UserDialogs_ActionSheetOption__ctor_string_System_Action_string:
-_p_633:
+.word 29011
+	.no_dead_strip plt_AVFoundation_AVCapturePhotoOutput_CapturePhoto_AVFoundation_AVCapturePhotoSettings_AVFoundation_IAVCapturePhotoCaptureDelegate
+plt_AVFoundation_AVCapturePhotoOutput_CapturePhoto_AVFoundation_AVCapturePhotoSettings_AVFoundation_IAVCapturePhotoCaptureDelegate:
+_p_635:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 29004
-	.no_dead_strip plt_System_Collections_Generic_List_1_Acr_UserDialogs_ActionSheetOption_AddWithResize_Acr_UserDialogs_ActionSheetOption
-plt_System_Collections_Generic_List_1_Acr_UserDialogs_ActionSheetOption_AddWithResize_Acr_UserDialogs_ActionSheetOption:
-_p_634:
+.word 29016
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_GetExposurePercentage
+plt_PixUl8_iOS_UIViews_UICameraPreview_GetExposurePercentage:
+_p_636:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 29009
-	.no_dead_strip plt_UIKit_UIView_Animate_double_System_Action
-plt_UIKit_UIView_Animate_double_System_Action:
-_p_635:
+.word 29021
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_GetWhiteBalancePercentage
+plt_PixUl8_iOS_UIViews_UICameraPreview_GetWhiteBalancePercentage:
+_p_637:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 29030
-	.no_dead_strip plt_AVFoundation_AVCapturePhotoOutput_CapturePhoto_AVFoundation_AVCapturePhotoSettings_AVFoundation_IAVCapturePhotoCaptureDelegate
-plt_AVFoundation_AVCapturePhotoOutput_CapturePhoto_AVFoundation_AVCapturePhotoSettings_AVFoundation_IAVCapturePhotoCaptureDelegate:
-_p_636:
+.word 29024
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_GetFocusPercentage
+plt_PixUl8_iOS_UIViews_UICameraPreview_GetFocusPercentage:
+_p_638:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 29035
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_GetExposurePercentage
-plt_PixUl8_iOS_UIViews_UICameraPreview_GetExposurePercentage:
-_p_637:
+.word 29027
+	.no_dead_strip plt_Xamarin_Forms_MessagingCenter_Send_PixUl8_App_int_PixUl8_App_string_int
+plt_Xamarin_Forms_MessagingCenter_Send_PixUl8_App_int_PixUl8_App_string_int:
+_p_639:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 29040
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_GetWhiteBalancePercentage
-plt_PixUl8_iOS_UIViews_UICameraPreview_GetWhiteBalancePercentage:
-_p_638:
+.word 29030
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_:
+_p_640:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 29043
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_GetFocusPercentage
-plt_PixUl8_iOS_UIViews_UICameraPreview_GetFocusPercentage:
-_p_639:
+.word 29042
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_:
+_p_641:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 29046
-	.no_dead_strip plt_Xamarin_Forms_MessagingCenter_Send_PixUl8_App_int_PixUl8_App_string_int
-plt_Xamarin_Forms_MessagingCenter_Send_PixUl8_App_int_PixUl8_App_string_int:
-_p_640:
+.word 29054
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_:
+_p_642:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 29049
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_:
-_p_641:
+.word 29066
+	.no_dead_strip plt_CoreAnimation_CAShapeLayer_set_Path_CoreGraphics_CGPath
+plt_CoreAnimation_CAShapeLayer_set_Path_CoreGraphics_CGPath:
+_p_643:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 29061
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_:
-_p_642:
+.word 29078
+	.no_dead_strip plt_CoreAnimation_CATransaction_Begin
+plt_CoreAnimation_CATransaction_Begin:
+_p_644:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 29073
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_:
-_p_643:
+.word 29083
+	.no_dead_strip plt_CoreGraphics_CGPath__ctor
+plt_CoreGraphics_CGPath__ctor:
+_p_645:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 29085
-	.no_dead_strip plt_CoreAnimation_CAShapeLayer_set_Path_CoreGraphics_CGPath
-plt_CoreAnimation_CAShapeLayer_set_Path_CoreGraphics_CGPath:
-_p_644:
+.word 29088
+	.no_dead_strip plt_System_Collections_Generic_List_1_AVFoundation_AVMetadataFaceObject_GetEnumerator
+plt_System_Collections_Generic_List_1_AVFoundation_AVMetadataFaceObject_GetEnumerator:
+_p_646:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 29097
-	.no_dead_strip plt_CoreAnimation_CATransaction_Begin
-plt_CoreAnimation_CATransaction_Begin:
-_p_645:
+.word 29093
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_DrawFace_CoreGraphics_CGPath_CoreGraphics_CGPath_AVFoundation_AVMetadataFaceObject
+plt_PixUl8_iOS_UIViews_UICameraPreview_DrawFace_CoreGraphics_CGPath_CoreGraphics_CGPath_AVFoundation_AVMetadataFaceObject:
+_p_647:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 29102
-	.no_dead_strip plt_CoreGraphics_CGPath__ctor
-plt_CoreGraphics_CGPath__ctor:
-_p_646:
+.word 29104
+	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_AVFoundation_AVMetadataFaceObject_MoveNext
+plt_System_Collections_Generic_List_1_Enumerator_AVFoundation_AVMetadataFaceObject_MoveNext:
+_p_648:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
 .word 29107
-	.no_dead_strip plt_System_Collections_Generic_List_1_AVFoundation_AVMetadataFaceObject_GetEnumerator
-plt_System_Collections_Generic_List_1_AVFoundation_AVMetadataFaceObject_GetEnumerator:
-_p_647:
+	.no_dead_strip plt_System_Linq_Enumerable_FirstOrDefault_AVFoundation_AVMetadataFaceObject_System_Collections_Generic_IEnumerable_1_AVFoundation_AVMetadataFaceObject
+plt_System_Linq_Enumerable_FirstOrDefault_AVFoundation_AVMetadataFaceObject_System_Collections_Generic_IEnumerable_1_AVFoundation_AVMetadataFaceObject:
+_p_649:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 29112
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_DrawFace_CoreGraphics_CGPath_CoreGraphics_CGPath_AVFoundation_AVMetadataFaceObject
-plt_PixUl8_iOS_UIViews_UICameraPreview_DrawFace_CoreGraphics_CGPath_CoreGraphics_CGPath_AVFoundation_AVMetadataFaceObject:
-_p_648:
+.word 29118
+	.no_dead_strip plt_CoreAnimation_CATransaction_Commit
+plt_CoreAnimation_CATransaction_Commit:
+_p_650:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 29123
-	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_AVFoundation_AVMetadataFaceObject_MoveNext
-plt_System_Collections_Generic_List_1_Enumerator_AVFoundation_AVMetadataFaceObject_MoveNext:
-_p_649:
+.word 29130
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_:
+_p_651:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 29126
-	.no_dead_strip plt_System_Linq_Enumerable_FirstOrDefault_AVFoundation_AVMetadataFaceObject_System_Collections_Generic_IEnumerable_1_AVFoundation_AVMetadataFaceObject
-plt_System_Linq_Enumerable_FirstOrDefault_AVFoundation_AVMetadataFaceObject_System_Collections_Generic_IEnumerable_1_AVFoundation_AVMetadataFaceObject:
-_p_650:
+.word 29135
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_5d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_5d_
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_5d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_5d_:
+_p_652:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 29137
-	.no_dead_strip plt_CoreAnimation_CATransaction_Commit
-plt_CoreAnimation_CATransaction_Commit:
-_p_651:
+.word 29147
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_UpdaterAsync
+plt_PixUl8_iOS_UIViews_UICameraPreview_UpdaterAsync:
+_p_653:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 29149
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_:
-_p_652:
+.word 29159
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_25d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_25d_
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_25d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_25d_:
+_p_654:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 29154
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_5d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_5d_
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_5d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_5d_:
-_p_653:
+.word 29162
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_:
+_p_655:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 29166
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_UpdaterAsync
-plt_PixUl8_iOS_UIViews_UICameraPreview_UpdaterAsync:
-_p_654:
+.word 29174
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_set_Exposure_int
+plt_PixUl8_iOS_UIViews_UICameraPreview_set_Exposure_int:
+_p_656:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 29178
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_25d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_25d_
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_25d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___Initializeb__87_25d_:
-_p_655:
+.word 29186
+	.no_dead_strip plt_UIKit_UIColor_get_White
+plt_UIKit_UIColor_get_White:
+_p_657:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 29181
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_:
-_p_656:
+.word 29189
+	.no_dead_strip plt_UIKit_UILabel__ctor_CoreGraphics_CGRect
+plt_UIKit_UILabel__ctor_CoreGraphics_CGRect:
+_p_658:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 29193
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_set_Exposure_int
-plt_PixUl8_iOS_UIViews_UICameraPreview_set_Exposure_int:
-_p_657:
+.word 29194
+	.no_dead_strip plt_UIKit_UILabel_set_AdjustsFontSizeToFitWidth_bool
+plt_UIKit_UILabel_set_AdjustsFontSizeToFitWidth_bool:
+_p_659:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 29205
-	.no_dead_strip plt_UIKit_UIColor_get_White
-plt_UIKit_UIColor_get_White:
-_p_658:
+.word 29199
+	.no_dead_strip plt_UIKit_UILabel_set_TextColor_UIKit_UIColor
+plt_UIKit_UILabel_set_TextColor_UIKit_UIColor:
+_p_660:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
-.word 29208
-	.no_dead_strip plt_UIKit_UILabel__ctor_CoreGraphics_CGRect
-plt_UIKit_UILabel__ctor_CoreGraphics_CGRect:
-_p_659:
+.word 29204
+	.no_dead_strip plt_UIKit_UILabel_set_Text_string
+plt_UIKit_UILabel_set_Text_string:
+_p_661:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 29213
-	.no_dead_strip plt_UIKit_UILabel_set_AdjustsFontSizeToFitWidth_bool
-plt_UIKit_UILabel_set_AdjustsFontSizeToFitWidth_bool:
-_p_660:
+.word 29209
+	.no_dead_strip plt_PixUl8_iOS_UIViews_CircleZoomPercentage_DrawGraph_CoreGraphics_CGContext_System_nfloat_System_nfloat
+plt_PixUl8_iOS_UIViews_CircleZoomPercentage_DrawGraph_CoreGraphics_CGContext_System_nfloat_System_nfloat:
+_p_662:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 29218
-	.no_dead_strip plt_UIKit_UILabel_set_TextColor_UIKit_UIColor
-plt_UIKit_UILabel_set_TextColor_UIKit_UIColor:
-_p_661:
+.word 29214
+	.no_dead_strip plt_CoreGraphics_CGContext_SetLineWidth_System_nfloat
+plt_CoreGraphics_CGContext_SetLineWidth_System_nfloat:
+_p_663:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1824]
 br x16
-.word 29223
-	.no_dead_strip plt_UIKit_UILabel_set_Text_string
-plt_UIKit_UILabel_set_Text_string:
-_p_662:
+.word 29217
+	.no_dead_strip plt_UIKit_UIColor_SetStroke
+plt_UIKit_UIColor_SetStroke:
+_p_664:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1832]
 br x16
-.word 29228
-	.no_dead_strip plt_PixUl8_iOS_UIViews_CircleZoomPercentage_DrawGraph_CoreGraphics_CGContext_System_nfloat_System_nfloat
-plt_PixUl8_iOS_UIViews_CircleZoomPercentage_DrawGraph_CoreGraphics_CGContext_System_nfloat_System_nfloat:
-_p_663:
+.word 29222
+	.no_dead_strip plt_CoreGraphics_CGPath_AddArc_System_nfloat_System_nfloat_System_nfloat_System_nfloat_System_nfloat_bool
+plt_CoreGraphics_CGPath_AddArc_System_nfloat_System_nfloat_System_nfloat_System_nfloat_System_nfloat_bool:
+_p_665:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1840]
 br x16
-.word 29233
-	.no_dead_strip plt_CoreGraphics_CGContext_SetLineWidth_System_nfloat
-plt_CoreGraphics_CGContext_SetLineWidth_System_nfloat:
-_p_664:
+.word 29227
+	.no_dead_strip plt_CoreGraphics_CGContext_AddPath_CoreGraphics_CGPath
+plt_CoreGraphics_CGContext_AddPath_CoreGraphics_CGPath:
+_p_666:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1848]
 br x16
-.word 29236
-	.no_dead_strip plt_UIKit_UIColor_SetStroke
-plt_UIKit_UIColor_SetStroke:
-_p_665:
+.word 29232
+	.no_dead_strip plt_CoreGraphics_CGContext_DrawPath_CoreGraphics_CGPathDrawingMode
+plt_CoreGraphics_CGContext_DrawPath_CoreGraphics_CGPathDrawingMode:
+_p_667:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1856]
 br x16
-.word 29241
-	.no_dead_strip plt_CoreGraphics_CGPath_AddArc_System_nfloat_System_nfloat_System_nfloat_System_nfloat_System_nfloat_bool
-plt_CoreGraphics_CGPath_AddArc_System_nfloat_System_nfloat_System_nfloat_System_nfloat_System_nfloat_bool:
-_p_666:
+.word 29237
+	.no_dead_strip plt_single_ToString_string
+plt_single_ToString_string:
+_p_668:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1864]
 br x16
-.word 29246
-	.no_dead_strip plt_CoreGraphics_CGContext_AddPath_CoreGraphics_CGPath
-plt_CoreGraphics_CGContext_AddPath_CoreGraphics_CGPath:
-_p_667:
+.word 29242
+	.no_dead_strip plt_UIKit_UIView_Animate_double_double_UIKit_UIViewAnimationOptions_System_Action_System_Action
+plt_UIKit_UIView_Animate_double_double_UIKit_UIViewAnimationOptions_System_Action_System_Action:
+_p_669:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1872]
 br x16
-.word 29251
-	.no_dead_strip plt_CoreGraphics_CGContext_DrawPath_CoreGraphics_CGPathDrawingMode
-plt_CoreGraphics_CGContext_DrawPath_CoreGraphics_CGPathDrawingMode:
-_p_668:
+.word 29247
+	.no_dead_strip plt_PixUl8_iOS_UIViews_FocusWheel_DrawGraph_CoreGraphics_CGContext_System_nfloat_System_nfloat
+plt_PixUl8_iOS_UIViews_FocusWheel_DrawGraph_CoreGraphics_CGContext_System_nfloat_System_nfloat:
+_p_670:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1880]
 br x16
-.word 29256
-	.no_dead_strip plt_single_ToString_string
-plt_single_ToString_string:
-_p_669:
+.word 29252
+	.no_dead_strip plt_CoreGraphics_CGRect__ctor_double_double_double_double
+plt_CoreGraphics_CGRect__ctor_double_double_double_double:
+_p_671:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1888]
 br x16
-.word 29261
-	.no_dead_strip plt_UIKit_UIView_Animate_double_double_UIKit_UIViewAnimationOptions_System_Action_System_Action
-plt_UIKit_UIView_Animate_double_double_UIKit_UIViewAnimationOptions_System_Action_System_Action:
-_p_670:
+.word 29255
+	.no_dead_strip plt_UIKit_UIView_AnimateNotify_double_double_UIKit_UIViewAnimationOptions_System_Action_UIKit_UICompletionHandler
+plt_UIKit_UIView_AnimateNotify_double_double_UIKit_UIViewAnimationOptions_System_Action_UIKit_UICompletionHandler:
+_p_672:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1896]
 br x16
-.word 29266
-	.no_dead_strip plt_PixUl8_iOS_UIViews_FocusWheel_DrawGraph_CoreGraphics_CGContext_System_nfloat_System_nfloat
-plt_PixUl8_iOS_UIViews_FocusWheel_DrawGraph_CoreGraphics_CGContext_System_nfloat_System_nfloat:
-_p_671:
+.word 29260
+	.no_dead_strip plt_PixUl8_iOS_UIViews_FocusWheel_Completion_bool_System_Action
+plt_PixUl8_iOS_UIViews_FocusWheel_Completion_bool_System_Action:
+_p_673:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1904]
 br x16
-.word 29271
-	.no_dead_strip plt_CoreGraphics_CGRect__ctor_double_double_double_double
-plt_CoreGraphics_CGRect__ctor_double_double_double_double:
-_p_672:
+.word 29265
+	.no_dead_strip plt_UIKit_UIButton__ctor
+plt_UIKit_UIButton__ctor:
+_p_674:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1912]
 br x16
-.word 29274
-	.no_dead_strip plt_UIKit_UIView_AnimateNotify_double_double_UIKit_UIViewAnimationOptions_System_Action_UIKit_UICompletionHandler
-plt_UIKit_UIView_AnimateNotify_double_double_UIKit_UIViewAnimationOptions_System_Action_UIKit_UICompletionHandler:
-_p_673:
+.word 29268
+	.no_dead_strip plt_PixUl8_iOS_UIViews_TakeImageButton_DrawGraph_CoreGraphics_CGContext_System_nfloat_System_nfloat
+plt_PixUl8_iOS_UIViews_TakeImageButton_DrawGraph_CoreGraphics_CGContext_System_nfloat_System_nfloat:
+_p_675:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1920]
 br x16
-.word 29279
-	.no_dead_strip plt_PixUl8_iOS_UIViews_FocusWheel_Completion_bool_System_Action
-plt_PixUl8_iOS_UIViews_FocusWheel_Completion_bool_System_Action:
-_p_674:
+.word 29273
+	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_PixUl8_Views_NativeViews_CameraView_PixUl8_iOS_UIViews_UICameraPreview_OnElementPropertyChanged_object_System_ComponentModel_PropertyChangedEventArgs
+plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_PixUl8_Views_NativeViews_CameraView_PixUl8_iOS_UIViews_UICameraPreview_OnElementPropertyChanged_object_System_ComponentModel_PropertyChangedEventArgs:
+_p_676:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1928]
 br x16
-.word 29284
-	.no_dead_strip plt_UIKit_UIButton__ctor
-plt_UIKit_UIButton__ctor:
-_p_675:
+.word 29276
+	.no_dead_strip plt__PrivateImplementationDetails_ComputeStringHash_string
+plt__PrivateImplementationDetails_ComputeStringHash_string:
+_p_677:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1936]
 br x16
 .word 29287
-	.no_dead_strip plt_PixUl8_iOS_UIViews_TakeImageButton_DrawGraph_CoreGraphics_CGContext_System_nfloat_System_nfloat
-plt_PixUl8_iOS_UIViews_TakeImageButton_DrawGraph_CoreGraphics_CGContext_System_nfloat_System_nfloat:
-_p_676:
+	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_Activated
+plt_PixUl8_Views_NativeViews_CameraView_get_Activated:
+_p_678:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1944]
 br x16
-.word 29292
-	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_PixUl8_Views_NativeViews_CameraView_PixUl8_iOS_UIViews_UICameraPreview_OnElementPropertyChanged_object_System_ComponentModel_PropertyChangedEventArgs
-plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_PixUl8_Views_NativeViews_CameraView_PixUl8_iOS_UIViews_UICameraPreview_OnElementPropertyChanged_object_System_ComponentModel_PropertyChangedEventArgs:
-_p_677:
+.word 29290
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_set_Activated_bool
+plt_PixUl8_iOS_UIViews_UICameraPreview_set_Activated_bool:
+_p_679:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1952]
 br x16
-.word 29295
-	.no_dead_strip plt__PrivateImplementationDetails_ComputeStringHash_string
-plt__PrivateImplementationDetails_ComputeStringHash_string:
-_p_678:
+.word 29292
+	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_PixUl8_Views_NativeViews_CameraView_PixUl8_iOS_UIViews_UICameraPreview_SetNativeControl_PixUl8_iOS_UIViews_UICameraPreview
+plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_PixUl8_Views_NativeViews_CameraView_PixUl8_iOS_UIViews_UICameraPreview_SetNativeControl_PixUl8_iOS_UIViews_UICameraPreview:
+_p_680:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1960]
 br x16
-.word 29306
-	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_Activated
-plt_PixUl8_Views_NativeViews_CameraView_get_Activated:
-_p_679:
+.word 29295
+	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_FlashOn
+plt_PixUl8_Views_NativeViews_CameraView_get_FlashOn:
+_p_681:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1968]
 br x16
-.word 29309
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_set_Activated_bool
-plt_PixUl8_iOS_UIViews_UICameraPreview_set_Activated_bool:
-_p_680:
+.word 29306
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_set_FlashOn_bool
+plt_PixUl8_iOS_UIViews_UICameraPreview_set_FlashOn_bool:
+_p_682:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1976]
 br x16
-.word 29311
-	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_PixUl8_Views_NativeViews_CameraView_PixUl8_iOS_UIViews_UICameraPreview_SetNativeControl_PixUl8_iOS_UIViews_UICameraPreview
-plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_PixUl8_Views_NativeViews_CameraView_PixUl8_iOS_UIViews_UICameraPreview_SetNativeControl_PixUl8_iOS_UIViews_UICameraPreview:
-_p_681:
+.word 29308
+	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_HdrEnabled
+plt_PixUl8_Views_NativeViews_CameraView_get_HdrEnabled:
+_p_683:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1984]
 br x16
-.word 29314
-	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_FlashOn
-plt_PixUl8_Views_NativeViews_CameraView_get_FlashOn:
-_p_682:
+.word 29311
+	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_ManualOn
+plt_PixUl8_Views_NativeViews_CameraView_get_ManualOn:
+_p_684:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1992]
 br x16
-.word 29325
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_set_FlashOn_bool
-plt_PixUl8_iOS_UIViews_UICameraPreview_set_FlashOn_bool:
-_p_683:
+.word 29313
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_set_ManualOn_bool
+plt_PixUl8_iOS_UIViews_UICameraPreview_set_ManualOn_bool:
+_p_685:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2000]
 br x16
-.word 29327
-	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_HdrEnabled
-plt_PixUl8_Views_NativeViews_CameraView_get_HdrEnabled:
-_p_684:
+.word 29315
+	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_GrayscaleOn
+plt_PixUl8_Views_NativeViews_CameraView_get_GrayscaleOn:
+_p_686:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2008]
 br x16
-.word 29330
-	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_ManualOn
-plt_PixUl8_Views_NativeViews_CameraView_get_ManualOn:
-_p_685:
+.word 29318
+	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_is43On
+plt_PixUl8_Views_NativeViews_CameraView_get_is43On:
+_p_687:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2016]
 br x16
-.word 29332
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_set_ManualOn_bool
-plt_PixUl8_iOS_UIViews_UICameraPreview_set_ManualOn_bool:
-_p_686:
+.word 29320
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_set_is43On_bool
+plt_PixUl8_iOS_UIViews_UICameraPreview_set_is43On_bool:
+_p_688:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2024]
 br x16
-.word 29334
-	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_GrayscaleOn
-plt_PixUl8_Views_NativeViews_CameraView_get_GrayscaleOn:
-_p_687:
+.word 29322
+	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_is3DOn
+plt_PixUl8_Views_NativeViews_CameraView_get_is3DOn:
+_p_689:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 29337
-	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_is43On
-plt_PixUl8_Views_NativeViews_CameraView_get_is43On:
-_p_688:
+.word 29325
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_set_is3DOn_bool
+plt_PixUl8_iOS_UIViews_UICameraPreview_set_is3DOn_bool:
+_p_690:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 29339
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_set_is43On_bool
-plt_PixUl8_iOS_UIViews_UICameraPreview_set_is43On_bool:
-_p_689:
+.word 29327
+	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_Exposure
+plt_PixUl8_Views_NativeViews_CameraView_get_Exposure:
+_p_691:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 29341
-	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_is3DOn
-plt_PixUl8_Views_NativeViews_CameraView_get_is3DOn:
-_p_690:
+.word 29330
+	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_Focus
+plt_PixUl8_Views_NativeViews_CameraView_get_Focus:
+_p_692:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
-.word 29344
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview_set_is3DOn_bool
-plt_PixUl8_iOS_UIViews_UICameraPreview_set_is3DOn_bool:
-_p_691:
+.word 29332
+	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_Balance
+plt_PixUl8_Views_NativeViews_CameraView_get_Balance:
+_p_693:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 29346
-	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_Exposure
-plt_PixUl8_Views_NativeViews_CameraView_get_Exposure:
-_p_692:
+.word 29334
+	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_PixUl8_Views_NativeViews_CameraView_PixUl8_iOS_UIViews_UICameraPreview_OnElementChanged_Xamarin_Forms_Platform_iOS_ElementChangedEventArgs_1_PixUl8_Views_NativeViews_CameraView
+plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_PixUl8_Views_NativeViews_CameraView_PixUl8_iOS_UIViews_UICameraPreview_OnElementChanged_Xamarin_Forms_Platform_iOS_ElementChangedEventArgs_1_PixUl8_Views_NativeViews_CameraView:
+_p_694:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2072]
 br x16
-.word 29349
-	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_Focus
-plt_PixUl8_Views_NativeViews_CameraView_get_Focus:
-_p_693:
+.word 29336
+	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_Camera
+plt_PixUl8_Views_NativeViews_CameraView_get_Camera:
+_p_695:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2080]
 br x16
-.word 29351
-	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_Balance
-plt_PixUl8_Views_NativeViews_CameraView_get_Balance:
-_p_694:
+.word 29347
+	.no_dead_strip plt_PixUl8_iOS_CustomRenderers_CameraFeedPreviewRenderer_SetUpCamera_bool_PixUl8_Models_CameraOptions
+plt_PixUl8_iOS_CustomRenderers_CameraFeedPreviewRenderer_SetUpCamera_bool_PixUl8_Models_CameraOptions:
+_p_696:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2088]
 br x16
-.word 29353
-	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_PixUl8_Views_NativeViews_CameraView_PixUl8_iOS_UIViews_UICameraPreview_OnElementChanged_Xamarin_Forms_Platform_iOS_ElementChangedEventArgs_1_PixUl8_Views_NativeViews_CameraView
-plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_PixUl8_Views_NativeViews_CameraView_PixUl8_iOS_UIViews_UICameraPreview_OnElementChanged_Xamarin_Forms_Platform_iOS_ElementChangedEventArgs_1_PixUl8_Views_NativeViews_CameraView:
-_p_695:
+.word 29349
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview__ctor_PixUl8_Models_CameraOptions
+plt_PixUl8_iOS_UIViews_UICameraPreview__ctor_PixUl8_Models_CameraOptions:
+_p_697:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2096]
 br x16
-.word 29355
-	.no_dead_strip plt_PixUl8_Views_NativeViews_CameraView_get_Camera
-plt_PixUl8_Views_NativeViews_CameraView_get_Camera:
-_p_696:
+.word 29352
+	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_PixUl8_Views_NativeViews_CameraView_PixUl8_iOS_UIViews_UICameraPreview__ctor
+plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_PixUl8_Views_NativeViews_CameraView_PixUl8_iOS_UIViews_UICameraPreview__ctor:
+_p_698:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2104]
 br x16
-.word 29366
-	.no_dead_strip plt_PixUl8_iOS_CustomRenderers_CameraFeedPreviewRenderer_SetUpCamera_bool_PixUl8_Models_CameraOptions
-plt_PixUl8_iOS_CustomRenderers_CameraFeedPreviewRenderer_SetUpCamera_bool_PixUl8_Models_CameraOptions:
-_p_697:
+.word 29355
+	.no_dead_strip plt__rgctx_fetch_1
+plt__rgctx_fetch_1:
+_p_699:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2112]
 br x16
-.word 29368
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview__ctor_PixUl8_Models_CameraOptions
-plt_PixUl8_iOS_UIViews_UICameraPreview__ctor_PixUl8_Models_CameraOptions:
-_p_698:
+.word 29383
+	.no_dead_strip plt__rgctx_fetch_2
+plt__rgctx_fetch_2:
+_p_700:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2120]
 br x16
-.word 29371
-	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_PixUl8_Views_NativeViews_CameraView_PixUl8_iOS_UIViews_UICameraPreview__ctor
-plt_Xamarin_Forms_Platform_iOS_ViewRenderer_2_PixUl8_Views_NativeViews_CameraView_PixUl8_iOS_UIViews_UICameraPreview__ctor:
-_p_699:
+.word 29431
+	.no_dead_strip plt__rgctx_fetch_3
+plt__rgctx_fetch_3:
+_p_701:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2128]
 br x16
-.word 29374
-	.no_dead_strip plt__rgctx_fetch_1
-plt__rgctx_fetch_1:
-_p_700:
+.word 29443
+	.no_dead_strip plt__rgctx_fetch_4
+plt__rgctx_fetch_4:
+_p_702:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2136]
 br x16
-.word 29402
-	.no_dead_strip plt__rgctx_fetch_2
-plt__rgctx_fetch_2:
-_p_701:
+.word 29483
+	.no_dead_strip plt__rgctx_fetch_5
+plt__rgctx_fetch_5:
+_p_703:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2144]
 br x16
-.word 29450
-	.no_dead_strip plt__rgctx_fetch_3
-plt__rgctx_fetch_3:
-_p_702:
+.word 29523
+	.no_dead_strip plt__rgctx_fetch_6
+plt__rgctx_fetch_6:
+_p_704:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2152]
 br x16
-.word 29462
-	.no_dead_strip plt__rgctx_fetch_4
-plt__rgctx_fetch_4:
-_p_703:
+.word 29551
+	.no_dead_strip plt__rgctx_fetch_7
+plt__rgctx_fetch_7:
+_p_705:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2160]
 br x16
-.word 29502
-	.no_dead_strip plt__rgctx_fetch_5
-plt__rgctx_fetch_5:
-_p_704:
+.word 29597
+	.no_dead_strip plt__rgctx_fetch_8
+plt__rgctx_fetch_8:
+_p_706:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2168]
 br x16
-.word 29542
-	.no_dead_strip plt__rgctx_fetch_6
-plt__rgctx_fetch_6:
-_p_705:
+.word 29625
+	.no_dead_strip plt_System_EventArgs__ctor
+plt_System_EventArgs__ctor:
+_p_707:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2176]
 br x16
-.word 29570
-	.no_dead_strip plt__rgctx_fetch_7
-plt__rgctx_fetch_7:
-_p_706:
+.word 29667
+	.no_dead_strip plt__rgctx_fetch_9
+plt__rgctx_fetch_9:
+_p_708:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2184]
 br x16
-.word 29616
-	.no_dead_strip plt__rgctx_fetch_8
-plt__rgctx_fetch_8:
-_p_707:
+.word 29672
+	.no_dead_strip plt__rgctx_fetch_10
+plt__rgctx_fetch_10:
+_p_709:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2192]
 br x16
-.word 29644
-	.no_dead_strip plt_System_EventArgs__ctor
-plt_System_EventArgs__ctor:
-_p_708:
+.word 29708
+	.no_dead_strip plt__rgctx_fetch_11
+plt__rgctx_fetch_11:
+_p_710:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2200]
 br x16
-.word 29686
-	.no_dead_strip plt__rgctx_fetch_9
-plt__rgctx_fetch_9:
-_p_709:
+.word 29720
+	.no_dead_strip plt__rgctx_fetch_12
+plt__rgctx_fetch_12:
+_p_711:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2208]
 br x16
-.word 29691
-	.no_dead_strip plt__rgctx_fetch_10
-plt__rgctx_fetch_10:
-_p_710:
+.word 29773
+	.no_dead_strip plt__rgctx_fetch_13
+plt__rgctx_fetch_13:
+_p_712:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2216]
 br x16
-.word 29727
-	.no_dead_strip plt__rgctx_fetch_11
-plt__rgctx_fetch_11:
-_p_711:
+.word 29785
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
+_p_713:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2224]
 br x16
-.word 29739
-	.no_dead_strip plt__rgctx_fetch_12
-plt__rgctx_fetch_12:
-_p_712:
+.word 29812
+	.no_dead_strip plt__rgctx_fetch_14
+plt__rgctx_fetch_14:
+_p_714:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2232]
 br x16
-.word 29792
-	.no_dead_strip plt__rgctx_fetch_13
-plt__rgctx_fetch_13:
-_p_713:
+.word 29868
+	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
+plt_System_Array_Copy_System_Array_int_System_Array_int_int:
+_p_715:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2240]
 br x16
-.word 29804
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
-_p_714:
+.word 29893
+	.no_dead_strip plt__rgctx_fetch_15
+plt__rgctx_fetch_15:
+_p_716:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2248]
 br x16
-.word 29831
-	.no_dead_strip plt__rgctx_fetch_14
-plt__rgctx_fetch_14:
-_p_715:
+.word 29925
+	.no_dead_strip plt__rgctx_fetch_16
+plt__rgctx_fetch_16:
+_p_717:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2256]
 br x16
-.word 29887
-	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
-plt_System_Array_Copy_System_Array_int_System_Array_int_int:
-_p_716:
+.word 29937
+	.no_dead_strip plt__rgctx_fetch_17
+plt__rgctx_fetch_17:
+_p_718:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2264]
 br x16
-.word 29912
-	.no_dead_strip plt__rgctx_fetch_15
-plt__rgctx_fetch_15:
-_p_717:
+.word 29957
+	.no_dead_strip plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
+plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
+_p_719:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2272]
 br x16
-.word 29944
-	.no_dead_strip plt__rgctx_fetch_16
-plt__rgctx_fetch_16:
-_p_718:
+.word 29969
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
+_p_720:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2280]
 br x16
-.word 29956
-	.no_dead_strip plt__rgctx_fetch_17
-plt__rgctx_fetch_17:
-_p_719:
+.word 29990
+	.no_dead_strip plt__rgctx_fetch_18
+plt__rgctx_fetch_18:
+_p_721:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2288]
 br x16
-.word 29976
-	.no_dead_strip plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
-plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
-_p_720:
+.word 30022
+	.no_dead_strip plt__rgctx_fetch_19
+plt__rgctx_fetch_19:
+_p_722:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2296]
 br x16
-.word 29988
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
-_p_721:
+.word 30034
+	.no_dead_strip plt__rgctx_fetch_20
+plt__rgctx_fetch_20:
+_p_723:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2304]
 br x16
-.word 30009
-	.no_dead_strip plt__rgctx_fetch_18
-plt__rgctx_fetch_18:
-_p_722:
+.word 30079
+	.no_dead_strip plt__rgctx_fetch_21
+plt__rgctx_fetch_21:
+_p_724:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2312]
 br x16
-.word 30041
-	.no_dead_strip plt__rgctx_fetch_19
-plt__rgctx_fetch_19:
-_p_723:
+.word 30089
+	.no_dead_strip plt_System_Threading_Tasks_Task_get_Id
+plt_System_Threading_Tasks_Task_get_Id:
+_p_725:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2320]
 br x16
-.word 30053
-	.no_dead_strip plt__rgctx_fetch_20
-plt__rgctx_fetch_20:
-_p_724:
+.word 30114
+	.no_dead_strip plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int
+plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int:
+_p_726:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2328]
 br x16
-.word 30098
-	.no_dead_strip plt__rgctx_fetch_21
-plt__rgctx_fetch_21:
-_p_725:
+.word 30119
+	.no_dead_strip plt__rgctx_fetch_22
+plt__rgctx_fetch_22:
+_p_727:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2336]
 br x16
-.word 30108
-	.no_dead_strip plt_System_Threading_Tasks_Task_get_Id
-plt_System_Threading_Tasks_Task_get_Id:
-_p_726:
+.word 30124
+	.no_dead_strip plt__rgctx_fetch_23
+plt__rgctx_fetch_23:
+_p_728:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2344]
 br x16
-.word 30133
-	.no_dead_strip plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int
-plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int:
-_p_727:
+.word 30169
+	.no_dead_strip plt__rgctx_fetch_24
+plt__rgctx_fetch_24:
+_p_729:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2352]
 br x16
-.word 30138
-	.no_dead_strip plt__rgctx_fetch_22
-plt__rgctx_fetch_22:
-_p_728:
+.word 30179
+	.no_dead_strip plt__rgctx_fetch_25
+plt__rgctx_fetch_25:
+_p_730:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2360]
 br x16
-.word 30143
-	.no_dead_strip plt__rgctx_fetch_23
-plt__rgctx_fetch_23:
-_p_729:
+.word 30222
+	.no_dead_strip plt__rgctx_fetch_26
+plt__rgctx_fetch_26:
+_p_731:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2368]
 br x16
-.word 30188
-	.no_dead_strip plt__rgctx_fetch_24
-plt__rgctx_fetch_24:
-_p_730:
+.word 30232
+	.no_dead_strip plt_System_Threading_Tasks_Task_TrySetException_object
+plt_System_Threading_Tasks_Task_TrySetException_object:
+_p_732:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2376]
 br x16
-.word 30198
-	.no_dead_strip plt__rgctx_fetch_25
-plt__rgctx_fetch_25:
-_p_731:
+.word 30257
+	.no_dead_strip plt_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_object
+plt_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_object:
+_p_733:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2384]
 br x16
-.word 30241
-	.no_dead_strip plt__rgctx_fetch_26
-plt__rgctx_fetch_26:
-_p_732:
+.word 30262
+	.no_dead_strip plt__rgctx_fetch_27
+plt__rgctx_fetch_27:
+_p_734:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2392]
 br x16
-.word 30251
-	.no_dead_strip plt_System_Threading_Tasks_Task_TrySetException_object
-plt_System_Threading_Tasks_Task_TrySetException_object:
-_p_733:
+.word 30285
+	.no_dead_strip plt__rgctx_fetch_28
+plt__rgctx_fetch_28:
+_p_735:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2400]
 br x16
-.word 30276
-	.no_dead_strip plt_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_object
-plt_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_object:
-_p_734:
+.word 30295
+	.no_dead_strip plt__rgctx_fetch_29
+plt__rgctx_fetch_29:
+_p_736:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2408]
 br x16
-.word 30281
-	.no_dead_strip plt__rgctx_fetch_27
-plt__rgctx_fetch_27:
-_p_735:
+.word 30305
+	.no_dead_strip plt__rgctx_fetch_30
+plt__rgctx_fetch_30:
+_p_737:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2416]
 br x16
-.word 30304
-	.no_dead_strip plt__rgctx_fetch_28
-plt__rgctx_fetch_28:
-_p_736:
+.word 30333
+	.no_dead_strip plt__rgctx_fetch_31
+plt__rgctx_fetch_31:
+_p_738:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2424]
 br x16
-.word 30314
-	.no_dead_strip plt__rgctx_fetch_29
-plt__rgctx_fetch_29:
-_p_737:
+.word 30343
+	.no_dead_strip plt__rgctx_fetch_32
+plt__rgctx_fetch_32:
+_p_739:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2432]
 br x16
-.word 30324
-	.no_dead_strip plt__rgctx_fetch_30
-plt__rgctx_fetch_30:
-_p_738:
+.word 30353
+	.no_dead_strip plt__rgctx_fetch_33
+plt__rgctx_fetch_33:
+_p_740:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2440]
 br x16
-.word 30352
-	.no_dead_strip plt__rgctx_fetch_31
-plt__rgctx_fetch_31:
-_p_739:
+.word 30365
+	.no_dead_strip plt__rgctx_fetch_34
+plt__rgctx_fetch_34:
+_p_741:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2448]
 br x16
-.word 30362
-	.no_dead_strip plt__rgctx_fetch_32
-plt__rgctx_fetch_32:
-_p_740:
+.word 30410
+	.no_dead_strip plt__rgctx_fetch_35
+plt__rgctx_fetch_35:
+_p_742:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2456]
 br x16
-.word 30372
-	.no_dead_strip plt__rgctx_fetch_33
-plt__rgctx_fetch_33:
-_p_741:
+.word 30436
+	.no_dead_strip plt__rgctx_fetch_36
+plt__rgctx_fetch_36:
+_p_743:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2464]
 br x16
-.word 30384
-	.no_dead_strip plt__rgctx_fetch_34
-plt__rgctx_fetch_34:
-_p_742:
+.word 30462
+	.no_dead_strip plt_System_Threading_Tasks_Task__ctor
+plt_System_Threading_Tasks_Task__ctor:
+_p_744:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2472]
 br x16
-.word 30429
-	.no_dead_strip plt__rgctx_fetch_35
-plt__rgctx_fetch_35:
-_p_743:
+.word 30472
+	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool
+plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool:
+_p_745:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2480]
 br x16
-.word 30455
-	.no_dead_strip plt__rgctx_fetch_36
-plt__rgctx_fetch_36:
-_p_744:
+.word 30477
+	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
+plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
+_p_746:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2488]
 br x16
-.word 30481
-	.no_dead_strip plt_System_Threading_Tasks_Task__ctor
-plt_System_Threading_Tasks_Task__ctor:
-_p_745:
+.word 30482
+	.no_dead_strip plt__rgctx_fetch_37
+plt__rgctx_fetch_37:
+_p_747:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2496]
 br x16
-.word 30491
-	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool
-plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool:
-_p_746:
+.word 30505
+	.no_dead_strip plt_System_Threading_Tasks_Task_PossiblyCaptureContext
+plt_System_Threading_Tasks_Task_PossiblyCaptureContext:
+_p_748:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2504]
 br x16
-.word 30496
-	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
-plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
-_p_747:
+.word 30530
+	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
+_p_749:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2512]
 br x16
-.word 30501
-	.no_dead_strip plt__rgctx_fetch_37
-plt__rgctx_fetch_37:
-_p_748:
+.word 30535
+	.no_dead_strip plt__rgctx_fetch_38
+plt__rgctx_fetch_38:
+_p_750:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2520]
 br x16
-.word 30524
-	.no_dead_strip plt_System_Threading_Tasks_Task_PossiblyCaptureContext
-plt_System_Threading_Tasks_Task_PossiblyCaptureContext:
-_p_749:
+.word 30558
+	.no_dead_strip plt__rgctx_fetch_39
+plt__rgctx_fetch_39:
+_p_751:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2528]
 br x16
-.word 30549
-	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
-plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
-_p_750:
+.word 30568
+	.no_dead_strip plt_System_Threading_Tasks_Task_ScheduleAndStart_bool
+plt_System_Threading_Tasks_Task_ScheduleAndStart_bool:
+_p_752:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2536]
 br x16
-.word 30554
-	.no_dead_strip plt__rgctx_fetch_38
-plt__rgctx_fetch_38:
-_p_751:
+.word 30593
+	.no_dead_strip plt__rgctx_fetch_40
+plt__rgctx_fetch_40:
+_p_753:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2544]
 br x16
-.word 30577
-	.no_dead_strip plt__rgctx_fetch_39
-plt__rgctx_fetch_39:
-_p_752:
+.word 30616
+	.no_dead_strip plt__rgctx_fetch_41
+plt__rgctx_fetch_41:
+_p_754:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2552]
 br x16
-.word 30587
-	.no_dead_strip plt_System_Threading_Tasks_Task_ScheduleAndStart_bool
-plt_System_Threading_Tasks_Task_ScheduleAndStart_bool:
-_p_753:
+.word 30626
+	.no_dead_strip plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int
+plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int:
+_p_755:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2560]
 br x16
-.word 30612
-	.no_dead_strip plt__rgctx_fetch_40
-plt__rgctx_fetch_40:
-_p_754:
+.word 30651
+	.no_dead_strip plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted
+plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted:
+_p_756:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2568]
 br x16
-.word 30635
-	.no_dead_strip plt__rgctx_fetch_41
-plt__rgctx_fetch_41:
-_p_755:
+.word 30656
+	.no_dead_strip plt_System_Threading_Tasks_Task_FinishStageThree
+plt_System_Threading_Tasks_Task_FinishStageThree:
+_p_757:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2576]
 br x16
-.word 30645
-	.no_dead_strip plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int
-plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int:
-_p_756:
+.word 30661
+	.no_dead_strip plt__rgctx_fetch_42
+plt__rgctx_fetch_42:
+_p_758:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2584]
 br x16
-.word 30670
-	.no_dead_strip plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted
-plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted:
-_p_757:
+.word 30684
+	.no_dead_strip plt__rgctx_fetch_43
+plt__rgctx_fetch_43:
+_p_759:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2592]
 br x16
-.word 30675
-	.no_dead_strip plt_System_Threading_Tasks_Task_FinishStageThree
-plt_System_Threading_Tasks_Task_FinishStageThree:
-_p_758:
+.word 30727
+	.no_dead_strip plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken
+plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken:
+_p_760:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2600]
 br x16
-.word 30680
-	.no_dead_strip plt__rgctx_fetch_42
-plt__rgctx_fetch_42:
-_p_759:
+.word 30752
+	.no_dead_strip plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary
+plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary:
+_p_761:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2608]
 br x16
-.word 30703
-	.no_dead_strip plt__rgctx_fetch_43
-plt__rgctx_fetch_43:
-_p_760:
+.word 30757
+	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsCompletedSuccessfully
+plt_System_Threading_Tasks_Task_get_IsCompletedSuccessfully:
+_p_762:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2616]
 br x16
-.word 30746
-	.no_dead_strip plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken
-plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken:
-_p_761:
+.word 30762
+	.no_dead_strip plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool
+plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool:
+_p_763:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2624]
 br x16
-.word 30771
-	.no_dead_strip plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary
-plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary:
-_p_762:
+.word 30767
+	.no_dead_strip plt__rgctx_fetch_44
+plt__rgctx_fetch_44:
+_p_764:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2632]
 br x16
-.word 30776
-	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsCompletedSuccessfully
-plt_System_Threading_Tasks_Task_get_IsCompletedSuccessfully:
-_p_763:
+.word 30790
+	.no_dead_strip plt__rgctx_fetch_45
+plt__rgctx_fetch_45:
+_p_765:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2640]
 br x16
-.word 30781
-	.no_dead_strip plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool
-plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool:
-_p_764:
+.word 30809
+	.no_dead_strip plt__rgctx_fetch_46
+plt__rgctx_fetch_46:
+_p_766:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2648]
 br x16
-.word 30786
-	.no_dead_strip plt__rgctx_fetch_44
-plt__rgctx_fetch_44:
-_p_765:
+.word 30821
+	.no_dead_strip plt__rgctx_fetch_47
+plt__rgctx_fetch_47:
+_p_767:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2656]
 br x16
-.word 30809
-	.no_dead_strip plt__rgctx_fetch_45
-plt__rgctx_fetch_45:
-_p_766:
+.word 30848
+	.no_dead_strip plt__rgctx_fetch_48
+plt__rgctx_fetch_48:
+_p_768:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2664]
 br x16
-.word 30828
-	.no_dead_strip plt__rgctx_fetch_46
-plt__rgctx_fetch_46:
-_p_767:
+.word 30903
+	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
+plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
+_p_769:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2672]
 br x16
-.word 30840
-	.no_dead_strip plt__rgctx_fetch_47
-plt__rgctx_fetch_47:
-_p_768:
+.word 30915
+	.no_dead_strip plt__rgctx_fetch_49
+plt__rgctx_fetch_49:
+_p_770:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2680]
 br x16
-.word 30867
-	.no_dead_strip plt__rgctx_fetch_48
-plt__rgctx_fetch_48:
-_p_769:
+.word 30936
+	.no_dead_strip plt__rgctx_fetch_50
+plt__rgctx_fetch_50:
+_p_771:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2688]
 br x16
-.word 30922
-	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
-plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
-_p_770:
+.word 30975
+	.no_dead_strip plt__rgctx_fetch_51
+plt__rgctx_fetch_51:
+_p_772:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2696]
 br x16
-.word 30934
-	.no_dead_strip plt__rgctx_fetch_49
-plt__rgctx_fetch_49:
-_p_771:
+.word 30987
+	.no_dead_strip plt__rgctx_fetch_52
+plt__rgctx_fetch_52:
+_p_773:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2704]
 br x16
-.word 30955
-	.no_dead_strip plt__rgctx_fetch_50
-plt__rgctx_fetch_50:
-_p_772:
+.word 31041
+	.no_dead_strip plt__rgctx_fetch_53
+plt__rgctx_fetch_53:
+_p_774:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2712]
 br x16
-.word 30994
-	.no_dead_strip plt__rgctx_fetch_51
-plt__rgctx_fetch_51:
-_p_773:
+.word 31053
+	.no_dead_strip plt_System_Threading_Tasks_TaskScheduler_get_Current
+plt_System_Threading_Tasks_TaskScheduler_get_Current:
+_p_775:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2720]
 br x16
-.word 31006
-	.no_dead_strip plt__rgctx_fetch_52
-plt__rgctx_fetch_52:
-_p_774:
+.word 31080
+	.no_dead_strip plt__rgctx_fetch_54
+plt__rgctx_fetch_54:
+_p_776:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2728]
 br x16
-.word 31060
-	.no_dead_strip plt__rgctx_fetch_53
-plt__rgctx_fetch_53:
-_p_775:
+.word 31103
+	.no_dead_strip plt__rgctx_fetch_55
+plt__rgctx_fetch_55:
+_p_777:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2736]
 br x16
-.word 31072
-	.no_dead_strip plt_System_Threading_Tasks_TaskScheduler_get_Current
-plt_System_Threading_Tasks_TaskScheduler_get_Current:
-_p_776:
+.word 31146
+	.no_dead_strip plt__rgctx_fetch_56
+plt__rgctx_fetch_56:
+_p_778:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2744]
 br x16
-.word 31099
-	.no_dead_strip plt__rgctx_fetch_54
-plt__rgctx_fetch_54:
-_p_777:
+.word 31189
+	.no_dead_strip plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_
+plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_:
+_p_779:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2752]
 br x16
-.word 31122
-	.no_dead_strip plt__rgctx_fetch_55
-plt__rgctx_fetch_55:
-_p_778:
+.word 31214
+	.no_dead_strip plt__rgctx_fetch_57
+plt__rgctx_fetch_57:
+_p_780:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2760]
 br x16
-.word 31165
-	.no_dead_strip plt__rgctx_fetch_56
-plt__rgctx_fetch_56:
-_p_779:
+.word 31246
+	.no_dead_strip plt__rgctx_fetch_58
+plt__rgctx_fetch_58:
+_p_781:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2768]
 br x16
-.word 31208
-	.no_dead_strip plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_
-plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_:
-_p_780:
+.word 31258
+	.no_dead_strip plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
+plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
+_p_782:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2776]
 br x16
-.word 31233
-	.no_dead_strip plt__rgctx_fetch_57
-plt__rgctx_fetch_57:
-_p_781:
+.word 31285
+	.no_dead_strip plt__rgctx_fetch_59
+plt__rgctx_fetch_59:
+_p_783:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2784]
 br x16
-.word 31265
-	.no_dead_strip plt__rgctx_fetch_58
-plt__rgctx_fetch_58:
-_p_782:
+.word 31308
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions
+plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions:
+_p_784:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2792]
 br x16
-.word 31277
-	.no_dead_strip plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
-plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
-_p_783:
+.word 31333
+	.no_dead_strip plt_System_Threading_Tasks_DebuggerSupport_RemoveFromActiveTasksNonInlined_System_Threading_Tasks_Task
+plt_System_Threading_Tasks_DebuggerSupport_RemoveFromActiveTasksNonInlined_System_Threading_Tasks_Task:
+_p_785:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2800]
 br x16
-.word 31304
-	.no_dead_strip plt__rgctx_fetch_59
-plt__rgctx_fetch_59:
-_p_784:
+.word 31338
+	.no_dead_strip plt__rgctx_fetch_60
+plt__rgctx_fetch_60:
+_p_786:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2808]
 br x16
-.word 31327
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions
-plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions:
-_p_785:
+.word 31370
+	.no_dead_strip plt__rgctx_fetch_61
+plt__rgctx_fetch_61:
+_p_787:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2816]
 br x16
-.word 31352
-	.no_dead_strip plt_System_Threading_Tasks_DebuggerSupport_RemoveFromActiveTasksNonInlined_System_Threading_Tasks_Task
-plt_System_Threading_Tasks_DebuggerSupport_RemoveFromActiveTasksNonInlined_System_Threading_Tasks_Task:
-_p_786:
+.word 31397
+	.no_dead_strip plt__rgctx_fetch_62
+plt__rgctx_fetch_62:
+_p_788:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2824]
 br x16
-.word 31357
-	.no_dead_strip plt__rgctx_fetch_60
-plt__rgctx_fetch_60:
-_p_787:
+.word 31442
+	.no_dead_strip plt__rgctx_fetch_63
+plt__rgctx_fetch_63:
+_p_789:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2832]
 br x16
-.word 31389
-	.no_dead_strip plt__rgctx_fetch_61
-plt__rgctx_fetch_61:
-_p_788:
+.word 31452
+	.no_dead_strip plt__rgctx_fetch_64
+plt__rgctx_fetch_64:
+_p_790:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2840]
 br x16
-.word 31416
-	.no_dead_strip plt__rgctx_fetch_62
-plt__rgctx_fetch_62:
-_p_789:
+.word 31504
+	.no_dead_strip plt__rgctx_fetch_65
+plt__rgctx_fetch_65:
+_p_791:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2848]
 br x16
-.word 31461
-	.no_dead_strip plt__rgctx_fetch_63
-plt__rgctx_fetch_63:
-_p_790:
+.word 31516
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool
+plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool:
+_p_792:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2856]
 br x16
-.word 31471
-	.no_dead_strip plt__rgctx_fetch_64
-plt__rgctx_fetch_64:
-_p_791:
+.word 31543
+	.no_dead_strip plt__rgctx_fetch_66
+plt__rgctx_fetch_66:
+_p_793:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2864]
 br x16
-.word 31523
-	.no_dead_strip plt__rgctx_fetch_65
-plt__rgctx_fetch_65:
-_p_792:
+.word 31548
+	.no_dead_strip plt__rgctx_fetch_67
+plt__rgctx_fetch_67:
+_p_794:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2872]
 br x16
-.word 31535
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool
-plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool:
-_p_793:
+.word 31560
+	.no_dead_strip plt_System_Threading_Tasks_DebuggerSupport_AddToActiveTasksNonInlined_System_Threading_Tasks_Task
+plt_System_Threading_Tasks_DebuggerSupport_AddToActiveTasksNonInlined_System_Threading_Tasks_Task:
+_p_795:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2880]
 br x16
-.word 31562
-	.no_dead_strip plt__rgctx_fetch_66
-plt__rgctx_fetch_66:
-_p_794:
+.word 31587
+	.no_dead_strip plt__rgctx_fetch_68
+plt__rgctx_fetch_68:
+_p_796:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2888]
 br x16
-.word 31567
-	.no_dead_strip plt__rgctx_fetch_67
-plt__rgctx_fetch_67:
-_p_795:
+.word 31592
+	.no_dead_strip plt__rgctx_fetch_69
+plt__rgctx_fetch_69:
+_p_797:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2896]
 br x16
-.word 31579
-	.no_dead_strip plt_System_Threading_Tasks_DebuggerSupport_AddToActiveTasksNonInlined_System_Threading_Tasks_Task
-plt_System_Threading_Tasks_DebuggerSupport_AddToActiveTasksNonInlined_System_Threading_Tasks_Task:
-_p_796:
+.word 31619
+	.no_dead_strip plt__rgctx_fetch_70
+plt__rgctx_fetch_70:
+_p_798:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2904]
 br x16
-.word 31606
-	.no_dead_strip plt__rgctx_fetch_68
-plt__rgctx_fetch_68:
-_p_797:
+.word 31646
+	.no_dead_strip plt__rgctx_fetch_71
+plt__rgctx_fetch_71:
+_p_799:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2912]
 br x16
-.word 31611
-	.no_dead_strip plt__rgctx_fetch_69
-plt__rgctx_fetch_69:
-_p_798:
+.word 31656
+	.no_dead_strip plt__rgctx_fetch_72
+plt__rgctx_fetch_72:
+_p_800:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2920]
 br x16
-.word 31638
-	.no_dead_strip plt__rgctx_fetch_70
-plt__rgctx_fetch_70:
-_p_799:
+.word 31681
+	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
+plt__jit_icall_mono_arch_rethrow_exception:
+_p_801:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2928]
 br x16
-.word 31665
-	.no_dead_strip plt__rgctx_fetch_71
-plt__rgctx_fetch_71:
-_p_800:
+.word 31708
+	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_OnCompletedInternal_System_Threading_Tasks_Task_System_Action_bool_bool
+plt_System_Runtime_CompilerServices_TaskAwaiter_OnCompletedInternal_System_Threading_Tasks_Task_System_Action_bool_bool:
+_p_802:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2936]
 br x16
-.word 31675
-	.no_dead_strip plt__rgctx_fetch_72
-plt__rgctx_fetch_72:
-_p_801:
+.word 31738
+	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_ValidateEnd_System_Threading_Tasks_Task
+plt_System_Runtime_CompilerServices_TaskAwaiter_ValidateEnd_System_Threading_Tasks_Task:
+_p_803:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2944]
 br x16
-.word 31700
-	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
-plt__jit_icall_mono_arch_rethrow_exception:
-_p_802:
+.word 31743
+	.no_dead_strip plt__rgctx_fetch_73
+plt__rgctx_fetch_73:
+_p_804:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2952]
 br x16
-.word 31727
-	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_OnCompletedInternal_System_Threading_Tasks_Task_System_Action_bool_bool
-plt_System_Runtime_CompilerServices_TaskAwaiter_OnCompletedInternal_System_Threading_Tasks_Task_System_Action_bool_bool:
-_p_803:
+.word 31766
+	.no_dead_strip plt__rgctx_fetch_74
+plt__rgctx_fetch_74:
+_p_805:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2960]
 br x16
-.word 31757
-	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_ValidateEnd_System_Threading_Tasks_Task
-plt_System_Runtime_CompilerServices_TaskAwaiter_ValidateEnd_System_Threading_Tasks_Task:
-_p_804:
+.word 31809
+	.no_dead_strip plt__rgctx_fetch_75
+plt__rgctx_fetch_75:
+_p_806:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2968]
 br x16
-.word 31762
-	.no_dead_strip plt__rgctx_fetch_73
-plt__rgctx_fetch_73:
-_p_805:
+.word 31852
+	.no_dead_strip plt_System_Nullable_1_Acr_UserDialogs_ToastPosition_UnboxExact_object
+plt_System_Nullable_1_Acr_UserDialogs_ToastPosition_UnboxExact_object:
+_p_807:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2976]
 br x16
-.word 31785
-	.no_dead_strip plt__rgctx_fetch_74
-plt__rgctx_fetch_74:
-_p_806:
+.word 31877
+	.no_dead_strip plt_System_Nullable_1_Acr_UserDialogs_ToastPosition_Equals_System_Nullable_1_Acr_UserDialogs_ToastPosition
+plt_System_Nullable_1_Acr_UserDialogs_ToastPosition_Equals_System_Nullable_1_Acr_UserDialogs_ToastPosition:
+_p_808:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2984]
 br x16
-.word 31828
-	.no_dead_strip plt__rgctx_fetch_75
-plt__rgctx_fetch_75:
-_p_807:
+.word 31898
+	.no_dead_strip plt_System_Enum_Equals_object
+plt_System_Enum_Equals_object:
+_p_809:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #2992]
 br x16
-.word 31871
-	.no_dead_strip plt_System_Nullable_1_Acr_UserDialogs_ToastPosition_UnboxExact_object
-plt_System_Nullable_1_Acr_UserDialogs_ToastPosition_UnboxExact_object:
-_p_808:
+.word 31919
+	.no_dead_strip plt_System_Nullable_1_bool_Unbox_object
+plt_System_Nullable_1_bool_Unbox_object:
+_p_810:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3000]
 br x16
-.word 31896
-	.no_dead_strip plt_System_Nullable_1_Acr_UserDialogs_ToastPosition_Equals_System_Nullable_1_Acr_UserDialogs_ToastPosition
-plt_System_Nullable_1_Acr_UserDialogs_ToastPosition_Equals_System_Nullable_1_Acr_UserDialogs_ToastPosition:
-_p_809:
+.word 31924
+	.no_dead_strip plt_System_Nullable_1_bool_Equals_System_Nullable_1_bool
+plt_System_Nullable_1_bool_Equals_System_Nullable_1_bool:
+_p_811:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3008]
 br x16
-.word 31917
-	.no_dead_strip plt_System_Enum_Equals_object
-plt_System_Enum_Equals_object:
-_p_810:
+.word 31944
+	.no_dead_strip plt_bool_Equals_object
+plt_bool_Equals_object:
+_p_812:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3016]
 br x16
-.word 31938
-	.no_dead_strip plt_System_Nullable_1_bool_Unbox_object
-plt_System_Nullable_1_bool_Unbox_object:
-_p_811:
+.word 31964
+	.no_dead_strip plt_System_Nullable_1_bool__ctor_bool
+plt_System_Nullable_1_bool__ctor_bool:
+_p_813:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3024]
 br x16
-.word 31943
-	.no_dead_strip plt_System_Nullable_1_bool_Equals_System_Nullable_1_bool
-plt_System_Nullable_1_bool_Equals_System_Nullable_1_bool:
-_p_812:
+.word 31969
+	.no_dead_strip plt__rgctx_fetch_76
+plt__rgctx_fetch_76:
+_p_814:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3032]
 br x16
-.word 31963
-	.no_dead_strip plt_bool_Equals_object
-plt_bool_Equals_object:
-_p_813:
+.word 32007
+	.no_dead_strip plt__rgctx_fetch_77
+plt__rgctx_fetch_77:
+_p_815:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3040]
 br x16
-.word 31983
-	.no_dead_strip plt_System_Nullable_1_bool__ctor_bool
-plt_System_Nullable_1_bool__ctor_bool:
-_p_814:
+.word 32050
+	.no_dead_strip plt__rgctx_fetch_78
+plt__rgctx_fetch_78:
+_p_816:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3048]
 br x16
-.word 31988
-	.no_dead_strip plt__rgctx_fetch_76
-plt__rgctx_fetch_76:
-_p_815:
+.word 32060
+	.no_dead_strip plt__rgctx_fetch_79
+plt__rgctx_fetch_79:
+_p_817:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3056]
 br x16
-.word 32026
-	.no_dead_strip plt__rgctx_fetch_77
-plt__rgctx_fetch_77:
-_p_816:
+.word 32103
+	.no_dead_strip plt__rgctx_fetch_80
+plt__rgctx_fetch_80:
+_p_818:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3064]
 br x16
-.word 32069
-	.no_dead_strip plt__rgctx_fetch_78
-plt__rgctx_fetch_78:
-_p_817:
+.word 32113
+	.no_dead_strip plt__rgctx_fetch_81
+plt__rgctx_fetch_81:
+_p_819:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3072]
 br x16
-.word 32079
-	.no_dead_strip plt__rgctx_fetch_79
-plt__rgctx_fetch_79:
-_p_818:
+.word 32156
+	.no_dead_strip plt__rgctx_fetch_82
+plt__rgctx_fetch_82:
+_p_820:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3080]
 br x16
-.word 32122
-	.no_dead_strip plt__rgctx_fetch_80
-plt__rgctx_fetch_80:
-_p_819:
+.word 32199
+	.no_dead_strip plt__rgctx_fetch_83
+plt__rgctx_fetch_83:
+_p_821:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3088]
 br x16
-.word 32132
-	.no_dead_strip plt__rgctx_fetch_81
-plt__rgctx_fetch_81:
-_p_820:
+.word 32242
+	.no_dead_strip plt__rgctx_fetch_84
+plt__rgctx_fetch_84:
+_p_822:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3096]
 br x16
-.word 32175
-	.no_dead_strip plt__rgctx_fetch_82
-plt__rgctx_fetch_82:
-_p_821:
+.word 32261
+	.no_dead_strip plt__rgctx_fetch_85
+plt__rgctx_fetch_85:
+_p_823:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3104]
 br x16
-.word 32218
-	.no_dead_strip plt__rgctx_fetch_83
-plt__rgctx_fetch_83:
-_p_822:
+.word 32273
+	.no_dead_strip plt__rgctx_fetch_86
+plt__rgctx_fetch_86:
+_p_824:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3112]
 br x16
-.word 32261
-	.no_dead_strip plt__rgctx_fetch_84
-plt__rgctx_fetch_84:
-_p_823:
+.word 32300
+	.no_dead_strip plt__rgctx_fetch_87
+plt__rgctx_fetch_87:
+_p_825:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3120]
 br x16
-.word 32280
-	.no_dead_strip plt__rgctx_fetch_85
-plt__rgctx_fetch_85:
-_p_824:
+.word 32355
+	.no_dead_strip plt__rgctx_fetch_88
+plt__rgctx_fetch_88:
+_p_826:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3128]
 br x16
-.word 32292
-	.no_dead_strip plt__rgctx_fetch_86
-plt__rgctx_fetch_86:
-_p_825:
+.word 32380
+	.no_dead_strip plt__rgctx_fetch_89
+plt__rgctx_fetch_89:
+_p_827:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3136]
 br x16
-.word 32319
-	.no_dead_strip plt__rgctx_fetch_87
-plt__rgctx_fetch_87:
-_p_826:
+.word 32419
+	.no_dead_strip plt__rgctx_fetch_90
+plt__rgctx_fetch_90:
+_p_828:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3144]
 br x16
-.word 32374
-	.no_dead_strip plt__rgctx_fetch_88
-plt__rgctx_fetch_88:
-_p_827:
+.word 32431
+	.no_dead_strip plt__rgctx_fetch_91
+plt__rgctx_fetch_91:
+_p_829:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3152]
 br x16
-.word 32399
-	.no_dead_strip plt__rgctx_fetch_89
-plt__rgctx_fetch_89:
-_p_828:
+.word 32485
+	.no_dead_strip plt__rgctx_fetch_92
+plt__rgctx_fetch_92:
+_p_830:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3160]
 br x16
-.word 32438
-	.no_dead_strip plt__rgctx_fetch_90
-plt__rgctx_fetch_90:
-_p_829:
+.word 32497
+	.no_dead_strip plt__rgctx_fetch_93
+plt__rgctx_fetch_93:
+_p_831:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3168]
 br x16
-.word 32450
-	.no_dead_strip plt__rgctx_fetch_91
-plt__rgctx_fetch_91:
-_p_830:
+.word 32542
+	.no_dead_strip plt__rgctx_fetch_94
+plt__rgctx_fetch_94:
+_p_832:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3176]
 br x16
-.word 32504
-	.no_dead_strip plt__rgctx_fetch_92
-plt__rgctx_fetch_92:
-_p_831:
+.word 32585
+	.no_dead_strip plt__rgctx_fetch_95
+plt__rgctx_fetch_95:
+_p_833:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3184]
 br x16
-.word 32516
-	.no_dead_strip plt__rgctx_fetch_93
-plt__rgctx_fetch_93:
-_p_832:
+.word 32628
+	.no_dead_strip plt__rgctx_fetch_96
+plt__rgctx_fetch_96:
+_p_834:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3192]
 br x16
-.word 32561
-	.no_dead_strip plt__rgctx_fetch_94
-plt__rgctx_fetch_94:
-_p_833:
+.word 32680
+	.no_dead_strip plt__rgctx_fetch_97
+plt__rgctx_fetch_97:
+_p_835:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3200]
 br x16
-.word 32604
-	.no_dead_strip plt__rgctx_fetch_95
-plt__rgctx_fetch_95:
-_p_834:
+.word 32692
+	.no_dead_strip plt__rgctx_fetch_98
+plt__rgctx_fetch_98:
+_p_836:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3208]
 br x16
-.word 32647
-	.no_dead_strip plt__rgctx_fetch_96
-plt__rgctx_fetch_96:
-_p_835:
+.word 32737
+	.no_dead_strip plt__rgctx_fetch_99
+plt__rgctx_fetch_99:
+_p_837:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3216]
 br x16
-.word 32699
-	.no_dead_strip plt__rgctx_fetch_97
-plt__rgctx_fetch_97:
-_p_836:
+.word 32789
+	.no_dead_strip plt__rgctx_fetch_100
+plt__rgctx_fetch_100:
+_p_838:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3224]
 br x16
-.word 32711
-	.no_dead_strip plt__rgctx_fetch_98
-plt__rgctx_fetch_98:
-_p_837:
+.word 32816
+	.no_dead_strip plt__rgctx_fetch_101
+plt__rgctx_fetch_101:
+_p_839:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3232]
 br x16
-.word 32756
-	.no_dead_strip plt__rgctx_fetch_99
-plt__rgctx_fetch_99:
-_p_838:
+.word 32861
+	.no_dead_strip plt__rgctx_fetch_102
+plt__rgctx_fetch_102:
+_p_840:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3240]
 br x16
-.word 32808
-	.no_dead_strip plt__rgctx_fetch_100
-plt__rgctx_fetch_100:
-_p_839:
+.word 32871
+	.no_dead_strip plt__rgctx_fetch_103
+plt__rgctx_fetch_103:
+_p_841:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3248]
 br x16
-.word 32835
-	.no_dead_strip plt__rgctx_fetch_101
-plt__rgctx_fetch_101:
-_p_840:
+.word 32923
+	.no_dead_strip plt__rgctx_fetch_104
+plt__rgctx_fetch_104:
+_p_842:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3256]
 br x16
-.word 32880
-	.no_dead_strip plt__rgctx_fetch_102
-plt__rgctx_fetch_102:
-_p_841:
+.word 32935
+	.no_dead_strip plt__rgctx_fetch_105
+plt__rgctx_fetch_105:
+_p_843:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3264]
 br x16
-.word 32890
-	.no_dead_strip plt__rgctx_fetch_103
-plt__rgctx_fetch_103:
-_p_842:
+.word 32962
+	.no_dead_strip plt__rgctx_fetch_106
+plt__rgctx_fetch_106:
+_p_844:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3272]
 br x16
-.word 32942
-	.no_dead_strip plt__rgctx_fetch_104
-plt__rgctx_fetch_104:
-_p_843:
+.word 32974
+	.no_dead_strip plt__rgctx_fetch_107
+plt__rgctx_fetch_107:
+_p_845:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3280]
 br x16
-.word 32954
-	.no_dead_strip plt__rgctx_fetch_105
-plt__rgctx_fetch_105:
-_p_844:
+.word 33001
+	.no_dead_strip plt__rgctx_fetch_108
+plt__rgctx_fetch_108:
+_p_846:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3288]
 br x16
-.word 32981
-	.no_dead_strip plt__rgctx_fetch_106
-plt__rgctx_fetch_106:
-_p_845:
+.word 33028
+	.no_dead_strip plt__rgctx_fetch_109
+plt__rgctx_fetch_109:
+_p_847:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3296]
 br x16
-.word 32993
-	.no_dead_strip plt__rgctx_fetch_107
-plt__rgctx_fetch_107:
-_p_846:
+.word 33055
+	.no_dead_strip plt__rgctx_fetch_110
+plt__rgctx_fetch_110:
+_p_848:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3304]
 br x16
-.word 33020
-	.no_dead_strip plt__rgctx_fetch_108
-plt__rgctx_fetch_108:
-_p_847:
+.word 33065
+	.no_dead_strip plt__rgctx_fetch_111
+plt__rgctx_fetch_111:
+_p_849:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3312]
 br x16
-.word 33047
-	.no_dead_strip plt__rgctx_fetch_109
-plt__rgctx_fetch_109:
-_p_848:
+.word 33090
+	.no_dead_strip plt__rgctx_fetch_112
+plt__rgctx_fetch_112:
+_p_850:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3320]
 br x16
-.word 33074
-	.no_dead_strip plt__rgctx_fetch_110
-plt__rgctx_fetch_110:
-_p_849:
+.word 33135
+	.no_dead_strip plt__rgctx_fetch_113
+plt__rgctx_fetch_113:
+_p_851:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3328]
 br x16
-.word 33084
-	.no_dead_strip plt__rgctx_fetch_111
-plt__rgctx_fetch_111:
-_p_850:
+.word 33145
+	.no_dead_strip plt__rgctx_fetch_114
+plt__rgctx_fetch_114:
+_p_852:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3336]
 br x16
-.word 33109
-	.no_dead_strip plt__rgctx_fetch_112
-plt__rgctx_fetch_112:
-_p_851:
+.word 33173
+	.no_dead_strip plt__rgctx_fetch_115
+plt__rgctx_fetch_115:
+_p_853:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3344]
 br x16
-.word 33154
-	.no_dead_strip plt__rgctx_fetch_113
-plt__rgctx_fetch_113:
-_p_852:
+.word 33183
+	.no_dead_strip plt__rgctx_fetch_116
+plt__rgctx_fetch_116:
+_p_854:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3352]
 br x16
-.word 33164
-	.no_dead_strip plt__rgctx_fetch_114
-plt__rgctx_fetch_114:
-_p_853:
+.word 33193
+	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource
+plt_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource:
+_p_855:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3360]
 br x16
-.word 33192
-	.no_dead_strip plt__rgctx_fetch_115
-plt__rgctx_fetch_115:
-_p_854:
+.word 33205
+	.no_dead_strip plt__rgctx_fetch_117
+plt__rgctx_fetch_117:
+_p_856:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3368]
 br x16
-.word 33202
-	.no_dead_strip plt__rgctx_fetch_116
-plt__rgctx_fetch_116:
-_p_855:
+.word 33237
+	.no_dead_strip plt__rgctx_fetch_118
+plt__rgctx_fetch_118:
+_p_857:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3376]
 br x16
-.word 33212
-	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource
-plt_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource:
-_p_856:
+.word 33249
+	.no_dead_strip plt__rgctx_fetch_119
+plt__rgctx_fetch_119:
+_p_858:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3384]
 br x16
-.word 33224
-	.no_dead_strip plt__rgctx_fetch_117
-plt__rgctx_fetch_117:
-_p_857:
+.word 33276
+	.no_dead_strip plt__rgctx_fetch_120
+plt__rgctx_fetch_120:
+_p_859:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3392]
 br x16
-.word 33256
-	.no_dead_strip plt__rgctx_fetch_118
-plt__rgctx_fetch_118:
-_p_858:
+.word 33286
+	.no_dead_strip plt__rgctx_fetch_121
+plt__rgctx_fetch_121:
+_p_860:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3400]
 br x16
-.word 33268
-	.no_dead_strip plt__rgctx_fetch_119
-plt__rgctx_fetch_119:
-_p_859:
+.word 33296
+	.no_dead_strip plt__rgctx_fetch_122
+plt__rgctx_fetch_122:
+_p_861:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3408]
 br x16
-.word 33295
-	.no_dead_strip plt__rgctx_fetch_120
-plt__rgctx_fetch_120:
-_p_860:
+.word 33308
+	.no_dead_strip plt__rgctx_fetch_123
+plt__rgctx_fetch_123:
+_p_862:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3416]
 br x16
-.word 33305
-	.no_dead_strip plt__rgctx_fetch_121
-plt__rgctx_fetch_121:
-_p_861:
+.word 33335
+	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument
+plt_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument:
+_p_863:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3424]
 br x16
-.word 33315
-	.no_dead_strip plt__rgctx_fetch_122
-plt__rgctx_fetch_122:
-_p_862:
+.word 33360
+	.no_dead_strip plt__rgctx_fetch_124
+plt__rgctx_fetch_124:
+_p_864:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3432]
 br x16
-.word 33327
-	.no_dead_strip plt__rgctx_fetch_123
-plt__rgctx_fetch_123:
-_p_863:
+.word 33383
+	.no_dead_strip plt__rgctx_fetch_125
+plt__rgctx_fetch_125:
+_p_865:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3440]
 br x16
-.word 33354
-	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument
-plt_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument:
-_p_864:
+.word 33395
+	.no_dead_strip plt__rgctx_fetch_126
+plt__rgctx_fetch_126:
+_p_866:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3448]
 br x16
-.word 33379
-	.no_dead_strip plt__rgctx_fetch_124
-plt__rgctx_fetch_124:
-_p_865:
+.word 33405
+	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentOutOfRange_IndexException
+plt_System_ThrowHelper_ThrowArgumentOutOfRange_IndexException:
+_p_867:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3456]
 br x16
-.word 33402
-	.no_dead_strip plt__rgctx_fetch_125
-plt__rgctx_fetch_125:
-_p_866:
+.word 33415
+	.no_dead_strip plt__rgctx_fetch_127
+plt__rgctx_fetch_127:
+_p_868:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3464]
 br x16
-.word 33414
-	.no_dead_strip plt__rgctx_fetch_126
-plt__rgctx_fetch_126:
-_p_867:
+.word 33438
+	.no_dead_strip plt__rgctx_fetch_128
+plt__rgctx_fetch_128:
+_p_869:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3472]
 br x16
-.word 33424
-	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentOutOfRange_IndexException
-plt_System_ThrowHelper_ThrowArgumentOutOfRange_IndexException:
-_p_868:
+.word 33448
+	.no_dead_strip plt__rgctx_fetch_129
+plt__rgctx_fetch_129:
+_p_870:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3480]
 br x16
-.word 33434
-	.no_dead_strip plt__rgctx_fetch_127
-plt__rgctx_fetch_127:
-_p_869:
+.word 33476
+	.no_dead_strip plt__rgctx_fetch_130
+plt__rgctx_fetch_130:
+_p_871:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3488]
 br x16
-.word 33457
-	.no_dead_strip plt__rgctx_fetch_128
-plt__rgctx_fetch_128:
-_p_870:
+.word 33501
+	.no_dead_strip plt__rgctx_fetch_131
+plt__rgctx_fetch_131:
+_p_872:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3496]
 br x16
-.word 33467
-	.no_dead_strip plt__rgctx_fetch_129
-plt__rgctx_fetch_129:
-_p_871:
+.word 33529
+	.no_dead_strip plt__rgctx_fetch_132
+plt__rgctx_fetch_132:
+_p_873:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3504]
 br x16
-.word 33495
-	.no_dead_strip plt__rgctx_fetch_130
-plt__rgctx_fetch_130:
-_p_872:
+.word 33554
+	.no_dead_strip plt__rgctx_fetch_133
+plt__rgctx_fetch_133:
+_p_874:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3512]
 br x16
-.word 33520
-	.no_dead_strip plt__rgctx_fetch_131
-plt__rgctx_fetch_131:
-_p_873:
+.word 33579
+	.no_dead_strip plt__rgctx_fetch_134
+plt__rgctx_fetch_134:
+_p_875:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3520]
 br x16
-.word 33548
-	.no_dead_strip plt__rgctx_fetch_132
-plt__rgctx_fetch_132:
-_p_874:
+.word 33589
+	.no_dead_strip plt__rgctx_fetch_135
+plt__rgctx_fetch_135:
+_p_876:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3528]
 br x16
-.word 33573
-	.no_dead_strip plt__rgctx_fetch_133
-plt__rgctx_fetch_133:
-_p_875:
+.word 33614
+	.no_dead_strip plt_System_ThrowHelper_ThrowWrongValueTypeArgumentException_object_System_Type
+plt_System_ThrowHelper_ThrowWrongValueTypeArgumentException_object_System_Type:
+_p_877:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3536]
 br x16
-.word 33598
-	.no_dead_strip plt__rgctx_fetch_134
-plt__rgctx_fetch_134:
-_p_876:
+.word 33624
+	.no_dead_strip plt__rgctx_fetch_136
+plt__rgctx_fetch_136:
+_p_878:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3544]
 br x16
-.word 33608
-	.no_dead_strip plt__rgctx_fetch_135
-plt__rgctx_fetch_135:
-_p_877:
+.word 33647
+	.no_dead_strip plt__rgctx_fetch_137
+plt__rgctx_fetch_137:
+_p_879:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3552]
 br x16
-.word 33633
-	.no_dead_strip plt_System_ThrowHelper_ThrowWrongValueTypeArgumentException_object_System_Type
-plt_System_ThrowHelper_ThrowWrongValueTypeArgumentException_object_System_Type:
-_p_878:
+.word 33690
+	.no_dead_strip plt__rgctx_fetch_138
+plt__rgctx_fetch_138:
+_p_880:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3560]
 br x16
-.word 33643
-	.no_dead_strip plt__rgctx_fetch_136
-plt__rgctx_fetch_136:
-_p_879:
+.word 33733
+	.no_dead_strip plt__rgctx_fetch_139
+plt__rgctx_fetch_139:
+_p_881:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3568]
 br x16
-.word 33666
-	.no_dead_strip plt__rgctx_fetch_137
-plt__rgctx_fetch_137:
-_p_880:
+.word 33758
+	.no_dead_strip plt__rgctx_fetch_140
+plt__rgctx_fetch_140:
+_p_882:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3576]
 br x16
-.word 33709
-	.no_dead_strip plt__rgctx_fetch_138
-plt__rgctx_fetch_138:
-_p_881:
+.word 33783
+	.no_dead_strip plt__rgctx_fetch_141
+plt__rgctx_fetch_141:
+_p_883:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3584]
 br x16
-.word 33752
-	.no_dead_strip plt__rgctx_fetch_139
-plt__rgctx_fetch_139:
-_p_882:
+.word 33793
+	.no_dead_strip plt__rgctx_fetch_142
+plt__rgctx_fetch_142:
+_p_884:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3592]
 br x16
-.word 33777
-	.no_dead_strip plt__rgctx_fetch_140
-plt__rgctx_fetch_140:
-_p_883:
+.word 33818
+	.no_dead_strip plt__rgctx_fetch_143
+plt__rgctx_fetch_143:
+_p_885:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3600]
 br x16
-.word 33802
-	.no_dead_strip plt__rgctx_fetch_141
-plt__rgctx_fetch_141:
-_p_884:
+.word 33828
+	.no_dead_strip plt__rgctx_fetch_144
+plt__rgctx_fetch_144:
+_p_886:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3608]
 br x16
-.word 33812
-	.no_dead_strip plt__rgctx_fetch_142
-plt__rgctx_fetch_142:
-_p_885:
+.word 33871
+	.no_dead_strip plt__rgctx_fetch_145
+plt__rgctx_fetch_145:
+_p_887:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3616]
 br x16
-.word 33837
-	.no_dead_strip plt__rgctx_fetch_143
-plt__rgctx_fetch_143:
-_p_886:
+.word 33923
+	.no_dead_strip plt__rgctx_fetch_146
+plt__rgctx_fetch_146:
+_p_888:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3624]
 br x16
-.word 33847
-	.no_dead_strip plt__rgctx_fetch_144
-plt__rgctx_fetch_144:
-_p_887:
+.word 33935
+	.no_dead_strip plt__rgctx_fetch_147
+plt__rgctx_fetch_147:
+_p_889:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3632]
 br x16
-.word 33890
-	.no_dead_strip plt__rgctx_fetch_145
-plt__rgctx_fetch_145:
-_p_888:
+.word 33980
+	.no_dead_strip plt__rgctx_fetch_148
+plt__rgctx_fetch_148:
+_p_890:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3640]
 br x16
-.word 33942
-	.no_dead_strip plt__rgctx_fetch_146
-plt__rgctx_fetch_146:
-_p_889:
+.word 34005
+	.no_dead_strip plt_System_ThrowHelper_ThrowIndexArgumentOutOfRange_NeedNonNegNumException
+plt_System_ThrowHelper_ThrowIndexArgumentOutOfRange_NeedNonNegNumException:
+_p_891:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3648]
 br x16
-.word 33954
-	.no_dead_strip plt__rgctx_fetch_147
-plt__rgctx_fetch_147:
-_p_890:
+.word 34030
+	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource
+plt_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource:
+_p_892:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3656]
 br x16
-.word 33999
-	.no_dead_strip plt__rgctx_fetch_148
-plt__rgctx_fetch_148:
-_p_891:
+.word 34035
+	.no_dead_strip plt__rgctx_fetch_149
+plt__rgctx_fetch_149:
+_p_893:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3664]
 br x16
-.word 34024
-	.no_dead_strip plt_System_ThrowHelper_ThrowIndexArgumentOutOfRange_NeedNonNegNumException
-plt_System_ThrowHelper_ThrowIndexArgumentOutOfRange_NeedNonNegNumException:
-_p_892:
+.word 34058
+	.no_dead_strip plt__rgctx_fetch_150
+plt__rgctx_fetch_150:
+_p_894:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3672]
 br x16
-.word 34049
-	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource
-plt_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource:
-_p_893:
+.word 34083
+	.no_dead_strip plt__rgctx_fetch_151
+plt__rgctx_fetch_151:
+_p_895:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3680]
 br x16
-.word 34054
-	.no_dead_strip plt__rgctx_fetch_149
-plt__rgctx_fetch_149:
-_p_894:
+.word 34126
+	.no_dead_strip plt__rgctx_fetch_152
+plt__rgctx_fetch_152:
+_p_896:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3688]
 br x16
-.word 34077
-	.no_dead_strip plt__rgctx_fetch_150
-plt__rgctx_fetch_150:
-_p_895:
+.word 34170
+	.no_dead_strip plt__rgctx_fetch_153
+plt__rgctx_fetch_153:
+_p_897:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3696]
 br x16
-.word 34102
-	.no_dead_strip plt__rgctx_fetch_151
-plt__rgctx_fetch_151:
-_p_896:
+.word 34213
+	.no_dead_strip plt__rgctx_fetch_154
+plt__rgctx_fetch_154:
+_p_898:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3704]
 br x16
-.word 34145
-	.no_dead_strip plt__rgctx_fetch_152
-plt__rgctx_fetch_152:
-_p_897:
+.word 34223
+	.no_dead_strip plt__rgctx_fetch_155
+plt__rgctx_fetch_155:
+_p_899:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3712]
 br x16
-.word 34189
-	.no_dead_strip plt__rgctx_fetch_153
-plt__rgctx_fetch_153:
-_p_898:
+.word 34248
+	.no_dead_strip plt__rgctx_fetch_156
+plt__rgctx_fetch_156:
+_p_900:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3720]
 br x16
-.word 34232
-	.no_dead_strip plt__rgctx_fetch_154
-plt__rgctx_fetch_154:
-_p_899:
+.word 34258
+	.no_dead_strip plt__rgctx_fetch_157
+plt__rgctx_fetch_157:
+_p_901:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3728]
 br x16
-.word 34242
-	.no_dead_strip plt__rgctx_fetch_155
-plt__rgctx_fetch_155:
-_p_900:
+.word 34301
+	.no_dead_strip plt__rgctx_fetch_158
+plt__rgctx_fetch_158:
+_p_902:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3736]
 br x16
-.word 34267
-	.no_dead_strip plt__rgctx_fetch_156
-plt__rgctx_fetch_156:
-_p_901:
+.word 34344
+	.no_dead_strip plt__rgctx_fetch_159
+plt__rgctx_fetch_159:
+_p_903:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3744]
 br x16
-.word 34277
-	.no_dead_strip plt__rgctx_fetch_157
-plt__rgctx_fetch_157:
-_p_902:
+.word 34396
+	.no_dead_strip plt__rgctx_fetch_160
+plt__rgctx_fetch_160:
+_p_904:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3752]
 br x16
-.word 34320
-	.no_dead_strip plt__rgctx_fetch_158
-plt__rgctx_fetch_158:
-_p_903:
+.word 34408
+	.no_dead_strip plt__rgctx_fetch_161
+plt__rgctx_fetch_161:
+_p_905:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3760]
 br x16
-.word 34363
-	.no_dead_strip plt__rgctx_fetch_159
-plt__rgctx_fetch_159:
-_p_904:
+.word 34453
+	.no_dead_strip plt__rgctx_fetch_162
+plt__rgctx_fetch_162:
+_p_906:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3768]
 br x16
-.word 34415
-	.no_dead_strip plt__rgctx_fetch_160
-plt__rgctx_fetch_160:
-_p_905:
+.word 34465
+	.no_dead_strip plt__rgctx_fetch_163
+plt__rgctx_fetch_163:
+_p_907:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3776]
 br x16
-.word 34427
-	.no_dead_strip plt__rgctx_fetch_161
-plt__rgctx_fetch_161:
-_p_906:
+.word 34510
+	.no_dead_strip plt__rgctx_fetch_164
+plt__rgctx_fetch_164:
+_p_908:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3784]
 br x16
-.word 34472
-	.no_dead_strip plt__rgctx_fetch_162
-plt__rgctx_fetch_162:
-_p_907:
+.word 34522
+	.no_dead_strip plt__rgctx_fetch_165
+plt__rgctx_fetch_165:
+_p_909:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3792]
 br x16
-.word 34484
-	.no_dead_strip plt__rgctx_fetch_163
-plt__rgctx_fetch_163:
-_p_908:
+.word 34567
+	.no_dead_strip plt__rgctx_fetch_166
+plt__rgctx_fetch_166:
+_p_910:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3800]
 br x16
-.word 34529
-	.no_dead_strip plt__rgctx_fetch_164
-plt__rgctx_fetch_164:
-_p_909:
+.word 34592
+	.no_dead_strip plt__rgctx_fetch_167
+plt__rgctx_fetch_167:
+_p_911:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3808]
 br x16
-.word 34541
-	.no_dead_strip plt__rgctx_fetch_165
-plt__rgctx_fetch_165:
-_p_910:
+.word 34635
+	.no_dead_strip plt__rgctx_fetch_168
+plt__rgctx_fetch_168:
+_p_912:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3816]
 br x16
-.word 34586
-	.no_dead_strip plt__rgctx_fetch_166
-plt__rgctx_fetch_166:
-_p_911:
+.word 34645
+	.no_dead_strip plt__rgctx_fetch_169
+plt__rgctx_fetch_169:
+_p_913:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3824]
 br x16
-.word 34611
-	.no_dead_strip plt__rgctx_fetch_167
-plt__rgctx_fetch_167:
-_p_912:
+.word 34670
+	.no_dead_strip plt__rgctx_fetch_170
+plt__rgctx_fetch_170:
+_p_914:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3832]
 br x16
-.word 34654
-	.no_dead_strip plt__rgctx_fetch_168
-plt__rgctx_fetch_168:
-_p_913:
+.word 34680
+	.no_dead_strip plt__rgctx_fetch_171
+plt__rgctx_fetch_171:
+_p_915:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3840]
 br x16
-.word 34664
-	.no_dead_strip plt__rgctx_fetch_169
-plt__rgctx_fetch_169:
-_p_914:
+.word 34723
+	.no_dead_strip plt__rgctx_fetch_172
+plt__rgctx_fetch_172:
+_p_916:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3848]
 br x16
-.word 34689
-	.no_dead_strip plt__rgctx_fetch_170
-plt__rgctx_fetch_170:
-_p_915:
+.word 34748
+	.no_dead_strip plt__rgctx_fetch_173
+plt__rgctx_fetch_173:
+_p_917:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3856]
 br x16
-.word 34699
-	.no_dead_strip plt__rgctx_fetch_171
-plt__rgctx_fetch_171:
-_p_916:
+.word 34791
+	.no_dead_strip plt__rgctx_fetch_174
+plt__rgctx_fetch_174:
+_p_918:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3864]
 br x16
-.word 34742
-	.no_dead_strip plt__rgctx_fetch_172
-plt__rgctx_fetch_172:
-_p_917:
+.word 34816
+	.no_dead_strip plt_System_ThrowHelper_ThrowCountArgumentOutOfRange_ArgumentOutOfRange_Count
+plt_System_ThrowHelper_ThrowCountArgumentOutOfRange_ArgumentOutOfRange_Count:
+_p_919:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3872]
 br x16
-.word 34767
-	.no_dead_strip plt__rgctx_fetch_173
-plt__rgctx_fetch_173:
-_p_918:
+.word 34841
+	.no_dead_strip plt__rgctx_fetch_175
+plt__rgctx_fetch_175:
+_p_920:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3880]
 br x16
-.word 34810
-	.no_dead_strip plt__rgctx_fetch_174
-plt__rgctx_fetch_174:
-_p_919:
+.word 34864
+	.no_dead_strip plt__rgctx_fetch_176
+plt__rgctx_fetch_176:
+_p_921:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3888]
 br x16
-.word 34835
-	.no_dead_strip plt_System_ThrowHelper_ThrowCountArgumentOutOfRange_ArgumentOutOfRange_Count
-plt_System_ThrowHelper_ThrowCountArgumentOutOfRange_ArgumentOutOfRange_Count:
-_p_920:
+.word 34907
+	.no_dead_strip plt__rgctx_fetch_177
+plt__rgctx_fetch_177:
+_p_922:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3896]
 br x16
-.word 34860
-	.no_dead_strip plt__rgctx_fetch_175
-plt__rgctx_fetch_175:
-_p_921:
+.word 34932
+	.no_dead_strip plt__rgctx_fetch_178
+plt__rgctx_fetch_178:
+_p_923:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3904]
 br x16
-.word 34883
-	.no_dead_strip plt__rgctx_fetch_176
-plt__rgctx_fetch_176:
-_p_922:
+.word 34957
+	.no_dead_strip plt__rgctx_fetch_179
+plt__rgctx_fetch_179:
+_p_924:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3912]
 br x16
-.word 34926
-	.no_dead_strip plt__rgctx_fetch_177
-plt__rgctx_fetch_177:
-_p_923:
+.word 34967
+	.no_dead_strip plt__rgctx_fetch_180
+plt__rgctx_fetch_180:
+_p_925:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3920]
 br x16
-.word 34951
-	.no_dead_strip plt__rgctx_fetch_178
-plt__rgctx_fetch_178:
-_p_924:
+.word 34992
+	.no_dead_strip plt__rgctx_fetch_181
+plt__rgctx_fetch_181:
+_p_926:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3928]
 br x16
-.word 34976
-	.no_dead_strip plt__rgctx_fetch_179
-plt__rgctx_fetch_179:
-_p_925:
+.word 35020
+	.no_dead_strip plt__rgctx_fetch_182
+plt__rgctx_fetch_182:
+_p_927:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3936]
 br x16
-.word 34986
-	.no_dead_strip plt__rgctx_fetch_180
-plt__rgctx_fetch_180:
-_p_926:
+.word 35032
+	.no_dead_strip plt__rgctx_fetch_183
+plt__rgctx_fetch_183:
+_p_928:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3944]
 br x16
-.word 35011
-	.no_dead_strip plt__rgctx_fetch_181
-plt__rgctx_fetch_181:
-_p_927:
+.word 35059
+	.no_dead_strip plt__rgctx_fetch_184
+plt__rgctx_fetch_184:
+_p_929:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3952]
 br x16
-.word 35039
-	.no_dead_strip plt__rgctx_fetch_182
-plt__rgctx_fetch_182:
-_p_928:
+.word 35084
+	.no_dead_strip plt__rgctx_fetch_185
+plt__rgctx_fetch_185:
+_p_930:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3960]
 br x16
-.word 35051
-	.no_dead_strip plt__rgctx_fetch_183
-plt__rgctx_fetch_183:
-_p_929:
+.word 35120
+	.no_dead_strip plt__rgctx_fetch_186
+plt__rgctx_fetch_186:
+_p_931:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3968]
 br x16
-.word 35078
-	.no_dead_strip plt__rgctx_fetch_184
-plt__rgctx_fetch_184:
-_p_930:
+.word 35156
+	.no_dead_strip plt__rgctx_fetch_187
+plt__rgctx_fetch_187:
+_p_932:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3976]
 br x16
-.word 35103
-	.no_dead_strip plt__rgctx_fetch_185
-plt__rgctx_fetch_185:
-_p_931:
+.word 35183
+	.no_dead_strip plt__rgctx_fetch_188
+plt__rgctx_fetch_188:
+_p_933:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3984]
 br x16
-.word 35139
-	.no_dead_strip plt__rgctx_fetch_186
-plt__rgctx_fetch_186:
-_p_932:
+.word 35208
+	.no_dead_strip plt__rgctx_fetch_189
+plt__rgctx_fetch_189:
+_p_934:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #3992]
 br x16
-.word 35175
-	.no_dead_strip plt__rgctx_fetch_187
-plt__rgctx_fetch_187:
-_p_933:
+.word 35251
+	.no_dead_strip plt__rgctx_fetch_190
+plt__rgctx_fetch_190:
+_p_935:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4000]
 br x16
-.word 35202
-	.no_dead_strip plt__rgctx_fetch_188
-plt__rgctx_fetch_188:
-_p_934:
+.word 35276
+	.no_dead_strip plt__rgctx_fetch_191
+plt__rgctx_fetch_191:
+_p_936:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4008]
 br x16
-.word 35227
-	.no_dead_strip plt__rgctx_fetch_189
-plt__rgctx_fetch_189:
-_p_935:
+.word 35319
+	.no_dead_strip plt__rgctx_fetch_192
+plt__rgctx_fetch_192:
+_p_937:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4016]
 br x16
-.word 35270
-	.no_dead_strip plt__rgctx_fetch_190
-plt__rgctx_fetch_190:
-_p_936:
+.word 35329
+	.no_dead_strip plt__rgctx_fetch_193
+plt__rgctx_fetch_193:
+_p_938:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4024]
 br x16
-.word 35295
-	.no_dead_strip plt__rgctx_fetch_191
-plt__rgctx_fetch_191:
-_p_937:
+.word 35354
+	.no_dead_strip plt__rgctx_fetch_194
+plt__rgctx_fetch_194:
+_p_939:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4032]
 br x16
-.word 35338
-	.no_dead_strip plt__rgctx_fetch_192
-plt__rgctx_fetch_192:
-_p_938:
+.word 35364
+	.no_dead_strip plt__rgctx_fetch_195
+plt__rgctx_fetch_195:
+_p_940:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4040]
 br x16
-.word 35348
-	.no_dead_strip plt__rgctx_fetch_193
-plt__rgctx_fetch_193:
-_p_939:
+.word 35407
+	.no_dead_strip plt__rgctx_fetch_196
+plt__rgctx_fetch_196:
+_p_941:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4048]
 br x16
-.word 35373
-	.no_dead_strip plt__rgctx_fetch_194
-plt__rgctx_fetch_194:
-_p_940:
+.word 35451
+	.no_dead_strip plt__rgctx_fetch_197
+plt__rgctx_fetch_197:
+_p_942:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4056]
 br x16
-.word 35383
-	.no_dead_strip plt__rgctx_fetch_195
-plt__rgctx_fetch_195:
-_p_941:
+.word 35495
+	.no_dead_strip plt__rgctx_fetch_198
+plt__rgctx_fetch_198:
+_p_943:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4064]
 br x16
-.word 35426
-	.no_dead_strip plt__rgctx_fetch_196
-plt__rgctx_fetch_196:
-_p_942:
+.word 35539
+	.no_dead_strip plt__rgctx_fetch_199
+plt__rgctx_fetch_199:
+_p_944:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4072]
 br x16
-.word 35470
-	.no_dead_strip plt__rgctx_fetch_197
-plt__rgctx_fetch_197:
-_p_943:
+.word 35564
+	.no_dead_strip plt__rgctx_fetch_200
+plt__rgctx_fetch_200:
+_p_945:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4080]
 br x16
-.word 35514
-	.no_dead_strip plt__rgctx_fetch_198
-plt__rgctx_fetch_198:
-_p_944:
+.word 35607
+	.no_dead_strip plt__rgctx_fetch_201
+plt__rgctx_fetch_201:
+_p_946:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+12288
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #4088]
 br x16
-.word 35558
-	.no_dead_strip plt__rgctx_fetch_199
-plt__rgctx_fetch_199:
-_p_945:
+.word 35632
+	.no_dead_strip plt__rgctx_fetch_202
+plt__rgctx_fetch_202:
+_p_947:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #0]
 br x16
-.word 35583
-	.no_dead_strip plt__rgctx_fetch_200
-plt__rgctx_fetch_200:
-_p_946:
+.word 35675
+	.no_dead_strip plt__rgctx_fetch_203
+plt__rgctx_fetch_203:
+_p_948:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #8]
 br x16
-.word 35626
-	.no_dead_strip plt__rgctx_fetch_201
-plt__rgctx_fetch_201:
-_p_947:
+.word 35700
+	.no_dead_strip plt__rgctx_fetch_204
+plt__rgctx_fetch_204:
+_p_949:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #16]
 br x16
-.word 35651
-	.no_dead_strip plt__rgctx_fetch_202
-plt__rgctx_fetch_202:
-_p_948:
+.word 35743
+	.no_dead_strip plt__rgctx_fetch_205
+plt__rgctx_fetch_205:
+_p_950:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #24]
 br x16
-.word 35694
-	.no_dead_strip plt__rgctx_fetch_203
-plt__rgctx_fetch_203:
-_p_949:
+.word 35768
+	.no_dead_strip plt__rgctx_fetch_206
+plt__rgctx_fetch_206:
+_p_951:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #32]
 br x16
-.word 35719
-	.no_dead_strip plt__rgctx_fetch_204
-plt__rgctx_fetch_204:
-_p_950:
+.word 35820
+	.no_dead_strip plt__rgctx_fetch_207
+plt__rgctx_fetch_207:
+_p_952:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #40]
 br x16
-.word 35762
-	.no_dead_strip plt__rgctx_fetch_205
-plt__rgctx_fetch_205:
-_p_951:
+.word 35832
+	.no_dead_strip plt__rgctx_fetch_208
+plt__rgctx_fetch_208:
+_p_953:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #48]
 br x16
-.word 35787
-	.no_dead_strip plt__rgctx_fetch_206
-plt__rgctx_fetch_206:
-_p_952:
+.word 35877
+	.no_dead_strip plt__rgctx_fetch_209
+plt__rgctx_fetch_209:
+_p_954:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #56]
 br x16
-.word 35839
-	.no_dead_strip plt__rgctx_fetch_207
-plt__rgctx_fetch_207:
-_p_953:
+.word 35887
+	.no_dead_strip plt__rgctx_fetch_210
+plt__rgctx_fetch_210:
+_p_955:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #64]
 br x16
-.word 35851
-	.no_dead_strip plt__rgctx_fetch_208
-plt__rgctx_fetch_208:
-_p_954:
+.word 35897
+	.no_dead_strip plt__rgctx_fetch_211
+plt__rgctx_fetch_211:
+_p_956:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #72]
 br x16
-.word 35896
-	.no_dead_strip plt__rgctx_fetch_209
-plt__rgctx_fetch_209:
-_p_955:
+.word 35927
+	.no_dead_strip plt__rgctx_fetch_212
+plt__rgctx_fetch_212:
+_p_957:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #80]
 br x16
-.word 35906
-	.no_dead_strip plt__rgctx_fetch_210
-plt__rgctx_fetch_210:
-_p_956:
+.word 35970
+	.no_dead_strip plt__rgctx_fetch_213
+plt__rgctx_fetch_213:
+_p_958:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #88]
 br x16
-.word 35916
-	.no_dead_strip plt__rgctx_fetch_211
-plt__rgctx_fetch_211:
-_p_957:
+.word 35997
+	.no_dead_strip plt__rgctx_fetch_214
+plt__rgctx_fetch_214:
+_p_959:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #96]
 br x16
-.word 35946
-	.no_dead_strip plt__rgctx_fetch_212
-plt__rgctx_fetch_212:
-_p_958:
+.word 36024
+	.no_dead_strip plt__rgctx_fetch_215
+plt__rgctx_fetch_215:
+_p_960:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #104]
 br x16
-.word 35989
-	.no_dead_strip plt__rgctx_fetch_213
-plt__rgctx_fetch_213:
-_p_959:
+.word 36067
+	.no_dead_strip plt__rgctx_fetch_216
+plt__rgctx_fetch_216:
+_p_961:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #112]
 br x16
-.word 36016
-	.no_dead_strip plt__rgctx_fetch_214
-plt__rgctx_fetch_214:
-_p_960:
+.word 36079
+	.no_dead_strip plt_System_Nullable_1_Acr_UserDialogs_MaskType_UnboxExact_object
+plt_System_Nullable_1_Acr_UserDialogs_MaskType_UnboxExact_object:
+_p_962:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #120]
 br x16
-.word 36043
-	.no_dead_strip plt__rgctx_fetch_215
-plt__rgctx_fetch_215:
-_p_961:
+.word 36089
+	.no_dead_strip plt_System_Nullable_1_Acr_UserDialogs_MaskType_Equals_System_Nullable_1_Acr_UserDialogs_MaskType
+plt_System_Nullable_1_Acr_UserDialogs_MaskType_Equals_System_Nullable_1_Acr_UserDialogs_MaskType:
+_p_963:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #128]
 br x16
-.word 36086
-	.no_dead_strip plt__rgctx_fetch_216
-plt__rgctx_fetch_216:
-_p_962:
+.word 36110
+	.no_dead_strip plt_System_Nullable_1_Acr_UserDialogs_MaskType__ctor_Acr_UserDialogs_MaskType
+plt_System_Nullable_1_Acr_UserDialogs_MaskType__ctor_Acr_UserDialogs_MaskType:
+_p_964:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #136]
 br x16
-.word 36098
-	.no_dead_strip plt_System_Nullable_1_Acr_UserDialogs_MaskType_UnboxExact_object
-plt_System_Nullable_1_Acr_UserDialogs_MaskType_UnboxExact_object:
-_p_963:
+.word 36131
+	.no_dead_strip plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_
+plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_:
+_p_965:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #144]
 br x16
-.word 36108
-	.no_dead_strip plt_System_Nullable_1_Acr_UserDialogs_MaskType_Equals_System_Nullable_1_Acr_UserDialogs_MaskType
-plt_System_Nullable_1_Acr_UserDialogs_MaskType_Equals_System_Nullable_1_Acr_UserDialogs_MaskType:
-_p_964:
+.word 36152
+	.no_dead_strip plt_PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_MoveNext
+plt_PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_MoveNext:
+_p_966:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #152]
 br x16
-.word 36129
-	.no_dead_strip plt_System_Nullable_1_Acr_UserDialogs_MaskType__ctor_Acr_UserDialogs_MaskType
-plt_System_Nullable_1_Acr_UserDialogs_MaskType__ctor_Acr_UserDialogs_MaskType:
-_p_965:
+.word 36157
+	.no_dead_strip plt_System_Threading_ExecutionContextSwitcher_Undo
+plt_System_Threading_ExecutionContextSwitcher_Undo:
+_p_967:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #160]
 br x16
-.word 36150
-	.no_dead_strip plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_
-plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_:
-_p_966:
+.word 36159
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_:
+_p_968:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #168]
 br x16
-.word 36171
-	.no_dead_strip plt_PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_MoveNext
-plt_PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_MoveNext:
-_p_967:
+.word 36164
+	.no_dead_strip plt__rgctx_fetch_217
+plt__rgctx_fetch_217:
+_p_969:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #176]
 br x16
-.word 36176
-	.no_dead_strip plt_System_Threading_ExecutionContextSwitcher_Undo
-plt_System_Threading_ExecutionContextSwitcher_Undo:
-_p_968:
+.word 36209
+	.no_dead_strip plt__rgctx_fetch_218
+plt__rgctx_fetch_218:
+_p_970:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #184]
 br x16
-.word 36178
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_Views_HomePage__BeginHideAnimationsAsyncd__3_:
-_p_969:
+.word 36258
+	.no_dead_strip plt_wrapper_alloc_object_Alloc_intptr
+plt_wrapper_alloc_object_Alloc_intptr:
+_p_971:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #192]
 br x16
-.word 36183
-	.no_dead_strip plt__rgctx_fetch_217
-plt__rgctx_fetch_217:
-_p_970:
+.word 36268
+	.no_dead_strip plt__rgctx_fetch_219
+plt__rgctx_fetch_219:
+_p_972:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #200]
 br x16
-.word 36228
-	.no_dead_strip plt__rgctx_fetch_218
-plt__rgctx_fetch_218:
-_p_971:
+.word 36276
+	.no_dead_strip plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions
+plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions:
+_p_973:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #208]
 br x16
-.word 36277
-	.no_dead_strip plt_wrapper_alloc_object_Alloc_intptr
-plt_wrapper_alloc_object_Alloc_intptr:
-_p_972:
+.word 36286
+	.no_dead_strip plt__jit_icall_mono_gsharedvt_constrained_call
+plt__jit_icall_mono_gsharedvt_constrained_call:
+_p_974:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #216]
 br x16
-.word 36287
-	.no_dead_strip plt__rgctx_fetch_219
-plt__rgctx_fetch_219:
-_p_973:
+.word 36291
+	.no_dead_strip plt_PixUl8_Views_ExtensionViews_XFFlipView__FrontToBackRotated__19_MoveNext
+plt_PixUl8_Views_ExtensionViews_XFFlipView__FrontToBackRotated__19_MoveNext:
+_p_975:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #224]
 br x16
-.word 36295
-	.no_dead_strip plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions
-plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions:
-_p_974:
+.word 36325
+	.no_dead_strip plt_PixUl8_Views_ExtensionViews_XFFlipView__BackToFrontRotated__20_MoveNext
+plt_PixUl8_Views_ExtensionViews_XFFlipView__BackToFrontRotated__20_MoveNext:
+_p_976:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #232]
 br x16
-.word 36305
-	.no_dead_strip plt__jit_icall_mono_gsharedvt_constrained_call
-plt__jit_icall_mono_gsharedvt_constrained_call:
-_p_975:
+.word 36327
+	.no_dead_strip plt__rgctx_fetch_220
+plt__rgctx_fetch_220:
+_p_977:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #240]
 br x16
-.word 36310
-	.no_dead_strip plt_PixUl8_Views_ExtensionViews_XFFlipView__FrontToBackRotated__19_MoveNext
-plt_PixUl8_Views_ExtensionViews_XFFlipView__FrontToBackRotated__19_MoveNext:
-_p_976:
+.word 36351
+	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn
+plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn:
+_p_978:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #248]
 br x16
-.word 36344
-	.no_dead_strip plt_PixUl8_Views_ExtensionViews_XFFlipView__BackToFrontRotated__20_MoveNext
-plt_PixUl8_Views_ExtensionViews_XFFlipView__BackToFrontRotated__20_MoveNext:
-_p_977:
+.word 36403
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task:
+_p_979:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #256]
 br x16
-.word 36346
-	.no_dead_strip plt__rgctx_fetch_220
-plt__rgctx_fetch_220:
-_p_978:
+.word 36408
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_:
+_p_980:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #264]
 br x16
-.word 36370
-	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn
-plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn:
-_p_979:
+.word 36413
+	.no_dead_strip plt__rgctx_fetch_221
+plt__rgctx_fetch_221:
+_p_981:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #272]
 br x16
-.word 36422
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task:
-_p_980:
+.word 36418
+	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong
+plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong:
+_p_982:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #280]
 br x16
-.word 36427
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_:
-_p_981:
+.word 36428
+	.no_dead_strip plt__rgctx_fetch_222
+plt__rgctx_fetch_222:
+_p_983:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #288]
 br x16
-.word 36432
-	.no_dead_strip plt__rgctx_fetch_221
-plt__rgctx_fetch_221:
-_p_982:
+.word 36433
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task:
+_p_984:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #296]
 br x16
-.word 36437
-	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong
-plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong:
-_p_983:
+.word 36443
+	.no_dead_strip plt__rgctx_fetch_223
+plt__rgctx_fetch_223:
+_p_985:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #304]
 br x16
-.word 36447
-	.no_dead_strip plt__rgctx_fetch_222
-plt__rgctx_fetch_222:
-_p_984:
+.word 36448
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext:
+_p_986:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #312]
 br x16
-.word 36452
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task:
-_p_985:
+.word 36458
+	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_bool_UnsafeOnCompleted_System_Action
+plt_System_Runtime_CompilerServices_TaskAwaiter_1_bool_UnsafeOnCompleted_System_Action:
+_p_987:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #320]
 br x16
-.word 36462
-	.no_dead_strip plt__rgctx_fetch_223
-plt__rgctx_fetch_223:
-_p_986:
+.word 36463
+	.no_dead_strip plt_PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_MoveNext
+plt_PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_MoveNext:
+_p_988:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #328]
 br x16
-.word 36467
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext:
-_p_987:
+.word 36485
+	.no_dead_strip plt__rgctx_fetch_224
+plt__rgctx_fetch_224:
+_p_989:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #336]
 br x16
-.word 36477
-	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_bool_UnsafeOnCompleted_System_Action
-plt_System_Runtime_CompilerServices_TaskAwaiter_1_bool_UnsafeOnCompleted_System_Action:
-_p_988:
+.word 36506
+	.no_dead_strip plt__rgctx_fetch_225
+plt__rgctx_fetch_225:
+_p_990:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #344]
 br x16
-.word 36482
-	.no_dead_strip plt_PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_MoveNext
-plt_PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_MoveNext:
-_p_989:
+.word 36516
+	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_T_REF_CreateComparer
+plt_System_Collections_Generic_EqualityComparer_1_T_REF_CreateComparer:
+_p_991:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #352]
 br x16
-.word 36504
-	.no_dead_strip plt__rgctx_fetch_224
-plt__rgctx_fetch_224:
-_p_990:
+.word 36526
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_:
+_p_992:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #360]
 br x16
-.word 36525
-	.no_dead_strip plt__rgctx_fetch_225
-plt__rgctx_fetch_225:
-_p_991:
+.word 36545
+	.no_dead_strip plt__rgctx_fetch_226
+plt__rgctx_fetch_226:
+_p_993:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #368]
 br x16
-.word 36535
-	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_T_REF_CreateComparer
-plt_System_Collections_Generic_EqualityComparer_1_T_REF_CreateComparer:
-_p_992:
+.word 36593
+	.no_dead_strip plt__rgctx_fetch_227
+plt__rgctx_fetch_227:
+_p_994:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #376]
 br x16
-.word 36545
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_BaseViewModel__ShowAdAsyncd__6_:
-_p_993:
+.word 36622
+	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_MoveNext
+plt_PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_MoveNext:
+_p_995:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #384]
 br x16
-.word 36564
-	.no_dead_strip plt__rgctx_fetch_226
-plt__rgctx_fetch_226:
-_p_994:
+.word 36651
+	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel__ToggleFlashAsyncd__64_MoveNext
+plt_PixUl8_ViewModels_HomeViewModel__ToggleFlashAsyncd__64_MoveNext:
+_p_996:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #392]
 br x16
-.word 36612
-	.no_dead_strip plt__rgctx_fetch_227
-plt__rgctx_fetch_227:
-_p_995:
+.word 36654
+	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel__ToggleHDRAsyncd__68_MoveNext
+plt_PixUl8_ViewModels_HomeViewModel__ToggleHDRAsyncd__68_MoveNext:
+_p_997:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #400]
 br x16
-.word 36641
-	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_MoveNext
-plt_PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_MoveNext:
-_p_996:
+.word 36657
+	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel__ToggleMenuAsyncd__72_MoveNext
+plt_PixUl8_ViewModels_HomeViewModel__ToggleMenuAsyncd__72_MoveNext:
+_p_998:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #408]
 br x16
-.word 36670
-	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel__ToggleFlashAsyncd__64_MoveNext
-plt_PixUl8_ViewModels_HomeViewModel__ToggleFlashAsyncd__64_MoveNext:
-_p_997:
+.word 36660
+	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_MoveNext
+plt_PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_MoveNext:
+_p_999:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #416]
 br x16
-.word 36673
-	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel__ToggleHDRAsyncd__68_MoveNext
-plt_PixUl8_ViewModels_HomeViewModel__ToggleHDRAsyncd__68_MoveNext:
-_p_998:
+.word 36663
+	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel__PrivacyAsyncd__80_MoveNext
+plt_PixUl8_ViewModels_HomeViewModel__PrivacyAsyncd__80_MoveNext:
+_p_1000:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #424]
 br x16
-.word 36676
-	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel__ToggleMenuAsyncd__72_MoveNext
-plt_PixUl8_ViewModels_HomeViewModel__ToggleMenuAsyncd__72_MoveNext:
-_p_999:
+.word 36666
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_:
+_p_1001:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #432]
 br x16
-.word 36679
-	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_MoveNext
-plt_PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_MoveNext:
-_p_1000:
+.word 36669
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_:
+_p_1002:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #440]
 br x16
-.word 36682
-	.no_dead_strip plt_PixUl8_ViewModels_HomeViewModel__PrivacyAsyncd__80_MoveNext
-plt_PixUl8_ViewModels_HomeViewModel__PrivacyAsyncd__80_MoveNext:
-_p_1001:
+.word 36695
+	.no_dead_strip plt_PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_MoveNext
+plt_PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_MoveNext:
+_p_1003:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #448]
 br x16
-.word 36685
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel__ToggleCameraPositionAsyncd__60_:
-_p_1002:
+.word 36721
+	.no_dead_strip plt_PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_MoveNext
+plt_PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_MoveNext:
+_p_1004:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
-.word 36688
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_ViewModels_HomeViewModel__HelpAsyncd__76_:
-_p_1003:
+.word 36724
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_:
+_p_1005:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #464]
 br x16
-.word 36714
-	.no_dead_strip plt_PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_MoveNext
-plt_PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_MoveNext:
-_p_1004:
+.word 36727
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_:
+_p_1006:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
-.word 36740
-	.no_dead_strip plt_PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_MoveNext
-plt_PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_MoveNext:
-_p_1005:
+.word 36753
+	.no_dead_strip plt_PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_MoveNext
+plt_PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_MoveNext:
+_p_1007:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #480]
 br x16
-.word 36743
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_AppDelegate__UpdaterAsyncd__14_:
-_p_1006:
+.word 36779
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_:
+_p_1008:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #488]
 br x16
-.word 36746
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_AppDelegate___FinishedLaunchingb__2_0d_:
-_p_1007:
+.word 36782
+	.no_dead_strip plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_MoveNext
+plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_MoveNext:
+_p_1009:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 36772
-	.no_dead_strip plt_PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_MoveNext
-plt_PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_MoveNext:
-_p_1008:
+.word 36808
+	.no_dead_strip plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_MoveNext
+plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_MoveNext:
+_p_1010:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 36798
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViewModels_ImagePreviewViewController__Closed__3_:
-_p_1009:
+.word 36811
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_:
+_p_1011:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 36801
-	.no_dead_strip plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_MoveNext
-plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_MoveNext:
-_p_1010:
+.word 36814
+	.no_dead_strip plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_MoveNext
+plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_MoveNext:
+_p_1012:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 36827
-	.no_dead_strip plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_MoveNext
-plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_MoveNext:
-_p_1011:
+.word 36840
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_:
+_p_1013:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 36830
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_PhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_:
-_p_1012:
+.word 36843
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus__PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus__PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_:
+_p_1014:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 36833
-	.no_dead_strip plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_MoveNext
-plt_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_MoveNext:
-_p_1013:
+.word 36869
+	.no_dead_strip plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_MoveNext
+plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_MoveNext:
+_p_1015:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 36859
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_PhotoCaptureDelegate__c__DisplayClass14_0___DidFinishProcessingPhotob__0d_:
-_p_1014:
+.word 36896
+	.no_dead_strip plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_MoveNext
+plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_MoveNext:
+_p_1016:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 36862
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus__PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus__PixUl8_iOS_Delegates_PhotoCaptureDelegate__SaveFinalImageAsyncd__16_:
-_p_1015:
+.word 36899
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_:
+_p_1017:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 36888
-	.no_dead_strip plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_MoveNext
-plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_MoveNext:
-_p_1016:
+.word 36902
+	.no_dead_strip plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_MoveNext
+plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_MoveNext:
+_p_1018:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 36915
-	.no_dead_strip plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_MoveNext
-plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_MoveNext:
-_p_1017:
+.word 36928
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_:
+_p_1019:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 36918
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c___get_AwaitPhotoOppotunityb__3_0d_:
-_p_1018:
+.word 36931
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus__PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus__PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_:
+_p_1020:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 36921
-	.no_dead_strip plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_MoveNext
-plt_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_MoveNext:
-_p_1019:
+.word 36957
+	.no_dead_strip plt_PixUl8_iOS_Services_AdService__ShowAdAsyncd__1_MoveNext
+plt_PixUl8_iOS_Services_AdService__ShowAdAsyncd__1_MoveNext:
+_p_1021:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 36947
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__c__DisplayClass15_0___DidFinishProcessingPhotob__0d_:
-_p_1020:
+.word 36984
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_MoveNext
+plt_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_MoveNext:
+_p_1022:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 36950
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus__PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus__PixUl8_iOS_Delegates_HDRPhotoCaptureDelegate__SaveFinalImageAsyncd__19_:
-_p_1021:
+.word 36987
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_MoveNext
+plt_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_MoveNext:
+_p_1023:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 36976
-	.no_dead_strip plt_PixUl8_iOS_Services_AdService__ShowAdAsyncd__1_MoveNext
-plt_PixUl8_iOS_Services_AdService__ShowAdAsyncd__1_MoveNext:
-_p_1022:
+.word 36990
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview__TakePhotoAsyncd__80_MoveNext
+plt_PixUl8_iOS_UIViews_UICameraPreview__TakePhotoAsyncd__80_MoveNext:
+_p_1024:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 37003
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_MoveNext
-plt_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_MoveNext:
-_p_1023:
+.word 36993
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview__UpdaterAsyncd__84_MoveNext
+plt_PixUl8_iOS_UIViews_UICameraPreview__UpdaterAsyncd__84_MoveNext:
+_p_1025:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 37006
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_MoveNext
-plt_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_MoveNext:
-_p_1024:
+.word 36996
+	.no_dead_strip plt__rgctx_fetch_228
+plt__rgctx_fetch_228:
+_p_1026:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 37009
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview__TakePhotoAsyncd__80_MoveNext
-plt_PixUl8_iOS_UIViews_UICameraPreview__TakePhotoAsyncd__80_MoveNext:
-_p_1025:
+.word 37020
+	.no_dead_strip plt__rgctx_fetch_229
+plt__rgctx_fetch_229:
+_p_1027:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 37012
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview__UpdaterAsyncd__84_MoveNext
-plt_PixUl8_iOS_UIViews_UICameraPreview__UpdaterAsyncd__84_MoveNext:
-_p_1026:
+.word 37048
+	.no_dead_strip plt__rgctx_fetch_230
+plt__rgctx_fetch_230:
+_p_1028:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 37015
-	.no_dead_strip plt__rgctx_fetch_228
-plt__rgctx_fetch_228:
-_p_1027:
+.word 37102
+	.no_dead_strip plt__rgctx_fetch_231
+plt__rgctx_fetch_231:
+_p_1029:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 37039
-	.no_dead_strip plt__rgctx_fetch_229
-plt__rgctx_fetch_229:
-_p_1028:
+.word 37123
+	.no_dead_strip plt__rgctx_fetch_232
+plt__rgctx_fetch_232:
+_p_1030:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 37067
-	.no_dead_strip plt__rgctx_fetch_230
-plt__rgctx_fetch_230:
-_p_1029:
+.word 37135
+	.no_dead_strip plt__rgctx_fetch_233
+plt__rgctx_fetch_233:
+_p_1031:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 37121
-	.no_dead_strip plt__rgctx_fetch_231
-plt__rgctx_fetch_231:
-_p_1030:
+.word 37162
+	.no_dead_strip plt_System_Linq_Error_ArgumentNull_string
+plt_System_Linq_Error_ArgumentNull_string:
+_p_1032:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 37142
-	.no_dead_strip plt__rgctx_fetch_232
-plt__rgctx_fetch_232:
-_p_1031:
+.word 37189
+	.no_dead_strip plt__rgctx_fetch_234
+plt__rgctx_fetch_234:
+_p_1033:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 37154
-	.no_dead_strip plt__rgctx_fetch_233
-plt__rgctx_fetch_233:
-_p_1032:
+.word 37212
+	.no_dead_strip plt__rgctx_fetch_235
+plt__rgctx_fetch_235:
+_p_1034:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 37181
-	.no_dead_strip plt_System_Linq_Error_ArgumentNull_string
-plt_System_Linq_Error_ArgumentNull_string:
-_p_1033:
+.word 37237
+	.no_dead_strip plt__rgctx_fetch_236
+plt__rgctx_fetch_236:
+_p_1035:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 37208
-	.no_dead_strip plt__rgctx_fetch_234
-plt__rgctx_fetch_234:
-_p_1034:
+.word 37280
+	.no_dead_strip plt__rgctx_fetch_237
+plt__rgctx_fetch_237:
+_p_1036:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 37231
-	.no_dead_strip plt__rgctx_fetch_235
-plt__rgctx_fetch_235:
-_p_1035:
+.word 37290
+	.no_dead_strip plt__rgctx_fetch_238
+plt__rgctx_fetch_238:
+_p_1037:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 37256
-	.no_dead_strip plt__rgctx_fetch_236
-plt__rgctx_fetch_236:
-_p_1036:
+.word 37315
+	.no_dead_strip plt__rgctx_fetch_239
+plt__rgctx_fetch_239:
+_p_1038:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 37299
-	.no_dead_strip plt__rgctx_fetch_237
-plt__rgctx_fetch_237:
-_p_1037:
+.word 37352
+	.no_dead_strip plt__rgctx_fetch_240
+plt__rgctx_fetch_240:
+_p_1039:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 37309
-	.no_dead_strip plt__rgctx_fetch_238
-plt__rgctx_fetch_238:
-_p_1038:
+.word 37364
+	.no_dead_strip plt__rgctx_fetch_241
+plt__rgctx_fetch_241:
+_p_1040:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 37334
-	.no_dead_strip plt__rgctx_fetch_239
-plt__rgctx_fetch_239:
-_p_1039:
+.word 37384
+	.no_dead_strip plt__rgctx_fetch_242
+plt__rgctx_fetch_242:
+_p_1041:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 37371
-	.no_dead_strip plt__rgctx_fetch_240
-plt__rgctx_fetch_240:
-_p_1040:
+.word 37396
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_MoveNext
+plt_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_MoveNext:
+_p_1042:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 37383
-	.no_dead_strip plt__rgctx_fetch_241
-plt__rgctx_fetch_241:
-_p_1041:
+.word 37423
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_MoveNext
+plt_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_MoveNext:
+_p_1043:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 37403
-	.no_dead_strip plt__rgctx_fetch_242
-plt__rgctx_fetch_242:
-_p_1042:
+.word 37426
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_MoveNext
+plt_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_MoveNext:
+_p_1044:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 37415
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_MoveNext
-plt_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_MoveNext:
-_p_1043:
+.word 37429
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_:
+_p_1045:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 37442
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_MoveNext
-plt_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_MoveNext:
-_p_1044:
+.word 37432
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_:
+_p_1046:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 37445
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_MoveNext
-plt_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_MoveNext:
-_p_1045:
+.word 37458
+	.no_dead_strip plt__rgctx_fetch_243
+plt__rgctx_fetch_243:
+_p_1047:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 37448
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__OpenGalleryAsyncd__76_:
-_p_1046:
+.word 37506
+	.no_dead_strip plt__rgctx_fetch_244
+plt__rgctx_fetch_244:
+_p_1048:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 37451
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__HandleResponsed__79_:
-_p_1047:
+.word 37535
+	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_MoveNext
+plt_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_MoveNext:
+_p_1049:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 37477
-	.no_dead_strip plt__rgctx_fetch_243
-plt__rgctx_fetch_243:
-_p_1048:
+.word 37564
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_:
+_p_1050:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 37525
-	.no_dead_strip plt__rgctx_fetch_244
-plt__rgctx_fetch_244:
-_p_1049:
+.word 37567
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_:
+_p_1051:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 37554
-	.no_dead_strip plt_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_MoveNext
-plt_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_MoveNext:
-_p_1050:
+.word 37593
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_:
+_p_1052:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 37583
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__c__DisplayClass102_0___StartHideTaskb__0d_:
-_p_1051:
+.word 37619
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_:
+_p_1053:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 37586
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview__StartHideTaskd__102_:
-_p_1052:
+.word 37645
+	.no_dead_strip plt__rgctx_fetch_245
+plt__rgctx_fetch_245:
+_p_1054:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 37612
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___TakePhotoAsyncb__80_1d_:
-_p_1053:
+.word 37689
+	.no_dead_strip plt__rgctx_fetch_246
+plt__rgctx_fetch_246:
+_p_1055:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 37638
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_System_Runtime_CompilerServices_TaskAwaiter__PixUl8_iOS_UIViews_UICameraPreview___LockCameraOpticsb__91_0d_:
-_p_1054:
+.word 37699
+	.no_dead_strip plt__rgctx_fetch_247
+plt__rgctx_fetch_247:
+_p_1056:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 37664
-	.no_dead_strip plt__rgctx_fetch_245
-plt__rgctx_fetch_245:
-_p_1055:
+.word 37709
+	.no_dead_strip plt__rgctx_fetch_248
+plt__rgctx_fetch_248:
+_p_1057:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 37708
-	.no_dead_strip plt__rgctx_fetch_246
-plt__rgctx_fetch_246:
-_p_1056:
+.word 37752
+	.no_dead_strip plt__rgctx_fetch_249
+plt__rgctx_fetch_249:
+_p_1058:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 37718
-	.no_dead_strip plt__rgctx_fetch_247
-plt__rgctx_fetch_247:
-_p_1057:
+.word 37762
+	.no_dead_strip plt__rgctx_fetch_250
+plt__rgctx_fetch_250:
+_p_1059:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 37728
-	.no_dead_strip plt__rgctx_fetch_248
-plt__rgctx_fetch_248:
-_p_1058:
+.word 37772
+	.no_dead_strip plt__rgctx_fetch_251
+plt__rgctx_fetch_251:
+_p_1060:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 37771
-	.no_dead_strip plt__rgctx_fetch_249
-plt__rgctx_fetch_249:
-_p_1059:
+.word 37825
+	.no_dead_strip plt__rgctx_fetch_252
+plt__rgctx_fetch_252:
+_p_1061:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 37781
-	.no_dead_strip plt__rgctx_fetch_250
-plt__rgctx_fetch_250:
-_p_1060:
+.word 37837
+	.no_dead_strip plt__rgctx_fetch_253
+plt__rgctx_fetch_253:
+_p_1062:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 37791
-	.no_dead_strip plt__rgctx_fetch_251
-plt__rgctx_fetch_251:
-_p_1061:
+.word 37891
+	.no_dead_strip plt__rgctx_fetch_254
+plt__rgctx_fetch_254:
+_p_1063:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 37844
-	.no_dead_strip plt__rgctx_fetch_252
-plt__rgctx_fetch_252:
-_p_1062:
+.word 37903
+	.no_dead_strip plt__rgctx_fetch_255
+plt__rgctx_fetch_255:
+_p_1064:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 37856
-	.no_dead_strip plt__rgctx_fetch_253
-plt__rgctx_fetch_253:
-_p_1063:
+.word 37957
+	.no_dead_strip plt__rgctx_fetch_256
+plt__rgctx_fetch_256:
+_p_1065:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 37910
-	.no_dead_strip plt__rgctx_fetch_254
-plt__rgctx_fetch_254:
-_p_1064:
+.word 37969
+	.no_dead_strip plt__rgctx_fetch_257
+plt__rgctx_fetch_257:
+_p_1066:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 37922
-	.no_dead_strip plt__rgctx_fetch_255
-plt__rgctx_fetch_255:
-_p_1065:
+.word 38023
+	.no_dead_strip plt__rgctx_fetch_258
+plt__rgctx_fetch_258:
+_p_1067:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 37976
-	.no_dead_strip plt__rgctx_fetch_256
-plt__rgctx_fetch_256:
-_p_1066:
+.word 38035
+	.no_dead_strip plt__rgctx_fetch_259
+plt__rgctx_fetch_259:
+_p_1068:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 37988
-	.no_dead_strip plt__rgctx_fetch_257
-plt__rgctx_fetch_257:
-_p_1067:
+.word 38080
+	.no_dead_strip plt__rgctx_fetch_260
+plt__rgctx_fetch_260:
+_p_1069:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 38042
-	.no_dead_strip plt__rgctx_fetch_258
-plt__rgctx_fetch_258:
-_p_1068:
+.word 38105
+	.no_dead_strip plt__rgctx_fetch_261
+plt__rgctx_fetch_261:
+_p_1070:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 38054
-	.no_dead_strip plt__rgctx_fetch_259
-plt__rgctx_fetch_259:
-_p_1069:
+.word 38157
+	.no_dead_strip plt__rgctx_fetch_262
+plt__rgctx_fetch_262:
+_p_1071:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 38099
-	.no_dead_strip plt__rgctx_fetch_260
-plt__rgctx_fetch_260:
-_p_1070:
+.word 38169
+	.no_dead_strip plt__rgctx_fetch_263
+plt__rgctx_fetch_263:
+_p_1072:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 38124
-	.no_dead_strip plt__rgctx_fetch_261
-plt__rgctx_fetch_261:
-_p_1071:
+.word 38214
+	.no_dead_strip plt__rgctx_fetch_264
+plt__rgctx_fetch_264:
+_p_1073:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 38176
-	.no_dead_strip plt__rgctx_fetch_262
-plt__rgctx_fetch_262:
-_p_1072:
+.word 38224
+	.no_dead_strip plt_System_Collections_Generic_IntrospectiveSortUtilities_ThrowOrIgnoreBadComparer_object
+plt_System_Collections_Generic_IntrospectiveSortUtilities_ThrowOrIgnoreBadComparer_object:
+_p_1074:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 38188
-	.no_dead_strip plt__rgctx_fetch_263
-plt__rgctx_fetch_263:
-_p_1073:
+.word 38249
+	.no_dead_strip plt__jit_icall_mono_helper_newobj_mscorlib
+plt__jit_icall_mono_helper_newobj_mscorlib:
+_p_1075:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 38233
-	.no_dead_strip plt__rgctx_fetch_264
-plt__rgctx_fetch_264:
-_p_1074:
+.word 38254
+	.no_dead_strip plt_System_InvalidOperationException__ctor_string_System_Exception
+plt_System_InvalidOperationException__ctor_string_System_Exception:
+_p_1076:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 38243
-	.no_dead_strip plt_System_Collections_Generic_IntrospectiveSortUtilities_ThrowOrIgnoreBadComparer_object
-plt_System_Collections_Generic_IntrospectiveSortUtilities_ThrowOrIgnoreBadComparer_object:
-_p_1075:
+.word 38284
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_get_Task
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_get_Task:
+_p_1077:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 38268
-	.no_dead_strip plt__jit_icall_mono_helper_newobj_mscorlib
-plt__jit_icall_mono_helper_newobj_mscorlib:
-_p_1076:
+.word 38289
+	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action
+plt_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action:
+_p_1078:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 38273
-	.no_dead_strip plt_System_InvalidOperationException__ctor_string_System_Exception
-plt_System_InvalidOperationException__ctor_string_System_Exception:
-_p_1077:
+.word 38300
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
+_p_1079:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 38303
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_get_Task
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_get_Task:
-_p_1078:
+.word 38305
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
+_p_1080:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 38308
-	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action
-plt_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action:
-_p_1079:
+.word 38325
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult:
+_p_1081:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 38319
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
-_p_1080:
+.word 38345
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool:
+_p_1082:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 38324
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
-_p_1081:
+.word 38365
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor
+plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor:
+_p_1083:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 38344
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult:
-_p_1082:
+.word 38385
+	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult
+plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult:
+_p_1084:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 38364
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool:
-_p_1083:
+.word 38405
+	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
+plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
+_p_1085:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 38384
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor
-plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor:
-_p_1084:
+.word 38425
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
+_p_1086:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 38404
-	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult
-plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult:
-_p_1085:
+.word 38445
+	.no_dead_strip plt_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions
+plt_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions:
+_p_1087:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 38424
-	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
-plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
-_p_1086:
+.word 38465
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskScheduler
+plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskScheduler:
+_p_1088:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 38444
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
-_p_1087:
+.word 38487
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_DangerousSetResult_System_Threading_Tasks_VoidTaskResult
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_DangerousSetResult_System_Threading_Tasks_VoidTaskResult:
+_p_1089:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 38464
-	.no_dead_strip plt_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions
-plt_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions:
-_p_1088:
+.word 38507
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_object_System_Threading_Tasks_TaskCreationOptions
+plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_object_System_Threading_Tasks_TaskCreationOptions:
+_p_1090:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 38484
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskScheduler
-plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskScheduler:
-_p_1089:
+.word 38527
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_object_System_Threading_Tasks_TaskCreationOptions
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_object_System_Threading_Tasks_TaskCreationOptions:
+_p_1091:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 38506
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_DangerousSetResult_System_Threading_Tasks_VoidTaskResult
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_DangerousSetResult_System_Threading_Tasks_VoidTaskResult:
-_p_1090:
+.word 38547
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
+plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
+_p_1092:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 38526
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_object_System_Threading_Tasks_TaskCreationOptions
-plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_object_System_Threading_Tasks_TaskCreationOptions:
-_p_1091:
+.word 38567
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor:
+_p_1093:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 38546
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_object_System_Threading_Tasks_TaskCreationOptions
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_object_System_Threading_Tasks_TaskCreationOptions:
-_p_1092:
+.word 38587
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetTaskForResult_System_Threading_Tasks_VoidTaskResult
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetTaskForResult_System_Threading_Tasks_VoidTaskResult:
+_p_1094:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 38566
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
-plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
-_p_1093:
+.word 38607
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetResult_System_Threading_Tasks_VoidTaskResult
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetResult_System_Threading_Tasks_VoidTaskResult:
+_p_1095:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 38586
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor:
-_p_1094:
+.word 38627
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult:
+_p_1096:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 38606
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetTaskForResult_System_Threading_Tasks_VoidTaskResult
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetTaskForResult_System_Threading_Tasks_VoidTaskResult:
-_p_1095:
+.word 38647
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult
+plt_System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult:
+_p_1097:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 38626
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetResult_System_Threading_Tasks_VoidTaskResult
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetResult_System_Threading_Tasks_VoidTaskResult:
-_p_1096:
+.word 38667
+	.no_dead_strip plt__rgctx_fetch_265
+plt__rgctx_fetch_265:
+_p_1098:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 38646
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult:
-_p_1097:
+.word 38706
+	.no_dead_strip plt__rgctx_fetch_266
+plt__rgctx_fetch_266:
+_p_1099:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 38666
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult
-plt_System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult:
-_p_1098:
+.word 38716
+	.no_dead_strip plt__rgctx_fetch_267
+plt__rgctx_fetch_267:
+_p_1100:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 38686
-	.no_dead_strip plt__rgctx_fetch_265
-plt__rgctx_fetch_265:
-_p_1099:
+.word 38735
+	.no_dead_strip plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType
+plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType:
+_p_1101:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 38725
-	.no_dead_strip plt__rgctx_fetch_266
-plt__rgctx_fetch_266:
-_p_1100:
+.word 38747
+	.no_dead_strip plt_System_Enum_GetUnderlyingType_System_Type
+plt_System_Enum_GetUnderlyingType_System_Type:
+_p_1102:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 38735
-	.no_dead_strip plt__rgctx_fetch_267
-plt__rgctx_fetch_267:
-_p_1101:
+.word 38752
+	.no_dead_strip plt_System_Type_GetTypeCode_System_Type
+plt_System_Type_GetTypeCode_System_Type:
+_p_1103:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 38754
-	.no_dead_strip plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType
-plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType:
-_p_1102:
+.word 38757
+	.no_dead_strip plt__rgctx_fetch_268
+plt__rgctx_fetch_268:
+_p_1104:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 38766
-	.no_dead_strip plt_System_Enum_GetUnderlyingType_System_Type
-plt_System_Enum_GetUnderlyingType_System_Type:
-_p_1103:
+.word 38771
+	.no_dead_strip plt_System_Collections_Generic_ObjectEqualityComparer_1_T_REF__ctor
+plt_System_Collections_Generic_ObjectEqualityComparer_1_T_REF__ctor:
+_p_1105:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 38771
-	.no_dead_strip plt_System_Type_GetTypeCode_System_Type
-plt_System_Type_GetTypeCode_System_Type:
-_p_1104:
+.word 38783
+	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_UnsafeOnCompleted_System_Action
+plt_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_UnsafeOnCompleted_System_Action:
+_p_1106:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 38776
-	.no_dead_strip plt__rgctx_fetch_268
-plt__rgctx_fetch_268:
-_p_1105:
+.word 38804
+	.no_dead_strip plt__rgctx_fetch_269
+plt__rgctx_fetch_269:
+_p_1107:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 38790
-	.no_dead_strip plt_System_Collections_Generic_ObjectEqualityComparer_1_T_REF__ctor
-plt_System_Collections_Generic_ObjectEqualityComparer_1_T_REF__ctor:
-_p_1106:
+.word 38858
+	.no_dead_strip plt__rgctx_fetch_270
+plt__rgctx_fetch_270:
+_p_1108:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 38802
-	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_UnsafeOnCompleted_System_Action
-plt_System_Runtime_CompilerServices_TaskAwaiter_1_Photos_PHAuthorizationStatus_UnsafeOnCompleted_System_Action:
-_p_1107:
+.word 38870
+	.no_dead_strip plt__rgctx_fetch_271
+plt__rgctx_fetch_271:
+_p_1109:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 38823
-	.no_dead_strip plt__rgctx_fetch_269
-plt__rgctx_fetch_269:
-_p_1108:
+.word 38909
+	.no_dead_strip plt__rgctx_fetch_272
+plt__rgctx_fetch_272:
+_p_1110:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 38877
-	.no_dead_strip plt__rgctx_fetch_270
-plt__rgctx_fetch_270:
-_p_1109:
+.word 38921
+	.no_dead_strip plt__rgctx_fetch_273
+plt__rgctx_fetch_273:
+_p_1111:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 38889
-	.no_dead_strip plt__rgctx_fetch_271
-plt__rgctx_fetch_271:
-_p_1110:
+.word 38948
+	.no_dead_strip plt__jit_icall_mono_ldftn
+plt__jit_icall_mono_ldftn:
+_p_1112:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 38928
-	.no_dead_strip plt__rgctx_fetch_272
-plt__rgctx_fetch_272:
-_p_1111:
+.word 38978
+	.no_dead_strip plt__rgctx_fetch_274
+plt__rgctx_fetch_274:
+_p_1113:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 38940
-	.no_dead_strip plt__rgctx_fetch_273
-plt__rgctx_fetch_273:
-_p_1112:
+.word 39007
+	.no_dead_strip plt__rgctx_fetch_275
+plt__rgctx_fetch_275:
+_p_1114:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 38967
-	.no_dead_strip plt__jit_icall_mono_ldftn
-plt__jit_icall_mono_ldftn:
-_p_1113:
+.word 39019
+	.no_dead_strip plt__rgctx_fetch_276
+plt__rgctx_fetch_276:
+_p_1115:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 38997
-	.no_dead_strip plt__rgctx_fetch_274
-plt__rgctx_fetch_274:
-_p_1114:
+.word 39064
+	.no_dead_strip plt__rgctx_fetch_277
+plt__rgctx_fetch_277:
+_p_1116:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 39026
-	.no_dead_strip plt__rgctx_fetch_275
-plt__rgctx_fetch_275:
-_p_1115:
+.word 39076
+	.no_dead_strip plt__rgctx_fetch_278
+plt__rgctx_fetch_278:
+_p_1117:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 39038
-	.no_dead_strip plt__rgctx_fetch_276
-plt__rgctx_fetch_276:
-_p_1116:
+.word 39124
+	.no_dead_strip plt__rgctx_fetch_279
+plt__rgctx_fetch_279:
+_p_1118:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 39083
-	.no_dead_strip plt__rgctx_fetch_277
-plt__rgctx_fetch_277:
-_p_1117:
+.word 39167
+	.no_dead_strip plt__rgctx_fetch_280
+plt__rgctx_fetch_280:
+_p_1119:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 39095
-	.no_dead_strip plt__rgctx_fetch_278
-plt__rgctx_fetch_278:
-_p_1118:
+.word 39177
+	.no_dead_strip plt__rgctx_fetch_281
+plt__rgctx_fetch_281:
+_p_1120:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 39143
-	.no_dead_strip plt__rgctx_fetch_279
-plt__rgctx_fetch_279:
-_p_1119:
+.word 39196
+	.no_dead_strip plt__rgctx_fetch_282
+plt__rgctx_fetch_282:
+_p_1121:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 39186
-	.no_dead_strip plt__rgctx_fetch_280
-plt__rgctx_fetch_280:
-_p_1120:
+.word 39217
+	.no_dead_strip plt__rgctx_fetch_283
+plt__rgctx_fetch_283:
+_p_1122:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 39196
-	.no_dead_strip plt__rgctx_fetch_281
-plt__rgctx_fetch_281:
-_p_1121:
+.word 39229
+	.no_dead_strip plt__rgctx_fetch_284
+plt__rgctx_fetch_284:
+_p_1123:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 39215
-	.no_dead_strip plt__rgctx_fetch_282
-plt__rgctx_fetch_282:
-_p_1122:
+.word 39274
+	.no_dead_strip plt__rgctx_fetch_285
+plt__rgctx_fetch_285:
+_p_1124:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 39236
-	.no_dead_strip plt__rgctx_fetch_283
-plt__rgctx_fetch_283:
-_p_1123:
+.word 39284
+	.no_dead_strip plt__rgctx_fetch_286
+plt__rgctx_fetch_286:
+_p_1125:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 39248
-	.no_dead_strip plt__rgctx_fetch_284
-plt__rgctx_fetch_284:
-_p_1124:
+.word 39303
+	.no_dead_strip plt__rgctx_fetch_287
+plt__rgctx_fetch_287:
+_p_1126:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 39293
-	.no_dead_strip plt__rgctx_fetch_285
-plt__rgctx_fetch_285:
-_p_1125:
+.word 39324
+	.no_dead_strip plt__rgctx_fetch_288
+plt__rgctx_fetch_288:
+_p_1127:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 39303
-	.no_dead_strip plt__rgctx_fetch_286
-plt__rgctx_fetch_286:
-_p_1126:
+.word 39336
+	.no_dead_strip plt__rgctx_fetch_289
+plt__rgctx_fetch_289:
+_p_1128:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 39322
-	.no_dead_strip plt__rgctx_fetch_287
-plt__rgctx_fetch_287:
-_p_1127:
+.word 39390
+	.no_dead_strip plt__rgctx_fetch_290
+plt__rgctx_fetch_290:
+_p_1129:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 39343
-	.no_dead_strip plt__rgctx_fetch_288
-plt__rgctx_fetch_288:
-_p_1128:
+.word 39402
+	.no_dead_strip plt__rgctx_fetch_291
+plt__rgctx_fetch_291:
+_p_1130:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 39355
-	.no_dead_strip plt__rgctx_fetch_289
-plt__rgctx_fetch_289:
-_p_1129:
+.word 39429
+	.no_dead_strip plt__rgctx_fetch_292
+plt__rgctx_fetch_292:
+_p_1131:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 39409
-	.no_dead_strip plt__rgctx_fetch_290
-plt__rgctx_fetch_290:
-_p_1130:
+.word 39439
+	.no_dead_strip plt__rgctx_fetch_293
+plt__rgctx_fetch_293:
+_p_1132:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 39421
-	.no_dead_strip plt__rgctx_fetch_291
-plt__rgctx_fetch_291:
-_p_1131:
+.word 39491
+	.no_dead_strip plt__rgctx_fetch_294
+plt__rgctx_fetch_294:
+_p_1133:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 39448
-	.no_dead_strip plt__rgctx_fetch_292
-plt__rgctx_fetch_292:
-_p_1132:
+.word 39503
+	.no_dead_strip plt__rgctx_fetch_295
+plt__rgctx_fetch_295:
+_p_1134:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 39458
-	.no_dead_strip plt__rgctx_fetch_293
-plt__rgctx_fetch_293:
-_p_1133:
+.word 39548
+	.no_dead_strip plt__rgctx_fetch_296
+plt__rgctx_fetch_296:
+_p_1135:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 39510
-	.no_dead_strip plt__rgctx_fetch_294
-plt__rgctx_fetch_294:
-_p_1134:
+.word 39560
+	.no_dead_strip plt__rgctx_fetch_297
+plt__rgctx_fetch_297:
+_p_1136:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 39522
-	.no_dead_strip plt__rgctx_fetch_295
-plt__rgctx_fetch_295:
-_p_1135:
+.word 39596
+	.no_dead_strip plt__jit_icall_mono_ldvirtfn_gshared
+plt__jit_icall_mono_ldvirtfn_gshared:
+_p_1137:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 39567
-	.no_dead_strip plt__rgctx_fetch_296
-plt__rgctx_fetch_296:
-_p_1136:
+.word 39623
+	.no_dead_strip plt__rgctx_fetch_298
+plt__rgctx_fetch_298:
+_p_1138:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 39579
-	.no_dead_strip plt__rgctx_fetch_297
-plt__rgctx_fetch_297:
-_p_1137:
+.word 39656
+	.no_dead_strip plt__rgctx_fetch_299
+plt__rgctx_fetch_299:
+_p_1139:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 39615
-	.no_dead_strip plt__jit_icall_mono_ldvirtfn_gshared
-plt__jit_icall_mono_ldvirtfn_gshared:
-_p_1138:
+.word 39668
+	.no_dead_strip plt__rgctx_fetch_300
+plt__rgctx_fetch_300:
+_p_1140:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 39642
-	.no_dead_strip plt__rgctx_fetch_298
-plt__rgctx_fetch_298:
-_p_1139:
+.word 39695
+	.no_dead_strip plt__rgctx_fetch_301
+plt__rgctx_fetch_301:
+_p_1141:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 39675
-	.no_dead_strip plt__rgctx_fetch_299
-plt__rgctx_fetch_299:
-_p_1140:
+.word 39705
+	.no_dead_strip plt__rgctx_fetch_302
+plt__rgctx_fetch_302:
+_p_1142:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 39687
-	.no_dead_strip plt__rgctx_fetch_300
-plt__rgctx_fetch_300:
-_p_1141:
+.word 39748
+	.no_dead_strip plt__rgctx_fetch_303
+plt__rgctx_fetch_303:
+_p_1143:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 39714
-	.no_dead_strip plt__rgctx_fetch_301
-plt__rgctx_fetch_301:
-_p_1142:
+.word 39758
+	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
+plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
+_p_1144:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 39724
-	.no_dead_strip plt__rgctx_fetch_302
-plt__rgctx_fetch_302:
-_p_1143:
+.word 39783
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
+_p_1145:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 39767
-	.no_dead_strip plt__rgctx_fetch_303
-plt__rgctx_fetch_303:
-_p_1144:
+.word 39803
+	.no_dead_strip plt__rgctx_fetch_304
+plt__rgctx_fetch_304:
+_p_1146:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 39777
-	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
-plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
-_p_1145:
+.word 39845
+	.no_dead_strip plt__rgctx_fetch_305
+plt__rgctx_fetch_305:
+_p_1147:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 39802
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
-_p_1146:
+.word 39857
+	.no_dead_strip plt__rgctx_fetch_306
+plt__rgctx_fetch_306:
+_p_1148:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 39822
-	.no_dead_strip plt__rgctx_fetch_304
-plt__rgctx_fetch_304:
-_p_1147:
+.word 39869
+	.no_dead_strip plt__rgctx_fetch_307
+plt__rgctx_fetch_307:
+_p_1149:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 39864
-	.no_dead_strip plt__rgctx_fetch_305
-plt__rgctx_fetch_305:
-_p_1148:
+.word 39916
+	.no_dead_strip plt__rgctx_fetch_308
+plt__rgctx_fetch_308:
+_p_1150:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 39876
-	.no_dead_strip plt__rgctx_fetch_306
-plt__rgctx_fetch_306:
-_p_1149:
+.word 39965
+	.no_dead_strip plt__rgctx_fetch_309
+plt__rgctx_fetch_309:
+_p_1151:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 39888
-	.no_dead_strip plt__rgctx_fetch_307
-plt__rgctx_fetch_307:
-_p_1150:
+.word 39977
+	.no_dead_strip plt__rgctx_fetch_310
+plt__rgctx_fetch_310:
+_p_1152:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 39935
-	.no_dead_strip plt__rgctx_fetch_308
-plt__rgctx_fetch_308:
-_p_1151:
+.word 39989
+	.no_dead_strip plt__rgctx_fetch_311
+plt__rgctx_fetch_311:
+_p_1153:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 39984
-	.no_dead_strip plt__rgctx_fetch_309
-plt__rgctx_fetch_309:
-_p_1152:
+.word 40036
+	.no_dead_strip plt__rgctx_fetch_312
+plt__rgctx_fetch_312:
+_p_1154:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 39996
-	.no_dead_strip plt__rgctx_fetch_310
-plt__rgctx_fetch_310:
-_p_1153:
+.word 40046
+	.no_dead_strip plt__rgctx_fetch_313
+plt__rgctx_fetch_313:
+_p_1155:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 40008
-	.no_dead_strip plt__rgctx_fetch_311
-plt__rgctx_fetch_311:
-_p_1154:
+.word 40071
+	.no_dead_strip plt__rgctx_fetch_314
+plt__rgctx_fetch_314:
+_p_1156:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 40055
-	.no_dead_strip plt__rgctx_fetch_312
-plt__rgctx_fetch_312:
-_p_1155:
+.word 40096
+	.no_dead_strip plt__rgctx_fetch_315
+plt__rgctx_fetch_315:
+_p_1157:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 40065
-	.no_dead_strip plt__rgctx_fetch_313
-plt__rgctx_fetch_313:
-_p_1156:
+.word 40121
+	.no_dead_strip plt__rgctx_fetch_316
+plt__rgctx_fetch_316:
+_p_1158:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 40090
-	.no_dead_strip plt__rgctx_fetch_314
-plt__rgctx_fetch_314:
-_p_1157:
+.word 40146
+	.no_dead_strip plt__rgctx_fetch_317
+plt__rgctx_fetch_317:
+_p_1159:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 40115
-	.no_dead_strip plt__rgctx_fetch_315
-plt__rgctx_fetch_315:
-_p_1158:
+.word 40193
+	.no_dead_strip plt__rgctx_fetch_318
+plt__rgctx_fetch_318:
+_p_1160:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 40140
-	.no_dead_strip plt__rgctx_fetch_316
-plt__rgctx_fetch_316:
-_p_1159:
+.word 40216
+	.no_dead_strip plt__rgctx_fetch_319
+plt__rgctx_fetch_319:
+_p_1161:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 40165
-	.no_dead_strip plt__rgctx_fetch_317
-plt__rgctx_fetch_317:
-_p_1160:
+.word 40228
+	.no_dead_strip plt__rgctx_fetch_320
+plt__rgctx_fetch_320:
+_p_1162:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 40212
-	.no_dead_strip plt__rgctx_fetch_318
-plt__rgctx_fetch_318:
-_p_1161:
+.word 40251
+	.no_dead_strip plt__rgctx_fetch_321
+plt__rgctx_fetch_321:
+_p_1163:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 40235
-	.no_dead_strip plt__rgctx_fetch_319
-plt__rgctx_fetch_319:
-_p_1162:
+.word 40263
+	.no_dead_strip plt__rgctx_fetch_322
+plt__rgctx_fetch_322:
+_p_1164:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 40247
-	.no_dead_strip plt__rgctx_fetch_320
-plt__rgctx_fetch_320:
-_p_1163:
+.word 40314
+	.no_dead_strip plt__rgctx_fetch_323
+plt__rgctx_fetch_323:
+_p_1165:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 40270
-	.no_dead_strip plt__rgctx_fetch_321
-plt__rgctx_fetch_321:
-_p_1164:
+.word 40337
+	.no_dead_strip plt__rgctx_fetch_324
+plt__rgctx_fetch_324:
+_p_1166:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 40282
-	.no_dead_strip plt__rgctx_fetch_322
-plt__rgctx_fetch_322:
-_p_1165:
+.word 40349
+	.no_dead_strip plt__rgctx_fetch_325
+plt__rgctx_fetch_325:
+_p_1167:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 40333
-	.no_dead_strip plt__rgctx_fetch_323
-plt__rgctx_fetch_323:
-_p_1166:
+.word 40372
+	.no_dead_strip plt__rgctx_fetch_326
+plt__rgctx_fetch_326:
+_p_1168:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 40356
-	.no_dead_strip plt__rgctx_fetch_324
-plt__rgctx_fetch_324:
-_p_1167:
+.word 40384
+	.no_dead_strip plt__rgctx_fetch_327
+plt__rgctx_fetch_327:
+_p_1169:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 40368
-	.no_dead_strip plt__rgctx_fetch_325
-plt__rgctx_fetch_325:
-_p_1168:
+.word 40431
+	.no_dead_strip plt__rgctx_fetch_328
+plt__rgctx_fetch_328:
+_p_1170:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 40391
-	.no_dead_strip plt__rgctx_fetch_326
-plt__rgctx_fetch_326:
-_p_1169:
+.word 40441
+	.no_dead_strip plt__rgctx_fetch_329
+plt__rgctx_fetch_329:
+_p_1171:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 40403
-	.no_dead_strip plt__rgctx_fetch_327
-plt__rgctx_fetch_327:
-_p_1170:
+.word 40466
+	.no_dead_strip plt__rgctx_fetch_330
+plt__rgctx_fetch_330:
+_p_1172:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
-.word 40450
-	.no_dead_strip plt__rgctx_fetch_328
-plt__rgctx_fetch_328:
-_p_1171:
+.word 40509
+	.no_dead_strip plt__rgctx_fetch_331
+plt__rgctx_fetch_331:
+_p_1173:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 40460
-	.no_dead_strip plt__rgctx_fetch_329
-plt__rgctx_fetch_329:
-_p_1172:
+.word 40519
+	.no_dead_strip plt__rgctx_fetch_332
+plt__rgctx_fetch_332:
+_p_1174:
 adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
 add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 40485
-	.no_dead_strip plt__rgctx_fetch_330
-plt__rgctx_fetch_330:
-_p_1173:
-adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
-add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1824]
-br x16
-.word 40528
-	.no_dead_strip plt__rgctx_fetch_331
-plt__rgctx_fetch_331:
-_p_1174:
-adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
-add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1832]
-br x16
-.word 40538
-	.no_dead_strip plt__rgctx_fetch_332
-plt__rgctx_fetch_332:
-_p_1175:
-adrp x16, mono_aot_PixUL8_iOS_got@PAGE+16384
-add x16, x16, mono_aot_PixUL8_iOS_got@PAGEOFF
-ldr x16, [x16, #1840]
-br x16
-.word 40563
+.word 40544
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_PixUL8_iOS_got, 18232
+.lcomm mono_aot_PixUL8_iOS_got, 18208
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -99372,7 +99339,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "A9782970-018F-429B-BC4B-EF3ABC6675B9"
+	.asciz "E8120C9C-7D80-4328-89A7-2DA67569B257"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -99451,13 +99418,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 1103,18232,1176,979,66,387000831,0,61159
-	.long 128,8,8,8,0,25,83480,22312
+	.long 1101,18208,1175,979,66,387000831,0,61140
+	.long 128,8,8,8,0,25,83464,22312
 	.long 20648,16440,0,18888,20448,17208,0,12744
 	.long 1344,22304,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 67,253,124,248,211,253,82,160,153,125,226,11,32,152,124,76
+	.byte 121,209,97,50,216,94,233,149,57,141,224,137,218,232,207,238
 	.globl _mono_aot_module_PixUL8_iOS_info
 	.align 3
 _mono_aot_module_PixUL8_iOS_info:
@@ -128323,7 +128290,7 @@ Lfde338_start:
 LDIFF_SYM4173=Lme_15e - PixUl8_iOS_Services_AdService__ShowAdAsyncd__1_MoveNext
 	.long LDIFF_SYM4173
 	.long 0
-	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,153,22,154,21
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,153,20,154,19
 	.align 3
 Lfde338_end:
 

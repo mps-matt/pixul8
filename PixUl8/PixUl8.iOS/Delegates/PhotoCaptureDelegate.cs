@@ -17,10 +17,15 @@ using UIKit;
 
 namespace PixUl8.iOS.Delegates
 {
-
+    /// <summary>
+    /// Photo capture delegate.
+    /// </summary>
     public class PhotoCaptureDelegate : AVCapturePhotoCaptureDelegate
     {
-
+        /// <summary>
+        /// Gets a value indicating whether this <see cref="T:PixUl8.iOS.Delegates.PhotoCaptureDelegate"/> can take photo.
+        /// </summary>
+        /// <value><c>true</c> if can take photo; otherwise, <c>false</c>.</value>
         public static bool CanTakePhoto
         {
             get
@@ -29,6 +34,10 @@ namespace PixUl8.iOS.Delegates
             }
         }
 
+        /// <summary>
+        /// Gets the await photo oppotunity.
+        /// </summary>
+        /// <value>The await photo oppotunity.</value>
         public static Task AwaitPhotoOppotunity
         {
             get
@@ -41,24 +50,46 @@ namespace PixUl8.iOS.Delegates
             }
         }
 
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="T:PixUl8.iOS.Delegates.PhotoCaptureDelegate"/> is34 enabled.
+        /// </summary>
+        /// <value><c>true</c> if is34 enabled; otherwise, <c>false</c>.</value>
         public static bool Is34Enabled
         {
             get; set;
         }
 
 
-
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="T:PixUl8.iOS.Delegates.PhotoCaptureDelegate"/> is
+        /// front facing.
+        /// </summary>
+        /// <value><c>true</c> if is front facing; otherwise, <c>false</c>.</value>
         public bool IsFrontFacing
         {
             get; set;
         }
 
+        /// <summary>
+        /// The images in bracket.
+        /// </summary>
         private static List<UIImage> _imagesInBracket = new List<UIImage>();
+        /// <summary>
+        /// The open cv objective -c lib
+        /// </summary>
         private OpenCV _openCV = new OpenCV();
 
         
 
-
+        /// <summary>
+        /// Dids the finish processing photo.
+        /// </summary>
+        /// <param name="captureOutput">Capture output.</param>
+        /// <param name="photoSampleBuffer">Photo sample buffer.</param>
+        /// <param name="previewPhotoSampleBuffer">Preview photo sample buffer.</param>
+        /// <param name="resolvedSettings">Resolved settings.</param>
+        /// <param name="bracketSettings">Bracket settings.</param>
+        /// <param name="error">Error.</param>
         [Export("captureOutput:didFinishProcessingPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:")]
         public override void DidFinishProcessingPhoto(AVCapturePhotoOutput captureOutput,
                                        CMSampleBuffer photoSampleBuffer, CMSampleBuffer previewPhotoSampleBuffer,
@@ -108,6 +139,7 @@ namespace PixUl8.iOS.Delegates
             }
             finally
             {
+                //Clean up
                 imageData?.Dispose();
 
                 photoSampleBuffer?.Dispose();
@@ -119,6 +151,11 @@ namespace PixUl8.iOS.Delegates
             }
         }
 
+        /// <summary>
+        /// Merges the images.
+        /// </summary>
+        /// <returns>The images.</returns>
+        /// <param name="images">Images.</param>
         public UIImage MergeImages(List<UIImage> images)
         {
             UIImage fused = null;
@@ -144,6 +181,13 @@ namespace PixUl8.iOS.Delegates
             }
         }
 
+        /// <summary>
+        /// Saves the final image async.
+        /// </summary>
+        /// <returns>The final image async.</returns>
+        /// <param name="finale">Finale.</param>
+        /// <param name="arr">Arr.</param>
+        /// <param name="orientation">Orientation.</param>
         public async Task SaveFinalImageAsync(UIImage finale, List<UIImage> arr, UIDeviceOrientation orientation)
         {
             NSData imageAsData = null;
@@ -156,6 +200,7 @@ namespace PixUl8.iOS.Delegates
                 uncropped = finale;
                 cropped = CropToBounds(uncropped, UICameraPreview.BOUNDS.Size);
 
+                //Sort out photo orientation
                 switch(orientation)
                 {
                     case UIDeviceOrientation.LandscapeLeft:
@@ -192,9 +237,10 @@ namespace PixUl8.iOS.Delegates
                     default:
                         break;
                 }
-
+                //Request access to device photo lib
                 var status = await PHPhotoLibrary.RequestAuthorizationAsync();
 
+                //Save photo
                 if (Is34Enabled)
                 {
                     imageAsData = uncropped.AsJPEG();
@@ -225,7 +271,7 @@ namespace PixUl8.iOS.Delegates
 
 
                 imageAsData = cropped.AsJPEG();
-
+                //Save final photo
                 if (status == PHAuthorizationStatus.Authorized)
                 {
                     NSError err;
@@ -258,6 +304,7 @@ namespace PixUl8.iOS.Delegates
             }
             finally
             {
+                //Clean up
                 foreach (var image in arr)
                     image.Dispose();
 
@@ -270,6 +317,12 @@ namespace PixUl8.iOS.Delegates
             }
         }
 
+        /// <summary>
+        /// Scales the image to bounds.
+        /// </summary>
+        /// <returns>The image to bounds.</returns>
+        /// <param name="image">Image.</param>
+        /// <param name="size">Size.</param>
         public UIImage ScaleImageToBounds(UIImage image, CGSize size)
         {
             try
@@ -297,6 +350,12 @@ namespace PixUl8.iOS.Delegates
             }
         }
 
+        /// <summary>
+        /// Crops to bounds.
+        /// </summary>
+        /// <returns>The to bounds.</returns>
+        /// <param name="image">Image.</param>
+        /// <param name="size">Size.</param>
         public UIImage CropToBounds(UIImage image, CGSize size)
         {
             try
