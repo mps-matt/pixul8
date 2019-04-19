@@ -24472,7 +24472,7 @@ _mono_aot_file_info:
 	.long 288,6224,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 136,226,129,72,121,202,2,43,80,65,110,207,186,108,46,8
+	.byte 123,192,23,244,26,113,125,206,244,218,100,70,49,222,63,29
 	.globl _mono_aot_module_Toasts_Forms_Plugin_iOS_info
 	.align 3
 _mono_aot_module_Toasts_Forms_Plugin_iOS_info:

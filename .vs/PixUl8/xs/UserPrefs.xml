@@ -1,16 +1,15 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/Delegates/CropperDelegate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs">
     <Files>
-      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="1240" Column="28" />
-      <File FileName="PixUl8/PixUl8.iOS/AppDelegate.cs" Line="102" Column="32" />
+      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="464" Column="28" />
+      <File FileName="PixUl8/PixUl8.iOS/Delegates/CropperDelegate.cs" Line="59" Column="2" />
       <File FileName="PixUl8/PixUl8.iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="PixUl8/PixUl8.iOS/Delegates/CropperDelegate.cs" Line="20" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8F26E343-5B98-43A5-ADA7-D6CBE05F5DB9" />
+  <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.594cc34fe22a6ae2a5ef467001700a60305909ef" />
   <MonoDevelop.Ide.ItemProperties.PixUl8 HideGettingStarted="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8/Views/ExtensionViews/HelpPage.xaml" relfile="PixUl8/PixUl8/Views/ExtensionViews/HelpPage.xaml" line="2" column="1" />

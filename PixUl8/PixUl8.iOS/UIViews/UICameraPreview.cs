@@ -402,6 +402,8 @@ namespace PixUl8.iOS.UIViews
                     break;
             }
 
+
+
             // get common info (shared between images and video)
             NSUrl referenceURL = e.Info[new NSString("UIImagePickerControllerReferenceUrl")] as NSUrl;
             if (referenceURL != null)
@@ -409,18 +411,15 @@ namespace PixUl8.iOS.UIViews
 
             // if it was an image, get the other image info
             bool shouldShow = false;
-            TOCropViewController cropper = null;
+            UIImage originalImage = null;
             if (isImage)
             {
                 // get the original image
-                UIImage originalImage = e.Info[UIImagePickerController.OriginalImage] as UIImage;
+                originalImage = e.Info[UIImagePickerController.OriginalImage] as UIImage;
                 if (originalImage != null)
                 {
                     shouldShow = true;
                     // do something with the image
-                    cropper = new TOCropViewController(TOCropViewCroppingStyle.Default, originalImage);
-                    cropper.Delegate = cropperDelegate;
-
                 }
 
 
@@ -430,8 +429,56 @@ namespace PixUl8.iOS.UIViews
             imagePicker.DismissModalViewController(true);
 
             if (shouldShow)
-                UIApplication.SharedApplication.KeyWindow.
-                    RootViewController.PresentViewController(cropper, true, null);
+                HandleResponse(originalImage, e.PHAsset);
+
+        }
+
+        private async Task HandleResponse(UIImage image, PHAsset asset)
+        {
+            await Task.Delay(700);
+            var actionSheetConfig = new ActionSheetConfig();
+            actionSheetConfig.Options = new List<ActionSheetOption>()
+            {
+                new ActionSheetOption("Edit Photo", () =>
+                {
+                    TOCropViewController cropper = null;
+                    cropper = new TOCropViewController(TOCropViewCroppingStyle.Default, image);
+                    cropper.Delegate = cropperDelegate;
+                    UIApplication.SharedApplication.KeyWindow.RootViewController.PresentViewController(cropper, true, null);
+                }),
+                new ActionSheetOption("Delete Photo", async () =>
+                {
+                    var status = await PHPhotoLibrary.RequestAuthorizationAsync();
+                    if (status == PHAuthorizationStatus.Authorized)
+                    {
+                        var lib = PHPhotoLibrary.SharedPhotoLibrary;
+                        lib.PerformChanges(() =>
+                        {
+                            List<PHAsset> assets = new List<PHAsset>();
+                            assets.Add(asset);
+                            PHAssetChangeRequest.DeleteAssets(assets.ToArray());
+                            Debug.WriteLine("photo delete requested");
+                        }, (success, error) => {
+                            if (error != null)
+                                Debug.WriteLine("could not delete photo");
+                            else
+                                Debug.WriteLine("photo deleted");
+
+                            }
+                        );
+                        
+                    }
+                    else
+                    {
+                        Debug.WriteLine("Not authorized to delete photo");
+                    }
+
+                })
+            };
+            actionSheetConfig.Cancel = new ActionSheetOption("Cancel");
+
+            actionSheetConfig.Title = "Select Action";
+            var item = UserDialogs.Instance.ActionSheet(actionSheetConfig);
         }
 
         private async Task TakePhotoAsync()
