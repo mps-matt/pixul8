@@ -16,43 +16,60 @@ namespace PixUl8.iOS.Delegates
 
         public override async void DidCropImageToRect(TOCropViewController cropViewController, CGRect cropRect, nint angle)
         {
-            cropViewController.PresentingViewController.DismissViewController(true, null);
-            var status = await PHPhotoLibrary.RequestAuthorizationAsync();
+            UIImage cropped = null;
+            UIImage uncropped = null;
+            NSData imageAsData = null;
 
-            var uncropped = cropViewController.Image;
-            var cropped = CropImage(uncropped, (int)cropRect.X, (int)cropRect.Y, (int)cropRect.Width, (int)cropRect.Height);
 
-            var imageAsData = cropped.AsJPEG();
-
-            if (status == PHAuthorizationStatus.Authorized)
+            try
             {
-                NSError err;
-                bool success = PHPhotoLibrary.SharedPhotoLibrary.PerformChangesAndWait(() =>
-                {
-                    PHAssetCreationRequest.CreationRequestForAsset().AddResource(PHAssetResourceType.Photo, imageAsData, null);
-                }, out err);
+                cropViewController.PresentingViewController.DismissViewController(true, null);
+                var status = await PHPhotoLibrary.RequestAuthorizationAsync();
 
-                if (!success)
+                uncropped = cropViewController.Image;
+                cropped = CropImage(uncropped, (int)cropRect.X, (int)cropRect.Y, (int)cropRect.Width, (int)cropRect.Height);
+
+                imageAsData = cropped.AsJPEG();
+
+                if (status == PHAuthorizationStatus.Authorized)
                 {
-                    Debug.WriteLine($"Error occurred while saving cropped photo to photo library: {err}");
+                    NSError err;
+                    bool success = PHPhotoLibrary.SharedPhotoLibrary.PerformChangesAndWait(() =>
+                    {
+                        PHAssetCreationRequest.CreationRequestForAsset().AddResource(PHAssetResourceType.Photo, imageAsData, null);
+                    }, out err);
+
+                    if (!success)
+                    {
+                        Debug.WriteLine($"Error occurred while saving cropped photo to photo library: {err}");
+                    }
+                    else
+                    {
+                        Debug.WriteLine("Cropped Photo was saved to photo library");
+                        var toastConfig = new ToastConfig("Cropped Image Saved to Gallery");
+
+                        toastConfig.Position = ToastPosition.Top;
+                        toastConfig.SetDuration(1000);
+                        toastConfig.SetBackgroundColor(System.Drawing.Color.FromArgb(229, 145, 0));
+                        UserDialogs.Instance.Toast(toastConfig);
+
+                    }
+
                 }
                 else
                 {
-                    Debug.WriteLine("Cropped Photo was saved to photo library");
-                    var toastConfig = new ToastConfig("Cropped Image Saved to Gallery");
-
-                    toastConfig.Position = ToastPosition.Top;
-                    toastConfig.SetDuration(1000);
-                    toastConfig.SetBackgroundColor(System.Drawing.Color.FromArgb(229, 145, 0));
-                    UserDialogs.Instance.Toast(toastConfig);
-
+                    Debug.WriteLine("Not authorized to save cropped photo");
                 }
-
             }
-            else
+            finally
             {
-                Debug.WriteLine("Not authorized to save cropped photo");
+                imageAsData?.Dispose();
+                cropped?.Dispose();
+                uncropped?.Dispose();
+                cropViewController.Dispose();
+                
             }
+
         }
 
         public UIImage CropImage(UIImage sourceImage, int crop_x, int crop_y, int width, int height)
