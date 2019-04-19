@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8/PixUl8.iOS/AppDelegate.cs">
     <Files>
-      <File FileName="PixUl8/PixUl8.iOS/UIViews/UICameraPreview.cs" Line="464" Column="28" />
-      <File FileName="PixUl8/PixUl8.iOS/Delegates/CropperDelegate.cs" Line="59" Column="2" />
-      <File FileName="PixUl8/PixUl8.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="PixUl8/PixUl8/ViewModels/HomeViewModel.cs" Line="286" Column="13" />
+      <File FileName="PixUl8/PixUl8.iOS/Services/AdService.cs" Line="32" Column="54" />
+      <File FileName="PixUl8/PixUl8.iOS/AppDelegate.cs" Line="42" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.594cc34fe22a6ae2a5ef467001700a60305909ef" />

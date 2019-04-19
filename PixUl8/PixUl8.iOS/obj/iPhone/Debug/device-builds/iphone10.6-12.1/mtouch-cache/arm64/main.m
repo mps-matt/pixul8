@@ -25,6 +25,7 @@ extern void *mono_aot_module_Toasts_Forms_Plugin_Abstractions_info;
 extern void *mono_aot_module_Acr_UserDialogs_info;
 extern void *mono_aot_module_BTProgressHUD_info;
 extern void *mono_aot_module_SlideOverKit_iOS_info;
+extern void *mono_aot_module_Google_MobileAds_info;
 extern void *mono_aot_module_PixUl8_OpenCV_info;
 extern void *mono_aot_module_TOCropViewController_info;
 extern void *mono_aot_module_MoreLinq_info;
@@ -60,6 +61,7 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_Acr_UserDialogs_info);
 	mono_aot_register_module (mono_aot_module_BTProgressHUD_info);
 	mono_aot_register_module (mono_aot_module_SlideOverKit_iOS_info);
+	mono_aot_register_module (mono_aot_module_Google_MobileAds_info);
 	mono_aot_register_module (mono_aot_module_PixUl8_OpenCV_info);
 	mono_aot_register_module (mono_aot_module_TOCropViewController_info);
 	mono_aot_register_module (mono_aot_module_MoreLinq_info);
@@ -80,6 +82,8 @@ void xamarin_register_assemblies_impl ()
 	xamarin_open_and_register ("BTProgressHUD.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
 	xamarin_open_and_register ("SlideOverKit.iOS.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
+	xamarin_open_and_register ("Google.MobileAds.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
 	xamarin_open_and_register ("PixUl8.OpenCV.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);

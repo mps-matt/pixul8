@@ -9018,7 +9018,7 @@ _mono_aot_file_info:
 	.long 240,3088,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 66,211,93,87,139,76,198,230,14,203,140,180,144,251,156,18
+	.byte 52,175,148,23,137,152,221,99,248,214,184,29,207,238,26,16
 	.globl _mono_aot_module_Toasts_Forms_Plugin_Abstractions_info
 	.align 3
 _mono_aot_module_Toasts_Forms_Plugin_Abstractions_info:

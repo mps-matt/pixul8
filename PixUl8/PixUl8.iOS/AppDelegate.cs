@@ -6,6 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using AVFoundation;
 using Foundation;
+using Google.MobileAds;
 using MediaPlayer;
 using PixUl8.iOS.Delegates;
 using Plugin.Toasts;
@@ -37,6 +38,8 @@ namespace PixUl8.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            MobileAds.Configure("ca-app-pub-1763214636278611~2386943003");
+
             LoadApplication(new App());
 
             var result = base.FinishedLaunching(app, options);

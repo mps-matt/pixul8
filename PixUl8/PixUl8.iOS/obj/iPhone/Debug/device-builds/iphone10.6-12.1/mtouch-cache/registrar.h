@@ -7,8 +7,8 @@
 #include <objc/runtime.h>
 #include <objc/message.h>
 #import <Foundation/Foundation.h>
-#import <UserNotifications/UserNotifications.h>
 #import <UIKit/UIKit.h>
+#import <UserNotifications/UserNotifications.h>
 #import <AVFoundation/AVFoundation.h>
 #import <GLKit/GLKit.h>
 #import <WebKit/WebKit.h>
@@ -45,12 +45,14 @@
 @class Foundation_NSAsyncDispatcher;
 @class __MonoMac_NSAsyncActionDispatcher;
 @class __MonoMac_NSAsyncSynchronizationContextDispatcher;
+@class Xamarin_Forms_Platform_iOS_VisualElementRenderer_1;
+@class Xamarin_Forms_Platform_iOS_ViewRenderer_2;
+@class Xamarin_Forms_Platform_iOS_ViewRenderer;
+@class PixUl8_iOS_Renderers_AdMobRenderer;
 @class PixUl8_iOS_Delegates_UserNotificationCenterDelegate;
 @class PixUl8_iOS_UIViews_CircleZoomPercentage;
 @class PixUl8_iOS_UIViews_SwipeButton;
 @class PixUl8_iOS_UIViews_TakeImageButton;
-@class Xamarin_Forms_Platform_iOS_VisualElementRenderer_1;
-@class Xamarin_Forms_Platform_iOS_ViewRenderer_2;
 @class PixUl8_iOS_CustomRenderers_CameraFeedPreviewRenderer;
 @class Xamarin_Forms_Platform_iOS_FormsApplicationDelegate;
 @class AppDelegate;
@@ -60,13 +62,14 @@
 @protocol TOCropViewControllerDelegate;
 @class TOCropViewControllerDelegate;
 @class PixUl8_iOS_Delegates_CropperDelegate;
+@protocol GADInterstitialDelegate;
+@class PixUl8_iOS_Services_AdService;
 @class PixUl8_iOS_UIViews_UICameraPreview;
 @class PixUl8_iOS_UIViews_FocusWheel;
 @class Xamarin_Forms_Platform_iOS_iOS7ButtonContainer;
 @class Xamarin_Forms_Platform_iOS_GlobalCloseContextGestureRecognizer;
 @class Xamarin_Forms_Platform_iOS_ModalWrapper;
 @class Xamarin_Forms_Platform_iOS_PlatformRenderer;
-@class Xamarin_Forms_Platform_iOS_ViewRenderer;
 @class Xamarin_Forms_Platform_iOS_CellTableViewCell;
 @class Xamarin_Forms_Platform_iOS_ActivityIndicatorRenderer;
 @class Xamarin_Forms_Platform_iOS_BoxRenderer;
@@ -206,6 +209,150 @@
 @class BigTed_ProgressHUD;
 @class SlideOverKit_iOS_MenuContainerPageiOSRenderer;
 @class SlideOverKit_iOS_SlidePopupViewRendereriOS;
+@class GADNativeAd;
+@class GADNativeCustomTemplateAd;
+@class GADRequest;
+@class GADRequestError;
+@class GADAdLoader;
+@protocol GADAdLoaderDelegate;
+@class ApiDefinition__Google_MobileAds_AdLoaderDelegate;
+@class GADAdLoaderOptions;
+@protocol GADAdNetworkExtras;
+@class ApiDefinition__Google_MobileAds_AdNetworkExtras;
+@class GADAdReward;
+@protocol GADAdSizeDelegate;
+struct trampoline_struct_ddi {
+	double v0;
+	double v8;
+	int v16;
+};
+@class ApiDefinition__Google_MobileAds_AdSizeDelegate;
+@protocol GADAppEventDelegate;
+@class ApiDefinition__Google_MobileAds_AppEventDelegate;
+@protocol GADAudioVideoManagerDelegate;
+@class ApiDefinition__Google_MobileAds_AudioVideoManagerDelegate;
+@protocol GADBannerViewDelegate;
+@class ApiDefinition__Google_MobileAds_BannerViewDelegate;
+@class GADCorrelator;
+@class GADCorrelatorAdLoaderOptions;
+@protocol GADCustomEventBanner;
+@protocol GADCustomEventBannerDelegate;
+@class ApiDefinition__Google_MobileAds_CustomEventBannerDelegate;
+@class GADCustomEventExtras;
+@protocol GADCustomEventInterstitial;
+@protocol GADCustomEventInterstitialDelegate;
+@class ApiDefinition__Google_MobileAds_CustomEventInterstitialDelegate;
+@protocol GADCustomEventNativeAd;
+@class ApiDefinition__Google_MobileAds_CustomEventNativeAd;
+@protocol GADCustomEventNativeAdDelegate;
+@class ApiDefinition__Google_MobileAds_CustomEventNativeAdDelegate;
+@class GADCustomEventRequest;
+@class GADDebugOptionsViewController;
+@protocol GADDebugOptionsViewControllerDelegate;
+@class ApiDefinition__Google_MobileAds_DebugOptionsViewControllerDelegate;
+@class GADDefaultInAppPurchase;
+@protocol GADDefaultInAppPurchaseDelegate;
+@class ApiDefinition__Google_MobileAds_DefaultInAppPurchaseDelegate;
+@class GADDynamicHeightSearchRequest;
+@class GADExtras;
+@class GADInAppPurchase;
+@protocol GADInAppPurchaseDelegate;
+@class ApiDefinition__Google_MobileAds_InAppPurchaseDelegate;
+@class ApiDefinition__Google_MobileAds_InterstitialDelegate;
+@class GADMediaContent;
+@protocol GADMediatedNativeAd;
+@class ApiDefinition__Google_MobileAds_MediatedNativeAd;
+@protocol GADMediatedNativeAdDelegate;
+@class ApiDefinition__Google_MobileAds_MediatedNativeAdDelegate;
+@class GADMediatedNativeAdNotificationSource;
+@protocol GADMediatedNativeAppInstallAd;
+@class ApiDefinition__Google_MobileAds_MediatedNativeAppInstallAd;
+@protocol GADMediatedNativeContentAd;
+@class ApiDefinition__Google_MobileAds_MediatedNativeContentAd;
+@class GADMobileAds;
+@class GADMultipleAdsAdLoaderOptions;
+@class GADMuteThisAdReason;
+@protocol GADNativeAdDelegate;
+@class ApiDefinition__Google_MobileAds_NativeAdDelegate;
+@class GADNativeAdImage;
+@class GADNativeAdImageAdLoaderOptions;
+@class GADNativeAdViewAdOptions;
+@class GADNativeAppInstallAd;
+@protocol GADNativeAppInstallAdLoaderDelegate;
+@class ApiDefinition__Google_MobileAds_NativeAppInstallAdLoaderDelegate;
+@class GADNativeContentAd;
+@protocol GADNativeContentAdLoaderDelegate;
+@class ApiDefinition__Google_MobileAds_NativeContentAdLoaderDelegate;
+@protocol GADNativeCustomTemplateAdLoaderDelegate;
+@class ApiDefinition__Google_MobileAds_NativeCustomTemplateAdLoaderDelegate;
+@protocol GADNativeExpressAdViewDelegate;
+@class ApiDefinition__Google_MobileAds_NativeExpressAdViewDelegate;
+@class GADNativeMuteThisAdLoaderOptions;
+@class GADRequestConfiguration;
+@protocol GADRewardBasedVideoAdDelegate;
+@class ApiDefinition__Google_MobileAds_RewardBasedVideoAdDelegate;
+@class GADSearchRequest;
+@protocol GADSwipeableBannerViewDelegate;
+@class ApiDefinition__Google_MobileAds_SwipeableBannerViewDelegate;
+@protocol GADUnifiedNativeAdDelegate;
+@class ApiDefinition__Google_MobileAds_UnifiedNativeAdDelegate;
+@protocol GADUnifiedNativeAdLoaderDelegate;
+@class ApiDefinition__Google_MobileAds_UnifiedNativeAdLoaderDelegate;
+@protocol GADUnifiedNativeAdUnconfirmedClickDelegate;
+@class ApiDefinition__Google_MobileAds_UnifiedNativeAdUnconfirmedClickDelegate;
+@protocol GADVideoControllerDelegate;
+@class ApiDefinition__Google_MobileAds_VideoControllerDelegate;
+@class GADVideoOptions;
+@protocol GADMediatedUnifiedNativeAd;
+@class ApiDefinition__Google_MobileAds_Mediation_MediatedUnifiedNativeAd;
+@class PACAdProvider;
+@protocol DFPBannerAdLoaderDelegate;
+@class ApiDefinition__Google_MobileAds_DoubleClick_BannerAdLoaderDelegate;
+@class DFPBannerViewOptions;
+@class DFPCustomRenderedAd;
+@protocol DFPCustomRenderedBannerViewDelegate;
+@class ApiDefinition__Google_MobileAds_DoubleClick_CustomRenderedBannerViewDelegate;
+@protocol DFPCustomRenderedInterstitialDelegate;
+@class ApiDefinition__Google_MobileAds_DoubleClick_CustomRenderedInterstitialDelegate;
+@class DFPRequest;
+@class Google_MobileAds_RewardBasedVideoAd__RewardBasedVideoAdDelegate;
+@class GADRewardBasedVideoAd;
+@class Google_MobileAds_AdChoicesView_AdChoicesViewAppearance;
+@class GADAdChoicesView;
+@class Google_MobileAds_AudioVideoManager__AudioVideoManagerDelegate;
+@class GADAudioVideoManager;
+@class Google_MobileAds_BannerView__BannerViewDelegate;
+@class Google_MobileAds_BannerView__AdSizeDelegate;
+@class Google_MobileAds_BannerView_BannerViewAppearance;
+@class GADBannerView;
+@class Google_MobileAds_Interstitial__InterstitialDelegate;
+@class GADInterstitial;
+@class Google_MobileAds_MediaView_MediaViewAppearance;
+@class GADMediaView;
+@class Google_MobileAds_NativeAd__NativeAdDelegate;
+@class Google_MobileAds_NativeAppInstallAdView_NativeAppInstallAdViewAppearance;
+@class GADNativeAppInstallAdView;
+@class Google_MobileAds_NativeContentAdView_NativeContentAdViewAppearance;
+@class GADNativeContentAdView;
+@class Google_MobileAds_NativeExpressAdView__NativeExpressAdViewDelegate;
+@class Google_MobileAds_NativeExpressAdView_NativeExpressAdViewAppearance;
+@class GADNativeExpressAdView;
+@class Google_MobileAds_SearchBannerView_SearchBannerViewAppearance;
+@class GADSearchBannerView;
+@class Google_MobileAds_UnifiedNativeAd__UnifiedNativeAdDelegate;
+@class Google_MobileAds_UnifiedNativeAd__UnifiedNativeAdUnconfirmedClickDelegate;
+@class GADUnifiedNativeAd;
+@class Google_MobileAds_UnifiedNativeAdView_UnifiedNativeAdViewAppearance;
+@class GADUnifiedNativeAdView;
+@class Google_MobileAds_VideoController__VideoControllerDelegate;
+@class GADVideoController;
+@class PACConsentForm;
+@class PACConsentInformation;
+@class Google_MobileAds_DoubleClick_BannerView__AdSizeDelegate;
+@class Google_MobileAds_DoubleClick_BannerView_BannerViewAppearance;
+@class DFPBannerView;
+@class Google_MobileAds_DoubleClick_Interstitial__CustomRenderedInterstitialDelegate;
+@class DFPInterstitial;
 @class OpenCV;
 @class TOActivityCroppedImageProvider;
 @class TOCroppedImageAttributes;
@@ -311,6 +458,40 @@
 	-(id) init;
 @end
 
+@interface Xamarin_Forms_Platform_iOS_VisualElementRenderer_1 : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(UIColor *) backgroundColor;
+	-(void) setBackgroundColor:(UIColor *)p0;
+	-(NSArray *) keyCommands;
+	-(void) tabForward:(UIKeyCommand *)p0;
+	-(void) tabBackward:(UIKeyCommand *)p0;
+	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(void) layoutSubviews;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_ViewRenderer_2 : Xamarin_Forms_Platform_iOS_VisualElementRenderer_1 {
+}
+	-(void) layoutSubviews;
+	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_ViewRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface PixUl8_iOS_Renderers_AdMobRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer {
+}
+	-(id) init;
+@end
+
 @interface PixUl8_iOS_Delegates_UserNotificationCenterDelegate : NSObject<UNUserNotificationCenterDelegate> {
 }
 	-(void) release;
@@ -352,30 +533,6 @@
 	-(void) xamarinSetGCHandle: (int) gchandle;
 	-(void) drawRect:(CGRect)p0;
 	-(BOOL) conformsToProtocol:(void *)p0;
-@end
-
-@interface Xamarin_Forms_Platform_iOS_VisualElementRenderer_1 : UIView {
-}
-	-(void) release;
-	-(id) retain;
-	-(int) xamarinGetGCHandle;
-	-(void) xamarinSetGCHandle: (int) gchandle;
-	-(UIColor *) backgroundColor;
-	-(void) setBackgroundColor:(UIColor *)p0;
-	-(NSArray *) keyCommands;
-	-(void) tabForward:(UIKeyCommand *)p0;
-	-(void) tabBackward:(UIKeyCommand *)p0;
-	-(CGSize) sizeThatFits:(CGSize)p0;
-	-(void) layoutSubviews;
-	-(BOOL) conformsToProtocol:(void *)p0;
-	-(id) init;
-@end
-
-@interface Xamarin_Forms_Platform_iOS_ViewRenderer_2 : Xamarin_Forms_Platform_iOS_VisualElementRenderer_1 {
-}
-	-(void) layoutSubviews;
-	-(CGSize) sizeThatFits:(CGSize)p0;
-	-(id) init;
 @end
 
 @interface PixUl8_iOS_CustomRenderers_CameraFeedPreviewRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
@@ -471,6 +628,26 @@
 	-(id) init;
 @end
 
+@protocol GADInterstitialDelegate
+	@optional -(void) interstitialDidReceiveAd:(id)p0;
+	@optional -(void) interstitialWillLeaveApplication:(id)p0;
+	@optional -(void) interstitialDidDismissScreen:(id)p0;
+	@optional -(void) interstitialDidFailToPresentScreen:(id)p0;
+	@optional -(void) interstitialWillDismissScreen:(id)p0;
+	@optional -(void) interstitialWillPresentScreen:(id)p0;
+	@optional -(void) interstitial:(id)p0 didFailToReceiveAdWithError:(id)p1;
+@end
+
+@interface PixUl8_iOS_Services_AdService : NSObject<GADInterstitialDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
 @interface PixUl8_iOS_UIViews_UICameraPreview : UIView<AVCaptureMetadataOutputObjectsDelegate> {
 }
 	-(void) release;
@@ -492,11 +669,6 @@
 	-(void) xamarinSetGCHandle: (int) gchandle;
 	-(void) drawRect:(CGRect)p0;
 	-(BOOL) conformsToProtocol:(void *)p0;
-@end
-
-@interface Xamarin_Forms_Platform_iOS_ViewRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
-}
-	-(id) init;
 @end
 
 @interface Xamarin_Forms_Platform_iOS_CellTableViewCell : UITableViewCell {
@@ -1200,6 +1372,1179 @@
 @interface SlideOverKit_iOS_SlidePopupViewRendereriOS : Xamarin_Forms_Platform_iOS_VisualElementRenderer_1 {
 }
 	-(id) init;
+@end
+
+@interface GADNativeAd : NSObject {
+}
+	-(NSString *) adNetworkClassName;
+	-(id) delegate;
+	-(void) setDelegate:(id)p0;
+	-(NSDictionary *) extraAssets;
+	-(UIViewController *) rootViewController;
+	-(void) setRootViewController:(UIViewController *)p0;
+	-(id) init;
+@end
+
+@interface GADNativeCustomTemplateAd : GADNativeAd {
+}
+	-(id) imageForKey:(NSString *)p0;
+	-(void) performClickOnAssetWithKey:(NSString *)p0;
+	-(void) performClickOnAssetWithKey:(NSString *)p0 customClickHandler:(id)p1;
+	-(void) recordImpression;
+	-(NSString *) stringForKey:(NSString *)p0;
+	-(NSArray *) availableAssetKeys;
+	-(id) customClickHandler;
+	-(id) mediaView;
+	-(NSString *) templateID;
+	-(id) videoController;
+	-(id) init;
+@end
+
+@interface GADRequest : NSObject {
+}
+	-(id) adNetworkExtrasFor:(Class)p0;
+	-(NSObject *) copyWithZone:(id)p0;
+	-(void) registerAdNetworkExtras:(id)p0;
+	-(void) removeAdNetworkExtrasFor:(Class)p0;
+	-(void) setBirthdayWithMonth:(NSInteger)p0 day:(NSInteger)p1 year:(NSInteger)p2;
+	-(void) setLocationWithLatitude:(CGFloat)p0 longitude:(CGFloat)p1 accuracy:(CGFloat)p2;
+	-(void) setLocationWithDescription:(NSString *)p0;
+	-(void) tagForChildDirectedTreatment:(BOOL)p0;
+	-(NSDate *) birthday;
+	-(void) setBirthday:(NSDate *)p0;
+	-(NSString *) contentURL;
+	-(void) setContentURL:(NSString *)p0;
+	-(NSInteger) gender;
+	-(void) setGender:(NSInteger)p0;
+	-(NSArray *) keywords;
+	-(void) setKeywords:(NSArray *)p0;
+	-(NSString *) requestAgent;
+	-(void) setRequestAgent:(NSString *)p0;
+	-(NSArray *) testDevices;
+	-(void) setTestDevices:(NSArray *)p0;
+@end
+
+@interface GADRequestError : NSError {
+}
+	-(id) initWithCoder:(NSCoder *)p0;
+	-(id) initWithDomain:(NSString *)p0 code:(NSInteger)p1 userInfo:(NSDictionary *)p2;
+@end
+
+@interface GADAdLoader : NSObject {
+}
+	-(void) loadRequest:(id)p0;
+	-(NSString *) adUnitID;
+	-(id) delegate;
+	-(void) setDelegate:(id)p0;
+	-(BOOL) isLoading;
+	-(id) initWithAdUnitID:(NSString *)p0 rootViewController:(UIViewController *)p1 adTypes:(NSArray *)p2 options:(NSArray *)p3;
+@end
+
+@protocol GADAdLoaderDelegate
+	@optional -(void) adLoaderDidFinishLoading:(id)p0;
+	@required -(void) adLoader:(id)p0 didFailToReceiveAdWithError:(id)p1;
+@end
+
+@interface ApiDefinition__Google_MobileAds_AdLoaderDelegate : NSObject<GADAdLoaderDelegate> {
+}
+	-(id) init;
+@end
+
+@interface GADAdLoaderOptions : NSObject {
+}
+	-(id) init;
+@end
+
+@protocol GADAdNetworkExtras
+@end
+
+@interface ApiDefinition__Google_MobileAds_AdNetworkExtras : NSObject<GADAdNetworkExtras> {
+}
+	-(id) init;
+@end
+
+@interface GADAdReward : NSObject {
+}
+	-(NSDecimalNumber *) amount;
+	-(NSString *) type;
+	-(id) initWithRewardType:(NSString *)p0 rewardAmount:(NSDecimalNumber *)p1;
+@end
+
+@protocol GADAdSizeDelegate
+	@required -(void) adView:(id)p0 willChangeAdSizeTo:(struct trampoline_struct_ddi)p1;
+@end
+
+@interface ApiDefinition__Google_MobileAds_AdSizeDelegate : NSObject<GADAdSizeDelegate> {
+}
+	-(id) init;
+@end
+
+@protocol GADAppEventDelegate
+	@optional -(void) adView:(id)p0 didReceiveAppEvent:(NSString *)p1 withInfo:(NSString *)p2;
+	@optional -(void) interstitial:(id)p0 didReceiveAppEvent:(NSString *)p1 withInfo:(NSString *)p2;
+@end
+
+@interface ApiDefinition__Google_MobileAds_AppEventDelegate : NSObject<GADAppEventDelegate> {
+}
+	-(id) init;
+@end
+
+@protocol GADAudioVideoManagerDelegate
+	@optional -(void) audioVideoManagerDidStopPlayingAudio:(id)p0;
+	@optional -(void) audioVideoManagerWillPlayAudio:(id)p0;
+	@optional -(void) audioVideoManagerWillPlayVideo:(id)p0;
+	@optional -(void) audioVideoManagerDidPauseAllVideo:(id)p0;
+@end
+
+@interface ApiDefinition__Google_MobileAds_AudioVideoManagerDelegate : NSObject<GADAudioVideoManagerDelegate> {
+}
+	-(id) init;
+@end
+
+@protocol GADBannerViewDelegate
+	@optional -(void) adViewWillLeaveApplication:(id)p0;
+	@optional -(void) adViewDidDismissScreen:(id)p0;
+	@optional -(void) adViewWillDismissScreen:(id)p0;
+	@optional -(void) adViewWillPresentScreen:(id)p0;
+	@optional -(void) adView:(id)p0 didFailToReceiveAdWithError:(id)p1;
+	@optional -(void) adViewDidReceiveAd:(id)p0;
+@end
+
+@interface ApiDefinition__Google_MobileAds_BannerViewDelegate : NSObject<GADBannerViewDelegate> {
+}
+	-(id) init;
+@end
+
+@interface GADCorrelator : NSObject {
+}
+	-(void) reset;
+	-(id) init;
+@end
+
+@interface GADCorrelatorAdLoaderOptions : GADAdLoaderOptions {
+}
+	-(id) correlator;
+	-(void) setCorrelator:(id)p0;
+	-(id) init;
+@end
+
+@protocol GADCustomEventBanner
+	@required -(void) requestBannerAd:(struct trampoline_struct_ddi)p0 parameter:(NSString *)p1 label:(NSString *)p2 request:(id)p3;
+	@required -(id) delegate;
+	@required -(void) setDelegate:(id)p0;
+@end
+
+@protocol GADCustomEventBannerDelegate
+	@required -(void) customEventBannerWillDismissModal:(id)p0;
+	@required -(void) customEventBanner:(id)p0 didFailAd:(NSError *)p1;
+	@required -(void) customEventBannerDidDismissModal:(id)p0;
+	@required -(void) customEventBannerWillLeaveApplication:(id)p0;
+	@required -(void) customEventBannerWillPresentModal:(id)p0;
+	@required -(void) customEventBanner:(id)p0 didReceiveAd:(UIView *)p1;
+	@required -(void) customEventBannerWasClicked:(id)p0;
+	@required -(UIViewController *) viewControllerForPresentingModalView;
+@end
+
+@interface ApiDefinition__Google_MobileAds_CustomEventBannerDelegate : NSObject<GADCustomEventBannerDelegate> {
+}
+	-(id) init;
+@end
+
+@interface GADCustomEventExtras : NSObject {
+}
+	-(NSDictionary *) extrasForLabel:(NSString *)p0;
+	-(void) removeAllExtras;
+	-(void) setExtras:(NSDictionary *)p0 forLabel:(NSString *)p1;
+	-(NSDictionary *) allExtras;
+	-(id) init;
+@end
+
+@protocol GADCustomEventInterstitial
+	@required -(id) delegate;
+	@required -(void) setDelegate:(id)p0;
+	@required -(void) requestInterstitialAdWithParameter:(NSString *)p0 label:(NSString *)p1 request:(id)p2;
+	@required -(void) presentFromRootViewController:(UIViewController *)p0;
+@end
+
+@protocol GADCustomEventInterstitialDelegate
+	@optional -(void) customEventInterstitialDidReceiveAd:(id)p0;
+	@optional -(void) customEventInterstitialWillLeaveApplication:(id)p0;
+	@optional -(void) customEventInterstitialDidDismiss:(id)p0;
+	@optional -(void) customEventInterstitial:(id)p0 didFailAd:(NSError *)p1;
+	@optional -(void) customEventInterstitialWasClicked:(id)p0;
+	@optional -(void) customEventInterstitialWillPresent:(id)p0;
+	@optional -(void) customEventInterstitialWillDismiss:(id)p0;
+@end
+
+@interface ApiDefinition__Google_MobileAds_CustomEventInterstitialDelegate : NSObject<GADCustomEventInterstitialDelegate> {
+}
+	-(id) init;
+@end
+
+@protocol GADCustomEventNativeAd
+	@required -(BOOL) handlesUserImpressions;
+	@required -(BOOL) handlesUserClicks;
+	@required -(void) requestNativeAdWithParameter:(NSString *)p0 request:(id)p1 adTypes:(NSArray *)p2 options:(NSArray *)p3 rootViewController:(UIViewController *)p4;
+	@required -(void) setDelegate:(id)p0;
+	@required -(id) delegate;
+@end
+
+@interface ApiDefinition__Google_MobileAds_CustomEventNativeAd : NSObject<GADCustomEventNativeAd> {
+}
+	-(id) init;
+@end
+
+@protocol GADCustomEventNativeAdDelegate
+	@required -(void) customEventNativeAd:(id)p0 didReceiveMediatedNativeAd:(id)p1;
+	@required -(void) customEventNativeAd:(id)p0 didFailToLoadWithError:(NSError *)p1;
+	@required -(void) customEventNativeAd:(id)p0 didReceiveMediatedUnifiedNativeAd:(id)p1;
+@end
+
+@interface ApiDefinition__Google_MobileAds_CustomEventNativeAdDelegate : NSObject<GADCustomEventNativeAdDelegate> {
+}
+	-(id) init;
+@end
+
+@interface GADCustomEventRequest : NSObject {
+}
+	-(NSDictionary *) additionalParameters;
+	-(BOOL) isTesting;
+	-(NSDate *) userBirthday;
+	-(NSInteger) userGender;
+	-(BOOL) userHasLocation;
+	-(NSArray *) userKeywords;
+	-(CGFloat) userLatitude;
+	-(CGFloat) userLocationAccuracyInMeters;
+	-(NSString *) userLocationDescription;
+	-(CGFloat) userLongitude;
+	-(id) init;
+@end
+
+@interface GADDebugOptionsViewController : UIViewController {
+}
+	-(id) delegate;
+	-(void) setDelegate:(id)p0;
+	-(id) initWithCoder:(NSCoder *)p0;
+@end
+
+@protocol GADDebugOptionsViewControllerDelegate
+	@required -(void) debugOptionsViewControllerDidDismiss:(id)p0;
+@end
+
+@interface ApiDefinition__Google_MobileAds_DebugOptionsViewControllerDelegate : NSObject<GADDebugOptionsViewControllerDelegate> {
+}
+	-(id) init;
+@end
+
+@interface GADDefaultInAppPurchase : NSObject {
+}
+	-(void) finishTransaction;
+	-(SKPaymentTransaction *) paymentTransaction;
+	-(NSString *) productID;
+	-(NSInteger) quantity;
+	-(id) init;
+@end
+
+@protocol GADDefaultInAppPurchaseDelegate
+	@required -(void) userDidPayForPurchase:(id)p0;
+	@optional -(void) shouldStartPurchaseForProductID:(NSString *)p0 quantity:(NSInteger)p1;
+@end
+
+@interface ApiDefinition__Google_MobileAds_DefaultInAppPurchaseDelegate : NSObject<GADDefaultInAppPurchaseDelegate> {
+}
+	-(id) init;
+@end
+
+@interface GADDynamicHeightSearchRequest : GADRequest {
+}
+	-(void) setAdvancedOptionValue:(NSObject *)p0 forKey:(NSString *)p1;
+	-(NSString *) adBorderColor;
+	-(void) setAdBorderColor:(NSString *)p0;
+	-(NSString *) adBorderCSSSelections;
+	-(void) setAdBorderCSSSelections:(NSString *)p0;
+	-(NSInteger) adPage;
+	-(void) setAdPage:(NSInteger)p0;
+	-(NSString *) adSeparatorColor;
+	-(void) setAdSeparatorColor:(NSString *)p0;
+	-(BOOL) adTestEnabled;
+	-(void) setAdTestEnabled:(BOOL)p0;
+	-(CGFloat) adjustableLineHeight;
+	-(void) setAdjustableLineHeight:(CGFloat)p0;
+	-(CGFloat) annotationFontSize;
+	-(void) setAnnotationFontSize:(CGFloat)p0;
+	-(NSString *) annotationTextColor;
+	-(void) setAnnotationTextColor:(NSString *)p0;
+	-(CGFloat) attributionBottomSpacing;
+	-(void) setAttributionBottomSpacing:(CGFloat)p0;
+	-(NSString *) attributionFontFamily;
+	-(void) setAttributionFontFamily:(NSString *)p0;
+	-(CGFloat) attributionFontSize;
+	-(void) setAttributionFontSize:(CGFloat)p0;
+	-(NSString *) attributionTextColor;
+	-(void) setAttributionTextColor:(NSString *)p0;
+	-(NSString *) backgroundColor;
+	-(void) setBackgroundColor:(NSString *)p0;
+	-(BOOL) boldTitleEnabled;
+	-(void) setBoldTitleEnabled:(BOOL)p0;
+	-(NSString *) borderColor;
+	-(void) setBorderColor:(NSString *)p0;
+	-(NSString *) borderCSSSelections;
+	-(void) setBorderCSSSelections:(NSString *)p0;
+	-(NSString *) channel;
+	-(void) setChannel:(NSString *)p0;
+	-(BOOL) clickToCallExtensionEnabled;
+	-(void) setClickToCallExtensionEnabled:(BOOL)p0;
+	-(NSString *) CSSWidth;
+	-(void) setCSSWidth:(NSString *)p0;
+	-(CGFloat) descriptionFontSize;
+	-(void) setDescriptionFontSize:(CGFloat)p0;
+	-(BOOL) detailedAttributionExtensionEnabled;
+	-(void) setDetailedAttributionExtensionEnabled:(BOOL)p0;
+	-(NSString *) domainLinkColor;
+	-(void) setDomainLinkColor:(NSString *)p0;
+	-(CGFloat) domainLinkFontSize;
+	-(void) setDomainLinkFontSize:(CGFloat)p0;
+	-(NSString *) fontFamily;
+	-(void) setFontFamily:(NSString *)p0;
+	-(NSString *) hostLanguage;
+	-(void) setHostLanguage:(NSString *)p0;
+	-(BOOL) locationExtensionEnabled;
+	-(void) setLocationExtensionEnabled:(BOOL)p0;
+	-(CGFloat) locationExtensionFontSize;
+	-(void) setLocationExtensionFontSize:(CGFloat)p0;
+	-(NSString *) locationExtensionTextColor;
+	-(void) setLocationExtensionTextColor:(NSString *)p0;
+	-(BOOL) longerHeadlinesExtensionEnabled;
+	-(void) setLongerHeadlinesExtensionEnabled:(BOOL)p0;
+	-(NSInteger) numberOfAds;
+	-(void) setNumberOfAds:(NSInteger)p0;
+	-(BOOL) plusOnesExtensionEnabled;
+	-(void) setPlusOnesExtensionEnabled:(BOOL)p0;
+	-(NSString *) query;
+	-(void) setQuery:(NSString *)p0;
+	-(BOOL) sellerRatingsExtensionEnabled;
+	-(void) setSellerRatingsExtensionEnabled:(BOOL)p0;
+	-(BOOL) siteLinksExtensionEnabled;
+	-(void) setSiteLinksExtensionEnabled:(BOOL)p0;
+	-(NSString *) textColor;
+	-(void) setTextColor:(NSString *)p0;
+	-(CGFloat) titleFontSize;
+	-(void) setTitleFontSize:(CGFloat)p0;
+	-(NSString *) titleLinkColor;
+	-(void) setTitleLinkColor:(NSString *)p0;
+	-(BOOL) titleUnderlineHidden;
+	-(void) setTitleUnderlineHidden:(BOOL)p0;
+	-(CGFloat) verticalSpacing;
+	-(void) setVerticalSpacing:(CGFloat)p0;
+	-(id) init;
+@end
+
+@interface GADExtras : NSObject {
+}
+	-(NSDictionary *) additionalParameters;
+	-(void) setAdditionalParameters:(NSDictionary *)p0;
+	-(id) init;
+@end
+
+@interface GADInAppPurchase : NSObject {
+}
+	-(void) reportPurchaseStatus:(NSInteger)p0;
+	-(NSString *) productID;
+	-(NSInteger) quantity;
+	-(id) init;
+@end
+
+@protocol GADInAppPurchaseDelegate
+	@optional -(void) didReceiveInAppPurchase:(id)p0;
+@end
+
+@interface ApiDefinition__Google_MobileAds_InAppPurchaseDelegate : NSObject<GADInAppPurchaseDelegate> {
+}
+	-(id) init;
+@end
+
+@interface ApiDefinition__Google_MobileAds_InterstitialDelegate : NSObject<GADInterstitialDelegate> {
+}
+	-(id) init;
+@end
+
+@interface GADMediaContent : NSObject {
+}
+	-(CGFloat) aspectRatio;
+	-(id) init;
+@end
+
+@protocol GADMediatedNativeAd
+	@required -(id) mediatedNativeAdDelegate;
+	@required -(NSDictionary *) extraAssets;
+@end
+
+@interface ApiDefinition__Google_MobileAds_MediatedNativeAd : NSObject<GADMediatedNativeAd> {
+}
+	-(id) init;
+@end
+
+@protocol GADMediatedNativeAdDelegate
+	@optional -(void) mediatedNativeAd:(id)p0 didRecordClickOnAssetWithName:(NSString *)p1 view:(UIView *)p2 viewController:(UIViewController *)p3;
+	@optional -(void) mediatedNativeAd:(id)p0 didUntrackView:(UIView *)p1;
+	@optional -(void) mediatedNativeAd:(id)p0 didRenderInView:(UIView *)p1 viewController:(UIViewController *)p2;
+	@optional -(void) mediatedNativeAdDidRecordImpression:(id)p0;
+@end
+
+@interface ApiDefinition__Google_MobileAds_MediatedNativeAdDelegate : NSObject<GADMediatedNativeAdDelegate> {
+}
+	-(id) init;
+@end
+
+@interface GADMediatedNativeAdNotificationSource : NSObject {
+}
+@end
+
+@protocol GADMediatedNativeAppInstallAd
+	@required -(NSString *) price;
+	@required -(NSArray *) images;
+	@optional -(UIView *) adChoicesView;
+	@optional -(UIView *) mediaView;
+	@optional -(BOOL) hasVideoContent;
+	@required -(NSDecimalNumber *) starRating;
+	@required -(NSString *) callToAction;
+	@required -(id) icon;
+	@required -(NSString *) body;
+	@required -(NSString *) headline;
+	@required -(NSString *) store;
+@end
+
+@interface ApiDefinition__Google_MobileAds_MediatedNativeAppInstallAd : NSObject<GADMediatedNativeAppInstallAd> {
+}
+	-(id) init;
+@end
+
+@protocol GADMediatedNativeContentAd
+	@required -(NSArray *) images;
+	@required -(id) logo;
+	@required -(NSString *) callToAction;
+	@required -(NSString *) advertiser;
+	@optional -(UIView *) adChoicesView;
+	@optional -(UIView *) mediaView;
+	@required -(NSString *) headline;
+	@optional -(BOOL) hasVideoContent;
+	@required -(NSString *) body;
+@end
+
+@interface ApiDefinition__Google_MobileAds_MediatedNativeContentAd : NSObject<GADMediatedNativeContentAd> {
+}
+	-(id) init;
+@end
+
+@interface GADMobileAds : NSObject {
+}
+	-(void) isSDKVersionAtLeastMajor:(NSInteger)p0 minor:(NSInteger)p1 patch:(NSInteger)p2;
+	-(BOOL) applicationMuted;
+	-(void) setApplicationMuted:(BOOL)p0;
+	-(float) applicationVolume;
+	-(void) setApplicationVolume:(float)p0;
+	-(id) audioVideoManager;
+	-(id) requestConfiguration;
+@end
+
+@interface GADMultipleAdsAdLoaderOptions : GADAdLoaderOptions {
+}
+	-(NSInteger) numberOfAds;
+	-(void) setNumberOfAds:(NSInteger)p0;
+	-(id) init;
+@end
+
+@interface GADMuteThisAdReason : NSObject {
+}
+	-(NSString *) reasonDescription;
+	-(id) init;
+@end
+
+@protocol GADNativeAdDelegate
+	@optional -(void) nativeAdWillLeaveApplication:(id)p0;
+	@optional -(void) nativeAdWillDismissScreen:(id)p0;
+	@optional -(void) nativeAdDidRecordImpression:(id)p0;
+	@optional -(void) nativeAdDidDismissScreen:(id)p0;
+	@optional -(void) nativeAdWillPresentScreen:(id)p0;
+	@optional -(void) nativeAdDidRecordClick:(id)p0;
+@end
+
+@interface ApiDefinition__Google_MobileAds_NativeAdDelegate : NSObject<GADNativeAdDelegate> {
+}
+	-(id) init;
+@end
+
+@interface GADNativeAdImage : NSObject {
+}
+	-(UIImage *) image;
+	-(NSURL *) imageURL;
+	-(CGFloat) scale;
+	-(id) initWithImage:(UIImage *)p0;
+	-(id) initWithURL:(NSURL *)p0 scale:(CGFloat)p1;
+@end
+
+@interface GADNativeAdImageAdLoaderOptions : GADAdLoaderOptions {
+}
+	-(BOOL) disableImageLoading;
+	-(void) setDisableImageLoading:(BOOL)p0;
+	-(NSInteger) preferredImageOrientation;
+	-(void) setPreferredImageOrientation:(NSInteger)p0;
+	-(BOOL) shouldRequestMultipleImages;
+	-(void) setShouldRequestMultipleImages:(BOOL)p0;
+	-(id) init;
+@end
+
+@interface GADNativeAdViewAdOptions : GADAdLoaderOptions {
+}
+	-(NSInteger) preferredAdChoicesPosition;
+	-(void) setPreferredAdChoicesPosition:(NSInteger)p0;
+	-(id) init;
+@end
+
+@interface GADNativeAppInstallAd : GADNativeAd {
+}
+	-(void) registerAdView:(UIView *)p0 assetViews:(NSDictionary <NSString *, UIView *>*)p1;
+	-(void) registerAdView:(UIView *)p0 clickableAssetViews:(NSDictionary <NSString *, UIView *>*)p1 nonclickableAssetViews:(NSDictionary <NSString *, UIView *>*)p2;
+	-(void) unregisterAdView;
+	-(NSString *) body;
+	-(NSString *) callToAction;
+	-(NSString *) headline;
+	-(id) icon;
+	-(NSArray *) images;
+	-(NSString *) price;
+	-(NSDecimalNumber *) starRating;
+	-(NSString *) store;
+	-(id) videoController;
+	-(id) init;
+@end
+
+@protocol GADNativeAppInstallAdLoaderDelegate
+	@required -(void) adLoader:(id)p0 didReceiveNativeAppInstallAd:(id)p1;
+@end
+
+@interface ApiDefinition__Google_MobileAds_NativeAppInstallAdLoaderDelegate : NSObject<GADNativeAppInstallAdLoaderDelegate> {
+}
+	-(id) init;
+@end
+
+@interface GADNativeContentAd : GADNativeAd {
+}
+	-(void) registerAdView:(UIView *)p0 assetViews:(NSDictionary <NSString *, UIView *>*)p1;
+	-(void) registerAdView:(UIView *)p0 clickableAssetViews:(NSDictionary <NSString *, UIView *>*)p1 nonclickableAssetViews:(NSDictionary <NSString *, UIView *>*)p2;
+	-(void) unregisterAdView;
+	-(NSString *) advertiser;
+	-(NSString *) body;
+	-(NSString *) callToAction;
+	-(NSString *) headline;
+	-(NSArray *) images;
+	-(id) logo;
+	-(id) videoController;
+	-(id) init;
+@end
+
+@protocol GADNativeContentAdLoaderDelegate
+	@required -(void) adLoader:(id)p0 didReceiveNativeContentAd:(id)p1;
+@end
+
+@interface ApiDefinition__Google_MobileAds_NativeContentAdLoaderDelegate : NSObject<GADNativeContentAdLoaderDelegate> {
+}
+	-(id) init;
+@end
+
+@protocol GADNativeCustomTemplateAdLoaderDelegate
+	@required -(NSArray *) nativeCustomTemplateIDsForAdLoader:(id)p0;
+	@required -(void) adLoader:(id)p0 didReceiveNativeCustomTemplateAd:(id)p1;
+@end
+
+@interface ApiDefinition__Google_MobileAds_NativeCustomTemplateAdLoaderDelegate : NSObject<GADNativeCustomTemplateAdLoaderDelegate> {
+}
+	-(id) init;
+@end
+
+@protocol GADNativeExpressAdViewDelegate
+	@optional -(void) nativeExpressAdViewWillDismissScreen:(id)p0;
+	@optional -(void) nativeExpressAdViewDidDismissScreen:(id)p0;
+	@optional -(void) nativeExpressAdViewWillLeaveApplication:(id)p0;
+	@optional -(void) nativeExpressAdView:(id)p0 didFailToReceiveAdWithError:(id)p1;
+	@optional -(void) nativeExpressAdViewWillPresentScreen:(id)p0;
+	@optional -(void) nativeExpressAdViewDidReceiveAd:(id)p0;
+@end
+
+@interface ApiDefinition__Google_MobileAds_NativeExpressAdViewDelegate : NSObject<GADNativeExpressAdViewDelegate> {
+}
+	-(id) init;
+@end
+
+@interface GADNativeMuteThisAdLoaderOptions : GADAdLoaderOptions {
+}
+	-(BOOL) customMuteThisAdRequested;
+	-(void) setCustomMuteThisAdRequested:(BOOL)p0;
+	-(id) init;
+@end
+
+@interface GADRequestConfiguration : NSObject {
+}
+	-(void) tagForUnderAgeOfConsent:(BOOL)p0;
+	-(NSString *) maxAdContentRating;
+	-(void) setMaxAdContentRating:(NSString *)p0;
+	-(id) init;
+@end
+
+@protocol GADRewardBasedVideoAdDelegate
+	@optional -(void) rewardBasedVideoAdDidStartPlaying:(id)p0;
+	@optional -(void) rewardBasedVideoAdDidOpen:(id)p0;
+	@required -(void) rewardBasedVideoAd:(id)p0 didRewardUserWithReward:(id)p1;
+	@optional -(void) rewardBasedVideoAdDidReceiveAd:(id)p0;
+	@optional -(void) rewardBasedVideoAdDidCompletePlaying:(id)p0;
+	@optional -(void) rewardBasedVideoAdWillLeaveApplication:(id)p0;
+	@optional -(void) rewardBasedVideoAdDidClose:(id)p0;
+	@optional -(void) rewardBasedVideoAd:(id)p0 didFailToLoadWithError:(NSError *)p1;
+@end
+
+@interface ApiDefinition__Google_MobileAds_RewardBasedVideoAdDelegate : NSObject<GADRewardBasedVideoAdDelegate> {
+}
+	-(id) init;
+@end
+
+@interface GADSearchRequest : GADRequest {
+}
+	-(void) setBackgroundGradientFrom:(UIColor *)p0 toColor:(UIColor *)p1;
+	-(void) setBackgroundSolid:(UIColor *)p0;
+	-(UIColor *) anchorTextColor;
+	-(void) setAnchorTextColor:(UIColor *)p0;
+	-(UIColor *) backgroundColor;
+	-(UIColor *) borderColor;
+	-(void) setBorderColor:(UIColor *)p0;
+	-(NSUInteger) borderThickness;
+	-(void) setBorderThickness:(NSUInteger)p0;
+	-(NSUInteger) borderType;
+	-(void) setBorderType:(NSUInteger)p0;
+	-(NSUInteger) callButtonColor;
+	-(void) setCallButtonColor:(NSUInteger)p0;
+	-(NSString *) customChannels;
+	-(void) setCustomChannels:(NSString *)p0;
+	-(UIColor *) descriptionTextColor;
+	-(void) setDescriptionTextColor:(UIColor *)p0;
+	-(NSString *) fontFamily;
+	-(void) setFontFamily:(NSString *)p0;
+	-(UIColor *) gradientFrom;
+	-(UIColor *) gradientTo;
+	-(UIColor *) headerColor;
+	-(void) setHeaderColor:(UIColor *)p0;
+	-(NSUInteger) headerTextSize;
+	-(void) setHeaderTextSize:(NSUInteger)p0;
+	-(NSString *) query;
+	-(void) setQuery:(NSString *)p0;
+	-(id) init;
+@end
+
+@protocol GADSwipeableBannerViewDelegate
+	@optional -(void) adViewDidActivateAd:(id)p0;
+	@optional -(void) adViewDidDeactivateAd:(id)p0;
+@end
+
+@interface ApiDefinition__Google_MobileAds_SwipeableBannerViewDelegate : NSObject<GADSwipeableBannerViewDelegate> {
+}
+	-(id) init;
+@end
+
+@protocol GADUnifiedNativeAdDelegate
+	@optional -(void) nativeAdDidRecordClick:(id)p0;
+	@optional -(void) nativeAdWillPresentScreen:(id)p0;
+	@optional -(void) nativeAdWillDismissScreen:(id)p0;
+	@optional -(void) nativeAdDidDismissScreen:(id)p0;
+	@optional -(void) nativeAdDidRecordImpression:(id)p0;
+	@optional -(void) nativeAdWillLeaveApplication:(id)p0;
+	@optional -(void) nativeAdIsMuted:(id)p0;
+@end
+
+@interface ApiDefinition__Google_MobileAds_UnifiedNativeAdDelegate : NSObject<GADUnifiedNativeAdDelegate> {
+}
+	-(id) init;
+@end
+
+@protocol GADUnifiedNativeAdLoaderDelegate
+	@required -(void) adLoader:(id)p0 didReceiveUnifiedNativeAd:(id)p1;
+@end
+
+@interface ApiDefinition__Google_MobileAds_UnifiedNativeAdLoaderDelegate : NSObject<GADUnifiedNativeAdLoaderDelegate> {
+}
+	-(id) init;
+@end
+
+@protocol GADUnifiedNativeAdUnconfirmedClickDelegate
+	@required -(void) nativeAd:(id)p0 didReceiveUnconfirmedClickOnAssetID:(NSString *)p1;
+	@required -(void) nativeAdDidCancelUnconfirmedClick:(id)p0;
+@end
+
+@interface ApiDefinition__Google_MobileAds_UnifiedNativeAdUnconfirmedClickDelegate : NSObject<GADUnifiedNativeAdUnconfirmedClickDelegate> {
+}
+	-(id) init;
+@end
+
+@protocol GADVideoControllerDelegate
+	@optional -(void) videoControllerDidUnmuteVideo:(id)p0;
+	@optional -(void) videoControllerDidPauseVideo:(id)p0;
+	@optional -(void) videoControllerDidEndVideoPlayback:(id)p0;
+	@optional -(void) videoControllerDidMuteVideo:(id)p0;
+	@optional -(void) videoControllerDidPlayVideo:(id)p0;
+@end
+
+@interface ApiDefinition__Google_MobileAds_VideoControllerDelegate : NSObject<GADVideoControllerDelegate> {
+}
+	-(id) init;
+@end
+
+@interface GADVideoOptions : GADAdLoaderOptions {
+}
+	-(BOOL) clickToExpandRequested;
+	-(void) setClickToExpandRequested:(BOOL)p0;
+	-(BOOL) customControlsRequested;
+	-(void) setCustomControlsRequested:(BOOL)p0;
+	-(BOOL) startMuted;
+	-(void) setStartMuted:(BOOL)p0;
+	-(id) init;
+@end
+
+@protocol GADMediatedUnifiedNativeAd
+	@required @property (nonatomic, assign, readonly) NSString * store;
+	@required @property (nonatomic, copy, readonly) NSDecimalNumber * starRating;
+	@required @property (nonatomic, assign, readonly) NSString * callToAction;
+	@required @property (nonatomic, assign, readonly) NSString * body;
+	@required @property (nonatomic, assign, readonly) NSArray * images;
+	@required @property (nonatomic, assign, readonly) NSString * headline;
+	@required @property (nonatomic, assign, readonly) NSString * price;
+	@required @property (nonatomic, assign, readonly) NSString * advertiser;
+	@required @property (nonatomic, assign, readonly) id icon;
+	@required @property (nonatomic, copy, readonly) NSDictionary <NSString *, NSObject *>* extraAssets;
+	@optional -(void) didUntrackView:(UIView *)p0;
+	@optional -(void) didRecordClickOnAssetWithName:(NSString *)p0 view:(UIView *)p1 viewController:(UIViewController *)p2;
+	@optional -(void) didRecordImpression;
+	@optional -(void) didRenderInView:(UIView *)p0 clickableAssetViews:(NSDictionary <NSString *, UIView *>*)p1 nonclickableAssetViews:(NSDictionary <NSString *, UIView *>*)p2 viewController:(UIViewController *)p3;
+	@optional -(BOOL) hasVideoContent;
+	@optional -(UIView *) mediaView;
+	@optional -(UIView *) adChoicesView;
+@end
+
+@interface ApiDefinition__Google_MobileAds_Mediation_MediatedUnifiedNativeAd : NSObject<GADMediatedUnifiedNativeAd> {
+}
+	-(id) init;
+@end
+
+@interface PACAdProvider : NSObject {
+}
+	-(NSNumber *) identifier;
+	-(NSString *) name;
+	-(NSURL *) privacyPolicyURL;
+	-(id) init;
+@end
+
+@protocol DFPBannerAdLoaderDelegate
+	@required -(void) adLoader:(id)p0 didReceiveDFPBannerView:(id)p1;
+	@required -(NSArray *) validBannerSizesForAdLoader:(id)p0;
+@end
+
+@interface ApiDefinition__Google_MobileAds_DoubleClick_BannerAdLoaderDelegate : NSObject<DFPBannerAdLoaderDelegate> {
+}
+	-(id) init;
+@end
+
+@interface DFPBannerViewOptions : GADAdLoaderOptions {
+}
+	-(id) adSizeDelegate;
+	-(void) setAdSizeDelegate:(id)p0;
+	-(id) appEventDelegate;
+	-(void) setAppEventDelegate:(id)p0;
+	-(BOOL) enableManualImpressions;
+	-(void) setEnableManualImpressions:(BOOL)p0;
+	-(id) init;
+@end
+
+@interface DFPCustomRenderedAd : NSObject {
+}
+	-(void) finishedRenderingAdView:(UIView *)p0;
+	-(void) recordClick;
+	-(void) recordImpression;
+	-(NSURL *) adBaseURL;
+	-(NSString *) adHTML;
+	-(id) init;
+@end
+
+@protocol DFPCustomRenderedBannerViewDelegate
+	@required -(void) bannerView:(id)p0 didReceiveCustomRenderedAd:(id)p1;
+@end
+
+@interface ApiDefinition__Google_MobileAds_DoubleClick_CustomRenderedBannerViewDelegate : NSObject<DFPCustomRenderedBannerViewDelegate> {
+}
+	-(id) init;
+@end
+
+@protocol DFPCustomRenderedInterstitialDelegate
+	@required -(void) interstitial:(id)p0 didReceiveCustomRenderedAd:(id)p1;
+@end
+
+@interface ApiDefinition__Google_MobileAds_DoubleClick_CustomRenderedInterstitialDelegate : NSObject<DFPCustomRenderedInterstitialDelegate> {
+}
+	-(id) init;
+@end
+
+@interface DFPRequest : GADRequest {
+}
+	-(NSArray *) categoryExclusions;
+	-(void) setCategoryExclusions:(NSArray *)p0;
+	-(NSDictionary *) customTargeting;
+	-(void) setCustomTargeting:(NSDictionary *)p0;
+	-(NSString *) publisherProvidedID;
+	-(void) setPublisherProvidedID:(NSString *)p0;
+	-(id) init;
+@end
+
+@interface GADRewardBasedVideoAd : NSObject {
+}
+	-(void) loadRequest:(id)p0 withAdUnitID:(NSString *)p1;
+	-(void) presentFromRootViewController:(UIViewController *)p0;
+	-(NSString *) adNetworkClassName;
+	-(NSString *) customRewardString;
+	-(void) setCustomRewardString:(NSString *)p0;
+	-(id) delegate;
+	-(void) setDelegate:(id)p0;
+	-(BOOL) isReady;
+	-(NSString *) userIdentifier;
+@end
+
+@interface Google_MobileAds_AdChoicesView_AdChoicesViewAppearance : UIKit_UIView_UIViewAppearance {
+}
+@end
+
+@interface GADAdChoicesView : UIView {
+}
+	-(id) init;
+	-(id) initWithCoder:(NSCoder *)p0;
+@end
+
+@interface GADAudioVideoManager : NSObject {
+}
+	-(BOOL) audioSessionIsApplicationManaged;
+	-(void) setAudioSessionIsApplicationManaged:(BOOL)p0;
+	-(id) delegate;
+	-(void) setDelegate:(id)p0;
+	-(id) init;
+@end
+
+@interface Google_MobileAds_BannerView_BannerViewAppearance : UIKit_UIView_UIViewAppearance {
+}
+@end
+
+@interface GADBannerView : UIView {
+}
+	-(void) loadRequest:(id)p0;
+	-(NSString *) adNetworkClassName;
+	-(struct trampoline_struct_ddi) adSize;
+	-(void) setAdSize:(struct trampoline_struct_ddi)p0;
+	-(id) adSizeDelegate;
+	-(void) setAdSizeDelegate:(id)p0;
+	-(NSString *) adUnitID;
+	-(void) setAdUnitID:(NSString *)p0;
+	-(BOOL) isAutoloadEnabled;
+	-(void) setAutoloadEnabled:(BOOL)p0;
+	-(id) delegate;
+	-(void) setDelegate:(id)p0;
+	-(BOOL) hasAutoRefreshed;
+	-(id) inAppPurchaseDelegate;
+	-(void) setInAppPurchaseDelegate:(id)p0;
+	-(UIView *) mediatedAdView;
+	-(UIViewController *) rootViewController;
+	-(void) setRootViewController:(UIViewController *)p0;
+	-(id) init;
+	-(id) initWithCoder:(NSCoder *)p0;
+	-(id) initWithFrame:(CGRect)p0;
+	-(id) initWithAdSize:(struct trampoline_struct_ddi)p0 origin:(CGPoint)p1;
+	-(id) initWithAdSize:(struct trampoline_struct_ddi)p0;
+@end
+
+@interface GADInterstitial : NSObject {
+}
+	-(void) loadRequest:(id)p0;
+	-(void) presentFromRootViewController:(UIViewController *)p0;
+	-(NSString *) adNetworkClassName;
+	-(NSString *) adUnitID;
+	-(id) delegate;
+	-(void) setDelegate:(id)p0;
+	-(BOOL) hasBeenUsed;
+	-(id) inAppPurchaseDelegate;
+	-(void) setInAppPurchaseDelegate:(id)p0;
+	-(BOOL) isReady;
+	-(id) initWithAdUnitID:(NSString *)p0;
+@end
+
+@interface Google_MobileAds_MediaView_MediaViewAppearance : UIKit_UIView_UIViewAppearance {
+}
+@end
+
+@interface GADMediaView : UIView {
+}
+	-(id) mediaContent;
+	-(void) setMediaContent:(id)p0;
+	-(id) init;
+	-(id) initWithCoder:(NSCoder *)p0;
+@end
+
+@interface Google_MobileAds_NativeAppInstallAdView_NativeAppInstallAdViewAppearance : UIKit_UIView_UIViewAppearance {
+}
+@end
+
+@interface GADNativeAppInstallAdView : UIView {
+}
+	-(id) adChoicesView;
+	-(void) setAdChoicesView:(id)p0;
+	-(UIView *) bodyView;
+	-(void) setBodyView:(UIView *)p0;
+	-(UIView *) callToActionView;
+	-(void) setCallToActionView:(UIView *)p0;
+	-(UIView *) headlineView;
+	-(void) setHeadlineView:(UIView *)p0;
+	-(UIView *) iconView;
+	-(void) setIconView:(UIView *)p0;
+	-(UIView *) imageView;
+	-(void) setImageView:(UIView *)p0;
+	-(UIView *) mediaView;
+	-(void) setMediaView:(UIView *)p0;
+	-(id) nativeAppInstallAd;
+	-(void) setNativeAppInstallAd:(id)p0;
+	-(UIView *) priceView;
+	-(void) setPriceView:(UIView *)p0;
+	-(UIView *) starRatingView;
+	-(void) setStarRatingView:(UIView *)p0;
+	-(UIView *) storeView;
+	-(void) setStoreView:(UIView *)p0;
+	-(id) init;
+	-(id) initWithCoder:(NSCoder *)p0;
+	-(id) initWithFrame:(CGRect)p0;
+@end
+
+@interface Google_MobileAds_NativeContentAdView_NativeContentAdViewAppearance : UIKit_UIView_UIViewAppearance {
+}
+@end
+
+@interface GADNativeContentAdView : UIView {
+}
+	-(id) adChoicesView;
+	-(void) setAdChoicesView:(id)p0;
+	-(UIView *) advertiserView;
+	-(void) setAdvertiserView:(UIView *)p0;
+	-(UIView *) bodyView;
+	-(void) setBodyView:(UIView *)p0;
+	-(UIView *) callToActionView;
+	-(void) setCallToActionView:(UIView *)p0;
+	-(UIView *) headlineView;
+	-(void) setHeadlineView:(UIView *)p0;
+	-(UIView *) imageView;
+	-(void) setImageView:(UIView *)p0;
+	-(UIView *) logoView;
+	-(void) setLogoView:(UIView *)p0;
+	-(id) mediaView;
+	-(void) setMediaView:(id)p0;
+	-(id) nativeContentAd;
+	-(void) setNativeContentAd:(id)p0;
+	-(id) init;
+	-(id) initWithCoder:(NSCoder *)p0;
+	-(id) initWithFrame:(CGRect)p0;
+@end
+
+@interface Google_MobileAds_NativeExpressAdView_NativeExpressAdViewAppearance : UIKit_UIView_UIViewAppearance {
+}
+@end
+
+@interface GADNativeExpressAdView : UIView {
+}
+	-(void) loadRequest:(id)p0;
+	-(void) setAdOptions:(NSArray *)p0;
+	-(NSString *) adNetworkClassName;
+	-(int) adSize;
+	-(void) setAdSize:(int)p0;
+	-(NSString *) adUnitID;
+	-(void) setAdUnitID:(NSString *)p0;
+	-(BOOL) isAutoloadEnabled;
+	-(void) setAutoloadEnabled:(BOOL)p0;
+	-(id) delegate;
+	-(void) setDelegate:(id)p0;
+	-(UIViewController *) rootViewController;
+	-(void) setRootViewController:(UIViewController *)p0;
+	-(id) videoController;
+	-(void) setVideoController:(id)p0;
+	-(id) initWithCoder:(NSCoder *)p0;
+	-(id) initWithAdSize:(struct trampoline_struct_ddi)p0 origin:(CGPoint)p1;
+	-(id) initWithAdSize:(struct trampoline_struct_ddi)p0;
+@end
+
+@interface Google_MobileAds_SearchBannerView_SearchBannerViewAppearance : Google_MobileAds_BannerView_BannerViewAppearance {
+}
+@end
+
+@interface GADSearchBannerView : GADBannerView {
+}
+	-(id) adSizeDelegate;
+	-(void) setAdSizeDelegate:(id)p0;
+	-(id) init;
+	-(id) initWithCoder:(NSCoder *)p0;
+	-(id) initWithFrame:(CGRect)p0;
+	-(id) initWithAdSize:(struct trampoline_struct_ddi)p0 origin:(CGPoint)p1;
+	-(id) initWithAdSize:(struct trampoline_struct_ddi)p0;
+@end
+
+@interface GADUnifiedNativeAd : NSObject {
+}
+	-(void) cancelUnconfirmedClick;
+	-(void) enableCustomClickGestures;
+	-(void) muteThisAdWithReason:(id)p0;
+	-(void) recordCustomClickGesture;
+	-(void) registerAdView:(UIView *)p0 clickableAssetViews:(NSDictionary <NSString *, UIView *>*)p1 nonclickableAssetViews:(NSDictionary <NSString *, UIView *>*)p2;
+	-(void) registerClickConfirmingView:(UIView *)p0;
+	-(void) unregisterAdView;
+	-(NSString *) adNetworkClassName;
+	-(NSString *) advertiser;
+	-(NSString *) body;
+	-(NSString *) callToAction;
+	-(id) delegate;
+	-(void) setDelegate:(id)p0;
+	-(NSDictionary <NSString *, NSObject *>*) extraAssets;
+	-(NSString *) headline;
+	-(id) icon;
+	-(NSArray *) images;
+	-(BOOL) isCustomMuteThisAdAvailable;
+	-(id) mediaContent;
+	-(NSArray *) muteThisAdReasons;
+	-(NSString *) price;
+	-(UIViewController *) rootViewController;
+	-(void) setRootViewController:(UIViewController *)p0;
+	-(NSDecimalNumber *) starRating;
+	-(NSString *) store;
+	-(id) unconfirmedClickDelegate;
+	-(void) setUnconfirmedClickDelegate:(id)p0;
+	-(id) videoController;
+	-(id) init;
+@end
+
+@interface Google_MobileAds_UnifiedNativeAdView_UnifiedNativeAdViewAppearance : UIKit_UIView_UIViewAppearance {
+}
+@end
+
+@interface GADUnifiedNativeAdView : UIView {
+}
+	-(id) adChoicesView;
+	-(void) setAdChoicesView:(id)p0;
+	-(UIView *) advertiserView;
+	-(void) setAdvertiserView:(UIView *)p0;
+	-(UIView *) bodyView;
+	-(void) setBodyView:(UIView *)p0;
+	-(UIView *) callToActionView;
+	-(void) setCallToActionView:(UIView *)p0;
+	-(UIView *) headlineView;
+	-(void) setHeadlineView:(UIView *)p0;
+	-(UIView *) iconView;
+	-(void) setIconView:(UIView *)p0;
+	-(UIView *) imageView;
+	-(void) setImageView:(UIView *)p0;
+	-(id) mediaView;
+	-(void) setMediaView:(id)p0;
+	-(id) nativeAd;
+	-(void) setNativeAd:(id)p0;
+	-(UIView *) priceView;
+	-(void) setPriceView:(UIView *)p0;
+	-(UIView *) starRatingView;
+	-(void) setStarRatingView:(UIView *)p0;
+	-(UIView *) storeView;
+	-(void) setStoreView:(UIView *)p0;
+	-(id) init;
+	-(id) initWithCoder:(NSCoder *)p0;
+	-(id) initWithFrame:(CGRect)p0;
+@end
+
+@interface GADVideoController : NSObject {
+}
+	-(BOOL) hasVideoContent;
+	-(void) pause;
+	-(void) play;
+	-(void) setMute:(BOOL)p0;
+	-(double) aspectRatio;
+	-(id) delegate;
+	-(void) setDelegate:(id)p0;
+	-(BOOL) clickToExpandEnabled;
+	-(BOOL) customControlsEnabled;
+	-(id) init;
+@end
+
+@interface PACConsentForm : NSObject {
+}
+	-(void) loadWithCompletionHandler:(id)p0;
+	-(void) presentFromViewController:(UIViewController *)p0 dismissCompletion:(id)p1;
+	-(BOOL) shouldOfferAdFree;
+	-(void) setShouldOfferAdFree:(BOOL)p0;
+	-(BOOL) shouldOfferNonPersonalizedAds;
+	-(void) setShouldOfferNonPersonalizedAds:(BOOL)p0;
+	-(BOOL) shouldOfferPersonalizedAds;
+	-(void) setShouldOfferPersonalizedAds:(BOOL)p0;
+	-(id) initWithApplicationPrivacyPolicyURL:(NSURL *)p0;
+@end
+
+@interface PACConsentInformation : NSObject {
+}
+	-(void) requestConsentInfoUpdateForPublisherIdentifiers:(NSArray *)p0 completionHandler:(id)p1;
+	-(void) reset;
+	-(NSArray *) adProviders;
+	-(NSInteger) consentStatus;
+	-(void) setConsentStatus:(NSInteger)p0;
+	-(NSInteger) debugGeography;
+	-(void) setDebugGeography:(NSInteger)p0;
+	-(NSArray *) debugIdentifiers;
+	-(void) setDebugIdentifiers:(NSArray *)p0;
+	-(BOOL) isRequestLocationInEEAOrUnknown;
+	-(BOOL) isTaggedForUnderAgeOfConsent;
+	-(void) setTagForUnderAgeOfConsent:(BOOL)p0;
+@end
+
+@interface Google_MobileAds_DoubleClick_BannerView_BannerViewAppearance : Google_MobileAds_BannerView_BannerViewAppearance {
+}
+@end
+
+@interface DFPBannerView : GADBannerView {
+}
+	-(void) recordImpression;
+	-(void) resize:(struct trampoline_struct_ddi)p0;
+	-(void) setAdOptions:(NSArray *)p0;
+	-(void) setValidAdSizesWithSizes:(struct trampoline_struct_ddi)p0, ...;
+	-(id) adSizeDelegate;
+	-(void) setAdSizeDelegate:(id)p0;
+	-(NSString *) adUnitID;
+	-(void) setAdUnitID:(NSString *)p0;
+	-(id) appEventDelegate;
+	-(void) setAppEventDelegate:(id)p0;
+	-(id) correlator;
+	-(void) setCorrelator:(id)p0;
+	-(id) customRenderedBannerViewDelegate;
+	-(void) setCustomRenderedBannerViewDelegate:(id)p0;
+	-(BOOL) enableManualImpressions;
+	-(void) setEnableManualImpressions:(BOOL)p0;
+	-(NSArray *) validAdSizes;
+	-(void) setValidAdSizes:(NSArray *)p0;
+	-(id) videoController;
+	-(id) init;
+	-(id) initWithCoder:(NSCoder *)p0;
+	-(id) initWithFrame:(CGRect)p0;
+	-(id) initWithAdSize:(struct trampoline_struct_ddi)p0 origin:(CGPoint)p1;
+	-(id) initWithAdSize:(struct trampoline_struct_ddi)p0;
+@end
+
+@interface DFPInterstitial : GADInterstitial {
+}
+	-(NSString *) adUnitID;
+	-(id) appEventDelegate;
+	-(void) setAppEventDelegate:(id)p0;
+	-(id) correlator;
+	-(void) setCorrelator:(id)p0;
+	-(id) customRenderedInterstitialDelegate;
+	-(void) setCustomRenderedInterstitialDelegate:(id)p0;
+	-(id) initWithAdUnitID:(NSString *)p0;
 @end
 
 @interface OpenCV : NSObject {

@@ -3135,7 +3135,7 @@ ldr x16, [x16, #560]
 .word 0xf9401401
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf940e830
+.word 0xf940ec30
 .word 0xd63f0200
 .word 0xf9008ba0
 .word 0xf9402bb1
@@ -24950,7 +24950,7 @@ _mono_aot_file_info:
 	.long 248,6008,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 247,139,120,142,79,125,187,58,234,27,233,178,223,218,65,184
+	.byte 99,159,248,230,56,71,234,105,228,104,121,32,127,86,164,55
 	.globl _mono_aot_module_Rg_Plugins_Popup_IOS_info
 	.align 3
 _mono_aot_module_Rg_Plugins_Popup_IOS_info:

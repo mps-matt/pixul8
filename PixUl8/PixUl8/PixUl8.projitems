@@ -18,6 +18,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\AdMobView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -42,6 +46,10 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IUICameraPreview.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IURLService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\AdMobView.xaml.cs">
+      <DependentUpon>AdMobView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IAdService.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\HomePage.xaml">

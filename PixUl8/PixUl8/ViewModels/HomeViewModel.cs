@@ -23,7 +23,7 @@ namespace PixUl8.ViewModels
         private bool _mocked;
         public HomePage Page { get; set; }
 
-        public HomeViewModel(IHapticService hapticService = null, ISettingsService settingsService = null, IToastNotificator toaster = null, IURLService urlService = null, bool mocked = false) : base(hapticService, settingsService, toaster, urlService)
+        public HomeViewModel(IHapticService hapticService = null, ISettingsService settingsService = null, IToastNotificator toaster = null, IURLService urlService = null, IAdService adService = null, bool mocked = false) : base(hapticService, settingsService, toaster, urlService, adService)
         {
             _mocked = mocked;
 
@@ -270,13 +270,21 @@ namespace PixUl8.ViewModels
             _urlService.GoToPrivacyPolicy();
         }
 
-
+        private bool firstTime = true;
         public void Appeared()
         {
+
             //Read in saved switch info
             StartupAnimation = _settingsService.StartupAnimation;
             is3DEnabled = _settingsService.Is3DEnabled;
             is43Enabled = _settingsService.Is43Enabled;
+
+            if (firstTime)
+                Task.Run(
+                ShowAdAsync
+                );
+
+            firstTime = false;
 
         }
 

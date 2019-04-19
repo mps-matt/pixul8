@@ -145,6 +145,8 @@ namespace PixUl8.Views
         {
             viewModel.Appeared();
             BeginHideAnimationsAsync();
+
+            
             base.OnAppearing();
         }
     }

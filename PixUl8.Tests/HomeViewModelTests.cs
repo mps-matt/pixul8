@@ -15,6 +15,7 @@ namespace PixUl8.Tests
         ISettingsService settingsService;
         IToastNotificator toastNotificator;
         IURLService urlService;
+        IAdService adService;
 
         [TestInitialize]
         public void Setup()
@@ -23,18 +24,19 @@ namespace PixUl8.Tests
             settingsService = A.Fake<ISettingsService>();
             toastNotificator = A.Fake<IToastNotificator>();
             urlService = A.Fake<IURLService>();
+            adService = A.Fake<IAdService>();
         }
 
         [TestMethod]
         public void Construction()
         {
-            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, mocked: true);
+            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, adService, mocked: true);
         }
 
         [TestMethod]
         public void FlashGetSet()
         {
-            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, mocked: true);
+            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, adService, mocked: true);
 
             vm.IsFlashActive = true;
 
@@ -44,7 +46,7 @@ namespace PixUl8.Tests
         [TestMethod]
         public void HDRGetSet()
         {
-            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, mocked: true);
+            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, adService, mocked: true);
 
             vm.IsHDRActive = true;
 
@@ -54,7 +56,7 @@ namespace PixUl8.Tests
         [TestMethod]
         public void FrontFacingGetSet()
         {
-            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, mocked: true);
+            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, adService, mocked: true);
 
             vm.IsFrontFacingActive = true;
 
@@ -64,7 +66,7 @@ namespace PixUl8.Tests
         [TestMethod]
         public void ManualGetSet()
         {
-            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, mocked: true);
+            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, adService, mocked: true);
 
             vm.ManualControlsEnabled = true;
 
@@ -74,7 +76,7 @@ namespace PixUl8.Tests
         [TestMethod]
         public void is43GetSet()
         {
-            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, mocked: true);
+            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, adService, mocked: true);
 
             vm.is43Enabled = true;
 
@@ -84,7 +86,7 @@ namespace PixUl8.Tests
         [TestMethod]
         public void StartUpGetSet()
         {
-            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, mocked: true);
+            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, adService, mocked: true);
 
             vm.StartupAnimation = true;
 
@@ -94,7 +96,7 @@ namespace PixUl8.Tests
         [TestMethod]
         public void is3DGetSet()
         {
-            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, mocked: true);
+            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, adService, mocked: true);
 
             vm.is3DEnabled = true;
 
@@ -104,7 +106,7 @@ namespace PixUl8.Tests
         [TestMethod]
         public void ExposureGetSet()
         {
-            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, mocked: true);
+            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, adService, mocked: true);
 
             vm.ExposurePercentage = 60;
 
@@ -114,7 +116,7 @@ namespace PixUl8.Tests
         [TestMethod]
         public void FocusGetSet()
         {
-            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, mocked: true);
+            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, adService, mocked: true);
 
             vm.FocusPercentage = 30;
 
@@ -124,7 +126,7 @@ namespace PixUl8.Tests
         [TestMethod]
         public void BalanceGetSet()
         {
-            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, mocked: true);
+            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, adService, mocked: true);
 
             vm.BalancePercentage = 90;
 
@@ -136,7 +138,7 @@ namespace PixUl8.Tests
         public async Task TurnCameraToBack()
         { 
 
-            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, mocked: true);
+            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, adService, mocked: true);
             vm.IsFrontFacingActive = true;
 
             await vm.ToggleCameraPositionAsync();
@@ -150,7 +152,7 @@ namespace PixUl8.Tests
         public async Task TurnCameraToFront()
         {
 
-            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, mocked: true);
+            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, adService, mocked: true);
             vm.IsFrontFacingActive = false;
 
             await vm.ToggleCameraPositionAsync();
@@ -164,7 +166,7 @@ namespace PixUl8.Tests
         public async Task TurnCameraToFrontAndTurnOffFlash()
         {
 
-            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, mocked: true);
+            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, adService, mocked: true);
             vm.IsFrontFacingActive = false;
             vm.IsFlashActive = true;
 
@@ -179,7 +181,7 @@ namespace PixUl8.Tests
         [TestMethod]
         public async Task ToogleFlashOff()
         {
-            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, mocked: true);
+            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, adService, mocked: true);
             vm.IsFlashActive = true;
 
             await vm.ToggleFlashAsync();
@@ -191,7 +193,7 @@ namespace PixUl8.Tests
         [TestMethod]
         public async Task ToogleHDROff()
         {
-            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, mocked: true);
+            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, adService, mocked: true);
             vm.IsHDRActive = true;
 
             await vm.ToggleHDRAsync();
@@ -212,7 +214,7 @@ namespace PixUl8.Tests
         //[TestMethod]
         //public async Task ToogleHDROffViaMessagingCenter()
         //{
-        //    HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, mocked: true);
+        //    HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, adService, mocked: true);
         //    vm.IsHDRActive = true;
 
         //    MessagingCenter.Send<App>(new App(), "PerformHDRSwitch");

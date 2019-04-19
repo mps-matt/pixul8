@@ -5,12 +5,12 @@
              xmlns:NativeViews="clr-namespace:PixUl8.Views.NativeViews"
              xmlns:ExtensionViews="clr-namespace:PixUl8.Views.ExtensionViews"
              xmlns:DK="clr-namespace:DK.SlidingPanel.Interfaces"
+             xmlns:ads="clr-namespace:PixUl8.Views"
              x:Class="PixUl8.Views.HomePage"
              Title="{Binding Title}"
              BackgroundColor="Black"
              x:Name="Home">
     <ContentPage.Content>
-        
         <ExtensionViews:XFFlipView IsFlipped="{Binding IsFrontFacingActive}">
             <ExtensionViews:XFFlipView.FrontView>
                 <Grid>
@@ -24,7 +24,6 @@
                         <RowDefinition Height="*" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    
                     
                     <NativeViews:CameraView Grid.RowSpan="2" Grid.ColumnSpan="3"
                                             Grid.Row="0" Grid.Column="0"
@@ -56,7 +55,6 @@
                             <TapGestureRecognizer Command="{Binding HelpCommand}" />
                         </Label.GestureRecognizers>
                     </Label>
-                    
                     
 <!--                    Turn on HDR left-->
                     <Label

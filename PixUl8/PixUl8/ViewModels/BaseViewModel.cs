@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 using PixUl8.Interfaces;
 using Plugin.Toasts;
 using Xamarin.Forms;
@@ -14,15 +15,22 @@ namespace PixUl8.ViewModels
         protected ISettingsService _settingsService;
         protected IToastNotificator _toaster;
         protected IURLService _urlService;
+        protected IAdService _adService;
 
-        public BaseViewModel(IHapticService hapticService, ISettingsService settingsService, IToastNotificator toaster, IURLService urlService)
+        public BaseViewModel(IHapticService hapticService, ISettingsService settingsService, IToastNotificator toaster, IURLService urlService, IAdService adService)
         {
             _hapticService = hapticService ?? DependencyService.Get<IHapticService>();
             _settingsService = settingsService ?? DependencyService.Get<ISettingsService>();
             _urlService = urlService ?? DependencyService.Get<IURLService>();
             _toaster = toaster ?? DependencyService.Get<IToastNotificator>();
+            _adService = adService ?? DependencyService.Get<IAdService>();
             //_toaster = toaster ?? new ToastNotification();
        
+        }
+
+        public async Task ShowAdAsync()
+        {
+            await _adService.ShowAdAsync();
         }
 
 
@@ -63,6 +71,7 @@ namespace PixUl8.ViewModels
 
             changed.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
         #endregion
     }
 }
