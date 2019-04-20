@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['ransac',['RANSAC',['../group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858',1,'cv']]],
+  ['read',['READ',['../classcv_1_1_file_storage.html#a973e41cb75ef6230412a567723b7482da83db4646d2a5a17669d01b872f583b9a',1,'cv::FileStorage']]],
+  ['real',['REAL',['../classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e',1,'cv::FileNode']]],
+  ['reduce_5favg',['REDUCE_AVG',['../group__core.html#gga14cdedf2933367eb9395ec16798af994ac10416c8de4b48625fa3e4520c2f1295',1,'cv']]],
+  ['reduce_5fmax',['REDUCE_MAX',['../group__core.html#gga14cdedf2933367eb9395ec16798af994abe1c2068a1f8d91e92f6a2b967f1418d',1,'cv']]],
+  ['reduce_5fmin',['REDUCE_MIN',['../group__core.html#gga14cdedf2933367eb9395ec16798af994a0a2e4e3f52f4e30bc167f3b6ecac98e3',1,'cv']]],
+  ['reduce_5fsum',['REDUCE_SUM',['../group__core.html#gga14cdedf2933367eb9395ec16798af994a2a8debd56d6da24241a33ad7f3e18747',1,'cv']]],
+  ['ref',['REF',['../classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ead0995dccfdbb905343a0ba98f8da5073',1,'cv::FileNode']]],
+  ['retr_5fccomp',['RETR_CCOMP',['../group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b',1,'cv']]],
+  ['retr_5fexternal',['RETR_EXTERNAL',['../group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7',1,'cv']]],
+  ['retr_5flist',['RETR_LIST',['../group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d',1,'cv']]],
+  ['retr_5ftree',['RETR_TREE',['../group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3',1,'cv']]],
+  ['rgb',['RGB',['../classcv_1_1ogl_1_1_texture2_d.html#a1838399ee67c0957c0ae42cabfa99033a410754db1d15f1801093aa9f4cad249b',1,'cv::ogl::Texture2D']]],
+  ['rgba',['RGBA',['../classcv_1_1ogl_1_1_texture2_d.html#a1838399ee67c0957c0ae42cabfa99033a254856775a3ed605a188c2948361276c',1,'cv::ogl::Texture2D']]],
+  ['rho',['RHO',['../group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a9b817ea4d511588fb4a1ee89a47b1217',1,'cv']]],
+  ['rotate_5f180',['ROTATE_180',['../group__core__array.html#gga6f45d55c0b1cc9d97f5353a7c8a7aac2a2769a5cfe4d673d4c5b1cbc303b75474',1,'cv']]],
+  ['rotate_5f90_5fclockwise',['ROTATE_90_CLOCKWISE',['../group__core__array.html#gga6f45d55c0b1cc9d97f5353a7c8a7aac2aa71505796374a7f4af9d0ea2f9435971',1,'cv']]],
+  ['rotate_5f90_5fcounterclockwise',['ROTATE_90_COUNTERCLOCKWISE',['../group__core__array.html#gga6f45d55c0b1cc9d97f5353a7c8a7aac2a9222b796b452d75c14f63c7deb31033f',1,'cv']]]
+];

@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['scale',['SCALE',['../class_pix_ul8_1_1i_o_s_1_1_u_i_views_1_1_u_i_camera_preview.html#a02aa91631c2acea000974d21058c6b76',1,'PixUl8.iOS.UIViews.UICameraPreview.SCALE()'],['../structcv_1_1_detection_r_o_i.html#a52c1cbb159bc79148bcdb70ecdb1b590',1,'cv::DetectionROI::scale()']]],
+  ['seq',['seq',['../struct_cv_file_node.html#ab2d72866b14ccf2414404f0c5ba443bb',1,'CvFileNode']]],
+  ['shear',['shear',['../structcv_1_1_qt_font.html#a00c72ce1fb692fcb8b9903f4ffec4f6c',1,'cv::QtFont::shear()'],['../struct_cv_font.html#a8c8c6ec0d06f325d1f6d460993ef9cd1',1,'CvFont::shear()']]],
+  ['signedgradient',['signedGradient',['../structcv_1_1_h_o_g_descriptor.html#a46bc9f07859e8add7a2390cd59545eef',1,'cv::HOGDescriptor']]],
+  ['size',['size',['../struct_cv_n_array_iterator.html#a9cc7aac6cb3f3d6d3645722c8509f223',1,'CvNArrayIterator::size()'],['../classcv_1_1_n_ary_mat_iterator.html#a42ec820537c8749494a65784dbb44261',1,'cv::NAryMatIterator::size()'],['../classcv_1_1_rotated_rect.html#a68ac6414ed3233245175e2c4f3b2bbfb',1,'cv::RotatedRect::size()'],['../classcv_1_1_key_point.html#ae3d0ccdfaa4b8e277d40d4ce2e5a11c2',1,'cv::KeyPoint::size()'],['../struct_cv_box2_d.html#adf96a3b9aaede51ab36ea74eca252d51',1,'CvBox2D::size()'],['../structcv_1_1videostab_1_1_ransac_params.html#a1c3369153b15c7f673d2afd5b07a55c1',1,'cv::videostab::RansacParams::size()']]],
+  ['size_5fhistogram_5f',['size_histogram_',['../structcvflann_1_1lsh_1_1_lsh_stats.html#a398f0c6c88c387c43ceab07ac5ff263a',1,'cvflann::lsh::LshStats']]],
+  ['sliceranges',['sliceRanges',['../classcv_1_1dnn_1_1_slice_layer.html#aa6c48ea2254ac699aeb9b4fbd2525fc4',1,'cv::dnn::SliceLayer']]],
+  ['squaresize',['squareSize',['../structcv_1_1_circles_grid_finder_parameters2.html#afb6b3c84767b4d5cd1bcd03509400234',1,'cv::CirclesGridFinderParameters2']]],
+  ['stack',['stack',['../struct_cv_n_array_iterator.html#a61f94809f9f8db0d243ee7646a3d75bc',1,'CvNArrayIterator']]],
+  ['start',['start',['../struct_cv_convexity_defect.html#a807dad6429d1a74c38469ebf86cfe801',1,'CvConvexityDefect']]],
+  ['start_5findex',['start_index',['../struct_cv_seq_block.html#a0a34f720596ad287c8a2362017a37d88',1,'CvSeqBlock']]],
+  ['state',['state',['../classcv_1_1_file_storage.html#aa53ac52fa536aeabba795a2164a11337',1,'cv::FileStorage']]],
+  ['statepost',['statePost',['../classcv_1_1_kalman_filter.html#a29dc3ac940dbce14a0824017395994b4',1,'cv::KalmanFilter']]],
+  ['statepre',['statePre',['../classcv_1_1_kalman_filter.html#a3d261f125a6bce49730a30b4e3635698',1,'cv::KalmanFilter']]],
+  ['step',['step',['../classcv_1_1cuda_1_1_gpu_mat.html#af46427ea4c9b3fe7687e3afa84baede3',1,'cv::cuda::GpuMat']]],
+  ['str',['str',['../struct_cv_file_node.html#abab378a457de42bc84259515c5bdec9f',1,'CvFileNode']]],
+  ['structs',['structs',['../classcv_1_1_file_storage.html#ac7f4c312292426cc1257713a0412e84b',1,'cv::FileStorage']]],
+  ['svmdetector',['svmDetector',['../structcv_1_1_h_o_g_descriptor.html#ab7417db8666af6184b50378fe2cc1c6e',1,'cv::HOGDescriptor']]],
+  ['sz',['sz',['../classcv_1_1_auto_buffer.html#a6025c7fd11fa230c2c315673d2d293b3',1,'cv::AutoBuffer']]]
+];

@@ -1,0 +1,17 @@
+var searchData=
+[
+  ['identifier',['identifier',['../interface_p_a_c_ad_provider.html#a388bd428bae24d292d3b01e055b1a294',1,'PACAdProvider']]],
+  ['is34enabled',['Is34Enabled',['../class_pix_ul8_1_1i_o_s_1_1_delegates_1_1_h_d_r_photo_capture_delegate.html#afb976e53020311d611cba1fb7da399b5',1,'PixUl8.iOS.Delegates.HDRPhotoCaptureDelegate.Is34Enabled()'],['../class_pix_ul8_1_1i_o_s_1_1_delegates_1_1_photo_capture_delegate.html#aa31b203cb0d03d10f9c88f16f2f1c156',1,'PixUl8.iOS.Delegates.PhotoCaptureDelegate.Is34Enabled()']]],
+  ['is3denabled',['is3DEnabled',['../class_pix_ul8_1_1_view_models_1_1_home_view_model.html#a4e76e7a1b0837451b71e7676907a05a3',1,'PixUl8.ViewModels.HomeViewModel.is3DEnabled()'],['../class_pix_ul8_1_1_services_1_1_settings_service.html#a61ea48ae2a674b0b0cfe98086970fa04',1,'PixUl8.Services.SettingsService.Is3DEnabled()']]],
+  ['is3don',['is3DOn',['../class_pix_ul8_1_1_views_1_1_native_views_1_1_camera_view.html#acbef01721c7dc818e5757fc5a2af32a3',1,'PixUl8.Views.NativeViews.CameraView.is3DOn()'],['../class_pix_ul8_1_1i_o_s_1_1_u_i_views_1_1_u_i_camera_preview.html#a5a025dc3bacbe18532112a61c5e97464',1,'PixUl8.iOS.UIViews.UICameraPreview.is3DOn()']]],
+  ['is43enabled',['is43Enabled',['../class_pix_ul8_1_1_view_models_1_1_home_view_model.html#ab50ce9e5bb00aa89edc7b0cfac84e08d',1,'PixUl8.ViewModels.HomeViewModel.is43Enabled()'],['../class_pix_ul8_1_1_services_1_1_settings_service.html#ae4d320961a7305b65c29d829644d3047',1,'PixUl8.Services.SettingsService.Is43Enabled()']]],
+  ['is43on',['is43On',['../class_pix_ul8_1_1_views_1_1_native_views_1_1_camera_view.html#a1874e3b068c87ec9832cd998fa9d0b0b',1,'PixUl8.Views.NativeViews.CameraView.is43On()'],['../class_pix_ul8_1_1i_o_s_1_1_u_i_views_1_1_u_i_camera_preview.html#a07986fc1e3a4444e341c505a90c1b5c0',1,'PixUl8.iOS.UIViews.UICameraPreview.is43On()']]],
+  ['isbackfacingactive',['IsBackFacingActive',['../class_pix_ul8_1_1_view_models_1_1_home_view_model.html#ad98e56253b64e2092f7698c5bc97b8f1',1,'PixUl8::ViewModels::HomeViewModel']]],
+  ['isflashactive',['IsFlashActive',['../class_pix_ul8_1_1_view_models_1_1_home_view_model.html#ac045c592154bf22027d12346fdbc1718',1,'PixUl8::ViewModels::HomeViewModel']]],
+  ['isflashnotactive',['IsFlashNotActive',['../class_pix_ul8_1_1_view_models_1_1_home_view_model.html#a3083c7e2730b1306a273865279525ba5',1,'PixUl8::ViewModels::HomeViewModel']]],
+  ['isflipped',['IsFlipped',['../class_pix_ul8_1_1_views_1_1_extension_views_1_1_x_f_flip_view.html#a08e05020b0f8058948e8e1aef603969b',1,'PixUl8::Views::ExtensionViews::XFFlipView']]],
+  ['isfrontfacing',['IsFrontFacing',['../class_pix_ul8_1_1i_o_s_1_1_delegates_1_1_h_d_r_photo_capture_delegate.html#a48ea93e569798ec2fc402257e5bc2e8b',1,'PixUl8.iOS.Delegates.HDRPhotoCaptureDelegate.IsFrontFacing()'],['../class_pix_ul8_1_1i_o_s_1_1_delegates_1_1_photo_capture_delegate.html#aa4fb6a950c763fc3007944481c69e484',1,'PixUl8.iOS.Delegates.PhotoCaptureDelegate.IsFrontFacing()']]],
+  ['isfrontfacingactive',['IsFrontFacingActive',['../class_pix_ul8_1_1_view_models_1_1_home_view_model.html#ae12ba45f9ec0e3a9c65a00b01b98f6af',1,'PixUl8::ViewModels::HomeViewModel']]],
+  ['ishdractive',['IsHDRActive',['../class_pix_ul8_1_1_view_models_1_1_home_view_model.html#a848ff7cd13c230ce9ef3103ed305a487',1,'PixUl8::ViewModels::HomeViewModel']]],
+  ['ishdrnotactive',['IsHDRNotActive',['../class_pix_ul8_1_1_view_models_1_1_home_view_model.html#ad73ea741eff152a6a7aee043f789305d',1,'PixUl8::ViewModels::HomeViewModel']]]
+];
