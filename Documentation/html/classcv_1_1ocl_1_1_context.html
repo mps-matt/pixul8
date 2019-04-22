@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::ocl::Context Class Reference</title>
+<title>PixUl8: cv::ocl::Context Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -237,9 +235,51 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setUseSVM</b> (bool e
 <tr class="memitem:a4aa908e62d1f7aafc16b2a1ee72b31c2"><td class="memItemLeft" align="right" valign="top"><a id="a4aa908e62d1f7aafc16b2a1ee72b31c2"></a>
 Impl *&#160;</td><td class="memItemRight" valign="bottom"><b>getImpl</b> () const</td></tr>
 <tr class="separator:a4aa908e62d1f7aafc16b2a1ee72b31c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1db64b0cb4055c0a3fbeb51fd8682bfa"><td class="memItemLeft" align="right" valign="top"><a id="a1db64b0cb4055c0a3fbeb51fd8682bfa"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Context</b> (int dtype)</td></tr>
+<tr class="separator:a1db64b0cb4055c0a3fbeb51fd8682bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f80a4600f75bb25b511e196c331b746"><td class="memItemLeft" align="right" valign="top"><a id="a2f80a4600f75bb25b511e196c331b746"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Context</b> (const <a class="el" href="classcv_1_1ocl_1_1_context.html">Context</a> &amp;c)</td></tr>
+<tr class="separator:a2f80a4600f75bb25b511e196c331b746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a8ac6dd8cb0d342d39a65acf402217"><td class="memItemLeft" align="right" valign="top"><a id="a43a8ac6dd8cb0d342d39a65acf402217"></a>
+<a class="el" href="classcv_1_1ocl_1_1_context.html">Context</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classcv_1_1ocl_1_1_context.html">Context</a> &amp;c)</td></tr>
+<tr class="separator:a43a8ac6dd8cb0d342d39a65acf402217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34a5de8c9951363ed10bc44813971d9b"><td class="memItemLeft" align="right" valign="top"><a id="a34a5de8c9951363ed10bc44813971d9b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> ()</td></tr>
+<tr class="separator:a34a5de8c9951363ed10bc44813971d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2662240cf90de0069ed416557ffab93"><td class="memItemLeft" align="right" valign="top"><a id="ab2662240cf90de0069ed416557ffab93"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (int dtype)</td></tr>
+<tr class="separator:ab2662240cf90de0069ed416557ffab93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb412f36d792b6a219c54d912a9ff43b"><td class="memItemLeft" align="right" valign="top"><a id="adb412f36d792b6a219c54d912a9ff43b"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>ndevices</b> () const</td></tr>
+<tr class="separator:adb412f36d792b6a219c54d912a9ff43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf7dfe6389a254b59e90520ab3c7c4fc"><td class="memItemLeft" align="right" valign="top"><a id="adf7dfe6389a254b59e90520ab3c7c4fc"></a>
+const <a class="el" href="classcv_1_1ocl_1_1_device.html">Device</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>device</b> (size_t idx) const</td></tr>
+<tr class="separator:adf7dfe6389a254b59e90520ab3c7c4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b16748ebf8a27a343c3d702606f5a28"><td class="memItemLeft" align="right" valign="top"><a id="a9b16748ebf8a27a343c3d702606f5a28"></a>
+<a class="el" href="classcv_1_1ocl_1_1_program.html">Program</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getProg</b> (const <a class="el" href="classcv_1_1ocl_1_1_program_source.html">ProgramSource</a> &amp;prog, const <a class="el" href="classcv_1_1_string.html">String</a> &amp;buildopt, <a class="el" href="classcv_1_1_string.html">String</a> &amp;errmsg)</td></tr>
+<tr class="separator:a9b16748ebf8a27a343c3d702606f5a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f0c81651cac98395c68f88756d92468"><td class="memItemLeft" align="right" valign="top"><a id="a2f0c81651cac98395c68f88756d92468"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>unloadProg</b> (<a class="el" href="classcv_1_1ocl_1_1_program.html">Program</a> &amp;prog)</td></tr>
+<tr class="separator:a2f0c81651cac98395c68f88756d92468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfd4507921bb1de80e41b7d39b3d73ce"><td class="memItemLeft" align="right" valign="top"><a id="acfd4507921bb1de80e41b7d39b3d73ce"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>ptr</b> () const</td></tr>
+<tr class="separator:acfd4507921bb1de80e41b7d39b3d73ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a15a1aa2cfc1b430f5aae424397c5c"><td class="memItemLeft" align="right" valign="top"><a id="a56a15a1aa2cfc1b430f5aae424397c5c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>useSVM</b> () const</td></tr>
+<tr class="separator:a56a15a1aa2cfc1b430f5aae424397c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a103147dc9c81aca85ffe02ee7325176a"><td class="memItemLeft" align="right" valign="top"><a id="a103147dc9c81aca85ffe02ee7325176a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setUseSVM</b> (bool enabled)</td></tr>
+<tr class="separator:a103147dc9c81aca85ffe02ee7325176a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aa908e62d1f7aafc16b2a1ee72b31c2"><td class="memItemLeft" align="right" valign="top"><a id="a4aa908e62d1f7aafc16b2a1ee72b31c2"></a>
+Impl *&#160;</td><td class="memItemRight" valign="bottom"><b>getImpl</b> () const</td></tr>
+<tr class="separator:a4aa908e62d1f7aafc16b2a1ee72b31c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ad7c97731d8c585f12ec2b5e301f6e83c"><td class="memItemLeft" align="right" valign="top"><a id="ad7c97731d8c585f12ec2b5e301f6e83c"></a>
+static <a class="el" href="classcv_1_1ocl_1_1_context.html">Context</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getDefault</b> (bool initialize=true)</td></tr>
+<tr class="separator:ad7c97731d8c585f12ec2b5e301f6e83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7c97731d8c585f12ec2b5e301f6e83c"><td class="memItemLeft" align="right" valign="top"><a id="ad7c97731d8c585f12ec2b5e301f6e83c"></a>
 static <a class="el" href="classcv_1_1ocl_1_1_context.html">Context</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getDefault</b> (bool initialize=true)</td></tr>
 <tr class="separator:ad7c97731d8c585f12ec2b5e301f6e83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,6 +301,9 @@ Impl *&#160;</td><td class="memItemRight" valign="bottom"><b>p</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
+<tr class="memitem:a4f09f3d6c49131f686272677278f0851"><td class="memItemLeft" align="right" valign="top"><a id="a4f09f3d6c49131f686272677278f0851"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initializeContextFromHandle</b> (<a class="el" href="classcv_1_1ocl_1_1_context.html">Context</a> &amp;ctx, void *platform, void *context, void *device)</td></tr>
+<tr class="separator:a4f09f3d6c49131f686272677278f0851"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f09f3d6c49131f686272677278f0851"><td class="memItemLeft" align="right" valign="top"><a id="a4f09f3d6c49131f686272677278f0851"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>initializeContextFromHandle</b> (<a class="el" href="classcv_1_1ocl_1_1_context.html">Context</a> &amp;ctx, void *platform, void *context, void *device)</td></tr>
 <tr class="separator:a4f09f3d6c49131f686272677278f0851"><td class="memSeparator" colspan="2">&#160;</td></tr>

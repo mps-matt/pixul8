@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::KeyPoint Class Reference</title>
+<title>PixUl8: cv::KeyPoint Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -129,9 +127,26 @@ CV_WRAP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memitem:ac90165a05ac1ffc86a2282299acad922"><td class="memItemLeft" align="right" valign="top"><a id="ac90165a05ac1ffc86a2282299acad922"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>hash</b> () const</td></tr>
 <tr class="separator:ac90165a05ac1ffc86a2282299acad922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fadd76d5cfe880fdfd3343d09c9903d"><td class="memItemLeft" align="right" valign="top"><a id="a2fadd76d5cfe880fdfd3343d09c9903d"></a>
+CV_WRAP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_key_point.html#a2fadd76d5cfe880fdfd3343d09c9903d">KeyPoint</a> ()</td></tr>
+<tr class="memdesc:a2fadd76d5cfe880fdfd3343d09c9903d"><td class="mdescLeft">&#160;</td><td class="mdescRight">the default constructor <br /></td></tr>
+<tr class="separator:a2fadd76d5cfe880fdfd3343d09c9903d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ce2d246f9dbd4ce3f1539bf40be9533"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_key_point.html#a8ce2d246f9dbd4ce3f1539bf40be9533">KeyPoint</a> (<a class="el" href="classcv_1_1_point__.html">Point2f</a> _pt, float _size, float _angle=-1, float _response=0, int _octave=0, int _class_id=-1)</td></tr>
+<tr class="separator:a8ce2d246f9dbd4ce3f1539bf40be9533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c43060b2e28f13ae25f49bcecc9c090"><td class="memItemLeft" align="right" valign="top">CV_WRAP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_key_point.html#a8c43060b2e28f13ae25f49bcecc9c090">KeyPoint</a> (float x, float y, float _size, float _angle=-1, float _response=0, int _octave=0, int _class_id=-1)</td></tr>
+<tr class="separator:a8c43060b2e28f13ae25f49bcecc9c090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac90165a05ac1ffc86a2282299acad922"><td class="memItemLeft" align="right" valign="top"><a id="ac90165a05ac1ffc86a2282299acad922"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>hash</b> () const</td></tr>
+<tr class="separator:ac90165a05ac1ffc86a2282299acad922"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:acd6b98a482c40e7b0e6e7e2772c2f8a2"><td class="memItemLeft" align="right" valign="top">static CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_key_point.html#acd6b98a482c40e7b0e6e7e2772c2f8a2">convert</a> (const std::vector&lt; <a class="el" href="classcv_1_1_key_point.html">KeyPoint</a> &gt; &amp;keypoints, CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_point__.html">Point2f</a> &gt; &amp;points2f, const std::vector&lt; int &gt; &amp;keypointIndexes=std::vector&lt; int &gt;())</td></tr>
+<tr class="separator:acd6b98a482c40e7b0e6e7e2772c2f8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58c38c069ec1f9bfb6389e4727560367"><td class="memItemLeft" align="right" valign="top">static CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_key_point.html#a58c38c069ec1f9bfb6389e4727560367">convert</a> (const std::vector&lt; <a class="el" href="classcv_1_1_point__.html">Point2f</a> &gt; &amp;points2f, CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_key_point.html">KeyPoint</a> &gt; &amp;keypoints, float <a class="el" href="classcv_1_1_key_point.html#ae3d0ccdfaa4b8e277d40d4ce2e5a11c2">size</a>=1, float <a class="el" href="classcv_1_1_key_point.html#acbb7a7d1608c7b14edec418f5098f2d7">response</a>=1, int <a class="el" href="classcv_1_1_key_point.html#abe25c6483d8db938d0cd15e0b4649720">octave</a>=0, int <a class="el" href="classcv_1_1_key_point.html#adcb6d1aa47b2e8d29b0b302982127269">class_id</a>=-1)</td></tr>
+<tr class="separator:a58c38c069ec1f9bfb6389e4727560367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a11888932eb8566af91362a9ee8257a"><td class="memItemLeft" align="right" valign="top">static CV_WRAP float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_key_point.html#a3a11888932eb8566af91362a9ee8257a">overlap</a> (const <a class="el" href="classcv_1_1_key_point.html">KeyPoint</a> &amp;kp1, const <a class="el" href="classcv_1_1_key_point.html">KeyPoint</a> &amp;kp2)</td></tr>
+<tr class="separator:a3a11888932eb8566af91362a9ee8257a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd6b98a482c40e7b0e6e7e2772c2f8a2"><td class="memItemLeft" align="right" valign="top">static CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_key_point.html#acd6b98a482c40e7b0e6e7e2772c2f8a2">convert</a> (const std::vector&lt; <a class="el" href="classcv_1_1_key_point.html">KeyPoint</a> &gt; &amp;keypoints, CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_point__.html">Point2f</a> &gt; &amp;points2f, const std::vector&lt; int &gt; &amp;keypointIndexes=std::vector&lt; int &gt;())</td></tr>
 <tr class="separator:acd6b98a482c40e7b0e6e7e2772c2f8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58c38c069ec1f9bfb6389e4727560367"><td class="memItemLeft" align="right" valign="top">static CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_key_point.html#a58c38c069ec1f9bfb6389e4727560367">convert</a> (const std::vector&lt; <a class="el" href="classcv_1_1_point__.html">Point2f</a> &gt; &amp;points2f, CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_key_point.html">KeyPoint</a> &gt; &amp;keypoints, float <a class="el" href="classcv_1_1_key_point.html#ae3d0ccdfaa4b8e277d40d4ce2e5a11c2">size</a>=1, float <a class="el" href="classcv_1_1_key_point.html#acbb7a7d1608c7b14edec418f5098f2d7">response</a>=1, int <a class="el" href="classcv_1_1_key_point.html#abe25c6483d8db938d0cd15e0b4649720">octave</a>=0, int <a class="el" href="classcv_1_1_key_point.html#adcb6d1aa47b2e8d29b0b302982127269">class_id</a>=-1)</td></tr>
@@ -188,7 +203,7 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 <p>The keypoint is characterized by the 2D position, scale (proportional to the diameter of the neighborhood that needs to be taken into account), orientation and some other parameters. The keypoint neighborhood is then analyzed by another algorithm that builds a descriptor (usually represented as a feature vector). The keypoints representing the same object in different images can then be matched using KDTree or another method. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8ce2d246f9dbd4ce3f1539bf40be9533"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ce2d246f9dbd4ce3f1539bf40be9533">&#9670;&nbsp;</a></span>KeyPoint() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ce2d246f9dbd4ce3f1539bf40be9533">&#9670;&nbsp;</a></span>KeyPoint() <span class="overload">[1/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,7 +266,7 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <a id="a8c43060b2e28f13ae25f49bcecc9c090"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c43060b2e28f13ae25f49bcecc9c090">&#9670;&nbsp;</a></span>KeyPoint() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c43060b2e28f13ae25f49bcecc9c090">&#9670;&nbsp;</a></span>KeyPoint() <span class="overload">[2/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -321,7 +336,7 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <a id="a8ce2d246f9dbd4ce3f1539bf40be9533"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ce2d246f9dbd4ce3f1539bf40be9533">&#9670;&nbsp;</a></span>KeyPoint() <span class="overload">[3/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ce2d246f9dbd4ce3f1539bf40be9533">&#9670;&nbsp;</a></span>KeyPoint() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -384,7 +399,7 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <a id="a8c43060b2e28f13ae25f49bcecc9c090"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c43060b2e28f13ae25f49bcecc9c090">&#9670;&nbsp;</a></span>KeyPoint() <span class="overload">[4/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c43060b2e28f13ae25f49bcecc9c090">&#9670;&nbsp;</a></span>KeyPoint() <span class="overload">[4/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -454,7 +469,7 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <a id="a8ce2d246f9dbd4ce3f1539bf40be9533"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ce2d246f9dbd4ce3f1539bf40be9533">&#9670;&nbsp;</a></span>KeyPoint() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ce2d246f9dbd4ce3f1539bf40be9533">&#9670;&nbsp;</a></span>KeyPoint() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -517,7 +532,7 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <a id="a8c43060b2e28f13ae25f49bcecc9c090"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c43060b2e28f13ae25f49bcecc9c090">&#9670;&nbsp;</a></span>KeyPoint() <span class="overload">[6/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c43060b2e28f13ae25f49bcecc9c090">&#9670;&nbsp;</a></span>KeyPoint() <span class="overload">[6/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -587,7 +602,7 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <a id="a8ce2d246f9dbd4ce3f1539bf40be9533"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ce2d246f9dbd4ce3f1539bf40be9533">&#9670;&nbsp;</a></span>KeyPoint() <span class="overload">[7/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ce2d246f9dbd4ce3f1539bf40be9533">&#9670;&nbsp;</a></span>KeyPoint() <span class="overload">[7/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -650,7 +665,140 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <a id="a8c43060b2e28f13ae25f49bcecc9c090"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c43060b2e28f13ae25f49bcecc9c090">&#9670;&nbsp;</a></span>KeyPoint() <span class="overload">[8/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c43060b2e28f13ae25f49bcecc9c090">&#9670;&nbsp;</a></span>KeyPoint() <span class="overload">[8/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP cv::KeyPoint::KeyPoint </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_angle</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_response</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_octave</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_class_id</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>x-coordinate of the keypoint </td></tr>
+    <tr><td class="paramname">y</td><td>y-coordinate of the keypoint </td></tr>
+    <tr><td class="paramname">_size</td><td>keypoint diameter </td></tr>
+    <tr><td class="paramname">_angle</td><td>keypoint orientation </td></tr>
+    <tr><td class="paramname">_response</td><td>keypoint detector response on the keypoint (that is, strength of the keypoint) </td></tr>
+    <tr><td class="paramname">_octave</td><td>pyramid octave in which the keypoint has been detected </td></tr>
+    <tr><td class="paramname">_class_id</td><td>object id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8ce2d246f9dbd4ce3f1539bf40be9533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ce2d246f9dbd4ce3f1539bf40be9533">&#9670;&nbsp;</a></span>KeyPoint() <span class="overload">[9/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::KeyPoint::KeyPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcv_1_1_point__.html">Point2f</a>&#160;</td>
+          <td class="paramname"><em>_pt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_angle</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_response</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_octave</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_class_id</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_pt</td><td>x &amp; y coordinates of the keypoint </td></tr>
+    <tr><td class="paramname">_size</td><td>keypoint diameter </td></tr>
+    <tr><td class="paramname">_angle</td><td>keypoint orientation </td></tr>
+    <tr><td class="paramname">_response</td><td>keypoint detector response on the keypoint (that is, strength of the keypoint) </td></tr>
+    <tr><td class="paramname">_octave</td><td>pyramid octave in which the keypoint has been detected </td></tr>
+    <tr><td class="paramname">_class_id</td><td>object id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8c43060b2e28f13ae25f49bcecc9c090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c43060b2e28f13ae25f49bcecc9c090">&#9670;&nbsp;</a></span>KeyPoint() <span class="overload">[10/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -721,7 +869,7 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="acd6b98a482c40e7b0e6e7e2772c2f8a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd6b98a482c40e7b0e6e7e2772c2f8a2">&#9670;&nbsp;</a></span>convert() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acd6b98a482c40e7b0e6e7e2772c2f8a2">&#9670;&nbsp;</a></span>convert() <span class="overload">[1/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -772,7 +920,7 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <a id="acd6b98a482c40e7b0e6e7e2772c2f8a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd6b98a482c40e7b0e6e7e2772c2f8a2">&#9670;&nbsp;</a></span>convert() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acd6b98a482c40e7b0e6e7e2772c2f8a2">&#9670;&nbsp;</a></span>convert() <span class="overload">[2/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -823,7 +971,7 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <a id="acd6b98a482c40e7b0e6e7e2772c2f8a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd6b98a482c40e7b0e6e7e2772c2f8a2">&#9670;&nbsp;</a></span>convert() <span class="overload">[3/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acd6b98a482c40e7b0e6e7e2772c2f8a2">&#9670;&nbsp;</a></span>convert() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -874,7 +1022,58 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <a id="acd6b98a482c40e7b0e6e7e2772c2f8a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd6b98a482c40e7b0e6e7e2772c2f8a2">&#9670;&nbsp;</a></span>convert() <span class="overload">[4/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acd6b98a482c40e7b0e6e7e2772c2f8a2">&#9670;&nbsp;</a></span>convert() <span class="overload">[4/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static CV_WRAP void cv::KeyPoint::convert </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classcv_1_1_key_point.html">KeyPoint</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>keypoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_point__.html">Point2f</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>points2f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>keypointIndexes</em> = <code>std::vector&lt;&#160;int&#160;&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method converts vector of keypoints to vector of points or the reverse, where each keypoint is assigned the same size and the same orientation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keypoints</td><td>Keypoints obtained from any feature detection algorithm like SIFT/SURF/ORB </td></tr>
+    <tr><td class="paramname">points2f</td><td>Array of (x,y) coordinates of each keypoint </td></tr>
+    <tr><td class="paramname">keypointIndexes</td><td>Array of indexes of keypoints to be converted to points. (Acts like a mask to convert only specified keypoints) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acd6b98a482c40e7b0e6e7e2772c2f8a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd6b98a482c40e7b0e6e7e2772c2f8a2">&#9670;&nbsp;</a></span>convert() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -925,7 +1124,7 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <a id="a58c38c069ec1f9bfb6389e4727560367"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58c38c069ec1f9bfb6389e4727560367">&#9670;&nbsp;</a></span>convert() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a58c38c069ec1f9bfb6389e4727560367">&#9670;&nbsp;</a></span>convert() <span class="overload">[6/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -996,7 +1195,7 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <a id="a58c38c069ec1f9bfb6389e4727560367"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58c38c069ec1f9bfb6389e4727560367">&#9670;&nbsp;</a></span>convert() <span class="overload">[6/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a58c38c069ec1f9bfb6389e4727560367">&#9670;&nbsp;</a></span>convert() <span class="overload">[7/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1067,7 +1266,7 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <a id="a58c38c069ec1f9bfb6389e4727560367"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58c38c069ec1f9bfb6389e4727560367">&#9670;&nbsp;</a></span>convert() <span class="overload">[7/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a58c38c069ec1f9bfb6389e4727560367">&#9670;&nbsp;</a></span>convert() <span class="overload">[8/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1138,7 +1337,78 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <a id="a58c38c069ec1f9bfb6389e4727560367"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58c38c069ec1f9bfb6389e4727560367">&#9670;&nbsp;</a></span>convert() <span class="overload">[8/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a58c38c069ec1f9bfb6389e4727560367">&#9670;&nbsp;</a></span>convert() <span class="overload">[9/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static CV_WRAP void cv::KeyPoint::convert </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classcv_1_1_point__.html">Point2f</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>points2f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_key_point.html">KeyPoint</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>keypoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>size</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>response</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>octave</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>class_id</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points2f</td><td>Array of (x,y) coordinates of each keypoint </td></tr>
+    <tr><td class="paramname">keypoints</td><td>Keypoints obtained from any feature detection algorithm like SIFT/SURF/ORB </td></tr>
+    <tr><td class="paramname">size</td><td>keypoint diameter </td></tr>
+    <tr><td class="paramname">response</td><td>keypoint detector response on the keypoint (that is, strength of the keypoint) </td></tr>
+    <tr><td class="paramname">octave</td><td>pyramid octave in which the keypoint has been detected </td></tr>
+    <tr><td class="paramname">class_id</td><td>object id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a58c38c069ec1f9bfb6389e4727560367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58c38c069ec1f9bfb6389e4727560367">&#9670;&nbsp;</a></span>convert() <span class="overload">[10/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1209,7 +1479,7 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <a id="a3a11888932eb8566af91362a9ee8257a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a11888932eb8566af91362a9ee8257a">&#9670;&nbsp;</a></span>overlap() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a11888932eb8566af91362a9ee8257a">&#9670;&nbsp;</a></span>overlap() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1252,7 +1522,7 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <a id="a3a11888932eb8566af91362a9ee8257a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a11888932eb8566af91362a9ee8257a">&#9670;&nbsp;</a></span>overlap() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a11888932eb8566af91362a9ee8257a">&#9670;&nbsp;</a></span>overlap() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1295,7 +1565,7 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <a id="a3a11888932eb8566af91362a9ee8257a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a11888932eb8566af91362a9ee8257a">&#9670;&nbsp;</a></span>overlap() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a11888932eb8566af91362a9ee8257a">&#9670;&nbsp;</a></span>overlap() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1338,7 +1608,50 @@ CV_PROP_RW int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 </div>
 <a id="a3a11888932eb8566af91362a9ee8257a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a11888932eb8566af91362a9ee8257a">&#9670;&nbsp;</a></span>overlap() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a11888932eb8566af91362a9ee8257a">&#9670;&nbsp;</a></span>overlap() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static CV_WRAP float cv::KeyPoint::overlap </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_key_point.html">KeyPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>kp1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_key_point.html">KeyPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>kp2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method computes overlap for pair of keypoints. Overlap is the ratio between area of keypoint regions' intersection and area of keypoint regions' union (considering keypoint region as circle). If they don't overlap, we get zero. If they coincide at same location with same size, we get 1. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kp1</td><td>First keypoint </td></tr>
+    <tr><td class="paramname">kp2</td><td>Second keypoint </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3a11888932eb8566af91362a9ee8257a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a11888932eb8566af91362a9ee8257a">&#9670;&nbsp;</a></span>overlap() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

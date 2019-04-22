@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: Image file reading and writing</title>
+<title>PixUl8: Image file reading and writing</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -146,12 +144,49 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b">cv::IMREAD_REDUCED_COLOR_4</a> = 33, 
 <a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f">cv::IMREAD_REDUCED_GRAYSCALE_8</a> = 64, 
 <a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0">cv::IMREAD_REDUCED_COLOR_8</a> = 65, 
-<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4">cv::IMREAD_IGNORE_ORIENTATION</a> = 128
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4">cv::IMREAD_IGNORE_ORIENTATION</a> = 128, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e">cv::IMREAD_UNCHANGED</a> = -1, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7">cv::IMREAD_GRAYSCALE</a> = 0, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a34a538f321c70682894c69de510ae134">cv::IMREAD_COLOR</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a369c39995e49500a8a9bd53fdb41508b">cv::IMREAD_ANYDEPTH</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a3ccf96f78ca438047bd15d0245576cb9">cv::IMREAD_ANYCOLOR</a> = 4, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a418b39d68bcc5216ddfdf7246683a3e4">cv::IMREAD_LOAD_GDAL</a> = 8, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0f6332a36a06db9b9ea448b5d532a80e">cv::IMREAD_REDUCED_GRAYSCALE_2</a> = 16, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aaa63fa00208b635890a827dfaf84c9bc">cv::IMREAD_REDUCED_COLOR_2</a> = 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a30d4340330a434fd922b0c2f926cfaaf">cv::IMREAD_REDUCED_GRAYSCALE_4</a> = 32, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b">cv::IMREAD_REDUCED_COLOR_4</a> = 33, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f">cv::IMREAD_REDUCED_GRAYSCALE_8</a> = 64, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0">cv::IMREAD_REDUCED_COLOR_8</a> = 65, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4">cv::IMREAD_IGNORE_ORIENTATION</a> = 128
 <br />
  }</td></tr>
 <tr class="memdesc:ga61d9b0126a3e57d9277ac48327799c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imread flags.  <a href="group__imgcodecs.html#ga61d9b0126a3e57d9277ac48327799c80">More...</a><br /></td></tr>
 <tr class="separator:ga61d9b0126a3e57d9277ac48327799c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga292d81be8d76901bff7988d18d2b42ac"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgcodecs.html#ga292d81be8d76901bff7988d18d2b42ac">cv::ImwriteFlags</a> { <br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48">cv::IMWRITE_JPEG_QUALITY</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6">cv::IMWRITE_JPEG_PROGRESSIVE</a> = 2, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae">cv::IMWRITE_JPEG_OPTIMIZE</a> = 3, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acafe3c57ddd00a002a7db864802d8d6c3b">cv::IMWRITE_JPEG_RST_INTERVAL</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaf7488b757f0df9655ec9188a9eb0083b">cv::IMWRITE_JPEG_LUMA_QUALITY</a> = 5, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca9d759d4c52d12ca68c7abe9b47101b7c">cv::IMWRITE_JPEG_CHROMA_QUALITY</a> = 6, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acae414f4508a2529430d37eb60e2bd6b0c">cv::IMWRITE_PNG_COMPRESSION</a> = 16, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca472be872a2312278cc8896b6a595589c">cv::IMWRITE_PNG_STRATEGY</a> = 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca6b3e307a0f0d2811555e21c31455308f">cv::IMWRITE_PNG_BILEVEL</a> = 18, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca684a887da5c355f99e5616c2dd7a7e1a">cv::IMWRITE_PXM_BINARY</a> = 32, 
+<b>IMWRITE_EXR_TYPE</b> = (3 &lt;&lt; 4) + 0, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab136965d7438f0fa284bf0b0a19557bd">cv::IMWRITE_WEBP_QUALITY</a> = 64, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab505ed6a68a0cc6ae554553783cf8665">cv::IMWRITE_PAM_TUPLETYPE</a> = 128, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca8863f3eac9fbfdfbb86bd0fe708e0ae9">cv::IMWRITE_TIFF_RESUNIT</a> = 256, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca5d6f2afd850dd0f322700127178cdab9">cv::IMWRITE_TIFF_XDPI</a> = 257, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b">cv::IMWRITE_TIFF_YDPI</a> = 258, 
+<br />
 &#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48">cv::IMWRITE_JPEG_QUALITY</a> = 1, 
 <a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6">cv::IMWRITE_JPEG_PROGRESSIVE</a> = 2, 
 <a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae">cv::IMWRITE_JPEG_OPTIMIZE</a> = 3, 
@@ -244,6 +279,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db">cv::IMWRITE_EXR_TYPE_HALF</a> = 1, 
 <a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17">cv::IMWRITE_EXR_TYPE_FLOAT</a> = 2, 
 <a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db">cv::IMWRITE_EXR_TYPE_HALF</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17">cv::IMWRITE_EXR_TYPE_FLOAT</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db">cv::IMWRITE_EXR_TYPE_HALF</a> = 1, 
 <a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17">cv::IMWRITE_EXR_TYPE_FLOAT</a> = 2
 <br />
  }</td></tr>
@@ -272,7 +310,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c">cv::IMWRITE_PNG_STRATEGY_FILTERED</a> = 1, 
 <a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4">cv::IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY</a> = 2, 
 <a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d">cv::IMWRITE_PNG_STRATEGY_RLE</a> = 3, 
-<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210">cv::IMWRITE_PNG_STRATEGY_FIXED</a> = 4
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210">cv::IMWRITE_PNG_STRATEGY_FIXED</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9aa1e2f59d1ae96dc382e8051d346dbf98">cv::IMWRITE_PNG_STRATEGY_DEFAULT</a> = 0, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c">cv::IMWRITE_PNG_STRATEGY_FILTERED</a> = 1, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4">cv::IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY</a> = 2, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d">cv::IMWRITE_PNG_STRATEGY_RLE</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210">cv::IMWRITE_PNG_STRATEGY_FIXED</a> = 4
 <br />
  }</td></tr>
 <tr class="memdesc:gaa60044d347ffd187161b5ec9ea2ef2f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imwrite PNG specific flags used to tune the compression algorithm.  <a href="group__imgcodecs.html#gaa60044d347ffd187161b5ec9ea2ef2f9">More...</a><br /></td></tr>
@@ -306,6 +351,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>IMWRITE_PAM_FORMAT_GRAYSCALE</b> = 2, 
 <b>IMWRITE_PAM_FORMAT_GRAYSCALE_ALPHA</b> = 3, 
 <b>IMWRITE_PAM_FORMAT_RGB</b> = 4, 
+<b>IMWRITE_PAM_FORMAT_RGB_ALPHA</b> = 5, 
+<br />
+&#160;&#160;<b>IMWRITE_PAM_FORMAT_NULL</b> = 0, 
+<b>IMWRITE_PAM_FORMAT_BLACKANDWHITE</b> = 1, 
+<b>IMWRITE_PAM_FORMAT_GRAYSCALE</b> = 2, 
+<b>IMWRITE_PAM_FORMAT_GRAYSCALE_ALPHA</b> = 3, 
+<br />
+&#160;&#160;<b>IMWRITE_PAM_FORMAT_RGB</b> = 4, 
 <b>IMWRITE_PAM_FORMAT_RGB_ALPHA</b> = 5
 <br />
  }</td></tr>
@@ -375,12 +428,49 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b">cv::IMREAD_REDUCED_COLOR_4</a> = 33, 
 <a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f">cv::IMREAD_REDUCED_GRAYSCALE_8</a> = 64, 
 <a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0">cv::IMREAD_REDUCED_COLOR_8</a> = 65, 
-<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4">cv::IMREAD_IGNORE_ORIENTATION</a> = 128
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4">cv::IMREAD_IGNORE_ORIENTATION</a> = 128, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e">cv::IMREAD_UNCHANGED</a> = -1, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7">cv::IMREAD_GRAYSCALE</a> = 0, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a34a538f321c70682894c69de510ae134">cv::IMREAD_COLOR</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a369c39995e49500a8a9bd53fdb41508b">cv::IMREAD_ANYDEPTH</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a3ccf96f78ca438047bd15d0245576cb9">cv::IMREAD_ANYCOLOR</a> = 4, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a418b39d68bcc5216ddfdf7246683a3e4">cv::IMREAD_LOAD_GDAL</a> = 8, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0f6332a36a06db9b9ea448b5d532a80e">cv::IMREAD_REDUCED_GRAYSCALE_2</a> = 16, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aaa63fa00208b635890a827dfaf84c9bc">cv::IMREAD_REDUCED_COLOR_2</a> = 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a30d4340330a434fd922b0c2f926cfaaf">cv::IMREAD_REDUCED_GRAYSCALE_4</a> = 32, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b">cv::IMREAD_REDUCED_COLOR_4</a> = 33, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f">cv::IMREAD_REDUCED_GRAYSCALE_8</a> = 64, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0">cv::IMREAD_REDUCED_COLOR_8</a> = 65, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4">cv::IMREAD_IGNORE_ORIENTATION</a> = 128
 <br />
  }</td></tr>
 <tr class="memdesc:ga61d9b0126a3e57d9277ac48327799c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imread flags.  <a href="group__imgcodecs.html#ga61d9b0126a3e57d9277ac48327799c80">More...</a><br /></td></tr>
 <tr class="separator:ga61d9b0126a3e57d9277ac48327799c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga292d81be8d76901bff7988d18d2b42ac"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgcodecs.html#ga292d81be8d76901bff7988d18d2b42ac">cv::ImwriteFlags</a> { <br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48">cv::IMWRITE_JPEG_QUALITY</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6">cv::IMWRITE_JPEG_PROGRESSIVE</a> = 2, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae">cv::IMWRITE_JPEG_OPTIMIZE</a> = 3, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acafe3c57ddd00a002a7db864802d8d6c3b">cv::IMWRITE_JPEG_RST_INTERVAL</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaf7488b757f0df9655ec9188a9eb0083b">cv::IMWRITE_JPEG_LUMA_QUALITY</a> = 5, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca9d759d4c52d12ca68c7abe9b47101b7c">cv::IMWRITE_JPEG_CHROMA_QUALITY</a> = 6, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acae414f4508a2529430d37eb60e2bd6b0c">cv::IMWRITE_PNG_COMPRESSION</a> = 16, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca472be872a2312278cc8896b6a595589c">cv::IMWRITE_PNG_STRATEGY</a> = 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca6b3e307a0f0d2811555e21c31455308f">cv::IMWRITE_PNG_BILEVEL</a> = 18, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca684a887da5c355f99e5616c2dd7a7e1a">cv::IMWRITE_PXM_BINARY</a> = 32, 
+<b>IMWRITE_EXR_TYPE</b> = (3 &lt;&lt; 4) + 0, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab136965d7438f0fa284bf0b0a19557bd">cv::IMWRITE_WEBP_QUALITY</a> = 64, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab505ed6a68a0cc6ae554553783cf8665">cv::IMWRITE_PAM_TUPLETYPE</a> = 128, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca8863f3eac9fbfdfbb86bd0fe708e0ae9">cv::IMWRITE_TIFF_RESUNIT</a> = 256, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca5d6f2afd850dd0f322700127178cdab9">cv::IMWRITE_TIFF_XDPI</a> = 257, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b">cv::IMWRITE_TIFF_YDPI</a> = 258, 
+<br />
 &#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48">cv::IMWRITE_JPEG_QUALITY</a> = 1, 
 <a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6">cv::IMWRITE_JPEG_PROGRESSIVE</a> = 2, 
 <a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae">cv::IMWRITE_JPEG_OPTIMIZE</a> = 3, 
@@ -473,6 +563,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db">cv::IMWRITE_EXR_TYPE_HALF</a> = 1, 
 <a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17">cv::IMWRITE_EXR_TYPE_FLOAT</a> = 2, 
 <a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db">cv::IMWRITE_EXR_TYPE_HALF</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17">cv::IMWRITE_EXR_TYPE_FLOAT</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db">cv::IMWRITE_EXR_TYPE_HALF</a> = 1, 
 <a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17">cv::IMWRITE_EXR_TYPE_FLOAT</a> = 2
 <br />
  }</td></tr>
@@ -501,7 +594,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c">cv::IMWRITE_PNG_STRATEGY_FILTERED</a> = 1, 
 <a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4">cv::IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY</a> = 2, 
 <a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d">cv::IMWRITE_PNG_STRATEGY_RLE</a> = 3, 
-<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210">cv::IMWRITE_PNG_STRATEGY_FIXED</a> = 4
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210">cv::IMWRITE_PNG_STRATEGY_FIXED</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9aa1e2f59d1ae96dc382e8051d346dbf98">cv::IMWRITE_PNG_STRATEGY_DEFAULT</a> = 0, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c">cv::IMWRITE_PNG_STRATEGY_FILTERED</a> = 1, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4">cv::IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY</a> = 2, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d">cv::IMWRITE_PNG_STRATEGY_RLE</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210">cv::IMWRITE_PNG_STRATEGY_FIXED</a> = 4
 <br />
  }</td></tr>
 <tr class="memdesc:gaa60044d347ffd187161b5ec9ea2ef2f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imwrite PNG specific flags used to tune the compression algorithm.  <a href="group__imgcodecs.html#gaa60044d347ffd187161b5ec9ea2ef2f9">More...</a><br /></td></tr>
@@ -535,6 +635,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>IMWRITE_PAM_FORMAT_GRAYSCALE</b> = 2, 
 <b>IMWRITE_PAM_FORMAT_GRAYSCALE_ALPHA</b> = 3, 
 <b>IMWRITE_PAM_FORMAT_RGB</b> = 4, 
+<b>IMWRITE_PAM_FORMAT_RGB_ALPHA</b> = 5, 
+<br />
+&#160;&#160;<b>IMWRITE_PAM_FORMAT_NULL</b> = 0, 
+<b>IMWRITE_PAM_FORMAT_BLACKANDWHITE</b> = 1, 
+<b>IMWRITE_PAM_FORMAT_GRAYSCALE</b> = 2, 
+<b>IMWRITE_PAM_FORMAT_GRAYSCALE_ALPHA</b> = 3, 
+<br />
+&#160;&#160;<b>IMWRITE_PAM_FORMAT_RGB</b> = 4, 
 <b>IMWRITE_PAM_FORMAT_RGB_ALPHA</b> = 5
 <br />
  }</td></tr>
@@ -604,12 +712,49 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b">cv::IMREAD_REDUCED_COLOR_4</a> = 33, 
 <a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f">cv::IMREAD_REDUCED_GRAYSCALE_8</a> = 64, 
 <a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0">cv::IMREAD_REDUCED_COLOR_8</a> = 65, 
-<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4">cv::IMREAD_IGNORE_ORIENTATION</a> = 128
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4">cv::IMREAD_IGNORE_ORIENTATION</a> = 128, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e">cv::IMREAD_UNCHANGED</a> = -1, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7">cv::IMREAD_GRAYSCALE</a> = 0, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a34a538f321c70682894c69de510ae134">cv::IMREAD_COLOR</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a369c39995e49500a8a9bd53fdb41508b">cv::IMREAD_ANYDEPTH</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a3ccf96f78ca438047bd15d0245576cb9">cv::IMREAD_ANYCOLOR</a> = 4, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a418b39d68bcc5216ddfdf7246683a3e4">cv::IMREAD_LOAD_GDAL</a> = 8, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0f6332a36a06db9b9ea448b5d532a80e">cv::IMREAD_REDUCED_GRAYSCALE_2</a> = 16, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aaa63fa00208b635890a827dfaf84c9bc">cv::IMREAD_REDUCED_COLOR_2</a> = 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a30d4340330a434fd922b0c2f926cfaaf">cv::IMREAD_REDUCED_GRAYSCALE_4</a> = 32, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b">cv::IMREAD_REDUCED_COLOR_4</a> = 33, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f">cv::IMREAD_REDUCED_GRAYSCALE_8</a> = 64, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0">cv::IMREAD_REDUCED_COLOR_8</a> = 65, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4">cv::IMREAD_IGNORE_ORIENTATION</a> = 128
 <br />
  }</td></tr>
 <tr class="memdesc:ga61d9b0126a3e57d9277ac48327799c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imread flags.  <a href="group__imgcodecs.html#ga61d9b0126a3e57d9277ac48327799c80">More...</a><br /></td></tr>
 <tr class="separator:ga61d9b0126a3e57d9277ac48327799c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga292d81be8d76901bff7988d18d2b42ac"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgcodecs.html#ga292d81be8d76901bff7988d18d2b42ac">cv::ImwriteFlags</a> { <br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48">cv::IMWRITE_JPEG_QUALITY</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6">cv::IMWRITE_JPEG_PROGRESSIVE</a> = 2, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae">cv::IMWRITE_JPEG_OPTIMIZE</a> = 3, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acafe3c57ddd00a002a7db864802d8d6c3b">cv::IMWRITE_JPEG_RST_INTERVAL</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaf7488b757f0df9655ec9188a9eb0083b">cv::IMWRITE_JPEG_LUMA_QUALITY</a> = 5, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca9d759d4c52d12ca68c7abe9b47101b7c">cv::IMWRITE_JPEG_CHROMA_QUALITY</a> = 6, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acae414f4508a2529430d37eb60e2bd6b0c">cv::IMWRITE_PNG_COMPRESSION</a> = 16, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca472be872a2312278cc8896b6a595589c">cv::IMWRITE_PNG_STRATEGY</a> = 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca6b3e307a0f0d2811555e21c31455308f">cv::IMWRITE_PNG_BILEVEL</a> = 18, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca684a887da5c355f99e5616c2dd7a7e1a">cv::IMWRITE_PXM_BINARY</a> = 32, 
+<b>IMWRITE_EXR_TYPE</b> = (3 &lt;&lt; 4) + 0, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab136965d7438f0fa284bf0b0a19557bd">cv::IMWRITE_WEBP_QUALITY</a> = 64, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab505ed6a68a0cc6ae554553783cf8665">cv::IMWRITE_PAM_TUPLETYPE</a> = 128, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca8863f3eac9fbfdfbb86bd0fe708e0ae9">cv::IMWRITE_TIFF_RESUNIT</a> = 256, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca5d6f2afd850dd0f322700127178cdab9">cv::IMWRITE_TIFF_XDPI</a> = 257, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b">cv::IMWRITE_TIFF_YDPI</a> = 258, 
+<br />
 &#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48">cv::IMWRITE_JPEG_QUALITY</a> = 1, 
 <a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6">cv::IMWRITE_JPEG_PROGRESSIVE</a> = 2, 
 <a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae">cv::IMWRITE_JPEG_OPTIMIZE</a> = 3, 
@@ -702,6 +847,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db">cv::IMWRITE_EXR_TYPE_HALF</a> = 1, 
 <a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17">cv::IMWRITE_EXR_TYPE_FLOAT</a> = 2, 
 <a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db">cv::IMWRITE_EXR_TYPE_HALF</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17">cv::IMWRITE_EXR_TYPE_FLOAT</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db">cv::IMWRITE_EXR_TYPE_HALF</a> = 1, 
 <a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17">cv::IMWRITE_EXR_TYPE_FLOAT</a> = 2
 <br />
  }</td></tr>
@@ -730,7 +878,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c">cv::IMWRITE_PNG_STRATEGY_FILTERED</a> = 1, 
 <a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4">cv::IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY</a> = 2, 
 <a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d">cv::IMWRITE_PNG_STRATEGY_RLE</a> = 3, 
-<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210">cv::IMWRITE_PNG_STRATEGY_FIXED</a> = 4
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210">cv::IMWRITE_PNG_STRATEGY_FIXED</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9aa1e2f59d1ae96dc382e8051d346dbf98">cv::IMWRITE_PNG_STRATEGY_DEFAULT</a> = 0, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c">cv::IMWRITE_PNG_STRATEGY_FILTERED</a> = 1, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4">cv::IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY</a> = 2, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d">cv::IMWRITE_PNG_STRATEGY_RLE</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210">cv::IMWRITE_PNG_STRATEGY_FIXED</a> = 4
 <br />
  }</td></tr>
 <tr class="memdesc:gaa60044d347ffd187161b5ec9ea2ef2f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imwrite PNG specific flags used to tune the compression algorithm.  <a href="group__imgcodecs.html#gaa60044d347ffd187161b5ec9ea2ef2f9">More...</a><br /></td></tr>
@@ -764,6 +919,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>IMWRITE_PAM_FORMAT_GRAYSCALE</b> = 2, 
 <b>IMWRITE_PAM_FORMAT_GRAYSCALE_ALPHA</b> = 3, 
 <b>IMWRITE_PAM_FORMAT_RGB</b> = 4, 
+<b>IMWRITE_PAM_FORMAT_RGB_ALPHA</b> = 5, 
+<br />
+&#160;&#160;<b>IMWRITE_PAM_FORMAT_NULL</b> = 0, 
+<b>IMWRITE_PAM_FORMAT_BLACKANDWHITE</b> = 1, 
+<b>IMWRITE_PAM_FORMAT_GRAYSCALE</b> = 2, 
+<b>IMWRITE_PAM_FORMAT_GRAYSCALE_ALPHA</b> = 3, 
+<br />
+&#160;&#160;<b>IMWRITE_PAM_FORMAT_RGB</b> = 4, 
 <b>IMWRITE_PAM_FORMAT_RGB_ALPHA</b> = 5
 <br />
  }</td></tr>
@@ -833,12 +996,49 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b">cv::IMREAD_REDUCED_COLOR_4</a> = 33, 
 <a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f">cv::IMREAD_REDUCED_GRAYSCALE_8</a> = 64, 
 <a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0">cv::IMREAD_REDUCED_COLOR_8</a> = 65, 
-<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4">cv::IMREAD_IGNORE_ORIENTATION</a> = 128
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4">cv::IMREAD_IGNORE_ORIENTATION</a> = 128, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e">cv::IMREAD_UNCHANGED</a> = -1, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7">cv::IMREAD_GRAYSCALE</a> = 0, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a34a538f321c70682894c69de510ae134">cv::IMREAD_COLOR</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a369c39995e49500a8a9bd53fdb41508b">cv::IMREAD_ANYDEPTH</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a3ccf96f78ca438047bd15d0245576cb9">cv::IMREAD_ANYCOLOR</a> = 4, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a418b39d68bcc5216ddfdf7246683a3e4">cv::IMREAD_LOAD_GDAL</a> = 8, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0f6332a36a06db9b9ea448b5d532a80e">cv::IMREAD_REDUCED_GRAYSCALE_2</a> = 16, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aaa63fa00208b635890a827dfaf84c9bc">cv::IMREAD_REDUCED_COLOR_2</a> = 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a30d4340330a434fd922b0c2f926cfaaf">cv::IMREAD_REDUCED_GRAYSCALE_4</a> = 32, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b">cv::IMREAD_REDUCED_COLOR_4</a> = 33, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f">cv::IMREAD_REDUCED_GRAYSCALE_8</a> = 64, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0">cv::IMREAD_REDUCED_COLOR_8</a> = 65, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4">cv::IMREAD_IGNORE_ORIENTATION</a> = 128
 <br />
  }</td></tr>
 <tr class="memdesc:ga61d9b0126a3e57d9277ac48327799c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imread flags.  <a href="group__imgcodecs.html#ga61d9b0126a3e57d9277ac48327799c80">More...</a><br /></td></tr>
 <tr class="separator:ga61d9b0126a3e57d9277ac48327799c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga292d81be8d76901bff7988d18d2b42ac"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgcodecs.html#ga292d81be8d76901bff7988d18d2b42ac">cv::ImwriteFlags</a> { <br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48">cv::IMWRITE_JPEG_QUALITY</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6">cv::IMWRITE_JPEG_PROGRESSIVE</a> = 2, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae">cv::IMWRITE_JPEG_OPTIMIZE</a> = 3, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acafe3c57ddd00a002a7db864802d8d6c3b">cv::IMWRITE_JPEG_RST_INTERVAL</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaf7488b757f0df9655ec9188a9eb0083b">cv::IMWRITE_JPEG_LUMA_QUALITY</a> = 5, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca9d759d4c52d12ca68c7abe9b47101b7c">cv::IMWRITE_JPEG_CHROMA_QUALITY</a> = 6, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acae414f4508a2529430d37eb60e2bd6b0c">cv::IMWRITE_PNG_COMPRESSION</a> = 16, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca472be872a2312278cc8896b6a595589c">cv::IMWRITE_PNG_STRATEGY</a> = 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca6b3e307a0f0d2811555e21c31455308f">cv::IMWRITE_PNG_BILEVEL</a> = 18, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca684a887da5c355f99e5616c2dd7a7e1a">cv::IMWRITE_PXM_BINARY</a> = 32, 
+<b>IMWRITE_EXR_TYPE</b> = (3 &lt;&lt; 4) + 0, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab136965d7438f0fa284bf0b0a19557bd">cv::IMWRITE_WEBP_QUALITY</a> = 64, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab505ed6a68a0cc6ae554553783cf8665">cv::IMWRITE_PAM_TUPLETYPE</a> = 128, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca8863f3eac9fbfdfbb86bd0fe708e0ae9">cv::IMWRITE_TIFF_RESUNIT</a> = 256, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca5d6f2afd850dd0f322700127178cdab9">cv::IMWRITE_TIFF_XDPI</a> = 257, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b">cv::IMWRITE_TIFF_YDPI</a> = 258, 
+<br />
 &#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48">cv::IMWRITE_JPEG_QUALITY</a> = 1, 
 <a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6">cv::IMWRITE_JPEG_PROGRESSIVE</a> = 2, 
 <a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae">cv::IMWRITE_JPEG_OPTIMIZE</a> = 3, 
@@ -931,6 +1131,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db">cv::IMWRITE_EXR_TYPE_HALF</a> = 1, 
 <a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17">cv::IMWRITE_EXR_TYPE_FLOAT</a> = 2, 
 <a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db">cv::IMWRITE_EXR_TYPE_HALF</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17">cv::IMWRITE_EXR_TYPE_FLOAT</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db">cv::IMWRITE_EXR_TYPE_HALF</a> = 1, 
 <a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17">cv::IMWRITE_EXR_TYPE_FLOAT</a> = 2
 <br />
  }</td></tr>
@@ -959,7 +1162,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c">cv::IMWRITE_PNG_STRATEGY_FILTERED</a> = 1, 
 <a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4">cv::IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY</a> = 2, 
 <a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d">cv::IMWRITE_PNG_STRATEGY_RLE</a> = 3, 
-<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210">cv::IMWRITE_PNG_STRATEGY_FIXED</a> = 4
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210">cv::IMWRITE_PNG_STRATEGY_FIXED</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9aa1e2f59d1ae96dc382e8051d346dbf98">cv::IMWRITE_PNG_STRATEGY_DEFAULT</a> = 0, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c">cv::IMWRITE_PNG_STRATEGY_FILTERED</a> = 1, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4">cv::IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY</a> = 2, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d">cv::IMWRITE_PNG_STRATEGY_RLE</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210">cv::IMWRITE_PNG_STRATEGY_FIXED</a> = 4
 <br />
  }</td></tr>
 <tr class="memdesc:gaa60044d347ffd187161b5ec9ea2ef2f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imwrite PNG specific flags used to tune the compression algorithm.  <a href="group__imgcodecs.html#gaa60044d347ffd187161b5ec9ea2ef2f9">More...</a><br /></td></tr>
@@ -993,6 +1203,298 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>IMWRITE_PAM_FORMAT_GRAYSCALE</b> = 2, 
 <b>IMWRITE_PAM_FORMAT_GRAYSCALE_ALPHA</b> = 3, 
 <b>IMWRITE_PAM_FORMAT_RGB</b> = 4, 
+<b>IMWRITE_PAM_FORMAT_RGB_ALPHA</b> = 5, 
+<br />
+&#160;&#160;<b>IMWRITE_PAM_FORMAT_NULL</b> = 0, 
+<b>IMWRITE_PAM_FORMAT_BLACKANDWHITE</b> = 1, 
+<b>IMWRITE_PAM_FORMAT_GRAYSCALE</b> = 2, 
+<b>IMWRITE_PAM_FORMAT_GRAYSCALE_ALPHA</b> = 3, 
+<br />
+&#160;&#160;<b>IMWRITE_PAM_FORMAT_RGB</b> = 4, 
+<b>IMWRITE_PAM_FORMAT_RGB_ALPHA</b> = 5
+<br />
+ }</td></tr>
+<tr class="memdesc:ga4e6c77a906952525a4d22fb3efea0e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imwrite PAM specific tupletype flags used to define the 'TUPETYPE' field of a PAM file. <br /></td></tr>
+<tr class="separator:ga4e6c77a906952525a4d22fb3efea0e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61d9b0126a3e57d9277ac48327799c80"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgcodecs.html#ga61d9b0126a3e57d9277ac48327799c80">cv::ImreadModes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e">cv::IMREAD_UNCHANGED</a> = -1, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7">cv::IMREAD_GRAYSCALE</a> = 0, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a34a538f321c70682894c69de510ae134">cv::IMREAD_COLOR</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a369c39995e49500a8a9bd53fdb41508b">cv::IMREAD_ANYDEPTH</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a3ccf96f78ca438047bd15d0245576cb9">cv::IMREAD_ANYCOLOR</a> = 4, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a418b39d68bcc5216ddfdf7246683a3e4">cv::IMREAD_LOAD_GDAL</a> = 8, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0f6332a36a06db9b9ea448b5d532a80e">cv::IMREAD_REDUCED_GRAYSCALE_2</a> = 16, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aaa63fa00208b635890a827dfaf84c9bc">cv::IMREAD_REDUCED_COLOR_2</a> = 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a30d4340330a434fd922b0c2f926cfaaf">cv::IMREAD_REDUCED_GRAYSCALE_4</a> = 32, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b">cv::IMREAD_REDUCED_COLOR_4</a> = 33, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f">cv::IMREAD_REDUCED_GRAYSCALE_8</a> = 64, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0">cv::IMREAD_REDUCED_COLOR_8</a> = 65, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4">cv::IMREAD_IGNORE_ORIENTATION</a> = 128, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e">cv::IMREAD_UNCHANGED</a> = -1, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7">cv::IMREAD_GRAYSCALE</a> = 0, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a34a538f321c70682894c69de510ae134">cv::IMREAD_COLOR</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a369c39995e49500a8a9bd53fdb41508b">cv::IMREAD_ANYDEPTH</a> = 2, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a3ccf96f78ca438047bd15d0245576cb9">cv::IMREAD_ANYCOLOR</a> = 4, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a418b39d68bcc5216ddfdf7246683a3e4">cv::IMREAD_LOAD_GDAL</a> = 8, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0f6332a36a06db9b9ea448b5d532a80e">cv::IMREAD_REDUCED_GRAYSCALE_2</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aaa63fa00208b635890a827dfaf84c9bc">cv::IMREAD_REDUCED_COLOR_2</a> = 17, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a30d4340330a434fd922b0c2f926cfaaf">cv::IMREAD_REDUCED_GRAYSCALE_4</a> = 32, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b">cv::IMREAD_REDUCED_COLOR_4</a> = 33, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f">cv::IMREAD_REDUCED_GRAYSCALE_8</a> = 64, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0">cv::IMREAD_REDUCED_COLOR_8</a> = 65, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4">cv::IMREAD_IGNORE_ORIENTATION</a> = 128, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e">cv::IMREAD_UNCHANGED</a> = -1, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7">cv::IMREAD_GRAYSCALE</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a34a538f321c70682894c69de510ae134">cv::IMREAD_COLOR</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a369c39995e49500a8a9bd53fdb41508b">cv::IMREAD_ANYDEPTH</a> = 2, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a3ccf96f78ca438047bd15d0245576cb9">cv::IMREAD_ANYCOLOR</a> = 4, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a418b39d68bcc5216ddfdf7246683a3e4">cv::IMREAD_LOAD_GDAL</a> = 8, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0f6332a36a06db9b9ea448b5d532a80e">cv::IMREAD_REDUCED_GRAYSCALE_2</a> = 16, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aaa63fa00208b635890a827dfaf84c9bc">cv::IMREAD_REDUCED_COLOR_2</a> = 17, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a30d4340330a434fd922b0c2f926cfaaf">cv::IMREAD_REDUCED_GRAYSCALE_4</a> = 32, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b">cv::IMREAD_REDUCED_COLOR_4</a> = 33, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f">cv::IMREAD_REDUCED_GRAYSCALE_8</a> = 64, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0">cv::IMREAD_REDUCED_COLOR_8</a> = 65, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4">cv::IMREAD_IGNORE_ORIENTATION</a> = 128, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e">cv::IMREAD_UNCHANGED</a> = -1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7">cv::IMREAD_GRAYSCALE</a> = 0, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a34a538f321c70682894c69de510ae134">cv::IMREAD_COLOR</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a369c39995e49500a8a9bd53fdb41508b">cv::IMREAD_ANYDEPTH</a> = 2, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a3ccf96f78ca438047bd15d0245576cb9">cv::IMREAD_ANYCOLOR</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a418b39d68bcc5216ddfdf7246683a3e4">cv::IMREAD_LOAD_GDAL</a> = 8, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0f6332a36a06db9b9ea448b5d532a80e">cv::IMREAD_REDUCED_GRAYSCALE_2</a> = 16, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aaa63fa00208b635890a827dfaf84c9bc">cv::IMREAD_REDUCED_COLOR_2</a> = 17, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a30d4340330a434fd922b0c2f926cfaaf">cv::IMREAD_REDUCED_GRAYSCALE_4</a> = 32, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b">cv::IMREAD_REDUCED_COLOR_4</a> = 33, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f">cv::IMREAD_REDUCED_GRAYSCALE_8</a> = 64, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0">cv::IMREAD_REDUCED_COLOR_8</a> = 65, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4">cv::IMREAD_IGNORE_ORIENTATION</a> = 128, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e">cv::IMREAD_UNCHANGED</a> = -1, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7">cv::IMREAD_GRAYSCALE</a> = 0, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a34a538f321c70682894c69de510ae134">cv::IMREAD_COLOR</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a369c39995e49500a8a9bd53fdb41508b">cv::IMREAD_ANYDEPTH</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a3ccf96f78ca438047bd15d0245576cb9">cv::IMREAD_ANYCOLOR</a> = 4, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a418b39d68bcc5216ddfdf7246683a3e4">cv::IMREAD_LOAD_GDAL</a> = 8, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0f6332a36a06db9b9ea448b5d532a80e">cv::IMREAD_REDUCED_GRAYSCALE_2</a> = 16, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aaa63fa00208b635890a827dfaf84c9bc">cv::IMREAD_REDUCED_COLOR_2</a> = 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a30d4340330a434fd922b0c2f926cfaaf">cv::IMREAD_REDUCED_GRAYSCALE_4</a> = 32, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b">cv::IMREAD_REDUCED_COLOR_4</a> = 33, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f">cv::IMREAD_REDUCED_GRAYSCALE_8</a> = 64, 
+<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0">cv::IMREAD_REDUCED_COLOR_8</a> = 65, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4">cv::IMREAD_IGNORE_ORIENTATION</a> = 128
+<br />
+ }</td></tr>
+<tr class="memdesc:ga61d9b0126a3e57d9277ac48327799c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imread flags.  <a href="group__imgcodecs.html#ga61d9b0126a3e57d9277ac48327799c80">More...</a><br /></td></tr>
+<tr class="separator:ga61d9b0126a3e57d9277ac48327799c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga292d81be8d76901bff7988d18d2b42ac"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgcodecs.html#ga292d81be8d76901bff7988d18d2b42ac">cv::ImwriteFlags</a> { <br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48">cv::IMWRITE_JPEG_QUALITY</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6">cv::IMWRITE_JPEG_PROGRESSIVE</a> = 2, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae">cv::IMWRITE_JPEG_OPTIMIZE</a> = 3, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acafe3c57ddd00a002a7db864802d8d6c3b">cv::IMWRITE_JPEG_RST_INTERVAL</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaf7488b757f0df9655ec9188a9eb0083b">cv::IMWRITE_JPEG_LUMA_QUALITY</a> = 5, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca9d759d4c52d12ca68c7abe9b47101b7c">cv::IMWRITE_JPEG_CHROMA_QUALITY</a> = 6, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acae414f4508a2529430d37eb60e2bd6b0c">cv::IMWRITE_PNG_COMPRESSION</a> = 16, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca472be872a2312278cc8896b6a595589c">cv::IMWRITE_PNG_STRATEGY</a> = 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca6b3e307a0f0d2811555e21c31455308f">cv::IMWRITE_PNG_BILEVEL</a> = 18, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca684a887da5c355f99e5616c2dd7a7e1a">cv::IMWRITE_PXM_BINARY</a> = 32, 
+<b>IMWRITE_EXR_TYPE</b> = (3 &lt;&lt; 4) + 0, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab136965d7438f0fa284bf0b0a19557bd">cv::IMWRITE_WEBP_QUALITY</a> = 64, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab505ed6a68a0cc6ae554553783cf8665">cv::IMWRITE_PAM_TUPLETYPE</a> = 128, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca8863f3eac9fbfdfbb86bd0fe708e0ae9">cv::IMWRITE_TIFF_RESUNIT</a> = 256, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca5d6f2afd850dd0f322700127178cdab9">cv::IMWRITE_TIFF_XDPI</a> = 257, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b">cv::IMWRITE_TIFF_YDPI</a> = 258, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48">cv::IMWRITE_JPEG_QUALITY</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6">cv::IMWRITE_JPEG_PROGRESSIVE</a> = 2, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae">cv::IMWRITE_JPEG_OPTIMIZE</a> = 3, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acafe3c57ddd00a002a7db864802d8d6c3b">cv::IMWRITE_JPEG_RST_INTERVAL</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaf7488b757f0df9655ec9188a9eb0083b">cv::IMWRITE_JPEG_LUMA_QUALITY</a> = 5, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca9d759d4c52d12ca68c7abe9b47101b7c">cv::IMWRITE_JPEG_CHROMA_QUALITY</a> = 6, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acae414f4508a2529430d37eb60e2bd6b0c">cv::IMWRITE_PNG_COMPRESSION</a> = 16, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca472be872a2312278cc8896b6a595589c">cv::IMWRITE_PNG_STRATEGY</a> = 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca6b3e307a0f0d2811555e21c31455308f">cv::IMWRITE_PNG_BILEVEL</a> = 18, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca684a887da5c355f99e5616c2dd7a7e1a">cv::IMWRITE_PXM_BINARY</a> = 32, 
+<b>IMWRITE_EXR_TYPE</b> = (3 &lt;&lt; 4) + 0, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab136965d7438f0fa284bf0b0a19557bd">cv::IMWRITE_WEBP_QUALITY</a> = 64, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab505ed6a68a0cc6ae554553783cf8665">cv::IMWRITE_PAM_TUPLETYPE</a> = 128, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca8863f3eac9fbfdfbb86bd0fe708e0ae9">cv::IMWRITE_TIFF_RESUNIT</a> = 256, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca5d6f2afd850dd0f322700127178cdab9">cv::IMWRITE_TIFF_XDPI</a> = 257, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b">cv::IMWRITE_TIFF_YDPI</a> = 258, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48">cv::IMWRITE_JPEG_QUALITY</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6">cv::IMWRITE_JPEG_PROGRESSIVE</a> = 2, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae">cv::IMWRITE_JPEG_OPTIMIZE</a> = 3, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acafe3c57ddd00a002a7db864802d8d6c3b">cv::IMWRITE_JPEG_RST_INTERVAL</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaf7488b757f0df9655ec9188a9eb0083b">cv::IMWRITE_JPEG_LUMA_QUALITY</a> = 5, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca9d759d4c52d12ca68c7abe9b47101b7c">cv::IMWRITE_JPEG_CHROMA_QUALITY</a> = 6, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acae414f4508a2529430d37eb60e2bd6b0c">cv::IMWRITE_PNG_COMPRESSION</a> = 16, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca472be872a2312278cc8896b6a595589c">cv::IMWRITE_PNG_STRATEGY</a> = 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca6b3e307a0f0d2811555e21c31455308f">cv::IMWRITE_PNG_BILEVEL</a> = 18, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca684a887da5c355f99e5616c2dd7a7e1a">cv::IMWRITE_PXM_BINARY</a> = 32, 
+<b>IMWRITE_EXR_TYPE</b> = (3 &lt;&lt; 4) + 0, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab136965d7438f0fa284bf0b0a19557bd">cv::IMWRITE_WEBP_QUALITY</a> = 64, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab505ed6a68a0cc6ae554553783cf8665">cv::IMWRITE_PAM_TUPLETYPE</a> = 128, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca8863f3eac9fbfdfbb86bd0fe708e0ae9">cv::IMWRITE_TIFF_RESUNIT</a> = 256, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca5d6f2afd850dd0f322700127178cdab9">cv::IMWRITE_TIFF_XDPI</a> = 257, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b">cv::IMWRITE_TIFF_YDPI</a> = 258, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48">cv::IMWRITE_JPEG_QUALITY</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6">cv::IMWRITE_JPEG_PROGRESSIVE</a> = 2, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae">cv::IMWRITE_JPEG_OPTIMIZE</a> = 3, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acafe3c57ddd00a002a7db864802d8d6c3b">cv::IMWRITE_JPEG_RST_INTERVAL</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaf7488b757f0df9655ec9188a9eb0083b">cv::IMWRITE_JPEG_LUMA_QUALITY</a> = 5, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca9d759d4c52d12ca68c7abe9b47101b7c">cv::IMWRITE_JPEG_CHROMA_QUALITY</a> = 6, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acae414f4508a2529430d37eb60e2bd6b0c">cv::IMWRITE_PNG_COMPRESSION</a> = 16, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca472be872a2312278cc8896b6a595589c">cv::IMWRITE_PNG_STRATEGY</a> = 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca6b3e307a0f0d2811555e21c31455308f">cv::IMWRITE_PNG_BILEVEL</a> = 18, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca684a887da5c355f99e5616c2dd7a7e1a">cv::IMWRITE_PXM_BINARY</a> = 32, 
+<b>IMWRITE_EXR_TYPE</b> = (3 &lt;&lt; 4) + 0, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab136965d7438f0fa284bf0b0a19557bd">cv::IMWRITE_WEBP_QUALITY</a> = 64, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab505ed6a68a0cc6ae554553783cf8665">cv::IMWRITE_PAM_TUPLETYPE</a> = 128, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca8863f3eac9fbfdfbb86bd0fe708e0ae9">cv::IMWRITE_TIFF_RESUNIT</a> = 256, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca5d6f2afd850dd0f322700127178cdab9">cv::IMWRITE_TIFF_XDPI</a> = 257, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b">cv::IMWRITE_TIFF_YDPI</a> = 258, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48">cv::IMWRITE_JPEG_QUALITY</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6">cv::IMWRITE_JPEG_PROGRESSIVE</a> = 2, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae">cv::IMWRITE_JPEG_OPTIMIZE</a> = 3, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acafe3c57ddd00a002a7db864802d8d6c3b">cv::IMWRITE_JPEG_RST_INTERVAL</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acaf7488b757f0df9655ec9188a9eb0083b">cv::IMWRITE_JPEG_LUMA_QUALITY</a> = 5, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca9d759d4c52d12ca68c7abe9b47101b7c">cv::IMWRITE_JPEG_CHROMA_QUALITY</a> = 6, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acae414f4508a2529430d37eb60e2bd6b0c">cv::IMWRITE_PNG_COMPRESSION</a> = 16, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca472be872a2312278cc8896b6a595589c">cv::IMWRITE_PNG_STRATEGY</a> = 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca6b3e307a0f0d2811555e21c31455308f">cv::IMWRITE_PNG_BILEVEL</a> = 18, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca684a887da5c355f99e5616c2dd7a7e1a">cv::IMWRITE_PXM_BINARY</a> = 32, 
+<b>IMWRITE_EXR_TYPE</b> = (3 &lt;&lt; 4) + 0, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab136965d7438f0fa284bf0b0a19557bd">cv::IMWRITE_WEBP_QUALITY</a> = 64, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42acab505ed6a68a0cc6ae554553783cf8665">cv::IMWRITE_PAM_TUPLETYPE</a> = 128, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca8863f3eac9fbfdfbb86bd0fe708e0ae9">cv::IMWRITE_TIFF_RESUNIT</a> = 256, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca5d6f2afd850dd0f322700127178cdab9">cv::IMWRITE_TIFF_XDPI</a> = 257, 
+<a class="el" href="group__imgcodecs.html#gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b">cv::IMWRITE_TIFF_YDPI</a> = 258
+<br />
+ }</td></tr>
+<tr class="memdesc:ga292d81be8d76901bff7988d18d2b42ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imwrite flags.  <a href="group__imgcodecs.html#ga292d81be8d76901bff7988d18d2b42ac">More...</a><br /></td></tr>
+<tr class="separator:ga292d81be8d76901bff7988d18d2b42ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga47d07d14b3c33151daac7fde6f34e897"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgcodecs.html#ga47d07d14b3c33151daac7fde6f34e897">cv::ImwriteEXRTypeFlags</a> { <br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db">cv::IMWRITE_EXR_TYPE_HALF</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17">cv::IMWRITE_EXR_TYPE_FLOAT</a> = 2, 
+<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db">cv::IMWRITE_EXR_TYPE_HALF</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17">cv::IMWRITE_EXR_TYPE_FLOAT</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db">cv::IMWRITE_EXR_TYPE_HALF</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17">cv::IMWRITE_EXR_TYPE_FLOAT</a> = 2, 
+<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db">cv::IMWRITE_EXR_TYPE_HALF</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17">cv::IMWRITE_EXR_TYPE_FLOAT</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db">cv::IMWRITE_EXR_TYPE_HALF</a> = 1, 
+<a class="el" href="group__imgcodecs.html#gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17">cv::IMWRITE_EXR_TYPE_FLOAT</a> = 2
+<br />
+ }</td></tr>
+<tr class="separator:ga47d07d14b3c33151daac7fde6f34e897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa60044d347ffd187161b5ec9ea2ef2f9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgcodecs.html#gaa60044d347ffd187161b5ec9ea2ef2f9">cv::ImwritePNGFlags</a> { <br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9aa1e2f59d1ae96dc382e8051d346dbf98">cv::IMWRITE_PNG_STRATEGY_DEFAULT</a> = 0, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c">cv::IMWRITE_PNG_STRATEGY_FILTERED</a> = 1, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4">cv::IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY</a> = 2, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d">cv::IMWRITE_PNG_STRATEGY_RLE</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210">cv::IMWRITE_PNG_STRATEGY_FIXED</a> = 4, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9aa1e2f59d1ae96dc382e8051d346dbf98">cv::IMWRITE_PNG_STRATEGY_DEFAULT</a> = 0, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c">cv::IMWRITE_PNG_STRATEGY_FILTERED</a> = 1, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4">cv::IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d">cv::IMWRITE_PNG_STRATEGY_RLE</a> = 3, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210">cv::IMWRITE_PNG_STRATEGY_FIXED</a> = 4, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9aa1e2f59d1ae96dc382e8051d346dbf98">cv::IMWRITE_PNG_STRATEGY_DEFAULT</a> = 0, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c">cv::IMWRITE_PNG_STRATEGY_FILTERED</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4">cv::IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY</a> = 2, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d">cv::IMWRITE_PNG_STRATEGY_RLE</a> = 3, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210">cv::IMWRITE_PNG_STRATEGY_FIXED</a> = 4, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9aa1e2f59d1ae96dc382e8051d346dbf98">cv::IMWRITE_PNG_STRATEGY_DEFAULT</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c">cv::IMWRITE_PNG_STRATEGY_FILTERED</a> = 1, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4">cv::IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY</a> = 2, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d">cv::IMWRITE_PNG_STRATEGY_RLE</a> = 3, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210">cv::IMWRITE_PNG_STRATEGY_FIXED</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9aa1e2f59d1ae96dc382e8051d346dbf98">cv::IMWRITE_PNG_STRATEGY_DEFAULT</a> = 0, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c">cv::IMWRITE_PNG_STRATEGY_FILTERED</a> = 1, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4">cv::IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY</a> = 2, 
+<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d">cv::IMWRITE_PNG_STRATEGY_RLE</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgcodecs.html#ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210">cv::IMWRITE_PNG_STRATEGY_FIXED</a> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:gaa60044d347ffd187161b5ec9ea2ef2f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imwrite PNG specific flags used to tune the compression algorithm.  <a href="group__imgcodecs.html#gaa60044d347ffd187161b5ec9ea2ef2f9">More...</a><br /></td></tr>
+<tr class="separator:gaa60044d347ffd187161b5ec9ea2ef2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e6c77a906952525a4d22fb3efea0e01"><td class="memItemLeft" align="right" valign="top"><a id="ga4e6c77a906952525a4d22fb3efea0e01"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgcodecs.html#ga4e6c77a906952525a4d22fb3efea0e01">cv::ImwritePAMFlags</a> { <br />
+&#160;&#160;<b>IMWRITE_PAM_FORMAT_NULL</b> = 0, 
+<b>IMWRITE_PAM_FORMAT_BLACKANDWHITE</b> = 1, 
+<b>IMWRITE_PAM_FORMAT_GRAYSCALE</b> = 2, 
+<b>IMWRITE_PAM_FORMAT_GRAYSCALE_ALPHA</b> = 3, 
+<br />
+&#160;&#160;<b>IMWRITE_PAM_FORMAT_RGB</b> = 4, 
+<b>IMWRITE_PAM_FORMAT_RGB_ALPHA</b> = 5, 
+<b>IMWRITE_PAM_FORMAT_NULL</b> = 0, 
+<b>IMWRITE_PAM_FORMAT_BLACKANDWHITE</b> = 1, 
+<br />
+&#160;&#160;<b>IMWRITE_PAM_FORMAT_GRAYSCALE</b> = 2, 
+<b>IMWRITE_PAM_FORMAT_GRAYSCALE_ALPHA</b> = 3, 
+<b>IMWRITE_PAM_FORMAT_RGB</b> = 4, 
+<b>IMWRITE_PAM_FORMAT_RGB_ALPHA</b> = 5, 
+<br />
+&#160;&#160;<b>IMWRITE_PAM_FORMAT_NULL</b> = 0, 
+<b>IMWRITE_PAM_FORMAT_BLACKANDWHITE</b> = 1, 
+<b>IMWRITE_PAM_FORMAT_GRAYSCALE</b> = 2, 
+<b>IMWRITE_PAM_FORMAT_GRAYSCALE_ALPHA</b> = 3, 
+<br />
+&#160;&#160;<b>IMWRITE_PAM_FORMAT_RGB</b> = 4, 
+<b>IMWRITE_PAM_FORMAT_RGB_ALPHA</b> = 5, 
+<b>IMWRITE_PAM_FORMAT_NULL</b> = 0, 
+<b>IMWRITE_PAM_FORMAT_BLACKANDWHITE</b> = 1, 
+<br />
+&#160;&#160;<b>IMWRITE_PAM_FORMAT_GRAYSCALE</b> = 2, 
+<b>IMWRITE_PAM_FORMAT_GRAYSCALE_ALPHA</b> = 3, 
+<b>IMWRITE_PAM_FORMAT_RGB</b> = 4, 
+<b>IMWRITE_PAM_FORMAT_RGB_ALPHA</b> = 5, 
+<br />
+&#160;&#160;<b>IMWRITE_PAM_FORMAT_NULL</b> = 0, 
+<b>IMWRITE_PAM_FORMAT_BLACKANDWHITE</b> = 1, 
+<b>IMWRITE_PAM_FORMAT_GRAYSCALE</b> = 2, 
+<b>IMWRITE_PAM_FORMAT_GRAYSCALE_ALPHA</b> = 3, 
+<br />
+&#160;&#160;<b>IMWRITE_PAM_FORMAT_RGB</b> = 4, 
 <b>IMWRITE_PAM_FORMAT_RGB_ALPHA</b> = 5
 <br />
  }</td></tr>
@@ -1022,7 +1524,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga61d9b0126a3e57d9277ac48327799c80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga61d9b0126a3e57d9277ac48327799c80">&#9670;&nbsp;</a></span>ImreadModes <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga61d9b0126a3e57d9277ac48327799c80">&#9670;&nbsp;</a></span>ImreadModes <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1036,6 +1538,32 @@ Functions</h2></td></tr>
 <p>Imread flags. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e"></a>IMREAD_UNCHANGED&#160;</td><td class="fielddoc"><p>If set, return the loaded image as is (with alpha channel, otherwise it gets cropped). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7"></a>IMREAD_GRAYSCALE&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image (codec internal conversion). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a34a538f321c70682894c69de510ae134"></a>IMREAD_COLOR&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a369c39995e49500a8a9bd53fdb41508b"></a>IMREAD_ANYDEPTH&#160;</td><td class="fielddoc"><p>If set, return 16-bit/32-bit image when the input has the corresponding depth, otherwise convert it to 8-bit. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a3ccf96f78ca438047bd15d0245576cb9"></a>IMREAD_ANYCOLOR&#160;</td><td class="fielddoc"><p>If set, the image is read in any possible color format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a418b39d68bcc5216ddfdf7246683a3e4"></a>IMREAD_LOAD_GDAL&#160;</td><td class="fielddoc"><p>If set, use the gdal driver for loading the image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a0f6332a36a06db9b9ea448b5d532a80e"></a>IMREAD_REDUCED_GRAYSCALE_2&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80aaa63fa00208b635890a827dfaf84c9bc"></a>IMREAD_REDUCED_COLOR_2&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a30d4340330a434fd922b0c2f926cfaaf"></a>IMREAD_REDUCED_GRAYSCALE_4&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b"></a>IMREAD_REDUCED_COLOR_4&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f"></a>IMREAD_REDUCED_GRAYSCALE_8&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0"></a>IMREAD_REDUCED_COLOR_8&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4"></a>IMREAD_IGNORE_ORIENTATION&#160;</td><td class="fielddoc"><p>If set, do not rotate the image according to EXIF's orientation flag. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e"></a>IMREAD_UNCHANGED&#160;</td><td class="fielddoc"><p>If set, return the loaded image as is (with alpha channel, otherwise it gets cropped). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7"></a>IMREAD_GRAYSCALE&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image (codec internal conversion). </p>
 </td></tr>
@@ -1144,7 +1672,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ga61d9b0126a3e57d9277ac48327799c80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga61d9b0126a3e57d9277ac48327799c80">&#9670;&nbsp;</a></span>ImreadModes <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga61d9b0126a3e57d9277ac48327799c80">&#9670;&nbsp;</a></span>ImreadModes <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1158,6 +1686,32 @@ Functions</h2></td></tr>
 <p>Imread flags. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e"></a>IMREAD_UNCHANGED&#160;</td><td class="fielddoc"><p>If set, return the loaded image as is (with alpha channel, otherwise it gets cropped). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7"></a>IMREAD_GRAYSCALE&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image (codec internal conversion). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a34a538f321c70682894c69de510ae134"></a>IMREAD_COLOR&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a369c39995e49500a8a9bd53fdb41508b"></a>IMREAD_ANYDEPTH&#160;</td><td class="fielddoc"><p>If set, return 16-bit/32-bit image when the input has the corresponding depth, otherwise convert it to 8-bit. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a3ccf96f78ca438047bd15d0245576cb9"></a>IMREAD_ANYCOLOR&#160;</td><td class="fielddoc"><p>If set, the image is read in any possible color format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a418b39d68bcc5216ddfdf7246683a3e4"></a>IMREAD_LOAD_GDAL&#160;</td><td class="fielddoc"><p>If set, use the gdal driver for loading the image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a0f6332a36a06db9b9ea448b5d532a80e"></a>IMREAD_REDUCED_GRAYSCALE_2&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80aaa63fa00208b635890a827dfaf84c9bc"></a>IMREAD_REDUCED_COLOR_2&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a30d4340330a434fd922b0c2f926cfaaf"></a>IMREAD_REDUCED_GRAYSCALE_4&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b"></a>IMREAD_REDUCED_COLOR_4&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f"></a>IMREAD_REDUCED_GRAYSCALE_8&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0"></a>IMREAD_REDUCED_COLOR_8&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4"></a>IMREAD_IGNORE_ORIENTATION&#160;</td><td class="fielddoc"><p>If set, do not rotate the image according to EXIF's orientation flag. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e"></a>IMREAD_UNCHANGED&#160;</td><td class="fielddoc"><p>If set, return the loaded image as is (with alpha channel, otherwise it gets cropped). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7"></a>IMREAD_GRAYSCALE&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image (codec internal conversion). </p>
 </td></tr>
@@ -1266,7 +1820,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ga61d9b0126a3e57d9277ac48327799c80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga61d9b0126a3e57d9277ac48327799c80">&#9670;&nbsp;</a></span>ImreadModes <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga61d9b0126a3e57d9277ac48327799c80">&#9670;&nbsp;</a></span>ImreadModes <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1280,6 +1834,32 @@ Functions</h2></td></tr>
 <p>Imread flags. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e"></a>IMREAD_UNCHANGED&#160;</td><td class="fielddoc"><p>If set, return the loaded image as is (with alpha channel, otherwise it gets cropped). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7"></a>IMREAD_GRAYSCALE&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image (codec internal conversion). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a34a538f321c70682894c69de510ae134"></a>IMREAD_COLOR&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a369c39995e49500a8a9bd53fdb41508b"></a>IMREAD_ANYDEPTH&#160;</td><td class="fielddoc"><p>If set, return 16-bit/32-bit image when the input has the corresponding depth, otherwise convert it to 8-bit. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a3ccf96f78ca438047bd15d0245576cb9"></a>IMREAD_ANYCOLOR&#160;</td><td class="fielddoc"><p>If set, the image is read in any possible color format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a418b39d68bcc5216ddfdf7246683a3e4"></a>IMREAD_LOAD_GDAL&#160;</td><td class="fielddoc"><p>If set, use the gdal driver for loading the image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a0f6332a36a06db9b9ea448b5d532a80e"></a>IMREAD_REDUCED_GRAYSCALE_2&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80aaa63fa00208b635890a827dfaf84c9bc"></a>IMREAD_REDUCED_COLOR_2&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a30d4340330a434fd922b0c2f926cfaaf"></a>IMREAD_REDUCED_GRAYSCALE_4&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b"></a>IMREAD_REDUCED_COLOR_4&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f"></a>IMREAD_REDUCED_GRAYSCALE_8&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0"></a>IMREAD_REDUCED_COLOR_8&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4"></a>IMREAD_IGNORE_ORIENTATION&#160;</td><td class="fielddoc"><p>If set, do not rotate the image according to EXIF's orientation flag. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e"></a>IMREAD_UNCHANGED&#160;</td><td class="fielddoc"><p>If set, return the loaded image as is (with alpha channel, otherwise it gets cropped). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7"></a>IMREAD_GRAYSCALE&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image (codec internal conversion). </p>
 </td></tr>
@@ -1388,7 +1968,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ga61d9b0126a3e57d9277ac48327799c80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga61d9b0126a3e57d9277ac48327799c80">&#9670;&nbsp;</a></span>ImreadModes <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga61d9b0126a3e57d9277ac48327799c80">&#9670;&nbsp;</a></span>ImreadModes <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1505,12 +2085,186 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4"></a>IMREAD_IGNORE_ORIENTATION&#160;</td><td class="fielddoc"><p>If set, do not rotate the image according to EXIF's orientation flag. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e"></a>IMREAD_UNCHANGED&#160;</td><td class="fielddoc"><p>If set, return the loaded image as is (with alpha channel, otherwise it gets cropped). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7"></a>IMREAD_GRAYSCALE&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image (codec internal conversion). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a34a538f321c70682894c69de510ae134"></a>IMREAD_COLOR&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a369c39995e49500a8a9bd53fdb41508b"></a>IMREAD_ANYDEPTH&#160;</td><td class="fielddoc"><p>If set, return 16-bit/32-bit image when the input has the corresponding depth, otherwise convert it to 8-bit. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a3ccf96f78ca438047bd15d0245576cb9"></a>IMREAD_ANYCOLOR&#160;</td><td class="fielddoc"><p>If set, the image is read in any possible color format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a418b39d68bcc5216ddfdf7246683a3e4"></a>IMREAD_LOAD_GDAL&#160;</td><td class="fielddoc"><p>If set, use the gdal driver for loading the image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a0f6332a36a06db9b9ea448b5d532a80e"></a>IMREAD_REDUCED_GRAYSCALE_2&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80aaa63fa00208b635890a827dfaf84c9bc"></a>IMREAD_REDUCED_COLOR_2&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a30d4340330a434fd922b0c2f926cfaaf"></a>IMREAD_REDUCED_GRAYSCALE_4&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b"></a>IMREAD_REDUCED_COLOR_4&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f"></a>IMREAD_REDUCED_GRAYSCALE_8&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0"></a>IMREAD_REDUCED_COLOR_8&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4"></a>IMREAD_IGNORE_ORIENTATION&#160;</td><td class="fielddoc"><p>If set, do not rotate the image according to EXIF's orientation flag. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga61d9b0126a3e57d9277ac48327799c80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga61d9b0126a3e57d9277ac48327799c80">&#9670;&nbsp;</a></span>ImreadModes <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgcodecs.html#ga61d9b0126a3e57d9277ac48327799c80">cv::ImreadModes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Imread flags. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e"></a>IMREAD_UNCHANGED&#160;</td><td class="fielddoc"><p>If set, return the loaded image as is (with alpha channel, otherwise it gets cropped). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7"></a>IMREAD_GRAYSCALE&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image (codec internal conversion). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a34a538f321c70682894c69de510ae134"></a>IMREAD_COLOR&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a369c39995e49500a8a9bd53fdb41508b"></a>IMREAD_ANYDEPTH&#160;</td><td class="fielddoc"><p>If set, return 16-bit/32-bit image when the input has the corresponding depth, otherwise convert it to 8-bit. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a3ccf96f78ca438047bd15d0245576cb9"></a>IMREAD_ANYCOLOR&#160;</td><td class="fielddoc"><p>If set, the image is read in any possible color format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a418b39d68bcc5216ddfdf7246683a3e4"></a>IMREAD_LOAD_GDAL&#160;</td><td class="fielddoc"><p>If set, use the gdal driver for loading the image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a0f6332a36a06db9b9ea448b5d532a80e"></a>IMREAD_REDUCED_GRAYSCALE_2&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80aaa63fa00208b635890a827dfaf84c9bc"></a>IMREAD_REDUCED_COLOR_2&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a30d4340330a434fd922b0c2f926cfaaf"></a>IMREAD_REDUCED_GRAYSCALE_4&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b"></a>IMREAD_REDUCED_COLOR_4&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f"></a>IMREAD_REDUCED_GRAYSCALE_8&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0"></a>IMREAD_REDUCED_COLOR_8&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4"></a>IMREAD_IGNORE_ORIENTATION&#160;</td><td class="fielddoc"><p>If set, do not rotate the image according to EXIF's orientation flag. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e"></a>IMREAD_UNCHANGED&#160;</td><td class="fielddoc"><p>If set, return the loaded image as is (with alpha channel, otherwise it gets cropped). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7"></a>IMREAD_GRAYSCALE&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image (codec internal conversion). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a34a538f321c70682894c69de510ae134"></a>IMREAD_COLOR&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a369c39995e49500a8a9bd53fdb41508b"></a>IMREAD_ANYDEPTH&#160;</td><td class="fielddoc"><p>If set, return 16-bit/32-bit image when the input has the corresponding depth, otherwise convert it to 8-bit. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a3ccf96f78ca438047bd15d0245576cb9"></a>IMREAD_ANYCOLOR&#160;</td><td class="fielddoc"><p>If set, the image is read in any possible color format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a418b39d68bcc5216ddfdf7246683a3e4"></a>IMREAD_LOAD_GDAL&#160;</td><td class="fielddoc"><p>If set, use the gdal driver for loading the image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a0f6332a36a06db9b9ea448b5d532a80e"></a>IMREAD_REDUCED_GRAYSCALE_2&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80aaa63fa00208b635890a827dfaf84c9bc"></a>IMREAD_REDUCED_COLOR_2&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a30d4340330a434fd922b0c2f926cfaaf"></a>IMREAD_REDUCED_GRAYSCALE_4&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b"></a>IMREAD_REDUCED_COLOR_4&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f"></a>IMREAD_REDUCED_GRAYSCALE_8&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0"></a>IMREAD_REDUCED_COLOR_8&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4"></a>IMREAD_IGNORE_ORIENTATION&#160;</td><td class="fielddoc"><p>If set, do not rotate the image according to EXIF's orientation flag. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e"></a>IMREAD_UNCHANGED&#160;</td><td class="fielddoc"><p>If set, return the loaded image as is (with alpha channel, otherwise it gets cropped). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7"></a>IMREAD_GRAYSCALE&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image (codec internal conversion). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a34a538f321c70682894c69de510ae134"></a>IMREAD_COLOR&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a369c39995e49500a8a9bd53fdb41508b"></a>IMREAD_ANYDEPTH&#160;</td><td class="fielddoc"><p>If set, return 16-bit/32-bit image when the input has the corresponding depth, otherwise convert it to 8-bit. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a3ccf96f78ca438047bd15d0245576cb9"></a>IMREAD_ANYCOLOR&#160;</td><td class="fielddoc"><p>If set, the image is read in any possible color format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a418b39d68bcc5216ddfdf7246683a3e4"></a>IMREAD_LOAD_GDAL&#160;</td><td class="fielddoc"><p>If set, use the gdal driver for loading the image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a0f6332a36a06db9b9ea448b5d532a80e"></a>IMREAD_REDUCED_GRAYSCALE_2&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80aaa63fa00208b635890a827dfaf84c9bc"></a>IMREAD_REDUCED_COLOR_2&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a30d4340330a434fd922b0c2f926cfaaf"></a>IMREAD_REDUCED_GRAYSCALE_4&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b"></a>IMREAD_REDUCED_COLOR_4&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f"></a>IMREAD_REDUCED_GRAYSCALE_8&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0"></a>IMREAD_REDUCED_COLOR_8&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4"></a>IMREAD_IGNORE_ORIENTATION&#160;</td><td class="fielddoc"><p>If set, do not rotate the image according to EXIF's orientation flag. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e"></a>IMREAD_UNCHANGED&#160;</td><td class="fielddoc"><p>If set, return the loaded image as is (with alpha channel, otherwise it gets cropped). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7"></a>IMREAD_GRAYSCALE&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image (codec internal conversion). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a34a538f321c70682894c69de510ae134"></a>IMREAD_COLOR&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a369c39995e49500a8a9bd53fdb41508b"></a>IMREAD_ANYDEPTH&#160;</td><td class="fielddoc"><p>If set, return 16-bit/32-bit image when the input has the corresponding depth, otherwise convert it to 8-bit. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a3ccf96f78ca438047bd15d0245576cb9"></a>IMREAD_ANYCOLOR&#160;</td><td class="fielddoc"><p>If set, the image is read in any possible color format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a418b39d68bcc5216ddfdf7246683a3e4"></a>IMREAD_LOAD_GDAL&#160;</td><td class="fielddoc"><p>If set, use the gdal driver for loading the image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a0f6332a36a06db9b9ea448b5d532a80e"></a>IMREAD_REDUCED_GRAYSCALE_2&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80aaa63fa00208b635890a827dfaf84c9bc"></a>IMREAD_REDUCED_COLOR_2&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a30d4340330a434fd922b0c2f926cfaaf"></a>IMREAD_REDUCED_GRAYSCALE_4&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b"></a>IMREAD_REDUCED_COLOR_4&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f"></a>IMREAD_REDUCED_GRAYSCALE_8&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0"></a>IMREAD_REDUCED_COLOR_8&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4"></a>IMREAD_IGNORE_ORIENTATION&#160;</td><td class="fielddoc"><p>If set, do not rotate the image according to EXIF's orientation flag. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ac92b17de31a85d71985bb70dbdacae3e"></a>IMREAD_UNCHANGED&#160;</td><td class="fielddoc"><p>If set, return the loaded image as is (with alpha channel, otherwise it gets cropped). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80ad92b5522b1090fc5ae6ac0dc85893bc7"></a>IMREAD_GRAYSCALE&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image (codec internal conversion). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a34a538f321c70682894c69de510ae134"></a>IMREAD_COLOR&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a369c39995e49500a8a9bd53fdb41508b"></a>IMREAD_ANYDEPTH&#160;</td><td class="fielddoc"><p>If set, return 16-bit/32-bit image when the input has the corresponding depth, otherwise convert it to 8-bit. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a3ccf96f78ca438047bd15d0245576cb9"></a>IMREAD_ANYCOLOR&#160;</td><td class="fielddoc"><p>If set, the image is read in any possible color format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a418b39d68bcc5216ddfdf7246683a3e4"></a>IMREAD_LOAD_GDAL&#160;</td><td class="fielddoc"><p>If set, use the gdal driver for loading the image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a0f6332a36a06db9b9ea448b5d532a80e"></a>IMREAD_REDUCED_GRAYSCALE_2&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80aaa63fa00208b635890a827dfaf84c9bc"></a>IMREAD_REDUCED_COLOR_2&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a30d4340330a434fd922b0c2f926cfaaf"></a>IMREAD_REDUCED_GRAYSCALE_4&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a1634c3138d14f4b05371d11e1a83261b"></a>IMREAD_REDUCED_COLOR_4&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/4. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a0a1cbec999ccb315c788097fc7a46c2f"></a>IMREAD_REDUCED_GRAYSCALE_8&#160;</td><td class="fielddoc"><p>If set, always convert image to the single channel grayscale image and the image size reduced 1/8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80aed5a23f6b868989fcea6f2e20af733f0"></a>IMREAD_REDUCED_COLOR_8&#160;</td><td class="fielddoc"><p>If set, always convert image to the 3 channel BGR color image and the image size reduced 1/8. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga61d9b0126a3e57d9277ac48327799c80a8f1b38ef52cca45a7ddcf92289f69cc4"></a>IMREAD_IGNORE_ORIENTATION&#160;</td><td class="fielddoc"><p>If set, do not rotate the image according to EXIF's orientation flag. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga47d07d14b3c33151daac7fde6f34e897"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga47d07d14b3c33151daac7fde6f34e897">&#9670;&nbsp;</a></span>ImwriteEXRTypeFlags <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga47d07d14b3c33151daac7fde6f34e897">&#9670;&nbsp;</a></span>ImwriteEXRTypeFlags <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1537,12 +2291,16 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17"></a>IMWRITE_EXR_TYPE_FLOAT&#160;</td><td class="fielddoc"><p>store as FP32 (default) </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db"></a>IMWRITE_EXR_TYPE_HALF&#160;</td><td class="fielddoc"><p>store as HALF (FP16) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17"></a>IMWRITE_EXR_TYPE_FLOAT&#160;</td><td class="fielddoc"><p>store as FP32 (default) </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga47d07d14b3c33151daac7fde6f34e897"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga47d07d14b3c33151daac7fde6f34e897">&#9670;&nbsp;</a></span>ImwriteEXRTypeFlags <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga47d07d14b3c33151daac7fde6f34e897">&#9670;&nbsp;</a></span>ImwriteEXRTypeFlags <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1569,12 +2327,16 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17"></a>IMWRITE_EXR_TYPE_FLOAT&#160;</td><td class="fielddoc"><p>store as FP32 (default) </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db"></a>IMWRITE_EXR_TYPE_HALF&#160;</td><td class="fielddoc"><p>store as HALF (FP16) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17"></a>IMWRITE_EXR_TYPE_FLOAT&#160;</td><td class="fielddoc"><p>store as FP32 (default) </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga47d07d14b3c33151daac7fde6f34e897"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga47d07d14b3c33151daac7fde6f34e897">&#9670;&nbsp;</a></span>ImwriteEXRTypeFlags <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga47d07d14b3c33151daac7fde6f34e897">&#9670;&nbsp;</a></span>ImwriteEXRTypeFlags <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1601,12 +2363,16 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17"></a>IMWRITE_EXR_TYPE_FLOAT&#160;</td><td class="fielddoc"><p>store as FP32 (default) </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db"></a>IMWRITE_EXR_TYPE_HALF&#160;</td><td class="fielddoc"><p>store as HALF (FP16) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17"></a>IMWRITE_EXR_TYPE_FLOAT&#160;</td><td class="fielddoc"><p>store as FP32 (default) </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga47d07d14b3c33151daac7fde6f34e897"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga47d07d14b3c33151daac7fde6f34e897">&#9670;&nbsp;</a></span>ImwriteEXRTypeFlags <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga47d07d14b3c33151daac7fde6f34e897">&#9670;&nbsp;</a></span>ImwriteEXRTypeFlags <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1618,6 +2384,46 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db"></a>IMWRITE_EXR_TYPE_HALF&#160;</td><td class="fielddoc"><p>store as HALF (FP16) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17"></a>IMWRITE_EXR_TYPE_FLOAT&#160;</td><td class="fielddoc"><p>store as FP32 (default) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db"></a>IMWRITE_EXR_TYPE_HALF&#160;</td><td class="fielddoc"><p>store as HALF (FP16) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17"></a>IMWRITE_EXR_TYPE_FLOAT&#160;</td><td class="fielddoc"><p>store as FP32 (default) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db"></a>IMWRITE_EXR_TYPE_HALF&#160;</td><td class="fielddoc"><p>store as HALF (FP16) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17"></a>IMWRITE_EXR_TYPE_FLOAT&#160;</td><td class="fielddoc"><p>store as FP32 (default) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db"></a>IMWRITE_EXR_TYPE_HALF&#160;</td><td class="fielddoc"><p>store as HALF (FP16) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17"></a>IMWRITE_EXR_TYPE_FLOAT&#160;</td><td class="fielddoc"><p>store as FP32 (default) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db"></a>IMWRITE_EXR_TYPE_HALF&#160;</td><td class="fielddoc"><p>store as HALF (FP16) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17"></a>IMWRITE_EXR_TYPE_FLOAT&#160;</td><td class="fielddoc"><p>store as FP32 (default) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga47d07d14b3c33151daac7fde6f34e897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga47d07d14b3c33151daac7fde6f34e897">&#9670;&nbsp;</a></span>ImwriteEXRTypeFlags <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgcodecs.html#ga47d07d14b3c33151daac7fde6f34e897">cv::ImwriteEXRTypeFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db"></a>IMWRITE_EXR_TYPE_HALF&#160;</td><td class="fielddoc"><p>store as HALF (FP16) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17"></a>IMWRITE_EXR_TYPE_FLOAT&#160;</td><td class="fielddoc"><p>store as FP32 (default) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a131e25106ea624060537a37be7a704db"></a>IMWRITE_EXR_TYPE_HALF&#160;</td><td class="fielddoc"><p>store as HALF (FP16) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga47d07d14b3c33151daac7fde6f34e897a58625a792933c256038ccbb6c00b8f17"></a>IMWRITE_EXR_TYPE_FLOAT&#160;</td><td class="fielddoc"><p>store as FP32 (default) </p>
 </td></tr>
@@ -1638,7 +2444,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ga292d81be8d76901bff7988d18d2b42ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga292d81be8d76901bff7988d18d2b42ac">&#9670;&nbsp;</a></span>ImwriteFlags <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga292d81be8d76901bff7988d18d2b42ac">&#9670;&nbsp;</a></span>ImwriteFlags <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1775,12 +2581,43 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b"></a>IMWRITE_TIFF_YDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the Y direction DPI. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48"></a>IMWRITE_JPEG_QUALITY&#160;</td><td class="fielddoc"><p>For JPEG, it can be a quality from 0 to 100 (the higher is the better). Default value is 95. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6"></a>IMWRITE_JPEG_PROGRESSIVE&#160;</td><td class="fielddoc"><p>Enable JPEG features, 0 or 1, default is False. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae"></a>IMWRITE_JPEG_OPTIMIZE&#160;</td><td class="fielddoc"><p>Enable JPEG features, 0 or 1, default is False. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acafe3c57ddd00a002a7db864802d8d6c3b"></a>IMWRITE_JPEG_RST_INTERVAL&#160;</td><td class="fielddoc"><p>JPEG restart interval, 0 - 65535, default is 0 - no restart. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acaf7488b757f0df9655ec9188a9eb0083b"></a>IMWRITE_JPEG_LUMA_QUALITY&#160;</td><td class="fielddoc"><p>Separate luma quality level, 0 - 100, default is 0 - don't use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca9d759d4c52d12ca68c7abe9b47101b7c"></a>IMWRITE_JPEG_CHROMA_QUALITY&#160;</td><td class="fielddoc"><p>Separate chroma quality level, 0 - 100, default is 0 - don't use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acae414f4508a2529430d37eb60e2bd6b0c"></a>IMWRITE_PNG_COMPRESSION&#160;</td><td class="fielddoc"><p>For PNG, it can be the compression level from 0 to 9. A higher value means a smaller size and longer compression time. If specified, strategy is changed to IMWRITE_PNG_STRATEGY_DEFAULT (Z_DEFAULT_STRATEGY). Default value is 1 (best speed setting). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca472be872a2312278cc8896b6a595589c"></a>IMWRITE_PNG_STRATEGY&#160;</td><td class="fielddoc"><p>One of <a class="el" href="group__imgcodecs.html#gaa60044d347ffd187161b5ec9ea2ef2f9" title="Imwrite PNG specific flags used to tune the compression algorithm.">cv::ImwritePNGFlags</a>, default is IMWRITE_PNG_STRATEGY_RLE. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca6b3e307a0f0d2811555e21c31455308f"></a>IMWRITE_PNG_BILEVEL&#160;</td><td class="fielddoc"><p>Binary level PNG, 0 or 1, default is 0. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca684a887da5c355f99e5616c2dd7a7e1a"></a>IMWRITE_PXM_BINARY&#160;</td><td class="fielddoc"><p>For PPM, PGM, or PBM, it can be a binary format flag, 0 or 1. Default value is 1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab136965d7438f0fa284bf0b0a19557bd"></a>IMWRITE_WEBP_QUALITY&#160;</td><td class="fielddoc"><p>override EXR storage type (FLOAT (FP32) is default) </p>
+<p>For WEBP, it can be a quality from 1 to 100 (the higher is the better). By default (without any parameter) and for quality above 100 the lossless compression is used. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab505ed6a68a0cc6ae554553783cf8665"></a>IMWRITE_PAM_TUPLETYPE&#160;</td><td class="fielddoc"><p>For PAM, sets the TUPLETYPE field to the corresponding string value that is defined for the format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8863f3eac9fbfdfbb86bd0fe708e0ae9"></a>IMWRITE_TIFF_RESUNIT&#160;</td><td class="fielddoc"><p>For TIFF, use to specify which DPI resolution unit to set; see libtiff documentation for valid values. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca5d6f2afd850dd0f322700127178cdab9"></a>IMWRITE_TIFF_XDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the X direction DPI. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b"></a>IMWRITE_TIFF_YDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the Y direction DPI. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga292d81be8d76901bff7988d18d2b42ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga292d81be8d76901bff7988d18d2b42ac">&#9670;&nbsp;</a></span>ImwriteFlags <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga292d81be8d76901bff7988d18d2b42ac">&#9670;&nbsp;</a></span>ImwriteFlags <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1917,12 +2754,43 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b"></a>IMWRITE_TIFF_YDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the Y direction DPI. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48"></a>IMWRITE_JPEG_QUALITY&#160;</td><td class="fielddoc"><p>For JPEG, it can be a quality from 0 to 100 (the higher is the better). Default value is 95. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6"></a>IMWRITE_JPEG_PROGRESSIVE&#160;</td><td class="fielddoc"><p>Enable JPEG features, 0 or 1, default is False. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae"></a>IMWRITE_JPEG_OPTIMIZE&#160;</td><td class="fielddoc"><p>Enable JPEG features, 0 or 1, default is False. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acafe3c57ddd00a002a7db864802d8d6c3b"></a>IMWRITE_JPEG_RST_INTERVAL&#160;</td><td class="fielddoc"><p>JPEG restart interval, 0 - 65535, default is 0 - no restart. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acaf7488b757f0df9655ec9188a9eb0083b"></a>IMWRITE_JPEG_LUMA_QUALITY&#160;</td><td class="fielddoc"><p>Separate luma quality level, 0 - 100, default is 0 - don't use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca9d759d4c52d12ca68c7abe9b47101b7c"></a>IMWRITE_JPEG_CHROMA_QUALITY&#160;</td><td class="fielddoc"><p>Separate chroma quality level, 0 - 100, default is 0 - don't use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acae414f4508a2529430d37eb60e2bd6b0c"></a>IMWRITE_PNG_COMPRESSION&#160;</td><td class="fielddoc"><p>For PNG, it can be the compression level from 0 to 9. A higher value means a smaller size and longer compression time. If specified, strategy is changed to IMWRITE_PNG_STRATEGY_DEFAULT (Z_DEFAULT_STRATEGY). Default value is 1 (best speed setting). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca472be872a2312278cc8896b6a595589c"></a>IMWRITE_PNG_STRATEGY&#160;</td><td class="fielddoc"><p>One of <a class="el" href="group__imgcodecs.html#gaa60044d347ffd187161b5ec9ea2ef2f9" title="Imwrite PNG specific flags used to tune the compression algorithm.">cv::ImwritePNGFlags</a>, default is IMWRITE_PNG_STRATEGY_RLE. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca6b3e307a0f0d2811555e21c31455308f"></a>IMWRITE_PNG_BILEVEL&#160;</td><td class="fielddoc"><p>Binary level PNG, 0 or 1, default is 0. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca684a887da5c355f99e5616c2dd7a7e1a"></a>IMWRITE_PXM_BINARY&#160;</td><td class="fielddoc"><p>For PPM, PGM, or PBM, it can be a binary format flag, 0 or 1. Default value is 1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab136965d7438f0fa284bf0b0a19557bd"></a>IMWRITE_WEBP_QUALITY&#160;</td><td class="fielddoc"><p>override EXR storage type (FLOAT (FP32) is default) </p>
+<p>For WEBP, it can be a quality from 1 to 100 (the higher is the better). By default (without any parameter) and for quality above 100 the lossless compression is used. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab505ed6a68a0cc6ae554553783cf8665"></a>IMWRITE_PAM_TUPLETYPE&#160;</td><td class="fielddoc"><p>For PAM, sets the TUPLETYPE field to the corresponding string value that is defined for the format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8863f3eac9fbfdfbb86bd0fe708e0ae9"></a>IMWRITE_TIFF_RESUNIT&#160;</td><td class="fielddoc"><p>For TIFF, use to specify which DPI resolution unit to set; see libtiff documentation for valid values. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca5d6f2afd850dd0f322700127178cdab9"></a>IMWRITE_TIFF_XDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the X direction DPI. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b"></a>IMWRITE_TIFF_YDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the Y direction DPI. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga292d81be8d76901bff7988d18d2b42ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga292d81be8d76901bff7988d18d2b42ac">&#9670;&nbsp;</a></span>ImwriteFlags <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga292d81be8d76901bff7988d18d2b42ac">&#9670;&nbsp;</a></span>ImwriteFlags <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2059,12 +2927,43 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b"></a>IMWRITE_TIFF_YDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the Y direction DPI. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48"></a>IMWRITE_JPEG_QUALITY&#160;</td><td class="fielddoc"><p>For JPEG, it can be a quality from 0 to 100 (the higher is the better). Default value is 95. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6"></a>IMWRITE_JPEG_PROGRESSIVE&#160;</td><td class="fielddoc"><p>Enable JPEG features, 0 or 1, default is False. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae"></a>IMWRITE_JPEG_OPTIMIZE&#160;</td><td class="fielddoc"><p>Enable JPEG features, 0 or 1, default is False. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acafe3c57ddd00a002a7db864802d8d6c3b"></a>IMWRITE_JPEG_RST_INTERVAL&#160;</td><td class="fielddoc"><p>JPEG restart interval, 0 - 65535, default is 0 - no restart. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acaf7488b757f0df9655ec9188a9eb0083b"></a>IMWRITE_JPEG_LUMA_QUALITY&#160;</td><td class="fielddoc"><p>Separate luma quality level, 0 - 100, default is 0 - don't use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca9d759d4c52d12ca68c7abe9b47101b7c"></a>IMWRITE_JPEG_CHROMA_QUALITY&#160;</td><td class="fielddoc"><p>Separate chroma quality level, 0 - 100, default is 0 - don't use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acae414f4508a2529430d37eb60e2bd6b0c"></a>IMWRITE_PNG_COMPRESSION&#160;</td><td class="fielddoc"><p>For PNG, it can be the compression level from 0 to 9. A higher value means a smaller size and longer compression time. If specified, strategy is changed to IMWRITE_PNG_STRATEGY_DEFAULT (Z_DEFAULT_STRATEGY). Default value is 1 (best speed setting). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca472be872a2312278cc8896b6a595589c"></a>IMWRITE_PNG_STRATEGY&#160;</td><td class="fielddoc"><p>One of <a class="el" href="group__imgcodecs.html#gaa60044d347ffd187161b5ec9ea2ef2f9" title="Imwrite PNG specific flags used to tune the compression algorithm.">cv::ImwritePNGFlags</a>, default is IMWRITE_PNG_STRATEGY_RLE. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca6b3e307a0f0d2811555e21c31455308f"></a>IMWRITE_PNG_BILEVEL&#160;</td><td class="fielddoc"><p>Binary level PNG, 0 or 1, default is 0. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca684a887da5c355f99e5616c2dd7a7e1a"></a>IMWRITE_PXM_BINARY&#160;</td><td class="fielddoc"><p>For PPM, PGM, or PBM, it can be a binary format flag, 0 or 1. Default value is 1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab136965d7438f0fa284bf0b0a19557bd"></a>IMWRITE_WEBP_QUALITY&#160;</td><td class="fielddoc"><p>override EXR storage type (FLOAT (FP32) is default) </p>
+<p>For WEBP, it can be a quality from 1 to 100 (the higher is the better). By default (without any parameter) and for quality above 100 the lossless compression is used. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab505ed6a68a0cc6ae554553783cf8665"></a>IMWRITE_PAM_TUPLETYPE&#160;</td><td class="fielddoc"><p>For PAM, sets the TUPLETYPE field to the corresponding string value that is defined for the format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8863f3eac9fbfdfbb86bd0fe708e0ae9"></a>IMWRITE_TIFF_RESUNIT&#160;</td><td class="fielddoc"><p>For TIFF, use to specify which DPI resolution unit to set; see libtiff documentation for valid values. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca5d6f2afd850dd0f322700127178cdab9"></a>IMWRITE_TIFF_XDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the X direction DPI. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b"></a>IMWRITE_TIFF_YDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the Y direction DPI. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga292d81be8d76901bff7988d18d2b42ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga292d81be8d76901bff7988d18d2b42ac">&#9670;&nbsp;</a></span>ImwriteFlags <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga292d81be8d76901bff7988d18d2b42ac">&#9670;&nbsp;</a></span>ImwriteFlags <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2201,12 +3100,216 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b"></a>IMWRITE_TIFF_YDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the Y direction DPI. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48"></a>IMWRITE_JPEG_QUALITY&#160;</td><td class="fielddoc"><p>For JPEG, it can be a quality from 0 to 100 (the higher is the better). Default value is 95. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6"></a>IMWRITE_JPEG_PROGRESSIVE&#160;</td><td class="fielddoc"><p>Enable JPEG features, 0 or 1, default is False. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae"></a>IMWRITE_JPEG_OPTIMIZE&#160;</td><td class="fielddoc"><p>Enable JPEG features, 0 or 1, default is False. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acafe3c57ddd00a002a7db864802d8d6c3b"></a>IMWRITE_JPEG_RST_INTERVAL&#160;</td><td class="fielddoc"><p>JPEG restart interval, 0 - 65535, default is 0 - no restart. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acaf7488b757f0df9655ec9188a9eb0083b"></a>IMWRITE_JPEG_LUMA_QUALITY&#160;</td><td class="fielddoc"><p>Separate luma quality level, 0 - 100, default is 0 - don't use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca9d759d4c52d12ca68c7abe9b47101b7c"></a>IMWRITE_JPEG_CHROMA_QUALITY&#160;</td><td class="fielddoc"><p>Separate chroma quality level, 0 - 100, default is 0 - don't use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acae414f4508a2529430d37eb60e2bd6b0c"></a>IMWRITE_PNG_COMPRESSION&#160;</td><td class="fielddoc"><p>For PNG, it can be the compression level from 0 to 9. A higher value means a smaller size and longer compression time. If specified, strategy is changed to IMWRITE_PNG_STRATEGY_DEFAULT (Z_DEFAULT_STRATEGY). Default value is 1 (best speed setting). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca472be872a2312278cc8896b6a595589c"></a>IMWRITE_PNG_STRATEGY&#160;</td><td class="fielddoc"><p>One of <a class="el" href="group__imgcodecs.html#gaa60044d347ffd187161b5ec9ea2ef2f9" title="Imwrite PNG specific flags used to tune the compression algorithm.">cv::ImwritePNGFlags</a>, default is IMWRITE_PNG_STRATEGY_RLE. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca6b3e307a0f0d2811555e21c31455308f"></a>IMWRITE_PNG_BILEVEL&#160;</td><td class="fielddoc"><p>Binary level PNG, 0 or 1, default is 0. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca684a887da5c355f99e5616c2dd7a7e1a"></a>IMWRITE_PXM_BINARY&#160;</td><td class="fielddoc"><p>For PPM, PGM, or PBM, it can be a binary format flag, 0 or 1. Default value is 1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab136965d7438f0fa284bf0b0a19557bd"></a>IMWRITE_WEBP_QUALITY&#160;</td><td class="fielddoc"><p>override EXR storage type (FLOAT (FP32) is default) </p>
+<p>For WEBP, it can be a quality from 1 to 100 (the higher is the better). By default (without any parameter) and for quality above 100 the lossless compression is used. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab505ed6a68a0cc6ae554553783cf8665"></a>IMWRITE_PAM_TUPLETYPE&#160;</td><td class="fielddoc"><p>For PAM, sets the TUPLETYPE field to the corresponding string value that is defined for the format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8863f3eac9fbfdfbb86bd0fe708e0ae9"></a>IMWRITE_TIFF_RESUNIT&#160;</td><td class="fielddoc"><p>For TIFF, use to specify which DPI resolution unit to set; see libtiff documentation for valid values. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca5d6f2afd850dd0f322700127178cdab9"></a>IMWRITE_TIFF_XDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the X direction DPI. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b"></a>IMWRITE_TIFF_YDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the Y direction DPI. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga292d81be8d76901bff7988d18d2b42ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga292d81be8d76901bff7988d18d2b42ac">&#9670;&nbsp;</a></span>ImwriteFlags <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgcodecs.html#ga292d81be8d76901bff7988d18d2b42ac">cv::ImwriteFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Imwrite flags. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48"></a>IMWRITE_JPEG_QUALITY&#160;</td><td class="fielddoc"><p>For JPEG, it can be a quality from 0 to 100 (the higher is the better). Default value is 95. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6"></a>IMWRITE_JPEG_PROGRESSIVE&#160;</td><td class="fielddoc"><p>Enable JPEG features, 0 or 1, default is False. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae"></a>IMWRITE_JPEG_OPTIMIZE&#160;</td><td class="fielddoc"><p>Enable JPEG features, 0 or 1, default is False. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acafe3c57ddd00a002a7db864802d8d6c3b"></a>IMWRITE_JPEG_RST_INTERVAL&#160;</td><td class="fielddoc"><p>JPEG restart interval, 0 - 65535, default is 0 - no restart. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acaf7488b757f0df9655ec9188a9eb0083b"></a>IMWRITE_JPEG_LUMA_QUALITY&#160;</td><td class="fielddoc"><p>Separate luma quality level, 0 - 100, default is 0 - don't use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca9d759d4c52d12ca68c7abe9b47101b7c"></a>IMWRITE_JPEG_CHROMA_QUALITY&#160;</td><td class="fielddoc"><p>Separate chroma quality level, 0 - 100, default is 0 - don't use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acae414f4508a2529430d37eb60e2bd6b0c"></a>IMWRITE_PNG_COMPRESSION&#160;</td><td class="fielddoc"><p>For PNG, it can be the compression level from 0 to 9. A higher value means a smaller size and longer compression time. If specified, strategy is changed to IMWRITE_PNG_STRATEGY_DEFAULT (Z_DEFAULT_STRATEGY). Default value is 1 (best speed setting). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca472be872a2312278cc8896b6a595589c"></a>IMWRITE_PNG_STRATEGY&#160;</td><td class="fielddoc"><p>One of <a class="el" href="group__imgcodecs.html#gaa60044d347ffd187161b5ec9ea2ef2f9" title="Imwrite PNG specific flags used to tune the compression algorithm.">cv::ImwritePNGFlags</a>, default is IMWRITE_PNG_STRATEGY_RLE. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca6b3e307a0f0d2811555e21c31455308f"></a>IMWRITE_PNG_BILEVEL&#160;</td><td class="fielddoc"><p>Binary level PNG, 0 or 1, default is 0. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca684a887da5c355f99e5616c2dd7a7e1a"></a>IMWRITE_PXM_BINARY&#160;</td><td class="fielddoc"><p>For PPM, PGM, or PBM, it can be a binary format flag, 0 or 1. Default value is 1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab136965d7438f0fa284bf0b0a19557bd"></a>IMWRITE_WEBP_QUALITY&#160;</td><td class="fielddoc"><p>override EXR storage type (FLOAT (FP32) is default) </p>
+<p>For WEBP, it can be a quality from 1 to 100 (the higher is the better). By default (without any parameter) and for quality above 100 the lossless compression is used. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab505ed6a68a0cc6ae554553783cf8665"></a>IMWRITE_PAM_TUPLETYPE&#160;</td><td class="fielddoc"><p>For PAM, sets the TUPLETYPE field to the corresponding string value that is defined for the format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8863f3eac9fbfdfbb86bd0fe708e0ae9"></a>IMWRITE_TIFF_RESUNIT&#160;</td><td class="fielddoc"><p>For TIFF, use to specify which DPI resolution unit to set; see libtiff documentation for valid values. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca5d6f2afd850dd0f322700127178cdab9"></a>IMWRITE_TIFF_XDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the X direction DPI. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b"></a>IMWRITE_TIFF_YDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the Y direction DPI. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48"></a>IMWRITE_JPEG_QUALITY&#160;</td><td class="fielddoc"><p>For JPEG, it can be a quality from 0 to 100 (the higher is the better). Default value is 95. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6"></a>IMWRITE_JPEG_PROGRESSIVE&#160;</td><td class="fielddoc"><p>Enable JPEG features, 0 or 1, default is False. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae"></a>IMWRITE_JPEG_OPTIMIZE&#160;</td><td class="fielddoc"><p>Enable JPEG features, 0 or 1, default is False. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acafe3c57ddd00a002a7db864802d8d6c3b"></a>IMWRITE_JPEG_RST_INTERVAL&#160;</td><td class="fielddoc"><p>JPEG restart interval, 0 - 65535, default is 0 - no restart. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acaf7488b757f0df9655ec9188a9eb0083b"></a>IMWRITE_JPEG_LUMA_QUALITY&#160;</td><td class="fielddoc"><p>Separate luma quality level, 0 - 100, default is 0 - don't use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca9d759d4c52d12ca68c7abe9b47101b7c"></a>IMWRITE_JPEG_CHROMA_QUALITY&#160;</td><td class="fielddoc"><p>Separate chroma quality level, 0 - 100, default is 0 - don't use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acae414f4508a2529430d37eb60e2bd6b0c"></a>IMWRITE_PNG_COMPRESSION&#160;</td><td class="fielddoc"><p>For PNG, it can be the compression level from 0 to 9. A higher value means a smaller size and longer compression time. If specified, strategy is changed to IMWRITE_PNG_STRATEGY_DEFAULT (Z_DEFAULT_STRATEGY). Default value is 1 (best speed setting). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca472be872a2312278cc8896b6a595589c"></a>IMWRITE_PNG_STRATEGY&#160;</td><td class="fielddoc"><p>One of <a class="el" href="group__imgcodecs.html#gaa60044d347ffd187161b5ec9ea2ef2f9" title="Imwrite PNG specific flags used to tune the compression algorithm.">cv::ImwritePNGFlags</a>, default is IMWRITE_PNG_STRATEGY_RLE. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca6b3e307a0f0d2811555e21c31455308f"></a>IMWRITE_PNG_BILEVEL&#160;</td><td class="fielddoc"><p>Binary level PNG, 0 or 1, default is 0. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca684a887da5c355f99e5616c2dd7a7e1a"></a>IMWRITE_PXM_BINARY&#160;</td><td class="fielddoc"><p>For PPM, PGM, or PBM, it can be a binary format flag, 0 or 1. Default value is 1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab136965d7438f0fa284bf0b0a19557bd"></a>IMWRITE_WEBP_QUALITY&#160;</td><td class="fielddoc"><p>override EXR storage type (FLOAT (FP32) is default) </p>
+<p>For WEBP, it can be a quality from 1 to 100 (the higher is the better). By default (without any parameter) and for quality above 100 the lossless compression is used. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab505ed6a68a0cc6ae554553783cf8665"></a>IMWRITE_PAM_TUPLETYPE&#160;</td><td class="fielddoc"><p>For PAM, sets the TUPLETYPE field to the corresponding string value that is defined for the format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8863f3eac9fbfdfbb86bd0fe708e0ae9"></a>IMWRITE_TIFF_RESUNIT&#160;</td><td class="fielddoc"><p>For TIFF, use to specify which DPI resolution unit to set; see libtiff documentation for valid values. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca5d6f2afd850dd0f322700127178cdab9"></a>IMWRITE_TIFF_XDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the X direction DPI. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b"></a>IMWRITE_TIFF_YDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the Y direction DPI. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48"></a>IMWRITE_JPEG_QUALITY&#160;</td><td class="fielddoc"><p>For JPEG, it can be a quality from 0 to 100 (the higher is the better). Default value is 95. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6"></a>IMWRITE_JPEG_PROGRESSIVE&#160;</td><td class="fielddoc"><p>Enable JPEG features, 0 or 1, default is False. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae"></a>IMWRITE_JPEG_OPTIMIZE&#160;</td><td class="fielddoc"><p>Enable JPEG features, 0 or 1, default is False. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acafe3c57ddd00a002a7db864802d8d6c3b"></a>IMWRITE_JPEG_RST_INTERVAL&#160;</td><td class="fielddoc"><p>JPEG restart interval, 0 - 65535, default is 0 - no restart. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acaf7488b757f0df9655ec9188a9eb0083b"></a>IMWRITE_JPEG_LUMA_QUALITY&#160;</td><td class="fielddoc"><p>Separate luma quality level, 0 - 100, default is 0 - don't use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca9d759d4c52d12ca68c7abe9b47101b7c"></a>IMWRITE_JPEG_CHROMA_QUALITY&#160;</td><td class="fielddoc"><p>Separate chroma quality level, 0 - 100, default is 0 - don't use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acae414f4508a2529430d37eb60e2bd6b0c"></a>IMWRITE_PNG_COMPRESSION&#160;</td><td class="fielddoc"><p>For PNG, it can be the compression level from 0 to 9. A higher value means a smaller size and longer compression time. If specified, strategy is changed to IMWRITE_PNG_STRATEGY_DEFAULT (Z_DEFAULT_STRATEGY). Default value is 1 (best speed setting). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca472be872a2312278cc8896b6a595589c"></a>IMWRITE_PNG_STRATEGY&#160;</td><td class="fielddoc"><p>One of <a class="el" href="group__imgcodecs.html#gaa60044d347ffd187161b5ec9ea2ef2f9" title="Imwrite PNG specific flags used to tune the compression algorithm.">cv::ImwritePNGFlags</a>, default is IMWRITE_PNG_STRATEGY_RLE. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca6b3e307a0f0d2811555e21c31455308f"></a>IMWRITE_PNG_BILEVEL&#160;</td><td class="fielddoc"><p>Binary level PNG, 0 or 1, default is 0. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca684a887da5c355f99e5616c2dd7a7e1a"></a>IMWRITE_PXM_BINARY&#160;</td><td class="fielddoc"><p>For PPM, PGM, or PBM, it can be a binary format flag, 0 or 1. Default value is 1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab136965d7438f0fa284bf0b0a19557bd"></a>IMWRITE_WEBP_QUALITY&#160;</td><td class="fielddoc"><p>override EXR storage type (FLOAT (FP32) is default) </p>
+<p>For WEBP, it can be a quality from 1 to 100 (the higher is the better). By default (without any parameter) and for quality above 100 the lossless compression is used. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab505ed6a68a0cc6ae554553783cf8665"></a>IMWRITE_PAM_TUPLETYPE&#160;</td><td class="fielddoc"><p>For PAM, sets the TUPLETYPE field to the corresponding string value that is defined for the format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8863f3eac9fbfdfbb86bd0fe708e0ae9"></a>IMWRITE_TIFF_RESUNIT&#160;</td><td class="fielddoc"><p>For TIFF, use to specify which DPI resolution unit to set; see libtiff documentation for valid values. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca5d6f2afd850dd0f322700127178cdab9"></a>IMWRITE_TIFF_XDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the X direction DPI. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b"></a>IMWRITE_TIFF_YDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the Y direction DPI. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48"></a>IMWRITE_JPEG_QUALITY&#160;</td><td class="fielddoc"><p>For JPEG, it can be a quality from 0 to 100 (the higher is the better). Default value is 95. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6"></a>IMWRITE_JPEG_PROGRESSIVE&#160;</td><td class="fielddoc"><p>Enable JPEG features, 0 or 1, default is False. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae"></a>IMWRITE_JPEG_OPTIMIZE&#160;</td><td class="fielddoc"><p>Enable JPEG features, 0 or 1, default is False. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acafe3c57ddd00a002a7db864802d8d6c3b"></a>IMWRITE_JPEG_RST_INTERVAL&#160;</td><td class="fielddoc"><p>JPEG restart interval, 0 - 65535, default is 0 - no restart. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acaf7488b757f0df9655ec9188a9eb0083b"></a>IMWRITE_JPEG_LUMA_QUALITY&#160;</td><td class="fielddoc"><p>Separate luma quality level, 0 - 100, default is 0 - don't use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca9d759d4c52d12ca68c7abe9b47101b7c"></a>IMWRITE_JPEG_CHROMA_QUALITY&#160;</td><td class="fielddoc"><p>Separate chroma quality level, 0 - 100, default is 0 - don't use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acae414f4508a2529430d37eb60e2bd6b0c"></a>IMWRITE_PNG_COMPRESSION&#160;</td><td class="fielddoc"><p>For PNG, it can be the compression level from 0 to 9. A higher value means a smaller size and longer compression time. If specified, strategy is changed to IMWRITE_PNG_STRATEGY_DEFAULT (Z_DEFAULT_STRATEGY). Default value is 1 (best speed setting). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca472be872a2312278cc8896b6a595589c"></a>IMWRITE_PNG_STRATEGY&#160;</td><td class="fielddoc"><p>One of <a class="el" href="group__imgcodecs.html#gaa60044d347ffd187161b5ec9ea2ef2f9" title="Imwrite PNG specific flags used to tune the compression algorithm.">cv::ImwritePNGFlags</a>, default is IMWRITE_PNG_STRATEGY_RLE. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca6b3e307a0f0d2811555e21c31455308f"></a>IMWRITE_PNG_BILEVEL&#160;</td><td class="fielddoc"><p>Binary level PNG, 0 or 1, default is 0. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca684a887da5c355f99e5616c2dd7a7e1a"></a>IMWRITE_PXM_BINARY&#160;</td><td class="fielddoc"><p>For PPM, PGM, or PBM, it can be a binary format flag, 0 or 1. Default value is 1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab136965d7438f0fa284bf0b0a19557bd"></a>IMWRITE_WEBP_QUALITY&#160;</td><td class="fielddoc"><p>override EXR storage type (FLOAT (FP32) is default) </p>
+<p>For WEBP, it can be a quality from 1 to 100 (the higher is the better). By default (without any parameter) and for quality above 100 the lossless compression is used. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab505ed6a68a0cc6ae554553783cf8665"></a>IMWRITE_PAM_TUPLETYPE&#160;</td><td class="fielddoc"><p>For PAM, sets the TUPLETYPE field to the corresponding string value that is defined for the format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8863f3eac9fbfdfbb86bd0fe708e0ae9"></a>IMWRITE_TIFF_RESUNIT&#160;</td><td class="fielddoc"><p>For TIFF, use to specify which DPI resolution unit to set; see libtiff documentation for valid values. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca5d6f2afd850dd0f322700127178cdab9"></a>IMWRITE_TIFF_XDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the X direction DPI. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b"></a>IMWRITE_TIFF_YDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the Y direction DPI. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acaa1285dfd5c58942c14a483b2b8cdee48"></a>IMWRITE_JPEG_QUALITY&#160;</td><td class="fielddoc"><p>For JPEG, it can be a quality from 0 to 100 (the higher is the better). Default value is 95. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab535807c0f4884e91f3731fcb3eaafa6"></a>IMWRITE_JPEG_PROGRESSIVE&#160;</td><td class="fielddoc"><p>Enable JPEG features, 0 or 1, default is False. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acad08dea1c5aaeb833914e8a93cc306cae"></a>IMWRITE_JPEG_OPTIMIZE&#160;</td><td class="fielddoc"><p>Enable JPEG features, 0 or 1, default is False. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acafe3c57ddd00a002a7db864802d8d6c3b"></a>IMWRITE_JPEG_RST_INTERVAL&#160;</td><td class="fielddoc"><p>JPEG restart interval, 0 - 65535, default is 0 - no restart. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acaf7488b757f0df9655ec9188a9eb0083b"></a>IMWRITE_JPEG_LUMA_QUALITY&#160;</td><td class="fielddoc"><p>Separate luma quality level, 0 - 100, default is 0 - don't use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca9d759d4c52d12ca68c7abe9b47101b7c"></a>IMWRITE_JPEG_CHROMA_QUALITY&#160;</td><td class="fielddoc"><p>Separate chroma quality level, 0 - 100, default is 0 - don't use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acae414f4508a2529430d37eb60e2bd6b0c"></a>IMWRITE_PNG_COMPRESSION&#160;</td><td class="fielddoc"><p>For PNG, it can be the compression level from 0 to 9. A higher value means a smaller size and longer compression time. If specified, strategy is changed to IMWRITE_PNG_STRATEGY_DEFAULT (Z_DEFAULT_STRATEGY). Default value is 1 (best speed setting). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca472be872a2312278cc8896b6a595589c"></a>IMWRITE_PNG_STRATEGY&#160;</td><td class="fielddoc"><p>One of <a class="el" href="group__imgcodecs.html#gaa60044d347ffd187161b5ec9ea2ef2f9" title="Imwrite PNG specific flags used to tune the compression algorithm.">cv::ImwritePNGFlags</a>, default is IMWRITE_PNG_STRATEGY_RLE. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca6b3e307a0f0d2811555e21c31455308f"></a>IMWRITE_PNG_BILEVEL&#160;</td><td class="fielddoc"><p>Binary level PNG, 0 or 1, default is 0. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca684a887da5c355f99e5616c2dd7a7e1a"></a>IMWRITE_PXM_BINARY&#160;</td><td class="fielddoc"><p>For PPM, PGM, or PBM, it can be a binary format flag, 0 or 1. Default value is 1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab136965d7438f0fa284bf0b0a19557bd"></a>IMWRITE_WEBP_QUALITY&#160;</td><td class="fielddoc"><p>override EXR storage type (FLOAT (FP32) is default) </p>
+<p>For WEBP, it can be a quality from 1 to 100 (the higher is the better). By default (without any parameter) and for quality above 100 the lossless compression is used. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42acab505ed6a68a0cc6ae554553783cf8665"></a>IMWRITE_PAM_TUPLETYPE&#160;</td><td class="fielddoc"><p>For PAM, sets the TUPLETYPE field to the corresponding string value that is defined for the format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8863f3eac9fbfdfbb86bd0fe708e0ae9"></a>IMWRITE_TIFF_RESUNIT&#160;</td><td class="fielddoc"><p>For TIFF, use to specify which DPI resolution unit to set; see libtiff documentation for valid values. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca5d6f2afd850dd0f322700127178cdab9"></a>IMWRITE_TIFF_XDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the X direction DPI. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga292d81be8d76901bff7988d18d2b42aca8cce6aa1c46e820095be71a5a1178e4b"></a>IMWRITE_TIFF_YDPI&#160;</td><td class="fielddoc"><p>For TIFF, use to specify the Y direction DPI. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaa60044d347ffd187161b5ec9ea2ef2f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa60044d347ffd187161b5ec9ea2ef2f9">&#9670;&nbsp;</a></span>ImwritePNGFlags <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa60044d347ffd187161b5ec9ea2ef2f9">&#9670;&nbsp;</a></span>ImwritePNGFlags <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2266,12 +3369,22 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210"></a>IMWRITE_PNG_STRATEGY_FIXED&#160;</td><td class="fielddoc"><p>Using this value prevents the use of dynamic Huffman codes, allowing for a simpler decoder for special applications. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9aa1e2f59d1ae96dc382e8051d346dbf98"></a>IMWRITE_PNG_STRATEGY_DEFAULT&#160;</td><td class="fielddoc"><p>Use this value for normal data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c"></a>IMWRITE_PNG_STRATEGY_FILTERED&#160;</td><td class="fielddoc"><p>Use this value for data produced by a filter (or predictor).Filtered data consists mostly of small values with a somewhat random distribution. In this case, the compression algorithm is tuned to compress them better. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4"></a>IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY&#160;</td><td class="fielddoc"><p>Use this value to force Huffman encoding only (no string match). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d"></a>IMWRITE_PNG_STRATEGY_RLE&#160;</td><td class="fielddoc"><p>Use this value to limit match distances to one (run-length encoding). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210"></a>IMWRITE_PNG_STRATEGY_FIXED&#160;</td><td class="fielddoc"><p>Using this value prevents the use of dynamic Huffman codes, allowing for a simpler decoder for special applications. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaa60044d347ffd187161b5ec9ea2ef2f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa60044d347ffd187161b5ec9ea2ef2f9">&#9670;&nbsp;</a></span>ImwritePNGFlags <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa60044d347ffd187161b5ec9ea2ef2f9">&#9670;&nbsp;</a></span>ImwritePNGFlags <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2331,12 +3444,22 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210"></a>IMWRITE_PNG_STRATEGY_FIXED&#160;</td><td class="fielddoc"><p>Using this value prevents the use of dynamic Huffman codes, allowing for a simpler decoder for special applications. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9aa1e2f59d1ae96dc382e8051d346dbf98"></a>IMWRITE_PNG_STRATEGY_DEFAULT&#160;</td><td class="fielddoc"><p>Use this value for normal data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c"></a>IMWRITE_PNG_STRATEGY_FILTERED&#160;</td><td class="fielddoc"><p>Use this value for data produced by a filter (or predictor).Filtered data consists mostly of small values with a somewhat random distribution. In this case, the compression algorithm is tuned to compress them better. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4"></a>IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY&#160;</td><td class="fielddoc"><p>Use this value to force Huffman encoding only (no string match). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d"></a>IMWRITE_PNG_STRATEGY_RLE&#160;</td><td class="fielddoc"><p>Use this value to limit match distances to one (run-length encoding). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210"></a>IMWRITE_PNG_STRATEGY_FIXED&#160;</td><td class="fielddoc"><p>Using this value prevents the use of dynamic Huffman codes, allowing for a simpler decoder for special applications. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaa60044d347ffd187161b5ec9ea2ef2f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa60044d347ffd187161b5ec9ea2ef2f9">&#9670;&nbsp;</a></span>ImwritePNGFlags <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa60044d347ffd187161b5ec9ea2ef2f9">&#9670;&nbsp;</a></span>ImwritePNGFlags <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2396,12 +3519,22 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210"></a>IMWRITE_PNG_STRATEGY_FIXED&#160;</td><td class="fielddoc"><p>Using this value prevents the use of dynamic Huffman codes, allowing for a simpler decoder for special applications. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9aa1e2f59d1ae96dc382e8051d346dbf98"></a>IMWRITE_PNG_STRATEGY_DEFAULT&#160;</td><td class="fielddoc"><p>Use this value for normal data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c"></a>IMWRITE_PNG_STRATEGY_FILTERED&#160;</td><td class="fielddoc"><p>Use this value for data produced by a filter (or predictor).Filtered data consists mostly of small values with a somewhat random distribution. In this case, the compression algorithm is tuned to compress them better. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4"></a>IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY&#160;</td><td class="fielddoc"><p>Use this value to force Huffman encoding only (no string match). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d"></a>IMWRITE_PNG_STRATEGY_RLE&#160;</td><td class="fielddoc"><p>Use this value to limit match distances to one (run-length encoding). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210"></a>IMWRITE_PNG_STRATEGY_FIXED&#160;</td><td class="fielddoc"><p>Using this value prevents the use of dynamic Huffman codes, allowing for a simpler decoder for special applications. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaa60044d347ffd187161b5ec9ea2ef2f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa60044d347ffd187161b5ec9ea2ef2f9">&#9670;&nbsp;</a></span>ImwritePNGFlags <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa60044d347ffd187161b5ec9ea2ef2f9">&#9670;&nbsp;</a></span>ImwritePNGFlags <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2422,6 +3555,91 @@ Functions</h2></td></tr>
 </ul>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9aa1e2f59d1ae96dc382e8051d346dbf98"></a>IMWRITE_PNG_STRATEGY_DEFAULT&#160;</td><td class="fielddoc"><p>Use this value for normal data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c"></a>IMWRITE_PNG_STRATEGY_FILTERED&#160;</td><td class="fielddoc"><p>Use this value for data produced by a filter (or predictor).Filtered data consists mostly of small values with a somewhat random distribution. In this case, the compression algorithm is tuned to compress them better. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4"></a>IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY&#160;</td><td class="fielddoc"><p>Use this value to force Huffman encoding only (no string match). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d"></a>IMWRITE_PNG_STRATEGY_RLE&#160;</td><td class="fielddoc"><p>Use this value to limit match distances to one (run-length encoding). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210"></a>IMWRITE_PNG_STRATEGY_FIXED&#160;</td><td class="fielddoc"><p>Using this value prevents the use of dynamic Huffman codes, allowing for a simpler decoder for special applications. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9aa1e2f59d1ae96dc382e8051d346dbf98"></a>IMWRITE_PNG_STRATEGY_DEFAULT&#160;</td><td class="fielddoc"><p>Use this value for normal data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c"></a>IMWRITE_PNG_STRATEGY_FILTERED&#160;</td><td class="fielddoc"><p>Use this value for data produced by a filter (or predictor).Filtered data consists mostly of small values with a somewhat random distribution. In this case, the compression algorithm is tuned to compress them better. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4"></a>IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY&#160;</td><td class="fielddoc"><p>Use this value to force Huffman encoding only (no string match). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d"></a>IMWRITE_PNG_STRATEGY_RLE&#160;</td><td class="fielddoc"><p>Use this value to limit match distances to one (run-length encoding). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210"></a>IMWRITE_PNG_STRATEGY_FIXED&#160;</td><td class="fielddoc"><p>Using this value prevents the use of dynamic Huffman codes, allowing for a simpler decoder for special applications. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9aa1e2f59d1ae96dc382e8051d346dbf98"></a>IMWRITE_PNG_STRATEGY_DEFAULT&#160;</td><td class="fielddoc"><p>Use this value for normal data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c"></a>IMWRITE_PNG_STRATEGY_FILTERED&#160;</td><td class="fielddoc"><p>Use this value for data produced by a filter (or predictor).Filtered data consists mostly of small values with a somewhat random distribution. In this case, the compression algorithm is tuned to compress them better. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4"></a>IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY&#160;</td><td class="fielddoc"><p>Use this value to force Huffman encoding only (no string match). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d"></a>IMWRITE_PNG_STRATEGY_RLE&#160;</td><td class="fielddoc"><p>Use this value to limit match distances to one (run-length encoding). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210"></a>IMWRITE_PNG_STRATEGY_FIXED&#160;</td><td class="fielddoc"><p>Using this value prevents the use of dynamic Huffman codes, allowing for a simpler decoder for special applications. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9aa1e2f59d1ae96dc382e8051d346dbf98"></a>IMWRITE_PNG_STRATEGY_DEFAULT&#160;</td><td class="fielddoc"><p>Use this value for normal data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c"></a>IMWRITE_PNG_STRATEGY_FILTERED&#160;</td><td class="fielddoc"><p>Use this value for data produced by a filter (or predictor).Filtered data consists mostly of small values with a somewhat random distribution. In this case, the compression algorithm is tuned to compress them better. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4"></a>IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY&#160;</td><td class="fielddoc"><p>Use this value to force Huffman encoding only (no string match). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d"></a>IMWRITE_PNG_STRATEGY_RLE&#160;</td><td class="fielddoc"><p>Use this value to limit match distances to one (run-length encoding). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210"></a>IMWRITE_PNG_STRATEGY_FIXED&#160;</td><td class="fielddoc"><p>Using this value prevents the use of dynamic Huffman codes, allowing for a simpler decoder for special applications. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9aa1e2f59d1ae96dc382e8051d346dbf98"></a>IMWRITE_PNG_STRATEGY_DEFAULT&#160;</td><td class="fielddoc"><p>Use this value for normal data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c"></a>IMWRITE_PNG_STRATEGY_FILTERED&#160;</td><td class="fielddoc"><p>Use this value for data produced by a filter (or predictor).Filtered data consists mostly of small values with a somewhat random distribution. In this case, the compression algorithm is tuned to compress them better. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4"></a>IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY&#160;</td><td class="fielddoc"><p>Use this value to force Huffman encoding only (no string match). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d"></a>IMWRITE_PNG_STRATEGY_RLE&#160;</td><td class="fielddoc"><p>Use this value to limit match distances to one (run-length encoding). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210"></a>IMWRITE_PNG_STRATEGY_FIXED&#160;</td><td class="fielddoc"><p>Using this value prevents the use of dynamic Huffman codes, allowing for a simpler decoder for special applications. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaa60044d347ffd187161b5ec9ea2ef2f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa60044d347ffd187161b5ec9ea2ef2f9">&#9670;&nbsp;</a></span>ImwritePNGFlags <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgcodecs.html#gaa60044d347ffd187161b5ec9ea2ef2f9">cv::ImwritePNGFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Imwrite PNG specific flags used to tune the compression algorithm. </p>
+<p>These flags will be modify the way of PNG image compression and will be passed to the underlying zlib processing stage.</p>
+<ul>
+<li>The effect of IMWRITE_PNG_STRATEGY_FILTERED is to force more Huffman coding and less string matching; it is somewhat intermediate between IMWRITE_PNG_STRATEGY_DEFAULT and IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY.</li>
+<li>IMWRITE_PNG_STRATEGY_RLE is designed to be almost as fast as IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY, but give better compression for PNG image data.</li>
+<li>The strategy parameter only affects the compression ratio but not the correctness of the compressed output even if it is not set appropriately.</li>
+<li>IMWRITE_PNG_STRATEGY_FIXED prevents the use of dynamic Huffman codes, allowing for a simpler decoder for special applications. </li>
+</ul>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9aa1e2f59d1ae96dc382e8051d346dbf98"></a>IMWRITE_PNG_STRATEGY_DEFAULT&#160;</td><td class="fielddoc"><p>Use this value for normal data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c"></a>IMWRITE_PNG_STRATEGY_FILTERED&#160;</td><td class="fielddoc"><p>Use this value for data produced by a filter (or predictor).Filtered data consists mostly of small values with a somewhat random distribution. In this case, the compression algorithm is tuned to compress them better. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9acae26c43eeca81ef0e208b57fea2e3c4"></a>IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY&#160;</td><td class="fielddoc"><p>Use this value to force Huffman encoding only (no string match). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a0de06762e544aeb5f97830717e682f6d"></a>IMWRITE_PNG_STRATEGY_RLE&#160;</td><td class="fielddoc"><p>Use this value to limit match distances to one (run-length encoding). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a4beababccf8f6ce068a5b0af8bc3b210"></a>IMWRITE_PNG_STRATEGY_FIXED&#160;</td><td class="fielddoc"><p>Using this value prevents the use of dynamic Huffman codes, allowing for a simpler decoder for special applications. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9aa1e2f59d1ae96dc382e8051d346dbf98"></a>IMWRITE_PNG_STRATEGY_DEFAULT&#160;</td><td class="fielddoc"><p>Use this value for normal data. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaa60044d347ffd187161b5ec9ea2ef2f9a5ce74819ffa25a034849a7337de8c78c"></a>IMWRITE_PNG_STRATEGY_FILTERED&#160;</td><td class="fielddoc"><p>Use this value for data produced by a filter (or predictor).Filtered data consists mostly of small values with a somewhat random distribution. In this case, the compression algorithm is tuned to compress them better. </p>
 </td></tr>

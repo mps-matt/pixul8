@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cvflann::L1&lt; T &gt; Struct Template Reference</title>
+<title>PixUl8: cvflann::L1&lt; T &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -127,6 +125,18 @@ typedef T&#160;</td><td class="memItemRight" valign="bottom"><b>ElementType</b><
 <tr class="memitem:a4b809418ce6bf89439d5dbd0ccd42220"><td class="memItemLeft" align="right" valign="top"><a id="a4b809418ce6bf89439d5dbd0ccd42220"></a>
 typedef <a class="el" href="structcvflann_1_1_accumulator.html">Accumulator</a>&lt; T &gt;::Type&#160;</td><td class="memItemRight" valign="bottom"><b>ResultType</b></td></tr>
 <tr class="separator:a4b809418ce6bf89439d5dbd0ccd42220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3e6c602907baa81d90ddcfc33041874"><td class="memItemLeft" align="right" valign="top"><a id="aa3e6c602907baa81d90ddcfc33041874"></a>
+typedef <a class="el" href="classcvflann_1_1_true.html">True</a>&#160;</td><td class="memItemRight" valign="bottom"><b>is_kdtree_distance</b></td></tr>
+<tr class="separator:aa3e6c602907baa81d90ddcfc33041874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1df70c0d506c0446a8e55d60c697a55c"><td class="memItemLeft" align="right" valign="top"><a id="a1df70c0d506c0446a8e55d60c697a55c"></a>
+typedef <a class="el" href="classcvflann_1_1_true.html">True</a>&#160;</td><td class="memItemRight" valign="bottom"><b>is_vector_space_distance</b></td></tr>
+<tr class="separator:a1df70c0d506c0446a8e55d60c697a55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e5f85d35af395e5654465e9a69643c0"><td class="memItemLeft" align="right" valign="top"><a id="a2e5f85d35af395e5654465e9a69643c0"></a>
+typedef T&#160;</td><td class="memItemRight" valign="bottom"><b>ElementType</b></td></tr>
+<tr class="separator:a2e5f85d35af395e5654465e9a69643c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b809418ce6bf89439d5dbd0ccd42220"><td class="memItemLeft" align="right" valign="top"><a id="a4b809418ce6bf89439d5dbd0ccd42220"></a>
+typedef <a class="el" href="structcvflann_1_1_accumulator.html">Accumulator</a>&lt; T &gt;::Type&#160;</td><td class="memItemRight" valign="bottom"><b>ResultType</b></td></tr>
+<tr class="separator:a4b809418ce6bf89439d5dbd0ccd42220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -154,10 +164,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2cd01e85cd8775df6fe14fa7032efdbf"><td class="memTemplParams" colspan="2">template&lt;typename U , typename V &gt; </td></tr>
 <tr class="memitem:a2cd01e85cd8775df6fe14fa7032efdbf"><td class="memTemplItemLeft" align="right" valign="top">ResultType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structcvflann_1_1_l1.html#a2cd01e85cd8775df6fe14fa7032efdbf">accum_dist</a> (const U &amp;a, const V &amp;b, int) const</td></tr>
 <tr class="separator:a2cd01e85cd8775df6fe14fa7032efdbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f3a661b5e5ae77ad02f63547080c15"><td class="memTemplParams" colspan="2">template&lt;typename Iterator1 , typename Iterator2 &gt; </td></tr>
+<tr class="memitem:a87f3a661b5e5ae77ad02f63547080c15"><td class="memTemplItemLeft" align="right" valign="top">ResultType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structcvflann_1_1_l1.html#a87f3a661b5e5ae77ad02f63547080c15">operator()</a> (Iterator1 a, Iterator2 b, size_t size, ResultType worst_dist=-1) const</td></tr>
+<tr class="separator:a87f3a661b5e5ae77ad02f63547080c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cd01e85cd8775df6fe14fa7032efdbf"><td class="memTemplParams" colspan="2">template&lt;typename U , typename V &gt; </td></tr>
+<tr class="memitem:a2cd01e85cd8775df6fe14fa7032efdbf"><td class="memTemplItemLeft" align="right" valign="top">ResultType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structcvflann_1_1_l1.html#a2cd01e85cd8775df6fe14fa7032efdbf">accum_dist</a> (const U &amp;a, const V &amp;b, int) const</td></tr>
+<tr class="separator:a2cd01e85cd8775df6fe14fa7032efdbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2cd01e85cd8775df6fe14fa7032efdbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cd01e85cd8775df6fe14fa7032efdbf">&#9670;&nbsp;</a></span>accum_dist() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cd01e85cd8775df6fe14fa7032efdbf">&#9670;&nbsp;</a></span>accum_dist() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,7 +212,7 @@ template&lt;typename U , typename V &gt; </div>
 </div>
 </div>
 <a id="a2cd01e85cd8775df6fe14fa7032efdbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cd01e85cd8775df6fe14fa7032efdbf">&#9670;&nbsp;</a></span>accum_dist() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cd01e85cd8775df6fe14fa7032efdbf">&#9670;&nbsp;</a></span>accum_dist() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,7 +251,7 @@ template&lt;typename U , typename V &gt; </div>
 </div>
 </div>
 <a id="a2cd01e85cd8775df6fe14fa7032efdbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cd01e85cd8775df6fe14fa7032efdbf">&#9670;&nbsp;</a></span>accum_dist() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cd01e85cd8775df6fe14fa7032efdbf">&#9670;&nbsp;</a></span>accum_dist() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -274,7 +290,46 @@ template&lt;typename U , typename V &gt; </div>
 </div>
 </div>
 <a id="a2cd01e85cd8775df6fe14fa7032efdbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cd01e85cd8775df6fe14fa7032efdbf">&#9670;&nbsp;</a></span>accum_dist() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cd01e85cd8775df6fe14fa7032efdbf">&#9670;&nbsp;</a></span>accum_dist() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<div class="memtemplate">
+template&lt;typename U , typename V &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">ResultType <a class="el" href="structcvflann_1_1_l1.html">cvflann::L1</a>&lt; T &gt;::accum_dist </td>
+          <td>(</td>
+          <td class="paramtype">const U &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const V &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Partial distance, used by the kd-tree. </p>
+
+</div>
+</div>
+<a id="a2cd01e85cd8775df6fe14fa7032efdbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cd01e85cd8775df6fe14fa7032efdbf">&#9670;&nbsp;</a></span>accum_dist() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -313,7 +368,7 @@ template&lt;typename U , typename V &gt; </div>
 </div>
 </div>
 <a id="a87f3a661b5e5ae77ad02f63547080c15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87f3a661b5e5ae77ad02f63547080c15">&#9670;&nbsp;</a></span>operator()() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f3a661b5e5ae77ad02f63547080c15">&#9670;&nbsp;</a></span>operator()() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -359,7 +414,7 @@ template&lt;typename Iterator1 , typename Iterator2 &gt; </div>
 </div>
 </div>
 <a id="a87f3a661b5e5ae77ad02f63547080c15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87f3a661b5e5ae77ad02f63547080c15">&#9670;&nbsp;</a></span>operator()() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f3a661b5e5ae77ad02f63547080c15">&#9670;&nbsp;</a></span>operator()() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -405,7 +460,7 @@ template&lt;typename Iterator1 , typename Iterator2 &gt; </div>
 </div>
 </div>
 <a id="a87f3a661b5e5ae77ad02f63547080c15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87f3a661b5e5ae77ad02f63547080c15">&#9670;&nbsp;</a></span>operator()() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f3a661b5e5ae77ad02f63547080c15">&#9670;&nbsp;</a></span>operator()() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -451,7 +506,53 @@ template&lt;typename Iterator1 , typename Iterator2 &gt; </div>
 </div>
 </div>
 <a id="a87f3a661b5e5ae77ad02f63547080c15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87f3a661b5e5ae77ad02f63547080c15">&#9670;&nbsp;</a></span>operator()() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f3a661b5e5ae77ad02f63547080c15">&#9670;&nbsp;</a></span>operator()() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<div class="memtemplate">
+template&lt;typename Iterator1 , typename Iterator2 &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">ResultType <a class="el" href="structcvflann_1_1_l1.html">cvflann::L1</a>&lt; T &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">Iterator1&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Iterator2&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResultType&#160;</td>
+          <td class="paramname"><em>worst_dist</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Compute the Manhattan (L_1) distance between two vectors.</p>
+<p>This is highly optimised, with loop unrolling, as it is one of the most expensive inner loops. </p>
+
+</div>
+</div>
+<a id="a87f3a661b5e5ae77ad02f63547080c15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f3a661b5e5ae77ad02f63547080c15">&#9670;&nbsp;</a></span>operator()() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::detail::MultiBandBlender Class Reference</title>
+<title>PixUl8: cv::detail::MultiBandBlender Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -90,11 +88,29 @@ Inheritance diagram for cv::detail::MultiBandBlender:</div>
 <area href="classcv_1_1detail_1_1_blender.html" title="Base class for all blenders." alt="cv::detail::Blender" shape="rect" coords="178,0,346,24"/>
 <area href="classcv_1_1detail_1_1_blender.html" title="Base class for all blenders." alt="cv::detail::Blender" shape="rect" coords="356,0,524,24"/>
 <area href="classcv_1_1detail_1_1_blender.html" title="Base class for all blenders." alt="cv::detail::Blender" shape="rect" coords="534,0,702,24"/>
+<area href="classcv_1_1detail_1_1_blender.html" title="Base class for all blenders." alt="cv::detail::Blender" shape="rect" coords="712,0,880,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a22b424c9587d07da189cd1f15c664424"><td class="memItemLeft" align="right" valign="top"><a id="a22b424c9587d07da189cd1f15c664424"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MultiBandBlender</b> (int try_gpu=false, int num_bands=5, int weight_type=CV_32F)</td></tr>
+<tr class="separator:a22b424c9587d07da189cd1f15c664424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a150b2708c084e00b107fcc42d0298e98"><td class="memItemLeft" align="right" valign="top"><a id="a150b2708c084e00b107fcc42d0298e98"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>numBands</b> () const</td></tr>
+<tr class="separator:a150b2708c084e00b107fcc42d0298e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2efd19181426ba017b23c24c88666188"><td class="memItemLeft" align="right" valign="top"><a id="a2efd19181426ba017b23c24c88666188"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setNumBands</b> (int val)</td></tr>
+<tr class="separator:a2efd19181426ba017b23c24c88666188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac108b634893bbbae59ac3a3562fed070"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_multi_band_blender.html#ac108b634893bbbae59ac3a3562fed070">prepare</a> (<a class="el" href="classcv_1_1_rect__.html">Rect</a> dst_roi) CV_OVERRIDE</td></tr>
+<tr class="separator:ac108b634893bbbae59ac3a3562fed070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c5311ae8432eaf69bae7d97ca1f3fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_multi_band_blender.html#a71c5311ae8432eaf69bae7d97ca1f3fe">feed</a> (InputArray img, InputArray mask, <a class="el" href="classcv_1_1_point__.html">Point</a> tl) CV_OVERRIDE</td></tr>
+<tr class="memdesc:a71c5311ae8432eaf69bae7d97ca1f3fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes the image.  <a href="#a71c5311ae8432eaf69bae7d97ca1f3fe">More...</a><br /></td></tr>
+<tr class="separator:a71c5311ae8432eaf69bae7d97ca1f3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ca329bed6561eb66d4fbee5d03a548"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_multi_band_blender.html#a21ca329bed6561eb66d4fbee5d03a548">blend</a> (<a class="el" href="classcv_1_1___input_output_array.html">InputOutputArray</a> dst, <a class="el" href="classcv_1_1___input_output_array.html">InputOutputArray</a> dst_mask) CV_OVERRIDE</td></tr>
+<tr class="memdesc:a21ca329bed6561eb66d4fbee5d03a548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blends and returns the final pano.  <a href="#a21ca329bed6561eb66d4fbee5d03a548">More...</a><br /></td></tr>
+<tr class="separator:a21ca329bed6561eb66d4fbee5d03a548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22b424c9587d07da189cd1f15c664424"><td class="memItemLeft" align="right" valign="top"><a id="a22b424c9587d07da189cd1f15c664424"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MultiBandBlender</b> (int try_gpu=false, int num_bands=5, int weight_type=CV_32F)</td></tr>
 <tr class="separator:a22b424c9587d07da189cd1f15c664424"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,6 +192,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setNumBands</b> (int 
 <tr class="memitem:aa6aa12e142c0ae01ac7964ca82fd0757 inherit pub_methods_classcv_1_1detail_1_1_blender"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_blender.html#aa6aa12e142c0ae01ac7964ca82fd0757">prepare</a> (const std::vector&lt; <a class="el" href="classcv_1_1_point__.html">Point</a> &gt; &amp;corners, const std::vector&lt; <a class="el" href="classcv_1_1_size__.html">Size</a> &gt; &amp;sizes)</td></tr>
 <tr class="memdesc:aa6aa12e142c0ae01ac7964ca82fd0757 inherit pub_methods_classcv_1_1detail_1_1_blender"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares the blender for blending.  <a href="classcv_1_1detail_1_1_blender.html#aa6aa12e142c0ae01ac7964ca82fd0757">More...</a><br /></td></tr>
 <tr class="separator:aa6aa12e142c0ae01ac7964ca82fd0757 inherit pub_methods_classcv_1_1detail_1_1_blender"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6aa12e142c0ae01ac7964ca82fd0757 inherit pub_methods_classcv_1_1detail_1_1_blender"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_blender.html#aa6aa12e142c0ae01ac7964ca82fd0757">prepare</a> (const std::vector&lt; <a class="el" href="classcv_1_1_point__.html">Point</a> &gt; &amp;corners, const std::vector&lt; <a class="el" href="classcv_1_1_size__.html">Size</a> &gt; &amp;sizes)</td></tr>
+<tr class="memdesc:aa6aa12e142c0ae01ac7964ca82fd0757 inherit pub_methods_classcv_1_1detail_1_1_blender"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares the blender for blending.  <a href="classcv_1_1detail_1_1_blender.html#aa6aa12e142c0ae01ac7964ca82fd0757">More...</a><br /></td></tr>
+<tr class="separator:aa6aa12e142c0ae01ac7964ca82fd0757 inherit pub_methods_classcv_1_1detail_1_1_blender"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -200,7 +219,15 @@ Additional Inherited Members</h2></td></tr>
 <b>MULTI_BAND</b>
  }</td></tr>
 <tr class="separator:aebfd74b2b1d8482863d5f2a394655dd9 inherit pub_types_classcv_1_1detail_1_1_blender"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a447f0f183b3c2c8b951804e031a1adca inherit pub_types_classcv_1_1detail_1_1_blender"><td class="memItemLeft" align="right" valign="top"><a id="a447f0f183b3c2c8b951804e031a1adca"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>NO</b>, 
+<b>FEATHER</b>, 
+<b>MULTI_BAND</b>
+ }</td></tr>
+<tr class="separator:a447f0f183b3c2c8b951804e031a1adca inherit pub_types_classcv_1_1detail_1_1_blender"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classcv_1_1detail_1_1_blender"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classcv_1_1detail_1_1_blender')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classcv_1_1detail_1_1_blender.html">cv::detail::Blender</a></td></tr>
+<tr class="memitem:ae5102a5ed5866711ba0e8347576307eb inherit pub_static_methods_classcv_1_1detail_1_1_blender"><td class="memItemLeft" align="right" valign="top"><a id="ae5102a5ed5866711ba0e8347576307eb"></a>
+static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1detail_1_1_blender.html">Blender</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createDefault</b> (int type, bool try_gpu=false)</td></tr>
+<tr class="separator:ae5102a5ed5866711ba0e8347576307eb inherit pub_static_methods_classcv_1_1detail_1_1_blender"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5102a5ed5866711ba0e8347576307eb inherit pub_static_methods_classcv_1_1detail_1_1_blender"><td class="memItemLeft" align="right" valign="top"><a id="ae5102a5ed5866711ba0e8347576307eb"></a>
 static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1detail_1_1_blender.html">Blender</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createDefault</b> (int type, bool try_gpu=false)</td></tr>
 <tr class="separator:ae5102a5ed5866711ba0e8347576307eb inherit pub_static_methods_classcv_1_1detail_1_1_blender"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,7 +255,7 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 <div class="textblock"><p><a class="el" href="classcv_1_1detail_1_1_blender.html" title="Base class for all blenders.">Blender</a> which uses multi-band blending algorithm (see <b>[BA83]</b>). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a21ca329bed6561eb66d4fbee5d03a548"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21ca329bed6561eb66d4fbee5d03a548">&#9670;&nbsp;</a></span>blend() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a21ca329bed6561eb66d4fbee5d03a548">&#9670;&nbsp;</a></span>blend() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,7 +302,7 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 </div>
 </div>
 <a id="a21ca329bed6561eb66d4fbee5d03a548"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21ca329bed6561eb66d4fbee5d03a548">&#9670;&nbsp;</a></span>blend() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a21ca329bed6561eb66d4fbee5d03a548">&#9670;&nbsp;</a></span>blend() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -322,7 +349,7 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 </div>
 </div>
 <a id="a21ca329bed6561eb66d4fbee5d03a548"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21ca329bed6561eb66d4fbee5d03a548">&#9670;&nbsp;</a></span>blend() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a21ca329bed6561eb66d4fbee5d03a548">&#9670;&nbsp;</a></span>blend() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -369,7 +396,54 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 </div>
 </div>
 <a id="a21ca329bed6561eb66d4fbee5d03a548"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21ca329bed6561eb66d4fbee5d03a548">&#9670;&nbsp;</a></span>blend() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a21ca329bed6561eb66d4fbee5d03a548">&#9670;&nbsp;</a></span>blend() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cv::detail::MultiBandBlender::blend </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcv_1_1___input_output_array.html">InputOutputArray</a>&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcv_1_1___input_output_array.html">InputOutputArray</a>&#160;</td>
+          <td class="paramname"><em>dst_mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Blends and returns the final pano. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>Final pano </td></tr>
+    <tr><td class="paramname">dst_mask</td><td>Final pano mask </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="classcv_1_1detail_1_1_blender.html#aa0a91ce0d6046d3a63e0123cbb1b5c00">cv::detail::Blender</a>.</p>
+
+</div>
+</div>
+<a id="a21ca329bed6561eb66d4fbee5d03a548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21ca329bed6561eb66d4fbee5d03a548">&#9670;&nbsp;</a></span>blend() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -416,7 +490,7 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 </div>
 </div>
 <a id="a71c5311ae8432eaf69bae7d97ca1f3fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71c5311ae8432eaf69bae7d97ca1f3fe">&#9670;&nbsp;</a></span>feed() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a71c5311ae8432eaf69bae7d97ca1f3fe">&#9670;&nbsp;</a></span>feed() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -470,7 +544,7 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 </div>
 </div>
 <a id="a71c5311ae8432eaf69bae7d97ca1f3fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71c5311ae8432eaf69bae7d97ca1f3fe">&#9670;&nbsp;</a></span>feed() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a71c5311ae8432eaf69bae7d97ca1f3fe">&#9670;&nbsp;</a></span>feed() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -524,7 +598,7 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 </div>
 </div>
 <a id="a71c5311ae8432eaf69bae7d97ca1f3fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71c5311ae8432eaf69bae7d97ca1f3fe">&#9670;&nbsp;</a></span>feed() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a71c5311ae8432eaf69bae7d97ca1f3fe">&#9670;&nbsp;</a></span>feed() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -578,7 +652,61 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 </div>
 </div>
 <a id="a71c5311ae8432eaf69bae7d97ca1f3fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71c5311ae8432eaf69bae7d97ca1f3fe">&#9670;&nbsp;</a></span>feed() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a71c5311ae8432eaf69bae7d97ca1f3fe">&#9670;&nbsp;</a></span>feed() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cv::detail::MultiBandBlender::feed </td>
+          <td>(</td>
+          <td class="paramtype">InputArray&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InputArray&#160;</td>
+          <td class="paramname"><em>mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcv_1_1_point__.html">Point</a>&#160;</td>
+          <td class="paramname"><em>tl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Processes the image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">img</td><td>Source image </td></tr>
+    <tr><td class="paramname">mask</td><td>Source image mask </td></tr>
+    <tr><td class="paramname">tl</td><td>Source image top-left corners </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="classcv_1_1detail_1_1_blender.html#a64837308bcf4e414a6219beff6cbe37a">cv::detail::Blender</a>.</p>
+
+</div>
+</div>
+<a id="a71c5311ae8432eaf69bae7d97ca1f3fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71c5311ae8432eaf69bae7d97ca1f3fe">&#9670;&nbsp;</a></span>feed() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -632,7 +760,7 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 </div>
 </div>
 <a id="ac108b634893bbbae59ac3a3562fed070"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac108b634893bbbae59ac3a3562fed070">&#9670;&nbsp;</a></span>prepare() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac108b634893bbbae59ac3a3562fed070">&#9670;&nbsp;</a></span>prepare() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -661,7 +789,7 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 </div>
 </div>
 <a id="ac108b634893bbbae59ac3a3562fed070"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac108b634893bbbae59ac3a3562fed070">&#9670;&nbsp;</a></span>prepare() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac108b634893bbbae59ac3a3562fed070">&#9670;&nbsp;</a></span>prepare() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -690,7 +818,7 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 </div>
 </div>
 <a id="ac108b634893bbbae59ac3a3562fed070"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac108b634893bbbae59ac3a3562fed070">&#9670;&nbsp;</a></span>prepare() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac108b634893bbbae59ac3a3562fed070">&#9670;&nbsp;</a></span>prepare() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -719,7 +847,36 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 </div>
 </div>
 <a id="ac108b634893bbbae59ac3a3562fed070"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac108b634893bbbae59ac3a3562fed070">&#9670;&nbsp;</a></span>prepare() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac108b634893bbbae59ac3a3562fed070">&#9670;&nbsp;</a></span>prepare() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cv::detail::MultiBandBlender::prepare </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcv_1_1_rect__.html">Rect</a>&#160;</td>
+          <td class="paramname"><em>dst_roi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+<p>Reimplemented from <a class="el" href="classcv_1_1detail_1_1_blender.html#a6d81cd6a0a2284de3ec7898409c7c0a8">cv::detail::Blender</a>.</p>
+
+</div>
+</div>
+<a id="ac108b634893bbbae59ac3a3562fed070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac108b634893bbbae59ac3a3562fed070">&#9670;&nbsp;</a></span>prepare() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

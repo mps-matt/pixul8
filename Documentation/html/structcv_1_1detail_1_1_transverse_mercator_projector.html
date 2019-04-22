@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::detail::TransverseMercatorProjector Struct Reference</title>
+<title>PixUl8: cv::detail::TransverseMercatorProjector Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -85,6 +83,7 @@ Inheritance diagram for cv::detail::TransverseMercatorProjector:</div>
 <area href="structcv_1_1detail_1_1_projector_base.html" title="Base class for warping logic implementation." alt="cv::detail::ProjectorBase" shape="rect" coords="246,0,482,24"/>
 <area href="structcv_1_1detail_1_1_projector_base.html" title="Base class for warping logic implementation." alt="cv::detail::ProjectorBase" shape="rect" coords="492,0,728,24"/>
 <area href="structcv_1_1detail_1_1_projector_base.html" title="Base class for warping logic implementation." alt="cv::detail::ProjectorBase" shape="rect" coords="738,0,974,24"/>
+<area href="structcv_1_1detail_1_1_projector_base.html" title="Base class for warping logic implementation." alt="cv::detail::ProjectorBase" shape="rect" coords="984,0,1220,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -114,7 +113,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>mapForward</b> (float
 <tr class="memitem:ab92befd6f93310e7490f0a57065a0e00"><td class="memItemLeft" align="right" valign="top"><a id="ab92befd6f93310e7490f0a57065a0e00"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>mapBackward</b> (float u, float v, float &amp;x, float &amp;y)</td></tr>
 <tr class="separator:ab92befd6f93310e7490f0a57065a0e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f235d23845e2cd796d8369eda374de0"><td class="memItemLeft" align="right" valign="top"><a id="a2f235d23845e2cd796d8369eda374de0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mapForward</b> (float x, float y, float &amp;u, float &amp;v)</td></tr>
+<tr class="separator:a2f235d23845e2cd796d8369eda374de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92befd6f93310e7490f0a57065a0e00"><td class="memItemLeft" align="right" valign="top"><a id="ab92befd6f93310e7490f0a57065a0e00"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mapBackward</b> (float u, float v, float &amp;x, float &amp;y)</td></tr>
+<tr class="separator:ab92befd6f93310e7490f0a57065a0e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structcv_1_1detail_1_1_projector_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structcv_1_1detail_1_1_projector_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structcv_1_1detail_1_1_projector_base.html">cv::detail::ProjectorBase</a></td></tr>
+<tr class="memitem:a8b90f9babaf26ca042a1cd872ded4da2 inherit pub_methods_structcv_1_1detail_1_1_projector_base"><td class="memItemLeft" align="right" valign="top"><a id="a8b90f9babaf26ca042a1cd872ded4da2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCameraParams</b> (InputArray K=<a class="el" href="classcv_1_1_mat.html#a2cf9b9acde7a9852542bbc20ef851ed2">Mat::eye</a>(3, 3, CV_32F), InputArray R=<a class="el" href="classcv_1_1_mat.html#a2cf9b9acde7a9852542bbc20ef851ed2">Mat::eye</a>(3, 3, CV_32F), InputArray T=<a class="el" href="classcv_1_1_mat.html#a0b57b6a326c8876d944d188a46e0f556">Mat::zeros</a>(3, 1, CV_32F))</td></tr>
+<tr class="separator:a8b90f9babaf26ca042a1cd872ded4da2 inherit pub_methods_structcv_1_1detail_1_1_projector_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b90f9babaf26ca042a1cd872ded4da2 inherit pub_methods_structcv_1_1detail_1_1_projector_base"><td class="memItemLeft" align="right" valign="top"><a id="a8b90f9babaf26ca042a1cd872ded4da2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setCameraParams</b> (InputArray K=<a class="el" href="classcv_1_1_mat.html#a2cf9b9acde7a9852542bbc20ef851ed2">Mat::eye</a>(3, 3, CV_32F), InputArray R=<a class="el" href="classcv_1_1_mat.html#a2cf9b9acde7a9852542bbc20ef851ed2">Mat::eye</a>(3, 3, CV_32F), InputArray T=<a class="el" href="classcv_1_1_mat.html#a0b57b6a326c8876d944d188a46e0f556">Mat::zeros</a>(3, 1, CV_32F))</td></tr>
 <tr class="separator:a8b90f9babaf26ca042a1cd872ded4da2 inherit pub_methods_structcv_1_1detail_1_1_projector_base"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::detail::AKAZEFeaturesFinder Class Reference</title>
+<title>PixUl8: cv::detail::AKAZEFeaturesFinder Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -90,11 +88,15 @@ Inheritance diagram for cv::detail::AKAZEFeaturesFinder:</div>
 <area href="classcv_1_1detail_1_1_features_finder.html" title="Feature finders base class." alt="cv::detail::FeaturesFinder" shape="rect" coords="208,0,406,24"/>
 <area href="classcv_1_1detail_1_1_features_finder.html" title="Feature finders base class." alt="cv::detail::FeaturesFinder" shape="rect" coords="416,0,614,24"/>
 <area href="classcv_1_1detail_1_1_features_finder.html" title="Feature finders base class." alt="cv::detail::FeaturesFinder" shape="rect" coords="624,0,822,24"/>
+<area href="classcv_1_1detail_1_1_features_finder.html" title="Feature finders base class." alt="cv::detail::FeaturesFinder" shape="rect" coords="832,0,1030,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aebaacbde268822ccf51e5fd6201d37d2"><td class="memItemLeft" align="right" valign="top"><a id="aebaacbde268822ccf51e5fd6201d37d2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AKAZEFeaturesFinder</b> (int descriptor_type=AKAZE::DESCRIPTOR_MLDB, int descriptor_size=0, int descriptor_channels=3, float <a class="el" href="group__imgproc__misc.html#gabd93e7119f2b85135109ab4b1f4f9eaf">threshold</a>=0.001f, int nOctaves=4, int nOctaveLayers=4, int diffusivity=KAZE::DIFF_PM_G2)</td></tr>
+<tr class="separator:aebaacbde268822ccf51e5fd6201d37d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebaacbde268822ccf51e5fd6201d37d2"><td class="memItemLeft" align="right" valign="top"><a id="aebaacbde268822ccf51e5fd6201d37d2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AKAZEFeaturesFinder</b> (int descriptor_type=AKAZE::DESCRIPTOR_MLDB, int descriptor_size=0, int descriptor_channels=3, float <a class="el" href="group__imgproc__misc.html#gabd93e7119f2b85135109ab4b1f4f9eaf">threshold</a>=0.001f, int nOctaves=4, int nOctaveLayers=4, int diffusivity=KAZE::DIFF_PM_G2)</td></tr>
 <tr class="separator:aebaacbde268822ccf51e5fd6201d37d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,10 +166,27 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_features_finder.html#adb51fd886db491ea004cd3542d43a982">collectGarbage</a> ()</td></tr>
 <tr class="memdesc:adb51fd886db491ea004cd3542d43a982 inherit pub_methods_classcv_1_1detail_1_1_features_finder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees unused memory allocated before if there is any. <br /></td></tr>
 <tr class="separator:adb51fd886db491ea004cd3542d43a982 inherit pub_methods_classcv_1_1detail_1_1_features_finder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3329f251c7ad240681ac72f09dd81f67 inherit pub_methods_classcv_1_1detail_1_1_features_finder"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_features_finder.html#a3329f251c7ad240681ac72f09dd81f67">operator()</a> (InputArray image, <a class="el" href="structcv_1_1detail_1_1_image_features.html">ImageFeatures</a> &amp;features)</td></tr>
+<tr class="separator:a3329f251c7ad240681ac72f09dd81f67 inherit pub_methods_classcv_1_1detail_1_1_features_finder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83c4a1f290eb21f9d943853e08b16a79 inherit pub_methods_classcv_1_1detail_1_1_features_finder"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_features_finder.html#a83c4a1f290eb21f9d943853e08b16a79">operator()</a> (InputArray image, <a class="el" href="structcv_1_1detail_1_1_image_features.html">ImageFeatures</a> &amp;features, const std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">cv::Rect</a> &gt; &amp;rois)</td></tr>
+<tr class="memdesc:a83c4a1f290eb21f9d943853e08b16a79 inherit pub_methods_classcv_1_1detail_1_1_features_finder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds features in the given image.  <a href="classcv_1_1detail_1_1_features_finder.html#a83c4a1f290eb21f9d943853e08b16a79">More...</a><br /></td></tr>
+<tr class="separator:a83c4a1f290eb21f9d943853e08b16a79 inherit pub_methods_classcv_1_1detail_1_1_features_finder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a9abf24155bd03a5a2f8c9bc4479ccd inherit pub_methods_classcv_1_1detail_1_1_features_finder"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_features_finder.html#a8a9abf24155bd03a5a2f8c9bc4479ccd">operator()</a> (InputArrayOfArrays images, std::vector&lt; <a class="el" href="structcv_1_1detail_1_1_image_features.html">ImageFeatures</a> &gt; &amp;features, const std::vector&lt; std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">cv::Rect</a> &gt; &gt; &amp;rois)</td></tr>
+<tr class="memdesc:a8a9abf24155bd03a5a2f8c9bc4479ccd inherit pub_methods_classcv_1_1detail_1_1_features_finder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds features in the given images in parallel.  <a href="classcv_1_1detail_1_1_features_finder.html#a8a9abf24155bd03a5a2f8c9bc4479ccd">More...</a><br /></td></tr>
+<tr class="separator:a8a9abf24155bd03a5a2f8c9bc4479ccd inherit pub_methods_classcv_1_1detail_1_1_features_finder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ddc15d4f72666002addf9565d4ed28 inherit pub_methods_classcv_1_1detail_1_1_features_finder"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_features_finder.html#af1ddc15d4f72666002addf9565d4ed28">operator()</a> (InputArrayOfArrays images, std::vector&lt; <a class="el" href="structcv_1_1detail_1_1_image_features.html">ImageFeatures</a> &gt; &amp;features)</td></tr>
+<tr class="separator:af1ddc15d4f72666002addf9565d4ed28 inherit pub_methods_classcv_1_1detail_1_1_features_finder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb51fd886db491ea004cd3542d43a982 inherit pub_methods_classcv_1_1detail_1_1_features_finder"><td class="memItemLeft" align="right" valign="top"><a id="adb51fd886db491ea004cd3542d43a982"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_features_finder.html#adb51fd886db491ea004cd3542d43a982">collectGarbage</a> ()</td></tr>
+<tr class="memdesc:adb51fd886db491ea004cd3542d43a982 inherit pub_methods_classcv_1_1detail_1_1_features_finder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees unused memory allocated before if there is any. <br /></td></tr>
+<tr class="separator:adb51fd886db491ea004cd3542d43a982 inherit pub_methods_classcv_1_1detail_1_1_features_finder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classcv_1_1detail_1_1_features_finder"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcv_1_1detail_1_1_features_finder')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classcv_1_1detail_1_1_features_finder.html">cv::detail::FeaturesFinder</a></td></tr>
+<tr class="memitem:a7a5ca8a0047c75cc7ca7b5b4afbb2016 inherit pro_methods_classcv_1_1detail_1_1_features_finder"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_features_finder.html#a7a5ca8a0047c75cc7ca7b5b4afbb2016">isThreadSafe</a> () const</td></tr>
+<tr class="memdesc:a7a5ca8a0047c75cc7ca7b5b4afbb2016 inherit pro_methods_classcv_1_1detail_1_1_features_finder"><td class="mdescLeft">&#160;</td><td class="mdescRight">uses dynamic_cast to determine thread-safety  <a href="classcv_1_1detail_1_1_features_finder.html#a7a5ca8a0047c75cc7ca7b5b4afbb2016">More...</a><br /></td></tr>
+<tr class="separator:a7a5ca8a0047c75cc7ca7b5b4afbb2016 inherit pro_methods_classcv_1_1detail_1_1_features_finder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a5ca8a0047c75cc7ca7b5b4afbb2016 inherit pro_methods_classcv_1_1detail_1_1_features_finder"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_features_finder.html#a7a5ca8a0047c75cc7ca7b5b4afbb2016">isThreadSafe</a> () const</td></tr>
 <tr class="memdesc:a7a5ca8a0047c75cc7ca7b5b4afbb2016 inherit pro_methods_classcv_1_1detail_1_1_features_finder"><td class="mdescLeft">&#160;</td><td class="mdescRight">uses dynamic_cast to determine thread-safety  <a href="classcv_1_1detail_1_1_features_finder.html#a7a5ca8a0047c75cc7ca7b5b4afbb2016">More...</a><br /></td></tr>
 <tr class="separator:a7a5ca8a0047c75cc7ca7b5b4afbb2016 inherit pro_methods_classcv_1_1detail_1_1_features_finder"><td class="memSeparator" colspan="2">&#160;</td></tr>

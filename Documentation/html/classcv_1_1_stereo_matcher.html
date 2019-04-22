@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::StereoMatcher Class Reference</title>
+<title>PixUl8: cv::StereoMatcher Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -91,14 +89,17 @@ Inheritance diagram for cv::StereoMatcher:</div>
 <area href="classcv_1_1_algorithm.html" title="This is a base class for all more or less complex algorithms in OpenCV." alt="cv::Algorithm" shape="rect" coords="126,0,242,24"/>
 <area href="classcv_1_1_algorithm.html" title="This is a base class for all more or less complex algorithms in OpenCV." alt="cv::Algorithm" shape="rect" coords="252,0,368,24"/>
 <area href="classcv_1_1_algorithm.html" title="This is a base class for all more or less complex algorithms in OpenCV." alt="cv::Algorithm" shape="rect" coords="378,0,494,24"/>
-<area href="classcv_1_1_stereo_b_m.html" title="Class for computing stereo correspondence using the block matching algorithm, introduced and contribu..." alt="cv::StereoBM" shape="rect" coords="315,112,431,136"/>
-<area href="classcv_1_1_stereo_b_m.html" title="Class for computing stereo correspondence using the block matching algorithm, introduced and contribu..." alt="cv::StereoBM" shape="rect" coords="315,168,431,192"/>
-<area href="classcv_1_1_stereo_b_m.html" title="Class for computing stereo correspondence using the block matching algorithm, introduced and contribu..." alt="cv::StereoBM" shape="rect" coords="315,224,431,248"/>
-<area href="classcv_1_1_stereo_b_m.html" title="Class for computing stereo correspondence using the block matching algorithm, introduced and contribu..." alt="cv::StereoBM" shape="rect" coords="315,280,431,304"/>
-<area href="classcv_1_1_stereo_s_g_b_m.html" title="The class implements the modified H. Hirschmuller algorithm  that differs from the original one as fo..." alt="cv::StereoSGBM" shape="rect" coords="315,336,431,360"/>
-<area href="classcv_1_1_stereo_s_g_b_m.html" title="The class implements the modified H. Hirschmuller algorithm  that differs from the original one as fo..." alt="cv::StereoSGBM" shape="rect" coords="315,392,431,416"/>
-<area href="classcv_1_1_stereo_s_g_b_m.html" title="The class implements the modified H. Hirschmuller algorithm  that differs from the original one as fo..." alt="cv::StereoSGBM" shape="rect" coords="315,448,431,472"/>
-<area href="classcv_1_1_stereo_s_g_b_m.html" title="The class implements the modified H. Hirschmuller algorithm  that differs from the original one as fo..." alt="cv::StereoSGBM" shape="rect" coords="315,504,431,528"/>
+<area href="classcv_1_1_algorithm.html" title="This is a base class for all more or less complex algorithms in OpenCV." alt="cv::Algorithm" shape="rect" coords="504,0,620,24"/>
+<area href="classcv_1_1_stereo_b_m.html" title="Class for computing stereo correspondence using the block matching algorithm, introduced and contribu..." alt="cv::StereoBM" shape="rect" coords="378,112,494,136"/>
+<area href="classcv_1_1_stereo_b_m.html" title="Class for computing stereo correspondence using the block matching algorithm, introduced and contribu..." alt="cv::StereoBM" shape="rect" coords="378,168,494,192"/>
+<area href="classcv_1_1_stereo_b_m.html" title="Class for computing stereo correspondence using the block matching algorithm, introduced and contribu..." alt="cv::StereoBM" shape="rect" coords="378,224,494,248"/>
+<area href="classcv_1_1_stereo_b_m.html" title="Class for computing stereo correspondence using the block matching algorithm, introduced and contribu..." alt="cv::StereoBM" shape="rect" coords="378,280,494,304"/>
+<area href="classcv_1_1_stereo_b_m.html" title="Class for computing stereo correspondence using the block matching algorithm, introduced and contribu..." alt="cv::StereoBM" shape="rect" coords="378,336,494,360"/>
+<area href="classcv_1_1_stereo_s_g_b_m.html" title="The class implements the modified H. Hirschmuller algorithm  that differs from the original one as fo..." alt="cv::StereoSGBM" shape="rect" coords="378,392,494,416"/>
+<area href="classcv_1_1_stereo_s_g_b_m.html" title="The class implements the modified H. Hirschmuller algorithm  that differs from the original one as fo..." alt="cv::StereoSGBM" shape="rect" coords="378,448,494,472"/>
+<area href="classcv_1_1_stereo_s_g_b_m.html" title="The class implements the modified H. Hirschmuller algorithm  that differs from the original one as fo..." alt="cv::StereoSGBM" shape="rect" coords="378,504,494,528"/>
+<area href="classcv_1_1_stereo_s_g_b_m.html" title="The class implements the modified H. Hirschmuller algorithm  that differs from the original one as fo..." alt="cv::StereoSGBM" shape="rect" coords="378,560,494,584"/>
+<area href="classcv_1_1_stereo_s_g_b_m.html" title="The class implements the modified H. Hirschmuller algorithm  that differs from the original one as fo..." alt="cv::StereoSGBM" shape="rect" coords="378,616,494,640"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -120,9 +121,52 @@ Public Types</h2></td></tr>
 <b>DISP_SCALE</b> = (1 &lt;&lt; DISP_SHIFT)
  }</td></tr>
 <tr class="separator:a2c1d1279797f74963010aa3bd4ab9d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c43ab161b142ea264200cf0fbb14c4"><td class="memItemLeft" align="right" valign="top"><a id="af3c43ab161b142ea264200cf0fbb14c4"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>DISP_SHIFT</b> = 4, 
+<b>DISP_SCALE</b> = (1 &lt;&lt; DISP_SHIFT)
+ }</td></tr>
+<tr class="separator:af3c43ab161b142ea264200cf0fbb14c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a00aba25ff64a8372da49ff24fdc89224"><td class="memItemLeft" align="right" valign="top">virtual CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_stereo_matcher.html#a00aba25ff64a8372da49ff24fdc89224">compute</a> (InputArray left, InputArray right, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> disparity)=0</td></tr>
+<tr class="memdesc:a00aba25ff64a8372da49ff24fdc89224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes disparity map for the specified stereo pair.  <a href="#a00aba25ff64a8372da49ff24fdc89224">More...</a><br /></td></tr>
+<tr class="separator:a00aba25ff64a8372da49ff24fdc89224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4af972783d739f5467e7104fc1cb6eaa"><td class="memItemLeft" align="right" valign="top"><a id="a4af972783d739f5467e7104fc1cb6eaa"></a>
+virtual CV_WRAP int&#160;</td><td class="memItemRight" valign="bottom"><b>getMinDisparity</b> () const =0</td></tr>
+<tr class="separator:a4af972783d739f5467e7104fc1cb6eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fba7d4adad338411cf35b10a9b2fbbf"><td class="memItemLeft" align="right" valign="top"><a id="a3fba7d4adad338411cf35b10a9b2fbbf"></a>
+virtual CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><b>setMinDisparity</b> (int minDisparity)=0</td></tr>
+<tr class="separator:a3fba7d4adad338411cf35b10a9b2fbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2940ef1c7ef37b8ec7bf356ee730083"><td class="memItemLeft" align="right" valign="top"><a id="ae2940ef1c7ef37b8ec7bf356ee730083"></a>
+virtual CV_WRAP int&#160;</td><td class="memItemRight" valign="bottom"><b>getNumDisparities</b> () const =0</td></tr>
+<tr class="separator:ae2940ef1c7ef37b8ec7bf356ee730083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca6ab931603daefc3b47f7b3f213745c"><td class="memItemLeft" align="right" valign="top"><a id="aca6ab931603daefc3b47f7b3f213745c"></a>
+virtual CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><b>setNumDisparities</b> (int numDisparities)=0</td></tr>
+<tr class="separator:aca6ab931603daefc3b47f7b3f213745c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb8c5cef885164a9be52f70784ad96ae"><td class="memItemLeft" align="right" valign="top"><a id="acb8c5cef885164a9be52f70784ad96ae"></a>
+virtual CV_WRAP int&#160;</td><td class="memItemRight" valign="bottom"><b>getBlockSize</b> () const =0</td></tr>
+<tr class="separator:acb8c5cef885164a9be52f70784ad96ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ca9b3ea61e0d2568adf7632aa1edacf"><td class="memItemLeft" align="right" valign="top"><a id="a1ca9b3ea61e0d2568adf7632aa1edacf"></a>
+virtual CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><b>setBlockSize</b> (int blockSize)=0</td></tr>
+<tr class="separator:a1ca9b3ea61e0d2568adf7632aa1edacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94ce00b42694343a0ecd31b05f60305"><td class="memItemLeft" align="right" valign="top"><a id="ab94ce00b42694343a0ecd31b05f60305"></a>
+virtual CV_WRAP int&#160;</td><td class="memItemRight" valign="bottom"><b>getSpeckleWindowSize</b> () const =0</td></tr>
+<tr class="separator:ab94ce00b42694343a0ecd31b05f60305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47443270bb22ccd01ab38b25fff60366"><td class="memItemLeft" align="right" valign="top"><a id="a47443270bb22ccd01ab38b25fff60366"></a>
+virtual CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><b>setSpeckleWindowSize</b> (int speckleWindowSize)=0</td></tr>
+<tr class="separator:a47443270bb22ccd01ab38b25fff60366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0f27843d92a26cb87e1124d832cc25f"><td class="memItemLeft" align="right" valign="top"><a id="af0f27843d92a26cb87e1124d832cc25f"></a>
+virtual CV_WRAP int&#160;</td><td class="memItemRight" valign="bottom"><b>getSpeckleRange</b> () const =0</td></tr>
+<tr class="separator:af0f27843d92a26cb87e1124d832cc25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217a3c796afa369fb1e542bc6b4b40b8"><td class="memItemLeft" align="right" valign="top"><a id="a217a3c796afa369fb1e542bc6b4b40b8"></a>
+virtual CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><b>setSpeckleRange</b> (int speckleRange)=0</td></tr>
+<tr class="separator:a217a3c796afa369fb1e542bc6b4b40b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a49d154f8fc752727f43d92697c32ef"><td class="memItemLeft" align="right" valign="top"><a id="a8a49d154f8fc752727f43d92697c32ef"></a>
+virtual CV_WRAP int&#160;</td><td class="memItemRight" valign="bottom"><b>getDisp12MaxDiff</b> () const =0</td></tr>
+<tr class="separator:a8a49d154f8fc752727f43d92697c32ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af507243dbcf906b78c2aaae5f8adeac8"><td class="memItemLeft" align="right" valign="top"><a id="af507243dbcf906b78c2aaae5f8adeac8"></a>
+virtual CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><b>setDisp12MaxDiff</b> (int disp12MaxDiff)=0</td></tr>
+<tr class="separator:af507243dbcf906b78c2aaae5f8adeac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00aba25ff64a8372da49ff24fdc89224"><td class="memItemLeft" align="right" valign="top">virtual CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_stereo_matcher.html#a00aba25ff64a8372da49ff24fdc89224">compute</a> (InputArray left, InputArray right, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> disparity)=0</td></tr>
 <tr class="memdesc:a00aba25ff64a8372da49ff24fdc89224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes disparity map for the specified stereo pair.  <a href="#a00aba25ff64a8372da49ff24fdc89224">More...</a><br /></td></tr>
 <tr class="separator:a00aba25ff64a8372da49ff24fdc89224"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -376,10 +420,46 @@ virtual CV_WRAP bool&#160;</td><td class="memItemRight" valign="bottom"><a class
 <tr class="separator:af5584a693c6fe6a3b8e0fcdd6c25d1fd inherit pub_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ec6ed12df12de3ae03f50fcd2118cd7 inherit pub_methods_classcv_1_1_algorithm"><td class="memItemLeft" align="right" valign="top">virtual CV_WRAP <a class="el" href="classcv_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#a6ec6ed12df12de3ae03f50fcd2118cd7">getDefaultName</a> () const</td></tr>
 <tr class="separator:a6ec6ed12df12de3ae03f50fcd2118cd7 inherit pub_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382269508151069f33e2991e9eabbcab inherit pub_methods_classcv_1_1_algorithm"><td class="memItemLeft" align="right" valign="top"><a id="a382269508151069f33e2991e9eabbcab"></a>
+virtual CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#a382269508151069f33e2991e9eabbcab">clear</a> ()</td></tr>
+<tr class="memdesc:a382269508151069f33e2991e9eabbcab inherit pub_methods_classcv_1_1_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the algorithm state. <br /></td></tr>
+<tr class="separator:a382269508151069f33e2991e9eabbcab inherit pub_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f8ad7b8add515077367fb9949a174d2 inherit pub_methods_classcv_1_1_algorithm"><td class="memItemLeft" align="right" valign="top"><a id="a1f8ad7b8add515077367fb9949a174d2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#a1f8ad7b8add515077367fb9949a174d2">write</a> (<a class="el" href="classcv_1_1_file_storage.html">FileStorage</a> &amp;fs) const</td></tr>
+<tr class="memdesc:a1f8ad7b8add515077367fb9949a174d2 inherit pub_methods_classcv_1_1_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores algorithm parameters in a file storage. <br /></td></tr>
+<tr class="separator:a1f8ad7b8add515077367fb9949a174d2 inherit pub_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ae96500f2c84b7c5479418f467e974 inherit pub_methods_classcv_1_1_algorithm"><td class="memItemLeft" align="right" valign="top"><a id="a63ae96500f2c84b7c5479418f467e974"></a>
+CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#a63ae96500f2c84b7c5479418f467e974">write</a> (const <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1_file_storage.html">FileStorage</a> &gt; &amp;fs, const <a class="el" href="classcv_1_1_string.html">String</a> &amp;name=<a class="el" href="classcv_1_1_string.html">String</a>()) const</td></tr>
+<tr class="memdesc:a63ae96500f2c84b7c5479418f467e974 inherit pub_methods_classcv_1_1_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">simplified API for language bindings This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. <br /></td></tr>
+<tr class="separator:a63ae96500f2c84b7c5479418f467e974 inherit pub_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b47225d8dcc934de71b919403538b16 inherit pub_methods_classcv_1_1_algorithm"><td class="memItemLeft" align="right" valign="top"><a id="a8b47225d8dcc934de71b919403538b16"></a>
+virtual CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#a8b47225d8dcc934de71b919403538b16">read</a> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;fn)</td></tr>
+<tr class="memdesc:a8b47225d8dcc934de71b919403538b16 inherit pub_methods_classcv_1_1_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads algorithm parameters from a file storage. <br /></td></tr>
+<tr class="separator:a8b47225d8dcc934de71b919403538b16 inherit pub_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecd390e05cdd34fc6b6ebabd89ff53c9 inherit pub_methods_classcv_1_1_algorithm"><td class="memItemLeft" align="right" valign="top"><a id="aecd390e05cdd34fc6b6ebabd89ff53c9"></a>
+virtual CV_WRAP bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#aecd390e05cdd34fc6b6ebabd89ff53c9">empty</a> () const</td></tr>
+<tr class="memdesc:aecd390e05cdd34fc6b6ebabd89ff53c9 inherit pub_methods_classcv_1_1_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the <a class="el" href="classcv_1_1_algorithm.html" title="This is a base class for all more or less complex algorithms in OpenCV.">Algorithm</a> is empty (e.g. in the very beginning or after unsuccessful read. <br /></td></tr>
+<tr class="separator:aecd390e05cdd34fc6b6ebabd89ff53c9 inherit pub_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5584a693c6fe6a3b8e0fcdd6c25d1fd inherit pub_methods_classcv_1_1_algorithm"><td class="memItemLeft" align="right" valign="top">virtual CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#af5584a693c6fe6a3b8e0fcdd6c25d1fd">save</a> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;filename) const</td></tr>
+<tr class="separator:af5584a693c6fe6a3b8e0fcdd6c25d1fd inherit pub_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ec6ed12df12de3ae03f50fcd2118cd7 inherit pub_methods_classcv_1_1_algorithm"><td class="memItemLeft" align="right" valign="top">virtual CV_WRAP <a class="el" href="classcv_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#a6ec6ed12df12de3ae03f50fcd2118cd7">getDefaultName</a> () const</td></tr>
+<tr class="separator:a6ec6ed12df12de3ae03f50fcd2118cd7 inherit pub_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_classcv_1_1_algorithm"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classcv_1_1_algorithm')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classcv_1_1_algorithm.html">cv::Algorithm</a></td></tr>
+<tr class="memitem:ad8c591bacb34c485f5b7a250c314fc53 inherit pub_static_methods_classcv_1_1_algorithm"><td class="memTemplParams" colspan="2">template&lt;typename _Tp &gt; </td></tr>
+<tr class="memitem:ad8c591bacb34c485f5b7a250c314fc53 inherit pub_static_methods_classcv_1_1_algorithm"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; _Tp &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#ad8c591bacb34c485f5b7a250c314fc53">read</a> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;fn)</td></tr>
+<tr class="memdesc:ad8c591bacb34c485f5b7a250c314fc53 inherit pub_static_methods_classcv_1_1_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads algorithm from the file node.  <a href="classcv_1_1_algorithm.html#ad8c591bacb34c485f5b7a250c314fc53">More...</a><br /></td></tr>
+<tr class="separator:ad8c591bacb34c485f5b7a250c314fc53 inherit pub_static_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a623841c33b58ea9c4847da04607e067b inherit pub_static_methods_classcv_1_1_algorithm"><td class="memTemplParams" colspan="2">template&lt;typename _Tp &gt; </td></tr>
+<tr class="memitem:a623841c33b58ea9c4847da04607e067b inherit pub_static_methods_classcv_1_1_algorithm"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; _Tp &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#a623841c33b58ea9c4847da04607e067b">load</a> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;filename, const <a class="el" href="classcv_1_1_string.html">String</a> &amp;objname=<a class="el" href="classcv_1_1_string.html">String</a>())</td></tr>
+<tr class="memdesc:a623841c33b58ea9c4847da04607e067b inherit pub_static_methods_classcv_1_1_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads algorithm from the file.  <a href="classcv_1_1_algorithm.html#a623841c33b58ea9c4847da04607e067b">More...</a><br /></td></tr>
+<tr class="separator:a623841c33b58ea9c4847da04607e067b inherit pub_static_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba305a10d02479c13cf7d169c321547 inherit pub_static_methods_classcv_1_1_algorithm"><td class="memTemplParams" colspan="2">template&lt;typename _Tp &gt; </td></tr>
+<tr class="memitem:a3ba305a10d02479c13cf7d169c321547 inherit pub_static_methods_classcv_1_1_algorithm"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; _Tp &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#a3ba305a10d02479c13cf7d169c321547">loadFromString</a> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;strModel, const <a class="el" href="classcv_1_1_string.html">String</a> &amp;objname=<a class="el" href="classcv_1_1_string.html">String</a>())</td></tr>
+<tr class="memdesc:a3ba305a10d02479c13cf7d169c321547 inherit pub_static_methods_classcv_1_1_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads algorithm from a <a class="el" href="classcv_1_1_string.html">String</a>.  <a href="classcv_1_1_algorithm.html#a3ba305a10d02479c13cf7d169c321547">More...</a><br /></td></tr>
+<tr class="separator:a3ba305a10d02479c13cf7d169c321547 inherit pub_static_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8c591bacb34c485f5b7a250c314fc53 inherit pub_static_methods_classcv_1_1_algorithm"><td class="memTemplParams" colspan="2">template&lt;typename _Tp &gt; </td></tr>
 <tr class="memitem:ad8c591bacb34c485f5b7a250c314fc53 inherit pub_static_methods_classcv_1_1_algorithm"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; _Tp &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#ad8c591bacb34c485f5b7a250c314fc53">read</a> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;fn)</td></tr>
 <tr class="memdesc:ad8c591bacb34c485f5b7a250c314fc53 inherit pub_static_methods_classcv_1_1_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads algorithm from the file node.  <a href="classcv_1_1_algorithm.html#ad8c591bacb34c485f5b7a250c314fc53">More...</a><br /></td></tr>
@@ -441,12 +521,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>writeFormat</b> (<a c
 <tr class="memitem:a68eeca71617474ad3d4561786f0289d2 inherit pro_methods_classcv_1_1_algorithm"><td class="memItemLeft" align="right" valign="top"><a id="a68eeca71617474ad3d4561786f0289d2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>writeFormat</b> (<a class="el" href="classcv_1_1_file_storage.html">FileStorage</a> &amp;fs) const</td></tr>
 <tr class="separator:a68eeca71617474ad3d4561786f0289d2 inherit pro_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68eeca71617474ad3d4561786f0289d2 inherit pro_methods_classcv_1_1_algorithm"><td class="memItemLeft" align="right" valign="top"><a id="a68eeca71617474ad3d4561786f0289d2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>writeFormat</b> (<a class="el" href="classcv_1_1_file_storage.html">FileStorage</a> &amp;fs) const</td></tr>
+<tr class="separator:a68eeca71617474ad3d4561786f0289d2 inherit pro_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The base class for stereo correspondence algorithms. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a00aba25ff64a8372da49ff24fdc89224"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00aba25ff64a8372da49ff24fdc89224">&#9670;&nbsp;</a></span>compute() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a00aba25ff64a8372da49ff24fdc89224">&#9670;&nbsp;</a></span>compute() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -498,7 +581,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>writeFormat</b> (<a c
 </div>
 </div>
 <a id="a00aba25ff64a8372da49ff24fdc89224"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00aba25ff64a8372da49ff24fdc89224">&#9670;&nbsp;</a></span>compute() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a00aba25ff64a8372da49ff24fdc89224">&#9670;&nbsp;</a></span>compute() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -550,7 +633,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>writeFormat</b> (<a c
 </div>
 </div>
 <a id="a00aba25ff64a8372da49ff24fdc89224"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00aba25ff64a8372da49ff24fdc89224">&#9670;&nbsp;</a></span>compute() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a00aba25ff64a8372da49ff24fdc89224">&#9670;&nbsp;</a></span>compute() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -602,7 +685,59 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>writeFormat</b> (<a c
 </div>
 </div>
 <a id="a00aba25ff64a8372da49ff24fdc89224"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00aba25ff64a8372da49ff24fdc89224">&#9670;&nbsp;</a></span>compute() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a00aba25ff64a8372da49ff24fdc89224">&#9670;&nbsp;</a></span>compute() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual CV_WRAP void cv::StereoMatcher::compute </td>
+          <td>(</td>
+          <td class="paramtype">InputArray&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InputArray&#160;</td>
+          <td class="paramname"><em>right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcv_1_1___output_array.html">OutputArray</a>&#160;</td>
+          <td class="paramname"><em>disparity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes disparity map for the specified stereo pair. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left</td><td>Left 8-bit single-channel image. </td></tr>
+    <tr><td class="paramname">right</td><td>Right image of the same size and the same type as the left one. </td></tr>
+    <tr><td class="paramname">disparity</td><td>Output disparity map. It has the same size as the input images. Some algorithms, like <a class="el" href="classcv_1_1_stereo_b_m.html" title="Class for computing stereo correspondence using the block matching algorithm, introduced and contribu...">StereoBM</a> or <a class="el" href="classcv_1_1_stereo_s_g_b_m.html" title="The class implements the modified H. Hirschmuller algorithm  that differs from the original one as fo...">StereoSGBM</a> compute 16-bit fixed-point disparity map (where each disparity value has 4 fractional bits), whereas other algorithms output 32-bit floating-point disparity map. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a00aba25ff64a8372da49ff24fdc89224"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00aba25ff64a8372da49ff24fdc89224">&#9670;&nbsp;</a></span>compute() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

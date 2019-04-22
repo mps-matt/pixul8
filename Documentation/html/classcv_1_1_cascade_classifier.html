@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::CascadeClassifier Class Reference</title>
+<title>PixUl8: cv::CascadeClassifier Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -237,9 +235,50 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setMaskGenerator</b> 
 <tr class="memitem:ac39ae98f8358d3ffc14d7477a7bdb116"><td class="memItemLeft" align="right" valign="top"><a id="ac39ae98f8358d3ffc14d7477a7bdb116"></a>
 <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1_base_cascade_classifier_1_1_mask_generator.html">BaseCascadeClassifier::MaskGenerator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getMaskGenerator</b> ()</td></tr>
 <tr class="separator:ac39ae98f8358d3ffc14d7477a7bdb116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cff02e0e5a44383a93763c5b8409d50"><td class="memItemLeft" align="right" valign="top">CV_WRAP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_cascade_classifier.html#a4cff02e0e5a44383a93763c5b8409d50">CascadeClassifier</a> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;filename)</td></tr>
+<tr class="memdesc:a4cff02e0e5a44383a93763c5b8409d50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a classifier from a file.  <a href="#a4cff02e0e5a44383a93763c5b8409d50">More...</a><br /></td></tr>
+<tr class="separator:a4cff02e0e5a44383a93763c5b8409d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a240de19a751c514454a460cafe6be100"><td class="memItemLeft" align="right" valign="top"><a id="a240de19a751c514454a460cafe6be100"></a>
+CV_WRAP bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_cascade_classifier.html#a240de19a751c514454a460cafe6be100">empty</a> () const</td></tr>
+<tr class="memdesc:a240de19a751c514454a460cafe6be100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the classifier has been loaded. <br /></td></tr>
+<tr class="separator:a240de19a751c514454a460cafe6be100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad90e6dca8f1e7f9183c197c35a902ff"><td class="memItemLeft" align="right" valign="top">CV_WRAP bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_cascade_classifier.html#aad90e6dca8f1e7f9183c197c35a902ff">load</a> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;filename)</td></tr>
+<tr class="memdesc:aad90e6dca8f1e7f9183c197c35a902ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a classifier from a file.  <a href="#aad90e6dca8f1e7f9183c197c35a902ff">More...</a><br /></td></tr>
+<tr class="separator:aad90e6dca8f1e7f9183c197c35a902ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd09e812dd49f51049a818758ebbf553"><td class="memItemLeft" align="right" valign="top">CV_WRAP bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_cascade_classifier.html#abd09e812dd49f51049a818758ebbf553">read</a> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node)</td></tr>
+<tr class="memdesc:abd09e812dd49f51049a818758ebbf553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a classifier from a <a class="el" href="classcv_1_1_file_storage.html" title="XML/YAML/JSON file storage class that encapsulates all the information necessary for writing or readi...">FileStorage</a> node.  <a href="#abd09e812dd49f51049a818758ebbf553">More...</a><br /></td></tr>
+<tr class="separator:abd09e812dd49f51049a818758ebbf553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d5fb00105df774885c98297d753e73"><td class="memItemLeft" align="right" valign="top">CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_cascade_classifier.html#a18d5fb00105df774885c98297d753e73">detectMultiScale</a> (InputArray image, CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt; &amp;objects, double scaleFactor=1.1, int minNeighbors=3, int flags=0, <a class="el" href="classcv_1_1_size__.html">Size</a> minSize=<a class="el" href="classcv_1_1_size__.html">Size</a>(), <a class="el" href="classcv_1_1_size__.html">Size</a> maxSize=<a class="el" href="classcv_1_1_size__.html">Size</a>())</td></tr>
+<tr class="memdesc:a18d5fb00105df774885c98297d753e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detects objects of different sizes in the input image. The detected objects are returned as a list of rectangles.  <a href="#a18d5fb00105df774885c98297d753e73">More...</a><br /></td></tr>
+<tr class="separator:a18d5fb00105df774885c98297d753e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6e0cf4732815d6649e15700f3e7c52b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_cascade_classifier.html#ad6e0cf4732815d6649e15700f3e7c52b">CV_WRAP_AS</a> (detectMultiScale2) void <a class="el" href="classcv_1_1_cascade_classifier.html#a18d5fb00105df774885c98297d753e73">detectMultiScale</a>(InputArray image</td></tr>
+<tr class="separator:ad6e0cf4732815d6649e15700f3e7c52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55867bdacbe4890c454696ad3f61f4f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_cascade_classifier.html#a55867bdacbe4890c454696ad3f61f4f4">CV_WRAP_AS</a> (detectMultiScale3) void <a class="el" href="classcv_1_1_cascade_classifier.html#a18d5fb00105df774885c98297d753e73">detectMultiScale</a>(InputArray image</td></tr>
+<tr class="separator:a55867bdacbe4890c454696ad3f61f4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279b0526e29df51bac1451e939124318"><td class="memItemLeft" align="right" valign="top"><a id="a279b0526e29df51bac1451e939124318"></a>
+CV_WRAP bool&#160;</td><td class="memItemRight" valign="bottom"><b>isOldFormatCascade</b> () const</td></tr>
+<tr class="separator:a279b0526e29df51bac1451e939124318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a6431d6e683829f065f40d44188997d"><td class="memItemLeft" align="right" valign="top"><a id="a5a6431d6e683829f065f40d44188997d"></a>
+CV_WRAP <a class="el" href="classcv_1_1_size__.html">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getOriginalWindowSize</b> () const</td></tr>
+<tr class="separator:a5a6431d6e683829f065f40d44188997d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a157457fbb02422cb2936a72c3454986b"><td class="memItemLeft" align="right" valign="top"><a id="a157457fbb02422cb2936a72c3454986b"></a>
+CV_WRAP int&#160;</td><td class="memItemRight" valign="bottom"><b>getFeatureType</b> () const</td></tr>
+<tr class="separator:a157457fbb02422cb2936a72c3454986b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7cccf61596e217726c5da99da3a69bf"><td class="memItemLeft" align="right" valign="top"><a id="ac7cccf61596e217726c5da99da3a69bf"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>getOldCascade</b> ()</td></tr>
+<tr class="separator:ac7cccf61596e217726c5da99da3a69bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7628a59eefb561ecd79ad9d02bd69073"><td class="memItemLeft" align="right" valign="top"><a id="a7628a59eefb561ecd79ad9d02bd69073"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMaskGenerator</b> (const <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1_base_cascade_classifier_1_1_mask_generator.html">BaseCascadeClassifier::MaskGenerator</a> &gt; &amp;maskGenerator)</td></tr>
+<tr class="separator:a7628a59eefb561ecd79ad9d02bd69073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac39ae98f8358d3ffc14d7477a7bdb116"><td class="memItemLeft" align="right" valign="top"><a id="ac39ae98f8358d3ffc14d7477a7bdb116"></a>
+<a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1_base_cascade_classifier_1_1_mask_generator.html">BaseCascadeClassifier::MaskGenerator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getMaskGenerator</b> ()</td></tr>
+<tr class="separator:ac39ae98f8358d3ffc14d7477a7bdb116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ade54b51cf28d09c7844bb6a6c15283f8"><td class="memItemLeft" align="right" valign="top"><a id="ade54b51cf28d09c7844bb6a6c15283f8"></a>
+static CV_WRAP bool&#160;</td><td class="memItemRight" valign="bottom"><b>convert</b> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;oldcascade, const <a class="el" href="classcv_1_1_string.html">String</a> &amp;newcascade)</td></tr>
+<tr class="separator:ade54b51cf28d09c7844bb6a6c15283f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade54b51cf28d09c7844bb6a6c15283f8"><td class="memItemLeft" align="right" valign="top"><a id="ade54b51cf28d09c7844bb6a6c15283f8"></a>
 static CV_WRAP bool&#160;</td><td class="memItemRight" valign="bottom"><b>convert</b> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;oldcascade, const <a class="el" href="classcv_1_1_string.html">String</a> &amp;newcascade)</td></tr>
 <tr class="separator:ade54b51cf28d09c7844bb6a6c15283f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,7 +347,7 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 <div class="textblock"><p>Cascade classifier class for object detection. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4cff02e0e5a44383a93763c5b8409d50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cff02e0e5a44383a93763c5b8409d50">&#9670;&nbsp;</a></span>CascadeClassifier() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cff02e0e5a44383a93763c5b8409d50">&#9670;&nbsp;</a></span>CascadeClassifier() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -334,7 +373,7 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="a4cff02e0e5a44383a93763c5b8409d50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cff02e0e5a44383a93763c5b8409d50">&#9670;&nbsp;</a></span>CascadeClassifier() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cff02e0e5a44383a93763c5b8409d50">&#9670;&nbsp;</a></span>CascadeClassifier() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -360,7 +399,7 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="a4cff02e0e5a44383a93763c5b8409d50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cff02e0e5a44383a93763c5b8409d50">&#9670;&nbsp;</a></span>CascadeClassifier() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cff02e0e5a44383a93763c5b8409d50">&#9670;&nbsp;</a></span>CascadeClassifier() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -386,7 +425,33 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="a4cff02e0e5a44383a93763c5b8409d50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cff02e0e5a44383a93763c5b8409d50">&#9670;&nbsp;</a></span>CascadeClassifier() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cff02e0e5a44383a93763c5b8409d50">&#9670;&nbsp;</a></span>CascadeClassifier() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP cv::CascadeClassifier::CascadeClassifier </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads a classifier from a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Name of the file from which the classifier is loaded. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4cff02e0e5a44383a93763c5b8409d50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cff02e0e5a44383a93763c5b8409d50">&#9670;&nbsp;</a></span>CascadeClassifier() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -413,7 +478,7 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad6e0cf4732815d6649e15700f3e7c52b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6e0cf4732815d6649e15700f3e7c52b">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6e0cf4732815d6649e15700f3e7c52b">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[1/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -444,7 +509,7 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="ad6e0cf4732815d6649e15700f3e7c52b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6e0cf4732815d6649e15700f3e7c52b">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6e0cf4732815d6649e15700f3e7c52b">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[2/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -475,7 +540,7 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="ad6e0cf4732815d6649e15700f3e7c52b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6e0cf4732815d6649e15700f3e7c52b">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[3/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6e0cf4732815d6649e15700f3e7c52b">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -506,7 +571,38 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="ad6e0cf4732815d6649e15700f3e7c52b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6e0cf4732815d6649e15700f3e7c52b">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[4/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6e0cf4732815d6649e15700f3e7c52b">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[4/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::CascadeClassifier::CV_WRAP_AS </td>
+          <td>(</td>
+          <td class="paramtype">detectMultiScale2&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>Matrix of the type CV_8U containing an image where objects are detected. </td></tr>
+    <tr><td class="paramname">objects</td><td>Vector of rectangles where each rectangle contains the detected object, the rectangles may be partially outside the original image. </td></tr>
+    <tr><td class="paramname">numDetections</td><td>Vector of detection numbers for the corresponding objects. An object's number of detections is the number of neighboring positively classified rectangles that were joined together to form the object. </td></tr>
+    <tr><td class="paramname">scaleFactor</td><td>Parameter specifying how much the image size is reduced at each image scale. </td></tr>
+    <tr><td class="paramname">minNeighbors</td><td>Parameter specifying how many neighbors each candidate rectangle should have to retain it. </td></tr>
+    <tr><td class="paramname">flags</td><td>Parameter with the same meaning for an old cascade as in the function cvHaarDetectObjects. It is not used for a new cascade. </td></tr>
+    <tr><td class="paramname">minSize</td><td>Minimum possible object size. Objects smaller than that are ignored. </td></tr>
+    <tr><td class="paramname">maxSize</td><td>Maximum possible object size. Objects larger than that are ignored. If <code>maxSize == minSize</code> model is evaluated on single scale. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad6e0cf4732815d6649e15700f3e7c52b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6e0cf4732815d6649e15700f3e7c52b">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -537,7 +633,7 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="a55867bdacbe4890c454696ad3f61f4f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55867bdacbe4890c454696ad3f61f4f4">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a55867bdacbe4890c454696ad3f61f4f4">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[6/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -556,7 +652,7 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="a55867bdacbe4890c454696ad3f61f4f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55867bdacbe4890c454696ad3f61f4f4">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[6/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a55867bdacbe4890c454696ad3f61f4f4">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[7/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -575,7 +671,7 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="a55867bdacbe4890c454696ad3f61f4f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55867bdacbe4890c454696ad3f61f4f4">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[7/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a55867bdacbe4890c454696ad3f61f4f4">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[8/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -594,7 +690,26 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="a55867bdacbe4890c454696ad3f61f4f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55867bdacbe4890c454696ad3f61f4f4">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[8/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a55867bdacbe4890c454696ad3f61f4f4">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[9/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::CascadeClassifier::CV_WRAP_AS </td>
+          <td>(</td>
+          <td class="paramtype">detectMultiScale3&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. This function allows you to retrieve the final stage decision certainty of classification. For this, one needs to set <code>outputRejectLevels</code> on true and provide the <code>rejectLevels</code> and <code>levelWeights</code> parameter. For each resulting detection, <code>levelWeights</code> will then contain the certainty of classification at the final stage. This value can then be used to separate strong from weaker classifications.</p>
+<p>A code sample on how to use it efficiently can be found below: </p><div class="fragment"><div class="line">Mat img;</div><div class="line">vector&lt;double&gt; weights;</div><div class="line">vector&lt;int&gt; levels;</div><div class="line">vector&lt;Rect&gt; detections;</div><div class="line">CascadeClassifier model(<span class="stringliteral">&quot;/path/to/your/model.xml&quot;</span>);</div><div class="line">model.detectMultiScale(img, detections, levels, weights, 1.1, 3, 0, Size(), Size(), <span class="keyword">true</span>);</div><div class="line">cerr &lt;&lt; <span class="stringliteral">&quot;Detection &quot;</span> &lt;&lt; detections[0] &lt;&lt; <span class="stringliteral">&quot; with weight &quot;</span> &lt;&lt; weights[0] &lt;&lt; endl;</div></div><!-- fragment --> 
+</div>
+</div>
+<a id="a55867bdacbe4890c454696ad3f61f4f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55867bdacbe4890c454696ad3f61f4f4">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[10/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -613,7 +728,7 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="a18d5fb00105df774885c98297d753e73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18d5fb00105df774885c98297d753e73">&#9670;&nbsp;</a></span>detectMultiScale() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a18d5fb00105df774885c98297d753e73">&#9670;&nbsp;</a></span>detectMultiScale() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -690,7 +805,7 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="a18d5fb00105df774885c98297d753e73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18d5fb00105df774885c98297d753e73">&#9670;&nbsp;</a></span>detectMultiScale() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a18d5fb00105df774885c98297d753e73">&#9670;&nbsp;</a></span>detectMultiScale() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -767,7 +882,7 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="a18d5fb00105df774885c98297d753e73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18d5fb00105df774885c98297d753e73">&#9670;&nbsp;</a></span>detectMultiScale() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a18d5fb00105df774885c98297d753e73">&#9670;&nbsp;</a></span>detectMultiScale() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -844,7 +959,84 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="a18d5fb00105df774885c98297d753e73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18d5fb00105df774885c98297d753e73">&#9670;&nbsp;</a></span>detectMultiScale() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a18d5fb00105df774885c98297d753e73">&#9670;&nbsp;</a></span>detectMultiScale() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP void cv::CascadeClassifier::detectMultiScale </td>
+          <td>(</td>
+          <td class="paramtype">InputArray&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>objects</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>scaleFactor</em> = <code>1.1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minNeighbors</em> = <code>3</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcv_1_1_size__.html">Size</a>&#160;</td>
+          <td class="paramname"><em>minSize</em> = <code><a class="el" href="classcv_1_1_size__.html">Size</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcv_1_1_size__.html">Size</a>&#160;</td>
+          <td class="paramname"><em>maxSize</em> = <code><a class="el" href="classcv_1_1_size__.html">Size</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Detects objects of different sizes in the input image. The detected objects are returned as a list of rectangles. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>Matrix of the type CV_8U containing an image where objects are detected. </td></tr>
+    <tr><td class="paramname">objects</td><td>Vector of rectangles where each rectangle contains the detected object, the rectangles may be partially outside the original image. </td></tr>
+    <tr><td class="paramname">scaleFactor</td><td>Parameter specifying how much the image size is reduced at each image scale. </td></tr>
+    <tr><td class="paramname">minNeighbors</td><td>Parameter specifying how many neighbors each candidate rectangle should have to retain it. </td></tr>
+    <tr><td class="paramname">flags</td><td>Parameter with the same meaning for an old cascade as in the function cvHaarDetectObjects. It is not used for a new cascade. </td></tr>
+    <tr><td class="paramname">minSize</td><td>Minimum possible object size. Objects smaller than that are ignored. </td></tr>
+    <tr><td class="paramname">maxSize</td><td>Maximum possible object size. Objects larger than that are ignored. If <code>maxSize == minSize</code> model is evaluated on single scale.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The function is parallelized with the TBB library.</p>
+<dl class="section note"><dt>Note</dt><dd><ul>
+<li>(Python) A face detection example using cascade classifiers can be found at opencv_source_code/samples/python/facedetect.py </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a18d5fb00105df774885c98297d753e73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18d5fb00105df774885c98297d753e73">&#9670;&nbsp;</a></span>detectMultiScale() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -921,7 +1113,7 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="aad90e6dca8f1e7f9183c197c35a902ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad90e6dca8f1e7f9183c197c35a902ff">&#9670;&nbsp;</a></span>load() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aad90e6dca8f1e7f9183c197c35a902ff">&#9670;&nbsp;</a></span>load() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -947,7 +1139,7 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="aad90e6dca8f1e7f9183c197c35a902ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad90e6dca8f1e7f9183c197c35a902ff">&#9670;&nbsp;</a></span>load() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aad90e6dca8f1e7f9183c197c35a902ff">&#9670;&nbsp;</a></span>load() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -973,7 +1165,7 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="aad90e6dca8f1e7f9183c197c35a902ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad90e6dca8f1e7f9183c197c35a902ff">&#9670;&nbsp;</a></span>load() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aad90e6dca8f1e7f9183c197c35a902ff">&#9670;&nbsp;</a></span>load() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -999,7 +1191,33 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="aad90e6dca8f1e7f9183c197c35a902ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad90e6dca8f1e7f9183c197c35a902ff">&#9670;&nbsp;</a></span>load() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aad90e6dca8f1e7f9183c197c35a902ff">&#9670;&nbsp;</a></span>load() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP bool cv::CascadeClassifier::load </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads a classifier from a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Name of the file from which the classifier is loaded. The file may contain an old HAAR classifier trained by the haartraining application or a new cascade classifier trained by the traincascade application. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aad90e6dca8f1e7f9183c197c35a902ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad90e6dca8f1e7f9183c197c35a902ff">&#9670;&nbsp;</a></span>load() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1025,7 +1243,7 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="abd09e812dd49f51049a818758ebbf553"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd09e812dd49f51049a818758ebbf553">&#9670;&nbsp;</a></span>read() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abd09e812dd49f51049a818758ebbf553">&#9670;&nbsp;</a></span>read() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1046,7 +1264,7 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="abd09e812dd49f51049a818758ebbf553"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd09e812dd49f51049a818758ebbf553">&#9670;&nbsp;</a></span>read() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abd09e812dd49f51049a818758ebbf553">&#9670;&nbsp;</a></span>read() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1067,7 +1285,7 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="abd09e812dd49f51049a818758ebbf553"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd09e812dd49f51049a818758ebbf553">&#9670;&nbsp;</a></span>read() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abd09e812dd49f51049a818758ebbf553">&#9670;&nbsp;</a></span>read() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1088,7 +1306,28 @@ CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt
 </div>
 </div>
 <a id="abd09e812dd49f51049a818758ebbf553"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd09e812dd49f51049a818758ebbf553">&#9670;&nbsp;</a></span>read() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abd09e812dd49f51049a818758ebbf553">&#9670;&nbsp;</a></span>read() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP bool cv::CascadeClassifier::read </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a classifier from a <a class="el" href="classcv_1_1_file_storage.html" title="XML/YAML/JSON file storage class that encapsulates all the information necessary for writing or readi...">FileStorage</a> node. </p>
+<dl class="section note"><dt>Note</dt><dd>The file may contain a new cascade classifier (trained traincascade application) only. </dd></dl>
+
+</div>
+</div>
+<a id="abd09e812dd49f51049a818758ebbf553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd09e812dd49f51049a818758ebbf553">&#9670;&nbsp;</a></span>read() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

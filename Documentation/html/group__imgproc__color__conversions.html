@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: Imgproc_color_conversions</title>
+<title>PixUl8: Imgproc_color_conversions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -1103,6 +1101,264 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>COLOR_BayerGB2RGBA</b> = COLOR_BayerGR2BGRA, 
 <b>COLOR_BayerRG2RGBA</b> = COLOR_BayerBG2BGRA, 
 <b>COLOR_BayerGR2RGBA</b> = COLOR_BayerGB2BGRA, 
+<b>COLOR_COLORCVT_MAX</b> = 143, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7">cv::COLOR_BGR2BGRA</a> = 0, 
+<b>COLOR_RGB2RGBA</b> = COLOR_BGR2BGRA, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372">cv::COLOR_BGRA2BGR</a> = 1, 
+<b>COLOR_RGBA2RGB</b> = COLOR_BGRA2BGR, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a6ebb99459745f21e76daf63e7cbf4e4e">cv::COLOR_BGR2RGBA</a> = 2, 
+<b>COLOR_RGB2BGRA</b> = COLOR_BGR2RGBA, 
+<b>COLOR_RGBA2BGR</b> = 3, 
+<b>COLOR_BGRA2RGB</b> = COLOR_RGBA2BGR, 
+<br />
+&#160;&#160;<b>COLOR_BGR2RGB</b> = 4, 
+<b>COLOR_RGB2BGR</b> = COLOR_BGR2RGB, 
+<b>COLOR_BGRA2RGBA</b> = 5, 
+<b>COLOR_RGBA2BGRA</b> = COLOR_BGRA2RGBA, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a227692b0c382bf5a7fd40f01ce6a1758">cv::COLOR_BGR2GRAY</a> = 6, 
+<b>COLOR_RGB2GRAY</b> = 7, 
+<b>COLOR_GRAY2BGR</b> = 8, 
+<b>COLOR_GRAY2RGB</b> = COLOR_GRAY2BGR, 
+<br />
+&#160;&#160;<b>COLOR_GRAY2BGRA</b> = 9, 
+<b>COLOR_GRAY2RGBA</b> = COLOR_GRAY2BGRA, 
+<b>COLOR_BGRA2GRAY</b> = 10, 
+<b>COLOR_RGBA2GRAY</b> = 11, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a5c587d0660084780b83ad27b0f56ac85">cv::COLOR_BGR2BGR565</a> = 12, 
+<b>COLOR_RGB2BGR565</b> = 13, 
+<b>COLOR_BGR5652BGR</b> = 14, 
+<b>COLOR_BGR5652RGB</b> = 15, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2BGR565</b> = 16, 
+<b>COLOR_RGBA2BGR565</b> = 17, 
+<b>COLOR_BGR5652BGRA</b> = 18, 
+<b>COLOR_BGR5652RGBA</b> = 19, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a90ffef38218e1480d60c3479a53c5680">cv::COLOR_GRAY2BGR565</a> = 20, 
+<b>COLOR_BGR5652GRAY</b> = 21, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a45bf096f1f6840a82dd98d0fc418512f">cv::COLOR_BGR2BGR555</a> = 22, 
+<b>COLOR_RGB2BGR555</b> = 23, 
+<br />
+&#160;&#160;<b>COLOR_BGR5552BGR</b> = 24, 
+<b>COLOR_BGR5552RGB</b> = 25, 
+<b>COLOR_BGRA2BGR555</b> = 26, 
+<b>COLOR_RGBA2BGR555</b> = 27, 
+<br />
+&#160;&#160;<b>COLOR_BGR5552BGRA</b> = 28, 
+<b>COLOR_BGR5552RGBA</b> = 29, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a573fd1d3ab76e85f41fa5e43b6c393a4">cv::COLOR_GRAY2BGR555</a> = 30, 
+<b>COLOR_BGR5552GRAY</b> = 31, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a54e0efb8ca0f4cf5067c4a09efabef9f">cv::COLOR_BGR2XYZ</a> = 32, 
+<b>COLOR_RGB2XYZ</b> = 33, 
+<b>COLOR_XYZ2BGR</b> = 34, 
+<b>COLOR_XYZ2RGB</b> = 35, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ab07f75a53538f9d6a81aae64550188ce">cv::COLOR_BGR2YCrCb</a> = 36, 
+<b>COLOR_RGB2YCrCb</b> = 37, 
+<b>COLOR_YCrCb2BGR</b> = 38, 
+<b>COLOR_YCrCb2RGB</b> = 39, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a8e8f59a8b152213e9ae59994013c22a9">cv::COLOR_BGR2HSV</a> = 40, 
+<b>COLOR_RGB2HSV</b> = 41, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a4fd046347536e547986a93710da29f2d">cv::COLOR_BGR2Lab</a> = 44, 
+<b>COLOR_RGB2Lab</b> = 45, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0adcb601b5bdb42ded57e74dbc2a90a282">cv::COLOR_BGR2Luv</a> = 50, 
+<b>COLOR_RGB2Luv</b> = 51, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a67b3508e468db8b222563e9fffa0fa00">cv::COLOR_BGR2HLS</a> = 52, 
+<b>COLOR_RGB2HLS</b> = 53, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a9868b92ef87467e2e1941e084e90a8a2">cv::COLOR_HSV2BGR</a> = 54, 
+<b>COLOR_HSV2RGB</b> = 55, 
+<b>COLOR_Lab2BGR</b> = 56, 
+<b>COLOR_Lab2RGB</b> = 57, 
+<br />
+&#160;&#160;<b>COLOR_Luv2BGR</b> = 58, 
+<b>COLOR_Luv2RGB</b> = 59, 
+<b>COLOR_HLS2BGR</b> = 60, 
+<b>COLOR_HLS2RGB</b> = 61, 
+<br />
+&#160;&#160;<b>COLOR_BGR2HSV_FULL</b> = 66, 
+<b>COLOR_RGB2HSV_FULL</b> = 67, 
+<b>COLOR_BGR2HLS_FULL</b> = 68, 
+<b>COLOR_RGB2HLS_FULL</b> = 69, 
+<br />
+&#160;&#160;<b>COLOR_HSV2BGR_FULL</b> = 70, 
+<b>COLOR_HSV2RGB_FULL</b> = 71, 
+<b>COLOR_HLS2BGR_FULL</b> = 72, 
+<b>COLOR_HLS2RGB_FULL</b> = 73, 
+<br />
+&#160;&#160;<b>COLOR_LBGR2Lab</b> = 74, 
+<b>COLOR_LRGB2Lab</b> = 75, 
+<b>COLOR_LBGR2Luv</b> = 76, 
+<b>COLOR_LRGB2Luv</b> = 77, 
+<br />
+&#160;&#160;<b>COLOR_Lab2LBGR</b> = 78, 
+<b>COLOR_Lab2LRGB</b> = 79, 
+<b>COLOR_Luv2LBGR</b> = 80, 
+<b>COLOR_Luv2LRGB</b> = 81, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0afbb43921348312356f7b9fb351b92001">cv::COLOR_BGR2YUV</a> = 82, 
+<b>COLOR_RGB2YUV</b> = 83, 
+<b>COLOR_YUV2BGR</b> = 84, 
+<b>COLOR_YUV2RGB</b> = 85, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0abe3655f90615347c18550ef37f076f52">cv::COLOR_YUV2RGB_NV12</a> = 90, 
+<b>COLOR_YUV2BGR_NV12</b> = 91, 
+<b>COLOR_YUV2RGB_NV21</b> = 92, 
+<b>COLOR_YUV2BGR_NV21</b> = 93, 
+<br />
+&#160;&#160;<b>COLOR_YUV420sp2RGB</b> = COLOR_YUV2RGB_NV21, 
+<b>COLOR_YUV420sp2BGR</b> = COLOR_YUV2BGR_NV21, 
+<b>COLOR_YUV2RGBA_NV12</b> = 94, 
+<b>COLOR_YUV2BGRA_NV12</b> = 95, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_NV21</b> = 96, 
+<b>COLOR_YUV2BGRA_NV21</b> = 97, 
+<b>COLOR_YUV420sp2RGBA</b> = COLOR_YUV2RGBA_NV21, 
+<b>COLOR_YUV420sp2BGRA</b> = COLOR_YUV2BGRA_NV21, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YV12</b> = 98, 
+<b>COLOR_YUV2BGR_YV12</b> = 99, 
+<b>COLOR_YUV2RGB_IYUV</b> = 100, 
+<b>COLOR_YUV2BGR_IYUV</b> = 101, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_I420</b> = COLOR_YUV2RGB_IYUV, 
+<b>COLOR_YUV2BGR_I420</b> = COLOR_YUV2BGR_IYUV, 
+<b>COLOR_YUV420p2RGB</b> = COLOR_YUV2RGB_YV12, 
+<b>COLOR_YUV420p2BGR</b> = COLOR_YUV2BGR_YV12, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YV12</b> = 102, 
+<b>COLOR_YUV2BGRA_YV12</b> = 103, 
+<b>COLOR_YUV2RGBA_IYUV</b> = 104, 
+<b>COLOR_YUV2BGRA_IYUV</b> = 105, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_I420</b> = COLOR_YUV2RGBA_IYUV, 
+<b>COLOR_YUV2BGRA_I420</b> = COLOR_YUV2BGRA_IYUV, 
+<b>COLOR_YUV420p2RGBA</b> = COLOR_YUV2RGBA_YV12, 
+<b>COLOR_YUV420p2BGRA</b> = COLOR_YUV2BGRA_YV12, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_420</b> = 106, 
+<b>COLOR_YUV2GRAY_NV21</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_NV12</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_YV12</b> = COLOR_YUV2GRAY_420, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_IYUV</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_I420</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV420sp2GRAY</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV420p2GRAY</b> = COLOR_YUV2GRAY_420, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a99e17f1193316a576737a89c0b64c0c7">cv::COLOR_YUV2RGB_UYVY</a> = 107, 
+<b>COLOR_YUV2BGR_UYVY</b> = 108, 
+<b>COLOR_YUV2RGB_Y422</b> = COLOR_YUV2RGB_UYVY, 
+<b>COLOR_YUV2BGR_Y422</b> = COLOR_YUV2BGR_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_UYNV</b> = COLOR_YUV2RGB_UYVY, 
+<b>COLOR_YUV2BGR_UYNV</b> = COLOR_YUV2BGR_UYVY, 
+<b>COLOR_YUV2RGBA_UYVY</b> = 111, 
+<b>COLOR_YUV2BGRA_UYVY</b> = 112, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_Y422</b> = COLOR_YUV2RGBA_UYVY, 
+<b>COLOR_YUV2BGRA_Y422</b> = COLOR_YUV2BGRA_UYVY, 
+<b>COLOR_YUV2RGBA_UYNV</b> = COLOR_YUV2RGBA_UYVY, 
+<b>COLOR_YUV2BGRA_UYNV</b> = COLOR_YUV2BGRA_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YUY2</b> = 115, 
+<b>COLOR_YUV2BGR_YUY2</b> = 116, 
+<b>COLOR_YUV2RGB_YVYU</b> = 117, 
+<b>COLOR_YUV2BGR_YVYU</b> = 118, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YUYV</b> = COLOR_YUV2RGB_YUY2, 
+<b>COLOR_YUV2BGR_YUYV</b> = COLOR_YUV2BGR_YUY2, 
+<b>COLOR_YUV2RGB_YUNV</b> = COLOR_YUV2RGB_YUY2, 
+<b>COLOR_YUV2BGR_YUNV</b> = COLOR_YUV2BGR_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YUY2</b> = 119, 
+<b>COLOR_YUV2BGRA_YUY2</b> = 120, 
+<b>COLOR_YUV2RGBA_YVYU</b> = 121, 
+<b>COLOR_YUV2BGRA_YVYU</b> = 122, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YUYV</b> = COLOR_YUV2RGBA_YUY2, 
+<b>COLOR_YUV2BGRA_YUYV</b> = COLOR_YUV2BGRA_YUY2, 
+<b>COLOR_YUV2RGBA_YUNV</b> = COLOR_YUV2RGBA_YUY2, 
+<b>COLOR_YUV2BGRA_YUNV</b> = COLOR_YUV2BGRA_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_UYVY</b> = 123, 
+<b>COLOR_YUV2GRAY_YUY2</b> = 124, 
+<b>COLOR_YUV2GRAY_Y422</b> = COLOR_YUV2GRAY_UYVY, 
+<b>COLOR_YUV2GRAY_UYNV</b> = COLOR_YUV2GRAY_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_YVYU</b> = COLOR_YUV2GRAY_YUY2, 
+<b>COLOR_YUV2GRAY_YUYV</b> = COLOR_YUV2GRAY_YUY2, 
+<b>COLOR_YUV2GRAY_YUNV</b> = COLOR_YUV2GRAY_YUY2, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a59515479a043a41534800836e08b31d4">cv::COLOR_RGBA2mRGBA</a> = 125, 
+<br />
+&#160;&#160;<b>COLOR_mRGBA2RGBA</b> = 126, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ac17162b67ea6bf79ab7c18928a35bed9">cv::COLOR_RGB2YUV_I420</a> = 127, 
+<b>COLOR_BGR2YUV_I420</b> = 128, 
+<b>COLOR_RGB2YUV_IYUV</b> = COLOR_RGB2YUV_I420, 
+<br />
+&#160;&#160;<b>COLOR_BGR2YUV_IYUV</b> = COLOR_BGR2YUV_I420, 
+<b>COLOR_RGBA2YUV_I420</b> = 129, 
+<b>COLOR_BGRA2YUV_I420</b> = 130, 
+<b>COLOR_RGBA2YUV_IYUV</b> = COLOR_RGBA2YUV_I420, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2YUV_IYUV</b> = COLOR_BGRA2YUV_I420, 
+<b>COLOR_RGB2YUV_YV12</b> = 131, 
+<b>COLOR_BGR2YUV_YV12</b> = 132, 
+<b>COLOR_RGBA2YUV_YV12</b> = 133, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2YUV_YV12</b> = 134, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0adf9808f6473823be2d3d5fc94f87ff83">cv::COLOR_BayerBG2BGR</a> = 46, 
+<b>COLOR_BayerGB2BGR</b> = 47, 
+<b>COLOR_BayerRG2BGR</b> = 48, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR</b> = 49, 
+<b>COLOR_BayerBG2RGB</b> = COLOR_BayerRG2BGR, 
+<b>COLOR_BayerGB2RGB</b> = COLOR_BayerGR2BGR, 
+<b>COLOR_BayerRG2RGB</b> = COLOR_BayerBG2BGR, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB</b> = COLOR_BayerGB2BGR, 
+<b>COLOR_BayerBG2GRAY</b> = 86, 
+<b>COLOR_BayerGB2GRAY</b> = 87, 
+<b>COLOR_BayerRG2GRAY</b> = 88, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2GRAY</b> = 89, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0abb93ab29f64149dcc6add03eb57aa422">cv::COLOR_BayerBG2BGR_VNG</a> = 62, 
+<b>COLOR_BayerGB2BGR_VNG</b> = 63, 
+<b>COLOR_BayerRG2BGR_VNG</b> = 64, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR_VNG</b> = 65, 
+<b>COLOR_BayerBG2RGB_VNG</b> = COLOR_BayerRG2BGR_VNG, 
+<b>COLOR_BayerGB2RGB_VNG</b> = COLOR_BayerGR2BGR_VNG, 
+<b>COLOR_BayerRG2RGB_VNG</b> = COLOR_BayerBG2BGR_VNG, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB_VNG</b> = COLOR_BayerGB2BGR_VNG, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a69250d4a0546e0516a3b4b8766f61280">cv::COLOR_BayerBG2BGR_EA</a> = 135, 
+<b>COLOR_BayerGB2BGR_EA</b> = 136, 
+<b>COLOR_BayerRG2BGR_EA</b> = 137, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR_EA</b> = 138, 
+<b>COLOR_BayerBG2RGB_EA</b> = COLOR_BayerRG2BGR_EA, 
+<b>COLOR_BayerGB2RGB_EA</b> = COLOR_BayerGR2BGR_EA, 
+<b>COLOR_BayerRG2RGB_EA</b> = COLOR_BayerBG2BGR_EA, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB_EA</b> = COLOR_BayerGB2BGR_EA, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a6cfe4f8ee50e6d033762c6a653592d39">cv::COLOR_BayerBG2BGRA</a> = 139, 
+<b>COLOR_BayerGB2BGRA</b> = 140, 
+<b>COLOR_BayerRG2BGRA</b> = 141, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGRA</b> = 142, 
+<b>COLOR_BayerBG2RGBA</b> = COLOR_BayerRG2BGRA, 
+<b>COLOR_BayerGB2RGBA</b> = COLOR_BayerGR2BGRA, 
+<b>COLOR_BayerRG2RGBA</b> = COLOR_BayerBG2BGRA, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGBA</b> = COLOR_BayerGB2BGRA, 
 <b>COLOR_COLORCVT_MAX</b> = 143
 <br />
  }</td></tr>
@@ -2136,6 +2392,264 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>COLOR_BayerGB2RGBA</b> = COLOR_BayerGR2BGRA, 
 <b>COLOR_BayerRG2RGBA</b> = COLOR_BayerBG2BGRA, 
 <b>COLOR_BayerGR2RGBA</b> = COLOR_BayerGB2BGRA, 
+<b>COLOR_COLORCVT_MAX</b> = 143, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7">cv::COLOR_BGR2BGRA</a> = 0, 
+<b>COLOR_RGB2RGBA</b> = COLOR_BGR2BGRA, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372">cv::COLOR_BGRA2BGR</a> = 1, 
+<b>COLOR_RGBA2RGB</b> = COLOR_BGRA2BGR, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a6ebb99459745f21e76daf63e7cbf4e4e">cv::COLOR_BGR2RGBA</a> = 2, 
+<b>COLOR_RGB2BGRA</b> = COLOR_BGR2RGBA, 
+<b>COLOR_RGBA2BGR</b> = 3, 
+<b>COLOR_BGRA2RGB</b> = COLOR_RGBA2BGR, 
+<br />
+&#160;&#160;<b>COLOR_BGR2RGB</b> = 4, 
+<b>COLOR_RGB2BGR</b> = COLOR_BGR2RGB, 
+<b>COLOR_BGRA2RGBA</b> = 5, 
+<b>COLOR_RGBA2BGRA</b> = COLOR_BGRA2RGBA, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a227692b0c382bf5a7fd40f01ce6a1758">cv::COLOR_BGR2GRAY</a> = 6, 
+<b>COLOR_RGB2GRAY</b> = 7, 
+<b>COLOR_GRAY2BGR</b> = 8, 
+<b>COLOR_GRAY2RGB</b> = COLOR_GRAY2BGR, 
+<br />
+&#160;&#160;<b>COLOR_GRAY2BGRA</b> = 9, 
+<b>COLOR_GRAY2RGBA</b> = COLOR_GRAY2BGRA, 
+<b>COLOR_BGRA2GRAY</b> = 10, 
+<b>COLOR_RGBA2GRAY</b> = 11, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a5c587d0660084780b83ad27b0f56ac85">cv::COLOR_BGR2BGR565</a> = 12, 
+<b>COLOR_RGB2BGR565</b> = 13, 
+<b>COLOR_BGR5652BGR</b> = 14, 
+<b>COLOR_BGR5652RGB</b> = 15, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2BGR565</b> = 16, 
+<b>COLOR_RGBA2BGR565</b> = 17, 
+<b>COLOR_BGR5652BGRA</b> = 18, 
+<b>COLOR_BGR5652RGBA</b> = 19, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a90ffef38218e1480d60c3479a53c5680">cv::COLOR_GRAY2BGR565</a> = 20, 
+<b>COLOR_BGR5652GRAY</b> = 21, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a45bf096f1f6840a82dd98d0fc418512f">cv::COLOR_BGR2BGR555</a> = 22, 
+<b>COLOR_RGB2BGR555</b> = 23, 
+<br />
+&#160;&#160;<b>COLOR_BGR5552BGR</b> = 24, 
+<b>COLOR_BGR5552RGB</b> = 25, 
+<b>COLOR_BGRA2BGR555</b> = 26, 
+<b>COLOR_RGBA2BGR555</b> = 27, 
+<br />
+&#160;&#160;<b>COLOR_BGR5552BGRA</b> = 28, 
+<b>COLOR_BGR5552RGBA</b> = 29, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a573fd1d3ab76e85f41fa5e43b6c393a4">cv::COLOR_GRAY2BGR555</a> = 30, 
+<b>COLOR_BGR5552GRAY</b> = 31, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a54e0efb8ca0f4cf5067c4a09efabef9f">cv::COLOR_BGR2XYZ</a> = 32, 
+<b>COLOR_RGB2XYZ</b> = 33, 
+<b>COLOR_XYZ2BGR</b> = 34, 
+<b>COLOR_XYZ2RGB</b> = 35, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ab07f75a53538f9d6a81aae64550188ce">cv::COLOR_BGR2YCrCb</a> = 36, 
+<b>COLOR_RGB2YCrCb</b> = 37, 
+<b>COLOR_YCrCb2BGR</b> = 38, 
+<b>COLOR_YCrCb2RGB</b> = 39, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a8e8f59a8b152213e9ae59994013c22a9">cv::COLOR_BGR2HSV</a> = 40, 
+<b>COLOR_RGB2HSV</b> = 41, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a4fd046347536e547986a93710da29f2d">cv::COLOR_BGR2Lab</a> = 44, 
+<b>COLOR_RGB2Lab</b> = 45, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0adcb601b5bdb42ded57e74dbc2a90a282">cv::COLOR_BGR2Luv</a> = 50, 
+<b>COLOR_RGB2Luv</b> = 51, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a67b3508e468db8b222563e9fffa0fa00">cv::COLOR_BGR2HLS</a> = 52, 
+<b>COLOR_RGB2HLS</b> = 53, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a9868b92ef87467e2e1941e084e90a8a2">cv::COLOR_HSV2BGR</a> = 54, 
+<b>COLOR_HSV2RGB</b> = 55, 
+<b>COLOR_Lab2BGR</b> = 56, 
+<b>COLOR_Lab2RGB</b> = 57, 
+<br />
+&#160;&#160;<b>COLOR_Luv2BGR</b> = 58, 
+<b>COLOR_Luv2RGB</b> = 59, 
+<b>COLOR_HLS2BGR</b> = 60, 
+<b>COLOR_HLS2RGB</b> = 61, 
+<br />
+&#160;&#160;<b>COLOR_BGR2HSV_FULL</b> = 66, 
+<b>COLOR_RGB2HSV_FULL</b> = 67, 
+<b>COLOR_BGR2HLS_FULL</b> = 68, 
+<b>COLOR_RGB2HLS_FULL</b> = 69, 
+<br />
+&#160;&#160;<b>COLOR_HSV2BGR_FULL</b> = 70, 
+<b>COLOR_HSV2RGB_FULL</b> = 71, 
+<b>COLOR_HLS2BGR_FULL</b> = 72, 
+<b>COLOR_HLS2RGB_FULL</b> = 73, 
+<br />
+&#160;&#160;<b>COLOR_LBGR2Lab</b> = 74, 
+<b>COLOR_LRGB2Lab</b> = 75, 
+<b>COLOR_LBGR2Luv</b> = 76, 
+<b>COLOR_LRGB2Luv</b> = 77, 
+<br />
+&#160;&#160;<b>COLOR_Lab2LBGR</b> = 78, 
+<b>COLOR_Lab2LRGB</b> = 79, 
+<b>COLOR_Luv2LBGR</b> = 80, 
+<b>COLOR_Luv2LRGB</b> = 81, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0afbb43921348312356f7b9fb351b92001">cv::COLOR_BGR2YUV</a> = 82, 
+<b>COLOR_RGB2YUV</b> = 83, 
+<b>COLOR_YUV2BGR</b> = 84, 
+<b>COLOR_YUV2RGB</b> = 85, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0abe3655f90615347c18550ef37f076f52">cv::COLOR_YUV2RGB_NV12</a> = 90, 
+<b>COLOR_YUV2BGR_NV12</b> = 91, 
+<b>COLOR_YUV2RGB_NV21</b> = 92, 
+<b>COLOR_YUV2BGR_NV21</b> = 93, 
+<br />
+&#160;&#160;<b>COLOR_YUV420sp2RGB</b> = COLOR_YUV2RGB_NV21, 
+<b>COLOR_YUV420sp2BGR</b> = COLOR_YUV2BGR_NV21, 
+<b>COLOR_YUV2RGBA_NV12</b> = 94, 
+<b>COLOR_YUV2BGRA_NV12</b> = 95, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_NV21</b> = 96, 
+<b>COLOR_YUV2BGRA_NV21</b> = 97, 
+<b>COLOR_YUV420sp2RGBA</b> = COLOR_YUV2RGBA_NV21, 
+<b>COLOR_YUV420sp2BGRA</b> = COLOR_YUV2BGRA_NV21, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YV12</b> = 98, 
+<b>COLOR_YUV2BGR_YV12</b> = 99, 
+<b>COLOR_YUV2RGB_IYUV</b> = 100, 
+<b>COLOR_YUV2BGR_IYUV</b> = 101, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_I420</b> = COLOR_YUV2RGB_IYUV, 
+<b>COLOR_YUV2BGR_I420</b> = COLOR_YUV2BGR_IYUV, 
+<b>COLOR_YUV420p2RGB</b> = COLOR_YUV2RGB_YV12, 
+<b>COLOR_YUV420p2BGR</b> = COLOR_YUV2BGR_YV12, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YV12</b> = 102, 
+<b>COLOR_YUV2BGRA_YV12</b> = 103, 
+<b>COLOR_YUV2RGBA_IYUV</b> = 104, 
+<b>COLOR_YUV2BGRA_IYUV</b> = 105, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_I420</b> = COLOR_YUV2RGBA_IYUV, 
+<b>COLOR_YUV2BGRA_I420</b> = COLOR_YUV2BGRA_IYUV, 
+<b>COLOR_YUV420p2RGBA</b> = COLOR_YUV2RGBA_YV12, 
+<b>COLOR_YUV420p2BGRA</b> = COLOR_YUV2BGRA_YV12, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_420</b> = 106, 
+<b>COLOR_YUV2GRAY_NV21</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_NV12</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_YV12</b> = COLOR_YUV2GRAY_420, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_IYUV</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_I420</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV420sp2GRAY</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV420p2GRAY</b> = COLOR_YUV2GRAY_420, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a99e17f1193316a576737a89c0b64c0c7">cv::COLOR_YUV2RGB_UYVY</a> = 107, 
+<b>COLOR_YUV2BGR_UYVY</b> = 108, 
+<b>COLOR_YUV2RGB_Y422</b> = COLOR_YUV2RGB_UYVY, 
+<b>COLOR_YUV2BGR_Y422</b> = COLOR_YUV2BGR_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_UYNV</b> = COLOR_YUV2RGB_UYVY, 
+<b>COLOR_YUV2BGR_UYNV</b> = COLOR_YUV2BGR_UYVY, 
+<b>COLOR_YUV2RGBA_UYVY</b> = 111, 
+<b>COLOR_YUV2BGRA_UYVY</b> = 112, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_Y422</b> = COLOR_YUV2RGBA_UYVY, 
+<b>COLOR_YUV2BGRA_Y422</b> = COLOR_YUV2BGRA_UYVY, 
+<b>COLOR_YUV2RGBA_UYNV</b> = COLOR_YUV2RGBA_UYVY, 
+<b>COLOR_YUV2BGRA_UYNV</b> = COLOR_YUV2BGRA_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YUY2</b> = 115, 
+<b>COLOR_YUV2BGR_YUY2</b> = 116, 
+<b>COLOR_YUV2RGB_YVYU</b> = 117, 
+<b>COLOR_YUV2BGR_YVYU</b> = 118, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YUYV</b> = COLOR_YUV2RGB_YUY2, 
+<b>COLOR_YUV2BGR_YUYV</b> = COLOR_YUV2BGR_YUY2, 
+<b>COLOR_YUV2RGB_YUNV</b> = COLOR_YUV2RGB_YUY2, 
+<b>COLOR_YUV2BGR_YUNV</b> = COLOR_YUV2BGR_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YUY2</b> = 119, 
+<b>COLOR_YUV2BGRA_YUY2</b> = 120, 
+<b>COLOR_YUV2RGBA_YVYU</b> = 121, 
+<b>COLOR_YUV2BGRA_YVYU</b> = 122, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YUYV</b> = COLOR_YUV2RGBA_YUY2, 
+<b>COLOR_YUV2BGRA_YUYV</b> = COLOR_YUV2BGRA_YUY2, 
+<b>COLOR_YUV2RGBA_YUNV</b> = COLOR_YUV2RGBA_YUY2, 
+<b>COLOR_YUV2BGRA_YUNV</b> = COLOR_YUV2BGRA_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_UYVY</b> = 123, 
+<b>COLOR_YUV2GRAY_YUY2</b> = 124, 
+<b>COLOR_YUV2GRAY_Y422</b> = COLOR_YUV2GRAY_UYVY, 
+<b>COLOR_YUV2GRAY_UYNV</b> = COLOR_YUV2GRAY_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_YVYU</b> = COLOR_YUV2GRAY_YUY2, 
+<b>COLOR_YUV2GRAY_YUYV</b> = COLOR_YUV2GRAY_YUY2, 
+<b>COLOR_YUV2GRAY_YUNV</b> = COLOR_YUV2GRAY_YUY2, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a59515479a043a41534800836e08b31d4">cv::COLOR_RGBA2mRGBA</a> = 125, 
+<br />
+&#160;&#160;<b>COLOR_mRGBA2RGBA</b> = 126, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ac17162b67ea6bf79ab7c18928a35bed9">cv::COLOR_RGB2YUV_I420</a> = 127, 
+<b>COLOR_BGR2YUV_I420</b> = 128, 
+<b>COLOR_RGB2YUV_IYUV</b> = COLOR_RGB2YUV_I420, 
+<br />
+&#160;&#160;<b>COLOR_BGR2YUV_IYUV</b> = COLOR_BGR2YUV_I420, 
+<b>COLOR_RGBA2YUV_I420</b> = 129, 
+<b>COLOR_BGRA2YUV_I420</b> = 130, 
+<b>COLOR_RGBA2YUV_IYUV</b> = COLOR_RGBA2YUV_I420, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2YUV_IYUV</b> = COLOR_BGRA2YUV_I420, 
+<b>COLOR_RGB2YUV_YV12</b> = 131, 
+<b>COLOR_BGR2YUV_YV12</b> = 132, 
+<b>COLOR_RGBA2YUV_YV12</b> = 133, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2YUV_YV12</b> = 134, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0adf9808f6473823be2d3d5fc94f87ff83">cv::COLOR_BayerBG2BGR</a> = 46, 
+<b>COLOR_BayerGB2BGR</b> = 47, 
+<b>COLOR_BayerRG2BGR</b> = 48, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR</b> = 49, 
+<b>COLOR_BayerBG2RGB</b> = COLOR_BayerRG2BGR, 
+<b>COLOR_BayerGB2RGB</b> = COLOR_BayerGR2BGR, 
+<b>COLOR_BayerRG2RGB</b> = COLOR_BayerBG2BGR, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB</b> = COLOR_BayerGB2BGR, 
+<b>COLOR_BayerBG2GRAY</b> = 86, 
+<b>COLOR_BayerGB2GRAY</b> = 87, 
+<b>COLOR_BayerRG2GRAY</b> = 88, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2GRAY</b> = 89, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0abb93ab29f64149dcc6add03eb57aa422">cv::COLOR_BayerBG2BGR_VNG</a> = 62, 
+<b>COLOR_BayerGB2BGR_VNG</b> = 63, 
+<b>COLOR_BayerRG2BGR_VNG</b> = 64, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR_VNG</b> = 65, 
+<b>COLOR_BayerBG2RGB_VNG</b> = COLOR_BayerRG2BGR_VNG, 
+<b>COLOR_BayerGB2RGB_VNG</b> = COLOR_BayerGR2BGR_VNG, 
+<b>COLOR_BayerRG2RGB_VNG</b> = COLOR_BayerBG2BGR_VNG, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB_VNG</b> = COLOR_BayerGB2BGR_VNG, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a69250d4a0546e0516a3b4b8766f61280">cv::COLOR_BayerBG2BGR_EA</a> = 135, 
+<b>COLOR_BayerGB2BGR_EA</b> = 136, 
+<b>COLOR_BayerRG2BGR_EA</b> = 137, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR_EA</b> = 138, 
+<b>COLOR_BayerBG2RGB_EA</b> = COLOR_BayerRG2BGR_EA, 
+<b>COLOR_BayerGB2RGB_EA</b> = COLOR_BayerGR2BGR_EA, 
+<b>COLOR_BayerRG2RGB_EA</b> = COLOR_BayerBG2BGR_EA, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB_EA</b> = COLOR_BayerGB2BGR_EA, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a6cfe4f8ee50e6d033762c6a653592d39">cv::COLOR_BayerBG2BGRA</a> = 139, 
+<b>COLOR_BayerGB2BGRA</b> = 140, 
+<b>COLOR_BayerRG2BGRA</b> = 141, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGRA</b> = 142, 
+<b>COLOR_BayerBG2RGBA</b> = COLOR_BayerRG2BGRA, 
+<b>COLOR_BayerGB2RGBA</b> = COLOR_BayerGR2BGRA, 
+<b>COLOR_BayerRG2RGBA</b> = COLOR_BayerBG2BGRA, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGBA</b> = COLOR_BayerGB2BGRA, 
 <b>COLOR_COLORCVT_MAX</b> = 143
 <br />
  }</td></tr>
@@ -3169,6 +3683,264 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>COLOR_BayerGB2RGBA</b> = COLOR_BayerGR2BGRA, 
 <b>COLOR_BayerRG2RGBA</b> = COLOR_BayerBG2BGRA, 
 <b>COLOR_BayerGR2RGBA</b> = COLOR_BayerGB2BGRA, 
+<b>COLOR_COLORCVT_MAX</b> = 143, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7">cv::COLOR_BGR2BGRA</a> = 0, 
+<b>COLOR_RGB2RGBA</b> = COLOR_BGR2BGRA, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372">cv::COLOR_BGRA2BGR</a> = 1, 
+<b>COLOR_RGBA2RGB</b> = COLOR_BGRA2BGR, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a6ebb99459745f21e76daf63e7cbf4e4e">cv::COLOR_BGR2RGBA</a> = 2, 
+<b>COLOR_RGB2BGRA</b> = COLOR_BGR2RGBA, 
+<b>COLOR_RGBA2BGR</b> = 3, 
+<b>COLOR_BGRA2RGB</b> = COLOR_RGBA2BGR, 
+<br />
+&#160;&#160;<b>COLOR_BGR2RGB</b> = 4, 
+<b>COLOR_RGB2BGR</b> = COLOR_BGR2RGB, 
+<b>COLOR_BGRA2RGBA</b> = 5, 
+<b>COLOR_RGBA2BGRA</b> = COLOR_BGRA2RGBA, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a227692b0c382bf5a7fd40f01ce6a1758">cv::COLOR_BGR2GRAY</a> = 6, 
+<b>COLOR_RGB2GRAY</b> = 7, 
+<b>COLOR_GRAY2BGR</b> = 8, 
+<b>COLOR_GRAY2RGB</b> = COLOR_GRAY2BGR, 
+<br />
+&#160;&#160;<b>COLOR_GRAY2BGRA</b> = 9, 
+<b>COLOR_GRAY2RGBA</b> = COLOR_GRAY2BGRA, 
+<b>COLOR_BGRA2GRAY</b> = 10, 
+<b>COLOR_RGBA2GRAY</b> = 11, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a5c587d0660084780b83ad27b0f56ac85">cv::COLOR_BGR2BGR565</a> = 12, 
+<b>COLOR_RGB2BGR565</b> = 13, 
+<b>COLOR_BGR5652BGR</b> = 14, 
+<b>COLOR_BGR5652RGB</b> = 15, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2BGR565</b> = 16, 
+<b>COLOR_RGBA2BGR565</b> = 17, 
+<b>COLOR_BGR5652BGRA</b> = 18, 
+<b>COLOR_BGR5652RGBA</b> = 19, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a90ffef38218e1480d60c3479a53c5680">cv::COLOR_GRAY2BGR565</a> = 20, 
+<b>COLOR_BGR5652GRAY</b> = 21, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a45bf096f1f6840a82dd98d0fc418512f">cv::COLOR_BGR2BGR555</a> = 22, 
+<b>COLOR_RGB2BGR555</b> = 23, 
+<br />
+&#160;&#160;<b>COLOR_BGR5552BGR</b> = 24, 
+<b>COLOR_BGR5552RGB</b> = 25, 
+<b>COLOR_BGRA2BGR555</b> = 26, 
+<b>COLOR_RGBA2BGR555</b> = 27, 
+<br />
+&#160;&#160;<b>COLOR_BGR5552BGRA</b> = 28, 
+<b>COLOR_BGR5552RGBA</b> = 29, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a573fd1d3ab76e85f41fa5e43b6c393a4">cv::COLOR_GRAY2BGR555</a> = 30, 
+<b>COLOR_BGR5552GRAY</b> = 31, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a54e0efb8ca0f4cf5067c4a09efabef9f">cv::COLOR_BGR2XYZ</a> = 32, 
+<b>COLOR_RGB2XYZ</b> = 33, 
+<b>COLOR_XYZ2BGR</b> = 34, 
+<b>COLOR_XYZ2RGB</b> = 35, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ab07f75a53538f9d6a81aae64550188ce">cv::COLOR_BGR2YCrCb</a> = 36, 
+<b>COLOR_RGB2YCrCb</b> = 37, 
+<b>COLOR_YCrCb2BGR</b> = 38, 
+<b>COLOR_YCrCb2RGB</b> = 39, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a8e8f59a8b152213e9ae59994013c22a9">cv::COLOR_BGR2HSV</a> = 40, 
+<b>COLOR_RGB2HSV</b> = 41, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a4fd046347536e547986a93710da29f2d">cv::COLOR_BGR2Lab</a> = 44, 
+<b>COLOR_RGB2Lab</b> = 45, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0adcb601b5bdb42ded57e74dbc2a90a282">cv::COLOR_BGR2Luv</a> = 50, 
+<b>COLOR_RGB2Luv</b> = 51, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a67b3508e468db8b222563e9fffa0fa00">cv::COLOR_BGR2HLS</a> = 52, 
+<b>COLOR_RGB2HLS</b> = 53, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a9868b92ef87467e2e1941e084e90a8a2">cv::COLOR_HSV2BGR</a> = 54, 
+<b>COLOR_HSV2RGB</b> = 55, 
+<b>COLOR_Lab2BGR</b> = 56, 
+<b>COLOR_Lab2RGB</b> = 57, 
+<br />
+&#160;&#160;<b>COLOR_Luv2BGR</b> = 58, 
+<b>COLOR_Luv2RGB</b> = 59, 
+<b>COLOR_HLS2BGR</b> = 60, 
+<b>COLOR_HLS2RGB</b> = 61, 
+<br />
+&#160;&#160;<b>COLOR_BGR2HSV_FULL</b> = 66, 
+<b>COLOR_RGB2HSV_FULL</b> = 67, 
+<b>COLOR_BGR2HLS_FULL</b> = 68, 
+<b>COLOR_RGB2HLS_FULL</b> = 69, 
+<br />
+&#160;&#160;<b>COLOR_HSV2BGR_FULL</b> = 70, 
+<b>COLOR_HSV2RGB_FULL</b> = 71, 
+<b>COLOR_HLS2BGR_FULL</b> = 72, 
+<b>COLOR_HLS2RGB_FULL</b> = 73, 
+<br />
+&#160;&#160;<b>COLOR_LBGR2Lab</b> = 74, 
+<b>COLOR_LRGB2Lab</b> = 75, 
+<b>COLOR_LBGR2Luv</b> = 76, 
+<b>COLOR_LRGB2Luv</b> = 77, 
+<br />
+&#160;&#160;<b>COLOR_Lab2LBGR</b> = 78, 
+<b>COLOR_Lab2LRGB</b> = 79, 
+<b>COLOR_Luv2LBGR</b> = 80, 
+<b>COLOR_Luv2LRGB</b> = 81, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0afbb43921348312356f7b9fb351b92001">cv::COLOR_BGR2YUV</a> = 82, 
+<b>COLOR_RGB2YUV</b> = 83, 
+<b>COLOR_YUV2BGR</b> = 84, 
+<b>COLOR_YUV2RGB</b> = 85, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0abe3655f90615347c18550ef37f076f52">cv::COLOR_YUV2RGB_NV12</a> = 90, 
+<b>COLOR_YUV2BGR_NV12</b> = 91, 
+<b>COLOR_YUV2RGB_NV21</b> = 92, 
+<b>COLOR_YUV2BGR_NV21</b> = 93, 
+<br />
+&#160;&#160;<b>COLOR_YUV420sp2RGB</b> = COLOR_YUV2RGB_NV21, 
+<b>COLOR_YUV420sp2BGR</b> = COLOR_YUV2BGR_NV21, 
+<b>COLOR_YUV2RGBA_NV12</b> = 94, 
+<b>COLOR_YUV2BGRA_NV12</b> = 95, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_NV21</b> = 96, 
+<b>COLOR_YUV2BGRA_NV21</b> = 97, 
+<b>COLOR_YUV420sp2RGBA</b> = COLOR_YUV2RGBA_NV21, 
+<b>COLOR_YUV420sp2BGRA</b> = COLOR_YUV2BGRA_NV21, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YV12</b> = 98, 
+<b>COLOR_YUV2BGR_YV12</b> = 99, 
+<b>COLOR_YUV2RGB_IYUV</b> = 100, 
+<b>COLOR_YUV2BGR_IYUV</b> = 101, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_I420</b> = COLOR_YUV2RGB_IYUV, 
+<b>COLOR_YUV2BGR_I420</b> = COLOR_YUV2BGR_IYUV, 
+<b>COLOR_YUV420p2RGB</b> = COLOR_YUV2RGB_YV12, 
+<b>COLOR_YUV420p2BGR</b> = COLOR_YUV2BGR_YV12, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YV12</b> = 102, 
+<b>COLOR_YUV2BGRA_YV12</b> = 103, 
+<b>COLOR_YUV2RGBA_IYUV</b> = 104, 
+<b>COLOR_YUV2BGRA_IYUV</b> = 105, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_I420</b> = COLOR_YUV2RGBA_IYUV, 
+<b>COLOR_YUV2BGRA_I420</b> = COLOR_YUV2BGRA_IYUV, 
+<b>COLOR_YUV420p2RGBA</b> = COLOR_YUV2RGBA_YV12, 
+<b>COLOR_YUV420p2BGRA</b> = COLOR_YUV2BGRA_YV12, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_420</b> = 106, 
+<b>COLOR_YUV2GRAY_NV21</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_NV12</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_YV12</b> = COLOR_YUV2GRAY_420, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_IYUV</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_I420</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV420sp2GRAY</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV420p2GRAY</b> = COLOR_YUV2GRAY_420, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a99e17f1193316a576737a89c0b64c0c7">cv::COLOR_YUV2RGB_UYVY</a> = 107, 
+<b>COLOR_YUV2BGR_UYVY</b> = 108, 
+<b>COLOR_YUV2RGB_Y422</b> = COLOR_YUV2RGB_UYVY, 
+<b>COLOR_YUV2BGR_Y422</b> = COLOR_YUV2BGR_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_UYNV</b> = COLOR_YUV2RGB_UYVY, 
+<b>COLOR_YUV2BGR_UYNV</b> = COLOR_YUV2BGR_UYVY, 
+<b>COLOR_YUV2RGBA_UYVY</b> = 111, 
+<b>COLOR_YUV2BGRA_UYVY</b> = 112, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_Y422</b> = COLOR_YUV2RGBA_UYVY, 
+<b>COLOR_YUV2BGRA_Y422</b> = COLOR_YUV2BGRA_UYVY, 
+<b>COLOR_YUV2RGBA_UYNV</b> = COLOR_YUV2RGBA_UYVY, 
+<b>COLOR_YUV2BGRA_UYNV</b> = COLOR_YUV2BGRA_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YUY2</b> = 115, 
+<b>COLOR_YUV2BGR_YUY2</b> = 116, 
+<b>COLOR_YUV2RGB_YVYU</b> = 117, 
+<b>COLOR_YUV2BGR_YVYU</b> = 118, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YUYV</b> = COLOR_YUV2RGB_YUY2, 
+<b>COLOR_YUV2BGR_YUYV</b> = COLOR_YUV2BGR_YUY2, 
+<b>COLOR_YUV2RGB_YUNV</b> = COLOR_YUV2RGB_YUY2, 
+<b>COLOR_YUV2BGR_YUNV</b> = COLOR_YUV2BGR_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YUY2</b> = 119, 
+<b>COLOR_YUV2BGRA_YUY2</b> = 120, 
+<b>COLOR_YUV2RGBA_YVYU</b> = 121, 
+<b>COLOR_YUV2BGRA_YVYU</b> = 122, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YUYV</b> = COLOR_YUV2RGBA_YUY2, 
+<b>COLOR_YUV2BGRA_YUYV</b> = COLOR_YUV2BGRA_YUY2, 
+<b>COLOR_YUV2RGBA_YUNV</b> = COLOR_YUV2RGBA_YUY2, 
+<b>COLOR_YUV2BGRA_YUNV</b> = COLOR_YUV2BGRA_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_UYVY</b> = 123, 
+<b>COLOR_YUV2GRAY_YUY2</b> = 124, 
+<b>COLOR_YUV2GRAY_Y422</b> = COLOR_YUV2GRAY_UYVY, 
+<b>COLOR_YUV2GRAY_UYNV</b> = COLOR_YUV2GRAY_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_YVYU</b> = COLOR_YUV2GRAY_YUY2, 
+<b>COLOR_YUV2GRAY_YUYV</b> = COLOR_YUV2GRAY_YUY2, 
+<b>COLOR_YUV2GRAY_YUNV</b> = COLOR_YUV2GRAY_YUY2, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a59515479a043a41534800836e08b31d4">cv::COLOR_RGBA2mRGBA</a> = 125, 
+<br />
+&#160;&#160;<b>COLOR_mRGBA2RGBA</b> = 126, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ac17162b67ea6bf79ab7c18928a35bed9">cv::COLOR_RGB2YUV_I420</a> = 127, 
+<b>COLOR_BGR2YUV_I420</b> = 128, 
+<b>COLOR_RGB2YUV_IYUV</b> = COLOR_RGB2YUV_I420, 
+<br />
+&#160;&#160;<b>COLOR_BGR2YUV_IYUV</b> = COLOR_BGR2YUV_I420, 
+<b>COLOR_RGBA2YUV_I420</b> = 129, 
+<b>COLOR_BGRA2YUV_I420</b> = 130, 
+<b>COLOR_RGBA2YUV_IYUV</b> = COLOR_RGBA2YUV_I420, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2YUV_IYUV</b> = COLOR_BGRA2YUV_I420, 
+<b>COLOR_RGB2YUV_YV12</b> = 131, 
+<b>COLOR_BGR2YUV_YV12</b> = 132, 
+<b>COLOR_RGBA2YUV_YV12</b> = 133, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2YUV_YV12</b> = 134, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0adf9808f6473823be2d3d5fc94f87ff83">cv::COLOR_BayerBG2BGR</a> = 46, 
+<b>COLOR_BayerGB2BGR</b> = 47, 
+<b>COLOR_BayerRG2BGR</b> = 48, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR</b> = 49, 
+<b>COLOR_BayerBG2RGB</b> = COLOR_BayerRG2BGR, 
+<b>COLOR_BayerGB2RGB</b> = COLOR_BayerGR2BGR, 
+<b>COLOR_BayerRG2RGB</b> = COLOR_BayerBG2BGR, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB</b> = COLOR_BayerGB2BGR, 
+<b>COLOR_BayerBG2GRAY</b> = 86, 
+<b>COLOR_BayerGB2GRAY</b> = 87, 
+<b>COLOR_BayerRG2GRAY</b> = 88, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2GRAY</b> = 89, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0abb93ab29f64149dcc6add03eb57aa422">cv::COLOR_BayerBG2BGR_VNG</a> = 62, 
+<b>COLOR_BayerGB2BGR_VNG</b> = 63, 
+<b>COLOR_BayerRG2BGR_VNG</b> = 64, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR_VNG</b> = 65, 
+<b>COLOR_BayerBG2RGB_VNG</b> = COLOR_BayerRG2BGR_VNG, 
+<b>COLOR_BayerGB2RGB_VNG</b> = COLOR_BayerGR2BGR_VNG, 
+<b>COLOR_BayerRG2RGB_VNG</b> = COLOR_BayerBG2BGR_VNG, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB_VNG</b> = COLOR_BayerGB2BGR_VNG, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a69250d4a0546e0516a3b4b8766f61280">cv::COLOR_BayerBG2BGR_EA</a> = 135, 
+<b>COLOR_BayerGB2BGR_EA</b> = 136, 
+<b>COLOR_BayerRG2BGR_EA</b> = 137, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR_EA</b> = 138, 
+<b>COLOR_BayerBG2RGB_EA</b> = COLOR_BayerRG2BGR_EA, 
+<b>COLOR_BayerGB2RGB_EA</b> = COLOR_BayerGR2BGR_EA, 
+<b>COLOR_BayerRG2RGB_EA</b> = COLOR_BayerBG2BGR_EA, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB_EA</b> = COLOR_BayerGB2BGR_EA, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a6cfe4f8ee50e6d033762c6a653592d39">cv::COLOR_BayerBG2BGRA</a> = 139, 
+<b>COLOR_BayerGB2BGRA</b> = 140, 
+<b>COLOR_BayerRG2BGRA</b> = 141, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGRA</b> = 142, 
+<b>COLOR_BayerBG2RGBA</b> = COLOR_BayerRG2BGRA, 
+<b>COLOR_BayerGB2RGBA</b> = COLOR_BayerGR2BGRA, 
+<b>COLOR_BayerRG2RGBA</b> = COLOR_BayerBG2BGRA, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGBA</b> = COLOR_BayerGB2BGRA, 
 <b>COLOR_COLORCVT_MAX</b> = 143
 <br />
  }</td></tr>
@@ -4202,6 +4974,1555 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>COLOR_BayerGB2RGBA</b> = COLOR_BayerGR2BGRA, 
 <b>COLOR_BayerRG2RGBA</b> = COLOR_BayerBG2BGRA, 
 <b>COLOR_BayerGR2RGBA</b> = COLOR_BayerGB2BGRA, 
+<b>COLOR_COLORCVT_MAX</b> = 143, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7">cv::COLOR_BGR2BGRA</a> = 0, 
+<b>COLOR_RGB2RGBA</b> = COLOR_BGR2BGRA, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372">cv::COLOR_BGRA2BGR</a> = 1, 
+<b>COLOR_RGBA2RGB</b> = COLOR_BGRA2BGR, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a6ebb99459745f21e76daf63e7cbf4e4e">cv::COLOR_BGR2RGBA</a> = 2, 
+<b>COLOR_RGB2BGRA</b> = COLOR_BGR2RGBA, 
+<b>COLOR_RGBA2BGR</b> = 3, 
+<b>COLOR_BGRA2RGB</b> = COLOR_RGBA2BGR, 
+<br />
+&#160;&#160;<b>COLOR_BGR2RGB</b> = 4, 
+<b>COLOR_RGB2BGR</b> = COLOR_BGR2RGB, 
+<b>COLOR_BGRA2RGBA</b> = 5, 
+<b>COLOR_RGBA2BGRA</b> = COLOR_BGRA2RGBA, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a227692b0c382bf5a7fd40f01ce6a1758">cv::COLOR_BGR2GRAY</a> = 6, 
+<b>COLOR_RGB2GRAY</b> = 7, 
+<b>COLOR_GRAY2BGR</b> = 8, 
+<b>COLOR_GRAY2RGB</b> = COLOR_GRAY2BGR, 
+<br />
+&#160;&#160;<b>COLOR_GRAY2BGRA</b> = 9, 
+<b>COLOR_GRAY2RGBA</b> = COLOR_GRAY2BGRA, 
+<b>COLOR_BGRA2GRAY</b> = 10, 
+<b>COLOR_RGBA2GRAY</b> = 11, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a5c587d0660084780b83ad27b0f56ac85">cv::COLOR_BGR2BGR565</a> = 12, 
+<b>COLOR_RGB2BGR565</b> = 13, 
+<b>COLOR_BGR5652BGR</b> = 14, 
+<b>COLOR_BGR5652RGB</b> = 15, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2BGR565</b> = 16, 
+<b>COLOR_RGBA2BGR565</b> = 17, 
+<b>COLOR_BGR5652BGRA</b> = 18, 
+<b>COLOR_BGR5652RGBA</b> = 19, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a90ffef38218e1480d60c3479a53c5680">cv::COLOR_GRAY2BGR565</a> = 20, 
+<b>COLOR_BGR5652GRAY</b> = 21, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a45bf096f1f6840a82dd98d0fc418512f">cv::COLOR_BGR2BGR555</a> = 22, 
+<b>COLOR_RGB2BGR555</b> = 23, 
+<br />
+&#160;&#160;<b>COLOR_BGR5552BGR</b> = 24, 
+<b>COLOR_BGR5552RGB</b> = 25, 
+<b>COLOR_BGRA2BGR555</b> = 26, 
+<b>COLOR_RGBA2BGR555</b> = 27, 
+<br />
+&#160;&#160;<b>COLOR_BGR5552BGRA</b> = 28, 
+<b>COLOR_BGR5552RGBA</b> = 29, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a573fd1d3ab76e85f41fa5e43b6c393a4">cv::COLOR_GRAY2BGR555</a> = 30, 
+<b>COLOR_BGR5552GRAY</b> = 31, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a54e0efb8ca0f4cf5067c4a09efabef9f">cv::COLOR_BGR2XYZ</a> = 32, 
+<b>COLOR_RGB2XYZ</b> = 33, 
+<b>COLOR_XYZ2BGR</b> = 34, 
+<b>COLOR_XYZ2RGB</b> = 35, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ab07f75a53538f9d6a81aae64550188ce">cv::COLOR_BGR2YCrCb</a> = 36, 
+<b>COLOR_RGB2YCrCb</b> = 37, 
+<b>COLOR_YCrCb2BGR</b> = 38, 
+<b>COLOR_YCrCb2RGB</b> = 39, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a8e8f59a8b152213e9ae59994013c22a9">cv::COLOR_BGR2HSV</a> = 40, 
+<b>COLOR_RGB2HSV</b> = 41, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a4fd046347536e547986a93710da29f2d">cv::COLOR_BGR2Lab</a> = 44, 
+<b>COLOR_RGB2Lab</b> = 45, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0adcb601b5bdb42ded57e74dbc2a90a282">cv::COLOR_BGR2Luv</a> = 50, 
+<b>COLOR_RGB2Luv</b> = 51, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a67b3508e468db8b222563e9fffa0fa00">cv::COLOR_BGR2HLS</a> = 52, 
+<b>COLOR_RGB2HLS</b> = 53, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a9868b92ef87467e2e1941e084e90a8a2">cv::COLOR_HSV2BGR</a> = 54, 
+<b>COLOR_HSV2RGB</b> = 55, 
+<b>COLOR_Lab2BGR</b> = 56, 
+<b>COLOR_Lab2RGB</b> = 57, 
+<br />
+&#160;&#160;<b>COLOR_Luv2BGR</b> = 58, 
+<b>COLOR_Luv2RGB</b> = 59, 
+<b>COLOR_HLS2BGR</b> = 60, 
+<b>COLOR_HLS2RGB</b> = 61, 
+<br />
+&#160;&#160;<b>COLOR_BGR2HSV_FULL</b> = 66, 
+<b>COLOR_RGB2HSV_FULL</b> = 67, 
+<b>COLOR_BGR2HLS_FULL</b> = 68, 
+<b>COLOR_RGB2HLS_FULL</b> = 69, 
+<br />
+&#160;&#160;<b>COLOR_HSV2BGR_FULL</b> = 70, 
+<b>COLOR_HSV2RGB_FULL</b> = 71, 
+<b>COLOR_HLS2BGR_FULL</b> = 72, 
+<b>COLOR_HLS2RGB_FULL</b> = 73, 
+<br />
+&#160;&#160;<b>COLOR_LBGR2Lab</b> = 74, 
+<b>COLOR_LRGB2Lab</b> = 75, 
+<b>COLOR_LBGR2Luv</b> = 76, 
+<b>COLOR_LRGB2Luv</b> = 77, 
+<br />
+&#160;&#160;<b>COLOR_Lab2LBGR</b> = 78, 
+<b>COLOR_Lab2LRGB</b> = 79, 
+<b>COLOR_Luv2LBGR</b> = 80, 
+<b>COLOR_Luv2LRGB</b> = 81, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0afbb43921348312356f7b9fb351b92001">cv::COLOR_BGR2YUV</a> = 82, 
+<b>COLOR_RGB2YUV</b> = 83, 
+<b>COLOR_YUV2BGR</b> = 84, 
+<b>COLOR_YUV2RGB</b> = 85, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0abe3655f90615347c18550ef37f076f52">cv::COLOR_YUV2RGB_NV12</a> = 90, 
+<b>COLOR_YUV2BGR_NV12</b> = 91, 
+<b>COLOR_YUV2RGB_NV21</b> = 92, 
+<b>COLOR_YUV2BGR_NV21</b> = 93, 
+<br />
+&#160;&#160;<b>COLOR_YUV420sp2RGB</b> = COLOR_YUV2RGB_NV21, 
+<b>COLOR_YUV420sp2BGR</b> = COLOR_YUV2BGR_NV21, 
+<b>COLOR_YUV2RGBA_NV12</b> = 94, 
+<b>COLOR_YUV2BGRA_NV12</b> = 95, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_NV21</b> = 96, 
+<b>COLOR_YUV2BGRA_NV21</b> = 97, 
+<b>COLOR_YUV420sp2RGBA</b> = COLOR_YUV2RGBA_NV21, 
+<b>COLOR_YUV420sp2BGRA</b> = COLOR_YUV2BGRA_NV21, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YV12</b> = 98, 
+<b>COLOR_YUV2BGR_YV12</b> = 99, 
+<b>COLOR_YUV2RGB_IYUV</b> = 100, 
+<b>COLOR_YUV2BGR_IYUV</b> = 101, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_I420</b> = COLOR_YUV2RGB_IYUV, 
+<b>COLOR_YUV2BGR_I420</b> = COLOR_YUV2BGR_IYUV, 
+<b>COLOR_YUV420p2RGB</b> = COLOR_YUV2RGB_YV12, 
+<b>COLOR_YUV420p2BGR</b> = COLOR_YUV2BGR_YV12, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YV12</b> = 102, 
+<b>COLOR_YUV2BGRA_YV12</b> = 103, 
+<b>COLOR_YUV2RGBA_IYUV</b> = 104, 
+<b>COLOR_YUV2BGRA_IYUV</b> = 105, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_I420</b> = COLOR_YUV2RGBA_IYUV, 
+<b>COLOR_YUV2BGRA_I420</b> = COLOR_YUV2BGRA_IYUV, 
+<b>COLOR_YUV420p2RGBA</b> = COLOR_YUV2RGBA_YV12, 
+<b>COLOR_YUV420p2BGRA</b> = COLOR_YUV2BGRA_YV12, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_420</b> = 106, 
+<b>COLOR_YUV2GRAY_NV21</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_NV12</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_YV12</b> = COLOR_YUV2GRAY_420, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_IYUV</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_I420</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV420sp2GRAY</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV420p2GRAY</b> = COLOR_YUV2GRAY_420, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a99e17f1193316a576737a89c0b64c0c7">cv::COLOR_YUV2RGB_UYVY</a> = 107, 
+<b>COLOR_YUV2BGR_UYVY</b> = 108, 
+<b>COLOR_YUV2RGB_Y422</b> = COLOR_YUV2RGB_UYVY, 
+<b>COLOR_YUV2BGR_Y422</b> = COLOR_YUV2BGR_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_UYNV</b> = COLOR_YUV2RGB_UYVY, 
+<b>COLOR_YUV2BGR_UYNV</b> = COLOR_YUV2BGR_UYVY, 
+<b>COLOR_YUV2RGBA_UYVY</b> = 111, 
+<b>COLOR_YUV2BGRA_UYVY</b> = 112, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_Y422</b> = COLOR_YUV2RGBA_UYVY, 
+<b>COLOR_YUV2BGRA_Y422</b> = COLOR_YUV2BGRA_UYVY, 
+<b>COLOR_YUV2RGBA_UYNV</b> = COLOR_YUV2RGBA_UYVY, 
+<b>COLOR_YUV2BGRA_UYNV</b> = COLOR_YUV2BGRA_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YUY2</b> = 115, 
+<b>COLOR_YUV2BGR_YUY2</b> = 116, 
+<b>COLOR_YUV2RGB_YVYU</b> = 117, 
+<b>COLOR_YUV2BGR_YVYU</b> = 118, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YUYV</b> = COLOR_YUV2RGB_YUY2, 
+<b>COLOR_YUV2BGR_YUYV</b> = COLOR_YUV2BGR_YUY2, 
+<b>COLOR_YUV2RGB_YUNV</b> = COLOR_YUV2RGB_YUY2, 
+<b>COLOR_YUV2BGR_YUNV</b> = COLOR_YUV2BGR_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YUY2</b> = 119, 
+<b>COLOR_YUV2BGRA_YUY2</b> = 120, 
+<b>COLOR_YUV2RGBA_YVYU</b> = 121, 
+<b>COLOR_YUV2BGRA_YVYU</b> = 122, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YUYV</b> = COLOR_YUV2RGBA_YUY2, 
+<b>COLOR_YUV2BGRA_YUYV</b> = COLOR_YUV2BGRA_YUY2, 
+<b>COLOR_YUV2RGBA_YUNV</b> = COLOR_YUV2RGBA_YUY2, 
+<b>COLOR_YUV2BGRA_YUNV</b> = COLOR_YUV2BGRA_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_UYVY</b> = 123, 
+<b>COLOR_YUV2GRAY_YUY2</b> = 124, 
+<b>COLOR_YUV2GRAY_Y422</b> = COLOR_YUV2GRAY_UYVY, 
+<b>COLOR_YUV2GRAY_UYNV</b> = COLOR_YUV2GRAY_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_YVYU</b> = COLOR_YUV2GRAY_YUY2, 
+<b>COLOR_YUV2GRAY_YUYV</b> = COLOR_YUV2GRAY_YUY2, 
+<b>COLOR_YUV2GRAY_YUNV</b> = COLOR_YUV2GRAY_YUY2, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a59515479a043a41534800836e08b31d4">cv::COLOR_RGBA2mRGBA</a> = 125, 
+<br />
+&#160;&#160;<b>COLOR_mRGBA2RGBA</b> = 126, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ac17162b67ea6bf79ab7c18928a35bed9">cv::COLOR_RGB2YUV_I420</a> = 127, 
+<b>COLOR_BGR2YUV_I420</b> = 128, 
+<b>COLOR_RGB2YUV_IYUV</b> = COLOR_RGB2YUV_I420, 
+<br />
+&#160;&#160;<b>COLOR_BGR2YUV_IYUV</b> = COLOR_BGR2YUV_I420, 
+<b>COLOR_RGBA2YUV_I420</b> = 129, 
+<b>COLOR_BGRA2YUV_I420</b> = 130, 
+<b>COLOR_RGBA2YUV_IYUV</b> = COLOR_RGBA2YUV_I420, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2YUV_IYUV</b> = COLOR_BGRA2YUV_I420, 
+<b>COLOR_RGB2YUV_YV12</b> = 131, 
+<b>COLOR_BGR2YUV_YV12</b> = 132, 
+<b>COLOR_RGBA2YUV_YV12</b> = 133, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2YUV_YV12</b> = 134, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0adf9808f6473823be2d3d5fc94f87ff83">cv::COLOR_BayerBG2BGR</a> = 46, 
+<b>COLOR_BayerGB2BGR</b> = 47, 
+<b>COLOR_BayerRG2BGR</b> = 48, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR</b> = 49, 
+<b>COLOR_BayerBG2RGB</b> = COLOR_BayerRG2BGR, 
+<b>COLOR_BayerGB2RGB</b> = COLOR_BayerGR2BGR, 
+<b>COLOR_BayerRG2RGB</b> = COLOR_BayerBG2BGR, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB</b> = COLOR_BayerGB2BGR, 
+<b>COLOR_BayerBG2GRAY</b> = 86, 
+<b>COLOR_BayerGB2GRAY</b> = 87, 
+<b>COLOR_BayerRG2GRAY</b> = 88, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2GRAY</b> = 89, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0abb93ab29f64149dcc6add03eb57aa422">cv::COLOR_BayerBG2BGR_VNG</a> = 62, 
+<b>COLOR_BayerGB2BGR_VNG</b> = 63, 
+<b>COLOR_BayerRG2BGR_VNG</b> = 64, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR_VNG</b> = 65, 
+<b>COLOR_BayerBG2RGB_VNG</b> = COLOR_BayerRG2BGR_VNG, 
+<b>COLOR_BayerGB2RGB_VNG</b> = COLOR_BayerGR2BGR_VNG, 
+<b>COLOR_BayerRG2RGB_VNG</b> = COLOR_BayerBG2BGR_VNG, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB_VNG</b> = COLOR_BayerGB2BGR_VNG, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a69250d4a0546e0516a3b4b8766f61280">cv::COLOR_BayerBG2BGR_EA</a> = 135, 
+<b>COLOR_BayerGB2BGR_EA</b> = 136, 
+<b>COLOR_BayerRG2BGR_EA</b> = 137, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR_EA</b> = 138, 
+<b>COLOR_BayerBG2RGB_EA</b> = COLOR_BayerRG2BGR_EA, 
+<b>COLOR_BayerGB2RGB_EA</b> = COLOR_BayerGR2BGR_EA, 
+<b>COLOR_BayerRG2RGB_EA</b> = COLOR_BayerBG2BGR_EA, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB_EA</b> = COLOR_BayerGB2BGR_EA, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a6cfe4f8ee50e6d033762c6a653592d39">cv::COLOR_BayerBG2BGRA</a> = 139, 
+<b>COLOR_BayerGB2BGRA</b> = 140, 
+<b>COLOR_BayerRG2BGRA</b> = 141, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGRA</b> = 142, 
+<b>COLOR_BayerBG2RGBA</b> = COLOR_BayerRG2BGRA, 
+<b>COLOR_BayerGB2RGBA</b> = COLOR_BayerGR2BGRA, 
+<b>COLOR_BayerRG2RGBA</b> = COLOR_BayerBG2BGRA, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGBA</b> = COLOR_BayerGB2BGRA, 
+<b>COLOR_COLORCVT_MAX</b> = 143
+<br />
+ }</td></tr>
+<tr class="separator:ga4e0972be5de079fed4e3a10e24ef5ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e0972be5de079fed4e3a10e24ef5ef0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__color__conversions.html#ga4e0972be5de079fed4e3a10e24ef5ef0">cv::ColorConversionCodes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7">cv::COLOR_BGR2BGRA</a> = 0, 
+<b>COLOR_RGB2RGBA</b> = COLOR_BGR2BGRA, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372">cv::COLOR_BGRA2BGR</a> = 1, 
+<b>COLOR_RGBA2RGB</b> = COLOR_BGRA2BGR, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a6ebb99459745f21e76daf63e7cbf4e4e">cv::COLOR_BGR2RGBA</a> = 2, 
+<b>COLOR_RGB2BGRA</b> = COLOR_BGR2RGBA, 
+<b>COLOR_RGBA2BGR</b> = 3, 
+<b>COLOR_BGRA2RGB</b> = COLOR_RGBA2BGR, 
+<br />
+&#160;&#160;<b>COLOR_BGR2RGB</b> = 4, 
+<b>COLOR_RGB2BGR</b> = COLOR_BGR2RGB, 
+<b>COLOR_BGRA2RGBA</b> = 5, 
+<b>COLOR_RGBA2BGRA</b> = COLOR_BGRA2RGBA, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a227692b0c382bf5a7fd40f01ce6a1758">cv::COLOR_BGR2GRAY</a> = 6, 
+<b>COLOR_RGB2GRAY</b> = 7, 
+<b>COLOR_GRAY2BGR</b> = 8, 
+<b>COLOR_GRAY2RGB</b> = COLOR_GRAY2BGR, 
+<br />
+&#160;&#160;<b>COLOR_GRAY2BGRA</b> = 9, 
+<b>COLOR_GRAY2RGBA</b> = COLOR_GRAY2BGRA, 
+<b>COLOR_BGRA2GRAY</b> = 10, 
+<b>COLOR_RGBA2GRAY</b> = 11, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a5c587d0660084780b83ad27b0f56ac85">cv::COLOR_BGR2BGR565</a> = 12, 
+<b>COLOR_RGB2BGR565</b> = 13, 
+<b>COLOR_BGR5652BGR</b> = 14, 
+<b>COLOR_BGR5652RGB</b> = 15, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2BGR565</b> = 16, 
+<b>COLOR_RGBA2BGR565</b> = 17, 
+<b>COLOR_BGR5652BGRA</b> = 18, 
+<b>COLOR_BGR5652RGBA</b> = 19, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a90ffef38218e1480d60c3479a53c5680">cv::COLOR_GRAY2BGR565</a> = 20, 
+<b>COLOR_BGR5652GRAY</b> = 21, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a45bf096f1f6840a82dd98d0fc418512f">cv::COLOR_BGR2BGR555</a> = 22, 
+<b>COLOR_RGB2BGR555</b> = 23, 
+<br />
+&#160;&#160;<b>COLOR_BGR5552BGR</b> = 24, 
+<b>COLOR_BGR5552RGB</b> = 25, 
+<b>COLOR_BGRA2BGR555</b> = 26, 
+<b>COLOR_RGBA2BGR555</b> = 27, 
+<br />
+&#160;&#160;<b>COLOR_BGR5552BGRA</b> = 28, 
+<b>COLOR_BGR5552RGBA</b> = 29, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a573fd1d3ab76e85f41fa5e43b6c393a4">cv::COLOR_GRAY2BGR555</a> = 30, 
+<b>COLOR_BGR5552GRAY</b> = 31, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a54e0efb8ca0f4cf5067c4a09efabef9f">cv::COLOR_BGR2XYZ</a> = 32, 
+<b>COLOR_RGB2XYZ</b> = 33, 
+<b>COLOR_XYZ2BGR</b> = 34, 
+<b>COLOR_XYZ2RGB</b> = 35, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ab07f75a53538f9d6a81aae64550188ce">cv::COLOR_BGR2YCrCb</a> = 36, 
+<b>COLOR_RGB2YCrCb</b> = 37, 
+<b>COLOR_YCrCb2BGR</b> = 38, 
+<b>COLOR_YCrCb2RGB</b> = 39, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a8e8f59a8b152213e9ae59994013c22a9">cv::COLOR_BGR2HSV</a> = 40, 
+<b>COLOR_RGB2HSV</b> = 41, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a4fd046347536e547986a93710da29f2d">cv::COLOR_BGR2Lab</a> = 44, 
+<b>COLOR_RGB2Lab</b> = 45, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0adcb601b5bdb42ded57e74dbc2a90a282">cv::COLOR_BGR2Luv</a> = 50, 
+<b>COLOR_RGB2Luv</b> = 51, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a67b3508e468db8b222563e9fffa0fa00">cv::COLOR_BGR2HLS</a> = 52, 
+<b>COLOR_RGB2HLS</b> = 53, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a9868b92ef87467e2e1941e084e90a8a2">cv::COLOR_HSV2BGR</a> = 54, 
+<b>COLOR_HSV2RGB</b> = 55, 
+<b>COLOR_Lab2BGR</b> = 56, 
+<b>COLOR_Lab2RGB</b> = 57, 
+<br />
+&#160;&#160;<b>COLOR_Luv2BGR</b> = 58, 
+<b>COLOR_Luv2RGB</b> = 59, 
+<b>COLOR_HLS2BGR</b> = 60, 
+<b>COLOR_HLS2RGB</b> = 61, 
+<br />
+&#160;&#160;<b>COLOR_BGR2HSV_FULL</b> = 66, 
+<b>COLOR_RGB2HSV_FULL</b> = 67, 
+<b>COLOR_BGR2HLS_FULL</b> = 68, 
+<b>COLOR_RGB2HLS_FULL</b> = 69, 
+<br />
+&#160;&#160;<b>COLOR_HSV2BGR_FULL</b> = 70, 
+<b>COLOR_HSV2RGB_FULL</b> = 71, 
+<b>COLOR_HLS2BGR_FULL</b> = 72, 
+<b>COLOR_HLS2RGB_FULL</b> = 73, 
+<br />
+&#160;&#160;<b>COLOR_LBGR2Lab</b> = 74, 
+<b>COLOR_LRGB2Lab</b> = 75, 
+<b>COLOR_LBGR2Luv</b> = 76, 
+<b>COLOR_LRGB2Luv</b> = 77, 
+<br />
+&#160;&#160;<b>COLOR_Lab2LBGR</b> = 78, 
+<b>COLOR_Lab2LRGB</b> = 79, 
+<b>COLOR_Luv2LBGR</b> = 80, 
+<b>COLOR_Luv2LRGB</b> = 81, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0afbb43921348312356f7b9fb351b92001">cv::COLOR_BGR2YUV</a> = 82, 
+<b>COLOR_RGB2YUV</b> = 83, 
+<b>COLOR_YUV2BGR</b> = 84, 
+<b>COLOR_YUV2RGB</b> = 85, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0abe3655f90615347c18550ef37f076f52">cv::COLOR_YUV2RGB_NV12</a> = 90, 
+<b>COLOR_YUV2BGR_NV12</b> = 91, 
+<b>COLOR_YUV2RGB_NV21</b> = 92, 
+<b>COLOR_YUV2BGR_NV21</b> = 93, 
+<br />
+&#160;&#160;<b>COLOR_YUV420sp2RGB</b> = COLOR_YUV2RGB_NV21, 
+<b>COLOR_YUV420sp2BGR</b> = COLOR_YUV2BGR_NV21, 
+<b>COLOR_YUV2RGBA_NV12</b> = 94, 
+<b>COLOR_YUV2BGRA_NV12</b> = 95, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_NV21</b> = 96, 
+<b>COLOR_YUV2BGRA_NV21</b> = 97, 
+<b>COLOR_YUV420sp2RGBA</b> = COLOR_YUV2RGBA_NV21, 
+<b>COLOR_YUV420sp2BGRA</b> = COLOR_YUV2BGRA_NV21, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YV12</b> = 98, 
+<b>COLOR_YUV2BGR_YV12</b> = 99, 
+<b>COLOR_YUV2RGB_IYUV</b> = 100, 
+<b>COLOR_YUV2BGR_IYUV</b> = 101, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_I420</b> = COLOR_YUV2RGB_IYUV, 
+<b>COLOR_YUV2BGR_I420</b> = COLOR_YUV2BGR_IYUV, 
+<b>COLOR_YUV420p2RGB</b> = COLOR_YUV2RGB_YV12, 
+<b>COLOR_YUV420p2BGR</b> = COLOR_YUV2BGR_YV12, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YV12</b> = 102, 
+<b>COLOR_YUV2BGRA_YV12</b> = 103, 
+<b>COLOR_YUV2RGBA_IYUV</b> = 104, 
+<b>COLOR_YUV2BGRA_IYUV</b> = 105, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_I420</b> = COLOR_YUV2RGBA_IYUV, 
+<b>COLOR_YUV2BGRA_I420</b> = COLOR_YUV2BGRA_IYUV, 
+<b>COLOR_YUV420p2RGBA</b> = COLOR_YUV2RGBA_YV12, 
+<b>COLOR_YUV420p2BGRA</b> = COLOR_YUV2BGRA_YV12, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_420</b> = 106, 
+<b>COLOR_YUV2GRAY_NV21</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_NV12</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_YV12</b> = COLOR_YUV2GRAY_420, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_IYUV</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_I420</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV420sp2GRAY</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV420p2GRAY</b> = COLOR_YUV2GRAY_420, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a99e17f1193316a576737a89c0b64c0c7">cv::COLOR_YUV2RGB_UYVY</a> = 107, 
+<b>COLOR_YUV2BGR_UYVY</b> = 108, 
+<b>COLOR_YUV2RGB_Y422</b> = COLOR_YUV2RGB_UYVY, 
+<b>COLOR_YUV2BGR_Y422</b> = COLOR_YUV2BGR_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_UYNV</b> = COLOR_YUV2RGB_UYVY, 
+<b>COLOR_YUV2BGR_UYNV</b> = COLOR_YUV2BGR_UYVY, 
+<b>COLOR_YUV2RGBA_UYVY</b> = 111, 
+<b>COLOR_YUV2BGRA_UYVY</b> = 112, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_Y422</b> = COLOR_YUV2RGBA_UYVY, 
+<b>COLOR_YUV2BGRA_Y422</b> = COLOR_YUV2BGRA_UYVY, 
+<b>COLOR_YUV2RGBA_UYNV</b> = COLOR_YUV2RGBA_UYVY, 
+<b>COLOR_YUV2BGRA_UYNV</b> = COLOR_YUV2BGRA_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YUY2</b> = 115, 
+<b>COLOR_YUV2BGR_YUY2</b> = 116, 
+<b>COLOR_YUV2RGB_YVYU</b> = 117, 
+<b>COLOR_YUV2BGR_YVYU</b> = 118, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YUYV</b> = COLOR_YUV2RGB_YUY2, 
+<b>COLOR_YUV2BGR_YUYV</b> = COLOR_YUV2BGR_YUY2, 
+<b>COLOR_YUV2RGB_YUNV</b> = COLOR_YUV2RGB_YUY2, 
+<b>COLOR_YUV2BGR_YUNV</b> = COLOR_YUV2BGR_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YUY2</b> = 119, 
+<b>COLOR_YUV2BGRA_YUY2</b> = 120, 
+<b>COLOR_YUV2RGBA_YVYU</b> = 121, 
+<b>COLOR_YUV2BGRA_YVYU</b> = 122, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YUYV</b> = COLOR_YUV2RGBA_YUY2, 
+<b>COLOR_YUV2BGRA_YUYV</b> = COLOR_YUV2BGRA_YUY2, 
+<b>COLOR_YUV2RGBA_YUNV</b> = COLOR_YUV2RGBA_YUY2, 
+<b>COLOR_YUV2BGRA_YUNV</b> = COLOR_YUV2BGRA_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_UYVY</b> = 123, 
+<b>COLOR_YUV2GRAY_YUY2</b> = 124, 
+<b>COLOR_YUV2GRAY_Y422</b> = COLOR_YUV2GRAY_UYVY, 
+<b>COLOR_YUV2GRAY_UYNV</b> = COLOR_YUV2GRAY_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_YVYU</b> = COLOR_YUV2GRAY_YUY2, 
+<b>COLOR_YUV2GRAY_YUYV</b> = COLOR_YUV2GRAY_YUY2, 
+<b>COLOR_YUV2GRAY_YUNV</b> = COLOR_YUV2GRAY_YUY2, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a59515479a043a41534800836e08b31d4">cv::COLOR_RGBA2mRGBA</a> = 125, 
+<br />
+&#160;&#160;<b>COLOR_mRGBA2RGBA</b> = 126, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ac17162b67ea6bf79ab7c18928a35bed9">cv::COLOR_RGB2YUV_I420</a> = 127, 
+<b>COLOR_BGR2YUV_I420</b> = 128, 
+<b>COLOR_RGB2YUV_IYUV</b> = COLOR_RGB2YUV_I420, 
+<br />
+&#160;&#160;<b>COLOR_BGR2YUV_IYUV</b> = COLOR_BGR2YUV_I420, 
+<b>COLOR_RGBA2YUV_I420</b> = 129, 
+<b>COLOR_BGRA2YUV_I420</b> = 130, 
+<b>COLOR_RGBA2YUV_IYUV</b> = COLOR_RGBA2YUV_I420, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2YUV_IYUV</b> = COLOR_BGRA2YUV_I420, 
+<b>COLOR_RGB2YUV_YV12</b> = 131, 
+<b>COLOR_BGR2YUV_YV12</b> = 132, 
+<b>COLOR_RGBA2YUV_YV12</b> = 133, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2YUV_YV12</b> = 134, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0adf9808f6473823be2d3d5fc94f87ff83">cv::COLOR_BayerBG2BGR</a> = 46, 
+<b>COLOR_BayerGB2BGR</b> = 47, 
+<b>COLOR_BayerRG2BGR</b> = 48, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR</b> = 49, 
+<b>COLOR_BayerBG2RGB</b> = COLOR_BayerRG2BGR, 
+<b>COLOR_BayerGB2RGB</b> = COLOR_BayerGR2BGR, 
+<b>COLOR_BayerRG2RGB</b> = COLOR_BayerBG2BGR, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB</b> = COLOR_BayerGB2BGR, 
+<b>COLOR_BayerBG2GRAY</b> = 86, 
+<b>COLOR_BayerGB2GRAY</b> = 87, 
+<b>COLOR_BayerRG2GRAY</b> = 88, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2GRAY</b> = 89, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0abb93ab29f64149dcc6add03eb57aa422">cv::COLOR_BayerBG2BGR_VNG</a> = 62, 
+<b>COLOR_BayerGB2BGR_VNG</b> = 63, 
+<b>COLOR_BayerRG2BGR_VNG</b> = 64, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR_VNG</b> = 65, 
+<b>COLOR_BayerBG2RGB_VNG</b> = COLOR_BayerRG2BGR_VNG, 
+<b>COLOR_BayerGB2RGB_VNG</b> = COLOR_BayerGR2BGR_VNG, 
+<b>COLOR_BayerRG2RGB_VNG</b> = COLOR_BayerBG2BGR_VNG, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB_VNG</b> = COLOR_BayerGB2BGR_VNG, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a69250d4a0546e0516a3b4b8766f61280">cv::COLOR_BayerBG2BGR_EA</a> = 135, 
+<b>COLOR_BayerGB2BGR_EA</b> = 136, 
+<b>COLOR_BayerRG2BGR_EA</b> = 137, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR_EA</b> = 138, 
+<b>COLOR_BayerBG2RGB_EA</b> = COLOR_BayerRG2BGR_EA, 
+<b>COLOR_BayerGB2RGB_EA</b> = COLOR_BayerGR2BGR_EA, 
+<b>COLOR_BayerRG2RGB_EA</b> = COLOR_BayerBG2BGR_EA, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB_EA</b> = COLOR_BayerGB2BGR_EA, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a6cfe4f8ee50e6d033762c6a653592d39">cv::COLOR_BayerBG2BGRA</a> = 139, 
+<b>COLOR_BayerGB2BGRA</b> = 140, 
+<b>COLOR_BayerRG2BGRA</b> = 141, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGRA</b> = 142, 
+<b>COLOR_BayerBG2RGBA</b> = COLOR_BayerRG2BGRA, 
+<b>COLOR_BayerGB2RGBA</b> = COLOR_BayerGR2BGRA, 
+<b>COLOR_BayerRG2RGBA</b> = COLOR_BayerBG2BGRA, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGBA</b> = COLOR_BayerGB2BGRA, 
+<b>COLOR_COLORCVT_MAX</b> = 143, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7">cv::COLOR_BGR2BGRA</a> = 0, 
+<b>COLOR_RGB2RGBA</b> = COLOR_BGR2BGRA, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372">cv::COLOR_BGRA2BGR</a> = 1, 
+<b>COLOR_RGBA2RGB</b> = COLOR_BGRA2BGR, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a6ebb99459745f21e76daf63e7cbf4e4e">cv::COLOR_BGR2RGBA</a> = 2, 
+<b>COLOR_RGB2BGRA</b> = COLOR_BGR2RGBA, 
+<br />
+&#160;&#160;<b>COLOR_RGBA2BGR</b> = 3, 
+<b>COLOR_BGRA2RGB</b> = COLOR_RGBA2BGR, 
+<b>COLOR_BGR2RGB</b> = 4, 
+<b>COLOR_RGB2BGR</b> = COLOR_BGR2RGB, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2RGBA</b> = 5, 
+<b>COLOR_RGBA2BGRA</b> = COLOR_BGRA2RGBA, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a227692b0c382bf5a7fd40f01ce6a1758">cv::COLOR_BGR2GRAY</a> = 6, 
+<b>COLOR_RGB2GRAY</b> = 7, 
+<br />
+&#160;&#160;<b>COLOR_GRAY2BGR</b> = 8, 
+<b>COLOR_GRAY2RGB</b> = COLOR_GRAY2BGR, 
+<b>COLOR_GRAY2BGRA</b> = 9, 
+<b>COLOR_GRAY2RGBA</b> = COLOR_GRAY2BGRA, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2GRAY</b> = 10, 
+<b>COLOR_RGBA2GRAY</b> = 11, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a5c587d0660084780b83ad27b0f56ac85">cv::COLOR_BGR2BGR565</a> = 12, 
+<b>COLOR_RGB2BGR565</b> = 13, 
+<br />
+&#160;&#160;<b>COLOR_BGR5652BGR</b> = 14, 
+<b>COLOR_BGR5652RGB</b> = 15, 
+<b>COLOR_BGRA2BGR565</b> = 16, 
+<b>COLOR_RGBA2BGR565</b> = 17, 
+<br />
+&#160;&#160;<b>COLOR_BGR5652BGRA</b> = 18, 
+<b>COLOR_BGR5652RGBA</b> = 19, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a90ffef38218e1480d60c3479a53c5680">cv::COLOR_GRAY2BGR565</a> = 20, 
+<b>COLOR_BGR5652GRAY</b> = 21, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a45bf096f1f6840a82dd98d0fc418512f">cv::COLOR_BGR2BGR555</a> = 22, 
+<b>COLOR_RGB2BGR555</b> = 23, 
+<b>COLOR_BGR5552BGR</b> = 24, 
+<b>COLOR_BGR5552RGB</b> = 25, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2BGR555</b> = 26, 
+<b>COLOR_RGBA2BGR555</b> = 27, 
+<b>COLOR_BGR5552BGRA</b> = 28, 
+<b>COLOR_BGR5552RGBA</b> = 29, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a573fd1d3ab76e85f41fa5e43b6c393a4">cv::COLOR_GRAY2BGR555</a> = 30, 
+<b>COLOR_BGR5552GRAY</b> = 31, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a54e0efb8ca0f4cf5067c4a09efabef9f">cv::COLOR_BGR2XYZ</a> = 32, 
+<b>COLOR_RGB2XYZ</b> = 33, 
+<br />
+&#160;&#160;<b>COLOR_XYZ2BGR</b> = 34, 
+<b>COLOR_XYZ2RGB</b> = 35, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ab07f75a53538f9d6a81aae64550188ce">cv::COLOR_BGR2YCrCb</a> = 36, 
+<b>COLOR_RGB2YCrCb</b> = 37, 
+<br />
+&#160;&#160;<b>COLOR_YCrCb2BGR</b> = 38, 
+<b>COLOR_YCrCb2RGB</b> = 39, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a8e8f59a8b152213e9ae59994013c22a9">cv::COLOR_BGR2HSV</a> = 40, 
+<b>COLOR_RGB2HSV</b> = 41, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a4fd046347536e547986a93710da29f2d">cv::COLOR_BGR2Lab</a> = 44, 
+<b>COLOR_RGB2Lab</b> = 45, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0adcb601b5bdb42ded57e74dbc2a90a282">cv::COLOR_BGR2Luv</a> = 50, 
+<b>COLOR_RGB2Luv</b> = 51, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a67b3508e468db8b222563e9fffa0fa00">cv::COLOR_BGR2HLS</a> = 52, 
+<b>COLOR_RGB2HLS</b> = 53, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a9868b92ef87467e2e1941e084e90a8a2">cv::COLOR_HSV2BGR</a> = 54, 
+<b>COLOR_HSV2RGB</b> = 55, 
+<br />
+&#160;&#160;<b>COLOR_Lab2BGR</b> = 56, 
+<b>COLOR_Lab2RGB</b> = 57, 
+<b>COLOR_Luv2BGR</b> = 58, 
+<b>COLOR_Luv2RGB</b> = 59, 
+<br />
+&#160;&#160;<b>COLOR_HLS2BGR</b> = 60, 
+<b>COLOR_HLS2RGB</b> = 61, 
+<b>COLOR_BGR2HSV_FULL</b> = 66, 
+<b>COLOR_RGB2HSV_FULL</b> = 67, 
+<br />
+&#160;&#160;<b>COLOR_BGR2HLS_FULL</b> = 68, 
+<b>COLOR_RGB2HLS_FULL</b> = 69, 
+<b>COLOR_HSV2BGR_FULL</b> = 70, 
+<b>COLOR_HSV2RGB_FULL</b> = 71, 
+<br />
+&#160;&#160;<b>COLOR_HLS2BGR_FULL</b> = 72, 
+<b>COLOR_HLS2RGB_FULL</b> = 73, 
+<b>COLOR_LBGR2Lab</b> = 74, 
+<b>COLOR_LRGB2Lab</b> = 75, 
+<br />
+&#160;&#160;<b>COLOR_LBGR2Luv</b> = 76, 
+<b>COLOR_LRGB2Luv</b> = 77, 
+<b>COLOR_Lab2LBGR</b> = 78, 
+<b>COLOR_Lab2LRGB</b> = 79, 
+<br />
+&#160;&#160;<b>COLOR_Luv2LBGR</b> = 80, 
+<b>COLOR_Luv2LRGB</b> = 81, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0afbb43921348312356f7b9fb351b92001">cv::COLOR_BGR2YUV</a> = 82, 
+<b>COLOR_RGB2YUV</b> = 83, 
+<br />
+&#160;&#160;<b>COLOR_YUV2BGR</b> = 84, 
+<b>COLOR_YUV2RGB</b> = 85, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0abe3655f90615347c18550ef37f076f52">cv::COLOR_YUV2RGB_NV12</a> = 90, 
+<b>COLOR_YUV2BGR_NV12</b> = 91, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_NV21</b> = 92, 
+<b>COLOR_YUV2BGR_NV21</b> = 93, 
+<b>COLOR_YUV420sp2RGB</b> = COLOR_YUV2RGB_NV21, 
+<b>COLOR_YUV420sp2BGR</b> = COLOR_YUV2BGR_NV21, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_NV12</b> = 94, 
+<b>COLOR_YUV2BGRA_NV12</b> = 95, 
+<b>COLOR_YUV2RGBA_NV21</b> = 96, 
+<b>COLOR_YUV2BGRA_NV21</b> = 97, 
+<br />
+&#160;&#160;<b>COLOR_YUV420sp2RGBA</b> = COLOR_YUV2RGBA_NV21, 
+<b>COLOR_YUV420sp2BGRA</b> = COLOR_YUV2BGRA_NV21, 
+<b>COLOR_YUV2RGB_YV12</b> = 98, 
+<b>COLOR_YUV2BGR_YV12</b> = 99, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_IYUV</b> = 100, 
+<b>COLOR_YUV2BGR_IYUV</b> = 101, 
+<b>COLOR_YUV2RGB_I420</b> = COLOR_YUV2RGB_IYUV, 
+<b>COLOR_YUV2BGR_I420</b> = COLOR_YUV2BGR_IYUV, 
+<br />
+&#160;&#160;<b>COLOR_YUV420p2RGB</b> = COLOR_YUV2RGB_YV12, 
+<b>COLOR_YUV420p2BGR</b> = COLOR_YUV2BGR_YV12, 
+<b>COLOR_YUV2RGBA_YV12</b> = 102, 
+<b>COLOR_YUV2BGRA_YV12</b> = 103, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_IYUV</b> = 104, 
+<b>COLOR_YUV2BGRA_IYUV</b> = 105, 
+<b>COLOR_YUV2RGBA_I420</b> = COLOR_YUV2RGBA_IYUV, 
+<b>COLOR_YUV2BGRA_I420</b> = COLOR_YUV2BGRA_IYUV, 
+<br />
+&#160;&#160;<b>COLOR_YUV420p2RGBA</b> = COLOR_YUV2RGBA_YV12, 
+<b>COLOR_YUV420p2BGRA</b> = COLOR_YUV2BGRA_YV12, 
+<b>COLOR_YUV2GRAY_420</b> = 106, 
+<b>COLOR_YUV2GRAY_NV21</b> = COLOR_YUV2GRAY_420, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_NV12</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_YV12</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_IYUV</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_I420</b> = COLOR_YUV2GRAY_420, 
+<br />
+&#160;&#160;<b>COLOR_YUV420sp2GRAY</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV420p2GRAY</b> = COLOR_YUV2GRAY_420, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a99e17f1193316a576737a89c0b64c0c7">cv::COLOR_YUV2RGB_UYVY</a> = 107, 
+<b>COLOR_YUV2BGR_UYVY</b> = 108, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_Y422</b> = COLOR_YUV2RGB_UYVY, 
+<b>COLOR_YUV2BGR_Y422</b> = COLOR_YUV2BGR_UYVY, 
+<b>COLOR_YUV2RGB_UYNV</b> = COLOR_YUV2RGB_UYVY, 
+<b>COLOR_YUV2BGR_UYNV</b> = COLOR_YUV2BGR_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_UYVY</b> = 111, 
+<b>COLOR_YUV2BGRA_UYVY</b> = 112, 
+<b>COLOR_YUV2RGBA_Y422</b> = COLOR_YUV2RGBA_UYVY, 
+<b>COLOR_YUV2BGRA_Y422</b> = COLOR_YUV2BGRA_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_UYNV</b> = COLOR_YUV2RGBA_UYVY, 
+<b>COLOR_YUV2BGRA_UYNV</b> = COLOR_YUV2BGRA_UYVY, 
+<b>COLOR_YUV2RGB_YUY2</b> = 115, 
+<b>COLOR_YUV2BGR_YUY2</b> = 116, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YVYU</b> = 117, 
+<b>COLOR_YUV2BGR_YVYU</b> = 118, 
+<b>COLOR_YUV2RGB_YUYV</b> = COLOR_YUV2RGB_YUY2, 
+<b>COLOR_YUV2BGR_YUYV</b> = COLOR_YUV2BGR_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YUNV</b> = COLOR_YUV2RGB_YUY2, 
+<b>COLOR_YUV2BGR_YUNV</b> = COLOR_YUV2BGR_YUY2, 
+<b>COLOR_YUV2RGBA_YUY2</b> = 119, 
+<b>COLOR_YUV2BGRA_YUY2</b> = 120, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YVYU</b> = 121, 
+<b>COLOR_YUV2BGRA_YVYU</b> = 122, 
+<b>COLOR_YUV2RGBA_YUYV</b> = COLOR_YUV2RGBA_YUY2, 
+<b>COLOR_YUV2BGRA_YUYV</b> = COLOR_YUV2BGRA_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YUNV</b> = COLOR_YUV2RGBA_YUY2, 
+<b>COLOR_YUV2BGRA_YUNV</b> = COLOR_YUV2BGRA_YUY2, 
+<b>COLOR_YUV2GRAY_UYVY</b> = 123, 
+<b>COLOR_YUV2GRAY_YUY2</b> = 124, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_Y422</b> = COLOR_YUV2GRAY_UYVY, 
+<b>COLOR_YUV2GRAY_UYNV</b> = COLOR_YUV2GRAY_UYVY, 
+<b>COLOR_YUV2GRAY_YVYU</b> = COLOR_YUV2GRAY_YUY2, 
+<b>COLOR_YUV2GRAY_YUYV</b> = COLOR_YUV2GRAY_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_YUNV</b> = COLOR_YUV2GRAY_YUY2, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a59515479a043a41534800836e08b31d4">cv::COLOR_RGBA2mRGBA</a> = 125, 
+<b>COLOR_mRGBA2RGBA</b> = 126, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ac17162b67ea6bf79ab7c18928a35bed9">cv::COLOR_RGB2YUV_I420</a> = 127, 
+<br />
+&#160;&#160;<b>COLOR_BGR2YUV_I420</b> = 128, 
+<b>COLOR_RGB2YUV_IYUV</b> = COLOR_RGB2YUV_I420, 
+<b>COLOR_BGR2YUV_IYUV</b> = COLOR_BGR2YUV_I420, 
+<b>COLOR_RGBA2YUV_I420</b> = 129, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2YUV_I420</b> = 130, 
+<b>COLOR_RGBA2YUV_IYUV</b> = COLOR_RGBA2YUV_I420, 
+<b>COLOR_BGRA2YUV_IYUV</b> = COLOR_BGRA2YUV_I420, 
+<b>COLOR_RGB2YUV_YV12</b> = 131, 
+<br />
+&#160;&#160;<b>COLOR_BGR2YUV_YV12</b> = 132, 
+<b>COLOR_RGBA2YUV_YV12</b> = 133, 
+<b>COLOR_BGRA2YUV_YV12</b> = 134, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0adf9808f6473823be2d3d5fc94f87ff83">cv::COLOR_BayerBG2BGR</a> = 46, 
+<br />
+&#160;&#160;<b>COLOR_BayerGB2BGR</b> = 47, 
+<b>COLOR_BayerRG2BGR</b> = 48, 
+<b>COLOR_BayerGR2BGR</b> = 49, 
+<b>COLOR_BayerBG2RGB</b> = COLOR_BayerRG2BGR, 
+<br />
+&#160;&#160;<b>COLOR_BayerGB2RGB</b> = COLOR_BayerGR2BGR, 
+<b>COLOR_BayerRG2RGB</b> = COLOR_BayerBG2BGR, 
+<b>COLOR_BayerGR2RGB</b> = COLOR_BayerGB2BGR, 
+<b>COLOR_BayerBG2GRAY</b> = 86, 
+<br />
+&#160;&#160;<b>COLOR_BayerGB2GRAY</b> = 87, 
+<b>COLOR_BayerRG2GRAY</b> = 88, 
+<b>COLOR_BayerGR2GRAY</b> = 89, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0abb93ab29f64149dcc6add03eb57aa422">cv::COLOR_BayerBG2BGR_VNG</a> = 62, 
+<br />
+&#160;&#160;<b>COLOR_BayerGB2BGR_VNG</b> = 63, 
+<b>COLOR_BayerRG2BGR_VNG</b> = 64, 
+<b>COLOR_BayerGR2BGR_VNG</b> = 65, 
+<b>COLOR_BayerBG2RGB_VNG</b> = COLOR_BayerRG2BGR_VNG, 
+<br />
+&#160;&#160;<b>COLOR_BayerGB2RGB_VNG</b> = COLOR_BayerGR2BGR_VNG, 
+<b>COLOR_BayerRG2RGB_VNG</b> = COLOR_BayerBG2BGR_VNG, 
+<b>COLOR_BayerGR2RGB_VNG</b> = COLOR_BayerGB2BGR_VNG, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a69250d4a0546e0516a3b4b8766f61280">cv::COLOR_BayerBG2BGR_EA</a> = 135, 
+<br />
+&#160;&#160;<b>COLOR_BayerGB2BGR_EA</b> = 136, 
+<b>COLOR_BayerRG2BGR_EA</b> = 137, 
+<b>COLOR_BayerGR2BGR_EA</b> = 138, 
+<b>COLOR_BayerBG2RGB_EA</b> = COLOR_BayerRG2BGR_EA, 
+<br />
+&#160;&#160;<b>COLOR_BayerGB2RGB_EA</b> = COLOR_BayerGR2BGR_EA, 
+<b>COLOR_BayerRG2RGB_EA</b> = COLOR_BayerBG2BGR_EA, 
+<b>COLOR_BayerGR2RGB_EA</b> = COLOR_BayerGB2BGR_EA, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a6cfe4f8ee50e6d033762c6a653592d39">cv::COLOR_BayerBG2BGRA</a> = 139, 
+<br />
+&#160;&#160;<b>COLOR_BayerGB2BGRA</b> = 140, 
+<b>COLOR_BayerRG2BGRA</b> = 141, 
+<b>COLOR_BayerGR2BGRA</b> = 142, 
+<b>COLOR_BayerBG2RGBA</b> = COLOR_BayerRG2BGRA, 
+<br />
+&#160;&#160;<b>COLOR_BayerGB2RGBA</b> = COLOR_BayerGR2BGRA, 
+<b>COLOR_BayerRG2RGBA</b> = COLOR_BayerBG2BGRA, 
+<b>COLOR_BayerGR2RGBA</b> = COLOR_BayerGB2BGRA, 
+<b>COLOR_COLORCVT_MAX</b> = 143, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7">cv::COLOR_BGR2BGRA</a> = 0, 
+<b>COLOR_RGB2RGBA</b> = COLOR_BGR2BGRA, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372">cv::COLOR_BGRA2BGR</a> = 1, 
+<b>COLOR_RGBA2RGB</b> = COLOR_BGRA2BGR, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a6ebb99459745f21e76daf63e7cbf4e4e">cv::COLOR_BGR2RGBA</a> = 2, 
+<b>COLOR_RGB2BGRA</b> = COLOR_BGR2RGBA, 
+<b>COLOR_RGBA2BGR</b> = 3, 
+<b>COLOR_BGRA2RGB</b> = COLOR_RGBA2BGR, 
+<br />
+&#160;&#160;<b>COLOR_BGR2RGB</b> = 4, 
+<b>COLOR_RGB2BGR</b> = COLOR_BGR2RGB, 
+<b>COLOR_BGRA2RGBA</b> = 5, 
+<b>COLOR_RGBA2BGRA</b> = COLOR_BGRA2RGBA, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a227692b0c382bf5a7fd40f01ce6a1758">cv::COLOR_BGR2GRAY</a> = 6, 
+<b>COLOR_RGB2GRAY</b> = 7, 
+<b>COLOR_GRAY2BGR</b> = 8, 
+<b>COLOR_GRAY2RGB</b> = COLOR_GRAY2BGR, 
+<br />
+&#160;&#160;<b>COLOR_GRAY2BGRA</b> = 9, 
+<b>COLOR_GRAY2RGBA</b> = COLOR_GRAY2BGRA, 
+<b>COLOR_BGRA2GRAY</b> = 10, 
+<b>COLOR_RGBA2GRAY</b> = 11, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a5c587d0660084780b83ad27b0f56ac85">cv::COLOR_BGR2BGR565</a> = 12, 
+<b>COLOR_RGB2BGR565</b> = 13, 
+<b>COLOR_BGR5652BGR</b> = 14, 
+<b>COLOR_BGR5652RGB</b> = 15, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2BGR565</b> = 16, 
+<b>COLOR_RGBA2BGR565</b> = 17, 
+<b>COLOR_BGR5652BGRA</b> = 18, 
+<b>COLOR_BGR5652RGBA</b> = 19, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a90ffef38218e1480d60c3479a53c5680">cv::COLOR_GRAY2BGR565</a> = 20, 
+<b>COLOR_BGR5652GRAY</b> = 21, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a45bf096f1f6840a82dd98d0fc418512f">cv::COLOR_BGR2BGR555</a> = 22, 
+<b>COLOR_RGB2BGR555</b> = 23, 
+<br />
+&#160;&#160;<b>COLOR_BGR5552BGR</b> = 24, 
+<b>COLOR_BGR5552RGB</b> = 25, 
+<b>COLOR_BGRA2BGR555</b> = 26, 
+<b>COLOR_RGBA2BGR555</b> = 27, 
+<br />
+&#160;&#160;<b>COLOR_BGR5552BGRA</b> = 28, 
+<b>COLOR_BGR5552RGBA</b> = 29, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a573fd1d3ab76e85f41fa5e43b6c393a4">cv::COLOR_GRAY2BGR555</a> = 30, 
+<b>COLOR_BGR5552GRAY</b> = 31, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a54e0efb8ca0f4cf5067c4a09efabef9f">cv::COLOR_BGR2XYZ</a> = 32, 
+<b>COLOR_RGB2XYZ</b> = 33, 
+<b>COLOR_XYZ2BGR</b> = 34, 
+<b>COLOR_XYZ2RGB</b> = 35, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ab07f75a53538f9d6a81aae64550188ce">cv::COLOR_BGR2YCrCb</a> = 36, 
+<b>COLOR_RGB2YCrCb</b> = 37, 
+<b>COLOR_YCrCb2BGR</b> = 38, 
+<b>COLOR_YCrCb2RGB</b> = 39, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a8e8f59a8b152213e9ae59994013c22a9">cv::COLOR_BGR2HSV</a> = 40, 
+<b>COLOR_RGB2HSV</b> = 41, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a4fd046347536e547986a93710da29f2d">cv::COLOR_BGR2Lab</a> = 44, 
+<b>COLOR_RGB2Lab</b> = 45, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0adcb601b5bdb42ded57e74dbc2a90a282">cv::COLOR_BGR2Luv</a> = 50, 
+<b>COLOR_RGB2Luv</b> = 51, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a67b3508e468db8b222563e9fffa0fa00">cv::COLOR_BGR2HLS</a> = 52, 
+<b>COLOR_RGB2HLS</b> = 53, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a9868b92ef87467e2e1941e084e90a8a2">cv::COLOR_HSV2BGR</a> = 54, 
+<b>COLOR_HSV2RGB</b> = 55, 
+<b>COLOR_Lab2BGR</b> = 56, 
+<b>COLOR_Lab2RGB</b> = 57, 
+<br />
+&#160;&#160;<b>COLOR_Luv2BGR</b> = 58, 
+<b>COLOR_Luv2RGB</b> = 59, 
+<b>COLOR_HLS2BGR</b> = 60, 
+<b>COLOR_HLS2RGB</b> = 61, 
+<br />
+&#160;&#160;<b>COLOR_BGR2HSV_FULL</b> = 66, 
+<b>COLOR_RGB2HSV_FULL</b> = 67, 
+<b>COLOR_BGR2HLS_FULL</b> = 68, 
+<b>COLOR_RGB2HLS_FULL</b> = 69, 
+<br />
+&#160;&#160;<b>COLOR_HSV2BGR_FULL</b> = 70, 
+<b>COLOR_HSV2RGB_FULL</b> = 71, 
+<b>COLOR_HLS2BGR_FULL</b> = 72, 
+<b>COLOR_HLS2RGB_FULL</b> = 73, 
+<br />
+&#160;&#160;<b>COLOR_LBGR2Lab</b> = 74, 
+<b>COLOR_LRGB2Lab</b> = 75, 
+<b>COLOR_LBGR2Luv</b> = 76, 
+<b>COLOR_LRGB2Luv</b> = 77, 
+<br />
+&#160;&#160;<b>COLOR_Lab2LBGR</b> = 78, 
+<b>COLOR_Lab2LRGB</b> = 79, 
+<b>COLOR_Luv2LBGR</b> = 80, 
+<b>COLOR_Luv2LRGB</b> = 81, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0afbb43921348312356f7b9fb351b92001">cv::COLOR_BGR2YUV</a> = 82, 
+<b>COLOR_RGB2YUV</b> = 83, 
+<b>COLOR_YUV2BGR</b> = 84, 
+<b>COLOR_YUV2RGB</b> = 85, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0abe3655f90615347c18550ef37f076f52">cv::COLOR_YUV2RGB_NV12</a> = 90, 
+<b>COLOR_YUV2BGR_NV12</b> = 91, 
+<b>COLOR_YUV2RGB_NV21</b> = 92, 
+<b>COLOR_YUV2BGR_NV21</b> = 93, 
+<br />
+&#160;&#160;<b>COLOR_YUV420sp2RGB</b> = COLOR_YUV2RGB_NV21, 
+<b>COLOR_YUV420sp2BGR</b> = COLOR_YUV2BGR_NV21, 
+<b>COLOR_YUV2RGBA_NV12</b> = 94, 
+<b>COLOR_YUV2BGRA_NV12</b> = 95, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_NV21</b> = 96, 
+<b>COLOR_YUV2BGRA_NV21</b> = 97, 
+<b>COLOR_YUV420sp2RGBA</b> = COLOR_YUV2RGBA_NV21, 
+<b>COLOR_YUV420sp2BGRA</b> = COLOR_YUV2BGRA_NV21, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YV12</b> = 98, 
+<b>COLOR_YUV2BGR_YV12</b> = 99, 
+<b>COLOR_YUV2RGB_IYUV</b> = 100, 
+<b>COLOR_YUV2BGR_IYUV</b> = 101, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_I420</b> = COLOR_YUV2RGB_IYUV, 
+<b>COLOR_YUV2BGR_I420</b> = COLOR_YUV2BGR_IYUV, 
+<b>COLOR_YUV420p2RGB</b> = COLOR_YUV2RGB_YV12, 
+<b>COLOR_YUV420p2BGR</b> = COLOR_YUV2BGR_YV12, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YV12</b> = 102, 
+<b>COLOR_YUV2BGRA_YV12</b> = 103, 
+<b>COLOR_YUV2RGBA_IYUV</b> = 104, 
+<b>COLOR_YUV2BGRA_IYUV</b> = 105, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_I420</b> = COLOR_YUV2RGBA_IYUV, 
+<b>COLOR_YUV2BGRA_I420</b> = COLOR_YUV2BGRA_IYUV, 
+<b>COLOR_YUV420p2RGBA</b> = COLOR_YUV2RGBA_YV12, 
+<b>COLOR_YUV420p2BGRA</b> = COLOR_YUV2BGRA_YV12, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_420</b> = 106, 
+<b>COLOR_YUV2GRAY_NV21</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_NV12</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_YV12</b> = COLOR_YUV2GRAY_420, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_IYUV</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_I420</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV420sp2GRAY</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV420p2GRAY</b> = COLOR_YUV2GRAY_420, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a99e17f1193316a576737a89c0b64c0c7">cv::COLOR_YUV2RGB_UYVY</a> = 107, 
+<b>COLOR_YUV2BGR_UYVY</b> = 108, 
+<b>COLOR_YUV2RGB_Y422</b> = COLOR_YUV2RGB_UYVY, 
+<b>COLOR_YUV2BGR_Y422</b> = COLOR_YUV2BGR_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_UYNV</b> = COLOR_YUV2RGB_UYVY, 
+<b>COLOR_YUV2BGR_UYNV</b> = COLOR_YUV2BGR_UYVY, 
+<b>COLOR_YUV2RGBA_UYVY</b> = 111, 
+<b>COLOR_YUV2BGRA_UYVY</b> = 112, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_Y422</b> = COLOR_YUV2RGBA_UYVY, 
+<b>COLOR_YUV2BGRA_Y422</b> = COLOR_YUV2BGRA_UYVY, 
+<b>COLOR_YUV2RGBA_UYNV</b> = COLOR_YUV2RGBA_UYVY, 
+<b>COLOR_YUV2BGRA_UYNV</b> = COLOR_YUV2BGRA_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YUY2</b> = 115, 
+<b>COLOR_YUV2BGR_YUY2</b> = 116, 
+<b>COLOR_YUV2RGB_YVYU</b> = 117, 
+<b>COLOR_YUV2BGR_YVYU</b> = 118, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YUYV</b> = COLOR_YUV2RGB_YUY2, 
+<b>COLOR_YUV2BGR_YUYV</b> = COLOR_YUV2BGR_YUY2, 
+<b>COLOR_YUV2RGB_YUNV</b> = COLOR_YUV2RGB_YUY2, 
+<b>COLOR_YUV2BGR_YUNV</b> = COLOR_YUV2BGR_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YUY2</b> = 119, 
+<b>COLOR_YUV2BGRA_YUY2</b> = 120, 
+<b>COLOR_YUV2RGBA_YVYU</b> = 121, 
+<b>COLOR_YUV2BGRA_YVYU</b> = 122, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YUYV</b> = COLOR_YUV2RGBA_YUY2, 
+<b>COLOR_YUV2BGRA_YUYV</b> = COLOR_YUV2BGRA_YUY2, 
+<b>COLOR_YUV2RGBA_YUNV</b> = COLOR_YUV2RGBA_YUY2, 
+<b>COLOR_YUV2BGRA_YUNV</b> = COLOR_YUV2BGRA_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_UYVY</b> = 123, 
+<b>COLOR_YUV2GRAY_YUY2</b> = 124, 
+<b>COLOR_YUV2GRAY_Y422</b> = COLOR_YUV2GRAY_UYVY, 
+<b>COLOR_YUV2GRAY_UYNV</b> = COLOR_YUV2GRAY_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_YVYU</b> = COLOR_YUV2GRAY_YUY2, 
+<b>COLOR_YUV2GRAY_YUYV</b> = COLOR_YUV2GRAY_YUY2, 
+<b>COLOR_YUV2GRAY_YUNV</b> = COLOR_YUV2GRAY_YUY2, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a59515479a043a41534800836e08b31d4">cv::COLOR_RGBA2mRGBA</a> = 125, 
+<br />
+&#160;&#160;<b>COLOR_mRGBA2RGBA</b> = 126, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ac17162b67ea6bf79ab7c18928a35bed9">cv::COLOR_RGB2YUV_I420</a> = 127, 
+<b>COLOR_BGR2YUV_I420</b> = 128, 
+<b>COLOR_RGB2YUV_IYUV</b> = COLOR_RGB2YUV_I420, 
+<br />
+&#160;&#160;<b>COLOR_BGR2YUV_IYUV</b> = COLOR_BGR2YUV_I420, 
+<b>COLOR_RGBA2YUV_I420</b> = 129, 
+<b>COLOR_BGRA2YUV_I420</b> = 130, 
+<b>COLOR_RGBA2YUV_IYUV</b> = COLOR_RGBA2YUV_I420, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2YUV_IYUV</b> = COLOR_BGRA2YUV_I420, 
+<b>COLOR_RGB2YUV_YV12</b> = 131, 
+<b>COLOR_BGR2YUV_YV12</b> = 132, 
+<b>COLOR_RGBA2YUV_YV12</b> = 133, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2YUV_YV12</b> = 134, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0adf9808f6473823be2d3d5fc94f87ff83">cv::COLOR_BayerBG2BGR</a> = 46, 
+<b>COLOR_BayerGB2BGR</b> = 47, 
+<b>COLOR_BayerRG2BGR</b> = 48, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR</b> = 49, 
+<b>COLOR_BayerBG2RGB</b> = COLOR_BayerRG2BGR, 
+<b>COLOR_BayerGB2RGB</b> = COLOR_BayerGR2BGR, 
+<b>COLOR_BayerRG2RGB</b> = COLOR_BayerBG2BGR, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB</b> = COLOR_BayerGB2BGR, 
+<b>COLOR_BayerBG2GRAY</b> = 86, 
+<b>COLOR_BayerGB2GRAY</b> = 87, 
+<b>COLOR_BayerRG2GRAY</b> = 88, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2GRAY</b> = 89, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0abb93ab29f64149dcc6add03eb57aa422">cv::COLOR_BayerBG2BGR_VNG</a> = 62, 
+<b>COLOR_BayerGB2BGR_VNG</b> = 63, 
+<b>COLOR_BayerRG2BGR_VNG</b> = 64, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR_VNG</b> = 65, 
+<b>COLOR_BayerBG2RGB_VNG</b> = COLOR_BayerRG2BGR_VNG, 
+<b>COLOR_BayerGB2RGB_VNG</b> = COLOR_BayerGR2BGR_VNG, 
+<b>COLOR_BayerRG2RGB_VNG</b> = COLOR_BayerBG2BGR_VNG, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB_VNG</b> = COLOR_BayerGB2BGR_VNG, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a69250d4a0546e0516a3b4b8766f61280">cv::COLOR_BayerBG2BGR_EA</a> = 135, 
+<b>COLOR_BayerGB2BGR_EA</b> = 136, 
+<b>COLOR_BayerRG2BGR_EA</b> = 137, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR_EA</b> = 138, 
+<b>COLOR_BayerBG2RGB_EA</b> = COLOR_BayerRG2BGR_EA, 
+<b>COLOR_BayerGB2RGB_EA</b> = COLOR_BayerGR2BGR_EA, 
+<b>COLOR_BayerRG2RGB_EA</b> = COLOR_BayerBG2BGR_EA, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB_EA</b> = COLOR_BayerGB2BGR_EA, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a6cfe4f8ee50e6d033762c6a653592d39">cv::COLOR_BayerBG2BGRA</a> = 139, 
+<b>COLOR_BayerGB2BGRA</b> = 140, 
+<b>COLOR_BayerRG2BGRA</b> = 141, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGRA</b> = 142, 
+<b>COLOR_BayerBG2RGBA</b> = COLOR_BayerRG2BGRA, 
+<b>COLOR_BayerGB2RGBA</b> = COLOR_BayerGR2BGRA, 
+<b>COLOR_BayerRG2RGBA</b> = COLOR_BayerBG2BGRA, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGBA</b> = COLOR_BayerGB2BGRA, 
+<b>COLOR_COLORCVT_MAX</b> = 143, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7">cv::COLOR_BGR2BGRA</a> = 0, 
+<b>COLOR_RGB2RGBA</b> = COLOR_BGR2BGRA, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372">cv::COLOR_BGRA2BGR</a> = 1, 
+<b>COLOR_RGBA2RGB</b> = COLOR_BGRA2BGR, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a6ebb99459745f21e76daf63e7cbf4e4e">cv::COLOR_BGR2RGBA</a> = 2, 
+<b>COLOR_RGB2BGRA</b> = COLOR_BGR2RGBA, 
+<br />
+&#160;&#160;<b>COLOR_RGBA2BGR</b> = 3, 
+<b>COLOR_BGRA2RGB</b> = COLOR_RGBA2BGR, 
+<b>COLOR_BGR2RGB</b> = 4, 
+<b>COLOR_RGB2BGR</b> = COLOR_BGR2RGB, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2RGBA</b> = 5, 
+<b>COLOR_RGBA2BGRA</b> = COLOR_BGRA2RGBA, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a227692b0c382bf5a7fd40f01ce6a1758">cv::COLOR_BGR2GRAY</a> = 6, 
+<b>COLOR_RGB2GRAY</b> = 7, 
+<br />
+&#160;&#160;<b>COLOR_GRAY2BGR</b> = 8, 
+<b>COLOR_GRAY2RGB</b> = COLOR_GRAY2BGR, 
+<b>COLOR_GRAY2BGRA</b> = 9, 
+<b>COLOR_GRAY2RGBA</b> = COLOR_GRAY2BGRA, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2GRAY</b> = 10, 
+<b>COLOR_RGBA2GRAY</b> = 11, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a5c587d0660084780b83ad27b0f56ac85">cv::COLOR_BGR2BGR565</a> = 12, 
+<b>COLOR_RGB2BGR565</b> = 13, 
+<br />
+&#160;&#160;<b>COLOR_BGR5652BGR</b> = 14, 
+<b>COLOR_BGR5652RGB</b> = 15, 
+<b>COLOR_BGRA2BGR565</b> = 16, 
+<b>COLOR_RGBA2BGR565</b> = 17, 
+<br />
+&#160;&#160;<b>COLOR_BGR5652BGRA</b> = 18, 
+<b>COLOR_BGR5652RGBA</b> = 19, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a90ffef38218e1480d60c3479a53c5680">cv::COLOR_GRAY2BGR565</a> = 20, 
+<b>COLOR_BGR5652GRAY</b> = 21, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a45bf096f1f6840a82dd98d0fc418512f">cv::COLOR_BGR2BGR555</a> = 22, 
+<b>COLOR_RGB2BGR555</b> = 23, 
+<b>COLOR_BGR5552BGR</b> = 24, 
+<b>COLOR_BGR5552RGB</b> = 25, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2BGR555</b> = 26, 
+<b>COLOR_RGBA2BGR555</b> = 27, 
+<b>COLOR_BGR5552BGRA</b> = 28, 
+<b>COLOR_BGR5552RGBA</b> = 29, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a573fd1d3ab76e85f41fa5e43b6c393a4">cv::COLOR_GRAY2BGR555</a> = 30, 
+<b>COLOR_BGR5552GRAY</b> = 31, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a54e0efb8ca0f4cf5067c4a09efabef9f">cv::COLOR_BGR2XYZ</a> = 32, 
+<b>COLOR_RGB2XYZ</b> = 33, 
+<br />
+&#160;&#160;<b>COLOR_XYZ2BGR</b> = 34, 
+<b>COLOR_XYZ2RGB</b> = 35, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ab07f75a53538f9d6a81aae64550188ce">cv::COLOR_BGR2YCrCb</a> = 36, 
+<b>COLOR_RGB2YCrCb</b> = 37, 
+<br />
+&#160;&#160;<b>COLOR_YCrCb2BGR</b> = 38, 
+<b>COLOR_YCrCb2RGB</b> = 39, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a8e8f59a8b152213e9ae59994013c22a9">cv::COLOR_BGR2HSV</a> = 40, 
+<b>COLOR_RGB2HSV</b> = 41, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a4fd046347536e547986a93710da29f2d">cv::COLOR_BGR2Lab</a> = 44, 
+<b>COLOR_RGB2Lab</b> = 45, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0adcb601b5bdb42ded57e74dbc2a90a282">cv::COLOR_BGR2Luv</a> = 50, 
+<b>COLOR_RGB2Luv</b> = 51, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a67b3508e468db8b222563e9fffa0fa00">cv::COLOR_BGR2HLS</a> = 52, 
+<b>COLOR_RGB2HLS</b> = 53, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a9868b92ef87467e2e1941e084e90a8a2">cv::COLOR_HSV2BGR</a> = 54, 
+<b>COLOR_HSV2RGB</b> = 55, 
+<br />
+&#160;&#160;<b>COLOR_Lab2BGR</b> = 56, 
+<b>COLOR_Lab2RGB</b> = 57, 
+<b>COLOR_Luv2BGR</b> = 58, 
+<b>COLOR_Luv2RGB</b> = 59, 
+<br />
+&#160;&#160;<b>COLOR_HLS2BGR</b> = 60, 
+<b>COLOR_HLS2RGB</b> = 61, 
+<b>COLOR_BGR2HSV_FULL</b> = 66, 
+<b>COLOR_RGB2HSV_FULL</b> = 67, 
+<br />
+&#160;&#160;<b>COLOR_BGR2HLS_FULL</b> = 68, 
+<b>COLOR_RGB2HLS_FULL</b> = 69, 
+<b>COLOR_HSV2BGR_FULL</b> = 70, 
+<b>COLOR_HSV2RGB_FULL</b> = 71, 
+<br />
+&#160;&#160;<b>COLOR_HLS2BGR_FULL</b> = 72, 
+<b>COLOR_HLS2RGB_FULL</b> = 73, 
+<b>COLOR_LBGR2Lab</b> = 74, 
+<b>COLOR_LRGB2Lab</b> = 75, 
+<br />
+&#160;&#160;<b>COLOR_LBGR2Luv</b> = 76, 
+<b>COLOR_LRGB2Luv</b> = 77, 
+<b>COLOR_Lab2LBGR</b> = 78, 
+<b>COLOR_Lab2LRGB</b> = 79, 
+<br />
+&#160;&#160;<b>COLOR_Luv2LBGR</b> = 80, 
+<b>COLOR_Luv2LRGB</b> = 81, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0afbb43921348312356f7b9fb351b92001">cv::COLOR_BGR2YUV</a> = 82, 
+<b>COLOR_RGB2YUV</b> = 83, 
+<br />
+&#160;&#160;<b>COLOR_YUV2BGR</b> = 84, 
+<b>COLOR_YUV2RGB</b> = 85, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0abe3655f90615347c18550ef37f076f52">cv::COLOR_YUV2RGB_NV12</a> = 90, 
+<b>COLOR_YUV2BGR_NV12</b> = 91, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_NV21</b> = 92, 
+<b>COLOR_YUV2BGR_NV21</b> = 93, 
+<b>COLOR_YUV420sp2RGB</b> = COLOR_YUV2RGB_NV21, 
+<b>COLOR_YUV420sp2BGR</b> = COLOR_YUV2BGR_NV21, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_NV12</b> = 94, 
+<b>COLOR_YUV2BGRA_NV12</b> = 95, 
+<b>COLOR_YUV2RGBA_NV21</b> = 96, 
+<b>COLOR_YUV2BGRA_NV21</b> = 97, 
+<br />
+&#160;&#160;<b>COLOR_YUV420sp2RGBA</b> = COLOR_YUV2RGBA_NV21, 
+<b>COLOR_YUV420sp2BGRA</b> = COLOR_YUV2BGRA_NV21, 
+<b>COLOR_YUV2RGB_YV12</b> = 98, 
+<b>COLOR_YUV2BGR_YV12</b> = 99, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_IYUV</b> = 100, 
+<b>COLOR_YUV2BGR_IYUV</b> = 101, 
+<b>COLOR_YUV2RGB_I420</b> = COLOR_YUV2RGB_IYUV, 
+<b>COLOR_YUV2BGR_I420</b> = COLOR_YUV2BGR_IYUV, 
+<br />
+&#160;&#160;<b>COLOR_YUV420p2RGB</b> = COLOR_YUV2RGB_YV12, 
+<b>COLOR_YUV420p2BGR</b> = COLOR_YUV2BGR_YV12, 
+<b>COLOR_YUV2RGBA_YV12</b> = 102, 
+<b>COLOR_YUV2BGRA_YV12</b> = 103, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_IYUV</b> = 104, 
+<b>COLOR_YUV2BGRA_IYUV</b> = 105, 
+<b>COLOR_YUV2RGBA_I420</b> = COLOR_YUV2RGBA_IYUV, 
+<b>COLOR_YUV2BGRA_I420</b> = COLOR_YUV2BGRA_IYUV, 
+<br />
+&#160;&#160;<b>COLOR_YUV420p2RGBA</b> = COLOR_YUV2RGBA_YV12, 
+<b>COLOR_YUV420p2BGRA</b> = COLOR_YUV2BGRA_YV12, 
+<b>COLOR_YUV2GRAY_420</b> = 106, 
+<b>COLOR_YUV2GRAY_NV21</b> = COLOR_YUV2GRAY_420, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_NV12</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_YV12</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_IYUV</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_I420</b> = COLOR_YUV2GRAY_420, 
+<br />
+&#160;&#160;<b>COLOR_YUV420sp2GRAY</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV420p2GRAY</b> = COLOR_YUV2GRAY_420, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a99e17f1193316a576737a89c0b64c0c7">cv::COLOR_YUV2RGB_UYVY</a> = 107, 
+<b>COLOR_YUV2BGR_UYVY</b> = 108, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_Y422</b> = COLOR_YUV2RGB_UYVY, 
+<b>COLOR_YUV2BGR_Y422</b> = COLOR_YUV2BGR_UYVY, 
+<b>COLOR_YUV2RGB_UYNV</b> = COLOR_YUV2RGB_UYVY, 
+<b>COLOR_YUV2BGR_UYNV</b> = COLOR_YUV2BGR_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_UYVY</b> = 111, 
+<b>COLOR_YUV2BGRA_UYVY</b> = 112, 
+<b>COLOR_YUV2RGBA_Y422</b> = COLOR_YUV2RGBA_UYVY, 
+<b>COLOR_YUV2BGRA_Y422</b> = COLOR_YUV2BGRA_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_UYNV</b> = COLOR_YUV2RGBA_UYVY, 
+<b>COLOR_YUV2BGRA_UYNV</b> = COLOR_YUV2BGRA_UYVY, 
+<b>COLOR_YUV2RGB_YUY2</b> = 115, 
+<b>COLOR_YUV2BGR_YUY2</b> = 116, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YVYU</b> = 117, 
+<b>COLOR_YUV2BGR_YVYU</b> = 118, 
+<b>COLOR_YUV2RGB_YUYV</b> = COLOR_YUV2RGB_YUY2, 
+<b>COLOR_YUV2BGR_YUYV</b> = COLOR_YUV2BGR_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YUNV</b> = COLOR_YUV2RGB_YUY2, 
+<b>COLOR_YUV2BGR_YUNV</b> = COLOR_YUV2BGR_YUY2, 
+<b>COLOR_YUV2RGBA_YUY2</b> = 119, 
+<b>COLOR_YUV2BGRA_YUY2</b> = 120, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YVYU</b> = 121, 
+<b>COLOR_YUV2BGRA_YVYU</b> = 122, 
+<b>COLOR_YUV2RGBA_YUYV</b> = COLOR_YUV2RGBA_YUY2, 
+<b>COLOR_YUV2BGRA_YUYV</b> = COLOR_YUV2BGRA_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YUNV</b> = COLOR_YUV2RGBA_YUY2, 
+<b>COLOR_YUV2BGRA_YUNV</b> = COLOR_YUV2BGRA_YUY2, 
+<b>COLOR_YUV2GRAY_UYVY</b> = 123, 
+<b>COLOR_YUV2GRAY_YUY2</b> = 124, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_Y422</b> = COLOR_YUV2GRAY_UYVY, 
+<b>COLOR_YUV2GRAY_UYNV</b> = COLOR_YUV2GRAY_UYVY, 
+<b>COLOR_YUV2GRAY_YVYU</b> = COLOR_YUV2GRAY_YUY2, 
+<b>COLOR_YUV2GRAY_YUYV</b> = COLOR_YUV2GRAY_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_YUNV</b> = COLOR_YUV2GRAY_YUY2, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a59515479a043a41534800836e08b31d4">cv::COLOR_RGBA2mRGBA</a> = 125, 
+<b>COLOR_mRGBA2RGBA</b> = 126, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ac17162b67ea6bf79ab7c18928a35bed9">cv::COLOR_RGB2YUV_I420</a> = 127, 
+<br />
+&#160;&#160;<b>COLOR_BGR2YUV_I420</b> = 128, 
+<b>COLOR_RGB2YUV_IYUV</b> = COLOR_RGB2YUV_I420, 
+<b>COLOR_BGR2YUV_IYUV</b> = COLOR_BGR2YUV_I420, 
+<b>COLOR_RGBA2YUV_I420</b> = 129, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2YUV_I420</b> = 130, 
+<b>COLOR_RGBA2YUV_IYUV</b> = COLOR_RGBA2YUV_I420, 
+<b>COLOR_BGRA2YUV_IYUV</b> = COLOR_BGRA2YUV_I420, 
+<b>COLOR_RGB2YUV_YV12</b> = 131, 
+<br />
+&#160;&#160;<b>COLOR_BGR2YUV_YV12</b> = 132, 
+<b>COLOR_RGBA2YUV_YV12</b> = 133, 
+<b>COLOR_BGRA2YUV_YV12</b> = 134, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0adf9808f6473823be2d3d5fc94f87ff83">cv::COLOR_BayerBG2BGR</a> = 46, 
+<br />
+&#160;&#160;<b>COLOR_BayerGB2BGR</b> = 47, 
+<b>COLOR_BayerRG2BGR</b> = 48, 
+<b>COLOR_BayerGR2BGR</b> = 49, 
+<b>COLOR_BayerBG2RGB</b> = COLOR_BayerRG2BGR, 
+<br />
+&#160;&#160;<b>COLOR_BayerGB2RGB</b> = COLOR_BayerGR2BGR, 
+<b>COLOR_BayerRG2RGB</b> = COLOR_BayerBG2BGR, 
+<b>COLOR_BayerGR2RGB</b> = COLOR_BayerGB2BGR, 
+<b>COLOR_BayerBG2GRAY</b> = 86, 
+<br />
+&#160;&#160;<b>COLOR_BayerGB2GRAY</b> = 87, 
+<b>COLOR_BayerRG2GRAY</b> = 88, 
+<b>COLOR_BayerGR2GRAY</b> = 89, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0abb93ab29f64149dcc6add03eb57aa422">cv::COLOR_BayerBG2BGR_VNG</a> = 62, 
+<br />
+&#160;&#160;<b>COLOR_BayerGB2BGR_VNG</b> = 63, 
+<b>COLOR_BayerRG2BGR_VNG</b> = 64, 
+<b>COLOR_BayerGR2BGR_VNG</b> = 65, 
+<b>COLOR_BayerBG2RGB_VNG</b> = COLOR_BayerRG2BGR_VNG, 
+<br />
+&#160;&#160;<b>COLOR_BayerGB2RGB_VNG</b> = COLOR_BayerGR2BGR_VNG, 
+<b>COLOR_BayerRG2RGB_VNG</b> = COLOR_BayerBG2BGR_VNG, 
+<b>COLOR_BayerGR2RGB_VNG</b> = COLOR_BayerGB2BGR_VNG, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a69250d4a0546e0516a3b4b8766f61280">cv::COLOR_BayerBG2BGR_EA</a> = 135, 
+<br />
+&#160;&#160;<b>COLOR_BayerGB2BGR_EA</b> = 136, 
+<b>COLOR_BayerRG2BGR_EA</b> = 137, 
+<b>COLOR_BayerGR2BGR_EA</b> = 138, 
+<b>COLOR_BayerBG2RGB_EA</b> = COLOR_BayerRG2BGR_EA, 
+<br />
+&#160;&#160;<b>COLOR_BayerGB2RGB_EA</b> = COLOR_BayerGR2BGR_EA, 
+<b>COLOR_BayerRG2RGB_EA</b> = COLOR_BayerBG2BGR_EA, 
+<b>COLOR_BayerGR2RGB_EA</b> = COLOR_BayerGB2BGR_EA, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a6cfe4f8ee50e6d033762c6a653592d39">cv::COLOR_BayerBG2BGRA</a> = 139, 
+<br />
+&#160;&#160;<b>COLOR_BayerGB2BGRA</b> = 140, 
+<b>COLOR_BayerRG2BGRA</b> = 141, 
+<b>COLOR_BayerGR2BGRA</b> = 142, 
+<b>COLOR_BayerBG2RGBA</b> = COLOR_BayerRG2BGRA, 
+<br />
+&#160;&#160;<b>COLOR_BayerGB2RGBA</b> = COLOR_BayerGR2BGRA, 
+<b>COLOR_BayerRG2RGBA</b> = COLOR_BayerBG2BGRA, 
+<b>COLOR_BayerGR2RGBA</b> = COLOR_BayerGB2BGRA, 
+<b>COLOR_COLORCVT_MAX</b> = 143, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7">cv::COLOR_BGR2BGRA</a> = 0, 
+<b>COLOR_RGB2RGBA</b> = COLOR_BGR2BGRA, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372">cv::COLOR_BGRA2BGR</a> = 1, 
+<b>COLOR_RGBA2RGB</b> = COLOR_BGRA2BGR, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a6ebb99459745f21e76daf63e7cbf4e4e">cv::COLOR_BGR2RGBA</a> = 2, 
+<b>COLOR_RGB2BGRA</b> = COLOR_BGR2RGBA, 
+<b>COLOR_RGBA2BGR</b> = 3, 
+<b>COLOR_BGRA2RGB</b> = COLOR_RGBA2BGR, 
+<br />
+&#160;&#160;<b>COLOR_BGR2RGB</b> = 4, 
+<b>COLOR_RGB2BGR</b> = COLOR_BGR2RGB, 
+<b>COLOR_BGRA2RGBA</b> = 5, 
+<b>COLOR_RGBA2BGRA</b> = COLOR_BGRA2RGBA, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a227692b0c382bf5a7fd40f01ce6a1758">cv::COLOR_BGR2GRAY</a> = 6, 
+<b>COLOR_RGB2GRAY</b> = 7, 
+<b>COLOR_GRAY2BGR</b> = 8, 
+<b>COLOR_GRAY2RGB</b> = COLOR_GRAY2BGR, 
+<br />
+&#160;&#160;<b>COLOR_GRAY2BGRA</b> = 9, 
+<b>COLOR_GRAY2RGBA</b> = COLOR_GRAY2BGRA, 
+<b>COLOR_BGRA2GRAY</b> = 10, 
+<b>COLOR_RGBA2GRAY</b> = 11, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a5c587d0660084780b83ad27b0f56ac85">cv::COLOR_BGR2BGR565</a> = 12, 
+<b>COLOR_RGB2BGR565</b> = 13, 
+<b>COLOR_BGR5652BGR</b> = 14, 
+<b>COLOR_BGR5652RGB</b> = 15, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2BGR565</b> = 16, 
+<b>COLOR_RGBA2BGR565</b> = 17, 
+<b>COLOR_BGR5652BGRA</b> = 18, 
+<b>COLOR_BGR5652RGBA</b> = 19, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a90ffef38218e1480d60c3479a53c5680">cv::COLOR_GRAY2BGR565</a> = 20, 
+<b>COLOR_BGR5652GRAY</b> = 21, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a45bf096f1f6840a82dd98d0fc418512f">cv::COLOR_BGR2BGR555</a> = 22, 
+<b>COLOR_RGB2BGR555</b> = 23, 
+<br />
+&#160;&#160;<b>COLOR_BGR5552BGR</b> = 24, 
+<b>COLOR_BGR5552RGB</b> = 25, 
+<b>COLOR_BGRA2BGR555</b> = 26, 
+<b>COLOR_RGBA2BGR555</b> = 27, 
+<br />
+&#160;&#160;<b>COLOR_BGR5552BGRA</b> = 28, 
+<b>COLOR_BGR5552RGBA</b> = 29, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a573fd1d3ab76e85f41fa5e43b6c393a4">cv::COLOR_GRAY2BGR555</a> = 30, 
+<b>COLOR_BGR5552GRAY</b> = 31, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a54e0efb8ca0f4cf5067c4a09efabef9f">cv::COLOR_BGR2XYZ</a> = 32, 
+<b>COLOR_RGB2XYZ</b> = 33, 
+<b>COLOR_XYZ2BGR</b> = 34, 
+<b>COLOR_XYZ2RGB</b> = 35, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ab07f75a53538f9d6a81aae64550188ce">cv::COLOR_BGR2YCrCb</a> = 36, 
+<b>COLOR_RGB2YCrCb</b> = 37, 
+<b>COLOR_YCrCb2BGR</b> = 38, 
+<b>COLOR_YCrCb2RGB</b> = 39, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a8e8f59a8b152213e9ae59994013c22a9">cv::COLOR_BGR2HSV</a> = 40, 
+<b>COLOR_RGB2HSV</b> = 41, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a4fd046347536e547986a93710da29f2d">cv::COLOR_BGR2Lab</a> = 44, 
+<b>COLOR_RGB2Lab</b> = 45, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0adcb601b5bdb42ded57e74dbc2a90a282">cv::COLOR_BGR2Luv</a> = 50, 
+<b>COLOR_RGB2Luv</b> = 51, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a67b3508e468db8b222563e9fffa0fa00">cv::COLOR_BGR2HLS</a> = 52, 
+<b>COLOR_RGB2HLS</b> = 53, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a9868b92ef87467e2e1941e084e90a8a2">cv::COLOR_HSV2BGR</a> = 54, 
+<b>COLOR_HSV2RGB</b> = 55, 
+<b>COLOR_Lab2BGR</b> = 56, 
+<b>COLOR_Lab2RGB</b> = 57, 
+<br />
+&#160;&#160;<b>COLOR_Luv2BGR</b> = 58, 
+<b>COLOR_Luv2RGB</b> = 59, 
+<b>COLOR_HLS2BGR</b> = 60, 
+<b>COLOR_HLS2RGB</b> = 61, 
+<br />
+&#160;&#160;<b>COLOR_BGR2HSV_FULL</b> = 66, 
+<b>COLOR_RGB2HSV_FULL</b> = 67, 
+<b>COLOR_BGR2HLS_FULL</b> = 68, 
+<b>COLOR_RGB2HLS_FULL</b> = 69, 
+<br />
+&#160;&#160;<b>COLOR_HSV2BGR_FULL</b> = 70, 
+<b>COLOR_HSV2RGB_FULL</b> = 71, 
+<b>COLOR_HLS2BGR_FULL</b> = 72, 
+<b>COLOR_HLS2RGB_FULL</b> = 73, 
+<br />
+&#160;&#160;<b>COLOR_LBGR2Lab</b> = 74, 
+<b>COLOR_LRGB2Lab</b> = 75, 
+<b>COLOR_LBGR2Luv</b> = 76, 
+<b>COLOR_LRGB2Luv</b> = 77, 
+<br />
+&#160;&#160;<b>COLOR_Lab2LBGR</b> = 78, 
+<b>COLOR_Lab2LRGB</b> = 79, 
+<b>COLOR_Luv2LBGR</b> = 80, 
+<b>COLOR_Luv2LRGB</b> = 81, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0afbb43921348312356f7b9fb351b92001">cv::COLOR_BGR2YUV</a> = 82, 
+<b>COLOR_RGB2YUV</b> = 83, 
+<b>COLOR_YUV2BGR</b> = 84, 
+<b>COLOR_YUV2RGB</b> = 85, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0abe3655f90615347c18550ef37f076f52">cv::COLOR_YUV2RGB_NV12</a> = 90, 
+<b>COLOR_YUV2BGR_NV12</b> = 91, 
+<b>COLOR_YUV2RGB_NV21</b> = 92, 
+<b>COLOR_YUV2BGR_NV21</b> = 93, 
+<br />
+&#160;&#160;<b>COLOR_YUV420sp2RGB</b> = COLOR_YUV2RGB_NV21, 
+<b>COLOR_YUV420sp2BGR</b> = COLOR_YUV2BGR_NV21, 
+<b>COLOR_YUV2RGBA_NV12</b> = 94, 
+<b>COLOR_YUV2BGRA_NV12</b> = 95, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_NV21</b> = 96, 
+<b>COLOR_YUV2BGRA_NV21</b> = 97, 
+<b>COLOR_YUV420sp2RGBA</b> = COLOR_YUV2RGBA_NV21, 
+<b>COLOR_YUV420sp2BGRA</b> = COLOR_YUV2BGRA_NV21, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YV12</b> = 98, 
+<b>COLOR_YUV2BGR_YV12</b> = 99, 
+<b>COLOR_YUV2RGB_IYUV</b> = 100, 
+<b>COLOR_YUV2BGR_IYUV</b> = 101, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_I420</b> = COLOR_YUV2RGB_IYUV, 
+<b>COLOR_YUV2BGR_I420</b> = COLOR_YUV2BGR_IYUV, 
+<b>COLOR_YUV420p2RGB</b> = COLOR_YUV2RGB_YV12, 
+<b>COLOR_YUV420p2BGR</b> = COLOR_YUV2BGR_YV12, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YV12</b> = 102, 
+<b>COLOR_YUV2BGRA_YV12</b> = 103, 
+<b>COLOR_YUV2RGBA_IYUV</b> = 104, 
+<b>COLOR_YUV2BGRA_IYUV</b> = 105, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_I420</b> = COLOR_YUV2RGBA_IYUV, 
+<b>COLOR_YUV2BGRA_I420</b> = COLOR_YUV2BGRA_IYUV, 
+<b>COLOR_YUV420p2RGBA</b> = COLOR_YUV2RGBA_YV12, 
+<b>COLOR_YUV420p2BGRA</b> = COLOR_YUV2BGRA_YV12, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_420</b> = 106, 
+<b>COLOR_YUV2GRAY_NV21</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_NV12</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_YV12</b> = COLOR_YUV2GRAY_420, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_IYUV</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV2GRAY_I420</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV420sp2GRAY</b> = COLOR_YUV2GRAY_420, 
+<b>COLOR_YUV420p2GRAY</b> = COLOR_YUV2GRAY_420, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a99e17f1193316a576737a89c0b64c0c7">cv::COLOR_YUV2RGB_UYVY</a> = 107, 
+<b>COLOR_YUV2BGR_UYVY</b> = 108, 
+<b>COLOR_YUV2RGB_Y422</b> = COLOR_YUV2RGB_UYVY, 
+<b>COLOR_YUV2BGR_Y422</b> = COLOR_YUV2BGR_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_UYNV</b> = COLOR_YUV2RGB_UYVY, 
+<b>COLOR_YUV2BGR_UYNV</b> = COLOR_YUV2BGR_UYVY, 
+<b>COLOR_YUV2RGBA_UYVY</b> = 111, 
+<b>COLOR_YUV2BGRA_UYVY</b> = 112, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_Y422</b> = COLOR_YUV2RGBA_UYVY, 
+<b>COLOR_YUV2BGRA_Y422</b> = COLOR_YUV2BGRA_UYVY, 
+<b>COLOR_YUV2RGBA_UYNV</b> = COLOR_YUV2RGBA_UYVY, 
+<b>COLOR_YUV2BGRA_UYNV</b> = COLOR_YUV2BGRA_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YUY2</b> = 115, 
+<b>COLOR_YUV2BGR_YUY2</b> = 116, 
+<b>COLOR_YUV2RGB_YVYU</b> = 117, 
+<b>COLOR_YUV2BGR_YVYU</b> = 118, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGB_YUYV</b> = COLOR_YUV2RGB_YUY2, 
+<b>COLOR_YUV2BGR_YUYV</b> = COLOR_YUV2BGR_YUY2, 
+<b>COLOR_YUV2RGB_YUNV</b> = COLOR_YUV2RGB_YUY2, 
+<b>COLOR_YUV2BGR_YUNV</b> = COLOR_YUV2BGR_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YUY2</b> = 119, 
+<b>COLOR_YUV2BGRA_YUY2</b> = 120, 
+<b>COLOR_YUV2RGBA_YVYU</b> = 121, 
+<b>COLOR_YUV2BGRA_YVYU</b> = 122, 
+<br />
+&#160;&#160;<b>COLOR_YUV2RGBA_YUYV</b> = COLOR_YUV2RGBA_YUY2, 
+<b>COLOR_YUV2BGRA_YUYV</b> = COLOR_YUV2BGRA_YUY2, 
+<b>COLOR_YUV2RGBA_YUNV</b> = COLOR_YUV2RGBA_YUY2, 
+<b>COLOR_YUV2BGRA_YUNV</b> = COLOR_YUV2BGRA_YUY2, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_UYVY</b> = 123, 
+<b>COLOR_YUV2GRAY_YUY2</b> = 124, 
+<b>COLOR_YUV2GRAY_Y422</b> = COLOR_YUV2GRAY_UYVY, 
+<b>COLOR_YUV2GRAY_UYNV</b> = COLOR_YUV2GRAY_UYVY, 
+<br />
+&#160;&#160;<b>COLOR_YUV2GRAY_YVYU</b> = COLOR_YUV2GRAY_YUY2, 
+<b>COLOR_YUV2GRAY_YUYV</b> = COLOR_YUV2GRAY_YUY2, 
+<b>COLOR_YUV2GRAY_YUNV</b> = COLOR_YUV2GRAY_YUY2, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a59515479a043a41534800836e08b31d4">cv::COLOR_RGBA2mRGBA</a> = 125, 
+<br />
+&#160;&#160;<b>COLOR_mRGBA2RGBA</b> = 126, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ac17162b67ea6bf79ab7c18928a35bed9">cv::COLOR_RGB2YUV_I420</a> = 127, 
+<b>COLOR_BGR2YUV_I420</b> = 128, 
+<b>COLOR_RGB2YUV_IYUV</b> = COLOR_RGB2YUV_I420, 
+<br />
+&#160;&#160;<b>COLOR_BGR2YUV_IYUV</b> = COLOR_BGR2YUV_I420, 
+<b>COLOR_RGBA2YUV_I420</b> = 129, 
+<b>COLOR_BGRA2YUV_I420</b> = 130, 
+<b>COLOR_RGBA2YUV_IYUV</b> = COLOR_RGBA2YUV_I420, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2YUV_IYUV</b> = COLOR_BGRA2YUV_I420, 
+<b>COLOR_RGB2YUV_YV12</b> = 131, 
+<b>COLOR_BGR2YUV_YV12</b> = 132, 
+<b>COLOR_RGBA2YUV_YV12</b> = 133, 
+<br />
+&#160;&#160;<b>COLOR_BGRA2YUV_YV12</b> = 134, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0adf9808f6473823be2d3d5fc94f87ff83">cv::COLOR_BayerBG2BGR</a> = 46, 
+<b>COLOR_BayerGB2BGR</b> = 47, 
+<b>COLOR_BayerRG2BGR</b> = 48, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR</b> = 49, 
+<b>COLOR_BayerBG2RGB</b> = COLOR_BayerRG2BGR, 
+<b>COLOR_BayerGB2RGB</b> = COLOR_BayerGR2BGR, 
+<b>COLOR_BayerRG2RGB</b> = COLOR_BayerBG2BGR, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB</b> = COLOR_BayerGB2BGR, 
+<b>COLOR_BayerBG2GRAY</b> = 86, 
+<b>COLOR_BayerGB2GRAY</b> = 87, 
+<b>COLOR_BayerRG2GRAY</b> = 88, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2GRAY</b> = 89, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0abb93ab29f64149dcc6add03eb57aa422">cv::COLOR_BayerBG2BGR_VNG</a> = 62, 
+<b>COLOR_BayerGB2BGR_VNG</b> = 63, 
+<b>COLOR_BayerRG2BGR_VNG</b> = 64, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR_VNG</b> = 65, 
+<b>COLOR_BayerBG2RGB_VNG</b> = COLOR_BayerRG2BGR_VNG, 
+<b>COLOR_BayerGB2RGB_VNG</b> = COLOR_BayerGR2BGR_VNG, 
+<b>COLOR_BayerRG2RGB_VNG</b> = COLOR_BayerBG2BGR_VNG, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB_VNG</b> = COLOR_BayerGB2BGR_VNG, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a69250d4a0546e0516a3b4b8766f61280">cv::COLOR_BayerBG2BGR_EA</a> = 135, 
+<b>COLOR_BayerGB2BGR_EA</b> = 136, 
+<b>COLOR_BayerRG2BGR_EA</b> = 137, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGR_EA</b> = 138, 
+<b>COLOR_BayerBG2RGB_EA</b> = COLOR_BayerRG2BGR_EA, 
+<b>COLOR_BayerGB2RGB_EA</b> = COLOR_BayerGR2BGR_EA, 
+<b>COLOR_BayerRG2RGB_EA</b> = COLOR_BayerBG2BGR_EA, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGB_EA</b> = COLOR_BayerGB2BGR_EA, 
+<a class="el" href="group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0a6cfe4f8ee50e6d033762c6a653592d39">cv::COLOR_BayerBG2BGRA</a> = 139, 
+<b>COLOR_BayerGB2BGRA</b> = 140, 
+<b>COLOR_BayerRG2BGRA</b> = 141, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2BGRA</b> = 142, 
+<b>COLOR_BayerBG2RGBA</b> = COLOR_BayerRG2BGRA, 
+<b>COLOR_BayerGB2RGBA</b> = COLOR_BayerGR2BGRA, 
+<b>COLOR_BayerRG2RGBA</b> = COLOR_BayerBG2BGRA, 
+<br />
+&#160;&#160;<b>COLOR_BayerGR2RGBA</b> = COLOR_BayerGB2BGRA, 
 <b>COLOR_COLORCVT_MAX</b> = 143
 <br />
  }</td></tr>
@@ -4222,7 +6543,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga4e0972be5de079fed4e3a10e24ef5ef0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4e0972be5de079fed4e3a10e24ef5ef0">&#9670;&nbsp;</a></span>ColorConversionCodes <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e0972be5de079fed4e3a10e24ef5ef0">&#9670;&nbsp;</a></span>ColorConversionCodes <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4235,6 +6556,54 @@ Functions</h2></td></tr>
 <p>the color conversion codes </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__imgproc__color__conversions.html">Imgproc_color_conversions</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7"></a>COLOR_BGR2BGRA&#160;</td><td class="fielddoc"><p>add alpha channel to RGB or BGR image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372"></a>COLOR_BGRA2BGR&#160;</td><td class="fielddoc"><p>remove alpha channel from RGB or BGR image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a6ebb99459745f21e76daf63e7cbf4e4e"></a>COLOR_BGR2RGBA&#160;</td><td class="fielddoc"><p>convert between RGB and BGR color spaces (with or without alpha channel) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a227692b0c382bf5a7fd40f01ce6a1758"></a>COLOR_BGR2GRAY&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and grayscale, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a5c587d0660084780b83ad27b0f56ac85"></a>COLOR_BGR2BGR565&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and BGR565 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a90ffef38218e1480d60c3479a53c5680"></a>COLOR_GRAY2BGR565&#160;</td><td class="fielddoc"><p>convert between grayscale to BGR565 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a45bf096f1f6840a82dd98d0fc418512f"></a>COLOR_BGR2BGR555&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and BGR555 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a573fd1d3ab76e85f41fa5e43b6c393a4"></a>COLOR_GRAY2BGR555&#160;</td><td class="fielddoc"><p>convert between grayscale and BGR555 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a54e0efb8ca0f4cf5067c4a09efabef9f"></a>COLOR_BGR2XYZ&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE XYZ, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0ab07f75a53538f9d6a81aae64550188ce"></a>COLOR_BGR2YCrCb&#160;</td><td class="fielddoc"><p>convert RGB/BGR to luma-chroma (aka YCC), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a8e8f59a8b152213e9ae59994013c22a9"></a>COLOR_BGR2HSV&#160;</td><td class="fielddoc"><p>convert RGB/BGR to HSV (hue saturation value), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a4fd046347536e547986a93710da29f2d"></a>COLOR_BGR2Lab&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE Lab, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0adcb601b5bdb42ded57e74dbc2a90a282"></a>COLOR_BGR2Luv&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE Luv, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a67b3508e468db8b222563e9fffa0fa00"></a>COLOR_BGR2HLS&#160;</td><td class="fielddoc"><p>convert RGB/BGR to HLS (hue lightness saturation), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a9868b92ef87467e2e1941e084e90a8a2"></a>COLOR_HSV2BGR&#160;</td><td class="fielddoc"><p>backward conversions to RGB/BGR </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0afbb43921348312356f7b9fb351b92001"></a>COLOR_BGR2YUV&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and YUV </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0abe3655f90615347c18550ef37f076f52"></a>COLOR_YUV2RGB_NV12&#160;</td><td class="fielddoc"><p>YUV 4:2:0 family to RGB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a99e17f1193316a576737a89c0b64c0c7"></a>COLOR_YUV2RGB_UYVY&#160;</td><td class="fielddoc"><p>YUV 4:2:2 family to RGB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a59515479a043a41534800836e08b31d4"></a>COLOR_RGBA2mRGBA&#160;</td><td class="fielddoc"><p>alpha premultiplication </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0ac17162b67ea6bf79ab7c18928a35bed9"></a>COLOR_RGB2YUV_I420&#160;</td><td class="fielddoc"><p>RGB to YUV 4:2:0 family. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0adf9808f6473823be2d3d5fc94f87ff83"></a>COLOR_BayerBG2BGR&#160;</td><td class="fielddoc"><p>Demosaicing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0abb93ab29f64149dcc6add03eb57aa422"></a>COLOR_BayerBG2BGR_VNG&#160;</td><td class="fielddoc"><p>Demosaicing using Variable Number of Gradients. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a69250d4a0546e0516a3b4b8766f61280"></a>COLOR_BayerBG2BGR_EA&#160;</td><td class="fielddoc"><p>Edge-Aware Demosaicing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a6cfe4f8ee50e6d033762c6a653592d39"></a>COLOR_BayerBG2BGRA&#160;</td><td class="fielddoc"><p>Demosaicing with alpha channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7"></a>COLOR_BGR2BGRA&#160;</td><td class="fielddoc"><p>add alpha channel to RGB or BGR image </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372"></a>COLOR_BGRA2BGR&#160;</td><td class="fielddoc"><p>remove alpha channel from RGB or BGR image </p>
 </td></tr>
@@ -4431,7 +6800,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ga4e0972be5de079fed4e3a10e24ef5ef0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4e0972be5de079fed4e3a10e24ef5ef0">&#9670;&nbsp;</a></span>ColorConversionCodes <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e0972be5de079fed4e3a10e24ef5ef0">&#9670;&nbsp;</a></span>ColorConversionCodes <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4444,6 +6813,54 @@ Functions</h2></td></tr>
 <p>the color conversion codes </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__imgproc__color__conversions.html">Imgproc_color_conversions</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7"></a>COLOR_BGR2BGRA&#160;</td><td class="fielddoc"><p>add alpha channel to RGB or BGR image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372"></a>COLOR_BGRA2BGR&#160;</td><td class="fielddoc"><p>remove alpha channel from RGB or BGR image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a6ebb99459745f21e76daf63e7cbf4e4e"></a>COLOR_BGR2RGBA&#160;</td><td class="fielddoc"><p>convert between RGB and BGR color spaces (with or without alpha channel) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a227692b0c382bf5a7fd40f01ce6a1758"></a>COLOR_BGR2GRAY&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and grayscale, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a5c587d0660084780b83ad27b0f56ac85"></a>COLOR_BGR2BGR565&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and BGR565 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a90ffef38218e1480d60c3479a53c5680"></a>COLOR_GRAY2BGR565&#160;</td><td class="fielddoc"><p>convert between grayscale to BGR565 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a45bf096f1f6840a82dd98d0fc418512f"></a>COLOR_BGR2BGR555&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and BGR555 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a573fd1d3ab76e85f41fa5e43b6c393a4"></a>COLOR_GRAY2BGR555&#160;</td><td class="fielddoc"><p>convert between grayscale and BGR555 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a54e0efb8ca0f4cf5067c4a09efabef9f"></a>COLOR_BGR2XYZ&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE XYZ, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0ab07f75a53538f9d6a81aae64550188ce"></a>COLOR_BGR2YCrCb&#160;</td><td class="fielddoc"><p>convert RGB/BGR to luma-chroma (aka YCC), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a8e8f59a8b152213e9ae59994013c22a9"></a>COLOR_BGR2HSV&#160;</td><td class="fielddoc"><p>convert RGB/BGR to HSV (hue saturation value), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a4fd046347536e547986a93710da29f2d"></a>COLOR_BGR2Lab&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE Lab, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0adcb601b5bdb42ded57e74dbc2a90a282"></a>COLOR_BGR2Luv&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE Luv, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a67b3508e468db8b222563e9fffa0fa00"></a>COLOR_BGR2HLS&#160;</td><td class="fielddoc"><p>convert RGB/BGR to HLS (hue lightness saturation), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a9868b92ef87467e2e1941e084e90a8a2"></a>COLOR_HSV2BGR&#160;</td><td class="fielddoc"><p>backward conversions to RGB/BGR </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0afbb43921348312356f7b9fb351b92001"></a>COLOR_BGR2YUV&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and YUV </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0abe3655f90615347c18550ef37f076f52"></a>COLOR_YUV2RGB_NV12&#160;</td><td class="fielddoc"><p>YUV 4:2:0 family to RGB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a99e17f1193316a576737a89c0b64c0c7"></a>COLOR_YUV2RGB_UYVY&#160;</td><td class="fielddoc"><p>YUV 4:2:2 family to RGB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a59515479a043a41534800836e08b31d4"></a>COLOR_RGBA2mRGBA&#160;</td><td class="fielddoc"><p>alpha premultiplication </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0ac17162b67ea6bf79ab7c18928a35bed9"></a>COLOR_RGB2YUV_I420&#160;</td><td class="fielddoc"><p>RGB to YUV 4:2:0 family. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0adf9808f6473823be2d3d5fc94f87ff83"></a>COLOR_BayerBG2BGR&#160;</td><td class="fielddoc"><p>Demosaicing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0abb93ab29f64149dcc6add03eb57aa422"></a>COLOR_BayerBG2BGR_VNG&#160;</td><td class="fielddoc"><p>Demosaicing using Variable Number of Gradients. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a69250d4a0546e0516a3b4b8766f61280"></a>COLOR_BayerBG2BGR_EA&#160;</td><td class="fielddoc"><p>Edge-Aware Demosaicing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a6cfe4f8ee50e6d033762c6a653592d39"></a>COLOR_BayerBG2BGRA&#160;</td><td class="fielddoc"><p>Demosaicing with alpha channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7"></a>COLOR_BGR2BGRA&#160;</td><td class="fielddoc"><p>add alpha channel to RGB or BGR image </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372"></a>COLOR_BGRA2BGR&#160;</td><td class="fielddoc"><p>remove alpha channel from RGB or BGR image </p>
 </td></tr>
@@ -4640,7 +7057,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ga4e0972be5de079fed4e3a10e24ef5ef0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4e0972be5de079fed4e3a10e24ef5ef0">&#9670;&nbsp;</a></span>ColorConversionCodes <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e0972be5de079fed4e3a10e24ef5ef0">&#9670;&nbsp;</a></span>ColorConversionCodes <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4653,6 +7070,54 @@ Functions</h2></td></tr>
 <p>the color conversion codes </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__imgproc__color__conversions.html">Imgproc_color_conversions</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7"></a>COLOR_BGR2BGRA&#160;</td><td class="fielddoc"><p>add alpha channel to RGB or BGR image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372"></a>COLOR_BGRA2BGR&#160;</td><td class="fielddoc"><p>remove alpha channel from RGB or BGR image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a6ebb99459745f21e76daf63e7cbf4e4e"></a>COLOR_BGR2RGBA&#160;</td><td class="fielddoc"><p>convert between RGB and BGR color spaces (with or without alpha channel) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a227692b0c382bf5a7fd40f01ce6a1758"></a>COLOR_BGR2GRAY&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and grayscale, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a5c587d0660084780b83ad27b0f56ac85"></a>COLOR_BGR2BGR565&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and BGR565 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a90ffef38218e1480d60c3479a53c5680"></a>COLOR_GRAY2BGR565&#160;</td><td class="fielddoc"><p>convert between grayscale to BGR565 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a45bf096f1f6840a82dd98d0fc418512f"></a>COLOR_BGR2BGR555&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and BGR555 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a573fd1d3ab76e85f41fa5e43b6c393a4"></a>COLOR_GRAY2BGR555&#160;</td><td class="fielddoc"><p>convert between grayscale and BGR555 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a54e0efb8ca0f4cf5067c4a09efabef9f"></a>COLOR_BGR2XYZ&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE XYZ, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0ab07f75a53538f9d6a81aae64550188ce"></a>COLOR_BGR2YCrCb&#160;</td><td class="fielddoc"><p>convert RGB/BGR to luma-chroma (aka YCC), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a8e8f59a8b152213e9ae59994013c22a9"></a>COLOR_BGR2HSV&#160;</td><td class="fielddoc"><p>convert RGB/BGR to HSV (hue saturation value), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a4fd046347536e547986a93710da29f2d"></a>COLOR_BGR2Lab&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE Lab, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0adcb601b5bdb42ded57e74dbc2a90a282"></a>COLOR_BGR2Luv&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE Luv, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a67b3508e468db8b222563e9fffa0fa00"></a>COLOR_BGR2HLS&#160;</td><td class="fielddoc"><p>convert RGB/BGR to HLS (hue lightness saturation), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a9868b92ef87467e2e1941e084e90a8a2"></a>COLOR_HSV2BGR&#160;</td><td class="fielddoc"><p>backward conversions to RGB/BGR </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0afbb43921348312356f7b9fb351b92001"></a>COLOR_BGR2YUV&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and YUV </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0abe3655f90615347c18550ef37f076f52"></a>COLOR_YUV2RGB_NV12&#160;</td><td class="fielddoc"><p>YUV 4:2:0 family to RGB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a99e17f1193316a576737a89c0b64c0c7"></a>COLOR_YUV2RGB_UYVY&#160;</td><td class="fielddoc"><p>YUV 4:2:2 family to RGB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a59515479a043a41534800836e08b31d4"></a>COLOR_RGBA2mRGBA&#160;</td><td class="fielddoc"><p>alpha premultiplication </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0ac17162b67ea6bf79ab7c18928a35bed9"></a>COLOR_RGB2YUV_I420&#160;</td><td class="fielddoc"><p>RGB to YUV 4:2:0 family. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0adf9808f6473823be2d3d5fc94f87ff83"></a>COLOR_BayerBG2BGR&#160;</td><td class="fielddoc"><p>Demosaicing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0abb93ab29f64149dcc6add03eb57aa422"></a>COLOR_BayerBG2BGR_VNG&#160;</td><td class="fielddoc"><p>Demosaicing using Variable Number of Gradients. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a69250d4a0546e0516a3b4b8766f61280"></a>COLOR_BayerBG2BGR_EA&#160;</td><td class="fielddoc"><p>Edge-Aware Demosaicing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a6cfe4f8ee50e6d033762c6a653592d39"></a>COLOR_BayerBG2BGRA&#160;</td><td class="fielddoc"><p>Demosaicing with alpha channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7"></a>COLOR_BGR2BGRA&#160;</td><td class="fielddoc"><p>add alpha channel to RGB or BGR image </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372"></a>COLOR_BGRA2BGR&#160;</td><td class="fielddoc"><p>remove alpha channel from RGB or BGR image </p>
 </td></tr>
@@ -4849,7 +7314,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ga4e0972be5de079fed4e3a10e24ef5ef0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4e0972be5de079fed4e3a10e24ef5ef0">&#9670;&nbsp;</a></span>ColorConversionCodes <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e0972be5de079fed4e3a10e24ef5ef0">&#9670;&nbsp;</a></span>ColorConversionCodes <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4862,6 +7327,311 @@ Functions</h2></td></tr>
 <p>the color conversion codes </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__imgproc__color__conversions.html">Imgproc_color_conversions</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7"></a>COLOR_BGR2BGRA&#160;</td><td class="fielddoc"><p>add alpha channel to RGB or BGR image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372"></a>COLOR_BGRA2BGR&#160;</td><td class="fielddoc"><p>remove alpha channel from RGB or BGR image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a6ebb99459745f21e76daf63e7cbf4e4e"></a>COLOR_BGR2RGBA&#160;</td><td class="fielddoc"><p>convert between RGB and BGR color spaces (with or without alpha channel) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a227692b0c382bf5a7fd40f01ce6a1758"></a>COLOR_BGR2GRAY&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and grayscale, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a5c587d0660084780b83ad27b0f56ac85"></a>COLOR_BGR2BGR565&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and BGR565 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a90ffef38218e1480d60c3479a53c5680"></a>COLOR_GRAY2BGR565&#160;</td><td class="fielddoc"><p>convert between grayscale to BGR565 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a45bf096f1f6840a82dd98d0fc418512f"></a>COLOR_BGR2BGR555&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and BGR555 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a573fd1d3ab76e85f41fa5e43b6c393a4"></a>COLOR_GRAY2BGR555&#160;</td><td class="fielddoc"><p>convert between grayscale and BGR555 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a54e0efb8ca0f4cf5067c4a09efabef9f"></a>COLOR_BGR2XYZ&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE XYZ, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0ab07f75a53538f9d6a81aae64550188ce"></a>COLOR_BGR2YCrCb&#160;</td><td class="fielddoc"><p>convert RGB/BGR to luma-chroma (aka YCC), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a8e8f59a8b152213e9ae59994013c22a9"></a>COLOR_BGR2HSV&#160;</td><td class="fielddoc"><p>convert RGB/BGR to HSV (hue saturation value), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a4fd046347536e547986a93710da29f2d"></a>COLOR_BGR2Lab&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE Lab, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0adcb601b5bdb42ded57e74dbc2a90a282"></a>COLOR_BGR2Luv&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE Luv, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a67b3508e468db8b222563e9fffa0fa00"></a>COLOR_BGR2HLS&#160;</td><td class="fielddoc"><p>convert RGB/BGR to HLS (hue lightness saturation), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a9868b92ef87467e2e1941e084e90a8a2"></a>COLOR_HSV2BGR&#160;</td><td class="fielddoc"><p>backward conversions to RGB/BGR </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0afbb43921348312356f7b9fb351b92001"></a>COLOR_BGR2YUV&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and YUV </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0abe3655f90615347c18550ef37f076f52"></a>COLOR_YUV2RGB_NV12&#160;</td><td class="fielddoc"><p>YUV 4:2:0 family to RGB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a99e17f1193316a576737a89c0b64c0c7"></a>COLOR_YUV2RGB_UYVY&#160;</td><td class="fielddoc"><p>YUV 4:2:2 family to RGB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a59515479a043a41534800836e08b31d4"></a>COLOR_RGBA2mRGBA&#160;</td><td class="fielddoc"><p>alpha premultiplication </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0ac17162b67ea6bf79ab7c18928a35bed9"></a>COLOR_RGB2YUV_I420&#160;</td><td class="fielddoc"><p>RGB to YUV 4:2:0 family. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0adf9808f6473823be2d3d5fc94f87ff83"></a>COLOR_BayerBG2BGR&#160;</td><td class="fielddoc"><p>Demosaicing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0abb93ab29f64149dcc6add03eb57aa422"></a>COLOR_BayerBG2BGR_VNG&#160;</td><td class="fielddoc"><p>Demosaicing using Variable Number of Gradients. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a69250d4a0546e0516a3b4b8766f61280"></a>COLOR_BayerBG2BGR_EA&#160;</td><td class="fielddoc"><p>Edge-Aware Demosaicing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a6cfe4f8ee50e6d033762c6a653592d39"></a>COLOR_BayerBG2BGRA&#160;</td><td class="fielddoc"><p>Demosaicing with alpha channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7"></a>COLOR_BGR2BGRA&#160;</td><td class="fielddoc"><p>add alpha channel to RGB or BGR image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372"></a>COLOR_BGRA2BGR&#160;</td><td class="fielddoc"><p>remove alpha channel from RGB or BGR image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a6ebb99459745f21e76daf63e7cbf4e4e"></a>COLOR_BGR2RGBA&#160;</td><td class="fielddoc"><p>convert between RGB and BGR color spaces (with or without alpha channel) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a227692b0c382bf5a7fd40f01ce6a1758"></a>COLOR_BGR2GRAY&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and grayscale, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a5c587d0660084780b83ad27b0f56ac85"></a>COLOR_BGR2BGR565&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and BGR565 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a90ffef38218e1480d60c3479a53c5680"></a>COLOR_GRAY2BGR565&#160;</td><td class="fielddoc"><p>convert between grayscale to BGR565 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a45bf096f1f6840a82dd98d0fc418512f"></a>COLOR_BGR2BGR555&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and BGR555 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a573fd1d3ab76e85f41fa5e43b6c393a4"></a>COLOR_GRAY2BGR555&#160;</td><td class="fielddoc"><p>convert between grayscale and BGR555 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a54e0efb8ca0f4cf5067c4a09efabef9f"></a>COLOR_BGR2XYZ&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE XYZ, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0ab07f75a53538f9d6a81aae64550188ce"></a>COLOR_BGR2YCrCb&#160;</td><td class="fielddoc"><p>convert RGB/BGR to luma-chroma (aka YCC), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a8e8f59a8b152213e9ae59994013c22a9"></a>COLOR_BGR2HSV&#160;</td><td class="fielddoc"><p>convert RGB/BGR to HSV (hue saturation value), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a4fd046347536e547986a93710da29f2d"></a>COLOR_BGR2Lab&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE Lab, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0adcb601b5bdb42ded57e74dbc2a90a282"></a>COLOR_BGR2Luv&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE Luv, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a67b3508e468db8b222563e9fffa0fa00"></a>COLOR_BGR2HLS&#160;</td><td class="fielddoc"><p>convert RGB/BGR to HLS (hue lightness saturation), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a9868b92ef87467e2e1941e084e90a8a2"></a>COLOR_HSV2BGR&#160;</td><td class="fielddoc"><p>backward conversions to RGB/BGR </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0afbb43921348312356f7b9fb351b92001"></a>COLOR_BGR2YUV&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and YUV </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0abe3655f90615347c18550ef37f076f52"></a>COLOR_YUV2RGB_NV12&#160;</td><td class="fielddoc"><p>YUV 4:2:0 family to RGB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a99e17f1193316a576737a89c0b64c0c7"></a>COLOR_YUV2RGB_UYVY&#160;</td><td class="fielddoc"><p>YUV 4:2:2 family to RGB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a59515479a043a41534800836e08b31d4"></a>COLOR_RGBA2mRGBA&#160;</td><td class="fielddoc"><p>alpha premultiplication </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0ac17162b67ea6bf79ab7c18928a35bed9"></a>COLOR_RGB2YUV_I420&#160;</td><td class="fielddoc"><p>RGB to YUV 4:2:0 family. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0adf9808f6473823be2d3d5fc94f87ff83"></a>COLOR_BayerBG2BGR&#160;</td><td class="fielddoc"><p>Demosaicing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0abb93ab29f64149dcc6add03eb57aa422"></a>COLOR_BayerBG2BGR_VNG&#160;</td><td class="fielddoc"><p>Demosaicing using Variable Number of Gradients. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a69250d4a0546e0516a3b4b8766f61280"></a>COLOR_BayerBG2BGR_EA&#160;</td><td class="fielddoc"><p>Edge-Aware Demosaicing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a6cfe4f8ee50e6d033762c6a653592d39"></a>COLOR_BayerBG2BGRA&#160;</td><td class="fielddoc"><p>Demosaicing with alpha channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7"></a>COLOR_BGR2BGRA&#160;</td><td class="fielddoc"><p>add alpha channel to RGB or BGR image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372"></a>COLOR_BGRA2BGR&#160;</td><td class="fielddoc"><p>remove alpha channel from RGB or BGR image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a6ebb99459745f21e76daf63e7cbf4e4e"></a>COLOR_BGR2RGBA&#160;</td><td class="fielddoc"><p>convert between RGB and BGR color spaces (with or without alpha channel) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a227692b0c382bf5a7fd40f01ce6a1758"></a>COLOR_BGR2GRAY&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and grayscale, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a5c587d0660084780b83ad27b0f56ac85"></a>COLOR_BGR2BGR565&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and BGR565 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a90ffef38218e1480d60c3479a53c5680"></a>COLOR_GRAY2BGR565&#160;</td><td class="fielddoc"><p>convert between grayscale to BGR565 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a45bf096f1f6840a82dd98d0fc418512f"></a>COLOR_BGR2BGR555&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and BGR555 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a573fd1d3ab76e85f41fa5e43b6c393a4"></a>COLOR_GRAY2BGR555&#160;</td><td class="fielddoc"><p>convert between grayscale and BGR555 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a54e0efb8ca0f4cf5067c4a09efabef9f"></a>COLOR_BGR2XYZ&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE XYZ, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0ab07f75a53538f9d6a81aae64550188ce"></a>COLOR_BGR2YCrCb&#160;</td><td class="fielddoc"><p>convert RGB/BGR to luma-chroma (aka YCC), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a8e8f59a8b152213e9ae59994013c22a9"></a>COLOR_BGR2HSV&#160;</td><td class="fielddoc"><p>convert RGB/BGR to HSV (hue saturation value), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a4fd046347536e547986a93710da29f2d"></a>COLOR_BGR2Lab&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE Lab, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0adcb601b5bdb42ded57e74dbc2a90a282"></a>COLOR_BGR2Luv&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE Luv, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a67b3508e468db8b222563e9fffa0fa00"></a>COLOR_BGR2HLS&#160;</td><td class="fielddoc"><p>convert RGB/BGR to HLS (hue lightness saturation), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a9868b92ef87467e2e1941e084e90a8a2"></a>COLOR_HSV2BGR&#160;</td><td class="fielddoc"><p>backward conversions to RGB/BGR </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0afbb43921348312356f7b9fb351b92001"></a>COLOR_BGR2YUV&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and YUV </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0abe3655f90615347c18550ef37f076f52"></a>COLOR_YUV2RGB_NV12&#160;</td><td class="fielddoc"><p>YUV 4:2:0 family to RGB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a99e17f1193316a576737a89c0b64c0c7"></a>COLOR_YUV2RGB_UYVY&#160;</td><td class="fielddoc"><p>YUV 4:2:2 family to RGB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a59515479a043a41534800836e08b31d4"></a>COLOR_RGBA2mRGBA&#160;</td><td class="fielddoc"><p>alpha premultiplication </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0ac17162b67ea6bf79ab7c18928a35bed9"></a>COLOR_RGB2YUV_I420&#160;</td><td class="fielddoc"><p>RGB to YUV 4:2:0 family. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0adf9808f6473823be2d3d5fc94f87ff83"></a>COLOR_BayerBG2BGR&#160;</td><td class="fielddoc"><p>Demosaicing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0abb93ab29f64149dcc6add03eb57aa422"></a>COLOR_BayerBG2BGR_VNG&#160;</td><td class="fielddoc"><p>Demosaicing using Variable Number of Gradients. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a69250d4a0546e0516a3b4b8766f61280"></a>COLOR_BayerBG2BGR_EA&#160;</td><td class="fielddoc"><p>Edge-Aware Demosaicing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a6cfe4f8ee50e6d033762c6a653592d39"></a>COLOR_BayerBG2BGRA&#160;</td><td class="fielddoc"><p>Demosaicing with alpha channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7"></a>COLOR_BGR2BGRA&#160;</td><td class="fielddoc"><p>add alpha channel to RGB or BGR image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372"></a>COLOR_BGRA2BGR&#160;</td><td class="fielddoc"><p>remove alpha channel from RGB or BGR image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a6ebb99459745f21e76daf63e7cbf4e4e"></a>COLOR_BGR2RGBA&#160;</td><td class="fielddoc"><p>convert between RGB and BGR color spaces (with or without alpha channel) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a227692b0c382bf5a7fd40f01ce6a1758"></a>COLOR_BGR2GRAY&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and grayscale, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a5c587d0660084780b83ad27b0f56ac85"></a>COLOR_BGR2BGR565&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and BGR565 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a90ffef38218e1480d60c3479a53c5680"></a>COLOR_GRAY2BGR565&#160;</td><td class="fielddoc"><p>convert between grayscale to BGR565 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a45bf096f1f6840a82dd98d0fc418512f"></a>COLOR_BGR2BGR555&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and BGR555 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a573fd1d3ab76e85f41fa5e43b6c393a4"></a>COLOR_GRAY2BGR555&#160;</td><td class="fielddoc"><p>convert between grayscale and BGR555 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a54e0efb8ca0f4cf5067c4a09efabef9f"></a>COLOR_BGR2XYZ&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE XYZ, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0ab07f75a53538f9d6a81aae64550188ce"></a>COLOR_BGR2YCrCb&#160;</td><td class="fielddoc"><p>convert RGB/BGR to luma-chroma (aka YCC), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a8e8f59a8b152213e9ae59994013c22a9"></a>COLOR_BGR2HSV&#160;</td><td class="fielddoc"><p>convert RGB/BGR to HSV (hue saturation value), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a4fd046347536e547986a93710da29f2d"></a>COLOR_BGR2Lab&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE Lab, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0adcb601b5bdb42ded57e74dbc2a90a282"></a>COLOR_BGR2Luv&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE Luv, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a67b3508e468db8b222563e9fffa0fa00"></a>COLOR_BGR2HLS&#160;</td><td class="fielddoc"><p>convert RGB/BGR to HLS (hue lightness saturation), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a9868b92ef87467e2e1941e084e90a8a2"></a>COLOR_HSV2BGR&#160;</td><td class="fielddoc"><p>backward conversions to RGB/BGR </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0afbb43921348312356f7b9fb351b92001"></a>COLOR_BGR2YUV&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and YUV </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0abe3655f90615347c18550ef37f076f52"></a>COLOR_YUV2RGB_NV12&#160;</td><td class="fielddoc"><p>YUV 4:2:0 family to RGB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a99e17f1193316a576737a89c0b64c0c7"></a>COLOR_YUV2RGB_UYVY&#160;</td><td class="fielddoc"><p>YUV 4:2:2 family to RGB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a59515479a043a41534800836e08b31d4"></a>COLOR_RGBA2mRGBA&#160;</td><td class="fielddoc"><p>alpha premultiplication </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0ac17162b67ea6bf79ab7c18928a35bed9"></a>COLOR_RGB2YUV_I420&#160;</td><td class="fielddoc"><p>RGB to YUV 4:2:0 family. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0adf9808f6473823be2d3d5fc94f87ff83"></a>COLOR_BayerBG2BGR&#160;</td><td class="fielddoc"><p>Demosaicing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0abb93ab29f64149dcc6add03eb57aa422"></a>COLOR_BayerBG2BGR_VNG&#160;</td><td class="fielddoc"><p>Demosaicing using Variable Number of Gradients. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a69250d4a0546e0516a3b4b8766f61280"></a>COLOR_BayerBG2BGR_EA&#160;</td><td class="fielddoc"><p>Edge-Aware Demosaicing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a6cfe4f8ee50e6d033762c6a653592d39"></a>COLOR_BayerBG2BGRA&#160;</td><td class="fielddoc"><p>Demosaicing with alpha channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7"></a>COLOR_BGR2BGRA&#160;</td><td class="fielddoc"><p>add alpha channel to RGB or BGR image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372"></a>COLOR_BGRA2BGR&#160;</td><td class="fielddoc"><p>remove alpha channel from RGB or BGR image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a6ebb99459745f21e76daf63e7cbf4e4e"></a>COLOR_BGR2RGBA&#160;</td><td class="fielddoc"><p>convert between RGB and BGR color spaces (with or without alpha channel) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a227692b0c382bf5a7fd40f01ce6a1758"></a>COLOR_BGR2GRAY&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and grayscale, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a5c587d0660084780b83ad27b0f56ac85"></a>COLOR_BGR2BGR565&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and BGR565 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a90ffef38218e1480d60c3479a53c5680"></a>COLOR_GRAY2BGR565&#160;</td><td class="fielddoc"><p>convert between grayscale to BGR565 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a45bf096f1f6840a82dd98d0fc418512f"></a>COLOR_BGR2BGR555&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and BGR555 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a573fd1d3ab76e85f41fa5e43b6c393a4"></a>COLOR_GRAY2BGR555&#160;</td><td class="fielddoc"><p>convert between grayscale and BGR555 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a54e0efb8ca0f4cf5067c4a09efabef9f"></a>COLOR_BGR2XYZ&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE XYZ, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0ab07f75a53538f9d6a81aae64550188ce"></a>COLOR_BGR2YCrCb&#160;</td><td class="fielddoc"><p>convert RGB/BGR to luma-chroma (aka YCC), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a8e8f59a8b152213e9ae59994013c22a9"></a>COLOR_BGR2HSV&#160;</td><td class="fielddoc"><p>convert RGB/BGR to HSV (hue saturation value), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a4fd046347536e547986a93710da29f2d"></a>COLOR_BGR2Lab&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE Lab, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0adcb601b5bdb42ded57e74dbc2a90a282"></a>COLOR_BGR2Luv&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE Luv, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a67b3508e468db8b222563e9fffa0fa00"></a>COLOR_BGR2HLS&#160;</td><td class="fielddoc"><p>convert RGB/BGR to HLS (hue lightness saturation), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a9868b92ef87467e2e1941e084e90a8a2"></a>COLOR_HSV2BGR&#160;</td><td class="fielddoc"><p>backward conversions to RGB/BGR </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0afbb43921348312356f7b9fb351b92001"></a>COLOR_BGR2YUV&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and YUV </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0abe3655f90615347c18550ef37f076f52"></a>COLOR_YUV2RGB_NV12&#160;</td><td class="fielddoc"><p>YUV 4:2:0 family to RGB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a99e17f1193316a576737a89c0b64c0c7"></a>COLOR_YUV2RGB_UYVY&#160;</td><td class="fielddoc"><p>YUV 4:2:2 family to RGB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a59515479a043a41534800836e08b31d4"></a>COLOR_RGBA2mRGBA&#160;</td><td class="fielddoc"><p>alpha premultiplication </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0ac17162b67ea6bf79ab7c18928a35bed9"></a>COLOR_RGB2YUV_I420&#160;</td><td class="fielddoc"><p>RGB to YUV 4:2:0 family. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0adf9808f6473823be2d3d5fc94f87ff83"></a>COLOR_BayerBG2BGR&#160;</td><td class="fielddoc"><p>Demosaicing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0abb93ab29f64149dcc6add03eb57aa422"></a>COLOR_BayerBG2BGR_VNG&#160;</td><td class="fielddoc"><p>Demosaicing using Variable Number of Gradients. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a69250d4a0546e0516a3b4b8766f61280"></a>COLOR_BayerBG2BGR_EA&#160;</td><td class="fielddoc"><p>Edge-Aware Demosaicing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a6cfe4f8ee50e6d033762c6a653592d39"></a>COLOR_BayerBG2BGRA&#160;</td><td class="fielddoc"><p>Demosaicing with alpha channel. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga4e0972be5de079fed4e3a10e24ef5ef0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e0972be5de079fed4e3a10e24ef5ef0">&#9670;&nbsp;</a></span>ColorConversionCodes <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgproc__color__conversions.html#ga4e0972be5de079fed4e3a10e24ef5ef0">cv::ColorConversionCodes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>the color conversion codes </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__imgproc__color__conversions.html">Imgproc_color_conversions</a> </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7"></a>COLOR_BGR2BGRA&#160;</td><td class="fielddoc"><p>add alpha channel to RGB or BGR image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372"></a>COLOR_BGRA2BGR&#160;</td><td class="fielddoc"><p>remove alpha channel from RGB or BGR image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a6ebb99459745f21e76daf63e7cbf4e4e"></a>COLOR_BGR2RGBA&#160;</td><td class="fielddoc"><p>convert between RGB and BGR color spaces (with or without alpha channel) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a227692b0c382bf5a7fd40f01ce6a1758"></a>COLOR_BGR2GRAY&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and grayscale, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a5c587d0660084780b83ad27b0f56ac85"></a>COLOR_BGR2BGR565&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and BGR565 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a90ffef38218e1480d60c3479a53c5680"></a>COLOR_GRAY2BGR565&#160;</td><td class="fielddoc"><p>convert between grayscale to BGR565 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a45bf096f1f6840a82dd98d0fc418512f"></a>COLOR_BGR2BGR555&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and BGR555 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a573fd1d3ab76e85f41fa5e43b6c393a4"></a>COLOR_GRAY2BGR555&#160;</td><td class="fielddoc"><p>convert between grayscale and BGR555 (16-bit images) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a54e0efb8ca0f4cf5067c4a09efabef9f"></a>COLOR_BGR2XYZ&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE XYZ, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0ab07f75a53538f9d6a81aae64550188ce"></a>COLOR_BGR2YCrCb&#160;</td><td class="fielddoc"><p>convert RGB/BGR to luma-chroma (aka YCC), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a8e8f59a8b152213e9ae59994013c22a9"></a>COLOR_BGR2HSV&#160;</td><td class="fielddoc"><p>convert RGB/BGR to HSV (hue saturation value), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a4fd046347536e547986a93710da29f2d"></a>COLOR_BGR2Lab&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE Lab, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0adcb601b5bdb42ded57e74dbc2a90a282"></a>COLOR_BGR2Luv&#160;</td><td class="fielddoc"><p>convert RGB/BGR to CIE Luv, color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a67b3508e468db8b222563e9fffa0fa00"></a>COLOR_BGR2HLS&#160;</td><td class="fielddoc"><p>convert RGB/BGR to HLS (hue lightness saturation), color conversions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a9868b92ef87467e2e1941e084e90a8a2"></a>COLOR_HSV2BGR&#160;</td><td class="fielddoc"><p>backward conversions to RGB/BGR </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0afbb43921348312356f7b9fb351b92001"></a>COLOR_BGR2YUV&#160;</td><td class="fielddoc"><p>convert between RGB/BGR and YUV </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0abe3655f90615347c18550ef37f076f52"></a>COLOR_YUV2RGB_NV12&#160;</td><td class="fielddoc"><p>YUV 4:2:0 family to RGB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a99e17f1193316a576737a89c0b64c0c7"></a>COLOR_YUV2RGB_UYVY&#160;</td><td class="fielddoc"><p>YUV 4:2:2 family to RGB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a59515479a043a41534800836e08b31d4"></a>COLOR_RGBA2mRGBA&#160;</td><td class="fielddoc"><p>alpha premultiplication </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0ac17162b67ea6bf79ab7c18928a35bed9"></a>COLOR_RGB2YUV_I420&#160;</td><td class="fielddoc"><p>RGB to YUV 4:2:0 family. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0adf9808f6473823be2d3d5fc94f87ff83"></a>COLOR_BayerBG2BGR&#160;</td><td class="fielddoc"><p>Demosaicing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0abb93ab29f64149dcc6add03eb57aa422"></a>COLOR_BayerBG2BGR_VNG&#160;</td><td class="fielddoc"><p>Demosaicing using Variable Number of Gradients. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a69250d4a0546e0516a3b4b8766f61280"></a>COLOR_BayerBG2BGR_EA&#160;</td><td class="fielddoc"><p>Edge-Aware Demosaicing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a6cfe4f8ee50e6d033762c6a653592d39"></a>COLOR_BayerBG2BGRA&#160;</td><td class="fielddoc"><p>Demosaicing with alpha channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a91481df8e0d88c3ca819ab1a22f0dcc7"></a>COLOR_BGR2BGRA&#160;</td><td class="fielddoc"><p>add alpha channel to RGB or BGR image </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4e0972be5de079fed4e3a10e24ef5ef0a128336f7987522cfef166e46d9170372"></a>COLOR_BGRA2BGR&#160;</td><td class="fielddoc"><p>remove alpha channel from RGB or BGR image </p>
 </td></tr>

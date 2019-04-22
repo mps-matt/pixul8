@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::Formatter Class Reference</title>
+<title>PixUl8: cv::Formatter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -126,9 +124,32 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a12f85200e31aff6f65c3eb3b6cbb01b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d8cb8142d1e37c42e98ded5e28ca8b0"><td class="memItemLeft" align="right" valign="top"><a id="a0d8cb8142d1e37c42e98ded5e28ca8b0"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>FMT_DEFAULT</b> = 0, 
+<b>FMT_MATLAB</b> = 1, 
+<b>FMT_CSV</b> = 2, 
+<b>FMT_PYTHON</b> = 3, 
+<br />
+&#160;&#160;<b>FMT_NUMPY</b> = 4, 
+<b>FMT_C</b> = 5
+<br />
+ }</td></tr>
+<tr class="separator:a0d8cb8142d1e37c42e98ded5e28ca8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a73aaf40fda3872332aff523cf01eeb02"><td class="memItemLeft" align="right" valign="top"><a id="a73aaf40fda3872332aff523cf01eeb02"></a>
+virtual <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1_formatted.html">Formatted</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>format</b> (const <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;mtx) const =0</td></tr>
+<tr class="separator:a73aaf40fda3872332aff523cf01eeb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab7d90ed6e65db4c9eb812db650154d"><td class="memItemLeft" align="right" valign="top"><a id="aeab7d90ed6e65db4c9eb812db650154d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>set32fPrecision</b> (int p=8)=0</td></tr>
+<tr class="separator:aeab7d90ed6e65db4c9eb812db650154d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad067f43e8dece00177a16214a561ddd1"><td class="memItemLeft" align="right" valign="top"><a id="ad067f43e8dece00177a16214a561ddd1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>set64fPrecision</b> (int p=16)=0</td></tr>
+<tr class="separator:ad067f43e8dece00177a16214a561ddd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b1b38d0429011d5825cae92d0421233"><td class="memItemLeft" align="right" valign="top"><a id="a9b1b38d0429011d5825cae92d0421233"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setMultiline</b> (bool ml=true)=0</td></tr>
+<tr class="separator:a9b1b38d0429011d5825cae92d0421233"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73aaf40fda3872332aff523cf01eeb02"><td class="memItemLeft" align="right" valign="top"><a id="a73aaf40fda3872332aff523cf01eeb02"></a>
 virtual <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1_formatted.html">Formatted</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>format</b> (const <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;mtx) const =0</td></tr>
 <tr class="separator:a73aaf40fda3872332aff523cf01eeb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,12 +213,16 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 <tr class="memitem:a641b3446653dd2afd0f2eacba07dc81d"><td class="memItemLeft" align="right" valign="top"><a id="a641b3446653dd2afd0f2eacba07dc81d"></a>
 static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1_formatter.html">Formatter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (int fmt=FMT_DEFAULT)</td></tr>
 <tr class="separator:a641b3446653dd2afd0f2eacba07dc81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641b3446653dd2afd0f2eacba07dc81d"><td class="memItemLeft" align="right" valign="top"><a id="a641b3446653dd2afd0f2eacba07dc81d"></a>
+static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1_formatter.html">Formatter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (int fmt=FMT_DEFAULT)</td></tr>
+<tr class="separator:a641b3446653dd2afd0f2eacba07dc81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>document </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo:</a></b></dt><dd>document </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000029">Todo:</a></b></dt><dd>document </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000040">Todo:</a></b></dt><dd>document </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000051">Todo:</a></b></dt><dd>document </dd></dl>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>PixUl8/OpenCV/opencv2.framework/Versions/A/Headers/<a class="el" href="_open_c_v_2opencv2_8framework_2_versions_2_a_2_headers_2core_8hpp_source.html">core.hpp</a></li>
 </ul>

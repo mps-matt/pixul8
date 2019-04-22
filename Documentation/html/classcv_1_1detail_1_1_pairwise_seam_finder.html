@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::detail::PairwiseSeamFinder Class Reference</title>
+<title>PixUl8: cv::detail::PairwiseSeamFinder Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -92,10 +90,12 @@ Inheritance diagram for cv::detail::PairwiseSeamFinder:</div>
 <area href="classcv_1_1detail_1_1_seam_finder.html" title="Base class for a seam estimator." alt="cv::detail::SeamFinder" shape="rect" coords="194,0,378,24"/>
 <area href="classcv_1_1detail_1_1_seam_finder.html" title="Base class for a seam estimator." alt="cv::detail::SeamFinder" shape="rect" coords="388,0,572,24"/>
 <area href="classcv_1_1detail_1_1_seam_finder.html" title="Base class for a seam estimator." alt="cv::detail::SeamFinder" shape="rect" coords="582,0,766,24"/>
+<area href="classcv_1_1detail_1_1_seam_finder.html" title="Base class for a seam estimator." alt="cv::detail::SeamFinder" shape="rect" coords="776,0,960,24"/>
 <area href="classcv_1_1detail_1_1_voronoi_seam_finder.html" title="Voronoi diagram-based seam estimator." alt="cv::detail::VoronoiSeamFinder" shape="rect" coords="0,112,184,136"/>
 <area href="classcv_1_1detail_1_1_voronoi_seam_finder.html" title="Voronoi diagram-based seam estimator." alt="cv::detail::VoronoiSeamFinder" shape="rect" coords="194,112,378,136"/>
 <area href="classcv_1_1detail_1_1_voronoi_seam_finder.html" title="Voronoi diagram-based seam estimator." alt="cv::detail::VoronoiSeamFinder" shape="rect" coords="388,112,572,136"/>
 <area href="classcv_1_1detail_1_1_voronoi_seam_finder.html" title="Voronoi diagram-based seam estimator." alt="cv::detail::VoronoiSeamFinder" shape="rect" coords="582,112,766,136"/>
+<area href="classcv_1_1detail_1_1_voronoi_seam_finder.html" title="Voronoi diagram-based seam estimator." alt="cv::detail::VoronoiSeamFinder" shape="rect" coords="776,112,960,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -113,9 +113,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8f7dd0036f534991ec6d02a86dc509a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_pairwise_seam_finder.html#a8f7dd0036f534991ec6d02a86dc509a4">find</a> (const std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt; &amp;src, const std::vector&lt; <a class="el" href="classcv_1_1_point__.html">Point</a> &gt; &amp;corners, std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt; &amp;masks) CV_OVERRIDE</td></tr>
 <tr class="memdesc:a8f7dd0036f534991ec6d02a86dc509a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates seams.  <a href="#a8f7dd0036f534991ec6d02a86dc509a4">More...</a><br /></td></tr>
 <tr class="separator:a8f7dd0036f534991ec6d02a86dc509a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f7dd0036f534991ec6d02a86dc509a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_pairwise_seam_finder.html#a8f7dd0036f534991ec6d02a86dc509a4">find</a> (const std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt; &amp;src, const std::vector&lt; <a class="el" href="classcv_1_1_point__.html">Point</a> &gt; &amp;corners, std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt; &amp;masks) CV_OVERRIDE</td></tr>
+<tr class="memdesc:a8f7dd0036f534991ec6d02a86dc509a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates seams.  <a href="#a8f7dd0036f534991ec6d02a86dc509a4">More...</a><br /></td></tr>
+<tr class="separator:a8f7dd0036f534991ec6d02a86dc509a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a929964603a3e5d322245b83ac348cb13"><td class="memItemLeft" align="right" valign="top"><a id="a929964603a3e5d322245b83ac348cb13"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
+<tr class="separator:a929964603a3e5d322245b83ac348cb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e2d33396c0a012c7a256db8337435c6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_pairwise_seam_finder.html#a8e2d33396c0a012c7a256db8337435c6">findInPair</a> (size_t first, size_t second, <a class="el" href="classcv_1_1_rect__.html">Rect</a> roi)=0</td></tr>
+<tr class="memdesc:a8e2d33396c0a012c7a256db8337435c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves masks intersection of two specified images in the given ROI.  <a href="#a8e2d33396c0a012c7a256db8337435c6">More...</a><br /></td></tr>
+<tr class="separator:a8e2d33396c0a012c7a256db8337435c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a929964603a3e5d322245b83ac348cb13"><td class="memItemLeft" align="right" valign="top"><a id="a929964603a3e5d322245b83ac348cb13"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
 <tr class="separator:a929964603a3e5d322245b83ac348cb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,7 +169,7 @@ std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt;&#160;<
 <div class="textblock"><p>Base class for all pairwise seam estimators. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8f7dd0036f534991ec6d02a86dc509a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f7dd0036f534991ec6d02a86dc509a4">&#9670;&nbsp;</a></span>find() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f7dd0036f534991ec6d02a86dc509a4">&#9670;&nbsp;</a></span>find() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -211,12 +220,12 @@ std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt;&#160;<
 
 <p>Implements <a class="el" href="classcv_1_1detail_1_1_seam_finder.html#abaf8facb8e4b77cffcc9085997833989">cv::detail::SeamFinder</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, and <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>.</p>
+<p>Reimplemented in <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, and <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>.</p>
 
 </div>
 </div>
 <a id="a8f7dd0036f534991ec6d02a86dc509a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f7dd0036f534991ec6d02a86dc509a4">&#9670;&nbsp;</a></span>find() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f7dd0036f534991ec6d02a86dc509a4">&#9670;&nbsp;</a></span>find() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -267,12 +276,12 @@ std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt;&#160;<
 
 <p>Implements <a class="el" href="classcv_1_1detail_1_1_seam_finder.html#abaf8facb8e4b77cffcc9085997833989">cv::detail::SeamFinder</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, and <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>.</p>
+<p>Reimplemented in <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, and <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>.</p>
 
 </div>
 </div>
 <a id="a8f7dd0036f534991ec6d02a86dc509a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f7dd0036f534991ec6d02a86dc509a4">&#9670;&nbsp;</a></span>find() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f7dd0036f534991ec6d02a86dc509a4">&#9670;&nbsp;</a></span>find() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -323,12 +332,12 @@ std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt;&#160;<
 
 <p>Implements <a class="el" href="classcv_1_1detail_1_1_seam_finder.html#abaf8facb8e4b77cffcc9085997833989">cv::detail::SeamFinder</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, and <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>.</p>
+<p>Reimplemented in <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, and <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>.</p>
 
 </div>
 </div>
 <a id="a8f7dd0036f534991ec6d02a86dc509a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f7dd0036f534991ec6d02a86dc509a4">&#9670;&nbsp;</a></span>find() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f7dd0036f534991ec6d02a86dc509a4">&#9670;&nbsp;</a></span>find() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -379,12 +388,68 @@ std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt;&#160;<
 
 <p>Implements <a class="el" href="classcv_1_1detail_1_1_seam_finder.html#abaf8facb8e4b77cffcc9085997833989">cv::detail::SeamFinder</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, and <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>.</p>
+<p>Reimplemented in <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, and <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>.</p>
+
+</div>
+</div>
+<a id="a8f7dd0036f534991ec6d02a86dc509a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f7dd0036f534991ec6d02a86dc509a4">&#9670;&nbsp;</a></span>find() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void cv::detail::PairwiseSeamFinder::find </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classcv_1_1_point__.html">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>corners</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>masks</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Estimates seams. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>Source images </td></tr>
+    <tr><td class="paramname">corners</td><td>Source image top-left corners </td></tr>
+    <tr><td class="paramname">masks</td><td>Source image masks to update </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classcv_1_1detail_1_1_seam_finder.html#abaf8facb8e4b77cffcc9085997833989">cv::detail::SeamFinder</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>, and <a class="el" href="classcv_1_1detail_1_1_voronoi_seam_finder.html#a779eced4775e0a2af9e7b7283b0f70f9">cv::detail::VoronoiSeamFinder</a>.</p>
 
 </div>
 </div>
 <a id="a8e2d33396c0a012c7a256db8337435c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e2d33396c0a012c7a256db8337435c6">&#9670;&nbsp;</a></span>findInPair() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e2d33396c0a012c7a256db8337435c6">&#9670;&nbsp;</a></span>findInPair() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -436,7 +501,7 @@ std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt;&#160;<
 </div>
 </div>
 <a id="a8e2d33396c0a012c7a256db8337435c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e2d33396c0a012c7a256db8337435c6">&#9670;&nbsp;</a></span>findInPair() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e2d33396c0a012c7a256db8337435c6">&#9670;&nbsp;</a></span>findInPair() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -488,7 +553,7 @@ std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt;&#160;<
 </div>
 </div>
 <a id="a8e2d33396c0a012c7a256db8337435c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e2d33396c0a012c7a256db8337435c6">&#9670;&nbsp;</a></span>findInPair() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e2d33396c0a012c7a256db8337435c6">&#9670;&nbsp;</a></span>findInPair() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -540,7 +605,59 @@ std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt;&#160;<
 </div>
 </div>
 <a id="a8e2d33396c0a012c7a256db8337435c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e2d33396c0a012c7a256db8337435c6">&#9670;&nbsp;</a></span>findInPair() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e2d33396c0a012c7a256db8337435c6">&#9670;&nbsp;</a></span>findInPair() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void cv::detail::PairwiseSeamFinder::findInPair </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>second</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcv_1_1_rect__.html">Rect</a>&#160;</td>
+          <td class="paramname"><em>roi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resolves masks intersection of two specified images in the given ROI. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">first</td><td>First image index </td></tr>
+    <tr><td class="paramname">second</td><td>Second image index </td></tr>
+    <tr><td class="paramname">roi</td><td>Region of interest </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8e2d33396c0a012c7a256db8337435c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e2d33396c0a012c7a256db8337435c6">&#9670;&nbsp;</a></span>findInPair() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

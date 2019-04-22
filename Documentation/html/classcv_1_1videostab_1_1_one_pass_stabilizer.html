@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::videostab::OnePassStabilizer Class Reference</title>
+<title>PixUl8: cv::videostab::OnePassStabilizer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -83,6 +81,8 @@ Inheritance diagram for cv::videostab::OnePassStabilizer:</div>
  <div class="center">
   <img src="classcv_1_1videostab_1_1_one_pass_stabilizer.png" usemap="#cv::videostab::OnePassStabilizer_map" alt=""/>
   <map id="cv::videostab::OnePassStabilizer_map" name="cv::videostab::OnePassStabilizer_map">
+<area href="classcv_1_1videostab_1_1_i_frame_source.html" alt="cv::videostab::IFrameSource" shape="rect" coords="205,504,400,528"/>
+<area href="classcv_1_1videostab_1_1_stabilizer_base.html" alt="cv::videostab::StabilizerBase" shape="rect" coords="205,448,400,472"/>
 <area href="classcv_1_1videostab_1_1_i_frame_source.html" alt="cv::videostab::IFrameSource" shape="rect" coords="205,392,400,416"/>
 <area href="classcv_1_1videostab_1_1_stabilizer_base.html" alt="cv::videostab::StabilizerBase" shape="rect" coords="205,336,400,360"/>
 <area href="classcv_1_1videostab_1_1_i_frame_source.html" alt="cv::videostab::IFrameSource" shape="rect" coords="205,280,400,304"/>
@@ -144,7 +144,73 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> () 
 <tr class="memitem:a351b20ba9b9aa2862410b6b7265de8a1"><td class="memItemLeft" align="right" valign="top"><a id="a351b20ba9b9aa2862410b6b7265de8a1"></a>
 virtual <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nextFrame</b> () CV_OVERRIDE</td></tr>
 <tr class="separator:a351b20ba9b9aa2862410b6b7265de8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af63308021cfb37cf696836665d78a820"><td class="memItemLeft" align="right" valign="top"><a id="af63308021cfb37cf696836665d78a820"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMotionFilter</b> (<a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1videostab_1_1_motion_filter_base.html">MotionFilterBase</a> &gt; val)</td></tr>
+<tr class="separator:af63308021cfb37cf696836665d78a820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b34bc7dc9c291f603aacb971fe41ee5"><td class="memItemLeft" align="right" valign="top"><a id="a3b34bc7dc9c291f603aacb971fe41ee5"></a>
+<a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1videostab_1_1_motion_filter_base.html">MotionFilterBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>motionFilter</b> () const</td></tr>
+<tr class="separator:a3b34bc7dc9c291f603aacb971fe41ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6f34069d0bdd8dab0cb47035a5307d9"><td class="memItemLeft" align="right" valign="top"><a id="ad6f34069d0bdd8dab0cb47035a5307d9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> () CV_OVERRIDE</td></tr>
+<tr class="separator:ad6f34069d0bdd8dab0cb47035a5307d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351b20ba9b9aa2862410b6b7265de8a1"><td class="memItemLeft" align="right" valign="top"><a id="a351b20ba9b9aa2862410b6b7265de8a1"></a>
+virtual <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nextFrame</b> () CV_OVERRIDE</td></tr>
+<tr class="separator:a351b20ba9b9aa2862410b6b7265de8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcv_1_1videostab_1_1_stabilizer_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcv_1_1videostab_1_1_stabilizer_base.html">cv::videostab::StabilizerBase</a></td></tr>
+<tr class="memitem:ad5a4f03a204822a1f17dd0fe5da6317d inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="ad5a4f03a204822a1f17dd0fe5da6317d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLog</b> (<a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1videostab_1_1_i_log.html">ILog</a> &gt; ilog)</td></tr>
+<tr class="separator:ad5a4f03a204822a1f17dd0fe5da6317d inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61821aff05bfa68006c5a960bef5d238 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="a61821aff05bfa68006c5a960bef5d238"></a>
+<a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1videostab_1_1_i_log.html">ILog</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>log</b> () const</td></tr>
+<tr class="separator:a61821aff05bfa68006c5a960bef5d238 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0245ba9e08329f9ac2f617a8f7c1eaaf inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="a0245ba9e08329f9ac2f617a8f7c1eaaf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRadius</b> (int val)</td></tr>
+<tr class="separator:a0245ba9e08329f9ac2f617a8f7c1eaaf inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad82e929ad0db08202a77b6383e408687 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="ad82e929ad0db08202a77b6383e408687"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>radius</b> () const</td></tr>
+<tr class="separator:ad82e929ad0db08202a77b6383e408687 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a107e9f7960b7efd7e210b5e178118021 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="a107e9f7960b7efd7e210b5e178118021"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFrameSource</b> (<a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1videostab_1_1_i_frame_source.html">IFrameSource</a> &gt; val)</td></tr>
+<tr class="separator:a107e9f7960b7efd7e210b5e178118021 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46172358a436b6e184626d8c67ba0d17 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="a46172358a436b6e184626d8c67ba0d17"></a>
+<a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1videostab_1_1_i_frame_source.html">IFrameSource</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>frameSource</b> () const</td></tr>
+<tr class="separator:a46172358a436b6e184626d8c67ba0d17 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e8c33ea40e8dde5b5083c16338307c6 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="a6e8c33ea40e8dde5b5083c16338307c6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMotionEstimator</b> (<a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1videostab_1_1_image_motion_estimator_base.html">ImageMotionEstimatorBase</a> &gt; val)</td></tr>
+<tr class="separator:a6e8c33ea40e8dde5b5083c16338307c6 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ab5adc5cefe91ef4397bd2d01111b26 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="a8ab5adc5cefe91ef4397bd2d01111b26"></a>
+<a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1videostab_1_1_image_motion_estimator_base.html">ImageMotionEstimatorBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>motionEstimator</b> () const</td></tr>
+<tr class="separator:a8ab5adc5cefe91ef4397bd2d01111b26 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45319b46a3729c36cda4f664da2a69b1 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="a45319b46a3729c36cda4f664da2a69b1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDeblurer</b> (<a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1videostab_1_1_deblurer_base.html">DeblurerBase</a> &gt; val)</td></tr>
+<tr class="separator:a45319b46a3729c36cda4f664da2a69b1 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ce9686e0c40d131f606cfa1feb73181 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="a1ce9686e0c40d131f606cfa1feb73181"></a>
+<a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1videostab_1_1_deblurer_base.html">DeblurerBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>deblurrer</b> () const</td></tr>
+<tr class="separator:a1ce9686e0c40d131f606cfa1feb73181 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac98667cf80a45d764e883b5a02ae152 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="aac98667cf80a45d764e883b5a02ae152"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTrimRatio</b> (float val)</td></tr>
+<tr class="separator:aac98667cf80a45d764e883b5a02ae152 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc3dbde54f82fac976999469e049a3db inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="afc3dbde54f82fac976999469e049a3db"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>trimRatio</b> () const</td></tr>
+<tr class="separator:afc3dbde54f82fac976999469e049a3db inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada19bffb5b015f14af92e7c472989605 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="ada19bffb5b015f14af92e7c472989605"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCorrectionForInclusion</b> (bool val)</td></tr>
+<tr class="separator:ada19bffb5b015f14af92e7c472989605 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab72fa834ec03b7db3d1c1926b8c900e6 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="ab72fa834ec03b7db3d1c1926b8c900e6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>doCorrectionForInclusion</b> () const</td></tr>
+<tr class="separator:ab72fa834ec03b7db3d1c1926b8c900e6 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c2b79352223792a044080dfd365b30b inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="a5c2b79352223792a044080dfd365b30b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setBorderMode</b> (int val)</td></tr>
+<tr class="separator:a5c2b79352223792a044080dfd365b30b inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84049a042202eaaa59d3822207955dfa inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="a84049a042202eaaa59d3822207955dfa"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>borderMode</b> () const</td></tr>
+<tr class="separator:a84049a042202eaaa59d3822207955dfa inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add20a4cf58f541dbafcaa290a3c35f16 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="add20a4cf58f541dbafcaa290a3c35f16"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setInpainter</b> (<a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1videostab_1_1_inpainter_base.html">InpainterBase</a> &gt; val)</td></tr>
+<tr class="separator:add20a4cf58f541dbafcaa290a3c35f16 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe5046c6efef3aef80125d7d61a4dab1 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="afe5046c6efef3aef80125d7d61a4dab1"></a>
+<a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1videostab_1_1_inpainter_base.html">InpainterBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>inpainter</b> () const</td></tr>
+<tr class="separator:afe5046c6efef3aef80125d7d61a4dab1 inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5a4f03a204822a1f17dd0fe5da6317d inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="ad5a4f03a204822a1f17dd0fe5da6317d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setLog</b> (<a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1videostab_1_1_i_log.html">ILog</a> &gt; ilog)</td></tr>
 <tr class="separator:ad5a4f03a204822a1f17dd0fe5da6317d inherit pub_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -412,7 +478,34 @@ virtual <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="m
 <tr class="memitem:a9f5989a3c55cc05e11b15a720cfb96cd"><td class="memItemLeft" align="right" valign="top"><a id="a9f5989a3c55cc05e11b15a720cfb96cd"></a>
 virtual <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>postProcessFrame</b> (const <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;frame) CV_OVERRIDE</td></tr>
 <tr class="separator:a9f5989a3c55cc05e11b15a720cfb96cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa91feb58c31962610d94527c424bd27b"><td class="memItemLeft" align="right" valign="top"><a id="aa91feb58c31962610d94527c424bd27b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setUp</b> (const <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;firstFrame) CV_OVERRIDE</td></tr>
+<tr class="separator:aa91feb58c31962610d94527c424bd27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a323e46ff64d821fec51375c4334602bf"><td class="memItemLeft" align="right" valign="top"><a id="a323e46ff64d821fec51375c4334602bf"></a>
+virtual <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>estimateMotion</b> () CV_OVERRIDE</td></tr>
+<tr class="separator:a323e46ff64d821fec51375c4334602bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3cc7a6d53edae0840100cdce5faa60d"><td class="memItemLeft" align="right" valign="top"><a id="af3cc7a6d53edae0840100cdce5faa60d"></a>
+virtual <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>estimateStabilizationMotion</b> () CV_OVERRIDE</td></tr>
+<tr class="separator:af3cc7a6d53edae0840100cdce5faa60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f5989a3c55cc05e11b15a720cfb96cd"><td class="memItemLeft" align="right" valign="top"><a id="a9f5989a3c55cc05e11b15a720cfb96cd"></a>
+virtual <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>postProcessFrame</b> (const <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;frame) CV_OVERRIDE</td></tr>
+<tr class="separator:a9f5989a3c55cc05e11b15a720cfb96cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classcv_1_1videostab_1_1_stabilizer_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcv_1_1videostab_1_1_stabilizer_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classcv_1_1videostab_1_1_stabilizer_base.html">cv::videostab::StabilizerBase</a></td></tr>
+<tr class="memitem:a0a04c12c0db40651f58cec47f091117a inherit pro_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="a0a04c12c0db40651f58cec47f091117a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr>
+<tr class="separator:a0a04c12c0db40651f58cec47f091117a inherit pro_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59ffdca7516042b0553a43c7b3cdcf74 inherit pro_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="a59ffdca7516042b0553a43c7b3cdcf74"></a>
+<a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nextStabilizedFrame</b> ()</td></tr>
+<tr class="separator:a59ffdca7516042b0553a43c7b3cdcf74 inherit pro_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade2bda91481dab757bf2ffe3f4f27465 inherit pro_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="ade2bda91481dab757bf2ffe3f4f27465"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>doOneIteration</b> ()</td></tr>
+<tr class="separator:ade2bda91481dab757bf2ffe3f4f27465 inherit pro_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff4ee85e72d58fb3eb09c0f5c8a9314c inherit pro_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="aff4ee85e72d58fb3eb09c0f5c8a9314c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stabilizeFrame</b> ()</td></tr>
+<tr class="separator:aff4ee85e72d58fb3eb09c0f5c8a9314c inherit pro_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0b47e6b1371d70beb659fff7f94fe8 inherit pro_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="aba0b47e6b1371d70beb659fff7f94fe8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>logProcessingTime</b> ()</td></tr>
+<tr class="separator:aba0b47e6b1371d70beb659fff7f94fe8 inherit pro_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a04c12c0db40651f58cec47f091117a inherit pro_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memItemLeft" align="right" valign="top"><a id="a0a04c12c0db40651f58cec47f091117a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr>
 <tr class="separator:a0a04c12c0db40651f58cec47f091117a inherit pro_methods_classcv_1_1videostab_1_1_stabilizer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>

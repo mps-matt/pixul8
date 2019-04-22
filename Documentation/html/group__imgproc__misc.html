@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: Imgproc_misc</title>
+<title>PixUl8: Imgproc_misc</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -114,6 +112,16 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67">cv::DIST_L12</a> = 4, 
 <a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24">cv::DIST_FAIR</a> = 5, 
 <a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a">cv::DIST_WELSCH</a> = 6, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b">cv::DIST_HUBER</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba783c604f67e290d0abb95772c5e05656">cv::DIST_USER</a> = -1, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba2ae133c8c4bec51a0676edc2e5f4d708">cv::DIST_L1</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba70f0fa6bfc69eff41e502e12b23c5eb2">cv::DIST_L2</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebafec1f1f0ec754a563995dc5b3ae1d834">cv::DIST_C</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67">cv::DIST_L12</a> = 4, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24">cv::DIST_FAIR</a> = 5, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a">cv::DIST_WELSCH</a> = 6, 
 <a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b">cv::DIST_HUBER</a> = 7
 <br />
  }</td></tr>
@@ -132,12 +140,26 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>DIST_MASK_PRECISE</b> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468">cv::DIST_MASK_3</a> = 3, 
 <a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896">cv::DIST_MASK_5</a> = 5, 
+<b>DIST_MASK_PRECISE</b> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468">cv::DIST_MASK_3</a> = 3, 
+<a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896">cv::DIST_MASK_5</a> = 5, 
 <b>DIST_MASK_PRECISE</b> = 0
 <br />
  }</td></tr>
 <tr class="memdesc:gaaa68392323ccf7fad87570e41259b497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask size for distance transform.  <a href="group__imgproc__misc.html#gaaa68392323ccf7fad87570e41259b497">More...</a><br /></td></tr>
 <tr class="separator:gaaa68392323ccf7fad87570e41259b497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa9e58d2860d4afa658ef70a9b1115576"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__misc.html#gaa9e58d2860d4afa658ef70a9b1115576">cv::ThresholdTypes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91">cv::THRESH_BINARY</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253">cv::THRESH_BINARY_INV</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884">cv::THRESH_TRUNC</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576add7f55ad0b5b5d57f09d7fc4da4df493">cv::THRESH_TOZERO</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a33fc539d337daac0e79259196d91f175">cv::THRESH_TOZERO_INV</a> = 4, 
+<b>THRESH_MASK</b> = 7, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a141ac5ebc7c61fe2bdb930dbace6ce9b">cv::THRESH_OTSU</a> = 8, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182">cv::THRESH_TRIANGLE</a> = 16, 
+<br />
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91">cv::THRESH_BINARY</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253">cv::THRESH_BINARY_INV</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884">cv::THRESH_TRUNC</a> = 2, 
@@ -189,6 +211,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87">cv::ADAPTIVE_THRESH_MEAN_C</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a">cv::ADAPTIVE_THRESH_GAUSSIAN_C</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87">cv::ADAPTIVE_THRESH_MEAN_C</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a">cv::ADAPTIVE_THRESH_GAUSSIAN_C</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87">cv::ADAPTIVE_THRESH_MEAN_C</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a">cv::ADAPTIVE_THRESH_GAUSSIAN_C</a> = 1
 <br />
  }</td></tr>
@@ -202,12 +227,20 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>PROJ_SPHERICAL_ORTHO</b> = 0, 
 <b>PROJ_SPHERICAL_EQRECT</b> = 1, 
 <b>PROJ_SPHERICAL_ORTHO</b> = 0, 
+<b>PROJ_SPHERICAL_EQRECT</b> = 1, 
+<br />
+&#160;&#160;<b>PROJ_SPHERICAL_ORTHO</b> = 0, 
 <b>PROJ_SPHERICAL_EQRECT</b> = 1
 <br />
  }</td></tr>
 <tr class="memdesc:gace497823594b601f2094d32dde6a3c94"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__imgproc__transform.html#ga88739cc9ef806c1f7f71c98cce3212a3" title="Transforms an image to compensate for lens distortion.">cv::undistort</a> mode <br /></td></tr>
 <tr class="separator:gace497823594b601f2094d32dde6a3c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad43d3e4208d3cf025d8304156b02ba38"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__misc.html#gad43d3e4208d3cf025d8304156b02ba38">cv::GrabCutClasses</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664">cv::GC_BGD</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c">cv::GC_FGD</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05">cv::GC_PR_BGD</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d">cv::GC_PR_FGD</a> = 3, 
+<br />
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664">cv::GC_BGD</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c">cv::GC_FGD</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05">cv::GC_PR_BGD</a> = 2, 
@@ -250,6 +283,11 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7">cv::GC_INIT_WITH_RECT</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f">cv::GC_INIT_WITH_MASK</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c">cv::GC_EVAL</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b">cv::GC_EVAL_FREEZE_MODEL</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7">cv::GC_INIT_WITH_RECT</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f">cv::GC_INIT_WITH_MASK</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c">cv::GC_EVAL</a> = 2, 
 <a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b">cv::GC_EVAL_FREEZE_MODEL</a> = 3
 <br />
  }</td></tr>
@@ -264,6 +302,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da">cv::DIST_LABEL_CCOMP</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495">cv::DIST_LABEL_PIXEL</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da">cv::DIST_LABEL_CCOMP</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495">cv::DIST_LABEL_PIXEL</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da">cv::DIST_LABEL_CCOMP</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495">cv::DIST_LABEL_PIXEL</a> = 1
 <br />
  }</td></tr>
@@ -278,6 +319,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec">cv::FLOODFILL_FIXED_RANGE</a> = 1 &lt;&lt; 16, 
 <a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f">cv::FLOODFILL_MASK_ONLY</a> = 1 &lt;&lt; 17, 
 <a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec">cv::FLOODFILL_FIXED_RANGE</a> = 1 &lt;&lt; 16, 
+<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f">cv::FLOODFILL_MASK_ONLY</a> = 1 &lt;&lt; 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec">cv::FLOODFILL_FIXED_RANGE</a> = 1 &lt;&lt; 16, 
 <a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f">cv::FLOODFILL_MASK_ONLY</a> = 1 &lt;&lt; 17
 <br />
  }</td></tr>
@@ -322,6 +366,16 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67">cv::DIST_L12</a> = 4, 
 <a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24">cv::DIST_FAIR</a> = 5, 
 <a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a">cv::DIST_WELSCH</a> = 6, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b">cv::DIST_HUBER</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba783c604f67e290d0abb95772c5e05656">cv::DIST_USER</a> = -1, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba2ae133c8c4bec51a0676edc2e5f4d708">cv::DIST_L1</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba70f0fa6bfc69eff41e502e12b23c5eb2">cv::DIST_L2</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebafec1f1f0ec754a563995dc5b3ae1d834">cv::DIST_C</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67">cv::DIST_L12</a> = 4, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24">cv::DIST_FAIR</a> = 5, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a">cv::DIST_WELSCH</a> = 6, 
 <a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b">cv::DIST_HUBER</a> = 7
 <br />
  }</td></tr>
@@ -340,12 +394,26 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>DIST_MASK_PRECISE</b> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468">cv::DIST_MASK_3</a> = 3, 
 <a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896">cv::DIST_MASK_5</a> = 5, 
+<b>DIST_MASK_PRECISE</b> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468">cv::DIST_MASK_3</a> = 3, 
+<a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896">cv::DIST_MASK_5</a> = 5, 
 <b>DIST_MASK_PRECISE</b> = 0
 <br />
  }</td></tr>
 <tr class="memdesc:gaaa68392323ccf7fad87570e41259b497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask size for distance transform.  <a href="group__imgproc__misc.html#gaaa68392323ccf7fad87570e41259b497">More...</a><br /></td></tr>
 <tr class="separator:gaaa68392323ccf7fad87570e41259b497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa9e58d2860d4afa658ef70a9b1115576"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__misc.html#gaa9e58d2860d4afa658ef70a9b1115576">cv::ThresholdTypes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91">cv::THRESH_BINARY</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253">cv::THRESH_BINARY_INV</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884">cv::THRESH_TRUNC</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576add7f55ad0b5b5d57f09d7fc4da4df493">cv::THRESH_TOZERO</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a33fc539d337daac0e79259196d91f175">cv::THRESH_TOZERO_INV</a> = 4, 
+<b>THRESH_MASK</b> = 7, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a141ac5ebc7c61fe2bdb930dbace6ce9b">cv::THRESH_OTSU</a> = 8, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182">cv::THRESH_TRIANGLE</a> = 16, 
+<br />
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91">cv::THRESH_BINARY</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253">cv::THRESH_BINARY_INV</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884">cv::THRESH_TRUNC</a> = 2, 
@@ -397,6 +465,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87">cv::ADAPTIVE_THRESH_MEAN_C</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a">cv::ADAPTIVE_THRESH_GAUSSIAN_C</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87">cv::ADAPTIVE_THRESH_MEAN_C</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a">cv::ADAPTIVE_THRESH_GAUSSIAN_C</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87">cv::ADAPTIVE_THRESH_MEAN_C</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a">cv::ADAPTIVE_THRESH_GAUSSIAN_C</a> = 1
 <br />
  }</td></tr>
@@ -410,12 +481,20 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>PROJ_SPHERICAL_ORTHO</b> = 0, 
 <b>PROJ_SPHERICAL_EQRECT</b> = 1, 
 <b>PROJ_SPHERICAL_ORTHO</b> = 0, 
+<b>PROJ_SPHERICAL_EQRECT</b> = 1, 
+<br />
+&#160;&#160;<b>PROJ_SPHERICAL_ORTHO</b> = 0, 
 <b>PROJ_SPHERICAL_EQRECT</b> = 1
 <br />
  }</td></tr>
 <tr class="memdesc:gace497823594b601f2094d32dde6a3c94"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__imgproc__transform.html#ga88739cc9ef806c1f7f71c98cce3212a3" title="Transforms an image to compensate for lens distortion.">cv::undistort</a> mode <br /></td></tr>
 <tr class="separator:gace497823594b601f2094d32dde6a3c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad43d3e4208d3cf025d8304156b02ba38"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__misc.html#gad43d3e4208d3cf025d8304156b02ba38">cv::GrabCutClasses</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664">cv::GC_BGD</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c">cv::GC_FGD</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05">cv::GC_PR_BGD</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d">cv::GC_PR_FGD</a> = 3, 
+<br />
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664">cv::GC_BGD</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c">cv::GC_FGD</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05">cv::GC_PR_BGD</a> = 2, 
@@ -458,6 +537,11 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7">cv::GC_INIT_WITH_RECT</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f">cv::GC_INIT_WITH_MASK</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c">cv::GC_EVAL</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b">cv::GC_EVAL_FREEZE_MODEL</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7">cv::GC_INIT_WITH_RECT</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f">cv::GC_INIT_WITH_MASK</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c">cv::GC_EVAL</a> = 2, 
 <a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b">cv::GC_EVAL_FREEZE_MODEL</a> = 3
 <br />
  }</td></tr>
@@ -472,6 +556,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da">cv::DIST_LABEL_CCOMP</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495">cv::DIST_LABEL_PIXEL</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da">cv::DIST_LABEL_CCOMP</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495">cv::DIST_LABEL_PIXEL</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da">cv::DIST_LABEL_CCOMP</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495">cv::DIST_LABEL_PIXEL</a> = 1
 <br />
  }</td></tr>
@@ -486,6 +573,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec">cv::FLOODFILL_FIXED_RANGE</a> = 1 &lt;&lt; 16, 
 <a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f">cv::FLOODFILL_MASK_ONLY</a> = 1 &lt;&lt; 17, 
 <a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec">cv::FLOODFILL_FIXED_RANGE</a> = 1 &lt;&lt; 16, 
+<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f">cv::FLOODFILL_MASK_ONLY</a> = 1 &lt;&lt; 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec">cv::FLOODFILL_FIXED_RANGE</a> = 1 &lt;&lt; 16, 
 <a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f">cv::FLOODFILL_MASK_ONLY</a> = 1 &lt;&lt; 17
 <br />
  }</td></tr>
@@ -530,6 +620,16 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67">cv::DIST_L12</a> = 4, 
 <a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24">cv::DIST_FAIR</a> = 5, 
 <a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a">cv::DIST_WELSCH</a> = 6, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b">cv::DIST_HUBER</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba783c604f67e290d0abb95772c5e05656">cv::DIST_USER</a> = -1, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba2ae133c8c4bec51a0676edc2e5f4d708">cv::DIST_L1</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba70f0fa6bfc69eff41e502e12b23c5eb2">cv::DIST_L2</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebafec1f1f0ec754a563995dc5b3ae1d834">cv::DIST_C</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67">cv::DIST_L12</a> = 4, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24">cv::DIST_FAIR</a> = 5, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a">cv::DIST_WELSCH</a> = 6, 
 <a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b">cv::DIST_HUBER</a> = 7
 <br />
  }</td></tr>
@@ -548,12 +648,26 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>DIST_MASK_PRECISE</b> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468">cv::DIST_MASK_3</a> = 3, 
 <a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896">cv::DIST_MASK_5</a> = 5, 
+<b>DIST_MASK_PRECISE</b> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468">cv::DIST_MASK_3</a> = 3, 
+<a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896">cv::DIST_MASK_5</a> = 5, 
 <b>DIST_MASK_PRECISE</b> = 0
 <br />
  }</td></tr>
 <tr class="memdesc:gaaa68392323ccf7fad87570e41259b497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask size for distance transform.  <a href="group__imgproc__misc.html#gaaa68392323ccf7fad87570e41259b497">More...</a><br /></td></tr>
 <tr class="separator:gaaa68392323ccf7fad87570e41259b497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa9e58d2860d4afa658ef70a9b1115576"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__misc.html#gaa9e58d2860d4afa658ef70a9b1115576">cv::ThresholdTypes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91">cv::THRESH_BINARY</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253">cv::THRESH_BINARY_INV</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884">cv::THRESH_TRUNC</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576add7f55ad0b5b5d57f09d7fc4da4df493">cv::THRESH_TOZERO</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a33fc539d337daac0e79259196d91f175">cv::THRESH_TOZERO_INV</a> = 4, 
+<b>THRESH_MASK</b> = 7, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a141ac5ebc7c61fe2bdb930dbace6ce9b">cv::THRESH_OTSU</a> = 8, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182">cv::THRESH_TRIANGLE</a> = 16, 
+<br />
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91">cv::THRESH_BINARY</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253">cv::THRESH_BINARY_INV</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884">cv::THRESH_TRUNC</a> = 2, 
@@ -605,6 +719,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87">cv::ADAPTIVE_THRESH_MEAN_C</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a">cv::ADAPTIVE_THRESH_GAUSSIAN_C</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87">cv::ADAPTIVE_THRESH_MEAN_C</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a">cv::ADAPTIVE_THRESH_GAUSSIAN_C</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87">cv::ADAPTIVE_THRESH_MEAN_C</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a">cv::ADAPTIVE_THRESH_GAUSSIAN_C</a> = 1
 <br />
  }</td></tr>
@@ -618,12 +735,20 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>PROJ_SPHERICAL_ORTHO</b> = 0, 
 <b>PROJ_SPHERICAL_EQRECT</b> = 1, 
 <b>PROJ_SPHERICAL_ORTHO</b> = 0, 
+<b>PROJ_SPHERICAL_EQRECT</b> = 1, 
+<br />
+&#160;&#160;<b>PROJ_SPHERICAL_ORTHO</b> = 0, 
 <b>PROJ_SPHERICAL_EQRECT</b> = 1
 <br />
  }</td></tr>
 <tr class="memdesc:gace497823594b601f2094d32dde6a3c94"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__imgproc__transform.html#ga88739cc9ef806c1f7f71c98cce3212a3" title="Transforms an image to compensate for lens distortion.">cv::undistort</a> mode <br /></td></tr>
 <tr class="separator:gace497823594b601f2094d32dde6a3c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad43d3e4208d3cf025d8304156b02ba38"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__misc.html#gad43d3e4208d3cf025d8304156b02ba38">cv::GrabCutClasses</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664">cv::GC_BGD</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c">cv::GC_FGD</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05">cv::GC_PR_BGD</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d">cv::GC_PR_FGD</a> = 3, 
+<br />
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664">cv::GC_BGD</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c">cv::GC_FGD</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05">cv::GC_PR_BGD</a> = 2, 
@@ -666,6 +791,11 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7">cv::GC_INIT_WITH_RECT</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f">cv::GC_INIT_WITH_MASK</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c">cv::GC_EVAL</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b">cv::GC_EVAL_FREEZE_MODEL</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7">cv::GC_INIT_WITH_RECT</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f">cv::GC_INIT_WITH_MASK</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c">cv::GC_EVAL</a> = 2, 
 <a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b">cv::GC_EVAL_FREEZE_MODEL</a> = 3
 <br />
  }</td></tr>
@@ -680,6 +810,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da">cv::DIST_LABEL_CCOMP</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495">cv::DIST_LABEL_PIXEL</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da">cv::DIST_LABEL_CCOMP</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495">cv::DIST_LABEL_PIXEL</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da">cv::DIST_LABEL_CCOMP</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495">cv::DIST_LABEL_PIXEL</a> = 1
 <br />
  }</td></tr>
@@ -694,6 +827,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec">cv::FLOODFILL_FIXED_RANGE</a> = 1 &lt;&lt; 16, 
 <a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f">cv::FLOODFILL_MASK_ONLY</a> = 1 &lt;&lt; 17, 
 <a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec">cv::FLOODFILL_FIXED_RANGE</a> = 1 &lt;&lt; 16, 
+<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f">cv::FLOODFILL_MASK_ONLY</a> = 1 &lt;&lt; 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec">cv::FLOODFILL_FIXED_RANGE</a> = 1 &lt;&lt; 16, 
 <a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f">cv::FLOODFILL_MASK_ONLY</a> = 1 &lt;&lt; 17
 <br />
  }</td></tr>
@@ -738,6 +874,16 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67">cv::DIST_L12</a> = 4, 
 <a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24">cv::DIST_FAIR</a> = 5, 
 <a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a">cv::DIST_WELSCH</a> = 6, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b">cv::DIST_HUBER</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba783c604f67e290d0abb95772c5e05656">cv::DIST_USER</a> = -1, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba2ae133c8c4bec51a0676edc2e5f4d708">cv::DIST_L1</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba70f0fa6bfc69eff41e502e12b23c5eb2">cv::DIST_L2</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebafec1f1f0ec754a563995dc5b3ae1d834">cv::DIST_C</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67">cv::DIST_L12</a> = 4, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24">cv::DIST_FAIR</a> = 5, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a">cv::DIST_WELSCH</a> = 6, 
 <a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b">cv::DIST_HUBER</a> = 7
 <br />
  }</td></tr>
@@ -756,12 +902,26 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>DIST_MASK_PRECISE</b> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468">cv::DIST_MASK_3</a> = 3, 
 <a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896">cv::DIST_MASK_5</a> = 5, 
+<b>DIST_MASK_PRECISE</b> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468">cv::DIST_MASK_3</a> = 3, 
+<a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896">cv::DIST_MASK_5</a> = 5, 
 <b>DIST_MASK_PRECISE</b> = 0
 <br />
  }</td></tr>
 <tr class="memdesc:gaaa68392323ccf7fad87570e41259b497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask size for distance transform.  <a href="group__imgproc__misc.html#gaaa68392323ccf7fad87570e41259b497">More...</a><br /></td></tr>
 <tr class="separator:gaaa68392323ccf7fad87570e41259b497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa9e58d2860d4afa658ef70a9b1115576"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__misc.html#gaa9e58d2860d4afa658ef70a9b1115576">cv::ThresholdTypes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91">cv::THRESH_BINARY</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253">cv::THRESH_BINARY_INV</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884">cv::THRESH_TRUNC</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576add7f55ad0b5b5d57f09d7fc4da4df493">cv::THRESH_TOZERO</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a33fc539d337daac0e79259196d91f175">cv::THRESH_TOZERO_INV</a> = 4, 
+<b>THRESH_MASK</b> = 7, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a141ac5ebc7c61fe2bdb930dbace6ce9b">cv::THRESH_OTSU</a> = 8, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182">cv::THRESH_TRIANGLE</a> = 16, 
+<br />
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91">cv::THRESH_BINARY</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253">cv::THRESH_BINARY_INV</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884">cv::THRESH_TRUNC</a> = 2, 
@@ -813,6 +973,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87">cv::ADAPTIVE_THRESH_MEAN_C</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a">cv::ADAPTIVE_THRESH_GAUSSIAN_C</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87">cv::ADAPTIVE_THRESH_MEAN_C</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a">cv::ADAPTIVE_THRESH_GAUSSIAN_C</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87">cv::ADAPTIVE_THRESH_MEAN_C</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a">cv::ADAPTIVE_THRESH_GAUSSIAN_C</a> = 1
 <br />
  }</td></tr>
@@ -826,12 +989,20 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>PROJ_SPHERICAL_ORTHO</b> = 0, 
 <b>PROJ_SPHERICAL_EQRECT</b> = 1, 
 <b>PROJ_SPHERICAL_ORTHO</b> = 0, 
+<b>PROJ_SPHERICAL_EQRECT</b> = 1, 
+<br />
+&#160;&#160;<b>PROJ_SPHERICAL_ORTHO</b> = 0, 
 <b>PROJ_SPHERICAL_EQRECT</b> = 1
 <br />
  }</td></tr>
 <tr class="memdesc:gace497823594b601f2094d32dde6a3c94"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__imgproc__transform.html#ga88739cc9ef806c1f7f71c98cce3212a3" title="Transforms an image to compensate for lens distortion.">cv::undistort</a> mode <br /></td></tr>
 <tr class="separator:gace497823594b601f2094d32dde6a3c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad43d3e4208d3cf025d8304156b02ba38"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__misc.html#gad43d3e4208d3cf025d8304156b02ba38">cv::GrabCutClasses</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664">cv::GC_BGD</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c">cv::GC_FGD</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05">cv::GC_PR_BGD</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d">cv::GC_PR_FGD</a> = 3, 
+<br />
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664">cv::GC_BGD</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c">cv::GC_FGD</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05">cv::GC_PR_BGD</a> = 2, 
@@ -874,6 +1045,11 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7">cv::GC_INIT_WITH_RECT</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f">cv::GC_INIT_WITH_MASK</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c">cv::GC_EVAL</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b">cv::GC_EVAL_FREEZE_MODEL</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7">cv::GC_INIT_WITH_RECT</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f">cv::GC_INIT_WITH_MASK</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c">cv::GC_EVAL</a> = 2, 
 <a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b">cv::GC_EVAL_FREEZE_MODEL</a> = 3
 <br />
  }</td></tr>
@@ -888,6 +1064,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da">cv::DIST_LABEL_CCOMP</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495">cv::DIST_LABEL_PIXEL</a> = 1, 
 <a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da">cv::DIST_LABEL_CCOMP</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495">cv::DIST_LABEL_PIXEL</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da">cv::DIST_LABEL_CCOMP</a> = 0, 
 <a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495">cv::DIST_LABEL_PIXEL</a> = 1
 <br />
  }</td></tr>
@@ -902,6 +1081,263 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec">cv::FLOODFILL_FIXED_RANGE</a> = 1 &lt;&lt; 16, 
 <a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f">cv::FLOODFILL_MASK_ONLY</a> = 1 &lt;&lt; 17, 
 <a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec">cv::FLOODFILL_FIXED_RANGE</a> = 1 &lt;&lt; 16, 
+<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f">cv::FLOODFILL_MASK_ONLY</a> = 1 &lt;&lt; 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec">cv::FLOODFILL_FIXED_RANGE</a> = 1 &lt;&lt; 16, 
+<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f">cv::FLOODFILL_MASK_ONLY</a> = 1 &lt;&lt; 17
+<br />
+ }</td></tr>
+<tr class="memdesc:gab87810a476a9cb660435a4cd7871c9eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">floodfill algorithm flags  <a href="group__imgproc__misc.html#gab87810a476a9cb660435a4cd7871c9eb">More...</a><br /></td></tr>
+<tr class="separator:gab87810a476a9cb660435a4cd7871c9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa2bfbebbc5c320526897996aafa1d8eb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__misc.html#gaa2bfbebbc5c320526897996aafa1d8eb">cv::DistanceTypes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba783c604f67e290d0abb95772c5e05656">cv::DIST_USER</a> = -1, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba2ae133c8c4bec51a0676edc2e5f4d708">cv::DIST_L1</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba70f0fa6bfc69eff41e502e12b23c5eb2">cv::DIST_L2</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebafec1f1f0ec754a563995dc5b3ae1d834">cv::DIST_C</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67">cv::DIST_L12</a> = 4, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24">cv::DIST_FAIR</a> = 5, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a">cv::DIST_WELSCH</a> = 6, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b">cv::DIST_HUBER</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba783c604f67e290d0abb95772c5e05656">cv::DIST_USER</a> = -1, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba2ae133c8c4bec51a0676edc2e5f4d708">cv::DIST_L1</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba70f0fa6bfc69eff41e502e12b23c5eb2">cv::DIST_L2</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebafec1f1f0ec754a563995dc5b3ae1d834">cv::DIST_C</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67">cv::DIST_L12</a> = 4, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24">cv::DIST_FAIR</a> = 5, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a">cv::DIST_WELSCH</a> = 6, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b">cv::DIST_HUBER</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba783c604f67e290d0abb95772c5e05656">cv::DIST_USER</a> = -1, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba2ae133c8c4bec51a0676edc2e5f4d708">cv::DIST_L1</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba70f0fa6bfc69eff41e502e12b23c5eb2">cv::DIST_L2</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebafec1f1f0ec754a563995dc5b3ae1d834">cv::DIST_C</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67">cv::DIST_L12</a> = 4, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24">cv::DIST_FAIR</a> = 5, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a">cv::DIST_WELSCH</a> = 6, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b">cv::DIST_HUBER</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba783c604f67e290d0abb95772c5e05656">cv::DIST_USER</a> = -1, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba2ae133c8c4bec51a0676edc2e5f4d708">cv::DIST_L1</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba70f0fa6bfc69eff41e502e12b23c5eb2">cv::DIST_L2</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebafec1f1f0ec754a563995dc5b3ae1d834">cv::DIST_C</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67">cv::DIST_L12</a> = 4, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24">cv::DIST_FAIR</a> = 5, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a">cv::DIST_WELSCH</a> = 6, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b">cv::DIST_HUBER</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba783c604f67e290d0abb95772c5e05656">cv::DIST_USER</a> = -1, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba2ae133c8c4bec51a0676edc2e5f4d708">cv::DIST_L1</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba70f0fa6bfc69eff41e502e12b23c5eb2">cv::DIST_L2</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebafec1f1f0ec754a563995dc5b3ae1d834">cv::DIST_C</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67">cv::DIST_L12</a> = 4, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24">cv::DIST_FAIR</a> = 5, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a">cv::DIST_WELSCH</a> = 6, 
+<a class="el" href="group__imgproc__misc.html#ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b">cv::DIST_HUBER</a> = 7
+<br />
+ }</td></tr>
+<tr class="separator:gaa2bfbebbc5c320526897996aafa1d8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaa68392323ccf7fad87570e41259b497"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__misc.html#gaaa68392323ccf7fad87570e41259b497">cv::DistanceTransformMasks</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468">cv::DIST_MASK_3</a> = 3, 
+<a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896">cv::DIST_MASK_5</a> = 5, 
+<b>DIST_MASK_PRECISE</b> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468">cv::DIST_MASK_3</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896">cv::DIST_MASK_5</a> = 5, 
+<b>DIST_MASK_PRECISE</b> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468">cv::DIST_MASK_3</a> = 3, 
+<a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896">cv::DIST_MASK_5</a> = 5, 
+<br />
+&#160;&#160;<b>DIST_MASK_PRECISE</b> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468">cv::DIST_MASK_3</a> = 3, 
+<a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896">cv::DIST_MASK_5</a> = 5, 
+<b>DIST_MASK_PRECISE</b> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468">cv::DIST_MASK_3</a> = 3, 
+<a class="el" href="group__imgproc__misc.html#ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896">cv::DIST_MASK_5</a> = 5, 
+<b>DIST_MASK_PRECISE</b> = 0
+<br />
+ }</td></tr>
+<tr class="memdesc:gaaa68392323ccf7fad87570e41259b497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask size for distance transform.  <a href="group__imgproc__misc.html#gaaa68392323ccf7fad87570e41259b497">More...</a><br /></td></tr>
+<tr class="separator:gaaa68392323ccf7fad87570e41259b497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9e58d2860d4afa658ef70a9b1115576"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__misc.html#gaa9e58d2860d4afa658ef70a9b1115576">cv::ThresholdTypes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91">cv::THRESH_BINARY</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253">cv::THRESH_BINARY_INV</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884">cv::THRESH_TRUNC</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576add7f55ad0b5b5d57f09d7fc4da4df493">cv::THRESH_TOZERO</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a33fc539d337daac0e79259196d91f175">cv::THRESH_TOZERO_INV</a> = 4, 
+<b>THRESH_MASK</b> = 7, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a141ac5ebc7c61fe2bdb930dbace6ce9b">cv::THRESH_OTSU</a> = 8, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182">cv::THRESH_TRIANGLE</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91">cv::THRESH_BINARY</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253">cv::THRESH_BINARY_INV</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884">cv::THRESH_TRUNC</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576add7f55ad0b5b5d57f09d7fc4da4df493">cv::THRESH_TOZERO</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a33fc539d337daac0e79259196d91f175">cv::THRESH_TOZERO_INV</a> = 4, 
+<b>THRESH_MASK</b> = 7, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a141ac5ebc7c61fe2bdb930dbace6ce9b">cv::THRESH_OTSU</a> = 8, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182">cv::THRESH_TRIANGLE</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91">cv::THRESH_BINARY</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253">cv::THRESH_BINARY_INV</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884">cv::THRESH_TRUNC</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576add7f55ad0b5b5d57f09d7fc4da4df493">cv::THRESH_TOZERO</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a33fc539d337daac0e79259196d91f175">cv::THRESH_TOZERO_INV</a> = 4, 
+<b>THRESH_MASK</b> = 7, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a141ac5ebc7c61fe2bdb930dbace6ce9b">cv::THRESH_OTSU</a> = 8, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182">cv::THRESH_TRIANGLE</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91">cv::THRESH_BINARY</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253">cv::THRESH_BINARY_INV</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884">cv::THRESH_TRUNC</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576add7f55ad0b5b5d57f09d7fc4da4df493">cv::THRESH_TOZERO</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a33fc539d337daac0e79259196d91f175">cv::THRESH_TOZERO_INV</a> = 4, 
+<b>THRESH_MASK</b> = 7, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a141ac5ebc7c61fe2bdb930dbace6ce9b">cv::THRESH_OTSU</a> = 8, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182">cv::THRESH_TRIANGLE</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91">cv::THRESH_BINARY</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253">cv::THRESH_BINARY_INV</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884">cv::THRESH_TRUNC</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576add7f55ad0b5b5d57f09d7fc4da4df493">cv::THRESH_TOZERO</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a33fc539d337daac0e79259196d91f175">cv::THRESH_TOZERO_INV</a> = 4, 
+<b>THRESH_MASK</b> = 7, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a141ac5ebc7c61fe2bdb930dbace6ce9b">cv::THRESH_OTSU</a> = 8, 
+<a class="el" href="group__imgproc__misc.html#ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182">cv::THRESH_TRIANGLE</a> = 16
+<br />
+ }</td></tr>
+<tr class="separator:gaa9e58d2860d4afa658ef70a9b1115576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa42a3e6ef26247da787bf34030ed772c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__misc.html#gaa42a3e6ef26247da787bf34030ed772c">cv::AdaptiveThresholdTypes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87">cv::ADAPTIVE_THRESH_MEAN_C</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a">cv::ADAPTIVE_THRESH_GAUSSIAN_C</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87">cv::ADAPTIVE_THRESH_MEAN_C</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a">cv::ADAPTIVE_THRESH_GAUSSIAN_C</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87">cv::ADAPTIVE_THRESH_MEAN_C</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a">cv::ADAPTIVE_THRESH_GAUSSIAN_C</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87">cv::ADAPTIVE_THRESH_MEAN_C</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a">cv::ADAPTIVE_THRESH_GAUSSIAN_C</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87">cv::ADAPTIVE_THRESH_MEAN_C</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a">cv::ADAPTIVE_THRESH_GAUSSIAN_C</a> = 1
+<br />
+ }</td></tr>
+<tr class="separator:gaa42a3e6ef26247da787bf34030ed772c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace497823594b601f2094d32dde6a3c94"><td class="memItemLeft" align="right" valign="top"><a id="gace497823594b601f2094d32dde6a3c94"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__misc.html#gace497823594b601f2094d32dde6a3c94">cv::UndistortTypes</a> { <br />
+&#160;&#160;<b>PROJ_SPHERICAL_ORTHO</b> = 0, 
+<b>PROJ_SPHERICAL_EQRECT</b> = 1, 
+<b>PROJ_SPHERICAL_ORTHO</b> = 0, 
+<b>PROJ_SPHERICAL_EQRECT</b> = 1, 
+<br />
+&#160;&#160;<b>PROJ_SPHERICAL_ORTHO</b> = 0, 
+<b>PROJ_SPHERICAL_EQRECT</b> = 1, 
+<b>PROJ_SPHERICAL_ORTHO</b> = 0, 
+<b>PROJ_SPHERICAL_EQRECT</b> = 1, 
+<br />
+&#160;&#160;<b>PROJ_SPHERICAL_ORTHO</b> = 0, 
+<b>PROJ_SPHERICAL_EQRECT</b> = 1
+<br />
+ }</td></tr>
+<tr class="memdesc:gace497823594b601f2094d32dde6a3c94"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__imgproc__transform.html#ga88739cc9ef806c1f7f71c98cce3212a3" title="Transforms an image to compensate for lens distortion.">cv::undistort</a> mode <br /></td></tr>
+<tr class="separator:gace497823594b601f2094d32dde6a3c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad43d3e4208d3cf025d8304156b02ba38"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__misc.html#gad43d3e4208d3cf025d8304156b02ba38">cv::GrabCutClasses</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664">cv::GC_BGD</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c">cv::GC_FGD</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05">cv::GC_PR_BGD</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d">cv::GC_PR_FGD</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664">cv::GC_BGD</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c">cv::GC_FGD</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05">cv::GC_PR_BGD</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d">cv::GC_PR_FGD</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664">cv::GC_BGD</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c">cv::GC_FGD</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05">cv::GC_PR_BGD</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d">cv::GC_PR_FGD</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664">cv::GC_BGD</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c">cv::GC_FGD</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05">cv::GC_PR_BGD</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d">cv::GC_PR_FGD</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664">cv::GC_BGD</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c">cv::GC_FGD</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05">cv::GC_PR_BGD</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d">cv::GC_PR_FGD</a> = 3
+<br />
+ }</td></tr>
+<tr class="memdesc:gad43d3e4208d3cf025d8304156b02ba38"><td class="mdescLeft">&#160;</td><td class="mdescRight">class of the pixel in GrabCut algorithm  <a href="group__imgproc__misc.html#gad43d3e4208d3cf025d8304156b02ba38">More...</a><br /></td></tr>
+<tr class="separator:gad43d3e4208d3cf025d8304156b02ba38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8b5832ba85e59fc7a98a2afd034e558"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__misc.html#gaf8b5832ba85e59fc7a98a2afd034e558">cv::GrabCutModes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7">cv::GC_INIT_WITH_RECT</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f">cv::GC_INIT_WITH_MASK</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c">cv::GC_EVAL</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b">cv::GC_EVAL_FREEZE_MODEL</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7">cv::GC_INIT_WITH_RECT</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f">cv::GC_INIT_WITH_MASK</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c">cv::GC_EVAL</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b">cv::GC_EVAL_FREEZE_MODEL</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7">cv::GC_INIT_WITH_RECT</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f">cv::GC_INIT_WITH_MASK</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c">cv::GC_EVAL</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b">cv::GC_EVAL_FREEZE_MODEL</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7">cv::GC_INIT_WITH_RECT</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f">cv::GC_INIT_WITH_MASK</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c">cv::GC_EVAL</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b">cv::GC_EVAL_FREEZE_MODEL</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7">cv::GC_INIT_WITH_RECT</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f">cv::GC_INIT_WITH_MASK</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c">cv::GC_EVAL</a> = 2, 
+<a class="el" href="group__imgproc__misc.html#ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b">cv::GC_EVAL_FREEZE_MODEL</a> = 3
+<br />
+ }</td></tr>
+<tr class="memdesc:gaf8b5832ba85e59fc7a98a2afd034e558"><td class="mdescLeft">&#160;</td><td class="mdescRight">GrabCut algorithm flags.  <a href="group__imgproc__misc.html#gaf8b5832ba85e59fc7a98a2afd034e558">More...</a><br /></td></tr>
+<tr class="separator:gaf8b5832ba85e59fc7a98a2afd034e558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3fe343d63844c40318ee627bd1c1c42f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__misc.html#ga3fe343d63844c40318ee627bd1c1c42f">cv::DistanceTransformLabelTypes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da">cv::DIST_LABEL_CCOMP</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495">cv::DIST_LABEL_PIXEL</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da">cv::DIST_LABEL_CCOMP</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495">cv::DIST_LABEL_PIXEL</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da">cv::DIST_LABEL_CCOMP</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495">cv::DIST_LABEL_PIXEL</a> = 1, 
+<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da">cv::DIST_LABEL_CCOMP</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495">cv::DIST_LABEL_PIXEL</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da">cv::DIST_LABEL_CCOMP</a> = 0, 
+<a class="el" href="group__imgproc__misc.html#gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495">cv::DIST_LABEL_PIXEL</a> = 1
+<br />
+ }</td></tr>
+<tr class="memdesc:ga3fe343d63844c40318ee627bd1c1c42f"><td class="mdescLeft">&#160;</td><td class="mdescRight">distanceTransform algorithm flags  <a href="group__imgproc__misc.html#ga3fe343d63844c40318ee627bd1c1c42f">More...</a><br /></td></tr>
+<tr class="separator:ga3fe343d63844c40318ee627bd1c1c42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab87810a476a9cb660435a4cd7871c9eb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__misc.html#gab87810a476a9cb660435a4cd7871c9eb">cv::FloodFillFlags</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec">cv::FLOODFILL_FIXED_RANGE</a> = 1 &lt;&lt; 16, 
+<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f">cv::FLOODFILL_MASK_ONLY</a> = 1 &lt;&lt; 17, 
+<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec">cv::FLOODFILL_FIXED_RANGE</a> = 1 &lt;&lt; 16, 
+<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f">cv::FLOODFILL_MASK_ONLY</a> = 1 &lt;&lt; 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec">cv::FLOODFILL_FIXED_RANGE</a> = 1 &lt;&lt; 16, 
+<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f">cv::FLOODFILL_MASK_ONLY</a> = 1 &lt;&lt; 17, 
+<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec">cv::FLOODFILL_FIXED_RANGE</a> = 1 &lt;&lt; 16, 
+<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f">cv::FLOODFILL_MASK_ONLY</a> = 1 &lt;&lt; 17, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec">cv::FLOODFILL_FIXED_RANGE</a> = 1 &lt;&lt; 16, 
 <a class="el" href="group__imgproc__misc.html#ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f">cv::FLOODFILL_MASK_ONLY</a> = 1 &lt;&lt; 17
 <br />
  }</td></tr>
@@ -975,7 +1411,7 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="gaa42a3e6ef26247da787bf34030ed772c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa42a3e6ef26247da787bf34030ed772c">&#9670;&nbsp;</a></span>AdaptiveThresholdTypes <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa42a3e6ef26247da787bf34030ed772c">&#9670;&nbsp;</a></span>AdaptiveThresholdTypes <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -988,6 +1424,10 @@ Variables</h2></td></tr>
 <p>adaptive threshold algorithm </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__imgproc__misc.html#ga8886eaaac71abdcb2a3a212180d70a50" title="Applies an adaptive threshold to an array.">adaptiveThreshold</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87"></a>ADAPTIVE_THRESH_MEAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x,y)$" src="form_529.png"/> is a mean of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a"></a>ADAPTIVE_THRESH_GAUSSIAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x, y)$" src="form_628.png"/> is a weighted sum (cross-correlation with a Gaussian window) of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C . The default sigma (standard deviation) is used for the specified blockSize . See <a class="el" href="group__imgproc__filter.html#ga38a8ea387cfb178559ad3fc4b3fd6c80" title="Returns Gaussian filter coefficients.">getGaussianKernel</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87"></a>ADAPTIVE_THRESH_MEAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x,y)$" src="form_529.png"/> is a mean of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a"></a>ADAPTIVE_THRESH_GAUSSIAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x, y)$" src="form_628.png"/> is a weighted sum (cross-correlation with a Gaussian window) of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C . The default sigma (standard deviation) is used for the specified blockSize . See <a class="el" href="group__imgproc__filter.html#ga38a8ea387cfb178559ad3fc4b3fd6c80" title="Returns Gaussian filter coefficients.">getGaussianKernel</a> </p>
 </td></tr>
@@ -1008,7 +1448,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="gaa42a3e6ef26247da787bf34030ed772c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa42a3e6ef26247da787bf34030ed772c">&#9670;&nbsp;</a></span>AdaptiveThresholdTypes <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa42a3e6ef26247da787bf34030ed772c">&#9670;&nbsp;</a></span>AdaptiveThresholdTypes <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1021,6 +1461,10 @@ Variables</h2></td></tr>
 <p>adaptive threshold algorithm </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__imgproc__misc.html#ga8886eaaac71abdcb2a3a212180d70a50" title="Applies an adaptive threshold to an array.">adaptiveThreshold</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87"></a>ADAPTIVE_THRESH_MEAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x,y)$" src="form_529.png"/> is a mean of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a"></a>ADAPTIVE_THRESH_GAUSSIAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x, y)$" src="form_628.png"/> is a weighted sum (cross-correlation with a Gaussian window) of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C . The default sigma (standard deviation) is used for the specified blockSize . See <a class="el" href="group__imgproc__filter.html#ga38a8ea387cfb178559ad3fc4b3fd6c80" title="Returns Gaussian filter coefficients.">getGaussianKernel</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87"></a>ADAPTIVE_THRESH_MEAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x,y)$" src="form_529.png"/> is a mean of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a"></a>ADAPTIVE_THRESH_GAUSSIAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x, y)$" src="form_628.png"/> is a weighted sum (cross-correlation with a Gaussian window) of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C . The default sigma (standard deviation) is used for the specified blockSize . See <a class="el" href="group__imgproc__filter.html#ga38a8ea387cfb178559ad3fc4b3fd6c80" title="Returns Gaussian filter coefficients.">getGaussianKernel</a> </p>
 </td></tr>
@@ -1041,7 +1485,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="gaa42a3e6ef26247da787bf34030ed772c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa42a3e6ef26247da787bf34030ed772c">&#9670;&nbsp;</a></span>AdaptiveThresholdTypes <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa42a3e6ef26247da787bf34030ed772c">&#9670;&nbsp;</a></span>AdaptiveThresholdTypes <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1054,6 +1498,10 @@ Variables</h2></td></tr>
 <p>adaptive threshold algorithm </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__imgproc__misc.html#ga8886eaaac71abdcb2a3a212180d70a50" title="Applies an adaptive threshold to an array.">adaptiveThreshold</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87"></a>ADAPTIVE_THRESH_MEAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x,y)$" src="form_529.png"/> is a mean of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a"></a>ADAPTIVE_THRESH_GAUSSIAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x, y)$" src="form_628.png"/> is a weighted sum (cross-correlation with a Gaussian window) of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C . The default sigma (standard deviation) is used for the specified blockSize . See <a class="el" href="group__imgproc__filter.html#ga38a8ea387cfb178559ad3fc4b3fd6c80" title="Returns Gaussian filter coefficients.">getGaussianKernel</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87"></a>ADAPTIVE_THRESH_MEAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x,y)$" src="form_529.png"/> is a mean of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a"></a>ADAPTIVE_THRESH_GAUSSIAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x, y)$" src="form_628.png"/> is a weighted sum (cross-correlation with a Gaussian window) of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C . The default sigma (standard deviation) is used for the specified blockSize . See <a class="el" href="group__imgproc__filter.html#ga38a8ea387cfb178559ad3fc4b3fd6c80" title="Returns Gaussian filter coefficients.">getGaussianKernel</a> </p>
 </td></tr>
@@ -1074,7 +1522,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="gaa42a3e6ef26247da787bf34030ed772c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa42a3e6ef26247da787bf34030ed772c">&#9670;&nbsp;</a></span>AdaptiveThresholdTypes <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa42a3e6ef26247da787bf34030ed772c">&#9670;&nbsp;</a></span>AdaptiveThresholdTypes <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1102,12 +1550,53 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a"></a>ADAPTIVE_THRESH_GAUSSIAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x, y)$" src="form_628.png"/> is a weighted sum (cross-correlation with a Gaussian window) of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C . The default sigma (standard deviation) is used for the specified blockSize . See <a class="el" href="group__imgproc__filter.html#ga38a8ea387cfb178559ad3fc4b3fd6c80" title="Returns Gaussian filter coefficients.">getGaussianKernel</a> </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87"></a>ADAPTIVE_THRESH_MEAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x,y)$" src="form_529.png"/> is a mean of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a"></a>ADAPTIVE_THRESH_GAUSSIAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x, y)$" src="form_628.png"/> is a weighted sum (cross-correlation with a Gaussian window) of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C . The default sigma (standard deviation) is used for the specified blockSize . See <a class="el" href="group__imgproc__filter.html#ga38a8ea387cfb178559ad3fc4b3fd6c80" title="Returns Gaussian filter coefficients.">getGaussianKernel</a> </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaa42a3e6ef26247da787bf34030ed772c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa42a3e6ef26247da787bf34030ed772c">&#9670;&nbsp;</a></span>AdaptiveThresholdTypes <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgproc__misc.html#gaa42a3e6ef26247da787bf34030ed772c">cv::AdaptiveThresholdTypes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>adaptive threshold algorithm </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__imgproc__misc.html#ga8886eaaac71abdcb2a3a212180d70a50" title="Applies an adaptive threshold to an array.">adaptiveThreshold</a> </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87"></a>ADAPTIVE_THRESH_MEAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x,y)$" src="form_529.png"/> is a mean of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a"></a>ADAPTIVE_THRESH_GAUSSIAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x, y)$" src="form_628.png"/> is a weighted sum (cross-correlation with a Gaussian window) of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C . The default sigma (standard deviation) is used for the specified blockSize . See <a class="el" href="group__imgproc__filter.html#ga38a8ea387cfb178559ad3fc4b3fd6c80" title="Returns Gaussian filter coefficients.">getGaussianKernel</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87"></a>ADAPTIVE_THRESH_MEAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x,y)$" src="form_529.png"/> is a mean of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a"></a>ADAPTIVE_THRESH_GAUSSIAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x, y)$" src="form_628.png"/> is a weighted sum (cross-correlation with a Gaussian window) of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C . The default sigma (standard deviation) is used for the specified blockSize . See <a class="el" href="group__imgproc__filter.html#ga38a8ea387cfb178559ad3fc4b3fd6c80" title="Returns Gaussian filter coefficients.">getGaussianKernel</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87"></a>ADAPTIVE_THRESH_MEAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x,y)$" src="form_529.png"/> is a mean of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a"></a>ADAPTIVE_THRESH_GAUSSIAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x, y)$" src="form_628.png"/> is a weighted sum (cross-correlation with a Gaussian window) of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C . The default sigma (standard deviation) is used for the specified blockSize . See <a class="el" href="group__imgproc__filter.html#ga38a8ea387cfb178559ad3fc4b3fd6c80" title="Returns Gaussian filter coefficients.">getGaussianKernel</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87"></a>ADAPTIVE_THRESH_MEAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x,y)$" src="form_529.png"/> is a mean of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a"></a>ADAPTIVE_THRESH_GAUSSIAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x, y)$" src="form_628.png"/> is a weighted sum (cross-correlation with a Gaussian window) of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C . The default sigma (standard deviation) is used for the specified blockSize . See <a class="el" href="group__imgproc__filter.html#ga38a8ea387cfb178559ad3fc4b3fd6c80" title="Returns Gaussian filter coefficients.">getGaussianKernel</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca2cc07e42ced85d1733cd6c882ee0dc87"></a>ADAPTIVE_THRESH_MEAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x,y)$" src="form_529.png"/> is a mean of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa42a3e6ef26247da787bf34030ed772ca1ecf5cebfc0e8b242c75d622126f446a"></a>ADAPTIVE_THRESH_GAUSSIAN_C&#160;</td><td class="fielddoc"><p>the threshold value <img class="formulaInl" alt="$T(x, y)$" src="form_628.png"/> is a weighted sum (cross-correlation with a Gaussian window) of the <img class="formulaInl" alt="$\texttt{blockSize} \times \texttt{blockSize}$" src="form_438.png"/> neighborhood of <img class="formulaInl" alt="$(x, y)$" src="form_391.png"/> minus C . The default sigma (standard deviation) is used for the specified blockSize . See <a class="el" href="group__imgproc__filter.html#ga38a8ea387cfb178559ad3fc4b3fd6c80" title="Returns Gaussian filter coefficients.">getGaussianKernel</a> </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga3fe343d63844c40318ee627bd1c1c42f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3fe343d63844c40318ee627bd1c1c42f">&#9670;&nbsp;</a></span>DistanceTransformLabelTypes <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3fe343d63844c40318ee627bd1c1c42f">&#9670;&nbsp;</a></span>DistanceTransformLabelTypes <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1136,12 +1625,16 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495"></a>DIST_LABEL_PIXEL&#160;</td><td class="fielddoc"><p>each zero pixel (and all the non-zero pixels closest to it) gets its own label. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da"></a>DIST_LABEL_CCOMP&#160;</td><td class="fielddoc"><p>each connected component of zeros in src (as well as all the non-zero pixels closest to the connected component) will be assigned the same label </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495"></a>DIST_LABEL_PIXEL&#160;</td><td class="fielddoc"><p>each zero pixel (and all the non-zero pixels closest to it) gets its own label. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga3fe343d63844c40318ee627bd1c1c42f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3fe343d63844c40318ee627bd1c1c42f">&#9670;&nbsp;</a></span>DistanceTransformLabelTypes <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3fe343d63844c40318ee627bd1c1c42f">&#9670;&nbsp;</a></span>DistanceTransformLabelTypes <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1170,12 +1663,16 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495"></a>DIST_LABEL_PIXEL&#160;</td><td class="fielddoc"><p>each zero pixel (and all the non-zero pixels closest to it) gets its own label. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da"></a>DIST_LABEL_CCOMP&#160;</td><td class="fielddoc"><p>each connected component of zeros in src (as well as all the non-zero pixels closest to the connected component) will be assigned the same label </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495"></a>DIST_LABEL_PIXEL&#160;</td><td class="fielddoc"><p>each zero pixel (and all the non-zero pixels closest to it) gets its own label. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga3fe343d63844c40318ee627bd1c1c42f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3fe343d63844c40318ee627bd1c1c42f">&#9670;&nbsp;</a></span>DistanceTransformLabelTypes <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3fe343d63844c40318ee627bd1c1c42f">&#9670;&nbsp;</a></span>DistanceTransformLabelTypes <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1204,12 +1701,16 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495"></a>DIST_LABEL_PIXEL&#160;</td><td class="fielddoc"><p>each zero pixel (and all the non-zero pixels closest to it) gets its own label. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da"></a>DIST_LABEL_CCOMP&#160;</td><td class="fielddoc"><p>each connected component of zeros in src (as well as all the non-zero pixels closest to the connected component) will be assigned the same label </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495"></a>DIST_LABEL_PIXEL&#160;</td><td class="fielddoc"><p>each zero pixel (and all the non-zero pixels closest to it) gets its own label. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga3fe343d63844c40318ee627bd1c1c42f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3fe343d63844c40318ee627bd1c1c42f">&#9670;&nbsp;</a></span>DistanceTransformLabelTypes <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3fe343d63844c40318ee627bd1c1c42f">&#9670;&nbsp;</a></span>DistanceTransformLabelTypes <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1238,12 +1739,54 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495"></a>DIST_LABEL_PIXEL&#160;</td><td class="fielddoc"><p>each zero pixel (and all the non-zero pixels closest to it) gets its own label. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da"></a>DIST_LABEL_CCOMP&#160;</td><td class="fielddoc"><p>each connected component of zeros in src (as well as all the non-zero pixels closest to the connected component) will be assigned the same label </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495"></a>DIST_LABEL_PIXEL&#160;</td><td class="fielddoc"><p>each zero pixel (and all the non-zero pixels closest to it) gets its own label. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga3fe343d63844c40318ee627bd1c1c42f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3fe343d63844c40318ee627bd1c1c42f">&#9670;&nbsp;</a></span>DistanceTransformLabelTypes <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgproc__misc.html#ga3fe343d63844c40318ee627bd1c1c42f">cv::DistanceTransformLabelTypes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>distanceTransform algorithm flags </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da"></a>DIST_LABEL_CCOMP&#160;</td><td class="fielddoc"><p>each connected component of zeros in src (as well as all the non-zero pixels closest to the connected component) will be assigned the same label </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495"></a>DIST_LABEL_PIXEL&#160;</td><td class="fielddoc"><p>each zero pixel (and all the non-zero pixels closest to it) gets its own label. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da"></a>DIST_LABEL_CCOMP&#160;</td><td class="fielddoc"><p>each connected component of zeros in src (as well as all the non-zero pixels closest to the connected component) will be assigned the same label </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495"></a>DIST_LABEL_PIXEL&#160;</td><td class="fielddoc"><p>each zero pixel (and all the non-zero pixels closest to it) gets its own label. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da"></a>DIST_LABEL_CCOMP&#160;</td><td class="fielddoc"><p>each connected component of zeros in src (as well as all the non-zero pixels closest to the connected component) will be assigned the same label </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495"></a>DIST_LABEL_PIXEL&#160;</td><td class="fielddoc"><p>each zero pixel (and all the non-zero pixels closest to it) gets its own label. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da"></a>DIST_LABEL_CCOMP&#160;</td><td class="fielddoc"><p>each connected component of zeros in src (as well as all the non-zero pixels closest to the connected component) will be assigned the same label </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495"></a>DIST_LABEL_PIXEL&#160;</td><td class="fielddoc"><p>each zero pixel (and all the non-zero pixels closest to it) gets its own label. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fae6fac012c4622a31b4ca4d54646794da"></a>DIST_LABEL_CCOMP&#160;</td><td class="fielddoc"><p>each connected component of zeros in src (as well as all the non-zero pixels closest to the connected component) will be assigned the same label </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3fe343d63844c40318ee627bd1c1c42fa3c8d1395b2ad67861722d40a6a6fd495"></a>DIST_LABEL_PIXEL&#160;</td><td class="fielddoc"><p>each zero pixel (and all the non-zero pixels closest to it) gets its own label. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaaa68392323ccf7fad87570e41259b497"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaa68392323ccf7fad87570e41259b497">&#9670;&nbsp;</a></span>DistanceTransformMasks <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa68392323ccf7fad87570e41259b497">&#9670;&nbsp;</a></span>DistanceTransformMasks <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1272,12 +1815,16 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896"></a>DIST_MASK_5&#160;</td><td class="fielddoc"><p>mask=5 </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468"></a>DIST_MASK_3&#160;</td><td class="fielddoc"><p>mask=3 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896"></a>DIST_MASK_5&#160;</td><td class="fielddoc"><p>mask=5 </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaaa68392323ccf7fad87570e41259b497"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaa68392323ccf7fad87570e41259b497">&#9670;&nbsp;</a></span>DistanceTransformMasks <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa68392323ccf7fad87570e41259b497">&#9670;&nbsp;</a></span>DistanceTransformMasks <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1306,12 +1853,16 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896"></a>DIST_MASK_5&#160;</td><td class="fielddoc"><p>mask=5 </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468"></a>DIST_MASK_3&#160;</td><td class="fielddoc"><p>mask=3 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896"></a>DIST_MASK_5&#160;</td><td class="fielddoc"><p>mask=5 </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaaa68392323ccf7fad87570e41259b497"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaa68392323ccf7fad87570e41259b497">&#9670;&nbsp;</a></span>DistanceTransformMasks <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa68392323ccf7fad87570e41259b497">&#9670;&nbsp;</a></span>DistanceTransformMasks <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1340,12 +1891,16 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896"></a>DIST_MASK_5&#160;</td><td class="fielddoc"><p>mask=5 </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468"></a>DIST_MASK_3&#160;</td><td class="fielddoc"><p>mask=3 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896"></a>DIST_MASK_5&#160;</td><td class="fielddoc"><p>mask=5 </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaaa68392323ccf7fad87570e41259b497"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaa68392323ccf7fad87570e41259b497">&#9670;&nbsp;</a></span>DistanceTransformMasks <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa68392323ccf7fad87570e41259b497">&#9670;&nbsp;</a></span>DistanceTransformMasks <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1359,6 +1914,48 @@ Variables</h2></td></tr>
 <p>Mask size for distance transform. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468"></a>DIST_MASK_3&#160;</td><td class="fielddoc"><p>mask=3 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896"></a>DIST_MASK_5&#160;</td><td class="fielddoc"><p>mask=5 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468"></a>DIST_MASK_3&#160;</td><td class="fielddoc"><p>mask=3 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896"></a>DIST_MASK_5&#160;</td><td class="fielddoc"><p>mask=5 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468"></a>DIST_MASK_3&#160;</td><td class="fielddoc"><p>mask=3 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896"></a>DIST_MASK_5&#160;</td><td class="fielddoc"><p>mask=5 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468"></a>DIST_MASK_3&#160;</td><td class="fielddoc"><p>mask=3 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896"></a>DIST_MASK_5&#160;</td><td class="fielddoc"><p>mask=5 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468"></a>DIST_MASK_3&#160;</td><td class="fielddoc"><p>mask=3 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896"></a>DIST_MASK_5&#160;</td><td class="fielddoc"><p>mask=5 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaaa68392323ccf7fad87570e41259b497"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa68392323ccf7fad87570e41259b497">&#9670;&nbsp;</a></span>DistanceTransformMasks <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgproc__misc.html#gaaa68392323ccf7fad87570e41259b497">cv::DistanceTransformMasks</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mask size for distance transform. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468"></a>DIST_MASK_3&#160;</td><td class="fielddoc"><p>mask=3 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896"></a>DIST_MASK_5&#160;</td><td class="fielddoc"><p>mask=5 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497a6058968709ee3baf98f01ecee1200468"></a>DIST_MASK_3&#160;</td><td class="fielddoc"><p>mask=3 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaaa68392323ccf7fad87570e41259b497af88d9f305d1519693b5cb14cc2bba896"></a>DIST_MASK_5&#160;</td><td class="fielddoc"><p>mask=5 </p>
 </td></tr>
@@ -1379,7 +1976,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="gaa2bfbebbc5c320526897996aafa1d8eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa2bfbebbc5c320526897996aafa1d8eb">&#9670;&nbsp;</a></span>DistanceTypes <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa2bfbebbc5c320526897996aafa1d8eb">&#9670;&nbsp;</a></span>DistanceTypes <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1455,12 +2052,28 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b"></a>DIST_HUBER&#160;</td><td class="fielddoc"><p>distance = |x|&lt;c ? x^2/2 : c(|x|-c/2), c=1.345 </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba783c604f67e290d0abb95772c5e05656"></a>DIST_USER&#160;</td><td class="fielddoc"><p>User defined distance. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba2ae133c8c4bec51a0676edc2e5f4d708"></a>DIST_L1&#160;</td><td class="fielddoc"><p>distance = |x1-x2| + |y1-y2| </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba70f0fa6bfc69eff41e502e12b23c5eb2"></a>DIST_L2&#160;</td><td class="fielddoc"><p>the simple euclidean distance </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8ebafec1f1f0ec754a563995dc5b3ae1d834"></a>DIST_C&#160;</td><td class="fielddoc"><p>distance = max(|x1-x2|,|y1-y2|) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67"></a>DIST_L12&#160;</td><td class="fielddoc"><p>L1-L2 metric: distance = 2(sqrt(1+x*x/2) - 1)) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24"></a>DIST_FAIR&#160;</td><td class="fielddoc"><p>distance = c^2(|x|/c-log(1+|x|/c)), c = 1.3998 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a"></a>DIST_WELSCH&#160;</td><td class="fielddoc"><p>distance = c^2/2(1-exp(-(x/c)^2)), c = 2.9846 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b"></a>DIST_HUBER&#160;</td><td class="fielddoc"><p>distance = |x|&lt;c ? x^2/2 : c(|x|-c/2), c=1.345 </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaa2bfbebbc5c320526897996aafa1d8eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa2bfbebbc5c320526897996aafa1d8eb">&#9670;&nbsp;</a></span>DistanceTypes <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa2bfbebbc5c320526897996aafa1d8eb">&#9670;&nbsp;</a></span>DistanceTypes <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1536,12 +2149,28 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b"></a>DIST_HUBER&#160;</td><td class="fielddoc"><p>distance = |x|&lt;c ? x^2/2 : c(|x|-c/2), c=1.345 </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba783c604f67e290d0abb95772c5e05656"></a>DIST_USER&#160;</td><td class="fielddoc"><p>User defined distance. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba2ae133c8c4bec51a0676edc2e5f4d708"></a>DIST_L1&#160;</td><td class="fielddoc"><p>distance = |x1-x2| + |y1-y2| </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba70f0fa6bfc69eff41e502e12b23c5eb2"></a>DIST_L2&#160;</td><td class="fielddoc"><p>the simple euclidean distance </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8ebafec1f1f0ec754a563995dc5b3ae1d834"></a>DIST_C&#160;</td><td class="fielddoc"><p>distance = max(|x1-x2|,|y1-y2|) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67"></a>DIST_L12&#160;</td><td class="fielddoc"><p>L1-L2 metric: distance = 2(sqrt(1+x*x/2) - 1)) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24"></a>DIST_FAIR&#160;</td><td class="fielddoc"><p>distance = c^2(|x|/c-log(1+|x|/c)), c = 1.3998 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a"></a>DIST_WELSCH&#160;</td><td class="fielddoc"><p>distance = c^2/2(1-exp(-(x/c)^2)), c = 2.9846 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b"></a>DIST_HUBER&#160;</td><td class="fielddoc"><p>distance = |x|&lt;c ? x^2/2 : c(|x|-c/2), c=1.345 </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaa2bfbebbc5c320526897996aafa1d8eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa2bfbebbc5c320526897996aafa1d8eb">&#9670;&nbsp;</a></span>DistanceTypes <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa2bfbebbc5c320526897996aafa1d8eb">&#9670;&nbsp;</a></span>DistanceTypes <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1617,12 +2246,28 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b"></a>DIST_HUBER&#160;</td><td class="fielddoc"><p>distance = |x|&lt;c ? x^2/2 : c(|x|-c/2), c=1.345 </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba783c604f67e290d0abb95772c5e05656"></a>DIST_USER&#160;</td><td class="fielddoc"><p>User defined distance. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba2ae133c8c4bec51a0676edc2e5f4d708"></a>DIST_L1&#160;</td><td class="fielddoc"><p>distance = |x1-x2| + |y1-y2| </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba70f0fa6bfc69eff41e502e12b23c5eb2"></a>DIST_L2&#160;</td><td class="fielddoc"><p>the simple euclidean distance </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8ebafec1f1f0ec754a563995dc5b3ae1d834"></a>DIST_C&#160;</td><td class="fielddoc"><p>distance = max(|x1-x2|,|y1-y2|) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67"></a>DIST_L12&#160;</td><td class="fielddoc"><p>L1-L2 metric: distance = 2(sqrt(1+x*x/2) - 1)) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24"></a>DIST_FAIR&#160;</td><td class="fielddoc"><p>distance = c^2(|x|/c-log(1+|x|/c)), c = 1.3998 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a"></a>DIST_WELSCH&#160;</td><td class="fielddoc"><p>distance = c^2/2(1-exp(-(x/c)^2)), c = 2.9846 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b"></a>DIST_HUBER&#160;</td><td class="fielddoc"><p>distance = |x|&lt;c ? x^2/2 : c(|x|-c/2), c=1.345 </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaa2bfbebbc5c320526897996aafa1d8eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa2bfbebbc5c320526897996aafa1d8eb">&#9670;&nbsp;</a></span>DistanceTypes <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa2bfbebbc5c320526897996aafa1d8eb">&#9670;&nbsp;</a></span>DistanceTypes <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1698,12 +2343,125 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b"></a>DIST_HUBER&#160;</td><td class="fielddoc"><p>distance = |x|&lt;c ? x^2/2 : c(|x|-c/2), c=1.345 </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba783c604f67e290d0abb95772c5e05656"></a>DIST_USER&#160;</td><td class="fielddoc"><p>User defined distance. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba2ae133c8c4bec51a0676edc2e5f4d708"></a>DIST_L1&#160;</td><td class="fielddoc"><p>distance = |x1-x2| + |y1-y2| </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba70f0fa6bfc69eff41e502e12b23c5eb2"></a>DIST_L2&#160;</td><td class="fielddoc"><p>the simple euclidean distance </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8ebafec1f1f0ec754a563995dc5b3ae1d834"></a>DIST_C&#160;</td><td class="fielddoc"><p>distance = max(|x1-x2|,|y1-y2|) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67"></a>DIST_L12&#160;</td><td class="fielddoc"><p>L1-L2 metric: distance = 2(sqrt(1+x*x/2) - 1)) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24"></a>DIST_FAIR&#160;</td><td class="fielddoc"><p>distance = c^2(|x|/c-log(1+|x|/c)), c = 1.3998 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a"></a>DIST_WELSCH&#160;</td><td class="fielddoc"><p>distance = c^2/2(1-exp(-(x/c)^2)), c = 2.9846 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b"></a>DIST_HUBER&#160;</td><td class="fielddoc"><p>distance = |x|&lt;c ? x^2/2 : c(|x|-c/2), c=1.345 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaa2bfbebbc5c320526897996aafa1d8eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa2bfbebbc5c320526897996aafa1d8eb">&#9670;&nbsp;</a></span>DistanceTypes <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgproc__misc.html#gaa2bfbebbc5c320526897996aafa1d8eb">cv::DistanceTypes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Distance types for Distance Transform and M-estimators </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__imgproc__misc.html#ga07d54f4fc17d60465e4ca1b024afa70f">distanceTransform</a>, <a class="el" href="group__imgproc__shape.html#gae3f6f1bb89e74a970294c6a6d3db4995" title="Fits a line to a 2D or 3D point set.">fitLine</a> </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba783c604f67e290d0abb95772c5e05656"></a>DIST_USER&#160;</td><td class="fielddoc"><p>User defined distance. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba2ae133c8c4bec51a0676edc2e5f4d708"></a>DIST_L1&#160;</td><td class="fielddoc"><p>distance = |x1-x2| + |y1-y2| </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba70f0fa6bfc69eff41e502e12b23c5eb2"></a>DIST_L2&#160;</td><td class="fielddoc"><p>the simple euclidean distance </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8ebafec1f1f0ec754a563995dc5b3ae1d834"></a>DIST_C&#160;</td><td class="fielddoc"><p>distance = max(|x1-x2|,|y1-y2|) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67"></a>DIST_L12&#160;</td><td class="fielddoc"><p>L1-L2 metric: distance = 2(sqrt(1+x*x/2) - 1)) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24"></a>DIST_FAIR&#160;</td><td class="fielddoc"><p>distance = c^2(|x|/c-log(1+|x|/c)), c = 1.3998 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a"></a>DIST_WELSCH&#160;</td><td class="fielddoc"><p>distance = c^2/2(1-exp(-(x/c)^2)), c = 2.9846 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b"></a>DIST_HUBER&#160;</td><td class="fielddoc"><p>distance = |x|&lt;c ? x^2/2 : c(|x|-c/2), c=1.345 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba783c604f67e290d0abb95772c5e05656"></a>DIST_USER&#160;</td><td class="fielddoc"><p>User defined distance. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba2ae133c8c4bec51a0676edc2e5f4d708"></a>DIST_L1&#160;</td><td class="fielddoc"><p>distance = |x1-x2| + |y1-y2| </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba70f0fa6bfc69eff41e502e12b23c5eb2"></a>DIST_L2&#160;</td><td class="fielddoc"><p>the simple euclidean distance </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8ebafec1f1f0ec754a563995dc5b3ae1d834"></a>DIST_C&#160;</td><td class="fielddoc"><p>distance = max(|x1-x2|,|y1-y2|) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67"></a>DIST_L12&#160;</td><td class="fielddoc"><p>L1-L2 metric: distance = 2(sqrt(1+x*x/2) - 1)) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24"></a>DIST_FAIR&#160;</td><td class="fielddoc"><p>distance = c^2(|x|/c-log(1+|x|/c)), c = 1.3998 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a"></a>DIST_WELSCH&#160;</td><td class="fielddoc"><p>distance = c^2/2(1-exp(-(x/c)^2)), c = 2.9846 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b"></a>DIST_HUBER&#160;</td><td class="fielddoc"><p>distance = |x|&lt;c ? x^2/2 : c(|x|-c/2), c=1.345 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba783c604f67e290d0abb95772c5e05656"></a>DIST_USER&#160;</td><td class="fielddoc"><p>User defined distance. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba2ae133c8c4bec51a0676edc2e5f4d708"></a>DIST_L1&#160;</td><td class="fielddoc"><p>distance = |x1-x2| + |y1-y2| </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba70f0fa6bfc69eff41e502e12b23c5eb2"></a>DIST_L2&#160;</td><td class="fielddoc"><p>the simple euclidean distance </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8ebafec1f1f0ec754a563995dc5b3ae1d834"></a>DIST_C&#160;</td><td class="fielddoc"><p>distance = max(|x1-x2|,|y1-y2|) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67"></a>DIST_L12&#160;</td><td class="fielddoc"><p>L1-L2 metric: distance = 2(sqrt(1+x*x/2) - 1)) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24"></a>DIST_FAIR&#160;</td><td class="fielddoc"><p>distance = c^2(|x|/c-log(1+|x|/c)), c = 1.3998 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a"></a>DIST_WELSCH&#160;</td><td class="fielddoc"><p>distance = c^2/2(1-exp(-(x/c)^2)), c = 2.9846 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b"></a>DIST_HUBER&#160;</td><td class="fielddoc"><p>distance = |x|&lt;c ? x^2/2 : c(|x|-c/2), c=1.345 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba783c604f67e290d0abb95772c5e05656"></a>DIST_USER&#160;</td><td class="fielddoc"><p>User defined distance. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba2ae133c8c4bec51a0676edc2e5f4d708"></a>DIST_L1&#160;</td><td class="fielddoc"><p>distance = |x1-x2| + |y1-y2| </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba70f0fa6bfc69eff41e502e12b23c5eb2"></a>DIST_L2&#160;</td><td class="fielddoc"><p>the simple euclidean distance </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8ebafec1f1f0ec754a563995dc5b3ae1d834"></a>DIST_C&#160;</td><td class="fielddoc"><p>distance = max(|x1-x2|,|y1-y2|) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67"></a>DIST_L12&#160;</td><td class="fielddoc"><p>L1-L2 metric: distance = 2(sqrt(1+x*x/2) - 1)) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24"></a>DIST_FAIR&#160;</td><td class="fielddoc"><p>distance = c^2(|x|/c-log(1+|x|/c)), c = 1.3998 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a"></a>DIST_WELSCH&#160;</td><td class="fielddoc"><p>distance = c^2/2(1-exp(-(x/c)^2)), c = 2.9846 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b"></a>DIST_HUBER&#160;</td><td class="fielddoc"><p>distance = |x|&lt;c ? x^2/2 : c(|x|-c/2), c=1.345 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba783c604f67e290d0abb95772c5e05656"></a>DIST_USER&#160;</td><td class="fielddoc"><p>User defined distance. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba2ae133c8c4bec51a0676edc2e5f4d708"></a>DIST_L1&#160;</td><td class="fielddoc"><p>distance = |x1-x2| + |y1-y2| </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba70f0fa6bfc69eff41e502e12b23c5eb2"></a>DIST_L2&#160;</td><td class="fielddoc"><p>the simple euclidean distance </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8ebafec1f1f0ec754a563995dc5b3ae1d834"></a>DIST_C&#160;</td><td class="fielddoc"><p>distance = max(|x1-x2|,|y1-y2|) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8ebad43d03a1cd0d5ca252a650ab3ad4ce67"></a>DIST_L12&#160;</td><td class="fielddoc"><p>L1-L2 metric: distance = 2(sqrt(1+x*x/2) - 1)) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba3e4132dc9edbe82191f467a19de1cf24"></a>DIST_FAIR&#160;</td><td class="fielddoc"><p>distance = c^2(|x|/c-log(1+|x|/c)), c = 1.3998 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba57cd01a907cecd1af4bf886f2538483a"></a>DIST_WELSCH&#160;</td><td class="fielddoc"><p>distance = c^2/2(1-exp(-(x/c)^2)), c = 2.9846 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa2bfbebbc5c320526897996aafa1d8eba877492000d7812ff1604393679c77a3b"></a>DIST_HUBER&#160;</td><td class="fielddoc"><p>distance = |x|&lt;c ? x^2/2 : c(|x|-c/2), c=1.345 </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gab87810a476a9cb660435a4cd7871c9eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab87810a476a9cb660435a4cd7871c9eb">&#9670;&nbsp;</a></span>FloodFillFlags <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gab87810a476a9cb660435a4cd7871c9eb">&#9670;&nbsp;</a></span>FloodFillFlags <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1732,12 +2490,16 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f"></a>FLOODFILL_MASK_ONLY&#160;</td><td class="fielddoc"><p>If set, the function does not change the image ( newVal is ignored), and only fills the mask with the value specified in bits 8-16 of flags as described above. This option only make sense in function variants that have the mask parameter. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec"></a>FLOODFILL_FIXED_RANGE&#160;</td><td class="fielddoc"><p>If set, the difference between the current pixel and seed pixel is considered. Otherwise, the difference between neighbor pixels is considered (that is, the range is floating). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f"></a>FLOODFILL_MASK_ONLY&#160;</td><td class="fielddoc"><p>If set, the function does not change the image ( newVal is ignored), and only fills the mask with the value specified in bits 8-16 of flags as described above. This option only make sense in function variants that have the mask parameter. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gab87810a476a9cb660435a4cd7871c9eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab87810a476a9cb660435a4cd7871c9eb">&#9670;&nbsp;</a></span>FloodFillFlags <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gab87810a476a9cb660435a4cd7871c9eb">&#9670;&nbsp;</a></span>FloodFillFlags <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1766,12 +2528,16 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f"></a>FLOODFILL_MASK_ONLY&#160;</td><td class="fielddoc"><p>If set, the function does not change the image ( newVal is ignored), and only fills the mask with the value specified in bits 8-16 of flags as described above. This option only make sense in function variants that have the mask parameter. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec"></a>FLOODFILL_FIXED_RANGE&#160;</td><td class="fielddoc"><p>If set, the difference between the current pixel and seed pixel is considered. Otherwise, the difference between neighbor pixels is considered (that is, the range is floating). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f"></a>FLOODFILL_MASK_ONLY&#160;</td><td class="fielddoc"><p>If set, the function does not change the image ( newVal is ignored), and only fills the mask with the value specified in bits 8-16 of flags as described above. This option only make sense in function variants that have the mask parameter. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gab87810a476a9cb660435a4cd7871c9eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab87810a476a9cb660435a4cd7871c9eb">&#9670;&nbsp;</a></span>FloodFillFlags <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gab87810a476a9cb660435a4cd7871c9eb">&#9670;&nbsp;</a></span>FloodFillFlags <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1800,12 +2566,16 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f"></a>FLOODFILL_MASK_ONLY&#160;</td><td class="fielddoc"><p>If set, the function does not change the image ( newVal is ignored), and only fills the mask with the value specified in bits 8-16 of flags as described above. This option only make sense in function variants that have the mask parameter. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec"></a>FLOODFILL_FIXED_RANGE&#160;</td><td class="fielddoc"><p>If set, the difference between the current pixel and seed pixel is considered. Otherwise, the difference between neighbor pixels is considered (that is, the range is floating). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f"></a>FLOODFILL_MASK_ONLY&#160;</td><td class="fielddoc"><p>If set, the function does not change the image ( newVal is ignored), and only fills the mask with the value specified in bits 8-16 of flags as described above. This option only make sense in function variants that have the mask parameter. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gab87810a476a9cb660435a4cd7871c9eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab87810a476a9cb660435a4cd7871c9eb">&#9670;&nbsp;</a></span>FloodFillFlags <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gab87810a476a9cb660435a4cd7871c9eb">&#9670;&nbsp;</a></span>FloodFillFlags <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1819,6 +2589,48 @@ Variables</h2></td></tr>
 <p>floodfill algorithm flags </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec"></a>FLOODFILL_FIXED_RANGE&#160;</td><td class="fielddoc"><p>If set, the difference between the current pixel and seed pixel is considered. Otherwise, the difference between neighbor pixels is considered (that is, the range is floating). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f"></a>FLOODFILL_MASK_ONLY&#160;</td><td class="fielddoc"><p>If set, the function does not change the image ( newVal is ignored), and only fills the mask with the value specified in bits 8-16 of flags as described above. This option only make sense in function variants that have the mask parameter. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec"></a>FLOODFILL_FIXED_RANGE&#160;</td><td class="fielddoc"><p>If set, the difference between the current pixel and seed pixel is considered. Otherwise, the difference between neighbor pixels is considered (that is, the range is floating). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f"></a>FLOODFILL_MASK_ONLY&#160;</td><td class="fielddoc"><p>If set, the function does not change the image ( newVal is ignored), and only fills the mask with the value specified in bits 8-16 of flags as described above. This option only make sense in function variants that have the mask parameter. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec"></a>FLOODFILL_FIXED_RANGE&#160;</td><td class="fielddoc"><p>If set, the difference between the current pixel and seed pixel is considered. Otherwise, the difference between neighbor pixels is considered (that is, the range is floating). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f"></a>FLOODFILL_MASK_ONLY&#160;</td><td class="fielddoc"><p>If set, the function does not change the image ( newVal is ignored), and only fills the mask with the value specified in bits 8-16 of flags as described above. This option only make sense in function variants that have the mask parameter. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec"></a>FLOODFILL_FIXED_RANGE&#160;</td><td class="fielddoc"><p>If set, the difference between the current pixel and seed pixel is considered. Otherwise, the difference between neighbor pixels is considered (that is, the range is floating). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f"></a>FLOODFILL_MASK_ONLY&#160;</td><td class="fielddoc"><p>If set, the function does not change the image ( newVal is ignored), and only fills the mask with the value specified in bits 8-16 of flags as described above. This option only make sense in function variants that have the mask parameter. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec"></a>FLOODFILL_FIXED_RANGE&#160;</td><td class="fielddoc"><p>If set, the difference between the current pixel and seed pixel is considered. Otherwise, the difference between neighbor pixels is considered (that is, the range is floating). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f"></a>FLOODFILL_MASK_ONLY&#160;</td><td class="fielddoc"><p>If set, the function does not change the image ( newVal is ignored), and only fills the mask with the value specified in bits 8-16 of flags as described above. This option only make sense in function variants that have the mask parameter. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gab87810a476a9cb660435a4cd7871c9eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab87810a476a9cb660435a4cd7871c9eb">&#9670;&nbsp;</a></span>FloodFillFlags <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgproc__misc.html#gab87810a476a9cb660435a4cd7871c9eb">cv::FloodFillFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>floodfill algorithm flags </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec"></a>FLOODFILL_FIXED_RANGE&#160;</td><td class="fielddoc"><p>If set, the difference between the current pixel and seed pixel is considered. Otherwise, the difference between neighbor pixels is considered (that is, the range is floating). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f"></a>FLOODFILL_MASK_ONLY&#160;</td><td class="fielddoc"><p>If set, the function does not change the image ( newVal is ignored), and only fills the mask with the value specified in bits 8-16 of flags as described above. This option only make sense in function variants that have the mask parameter. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9ebac3c84fb9edd3725ae00b7a8cd96d93ec"></a>FLOODFILL_FIXED_RANGE&#160;</td><td class="fielddoc"><p>If set, the difference between the current pixel and seed pixel is considered. Otherwise, the difference between neighbor pixels is considered (that is, the range is floating). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggab87810a476a9cb660435a4cd7871c9eba5f50d46877b1b0670d11e74c3c614b2f"></a>FLOODFILL_MASK_ONLY&#160;</td><td class="fielddoc"><p>If set, the function does not change the image ( newVal is ignored), and only fills the mask with the value specified in bits 8-16 of flags as described above. This option only make sense in function variants that have the mask parameter. </p>
 </td></tr>
@@ -1839,7 +2651,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="gad43d3e4208d3cf025d8304156b02ba38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad43d3e4208d3cf025d8304156b02ba38">&#9670;&nbsp;</a></span>GrabCutClasses <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gad43d3e4208d3cf025d8304156b02ba38">&#9670;&nbsp;</a></span>GrabCutClasses <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1884,12 +2696,20 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d"></a>GC_PR_FGD&#160;</td><td class="fielddoc"><p>a possible foreground pixel </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664"></a>GC_BGD&#160;</td><td class="fielddoc"><p>an obvious background pixels </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c"></a>GC_FGD&#160;</td><td class="fielddoc"><p>an obvious foreground (object) pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05"></a>GC_PR_BGD&#160;</td><td class="fielddoc"><p>a possible background pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d"></a>GC_PR_FGD&#160;</td><td class="fielddoc"><p>a possible foreground pixel </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gad43d3e4208d3cf025d8304156b02ba38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad43d3e4208d3cf025d8304156b02ba38">&#9670;&nbsp;</a></span>GrabCutClasses <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gad43d3e4208d3cf025d8304156b02ba38">&#9670;&nbsp;</a></span>GrabCutClasses <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1934,12 +2754,20 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d"></a>GC_PR_FGD&#160;</td><td class="fielddoc"><p>a possible foreground pixel </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664"></a>GC_BGD&#160;</td><td class="fielddoc"><p>an obvious background pixels </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c"></a>GC_FGD&#160;</td><td class="fielddoc"><p>an obvious foreground (object) pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05"></a>GC_PR_BGD&#160;</td><td class="fielddoc"><p>a possible background pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d"></a>GC_PR_FGD&#160;</td><td class="fielddoc"><p>a possible foreground pixel </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gad43d3e4208d3cf025d8304156b02ba38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad43d3e4208d3cf025d8304156b02ba38">&#9670;&nbsp;</a></span>GrabCutClasses <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gad43d3e4208d3cf025d8304156b02ba38">&#9670;&nbsp;</a></span>GrabCutClasses <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1984,12 +2812,20 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d"></a>GC_PR_FGD&#160;</td><td class="fielddoc"><p>a possible foreground pixel </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664"></a>GC_BGD&#160;</td><td class="fielddoc"><p>an obvious background pixels </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c"></a>GC_FGD&#160;</td><td class="fielddoc"><p>an obvious foreground (object) pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05"></a>GC_PR_BGD&#160;</td><td class="fielddoc"><p>a possible background pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d"></a>GC_PR_FGD&#160;</td><td class="fielddoc"><p>a possible foreground pixel </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gad43d3e4208d3cf025d8304156b02ba38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad43d3e4208d3cf025d8304156b02ba38">&#9670;&nbsp;</a></span>GrabCutClasses <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gad43d3e4208d3cf025d8304156b02ba38">&#9670;&nbsp;</a></span>GrabCutClasses <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2034,12 +2870,78 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d"></a>GC_PR_FGD&#160;</td><td class="fielddoc"><p>a possible foreground pixel </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664"></a>GC_BGD&#160;</td><td class="fielddoc"><p>an obvious background pixels </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c"></a>GC_FGD&#160;</td><td class="fielddoc"><p>an obvious foreground (object) pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05"></a>GC_PR_BGD&#160;</td><td class="fielddoc"><p>a possible background pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d"></a>GC_PR_FGD&#160;</td><td class="fielddoc"><p>a possible foreground pixel </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gad43d3e4208d3cf025d8304156b02ba38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad43d3e4208d3cf025d8304156b02ba38">&#9670;&nbsp;</a></span>GrabCutClasses <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgproc__misc.html#gad43d3e4208d3cf025d8304156b02ba38">cv::GrabCutClasses</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>class of the pixel in GrabCut algorithm </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664"></a>GC_BGD&#160;</td><td class="fielddoc"><p>an obvious background pixels </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c"></a>GC_FGD&#160;</td><td class="fielddoc"><p>an obvious foreground (object) pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05"></a>GC_PR_BGD&#160;</td><td class="fielddoc"><p>a possible background pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d"></a>GC_PR_FGD&#160;</td><td class="fielddoc"><p>a possible foreground pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664"></a>GC_BGD&#160;</td><td class="fielddoc"><p>an obvious background pixels </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c"></a>GC_FGD&#160;</td><td class="fielddoc"><p>an obvious foreground (object) pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05"></a>GC_PR_BGD&#160;</td><td class="fielddoc"><p>a possible background pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d"></a>GC_PR_FGD&#160;</td><td class="fielddoc"><p>a possible foreground pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664"></a>GC_BGD&#160;</td><td class="fielddoc"><p>an obvious background pixels </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c"></a>GC_FGD&#160;</td><td class="fielddoc"><p>an obvious foreground (object) pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05"></a>GC_PR_BGD&#160;</td><td class="fielddoc"><p>a possible background pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d"></a>GC_PR_FGD&#160;</td><td class="fielddoc"><p>a possible foreground pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664"></a>GC_BGD&#160;</td><td class="fielddoc"><p>an obvious background pixels </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c"></a>GC_FGD&#160;</td><td class="fielddoc"><p>an obvious foreground (object) pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05"></a>GC_PR_BGD&#160;</td><td class="fielddoc"><p>a possible background pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d"></a>GC_PR_FGD&#160;</td><td class="fielddoc"><p>a possible foreground pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a73225fd3a95558d3ecd2f4b7713b7664"></a>GC_BGD&#160;</td><td class="fielddoc"><p>an obvious background pixels </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a68d9e610822d455e172a33618907b85c"></a>GC_FGD&#160;</td><td class="fielddoc"><p>an obvious foreground (object) pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a38e28abaf578b7c9aeadf1c46c05ad05"></a>GC_PR_BGD&#160;</td><td class="fielddoc"><p>a possible background pixel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad43d3e4208d3cf025d8304156b02ba38a6b53fc0d15f3de3eb222d4697b8feb5d"></a>GC_PR_FGD&#160;</td><td class="fielddoc"><p>a possible foreground pixel </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaf8b5832ba85e59fc7a98a2afd034e558"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf8b5832ba85e59fc7a98a2afd034e558">&#9670;&nbsp;</a></span>GrabCutModes <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf8b5832ba85e59fc7a98a2afd034e558">&#9670;&nbsp;</a></span>GrabCutModes <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2084,12 +2986,20 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b"></a>GC_EVAL_FREEZE_MODEL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just run the grabCut algorithm (a single iteration) with the fixed model </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7"></a>GC_INIT_WITH_RECT&#160;</td><td class="fielddoc"><p>The function initializes the state and the mask using the provided rectangle. After that it runs iterCount iterations of the algorithm. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f"></a>GC_INIT_WITH_MASK&#160;</td><td class="fielddoc"><p>The function initializes the state using the provided mask. Note that GC_INIT_WITH_RECT and GC_INIT_WITH_MASK can be combined. Then, all the pixels outside of the ROI are automatically initialized with GC_BGD . </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c"></a>GC_EVAL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just resume. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b"></a>GC_EVAL_FREEZE_MODEL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just run the grabCut algorithm (a single iteration) with the fixed model </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaf8b5832ba85e59fc7a98a2afd034e558"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf8b5832ba85e59fc7a98a2afd034e558">&#9670;&nbsp;</a></span>GrabCutModes <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf8b5832ba85e59fc7a98a2afd034e558">&#9670;&nbsp;</a></span>GrabCutModes <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2134,12 +3044,20 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b"></a>GC_EVAL_FREEZE_MODEL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just run the grabCut algorithm (a single iteration) with the fixed model </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7"></a>GC_INIT_WITH_RECT&#160;</td><td class="fielddoc"><p>The function initializes the state and the mask using the provided rectangle. After that it runs iterCount iterations of the algorithm. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f"></a>GC_INIT_WITH_MASK&#160;</td><td class="fielddoc"><p>The function initializes the state using the provided mask. Note that GC_INIT_WITH_RECT and GC_INIT_WITH_MASK can be combined. Then, all the pixels outside of the ROI are automatically initialized with GC_BGD . </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c"></a>GC_EVAL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just resume. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b"></a>GC_EVAL_FREEZE_MODEL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just run the grabCut algorithm (a single iteration) with the fixed model </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaf8b5832ba85e59fc7a98a2afd034e558"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf8b5832ba85e59fc7a98a2afd034e558">&#9670;&nbsp;</a></span>GrabCutModes <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf8b5832ba85e59fc7a98a2afd034e558">&#9670;&nbsp;</a></span>GrabCutModes <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2184,12 +3102,20 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b"></a>GC_EVAL_FREEZE_MODEL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just run the grabCut algorithm (a single iteration) with the fixed model </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7"></a>GC_INIT_WITH_RECT&#160;</td><td class="fielddoc"><p>The function initializes the state and the mask using the provided rectangle. After that it runs iterCount iterations of the algorithm. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f"></a>GC_INIT_WITH_MASK&#160;</td><td class="fielddoc"><p>The function initializes the state using the provided mask. Note that GC_INIT_WITH_RECT and GC_INIT_WITH_MASK can be combined. Then, all the pixels outside of the ROI are automatically initialized with GC_BGD . </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c"></a>GC_EVAL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just resume. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b"></a>GC_EVAL_FREEZE_MODEL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just run the grabCut algorithm (a single iteration) with the fixed model </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaf8b5832ba85e59fc7a98a2afd034e558"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf8b5832ba85e59fc7a98a2afd034e558">&#9670;&nbsp;</a></span>GrabCutModes <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf8b5832ba85e59fc7a98a2afd034e558">&#9670;&nbsp;</a></span>GrabCutModes <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2203,6 +3129,72 @@ Variables</h2></td></tr>
 <p>GrabCut algorithm flags. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7"></a>GC_INIT_WITH_RECT&#160;</td><td class="fielddoc"><p>The function initializes the state and the mask using the provided rectangle. After that it runs iterCount iterations of the algorithm. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f"></a>GC_INIT_WITH_MASK&#160;</td><td class="fielddoc"><p>The function initializes the state using the provided mask. Note that GC_INIT_WITH_RECT and GC_INIT_WITH_MASK can be combined. Then, all the pixels outside of the ROI are automatically initialized with GC_BGD . </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c"></a>GC_EVAL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just resume. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b"></a>GC_EVAL_FREEZE_MODEL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just run the grabCut algorithm (a single iteration) with the fixed model </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7"></a>GC_INIT_WITH_RECT&#160;</td><td class="fielddoc"><p>The function initializes the state and the mask using the provided rectangle. After that it runs iterCount iterations of the algorithm. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f"></a>GC_INIT_WITH_MASK&#160;</td><td class="fielddoc"><p>The function initializes the state using the provided mask. Note that GC_INIT_WITH_RECT and GC_INIT_WITH_MASK can be combined. Then, all the pixels outside of the ROI are automatically initialized with GC_BGD . </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c"></a>GC_EVAL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just resume. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b"></a>GC_EVAL_FREEZE_MODEL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just run the grabCut algorithm (a single iteration) with the fixed model </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7"></a>GC_INIT_WITH_RECT&#160;</td><td class="fielddoc"><p>The function initializes the state and the mask using the provided rectangle. After that it runs iterCount iterations of the algorithm. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f"></a>GC_INIT_WITH_MASK&#160;</td><td class="fielddoc"><p>The function initializes the state using the provided mask. Note that GC_INIT_WITH_RECT and GC_INIT_WITH_MASK can be combined. Then, all the pixels outside of the ROI are automatically initialized with GC_BGD . </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c"></a>GC_EVAL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just resume. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b"></a>GC_EVAL_FREEZE_MODEL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just run the grabCut algorithm (a single iteration) with the fixed model </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7"></a>GC_INIT_WITH_RECT&#160;</td><td class="fielddoc"><p>The function initializes the state and the mask using the provided rectangle. After that it runs iterCount iterations of the algorithm. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f"></a>GC_INIT_WITH_MASK&#160;</td><td class="fielddoc"><p>The function initializes the state using the provided mask. Note that GC_INIT_WITH_RECT and GC_INIT_WITH_MASK can be combined. Then, all the pixels outside of the ROI are automatically initialized with GC_BGD . </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c"></a>GC_EVAL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just resume. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b"></a>GC_EVAL_FREEZE_MODEL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just run the grabCut algorithm (a single iteration) with the fixed model </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7"></a>GC_INIT_WITH_RECT&#160;</td><td class="fielddoc"><p>The function initializes the state and the mask using the provided rectangle. After that it runs iterCount iterations of the algorithm. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f"></a>GC_INIT_WITH_MASK&#160;</td><td class="fielddoc"><p>The function initializes the state using the provided mask. Note that GC_INIT_WITH_RECT and GC_INIT_WITH_MASK can be combined. Then, all the pixels outside of the ROI are automatically initialized with GC_BGD . </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c"></a>GC_EVAL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just resume. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b"></a>GC_EVAL_FREEZE_MODEL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just run the grabCut algorithm (a single iteration) with the fixed model </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaf8b5832ba85e59fc7a98a2afd034e558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf8b5832ba85e59fc7a98a2afd034e558">&#9670;&nbsp;</a></span>GrabCutModes <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgproc__misc.html#gaf8b5832ba85e59fc7a98a2afd034e558">cv::GrabCutModes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GrabCut algorithm flags. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7"></a>GC_INIT_WITH_RECT&#160;</td><td class="fielddoc"><p>The function initializes the state and the mask using the provided rectangle. After that it runs iterCount iterations of the algorithm. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f"></a>GC_INIT_WITH_MASK&#160;</td><td class="fielddoc"><p>The function initializes the state using the provided mask. Note that GC_INIT_WITH_RECT and GC_INIT_WITH_MASK can be combined. Then, all the pixels outside of the ROI are automatically initialized with GC_BGD . </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a574d7e4dab3b589b37182e555d4ff22c"></a>GC_EVAL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just resume. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a3037a0dba4201d207b51f132ff344e3b"></a>GC_EVAL_FREEZE_MODEL&#160;</td><td class="fielddoc"><p>The value means that the algorithm should just run the grabCut algorithm (a single iteration) with the fixed model </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a016a4c9d057acbfe9041c29179813aa7"></a>GC_INIT_WITH_RECT&#160;</td><td class="fielddoc"><p>The function initializes the state and the mask using the provided rectangle. After that it runs iterCount iterations of the algorithm. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaf8b5832ba85e59fc7a98a2afd034e558a08df96751529e5d4b3aca297256e7a1f"></a>GC_INIT_WITH_MASK&#160;</td><td class="fielddoc"><p>The function initializes the state using the provided mask. Note that GC_INIT_WITH_RECT and GC_INIT_WITH_MASK can be combined. Then, all the pixels outside of the ROI are automatically initialized with GC_BGD . </p>
 </td></tr>
@@ -2239,7 +3231,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="gaa9e58d2860d4afa658ef70a9b1115576"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa9e58d2860d4afa658ef70a9b1115576">&#9670;&nbsp;</a></span>ThresholdTypes <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9e58d2860d4afa658ef70a9b1115576">&#9670;&nbsp;</a></span>ThresholdTypes <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2347,12 +3339,36 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182"></a>THRESH_TRIANGLE&#160;</td><td class="fielddoc"><p>flag, use Triangle algorithm to choose the optimal threshold value </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91"></a>THRESH_BINARY&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{maxval}}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{0}{otherwise}\]" src="form_623.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253"></a>THRESH_BINARY_INV&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{0}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{maxval}}{otherwise}\]" src="form_624.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884"></a>THRESH_TRUNC&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{threshold}}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{src}(x,y)}{otherwise}\]" src="form_625.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576add7f55ad0b5b5d57f09d7fc4da4df493"></a>THRESH_TOZERO&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{src}(x,y)}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{0}{otherwise}\]" src="form_626.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a33fc539d337daac0e79259196d91f175"></a>THRESH_TOZERO_INV&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{0}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{src}(x,y)}{otherwise}\]" src="form_627.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a141ac5ebc7c61fe2bdb930dbace6ce9b"></a>THRESH_OTSU&#160;</td><td class="fielddoc"><p>flag, use Otsu algorithm to choose the optimal threshold value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182"></a>THRESH_TRIANGLE&#160;</td><td class="fielddoc"><p>flag, use Triangle algorithm to choose the optimal threshold value </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaa9e58d2860d4afa658ef70a9b1115576"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa9e58d2860d4afa658ef70a9b1115576">&#9670;&nbsp;</a></span>ThresholdTypes <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9e58d2860d4afa658ef70a9b1115576">&#9670;&nbsp;</a></span>ThresholdTypes <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2460,12 +3476,36 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182"></a>THRESH_TRIANGLE&#160;</td><td class="fielddoc"><p>flag, use Triangle algorithm to choose the optimal threshold value </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91"></a>THRESH_BINARY&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{maxval}}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{0}{otherwise}\]" src="form_623.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253"></a>THRESH_BINARY_INV&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{0}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{maxval}}{otherwise}\]" src="form_624.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884"></a>THRESH_TRUNC&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{threshold}}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{src}(x,y)}{otherwise}\]" src="form_625.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576add7f55ad0b5b5d57f09d7fc4da4df493"></a>THRESH_TOZERO&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{src}(x,y)}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{0}{otherwise}\]" src="form_626.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a33fc539d337daac0e79259196d91f175"></a>THRESH_TOZERO_INV&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{0}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{src}(x,y)}{otherwise}\]" src="form_627.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a141ac5ebc7c61fe2bdb930dbace6ce9b"></a>THRESH_OTSU&#160;</td><td class="fielddoc"><p>flag, use Otsu algorithm to choose the optimal threshold value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182"></a>THRESH_TRIANGLE&#160;</td><td class="fielddoc"><p>flag, use Triangle algorithm to choose the optimal threshold value </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaa9e58d2860d4afa658ef70a9b1115576"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa9e58d2860d4afa658ef70a9b1115576">&#9670;&nbsp;</a></span>ThresholdTypes <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9e58d2860d4afa658ef70a9b1115576">&#9670;&nbsp;</a></span>ThresholdTypes <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2573,12 +3613,36 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182"></a>THRESH_TRIANGLE&#160;</td><td class="fielddoc"><p>flag, use Triangle algorithm to choose the optimal threshold value </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91"></a>THRESH_BINARY&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{maxval}}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{0}{otherwise}\]" src="form_623.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253"></a>THRESH_BINARY_INV&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{0}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{maxval}}{otherwise}\]" src="form_624.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884"></a>THRESH_TRUNC&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{threshold}}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{src}(x,y)}{otherwise}\]" src="form_625.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576add7f55ad0b5b5d57f09d7fc4da4df493"></a>THRESH_TOZERO&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{src}(x,y)}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{0}{otherwise}\]" src="form_626.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a33fc539d337daac0e79259196d91f175"></a>THRESH_TOZERO_INV&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{0}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{src}(x,y)}{otherwise}\]" src="form_627.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a141ac5ebc7c61fe2bdb930dbace6ce9b"></a>THRESH_OTSU&#160;</td><td class="fielddoc"><p>flag, use Otsu algorithm to choose the optimal threshold value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182"></a>THRESH_TRIANGLE&#160;</td><td class="fielddoc"><p>flag, use Triangle algorithm to choose the optimal threshold value </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaa9e58d2860d4afa658ef70a9b1115576"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa9e58d2860d4afa658ef70a9b1115576">&#9670;&nbsp;</a></span>ThresholdTypes <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9e58d2860d4afa658ef70a9b1115576">&#9670;&nbsp;</a></span>ThresholdTypes <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2591,6 +3655,167 @@ Variables</h2></td></tr>
 <p>type of the threshold operation <img src="pics/threshold.png" alt="threshold types" class="inline"/>
  <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91"></a>THRESH_BINARY&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{maxval}}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{0}{otherwise}\]" src="form_623.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253"></a>THRESH_BINARY_INV&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{0}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{maxval}}{otherwise}\]" src="form_624.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884"></a>THRESH_TRUNC&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{threshold}}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{src}(x,y)}{otherwise}\]" src="form_625.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576add7f55ad0b5b5d57f09d7fc4da4df493"></a>THRESH_TOZERO&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{src}(x,y)}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{0}{otherwise}\]" src="form_626.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a33fc539d337daac0e79259196d91f175"></a>THRESH_TOZERO_INV&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{0}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{src}(x,y)}{otherwise}\]" src="form_627.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a141ac5ebc7c61fe2bdb930dbace6ce9b"></a>THRESH_OTSU&#160;</td><td class="fielddoc"><p>flag, use Otsu algorithm to choose the optimal threshold value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182"></a>THRESH_TRIANGLE&#160;</td><td class="fielddoc"><p>flag, use Triangle algorithm to choose the optimal threshold value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91"></a>THRESH_BINARY&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{maxval}}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{0}{otherwise}\]" src="form_623.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253"></a>THRESH_BINARY_INV&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{0}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{maxval}}{otherwise}\]" src="form_624.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884"></a>THRESH_TRUNC&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{threshold}}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{src}(x,y)}{otherwise}\]" src="form_625.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576add7f55ad0b5b5d57f09d7fc4da4df493"></a>THRESH_TOZERO&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{src}(x,y)}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{0}{otherwise}\]" src="form_626.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a33fc539d337daac0e79259196d91f175"></a>THRESH_TOZERO_INV&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{0}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{src}(x,y)}{otherwise}\]" src="form_627.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a141ac5ebc7c61fe2bdb930dbace6ce9b"></a>THRESH_OTSU&#160;</td><td class="fielddoc"><p>flag, use Otsu algorithm to choose the optimal threshold value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182"></a>THRESH_TRIANGLE&#160;</td><td class="fielddoc"><p>flag, use Triangle algorithm to choose the optimal threshold value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91"></a>THRESH_BINARY&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{maxval}}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{0}{otherwise}\]" src="form_623.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253"></a>THRESH_BINARY_INV&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{0}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{maxval}}{otherwise}\]" src="form_624.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884"></a>THRESH_TRUNC&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{threshold}}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{src}(x,y)}{otherwise}\]" src="form_625.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576add7f55ad0b5b5d57f09d7fc4da4df493"></a>THRESH_TOZERO&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{src}(x,y)}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{0}{otherwise}\]" src="form_626.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a33fc539d337daac0e79259196d91f175"></a>THRESH_TOZERO_INV&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{0}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{src}(x,y)}{otherwise}\]" src="form_627.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a141ac5ebc7c61fe2bdb930dbace6ce9b"></a>THRESH_OTSU&#160;</td><td class="fielddoc"><p>flag, use Otsu algorithm to choose the optimal threshold value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182"></a>THRESH_TRIANGLE&#160;</td><td class="fielddoc"><p>flag, use Triangle algorithm to choose the optimal threshold value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91"></a>THRESH_BINARY&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{maxval}}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{0}{otherwise}\]" src="form_623.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253"></a>THRESH_BINARY_INV&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{0}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{maxval}}{otherwise}\]" src="form_624.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884"></a>THRESH_TRUNC&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{threshold}}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{src}(x,y)}{otherwise}\]" src="form_625.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576add7f55ad0b5b5d57f09d7fc4da4df493"></a>THRESH_TOZERO&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{src}(x,y)}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{0}{otherwise}\]" src="form_626.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a33fc539d337daac0e79259196d91f175"></a>THRESH_TOZERO_INV&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{0}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{src}(x,y)}{otherwise}\]" src="form_627.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a141ac5ebc7c61fe2bdb930dbace6ce9b"></a>THRESH_OTSU&#160;</td><td class="fielddoc"><p>flag, use Otsu algorithm to choose the optimal threshold value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182"></a>THRESH_TRIANGLE&#160;</td><td class="fielddoc"><p>flag, use Triangle algorithm to choose the optimal threshold value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91"></a>THRESH_BINARY&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{maxval}}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{0}{otherwise}\]" src="form_623.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253"></a>THRESH_BINARY_INV&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{0}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{maxval}}{otherwise}\]" src="form_624.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884"></a>THRESH_TRUNC&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{threshold}}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{src}(x,y)}{otherwise}\]" src="form_625.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576add7f55ad0b5b5d57f09d7fc4da4df493"></a>THRESH_TOZERO&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{src}(x,y)}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{0}{otherwise}\]" src="form_626.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a33fc539d337daac0e79259196d91f175"></a>THRESH_TOZERO_INV&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{0}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{src}(x,y)}{otherwise}\]" src="form_627.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a141ac5ebc7c61fe2bdb930dbace6ce9b"></a>THRESH_OTSU&#160;</td><td class="fielddoc"><p>flag, use Otsu algorithm to choose the optimal threshold value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182"></a>THRESH_TRIANGLE&#160;</td><td class="fielddoc"><p>flag, use Triangle algorithm to choose the optimal threshold value </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaa9e58d2860d4afa658ef70a9b1115576"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9e58d2860d4afa658ef70a9b1115576">&#9670;&nbsp;</a></span>ThresholdTypes <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgproc__misc.html#gaa9e58d2860d4afa658ef70a9b1115576">cv::ThresholdTypes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>type of the threshold operation <img src="pics/threshold.png" alt="threshold types" class="inline"/>
+ <table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91"></a>THRESH_BINARY&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{maxval}}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{0}{otherwise}\]" src="form_623.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a108e346cb70778acd20a8357309d7253"></a>THRESH_BINARY_INV&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{0}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{maxval}}{otherwise}\]" src="form_624.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576af3656d8d20829279515c465933719884"></a>THRESH_TRUNC&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{threshold}}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{src}(x,y)}{otherwise}\]" src="form_625.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576add7f55ad0b5b5d57f09d7fc4da4df493"></a>THRESH_TOZERO&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{src}(x,y)}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{0}{otherwise}\]" src="form_626.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a33fc539d337daac0e79259196d91f175"></a>THRESH_TOZERO_INV&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{0}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{\texttt{src}(x,y)}{otherwise}\]" src="form_627.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a141ac5ebc7c61fe2bdb930dbace6ce9b"></a>THRESH_OTSU&#160;</td><td class="fielddoc"><p>flag, use Otsu algorithm to choose the optimal threshold value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a3ce01bb4d72f8ebf665cc046ecc4e182"></a>THRESH_TRIANGLE&#160;</td><td class="fielddoc"><p>flag, use Triangle algorithm to choose the optimal threshold value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa9e58d2860d4afa658ef70a9b1115576a94547d56b4fd6819bd67a0fabb71cf91"></a>THRESH_BINARY&#160;</td><td class="fielddoc"><p class="formulaDsp">
 <img class="formulaDsp" alt="\[\texttt{dst} (x,y) = \fork{\texttt{maxval}}{if \(\texttt{src}(x,y) &gt; \texttt{thresh}\)}{0}{otherwise}\]" src="form_623.png"/>
 </p>
  </td></tr>

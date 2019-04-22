@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['ransac',['RANSAC',['../group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858',1,'cv']]],
+  ['ransac',['RANSAC',['../group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858',1,'cv']]],
   ['read',['READ',['../classcv_1_1_file_storage.html#a973e41cb75ef6230412a567723b7482da83db4646d2a5a17669d01b872f583b9a',1,'cv::FileStorage']]],
   ['real',['REAL',['../classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e',1,'cv::FileNode']]],
   ['reduce_5favg',['REDUCE_AVG',['../group__core.html#gga14cdedf2933367eb9395ec16798af994ac10416c8de4b48625fa3e4520c2f1295',1,'cv']]],
@@ -14,7 +14,7 @@ var searchData=
   ['retr_5ftree',['RETR_TREE',['../group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3',1,'cv']]],
   ['rgb',['RGB',['../classcv_1_1ogl_1_1_texture2_d.html#a1838399ee67c0957c0ae42cabfa99033a410754db1d15f1801093aa9f4cad249b',1,'cv::ogl::Texture2D']]],
   ['rgba',['RGBA',['../classcv_1_1ogl_1_1_texture2_d.html#a1838399ee67c0957c0ae42cabfa99033a254856775a3ed605a188c2948361276c',1,'cv::ogl::Texture2D']]],
-  ['rho',['RHO',['../group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a9b817ea4d511588fb4a1ee89a47b1217',1,'cv']]],
+  ['rho',['RHO',['../group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a9b817ea4d511588fb4a1ee89a47b1217',1,'cv']]],
   ['rotate_5f180',['ROTATE_180',['../group__core__array.html#gga6f45d55c0b1cc9d97f5353a7c8a7aac2a2769a5cfe4d673d4c5b1cbc303b75474',1,'cv']]],
   ['rotate_5f90_5fclockwise',['ROTATE_90_CLOCKWISE',['../group__core__array.html#gga6f45d55c0b1cc9d97f5353a7c8a7aac2aa71505796374a7f4af9d0ea2f9435971',1,'cv']]],
   ['rotate_5f90_5fcounterclockwise',['ROTATE_90_COUNTERCLOCKWISE',['../group__core__array.html#gga6f45d55c0b1cc9d97f5353a7c8a7aac2a9222b796b452d75c14f63c7deb31033f',1,'cv']]]

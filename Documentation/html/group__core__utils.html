@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: Utility and system functions and macros</title>
+<title>PixUl8: Utility and system functions and macros</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -1109,6 +1107,252 @@ Macros</h2></td></tr>
 <tr class="memitem:ga8b49a79bdb8458a658db563481a19f4e"><td class="memItemLeft" align="right" valign="top"><a id="ga8b49a79bdb8458a658db563481a19f4e"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_FINAL</b></td></tr>
 <tr class="separator:ga8b49a79bdb8458a658db563481a19f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b48c333c777666e076bd7052799f891"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core__utils.html#ga5b48c333c777666e076bd7052799f891">CV_Error</a>(code,  msg)&#160;&#160;&#160;<a class="el" href="group__core__utils.html#ga6e5f73221f04478f65658b82978bff48">cv::error</a>( code, msg, CV_Func, __FILE__, __LINE__ )</td></tr>
+<tr class="memdesc:ga5b48c333c777666e076bd7052799f891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the error handler.  <a href="#ga5b48c333c777666e076bd7052799f891">More...</a><br /></td></tr>
+<tr class="separator:ga5b48c333c777666e076bd7052799f891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c0cd6e5bd9a5f915c6cab9c0632f969"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core__utils.html#ga1c0cd6e5bd9a5f915c6cab9c0632f969">CV_Error_</a>(code,  args)&#160;&#160;&#160;<a class="el" href="group__core__utils.html#ga6e5f73221f04478f65658b82978bff48">cv::error</a>( code, cv::format args, CV_Func, __FILE__, __LINE__ )</td></tr>
+<tr class="memdesc:ga1c0cd6e5bd9a5f915c6cab9c0632f969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the error handler.  <a href="#ga1c0cd6e5bd9a5f915c6cab9c0632f969">More...</a><br /></td></tr>
+<tr class="separator:ga1c0cd6e5bd9a5f915c6cab9c0632f969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf62bcd90f70e275191ab95136d85906b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core__utils.html#gaf62bcd90f70e275191ab95136d85906b">CV_Assert</a>(expr)&#160;&#160;&#160;do { if(!!(expr)) ; else <a class="el" href="group__core__utils.html#ga6e5f73221f04478f65658b82978bff48">cv::error</a>( cv::Error::StsAssert, #expr, CV_Func, __FILE__, __LINE__ ); } while(0)</td></tr>
+<tr class="memdesc:gaf62bcd90f70e275191ab95136d85906b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks a condition at runtime and throws exception if it fails.  <a href="#gaf62bcd90f70e275191ab95136d85906b">More...</a><br /></td></tr>
+<tr class="separator:gaf62bcd90f70e275191ab95136d85906b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafbcb487cba05bd288dbe18c433de4f6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core__utils.html#gafbcb487cba05bd288dbe18c433de4f6f">CV_DbgAssert</a>(expr)</td></tr>
+<tr class="separator:gafbcb487cba05bd288dbe18c433de4f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad557724ee9c07e56906f61c576b19e91"><td class="memItemLeft" align="right" valign="top"><a id="gad557724ee9c07e56906f61c576b19e91"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV__DEBUG_NS_BEGIN</b></td></tr>
+<tr class="separator:gad557724ee9c07e56906f61c576b19e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf1094185326a278e77b9dae90a81498a"><td class="memItemLeft" align="right" valign="top"><a id="gaf1094185326a278e77b9dae90a81498a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV__DEBUG_NS_END</b></td></tr>
+<tr class="separator:gaf1094185326a278e77b9dae90a81498a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81155a470e691e2a248e98c914dc35ab"><td class="memItemLeft" align="right" valign="top"><a id="ga81155a470e691e2a248e98c914dc35ab"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>__CV_EXPAND</b>(x)&#160;&#160;&#160;x</td></tr>
+<tr class="separator:ga81155a470e691e2a248e98c914dc35ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2dea0308d694f8811d9f3bc817d3d2e8"><td class="memItemLeft" align="right" valign="top"><a id="ga2dea0308d694f8811d9f3bc817d3d2e8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>__CV_CAT__</b>(x,  y)&#160;&#160;&#160;x ## y</td></tr>
+<tr class="separator:ga2dea0308d694f8811d9f3bc817d3d2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd0e78e6713f2803d64939a63244a42f"><td class="memItemLeft" align="right" valign="top"><a id="gafd0e78e6713f2803d64939a63244a42f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>__CV_CAT_</b>(x,  y)&#160;&#160;&#160;__CV_CAT__(x, y)</td></tr>
+<tr class="separator:gafd0e78e6713f2803d64939a63244a42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeafc02a0b798693c56fe860a82151e92"><td class="memItemLeft" align="right" valign="top"><a id="gaeafc02a0b798693c56fe860a82151e92"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>__CV_CAT</b>(x,  y)&#160;&#160;&#160;__CV_CAT_(x, y)</td></tr>
+<tr class="separator:gaeafc02a0b798693c56fe860a82151e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f99898e484c4d83cb43ce78ea514cf7"><td class="memItemLeft" align="right" valign="top"><a id="ga4f99898e484c4d83cb43ce78ea514cf7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>__CV_VA_NUM_ARGS_HELPER</b>(_1,  _2,  _3,  _4,  _5,  _6,  _7,  _8,  _9,  _10,  N, ...)&#160;&#160;&#160;N</td></tr>
+<tr class="separator:ga4f99898e484c4d83cb43ce78ea514cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57a9a1629be2f0cc2d5ed21dff4d0bad"><td class="memItemLeft" align="right" valign="top"><a id="ga57a9a1629be2f0cc2d5ed21dff4d0bad"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>__CV_VA_NUM_ARGS</b>(...)&#160;&#160;&#160;__CV_VA_NUM_ARGS_HELPER(__VA_ARGS__, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0)</td></tr>
+<tr class="separator:ga57a9a1629be2f0cc2d5ed21dff4d0bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41df7094eff07ba50594b833797da1cc"><td class="memItemLeft" align="right" valign="top"><a id="ga41df7094eff07ba50594b833797da1cc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_Func</b>&#160;&#160;&#160;&quot;&quot;</td></tr>
+<tr class="separator:ga41df7094eff07ba50594b833797da1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa9cd5d65f77596b7dfb38dd8afe2325"><td class="memItemLeft" align="right" valign="top"><a id="gafa9cd5d65f77596b7dfb38dd8afe2325"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_INLINE</b>&#160;&#160;&#160;static</td></tr>
+<tr class="separator:gafa9cd5d65f77596b7dfb38dd8afe2325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf9dda5d0186a96c60bb2a1d36fff2e34"><td class="memItemLeft" align="right" valign="top"><a id="gaf9dda5d0186a96c60bb2a1d36fff2e34"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_ENABLE_UNROLLED</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:gaf9dda5d0186a96c60bb2a1d36fff2e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37ad1490cadef420db822300ba567bef"><td class="memItemLeft" align="right" valign="top"><a id="ga37ad1490cadef420db822300ba567bef"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_DECL_ALIGNED</b>(x)</td></tr>
+<tr class="separator:ga37ad1490cadef420db822300ba567bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga104b95e4b2eec07215d29596064f47cb"><td class="memItemLeft" align="right" valign="top"><a id="ga104b95e4b2eec07215d29596064f47cb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_NONE</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ga104b95e4b2eec07215d29596064f47cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa481472118e08e296fd42fc8e5abf9ac"><td class="memItemLeft" align="right" valign="top"><a id="gaa481472118e08e296fd42fc8e5abf9ac"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_MMX</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:gaa481472118e08e296fd42fc8e5abf9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb389e2e9724962a4e34b1af20a79d61"><td class="memItemLeft" align="right" valign="top"><a id="gabb389e2e9724962a4e34b1af20a79d61"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_SSE</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:gabb389e2e9724962a4e34b1af20a79d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1df28a9e1b1be2549e89164ca8f071f"><td class="memItemLeft" align="right" valign="top"><a id="gab1df28a9e1b1be2549e89164ca8f071f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_SSE2</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:gab1df28a9e1b1be2549e89164ca8f071f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae85ae2cf0c12946ba63fd038d3791c6e"><td class="memItemLeft" align="right" valign="top"><a id="gae85ae2cf0c12946ba63fd038d3791c6e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_SSE3</b>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:gae85ae2cf0c12946ba63fd038d3791c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d225e0524b22cfcb76e95ec6f1ffea3"><td class="memItemLeft" align="right" valign="top"><a id="ga2d225e0524b22cfcb76e95ec6f1ffea3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_SSSE3</b>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:ga2d225e0524b22cfcb76e95ec6f1ffea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa9ac4475f854fb05a2c638bf0e994a4"><td class="memItemLeft" align="right" valign="top"><a id="gafa9ac4475f854fb05a2c638bf0e994a4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_SSE4_1</b>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:gafa9ac4475f854fb05a2c638bf0e994a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5eecc3ec419583730de850144327359"><td class="memItemLeft" align="right" valign="top"><a id="gac5eecc3ec419583730de850144327359"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_SSE4_2</b>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:gac5eecc3ec419583730de850144327359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa40a6af4861eb57b2424dbf0352aa007"><td class="memItemLeft" align="right" valign="top"><a id="gaa40a6af4861eb57b2424dbf0352aa007"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_POPCNT</b>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:gaa40a6af4861eb57b2424dbf0352aa007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd3882bf2ff8dbfd5228b4dab2872f7a"><td class="memItemLeft" align="right" valign="top"><a id="gadd3882bf2ff8dbfd5228b4dab2872f7a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_FP16</b>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:gadd3882bf2ff8dbfd5228b4dab2872f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3bd7fc9990bb0778bbed4b893ea12e7d"><td class="memItemLeft" align="right" valign="top"><a id="ga3bd7fc9990bb0778bbed4b893ea12e7d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_AVX</b>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:ga3bd7fc9990bb0778bbed4b893ea12e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57fea9517fed3010669087abadd3a759"><td class="memItemLeft" align="right" valign="top"><a id="ga57fea9517fed3010669087abadd3a759"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_AVX2</b>&#160;&#160;&#160;11</td></tr>
+<tr class="separator:ga57fea9517fed3010669087abadd3a759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9db70f4811a1136f8279069afdb04c47"><td class="memItemLeft" align="right" valign="top"><a id="ga9db70f4811a1136f8279069afdb04c47"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_FMA3</b>&#160;&#160;&#160;12</td></tr>
+<tr class="separator:ga9db70f4811a1136f8279069afdb04c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c59ee4ea12c56920f2ea6342d025146"><td class="memItemLeft" align="right" valign="top"><a id="ga0c59ee4ea12c56920f2ea6342d025146"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_AVX_512F</b>&#160;&#160;&#160;13</td></tr>
+<tr class="separator:ga0c59ee4ea12c56920f2ea6342d025146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2dd8f3c21ded53b4e25d58cf605543ce"><td class="memItemLeft" align="right" valign="top"><a id="ga2dd8f3c21ded53b4e25d58cf605543ce"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_AVX_512BW</b>&#160;&#160;&#160;14</td></tr>
+<tr class="separator:ga2dd8f3c21ded53b4e25d58cf605543ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2711ff80efef5096eade24e3e02248ef"><td class="memItemLeft" align="right" valign="top"><a id="ga2711ff80efef5096eade24e3e02248ef"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_AVX_512CD</b>&#160;&#160;&#160;15</td></tr>
+<tr class="separator:ga2711ff80efef5096eade24e3e02248ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c5017b20347d73264330eb54d942c61"><td class="memItemLeft" align="right" valign="top"><a id="ga7c5017b20347d73264330eb54d942c61"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_AVX_512DQ</b>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:ga7c5017b20347d73264330eb54d942c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74fcd0b4e1fab1d597e2eecbb285a681"><td class="memItemLeft" align="right" valign="top"><a id="ga74fcd0b4e1fab1d597e2eecbb285a681"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_AVX_512ER</b>&#160;&#160;&#160;17</td></tr>
+<tr class="separator:ga74fcd0b4e1fab1d597e2eecbb285a681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04467719f0c0d036f25cef0f6a4a7f4c"><td class="memItemLeft" align="right" valign="top"><a id="ga04467719f0c0d036f25cef0f6a4a7f4c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_AVX_512IFMA512</b>&#160;&#160;&#160;18</td></tr>
+<tr class="separator:ga04467719f0c0d036f25cef0f6a4a7f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a79107e5d99e57b97833d3014d94434"><td class="memItemLeft" align="right" valign="top"><a id="ga5a79107e5d99e57b97833d3014d94434"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_AVX_512IFMA</b>&#160;&#160;&#160;18</td></tr>
+<tr class="separator:ga5a79107e5d99e57b97833d3014d94434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga457eef7720e763d6718ded380227cbfa"><td class="memItemLeft" align="right" valign="top"><a id="ga457eef7720e763d6718ded380227cbfa"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_AVX_512PF</b>&#160;&#160;&#160;19</td></tr>
+<tr class="separator:ga457eef7720e763d6718ded380227cbfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8322455e6dcfa4a4e7dc0f67bab69206"><td class="memItemLeft" align="right" valign="top"><a id="ga8322455e6dcfa4a4e7dc0f67bab69206"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_AVX_512VBMI</b>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:ga8322455e6dcfa4a4e7dc0f67bab69206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga926510f35fd39ef1adc378139fe71c37"><td class="memItemLeft" align="right" valign="top"><a id="ga926510f35fd39ef1adc378139fe71c37"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_AVX_512VL</b>&#160;&#160;&#160;21</td></tr>
+<tr class="separator:ga926510f35fd39ef1adc378139fe71c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafad79db0bcd08b82f973fb680166d8d2"><td class="memItemLeft" align="right" valign="top"><a id="gafad79db0bcd08b82f973fb680166d8d2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_NEON</b>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:gafad79db0bcd08b82f973fb680166d8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b5a7d2c4c52d5948968f8708d3ecc82"><td class="memItemLeft" align="right" valign="top"><a id="ga2b5a7d2c4c52d5948968f8708d3ecc82"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_VSX</b>&#160;&#160;&#160;200</td></tr>
+<tr class="separator:ga2b5a7d2c4c52d5948968f8708d3ecc82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga684c875da69a43839af6cc156956701c"><td class="memItemLeft" align="right" valign="top"><a id="ga684c875da69a43839af6cc156956701c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_VSX3</b>&#160;&#160;&#160;201</td></tr>
+<tr class="separator:ga684c875da69a43839af6cc156956701c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20895e828513e5d357df23e84a6e4cc0"><td class="memItemLeft" align="right" valign="top"><a id="ga20895e828513e5d357df23e84a6e4cc0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_CPU_AVX512_SKX</b>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:ga20895e828513e5d357df23e84a6e4cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1883364dc95a41d4ed2c2a678eb323df"><td class="memItemLeft" align="right" valign="top"><a id="ga1883364dc95a41d4ed2c2a678eb323df"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_HARDWARE_MAX_FEATURE</b>&#160;&#160;&#160;512</td></tr>
+<tr class="separator:ga1883364dc95a41d4ed2c2a678eb323df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga677b89fae9308b340ddaebf0dba8455f"><td class="memItemLeft" align="right" valign="top"><a id="ga677b89fae9308b340ddaebf0dba8455f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_PI</b>&#160;&#160;&#160;3.1415926535897932384626433832795</td></tr>
+<tr class="separator:ga677b89fae9308b340ddaebf0dba8455f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ff4e987d10b07a31704ff710fda8df8"><td class="memItemLeft" align="right" valign="top"><a id="ga1ff4e987d10b07a31704ff710fda8df8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_2PI</b>&#160;&#160;&#160;6.283185307179586476925286766559</td></tr>
+<tr class="separator:ga1ff4e987d10b07a31704ff710fda8df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba83942e77a0b0e6cd7eee6c41a9550e"><td class="memItemLeft" align="right" valign="top"><a id="gaba83942e77a0b0e6cd7eee6c41a9550e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_LOG2</b>&#160;&#160;&#160;0.69314718055994530941723212145818</td></tr>
+<tr class="separator:gaba83942e77a0b0e6cd7eee6c41a9550e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf729e3e1d0b8d2d70df8c228bb9c7f61"><td class="memItemLeft" align="right" valign="top"><a id="gaf729e3e1d0b8d2d70df8c228bb9c7f61"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_FP16_TYPE</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:gaf729e3e1d0b8d2d70df8c228bb9c7f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga811b0124be39dd6b027481429bd377aa"><td class="memItemLeft" align="right" valign="top"><a id="ga811b0124be39dd6b027481429bd377aa"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OPENCV_ABI_COMPATIBILITY</b>&#160;&#160;&#160;300</td></tr>
+<tr class="separator:ga811b0124be39dd6b027481429bd377aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1bf9f0e121b54272da02379cfccd0a2b"><td class="memItemLeft" align="right" valign="top"><a id="ga1bf9f0e121b54272da02379cfccd0a2b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_EXPORTS</b></td></tr>
+<tr class="separator:ga1bf9f0e121b54272da02379cfccd0a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b792197fc8b1d28d5d850e642261e96"><td class="memItemLeft" align="right" valign="top"><a id="ga7b792197fc8b1d28d5d850e642261e96"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_EXPORTS_TEMPLATE</b>&#160;&#160;&#160;CV_EXPORTS</td></tr>
+<tr class="separator:ga7b792197fc8b1d28d5d850e642261e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27de0dfc4088e366e615fc5f981edef2"><td class="memItemLeft" align="right" valign="top"><a id="ga27de0dfc4088e366e615fc5f981edef2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_DEPRECATED</b></td></tr>
+<tr class="separator:ga27de0dfc4088e366e615fc5f981edef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga610d4877d39811667f5878a2caec85b4"><td class="memItemLeft" align="right" valign="top"><a id="ga610d4877d39811667f5878a2caec85b4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_DEPRECATED_EXTERNAL</b>&#160;&#160;&#160;CV_DEPRECATED</td></tr>
+<tr class="separator:ga610d4877d39811667f5878a2caec85b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1bfe8d7a4ade4c675fe4c5e1b7584977"><td class="memItemLeft" align="right" valign="top"><a id="ga1bfe8d7a4ade4c675fe4c5e1b7584977"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_EXTERN_C</b></td></tr>
+<tr class="separator:ga1bfe8d7a4ade4c675fe4c5e1b7584977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67ea671a3582ce612ac3c281e067f480"><td class="memItemLeft" align="right" valign="top"><a id="ga67ea671a3582ce612ac3c281e067f480"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_EXPORTS_W</b>&#160;&#160;&#160;CV_EXPORTS</td></tr>
+<tr class="separator:ga67ea671a3582ce612ac3c281e067f480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13d649e3f5582a106caaa98f187dd34b"><td class="memItemLeft" align="right" valign="top"><a id="ga13d649e3f5582a106caaa98f187dd34b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_EXPORTS_W_SIMPLE</b>&#160;&#160;&#160;CV_EXPORTS</td></tr>
+<tr class="separator:ga13d649e3f5582a106caaa98f187dd34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga288d5d11e4d8675aab962ec2b2066855"><td class="memItemLeft" align="right" valign="top"><a id="ga288d5d11e4d8675aab962ec2b2066855"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_EXPORTS_AS</b>(synonym)&#160;&#160;&#160;CV_EXPORTS</td></tr>
+<tr class="separator:ga288d5d11e4d8675aab962ec2b2066855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff7195942cab00fc5eafdd8ed777fac5"><td class="memItemLeft" align="right" valign="top"><a id="gaff7195942cab00fc5eafdd8ed777fac5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_EXPORTS_W_MAP</b>&#160;&#160;&#160;CV_EXPORTS</td></tr>
+<tr class="separator:gaff7195942cab00fc5eafdd8ed777fac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ebcb7da2dea1ae77f77f643f54dcf09"><td class="memItemLeft" align="right" valign="top"><a id="ga3ebcb7da2dea1ae77f77f643f54dcf09"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_IN_OUT</b></td></tr>
+<tr class="separator:ga3ebcb7da2dea1ae77f77f643f54dcf09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e999bc21cb894d3ed789f3f0bc26778"><td class="memItemLeft" align="right" valign="top"><a id="ga4e999bc21cb894d3ed789f3f0bc26778"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_OUT</b></td></tr>
+<tr class="separator:ga4e999bc21cb894d3ed789f3f0bc26778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6fefb17d69c36b334374f612e3795a64"><td class="memItemLeft" align="right" valign="top"><a id="ga6fefb17d69c36b334374f612e3795a64"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_PROP</b></td></tr>
+<tr class="separator:ga6fefb17d69c36b334374f612e3795a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e800d960e0fc30e7f83c67c98e69ed2"><td class="memItemLeft" align="right" valign="top"><a id="ga9e800d960e0fc30e7f83c67c98e69ed2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_PROP_RW</b></td></tr>
+<tr class="separator:ga9e800d960e0fc30e7f83c67c98e69ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae435babf3ce7cca990524b23adf6b4a3"><td class="memItemLeft" align="right" valign="top"><a id="gae435babf3ce7cca990524b23adf6b4a3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_WRAP</b></td></tr>
+<tr class="separator:gae435babf3ce7cca990524b23adf6b4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a1f29cf8d55c0ee1b4687f6006da0b9"><td class="memItemLeft" align="right" valign="top"><a id="ga6a1f29cf8d55c0ee1b4687f6006da0b9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_WRAP_AS</b>(synonym)</td></tr>
+<tr class="separator:ga6a1f29cf8d55c0ee1b4687f6006da0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9674cdb1652c965abdd63f4a8b35cd29"><td class="memItemLeft" align="right" valign="top"><a id="ga9674cdb1652c965abdd63f4a8b35cd29"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_MAT_CN_MASK</b>&#160;&#160;&#160;((CV_CN_MAX - 1) &lt;&lt; CV_CN_SHIFT)</td></tr>
+<tr class="separator:ga9674cdb1652c965abdd63f4a8b35cd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga645f5d1efbab7bb8fdd460df6e633ebc"><td class="memItemLeft" align="right" valign="top"><a id="ga645f5d1efbab7bb8fdd460df6e633ebc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_MAT_CN</b>(flags)&#160;&#160;&#160;((((flags) &amp; CV_MAT_CN_MASK) &gt;&gt; CV_CN_SHIFT) + 1)</td></tr>
+<tr class="separator:ga645f5d1efbab7bb8fdd460df6e633ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga258b1347e5201a388695587807009b4b"><td class="memItemLeft" align="right" valign="top"><a id="ga258b1347e5201a388695587807009b4b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_MAT_TYPE_MASK</b>&#160;&#160;&#160;(CV_DEPTH_MAX*CV_CN_MAX - 1)</td></tr>
+<tr class="separator:ga258b1347e5201a388695587807009b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96a7faeae8e745d65fb59a1e98b32098"><td class="memItemLeft" align="right" valign="top"><a id="ga96a7faeae8e745d65fb59a1e98b32098"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_MAT_TYPE</b>(flags)&#160;&#160;&#160;((flags) &amp; CV_MAT_TYPE_MASK)</td></tr>
+<tr class="separator:ga96a7faeae8e745d65fb59a1e98b32098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e8901cf64ec3224be98b260434145ef"><td class="memItemLeft" align="right" valign="top"><a id="ga4e8901cf64ec3224be98b260434145ef"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_MAT_CONT_FLAG_SHIFT</b>&#160;&#160;&#160;14</td></tr>
+<tr class="separator:ga4e8901cf64ec3224be98b260434145ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga33697d633cfb0cc8e0855420ac031b39"><td class="memItemLeft" align="right" valign="top"><a id="ga33697d633cfb0cc8e0855420ac031b39"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_MAT_CONT_FLAG</b>&#160;&#160;&#160;(1 &lt;&lt; CV_MAT_CONT_FLAG_SHIFT)</td></tr>
+<tr class="separator:ga33697d633cfb0cc8e0855420ac031b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d380f9788823e5f6339e468fbb08905"><td class="memItemLeft" align="right" valign="top"><a id="ga5d380f9788823e5f6339e468fbb08905"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_IS_MAT_CONT</b>(flags)&#160;&#160;&#160;((flags) &amp; CV_MAT_CONT_FLAG)</td></tr>
+<tr class="separator:ga5d380f9788823e5f6339e468fbb08905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga533c5ceefc8e939b1b0a4d79f70d58fa"><td class="memItemLeft" align="right" valign="top"><a id="ga533c5ceefc8e939b1b0a4d79f70d58fa"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_IS_CONT_MAT</b>&#160;&#160;&#160;CV_IS_MAT_CONT</td></tr>
+<tr class="separator:ga533c5ceefc8e939b1b0a4d79f70d58fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89d1249ff6d3dea7477d418622f89c92"><td class="memItemLeft" align="right" valign="top"><a id="ga89d1249ff6d3dea7477d418622f89c92"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_SUBMAT_FLAG_SHIFT</b>&#160;&#160;&#160;15</td></tr>
+<tr class="separator:ga89d1249ff6d3dea7477d418622f89c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac29e34f0ff2d7d991cda4371609a4346"><td class="memItemLeft" align="right" valign="top"><a id="gac29e34f0ff2d7d991cda4371609a4346"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_SUBMAT_FLAG</b>&#160;&#160;&#160;(1 &lt;&lt; CV_SUBMAT_FLAG_SHIFT)</td></tr>
+<tr class="separator:gac29e34f0ff2d7d991cda4371609a4346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab477ea83aff3a1e64d55dd94d9c0ce17"><td class="memItemLeft" align="right" valign="top"><a id="gab477ea83aff3a1e64d55dd94d9c0ce17"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_IS_SUBMAT</b>(flags)&#160;&#160;&#160;((flags) &amp; CV_MAT_SUBMAT_FLAG)</td></tr>
+<tr class="separator:gab477ea83aff3a1e64d55dd94d9c0ce17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52623447b967d8e2c68794c5f709da1e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core__utils.html#ga52623447b967d8e2c68794c5f709da1e">CV_ELEM_SIZE1</a>(type)&#160;&#160;&#160;((((sizeof(size_t)&lt;&lt;28)|0x8442211) &gt;&gt; CV_MAT_DEPTH(type)*4) &amp; 15)</td></tr>
+<tr class="separator:ga52623447b967d8e2c68794c5f709da1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafede26477297ba5774c779f6b74f451b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core__utils.html#gafede26477297ba5774c779f6b74f451b">CV_ELEM_SIZE</a>(type)&#160;&#160;&#160;(CV_MAT_CN(type) &lt;&lt; ((((sizeof(size_t)/4+1)*16384|0x3a50) &gt;&gt; CV_MAT_DEPTH(type)*2) &amp; 3))</td></tr>
+<tr class="separator:gafede26477297ba5774c779f6b74f451b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3acffbd305ee72dcd4593c0d8af64a4f"><td class="memItemLeft" align="right" valign="top"><a id="ga3acffbd305ee72dcd4593c0d8af64a4f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MIN</b>(a,  b)&#160;&#160;&#160;((a) &gt; (b) ? (b) : (a))</td></tr>
+<tr class="separator:ga3acffbd305ee72dcd4593c0d8af64a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa99ec4acc4ecb2dc3c2d05da15d0e3f"><td class="memItemLeft" align="right" valign="top"><a id="gafa99ec4acc4ecb2dc3c2d05da15d0e3f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX</b>(a,  b)&#160;&#160;&#160;((a) &lt; (b) ? (b) : (a))</td></tr>
+<tr class="separator:gafa99ec4acc4ecb2dc3c2d05da15d0e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga68909c17c3794842bb6ab5d31fa37a7a"><td class="memItemLeft" align="right" valign="top"><a id="ga68909c17c3794842bb6ab5d31fa37a7a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_NORETURN</b>&#160;&#160;&#160;/* nothing by default */</td></tr>
+<tr class="separator:ga68909c17c3794842bb6ab5d31fa37a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a1bf6728a93cfa692a110252c252d03"><td class="memItemLeft" align="right" valign="top"><a id="ga1a1bf6728a93cfa692a110252c252d03"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_NODISCARD</b>&#160;&#160;&#160;/* nothing by default */</td></tr>
+<tr class="separator:ga1a1bf6728a93cfa692a110252c252d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d89d63e402ef9ddc48e18e21180fe4a"><td class="memItemLeft" align="right" valign="top"><a id="ga4d89d63e402ef9ddc48e18e21180fe4a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_OVERRIDE</b></td></tr>
+<tr class="separator:ga4d89d63e402ef9ddc48e18e21180fe4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b49a79bdb8458a658db563481a19f4e"><td class="memItemLeft" align="right" valign="top"><a id="ga8b49a79bdb8458a658db563481a19f4e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_FINAL</b></td></tr>
+<tr class="separator:ga8b49a79bdb8458a658db563481a19f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -1127,6 +1371,15 @@ typedef union <a class="el" href="union_cv64suf.html">Cv64suf</a>&#160;</td><td 
 <tr class="memitem:gaa881ec750b05998b614f059cdeff8786"><td class="memItemLeft" align="right" valign="top"><a id="gaa881ec750b05998b614f059cdeff8786"></a>
 typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>cv::ErrorCallback</b>) (int status, const char *func_name, const char *err_msg, const char *file_name, int <a class="el" href="group__imgproc__draw.html#ga6537e4c2dd8b146dac052ddd63fccf94">line</a>, void *userdata)</td></tr>
 <tr class="separator:gaa881ec750b05998b614f059cdeff8786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga053f210f7256367a8174a0a2f134ec21"><td class="memItemLeft" align="right" valign="top"><a id="ga053f210f7256367a8174a0a2f134ec21"></a>
+typedef union <a class="el" href="union_cv16suf.html">Cv16suf</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Cv16suf</b></td></tr>
+<tr class="separator:ga053f210f7256367a8174a0a2f134ec21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18571cc47b2a13329b1e338533e34950"><td class="memItemLeft" align="right" valign="top"><a id="ga18571cc47b2a13329b1e338533e34950"></a>
+typedef union <a class="el" href="union_cv32suf.html">Cv32suf</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Cv32suf</b></td></tr>
+<tr class="separator:ga18571cc47b2a13329b1e338533e34950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d20682a59763540a0a6126708085b63"><td class="memItemLeft" align="right" valign="top"><a id="ga8d20682a59763540a0a6126708085b63"></a>
+typedef union <a class="el" href="union_cv64suf.html">Cv64suf</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Cv64suf</b></td></tr>
+<tr class="separator:ga8d20682a59763540a0a6126708085b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga053f210f7256367a8174a0a2f134ec21"><td class="memItemLeft" align="right" valign="top"><a id="ga053f210f7256367a8174a0a2f134ec21"></a>
 typedef union <a class="el" href="union_cv16suf.html">Cv16suf</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Cv16suf</b></td></tr>
 <tr class="separator:ga053f210f7256367a8174a0a2f134ec21"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1291,12 +1544,51 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>CPU_VSX</b> = 200, 
 <b>CPU_VSX3</b> = 201, 
 <a class="el" href="group__core__utils.html#gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460">CPU_AVX512_SKX</a> = 256, 
+<b>CPU_MAX_FEATURE</b> = 512, 
+<br />
+&#160;&#160;<b>CPU_MMX</b> = 1, 
+<b>CPU_SSE</b> = 2, 
+<b>CPU_SSE2</b> = 3, 
+<b>CPU_SSE3</b> = 4, 
+<br />
+&#160;&#160;<b>CPU_SSSE3</b> = 5, 
+<b>CPU_SSE4_1</b> = 6, 
+<b>CPU_SSE4_2</b> = 7, 
+<b>CPU_POPCNT</b> = 8, 
+<br />
+&#160;&#160;<b>CPU_FP16</b> = 9, 
+<b>CPU_AVX</b> = 10, 
+<b>CPU_AVX2</b> = 11, 
+<b>CPU_FMA3</b> = 12, 
+<br />
+&#160;&#160;<b>CPU_AVX_512F</b> = 13, 
+<b>CPU_AVX_512BW</b> = 14, 
+<b>CPU_AVX_512CD</b> = 15, 
+<b>CPU_AVX_512DQ</b> = 16, 
+<br />
+&#160;&#160;<b>CPU_AVX_512ER</b> = 17, 
+<b>CPU_AVX_512IFMA512</b> = 18, 
+<b>CPU_AVX_512IFMA</b> = 18, 
+<b>CPU_AVX_512PF</b> = 19, 
+<br />
+&#160;&#160;<b>CPU_AVX_512VBMI</b> = 20, 
+<b>CPU_AVX_512VL</b> = 21, 
+<b>CPU_NEON</b> = 100, 
+<b>CPU_VSX</b> = 200, 
+<br />
+&#160;&#160;<b>CPU_VSX3</b> = 201, 
+<a class="el" href="group__core__utils.html#gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460">CPU_AVX512_SKX</a> = 256, 
 <b>CPU_MAX_FEATURE</b> = 512
 <br />
  }</td></tr>
 <tr class="memdesc:ga74405b66c7a701d17cec08a50b8b2802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available CPU features.  <a href="group__core__utils.html#ga74405b66c7a701d17cec08a50b8b2802">More...</a><br /></td></tr>
 <tr class="separator:ga74405b66c7a701d17cec08a50b8b2802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8e88a1f27e41e12f81caab17cf81667b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core__utils.html#ga8e88a1f27e41e12f81caab17cf81667b">cv::SortFlags</a> { <br />
+&#160;&#160;<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835">cv::SORT_EVERY_ROW</a> = 0, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761">cv::SORT_EVERY_COLUMN</a> = 1, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099">cv::SORT_ASCENDING</a> = 0, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61">cv::SORT_DESCENDING</a> = 16, 
+<br />
 &#160;&#160;<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835">cv::SORT_EVERY_ROW</a> = 0, 
 <a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761">cv::SORT_EVERY_COLUMN</a> = 1, 
 <a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099">cv::SORT_ASCENDING</a> = 0, 
@@ -1453,12 +1745,51 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>CPU_VSX</b> = 200, 
 <b>CPU_VSX3</b> = 201, 
 <a class="el" href="group__core__utils.html#gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460">CPU_AVX512_SKX</a> = 256, 
+<b>CPU_MAX_FEATURE</b> = 512, 
+<br />
+&#160;&#160;<b>CPU_MMX</b> = 1, 
+<b>CPU_SSE</b> = 2, 
+<b>CPU_SSE2</b> = 3, 
+<b>CPU_SSE3</b> = 4, 
+<br />
+&#160;&#160;<b>CPU_SSSE3</b> = 5, 
+<b>CPU_SSE4_1</b> = 6, 
+<b>CPU_SSE4_2</b> = 7, 
+<b>CPU_POPCNT</b> = 8, 
+<br />
+&#160;&#160;<b>CPU_FP16</b> = 9, 
+<b>CPU_AVX</b> = 10, 
+<b>CPU_AVX2</b> = 11, 
+<b>CPU_FMA3</b> = 12, 
+<br />
+&#160;&#160;<b>CPU_AVX_512F</b> = 13, 
+<b>CPU_AVX_512BW</b> = 14, 
+<b>CPU_AVX_512CD</b> = 15, 
+<b>CPU_AVX_512DQ</b> = 16, 
+<br />
+&#160;&#160;<b>CPU_AVX_512ER</b> = 17, 
+<b>CPU_AVX_512IFMA512</b> = 18, 
+<b>CPU_AVX_512IFMA</b> = 18, 
+<b>CPU_AVX_512PF</b> = 19, 
+<br />
+&#160;&#160;<b>CPU_AVX_512VBMI</b> = 20, 
+<b>CPU_AVX_512VL</b> = 21, 
+<b>CPU_NEON</b> = 100, 
+<b>CPU_VSX</b> = 200, 
+<br />
+&#160;&#160;<b>CPU_VSX3</b> = 201, 
+<a class="el" href="group__core__utils.html#gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460">CPU_AVX512_SKX</a> = 256, 
 <b>CPU_MAX_FEATURE</b> = 512
 <br />
  }</td></tr>
 <tr class="memdesc:ga74405b66c7a701d17cec08a50b8b2802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available CPU features.  <a href="group__core__utils.html#ga74405b66c7a701d17cec08a50b8b2802">More...</a><br /></td></tr>
 <tr class="separator:ga74405b66c7a701d17cec08a50b8b2802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8e88a1f27e41e12f81caab17cf81667b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core__utils.html#ga8e88a1f27e41e12f81caab17cf81667b">cv::SortFlags</a> { <br />
+&#160;&#160;<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835">cv::SORT_EVERY_ROW</a> = 0, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761">cv::SORT_EVERY_COLUMN</a> = 1, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099">cv::SORT_ASCENDING</a> = 0, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61">cv::SORT_DESCENDING</a> = 16, 
+<br />
 &#160;&#160;<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835">cv::SORT_EVERY_ROW</a> = 0, 
 <a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761">cv::SORT_EVERY_COLUMN</a> = 1, 
 <a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099">cv::SORT_ASCENDING</a> = 0, 
@@ -1615,12 +1946,51 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>CPU_VSX</b> = 200, 
 <b>CPU_VSX3</b> = 201, 
 <a class="el" href="group__core__utils.html#gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460">CPU_AVX512_SKX</a> = 256, 
+<b>CPU_MAX_FEATURE</b> = 512, 
+<br />
+&#160;&#160;<b>CPU_MMX</b> = 1, 
+<b>CPU_SSE</b> = 2, 
+<b>CPU_SSE2</b> = 3, 
+<b>CPU_SSE3</b> = 4, 
+<br />
+&#160;&#160;<b>CPU_SSSE3</b> = 5, 
+<b>CPU_SSE4_1</b> = 6, 
+<b>CPU_SSE4_2</b> = 7, 
+<b>CPU_POPCNT</b> = 8, 
+<br />
+&#160;&#160;<b>CPU_FP16</b> = 9, 
+<b>CPU_AVX</b> = 10, 
+<b>CPU_AVX2</b> = 11, 
+<b>CPU_FMA3</b> = 12, 
+<br />
+&#160;&#160;<b>CPU_AVX_512F</b> = 13, 
+<b>CPU_AVX_512BW</b> = 14, 
+<b>CPU_AVX_512CD</b> = 15, 
+<b>CPU_AVX_512DQ</b> = 16, 
+<br />
+&#160;&#160;<b>CPU_AVX_512ER</b> = 17, 
+<b>CPU_AVX_512IFMA512</b> = 18, 
+<b>CPU_AVX_512IFMA</b> = 18, 
+<b>CPU_AVX_512PF</b> = 19, 
+<br />
+&#160;&#160;<b>CPU_AVX_512VBMI</b> = 20, 
+<b>CPU_AVX_512VL</b> = 21, 
+<b>CPU_NEON</b> = 100, 
+<b>CPU_VSX</b> = 200, 
+<br />
+&#160;&#160;<b>CPU_VSX3</b> = 201, 
+<a class="el" href="group__core__utils.html#gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460">CPU_AVX512_SKX</a> = 256, 
 <b>CPU_MAX_FEATURE</b> = 512
 <br />
  }</td></tr>
 <tr class="memdesc:ga74405b66c7a701d17cec08a50b8b2802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available CPU features.  <a href="group__core__utils.html#ga74405b66c7a701d17cec08a50b8b2802">More...</a><br /></td></tr>
 <tr class="separator:ga74405b66c7a701d17cec08a50b8b2802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8e88a1f27e41e12f81caab17cf81667b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core__utils.html#ga8e88a1f27e41e12f81caab17cf81667b">cv::SortFlags</a> { <br />
+&#160;&#160;<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835">cv::SORT_EVERY_ROW</a> = 0, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761">cv::SORT_EVERY_COLUMN</a> = 1, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099">cv::SORT_ASCENDING</a> = 0, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61">cv::SORT_DESCENDING</a> = 16, 
+<br />
 &#160;&#160;<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835">cv::SORT_EVERY_ROW</a> = 0, 
 <a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761">cv::SORT_EVERY_COLUMN</a> = 1, 
 <a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099">cv::SORT_ASCENDING</a> = 0, 
@@ -1777,12 +2147,252 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>CPU_VSX</b> = 200, 
 <b>CPU_VSX3</b> = 201, 
 <a class="el" href="group__core__utils.html#gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460">CPU_AVX512_SKX</a> = 256, 
+<b>CPU_MAX_FEATURE</b> = 512, 
+<br />
+&#160;&#160;<b>CPU_MMX</b> = 1, 
+<b>CPU_SSE</b> = 2, 
+<b>CPU_SSE2</b> = 3, 
+<b>CPU_SSE3</b> = 4, 
+<br />
+&#160;&#160;<b>CPU_SSSE3</b> = 5, 
+<b>CPU_SSE4_1</b> = 6, 
+<b>CPU_SSE4_2</b> = 7, 
+<b>CPU_POPCNT</b> = 8, 
+<br />
+&#160;&#160;<b>CPU_FP16</b> = 9, 
+<b>CPU_AVX</b> = 10, 
+<b>CPU_AVX2</b> = 11, 
+<b>CPU_FMA3</b> = 12, 
+<br />
+&#160;&#160;<b>CPU_AVX_512F</b> = 13, 
+<b>CPU_AVX_512BW</b> = 14, 
+<b>CPU_AVX_512CD</b> = 15, 
+<b>CPU_AVX_512DQ</b> = 16, 
+<br />
+&#160;&#160;<b>CPU_AVX_512ER</b> = 17, 
+<b>CPU_AVX_512IFMA512</b> = 18, 
+<b>CPU_AVX_512IFMA</b> = 18, 
+<b>CPU_AVX_512PF</b> = 19, 
+<br />
+&#160;&#160;<b>CPU_AVX_512VBMI</b> = 20, 
+<b>CPU_AVX_512VL</b> = 21, 
+<b>CPU_NEON</b> = 100, 
+<b>CPU_VSX</b> = 200, 
+<br />
+&#160;&#160;<b>CPU_VSX3</b> = 201, 
+<a class="el" href="group__core__utils.html#gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460">CPU_AVX512_SKX</a> = 256, 
 <b>CPU_MAX_FEATURE</b> = 512
 <br />
  }</td></tr>
 <tr class="memdesc:ga74405b66c7a701d17cec08a50b8b2802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available CPU features.  <a href="group__core__utils.html#ga74405b66c7a701d17cec08a50b8b2802">More...</a><br /></td></tr>
 <tr class="separator:ga74405b66c7a701d17cec08a50b8b2802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8e88a1f27e41e12f81caab17cf81667b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core__utils.html#ga8e88a1f27e41e12f81caab17cf81667b">cv::SortFlags</a> { <br />
+&#160;&#160;<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835">cv::SORT_EVERY_ROW</a> = 0, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761">cv::SORT_EVERY_COLUMN</a> = 1, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099">cv::SORT_ASCENDING</a> = 0, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61">cv::SORT_DESCENDING</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835">cv::SORT_EVERY_ROW</a> = 0, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761">cv::SORT_EVERY_COLUMN</a> = 1, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099">cv::SORT_ASCENDING</a> = 0, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61">cv::SORT_DESCENDING</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835">cv::SORT_EVERY_ROW</a> = 0, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761">cv::SORT_EVERY_COLUMN</a> = 1, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099">cv::SORT_ASCENDING</a> = 0, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61">cv::SORT_DESCENDING</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835">cv::SORT_EVERY_ROW</a> = 0, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761">cv::SORT_EVERY_COLUMN</a> = 1, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099">cv::SORT_ASCENDING</a> = 0, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61">cv::SORT_DESCENDING</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835">cv::SORT_EVERY_ROW</a> = 0, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761">cv::SORT_EVERY_COLUMN</a> = 1, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099">cv::SORT_ASCENDING</a> = 0, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61">cv::SORT_DESCENDING</a> = 16
+<br />
+ }</td></tr>
+<tr class="separator:ga8e88a1f27e41e12f81caab17cf81667b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74405b66c7a701d17cec08a50b8b2802"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core__utils.html#ga74405b66c7a701d17cec08a50b8b2802">CpuFeatures</a> { <br />
+&#160;&#160;<b>CPU_MMX</b> = 1, 
+<b>CPU_SSE</b> = 2, 
+<b>CPU_SSE2</b> = 3, 
+<b>CPU_SSE3</b> = 4, 
+<br />
+&#160;&#160;<b>CPU_SSSE3</b> = 5, 
+<b>CPU_SSE4_1</b> = 6, 
+<b>CPU_SSE4_2</b> = 7, 
+<b>CPU_POPCNT</b> = 8, 
+<br />
+&#160;&#160;<b>CPU_FP16</b> = 9, 
+<b>CPU_AVX</b> = 10, 
+<b>CPU_AVX2</b> = 11, 
+<b>CPU_FMA3</b> = 12, 
+<br />
+&#160;&#160;<b>CPU_AVX_512F</b> = 13, 
+<b>CPU_AVX_512BW</b> = 14, 
+<b>CPU_AVX_512CD</b> = 15, 
+<b>CPU_AVX_512DQ</b> = 16, 
+<br />
+&#160;&#160;<b>CPU_AVX_512ER</b> = 17, 
+<b>CPU_AVX_512IFMA512</b> = 18, 
+<b>CPU_AVX_512IFMA</b> = 18, 
+<b>CPU_AVX_512PF</b> = 19, 
+<br />
+&#160;&#160;<b>CPU_AVX_512VBMI</b> = 20, 
+<b>CPU_AVX_512VL</b> = 21, 
+<b>CPU_NEON</b> = 100, 
+<b>CPU_VSX</b> = 200, 
+<br />
+&#160;&#160;<b>CPU_VSX3</b> = 201, 
+<a class="el" href="group__core__utils.html#gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460">CPU_AVX512_SKX</a> = 256, 
+<b>CPU_MAX_FEATURE</b> = 512, 
+<b>CPU_MMX</b> = 1, 
+<br />
+&#160;&#160;<b>CPU_SSE</b> = 2, 
+<b>CPU_SSE2</b> = 3, 
+<b>CPU_SSE3</b> = 4, 
+<b>CPU_SSSE3</b> = 5, 
+<br />
+&#160;&#160;<b>CPU_SSE4_1</b> = 6, 
+<b>CPU_SSE4_2</b> = 7, 
+<b>CPU_POPCNT</b> = 8, 
+<b>CPU_FP16</b> = 9, 
+<br />
+&#160;&#160;<b>CPU_AVX</b> = 10, 
+<b>CPU_AVX2</b> = 11, 
+<b>CPU_FMA3</b> = 12, 
+<b>CPU_AVX_512F</b> = 13, 
+<br />
+&#160;&#160;<b>CPU_AVX_512BW</b> = 14, 
+<b>CPU_AVX_512CD</b> = 15, 
+<b>CPU_AVX_512DQ</b> = 16, 
+<b>CPU_AVX_512ER</b> = 17, 
+<br />
+&#160;&#160;<b>CPU_AVX_512IFMA512</b> = 18, 
+<b>CPU_AVX_512IFMA</b> = 18, 
+<b>CPU_AVX_512PF</b> = 19, 
+<b>CPU_AVX_512VBMI</b> = 20, 
+<br />
+&#160;&#160;<b>CPU_AVX_512VL</b> = 21, 
+<b>CPU_NEON</b> = 100, 
+<b>CPU_VSX</b> = 200, 
+<b>CPU_VSX3</b> = 201, 
+<br />
+&#160;&#160;<a class="el" href="group__core__utils.html#gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460">CPU_AVX512_SKX</a> = 256, 
+<b>CPU_MAX_FEATURE</b> = 512, 
+<b>CPU_MMX</b> = 1, 
+<b>CPU_SSE</b> = 2, 
+<br />
+&#160;&#160;<b>CPU_SSE2</b> = 3, 
+<b>CPU_SSE3</b> = 4, 
+<b>CPU_SSSE3</b> = 5, 
+<b>CPU_SSE4_1</b> = 6, 
+<br />
+&#160;&#160;<b>CPU_SSE4_2</b> = 7, 
+<b>CPU_POPCNT</b> = 8, 
+<b>CPU_FP16</b> = 9, 
+<b>CPU_AVX</b> = 10, 
+<br />
+&#160;&#160;<b>CPU_AVX2</b> = 11, 
+<b>CPU_FMA3</b> = 12, 
+<b>CPU_AVX_512F</b> = 13, 
+<b>CPU_AVX_512BW</b> = 14, 
+<br />
+&#160;&#160;<b>CPU_AVX_512CD</b> = 15, 
+<b>CPU_AVX_512DQ</b> = 16, 
+<b>CPU_AVX_512ER</b> = 17, 
+<b>CPU_AVX_512IFMA512</b> = 18, 
+<br />
+&#160;&#160;<b>CPU_AVX_512IFMA</b> = 18, 
+<b>CPU_AVX_512PF</b> = 19, 
+<b>CPU_AVX_512VBMI</b> = 20, 
+<b>CPU_AVX_512VL</b> = 21, 
+<br />
+&#160;&#160;<b>CPU_NEON</b> = 100, 
+<b>CPU_VSX</b> = 200, 
+<b>CPU_VSX3</b> = 201, 
+<a class="el" href="group__core__utils.html#gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460">CPU_AVX512_SKX</a> = 256, 
+<br />
+&#160;&#160;<b>CPU_MAX_FEATURE</b> = 512, 
+<b>CPU_MMX</b> = 1, 
+<b>CPU_SSE</b> = 2, 
+<b>CPU_SSE2</b> = 3, 
+<br />
+&#160;&#160;<b>CPU_SSE3</b> = 4, 
+<b>CPU_SSSE3</b> = 5, 
+<b>CPU_SSE4_1</b> = 6, 
+<b>CPU_SSE4_2</b> = 7, 
+<br />
+&#160;&#160;<b>CPU_POPCNT</b> = 8, 
+<b>CPU_FP16</b> = 9, 
+<b>CPU_AVX</b> = 10, 
+<b>CPU_AVX2</b> = 11, 
+<br />
+&#160;&#160;<b>CPU_FMA3</b> = 12, 
+<b>CPU_AVX_512F</b> = 13, 
+<b>CPU_AVX_512BW</b> = 14, 
+<b>CPU_AVX_512CD</b> = 15, 
+<br />
+&#160;&#160;<b>CPU_AVX_512DQ</b> = 16, 
+<b>CPU_AVX_512ER</b> = 17, 
+<b>CPU_AVX_512IFMA512</b> = 18, 
+<b>CPU_AVX_512IFMA</b> = 18, 
+<br />
+&#160;&#160;<b>CPU_AVX_512PF</b> = 19, 
+<b>CPU_AVX_512VBMI</b> = 20, 
+<b>CPU_AVX_512VL</b> = 21, 
+<b>CPU_NEON</b> = 100, 
+<br />
+&#160;&#160;<b>CPU_VSX</b> = 200, 
+<b>CPU_VSX3</b> = 201, 
+<a class="el" href="group__core__utils.html#gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460">CPU_AVX512_SKX</a> = 256, 
+<b>CPU_MAX_FEATURE</b> = 512, 
+<br />
+&#160;&#160;<b>CPU_MMX</b> = 1, 
+<b>CPU_SSE</b> = 2, 
+<b>CPU_SSE2</b> = 3, 
+<b>CPU_SSE3</b> = 4, 
+<br />
+&#160;&#160;<b>CPU_SSSE3</b> = 5, 
+<b>CPU_SSE4_1</b> = 6, 
+<b>CPU_SSE4_2</b> = 7, 
+<b>CPU_POPCNT</b> = 8, 
+<br />
+&#160;&#160;<b>CPU_FP16</b> = 9, 
+<b>CPU_AVX</b> = 10, 
+<b>CPU_AVX2</b> = 11, 
+<b>CPU_FMA3</b> = 12, 
+<br />
+&#160;&#160;<b>CPU_AVX_512F</b> = 13, 
+<b>CPU_AVX_512BW</b> = 14, 
+<b>CPU_AVX_512CD</b> = 15, 
+<b>CPU_AVX_512DQ</b> = 16, 
+<br />
+&#160;&#160;<b>CPU_AVX_512ER</b> = 17, 
+<b>CPU_AVX_512IFMA512</b> = 18, 
+<b>CPU_AVX_512IFMA</b> = 18, 
+<b>CPU_AVX_512PF</b> = 19, 
+<br />
+&#160;&#160;<b>CPU_AVX_512VBMI</b> = 20, 
+<b>CPU_AVX_512VL</b> = 21, 
+<b>CPU_NEON</b> = 100, 
+<b>CPU_VSX</b> = 200, 
+<br />
+&#160;&#160;<b>CPU_VSX3</b> = 201, 
+<a class="el" href="group__core__utils.html#gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460">CPU_AVX512_SKX</a> = 256, 
+<b>CPU_MAX_FEATURE</b> = 512
+<br />
+ }</td></tr>
+<tr class="memdesc:ga74405b66c7a701d17cec08a50b8b2802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available CPU features.  <a href="group__core__utils.html#ga74405b66c7a701d17cec08a50b8b2802">More...</a><br /></td></tr>
+<tr class="separator:ga74405b66c7a701d17cec08a50b8b2802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e88a1f27e41e12f81caab17cf81667b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core__utils.html#ga8e88a1f27e41e12f81caab17cf81667b">cv::SortFlags</a> { <br />
+&#160;&#160;<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835">cv::SORT_EVERY_ROW</a> = 0, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761">cv::SORT_EVERY_COLUMN</a> = 1, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099">cv::SORT_ASCENDING</a> = 0, 
+<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61">cv::SORT_DESCENDING</a> = 16, 
+<br />
 &#160;&#160;<a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835">cv::SORT_EVERY_ROW</a> = 0, 
 <a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761">cv::SORT_EVERY_COLUMN</a> = 1, 
 <a class="el" href="group__core__utils.html#gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099">cv::SORT_ASCENDING</a> = 0, 
@@ -2166,7 +2776,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gaf62bcd90f70e275191ab95136d85906b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf62bcd90f70e275191ab95136d85906b">&#9670;&nbsp;</a></span>CV_Assert <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf62bcd90f70e275191ab95136d85906b">&#9670;&nbsp;</a></span>CV_Assert <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2187,7 +2797,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="gaf62bcd90f70e275191ab95136d85906b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf62bcd90f70e275191ab95136d85906b">&#9670;&nbsp;</a></span>CV_Assert <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf62bcd90f70e275191ab95136d85906b">&#9670;&nbsp;</a></span>CV_Assert <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2208,7 +2818,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="gaf62bcd90f70e275191ab95136d85906b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf62bcd90f70e275191ab95136d85906b">&#9670;&nbsp;</a></span>CV_Assert <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf62bcd90f70e275191ab95136d85906b">&#9670;&nbsp;</a></span>CV_Assert <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2229,7 +2839,28 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="gaf62bcd90f70e275191ab95136d85906b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf62bcd90f70e275191ab95136d85906b">&#9670;&nbsp;</a></span>CV_Assert <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf62bcd90f70e275191ab95136d85906b">&#9670;&nbsp;</a></span>CV_Assert <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CV_Assert</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expr</td><td>)</td>
+          <td>&#160;&#160;&#160;do { if(!!(expr)) ; else <a class="el" href="group__core__utils.html#ga6e5f73221f04478f65658b82978bff48">cv::error</a>( cv::Error::StsAssert, #expr, CV_Func, __FILE__, __LINE__ ); } while(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks a condition at runtime and throws exception if it fails. </p>
+<p>The macros CV_Assert (and <a class="el" href="group__core__utils.html#gafbcb487cba05bd288dbe18c433de4f6f">CV_DbgAssert(expr)</a>) evaluate the specified expression. If it is 0, the macros raise an error (see <a class="el" href="group__core__utils.html#ga6e5f73221f04478f65658b82978bff48" title="Signals an error and raises the exception.">cv::error</a>). The macro CV_Assert checks the condition in both Debug and Release configurations while CV_DbgAssert is only retained in the Debug configuration. </p>
+
+</div>
+</div>
+<a id="gaf62bcd90f70e275191ab95136d85906b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf62bcd90f70e275191ab95136d85906b">&#9670;&nbsp;</a></span>CV_Assert <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2250,7 +2881,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="gafbcb487cba05bd288dbe18c433de4f6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafbcb487cba05bd288dbe18c433de4f6f">&#9670;&nbsp;</a></span>CV_DbgAssert <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gafbcb487cba05bd288dbe18c433de4f6f">&#9670;&nbsp;</a></span>CV_DbgAssert <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2269,7 +2900,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="gafbcb487cba05bd288dbe18c433de4f6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafbcb487cba05bd288dbe18c433de4f6f">&#9670;&nbsp;</a></span>CV_DbgAssert <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gafbcb487cba05bd288dbe18c433de4f6f">&#9670;&nbsp;</a></span>CV_DbgAssert <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2288,7 +2919,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="gafbcb487cba05bd288dbe18c433de4f6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafbcb487cba05bd288dbe18c433de4f6f">&#9670;&nbsp;</a></span>CV_DbgAssert <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gafbcb487cba05bd288dbe18c433de4f6f">&#9670;&nbsp;</a></span>CV_DbgAssert <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2307,7 +2938,26 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="gafbcb487cba05bd288dbe18c433de4f6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafbcb487cba05bd288dbe18c433de4f6f">&#9670;&nbsp;</a></span>CV_DbgAssert <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gafbcb487cba05bd288dbe18c433de4f6f">&#9670;&nbsp;</a></span>CV_DbgAssert <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CV_DbgAssert</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expr</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>replaced with <a class="el" href="group__core__utils.html#gaf62bcd90f70e275191ab95136d85906b" title="Checks a condition at runtime and throws exception if it fails.">CV_Assert(expr)</a> in Debug configuration </p>
+
+</div>
+</div>
+<a id="gafbcb487cba05bd288dbe18c433de4f6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafbcb487cba05bd288dbe18c433de4f6f">&#9670;&nbsp;</a></span>CV_DbgAssert <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2326,7 +2976,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="gafede26477297ba5774c779f6b74f451b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafede26477297ba5774c779f6b74f451b">&#9670;&nbsp;</a></span>CV_ELEM_SIZE <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gafede26477297ba5774c779f6b74f451b">&#9670;&nbsp;</a></span>CV_ELEM_SIZE <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2345,7 +2995,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="gafede26477297ba5774c779f6b74f451b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafede26477297ba5774c779f6b74f451b">&#9670;&nbsp;</a></span>CV_ELEM_SIZE <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gafede26477297ba5774c779f6b74f451b">&#9670;&nbsp;</a></span>CV_ELEM_SIZE <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2364,7 +3014,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="gafede26477297ba5774c779f6b74f451b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafede26477297ba5774c779f6b74f451b">&#9670;&nbsp;</a></span>CV_ELEM_SIZE <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gafede26477297ba5774c779f6b74f451b">&#9670;&nbsp;</a></span>CV_ELEM_SIZE <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2383,7 +3033,26 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="gafede26477297ba5774c779f6b74f451b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafede26477297ba5774c779f6b74f451b">&#9670;&nbsp;</a></span>CV_ELEM_SIZE <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gafede26477297ba5774c779f6b74f451b">&#9670;&nbsp;</a></span>CV_ELEM_SIZE <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CV_ELEM_SIZE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type</td><td>)</td>
+          <td>&#160;&#160;&#160;(CV_MAT_CN(type) &lt;&lt; ((((sizeof(size_t)/4+1)*16384|0x3a50) &gt;&gt; CV_MAT_DEPTH(type)*2) &amp; 3))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>0x3a50 = 11 10 10 01 01 00 00 ~ array of log2(sizeof(arr_type_elem)) </p>
+
+</div>
+</div>
+<a id="gafede26477297ba5774c779f6b74f451b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafede26477297ba5774c779f6b74f451b">&#9670;&nbsp;</a></span>CV_ELEM_SIZE <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2402,7 +3071,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="ga52623447b967d8e2c68794c5f709da1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga52623447b967d8e2c68794c5f709da1e">&#9670;&nbsp;</a></span>CV_ELEM_SIZE1 <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga52623447b967d8e2c68794c5f709da1e">&#9670;&nbsp;</a></span>CV_ELEM_SIZE1 <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2421,7 +3090,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="ga52623447b967d8e2c68794c5f709da1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga52623447b967d8e2c68794c5f709da1e">&#9670;&nbsp;</a></span>CV_ELEM_SIZE1 <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga52623447b967d8e2c68794c5f709da1e">&#9670;&nbsp;</a></span>CV_ELEM_SIZE1 <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2440,7 +3109,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="ga52623447b967d8e2c68794c5f709da1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga52623447b967d8e2c68794c5f709da1e">&#9670;&nbsp;</a></span>CV_ELEM_SIZE1 <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga52623447b967d8e2c68794c5f709da1e">&#9670;&nbsp;</a></span>CV_ELEM_SIZE1 <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2459,7 +3128,26 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="ga52623447b967d8e2c68794c5f709da1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga52623447b967d8e2c68794c5f709da1e">&#9670;&nbsp;</a></span>CV_ELEM_SIZE1 <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga52623447b967d8e2c68794c5f709da1e">&#9670;&nbsp;</a></span>CV_ELEM_SIZE1 <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CV_ELEM_SIZE1</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type</td><td>)</td>
+          <td>&#160;&#160;&#160;((((sizeof(size_t)&lt;&lt;28)|0x8442211) &gt;&gt; CV_MAT_DEPTH(type)*4) &amp; 15)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Size of each channel item, 0x8442211 = 1000 0100 0100 0010 0010 0001 0001 ~ array of sizeof(arr_type_elem) </p>
+
+</div>
+</div>
+<a id="ga52623447b967d8e2c68794c5f709da1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga52623447b967d8e2c68794c5f709da1e">&#9670;&nbsp;</a></span>CV_ELEM_SIZE1 <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2478,7 +3166,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="ga5b48c333c777666e076bd7052799f891"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5b48c333c777666e076bd7052799f891">&#9670;&nbsp;</a></span>CV_Error <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b48c333c777666e076bd7052799f891">&#9670;&nbsp;</a></span>CV_Error <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2516,7 +3204,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="ga5b48c333c777666e076bd7052799f891"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5b48c333c777666e076bd7052799f891">&#9670;&nbsp;</a></span>CV_Error <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b48c333c777666e076bd7052799f891">&#9670;&nbsp;</a></span>CV_Error <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2554,7 +3242,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="ga5b48c333c777666e076bd7052799f891"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5b48c333c777666e076bd7052799f891">&#9670;&nbsp;</a></span>CV_Error <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b48c333c777666e076bd7052799f891">&#9670;&nbsp;</a></span>CV_Error <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2592,7 +3280,45 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="ga5b48c333c777666e076bd7052799f891"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5b48c333c777666e076bd7052799f891">&#9670;&nbsp;</a></span>CV_Error <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b48c333c777666e076bd7052799f891">&#9670;&nbsp;</a></span>CV_Error <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CV_Error</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">code, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__core__utils.html#ga6e5f73221f04478f65658b82978bff48">cv::error</a>( code, msg, CV_Func, __FILE__, __LINE__ )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call the error handler. </p>
+<p>Currently, the error handler prints the error code and the error message to the standard error stream <code>stderr</code>. In the Debug configuration, it then provokes memory access violation, so that the execution stack and all the parameters can be analyzed by the debugger. In the Release configuration, the exception is thrown.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>one of Error::Code </td></tr>
+    <tr><td class="paramname">msg</td><td>error message </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga5b48c333c777666e076bd7052799f891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b48c333c777666e076bd7052799f891">&#9670;&nbsp;</a></span>CV_Error <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2630,7 +3356,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="ga1c0cd6e5bd9a5f915c6cab9c0632f969"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1c0cd6e5bd9a5f915c6cab9c0632f969">&#9670;&nbsp;</a></span>CV_Error_ <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1c0cd6e5bd9a5f915c6cab9c0632f969">&#9670;&nbsp;</a></span>CV_Error_ <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2667,7 +3393,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="ga1c0cd6e5bd9a5f915c6cab9c0632f969"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1c0cd6e5bd9a5f915c6cab9c0632f969">&#9670;&nbsp;</a></span>CV_Error_ <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1c0cd6e5bd9a5f915c6cab9c0632f969">&#9670;&nbsp;</a></span>CV_Error_ <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2704,7 +3430,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="ga1c0cd6e5bd9a5f915c6cab9c0632f969"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1c0cd6e5bd9a5f915c6cab9c0632f969">&#9670;&nbsp;</a></span>CV_Error_ <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1c0cd6e5bd9a5f915c6cab9c0632f969">&#9670;&nbsp;</a></span>CV_Error_ <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2741,7 +3467,44 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="ga1c0cd6e5bd9a5f915c6cab9c0632f969"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1c0cd6e5bd9a5f915c6cab9c0632f969">&#9670;&nbsp;</a></span>CV_Error_ <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1c0cd6e5bd9a5f915c6cab9c0632f969">&#9670;&nbsp;</a></span>CV_Error_ <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CV_Error_</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">code, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">args&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__core__utils.html#ga6e5f73221f04478f65658b82978bff48">cv::error</a>( code, cv::format args, CV_Func, __FILE__, __LINE__ )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call the error handler. </p>
+<p>This macro can be used to construct an error message on-fly to include some dynamic information, for example: </p><div class="fragment"><div class="line"><span class="comment">// note the extra parentheses around the formatted text message</span></div><div class="line"><a class="code" href="group__core__utils.html#ga1c0cd6e5bd9a5f915c6cab9c0632f969">CV_Error_</a>(Error::StsOutOfRange,</div><div class="line">(<span class="stringliteral">&quot;the value at (%d, %d)=%g is out of range&quot;</span>, badPt.x, badPt.y, badValue));</div></div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>one of Error::Code </td></tr>
+    <tr><td class="paramname">args</td><td>printf-like formatted error message in parentheses </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga1c0cd6e5bd9a5f915c6cab9c0632f969"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1c0cd6e5bd9a5f915c6cab9c0632f969">&#9670;&nbsp;</a></span>CV_Error_ <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2779,7 +3542,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga74405b66c7a701d17cec08a50b8b2802"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga74405b66c7a701d17cec08a50b8b2802">&#9670;&nbsp;</a></span>CpuFeatures <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga74405b66c7a701d17cec08a50b8b2802">&#9670;&nbsp;</a></span>CpuFeatures <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2793,6 +3556,8 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <p>Available CPU features. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460"></a>CPU_AVX512_SKX&#160;</td><td class="fielddoc"><p>Skylake-X with AVX-512F/CD/BW/DQ/VL. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460"></a>CPU_AVX512_SKX&#160;</td><td class="fielddoc"><p>Skylake-X with AVX-512F/CD/BW/DQ/VL. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460"></a>CPU_AVX512_SKX&#160;</td><td class="fielddoc"><p>Skylake-X with AVX-512F/CD/BW/DQ/VL. </p>
 </td></tr>
@@ -2805,7 +3570,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="ga74405b66c7a701d17cec08a50b8b2802"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga74405b66c7a701d17cec08a50b8b2802">&#9670;&nbsp;</a></span>CpuFeatures <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga74405b66c7a701d17cec08a50b8b2802">&#9670;&nbsp;</a></span>CpuFeatures <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2819,6 +3584,8 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <p>Available CPU features. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460"></a>CPU_AVX512_SKX&#160;</td><td class="fielddoc"><p>Skylake-X with AVX-512F/CD/BW/DQ/VL. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460"></a>CPU_AVX512_SKX&#160;</td><td class="fielddoc"><p>Skylake-X with AVX-512F/CD/BW/DQ/VL. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460"></a>CPU_AVX512_SKX&#160;</td><td class="fielddoc"><p>Skylake-X with AVX-512F/CD/BW/DQ/VL. </p>
 </td></tr>
@@ -2831,7 +3598,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="ga74405b66c7a701d17cec08a50b8b2802"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga74405b66c7a701d17cec08a50b8b2802">&#9670;&nbsp;</a></span>CpuFeatures <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga74405b66c7a701d17cec08a50b8b2802">&#9670;&nbsp;</a></span>CpuFeatures <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2845,6 +3612,8 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <p>Available CPU features. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460"></a>CPU_AVX512_SKX&#160;</td><td class="fielddoc"><p>Skylake-X with AVX-512F/CD/BW/DQ/VL. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460"></a>CPU_AVX512_SKX&#160;</td><td class="fielddoc"><p>Skylake-X with AVX-512F/CD/BW/DQ/VL. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460"></a>CPU_AVX512_SKX&#160;</td><td class="fielddoc"><p>Skylake-X with AVX-512F/CD/BW/DQ/VL. </p>
 </td></tr>
@@ -2857,7 +3626,7 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <a id="ga74405b66c7a701d17cec08a50b8b2802"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga74405b66c7a701d17cec08a50b8b2802">&#9670;&nbsp;</a></span>CpuFeatures <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga74405b66c7a701d17cec08a50b8b2802">&#9670;&nbsp;</a></span>CpuFeatures <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2878,12 +3647,42 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </td></tr>
 <tr><td class="fieldname"><a id="gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460"></a>CPU_AVX512_SKX&#160;</td><td class="fielddoc"><p>Skylake-X with AVX-512F/CD/BW/DQ/VL. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460"></a>CPU_AVX512_SKX&#160;</td><td class="fielddoc"><p>Skylake-X with AVX-512F/CD/BW/DQ/VL. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga74405b66c7a701d17cec08a50b8b2802"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga74405b66c7a701d17cec08a50b8b2802">&#9670;&nbsp;</a></span>CpuFeatures <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__core__utils.html#ga74405b66c7a701d17cec08a50b8b2802">CpuFeatures</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Available CPU features. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460"></a>CPU_AVX512_SKX&#160;</td><td class="fielddoc"><p>Skylake-X with AVX-512F/CD/BW/DQ/VL. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460"></a>CPU_AVX512_SKX&#160;</td><td class="fielddoc"><p>Skylake-X with AVX-512F/CD/BW/DQ/VL. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460"></a>CPU_AVX512_SKX&#160;</td><td class="fielddoc"><p>Skylake-X with AVX-512F/CD/BW/DQ/VL. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460"></a>CPU_AVX512_SKX&#160;</td><td class="fielddoc"><p>Skylake-X with AVX-512F/CD/BW/DQ/VL. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga74405b66c7a701d17cec08a50b8b2802a5e72cc7c10e55160242460978d8dc460"></a>CPU_AVX512_SKX&#160;</td><td class="fielddoc"><p>Skylake-X with AVX-512F/CD/BW/DQ/VL. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga8e88a1f27e41e12f81caab17cf81667b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8e88a1f27e41e12f81caab17cf81667b">&#9670;&nbsp;</a></span>SortFlags <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e88a1f27e41e12f81caab17cf81667b">&#9670;&nbsp;</a></span>SortFlags <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2926,12 +3725,20 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </td></tr>
 <tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61"></a>SORT_DESCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the descending order; this flag and the previous one are also mutually exclusive. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835"></a>SORT_EVERY_ROW&#160;</td><td class="fielddoc"><p>each matrix row is sorted independently </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761"></a>SORT_EVERY_COLUMN&#160;</td><td class="fielddoc"><p>each matrix column is sorted independently; this flag and the previous one are mutually exclusive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099"></a>SORT_ASCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the ascending order. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61"></a>SORT_DESCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the descending order; this flag and the previous one are also mutually exclusive. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga8e88a1f27e41e12f81caab17cf81667b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8e88a1f27e41e12f81caab17cf81667b">&#9670;&nbsp;</a></span>SortFlags <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e88a1f27e41e12f81caab17cf81667b">&#9670;&nbsp;</a></span>SortFlags <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2974,12 +3781,20 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </td></tr>
 <tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61"></a>SORT_DESCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the descending order; this flag and the previous one are also mutually exclusive. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835"></a>SORT_EVERY_ROW&#160;</td><td class="fielddoc"><p>each matrix row is sorted independently </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761"></a>SORT_EVERY_COLUMN&#160;</td><td class="fielddoc"><p>each matrix column is sorted independently; this flag and the previous one are mutually exclusive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099"></a>SORT_ASCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the ascending order. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61"></a>SORT_DESCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the descending order; this flag and the previous one are also mutually exclusive. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga8e88a1f27e41e12f81caab17cf81667b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8e88a1f27e41e12f81caab17cf81667b">&#9670;&nbsp;</a></span>SortFlags <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e88a1f27e41e12f81caab17cf81667b">&#9670;&nbsp;</a></span>SortFlags <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3022,12 +3837,20 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </td></tr>
 <tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61"></a>SORT_DESCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the descending order; this flag and the previous one are also mutually exclusive. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835"></a>SORT_EVERY_ROW&#160;</td><td class="fielddoc"><p>each matrix row is sorted independently </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761"></a>SORT_EVERY_COLUMN&#160;</td><td class="fielddoc"><p>each matrix column is sorted independently; this flag and the previous one are mutually exclusive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099"></a>SORT_ASCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the ascending order. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61"></a>SORT_DESCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the descending order; this flag and the previous one are also mutually exclusive. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga8e88a1f27e41e12f81caab17cf81667b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8e88a1f27e41e12f81caab17cf81667b">&#9670;&nbsp;</a></span>SortFlags <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e88a1f27e41e12f81caab17cf81667b">&#9670;&nbsp;</a></span>SortFlags <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3039,6 +3862,70 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835"></a>SORT_EVERY_ROW&#160;</td><td class="fielddoc"><p>each matrix row is sorted independently </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761"></a>SORT_EVERY_COLUMN&#160;</td><td class="fielddoc"><p>each matrix column is sorted independently; this flag and the previous one are mutually exclusive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099"></a>SORT_ASCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the ascending order. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61"></a>SORT_DESCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the descending order; this flag and the previous one are also mutually exclusive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835"></a>SORT_EVERY_ROW&#160;</td><td class="fielddoc"><p>each matrix row is sorted independently </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761"></a>SORT_EVERY_COLUMN&#160;</td><td class="fielddoc"><p>each matrix column is sorted independently; this flag and the previous one are mutually exclusive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099"></a>SORT_ASCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the ascending order. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61"></a>SORT_DESCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the descending order; this flag and the previous one are also mutually exclusive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835"></a>SORT_EVERY_ROW&#160;</td><td class="fielddoc"><p>each matrix row is sorted independently </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761"></a>SORT_EVERY_COLUMN&#160;</td><td class="fielddoc"><p>each matrix column is sorted independently; this flag and the previous one are mutually exclusive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099"></a>SORT_ASCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the ascending order. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61"></a>SORT_DESCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the descending order; this flag and the previous one are also mutually exclusive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835"></a>SORT_EVERY_ROW&#160;</td><td class="fielddoc"><p>each matrix row is sorted independently </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761"></a>SORT_EVERY_COLUMN&#160;</td><td class="fielddoc"><p>each matrix column is sorted independently; this flag and the previous one are mutually exclusive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099"></a>SORT_ASCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the ascending order. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61"></a>SORT_DESCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the descending order; this flag and the previous one are also mutually exclusive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835"></a>SORT_EVERY_ROW&#160;</td><td class="fielddoc"><p>each matrix row is sorted independently </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761"></a>SORT_EVERY_COLUMN&#160;</td><td class="fielddoc"><p>each matrix column is sorted independently; this flag and the previous one are mutually exclusive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099"></a>SORT_ASCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the ascending order. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61"></a>SORT_DESCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the descending order; this flag and the previous one are also mutually exclusive. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga8e88a1f27e41e12f81caab17cf81667b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e88a1f27e41e12f81caab17cf81667b">&#9670;&nbsp;</a></span>SortFlags <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__core__utils.html#ga8e88a1f27e41e12f81caab17cf81667b">cv::SortFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835"></a>SORT_EVERY_ROW&#160;</td><td class="fielddoc"><p>each matrix row is sorted independently </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761"></a>SORT_EVERY_COLUMN&#160;</td><td class="fielddoc"><p>each matrix column is sorted independently; this flag and the previous one are mutually exclusive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667bad87f0cdd18b44ef2d3de90c63adf2099"></a>SORT_ASCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the ascending order. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667ba8c128705d0f965e56089d79c09ea5b61"></a>SORT_DESCENDING&#160;</td><td class="fielddoc"><p>each matrix row is sorted in the descending order; this flag and the previous one are also mutually exclusive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667baf26e95aa7595535f09c8e3c435c0f835"></a>SORT_EVERY_ROW&#160;</td><td class="fielddoc"><p>each matrix row is sorted independently </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga8e88a1f27e41e12f81caab17cf81667badc2a364f35ec2647abc89ed0605e4761"></a>SORT_EVERY_COLUMN&#160;</td><td class="fielddoc"><p>each matrix column is sorted independently; this flag and the previous one are mutually exclusive. </p>
 </td></tr>
@@ -3416,6 +4303,13 @@ CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
   </dd>
 </dl>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000170">Deprecated:</a></b></dt><dd>drop this version </dd></dl>
+<p>By default the function prints information about the error to stderr, then it either stops if <a class="el" href="group__core__utils.html#gabe53ffe3bbba3cc106629e277e770281" title="Sets/resets the break-on-error mode.">cv::setBreakOnError()</a> had been called before or raises the exception. It is possible to alternate error processing by using <a class="el" href="group__core__utils.html#ga551fb60ceea48bee9c4c642f32b0f6d1" title="Sets the new error handler and the optional user data.">redirectError()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exc</td><td>the exception raisen. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000217">Deprecated:</a></b></dt><dd>drop this version </dd></dl>
 
 </div>
 </div>
@@ -3642,6 +4536,7 @@ template&lt;typename _Tp , typename Functor &gt; </div>
 <p>idx is modified in this-&gt;rowCall</p>
 <p>idx is modified in this-&gt;rowCall</p>
 <p>idx is modified in this-&gt;rowCall</p>
+<p>idx is modified in this-&gt;rowCall</p>
 <p>idx is modified in this-&gt;rowCall </p>
 
 </div>
@@ -3803,6 +4698,15 @@ template&lt;typename _Tp , typename Functor &gt; </div>
 <li><code>GCD</code> - System calling thread's ID. Never returns 0 inside parallel region.</li>
 <li><code>C=</code> - The index of the current parallel task. <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__core__utils.html#ga3db05263a84a1256fab8932698af4096" title="OpenCV will try to set the number of threads for the next parallel region.">setNumThreads</a>, <a class="el" href="group__core__utils.html#gad25276f908678fabac977920f583bfc8" title="Returns the number of threads used by OpenCV for parallel regions.">getNumThreads</a></dd></dl>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000169">Deprecated:</a></b></dt><dd>Current implementation doesn't corresponding to this documentation.</dd></dl>
+</li>
+</ul>
+<p>The exact meaning of the return value depends on the threading framework used by <a class="el" href="interface_open_c_v.html">OpenCV</a> library:</p><ul>
+<li><code>TBB</code> - Unsupported with current 4.1 TBB release. Maybe will be supported in future.</li>
+<li><code>OpenMP</code> - The thread number, within the current team, of the calling thread.</li>
+<li><code>Concurrency</code> - An ID for the virtual processor that the current context is executing on (0 for master thread and unique number for others, but not necessary 1,2,3,...).</li>
+<li><code>GCD</code> - System calling thread's ID. Never returns 0 inside parallel region.</li>
+<li><code>C=</code> - The index of the current parallel task. <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__core__utils.html#ga3db05263a84a1256fab8932698af4096" title="OpenCV will try to set the number of threads for the next parallel region.">setNumThreads</a>, <a class="el" href="group__core__utils.html#gad25276f908678fabac977920f583bfc8" title="Returns the number of threads used by OpenCV for parallel regions.">getNumThreads</a></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000216">Deprecated:</a></b></dt><dd>Current implementation doesn't corresponding to this documentation.</dd></dl>
 </li>
 </ul>
 <p>The exact meaning of the return value depends on the threading framework used by <a class="el" href="interface_open_c_v.html">OpenCV</a> library:</p><ul>

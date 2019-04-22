@@ -12,5 +12,5 @@ var searchData=
   ['norm_5fminmax',['NORM_MINMAX',['../group__core__array.html#ggad12cefbcb5291cf958a85b4b67b6149fa2ff2c0b35834ef8e83381206561f5cb9',1,'cv']]],
   ['norm_5frelative',['NORM_RELATIVE',['../group__core__array.html#ggad12cefbcb5291cf958a85b4b67b6149fab9cb974634e51eb1bb93f3bdc86cb9e1',1,'cv']]],
   ['norm_5ftype_5fmask',['NORM_TYPE_MASK',['../group__core__array.html#ggad12cefbcb5291cf958a85b4b67b6149fa1dd7c5ffd11fb83c552cfc1d07a66f7d',1,'cv']]],
-  ['not_5fdraw_5fsingle_5fpoints',['NOT_DRAW_SINGLE_POINTS',['../structcv_1_1_draw_matches_flags.html#a98cfbe689b490b7248ff5874d8456074a62931fb9ec091458a174c298ce66d09c',1,'cv::DrawMatchesFlags']]]
+  ['not_5fdraw_5fsingle_5fpoints',['NOT_DRAW_SINGLE_POINTS',['../structcv_1_1_draw_matches_flags.html#a60e38199e804fad0dfc5cf14d873c639a62931fb9ec091458a174c298ce66d09c',1,'cv::DrawMatchesFlags']]]
 ];

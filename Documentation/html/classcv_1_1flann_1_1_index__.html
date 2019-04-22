@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::flann::Index_&lt; T &gt; Class Template Reference</title>
+<title>PixUl8: cv::flann::Index_&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -81,6 +79,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a82b14f802985368a643cfadf704b4a4d"><td class="memItemLeft" align="right" valign="top"><a id="a82b14f802985368a643cfadf704b4a4d"></a>
+typedef <a class="el" href="structcv_1_1_l2.html">L2</a>&lt; T &gt;::ElementType&#160;</td><td class="memItemRight" valign="bottom"><b>ElementType</b></td></tr>
+<tr class="separator:a82b14f802985368a643cfadf704b4a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8aa6239032c0f4821d6fe0fc29159d7"><td class="memItemLeft" align="right" valign="top"><a id="ab8aa6239032c0f4821d6fe0fc29159d7"></a>
+typedef <a class="el" href="structcv_1_1_l2.html">L2</a>&lt; T &gt;::ResultType&#160;</td><td class="memItemRight" valign="bottom"><b>DistanceType</b></td></tr>
+<tr class="separator:ab8aa6239032c0f4821d6fe0fc29159d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82b14f802985368a643cfadf704b4a4d"><td class="memItemLeft" align="right" valign="top"><a id="a82b14f802985368a643cfadf704b4a4d"></a>
 typedef <a class="el" href="structcv_1_1_l2.html">L2</a>&lt; T &gt;::ElementType&#160;</td><td class="memItemRight" valign="bottom"><b>ElementType</b></td></tr>
 <tr class="separator:a82b14f802985368a643cfadf704b4a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,6 +232,36 @@ CV_DEPRECATED ::cvflann::IndexParams&#160;</td><td class="memItemRight" valign="
 <tr class="memitem:aa31735f176491eb2985568bc6282ea77"><td class="memItemLeft" align="right" valign="top"><a id="aa31735f176491eb2985568bc6282ea77"></a>
 CV_DEPRECATEDconst ::cvflann::IndexParams *&#160;</td><td class="memItemRight" valign="bottom"><b>getIndexParameters</b> ()</td></tr>
 <tr class="separator:aa31735f176491eb2985568bc6282ea77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd466d0f7ba7b423679b86540256985"><td class="memItemLeft" align="right" valign="top"><a id="afcd466d0f7ba7b423679b86540256985"></a>
+CV_DEPRECATED&#160;</td><td class="memItemRight" valign="bottom"><b>Index_</b> (const <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;dataset, const ::cvflann::IndexParams &amp;params)</td></tr>
+<tr class="separator:afcd466d0f7ba7b423679b86540256985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e5a4929ac97f9847bcb304ae43dfd62"><td class="memItemLeft" align="right" valign="top"><a id="a8e5a4929ac97f9847bcb304ae43dfd62"></a>
+CV_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><b>knnSearch</b> (const std::vector&lt; ElementType &gt; &amp;query, std::vector&lt; int &gt; &amp;indices, std::vector&lt; DistanceType &gt; &amp;dists, int knn, const ::<a class="el" href="structcvflann_1_1_search_params.html">cvflann::SearchParams</a> &amp;searchParams)</td></tr>
+<tr class="separator:a8e5a4929ac97f9847bcb304ae43dfd62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62fa75d374bffee063e0bb9435ad4639"><td class="memItemLeft" align="right" valign="top"><a id="a62fa75d374bffee063e0bb9435ad4639"></a>
+CV_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><b>knnSearch</b> (const <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;queries, <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;indices, <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;dists, int knn, const ::<a class="el" href="structcvflann_1_1_search_params.html">cvflann::SearchParams</a> &amp;searchParams)</td></tr>
+<tr class="separator:a62fa75d374bffee063e0bb9435ad4639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17fa376686a7ae337fb01d1428cb19a8"><td class="memItemLeft" align="right" valign="top"><a id="a17fa376686a7ae337fb01d1428cb19a8"></a>
+CV_DEPRECATED int&#160;</td><td class="memItemRight" valign="bottom"><b>radiusSearch</b> (const std::vector&lt; ElementType &gt; &amp;query, std::vector&lt; int &gt; &amp;indices, std::vector&lt; DistanceType &gt; &amp;dists, DistanceType radius, const ::<a class="el" href="structcvflann_1_1_search_params.html">cvflann::SearchParams</a> &amp;searchParams)</td></tr>
+<tr class="separator:a17fa376686a7ae337fb01d1428cb19a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e1a751699439b29947e30ed9d1112d"><td class="memItemLeft" align="right" valign="top"><a id="ad3e1a751699439b29947e30ed9d1112d"></a>
+CV_DEPRECATED int&#160;</td><td class="memItemRight" valign="bottom"><b>radiusSearch</b> (const <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;query, <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;indices, <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;dists, DistanceType radius, const ::<a class="el" href="structcvflann_1_1_search_params.html">cvflann::SearchParams</a> &amp;searchParams)</td></tr>
+<tr class="separator:ad3e1a751699439b29947e30ed9d1112d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514174bd333ed88cb458e74cbaf097e4"><td class="memItemLeft" align="right" valign="top"><a id="a514174bd333ed88cb458e74cbaf097e4"></a>
+CV_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> (<a class="el" href="classcv_1_1_string.html">String</a> filename)</td></tr>
+<tr class="separator:a514174bd333ed88cb458e74cbaf097e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac24fdc5f836d4839b366ebcc901d05c1"><td class="memItemLeft" align="right" valign="top"><a id="ac24fdc5f836d4839b366ebcc901d05c1"></a>
+CV_DEPRECATED int&#160;</td><td class="memItemRight" valign="bottom"><b>veclen</b> () const</td></tr>
+<tr class="separator:ac24fdc5f836d4839b366ebcc901d05c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a850e2359f095abb241dcdb63e655c0"><td class="memItemLeft" align="right" valign="top"><a id="a8a850e2359f095abb241dcdb63e655c0"></a>
+CV_DEPRECATED int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
+<tr class="separator:a8a850e2359f095abb241dcdb63e655c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada2185e2f95a72be35ac3e078538e0bc"><td class="memItemLeft" align="right" valign="top"><a id="ada2185e2f95a72be35ac3e078538e0bc"></a>
+CV_DEPRECATED ::cvflann::IndexParams&#160;</td><td class="memItemRight" valign="bottom"><b>getParameters</b> ()</td></tr>
+<tr class="separator:ada2185e2f95a72be35ac3e078538e0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa31735f176491eb2985568bc6282ea77"><td class="memItemLeft" align="right" valign="top"><a id="aa31735f176491eb2985568bc6282ea77"></a>
+CV_DEPRECATEDconst ::cvflann::IndexParams *&#160;</td><td class="memItemRight" valign="bottom"><b>getIndexParameters</b> ()</td></tr>
+<tr class="separator:aa31735f176491eb2985568bc6282ea77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
@@ -237,6 +271,7 @@ class cv::flann::Index_&lt; T &gt;</h3>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000086">Deprecated:</a></b></dt><dd>Use <a class="el" href="classcv_1_1flann_1_1_generic_index.html" title="The FLANN nearest neighbor index class. This class is templated with the type of elements for which t...">GenericIndex</a> class instead </dd></dl>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000133">Deprecated:</a></b></dt><dd>Use <a class="el" href="classcv_1_1flann_1_1_generic_index.html" title="The FLANN nearest neighbor index class. This class is templated with the type of elements for which t...">GenericIndex</a> class instead </dd></dl>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000180">Deprecated:</a></b></dt><dd>Use <a class="el" href="classcv_1_1flann_1_1_generic_index.html" title="The FLANN nearest neighbor index class. This class is templated with the type of elements for which t...">GenericIndex</a> class instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000227">Deprecated:</a></b></dt><dd>Use <a class="el" href="classcv_1_1flann_1_1_generic_index.html" title="The FLANN nearest neighbor index class. This class is templated with the type of elements for which t...">GenericIndex</a> class instead </dd></dl>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>PixUl8/OpenCV/opencv2.framework/Versions/A/Headers/<a class="el" href="_open_c_v_2opencv2_8framework_2_versions_2_a_2_headers_2flann_8hpp_source.html">flann.hpp</a></li>
 </ul>

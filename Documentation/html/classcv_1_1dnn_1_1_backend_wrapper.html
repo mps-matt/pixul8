@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::dnn::BackendWrapper Class Reference</title>
+<title>PixUl8: cv::dnn::BackendWrapper Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -168,6 +166,27 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_backend_wrapper.html#a4c5604039feba47dd6d93e50a1ec130c">setHostDirty</a> ()=0</td></tr>
 <tr class="memdesc:a4c5604039feba47dd6d93e50a1ec130c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that an actual data is on CPU. <br /></td></tr>
 <tr class="separator:a4c5604039feba47dd6d93e50a1ec130c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a523b1266b28c68bf80153fe1cce064fc"><td class="memItemLeft" align="right" valign="top"><a id="a523b1266b28c68bf80153fe1cce064fc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BackendWrapper</b> (int <a class="el" href="classcv_1_1dnn_1_1_backend_wrapper.html#a93c4757ba0f720e8133d2f14ee8425f5">backendId</a>, int <a class="el" href="classcv_1_1dnn_1_1_backend_wrapper.html#af874ec283d3710ba56945a063fddd197">targetId</a>)</td></tr>
+<tr class="separator:a523b1266b28c68bf80153fe1cce064fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f78e2ddc8f0aeadfc1ae173cc279e3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_backend_wrapper.html#a4f78e2ddc8f0aeadfc1ae173cc279e3e">BackendWrapper</a> (int <a class="el" href="classcv_1_1dnn_1_1_backend_wrapper.html#af874ec283d3710ba56945a063fddd197">targetId</a>, const <a class="el" href="classcv_1_1_mat.html">cv::Mat</a> &amp;m)</td></tr>
+<tr class="memdesc:a4f78e2ddc8f0aeadfc1ae173cc279e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrap <a class="el" href="classcv_1_1_mat.html" title="n-dimensional dense array class">cv::Mat</a> for specific backend and target.  <a href="#a4f78e2ddc8f0aeadfc1ae173cc279e3e">More...</a><br /></td></tr>
+<tr class="separator:a4f78e2ddc8f0aeadfc1ae173cc279e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba12624858d3e17d6702d0e4061d9e65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_backend_wrapper.html#aba12624858d3e17d6702d0e4061d9e65">BackendWrapper</a> (const <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1dnn_1_1_backend_wrapper.html">BackendWrapper</a> &gt; &amp;base, const MatShape &amp;shape)</td></tr>
+<tr class="memdesc:aba12624858d3e17d6702d0e4061d9e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make wrapper for reused <a class="el" href="classcv_1_1_mat.html" title="n-dimensional dense array class">cv::Mat</a>.  <a href="#aba12624858d3e17d6702d0e4061d9e65">More...</a><br /></td></tr>
+<tr class="separator:aba12624858d3e17d6702d0e4061d9e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f6a7a7e9163c44035d7a58d1f3dcc2d"><td class="memItemLeft" align="right" valign="top"><a id="a2f6a7a7e9163c44035d7a58d1f3dcc2d"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_backend_wrapper.html#a2f6a7a7e9163c44035d7a58d1f3dcc2d">~BackendWrapper</a> ()</td></tr>
+<tr class="memdesc:a2f6a7a7e9163c44035d7a58d1f3dcc2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor to make polymorphism. <br /></td></tr>
+<tr class="separator:a2f6a7a7e9163c44035d7a58d1f3dcc2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06535a9363a71053aba8e328a75a6612"><td class="memItemLeft" align="right" valign="top"><a id="a06535a9363a71053aba8e328a75a6612"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_backend_wrapper.html#a06535a9363a71053aba8e328a75a6612">copyToHost</a> ()=0</td></tr>
+<tr class="memdesc:a06535a9363a71053aba8e328a75a6612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer data to CPU host memory. <br /></td></tr>
+<tr class="separator:a06535a9363a71053aba8e328a75a6612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5604039feba47dd6d93e50a1ec130c"><td class="memItemLeft" align="right" valign="top"><a id="a4c5604039feba47dd6d93e50a1ec130c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_backend_wrapper.html#a4c5604039feba47dd6d93e50a1ec130c">setHostDirty</a> ()=0</td></tr>
+<tr class="memdesc:a4c5604039feba47dd6d93e50a1ec130c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that an actual data is on CPU. <br /></td></tr>
+<tr class="separator:a4c5604039feba47dd6d93e50a1ec130c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -184,7 +203,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <div class="textblock"><p>Derivatives of this class wraps <a class="el" href="classcv_1_1_mat.html" title="n-dimensional dense array class">cv::Mat</a> for different backends and targets. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4f78e2ddc8f0aeadfc1ae173cc279e3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f78e2ddc8f0aeadfc1ae173cc279e3e">&#9670;&nbsp;</a></span>BackendWrapper() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f78e2ddc8f0aeadfc1ae173cc279e3e">&#9670;&nbsp;</a></span>BackendWrapper() <span class="overload">[1/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,7 +241,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div>
 </div>
 <a id="aba12624858d3e17d6702d0e4061d9e65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba12624858d3e17d6702d0e4061d9e65">&#9670;&nbsp;</a></span>BackendWrapper() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aba12624858d3e17d6702d0e4061d9e65">&#9670;&nbsp;</a></span>BackendWrapper() <span class="overload">[2/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,7 +279,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div>
 </div>
 <a id="a4f78e2ddc8f0aeadfc1ae173cc279e3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f78e2ddc8f0aeadfc1ae173cc279e3e">&#9670;&nbsp;</a></span>BackendWrapper() <span class="overload">[3/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f78e2ddc8f0aeadfc1ae173cc279e3e">&#9670;&nbsp;</a></span>BackendWrapper() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,7 +317,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div>
 </div>
 <a id="aba12624858d3e17d6702d0e4061d9e65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba12624858d3e17d6702d0e4061d9e65">&#9670;&nbsp;</a></span>BackendWrapper() <span class="overload">[4/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aba12624858d3e17d6702d0e4061d9e65">&#9670;&nbsp;</a></span>BackendWrapper() <span class="overload">[4/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,7 +355,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div>
 </div>
 <a id="a4f78e2ddc8f0aeadfc1ae173cc279e3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f78e2ddc8f0aeadfc1ae173cc279e3e">&#9670;&nbsp;</a></span>BackendWrapper() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f78e2ddc8f0aeadfc1ae173cc279e3e">&#9670;&nbsp;</a></span>BackendWrapper() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -374,7 +393,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div>
 </div>
 <a id="aba12624858d3e17d6702d0e4061d9e65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba12624858d3e17d6702d0e4061d9e65">&#9670;&nbsp;</a></span>BackendWrapper() <span class="overload">[6/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aba12624858d3e17d6702d0e4061d9e65">&#9670;&nbsp;</a></span>BackendWrapper() <span class="overload">[6/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -412,7 +431,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div>
 </div>
 <a id="a4f78e2ddc8f0aeadfc1ae173cc279e3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f78e2ddc8f0aeadfc1ae173cc279e3e">&#9670;&nbsp;</a></span>BackendWrapper() <span class="overload">[7/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f78e2ddc8f0aeadfc1ae173cc279e3e">&#9670;&nbsp;</a></span>BackendWrapper() <span class="overload">[7/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -450,7 +469,83 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div>
 </div>
 <a id="aba12624858d3e17d6702d0e4061d9e65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba12624858d3e17d6702d0e4061d9e65">&#9670;&nbsp;</a></span>BackendWrapper() <span class="overload">[8/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aba12624858d3e17d6702d0e4061d9e65">&#9670;&nbsp;</a></span>BackendWrapper() <span class="overload">[8/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::dnn::BackendWrapper::BackendWrapper </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1dnn_1_1_backend_wrapper.html">BackendWrapper</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const MatShape &amp;&#160;</td>
+          <td class="paramname"><em>shape</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Make wrapper for reused <a class="el" href="classcv_1_1_mat.html" title="n-dimensional dense array class">cv::Mat</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">base</td><td>Wrapper of <a class="el" href="classcv_1_1_mat.html" title="n-dimensional dense array class">cv::Mat</a> that will be reused. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shape</td><td>Specific shape.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Initialize wrapper from another one. It'll wrap the same host CPU memory and mustn't allocate memory on device(i.e. GPU). It might has different shape. Use in case of CPU memory reusing for reuse associated memory on device too. </p>
+
+</div>
+</div>
+<a id="a4f78e2ddc8f0aeadfc1ae173cc279e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f78e2ddc8f0aeadfc1ae173cc279e3e">&#9670;&nbsp;</a></span>BackendWrapper() <span class="overload">[9/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::dnn::BackendWrapper::BackendWrapper </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>targetId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_mat.html">cv::Mat</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrap <a class="el" href="classcv_1_1_mat.html" title="n-dimensional dense array class">cv::Mat</a> for specific backend and target. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">targetId</td><td>Target identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td><a class="el" href="classcv_1_1_mat.html" title="n-dimensional dense array class">cv::Mat</a> for wrapping.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Make CPU-&gt;GPU data transfer if it's require for the target. </p>
+
+</div>
+</div>
+<a id="aba12624858d3e17d6702d0e4061d9e65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba12624858d3e17d6702d0e4061d9e65">&#9670;&nbsp;</a></span>BackendWrapper() <span class="overload">[10/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

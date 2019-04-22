@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::DataType&lt; Matx&lt; _Tp, m, n &gt; &gt; Class Template Reference</title>
+<title>PixUl8: cv::DataType&lt; Matx&lt; _Tp, m, n &gt; &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -100,6 +98,23 @@ Public Types</h2></td></tr>
 <b>fmt</b> = traits::SafeFmt&lt;channel_type&gt;::fmt + ((channels - 1) &lt;&lt; 8)
  }</td></tr>
 <tr class="separator:ac508089385ad5d47b74e7783a9a4ef08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf1e69918923a32a3b23c83a272a303a"><td class="memItemLeft" align="right" valign="top"><a id="adf1e69918923a32a3b23c83a272a303a"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>generic_type</b> = 0, 
+<b>channels</b> = m * n, 
+<b>fmt</b> = traits::SafeFmt&lt;channel_type&gt;::fmt + ((channels - 1) &lt;&lt; 8)
+ }</td></tr>
+<tr class="separator:adf1e69918923a32a3b23c83a272a303a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8fee5b9a5ea4ea843cd3767fed9f4cd"><td class="memItemLeft" align="right" valign="top"><a id="ac8fee5b9a5ea4ea843cd3767fed9f4cd"></a>
+typedef <a class="el" href="classcv_1_1_matx.html">Matx</a>&lt; _Tp, m, n &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b></td></tr>
+<tr class="separator:ac8fee5b9a5ea4ea843cd3767fed9f4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16635a5b2d9efda4463b797981aded8d"><td class="memItemLeft" align="right" valign="top"><a id="a16635a5b2d9efda4463b797981aded8d"></a>
+typedef <a class="el" href="classcv_1_1_matx.html">Matx</a>&lt; typename <a class="el" href="classcv_1_1_data_type.html">DataType</a>&lt; _Tp &gt;::<a class="el" href="classcv_1_1_matx.html">work_type</a>, m, n &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>work_type</b></td></tr>
+<tr class="separator:a16635a5b2d9efda4463b797981aded8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0312d5d03ace0e090e8a2b3a3ea36d6e"><td class="memItemLeft" align="right" valign="top"><a id="a0312d5d03ace0e090e8a2b3a3ea36d6e"></a>
+typedef _Tp&#160;</td><td class="memItemRight" valign="bottom"><b>channel_type</b></td></tr>
+<tr class="separator:a0312d5d03ace0e090e8a2b3a3ea36d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96c85b5b03f285b4f28cff52458abc4a"><td class="memItemLeft" align="right" valign="top"><a id="a96c85b5b03f285b4f28cff52458abc4a"></a>
+typedef <a class="el" href="classcv_1_1_matx.html">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>vec_type</b></td></tr>
+<tr class="separator:a96c85b5b03f285b4f28cff52458abc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8fee5b9a5ea4ea843cd3767fed9f4cd"><td class="memItemLeft" align="right" valign="top"><a id="ac8fee5b9a5ea4ea843cd3767fed9f4cd"></a>
 typedef <a class="el" href="classcv_1_1_matx.html">Matx</a>&lt; _Tp, m, n &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b></td></tr>
 <tr class="separator:ac8fee5b9a5ea4ea843cd3767fed9f4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: Deep Neural Network module</title>
+<title>PixUl8: Deep Neural Network module</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -134,6 +132,11 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__dnn.html#gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573">cv::dnn::DNN_BACKEND_DEFAULT</a>, 
 <b>DNN_BACKEND_HALIDE</b>, 
 <b>DNN_BACKEND_INFERENCE_ENGINE</b>, 
+<b>DNN_BACKEND_OPENCV</b>, 
+<br />
+&#160;&#160;<a class="el" href="group__dnn.html#gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573">cv::dnn::DNN_BACKEND_DEFAULT</a>, 
+<b>DNN_BACKEND_HALIDE</b>, 
+<b>DNN_BACKEND_INFERENCE_ENGINE</b>, 
 <b>DNN_BACKEND_OPENCV</b>
 <br />
  }</td></tr>
@@ -163,7 +166,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>DNN_TARGET_OPENCL</b>, 
 <b>DNN_TARGET_OPENCL_FP16</b>, 
 <b>DNN_TARGET_MYRIAD</b>, 
-<a class="el" href="group__dnn.html#gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d">cv::dnn::DNN_TARGET_FPGA</a>
+<a class="el" href="group__dnn.html#gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d">cv::dnn::DNN_TARGET_FPGA</a>, 
+<br />
+&#160;&#160;<b>DNN_TARGET_CPU</b>, 
+<b>DNN_TARGET_OPENCL</b>, 
+<b>DNN_TARGET_OPENCL_FP16</b>, 
+<b>DNN_TARGET_MYRIAD</b>, 
+<br />
+&#160;&#160;<a class="el" href="group__dnn.html#gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d">cv::dnn::DNN_TARGET_FPGA</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga709af7692ba29788182cf573531b0ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum of target devices for computations.  <a href="group__dnn.html#ga709af7692ba29788182cf573531b0ff5">More...</a><br /></td></tr>
@@ -187,6 +197,11 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__dnn.html#gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573">cv::dnn::DNN_BACKEND_DEFAULT</a>, 
 <b>DNN_BACKEND_HALIDE</b>, 
 <b>DNN_BACKEND_INFERENCE_ENGINE</b>, 
+<b>DNN_BACKEND_OPENCV</b>, 
+<br />
+&#160;&#160;<a class="el" href="group__dnn.html#gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573">cv::dnn::DNN_BACKEND_DEFAULT</a>, 
+<b>DNN_BACKEND_HALIDE</b>, 
+<b>DNN_BACKEND_INFERENCE_ENGINE</b>, 
 <b>DNN_BACKEND_OPENCV</b>
 <br />
  }</td></tr>
@@ -216,7 +231,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>DNN_TARGET_OPENCL</b>, 
 <b>DNN_TARGET_OPENCL_FP16</b>, 
 <b>DNN_TARGET_MYRIAD</b>, 
-<a class="el" href="group__dnn.html#gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d">cv::dnn::DNN_TARGET_FPGA</a>
+<a class="el" href="group__dnn.html#gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d">cv::dnn::DNN_TARGET_FPGA</a>, 
+<br />
+&#160;&#160;<b>DNN_TARGET_CPU</b>, 
+<b>DNN_TARGET_OPENCL</b>, 
+<b>DNN_TARGET_OPENCL_FP16</b>, 
+<b>DNN_TARGET_MYRIAD</b>, 
+<br />
+&#160;&#160;<a class="el" href="group__dnn.html#gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d">cv::dnn::DNN_TARGET_FPGA</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga709af7692ba29788182cf573531b0ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum of target devices for computations.  <a href="group__dnn.html#ga709af7692ba29788182cf573531b0ff5">More...</a><br /></td></tr>
@@ -240,6 +262,11 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__dnn.html#gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573">cv::dnn::DNN_BACKEND_DEFAULT</a>, 
 <b>DNN_BACKEND_HALIDE</b>, 
 <b>DNN_BACKEND_INFERENCE_ENGINE</b>, 
+<b>DNN_BACKEND_OPENCV</b>, 
+<br />
+&#160;&#160;<a class="el" href="group__dnn.html#gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573">cv::dnn::DNN_BACKEND_DEFAULT</a>, 
+<b>DNN_BACKEND_HALIDE</b>, 
+<b>DNN_BACKEND_INFERENCE_ENGINE</b>, 
 <b>DNN_BACKEND_OPENCV</b>
 <br />
  }</td></tr>
@@ -269,7 +296,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>DNN_TARGET_OPENCL</b>, 
 <b>DNN_TARGET_OPENCL_FP16</b>, 
 <b>DNN_TARGET_MYRIAD</b>, 
-<a class="el" href="group__dnn.html#gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d">cv::dnn::DNN_TARGET_FPGA</a>
+<a class="el" href="group__dnn.html#gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d">cv::dnn::DNN_TARGET_FPGA</a>, 
+<br />
+&#160;&#160;<b>DNN_TARGET_CPU</b>, 
+<b>DNN_TARGET_OPENCL</b>, 
+<b>DNN_TARGET_OPENCL_FP16</b>, 
+<b>DNN_TARGET_MYRIAD</b>, 
+<br />
+&#160;&#160;<a class="el" href="group__dnn.html#gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d">cv::dnn::DNN_TARGET_FPGA</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga709af7692ba29788182cf573531b0ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum of target devices for computations.  <a href="group__dnn.html#ga709af7692ba29788182cf573531b0ff5">More...</a><br /></td></tr>
@@ -293,6 +327,11 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__dnn.html#gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573">cv::dnn::DNN_BACKEND_DEFAULT</a>, 
 <b>DNN_BACKEND_HALIDE</b>, 
 <b>DNN_BACKEND_INFERENCE_ENGINE</b>, 
+<b>DNN_BACKEND_OPENCV</b>, 
+<br />
+&#160;&#160;<a class="el" href="group__dnn.html#gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573">cv::dnn::DNN_BACKEND_DEFAULT</a>, 
+<b>DNN_BACKEND_HALIDE</b>, 
+<b>DNN_BACKEND_INFERENCE_ENGINE</b>, 
 <b>DNN_BACKEND_OPENCV</b>
 <br />
  }</td></tr>
@@ -322,7 +361,79 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>DNN_TARGET_OPENCL</b>, 
 <b>DNN_TARGET_OPENCL_FP16</b>, 
 <b>DNN_TARGET_MYRIAD</b>, 
-<a class="el" href="group__dnn.html#gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d">cv::dnn::DNN_TARGET_FPGA</a>
+<a class="el" href="group__dnn.html#gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d">cv::dnn::DNN_TARGET_FPGA</a>, 
+<br />
+&#160;&#160;<b>DNN_TARGET_CPU</b>, 
+<b>DNN_TARGET_OPENCL</b>, 
+<b>DNN_TARGET_OPENCL_FP16</b>, 
+<b>DNN_TARGET_MYRIAD</b>, 
+<br />
+&#160;&#160;<a class="el" href="group__dnn.html#gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d">cv::dnn::DNN_TARGET_FPGA</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga709af7692ba29788182cf573531b0ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum of target devices for computations.  <a href="group__dnn.html#ga709af7692ba29788182cf573531b0ff5">More...</a><br /></td></tr>
+<tr class="separator:ga709af7692ba29788182cf573531b0ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga186f7d9bfacac8b0ff2e26e2eab02625"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dnn.html#ga186f7d9bfacac8b0ff2e26e2eab02625">cv::dnn::Backend</a> { <br />
+&#160;&#160;<a class="el" href="group__dnn.html#gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573">cv::dnn::DNN_BACKEND_DEFAULT</a>, 
+<b>DNN_BACKEND_HALIDE</b>, 
+<b>DNN_BACKEND_INFERENCE_ENGINE</b>, 
+<b>DNN_BACKEND_OPENCV</b>, 
+<br />
+&#160;&#160;<a class="el" href="group__dnn.html#gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573">cv::dnn::DNN_BACKEND_DEFAULT</a>, 
+<b>DNN_BACKEND_HALIDE</b>, 
+<b>DNN_BACKEND_INFERENCE_ENGINE</b>, 
+<b>DNN_BACKEND_OPENCV</b>, 
+<br />
+&#160;&#160;<a class="el" href="group__dnn.html#gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573">cv::dnn::DNN_BACKEND_DEFAULT</a>, 
+<b>DNN_BACKEND_HALIDE</b>, 
+<b>DNN_BACKEND_INFERENCE_ENGINE</b>, 
+<b>DNN_BACKEND_OPENCV</b>, 
+<br />
+&#160;&#160;<a class="el" href="group__dnn.html#gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573">cv::dnn::DNN_BACKEND_DEFAULT</a>, 
+<b>DNN_BACKEND_HALIDE</b>, 
+<b>DNN_BACKEND_INFERENCE_ENGINE</b>, 
+<b>DNN_BACKEND_OPENCV</b>, 
+<br />
+&#160;&#160;<a class="el" href="group__dnn.html#gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573">cv::dnn::DNN_BACKEND_DEFAULT</a>, 
+<b>DNN_BACKEND_HALIDE</b>, 
+<b>DNN_BACKEND_INFERENCE_ENGINE</b>, 
+<b>DNN_BACKEND_OPENCV</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga186f7d9bfacac8b0ff2e26e2eab02625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum of computation backends supported by layers.  <a href="group__dnn.html#ga186f7d9bfacac8b0ff2e26e2eab02625">More...</a><br /></td></tr>
+<tr class="separator:ga186f7d9bfacac8b0ff2e26e2eab02625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga709af7692ba29788182cf573531b0ff5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dnn.html#ga709af7692ba29788182cf573531b0ff5">cv::dnn::Target</a> { <br />
+&#160;&#160;<b>DNN_TARGET_CPU</b>, 
+<b>DNN_TARGET_OPENCL</b>, 
+<b>DNN_TARGET_OPENCL_FP16</b>, 
+<b>DNN_TARGET_MYRIAD</b>, 
+<br />
+&#160;&#160;<a class="el" href="group__dnn.html#gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d">cv::dnn::DNN_TARGET_FPGA</a>, 
+<b>DNN_TARGET_CPU</b>, 
+<b>DNN_TARGET_OPENCL</b>, 
+<b>DNN_TARGET_OPENCL_FP16</b>, 
+<br />
+&#160;&#160;<b>DNN_TARGET_MYRIAD</b>, 
+<a class="el" href="group__dnn.html#gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d">cv::dnn::DNN_TARGET_FPGA</a>, 
+<b>DNN_TARGET_CPU</b>, 
+<b>DNN_TARGET_OPENCL</b>, 
+<br />
+&#160;&#160;<b>DNN_TARGET_OPENCL_FP16</b>, 
+<b>DNN_TARGET_MYRIAD</b>, 
+<a class="el" href="group__dnn.html#gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d">cv::dnn::DNN_TARGET_FPGA</a>, 
+<b>DNN_TARGET_CPU</b>, 
+<br />
+&#160;&#160;<b>DNN_TARGET_OPENCL</b>, 
+<b>DNN_TARGET_OPENCL_FP16</b>, 
+<b>DNN_TARGET_MYRIAD</b>, 
+<a class="el" href="group__dnn.html#gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d">cv::dnn::DNN_TARGET_FPGA</a>, 
+<br />
+&#160;&#160;<b>DNN_TARGET_CPU</b>, 
+<b>DNN_TARGET_OPENCL</b>, 
+<b>DNN_TARGET_OPENCL_FP16</b>, 
+<b>DNN_TARGET_MYRIAD</b>, 
+<br />
+&#160;&#160;<a class="el" href="group__dnn.html#gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d">cv::dnn::DNN_TARGET_FPGA</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga709af7692ba29788182cf573531b0ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum of target devices for computations.  <a href="group__dnn.html#ga709af7692ba29788182cf573531b0ff5">More...</a><br /></td></tr>
@@ -431,7 +542,7 @@ class CV_EXPORTS&#160;</td><td class="memItemRight" valign="bottom"><b>cv::dnn::
 <p>Functionality of this module is designed only for forward pass computations (i.e. network testing). A network training is in principle not supported. </p>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga186f7d9bfacac8b0ff2e26e2eab02625"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga186f7d9bfacac8b0ff2e26e2eab02625">&#9670;&nbsp;</a></span>Backend <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga186f7d9bfacac8b0ff2e26e2eab02625">&#9670;&nbsp;</a></span>Backend <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -446,6 +557,8 @@ class CV_EXPORTS&#160;</td><td class="memItemRight" valign="bottom"><b>cv::dnn::
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classcv_1_1dnn_1_1_net.html#a68cfab300fe6d301901f42808b54a8e6" title="Ask network to use specific computation backend where it supported.">Net::setPreferableBackend</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573"></a>DNN_BACKEND_DEFAULT&#160;</td><td class="fielddoc"><p>DNN_BACKEND_DEFAULT equals to DNN_BACKEND_INFERENCE_ENGINE if <a class="el" href="interface_open_c_v.html">OpenCV</a> is built with Intel's Inference Engine library or DNN_BACKEND_OPENCV otherwise. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573"></a>DNN_BACKEND_DEFAULT&#160;</td><td class="fielddoc"><p>DNN_BACKEND_DEFAULT equals to DNN_BACKEND_INFERENCE_ENGINE if <a class="el" href="interface_open_c_v.html">OpenCV</a> is built with Intel's Inference Engine library or DNN_BACKEND_OPENCV otherwise. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573"></a>DNN_BACKEND_DEFAULT&#160;</td><td class="fielddoc"><p>DNN_BACKEND_DEFAULT equals to DNN_BACKEND_INFERENCE_ENGINE if <a class="el" href="interface_open_c_v.html">OpenCV</a> is built with Intel's Inference Engine library or DNN_BACKEND_OPENCV otherwise. </p>
 </td></tr>
@@ -458,7 +571,7 @@ class CV_EXPORTS&#160;</td><td class="memItemRight" valign="bottom"><b>cv::dnn::
 </div>
 </div>
 <a id="ga186f7d9bfacac8b0ff2e26e2eab02625"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga186f7d9bfacac8b0ff2e26e2eab02625">&#9670;&nbsp;</a></span>Backend <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga186f7d9bfacac8b0ff2e26e2eab02625">&#9670;&nbsp;</a></span>Backend <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -473,6 +586,8 @@ class CV_EXPORTS&#160;</td><td class="memItemRight" valign="bottom"><b>cv::dnn::
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classcv_1_1dnn_1_1_net.html#a68cfab300fe6d301901f42808b54a8e6" title="Ask network to use specific computation backend where it supported.">Net::setPreferableBackend</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573"></a>DNN_BACKEND_DEFAULT&#160;</td><td class="fielddoc"><p>DNN_BACKEND_DEFAULT equals to DNN_BACKEND_INFERENCE_ENGINE if <a class="el" href="interface_open_c_v.html">OpenCV</a> is built with Intel's Inference Engine library or DNN_BACKEND_OPENCV otherwise. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573"></a>DNN_BACKEND_DEFAULT&#160;</td><td class="fielddoc"><p>DNN_BACKEND_DEFAULT equals to DNN_BACKEND_INFERENCE_ENGINE if <a class="el" href="interface_open_c_v.html">OpenCV</a> is built with Intel's Inference Engine library or DNN_BACKEND_OPENCV otherwise. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573"></a>DNN_BACKEND_DEFAULT&#160;</td><td class="fielddoc"><p>DNN_BACKEND_DEFAULT equals to DNN_BACKEND_INFERENCE_ENGINE if <a class="el" href="interface_open_c_v.html">OpenCV</a> is built with Intel's Inference Engine library or DNN_BACKEND_OPENCV otherwise. </p>
 </td></tr>
@@ -485,7 +600,7 @@ class CV_EXPORTS&#160;</td><td class="memItemRight" valign="bottom"><b>cv::dnn::
 </div>
 </div>
 <a id="ga186f7d9bfacac8b0ff2e26e2eab02625"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga186f7d9bfacac8b0ff2e26e2eab02625">&#9670;&nbsp;</a></span>Backend <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga186f7d9bfacac8b0ff2e26e2eab02625">&#9670;&nbsp;</a></span>Backend <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -500,6 +615,8 @@ class CV_EXPORTS&#160;</td><td class="memItemRight" valign="bottom"><b>cv::dnn::
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classcv_1_1dnn_1_1_net.html#a68cfab300fe6d301901f42808b54a8e6" title="Ask network to use specific computation backend where it supported.">Net::setPreferableBackend</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573"></a>DNN_BACKEND_DEFAULT&#160;</td><td class="fielddoc"><p>DNN_BACKEND_DEFAULT equals to DNN_BACKEND_INFERENCE_ENGINE if <a class="el" href="interface_open_c_v.html">OpenCV</a> is built with Intel's Inference Engine library or DNN_BACKEND_OPENCV otherwise. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573"></a>DNN_BACKEND_DEFAULT&#160;</td><td class="fielddoc"><p>DNN_BACKEND_DEFAULT equals to DNN_BACKEND_INFERENCE_ENGINE if <a class="el" href="interface_open_c_v.html">OpenCV</a> is built with Intel's Inference Engine library or DNN_BACKEND_OPENCV otherwise. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573"></a>DNN_BACKEND_DEFAULT&#160;</td><td class="fielddoc"><p>DNN_BACKEND_DEFAULT equals to DNN_BACKEND_INFERENCE_ENGINE if <a class="el" href="interface_open_c_v.html">OpenCV</a> is built with Intel's Inference Engine library or DNN_BACKEND_OPENCV otherwise. </p>
 </td></tr>
@@ -512,7 +629,7 @@ class CV_EXPORTS&#160;</td><td class="memItemRight" valign="bottom"><b>cv::dnn::
 </div>
 </div>
 <a id="ga186f7d9bfacac8b0ff2e26e2eab02625"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga186f7d9bfacac8b0ff2e26e2eab02625">&#9670;&nbsp;</a></span>Backend <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga186f7d9bfacac8b0ff2e26e2eab02625">&#9670;&nbsp;</a></span>Backend <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -534,12 +651,43 @@ class CV_EXPORTS&#160;</td><td class="memItemRight" valign="bottom"><b>cv::dnn::
 </td></tr>
 <tr><td class="fieldname"><a id="gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573"></a>DNN_BACKEND_DEFAULT&#160;</td><td class="fielddoc"><p>DNN_BACKEND_DEFAULT equals to DNN_BACKEND_INFERENCE_ENGINE if <a class="el" href="interface_open_c_v.html">OpenCV</a> is built with Intel's Inference Engine library or DNN_BACKEND_OPENCV otherwise. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573"></a>DNN_BACKEND_DEFAULT&#160;</td><td class="fielddoc"><p>DNN_BACKEND_DEFAULT equals to DNN_BACKEND_INFERENCE_ENGINE if <a class="el" href="interface_open_c_v.html">OpenCV</a> is built with Intel's Inference Engine library or DNN_BACKEND_OPENCV otherwise. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga186f7d9bfacac8b0ff2e26e2eab02625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga186f7d9bfacac8b0ff2e26e2eab02625">&#9670;&nbsp;</a></span>Backend <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__dnn.html#ga186f7d9bfacac8b0ff2e26e2eab02625">cv::dnn::Backend</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enum of computation backends supported by layers. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classcv_1_1dnn_1_1_net.html#a68cfab300fe6d301901f42808b54a8e6" title="Ask network to use specific computation backend where it supported.">Net::setPreferableBackend</a> </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573"></a>DNN_BACKEND_DEFAULT&#160;</td><td class="fielddoc"><p>DNN_BACKEND_DEFAULT equals to DNN_BACKEND_INFERENCE_ENGINE if <a class="el" href="interface_open_c_v.html">OpenCV</a> is built with Intel's Inference Engine library or DNN_BACKEND_OPENCV otherwise. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573"></a>DNN_BACKEND_DEFAULT&#160;</td><td class="fielddoc"><p>DNN_BACKEND_DEFAULT equals to DNN_BACKEND_INFERENCE_ENGINE if <a class="el" href="interface_open_c_v.html">OpenCV</a> is built with Intel's Inference Engine library or DNN_BACKEND_OPENCV otherwise. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573"></a>DNN_BACKEND_DEFAULT&#160;</td><td class="fielddoc"><p>DNN_BACKEND_DEFAULT equals to DNN_BACKEND_INFERENCE_ENGINE if <a class="el" href="interface_open_c_v.html">OpenCV</a> is built with Intel's Inference Engine library or DNN_BACKEND_OPENCV otherwise. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573"></a>DNN_BACKEND_DEFAULT&#160;</td><td class="fielddoc"><p>DNN_BACKEND_DEFAULT equals to DNN_BACKEND_INFERENCE_ENGINE if <a class="el" href="interface_open_c_v.html">OpenCV</a> is built with Intel's Inference Engine library or DNN_BACKEND_OPENCV otherwise. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga186f7d9bfacac8b0ff2e26e2eab02625a203de0dd90d90a766138ca6a932dd573"></a>DNN_BACKEND_DEFAULT&#160;</td><td class="fielddoc"><p>DNN_BACKEND_DEFAULT equals to DNN_BACKEND_INFERENCE_ENGINE if <a class="el" href="interface_open_c_v.html">OpenCV</a> is built with Intel's Inference Engine library or DNN_BACKEND_OPENCV otherwise. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga709af7692ba29788182cf573531b0ff5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga709af7692ba29788182cf573531b0ff5">&#9670;&nbsp;</a></span>Target <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga709af7692ba29788182cf573531b0ff5">&#9670;&nbsp;</a></span>Target <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -561,12 +709,14 @@ class CV_EXPORTS&#160;</td><td class="memItemRight" valign="bottom"><b>cv::dnn::
 </td></tr>
 <tr><td class="fieldname"><a id="gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d"></a>DNN_TARGET_FPGA&#160;</td><td class="fielddoc"><p>FPGA device with CPU fallbacks using Inference Engine's Heterogeneous plugin. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d"></a>DNN_TARGET_FPGA&#160;</td><td class="fielddoc"><p>FPGA device with CPU fallbacks using Inference Engine's Heterogeneous plugin. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga709af7692ba29788182cf573531b0ff5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga709af7692ba29788182cf573531b0ff5">&#9670;&nbsp;</a></span>Target <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga709af7692ba29788182cf573531b0ff5">&#9670;&nbsp;</a></span>Target <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -588,12 +738,14 @@ class CV_EXPORTS&#160;</td><td class="memItemRight" valign="bottom"><b>cv::dnn::
 </td></tr>
 <tr><td class="fieldname"><a id="gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d"></a>DNN_TARGET_FPGA&#160;</td><td class="fielddoc"><p>FPGA device with CPU fallbacks using Inference Engine's Heterogeneous plugin. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d"></a>DNN_TARGET_FPGA&#160;</td><td class="fielddoc"><p>FPGA device with CPU fallbacks using Inference Engine's Heterogeneous plugin. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga709af7692ba29788182cf573531b0ff5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga709af7692ba29788182cf573531b0ff5">&#9670;&nbsp;</a></span>Target <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga709af7692ba29788182cf573531b0ff5">&#9670;&nbsp;</a></span>Target <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -615,12 +767,14 @@ class CV_EXPORTS&#160;</td><td class="memItemRight" valign="bottom"><b>cv::dnn::
 </td></tr>
 <tr><td class="fieldname"><a id="gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d"></a>DNN_TARGET_FPGA&#160;</td><td class="fielddoc"><p>FPGA device with CPU fallbacks using Inference Engine's Heterogeneous plugin. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d"></a>DNN_TARGET_FPGA&#160;</td><td class="fielddoc"><p>FPGA device with CPU fallbacks using Inference Engine's Heterogeneous plugin. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga709af7692ba29788182cf573531b0ff5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga709af7692ba29788182cf573531b0ff5">&#9670;&nbsp;</a></span>Target <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga709af7692ba29788182cf573531b0ff5">&#9670;&nbsp;</a></span>Target <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -635,6 +789,37 @@ class CV_EXPORTS&#160;</td><td class="memItemRight" valign="bottom"><b>cv::dnn::
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classcv_1_1dnn_1_1_net.html#aefe119345df2491584b68e9775d48151" title="Ask network to make computations on specific target device.">Net::setPreferableTarget</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d"></a>DNN_TARGET_FPGA&#160;</td><td class="fielddoc"><p>FPGA device with CPU fallbacks using Inference Engine's Heterogeneous plugin. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d"></a>DNN_TARGET_FPGA&#160;</td><td class="fielddoc"><p>FPGA device with CPU fallbacks using Inference Engine's Heterogeneous plugin. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d"></a>DNN_TARGET_FPGA&#160;</td><td class="fielddoc"><p>FPGA device with CPU fallbacks using Inference Engine's Heterogeneous plugin. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d"></a>DNN_TARGET_FPGA&#160;</td><td class="fielddoc"><p>FPGA device with CPU fallbacks using Inference Engine's Heterogeneous plugin. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d"></a>DNN_TARGET_FPGA&#160;</td><td class="fielddoc"><p>FPGA device with CPU fallbacks using Inference Engine's Heterogeneous plugin. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga709af7692ba29788182cf573531b0ff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga709af7692ba29788182cf573531b0ff5">&#9670;&nbsp;</a></span>Target <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__dnn.html#ga709af7692ba29788182cf573531b0ff5">cv::dnn::Target</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enum of target devices for computations. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classcv_1_1dnn_1_1_net.html#aefe119345df2491584b68e9775d48151" title="Ask network to make computations on specific target device.">Net::setPreferableTarget</a> </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d"></a>DNN_TARGET_FPGA&#160;</td><td class="fielddoc"><p>FPGA device with CPU fallbacks using Inference Engine's Heterogeneous plugin. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d"></a>DNN_TARGET_FPGA&#160;</td><td class="fielddoc"><p>FPGA device with CPU fallbacks using Inference Engine's Heterogeneous plugin. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga709af7692ba29788182cf573531b0ff5a30064896510f343be14d006b966d484d"></a>DNN_TARGET_FPGA&#160;</td><td class="fielddoc"><p>FPGA device with CPU fallbacks using Inference Engine's Heterogeneous plugin. </p>
 </td></tr>

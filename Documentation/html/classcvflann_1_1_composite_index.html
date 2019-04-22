@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cvflann::CompositeIndex&lt; Distance &gt; Class Template Reference</title>
+<title>PixUl8: cvflann::CompositeIndex&lt; Distance &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -88,11 +86,18 @@ Inheritance diagram for cvflann::CompositeIndex&lt; Distance &gt;:</div>
 <area href="classcvflann_1_1_n_n_index.html" alt="cvflann::NNIndex&lt; Distance &gt;" shape="rect" coords="231,0,452,24"/>
 <area href="classcvflann_1_1_n_n_index.html" alt="cvflann::NNIndex&lt; Distance &gt;" shape="rect" coords="462,0,683,24"/>
 <area href="classcvflann_1_1_n_n_index.html" alt="cvflann::NNIndex&lt; Distance &gt;" shape="rect" coords="693,0,914,24"/>
+<area href="classcvflann_1_1_n_n_index.html" alt="cvflann::NNIndex&lt; Distance &gt;" shape="rect" coords="924,0,1145,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a3953e495ac70dfec4d1165a8f95b5fad"><td class="memItemLeft" align="right" valign="top"><a id="a3953e495ac70dfec4d1165a8f95b5fad"></a>
+typedef Distance::ElementType&#160;</td><td class="memItemRight" valign="bottom"><b>ElementType</b></td></tr>
+<tr class="separator:a3953e495ac70dfec4d1165a8f95b5fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9970db892c04fb4dcb0b8a1c2e80a165"><td class="memItemLeft" align="right" valign="top"><a id="a9970db892c04fb4dcb0b8a1c2e80a165"></a>
+typedef Distance::ResultType&#160;</td><td class="memItemRight" valign="bottom"><b>DistanceType</b></td></tr>
+<tr class="separator:a9970db892c04fb4dcb0b8a1c2e80a165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3953e495ac70dfec4d1165a8f95b5fad"><td class="memItemLeft" align="right" valign="top"><a id="a3953e495ac70dfec4d1165a8f95b5fad"></a>
 typedef Distance::ElementType&#160;</td><td class="memItemRight" valign="bottom"><b>ElementType</b></td></tr>
 <tr class="separator:a3953e495ac70dfec4d1165a8f95b5fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,7 +253,45 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcvflann_1_1_composite_index.html#a594e0614223dc738a4c6f1093ff15bc1">findNeighbors</a> (<a class="el" href="classcvflann_1_1_result_set.html">ResultSet</a>&lt; DistanceType &gt; &amp;result, const ElementType *vec, const <a class="el" href="structcvflann_1_1_search_params.html">SearchParams</a> &amp;searchParams) CV_OVERRIDE</td></tr>
 <tr class="memdesc:a594e0614223dc738a4c6f1093ff15bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that searches for nearest-neighbours. <br /></td></tr>
 <tr class="separator:a594e0614223dc738a4c6f1093ff15bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f60067d01b598c83d4eb87406987240"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcvflann_1_1_composite_index.html#a4f60067d01b598c83d4eb87406987240">CompositeIndex</a> (const <a class="el" href="classcvflann_1_1_matrix.html">Matrix</a>&lt; ElementType &gt; &amp;inputData, const IndexParams &amp;params=<a class="el" href="structcvflann_1_1_composite_index_params.html">CompositeIndexParams</a>(), Distance d=Distance())</td></tr>
+<tr class="separator:a4f60067d01b598c83d4eb87406987240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74d036c97084a4f0e243ea58f0c8bfc9"><td class="memItemLeft" align="right" valign="top"><a id="a74d036c97084a4f0e243ea58f0c8bfc9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CompositeIndex</b> (const <a class="el" href="classcvflann_1_1_composite_index.html">CompositeIndex</a> &amp;)</td></tr>
+<tr class="separator:a74d036c97084a4f0e243ea58f0c8bfc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49433d3c01dce80aadec1dee46df5fe2"><td class="memItemLeft" align="right" valign="top"><a id="a49433d3c01dce80aadec1dee46df5fe2"></a>
+<a class="el" href="classcvflann_1_1_composite_index.html">CompositeIndex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classcvflann_1_1_composite_index.html">CompositeIndex</a> &amp;)</td></tr>
+<tr class="separator:a49433d3c01dce80aadec1dee46df5fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4661ebb6640f3796e31a47834177081"><td class="memItemLeft" align="right" valign="top">flann_algorithm_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcvflann_1_1_composite_index.html#af4661ebb6640f3796e31a47834177081">getType</a> () const CV_OVERRIDE</td></tr>
+<tr class="separator:af4661ebb6640f3796e31a47834177081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8fe81c267b63de780a25bfc33212e61"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcvflann_1_1_composite_index.html#aa8fe81c267b63de780a25bfc33212e61">size</a> () const CV_OVERRIDE</td></tr>
+<tr class="separator:aa8fe81c267b63de780a25bfc33212e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ddf99f9d5e538faa1ddb921e6ddd52c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcvflann_1_1_composite_index.html#a6ddf99f9d5e538faa1ddb921e6ddd52c">veclen</a> () const CV_OVERRIDE</td></tr>
+<tr class="separator:a6ddf99f9d5e538faa1ddb921e6ddd52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f547a5047ec8c4b25ecff626e665d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcvflann_1_1_composite_index.html#a30f547a5047ec8c4b25ecff626e665d3">usedMemory</a> () const CV_OVERRIDE</td></tr>
+<tr class="separator:a30f547a5047ec8c4b25ecff626e665d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a882d61801d825ad7670243e47652be"><td class="memItemLeft" align="right" valign="top"><a id="a8a882d61801d825ad7670243e47652be"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcvflann_1_1_composite_index.html#a8a882d61801d825ad7670243e47652be">buildIndex</a> () CV_OVERRIDE</td></tr>
+<tr class="memdesc:a8a882d61801d825ad7670243e47652be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the index. <br /></td></tr>
+<tr class="separator:a8a882d61801d825ad7670243e47652be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1acbd70cf9e1449a3818e9cffd0d3247"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcvflann_1_1_composite_index.html#a1acbd70cf9e1449a3818e9cffd0d3247">saveIndex</a> (FILE *stream) CV_OVERRIDE</td></tr>
+<tr class="memdesc:a1acbd70cf9e1449a3818e9cffd0d3247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the index to a stream.  <a href="#a1acbd70cf9e1449a3818e9cffd0d3247">More...</a><br /></td></tr>
+<tr class="separator:a1acbd70cf9e1449a3818e9cffd0d3247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf6e052134c807705d8a37d3b3432615"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcvflann_1_1_composite_index.html#aaf6e052134c807705d8a37d3b3432615">loadIndex</a> (FILE *stream) CV_OVERRIDE</td></tr>
+<tr class="memdesc:aaf6e052134c807705d8a37d3b3432615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the index from a stream.  <a href="#aaf6e052134c807705d8a37d3b3432615">More...</a><br /></td></tr>
+<tr class="separator:aaf6e052134c807705d8a37d3b3432615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b35639eb8ef60d8647902690f583643"><td class="memItemLeft" align="right" valign="top">IndexParams&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcvflann_1_1_composite_index.html#a3b35639eb8ef60d8647902690f583643">getParameters</a> () const CV_OVERRIDE</td></tr>
+<tr class="separator:a3b35639eb8ef60d8647902690f583643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a594e0614223dc738a4c6f1093ff15bc1"><td class="memItemLeft" align="right" valign="top"><a id="a594e0614223dc738a4c6f1093ff15bc1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcvflann_1_1_composite_index.html#a594e0614223dc738a4c6f1093ff15bc1">findNeighbors</a> (<a class="el" href="classcvflann_1_1_result_set.html">ResultSet</a>&lt; DistanceType &gt; &amp;result, const ElementType *vec, const <a class="el" href="structcvflann_1_1_search_params.html">SearchParams</a> &amp;searchParams) CV_OVERRIDE</td></tr>
+<tr class="memdesc:a594e0614223dc738a4c6f1093ff15bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that searches for nearest-neighbours. <br /></td></tr>
+<tr class="separator:a594e0614223dc738a4c6f1093ff15bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcvflann_1_1_n_n_index"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcvflann_1_1_n_n_index')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcvflann_1_1_n_n_index.html">cvflann::NNIndex&lt; Distance &gt;</a></td></tr>
+<tr class="memitem:a8cf5c942430421358bf67d93565942db inherit pub_methods_classcvflann_1_1_n_n_index"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcvflann_1_1_n_n_index.html#a8cf5c942430421358bf67d93565942db">knnSearch</a> (const <a class="el" href="classcvflann_1_1_matrix.html">Matrix</a>&lt; ElementType &gt; &amp;queries, <a class="el" href="classcvflann_1_1_matrix.html">Matrix</a>&lt; int &gt; &amp;indices, <a class="el" href="classcvflann_1_1_matrix.html">Matrix</a>&lt; DistanceType &gt; &amp;dists, int knn, const <a class="el" href="structcvflann_1_1_search_params.html">SearchParams</a> &amp;params)</td></tr>
+<tr class="memdesc:a8cf5c942430421358bf67d93565942db inherit pub_methods_classcvflann_1_1_n_n_index"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform k-nearest neighbor search.  <a href="classcvflann_1_1_n_n_index.html#a8cf5c942430421358bf67d93565942db">More...</a><br /></td></tr>
+<tr class="separator:a8cf5c942430421358bf67d93565942db inherit pub_methods_classcvflann_1_1_n_n_index"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a142da9423596dd59766d1dcbcac433e9 inherit pub_methods_classcvflann_1_1_n_n_index"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcvflann_1_1_n_n_index.html#a142da9423596dd59766d1dcbcac433e9">radiusSearch</a> (const <a class="el" href="classcvflann_1_1_matrix.html">Matrix</a>&lt; ElementType &gt; &amp;query, <a class="el" href="classcvflann_1_1_matrix.html">Matrix</a>&lt; int &gt; &amp;indices, <a class="el" href="classcvflann_1_1_matrix.html">Matrix</a>&lt; DistanceType &gt; &amp;dists, float radius, const <a class="el" href="structcvflann_1_1_search_params.html">SearchParams</a> &amp;params)</td></tr>
+<tr class="memdesc:a142da9423596dd59766d1dcbcac433e9 inherit pub_methods_classcvflann_1_1_n_n_index"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform radius search.  <a href="classcvflann_1_1_n_n_index.html#a142da9423596dd59766d1dcbcac433e9">More...</a><br /></td></tr>
+<tr class="separator:a142da9423596dd59766d1dcbcac433e9 inherit pub_methods_classcvflann_1_1_n_n_index"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cf5c942430421358bf67d93565942db inherit pub_methods_classcvflann_1_1_n_n_index"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcvflann_1_1_n_n_index.html#a8cf5c942430421358bf67d93565942db">knnSearch</a> (const <a class="el" href="classcvflann_1_1_matrix.html">Matrix</a>&lt; ElementType &gt; &amp;queries, <a class="el" href="classcvflann_1_1_matrix.html">Matrix</a>&lt; int &gt; &amp;indices, <a class="el" href="classcvflann_1_1_matrix.html">Matrix</a>&lt; DistanceType &gt; &amp;dists, int knn, const <a class="el" href="structcvflann_1_1_search_params.html">SearchParams</a> &amp;params)</td></tr>
 <tr class="memdesc:a8cf5c942430421358bf67d93565942db inherit pub_methods_classcvflann_1_1_n_n_index"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform k-nearest neighbor search.  <a href="classcvflann_1_1_n_n_index.html#a8cf5c942430421358bf67d93565942db">More...</a><br /></td></tr>
 <tr class="separator:a8cf5c942430421358bf67d93565942db inherit pub_methods_classcvflann_1_1_n_n_index"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -281,7 +324,7 @@ class cvflann::CompositeIndex&lt; Distance &gt;</h3>
 <p>This index builds a kd-tree index and a k-means index and performs nearest neighbour search both indexes. This gives a slight boost in search performance as some of the neighbours that are missed by one index are found by the other. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4f60067d01b598c83d4eb87406987240"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f60067d01b598c83d4eb87406987240">&#9670;&nbsp;</a></span>CompositeIndex() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f60067d01b598c83d4eb87406987240">&#9670;&nbsp;</a></span>CompositeIndex() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -326,7 +369,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="a4f60067d01b598c83d4eb87406987240"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f60067d01b598c83d4eb87406987240">&#9670;&nbsp;</a></span>CompositeIndex() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f60067d01b598c83d4eb87406987240">&#9670;&nbsp;</a></span>CompositeIndex() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -371,7 +414,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="a4f60067d01b598c83d4eb87406987240"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f60067d01b598c83d4eb87406987240">&#9670;&nbsp;</a></span>CompositeIndex() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f60067d01b598c83d4eb87406987240">&#9670;&nbsp;</a></span>CompositeIndex() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -416,7 +459,52 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="a4f60067d01b598c83d4eb87406987240"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f60067d01b598c83d4eb87406987240">&#9670;&nbsp;</a></span>CompositeIndex() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f60067d01b598c83d4eb87406987240">&#9670;&nbsp;</a></span>CompositeIndex() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Distance &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcvflann_1_1_composite_index.html">cvflann::CompositeIndex</a>&lt; Distance &gt;::<a class="el" href="classcvflann_1_1_composite_index.html">CompositeIndex</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcvflann_1_1_matrix.html">Matrix</a>&lt; ElementType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inputData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const IndexParams &amp;&#160;</td>
+          <td class="paramname"><em>params</em> = <code><a class="el" href="structcvflann_1_1_composite_index_params.html">CompositeIndexParams</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Distance&#160;</td>
+          <td class="paramname"><em>d</em> = <code>Distance()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="classcvflann_1_1_index.html">Index</a> constructor </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputData</td><td>dataset containing the points to index </td></tr>
+    <tr><td class="paramname">params</td><td><a class="el" href="classcvflann_1_1_index.html">Index</a> parameters </td></tr>
+    <tr><td class="paramname">d</td><td>Distance functor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a4f60067d01b598c83d4eb87406987240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f60067d01b598c83d4eb87406987240">&#9670;&nbsp;</a></span>CompositeIndex() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -462,7 +550,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3b35639eb8ef60d8647902690f583643"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b35639eb8ef60d8647902690f583643">&#9670;&nbsp;</a></span>getParameters() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b35639eb8ef60d8647902690f583643">&#9670;&nbsp;</a></span>getParameters() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -492,7 +580,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="a3b35639eb8ef60d8647902690f583643"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b35639eb8ef60d8647902690f583643">&#9670;&nbsp;</a></span>getParameters() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b35639eb8ef60d8647902690f583643">&#9670;&nbsp;</a></span>getParameters() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -522,7 +610,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="a3b35639eb8ef60d8647902690f583643"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b35639eb8ef60d8647902690f583643">&#9670;&nbsp;</a></span>getParameters() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b35639eb8ef60d8647902690f583643">&#9670;&nbsp;</a></span>getParameters() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -552,7 +640,37 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="a3b35639eb8ef60d8647902690f583643"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b35639eb8ef60d8647902690f583643">&#9670;&nbsp;</a></span>getParameters() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b35639eb8ef60d8647902690f583643">&#9670;&nbsp;</a></span>getParameters() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Distance &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IndexParams <a class="el" href="classcvflann_1_1_composite_index.html">cvflann::CompositeIndex</a>&lt; Distance &gt;::getParameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The index parameters </dd></dl>
+
+<p>Implements <a class="el" href="classcvflann_1_1_n_n_index.html#afbc22ebf77f4f376d9e7922727d0abfe">cvflann::NNIndex&lt; Distance &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a3b35639eb8ef60d8647902690f583643"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b35639eb8ef60d8647902690f583643">&#9670;&nbsp;</a></span>getParameters() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -582,7 +700,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="af4661ebb6640f3796e31a47834177081"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4661ebb6640f3796e31a47834177081">&#9670;&nbsp;</a></span>getType() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af4661ebb6640f3796e31a47834177081">&#9670;&nbsp;</a></span>getType() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -612,7 +730,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="af4661ebb6640f3796e31a47834177081"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4661ebb6640f3796e31a47834177081">&#9670;&nbsp;</a></span>getType() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af4661ebb6640f3796e31a47834177081">&#9670;&nbsp;</a></span>getType() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -642,7 +760,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="af4661ebb6640f3796e31a47834177081"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4661ebb6640f3796e31a47834177081">&#9670;&nbsp;</a></span>getType() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af4661ebb6640f3796e31a47834177081">&#9670;&nbsp;</a></span>getType() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -672,7 +790,37 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="af4661ebb6640f3796e31a47834177081"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4661ebb6640f3796e31a47834177081">&#9670;&nbsp;</a></span>getType() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af4661ebb6640f3796e31a47834177081">&#9670;&nbsp;</a></span>getType() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Distance &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">flann_algorithm_t <a class="el" href="classcvflann_1_1_composite_index.html">cvflann::CompositeIndex</a>&lt; Distance &gt;::getType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The index type </dd></dl>
+
+<p>Implements <a class="el" href="classcvflann_1_1_n_n_index.html#ac40469dbc16bcb0fb4b0c9912c5f8acb">cvflann::NNIndex&lt; Distance &gt;</a>.</p>
+
+</div>
+</div>
+<a id="af4661ebb6640f3796e31a47834177081"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4661ebb6640f3796e31a47834177081">&#9670;&nbsp;</a></span>getType() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -702,7 +850,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="aaf6e052134c807705d8a37d3b3432615"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf6e052134c807705d8a37d3b3432615">&#9670;&nbsp;</a></span>loadIndex() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf6e052134c807705d8a37d3b3432615">&#9670;&nbsp;</a></span>loadIndex() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -740,7 +888,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="aaf6e052134c807705d8a37d3b3432615"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf6e052134c807705d8a37d3b3432615">&#9670;&nbsp;</a></span>loadIndex() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf6e052134c807705d8a37d3b3432615">&#9670;&nbsp;</a></span>loadIndex() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -778,7 +926,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="aaf6e052134c807705d8a37d3b3432615"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf6e052134c807705d8a37d3b3432615">&#9670;&nbsp;</a></span>loadIndex() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf6e052134c807705d8a37d3b3432615">&#9670;&nbsp;</a></span>loadIndex() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -816,7 +964,45 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="aaf6e052134c807705d8a37d3b3432615"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf6e052134c807705d8a37d3b3432615">&#9670;&nbsp;</a></span>loadIndex() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf6e052134c807705d8a37d3b3432615">&#9670;&nbsp;</a></span>loadIndex() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Distance &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcvflann_1_1_composite_index.html">cvflann::CompositeIndex</a>&lt; Distance &gt;::loadIndex </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads the index from a stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>The stream from which the index is loaded </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classcvflann_1_1_n_n_index.html#a4bcaf48ee2ac65a1b3cebea99d021611">cvflann::NNIndex&lt; Distance &gt;</a>.</p>
+
+</div>
+</div>
+<a id="aaf6e052134c807705d8a37d3b3432615"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf6e052134c807705d8a37d3b3432615">&#9670;&nbsp;</a></span>loadIndex() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -854,7 +1040,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="a1acbd70cf9e1449a3818e9cffd0d3247"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1acbd70cf9e1449a3818e9cffd0d3247">&#9670;&nbsp;</a></span>saveIndex() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1acbd70cf9e1449a3818e9cffd0d3247">&#9670;&nbsp;</a></span>saveIndex() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -892,7 +1078,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="a1acbd70cf9e1449a3818e9cffd0d3247"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1acbd70cf9e1449a3818e9cffd0d3247">&#9670;&nbsp;</a></span>saveIndex() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1acbd70cf9e1449a3818e9cffd0d3247">&#9670;&nbsp;</a></span>saveIndex() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -930,7 +1116,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="a1acbd70cf9e1449a3818e9cffd0d3247"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1acbd70cf9e1449a3818e9cffd0d3247">&#9670;&nbsp;</a></span>saveIndex() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1acbd70cf9e1449a3818e9cffd0d3247">&#9670;&nbsp;</a></span>saveIndex() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -968,7 +1154,45 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="a1acbd70cf9e1449a3818e9cffd0d3247"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1acbd70cf9e1449a3818e9cffd0d3247">&#9670;&nbsp;</a></span>saveIndex() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1acbd70cf9e1449a3818e9cffd0d3247">&#9670;&nbsp;</a></span>saveIndex() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Distance &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcvflann_1_1_composite_index.html">cvflann::CompositeIndex</a>&lt; Distance &gt;::saveIndex </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Saves the index to a stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>The stream to save the index to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classcvflann_1_1_n_n_index.html#aad5c63116e3dbeccc96de7c70f0a8db7">cvflann::NNIndex&lt; Distance &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a1acbd70cf9e1449a3818e9cffd0d3247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1acbd70cf9e1449a3818e9cffd0d3247">&#9670;&nbsp;</a></span>saveIndex() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1006,7 +1230,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="aa8fe81c267b63de780a25bfc33212e61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8fe81c267b63de780a25bfc33212e61">&#9670;&nbsp;</a></span>size() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8fe81c267b63de780a25bfc33212e61">&#9670;&nbsp;</a></span>size() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1036,7 +1260,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="aa8fe81c267b63de780a25bfc33212e61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8fe81c267b63de780a25bfc33212e61">&#9670;&nbsp;</a></span>size() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8fe81c267b63de780a25bfc33212e61">&#9670;&nbsp;</a></span>size() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1066,7 +1290,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="aa8fe81c267b63de780a25bfc33212e61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8fe81c267b63de780a25bfc33212e61">&#9670;&nbsp;</a></span>size() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8fe81c267b63de780a25bfc33212e61">&#9670;&nbsp;</a></span>size() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1096,7 +1320,37 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="aa8fe81c267b63de780a25bfc33212e61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8fe81c267b63de780a25bfc33212e61">&#9670;&nbsp;</a></span>size() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8fe81c267b63de780a25bfc33212e61">&#9670;&nbsp;</a></span>size() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Distance &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="classcvflann_1_1_composite_index.html">cvflann::CompositeIndex</a>&lt; Distance &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Size of the index </dd></dl>
+
+<p>Implements <a class="el" href="classcvflann_1_1_n_n_index.html#ae75fd979d25a239b4aba751114493fe0">cvflann::NNIndex&lt; Distance &gt;</a>.</p>
+
+</div>
+</div>
+<a id="aa8fe81c267b63de780a25bfc33212e61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8fe81c267b63de780a25bfc33212e61">&#9670;&nbsp;</a></span>size() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1126,7 +1380,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="a30f547a5047ec8c4b25ecff626e665d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30f547a5047ec8c4b25ecff626e665d3">&#9670;&nbsp;</a></span>usedMemory() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a30f547a5047ec8c4b25ecff626e665d3">&#9670;&nbsp;</a></span>usedMemory() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1156,7 +1410,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="a30f547a5047ec8c4b25ecff626e665d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30f547a5047ec8c4b25ecff626e665d3">&#9670;&nbsp;</a></span>usedMemory() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a30f547a5047ec8c4b25ecff626e665d3">&#9670;&nbsp;</a></span>usedMemory() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1186,7 +1440,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="a30f547a5047ec8c4b25ecff626e665d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30f547a5047ec8c4b25ecff626e665d3">&#9670;&nbsp;</a></span>usedMemory() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a30f547a5047ec8c4b25ecff626e665d3">&#9670;&nbsp;</a></span>usedMemory() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1216,7 +1470,37 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="a30f547a5047ec8c4b25ecff626e665d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30f547a5047ec8c4b25ecff626e665d3">&#9670;&nbsp;</a></span>usedMemory() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a30f547a5047ec8c4b25ecff626e665d3">&#9670;&nbsp;</a></span>usedMemory() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Distance &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classcvflann_1_1_composite_index.html">cvflann::CompositeIndex</a>&lt; Distance &gt;::usedMemory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The amount of memory (in bytes) used by the index. </dd></dl>
+
+<p>Implements <a class="el" href="classcvflann_1_1_n_n_index.html#ac172cb3774f8ae39ff1107bee4fadbf9">cvflann::NNIndex&lt; Distance &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a30f547a5047ec8c4b25ecff626e665d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30f547a5047ec8c4b25ecff626e665d3">&#9670;&nbsp;</a></span>usedMemory() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1246,7 +1530,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="a6ddf99f9d5e538faa1ddb921e6ddd52c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ddf99f9d5e538faa1ddb921e6ddd52c">&#9670;&nbsp;</a></span>veclen() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ddf99f9d5e538faa1ddb921e6ddd52c">&#9670;&nbsp;</a></span>veclen() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1276,7 +1560,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="a6ddf99f9d5e538faa1ddb921e6ddd52c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ddf99f9d5e538faa1ddb921e6ddd52c">&#9670;&nbsp;</a></span>veclen() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ddf99f9d5e538faa1ddb921e6ddd52c">&#9670;&nbsp;</a></span>veclen() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1306,7 +1590,7 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="a6ddf99f9d5e538faa1ddb921e6ddd52c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ddf99f9d5e538faa1ddb921e6ddd52c">&#9670;&nbsp;</a></span>veclen() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ddf99f9d5e538faa1ddb921e6ddd52c">&#9670;&nbsp;</a></span>veclen() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1336,7 +1620,37 @@ template&lt;typename Distance &gt; </div>
 </div>
 </div>
 <a id="a6ddf99f9d5e538faa1ddb921e6ddd52c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ddf99f9d5e538faa1ddb921e6ddd52c">&#9670;&nbsp;</a></span>veclen() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ddf99f9d5e538faa1ddb921e6ddd52c">&#9670;&nbsp;</a></span>veclen() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Distance &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="classcvflann_1_1_composite_index.html">cvflann::CompositeIndex</a>&lt; Distance &gt;::veclen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The dimensionality of the features in this index. </dd></dl>
+
+<p>Implements <a class="el" href="classcvflann_1_1_n_n_index.html#acdcc255d1b67d5636a0f76b68809e6be">cvflann::NNIndex&lt; Distance &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a6ddf99f9d5e538faa1ddb921e6ddd52c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ddf99f9d5e538faa1ddb921e6ddd52c">&#9670;&nbsp;</a></span>veclen() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

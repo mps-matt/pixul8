@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::BaseCascadeClassifier Class Reference</title>
+<title>PixUl8: cv::BaseCascadeClassifier Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -86,6 +84,7 @@ Inheritance diagram for cv::BaseCascadeClassifier:</div>
 <area href="classcv_1_1_algorithm.html" title="This is a base class for all more or less complex algorithms in OpenCV." alt="cv::Algorithm" shape="rect" coords="173,0,336,24"/>
 <area href="classcv_1_1_algorithm.html" title="This is a base class for all more or less complex algorithms in OpenCV." alt="cv::Algorithm" shape="rect" coords="346,0,509,24"/>
 <area href="classcv_1_1_algorithm.html" title="This is a base class for all more or less complex algorithms in OpenCV." alt="cv::Algorithm" shape="rect" coords="519,0,682,24"/>
+<area href="classcv_1_1_algorithm.html" title="This is a base class for all more or less complex algorithms in OpenCV." alt="cv::Algorithm" shape="rect" coords="692,0,855,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -96,6 +95,40 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a5c900a29bf394dc30fa541fe26f2a294"><td class="memItemLeft" align="right" valign="top"><a id="a5c900a29bf394dc30fa541fe26f2a294"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_base_cascade_classifier.html#a5c900a29bf394dc30fa541fe26f2a294">empty</a> () const CV_OVERRIDE=0</td></tr>
+<tr class="memdesc:a5c900a29bf394dc30fa541fe26f2a294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the <a class="el" href="classcv_1_1_algorithm.html" title="This is a base class for all more or less complex algorithms in OpenCV.">Algorithm</a> is empty (e.g. in the very beginning or after unsuccessful read. <br /></td></tr>
+<tr class="separator:a5c900a29bf394dc30fa541fe26f2a294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d27bbc1d1d4fa7326848f9fae7999d7"><td class="memItemLeft" align="right" valign="top"><a id="a2d27bbc1d1d4fa7326848f9fae7999d7"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;filename)=0</td></tr>
+<tr class="separator:a2d27bbc1d1d4fa7326848f9fae7999d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d40a393e6e186be8db752ed8b2f3495"><td class="memItemLeft" align="right" valign="top"><a id="a6d40a393e6e186be8db752ed8b2f3495"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>detectMultiScale</b> (InputArray image, CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt; &amp;objects, double scaleFactor, int minNeighbors, int flags, <a class="el" href="classcv_1_1_size__.html">Size</a> minSize, <a class="el" href="classcv_1_1_size__.html">Size</a> maxSize)=0</td></tr>
+<tr class="separator:a6d40a393e6e186be8db752ed8b2f3495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a2dae993c475b942c3fb1e1b29147c"><td class="memItemLeft" align="right" valign="top"><a id="a52a2dae993c475b942c3fb1e1b29147c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>detectMultiScale</b> (InputArray image, CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt; &amp;objects, CV_OUT std::vector&lt; int &gt; &amp;numDetections, double scaleFactor, int minNeighbors, int flags, <a class="el" href="classcv_1_1_size__.html">Size</a> minSize, <a class="el" href="classcv_1_1_size__.html">Size</a> maxSize)=0</td></tr>
+<tr class="separator:a52a2dae993c475b942c3fb1e1b29147c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6a1b02b7a712e0a02eb7549e9939c78"><td class="memItemLeft" align="right" valign="top"><a id="aa6a1b02b7a712e0a02eb7549e9939c78"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>detectMultiScale</b> (InputArray image, CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_rect__.html">Rect</a> &gt; &amp;objects, CV_OUT std::vector&lt; int &gt; &amp;rejectLevels, CV_OUT std::vector&lt; double &gt; &amp;levelWeights, double scaleFactor, int minNeighbors, int flags, <a class="el" href="classcv_1_1_size__.html">Size</a> minSize, <a class="el" href="classcv_1_1_size__.html">Size</a> maxSize, bool outputRejectLevels)=0</td></tr>
+<tr class="separator:aa6a1b02b7a712e0a02eb7549e9939c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee2b340811fff9aff1770feec7ef7d55"><td class="memItemLeft" align="right" valign="top"><a id="aee2b340811fff9aff1770feec7ef7d55"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>isOldFormatCascade</b> () const =0</td></tr>
+<tr class="separator:aee2b340811fff9aff1770feec7ef7d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c464d484874ba181dbd34cb4df80a9"><td class="memItemLeft" align="right" valign="top"><a id="a61c464d484874ba181dbd34cb4df80a9"></a>
+virtual <a class="el" href="classcv_1_1_size__.html">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getOriginalWindowSize</b> () const =0</td></tr>
+<tr class="separator:a61c464d484874ba181dbd34cb4df80a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e38c072b82f233783fd9c6104f2fc6"><td class="memItemLeft" align="right" valign="top"><a id="a52e38c072b82f233783fd9c6104f2fc6"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>getFeatureType</b> () const =0</td></tr>
+<tr class="separator:a52e38c072b82f233783fd9c6104f2fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555569d467238cfd931066590e52fd28"><td class="memItemLeft" align="right" valign="top"><a id="a555569d467238cfd931066590e52fd28"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>getOldCascade</b> ()=0</td></tr>
+<tr class="separator:a555569d467238cfd931066590e52fd28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa99dc34bdd04563d7adc1343dac6f300"><td class="memItemLeft" align="right" valign="top"><a id="aa99dc34bdd04563d7adc1343dac6f300"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setMaskGenerator</b> (const <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1_base_cascade_classifier_1_1_mask_generator.html">MaskGenerator</a> &gt; &amp;maskGenerator)=0</td></tr>
+<tr class="separator:aa99dc34bdd04563d7adc1343dac6f300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96a8ab76000ac2872b4ecb2f2b46bbb7"><td class="memItemLeft" align="right" valign="top"><a id="a96a8ab76000ac2872b4ecb2f2b46bbb7"></a>
+virtual <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1_base_cascade_classifier_1_1_mask_generator.html">MaskGenerator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getMaskGenerator</b> ()=0</td></tr>
+<tr class="separator:a96a8ab76000ac2872b4ecb2f2b46bbb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c900a29bf394dc30fa541fe26f2a294"><td class="memItemLeft" align="right" valign="top"><a id="a5c900a29bf394dc30fa541fe26f2a294"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_base_cascade_classifier.html#a5c900a29bf394dc30fa541fe26f2a294">empty</a> () const CV_OVERRIDE=0</td></tr>
 <tr class="memdesc:a5c900a29bf394dc30fa541fe26f2a294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the <a class="el" href="classcv_1_1_algorithm.html" title="This is a base class for all more or less complex algorithms in OpenCV.">Algorithm</a> is empty (e.g. in the very beginning or after unsuccessful read. <br /></td></tr>
@@ -313,6 +346,26 @@ virtual CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <tr class="separator:af5584a693c6fe6a3b8e0fcdd6c25d1fd inherit pub_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ec6ed12df12de3ae03f50fcd2118cd7 inherit pub_methods_classcv_1_1_algorithm"><td class="memItemLeft" align="right" valign="top">virtual CV_WRAP <a class="el" href="classcv_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#a6ec6ed12df12de3ae03f50fcd2118cd7">getDefaultName</a> () const</td></tr>
 <tr class="separator:a6ec6ed12df12de3ae03f50fcd2118cd7 inherit pub_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382269508151069f33e2991e9eabbcab inherit pub_methods_classcv_1_1_algorithm"><td class="memItemLeft" align="right" valign="top"><a id="a382269508151069f33e2991e9eabbcab"></a>
+virtual CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#a382269508151069f33e2991e9eabbcab">clear</a> ()</td></tr>
+<tr class="memdesc:a382269508151069f33e2991e9eabbcab inherit pub_methods_classcv_1_1_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the algorithm state. <br /></td></tr>
+<tr class="separator:a382269508151069f33e2991e9eabbcab inherit pub_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f8ad7b8add515077367fb9949a174d2 inherit pub_methods_classcv_1_1_algorithm"><td class="memItemLeft" align="right" valign="top"><a id="a1f8ad7b8add515077367fb9949a174d2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#a1f8ad7b8add515077367fb9949a174d2">write</a> (<a class="el" href="classcv_1_1_file_storage.html">FileStorage</a> &amp;fs) const</td></tr>
+<tr class="memdesc:a1f8ad7b8add515077367fb9949a174d2 inherit pub_methods_classcv_1_1_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores algorithm parameters in a file storage. <br /></td></tr>
+<tr class="separator:a1f8ad7b8add515077367fb9949a174d2 inherit pub_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ae96500f2c84b7c5479418f467e974 inherit pub_methods_classcv_1_1_algorithm"><td class="memItemLeft" align="right" valign="top"><a id="a63ae96500f2c84b7c5479418f467e974"></a>
+CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#a63ae96500f2c84b7c5479418f467e974">write</a> (const <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1_file_storage.html">FileStorage</a> &gt; &amp;fs, const <a class="el" href="classcv_1_1_string.html">String</a> &amp;name=<a class="el" href="classcv_1_1_string.html">String</a>()) const</td></tr>
+<tr class="memdesc:a63ae96500f2c84b7c5479418f467e974 inherit pub_methods_classcv_1_1_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">simplified API for language bindings This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. <br /></td></tr>
+<tr class="separator:a63ae96500f2c84b7c5479418f467e974 inherit pub_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b47225d8dcc934de71b919403538b16 inherit pub_methods_classcv_1_1_algorithm"><td class="memItemLeft" align="right" valign="top"><a id="a8b47225d8dcc934de71b919403538b16"></a>
+virtual CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#a8b47225d8dcc934de71b919403538b16">read</a> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;fn)</td></tr>
+<tr class="memdesc:a8b47225d8dcc934de71b919403538b16 inherit pub_methods_classcv_1_1_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads algorithm parameters from a file storage. <br /></td></tr>
+<tr class="separator:a8b47225d8dcc934de71b919403538b16 inherit pub_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5584a693c6fe6a3b8e0fcdd6c25d1fd inherit pub_methods_classcv_1_1_algorithm"><td class="memItemLeft" align="right" valign="top">virtual CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#af5584a693c6fe6a3b8e0fcdd6c25d1fd">save</a> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;filename) const</td></tr>
+<tr class="separator:af5584a693c6fe6a3b8e0fcdd6c25d1fd inherit pub_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ec6ed12df12de3ae03f50fcd2118cd7 inherit pub_methods_classcv_1_1_algorithm"><td class="memItemLeft" align="right" valign="top">virtual CV_WRAP <a class="el" href="classcv_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#a6ec6ed12df12de3ae03f50fcd2118cd7">getDefaultName</a> () const</td></tr>
+<tr class="separator:a6ec6ed12df12de3ae03f50fcd2118cd7 inherit pub_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -365,7 +418,22 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a3ba305a10d02479c13cf7d169c321547 inherit pub_static_methods_classcv_1_1_algorithm"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; _Tp &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#a3ba305a10d02479c13cf7d169c321547">loadFromString</a> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;strModel, const <a class="el" href="classcv_1_1_string.html">String</a> &amp;objname=<a class="el" href="classcv_1_1_string.html">String</a>())</td></tr>
 <tr class="memdesc:a3ba305a10d02479c13cf7d169c321547 inherit pub_static_methods_classcv_1_1_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads algorithm from a <a class="el" href="classcv_1_1_string.html">String</a>.  <a href="classcv_1_1_algorithm.html#a3ba305a10d02479c13cf7d169c321547">More...</a><br /></td></tr>
 <tr class="separator:a3ba305a10d02479c13cf7d169c321547 inherit pub_static_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c591bacb34c485f5b7a250c314fc53 inherit pub_static_methods_classcv_1_1_algorithm"><td class="memTemplParams" colspan="2">template&lt;typename _Tp &gt; </td></tr>
+<tr class="memitem:ad8c591bacb34c485f5b7a250c314fc53 inherit pub_static_methods_classcv_1_1_algorithm"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; _Tp &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#ad8c591bacb34c485f5b7a250c314fc53">read</a> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;fn)</td></tr>
+<tr class="memdesc:ad8c591bacb34c485f5b7a250c314fc53 inherit pub_static_methods_classcv_1_1_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads algorithm from the file node.  <a href="classcv_1_1_algorithm.html#ad8c591bacb34c485f5b7a250c314fc53">More...</a><br /></td></tr>
+<tr class="separator:ad8c591bacb34c485f5b7a250c314fc53 inherit pub_static_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a623841c33b58ea9c4847da04607e067b inherit pub_static_methods_classcv_1_1_algorithm"><td class="memTemplParams" colspan="2">template&lt;typename _Tp &gt; </td></tr>
+<tr class="memitem:a623841c33b58ea9c4847da04607e067b inherit pub_static_methods_classcv_1_1_algorithm"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; _Tp &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#a623841c33b58ea9c4847da04607e067b">load</a> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;filename, const <a class="el" href="classcv_1_1_string.html">String</a> &amp;objname=<a class="el" href="classcv_1_1_string.html">String</a>())</td></tr>
+<tr class="memdesc:a623841c33b58ea9c4847da04607e067b inherit pub_static_methods_classcv_1_1_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads algorithm from the file.  <a href="classcv_1_1_algorithm.html#a623841c33b58ea9c4847da04607e067b">More...</a><br /></td></tr>
+<tr class="separator:a623841c33b58ea9c4847da04607e067b inherit pub_static_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba305a10d02479c13cf7d169c321547 inherit pub_static_methods_classcv_1_1_algorithm"><td class="memTemplParams" colspan="2">template&lt;typename _Tp &gt; </td></tr>
+<tr class="memitem:a3ba305a10d02479c13cf7d169c321547 inherit pub_static_methods_classcv_1_1_algorithm"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; _Tp &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcv_1_1_algorithm.html#a3ba305a10d02479c13cf7d169c321547">loadFromString</a> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;strModel, const <a class="el" href="classcv_1_1_string.html">String</a> &amp;objname=<a class="el" href="classcv_1_1_string.html">String</a>())</td></tr>
+<tr class="memdesc:a3ba305a10d02479c13cf7d169c321547 inherit pub_static_methods_classcv_1_1_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads algorithm from a <a class="el" href="classcv_1_1_string.html">String</a>.  <a href="classcv_1_1_algorithm.html#a3ba305a10d02479c13cf7d169c321547">More...</a><br /></td></tr>
+<tr class="separator:a3ba305a10d02479c13cf7d169c321547 inherit pub_static_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classcv_1_1_algorithm"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcv_1_1_algorithm')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classcv_1_1_algorithm.html">cv::Algorithm</a></td></tr>
+<tr class="memitem:a68eeca71617474ad3d4561786f0289d2 inherit pro_methods_classcv_1_1_algorithm"><td class="memItemLeft" align="right" valign="top"><a id="a68eeca71617474ad3d4561786f0289d2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>writeFormat</b> (<a class="el" href="classcv_1_1_file_storage.html">FileStorage</a> &amp;fs) const</td></tr>
+<tr class="separator:a68eeca71617474ad3d4561786f0289d2 inherit pro_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68eeca71617474ad3d4561786f0289d2 inherit pro_methods_classcv_1_1_algorithm"><td class="memItemLeft" align="right" valign="top"><a id="a68eeca71617474ad3d4561786f0289d2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>writeFormat</b> (<a class="el" href="classcv_1_1_file_storage.html">FileStorage</a> &amp;fs) const</td></tr>
 <tr class="separator:a68eeca71617474ad3d4561786f0289d2 inherit pro_methods_classcv_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>

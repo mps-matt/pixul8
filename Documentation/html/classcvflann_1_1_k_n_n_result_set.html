@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cvflann::KNNResultSet&lt; DistanceType &gt; Class Template Reference</title>
+<title>PixUl8: cvflann::KNNResultSet&lt; DistanceType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -87,11 +85,30 @@ Inheritance diagram for cvflann::KNNResultSet&lt; DistanceType &gt;:</div>
 <area href="classcvflann_1_1_result_set.html" alt="cvflann::ResultSet&lt; DistanceType &gt;" shape="rect" coords="249,0,488,24"/>
 <area href="classcvflann_1_1_result_set.html" alt="cvflann::ResultSet&lt; DistanceType &gt;" shape="rect" coords="498,0,737,24"/>
 <area href="classcvflann_1_1_result_set.html" alt="cvflann::ResultSet&lt; DistanceType &gt;" shape="rect" coords="747,0,986,24"/>
+<area href="classcvflann_1_1_result_set.html" alt="cvflann::ResultSet&lt; DistanceType &gt;" shape="rect" coords="996,0,1235,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aed8fc59bf2fec164a47e2fabf63dc281"><td class="memItemLeft" align="right" valign="top"><a id="aed8fc59bf2fec164a47e2fabf63dc281"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>KNNResultSet</b> (int capacity_)</td></tr>
+<tr class="separator:aed8fc59bf2fec164a47e2fabf63dc281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9eab3480d859a6bc93d3c8ca963b41b"><td class="memItemLeft" align="right" valign="top"><a id="ae9eab3480d859a6bc93d3c8ca963b41b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (int *indices_, DistanceType *dists_)</td></tr>
+<tr class="separator:ae9eab3480d859a6bc93d3c8ca963b41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afad0f57555270cdce23ddb3a6315665a"><td class="memItemLeft" align="right" valign="top"><a id="afad0f57555270cdce23ddb3a6315665a"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
+<tr class="separator:afad0f57555270cdce23ddb3a6315665a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b83c2e992cf236e8114c6ec7dd71833"><td class="memItemLeft" align="right" valign="top"><a id="a4b83c2e992cf236e8114c6ec7dd71833"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>full</b> () const CV_OVERRIDE</td></tr>
+<tr class="separator:a4b83c2e992cf236e8114c6ec7dd71833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39d1677f427d35fd5c005051276bf400"><td class="memItemLeft" align="right" valign="top"><a id="a39d1677f427d35fd5c005051276bf400"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addPoint</b> (DistanceType dist, int index) CV_OVERRIDE</td></tr>
+<tr class="separator:a39d1677f427d35fd5c005051276bf400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac102e6ccf6f341f63deb6540dc3016ca"><td class="memItemLeft" align="right" valign="top"><a id="ac102e6ccf6f341f63deb6540dc3016ca"></a>
+DistanceType&#160;</td><td class="memItemRight" valign="bottom"><b>worstDist</b> () const CV_OVERRIDE</td></tr>
+<tr class="separator:ac102e6ccf6f341f63deb6540dc3016ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed8fc59bf2fec164a47e2fabf63dc281"><td class="memItemLeft" align="right" valign="top"><a id="aed8fc59bf2fec164a47e2fabf63dc281"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>KNNResultSet</b> (int capacity_)</td></tr>
 <tr class="separator:aed8fc59bf2fec164a47e2fabf63dc281"><td class="memSeparator" colspan="2">&#160;</td></tr>

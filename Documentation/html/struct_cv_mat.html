@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: CvMat Struct Reference</title>
+<title>PixUl8: CvMat Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -170,6 +168,25 @@ union {</td></tr>
 <tr class="separator:aba07fd498ef0785a70903643ad379533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6ce4f6f977f623dc849668c24512b8d"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
 <tr class="separator:ab6ce4f6f977f623dc849668c24512b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba5aae6ebf279af75e177ac11657d90"><td class="memItemLeft" ><a id="aeba5aae6ebf279af75e177ac11657d90"></a>
+union {</td></tr>
+<tr class="memitem:ac09c533207bc7c1965d1776edca22bc5"><td class="memItemLeft" >
+&#160;&#160;&#160;uchar *&#160;&#160;&#160;<b>ptr</b></td></tr>
+<tr class="separator:ac09c533207bc7c1965d1776edca22bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a728ee076c326169df9e5e83165d7dc06"><td class="memItemLeft" >
+&#160;&#160;&#160;short *&#160;&#160;&#160;<b>s</b></td></tr>
+<tr class="separator:a728ee076c326169df9e5e83165d7dc06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9c5bca56f226874dac74bc4aee876c6"><td class="memItemLeft" >
+&#160;&#160;&#160;int *&#160;&#160;&#160;<b>i</b></td></tr>
+<tr class="separator:ac9c5bca56f226874dac74bc4aee876c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a531448830a25a72734aba29e25a387"><td class="memItemLeft" >
+&#160;&#160;&#160;float *&#160;&#160;&#160;<b>fl</b></td></tr>
+<tr class="separator:a7a531448830a25a72734aba29e25a387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6692912678351ddb82cc9239253291c7"><td class="memItemLeft" >
+&#160;&#160;&#160;double *&#160;&#160;&#160;<b>db</b></td></tr>
+<tr class="separator:a6692912678351ddb82cc9239253291c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba5aae6ebf279af75e177ac11657d90"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
+<tr class="separator:aeba5aae6ebf279af75e177ac11657d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Matrix elements are stored row by row. Element (i, j) (i - 0-based row index, j - 0-based column index) of a matrix can be retrieved or modified using CV_MAT_ELEM macro: </p><pre class="fragment">uchar pixval = CV_MAT_ELEM(grayimg, uchar, i, j)
@@ -188,6 +205,10 @@ CV_MAT_ELEM(cameraMatrix, float, 0, 2) = image.width*0.5f;
 CV_MAT_ELEM(cameraMatrix, float, 0, 2) = image.width*0.5f;
 </pre><p>To access multiple-channel matrices, you can use CV_MAT_ELEM(matrix, type, i, j*nchannels + channel_idx).</p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000167">Deprecated:</a></b></dt><dd><a class="el" href="struct_cv_mat.html">CvMat</a> is now obsolete; consider using Mat instead. </dd></dl>
+<p>Matrix elements are stored row by row. Element (i, j) (i - 0-based row index, j - 0-based column index) of a matrix can be retrieved or modified using CV_MAT_ELEM macro: </p><pre class="fragment">uchar pixval = CV_MAT_ELEM(grayimg, uchar, i, j)
+CV_MAT_ELEM(cameraMatrix, float, 0, 2) = image.width*0.5f;
+</pre><p>To access multiple-channel matrices, you can use CV_MAT_ELEM(matrix, type, i, j*nchannels + channel_idx).</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000214">Deprecated:</a></b></dt><dd><a class="el" href="struct_cv_mat.html">CvMat</a> is now obsolete; consider using Mat instead. </dd></dl>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>PixUl8/OpenCV/opencv2.framework/Versions/A/Headers/core/<a class="el" href="_open_c_v_2opencv2_8framework_2_versions_2_a_2_headers_2core_2types__c_8h_source.html">types_c.h</a></li>
 </ul>

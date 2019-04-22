@@ -17,7 +17,6 @@ var searchData=
   ['hogdescriptor',['HOGDescriptor',['../structcv_1_1_h_o_g_descriptor.html',1,'cv']]],
   ['homepage',['HomePage',['../class_pix_ul8_1_1_views_1_1_home_page.html',1,'PixUl8::Views']]],
   ['homeviewmodel',['HomeViewModel',['../class_pix_ul8_1_1_view_models_1_1_home_view_model.html',1,'PixUl8::ViewModels']]],
-  ['homeviewmodeltests',['HomeViewModelTests',['../class_pix_ul8_1_1_tests_1_1_home_view_model_tests.html',1,'PixUl8::Tests']]],
   ['homographybasedestimator',['HomographyBasedEstimator',['../classcv_1_1detail_1_1_homography_based_estimator.html',1,'cv::detail']]],
   ['horizontalgestures',['HorizontalGestures',['../class_slide_over_kit_1_1_horizontal_gestures.html',1,'SlideOverKit']]],
   ['hostmem',['HostMem',['../classcv_1_1cuda_1_1_host_mem.html',1,'cv::cuda']]]

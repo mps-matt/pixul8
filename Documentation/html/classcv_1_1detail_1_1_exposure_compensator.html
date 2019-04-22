@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::detail::ExposureCompensator Class Reference</title>
+<title>PixUl8: cv::detail::ExposureCompensator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -92,14 +90,17 @@ Inheritance diagram for cv::detail::ExposureCompensator:</div>
 <area href="classcv_1_1detail_1_1_blocks_gain_compensator.html" title="Exposure compensator which tries to remove exposure related artifacts by adjusting image block intens..." alt="cv::detail::BlocksGainCompensator" shape="rect" coords="221,112,432,136"/>
 <area href="classcv_1_1detail_1_1_blocks_gain_compensator.html" title="Exposure compensator which tries to remove exposure related artifacts by adjusting image block intens..." alt="cv::detail::BlocksGainCompensator" shape="rect" coords="221,168,432,192"/>
 <area href="classcv_1_1detail_1_1_blocks_gain_compensator.html" title="Exposure compensator which tries to remove exposure related artifacts by adjusting image block intens..." alt="cv::detail::BlocksGainCompensator" shape="rect" coords="221,224,432,248"/>
-<area href="classcv_1_1detail_1_1_gain_compensator.html" title="Exposure compensator which tries to remove exposure related artifacts by adjusting image intensities,..." alt="cv::detail::GainCompensator" shape="rect" coords="221,280,432,304"/>
+<area href="classcv_1_1detail_1_1_blocks_gain_compensator.html" title="Exposure compensator which tries to remove exposure related artifacts by adjusting image block intens..." alt="cv::detail::BlocksGainCompensator" shape="rect" coords="221,280,432,304"/>
 <area href="classcv_1_1detail_1_1_gain_compensator.html" title="Exposure compensator which tries to remove exposure related artifacts by adjusting image intensities,..." alt="cv::detail::GainCompensator" shape="rect" coords="221,336,432,360"/>
 <area href="classcv_1_1detail_1_1_gain_compensator.html" title="Exposure compensator which tries to remove exposure related artifacts by adjusting image intensities,..." alt="cv::detail::GainCompensator" shape="rect" coords="221,392,432,416"/>
 <area href="classcv_1_1detail_1_1_gain_compensator.html" title="Exposure compensator which tries to remove exposure related artifacts by adjusting image intensities,..." alt="cv::detail::GainCompensator" shape="rect" coords="221,448,432,472"/>
-<area href="classcv_1_1detail_1_1_no_exposure_compensator.html" title="Stub exposure compensator which does nothing." alt="cv::detail::NoExposureCompensator" shape="rect" coords="221,504,432,528"/>
-<area href="classcv_1_1detail_1_1_no_exposure_compensator.html" title="Stub exposure compensator which does nothing." alt="cv::detail::NoExposureCompensator" shape="rect" coords="221,560,432,584"/>
+<area href="classcv_1_1detail_1_1_gain_compensator.html" title="Exposure compensator which tries to remove exposure related artifacts by adjusting image intensities,..." alt="cv::detail::GainCompensator" shape="rect" coords="221,504,432,528"/>
+<area href="classcv_1_1detail_1_1_gain_compensator.html" title="Exposure compensator which tries to remove exposure related artifacts by adjusting image intensities,..." alt="cv::detail::GainCompensator" shape="rect" coords="221,560,432,584"/>
 <area href="classcv_1_1detail_1_1_no_exposure_compensator.html" title="Stub exposure compensator which does nothing." alt="cv::detail::NoExposureCompensator" shape="rect" coords="221,616,432,640"/>
 <area href="classcv_1_1detail_1_1_no_exposure_compensator.html" title="Stub exposure compensator which does nothing." alt="cv::detail::NoExposureCompensator" shape="rect" coords="221,672,432,696"/>
+<area href="classcv_1_1detail_1_1_no_exposure_compensator.html" title="Stub exposure compensator which does nothing." alt="cv::detail::NoExposureCompensator" shape="rect" coords="221,728,432,752"/>
+<area href="classcv_1_1detail_1_1_no_exposure_compensator.html" title="Stub exposure compensator which does nothing." alt="cv::detail::NoExposureCompensator" shape="rect" coords="221,784,432,808"/>
+<area href="classcv_1_1detail_1_1_no_exposure_compensator.html" title="Stub exposure compensator which does nothing." alt="cv::detail::NoExposureCompensator" shape="rect" coords="221,840,432,864"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -125,9 +126,21 @@ Public Types</h2></td></tr>
 <b>GAIN_BLOCKS</b>
  }</td></tr>
 <tr class="separator:ac54b944c2379a9d86997ae496c8db230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5acb7f10b40971980036462968dcca"><td class="memItemLeft" align="right" valign="top"><a id="a7b5acb7f10b40971980036462968dcca"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>NO</b>, 
+<b>GAIN</b>, 
+<b>GAIN_BLOCKS</b>
+ }</td></tr>
+<tr class="separator:a7b5acb7f10b40971980036462968dcca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ae6b0cc69a7bc53818ddea53eddb6bdba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_exposure_compensator.html#ae6b0cc69a7bc53818ddea53eddb6bdba">feed</a> (const std::vector&lt; <a class="el" href="classcv_1_1_point__.html">Point</a> &gt; &amp;corners, const std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt; &amp;images, const std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt; &amp;masks)</td></tr>
+<tr class="separator:ae6b0cc69a7bc53818ddea53eddb6bdba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469ee24e889b645c2a0648658b356043"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_exposure_compensator.html#a469ee24e889b645c2a0648658b356043">feed</a> (const std::vector&lt; <a class="el" href="classcv_1_1_point__.html">Point</a> &gt; &amp;corners, const std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt; &amp;images, const std::vector&lt; std::pair&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a>, uchar &gt; &gt; &amp;masks)=0</td></tr>
+<tr class="separator:a469ee24e889b645c2a0648658b356043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a473eaf1e585804c08d77c91e004f93aa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_exposure_compensator.html#a473eaf1e585804c08d77c91e004f93aa">apply</a> (int index, <a class="el" href="classcv_1_1_point__.html">Point</a> corner, <a class="el" href="classcv_1_1___input_output_array.html">InputOutputArray</a> image, InputArray mask)=0</td></tr>
+<tr class="memdesc:a473eaf1e585804c08d77c91e004f93aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compensate exposure in the specified image.  <a href="#a473eaf1e585804c08d77c91e004f93aa">More...</a><br /></td></tr>
+<tr class="separator:a473eaf1e585804c08d77c91e004f93aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6b0cc69a7bc53818ddea53eddb6bdba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_exposure_compensator.html#ae6b0cc69a7bc53818ddea53eddb6bdba">feed</a> (const std::vector&lt; <a class="el" href="classcv_1_1_point__.html">Point</a> &gt; &amp;corners, const std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt; &amp;images, const std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt; &amp;masks)</td></tr>
 <tr class="separator:ae6b0cc69a7bc53818ddea53eddb6bdba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a469ee24e889b645c2a0648658b356043"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1detail_1_1_exposure_compensator.html#a469ee24e889b645c2a0648658b356043">feed</a> (const std::vector&lt; <a class="el" href="classcv_1_1_point__.html">Point</a> &gt; &amp;corners, const std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt; &amp;images, const std::vector&lt; std::pair&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a>, uchar &gt; &gt; &amp;masks)=0</td></tr>
@@ -171,12 +184,15 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 <tr class="memitem:a72d0796c30091cdc686ad63ea46ebdc4"><td class="memItemLeft" align="right" valign="top"><a id="a72d0796c30091cdc686ad63ea46ebdc4"></a>
 static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1detail_1_1_exposure_compensator.html">ExposureCompensator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createDefault</b> (int type)</td></tr>
 <tr class="separator:a72d0796c30091cdc686ad63ea46ebdc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d0796c30091cdc686ad63ea46ebdc4"><td class="memItemLeft" align="right" valign="top"><a id="a72d0796c30091cdc686ad63ea46ebdc4"></a>
+static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1detail_1_1_exposure_compensator.html">ExposureCompensator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createDefault</b> (int type)</td></tr>
+<tr class="separator:a72d0796c30091cdc686ad63ea46ebdc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for all exposure compensators. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a473eaf1e585804c08d77c91e004f93aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a473eaf1e585804c08d77c91e004f93aa">&#9670;&nbsp;</a></span>apply() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a473eaf1e585804c08d77c91e004f93aa">&#9670;&nbsp;</a></span>apply() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,12 +248,12 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, and <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>.</p>
+<p>Implemented in <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, and <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>.</p>
 
 </div>
 </div>
 <a id="a473eaf1e585804c08d77c91e004f93aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a473eaf1e585804c08d77c91e004f93aa">&#9670;&nbsp;</a></span>apply() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a473eaf1e585804c08d77c91e004f93aa">&#9670;&nbsp;</a></span>apply() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,12 +309,12 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, and <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>.</p>
+<p>Implemented in <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, and <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>.</p>
 
 </div>
 </div>
 <a id="a473eaf1e585804c08d77c91e004f93aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a473eaf1e585804c08d77c91e004f93aa">&#9670;&nbsp;</a></span>apply() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a473eaf1e585804c08d77c91e004f93aa">&#9670;&nbsp;</a></span>apply() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -354,12 +370,12 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, and <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>.</p>
+<p>Implemented in <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, and <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>.</p>
 
 </div>
 </div>
 <a id="a473eaf1e585804c08d77c91e004f93aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a473eaf1e585804c08d77c91e004f93aa">&#9670;&nbsp;</a></span>apply() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a473eaf1e585804c08d77c91e004f93aa">&#9670;&nbsp;</a></span>apply() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -415,12 +431,73 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, and <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>.</p>
+<p>Implemented in <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, and <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>.</p>
+
+</div>
+</div>
+<a id="a473eaf1e585804c08d77c91e004f93aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a473eaf1e585804c08d77c91e004f93aa">&#9670;&nbsp;</a></span>apply() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void cv::detail::ExposureCompensator::apply </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcv_1_1_point__.html">Point</a>&#160;</td>
+          <td class="paramname"><em>corner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcv_1_1___input_output_array.html">InputOutputArray</a>&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InputArray&#160;</td>
+          <td class="paramname"><em>mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compensate exposure in the specified image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Image index </td></tr>
+    <tr><td class="paramname">corner</td><td>Image top-left corner </td></tr>
+    <tr><td class="paramname">image</td><td>Image to process </td></tr>
+    <tr><td class="paramname">mask</td><td>Image mask </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#acae1be1bd0051e970ec02764a522e325">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a46c3121e915fd439f88bbbe3a54b18ef">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>, and <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#a85ba499493a5793474d2801e8c249c06">cv::detail::NoExposureCompensator</a>.</p>
 
 </div>
 </div>
 <a id="ae6b0cc69a7bc53818ddea53eddb6bdba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6b0cc69a7bc53818ddea53eddb6bdba">&#9670;&nbsp;</a></span>feed() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b0cc69a7bc53818ddea53eddb6bdba">&#9670;&nbsp;</a></span>feed() <span class="overload">[1/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -462,7 +539,7 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 </div>
 </div>
 <a id="ae6b0cc69a7bc53818ddea53eddb6bdba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6b0cc69a7bc53818ddea53eddb6bdba">&#9670;&nbsp;</a></span>feed() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b0cc69a7bc53818ddea53eddb6bdba">&#9670;&nbsp;</a></span>feed() <span class="overload">[2/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -504,7 +581,7 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 </div>
 </div>
 <a id="ae6b0cc69a7bc53818ddea53eddb6bdba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6b0cc69a7bc53818ddea53eddb6bdba">&#9670;&nbsp;</a></span>feed() <span class="overload">[3/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b0cc69a7bc53818ddea53eddb6bdba">&#9670;&nbsp;</a></span>feed() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -546,7 +623,49 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 </div>
 </div>
 <a id="ae6b0cc69a7bc53818ddea53eddb6bdba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6b0cc69a7bc53818ddea53eddb6bdba">&#9670;&nbsp;</a></span>feed() <span class="overload">[4/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b0cc69a7bc53818ddea53eddb6bdba">&#9670;&nbsp;</a></span>feed() <span class="overload">[4/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cv::detail::ExposureCompensator::feed </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classcv_1_1_point__.html">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>corners</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>images</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>masks</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">corners</td><td>Source image top-left corners </td></tr>
+    <tr><td class="paramname">images</td><td>Source images </td></tr>
+    <tr><td class="paramname">masks</td><td>Image masks to update (second value in pair specifies the value which should be used to detect where image is) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae6b0cc69a7bc53818ddea53eddb6bdba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b0cc69a7bc53818ddea53eddb6bdba">&#9670;&nbsp;</a></span>feed() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -588,7 +707,7 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 </div>
 </div>
 <a id="a469ee24e889b645c2a0648658b356043"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a469ee24e889b645c2a0648658b356043">&#9670;&nbsp;</a></span>feed() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a469ee24e889b645c2a0648658b356043">&#9670;&nbsp;</a></span>feed() <span class="overload">[6/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -628,12 +747,12 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 </div><div class="memdoc">
 <p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
-<p>Implemented in <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, and <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>.</p>
+<p>Implemented in <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, and <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>.</p>
 
 </div>
 </div>
 <a id="a469ee24e889b645c2a0648658b356043"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a469ee24e889b645c2a0648658b356043">&#9670;&nbsp;</a></span>feed() <span class="overload">[6/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a469ee24e889b645c2a0648658b356043">&#9670;&nbsp;</a></span>feed() <span class="overload">[7/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -673,12 +792,12 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 </div><div class="memdoc">
 <p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
-<p>Implemented in <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, and <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>.</p>
+<p>Implemented in <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, and <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>.</p>
 
 </div>
 </div>
 <a id="a469ee24e889b645c2a0648658b356043"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a469ee24e889b645c2a0648658b356043">&#9670;&nbsp;</a></span>feed() <span class="overload">[7/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a469ee24e889b645c2a0648658b356043">&#9670;&nbsp;</a></span>feed() <span class="overload">[8/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -718,12 +837,12 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 </div><div class="memdoc">
 <p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
-<p>Implemented in <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, and <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>.</p>
+<p>Implemented in <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, and <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>.</p>
 
 </div>
 </div>
 <a id="a469ee24e889b645c2a0648658b356043"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a469ee24e889b645c2a0648658b356043">&#9670;&nbsp;</a></span>feed() <span class="overload">[8/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a469ee24e889b645c2a0648658b356043">&#9670;&nbsp;</a></span>feed() <span class="overload">[9/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -763,7 +882,52 @@ static <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href
 </div><div class="memdoc">
 <p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
-<p>Implemented in <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, and <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>.</p>
+<p>Implemented in <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, and <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>.</p>
+
+</div>
+</div>
+<a id="a469ee24e889b645c2a0648658b356043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a469ee24e889b645c2a0648658b356043">&#9670;&nbsp;</a></span>feed() <span class="overload">[10/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void cv::detail::ExposureCompensator::feed </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classcv_1_1_point__.html">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>corners</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>images</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::pair&lt; <a class="el" href="classcv_1_1_u_mat.html">UMat</a>, uchar &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>masks</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+<p>Implemented in <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_blocks_gain_compensator.html#adfebf2569b39ef2599bc2fe98ac80a59">cv::detail::BlocksGainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_gain_compensator.html#a82008c64988de865ef4ae34491ece331">cv::detail::GainCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>, and <a class="el" href="classcv_1_1detail_1_1_no_exposure_compensator.html#ade1d7db11e1695e8ba2a5359e7102e64">cv::detail::NoExposureCompensator</a>.</p>
 
 </div>
 </div>

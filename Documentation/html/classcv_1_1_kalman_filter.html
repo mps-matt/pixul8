@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::KalmanFilter Class Reference</title>
+<title>PixUl8: cv::KalmanFilter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -84,6 +82,17 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a02122ed395a1cd3234a569be48fefdd3"><td class="memItemLeft" align="right" valign="top">CV_WRAP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_kalman_filter.html#a02122ed395a1cd3234a569be48fefdd3">KalmanFilter</a> (int dynamParams, int measureParams, int controlParams=0, int type=CV_32F)</td></tr>
+<tr class="separator:a02122ed395a1cd3234a569be48fefdd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f136c39c016d3530c7c5801dd1ddb3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_kalman_filter.html#a4f136c39c016d3530c7c5801dd1ddb3b">init</a> (int dynamParams, int measureParams, int controlParams=0, int type=CV_32F)</td></tr>
+<tr class="memdesc:a4f136c39c016d3530c7c5801dd1ddb3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Re-initializes Kalman filter. The previous content is destroyed.  <a href="#a4f136c39c016d3530c7c5801dd1ddb3b">More...</a><br /></td></tr>
+<tr class="separator:a4f136c39c016d3530c7c5801dd1ddb3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93fca2f23322ae31df3395ba45fa9127"><td class="memItemLeft" align="right" valign="top">CV_WRAP const <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_kalman_filter.html#a93fca2f23322ae31df3395ba45fa9127">predict</a> (const <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;control=<a class="el" href="classcv_1_1_mat.html">Mat</a>())</td></tr>
+<tr class="memdesc:a93fca2f23322ae31df3395ba45fa9127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a predicted state.  <a href="#a93fca2f23322ae31df3395ba45fa9127">More...</a><br /></td></tr>
+<tr class="separator:a93fca2f23322ae31df3395ba45fa9127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42ff8ff675a76850295776e521a2eeb1"><td class="memItemLeft" align="right" valign="top">CV_WRAP const <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_kalman_filter.html#a42ff8ff675a76850295776e521a2eeb1">correct</a> (const <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;measurement)</td></tr>
+<tr class="memdesc:a42ff8ff675a76850295776e521a2eeb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the predicted state from the measurement.  <a href="#a42ff8ff675a76850295776e521a2eeb1">More...</a><br /></td></tr>
+<tr class="separator:a42ff8ff675a76850295776e521a2eeb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02122ed395a1cd3234a569be48fefdd3"><td class="memItemLeft" align="right" valign="top">CV_WRAP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_kalman_filter.html#a02122ed395a1cd3234a569be48fefdd3">KalmanFilter</a> (int dynamParams, int measureParams, int controlParams=0, int type=CV_32F)</td></tr>
 <tr class="separator:a02122ed395a1cd3234a569be48fefdd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f136c39c016d3530c7c5801dd1ddb3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_kalman_filter.html#a4f136c39c016d3530c7c5801dd1ddb3b">init</a> (int dynamParams, int measureParams, int controlParams=0, int type=CV_32F)</td></tr>
@@ -192,7 +201,7 @@ CV_PROP_RW <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class
 <p>The class implements a standard Kalman filter <a href="http://en.wikipedia.org/wiki/Kalman_filter">http://en.wikipedia.org/wiki/Kalman_filter</a>, <b>[Welch95]</b> . However, you can modify transitionMatrix, controlMatrix, and measurementMatrix to get an extended Kalman filter functionality. </p><dl class="section note"><dt>Note</dt><dd>In C API when CvKalman* kalmanFilter structure is not needed anymore, it should be released with cvReleaseKalman(&amp;kalmanFilter) </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a02122ed395a1cd3234a569be48fefdd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02122ed395a1cd3234a569be48fefdd3">&#9670;&nbsp;</a></span>KalmanFilter() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a02122ed395a1cd3234a569be48fefdd3">&#9670;&nbsp;</a></span>KalmanFilter() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,7 +250,7 @@ CV_PROP_RW <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class
 </div>
 </div>
 <a id="a02122ed395a1cd3234a569be48fefdd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02122ed395a1cd3234a569be48fefdd3">&#9670;&nbsp;</a></span>KalmanFilter() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a02122ed395a1cd3234a569be48fefdd3">&#9670;&nbsp;</a></span>KalmanFilter() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -290,7 +299,7 @@ CV_PROP_RW <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class
 </div>
 </div>
 <a id="a02122ed395a1cd3234a569be48fefdd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02122ed395a1cd3234a569be48fefdd3">&#9670;&nbsp;</a></span>KalmanFilter() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a02122ed395a1cd3234a569be48fefdd3">&#9670;&nbsp;</a></span>KalmanFilter() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -339,7 +348,56 @@ CV_PROP_RW <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class
 </div>
 </div>
 <a id="a02122ed395a1cd3234a569be48fefdd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02122ed395a1cd3234a569be48fefdd3">&#9670;&nbsp;</a></span>KalmanFilter() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a02122ed395a1cd3234a569be48fefdd3">&#9670;&nbsp;</a></span>KalmanFilter() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP cv::KalmanFilter::KalmanFilter </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dynamParams</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>measureParams</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>controlParams</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em> = <code>CV_32F</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dynamParams</td><td>Dimensionality of the state. </td></tr>
+    <tr><td class="paramname">measureParams</td><td>Dimensionality of the measurement. </td></tr>
+    <tr><td class="paramname">controlParams</td><td>Dimensionality of the control vector. </td></tr>
+    <tr><td class="paramname">type</td><td>Type of the created matrices that should be CV_32F or CV_64F. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a02122ed395a1cd3234a569be48fefdd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02122ed395a1cd3234a569be48fefdd3">&#9670;&nbsp;</a></span>KalmanFilter() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -389,7 +447,7 @@ CV_PROP_RW <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a42ff8ff675a76850295776e521a2eeb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42ff8ff675a76850295776e521a2eeb1">&#9670;&nbsp;</a></span>correct() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a42ff8ff675a76850295776e521a2eeb1">&#9670;&nbsp;</a></span>correct() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -415,7 +473,7 @@ CV_PROP_RW <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class
 </div>
 </div>
 <a id="a42ff8ff675a76850295776e521a2eeb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42ff8ff675a76850295776e521a2eeb1">&#9670;&nbsp;</a></span>correct() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a42ff8ff675a76850295776e521a2eeb1">&#9670;&nbsp;</a></span>correct() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -441,7 +499,7 @@ CV_PROP_RW <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class
 </div>
 </div>
 <a id="a42ff8ff675a76850295776e521a2eeb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42ff8ff675a76850295776e521a2eeb1">&#9670;&nbsp;</a></span>correct() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a42ff8ff675a76850295776e521a2eeb1">&#9670;&nbsp;</a></span>correct() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -467,7 +525,33 @@ CV_PROP_RW <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class
 </div>
 </div>
 <a id="a42ff8ff675a76850295776e521a2eeb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42ff8ff675a76850295776e521a2eeb1">&#9670;&nbsp;</a></span>correct() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a42ff8ff675a76850295776e521a2eeb1">&#9670;&nbsp;</a></span>correct() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP const <a class="el" href="classcv_1_1_mat.html">Mat</a>&amp; cv::KalmanFilter::correct </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;&#160;</td>
+          <td class="paramname"><em>measurement</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the predicted state from the measurement. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">measurement</td><td>The measured system parameters </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a42ff8ff675a76850295776e521a2eeb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42ff8ff675a76850295776e521a2eeb1">&#9670;&nbsp;</a></span>correct() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -493,7 +577,7 @@ CV_PROP_RW <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class
 </div>
 </div>
 <a id="a4f136c39c016d3530c7c5801dd1ddb3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f136c39c016d3530c7c5801dd1ddb3b">&#9670;&nbsp;</a></span>init() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f136c39c016d3530c7c5801dd1ddb3b">&#9670;&nbsp;</a></span>init() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -544,7 +628,7 @@ CV_PROP_RW <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class
 </div>
 </div>
 <a id="a4f136c39c016d3530c7c5801dd1ddb3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f136c39c016d3530c7c5801dd1ddb3b">&#9670;&nbsp;</a></span>init() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f136c39c016d3530c7c5801dd1ddb3b">&#9670;&nbsp;</a></span>init() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -595,7 +679,7 @@ CV_PROP_RW <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class
 </div>
 </div>
 <a id="a4f136c39c016d3530c7c5801dd1ddb3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f136c39c016d3530c7c5801dd1ddb3b">&#9670;&nbsp;</a></span>init() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f136c39c016d3530c7c5801dd1ddb3b">&#9670;&nbsp;</a></span>init() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -646,7 +730,58 @@ CV_PROP_RW <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class
 </div>
 </div>
 <a id="a4f136c39c016d3530c7c5801dd1ddb3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f136c39c016d3530c7c5801dd1ddb3b">&#9670;&nbsp;</a></span>init() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f136c39c016d3530c7c5801dd1ddb3b">&#9670;&nbsp;</a></span>init() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cv::KalmanFilter::init </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dynamParams</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>measureParams</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>controlParams</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em> = <code>CV_32F</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Re-initializes Kalman filter. The previous content is destroyed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dynamParams</td><td>Dimensionality of the state. </td></tr>
+    <tr><td class="paramname">measureParams</td><td>Dimensionality of the measurement. </td></tr>
+    <tr><td class="paramname">controlParams</td><td>Dimensionality of the control vector. </td></tr>
+    <tr><td class="paramname">type</td><td>Type of the created matrices that should be CV_32F or CV_64F. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4f136c39c016d3530c7c5801dd1ddb3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f136c39c016d3530c7c5801dd1ddb3b">&#9670;&nbsp;</a></span>init() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -697,7 +832,7 @@ CV_PROP_RW <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class
 </div>
 </div>
 <a id="a93fca2f23322ae31df3395ba45fa9127"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93fca2f23322ae31df3395ba45fa9127">&#9670;&nbsp;</a></span>predict() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a93fca2f23322ae31df3395ba45fa9127">&#9670;&nbsp;</a></span>predict() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -723,7 +858,7 @@ CV_PROP_RW <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class
 </div>
 </div>
 <a id="a93fca2f23322ae31df3395ba45fa9127"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93fca2f23322ae31df3395ba45fa9127">&#9670;&nbsp;</a></span>predict() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a93fca2f23322ae31df3395ba45fa9127">&#9670;&nbsp;</a></span>predict() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -749,7 +884,7 @@ CV_PROP_RW <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class
 </div>
 </div>
 <a id="a93fca2f23322ae31df3395ba45fa9127"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93fca2f23322ae31df3395ba45fa9127">&#9670;&nbsp;</a></span>predict() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a93fca2f23322ae31df3395ba45fa9127">&#9670;&nbsp;</a></span>predict() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -775,7 +910,33 @@ CV_PROP_RW <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class
 </div>
 </div>
 <a id="a93fca2f23322ae31df3395ba45fa9127"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93fca2f23322ae31df3395ba45fa9127">&#9670;&nbsp;</a></span>predict() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a93fca2f23322ae31df3395ba45fa9127">&#9670;&nbsp;</a></span>predict() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP const <a class="el" href="classcv_1_1_mat.html">Mat</a>&amp; cv::KalmanFilter::predict </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;&#160;</td>
+          <td class="paramname"><em>control</em> = <code><a class="el" href="classcv_1_1_mat.html">Mat</a>()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes a predicted state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">control</td><td>The optional input control </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a93fca2f23322ae31df3395ba45fa9127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93fca2f23322ae31df3395ba45fa9127">&#9670;&nbsp;</a></span>predict() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: C API for video I/O</title>
+<title>PixUl8: C API for video I/O</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -125,9 +123,27 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__videoio__c.html#gaf56b22cc0b0c1985359738735ed8a46a">CV_FOURCC_DEFAULT</a>&#160;&#160;&#160;<a class="el" href="group__videoio__c.html#ga902fecb44bdb8d6b568183dbd4eada3d">CV_FOURCC</a>('I', 'Y', 'U', 'V')</td></tr>
 <tr class="memdesc:gaf56b22cc0b0c1985359738735ed8a46a"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Linux only) Use default codec for specified filename <br /></td></tr>
 <tr class="separator:gaf56b22cc0b0c1985359738735ed8a46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae50212337d3b05af7acb23d9efa611c3"><td class="memItemLeft" align="right" valign="top"><a id="gae50212337d3b05af7acb23d9efa611c3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__videoio__c.html#gae50212337d3b05af7acb23d9efa611c3">CV_FOURCC_MACRO</a>(c1,  c2,  c3,  c4)&#160;&#160;&#160;(((c1) &amp; 255) + (((c2) &amp; 255) &lt;&lt; 8) + (((c3) &amp; 255) &lt;&lt; 16) + (((c4) &amp; 255) &lt;&lt; 24))</td></tr>
+<tr class="memdesc:gae50212337d3b05af7acb23d9efa611c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to construct the fourcc code of the codec. Same as <a class="el" href="group__videoio__c.html#ga902fecb44bdb8d6b568183dbd4eada3d" title="Constructs the fourcc code of the codec function.">CV_FOURCC()</a> <br /></td></tr>
+<tr class="separator:gae50212337d3b05af7acb23d9efa611c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5964e4ca5f467fde5624c2d64db8105d"><td class="memItemLeft" align="right" valign="top"><a id="ga5964e4ca5f467fde5624c2d64db8105d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__videoio__c.html#ga5964e4ca5f467fde5624c2d64db8105d">CV_FOURCC_PROMPT</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="memdesc:ga5964e4ca5f467fde5624c2d64db8105d"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Windows only) Open Codec Selection Dialog <br /></td></tr>
+<tr class="separator:ga5964e4ca5f467fde5624c2d64db8105d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf56b22cc0b0c1985359738735ed8a46a"><td class="memItemLeft" align="right" valign="top"><a id="gaf56b22cc0b0c1985359738735ed8a46a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__videoio__c.html#gaf56b22cc0b0c1985359738735ed8a46a">CV_FOURCC_DEFAULT</a>&#160;&#160;&#160;<a class="el" href="group__videoio__c.html#ga902fecb44bdb8d6b568183dbd4eada3d">CV_FOURCC</a>('I', 'Y', 'U', 'V')</td></tr>
+<tr class="memdesc:gaf56b22cc0b0c1985359738735ed8a46a"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Linux only) Use default codec for specified filename <br /></td></tr>
+<tr class="separator:gaf56b22cc0b0c1985359738735ed8a46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ga394109074fab9bdca2ea45514b1946b7"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__videoio__c.html#ga394109074fab9bdca2ea45514b1946b7">CvCapture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__videoio__c.html#ga394109074fab9bdca2ea45514b1946b7">CvCapture</a></td></tr>
+<tr class="memdesc:ga394109074fab9bdca2ea45514b1946b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">"black box" capture structure  <a href="#ga394109074fab9bdca2ea45514b1946b7">More...</a><br /></td></tr>
+<tr class="separator:ga394109074fab9bdca2ea45514b1946b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga888ba48aa022b60aecf98a462aa1b638"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__videoio__c.html#ga888ba48aa022b60aecf98a462aa1b638">CvVideoWriter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__videoio__c.html#ga888ba48aa022b60aecf98a462aa1b638">CvVideoWriter</a></td></tr>
+<tr class="memdesc:ga888ba48aa022b60aecf98a462aa1b638"><td class="mdescLeft">&#160;</td><td class="mdescRight">"black box" video file writer structure  <a href="#ga888ba48aa022b60aecf98a462aa1b638">More...</a><br /></td></tr>
+<tr class="separator:ga888ba48aa022b60aecf98a462aa1b638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga394109074fab9bdca2ea45514b1946b7"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__videoio__c.html#ga394109074fab9bdca2ea45514b1946b7">CvCapture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__videoio__c.html#ga394109074fab9bdca2ea45514b1946b7">CvCapture</a></td></tr>
 <tr class="memdesc:ga394109074fab9bdca2ea45514b1946b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">"black box" capture structure  <a href="#ga394109074fab9bdca2ea45514b1946b7">More...</a><br /></td></tr>
 <tr class="separator:ga394109074fab9bdca2ea45514b1946b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1879,6 +1895,437 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ga04a7e2e0fb4607e9f468ef40751417ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ed4d0913429a6359403e7559cf4f115"><td class="memItemLeft" align="right" valign="top"><a id="ga4ed4d0913429a6359403e7559cf4f115"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>CV_CAP_ANY</b> =0, 
+<b>CV_CAP_MIL</b> =100, 
+<b>CV_CAP_VFW</b> =200, 
+<b>CV_CAP_V4L</b> =200, 
+<br />
+&#160;&#160;<b>CV_CAP_V4L2</b> =200, 
+<b>CV_CAP_FIREWARE</b> =300, 
+<b>CV_CAP_FIREWIRE</b> =300, 
+<b>CV_CAP_IEEE1394</b> =300, 
+<br />
+&#160;&#160;<b>CV_CAP_DC1394</b> =300, 
+<b>CV_CAP_CMU1394</b> =300, 
+<b>CV_CAP_STEREO</b> =400, 
+<b>CV_CAP_TYZX</b> =400, 
+<br />
+&#160;&#160;<b>CV_TYZX_LEFT</b> =400, 
+<b>CV_TYZX_RIGHT</b> =401, 
+<b>CV_TYZX_COLOR</b> =402, 
+<b>CV_TYZX_Z</b> =403, 
+<br />
+&#160;&#160;<b>CV_CAP_QT</b> =500, 
+<b>CV_CAP_UNICAP</b> =600, 
+<b>CV_CAP_DSHOW</b> =700, 
+<b>CV_CAP_MSMF</b> =1400, 
+<br />
+&#160;&#160;<b>CV_CAP_PVAPI</b> =800, 
+<b>CV_CAP_OPENNI</b> =900, 
+<b>CV_CAP_OPENNI_ASUS</b> =910, 
+<b>CV_CAP_ANDROID</b> =1000, 
+<br />
+&#160;&#160;<b>CV_CAP_ANDROID_BACK</b> =CV_CAP_ANDROID+99, 
+<b>CV_CAP_ANDROID_FRONT</b> =CV_CAP_ANDROID+98, 
+<b>CV_CAP_XIAPI</b> =1100, 
+<b>CV_CAP_AVFOUNDATION</b> = 1200, 
+<br />
+&#160;&#160;<b>CV_CAP_GIGANETIX</b> = 1300, 
+<b>CV_CAP_INTELPERC</b> = 1500, 
+<b>CV_CAP_OPENNI2</b> = 1600, 
+<b>CV_CAP_GPHOTO2</b> = 1700, 
+<br />
+&#160;&#160;<b>CV_CAP_GSTREAMER</b> = 1800, 
+<b>CV_CAP_FFMPEG</b> = 1900, 
+<b>CV_CAP_IMAGES</b> = 2000, 
+<b>CV_CAP_ARAVIS</b> = 2100
+<br />
+ }</td></tr>
+<tr class="separator:ga4ed4d0913429a6359403e7559cf4f115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9832a4daffbdbb84c8e169ddfc2aa03e"><td class="memItemLeft" align="right" valign="top"><a id="ga9832a4daffbdbb84c8e169ddfc2aa03e"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>CV_CAP_PROP_DC1394_OFF</b> = -4, 
+<b>CV_CAP_PROP_DC1394_MODE_MANUAL</b> = -3, 
+<b>CV_CAP_PROP_DC1394_MODE_AUTO</b> = -2, 
+<b>CV_CAP_PROP_DC1394_MODE_ONE_PUSH_AUTO</b> = -1, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_POS_MSEC</b> =0, 
+<b>CV_CAP_PROP_POS_FRAMES</b> =1, 
+<b>CV_CAP_PROP_POS_AVI_RATIO</b> =2, 
+<b>CV_CAP_PROP_FRAME_WIDTH</b> =3, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_FRAME_HEIGHT</b> =4, 
+<b>CV_CAP_PROP_FPS</b> =5, 
+<b>CV_CAP_PROP_FOURCC</b> =6, 
+<b>CV_CAP_PROP_FRAME_COUNT</b> =7, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_FORMAT</b> =8, 
+<b>CV_CAP_PROP_MODE</b> =9, 
+<b>CV_CAP_PROP_BRIGHTNESS</b> =10, 
+<b>CV_CAP_PROP_CONTRAST</b> =11, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_SATURATION</b> =12, 
+<b>CV_CAP_PROP_HUE</b> =13, 
+<b>CV_CAP_PROP_GAIN</b> =14, 
+<b>CV_CAP_PROP_EXPOSURE</b> =15, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_CONVERT_RGB</b> =16, 
+<b>CV_CAP_PROP_WHITE_BALANCE_BLUE_U</b> =17, 
+<b>CV_CAP_PROP_RECTIFICATION</b> =18, 
+<b>CV_CAP_PROP_MONOCHROME</b> =19, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_SHARPNESS</b> =20, 
+<b>CV_CAP_PROP_AUTO_EXPOSURE</b> =21, 
+<b>CV_CAP_PROP_GAMMA</b> =22, 
+<b>CV_CAP_PROP_TEMPERATURE</b> =23, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_TRIGGER</b> =24, 
+<b>CV_CAP_PROP_TRIGGER_DELAY</b> =25, 
+<b>CV_CAP_PROP_WHITE_BALANCE_RED_V</b> =26, 
+<b>CV_CAP_PROP_ZOOM</b> =27, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_FOCUS</b> =28, 
+<b>CV_CAP_PROP_GUID</b> =29, 
+<b>CV_CAP_PROP_ISO_SPEED</b> =30, 
+<b>CV_CAP_PROP_MAX_DC1394</b> =31, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_BACKLIGHT</b> =32, 
+<b>CV_CAP_PROP_PAN</b> =33, 
+<b>CV_CAP_PROP_TILT</b> =34, 
+<b>CV_CAP_PROP_ROLL</b> =35, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_IRIS</b> =36, 
+<b>CV_CAP_PROP_SETTINGS</b> =37, 
+<b>CV_CAP_PROP_BUFFERSIZE</b> =38, 
+<b>CV_CAP_PROP_AUTOFOCUS</b> =39, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_SAR_NUM</b> =40, 
+<b>CV_CAP_PROP_SAR_DEN</b> =41, 
+<b>CV_CAP_PROP_AUTOGRAB</b> =1024, 
+<b>CV_CAP_PROP_SUPPORTED_PREVIEW_SIZES_STRING</b> =1025, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_PREVIEW_FORMAT</b> =1026, 
+<b>CV_CAP_OPENNI_DEPTH_GENERATOR</b> = 1 &lt;&lt; 31, 
+<b>CV_CAP_OPENNI_IMAGE_GENERATOR</b> = 1 &lt;&lt; 30, 
+<b>CV_CAP_OPENNI_IR_GENERATOR</b> = 1 &lt;&lt; 29, 
+<br />
+&#160;&#160;<b>CV_CAP_OPENNI_GENERATORS_MASK</b> = CV_CAP_OPENNI_DEPTH_GENERATOR + CV_CAP_OPENNI_IMAGE_GENERATOR + CV_CAP_OPENNI_IR_GENERATOR, 
+<b>CV_CAP_PROP_OPENNI_OUTPUT_MODE</b> = 100, 
+<b>CV_CAP_PROP_OPENNI_FRAME_MAX_DEPTH</b> = 101, 
+<b>CV_CAP_PROP_OPENNI_BASELINE</b> = 102, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_OPENNI_FOCAL_LENGTH</b> = 103, 
+<b>CV_CAP_PROP_OPENNI_REGISTRATION</b> = 104, 
+<b>CV_CAP_PROP_OPENNI_REGISTRATION_ON</b> = CV_CAP_PROP_OPENNI_REGISTRATION, 
+<b>CV_CAP_PROP_OPENNI_APPROX_FRAME_SYNC</b> = 105, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_OPENNI_MAX_BUFFER_SIZE</b> = 106, 
+<b>CV_CAP_PROP_OPENNI_CIRCLE_BUFFER</b> = 107, 
+<b>CV_CAP_PROP_OPENNI_MAX_TIME_DURATION</b> = 108, 
+<b>CV_CAP_PROP_OPENNI_GENERATOR_PRESENT</b> = 109, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_OPENNI2_SYNC</b> = 110, 
+<b>CV_CAP_PROP_OPENNI2_MIRROR</b> = 111, 
+<b>CV_CAP_OPENNI_IMAGE_GENERATOR_PRESENT</b> = CV_CAP_OPENNI_IMAGE_GENERATOR + CV_CAP_PROP_OPENNI_GENERATOR_PRESENT, 
+<b>CV_CAP_OPENNI_IMAGE_GENERATOR_OUTPUT_MODE</b> = CV_CAP_OPENNI_IMAGE_GENERATOR + CV_CAP_PROP_OPENNI_OUTPUT_MODE, 
+<br />
+&#160;&#160;<b>CV_CAP_OPENNI_DEPTH_GENERATOR_PRESENT</b> = CV_CAP_OPENNI_DEPTH_GENERATOR + CV_CAP_PROP_OPENNI_GENERATOR_PRESENT, 
+<b>CV_CAP_OPENNI_DEPTH_GENERATOR_BASELINE</b> = CV_CAP_OPENNI_DEPTH_GENERATOR + CV_CAP_PROP_OPENNI_BASELINE, 
+<b>CV_CAP_OPENNI_DEPTH_GENERATOR_FOCAL_LENGTH</b> = CV_CAP_OPENNI_DEPTH_GENERATOR + CV_CAP_PROP_OPENNI_FOCAL_LENGTH, 
+<b>CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION</b> = CV_CAP_OPENNI_DEPTH_GENERATOR + CV_CAP_PROP_OPENNI_REGISTRATION, 
+<br />
+&#160;&#160;<b>CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION_ON</b> = CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION, 
+<b>CV_CAP_OPENNI_IR_GENERATOR_PRESENT</b> = CV_CAP_OPENNI_IR_GENERATOR + CV_CAP_PROP_OPENNI_GENERATOR_PRESENT, 
+<b>CV_CAP_GSTREAMER_QUEUE_LENGTH</b> = 200, 
+<b>CV_CAP_PROP_PVAPI_MULTICASTIP</b> = 300, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_PVAPI_FRAMESTARTTRIGGERMODE</b> = 301, 
+<b>CV_CAP_PROP_PVAPI_DECIMATIONHORIZONTAL</b> = 302, 
+<b>CV_CAP_PROP_PVAPI_DECIMATIONVERTICAL</b> = 303, 
+<b>CV_CAP_PROP_PVAPI_BINNINGX</b> = 304, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_PVAPI_BINNINGY</b> = 305, 
+<b>CV_CAP_PROP_PVAPI_PIXELFORMAT</b> = 306, 
+<b>CV_CAP_PROP_XI_DOWNSAMPLING</b> = 400, 
+<b>CV_CAP_PROP_XI_DATA_FORMAT</b> = 401, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_OFFSET_X</b> = 402, 
+<b>CV_CAP_PROP_XI_OFFSET_Y</b> = 403, 
+<b>CV_CAP_PROP_XI_TRG_SOURCE</b> = 404, 
+<b>CV_CAP_PROP_XI_TRG_SOFTWARE</b> = 405, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_GPI_SELECTOR</b> = 406, 
+<b>CV_CAP_PROP_XI_GPI_MODE</b> = 407, 
+<b>CV_CAP_PROP_XI_GPI_LEVEL</b> = 408, 
+<b>CV_CAP_PROP_XI_GPO_SELECTOR</b> = 409, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_GPO_MODE</b> = 410, 
+<b>CV_CAP_PROP_XI_LED_SELECTOR</b> = 411, 
+<b>CV_CAP_PROP_XI_LED_MODE</b> = 412, 
+<b>CV_CAP_PROP_XI_MANUAL_WB</b> = 413, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_AUTO_WB</b> = 414, 
+<b>CV_CAP_PROP_XI_AEAG</b> = 415, 
+<b>CV_CAP_PROP_XI_EXP_PRIORITY</b> = 416, 
+<b>CV_CAP_PROP_XI_AE_MAX_LIMIT</b> = 417, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_AG_MAX_LIMIT</b> = 418, 
+<b>CV_CAP_PROP_XI_AEAG_LEVEL</b> = 419, 
+<b>CV_CAP_PROP_XI_TIMEOUT</b> = 420, 
+<b>CV_CAP_PROP_XI_EXPOSURE</b> = 421, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_EXPOSURE_BURST_COUNT</b> = 422, 
+<b>CV_CAP_PROP_XI_GAIN_SELECTOR</b> = 423, 
+<b>CV_CAP_PROP_XI_GAIN</b> = 424, 
+<b>CV_CAP_PROP_XI_DOWNSAMPLING_TYPE</b> = 426, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_BINNING_SELECTOR</b> = 427, 
+<b>CV_CAP_PROP_XI_BINNING_VERTICAL</b> = 428, 
+<b>CV_CAP_PROP_XI_BINNING_HORIZONTAL</b> = 429, 
+<b>CV_CAP_PROP_XI_BINNING_PATTERN</b> = 430, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_DECIMATION_SELECTOR</b> = 431, 
+<b>CV_CAP_PROP_XI_DECIMATION_VERTICAL</b> = 432, 
+<b>CV_CAP_PROP_XI_DECIMATION_HORIZONTAL</b> = 433, 
+<b>CV_CAP_PROP_XI_DECIMATION_PATTERN</b> = 434, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_TEST_PATTERN_GENERATOR_SELECTOR</b> = 587, 
+<b>CV_CAP_PROP_XI_TEST_PATTERN</b> = 588, 
+<b>CV_CAP_PROP_XI_IMAGE_DATA_FORMAT</b> = 435, 
+<b>CV_CAP_PROP_XI_SHUTTER_TYPE</b> = 436, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_SENSOR_TAPS</b> = 437, 
+<b>CV_CAP_PROP_XI_AEAG_ROI_OFFSET_X</b> = 439, 
+<b>CV_CAP_PROP_XI_AEAG_ROI_OFFSET_Y</b> = 440, 
+<b>CV_CAP_PROP_XI_AEAG_ROI_WIDTH</b> = 441, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_AEAG_ROI_HEIGHT</b> = 442, 
+<b>CV_CAP_PROP_XI_BPC</b> = 445, 
+<b>CV_CAP_PROP_XI_WB_KR</b> = 448, 
+<b>CV_CAP_PROP_XI_WB_KG</b> = 449, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_WB_KB</b> = 450, 
+<b>CV_CAP_PROP_XI_WIDTH</b> = 451, 
+<b>CV_CAP_PROP_XI_HEIGHT</b> = 452, 
+<b>CV_CAP_PROP_XI_REGION_SELECTOR</b> = 589, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_REGION_MODE</b> = 595, 
+<b>CV_CAP_PROP_XI_LIMIT_BANDWIDTH</b> = 459, 
+<b>CV_CAP_PROP_XI_SENSOR_DATA_BIT_DEPTH</b> = 460, 
+<b>CV_CAP_PROP_XI_OUTPUT_DATA_BIT_DEPTH</b> = 461, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_IMAGE_DATA_BIT_DEPTH</b> = 462, 
+<b>CV_CAP_PROP_XI_OUTPUT_DATA_PACKING</b> = 463, 
+<b>CV_CAP_PROP_XI_OUTPUT_DATA_PACKING_TYPE</b> = 464, 
+<b>CV_CAP_PROP_XI_IS_COOLED</b> = 465, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_COOLING</b> = 466, 
+<b>CV_CAP_PROP_XI_TARGET_TEMP</b> = 467, 
+<b>CV_CAP_PROP_XI_CHIP_TEMP</b> = 468, 
+<b>CV_CAP_PROP_XI_HOUS_TEMP</b> = 469, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_HOUS_BACK_SIDE_TEMP</b> = 590, 
+<b>CV_CAP_PROP_XI_SENSOR_BOARD_TEMP</b> = 596, 
+<b>CV_CAP_PROP_XI_CMS</b> = 470, 
+<b>CV_CAP_PROP_XI_APPLY_CMS</b> = 471, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_IMAGE_IS_COLOR</b> = 474, 
+<b>CV_CAP_PROP_XI_COLOR_FILTER_ARRAY</b> = 475, 
+<b>CV_CAP_PROP_XI_GAMMAY</b> = 476, 
+<b>CV_CAP_PROP_XI_GAMMAC</b> = 477, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_SHARPNESS</b> = 478, 
+<b>CV_CAP_PROP_XI_CC_MATRIX_00</b> = 479, 
+<b>CV_CAP_PROP_XI_CC_MATRIX_01</b> = 480, 
+<b>CV_CAP_PROP_XI_CC_MATRIX_02</b> = 481, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_CC_MATRIX_03</b> = 482, 
+<b>CV_CAP_PROP_XI_CC_MATRIX_10</b> = 483, 
+<b>CV_CAP_PROP_XI_CC_MATRIX_11</b> = 484, 
+<b>CV_CAP_PROP_XI_CC_MATRIX_12</b> = 485, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_CC_MATRIX_13</b> = 486, 
+<b>CV_CAP_PROP_XI_CC_MATRIX_20</b> = 487, 
+<b>CV_CAP_PROP_XI_CC_MATRIX_21</b> = 488, 
+<b>CV_CAP_PROP_XI_CC_MATRIX_22</b> = 489, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_CC_MATRIX_23</b> = 490, 
+<b>CV_CAP_PROP_XI_CC_MATRIX_30</b> = 491, 
+<b>CV_CAP_PROP_XI_CC_MATRIX_31</b> = 492, 
+<b>CV_CAP_PROP_XI_CC_MATRIX_32</b> = 493, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_CC_MATRIX_33</b> = 494, 
+<b>CV_CAP_PROP_XI_DEFAULT_CC_MATRIX</b> = 495, 
+<b>CV_CAP_PROP_XI_TRG_SELECTOR</b> = 498, 
+<b>CV_CAP_PROP_XI_ACQ_FRAME_BURST_COUNT</b> = 499, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_DEBOUNCE_EN</b> = 507, 
+<b>CV_CAP_PROP_XI_DEBOUNCE_T0</b> = 508, 
+<b>CV_CAP_PROP_XI_DEBOUNCE_T1</b> = 509, 
+<b>CV_CAP_PROP_XI_DEBOUNCE_POL</b> = 510, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_LENS_MODE</b> = 511, 
+<b>CV_CAP_PROP_XI_LENS_APERTURE_VALUE</b> = 512, 
+<b>CV_CAP_PROP_XI_LENS_FOCUS_MOVEMENT_VALUE</b> = 513, 
+<b>CV_CAP_PROP_XI_LENS_FOCUS_MOVE</b> = 514, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_LENS_FOCUS_DISTANCE</b> = 515, 
+<b>CV_CAP_PROP_XI_LENS_FOCAL_LENGTH</b> = 516, 
+<b>CV_CAP_PROP_XI_LENS_FEATURE_SELECTOR</b> = 517, 
+<b>CV_CAP_PROP_XI_LENS_FEATURE</b> = 518, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_DEVICE_MODEL_ID</b> = 521, 
+<b>CV_CAP_PROP_XI_DEVICE_SN</b> = 522, 
+<b>CV_CAP_PROP_XI_IMAGE_DATA_FORMAT_RGB32_ALPHA</b> = 529, 
+<b>CV_CAP_PROP_XI_IMAGE_PAYLOAD_SIZE</b> = 530, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_TRANSPORT_PIXEL_FORMAT</b> = 531, 
+<b>CV_CAP_PROP_XI_SENSOR_CLOCK_FREQ_HZ</b> = 532, 
+<b>CV_CAP_PROP_XI_SENSOR_CLOCK_FREQ_INDEX</b> = 533, 
+<b>CV_CAP_PROP_XI_SENSOR_OUTPUT_CHANNEL_COUNT</b> = 534, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_FRAMERATE</b> = 535, 
+<b>CV_CAP_PROP_XI_COUNTER_SELECTOR</b> = 536, 
+<b>CV_CAP_PROP_XI_COUNTER_VALUE</b> = 537, 
+<b>CV_CAP_PROP_XI_ACQ_TIMING_MODE</b> = 538, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_AVAILABLE_BANDWIDTH</b> = 539, 
+<b>CV_CAP_PROP_XI_BUFFER_POLICY</b> = 540, 
+<b>CV_CAP_PROP_XI_LUT_EN</b> = 541, 
+<b>CV_CAP_PROP_XI_LUT_INDEX</b> = 542, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_LUT_VALUE</b> = 543, 
+<b>CV_CAP_PROP_XI_TRG_DELAY</b> = 544, 
+<b>CV_CAP_PROP_XI_TS_RST_MODE</b> = 545, 
+<b>CV_CAP_PROP_XI_TS_RST_SOURCE</b> = 546, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_IS_DEVICE_EXIST</b> = 547, 
+<b>CV_CAP_PROP_XI_ACQ_BUFFER_SIZE</b> = 548, 
+<b>CV_CAP_PROP_XI_ACQ_BUFFER_SIZE_UNIT</b> = 549, 
+<b>CV_CAP_PROP_XI_ACQ_TRANSPORT_BUFFER_SIZE</b> = 550, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_BUFFERS_QUEUE_SIZE</b> = 551, 
+<b>CV_CAP_PROP_XI_ACQ_TRANSPORT_BUFFER_COMMIT</b> = 552, 
+<b>CV_CAP_PROP_XI_RECENT_FRAME</b> = 553, 
+<b>CV_CAP_PROP_XI_DEVICE_RESET</b> = 554, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_COLUMN_FPN_CORRECTION</b> = 555, 
+<b>CV_CAP_PROP_XI_ROW_FPN_CORRECTION</b> = 591, 
+<b>CV_CAP_PROP_XI_SENSOR_MODE</b> = 558, 
+<b>CV_CAP_PROP_XI_HDR</b> = 559, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_HDR_KNEEPOINT_COUNT</b> = 560, 
+<b>CV_CAP_PROP_XI_HDR_T1</b> = 561, 
+<b>CV_CAP_PROP_XI_HDR_T2</b> = 562, 
+<b>CV_CAP_PROP_XI_KNEEPOINT1</b> = 563, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_KNEEPOINT2</b> = 564, 
+<b>CV_CAP_PROP_XI_IMAGE_BLACK_LEVEL</b> = 565, 
+<b>CV_CAP_PROP_XI_HW_REVISION</b> = 571, 
+<b>CV_CAP_PROP_XI_DEBUG_LEVEL</b> = 572, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_AUTO_BANDWIDTH_CALCULATION</b> = 573, 
+<b>CV_CAP_PROP_XI_FFS_FILE_ID</b> = 594, 
+<b>CV_CAP_PROP_XI_FFS_FILE_SIZE</b> = 580, 
+<b>CV_CAP_PROP_XI_FREE_FFS_SIZE</b> = 581, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_XI_USED_FFS_SIZE</b> = 582, 
+<b>CV_CAP_PROP_XI_FFS_ACCESS_KEY</b> = 583, 
+<b>CV_CAP_PROP_XI_SENSOR_FEATURE_SELECTOR</b> = 585, 
+<b>CV_CAP_PROP_XI_SENSOR_FEATURE_VALUE</b> = 586, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_ANDROID_FLASH_MODE</b> = 8001, 
+<b>CV_CAP_PROP_ANDROID_FOCUS_MODE</b> = 8002, 
+<b>CV_CAP_PROP_ANDROID_WHITE_BALANCE</b> = 8003, 
+<b>CV_CAP_PROP_ANDROID_ANTIBANDING</b> = 8004, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_ANDROID_FOCAL_LENGTH</b> = 8005, 
+<b>CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_NEAR</b> = 8006, 
+<b>CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_OPTIMAL</b> = 8007, 
+<b>CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_FAR</b> = 8008, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_ANDROID_EXPOSE_LOCK</b> = 8009, 
+<b>CV_CAP_PROP_ANDROID_WHITEBALANCE_LOCK</b> = 8010, 
+<b>CV_CAP_PROP_IOS_DEVICE_FOCUS</b> = 9001, 
+<b>CV_CAP_PROP_IOS_DEVICE_EXPOSURE</b> = 9002, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_IOS_DEVICE_FLASH</b> = 9003, 
+<b>CV_CAP_PROP_IOS_DEVICE_WHITEBALANCE</b> = 9004, 
+<b>CV_CAP_PROP_IOS_DEVICE_TORCH</b> = 9005, 
+<b>CV_CAP_PROP_GIGA_FRAME_OFFSET_X</b> = 10001, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_GIGA_FRAME_OFFSET_Y</b> = 10002, 
+<b>CV_CAP_PROP_GIGA_FRAME_WIDTH_MAX</b> = 10003, 
+<b>CV_CAP_PROP_GIGA_FRAME_HEIGH_MAX</b> = 10004, 
+<b>CV_CAP_PROP_GIGA_FRAME_SENS_WIDTH</b> = 10005, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_GIGA_FRAME_SENS_HEIGH</b> = 10006, 
+<b>CV_CAP_PROP_INTELPERC_PROFILE_COUNT</b> = 11001, 
+<b>CV_CAP_PROP_INTELPERC_PROFILE_IDX</b> = 11002, 
+<b>CV_CAP_PROP_INTELPERC_DEPTH_LOW_CONFIDENCE_VALUE</b> = 11003, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_INTELPERC_DEPTH_SATURATION_VALUE</b> = 11004, 
+<b>CV_CAP_PROP_INTELPERC_DEPTH_CONFIDENCE_THRESHOLD</b> = 11005, 
+<b>CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_HORZ</b> = 11006, 
+<b>CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_VERT</b> = 11007, 
+<br />
+&#160;&#160;<b>CV_CAP_INTELPERC_DEPTH_GENERATOR</b> = 1 &lt;&lt; 29, 
+<b>CV_CAP_INTELPERC_IMAGE_GENERATOR</b> = 1 &lt;&lt; 28, 
+<b>CV_CAP_INTELPERC_GENERATORS_MASK</b> = CV_CAP_INTELPERC_DEPTH_GENERATOR + CV_CAP_INTELPERC_IMAGE_GENERATOR
+<br />
+ }</td></tr>
+<tr class="separator:ga9832a4daffbdbb84c8e169ddfc2aa03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa18f9dc1ef66ab97afe44b223f6e58bc"><td class="memItemLeft" align="right" valign="top"><a id="gaa18f9dc1ef66ab97afe44b223f6e58bc"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CV_CAP_MODE_BGR</b> = 0, 
+<b>CV_CAP_MODE_RGB</b> = 1, 
+<b>CV_CAP_MODE_GRAY</b> = 2, 
+<b>CV_CAP_MODE_YUYV</b> = 3
+ }</td></tr>
+<tr class="separator:gaa18f9dc1ef66ab97afe44b223f6e58bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga884a038ab208ed5120b5a9edbdb27280"><td class="memItemLeft" align="right" valign="top"><a id="ga884a038ab208ed5120b5a9edbdb27280"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>CV_CAP_OPENNI_DEPTH_MAP</b> = 0, 
+<b>CV_CAP_OPENNI_POINT_CLOUD_MAP</b> = 1, 
+<b>CV_CAP_OPENNI_DISPARITY_MAP</b> = 2, 
+<b>CV_CAP_OPENNI_DISPARITY_MAP_32F</b> = 3, 
+<br />
+&#160;&#160;<b>CV_CAP_OPENNI_VALID_DEPTH_MASK</b> = 4, 
+<b>CV_CAP_OPENNI_BGR_IMAGE</b> = 5, 
+<b>CV_CAP_OPENNI_GRAY_IMAGE</b> = 6, 
+<b>CV_CAP_OPENNI_IR_IMAGE</b> = 7
+<br />
+ }</td></tr>
+<tr class="separator:ga884a038ab208ed5120b5a9edbdb27280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa59f48318cfbd36639171234173ddf5f"><td class="memItemLeft" align="right" valign="top"><a id="gaa59f48318cfbd36639171234173ddf5f"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>CV_CAP_OPENNI_VGA_30HZ</b> = 0, 
+<b>CV_CAP_OPENNI_SXGA_15HZ</b> = 1, 
+<b>CV_CAP_OPENNI_SXGA_30HZ</b> = 2, 
+<b>CV_CAP_OPENNI_QVGA_30HZ</b> = 3, 
+<br />
+&#160;&#160;<b>CV_CAP_OPENNI_QVGA_60HZ</b> = 4
+<br />
+ }</td></tr>
+<tr class="separator:gaa59f48318cfbd36639171234173ddf5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab08ec99a67b8bcb53b0145c7a8b30c55"><td class="memItemLeft" align="right" valign="top"><a id="gab08ec99a67b8bcb53b0145c7a8b30c55"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CV_CAP_INTELPERC_DEPTH_MAP</b> = 0, 
+<b>CV_CAP_INTELPERC_UVDEPTH_MAP</b> = 1, 
+<b>CV_CAP_INTELPERC_IR_MAP</b> = 2, 
+<b>CV_CAP_INTELPERC_IMAGE</b> = 3
+ }</td></tr>
+<tr class="separator:gab08ec99a67b8bcb53b0145c7a8b30c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23cac2411ee0829057d416acc6731dd5"><td class="memItemLeft" align="right" valign="top"><a id="ga23cac2411ee0829057d416acc6731dd5"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>CV_CAP_PROP_GPHOTO2_PREVIEW</b> = 17001, 
+<b>CV_CAP_PROP_GPHOTO2_WIDGET_ENUMERATE</b> = 17002, 
+<b>CV_CAP_PROP_GPHOTO2_RELOAD_CONFIG</b> = 17003, 
+<b>CV_CAP_PROP_GPHOTO2_RELOAD_ON_CHANGE</b> = 17004, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_GPHOTO2_COLLECT_MSGS</b> = 17005, 
+<b>CV_CAP_PROP_GPHOTO2_FLUSH_MSGS</b> = 17006, 
+<b>CV_CAP_PROP_SPEED</b> = 17007, 
+<b>CV_CAP_PROP_APERTURE</b> = 17008, 
+<br />
+&#160;&#160;<b>CV_CAP_PROP_EXPOSUREPROGRAM</b> = 17009, 
+<b>CV_CAP_PROP_VIEWFINDER</b> = 17010
+<br />
+ }</td></tr>
+<tr class="separator:ga23cac2411ee0829057d416acc6731dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -1998,6 +2445,40 @@ int double <a class="el" href="struct_cv_size.html">CvSize</a>&#160;</td><td cla
 <tr class="memitem:ga731049183fae0125c0b5d2940d461cf3"><td class="memItemLeft" align="right" valign="top"><a id="ga731049183fae0125c0b5d2940d461cf3"></a>
 const <a class="el" href="group__core__c.html#ga249298f383f3b430b476542076320c57">IplImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>image</b></td></tr>
 <tr class="separator:ga731049183fae0125c0b5d2940d461cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c399265194069eb08b059fe98d8a545"><td class="memItemLeft" align="right" valign="top"><a id="ga8c399265194069eb08b059fe98d8a545"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>apiPreference</b></td></tr>
+<tr class="separator:ga8c399265194069eb08b059fe98d8a545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8635d9e852e1fa7a5720868b2df59427"><td class="memItemLeft" align="right" valign="top"><a id="ga8635d9e852e1fa7a5720868b2df59427"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>property_id</b></td></tr>
+<tr class="separator:ga8635d9e852e1fa7a5720868b2df59427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4670c92695d4327c21292905a803901"><td class="memItemLeft" align="right" valign="top"><a id="gad4670c92695d4327c21292905a803901"></a>
+int double&#160;</td><td class="memItemRight" valign="bottom"><b>value</b></td></tr>
+<tr class="separator:gad4670c92695d4327c21292905a803901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9aa0a26434ee5817a5e37a4972bae0d8"><td class="memItemLeft" align="right" valign="top"><a id="ga9aa0a26434ee5817a5e37a4972bae0d8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>fourcc</b></td></tr>
+<tr class="separator:ga9aa0a26434ee5817a5e37a4972bae0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadbca5b692e9ace76ccf02d9c621ee228"><td class="memItemLeft" align="right" valign="top"><a id="gadbca5b692e9ace76ccf02d9c621ee228"></a>
+int double&#160;</td><td class="memItemRight" valign="bottom"><b>fps</b></td></tr>
+<tr class="separator:gadbca5b692e9ace76ccf02d9c621ee228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga058dbaebc483d4becfa7f75d2ed3dd1c"><td class="memItemLeft" align="right" valign="top"><a id="ga058dbaebc483d4becfa7f75d2ed3dd1c"></a>
+int double <a class="el" href="struct_cv_size.html">CvSize</a>&#160;</td><td class="memItemRight" valign="bottom"><b>frame_size</b></td></tr>
+<tr class="separator:ga058dbaebc483d4becfa7f75d2ed3dd1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga731049183fae0125c0b5d2940d461cf3"><td class="memItemLeft" align="right" valign="top"><a id="ga731049183fae0125c0b5d2940d461cf3"></a>
+const <a class="el" href="group__core__c.html#ga249298f383f3b430b476542076320c57">IplImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>image</b></td></tr>
+<tr class="separator:ga731049183fae0125c0b5d2940d461cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Obsolete functions/synonyms</h2></td></tr>
+<tr class="memitem:ga740fbcd0a6dc9a25e747ce3946491772"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__videoio__c.html#ga740fbcd0a6dc9a25e747ce3946491772">cvCaptureFromCAM</a>&#160;&#160;&#160;cvCreateCameraCapture</td></tr>
+<tr class="separator:ga740fbcd0a6dc9a25e747ce3946491772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga709ac3b8d05afd27c1d86f6636cf55fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__videoio__c.html#ga709ac3b8d05afd27c1d86f6636cf55fb">cvCaptureFromFile</a>&#160;&#160;&#160;cvCreateFileCapture</td></tr>
+<tr class="separator:ga709ac3b8d05afd27c1d86f6636cf55fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga710135adb524858e34858a447d03f507"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__videoio__c.html#ga710135adb524858e34858a447d03f507">cvCaptureFromAVI</a>&#160;&#160;&#160;<a class="el" href="group__videoio__c.html#ga709ac3b8d05afd27c1d86f6636cf55fb">cvCaptureFromFile</a></td></tr>
+<tr class="separator:ga710135adb524858e34858a447d03f507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea3f63afc666dc8e09293498c15128c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__videoio__c.html#gaea3f63afc666dc8e09293498c15128c2">cvCreateAVIWriter</a>&#160;&#160;&#160;cvCreateVideoWriter</td></tr>
+<tr class="separator:gaea3f63afc666dc8e09293498c15128c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa251b74b997bc2ad92c424f96ecf82de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__videoio__c.html#gaa251b74b997bc2ad92c424f96ecf82de">cvWriteToAVI</a>&#160;&#160;&#160;cvWriteFrame</td></tr>
+<tr class="separator:gaa251b74b997bc2ad92c424f96ecf82de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Obsolete functions/synonyms</h2></td></tr>
@@ -2054,7 +2535,22 @@ Obsolete functions/synonyms</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga710135adb524858e34858a447d03f507"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga710135adb524858e34858a447d03f507">&#9670;&nbsp;</a></span>cvCaptureFromAVI <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga710135adb524858e34858a447d03f507">&#9670;&nbsp;</a></span>cvCaptureFromAVI <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define cvCaptureFromAVI&#160;&#160;&#160;<a class="el" href="group__videoio__c.html#ga709ac3b8d05afd27c1d86f6636cf55fb">cvCaptureFromFile</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000233">Deprecated:</a></b></dt><dd>use cvCreateFileCapture() instead </dd></dl>
+
+</div>
+</div>
+<a id="ga710135adb524858e34858a447d03f507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga710135adb524858e34858a447d03f507">&#9670;&nbsp;</a></span>cvCaptureFromAVI <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2069,7 +2565,7 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="ga710135adb524858e34858a447d03f507"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga710135adb524858e34858a447d03f507">&#9670;&nbsp;</a></span>cvCaptureFromAVI <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga710135adb524858e34858a447d03f507">&#9670;&nbsp;</a></span>cvCaptureFromAVI <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2084,7 +2580,7 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="ga710135adb524858e34858a447d03f507"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga710135adb524858e34858a447d03f507">&#9670;&nbsp;</a></span>cvCaptureFromAVI <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga710135adb524858e34858a447d03f507">&#9670;&nbsp;</a></span>cvCaptureFromAVI <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2099,7 +2595,7 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="ga710135adb524858e34858a447d03f507"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga710135adb524858e34858a447d03f507">&#9670;&nbsp;</a></span>cvCaptureFromAVI <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga710135adb524858e34858a447d03f507">&#9670;&nbsp;</a></span>cvCaptureFromAVI <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2114,7 +2610,22 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="ga740fbcd0a6dc9a25e747ce3946491772"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga740fbcd0a6dc9a25e747ce3946491772">&#9670;&nbsp;</a></span>cvCaptureFromCAM <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga740fbcd0a6dc9a25e747ce3946491772">&#9670;&nbsp;</a></span>cvCaptureFromCAM <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define cvCaptureFromCAM&#160;&#160;&#160;cvCreateCameraCapture</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000231">Deprecated:</a></b></dt><dd>use cvCreateCameraCapture() instead </dd></dl>
+
+</div>
+</div>
+<a id="ga740fbcd0a6dc9a25e747ce3946491772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga740fbcd0a6dc9a25e747ce3946491772">&#9670;&nbsp;</a></span>cvCaptureFromCAM <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2129,7 +2640,7 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="ga740fbcd0a6dc9a25e747ce3946491772"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga740fbcd0a6dc9a25e747ce3946491772">&#9670;&nbsp;</a></span>cvCaptureFromCAM <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga740fbcd0a6dc9a25e747ce3946491772">&#9670;&nbsp;</a></span>cvCaptureFromCAM <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2144,7 +2655,7 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="ga740fbcd0a6dc9a25e747ce3946491772"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga740fbcd0a6dc9a25e747ce3946491772">&#9670;&nbsp;</a></span>cvCaptureFromCAM <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga740fbcd0a6dc9a25e747ce3946491772">&#9670;&nbsp;</a></span>cvCaptureFromCAM <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2159,7 +2670,7 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="ga740fbcd0a6dc9a25e747ce3946491772"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga740fbcd0a6dc9a25e747ce3946491772">&#9670;&nbsp;</a></span>cvCaptureFromCAM <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga740fbcd0a6dc9a25e747ce3946491772">&#9670;&nbsp;</a></span>cvCaptureFromCAM <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2174,7 +2685,7 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="ga709ac3b8d05afd27c1d86f6636cf55fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga709ac3b8d05afd27c1d86f6636cf55fb">&#9670;&nbsp;</a></span>cvCaptureFromFile <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga709ac3b8d05afd27c1d86f6636cf55fb">&#9670;&nbsp;</a></span>cvCaptureFromFile <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2189,7 +2700,7 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="ga709ac3b8d05afd27c1d86f6636cf55fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga709ac3b8d05afd27c1d86f6636cf55fb">&#9670;&nbsp;</a></span>cvCaptureFromFile <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga709ac3b8d05afd27c1d86f6636cf55fb">&#9670;&nbsp;</a></span>cvCaptureFromFile <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2204,7 +2715,7 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="ga709ac3b8d05afd27c1d86f6636cf55fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga709ac3b8d05afd27c1d86f6636cf55fb">&#9670;&nbsp;</a></span>cvCaptureFromFile <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga709ac3b8d05afd27c1d86f6636cf55fb">&#9670;&nbsp;</a></span>cvCaptureFromFile <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2219,7 +2730,22 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="ga709ac3b8d05afd27c1d86f6636cf55fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga709ac3b8d05afd27c1d86f6636cf55fb">&#9670;&nbsp;</a></span>cvCaptureFromFile <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga709ac3b8d05afd27c1d86f6636cf55fb">&#9670;&nbsp;</a></span>cvCaptureFromFile <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define cvCaptureFromFile&#160;&#160;&#160;cvCreateFileCapture</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000232">Deprecated:</a></b></dt><dd>use cvCreateFileCapture() instead </dd></dl>
+
+</div>
+</div>
+<a id="ga709ac3b8d05afd27c1d86f6636cf55fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga709ac3b8d05afd27c1d86f6636cf55fb">&#9670;&nbsp;</a></span>cvCaptureFromFile <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2234,7 +2760,7 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="gaea3f63afc666dc8e09293498c15128c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaea3f63afc666dc8e09293498c15128c2">&#9670;&nbsp;</a></span>cvCreateAVIWriter <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea3f63afc666dc8e09293498c15128c2">&#9670;&nbsp;</a></span>cvCreateAVIWriter <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2249,7 +2775,22 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="gaea3f63afc666dc8e09293498c15128c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaea3f63afc666dc8e09293498c15128c2">&#9670;&nbsp;</a></span>cvCreateAVIWriter <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea3f63afc666dc8e09293498c15128c2">&#9670;&nbsp;</a></span>cvCreateAVIWriter <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define cvCreateAVIWriter&#160;&#160;&#160;cvCreateVideoWriter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000046">Deprecated:</a></b></dt><dd>use cvCreateVideoWriter() instead </dd></dl>
+
+</div>
+</div>
+<a id="gaea3f63afc666dc8e09293498c15128c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea3f63afc666dc8e09293498c15128c2">&#9670;&nbsp;</a></span>cvCreateAVIWriter <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2264,7 +2805,22 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="gaea3f63afc666dc8e09293498c15128c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaea3f63afc666dc8e09293498c15128c2">&#9670;&nbsp;</a></span>cvCreateAVIWriter <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea3f63afc666dc8e09293498c15128c2">&#9670;&nbsp;</a></span>cvCreateAVIWriter <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define cvCreateAVIWriter&#160;&#160;&#160;cvCreateVideoWriter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000234">Deprecated:</a></b></dt><dd>use cvCreateVideoWriter() instead </dd></dl>
+
+</div>
+</div>
+<a id="gaea3f63afc666dc8e09293498c15128c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea3f63afc666dc8e09293498c15128c2">&#9670;&nbsp;</a></span>cvCreateAVIWriter <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2278,53 +2834,8 @@ Obsolete functions/synonyms</h2></td></tr>
 
 </div>
 </div>
-<a id="gaea3f63afc666dc8e09293498c15128c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaea3f63afc666dc8e09293498c15128c2">&#9670;&nbsp;</a></span>cvCreateAVIWriter <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define cvCreateAVIWriter&#160;&#160;&#160;cvCreateVideoWriter</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000046">Deprecated:</a></b></dt><dd>use cvCreateVideoWriter() instead </dd></dl>
-
-</div>
-</div>
 <a id="gaa251b74b997bc2ad92c424f96ecf82de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa251b74b997bc2ad92c424f96ecf82de">&#9670;&nbsp;</a></span>cvWriteToAVI <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define cvWriteToAVI&#160;&#160;&#160;cvWriteFrame</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000141">Deprecated:</a></b></dt><dd>use cvWriteFrame() instead </dd></dl>
-
-</div>
-</div>
-<a id="gaa251b74b997bc2ad92c424f96ecf82de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa251b74b997bc2ad92c424f96ecf82de">&#9670;&nbsp;</a></span>cvWriteToAVI <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define cvWriteToAVI&#160;&#160;&#160;cvWriteFrame</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000188">Deprecated:</a></b></dt><dd>use cvWriteFrame() instead </dd></dl>
-
-</div>
-</div>
-<a id="gaa251b74b997bc2ad92c424f96ecf82de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa251b74b997bc2ad92c424f96ecf82de">&#9670;&nbsp;</a></span>cvWriteToAVI <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa251b74b997bc2ad92c424f96ecf82de">&#9670;&nbsp;</a></span>cvWriteToAVI <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2339,7 +2850,22 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="gaa251b74b997bc2ad92c424f96ecf82de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa251b74b997bc2ad92c424f96ecf82de">&#9670;&nbsp;</a></span>cvWriteToAVI <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa251b74b997bc2ad92c424f96ecf82de">&#9670;&nbsp;</a></span>cvWriteToAVI <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define cvWriteToAVI&#160;&#160;&#160;cvWriteFrame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000141">Deprecated:</a></b></dt><dd>use cvWriteFrame() instead </dd></dl>
+
+</div>
+</div>
+<a id="gaa251b74b997bc2ad92c424f96ecf82de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa251b74b997bc2ad92c424f96ecf82de">&#9670;&nbsp;</a></span>cvWriteToAVI <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2353,9 +2879,39 @@ Obsolete functions/synonyms</h2></td></tr>
 
 </div>
 </div>
+<a id="gaa251b74b997bc2ad92c424f96ecf82de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa251b74b997bc2ad92c424f96ecf82de">&#9670;&nbsp;</a></span>cvWriteToAVI <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define cvWriteToAVI&#160;&#160;&#160;cvWriteFrame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000235">Deprecated:</a></b></dt><dd>use cvWriteFrame() instead </dd></dl>
+
+</div>
+</div>
+<a id="gaa251b74b997bc2ad92c424f96ecf82de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa251b74b997bc2ad92c424f96ecf82de">&#9670;&nbsp;</a></span>cvWriteToAVI <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define cvWriteToAVI&#160;&#160;&#160;cvWriteFrame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000188">Deprecated:</a></b></dt><dd>use cvWriteFrame() instead </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga394109074fab9bdca2ea45514b1946b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga394109074fab9bdca2ea45514b1946b7">&#9670;&nbsp;</a></span>CvCapture <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga394109074fab9bdca2ea45514b1946b7">&#9670;&nbsp;</a></span>CvCapture <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2372,7 +2928,7 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="ga394109074fab9bdca2ea45514b1946b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga394109074fab9bdca2ea45514b1946b7">&#9670;&nbsp;</a></span>CvCapture <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga394109074fab9bdca2ea45514b1946b7">&#9670;&nbsp;</a></span>CvCapture <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2389,7 +2945,7 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="ga394109074fab9bdca2ea45514b1946b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga394109074fab9bdca2ea45514b1946b7">&#9670;&nbsp;</a></span>CvCapture <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga394109074fab9bdca2ea45514b1946b7">&#9670;&nbsp;</a></span>CvCapture <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2406,7 +2962,24 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="ga394109074fab9bdca2ea45514b1946b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga394109074fab9bdca2ea45514b1946b7">&#9670;&nbsp;</a></span>CvCapture <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga394109074fab9bdca2ea45514b1946b7">&#9670;&nbsp;</a></span>CvCapture <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="group__videoio__c.html#ga394109074fab9bdca2ea45514b1946b7">CvCapture</a> <a class="el" href="group__videoio__c.html#ga394109074fab9bdca2ea45514b1946b7">CvCapture</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>"black box" capture structure </p>
+<p>In C++ use <a class="el" href="classcv_1_1_video_capture.html" title="Class for video capturing from video files, image sequences or cameras.">cv::VideoCapture</a> </p>
+
+</div>
+</div>
+<a id="ga394109074fab9bdca2ea45514b1946b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga394109074fab9bdca2ea45514b1946b7">&#9670;&nbsp;</a></span>CvCapture <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2423,7 +2996,7 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="ga888ba48aa022b60aecf98a462aa1b638"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga888ba48aa022b60aecf98a462aa1b638">&#9670;&nbsp;</a></span>CvVideoWriter <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga888ba48aa022b60aecf98a462aa1b638">&#9670;&nbsp;</a></span>CvVideoWriter <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2440,7 +3013,7 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="ga888ba48aa022b60aecf98a462aa1b638"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga888ba48aa022b60aecf98a462aa1b638">&#9670;&nbsp;</a></span>CvVideoWriter <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga888ba48aa022b60aecf98a462aa1b638">&#9670;&nbsp;</a></span>CvVideoWriter <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2457,7 +3030,7 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="ga888ba48aa022b60aecf98a462aa1b638"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga888ba48aa022b60aecf98a462aa1b638">&#9670;&nbsp;</a></span>CvVideoWriter <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga888ba48aa022b60aecf98a462aa1b638">&#9670;&nbsp;</a></span>CvVideoWriter <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2474,7 +3047,24 @@ Obsolete functions/synonyms</h2></td></tr>
 </div>
 </div>
 <a id="ga888ba48aa022b60aecf98a462aa1b638"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga888ba48aa022b60aecf98a462aa1b638">&#9670;&nbsp;</a></span>CvVideoWriter <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga888ba48aa022b60aecf98a462aa1b638">&#9670;&nbsp;</a></span>CvVideoWriter <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="group__videoio__c.html#ga888ba48aa022b60aecf98a462aa1b638">CvVideoWriter</a> <a class="el" href="group__videoio__c.html#ga888ba48aa022b60aecf98a462aa1b638">CvVideoWriter</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>"black box" video file writer structure </p>
+<p>In C++ use <a class="el" href="classcv_1_1_video_writer.html" title="Video writer class.">cv::VideoWriter</a> </p>
+
+</div>
+</div>
+<a id="ga888ba48aa022b60aecf98a462aa1b638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga888ba48aa022b60aecf98a462aa1b638">&#9670;&nbsp;</a></span>CvVideoWriter <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

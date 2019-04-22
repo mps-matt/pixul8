@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::videostab::MotionEstimatorL1 Class Reference</title>
+<title>PixUl8: cv::videostab::MotionEstimatorL1 Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -90,11 +88,18 @@ Inheritance diagram for cv::videostab::MotionEstimatorL1:</div>
 <area href="classcv_1_1videostab_1_1_motion_estimator_base.html" title="Base class for all global motion estimation methods." alt="cv::videostab::MotionEstimatorBase" shape="rect" coords="219,0,428,24"/>
 <area href="classcv_1_1videostab_1_1_motion_estimator_base.html" title="Base class for all global motion estimation methods." alt="cv::videostab::MotionEstimatorBase" shape="rect" coords="438,0,647,24"/>
 <area href="classcv_1_1videostab_1_1_motion_estimator_base.html" title="Base class for all global motion estimation methods." alt="cv::videostab::MotionEstimatorBase" shape="rect" coords="657,0,866,24"/>
+<area href="classcv_1_1videostab_1_1_motion_estimator_base.html" title="Base class for all global motion estimation methods." alt="cv::videostab::MotionEstimatorBase" shape="rect" coords="876,0,1085,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:adc5c868f661775fb37a31a51ab1ea0d7"><td class="memItemLeft" align="right" valign="top"><a id="adc5c868f661775fb37a31a51ab1ea0d7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MotionEstimatorL1</b> (<a class="el" href="group__videostab__motion.html#gac61e59db30b7d13983885d3ad3116ce1">MotionModel</a> model=MM_AFFINE)</td></tr>
+<tr class="separator:adc5c868f661775fb37a31a51ab1ea0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a835b18ec5c6a51d8e82206c50172252b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1videostab_1_1_motion_estimator_l1.html#a835b18ec5c6a51d8e82206c50172252b">estimate</a> (InputArray points0, InputArray points1, bool *ok=0) CV_OVERRIDE</td></tr>
+<tr class="memdesc:a835b18ec5c6a51d8e82206c50172252b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates global motion between two 2D point clouds.  <a href="#a835b18ec5c6a51d8e82206c50172252b">More...</a><br /></td></tr>
+<tr class="separator:a835b18ec5c6a51d8e82206c50172252b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc5c868f661775fb37a31a51ab1ea0d7"><td class="memItemLeft" align="right" valign="top"><a id="adc5c868f661775fb37a31a51ab1ea0d7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MotionEstimatorL1</b> (<a class="el" href="group__videostab__motion.html#gac61e59db30b7d13983885d3ad3116ce1">MotionModel</a> model=MM_AFFINE)</td></tr>
 <tr class="separator:adc5c868f661775fb37a31a51ab1ea0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,10 +145,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7ef89b8847fc28a75bf4199b8f194340 inherit pub_methods_classcv_1_1videostab_1_1_motion_estimator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a848cee402585520565e8346221af68 inherit pub_methods_classcv_1_1videostab_1_1_motion_estimator_base"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__videostab__motion.html#gac61e59db30b7d13983885d3ad3116ce1">MotionModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1videostab_1_1_motion_estimator_base.html#a7a848cee402585520565e8346221af68">motionModel</a> () const</td></tr>
 <tr class="separator:a7a848cee402585520565e8346221af68 inherit pub_methods_classcv_1_1videostab_1_1_motion_estimator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ef89b8847fc28a75bf4199b8f194340 inherit pub_methods_classcv_1_1videostab_1_1_motion_estimator_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1videostab_1_1_motion_estimator_base.html#a7ef89b8847fc28a75bf4199b8f194340">setMotionModel</a> (<a class="el" href="group__videostab__motion.html#gac61e59db30b7d13983885d3ad3116ce1">MotionModel</a> val)</td></tr>
+<tr class="memdesc:a7ef89b8847fc28a75bf4199b8f194340 inherit pub_methods_classcv_1_1videostab_1_1_motion_estimator_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets motion model.  <a href="classcv_1_1videostab_1_1_motion_estimator_base.html#a7ef89b8847fc28a75bf4199b8f194340">More...</a><br /></td></tr>
+<tr class="separator:a7ef89b8847fc28a75bf4199b8f194340 inherit pub_methods_classcv_1_1videostab_1_1_motion_estimator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a848cee402585520565e8346221af68 inherit pub_methods_classcv_1_1videostab_1_1_motion_estimator_base"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__videostab__motion.html#gac61e59db30b7d13983885d3ad3116ce1">MotionModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1videostab_1_1_motion_estimator_base.html#a7a848cee402585520565e8346221af68">motionModel</a> () const</td></tr>
+<tr class="separator:a7a848cee402585520565e8346221af68 inherit pub_methods_classcv_1_1videostab_1_1_motion_estimator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classcv_1_1videostab_1_1_motion_estimator_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcv_1_1videostab_1_1_motion_estimator_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classcv_1_1videostab_1_1_motion_estimator_base.html">cv::videostab::MotionEstimatorBase</a></td></tr>
+<tr class="memitem:ab1bc0253fe2d279148445e0e2f42c508 inherit pro_methods_classcv_1_1videostab_1_1_motion_estimator_base"><td class="memItemLeft" align="right" valign="top"><a id="ab1bc0253fe2d279148445e0e2f42c508"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MotionEstimatorBase</b> (<a class="el" href="group__videostab__motion.html#gac61e59db30b7d13983885d3ad3116ce1">MotionModel</a> model)</td></tr>
+<tr class="separator:ab1bc0253fe2d279148445e0e2f42c508 inherit pro_methods_classcv_1_1videostab_1_1_motion_estimator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1bc0253fe2d279148445e0e2f42c508 inherit pro_methods_classcv_1_1videostab_1_1_motion_estimator_base"><td class="memItemLeft" align="right" valign="top"><a id="ab1bc0253fe2d279148445e0e2f42c508"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MotionEstimatorBase</b> (<a class="el" href="group__videostab__motion.html#gac61e59db30b7d13983885d3ad3116ce1">MotionModel</a> model)</td></tr>
 <tr class="separator:ab1bc0253fe2d279148445e0e2f42c508 inherit pro_methods_classcv_1_1videostab_1_1_motion_estimator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,7 +175,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>To be able to use this method you must build <a class="el" href="interface_open_c_v.html">OpenCV</a> with CLP library support. : </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a835b18ec5c6a51d8e82206c50172252b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a835b18ec5c6a51d8e82206c50172252b">&#9670;&nbsp;</a></span>estimate() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a835b18ec5c6a51d8e82206c50172252b">&#9670;&nbsp;</a></span>estimate() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -217,7 +230,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a835b18ec5c6a51d8e82206c50172252b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a835b18ec5c6a51d8e82206c50172252b">&#9670;&nbsp;</a></span>estimate() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a835b18ec5c6a51d8e82206c50172252b">&#9670;&nbsp;</a></span>estimate() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -272,7 +285,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a835b18ec5c6a51d8e82206c50172252b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a835b18ec5c6a51d8e82206c50172252b">&#9670;&nbsp;</a></span>estimate() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a835b18ec5c6a51d8e82206c50172252b">&#9670;&nbsp;</a></span>estimate() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -327,7 +340,62 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a835b18ec5c6a51d8e82206c50172252b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a835b18ec5c6a51d8e82206c50172252b">&#9670;&nbsp;</a></span>estimate() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a835b18ec5c6a51d8e82206c50172252b">&#9670;&nbsp;</a></span>estimate() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classcv_1_1_mat.html">Mat</a> cv::videostab::MotionEstimatorL1::estimate </td>
+          <td>(</td>
+          <td class="paramtype">InputArray&#160;</td>
+          <td class="paramname"><em>points0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InputArray&#160;</td>
+          <td class="paramname"><em>points1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>ok</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Estimates global motion between two 2D point clouds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points0</td><td>Source set of 2D points (32F). </td></tr>
+    <tr><td class="paramname">points1</td><td>Destination set of 2D points (32F). </td></tr>
+    <tr><td class="paramname">ok</td><td>Indicates whether motion was estimated successfully. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>3x3 2D transformation matrix (32F). </dd></dl>
+
+<p>Implements <a class="el" href="classcv_1_1videostab_1_1_motion_estimator_base.html#ad2e3669f3ccb019194cdb770acc6412f">cv::videostab::MotionEstimatorBase</a>.</p>
+
+</div>
+</div>
+<a id="a835b18ec5c6a51d8e82206c50172252b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a835b18ec5c6a51d8e82206c50172252b">&#9670;&nbsp;</a></span>estimate() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

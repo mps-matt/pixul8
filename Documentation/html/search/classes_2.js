@@ -10,7 +10,6 @@ var searchData=
   ['basecascadeclassifier',['BaseCascadeClassifier',['../classcv_1_1_base_cascade_classifier.html',1,'cv']]],
   ['baseconvolutionlayer',['BaseConvolutionLayer',['../classcv_1_1dnn_1_1_base_convolution_layer.html',1,'cv::dnn']]],
   ['baseviewmodel',['BaseViewModel',['../class_pix_ul8_1_1_view_models_1_1_base_view_model.html',1,'PixUl8::ViewModels']]],
-  ['baseviewmodeltests',['BaseViewModelTests',['../class_pix_ul8_1_1_tests_1_1_base_view_model_tests.html',1,'PixUl8::Tests']]],
   ['batchnormlayer',['BatchNormLayer',['../classcv_1_1dnn_1_1_batch_norm_layer.html',1,'cv::dnn']]],
   ['bestof2nearestmatcher',['BestOf2NearestMatcher',['../classcv_1_1detail_1_1_best_of2_nearest_matcher.html',1,'cv::detail']]],
   ['bestof2nearestrangematcher',['BestOf2NearestRangeMatcher',['../classcv_1_1detail_1_1_best_of2_nearest_range_matcher.html',1,'cv::detail']]],

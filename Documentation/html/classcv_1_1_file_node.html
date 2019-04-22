@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::FileNode Class Reference</title>
+<title>PixUl8: cv::FileNode Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -154,6 +152,24 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1">FLOW</a> = 8, 
 <a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1">USER</a> = 16, 
 <a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413">EMPTY</a> = 32, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d">NAMED</a> = 64, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73">NONE</a> = 0, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968">INT</a> = 1, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e">REAL</a> = 2, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eab5e618c168d7c2cf598b88a7ce5256cf">FLOAT</a> = REAL, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea18c6e3b457265c98235ab36b97df3097">STR</a> = 3, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea5f83900ab305e07acafb8cb99c8f7ba9">STRING</a> = STR, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ead0995dccfdbb905343a0ba98f8da5073">REF</a> = 4, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8a5bca2d3647f360c3acac3f7a64f822">SEQ</a> = 5, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eab2f07b5774411ae1e897115b9c005c85">MAP</a> = 6, 
+<b>TYPE_MASK</b> = 7, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1">FLOW</a> = 8, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1">USER</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413">EMPTY</a> = 32, 
 <a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d">NAMED</a> = 64
 <br />
  }</td></tr>
@@ -228,6 +244,24 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1">FLOW</a> = 8, 
 <a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1">USER</a> = 16, 
 <a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413">EMPTY</a> = 32, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d">NAMED</a> = 64, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73">NONE</a> = 0, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968">INT</a> = 1, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e">REAL</a> = 2, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eab5e618c168d7c2cf598b88a7ce5256cf">FLOAT</a> = REAL, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea18c6e3b457265c98235ab36b97df3097">STR</a> = 3, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea5f83900ab305e07acafb8cb99c8f7ba9">STRING</a> = STR, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ead0995dccfdbb905343a0ba98f8da5073">REF</a> = 4, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8a5bca2d3647f360c3acac3f7a64f822">SEQ</a> = 5, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eab2f07b5774411ae1e897115b9c005c85">MAP</a> = 6, 
+<b>TYPE_MASK</b> = 7, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1">FLOW</a> = 8, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1">USER</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413">EMPTY</a> = 32, 
 <a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d">NAMED</a> = 64
 <br />
  }</td></tr>
@@ -302,6 +336,24 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1">FLOW</a> = 8, 
 <a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1">USER</a> = 16, 
 <a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413">EMPTY</a> = 32, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d">NAMED</a> = 64, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73">NONE</a> = 0, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968">INT</a> = 1, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e">REAL</a> = 2, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eab5e618c168d7c2cf598b88a7ce5256cf">FLOAT</a> = REAL, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea18c6e3b457265c98235ab36b97df3097">STR</a> = 3, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea5f83900ab305e07acafb8cb99c8f7ba9">STRING</a> = STR, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ead0995dccfdbb905343a0ba98f8da5073">REF</a> = 4, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8a5bca2d3647f360c3acac3f7a64f822">SEQ</a> = 5, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eab2f07b5774411ae1e897115b9c005c85">MAP</a> = 6, 
+<b>TYPE_MASK</b> = 7, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1">FLOW</a> = 8, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1">USER</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413">EMPTY</a> = 32, 
 <a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d">NAMED</a> = 64
 <br />
  }</td></tr>
@@ -376,6 +428,116 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1">FLOW</a> = 8, 
 <a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1">USER</a> = 16, 
 <a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413">EMPTY</a> = 32, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d">NAMED</a> = 64, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73">NONE</a> = 0, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968">INT</a> = 1, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e">REAL</a> = 2, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eab5e618c168d7c2cf598b88a7ce5256cf">FLOAT</a> = REAL, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea18c6e3b457265c98235ab36b97df3097">STR</a> = 3, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea5f83900ab305e07acafb8cb99c8f7ba9">STRING</a> = STR, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ead0995dccfdbb905343a0ba98f8da5073">REF</a> = 4, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8a5bca2d3647f360c3acac3f7a64f822">SEQ</a> = 5, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eab2f07b5774411ae1e897115b9c005c85">MAP</a> = 6, 
+<b>TYPE_MASK</b> = 7, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1">FLOW</a> = 8, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1">USER</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413">EMPTY</a> = 32, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d">NAMED</a> = 64
+<br />
+ }</td></tr>
+<tr class="memdesc:a8fe1d2aa050e6909b978f4df3529066e"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of the file storage node  <a href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066e">More...</a><br /></td></tr>
+<tr class="separator:a8fe1d2aa050e6909b978f4df3529066e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe1d2aa050e6909b978f4df3529066e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066e">Type</a> { <br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73">NONE</a> = 0, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968">INT</a> = 1, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e">REAL</a> = 2, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eab5e618c168d7c2cf598b88a7ce5256cf">FLOAT</a> = REAL, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea18c6e3b457265c98235ab36b97df3097">STR</a> = 3, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea5f83900ab305e07acafb8cb99c8f7ba9">STRING</a> = STR, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ead0995dccfdbb905343a0ba98f8da5073">REF</a> = 4, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8a5bca2d3647f360c3acac3f7a64f822">SEQ</a> = 5, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eab2f07b5774411ae1e897115b9c005c85">MAP</a> = 6, 
+<b>TYPE_MASK</b> = 7, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1">FLOW</a> = 8, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1">USER</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413">EMPTY</a> = 32, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d">NAMED</a> = 64, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73">NONE</a> = 0, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968">INT</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e">REAL</a> = 2, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eab5e618c168d7c2cf598b88a7ce5256cf">FLOAT</a> = REAL, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea18c6e3b457265c98235ab36b97df3097">STR</a> = 3, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea5f83900ab305e07acafb8cb99c8f7ba9">STRING</a> = STR, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ead0995dccfdbb905343a0ba98f8da5073">REF</a> = 4, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8a5bca2d3647f360c3acac3f7a64f822">SEQ</a> = 5, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eab2f07b5774411ae1e897115b9c005c85">MAP</a> = 6, 
+<b>TYPE_MASK</b> = 7, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1">FLOW</a> = 8, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1">USER</a> = 16, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413">EMPTY</a> = 32, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d">NAMED</a> = 64, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73">NONE</a> = 0, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968">INT</a> = 1, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e">REAL</a> = 2, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eab5e618c168d7c2cf598b88a7ce5256cf">FLOAT</a> = REAL, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea18c6e3b457265c98235ab36b97df3097">STR</a> = 3, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea5f83900ab305e07acafb8cb99c8f7ba9">STRING</a> = STR, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ead0995dccfdbb905343a0ba98f8da5073">REF</a> = 4, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8a5bca2d3647f360c3acac3f7a64f822">SEQ</a> = 5, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eab2f07b5774411ae1e897115b9c005c85">MAP</a> = 6, 
+<b>TYPE_MASK</b> = 7, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1">FLOW</a> = 8, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1">USER</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413">EMPTY</a> = 32, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d">NAMED</a> = 64, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73">NONE</a> = 0, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968">INT</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e">REAL</a> = 2, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eab5e618c168d7c2cf598b88a7ce5256cf">FLOAT</a> = REAL, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea18c6e3b457265c98235ab36b97df3097">STR</a> = 3, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea5f83900ab305e07acafb8cb99c8f7ba9">STRING</a> = STR, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ead0995dccfdbb905343a0ba98f8da5073">REF</a> = 4, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8a5bca2d3647f360c3acac3f7a64f822">SEQ</a> = 5, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eab2f07b5774411ae1e897115b9c005c85">MAP</a> = 6, 
+<b>TYPE_MASK</b> = 7, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1">FLOW</a> = 8, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1">USER</a> = 16, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413">EMPTY</a> = 32, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d">NAMED</a> = 64, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73">NONE</a> = 0, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968">INT</a> = 1, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e">REAL</a> = 2, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eab5e618c168d7c2cf598b88a7ce5256cf">FLOAT</a> = REAL, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea18c6e3b457265c98235ab36b97df3097">STR</a> = 3, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea5f83900ab305e07acafb8cb99c8f7ba9">STRING</a> = STR, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ead0995dccfdbb905343a0ba98f8da5073">REF</a> = 4, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8a5bca2d3647f360c3acac3f7a64f822">SEQ</a> = 5, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066eab2f07b5774411ae1e897115b9c005c85">MAP</a> = 6, 
+<b>TYPE_MASK</b> = 7, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1">FLOW</a> = 8, 
+<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1">USER</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413">EMPTY</a> = 32, 
 <a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d">NAMED</a> = 64
 <br />
  }</td></tr>
@@ -384,6 +546,120 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a1b95e3870efe0abcd06d9908f73cf02e"><td class="memItemLeft" align="right" valign="top">CV_WRAP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a1b95e3870efe0abcd06d9908f73cf02e">FileNode</a> ()</td></tr>
+<tr class="memdesc:a1b95e3870efe0abcd06d9908f73cf02e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructors.  <a href="#a1b95e3870efe0abcd06d9908f73cf02e">More...</a><br /></td></tr>
+<tr class="separator:a1b95e3870efe0abcd06d9908f73cf02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5337c216ea9fe0f1a3ebaf28b981a85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#ac5337c216ea9fe0f1a3ebaf28b981a85">FileNode</a> (const <a class="el" href="group__core__c.html#ga84556d1bb6f1b8b02c04c60246747a7e">CvFileStorage</a> *fs, const <a class="el" href="struct_cv_file_node.html">CvFileNode</a> *node)</td></tr>
+<tr class="separator:ac5337c216ea9fe0f1a3ebaf28b981a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f12e82f34ff7f1be73eea1270a35d50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a3f12e82f34ff7f1be73eea1270a35d50">FileNode</a> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node)</td></tr>
+<tr class="separator:a3f12e82f34ff7f1be73eea1270a35d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a544bdab727d3b76828c915b0fe30a8e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcv_1_1_file_node.html">FileNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a544bdab727d3b76828c915b0fe30a8e6">operator[]</a> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;nodename) const</td></tr>
+<tr class="memdesc:a544bdab727d3b76828c915b0fe30a8e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns element of a mapping node or a sequence node.  <a href="#a544bdab727d3b76828c915b0fe30a8e6">More...</a><br /></td></tr>
+<tr class="separator:a544bdab727d3b76828c915b0fe30a8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7162fa67ece6f597c0f25860a8d30bda"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a7162fa67ece6f597c0f25860a8d30bda">CV_WRAP_AS</a> (getNode) <a class="el" href="classcv_1_1_file_node.html">FileNode</a> operator[](const char *nodename) const</td></tr>
+<tr class="separator:a7162fa67ece6f597c0f25860a8d30bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac83da9d54f33229e783a84ca13c4ba20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#ac83da9d54f33229e783a84ca13c4ba20">CV_WRAP_AS</a> (at) <a class="el" href="classcv_1_1_file_node.html">FileNode</a> operator[](int i) const</td></tr>
+<tr class="separator:ac83da9d54f33229e783a84ca13c4ba20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f40e1a6caea6ecf4450dc052be35f4"><td class="memItemLeft" align="right" valign="top">CV_WRAP std::vector&lt; <a class="el" href="classcv_1_1_string.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a20f40e1a6caea6ecf4450dc052be35f4">keys</a> () const</td></tr>
+<tr class="memdesc:a20f40e1a6caea6ecf4450dc052be35f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns keys of a mapping node.  <a href="#a20f40e1a6caea6ecf4450dc052be35f4">More...</a><br /></td></tr>
+<tr class="separator:a20f40e1a6caea6ecf4450dc052be35f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a053e4ed59e4cb46a4e3023c1cb0ebb67"><td class="memItemLeft" align="right" valign="top">CV_WRAP int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a053e4ed59e4cb46a4e3023c1cb0ebb67">type</a> () const</td></tr>
+<tr class="memdesc:a053e4ed59e4cb46a4e3023c1cb0ebb67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns type of the node.  <a href="#a053e4ed59e4cb46a4e3023c1cb0ebb67">More...</a><br /></td></tr>
+<tr class="separator:a053e4ed59e4cb46a4e3023c1cb0ebb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a268f1bb45cdbe7297165d506988ed726"><td class="memItemLeft" align="right" valign="top"><a id="a268f1bb45cdbe7297165d506988ed726"></a>
+CV_WRAP bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a268f1bb45cdbe7297165d506988ed726">empty</a> () const</td></tr>
+<tr class="memdesc:a268f1bb45cdbe7297165d506988ed726"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the node is empty <br /></td></tr>
+<tr class="separator:a268f1bb45cdbe7297165d506988ed726"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab0b0dd3696b2b209e1d1090794fbea3"><td class="memItemLeft" align="right" valign="top"><a id="aab0b0dd3696b2b209e1d1090794fbea3"></a>
+CV_WRAP bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#aab0b0dd3696b2b209e1d1090794fbea3">isNone</a> () const</td></tr>
+<tr class="memdesc:aab0b0dd3696b2b209e1d1090794fbea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the node is a "none" object <br /></td></tr>
+<tr class="separator:aab0b0dd3696b2b209e1d1090794fbea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7ec0fb9fd7f853b02ae7568b360f472"><td class="memItemLeft" align="right" valign="top"><a id="af7ec0fb9fd7f853b02ae7568b360f472"></a>
+CV_WRAP bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#af7ec0fb9fd7f853b02ae7568b360f472">isSeq</a> () const</td></tr>
+<tr class="memdesc:af7ec0fb9fd7f853b02ae7568b360f472"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the node is a sequence <br /></td></tr>
+<tr class="separator:af7ec0fb9fd7f853b02ae7568b360f472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cbd9ca200526507bb3a48458f8d41d5"><td class="memItemLeft" align="right" valign="top"><a id="a4cbd9ca200526507bb3a48458f8d41d5"></a>
+CV_WRAP bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a4cbd9ca200526507bb3a48458f8d41d5">isMap</a> () const</td></tr>
+<tr class="memdesc:a4cbd9ca200526507bb3a48458f8d41d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the node is a mapping <br /></td></tr>
+<tr class="separator:a4cbd9ca200526507bb3a48458f8d41d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392d74d66b9c7762b6cb75837e5e8706"><td class="memItemLeft" align="right" valign="top"><a id="a392d74d66b9c7762b6cb75837e5e8706"></a>
+CV_WRAP bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a392d74d66b9c7762b6cb75837e5e8706">isInt</a> () const</td></tr>
+<tr class="memdesc:a392d74d66b9c7762b6cb75837e5e8706"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the node is an integer <br /></td></tr>
+<tr class="separator:a392d74d66b9c7762b6cb75837e5e8706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa527523483715abfbc7a9fea82da11"><td class="memItemLeft" align="right" valign="top"><a id="acaa527523483715abfbc7a9fea82da11"></a>
+CV_WRAP bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#acaa527523483715abfbc7a9fea82da11">isReal</a> () const</td></tr>
+<tr class="memdesc:acaa527523483715abfbc7a9fea82da11"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the node is a floating-point number <br /></td></tr>
+<tr class="separator:acaa527523483715abfbc7a9fea82da11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829cb8cd487af5d94573a314e84a9adc"><td class="memItemLeft" align="right" valign="top"><a id="a829cb8cd487af5d94573a314e84a9adc"></a>
+CV_WRAP bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a829cb8cd487af5d94573a314e84a9adc">isString</a> () const</td></tr>
+<tr class="memdesc:a829cb8cd487af5d94573a314e84a9adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the node is a text string <br /></td></tr>
+<tr class="separator:a829cb8cd487af5d94573a314e84a9adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd8f2cf803384ae941de821798addc26"><td class="memItemLeft" align="right" valign="top"><a id="afd8f2cf803384ae941de821798addc26"></a>
+CV_WRAP bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#afd8f2cf803384ae941de821798addc26">isNamed</a> () const</td></tr>
+<tr class="memdesc:afd8f2cf803384ae941de821798addc26"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the node has a name <br /></td></tr>
+<tr class="separator:afd8f2cf803384ae941de821798addc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d8805caedf41a3e167e0833d40b738a"><td class="memItemLeft" align="right" valign="top"><a id="a8d8805caedf41a3e167e0833d40b738a"></a>
+CV_WRAP <a class="el" href="classcv_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a8d8805caedf41a3e167e0833d40b738a">name</a> () const</td></tr>
+<tr class="memdesc:a8d8805caedf41a3e167e0833d40b738a"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the node name or an empty string if the node is nameless <br /></td></tr>
+<tr class="separator:a8d8805caedf41a3e167e0833d40b738a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe1f40db0621a2ff458919aa84110100"><td class="memItemLeft" align="right" valign="top"><a id="afe1f40db0621a2ff458919aa84110100"></a>
+CV_WRAP size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#afe1f40db0621a2ff458919aa84110100">size</a> () const</td></tr>
+<tr class="memdesc:afe1f40db0621a2ff458919aa84110100"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the number of elements in the node, if it is a sequence or mapping, or 1 otherwise. <br /></td></tr>
+<tr class="separator:afe1f40db0621a2ff458919aa84110100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeb2006e72927bdd63f2aaf51fb58ec8"><td class="memItemLeft" align="right" valign="top"><a id="aaeb2006e72927bdd63f2aaf51fb58ec8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#aaeb2006e72927bdd63f2aaf51fb58ec8">operator int</a> () const</td></tr>
+<tr class="memdesc:aaeb2006e72927bdd63f2aaf51fb58ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the node content as an integer. If the node stores floating-point number, it is rounded. <br /></td></tr>
+<tr class="separator:aaeb2006e72927bdd63f2aaf51fb58ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace0c316a0f60a1b8bb66224363f2a5d0"><td class="memItemLeft" align="right" valign="top"><a id="ace0c316a0f60a1b8bb66224363f2a5d0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#ace0c316a0f60a1b8bb66224363f2a5d0">operator float</a> () const</td></tr>
+<tr class="memdesc:ace0c316a0f60a1b8bb66224363f2a5d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the node content as float <br /></td></tr>
+<tr class="separator:ace0c316a0f60a1b8bb66224363f2a5d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae03480a1f0217c7bf9492f24f3a8d1b7"><td class="memItemLeft" align="right" valign="top"><a id="ae03480a1f0217c7bf9492f24f3a8d1b7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#ae03480a1f0217c7bf9492f24f3a8d1b7">operator double</a> () const</td></tr>
+<tr class="memdesc:ae03480a1f0217c7bf9492f24f3a8d1b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the node content as double <br /></td></tr>
+<tr class="separator:ae03480a1f0217c7bf9492f24f3a8d1b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac86dd18840967669de8234675fc2ff6c"><td class="memItemLeft" align="right" valign="top"><a id="ac86dd18840967669de8234675fc2ff6c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#ac86dd18840967669de8234675fc2ff6c">operator String</a> () const</td></tr>
+<tr class="memdesc:ac86dd18840967669de8234675fc2ff6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the node content as text string <br /></td></tr>
+<tr class="separator:ac86dd18840967669de8234675fc2ff6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11de5ea3c4d33e23d584112434852310"><td class="memItemLeft" align="right" valign="top"><a id="a11de5ea3c4d33e23d584112434852310"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>operator std::string</b> () const</td></tr>
+<tr class="separator:a11de5ea3c4d33e23d584112434852310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56fb9bd8538c1feb0e63ae93ffed5fcf"><td class="memItemLeft" align="right" valign="top"><a id="a56fb9bd8538c1feb0e63ae93ffed5fcf"></a>
+<a class="el" href="struct_cv_file_node.html">CvFileNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a56fb9bd8538c1feb0e63ae93ffed5fcf">operator *</a> ()</td></tr>
+<tr class="memdesc:a56fb9bd8538c1feb0e63ae93ffed5fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns pointer to the underlying file node <br /></td></tr>
+<tr class="separator:a56fb9bd8538c1feb0e63ae93ffed5fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad401643b5db2d89fc9162acd877be69"><td class="memItemLeft" align="right" valign="top"><a id="aad401643b5db2d89fc9162acd877be69"></a>
+const <a class="el" href="struct_cv_file_node.html">CvFileNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#aad401643b5db2d89fc9162acd877be69">operator *</a> () const</td></tr>
+<tr class="memdesc:aad401643b5db2d89fc9162acd877be69"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns pointer to the underlying file node <br /></td></tr>
+<tr class="separator:aad401643b5db2d89fc9162acd877be69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f299820227506079f5b9013dd8c3558"><td class="memItemLeft" align="right" valign="top"><a id="a0f299820227506079f5b9013dd8c3558"></a>
+<a class="el" href="classcv_1_1_file_node_iterator.html">FileNodeIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a0f299820227506079f5b9013dd8c3558">begin</a> () const</td></tr>
+<tr class="memdesc:a0f299820227506079f5b9013dd8c3558"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns iterator pointing to the first node element <br /></td></tr>
+<tr class="separator:a0f299820227506079f5b9013dd8c3558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b033e34726eb73f0238a1bfbe0c8e9"><td class="memItemLeft" align="right" valign="top"><a id="a58b033e34726eb73f0238a1bfbe0c8e9"></a>
+<a class="el" href="classcv_1_1_file_node_iterator.html">FileNodeIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a58b033e34726eb73f0238a1bfbe0c8e9">end</a> () const</td></tr>
+<tr class="memdesc:a58b033e34726eb73f0238a1bfbe0c8e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns iterator pointing to the element following the last node element <br /></td></tr>
+<tr class="separator:a58b033e34726eb73f0238a1bfbe0c8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac236df16205922f1328260b56a012794"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#ac236df16205922f1328260b56a012794">readRaw</a> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;fmt, uchar *vec, size_t len) const</td></tr>
+<tr class="memdesc:ac236df16205922f1328260b56a012794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads node elements to the buffer with the specified format.  <a href="#ac236df16205922f1328260b56a012794">More...</a><br /></td></tr>
+<tr class="separator:ac236df16205922f1328260b56a012794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a4ba93df1d38e184d0a16905b76a387"><td class="memItemLeft" align="right" valign="top"><a id="a1a4ba93df1d38e184d0a16905b76a387"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a1a4ba93df1d38e184d0a16905b76a387">readObj</a> () const</td></tr>
+<tr class="memdesc:a1a4ba93df1d38e184d0a16905b76a387"><td class="mdescLeft">&#160;</td><td class="mdescRight">reads the registered object and returns pointer to it <br /></td></tr>
+<tr class="separator:a1a4ba93df1d38e184d0a16905b76a387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e1a59f9c50cf1ab6ac654bb4a05337"><td class="memItemLeft" align="right" valign="top"><a id="a05e1a59f9c50cf1ab6ac654bb4a05337"></a>
+CV_WRAP double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a05e1a59f9c50cf1ab6ac654bb4a05337">real</a> () const</td></tr>
+<tr class="memdesc:a05e1a59f9c50cf1ab6ac654bb4a05337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simplified reading API to use with bindings. <br /></td></tr>
+<tr class="separator:a05e1a59f9c50cf1ab6ac654bb4a05337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47b651721344d048c41ec0f2dff2e446"><td class="memItemLeft" align="right" valign="top"><a id="a47b651721344d048c41ec0f2dff2e446"></a>
+CV_WRAP <a class="el" href="classcv_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a47b651721344d048c41ec0f2dff2e446">string</a> () const</td></tr>
+<tr class="memdesc:a47b651721344d048c41ec0f2dff2e446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simplified reading API to use with bindings. <br /></td></tr>
+<tr class="separator:a47b651721344d048c41ec0f2dff2e446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b0720c241eda6750b9f1885bc4ba12"><td class="memItemLeft" align="right" valign="top"><a id="a85b0720c241eda6750b9f1885bc4ba12"></a>
+CV_WRAP <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a85b0720c241eda6750b9f1885bc4ba12">mat</a> () const</td></tr>
+<tr class="memdesc:a85b0720c241eda6750b9f1885bc4ba12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simplified reading API to use with bindings. <br /></td></tr>
+<tr class="separator:a85b0720c241eda6750b9f1885bc4ba12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b95e3870efe0abcd06d9908f73cf02e"><td class="memItemLeft" align="right" valign="top">CV_WRAP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a1b95e3870efe0abcd06d9908f73cf02e">FileNode</a> ()</td></tr>
 <tr class="memdesc:a1b95e3870efe0abcd06d9908f73cf02e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructors.  <a href="#a1b95e3870efe0abcd06d9908f73cf02e">More...</a><br /></td></tr>
 <tr class="separator:a1b95e3870efe0abcd06d9908f73cf02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1334,6 +1610,126 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>operator &gt;&
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#ab1794c2f914b0687be07ebc06b8b3868">operator &gt;&gt;</a> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;n, <a class="el" href="classcv_1_1_d_match.html">DMatch</a> &amp;m)</td></tr>
 <tr class="memdesc:ab1794c2f914b0687be07ebc06b8b3868"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads <a class="el" href="classcv_1_1_d_match.html" title="Class for matching keypoint descriptors.">DMatch</a> from a file storage. <br /></td></tr>
 <tr class="separator:ab1794c2f914b0687be07ebc06b8b3868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a465ecbebfcec82f2db542abc5e4fe124"><td class="memItemLeft" align="right" valign="top"><a id="a465ecbebfcec82f2db542abc5e4fe124"></a>
+CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, int &amp;value, int default_value)</td></tr>
+<tr class="separator:a465ecbebfcec82f2db542abc5e4fe124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac5fe8c2bac2ec35bd8132b11366d16a"><td class="memItemLeft" align="right" valign="top"><a id="aac5fe8c2bac2ec35bd8132b11366d16a"></a>
+CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, float &amp;value, float default_value)</td></tr>
+<tr class="separator:aac5fe8c2bac2ec35bd8132b11366d16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2538e9fffa4cd5db911eeb635f8e676"><td class="memItemLeft" align="right" valign="top"><a id="ac2538e9fffa4cd5db911eeb635f8e676"></a>
+CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, double &amp;value, double default_value)</td></tr>
+<tr class="separator:ac2538e9fffa4cd5db911eeb635f8e676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f6da8a259e1d18a762f5d43f7ac980"><td class="memItemLeft" align="right" valign="top"><a id="a72f6da8a259e1d18a762f5d43f7ac980"></a>
+CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, <a class="el" href="classcv_1_1_string.html">String</a> &amp;value, const <a class="el" href="classcv_1_1_string.html">String</a> &amp;default_value)</td></tr>
+<tr class="separator:a72f6da8a259e1d18a762f5d43f7ac980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af75929608c020177409c9f8f15891e27"><td class="memItemLeft" align="right" valign="top"><a id="af75929608c020177409c9f8f15891e27"></a>
+CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, std::string &amp;value, const std::string &amp;default_value)</td></tr>
+<tr class="separator:af75929608c020177409c9f8f15891e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa2e18016c3253292bea8b459180700b"><td class="memItemLeft" align="right" valign="top"><a id="aaa2e18016c3253292bea8b459180700b"></a>
+CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;<a class="el" href="classcv_1_1_file_node.html#a85b0720c241eda6750b9f1885bc4ba12">mat</a>, const <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;default_mat=<a class="el" href="classcv_1_1_mat.html">Mat</a>())</td></tr>
+<tr class="separator:aaa2e18016c3253292bea8b459180700b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac387e6fd4ec18e5ee38d29e7de2f7700"><td class="memItemLeft" align="right" valign="top"><a id="ac387e6fd4ec18e5ee38d29e7de2f7700"></a>
+CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, <a class="el" href="classcv_1_1_sparse_mat.html">SparseMat</a> &amp;<a class="el" href="classcv_1_1_file_node.html#a85b0720c241eda6750b9f1885bc4ba12">mat</a>, const <a class="el" href="classcv_1_1_sparse_mat.html">SparseMat</a> &amp;default_mat=<a class="el" href="classcv_1_1_sparse_mat.html">SparseMat</a>())</td></tr>
+<tr class="separator:ac387e6fd4ec18e5ee38d29e7de2f7700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabece87b0857a55dcee1424065ed0931"><td class="memItemLeft" align="right" valign="top"><a id="aabece87b0857a55dcee1424065ed0931"></a>
+CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, std::vector&lt; <a class="el" href="classcv_1_1_key_point.html">KeyPoint</a> &gt; &amp;keypoints)</td></tr>
+<tr class="separator:aabece87b0857a55dcee1424065ed0931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5b5a80f862193aabe7d765ff1312f8"><td class="memItemLeft" align="right" valign="top"><a id="a0b5b5a80f862193aabe7d765ff1312f8"></a>
+CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, std::vector&lt; <a class="el" href="classcv_1_1_d_match.html">DMatch</a> &gt; &amp;matches)</td></tr>
+<tr class="separator:a0b5b5a80f862193aabe7d765ff1312f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd8bc4d1663942da776501a91acad89"><td class="memItemLeft" align="right" valign="top"><a id="a1cd8bc4d1663942da776501a91acad89"></a>
+CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, <a class="el" href="classcv_1_1_key_point.html">KeyPoint</a> &amp;value, const <a class="el" href="classcv_1_1_key_point.html">KeyPoint</a> &amp;default_value)</td></tr>
+<tr class="separator:a1cd8bc4d1663942da776501a91acad89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1bbba2af057b06e971d381266b98a92"><td class="memItemLeft" align="right" valign="top"><a id="af1bbba2af057b06e971d381266b98a92"></a>
+CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, <a class="el" href="classcv_1_1_d_match.html">DMatch</a> &amp;value, const <a class="el" href="classcv_1_1_d_match.html">DMatch</a> &amp;default_value)</td></tr>
+<tr class="separator:af1bbba2af057b06e971d381266b98a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0d9174cb7cdfac05b0daa654d2101d7"><td class="memTemplParams" colspan="2"><a id="ac0d9174cb7cdfac05b0daa654d2101d7"></a>
+template&lt;typename _Tp &gt; </td></tr>
+<tr class="memitem:ac0d9174cb7cdfac05b0daa654d2101d7"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, <a class="el" href="classcv_1_1_point__.html">Point_</a>&lt; _Tp &gt; &amp;value, const <a class="el" href="classcv_1_1_point__.html">Point_</a>&lt; _Tp &gt; &amp;default_value)</td></tr>
+<tr class="separator:ac0d9174cb7cdfac05b0daa654d2101d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a543159a22b6e9fb19773696b38ea4189"><td class="memTemplParams" colspan="2"><a id="a543159a22b6e9fb19773696b38ea4189"></a>
+template&lt;typename _Tp &gt; </td></tr>
+<tr class="memitem:a543159a22b6e9fb19773696b38ea4189"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, <a class="el" href="classcv_1_1_point3__.html">Point3_</a>&lt; _Tp &gt; &amp;value, const <a class="el" href="classcv_1_1_point3__.html">Point3_</a>&lt; _Tp &gt; &amp;default_value)</td></tr>
+<tr class="separator:a543159a22b6e9fb19773696b38ea4189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91e5af29534fa39bc1b9ea7d62eb0b66"><td class="memTemplParams" colspan="2"><a id="a91e5af29534fa39bc1b9ea7d62eb0b66"></a>
+template&lt;typename _Tp &gt; </td></tr>
+<tr class="memitem:a91e5af29534fa39bc1b9ea7d62eb0b66"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, <a class="el" href="classcv_1_1_size__.html">Size_</a>&lt; _Tp &gt; &amp;value, const <a class="el" href="classcv_1_1_size__.html">Size_</a>&lt; _Tp &gt; &amp;default_value)</td></tr>
+<tr class="separator:a91e5af29534fa39bc1b9ea7d62eb0b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf08ccd13398796da79c6fd07cf08d87"><td class="memTemplParams" colspan="2"><a id="abf08ccd13398796da79c6fd07cf08d87"></a>
+template&lt;typename _Tp &gt; </td></tr>
+<tr class="memitem:abf08ccd13398796da79c6fd07cf08d87"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, <a class="el" href="classcv_1_1_complex.html">Complex</a>&lt; _Tp &gt; &amp;value, const <a class="el" href="classcv_1_1_complex.html">Complex</a>&lt; _Tp &gt; &amp;default_value)</td></tr>
+<tr class="separator:abf08ccd13398796da79c6fd07cf08d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7d745c67c1d944ba3eb1245b6714496"><td class="memTemplParams" colspan="2"><a id="ae7d745c67c1d944ba3eb1245b6714496"></a>
+template&lt;typename _Tp &gt; </td></tr>
+<tr class="memitem:ae7d745c67c1d944ba3eb1245b6714496"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, <a class="el" href="classcv_1_1_rect__.html">Rect_</a>&lt; _Tp &gt; &amp;value, const <a class="el" href="classcv_1_1_rect__.html">Rect_</a>&lt; _Tp &gt; &amp;default_value)</td></tr>
+<tr class="separator:ae7d745c67c1d944ba3eb1245b6714496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399ed562c8178cae18851944d304ed54"><td class="memTemplParams" colspan="2"><a id="a399ed562c8178cae18851944d304ed54"></a>
+template&lt;typename _Tp , int cn&gt; </td></tr>
+<tr class="memitem:a399ed562c8178cae18851944d304ed54"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, <a class="el" href="classcv_1_1_vec.html">Vec</a>&lt; _Tp, cn &gt; &amp;value, const <a class="el" href="classcv_1_1_vec.html">Vec</a>&lt; _Tp, cn &gt; &amp;default_value)</td></tr>
+<tr class="separator:a399ed562c8178cae18851944d304ed54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aada6c34de9b3b1755c217f2ca96051bd"><td class="memTemplParams" colspan="2"><a id="aada6c34de9b3b1755c217f2ca96051bd"></a>
+template&lt;typename _Tp &gt; </td></tr>
+<tr class="memitem:aada6c34de9b3b1755c217f2ca96051bd"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, <a class="el" href="classcv_1_1_scalar__.html">Scalar_</a>&lt; _Tp &gt; &amp;value, const <a class="el" href="classcv_1_1_scalar__.html">Scalar_</a>&lt; _Tp &gt; &amp;default_value)</td></tr>
+<tr class="separator:aada6c34de9b3b1755c217f2ca96051bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a143b31786d7927e3660ae42fdb258fb2"><td class="memItemLeft" align="right" valign="top"><a id="a143b31786d7927e3660ae42fdb258fb2"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, <a class="el" href="classcv_1_1_range.html">Range</a> &amp;value, const <a class="el" href="classcv_1_1_range.html">Range</a> &amp;default_value)</td></tr>
+<tr class="separator:a143b31786d7927e3660ae42fdb258fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:ae541c479c2833d1cdeea6e80f8faee98"><td class="memItemLeft" align="right" valign="top"><a id="ae541c479c2833d1cdeea6e80f8faee98"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, bool &amp;value, bool default_value)</td></tr>
+<tr class="separator:ae541c479c2833d1cdeea6e80f8faee98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c9fc5bcbaa3bad151a96e992cdad9a1"><td class="memItemLeft" align="right" valign="top"><a id="a9c9fc5bcbaa3bad151a96e992cdad9a1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, uchar &amp;value, uchar default_value)</td></tr>
+<tr class="separator:a9c9fc5bcbaa3bad151a96e992cdad9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8187ea955da47ab2c631c31245320028"><td class="memItemLeft" align="right" valign="top"><a id="a8187ea955da47ab2c631c31245320028"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, schar &amp;value, schar default_value)</td></tr>
+<tr class="separator:a8187ea955da47ab2c631c31245320028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95512c3eba67570b9c1279e6f053972b"><td class="memItemLeft" align="right" valign="top"><a id="a95512c3eba67570b9c1279e6f053972b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, ushort &amp;value, ushort default_value)</td></tr>
+<tr class="separator:a95512c3eba67570b9c1279e6f053972b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9676bab54dc0ad11e3d7142b9a032b3"><td class="memItemLeft" align="right" valign="top"><a id="aa9676bab54dc0ad11e3d7142b9a032b3"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, short &amp;value, short default_value)</td></tr>
+<tr class="separator:aa9676bab54dc0ad11e3d7142b9a032b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdd936a4632cc7b4f65836f701e7ccf9"><td class="memTemplParams" colspan="2"><a id="acdd936a4632cc7b4f65836f701e7ccf9"></a>
+template&lt;typename _Tp &gt; </td></tr>
+<tr class="memitem:acdd936a4632cc7b4f65836f701e7ccf9"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>read</b> (<a class="el" href="classcv_1_1_file_node_iterator.html">FileNodeIterator</a> &amp;it, std::vector&lt; _Tp &gt; &amp;vec, size_t maxCount=(size_t) INT_MAX)</td></tr>
+<tr class="separator:acdd936a4632cc7b4f65836f701e7ccf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19b13d9369933709af74a8fd3c5e0d15"><td class="memTemplParams" colspan="2"><a id="a19b13d9369933709af74a8fd3c5e0d15"></a>
+template&lt;typename _Tp &gt; </td></tr>
+<tr class="memitem:a19b13d9369933709af74a8fd3c5e0d15"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, std::vector&lt; _Tp &gt; &amp;vec, const std::vector&lt; _Tp &gt; &amp;default_value=std::vector&lt; _Tp &gt;())</td></tr>
+<tr class="separator:a19b13d9369933709af74a8fd3c5e0d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75a16693d3fd15f0c6ddab1abd8ce273"><td class="memItemLeft" align="right" valign="top"><a id="a75a16693d3fd15f0c6ddab1abd8ce273"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, std::vector&lt; <a class="el" href="classcv_1_1_key_point.html">KeyPoint</a> &gt; &amp;vec, const std::vector&lt; <a class="el" href="classcv_1_1_key_point.html">KeyPoint</a> &gt; &amp;default_value)</td></tr>
+<tr class="separator:a75a16693d3fd15f0c6ddab1abd8ce273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ddaf6232746691f81f232454d491ae"><td class="memItemLeft" align="right" valign="top"><a id="a82ddaf6232746691f81f232454d491ae"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;node, std::vector&lt; <a class="el" href="classcv_1_1_d_match.html">DMatch</a> &gt; &amp;vec, const std::vector&lt; <a class="el" href="classcv_1_1_d_match.html">DMatch</a> &gt; &amp;default_value)</td></tr>
+<tr class="separator:a82ddaf6232746691f81f232454d491ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a6dea85c67a3f43264a3ed164461c552d"><td class="memTemplParams" colspan="2"><a id="a6dea85c67a3f43264a3ed164461c552d"></a>
+template&lt;typename _Tp &gt; </td></tr>
+<tr class="memitem:a6dea85c67a3f43264a3ed164461c552d"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a6dea85c67a3f43264a3ed164461c552d">operator &gt;&gt;</a> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;n, _Tp &amp;value)</td></tr>
+<tr class="memdesc:a6dea85c67a3f43264a3ed164461c552d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data from a file storage. <br /></td></tr>
+<tr class="separator:a6dea85c67a3f43264a3ed164461c552d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35d115fc329bbddf1c773c33341bed17"><td class="memTemplParams" colspan="2"><a id="a35d115fc329bbddf1c773c33341bed17"></a>
+template&lt;typename _Tp &gt; </td></tr>
+<tr class="memitem:a35d115fc329bbddf1c773c33341bed17"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#a35d115fc329bbddf1c773c33341bed17">operator &gt;&gt;</a> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;n, std::vector&lt; _Tp &gt; &amp;vec)</td></tr>
+<tr class="memdesc:a35d115fc329bbddf1c773c33341bed17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data from a file storage. <br /></td></tr>
+<tr class="separator:a35d115fc329bbddf1c773c33341bed17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7f208f2748075d703b051728dc5b18c"><td class="memItemLeft" align="right" valign="top"><a id="ad7f208f2748075d703b051728dc5b18c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#ad7f208f2748075d703b051728dc5b18c">operator &gt;&gt;</a> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;n, <a class="el" href="classcv_1_1_key_point.html">KeyPoint</a> &amp;kpt)</td></tr>
+<tr class="memdesc:ad7f208f2748075d703b051728dc5b18c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads <a class="el" href="classcv_1_1_key_point.html" title="Data structure for salient point detectors.">KeyPoint</a> from a file storage. <br /></td></tr>
+<tr class="separator:ad7f208f2748075d703b051728dc5b18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00d6e9d168cfea411a95f27bc3f3de30"><td class="memItemLeft" align="right" valign="top"><a id="a00d6e9d168cfea411a95f27bc3f3de30"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>operator &gt;&gt;</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;n, std::vector&lt; <a class="el" href="classcv_1_1_key_point.html">KeyPoint</a> &gt; &amp;vec)</td></tr>
+<tr class="separator:a00d6e9d168cfea411a95f27bc3f3de30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a692d06c64d4bf189c9254053308ec727"><td class="memItemLeft" align="right" valign="top"><a id="a692d06c64d4bf189c9254053308ec727"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>operator &gt;&gt;</b> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;n, std::vector&lt; <a class="el" href="classcv_1_1_d_match.html">DMatch</a> &gt; &amp;vec)</td></tr>
+<tr class="separator:a692d06c64d4bf189c9254053308ec727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1794c2f914b0687be07ebc06b8b3868"><td class="memItemLeft" align="right" valign="top"><a id="ab1794c2f914b0687be07ebc06b8b3868"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_file_node.html#ab1794c2f914b0687be07ebc06b8b3868">operator &gt;&gt;</a> (const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;n, <a class="el" href="classcv_1_1_d_match.html">DMatch</a> &amp;m)</td></tr>
+<tr class="memdesc:ab1794c2f914b0687be07ebc06b8b3868"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads <a class="el" href="classcv_1_1_d_match.html" title="Class for matching keypoint descriptors.">DMatch</a> from a file storage. <br /></td></tr>
+<tr class="separator:ab1794c2f914b0687be07ebc06b8b3868"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>File Storage <a class="el" href="classcv_1_1_node.html">Node</a> class. </p>
@@ -1341,7 +1737,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <p>Note that file nodes are only used for navigating file storages opened for reading. When a file storage is opened for writing, no data is stored in memory after it is written. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a8fe1d2aa050e6909b978f4df3529066e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fe1d2aa050e6909b978f4df3529066e">&#9670;&nbsp;</a></span>Type <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe1d2aa050e6909b978f4df3529066e">&#9670;&nbsp;</a></span>Type <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1355,6 +1751,32 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <p>type of the file storage node </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73"></a>NONE&#160;</td><td class="fielddoc"><p>empty node </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968"></a>INT&#160;</td><td class="fielddoc"><p>an integer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e"></a>REAL&#160;</td><td class="fielddoc"><p>floating-point number </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eab5e618c168d7c2cf598b88a7ce5256cf"></a>FLOAT&#160;</td><td class="fielddoc"><p>synonym or REAL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea18c6e3b457265c98235ab36b97df3097"></a>STR&#160;</td><td class="fielddoc"><p>text string in UTF-8 encoding </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea5f83900ab305e07acafb8cb99c8f7ba9"></a>STRING&#160;</td><td class="fielddoc"><p>synonym for STR </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ead0995dccfdbb905343a0ba98f8da5073"></a>REF&#160;</td><td class="fielddoc"><p>integer of size size_t. Typically used for storing complex dynamic structures where some elements reference the others </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea8a5bca2d3647f360c3acac3f7a64f822"></a>SEQ&#160;</td><td class="fielddoc"><p>sequence </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eab2f07b5774411ae1e897115b9c005c85"></a>MAP&#160;</td><td class="fielddoc"><p>mapping </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1"></a>FLOW&#160;</td><td class="fielddoc"><p>compact representation of a sequence or mapping. Used only by YAML writer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1"></a>USER&#160;</td><td class="fielddoc"><p>a registered object (e.g. a matrix) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413"></a>EMPTY&#160;</td><td class="fielddoc"><p>empty structure (sequence or mapping) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d"></a>NAMED&#160;</td><td class="fielddoc"><p>the node has a name (i.e. it is element of a mapping) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73"></a>NONE&#160;</td><td class="fielddoc"><p>empty node </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968"></a>INT&#160;</td><td class="fielddoc"><p>an integer </p>
 </td></tr>
@@ -1463,7 +1885,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a8fe1d2aa050e6909b978f4df3529066e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fe1d2aa050e6909b978f4df3529066e">&#9670;&nbsp;</a></span>Type <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe1d2aa050e6909b978f4df3529066e">&#9670;&nbsp;</a></span>Type <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1477,6 +1899,32 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <p>type of the file storage node </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73"></a>NONE&#160;</td><td class="fielddoc"><p>empty node </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968"></a>INT&#160;</td><td class="fielddoc"><p>an integer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e"></a>REAL&#160;</td><td class="fielddoc"><p>floating-point number </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eab5e618c168d7c2cf598b88a7ce5256cf"></a>FLOAT&#160;</td><td class="fielddoc"><p>synonym or REAL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea18c6e3b457265c98235ab36b97df3097"></a>STR&#160;</td><td class="fielddoc"><p>text string in UTF-8 encoding </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea5f83900ab305e07acafb8cb99c8f7ba9"></a>STRING&#160;</td><td class="fielddoc"><p>synonym for STR </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ead0995dccfdbb905343a0ba98f8da5073"></a>REF&#160;</td><td class="fielddoc"><p>integer of size size_t. Typically used for storing complex dynamic structures where some elements reference the others </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea8a5bca2d3647f360c3acac3f7a64f822"></a>SEQ&#160;</td><td class="fielddoc"><p>sequence </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eab2f07b5774411ae1e897115b9c005c85"></a>MAP&#160;</td><td class="fielddoc"><p>mapping </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1"></a>FLOW&#160;</td><td class="fielddoc"><p>compact representation of a sequence or mapping. Used only by YAML writer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1"></a>USER&#160;</td><td class="fielddoc"><p>a registered object (e.g. a matrix) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413"></a>EMPTY&#160;</td><td class="fielddoc"><p>empty structure (sequence or mapping) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d"></a>NAMED&#160;</td><td class="fielddoc"><p>the node has a name (i.e. it is element of a mapping) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73"></a>NONE&#160;</td><td class="fielddoc"><p>empty node </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968"></a>INT&#160;</td><td class="fielddoc"><p>an integer </p>
 </td></tr>
@@ -1585,7 +2033,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a8fe1d2aa050e6909b978f4df3529066e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fe1d2aa050e6909b978f4df3529066e">&#9670;&nbsp;</a></span>Type <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe1d2aa050e6909b978f4df3529066e">&#9670;&nbsp;</a></span>Type <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1599,6 +2047,32 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <p>type of the file storage node </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73"></a>NONE&#160;</td><td class="fielddoc"><p>empty node </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968"></a>INT&#160;</td><td class="fielddoc"><p>an integer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e"></a>REAL&#160;</td><td class="fielddoc"><p>floating-point number </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eab5e618c168d7c2cf598b88a7ce5256cf"></a>FLOAT&#160;</td><td class="fielddoc"><p>synonym or REAL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea18c6e3b457265c98235ab36b97df3097"></a>STR&#160;</td><td class="fielddoc"><p>text string in UTF-8 encoding </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea5f83900ab305e07acafb8cb99c8f7ba9"></a>STRING&#160;</td><td class="fielddoc"><p>synonym for STR </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ead0995dccfdbb905343a0ba98f8da5073"></a>REF&#160;</td><td class="fielddoc"><p>integer of size size_t. Typically used for storing complex dynamic structures where some elements reference the others </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea8a5bca2d3647f360c3acac3f7a64f822"></a>SEQ&#160;</td><td class="fielddoc"><p>sequence </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eab2f07b5774411ae1e897115b9c005c85"></a>MAP&#160;</td><td class="fielddoc"><p>mapping </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1"></a>FLOW&#160;</td><td class="fielddoc"><p>compact representation of a sequence or mapping. Used only by YAML writer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1"></a>USER&#160;</td><td class="fielddoc"><p>a registered object (e.g. a matrix) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413"></a>EMPTY&#160;</td><td class="fielddoc"><p>empty structure (sequence or mapping) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d"></a>NAMED&#160;</td><td class="fielddoc"><p>the node has a name (i.e. it is element of a mapping) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73"></a>NONE&#160;</td><td class="fielddoc"><p>empty node </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968"></a>INT&#160;</td><td class="fielddoc"><p>an integer </p>
 </td></tr>
@@ -1707,7 +2181,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a8fe1d2aa050e6909b978f4df3529066e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fe1d2aa050e6909b978f4df3529066e">&#9670;&nbsp;</a></span>Type <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe1d2aa050e6909b978f4df3529066e">&#9670;&nbsp;</a></span>Type <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1721,6 +2195,180 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <p>type of the file storage node </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73"></a>NONE&#160;</td><td class="fielddoc"><p>empty node </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968"></a>INT&#160;</td><td class="fielddoc"><p>an integer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e"></a>REAL&#160;</td><td class="fielddoc"><p>floating-point number </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eab5e618c168d7c2cf598b88a7ce5256cf"></a>FLOAT&#160;</td><td class="fielddoc"><p>synonym or REAL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea18c6e3b457265c98235ab36b97df3097"></a>STR&#160;</td><td class="fielddoc"><p>text string in UTF-8 encoding </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea5f83900ab305e07acafb8cb99c8f7ba9"></a>STRING&#160;</td><td class="fielddoc"><p>synonym for STR </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ead0995dccfdbb905343a0ba98f8da5073"></a>REF&#160;</td><td class="fielddoc"><p>integer of size size_t. Typically used for storing complex dynamic structures where some elements reference the others </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea8a5bca2d3647f360c3acac3f7a64f822"></a>SEQ&#160;</td><td class="fielddoc"><p>sequence </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eab2f07b5774411ae1e897115b9c005c85"></a>MAP&#160;</td><td class="fielddoc"><p>mapping </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1"></a>FLOW&#160;</td><td class="fielddoc"><p>compact representation of a sequence or mapping. Used only by YAML writer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1"></a>USER&#160;</td><td class="fielddoc"><p>a registered object (e.g. a matrix) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413"></a>EMPTY&#160;</td><td class="fielddoc"><p>empty structure (sequence or mapping) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d"></a>NAMED&#160;</td><td class="fielddoc"><p>the node has a name (i.e. it is element of a mapping) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73"></a>NONE&#160;</td><td class="fielddoc"><p>empty node </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968"></a>INT&#160;</td><td class="fielddoc"><p>an integer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e"></a>REAL&#160;</td><td class="fielddoc"><p>floating-point number </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eab5e618c168d7c2cf598b88a7ce5256cf"></a>FLOAT&#160;</td><td class="fielddoc"><p>synonym or REAL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea18c6e3b457265c98235ab36b97df3097"></a>STR&#160;</td><td class="fielddoc"><p>text string in UTF-8 encoding </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea5f83900ab305e07acafb8cb99c8f7ba9"></a>STRING&#160;</td><td class="fielddoc"><p>synonym for STR </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ead0995dccfdbb905343a0ba98f8da5073"></a>REF&#160;</td><td class="fielddoc"><p>integer of size size_t. Typically used for storing complex dynamic structures where some elements reference the others </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea8a5bca2d3647f360c3acac3f7a64f822"></a>SEQ&#160;</td><td class="fielddoc"><p>sequence </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eab2f07b5774411ae1e897115b9c005c85"></a>MAP&#160;</td><td class="fielddoc"><p>mapping </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1"></a>FLOW&#160;</td><td class="fielddoc"><p>compact representation of a sequence or mapping. Used only by YAML writer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1"></a>USER&#160;</td><td class="fielddoc"><p>a registered object (e.g. a matrix) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413"></a>EMPTY&#160;</td><td class="fielddoc"><p>empty structure (sequence or mapping) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d"></a>NAMED&#160;</td><td class="fielddoc"><p>the node has a name (i.e. it is element of a mapping) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73"></a>NONE&#160;</td><td class="fielddoc"><p>empty node </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968"></a>INT&#160;</td><td class="fielddoc"><p>an integer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e"></a>REAL&#160;</td><td class="fielddoc"><p>floating-point number </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eab5e618c168d7c2cf598b88a7ce5256cf"></a>FLOAT&#160;</td><td class="fielddoc"><p>synonym or REAL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea18c6e3b457265c98235ab36b97df3097"></a>STR&#160;</td><td class="fielddoc"><p>text string in UTF-8 encoding </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea5f83900ab305e07acafb8cb99c8f7ba9"></a>STRING&#160;</td><td class="fielddoc"><p>synonym for STR </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ead0995dccfdbb905343a0ba98f8da5073"></a>REF&#160;</td><td class="fielddoc"><p>integer of size size_t. Typically used for storing complex dynamic structures where some elements reference the others </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea8a5bca2d3647f360c3acac3f7a64f822"></a>SEQ&#160;</td><td class="fielddoc"><p>sequence </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eab2f07b5774411ae1e897115b9c005c85"></a>MAP&#160;</td><td class="fielddoc"><p>mapping </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1"></a>FLOW&#160;</td><td class="fielddoc"><p>compact representation of a sequence or mapping. Used only by YAML writer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1"></a>USER&#160;</td><td class="fielddoc"><p>a registered object (e.g. a matrix) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413"></a>EMPTY&#160;</td><td class="fielddoc"><p>empty structure (sequence or mapping) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d"></a>NAMED&#160;</td><td class="fielddoc"><p>the node has a name (i.e. it is element of a mapping) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73"></a>NONE&#160;</td><td class="fielddoc"><p>empty node </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968"></a>INT&#160;</td><td class="fielddoc"><p>an integer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e"></a>REAL&#160;</td><td class="fielddoc"><p>floating-point number </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eab5e618c168d7c2cf598b88a7ce5256cf"></a>FLOAT&#160;</td><td class="fielddoc"><p>synonym or REAL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea18c6e3b457265c98235ab36b97df3097"></a>STR&#160;</td><td class="fielddoc"><p>text string in UTF-8 encoding </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea5f83900ab305e07acafb8cb99c8f7ba9"></a>STRING&#160;</td><td class="fielddoc"><p>synonym for STR </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ead0995dccfdbb905343a0ba98f8da5073"></a>REF&#160;</td><td class="fielddoc"><p>integer of size size_t. Typically used for storing complex dynamic structures where some elements reference the others </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea8a5bca2d3647f360c3acac3f7a64f822"></a>SEQ&#160;</td><td class="fielddoc"><p>sequence </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eab2f07b5774411ae1e897115b9c005c85"></a>MAP&#160;</td><td class="fielddoc"><p>mapping </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1"></a>FLOW&#160;</td><td class="fielddoc"><p>compact representation of a sequence or mapping. Used only by YAML writer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1"></a>USER&#160;</td><td class="fielddoc"><p>a registered object (e.g. a matrix) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413"></a>EMPTY&#160;</td><td class="fielddoc"><p>empty structure (sequence or mapping) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d"></a>NAMED&#160;</td><td class="fielddoc"><p>the node has a name (i.e. it is element of a mapping) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73"></a>NONE&#160;</td><td class="fielddoc"><p>empty node </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968"></a>INT&#160;</td><td class="fielddoc"><p>an integer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e"></a>REAL&#160;</td><td class="fielddoc"><p>floating-point number </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eab5e618c168d7c2cf598b88a7ce5256cf"></a>FLOAT&#160;</td><td class="fielddoc"><p>synonym or REAL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea18c6e3b457265c98235ab36b97df3097"></a>STR&#160;</td><td class="fielddoc"><p>text string in UTF-8 encoding </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea5f83900ab305e07acafb8cb99c8f7ba9"></a>STRING&#160;</td><td class="fielddoc"><p>synonym for STR </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ead0995dccfdbb905343a0ba98f8da5073"></a>REF&#160;</td><td class="fielddoc"><p>integer of size size_t. Typically used for storing complex dynamic structures where some elements reference the others </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea8a5bca2d3647f360c3acac3f7a64f822"></a>SEQ&#160;</td><td class="fielddoc"><p>sequence </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eab2f07b5774411ae1e897115b9c005c85"></a>MAP&#160;</td><td class="fielddoc"><p>mapping </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1"></a>FLOW&#160;</td><td class="fielddoc"><p>compact representation of a sequence or mapping. Used only by YAML writer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1"></a>USER&#160;</td><td class="fielddoc"><p>a registered object (e.g. a matrix) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413"></a>EMPTY&#160;</td><td class="fielddoc"><p>empty structure (sequence or mapping) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d"></a>NAMED&#160;</td><td class="fielddoc"><p>the node has a name (i.e. it is element of a mapping) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a8fe1d2aa050e6909b978f4df3529066e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe1d2aa050e6909b978f4df3529066e">&#9670;&nbsp;</a></span>Type <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066e">cv::FileNode::Type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>type of the file storage node </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73"></a>NONE&#160;</td><td class="fielddoc"><p>empty node </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968"></a>INT&#160;</td><td class="fielddoc"><p>an integer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac53eb05f79a4da95f73a1dc418637d9e"></a>REAL&#160;</td><td class="fielddoc"><p>floating-point number </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eab5e618c168d7c2cf598b88a7ce5256cf"></a>FLOAT&#160;</td><td class="fielddoc"><p>synonym or REAL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea18c6e3b457265c98235ab36b97df3097"></a>STR&#160;</td><td class="fielddoc"><p>text string in UTF-8 encoding </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea5f83900ab305e07acafb8cb99c8f7ba9"></a>STRING&#160;</td><td class="fielddoc"><p>synonym for STR </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ead0995dccfdbb905343a0ba98f8da5073"></a>REF&#160;</td><td class="fielddoc"><p>integer of size size_t. Typically used for storing complex dynamic structures where some elements reference the others </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea8a5bca2d3647f360c3acac3f7a64f822"></a>SEQ&#160;</td><td class="fielddoc"><p>sequence </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eab2f07b5774411ae1e897115b9c005c85"></a>MAP&#160;</td><td class="fielddoc"><p>mapping </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea3b530fb1cdfb96882b3eeeb5bb9ca6f1"></a>FLOW&#160;</td><td class="fielddoc"><p>compact representation of a sequence or mapping. Used only by YAML writer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea8944e7ebc899e5f6412742b52c804cb1"></a>USER&#160;</td><td class="fielddoc"><p>a registered object (e.g. a matrix) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea354ba671e32c0ce3ab0553e865860413"></a>EMPTY&#160;</td><td class="fielddoc"><p>empty structure (sequence or mapping) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea0684c825b757c3ddf4253249deacec2d"></a>NAMED&#160;</td><td class="fielddoc"><p>the node has a name (i.e. it is element of a mapping) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066eac54f4b11f48315f97a5b4e06bf7d2a73"></a>NONE&#160;</td><td class="fielddoc"><p>empty node </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8fe1d2aa050e6909b978f4df3529066ea963ca3ab2ead742931cfc0e8150b2968"></a>INT&#160;</td><td class="fielddoc"><p>an integer </p>
 </td></tr>
@@ -1830,7 +2478,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1b95e3870efe0abcd06d9908f73cf02e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b95e3870efe0abcd06d9908f73cf02e">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[1/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b95e3870efe0abcd06d9908f73cf02e">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[1/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1850,7 +2498,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="ac5337c216ea9fe0f1a3ebaf28b981a85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5337c216ea9fe0f1a3ebaf28b981a85">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[2/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5337c216ea9fe0f1a3ebaf28b981a85">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[2/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1885,7 +2533,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a3f12e82f34ff7f1be73eea1270a35d50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f12e82f34ff7f1be73eea1270a35d50">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[3/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f12e82f34ff7f1be73eea1270a35d50">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[3/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1909,7 +2557,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a1b95e3870efe0abcd06d9908f73cf02e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b95e3870efe0abcd06d9908f73cf02e">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[4/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b95e3870efe0abcd06d9908f73cf02e">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[4/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1929,7 +2577,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="ac5337c216ea9fe0f1a3ebaf28b981a85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5337c216ea9fe0f1a3ebaf28b981a85">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[5/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5337c216ea9fe0f1a3ebaf28b981a85">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[5/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1964,7 +2612,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a3f12e82f34ff7f1be73eea1270a35d50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f12e82f34ff7f1be73eea1270a35d50">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[6/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f12e82f34ff7f1be73eea1270a35d50">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[6/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1988,7 +2636,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a1b95e3870efe0abcd06d9908f73cf02e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b95e3870efe0abcd06d9908f73cf02e">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[7/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b95e3870efe0abcd06d9908f73cf02e">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[7/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2008,7 +2656,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="ac5337c216ea9fe0f1a3ebaf28b981a85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5337c216ea9fe0f1a3ebaf28b981a85">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[8/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5337c216ea9fe0f1a3ebaf28b981a85">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[8/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2043,7 +2691,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a3f12e82f34ff7f1be73eea1270a35d50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f12e82f34ff7f1be73eea1270a35d50">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[9/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f12e82f34ff7f1be73eea1270a35d50">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[9/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2067,7 +2715,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a1b95e3870efe0abcd06d9908f73cf02e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b95e3870efe0abcd06d9908f73cf02e">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[10/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b95e3870efe0abcd06d9908f73cf02e">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[10/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2087,7 +2735,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="ac5337c216ea9fe0f1a3ebaf28b981a85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5337c216ea9fe0f1a3ebaf28b981a85">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[11/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5337c216ea9fe0f1a3ebaf28b981a85">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[11/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2122,7 +2770,86 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a3f12e82f34ff7f1be73eea1270a35d50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f12e82f34ff7f1be73eea1270a35d50">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[12/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f12e82f34ff7f1be73eea1270a35d50">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[12/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::FileNode::FileNode </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_file_node.html">FileNode</a> &amp;&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>File node to be used as initialization for the created file node. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1b95e3870efe0abcd06d9908f73cf02e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b95e3870efe0abcd06d9908f73cf02e">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[13/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP cv::FileNode::FileNode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The constructors. </p>
+<p>These constructors are used to create a default file node, construct it from obsolete structures or from the another file node. </p>
+
+</div>
+</div>
+<a id="ac5337c216ea9fe0f1a3ebaf28b981a85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5337c216ea9fe0f1a3ebaf28b981a85">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[14/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::FileNode::FileNode </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__core__c.html#ga84556d1bb6f1b8b02c04c60246747a7e">CvFileStorage</a> *&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_cv_file_node.html">CvFileNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>Pointer to the obsolete file storage structure. </td></tr>
+    <tr><td class="paramname">node</td><td>File node to be used as initialization for the created file node. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3f12e82f34ff7f1be73eea1270a35d50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f12e82f34ff7f1be73eea1270a35d50">&#9670;&nbsp;</a></span>FileNode() <span class="overload">[15/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2147,7 +2874,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7162fa67ece6f597c0f25860a8d30bda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7162fa67ece6f597c0f25860a8d30bda">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7162fa67ece6f597c0f25860a8d30bda">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[1/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2171,7 +2898,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a7162fa67ece6f597c0f25860a8d30bda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7162fa67ece6f597c0f25860a8d30bda">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7162fa67ece6f597c0f25860a8d30bda">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[2/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2195,7 +2922,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a7162fa67ece6f597c0f25860a8d30bda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7162fa67ece6f597c0f25860a8d30bda">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[3/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7162fa67ece6f597c0f25860a8d30bda">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2219,7 +2946,31 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a7162fa67ece6f597c0f25860a8d30bda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7162fa67ece6f597c0f25860a8d30bda">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[4/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7162fa67ece6f597c0f25860a8d30bda">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[4/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::FileNode::CV_WRAP_AS </td>
+          <td>(</td>
+          <td class="paramtype">getNode&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodename</td><td>Name of an element in the mapping node. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7162fa67ece6f597c0f25860a8d30bda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7162fa67ece6f597c0f25860a8d30bda">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2243,7 +2994,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="ac83da9d54f33229e783a84ca13c4ba20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac83da9d54f33229e783a84ca13c4ba20">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83da9d54f33229e783a84ca13c4ba20">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[6/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2267,7 +3018,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="ac83da9d54f33229e783a84ca13c4ba20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac83da9d54f33229e783a84ca13c4ba20">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[6/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83da9d54f33229e783a84ca13c4ba20">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[7/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2291,7 +3042,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="ac83da9d54f33229e783a84ca13c4ba20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac83da9d54f33229e783a84ca13c4ba20">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[7/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83da9d54f33229e783a84ca13c4ba20">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[8/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2315,7 +3066,31 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="ac83da9d54f33229e783a84ca13c4ba20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac83da9d54f33229e783a84ca13c4ba20">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[8/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83da9d54f33229e783a84ca13c4ba20">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[9/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::FileNode::CV_WRAP_AS </td>
+          <td>(</td>
+          <td class="paramtype">at&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>Index of an element in the sequence node. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac83da9d54f33229e783a84ca13c4ba20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83da9d54f33229e783a84ca13c4ba20">&#9670;&nbsp;</a></span>CV_WRAP_AS() <span class="overload">[10/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2339,7 +3114,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a20f40e1a6caea6ecf4450dc052be35f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20f40e1a6caea6ecf4450dc052be35f4">&#9670;&nbsp;</a></span>keys() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f40e1a6caea6ecf4450dc052be35f4">&#9670;&nbsp;</a></span>keys() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2359,7 +3134,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a20f40e1a6caea6ecf4450dc052be35f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20f40e1a6caea6ecf4450dc052be35f4">&#9670;&nbsp;</a></span>keys() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f40e1a6caea6ecf4450dc052be35f4">&#9670;&nbsp;</a></span>keys() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2379,7 +3154,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a20f40e1a6caea6ecf4450dc052be35f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20f40e1a6caea6ecf4450dc052be35f4">&#9670;&nbsp;</a></span>keys() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f40e1a6caea6ecf4450dc052be35f4">&#9670;&nbsp;</a></span>keys() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2399,7 +3174,27 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a20f40e1a6caea6ecf4450dc052be35f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20f40e1a6caea6ecf4450dc052be35f4">&#9670;&nbsp;</a></span>keys() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f40e1a6caea6ecf4450dc052be35f4">&#9670;&nbsp;</a></span>keys() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP std::vector&lt;<a class="el" href="classcv_1_1_string.html">String</a>&gt; cv::FileNode::keys </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns keys of a mapping node. </p>
+<dl class="section return"><dt>Returns</dt><dd>Keys of a mapping node. </dd></dl>
+
+</div>
+</div>
+<a id="a20f40e1a6caea6ecf4450dc052be35f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f40e1a6caea6ecf4450dc052be35f4">&#9670;&nbsp;</a></span>keys() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2419,7 +3214,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a544bdab727d3b76828c915b0fe30a8e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a544bdab727d3b76828c915b0fe30a8e6">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a544bdab727d3b76828c915b0fe30a8e6">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2446,7 +3241,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a544bdab727d3b76828c915b0fe30a8e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a544bdab727d3b76828c915b0fe30a8e6">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a544bdab727d3b76828c915b0fe30a8e6">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2473,7 +3268,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a544bdab727d3b76828c915b0fe30a8e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a544bdab727d3b76828c915b0fe30a8e6">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a544bdab727d3b76828c915b0fe30a8e6">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2500,7 +3295,34 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a544bdab727d3b76828c915b0fe30a8e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a544bdab727d3b76828c915b0fe30a8e6">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a544bdab727d3b76828c915b0fe30a8e6">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcv_1_1_file_node.html">FileNode</a> cv::FileNode::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>nodename</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns element of a mapping node or a sequence node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodename</td><td>Name of an element in the mapping node. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the element with the given identifier. </dd></dl>
+
+</div>
+</div>
+<a id="a544bdab727d3b76828c915b0fe30a8e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a544bdab727d3b76828c915b0fe30a8e6">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2527,7 +3349,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="ac236df16205922f1328260b56a012794"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac236df16205922f1328260b56a012794">&#9670;&nbsp;</a></span>readRaw() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac236df16205922f1328260b56a012794">&#9670;&nbsp;</a></span>readRaw() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2571,7 +3393,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="ac236df16205922f1328260b56a012794"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac236df16205922f1328260b56a012794">&#9670;&nbsp;</a></span>readRaw() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac236df16205922f1328260b56a012794">&#9670;&nbsp;</a></span>readRaw() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2615,7 +3437,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="ac236df16205922f1328260b56a012794"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac236df16205922f1328260b56a012794">&#9670;&nbsp;</a></span>readRaw() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac236df16205922f1328260b56a012794">&#9670;&nbsp;</a></span>readRaw() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2659,7 +3481,51 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="ac236df16205922f1328260b56a012794"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac236df16205922f1328260b56a012794">&#9670;&nbsp;</a></span>readRaw() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac236df16205922f1328260b56a012794">&#9670;&nbsp;</a></span>readRaw() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cv::FileNode::readRaw </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uchar *&#160;</td>
+          <td class="paramname"><em>vec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads node elements to the buffer with the specified format. </p>
+<p>Usually it is more convenient to use operator <code>&gt;&gt;</code> instead of this method. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fmt</td><td>Specification of each array element. See <a class="el" href="group__core__xml.html#format_spec">format specification</a> </td></tr>
+    <tr><td class="paramname">vec</td><td>Pointer to the destination array. </td></tr>
+    <tr><td class="paramname">len</td><td>Number of elements to read. If it is greater than number of remaining elements then all of them will be read. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac236df16205922f1328260b56a012794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac236df16205922f1328260b56a012794">&#9670;&nbsp;</a></span>readRaw() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2703,7 +3569,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a053e4ed59e4cb46a4e3023c1cb0ebb67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a053e4ed59e4cb46a4e3023c1cb0ebb67">&#9670;&nbsp;</a></span>type() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a053e4ed59e4cb46a4e3023c1cb0ebb67">&#9670;&nbsp;</a></span>type() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2723,7 +3589,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a053e4ed59e4cb46a4e3023c1cb0ebb67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a053e4ed59e4cb46a4e3023c1cb0ebb67">&#9670;&nbsp;</a></span>type() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a053e4ed59e4cb46a4e3023c1cb0ebb67">&#9670;&nbsp;</a></span>type() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2743,7 +3609,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a053e4ed59e4cb46a4e3023c1cb0ebb67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a053e4ed59e4cb46a4e3023c1cb0ebb67">&#9670;&nbsp;</a></span>type() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a053e4ed59e4cb46a4e3023c1cb0ebb67">&#9670;&nbsp;</a></span>type() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2763,7 +3629,27 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <a id="a053e4ed59e4cb46a4e3023c1cb0ebb67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a053e4ed59e4cb46a4e3023c1cb0ebb67">&#9670;&nbsp;</a></span>type() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a053e4ed59e4cb46a4e3023c1cb0ebb67">&#9670;&nbsp;</a></span>type() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP int cv::FileNode::type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns type of the node. </p>
+<dl class="section return"><dt>Returns</dt><dd>Type of the node. See <a class="el" href="classcv_1_1_file_node.html#a8fe1d2aa050e6909b978f4df3529066e" title="type of the file storage node">FileNode::Type</a> </dd></dl>
+
+</div>
+</div>
+<a id="a053e4ed59e4cb46a4e3023c1cb0ebb67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a053e4ed59e4cb46a4e3023c1cb0ebb67">&#9670;&nbsp;</a></span>type() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

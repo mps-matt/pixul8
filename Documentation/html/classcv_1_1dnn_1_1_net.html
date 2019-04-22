@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::dnn::Net Class Reference</title>
+<title>PixUl8: cv::dnn::Net Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -85,6 +83,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a6962dbfe16ce1ae18c67de9f5f2912ef"><td class="memItemLeft" align="right" valign="top"><a id="a6962dbfe16ce1ae18c67de9f5f2912ef"></a>
+typedef <a class="el" href="structcv_1_1dnn_1_1_dict_value.html">DictValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a6962dbfe16ce1ae18c67de9f5f2912ef">LayerId</a></td></tr>
+<tr class="memdesc:a6962dbfe16ce1ae18c67de9f5f2912ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container for strings and integers. <br /></td></tr>
+<tr class="separator:a6962dbfe16ce1ae18c67de9f5f2912ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6962dbfe16ce1ae18c67de9f5f2912ef"><td class="memItemLeft" align="right" valign="top"><a id="a6962dbfe16ce1ae18c67de9f5f2912ef"></a>
 typedef <a class="el" href="structcv_1_1dnn_1_1_dict_value.html">DictValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a6962dbfe16ce1ae18c67de9f5f2912ef">LayerId</a></td></tr>
 <tr class="memdesc:a6962dbfe16ce1ae18c67de9f5f2912ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container for strings and integers. <br /></td></tr>
@@ -568,9 +570,128 @@ CV_WRAP std::vector&lt; <a class="el" href="classcv_1_1_string.html">String</a> 
 <tr class="memitem:a5dda0d2b26527e537b52ef90d44bc2fc"><td class="memItemLeft" align="right" valign="top">CV_WRAP int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a5dda0d2b26527e537b52ef90d44bc2fc">getPerfProfile</a> (CV_OUT std::vector&lt; double &gt; &amp;timings)</td></tr>
 <tr class="memdesc:a5dda0d2b26527e537b52ef90d44bc2fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns overall time for inference and timings (in ticks) for layers. Indexes in returned vector correspond to layers ids. Some layers can be fused with others, in this case zero ticks count will be return for that skipped layers.  <a href="#a5dda0d2b26527e537b52ef90d44bc2fc">More...</a><br /></td></tr>
 <tr class="separator:a5dda0d2b26527e537b52ef90d44bc2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93c9476c69030dbca5b92aaa8230af7"><td class="memItemLeft" align="right" valign="top"><a id="aa93c9476c69030dbca5b92aaa8230af7"></a>
+CV_WRAP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#aa93c9476c69030dbca5b92aaa8230af7">Net</a> ()</td></tr>
+<tr class="memdesc:aa93c9476c69030dbca5b92aaa8230af7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:aa93c9476c69030dbca5b92aaa8230af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e02d1bf0943af0a2ed411d52e5775eb"><td class="memItemLeft" align="right" valign="top"><a id="a0e02d1bf0943af0a2ed411d52e5775eb"></a>
+CV_WRAP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a0e02d1bf0943af0a2ed411d52e5775eb">~Net</a> ()</td></tr>
+<tr class="memdesc:a0e02d1bf0943af0a2ed411d52e5775eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor frees the net only if there aren't references to the net anymore. <br /></td></tr>
+<tr class="separator:a0e02d1bf0943af0a2ed411d52e5775eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8246e2ec35ef733cc8271d7e1fdfc7b"><td class="memItemLeft" align="right" valign="top">CV_WRAP bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#ae8246e2ec35ef733cc8271d7e1fdfc7b">empty</a> () const</td></tr>
+<tr class="separator:ae8246e2ec35ef733cc8271d7e1fdfc7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1569c03d93c80fd8c6020589bd2ac116"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a1569c03d93c80fd8c6020589bd2ac116">addLayer</a> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;name, const <a class="el" href="classcv_1_1_string.html">String</a> &amp;type, <a class="el" href="classcv_1_1dnn_1_1_layer_params.html">LayerParams</a> &amp;params)</td></tr>
+<tr class="memdesc:a1569c03d93c80fd8c6020589bd2ac116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds new layer to the net.  <a href="#a1569c03d93c80fd8c6020589bd2ac116">More...</a><br /></td></tr>
+<tr class="separator:a1569c03d93c80fd8c6020589bd2ac116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e78af0e0add3ff8594919f1af548dc4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a7e78af0e0add3ff8594919f1af548dc4">addLayerToPrev</a> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;name, const <a class="el" href="classcv_1_1_string.html">String</a> &amp;type, <a class="el" href="classcv_1_1dnn_1_1_layer_params.html">LayerParams</a> &amp;params)</td></tr>
+<tr class="memdesc:a7e78af0e0add3ff8594919f1af548dc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds new layer and connects its first input to the first output of previously added layer.  <a href="#a7e78af0e0add3ff8594919f1af548dc4">More...</a><br /></td></tr>
+<tr class="separator:a7e78af0e0add3ff8594919f1af548dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca892dbf6ecd5ba8051fb7f5c6266164"><td class="memItemLeft" align="right" valign="top">CV_WRAP int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#aca892dbf6ecd5ba8051fb7f5c6266164">getLayerId</a> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;layer)</td></tr>
+<tr class="memdesc:aca892dbf6ecd5ba8051fb7f5c6266164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts string name of the layer to the integer identifier.  <a href="#aca892dbf6ecd5ba8051fb7f5c6266164">More...</a><br /></td></tr>
+<tr class="separator:aca892dbf6ecd5ba8051fb7f5c6266164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad1ec24dcb561f7bbe88572a956134d"><td class="memItemLeft" align="right" valign="top"><a id="a4ad1ec24dcb561f7bbe88572a956134d"></a>
+CV_WRAP std::vector&lt; <a class="el" href="classcv_1_1_string.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getLayerNames</b> () const</td></tr>
+<tr class="separator:a4ad1ec24dcb561f7bbe88572a956134d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3d1436a63d59045204630db6a6a0832"><td class="memItemLeft" align="right" valign="top"><a id="ae3d1436a63d59045204630db6a6a0832"></a>
+CV_WRAP <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1dnn_1_1_layer.html">Layer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#ae3d1436a63d59045204630db6a6a0832">getLayer</a> (<a class="el" href="classcv_1_1dnn_1_1_net.html#a6962dbfe16ce1ae18c67de9f5f2912ef">LayerId</a> layerId)</td></tr>
+<tr class="memdesc:ae3d1436a63d59045204630db6a6a0832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pointer to layer with specified id or name which the network use. <br /></td></tr>
+<tr class="separator:ae3d1436a63d59045204630db6a6a0832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf96c5e92de4f6cd3013a6fb900934b4"><td class="memItemLeft" align="right" valign="top"><a id="abf96c5e92de4f6cd3013a6fb900934b4"></a>
+std::vector&lt; <a class="el" href="structcv_1_1_ptr.html">Ptr</a>&lt; <a class="el" href="classcv_1_1dnn_1_1_layer.html">Layer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#abf96c5e92de4f6cd3013a6fb900934b4">getLayerInputs</a> (<a class="el" href="classcv_1_1dnn_1_1_net.html#a6962dbfe16ce1ae18c67de9f5f2912ef">LayerId</a> layerId)</td></tr>
+<tr class="memdesc:abf96c5e92de4f6cd3013a6fb900934b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pointers to input layers of specific layer. <br /></td></tr>
+<tr class="separator:abf96c5e92de4f6cd3013a6fb900934b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2ee9291052a33a4de0ca94b4be5acf9"><td class="memItemLeft" align="right" valign="top">CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#aa2ee9291052a33a4de0ca94b4be5acf9">connect</a> (<a class="el" href="classcv_1_1_string.html">String</a> outPin, <a class="el" href="classcv_1_1_string.html">String</a> inpPin)</td></tr>
+<tr class="memdesc:aa2ee9291052a33a4de0ca94b4be5acf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects output of the first layer to input of the second layer.  <a href="#aa2ee9291052a33a4de0ca94b4be5acf9">More...</a><br /></td></tr>
+<tr class="separator:aa2ee9291052a33a4de0ca94b4be5acf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26615a67830b0045b68565c7e7dc1307"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a26615a67830b0045b68565c7e7dc1307">connect</a> (int outLayerId, int outNum, int inpLayerId, int inpNum)</td></tr>
+<tr class="memdesc:a26615a67830b0045b68565c7e7dc1307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects #<code>outNum</code> output of the first layer to #<code>inNum</code> input of the second layer.  <a href="#a26615a67830b0045b68565c7e7dc1307">More...</a><br /></td></tr>
+<tr class="separator:a26615a67830b0045b68565c7e7dc1307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ba94fbca1400b87d73e7f7e597f3448"><td class="memItemLeft" align="right" valign="top">CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a1ba94fbca1400b87d73e7f7e597f3448">setInputsNames</a> (const std::vector&lt; <a class="el" href="classcv_1_1_string.html">String</a> &gt; &amp;inputBlobNames)</td></tr>
+<tr class="memdesc:a1ba94fbca1400b87d73e7f7e597f3448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets outputs names of the network input pseudo layer.  <a href="#a1ba94fbca1400b87d73e7f7e597f3448">More...</a><br /></td></tr>
+<tr class="separator:a1ba94fbca1400b87d73e7f7e597f3448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae444ed7d9f75887a5075190f6d761fda"><td class="memItemLeft" align="right" valign="top">CV_WRAP <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#ae444ed7d9f75887a5075190f6d761fda">forward</a> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;outputName=<a class="el" href="classcv_1_1_string.html">String</a>())</td></tr>
+<tr class="memdesc:ae444ed7d9f75887a5075190f6d761fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs forward pass to compute output of layer with name <code>outputName</code>.  <a href="#ae444ed7d9f75887a5075190f6d761fda">More...</a><br /></td></tr>
+<tr class="separator:ae444ed7d9f75887a5075190f6d761fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91c4e50e92f153d68acd405d7a5eb990"><td class="memItemLeft" align="right" valign="top">CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a91c4e50e92f153d68acd405d7a5eb990">forward</a> (<a class="el" href="classcv_1_1___output_array.html">OutputArrayOfArrays</a> outputBlobs, const <a class="el" href="classcv_1_1_string.html">String</a> &amp;outputName=<a class="el" href="classcv_1_1_string.html">String</a>())</td></tr>
+<tr class="memdesc:a91c4e50e92f153d68acd405d7a5eb990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs forward pass to compute output of layer with name <code>outputName</code>.  <a href="#a91c4e50e92f153d68acd405d7a5eb990">More...</a><br /></td></tr>
+<tr class="separator:a91c4e50e92f153d68acd405d7a5eb990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafaa03410a838bed2e78774f185d2252"><td class="memItemLeft" align="right" valign="top">CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#aafaa03410a838bed2e78774f185d2252">forward</a> (<a class="el" href="classcv_1_1___output_array.html">OutputArrayOfArrays</a> outputBlobs, const std::vector&lt; <a class="el" href="classcv_1_1_string.html">String</a> &gt; &amp;outBlobNames)</td></tr>
+<tr class="memdesc:aafaa03410a838bed2e78774f185d2252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs forward pass to compute outputs of layers listed in <code>outBlobNames</code>.  <a href="#aafaa03410a838bed2e78774f185d2252">More...</a><br /></td></tr>
+<tr class="separator:aafaa03410a838bed2e78774f185d2252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68cfab300fe6d301901f42808b54a8e6"><td class="memItemLeft" align="right" valign="top">CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a68cfab300fe6d301901f42808b54a8e6">setPreferableBackend</a> (int backendId)</td></tr>
+<tr class="memdesc:a68cfab300fe6d301901f42808b54a8e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask network to use specific computation backend where it supported.  <a href="#a68cfab300fe6d301901f42808b54a8e6">More...</a><br /></td></tr>
+<tr class="separator:a68cfab300fe6d301901f42808b54a8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe119345df2491584b68e9775d48151"><td class="memItemLeft" align="right" valign="top">CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#aefe119345df2491584b68e9775d48151">setPreferableTarget</a> (int targetId)</td></tr>
+<tr class="memdesc:aefe119345df2491584b68e9775d48151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask network to make computations on specific target device.  <a href="#aefe119345df2491584b68e9775d48151">More...</a><br /></td></tr>
+<tr class="separator:aefe119345df2491584b68e9775d48151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abda1797f888e88b5a0d18055a282a9fd"><td class="memItemLeft" align="right" valign="top">CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#abda1797f888e88b5a0d18055a282a9fd">setInput</a> (InputArray blob, const <a class="el" href="classcv_1_1_string.html">String</a> &amp;name=&quot;&quot;, double scalefactor=1.0, const <a class="el" href="classcv_1_1_scalar__.html">Scalar</a> &amp;<a class="el" href="group__core__array.html#ga71c68a1493e52991ef0d07a72e4ca485">mean</a>=<a class="el" href="classcv_1_1_scalar__.html">Scalar</a>())</td></tr>
+<tr class="memdesc:abda1797f888e88b5a0d18055a282a9fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the new input value for the network.  <a href="#abda1797f888e88b5a0d18055a282a9fd">More...</a><br /></td></tr>
+<tr class="separator:abda1797f888e88b5a0d18055a282a9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11415f99f4731ac502aa8d8535784a6"><td class="memItemLeft" align="right" valign="top">CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#ae11415f99f4731ac502aa8d8535784a6">setParam</a> (<a class="el" href="classcv_1_1dnn_1_1_net.html#a6962dbfe16ce1ae18c67de9f5f2912ef">LayerId</a> layer, int numParam, const <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;blob)</td></tr>
+<tr class="memdesc:ae11415f99f4731ac502aa8d8535784a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the new value for the learned param of the layer.  <a href="#ae11415f99f4731ac502aa8d8535784a6">More...</a><br /></td></tr>
+<tr class="separator:ae11415f99f4731ac502aa8d8535784a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b8d464f8dbe7a433436f38b2269ecd"><td class="memItemLeft" align="right" valign="top">CV_WRAP <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#af2b8d464f8dbe7a433436f38b2269ecd">getParam</a> (<a class="el" href="classcv_1_1dnn_1_1_net.html#a6962dbfe16ce1ae18c67de9f5f2912ef">LayerId</a> layer, int numParam=0)</td></tr>
+<tr class="memdesc:af2b8d464f8dbe7a433436f38b2269ecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns parameter blob of the layer.  <a href="#af2b8d464f8dbe7a433436f38b2269ecd">More...</a><br /></td></tr>
+<tr class="separator:af2b8d464f8dbe7a433436f38b2269ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5175117d094ef093ad23ac82ac26162f"><td class="memItemLeft" align="right" valign="top"><a id="a5175117d094ef093ad23ac82ac26162f"></a>
+CV_WRAP std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a5175117d094ef093ad23ac82ac26162f">getUnconnectedOutLayers</a> () const</td></tr>
+<tr class="memdesc:a5175117d094ef093ad23ac82ac26162f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns indexes of layers with unconnected outputs. <br /></td></tr>
+<tr class="separator:a5175117d094ef093ad23ac82ac26162f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2af3d6915e8d59878a250b3f05a2ea5f"><td class="memItemLeft" align="right" valign="top"><a id="a2af3d6915e8d59878a250b3f05a2ea5f"></a>
+CV_WRAP std::vector&lt; <a class="el" href="classcv_1_1_string.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a2af3d6915e8d59878a250b3f05a2ea5f">getUnconnectedOutLayersNames</a> () const</td></tr>
+<tr class="memdesc:a2af3d6915e8d59878a250b3f05a2ea5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns names of layers with unconnected outputs. <br /></td></tr>
+<tr class="separator:a2af3d6915e8d59878a250b3f05a2ea5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f37ef9bc57c56a730efc778f88b150"><td class="memItemLeft" align="right" valign="top">CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#af9f37ef9bc57c56a730efc778f88b150">getLayersShapes</a> (const std::vector&lt; MatShape &gt; &amp;netInputShapes, CV_OUT std::vector&lt; int &gt; &amp;layersIds, CV_OUT std::vector&lt; std::vector&lt; MatShape &gt; &gt; &amp;inLayersShapes, CV_OUT std::vector&lt; std::vector&lt; MatShape &gt; &gt; &amp;outLayersShapes) const</td></tr>
+<tr class="memdesc:af9f37ef9bc57c56a730efc778f88b150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns input and output shapes for all layers in loaded model; preliminary inferencing isn't necessary.  <a href="#af9f37ef9bc57c56a730efc778f88b150">More...</a><br /></td></tr>
+<tr class="separator:af9f37ef9bc57c56a730efc778f88b150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5efa172c9d81979c0fbbf51c55f07a2"><td class="memItemLeft" align="right" valign="top">CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#ad5efa172c9d81979c0fbbf51c55f07a2">getLayersShapes</a> (const MatShape &amp;netInputShape, CV_OUT std::vector&lt; int &gt; &amp;layersIds, CV_OUT std::vector&lt; std::vector&lt; MatShape &gt; &gt; &amp;inLayersShapes, CV_OUT std::vector&lt; std::vector&lt; MatShape &gt; &gt; &amp;outLayersShapes) const</td></tr>
+<tr class="separator:ad5efa172c9d81979c0fbbf51c55f07a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44efd1ce11c3665814870e4dd5d480e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a44efd1ce11c3665814870e4dd5d480e8">getLayerShapes</a> (const MatShape &amp;netInputShape, const int layerId, CV_OUT std::vector&lt; MatShape &gt; &amp;inLayerShapes, CV_OUT std::vector&lt; MatShape &gt; &amp;outLayerShapes) const</td></tr>
+<tr class="memdesc:a44efd1ce11c3665814870e4dd5d480e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns input and output shapes for layer with specified id in loaded model; preliminary inferencing isn't necessary.  <a href="#a44efd1ce11c3665814870e4dd5d480e8">More...</a><br /></td></tr>
+<tr class="separator:a44efd1ce11c3665814870e4dd5d480e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1b9bfe2a98ac8fa90a0a4d9281c15a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#ad1b9bfe2a98ac8fa90a0a4d9281c15a6">getLayerShapes</a> (const std::vector&lt; MatShape &gt; &amp;netInputShapes, const int layerId, CV_OUT std::vector&lt; MatShape &gt; &amp;inLayerShapes, CV_OUT std::vector&lt; MatShape &gt; &amp;outLayerShapes) const</td></tr>
+<tr class="separator:ad1b9bfe2a98ac8fa90a0a4d9281c15a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af89f97666670043a7da7dedee72e282c"><td class="memItemLeft" align="right" valign="top">CV_WRAP int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#af89f97666670043a7da7dedee72e282c">getFLOPS</a> (const std::vector&lt; MatShape &gt; &amp;netInputShapes) const</td></tr>
+<tr class="memdesc:af89f97666670043a7da7dedee72e282c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes FLOP for whole loaded model with specified input shapes.  <a href="#af89f97666670043a7da7dedee72e282c">More...</a><br /></td></tr>
+<tr class="separator:af89f97666670043a7da7dedee72e282c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ae9efcc9c05e1a423752532012a664d"><td class="memItemLeft" align="right" valign="top">CV_WRAP int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a2ae9efcc9c05e1a423752532012a664d">getFLOPS</a> (const MatShape &amp;netInputShape) const</td></tr>
+<tr class="separator:a2ae9efcc9c05e1a423752532012a664d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d5635e4c08ccc202a0106621e15d9a3"><td class="memItemLeft" align="right" valign="top">CV_WRAP int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a4d5635e4c08ccc202a0106621e15d9a3">getFLOPS</a> (const int layerId, const std::vector&lt; MatShape &gt; &amp;netInputShapes) const</td></tr>
+<tr class="separator:a4d5635e4c08ccc202a0106621e15d9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab89b8eb9723e255ce353251137dc19c9"><td class="memItemLeft" align="right" valign="top">CV_WRAP int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#ab89b8eb9723e255ce353251137dc19c9">getFLOPS</a> (const int layerId, const MatShape &amp;netInputShape) const</td></tr>
+<tr class="separator:ab89b8eb9723e255ce353251137dc19c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de85d17ef673776c8589b05e195127d"><td class="memItemLeft" align="right" valign="top">CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a6de85d17ef673776c8589b05e195127d">getLayerTypes</a> (CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_string.html">String</a> &gt; &amp;layersTypes) const</td></tr>
+<tr class="memdesc:a6de85d17ef673776c8589b05e195127d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns list of types for layer used in model.  <a href="#a6de85d17ef673776c8589b05e195127d">More...</a><br /></td></tr>
+<tr class="separator:a6de85d17ef673776c8589b05e195127d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c893679fd9ef33fd19919d896d76e3"><td class="memItemLeft" align="right" valign="top">CV_WRAP int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#ab1c893679fd9ef33fd19919d896d76e3">getLayersCount</a> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;layerType) const</td></tr>
+<tr class="memdesc:ab1c893679fd9ef33fd19919d896d76e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns count of layers of specified type.  <a href="#ab1c893679fd9ef33fd19919d896d76e3">More...</a><br /></td></tr>
+<tr class="separator:ab1c893679fd9ef33fd19919d896d76e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ee410f9ba96118468abf074e73c806"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a68ee410f9ba96118468abf074e73c806">getMemoryConsumption</a> (const std::vector&lt; MatShape &gt; &amp;netInputShapes, CV_OUT size_t &amp;weights, CV_OUT size_t &amp;blobs) const</td></tr>
+<tr class="memdesc:a68ee410f9ba96118468abf074e73c806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes bytes number which are required to store all weights and intermediate blobs for model.  <a href="#a68ee410f9ba96118468abf074e73c806">More...</a><br /></td></tr>
+<tr class="separator:a68ee410f9ba96118468abf074e73c806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b98e2dcb19a50ede01556537d022ba5"><td class="memItemLeft" align="right" valign="top">CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a0b98e2dcb19a50ede01556537d022ba5">getMemoryConsumption</a> (const MatShape &amp;netInputShape, CV_OUT size_t &amp;weights, CV_OUT size_t &amp;blobs) const</td></tr>
+<tr class="separator:a0b98e2dcb19a50ede01556537d022ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74a44ea352e4b492722390a8f06fd5e6"><td class="memItemLeft" align="right" valign="top">CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a74a44ea352e4b492722390a8f06fd5e6">getMemoryConsumption</a> (const int layerId, const std::vector&lt; MatShape &gt; &amp;netInputShapes, CV_OUT size_t &amp;weights, CV_OUT size_t &amp;blobs) const</td></tr>
+<tr class="separator:a74a44ea352e4b492722390a8f06fd5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab364bdcb7b97a21acdb16ed9c9cfad4"><td class="memItemLeft" align="right" valign="top">CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#aab364bdcb7b97a21acdb16ed9c9cfad4">getMemoryConsumption</a> (const int layerId, const MatShape &amp;netInputShape, CV_OUT size_t &amp;weights, CV_OUT size_t &amp;blobs) const</td></tr>
+<tr class="separator:aab364bdcb7b97a21acdb16ed9c9cfad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59411c698919fb87101c30376297afb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#ac59411c698919fb87101c30376297afb">getMemoryConsumption</a> (const std::vector&lt; MatShape &gt; &amp;netInputShapes, CV_OUT std::vector&lt; int &gt; &amp;layerIds, CV_OUT std::vector&lt; size_t &gt; &amp;weights, CV_OUT std::vector&lt; size_t &gt; &amp;blobs) const</td></tr>
+<tr class="memdesc:ac59411c698919fb87101c30376297afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes bytes number which are required to store all weights and intermediate blobs for each layer.  <a href="#ac59411c698919fb87101c30376297afb">More...</a><br /></td></tr>
+<tr class="separator:ac59411c698919fb87101c30376297afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05ea1d1d1b2f6a1c9a22bc466173c59e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a05ea1d1d1b2f6a1c9a22bc466173c59e">getMemoryConsumption</a> (const MatShape &amp;netInputShape, CV_OUT std::vector&lt; int &gt; &amp;layerIds, CV_OUT std::vector&lt; size_t &gt; &amp;weights, CV_OUT std::vector&lt; size_t &gt; &amp;blobs) const</td></tr>
+<tr class="separator:a05ea1d1d1b2f6a1c9a22bc466173c59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28cf42341ee0fd5f70fc1f43caf6a0ad"><td class="memItemLeft" align="right" valign="top">CV_WRAP void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a28cf42341ee0fd5f70fc1f43caf6a0ad">enableFusion</a> (bool fusion)</td></tr>
+<tr class="memdesc:a28cf42341ee0fd5f70fc1f43caf6a0ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables layer fusion in the network.  <a href="#a28cf42341ee0fd5f70fc1f43caf6a0ad">More...</a><br /></td></tr>
+<tr class="separator:a28cf42341ee0fd5f70fc1f43caf6a0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dda0d2b26527e537b52ef90d44bc2fc"><td class="memItemLeft" align="right" valign="top">CV_WRAP int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a5dda0d2b26527e537b52ef90d44bc2fc">getPerfProfile</a> (CV_OUT std::vector&lt; double &gt; &amp;timings)</td></tr>
+<tr class="memdesc:a5dda0d2b26527e537b52ef90d44bc2fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns overall time for inference and timings (in ticks) for layers. Indexes in returned vector correspond to layers ids. Some layers can be fused with others, in this case zero ticks count will be return for that skipped layers.  <a href="#a5dda0d2b26527e537b52ef90d44bc2fc">More...</a><br /></td></tr>
+<tr class="separator:a5dda0d2b26527e537b52ef90d44bc2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a5e69bd6c20f21ed8aa04982cbce17cfc"><td class="memItemLeft" align="right" valign="top">static CV_WRAP <a class="el" href="classcv_1_1dnn_1_1_net.html">Net</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a5e69bd6c20f21ed8aa04982cbce17cfc">readFromModelOptimizer</a> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;xml, const <a class="el" href="classcv_1_1_string.html">String</a> &amp;bin)</td></tr>
+<tr class="memdesc:a5e69bd6c20f21ed8aa04982cbce17cfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a network from Intel's Model Optimizer intermediate representation.  <a href="#a5e69bd6c20f21ed8aa04982cbce17cfc">More...</a><br /></td></tr>
+<tr class="separator:a5e69bd6c20f21ed8aa04982cbce17cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e69bd6c20f21ed8aa04982cbce17cfc"><td class="memItemLeft" align="right" valign="top">static CV_WRAP <a class="el" href="classcv_1_1dnn_1_1_net.html">Net</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1dnn_1_1_net.html#a5e69bd6c20f21ed8aa04982cbce17cfc">readFromModelOptimizer</a> (const <a class="el" href="classcv_1_1_string.html">String</a> &amp;xml, const <a class="el" href="classcv_1_1_string.html">String</a> &amp;bin)</td></tr>
 <tr class="memdesc:a5e69bd6c20f21ed8aa04982cbce17cfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a network from Intel's Model Optimizer intermediate representation.  <a href="#a5e69bd6c20f21ed8aa04982cbce17cfc">More...</a><br /></td></tr>
 <tr class="separator:a5e69bd6c20f21ed8aa04982cbce17cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -591,7 +712,7 @@ Static Public Member Functions</h2></td></tr>
 <p>This class supports reference counting of its instances, i. e. copies point to the same instance. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1569c03d93c80fd8c6020589bd2ac116"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1569c03d93c80fd8c6020589bd2ac116">&#9670;&nbsp;</a></span>addLayer() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1569c03d93c80fd8c6020589bd2ac116">&#9670;&nbsp;</a></span>addLayer() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -636,7 +757,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1569c03d93c80fd8c6020589bd2ac116"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1569c03d93c80fd8c6020589bd2ac116">&#9670;&nbsp;</a></span>addLayer() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1569c03d93c80fd8c6020589bd2ac116">&#9670;&nbsp;</a></span>addLayer() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -681,7 +802,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1569c03d93c80fd8c6020589bd2ac116"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1569c03d93c80fd8c6020589bd2ac116">&#9670;&nbsp;</a></span>addLayer() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1569c03d93c80fd8c6020589bd2ac116">&#9670;&nbsp;</a></span>addLayer() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -726,7 +847,52 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1569c03d93c80fd8c6020589bd2ac116"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1569c03d93c80fd8c6020589bd2ac116">&#9670;&nbsp;</a></span>addLayer() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1569c03d93c80fd8c6020589bd2ac116">&#9670;&nbsp;</a></span>addLayer() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cv::dnn::Net::addLayer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcv_1_1dnn_1_1_layer_params.html">LayerParams</a> &amp;&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds new layer to the net. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>unique name of the adding layer. </td></tr>
+    <tr><td class="paramname">type</td><td>typename of the adding layer (type must be registered in LayerRegister). </td></tr>
+    <tr><td class="paramname">params</td><td>parameters which will be used to initialize the creating layer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>unique identifier of created layer, or -1 if a failure will happen. </dd></dl>
+
+</div>
+</div>
+<a id="a1569c03d93c80fd8c6020589bd2ac116"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1569c03d93c80fd8c6020589bd2ac116">&#9670;&nbsp;</a></span>addLayer() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -771,7 +937,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a7e78af0e0add3ff8594919f1af548dc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e78af0e0add3ff8594919f1af548dc4">&#9670;&nbsp;</a></span>addLayerToPrev() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e78af0e0add3ff8594919f1af548dc4">&#9670;&nbsp;</a></span>addLayerToPrev() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -808,7 +974,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a7e78af0e0add3ff8594919f1af548dc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e78af0e0add3ff8594919f1af548dc4">&#9670;&nbsp;</a></span>addLayerToPrev() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e78af0e0add3ff8594919f1af548dc4">&#9670;&nbsp;</a></span>addLayerToPrev() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -845,7 +1011,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a7e78af0e0add3ff8594919f1af548dc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e78af0e0add3ff8594919f1af548dc4">&#9670;&nbsp;</a></span>addLayerToPrev() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e78af0e0add3ff8594919f1af548dc4">&#9670;&nbsp;</a></span>addLayerToPrev() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -882,7 +1048,44 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a7e78af0e0add3ff8594919f1af548dc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e78af0e0add3ff8594919f1af548dc4">&#9670;&nbsp;</a></span>addLayerToPrev() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e78af0e0add3ff8594919f1af548dc4">&#9670;&nbsp;</a></span>addLayerToPrev() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cv::dnn::Net::addLayerToPrev </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcv_1_1dnn_1_1_layer_params.html">LayerParams</a> &amp;&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds new layer and connects its first input to the first output of previously added layer. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classcv_1_1dnn_1_1_net.html#a1569c03d93c80fd8c6020589bd2ac116" title="Adds new layer to the net.">addLayer()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7e78af0e0add3ff8594919f1af548dc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e78af0e0add3ff8594919f1af548dc4">&#9670;&nbsp;</a></span>addLayerToPrev() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -919,7 +1122,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa2ee9291052a33a4de0ca94b4be5acf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2ee9291052a33a4de0ca94b4be5acf9">&#9670;&nbsp;</a></span>connect() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ee9291052a33a4de0ca94b4be5acf9">&#9670;&nbsp;</a></span>connect() <span class="overload">[1/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -962,7 +1165,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa2ee9291052a33a4de0ca94b4be5acf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2ee9291052a33a4de0ca94b4be5acf9">&#9670;&nbsp;</a></span>connect() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ee9291052a33a4de0ca94b4be5acf9">&#9670;&nbsp;</a></span>connect() <span class="overload">[2/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1005,7 +1208,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa2ee9291052a33a4de0ca94b4be5acf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2ee9291052a33a4de0ca94b4be5acf9">&#9670;&nbsp;</a></span>connect() <span class="overload">[3/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ee9291052a33a4de0ca94b4be5acf9">&#9670;&nbsp;</a></span>connect() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1048,7 +1251,50 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa2ee9291052a33a4de0ca94b4be5acf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2ee9291052a33a4de0ca94b4be5acf9">&#9670;&nbsp;</a></span>connect() <span class="overload">[4/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ee9291052a33a4de0ca94b4be5acf9">&#9670;&nbsp;</a></span>connect() <span class="overload">[4/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP void cv::dnn::Net::connect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcv_1_1_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>outPin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcv_1_1_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>inpPin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Connects output of the first layer to input of the second layer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outPin</td><td>descriptor of the first layer output. </td></tr>
+    <tr><td class="paramname">inpPin</td><td>descriptor of the second layer input.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Descriptors have the following template <code>&lt;layer_name&gt;[.input_number]</code>:</p><ul>
+<li>the first part of the template <code>layer_name</code> is sting name of the added layer. If this part is empty then the network input pseudo layer will be used;</li>
+<li><p class="startli">the second optional part of the template <code>input_number</code> is either number of the layer input, either label one. If this part is omitted then the first layer input will be used.</p>
+<dl class="section see"><dt>See also</dt><dd>setNetInputs(), <a class="el" href="classcv_1_1dnn_1_1_layer.html#a93212cf0fe50ace40af0f2b4f42263c4" title="Returns index of input blob into the input array.">Layer::inputNameToIndex()</a>, <a class="el" href="classcv_1_1dnn_1_1_layer.html#a8eefc37b2c55ae1e5d73223fe32483a7" title="Returns index of output blob in output array.">Layer::outputNameToIndex()</a> </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="aa2ee9291052a33a4de0ca94b4be5acf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ee9291052a33a4de0ca94b4be5acf9">&#9670;&nbsp;</a></span>connect() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1091,7 +1337,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a26615a67830b0045b68565c7e7dc1307"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26615a67830b0045b68565c7e7dc1307">&#9670;&nbsp;</a></span>connect() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a26615a67830b0045b68565c7e7dc1307">&#9670;&nbsp;</a></span>connect() <span class="overload">[6/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1142,7 +1388,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a26615a67830b0045b68565c7e7dc1307"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26615a67830b0045b68565c7e7dc1307">&#9670;&nbsp;</a></span>connect() <span class="overload">[6/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a26615a67830b0045b68565c7e7dc1307">&#9670;&nbsp;</a></span>connect() <span class="overload">[7/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1193,7 +1439,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a26615a67830b0045b68565c7e7dc1307"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26615a67830b0045b68565c7e7dc1307">&#9670;&nbsp;</a></span>connect() <span class="overload">[7/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a26615a67830b0045b68565c7e7dc1307">&#9670;&nbsp;</a></span>connect() <span class="overload">[8/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1244,7 +1490,58 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a26615a67830b0045b68565c7e7dc1307"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26615a67830b0045b68565c7e7dc1307">&#9670;&nbsp;</a></span>connect() <span class="overload">[8/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a26615a67830b0045b68565c7e7dc1307">&#9670;&nbsp;</a></span>connect() <span class="overload">[9/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cv::dnn::Net::connect </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>outLayerId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>outNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inpLayerId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inpNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Connects #<code>outNum</code> output of the first layer to #<code>inNum</code> input of the second layer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outLayerId</td><td>identifier of the first layer </td></tr>
+    <tr><td class="paramname">outNum</td><td>number of the first layer output </td></tr>
+    <tr><td class="paramname">inpLayerId</td><td>identifier of the second layer </td></tr>
+    <tr><td class="paramname">inpNum</td><td>number of the second layer input </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a26615a67830b0045b68565c7e7dc1307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26615a67830b0045b68565c7e7dc1307">&#9670;&nbsp;</a></span>connect() <span class="overload">[10/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1295,7 +1592,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae8246e2ec35ef733cc8271d7e1fdfc7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8246e2ec35ef733cc8271d7e1fdfc7b">&#9670;&nbsp;</a></span>empty() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8246e2ec35ef733cc8271d7e1fdfc7b">&#9670;&nbsp;</a></span>empty() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1313,7 +1610,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae8246e2ec35ef733cc8271d7e1fdfc7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8246e2ec35ef733cc8271d7e1fdfc7b">&#9670;&nbsp;</a></span>empty() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8246e2ec35ef733cc8271d7e1fdfc7b">&#9670;&nbsp;</a></span>empty() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1331,7 +1628,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae8246e2ec35ef733cc8271d7e1fdfc7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8246e2ec35ef733cc8271d7e1fdfc7b">&#9670;&nbsp;</a></span>empty() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8246e2ec35ef733cc8271d7e1fdfc7b">&#9670;&nbsp;</a></span>empty() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1349,7 +1646,25 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae8246e2ec35ef733cc8271d7e1fdfc7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8246e2ec35ef733cc8271d7e1fdfc7b">&#9670;&nbsp;</a></span>empty() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8246e2ec35ef733cc8271d7e1fdfc7b">&#9670;&nbsp;</a></span>empty() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP bool cv::dnn::Net::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns true if there are no layers in the network. </p>
+
+</div>
+</div>
+<a id="ae8246e2ec35ef733cc8271d7e1fdfc7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8246e2ec35ef733cc8271d7e1fdfc7b">&#9670;&nbsp;</a></span>empty() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1367,7 +1682,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a28cf42341ee0fd5f70fc1f43caf6a0ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28cf42341ee0fd5f70fc1f43caf6a0ad">&#9670;&nbsp;</a></span>enableFusion() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a28cf42341ee0fd5f70fc1f43caf6a0ad">&#9670;&nbsp;</a></span>enableFusion() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1393,7 +1708,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a28cf42341ee0fd5f70fc1f43caf6a0ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28cf42341ee0fd5f70fc1f43caf6a0ad">&#9670;&nbsp;</a></span>enableFusion() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a28cf42341ee0fd5f70fc1f43caf6a0ad">&#9670;&nbsp;</a></span>enableFusion() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1419,7 +1734,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a28cf42341ee0fd5f70fc1f43caf6a0ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28cf42341ee0fd5f70fc1f43caf6a0ad">&#9670;&nbsp;</a></span>enableFusion() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a28cf42341ee0fd5f70fc1f43caf6a0ad">&#9670;&nbsp;</a></span>enableFusion() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1445,7 +1760,33 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a28cf42341ee0fd5f70fc1f43caf6a0ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28cf42341ee0fd5f70fc1f43caf6a0ad">&#9670;&nbsp;</a></span>enableFusion() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a28cf42341ee0fd5f70fc1f43caf6a0ad">&#9670;&nbsp;</a></span>enableFusion() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP void cv::dnn::Net::enableFusion </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fusion</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enables or disables layer fusion in the network. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fusion</td><td>true to enable the fusion, false to disable. The fusion is enabled by default. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a28cf42341ee0fd5f70fc1f43caf6a0ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28cf42341ee0fd5f70fc1f43caf6a0ad">&#9670;&nbsp;</a></span>enableFusion() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1471,7 +1812,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae444ed7d9f75887a5075190f6d761fda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae444ed7d9f75887a5075190f6d761fda">&#9670;&nbsp;</a></span>forward() <span class="overload">[1/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae444ed7d9f75887a5075190f6d761fda">&#9670;&nbsp;</a></span>forward() <span class="overload">[1/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1499,7 +1840,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae444ed7d9f75887a5075190f6d761fda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae444ed7d9f75887a5075190f6d761fda">&#9670;&nbsp;</a></span>forward() <span class="overload">[2/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae444ed7d9f75887a5075190f6d761fda">&#9670;&nbsp;</a></span>forward() <span class="overload">[2/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1527,7 +1868,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae444ed7d9f75887a5075190f6d761fda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae444ed7d9f75887a5075190f6d761fda">&#9670;&nbsp;</a></span>forward() <span class="overload">[3/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae444ed7d9f75887a5075190f6d761fda">&#9670;&nbsp;</a></span>forward() <span class="overload">[3/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1555,7 +1896,35 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae444ed7d9f75887a5075190f6d761fda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae444ed7d9f75887a5075190f6d761fda">&#9670;&nbsp;</a></span>forward() <span class="overload">[4/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae444ed7d9f75887a5075190f6d761fda">&#9670;&nbsp;</a></span>forward() <span class="overload">[4/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP <a class="el" href="classcv_1_1_mat.html">Mat</a> cv::dnn::Net::forward </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>outputName</em> = <code><a class="el" href="classcv_1_1_string.html">String</a>()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs forward pass to compute output of layer with name <code>outputName</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outputName</td><td>name for layer which output is needed to get </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>blob for first output of specified layer.</dd></dl>
+<p>By default runs forward pass for the whole network. </p>
+
+</div>
+</div>
+<a id="ae444ed7d9f75887a5075190f6d761fda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae444ed7d9f75887a5075190f6d761fda">&#9670;&nbsp;</a></span>forward() <span class="overload">[5/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1583,7 +1952,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a91c4e50e92f153d68acd405d7a5eb990"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91c4e50e92f153d68acd405d7a5eb990">&#9670;&nbsp;</a></span>forward() <span class="overload">[5/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a91c4e50e92f153d68acd405d7a5eb990">&#9670;&nbsp;</a></span>forward() <span class="overload">[6/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1621,7 +1990,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a91c4e50e92f153d68acd405d7a5eb990"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91c4e50e92f153d68acd405d7a5eb990">&#9670;&nbsp;</a></span>forward() <span class="overload">[6/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a91c4e50e92f153d68acd405d7a5eb990">&#9670;&nbsp;</a></span>forward() <span class="overload">[7/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1659,7 +2028,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a91c4e50e92f153d68acd405d7a5eb990"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91c4e50e92f153d68acd405d7a5eb990">&#9670;&nbsp;</a></span>forward() <span class="overload">[7/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a91c4e50e92f153d68acd405d7a5eb990">&#9670;&nbsp;</a></span>forward() <span class="overload">[8/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1697,7 +2066,45 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a91c4e50e92f153d68acd405d7a5eb990"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91c4e50e92f153d68acd405d7a5eb990">&#9670;&nbsp;</a></span>forward() <span class="overload">[8/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a91c4e50e92f153d68acd405d7a5eb990">&#9670;&nbsp;</a></span>forward() <span class="overload">[9/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP void cv::dnn::Net::forward </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcv_1_1___output_array.html">OutputArrayOfArrays</a>&#160;</td>
+          <td class="paramname"><em>outputBlobs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>outputName</em> = <code><a class="el" href="classcv_1_1_string.html">String</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs forward pass to compute output of layer with name <code>outputName</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outputBlobs</td><td>contains all output blobs for specified layer. </td></tr>
+    <tr><td class="paramname">outputName</td><td>name for layer which output is needed to get</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>If <code>outputName</code> is empty, runs forward pass for the whole network. </p>
+
+</div>
+</div>
+<a id="a91c4e50e92f153d68acd405d7a5eb990"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91c4e50e92f153d68acd405d7a5eb990">&#9670;&nbsp;</a></span>forward() <span class="overload">[10/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1735,7 +2142,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aafaa03410a838bed2e78774f185d2252"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafaa03410a838bed2e78774f185d2252">&#9670;&nbsp;</a></span>forward() <span class="overload">[9/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aafaa03410a838bed2e78774f185d2252">&#9670;&nbsp;</a></span>forward() <span class="overload">[11/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1772,7 +2179,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aafaa03410a838bed2e78774f185d2252"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafaa03410a838bed2e78774f185d2252">&#9670;&nbsp;</a></span>forward() <span class="overload">[10/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aafaa03410a838bed2e78774f185d2252">&#9670;&nbsp;</a></span>forward() <span class="overload">[12/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1809,7 +2216,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aafaa03410a838bed2e78774f185d2252"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafaa03410a838bed2e78774f185d2252">&#9670;&nbsp;</a></span>forward() <span class="overload">[11/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aafaa03410a838bed2e78774f185d2252">&#9670;&nbsp;</a></span>forward() <span class="overload">[13/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1846,7 +2253,44 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aafaa03410a838bed2e78774f185d2252"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafaa03410a838bed2e78774f185d2252">&#9670;&nbsp;</a></span>forward() <span class="overload">[12/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aafaa03410a838bed2e78774f185d2252">&#9670;&nbsp;</a></span>forward() <span class="overload">[14/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP void cv::dnn::Net::forward </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcv_1_1___output_array.html">OutputArrayOfArrays</a>&#160;</td>
+          <td class="paramname"><em>outputBlobs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classcv_1_1_string.html">String</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>outBlobNames</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs forward pass to compute outputs of layers listed in <code>outBlobNames</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outputBlobs</td><td>contains blobs for first outputs of specified layers. </td></tr>
+    <tr><td class="paramname">outBlobNames</td><td>names for layers which outputs are needed to get </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aafaa03410a838bed2e78774f185d2252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafaa03410a838bed2e78774f185d2252">&#9670;&nbsp;</a></span>forward() <span class="overload">[15/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1883,7 +2327,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="af89f97666670043a7da7dedee72e282c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af89f97666670043a7da7dedee72e282c">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[1/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af89f97666670043a7da7dedee72e282c">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[1/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1910,7 +2354,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="af89f97666670043a7da7dedee72e282c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af89f97666670043a7da7dedee72e282c">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[2/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af89f97666670043a7da7dedee72e282c">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[2/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1937,7 +2381,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="af89f97666670043a7da7dedee72e282c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af89f97666670043a7da7dedee72e282c">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[3/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af89f97666670043a7da7dedee72e282c">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[3/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1964,7 +2408,34 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="af89f97666670043a7da7dedee72e282c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af89f97666670043a7da7dedee72e282c">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[4/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af89f97666670043a7da7dedee72e282c">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[4/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP int64 cv::dnn::Net::getFLOPS </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; MatShape &gt; &amp;&#160;</td>
+          <td class="paramname"><em>netInputShapes</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes FLOP for whole loaded model with specified input shapes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">netInputShapes</td><td>vector of shapes for all net inputs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>computed FLOP. </dd></dl>
+
+</div>
+</div>
+<a id="af89f97666670043a7da7dedee72e282c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af89f97666670043a7da7dedee72e282c">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[5/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1991,7 +2462,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a2ae9efcc9c05e1a423752532012a664d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ae9efcc9c05e1a423752532012a664d">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[5/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae9efcc9c05e1a423752532012a664d">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[6/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2010,7 +2481,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a2ae9efcc9c05e1a423752532012a664d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ae9efcc9c05e1a423752532012a664d">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[6/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae9efcc9c05e1a423752532012a664d">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[7/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2029,7 +2500,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a2ae9efcc9c05e1a423752532012a664d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ae9efcc9c05e1a423752532012a664d">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[7/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae9efcc9c05e1a423752532012a664d">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[8/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2048,7 +2519,26 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a2ae9efcc9c05e1a423752532012a664d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ae9efcc9c05e1a423752532012a664d">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[8/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae9efcc9c05e1a423752532012a664d">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[9/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP int64 cv::dnn::Net::getFLOPS </td>
+          <td>(</td>
+          <td class="paramtype">const MatShape &amp;&#160;</td>
+          <td class="paramname"><em>netInputShape</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a2ae9efcc9c05e1a423752532012a664d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae9efcc9c05e1a423752532012a664d">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[10/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2067,7 +2557,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a4d5635e4c08ccc202a0106621e15d9a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d5635e4c08ccc202a0106621e15d9a3">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[9/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d5635e4c08ccc202a0106621e15d9a3">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[11/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2096,7 +2586,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a4d5635e4c08ccc202a0106621e15d9a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d5635e4c08ccc202a0106621e15d9a3">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[10/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d5635e4c08ccc202a0106621e15d9a3">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[12/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2125,7 +2615,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a4d5635e4c08ccc202a0106621e15d9a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d5635e4c08ccc202a0106621e15d9a3">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[11/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d5635e4c08ccc202a0106621e15d9a3">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[13/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2154,7 +2644,36 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a4d5635e4c08ccc202a0106621e15d9a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d5635e4c08ccc202a0106621e15d9a3">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[12/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d5635e4c08ccc202a0106621e15d9a3">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[14/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP int64 cv::dnn::Net::getFLOPS </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>layerId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MatShape &gt; &amp;&#160;</td>
+          <td class="paramname"><em>netInputShapes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a4d5635e4c08ccc202a0106621e15d9a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d5635e4c08ccc202a0106621e15d9a3">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[15/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2183,7 +2702,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab89b8eb9723e255ce353251137dc19c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab89b8eb9723e255ce353251137dc19c9">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[13/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab89b8eb9723e255ce353251137dc19c9">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[16/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2212,7 +2731,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab89b8eb9723e255ce353251137dc19c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab89b8eb9723e255ce353251137dc19c9">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[14/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab89b8eb9723e255ce353251137dc19c9">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[17/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2241,7 +2760,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab89b8eb9723e255ce353251137dc19c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab89b8eb9723e255ce353251137dc19c9">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[15/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab89b8eb9723e255ce353251137dc19c9">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[18/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2270,7 +2789,36 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab89b8eb9723e255ce353251137dc19c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab89b8eb9723e255ce353251137dc19c9">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[16/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab89b8eb9723e255ce353251137dc19c9">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[19/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP int64 cv::dnn::Net::getFLOPS </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>layerId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const MatShape &amp;&#160;</td>
+          <td class="paramname"><em>netInputShape</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="ab89b8eb9723e255ce353251137dc19c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab89b8eb9723e255ce353251137dc19c9">&#9670;&nbsp;</a></span>getFLOPS() <span class="overload">[20/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2299,7 +2847,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aca892dbf6ecd5ba8051fb7f5c6266164"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca892dbf6ecd5ba8051fb7f5c6266164">&#9670;&nbsp;</a></span>getLayerId() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aca892dbf6ecd5ba8051fb7f5c6266164">&#9670;&nbsp;</a></span>getLayerId() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2320,7 +2868,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aca892dbf6ecd5ba8051fb7f5c6266164"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca892dbf6ecd5ba8051fb7f5c6266164">&#9670;&nbsp;</a></span>getLayerId() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aca892dbf6ecd5ba8051fb7f5c6266164">&#9670;&nbsp;</a></span>getLayerId() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2341,7 +2889,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aca892dbf6ecd5ba8051fb7f5c6266164"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca892dbf6ecd5ba8051fb7f5c6266164">&#9670;&nbsp;</a></span>getLayerId() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aca892dbf6ecd5ba8051fb7f5c6266164">&#9670;&nbsp;</a></span>getLayerId() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2362,7 +2910,28 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aca892dbf6ecd5ba8051fb7f5c6266164"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca892dbf6ecd5ba8051fb7f5c6266164">&#9670;&nbsp;</a></span>getLayerId() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aca892dbf6ecd5ba8051fb7f5c6266164">&#9670;&nbsp;</a></span>getLayerId() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP int cv::dnn::Net::getLayerId </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>layer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts string name of the layer to the integer identifier. </p>
+<dl class="section return"><dt>Returns</dt><dd>id of the layer, or -1 if the layer wasn't found. </dd></dl>
+
+</div>
+</div>
+<a id="aca892dbf6ecd5ba8051fb7f5c6266164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca892dbf6ecd5ba8051fb7f5c6266164">&#9670;&nbsp;</a></span>getLayerId() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2383,7 +2952,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab1c893679fd9ef33fd19919d896d76e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1c893679fd9ef33fd19919d896d76e3">&#9670;&nbsp;</a></span>getLayersCount() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1c893679fd9ef33fd19919d896d76e3">&#9670;&nbsp;</a></span>getLayersCount() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2410,7 +2979,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab1c893679fd9ef33fd19919d896d76e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1c893679fd9ef33fd19919d896d76e3">&#9670;&nbsp;</a></span>getLayersCount() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1c893679fd9ef33fd19919d896d76e3">&#9670;&nbsp;</a></span>getLayersCount() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2437,7 +3006,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab1c893679fd9ef33fd19919d896d76e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1c893679fd9ef33fd19919d896d76e3">&#9670;&nbsp;</a></span>getLayersCount() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1c893679fd9ef33fd19919d896d76e3">&#9670;&nbsp;</a></span>getLayersCount() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2464,7 +3033,34 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab1c893679fd9ef33fd19919d896d76e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1c893679fd9ef33fd19919d896d76e3">&#9670;&nbsp;</a></span>getLayersCount() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1c893679fd9ef33fd19919d896d76e3">&#9670;&nbsp;</a></span>getLayersCount() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP int cv::dnn::Net::getLayersCount </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>layerType</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns count of layers of specified type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layerType</td><td>type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>count of layers </dd></dl>
+
+</div>
+</div>
+<a id="ab1c893679fd9ef33fd19919d896d76e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1c893679fd9ef33fd19919d896d76e3">&#9670;&nbsp;</a></span>getLayersCount() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2491,7 +3087,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a44efd1ce11c3665814870e4dd5d480e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44efd1ce11c3665814870e4dd5d480e8">&#9670;&nbsp;</a></span>getLayerShapes() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a44efd1ce11c3665814870e4dd5d480e8">&#9670;&nbsp;</a></span>getLayerShapes() <span class="overload">[1/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2542,7 +3138,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a44efd1ce11c3665814870e4dd5d480e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44efd1ce11c3665814870e4dd5d480e8">&#9670;&nbsp;</a></span>getLayerShapes() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a44efd1ce11c3665814870e4dd5d480e8">&#9670;&nbsp;</a></span>getLayerShapes() <span class="overload">[2/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2593,7 +3189,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a44efd1ce11c3665814870e4dd5d480e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44efd1ce11c3665814870e4dd5d480e8">&#9670;&nbsp;</a></span>getLayerShapes() <span class="overload">[3/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a44efd1ce11c3665814870e4dd5d480e8">&#9670;&nbsp;</a></span>getLayerShapes() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2644,7 +3240,58 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a44efd1ce11c3665814870e4dd5d480e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44efd1ce11c3665814870e4dd5d480e8">&#9670;&nbsp;</a></span>getLayerShapes() <span class="overload">[4/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a44efd1ce11c3665814870e4dd5d480e8">&#9670;&nbsp;</a></span>getLayerShapes() <span class="overload">[4/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cv::dnn::Net::getLayerShapes </td>
+          <td>(</td>
+          <td class="paramtype">const MatShape &amp;&#160;</td>
+          <td class="paramname"><em>netInputShape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>layerId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT std::vector&lt; MatShape &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inLayerShapes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT std::vector&lt; MatShape &gt; &amp;&#160;</td>
+          <td class="paramname"><em>outLayerShapes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns input and output shapes for layer with specified id in loaded model; preliminary inferencing isn't necessary. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">netInputShape</td><td>shape input blob in net input layer. </td></tr>
+    <tr><td class="paramname">layerId</td><td>id for layer. </td></tr>
+    <tr><td class="paramname">inLayerShapes</td><td>output parameter for input layers shapes; order is the same as in layersIds </td></tr>
+    <tr><td class="paramname">outLayerShapes</td><td>output parameter for output layers shapes; order is the same as in layersIds </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a44efd1ce11c3665814870e4dd5d480e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44efd1ce11c3665814870e4dd5d480e8">&#9670;&nbsp;</a></span>getLayerShapes() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2695,7 +3342,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad1b9bfe2a98ac8fa90a0a4d9281c15a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1b9bfe2a98ac8fa90a0a4d9281c15a6">&#9670;&nbsp;</a></span>getLayerShapes() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b9bfe2a98ac8fa90a0a4d9281c15a6">&#9670;&nbsp;</a></span>getLayerShapes() <span class="overload">[6/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2736,7 +3383,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad1b9bfe2a98ac8fa90a0a4d9281c15a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1b9bfe2a98ac8fa90a0a4d9281c15a6">&#9670;&nbsp;</a></span>getLayerShapes() <span class="overload">[6/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b9bfe2a98ac8fa90a0a4d9281c15a6">&#9670;&nbsp;</a></span>getLayerShapes() <span class="overload">[7/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2777,7 +3424,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad1b9bfe2a98ac8fa90a0a4d9281c15a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1b9bfe2a98ac8fa90a0a4d9281c15a6">&#9670;&nbsp;</a></span>getLayerShapes() <span class="overload">[7/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b9bfe2a98ac8fa90a0a4d9281c15a6">&#9670;&nbsp;</a></span>getLayerShapes() <span class="overload">[8/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2818,7 +3465,48 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad1b9bfe2a98ac8fa90a0a4d9281c15a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1b9bfe2a98ac8fa90a0a4d9281c15a6">&#9670;&nbsp;</a></span>getLayerShapes() <span class="overload">[8/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b9bfe2a98ac8fa90a0a4d9281c15a6">&#9670;&nbsp;</a></span>getLayerShapes() <span class="overload">[9/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cv::dnn::Net::getLayerShapes </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; MatShape &gt; &amp;&#160;</td>
+          <td class="paramname"><em>netInputShapes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>layerId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT std::vector&lt; MatShape &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inLayerShapes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT std::vector&lt; MatShape &gt; &amp;&#160;</td>
+          <td class="paramname"><em>outLayerShapes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="ad1b9bfe2a98ac8fa90a0a4d9281c15a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b9bfe2a98ac8fa90a0a4d9281c15a6">&#9670;&nbsp;</a></span>getLayerShapes() <span class="overload">[10/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2859,7 +3547,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="af9f37ef9bc57c56a730efc778f88b150"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9f37ef9bc57c56a730efc778f88b150">&#9670;&nbsp;</a></span>getLayersShapes() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f37ef9bc57c56a730efc778f88b150">&#9670;&nbsp;</a></span>getLayersShapes() <span class="overload">[1/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2910,7 +3598,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="af9f37ef9bc57c56a730efc778f88b150"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9f37ef9bc57c56a730efc778f88b150">&#9670;&nbsp;</a></span>getLayersShapes() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f37ef9bc57c56a730efc778f88b150">&#9670;&nbsp;</a></span>getLayersShapes() <span class="overload">[2/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2961,7 +3649,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="af9f37ef9bc57c56a730efc778f88b150"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9f37ef9bc57c56a730efc778f88b150">&#9670;&nbsp;</a></span>getLayersShapes() <span class="overload">[3/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f37ef9bc57c56a730efc778f88b150">&#9670;&nbsp;</a></span>getLayersShapes() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3012,7 +3700,58 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="af9f37ef9bc57c56a730efc778f88b150"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9f37ef9bc57c56a730efc778f88b150">&#9670;&nbsp;</a></span>getLayersShapes() <span class="overload">[4/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f37ef9bc57c56a730efc778f88b150">&#9670;&nbsp;</a></span>getLayersShapes() <span class="overload">[4/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP void cv::dnn::Net::getLayersShapes </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; MatShape &gt; &amp;&#160;</td>
+          <td class="paramname"><em>netInputShapes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>layersIds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT std::vector&lt; std::vector&lt; MatShape &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inLayersShapes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT std::vector&lt; std::vector&lt; MatShape &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>outLayersShapes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns input and output shapes for all layers in loaded model; preliminary inferencing isn't necessary. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">netInputShapes</td><td>shapes for all input blobs in net input layer. </td></tr>
+    <tr><td class="paramname">layersIds</td><td>output parameter for layer IDs. </td></tr>
+    <tr><td class="paramname">inLayersShapes</td><td>output parameter for input layers shapes; order is the same as in layersIds </td></tr>
+    <tr><td class="paramname">outLayersShapes</td><td>output parameter for output layers shapes; order is the same as in layersIds </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af9f37ef9bc57c56a730efc778f88b150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f37ef9bc57c56a730efc778f88b150">&#9670;&nbsp;</a></span>getLayersShapes() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3063,7 +3802,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad5efa172c9d81979c0fbbf51c55f07a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5efa172c9d81979c0fbbf51c55f07a2">&#9670;&nbsp;</a></span>getLayersShapes() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5efa172c9d81979c0fbbf51c55f07a2">&#9670;&nbsp;</a></span>getLayersShapes() <span class="overload">[6/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3104,7 +3843,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad5efa172c9d81979c0fbbf51c55f07a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5efa172c9d81979c0fbbf51c55f07a2">&#9670;&nbsp;</a></span>getLayersShapes() <span class="overload">[6/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5efa172c9d81979c0fbbf51c55f07a2">&#9670;&nbsp;</a></span>getLayersShapes() <span class="overload">[7/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3145,7 +3884,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad5efa172c9d81979c0fbbf51c55f07a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5efa172c9d81979c0fbbf51c55f07a2">&#9670;&nbsp;</a></span>getLayersShapes() <span class="overload">[7/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5efa172c9d81979c0fbbf51c55f07a2">&#9670;&nbsp;</a></span>getLayersShapes() <span class="overload">[8/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3186,7 +3925,48 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad5efa172c9d81979c0fbbf51c55f07a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5efa172c9d81979c0fbbf51c55f07a2">&#9670;&nbsp;</a></span>getLayersShapes() <span class="overload">[8/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5efa172c9d81979c0fbbf51c55f07a2">&#9670;&nbsp;</a></span>getLayersShapes() <span class="overload">[9/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP void cv::dnn::Net::getLayersShapes </td>
+          <td>(</td>
+          <td class="paramtype">const MatShape &amp;&#160;</td>
+          <td class="paramname"><em>netInputShape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>layersIds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT std::vector&lt; std::vector&lt; MatShape &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inLayersShapes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT std::vector&lt; std::vector&lt; MatShape &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>outLayersShapes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="ad5efa172c9d81979c0fbbf51c55f07a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5efa172c9d81979c0fbbf51c55f07a2">&#9670;&nbsp;</a></span>getLayersShapes() <span class="overload">[10/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3227,7 +4007,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a6de85d17ef673776c8589b05e195127d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6de85d17ef673776c8589b05e195127d">&#9670;&nbsp;</a></span>getLayerTypes() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de85d17ef673776c8589b05e195127d">&#9670;&nbsp;</a></span>getLayerTypes() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3253,7 +4033,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a6de85d17ef673776c8589b05e195127d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6de85d17ef673776c8589b05e195127d">&#9670;&nbsp;</a></span>getLayerTypes() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de85d17ef673776c8589b05e195127d">&#9670;&nbsp;</a></span>getLayerTypes() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3279,7 +4059,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a6de85d17ef673776c8589b05e195127d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6de85d17ef673776c8589b05e195127d">&#9670;&nbsp;</a></span>getLayerTypes() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de85d17ef673776c8589b05e195127d">&#9670;&nbsp;</a></span>getLayerTypes() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3305,7 +4085,33 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a6de85d17ef673776c8589b05e195127d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6de85d17ef673776c8589b05e195127d">&#9670;&nbsp;</a></span>getLayerTypes() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de85d17ef673776c8589b05e195127d">&#9670;&nbsp;</a></span>getLayerTypes() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP void cv::dnn::Net::getLayerTypes </td>
+          <td>(</td>
+          <td class="paramtype">CV_OUT std::vector&lt; <a class="el" href="classcv_1_1_string.html">String</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>layersTypes</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns list of types for layer used in model. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layersTypes</td><td>output parameter for returning types. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6de85d17ef673776c8589b05e195127d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de85d17ef673776c8589b05e195127d">&#9670;&nbsp;</a></span>getLayerTypes() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3331,7 +4137,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a68ee410f9ba96118468abf074e73c806"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68ee410f9ba96118468abf074e73c806">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[1/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ee410f9ba96118468abf074e73c806">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[1/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3375,7 +4181,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a68ee410f9ba96118468abf074e73c806"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68ee410f9ba96118468abf074e73c806">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[2/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ee410f9ba96118468abf074e73c806">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[2/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3419,7 +4225,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a68ee410f9ba96118468abf074e73c806"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68ee410f9ba96118468abf074e73c806">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[3/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ee410f9ba96118468abf074e73c806">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[3/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3463,7 +4269,51 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a68ee410f9ba96118468abf074e73c806"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68ee410f9ba96118468abf074e73c806">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[4/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ee410f9ba96118468abf074e73c806">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[4/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cv::dnn::Net::getMemoryConsumption </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; MatShape &gt; &amp;&#160;</td>
+          <td class="paramname"><em>netInputShapes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT size_t &amp;&#160;</td>
+          <td class="paramname"><em>weights</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT size_t &amp;&#160;</td>
+          <td class="paramname"><em>blobs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes bytes number which are required to store all weights and intermediate blobs for model. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">netInputShapes</td><td>vector of shapes for all net inputs. </td></tr>
+    <tr><td class="paramname">weights</td><td>output parameter to store resulting bytes for weights. </td></tr>
+    <tr><td class="paramname">blobs</td><td>output parameter to store resulting bytes for intermediate blobs. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a68ee410f9ba96118468abf074e73c806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ee410f9ba96118468abf074e73c806">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[5/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3507,7 +4357,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0b98e2dcb19a50ede01556537d022ba5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b98e2dcb19a50ede01556537d022ba5">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[5/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b98e2dcb19a50ede01556537d022ba5">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[6/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3542,7 +4392,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0b98e2dcb19a50ede01556537d022ba5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b98e2dcb19a50ede01556537d022ba5">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[6/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b98e2dcb19a50ede01556537d022ba5">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[7/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3577,7 +4427,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0b98e2dcb19a50ede01556537d022ba5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b98e2dcb19a50ede01556537d022ba5">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[7/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b98e2dcb19a50ede01556537d022ba5">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[8/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3612,7 +4462,42 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0b98e2dcb19a50ede01556537d022ba5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b98e2dcb19a50ede01556537d022ba5">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[8/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b98e2dcb19a50ede01556537d022ba5">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[9/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP void cv::dnn::Net::getMemoryConsumption </td>
+          <td>(</td>
+          <td class="paramtype">const MatShape &amp;&#160;</td>
+          <td class="paramname"><em>netInputShape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT size_t &amp;&#160;</td>
+          <td class="paramname"><em>weights</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT size_t &amp;&#160;</td>
+          <td class="paramname"><em>blobs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a0b98e2dcb19a50ede01556537d022ba5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b98e2dcb19a50ede01556537d022ba5">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[10/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3647,7 +4532,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a74a44ea352e4b492722390a8f06fd5e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74a44ea352e4b492722390a8f06fd5e6">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[9/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a74a44ea352e4b492722390a8f06fd5e6">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[11/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3688,7 +4573,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a74a44ea352e4b492722390a8f06fd5e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74a44ea352e4b492722390a8f06fd5e6">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[10/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a74a44ea352e4b492722390a8f06fd5e6">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[12/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3729,7 +4614,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a74a44ea352e4b492722390a8f06fd5e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74a44ea352e4b492722390a8f06fd5e6">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[11/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a74a44ea352e4b492722390a8f06fd5e6">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[13/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3770,7 +4655,48 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a74a44ea352e4b492722390a8f06fd5e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74a44ea352e4b492722390a8f06fd5e6">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[12/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a74a44ea352e4b492722390a8f06fd5e6">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[14/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP void cv::dnn::Net::getMemoryConsumption </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>layerId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; MatShape &gt; &amp;&#160;</td>
+          <td class="paramname"><em>netInputShapes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT size_t &amp;&#160;</td>
+          <td class="paramname"><em>weights</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT size_t &amp;&#160;</td>
+          <td class="paramname"><em>blobs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a74a44ea352e4b492722390a8f06fd5e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74a44ea352e4b492722390a8f06fd5e6">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[15/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3811,7 +4737,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aab364bdcb7b97a21acdb16ed9c9cfad4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab364bdcb7b97a21acdb16ed9c9cfad4">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[13/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aab364bdcb7b97a21acdb16ed9c9cfad4">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[16/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3852,7 +4778,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aab364bdcb7b97a21acdb16ed9c9cfad4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab364bdcb7b97a21acdb16ed9c9cfad4">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[14/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aab364bdcb7b97a21acdb16ed9c9cfad4">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[17/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3893,7 +4819,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aab364bdcb7b97a21acdb16ed9c9cfad4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab364bdcb7b97a21acdb16ed9c9cfad4">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[15/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aab364bdcb7b97a21acdb16ed9c9cfad4">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[18/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3934,7 +4860,48 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aab364bdcb7b97a21acdb16ed9c9cfad4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab364bdcb7b97a21acdb16ed9c9cfad4">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[16/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aab364bdcb7b97a21acdb16ed9c9cfad4">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[19/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP void cv::dnn::Net::getMemoryConsumption </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>layerId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const MatShape &amp;&#160;</td>
+          <td class="paramname"><em>netInputShape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT size_t &amp;&#160;</td>
+          <td class="paramname"><em>weights</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT size_t &amp;&#160;</td>
+          <td class="paramname"><em>blobs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="aab364bdcb7b97a21acdb16ed9c9cfad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab364bdcb7b97a21acdb16ed9c9cfad4">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[20/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3975,7 +4942,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac59411c698919fb87101c30376297afb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac59411c698919fb87101c30376297afb">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[17/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac59411c698919fb87101c30376297afb">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[21/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4026,7 +4993,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac59411c698919fb87101c30376297afb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac59411c698919fb87101c30376297afb">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[18/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac59411c698919fb87101c30376297afb">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[22/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4077,7 +5044,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac59411c698919fb87101c30376297afb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac59411c698919fb87101c30376297afb">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[19/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac59411c698919fb87101c30376297afb">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[23/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4128,7 +5095,58 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac59411c698919fb87101c30376297afb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac59411c698919fb87101c30376297afb">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[20/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac59411c698919fb87101c30376297afb">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[24/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cv::dnn::Net::getMemoryConsumption </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; MatShape &gt; &amp;&#160;</td>
+          <td class="paramname"><em>netInputShapes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>layerIds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT std::vector&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>weights</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT std::vector&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>blobs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes bytes number which are required to store all weights and intermediate blobs for each layer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">netInputShapes</td><td>vector of shapes for all net inputs. </td></tr>
+    <tr><td class="paramname">layerIds</td><td>output vector to save layer IDs. </td></tr>
+    <tr><td class="paramname">weights</td><td>output parameter to store resulting bytes for weights. </td></tr>
+    <tr><td class="paramname">blobs</td><td>output parameter to store resulting bytes for intermediate blobs. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac59411c698919fb87101c30376297afb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac59411c698919fb87101c30376297afb">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[25/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4179,7 +5197,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a05ea1d1d1b2f6a1c9a22bc466173c59e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05ea1d1d1b2f6a1c9a22bc466173c59e">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[21/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a05ea1d1d1b2f6a1c9a22bc466173c59e">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[26/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4220,7 +5238,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a05ea1d1d1b2f6a1c9a22bc466173c59e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05ea1d1d1b2f6a1c9a22bc466173c59e">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[22/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a05ea1d1d1b2f6a1c9a22bc466173c59e">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[27/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4261,7 +5279,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a05ea1d1d1b2f6a1c9a22bc466173c59e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05ea1d1d1b2f6a1c9a22bc466173c59e">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[23/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a05ea1d1d1b2f6a1c9a22bc466173c59e">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[28/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4302,7 +5320,48 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a05ea1d1d1b2f6a1c9a22bc466173c59e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05ea1d1d1b2f6a1c9a22bc466173c59e">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[24/24]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a05ea1d1d1b2f6a1c9a22bc466173c59e">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[29/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cv::dnn::Net::getMemoryConsumption </td>
+          <td>(</td>
+          <td class="paramtype">const MatShape &amp;&#160;</td>
+          <td class="paramname"><em>netInputShape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>layerIds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT std::vector&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>weights</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CV_OUT std::vector&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>blobs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a05ea1d1d1b2f6a1c9a22bc466173c59e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05ea1d1d1b2f6a1c9a22bc466173c59e">&#9670;&nbsp;</a></span>getMemoryConsumption() <span class="overload">[30/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4343,7 +5402,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="af2b8d464f8dbe7a433436f38b2269ecd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2b8d464f8dbe7a433436f38b2269ecd">&#9670;&nbsp;</a></span>getParam() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af2b8d464f8dbe7a433436f38b2269ecd">&#9670;&nbsp;</a></span>getParam() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4381,7 +5440,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="af2b8d464f8dbe7a433436f38b2269ecd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2b8d464f8dbe7a433436f38b2269ecd">&#9670;&nbsp;</a></span>getParam() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af2b8d464f8dbe7a433436f38b2269ecd">&#9670;&nbsp;</a></span>getParam() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4419,7 +5478,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="af2b8d464f8dbe7a433436f38b2269ecd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2b8d464f8dbe7a433436f38b2269ecd">&#9670;&nbsp;</a></span>getParam() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af2b8d464f8dbe7a433436f38b2269ecd">&#9670;&nbsp;</a></span>getParam() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4457,7 +5516,45 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="af2b8d464f8dbe7a433436f38b2269ecd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2b8d464f8dbe7a433436f38b2269ecd">&#9670;&nbsp;</a></span>getParam() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af2b8d464f8dbe7a433436f38b2269ecd">&#9670;&nbsp;</a></span>getParam() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP <a class="el" href="classcv_1_1_mat.html">Mat</a> cv::dnn::Net::getParam </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcv_1_1dnn_1_1_net.html#a6962dbfe16ce1ae18c67de9f5f2912ef">LayerId</a>&#160;</td>
+          <td class="paramname"><em>layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numParam</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns parameter blob of the layer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layer</td><td>name or id of the layer. </td></tr>
+    <tr><td class="paramname">numParam</td><td>index of the layer parameter in the <a class="el" href="classcv_1_1dnn_1_1_layer.html#a1b734d4ae93d53c6e220dd574ee1500f" title="List of learned parameters must be stored here to allow read them by using Net::getParam().">Layer::blobs</a> array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classcv_1_1dnn_1_1_layer.html#a1b734d4ae93d53c6e220dd574ee1500f" title="List of learned parameters must be stored here to allow read them by using Net::getParam().">Layer::blobs</a> </dd></dl>
+
+</div>
+</div>
+<a id="af2b8d464f8dbe7a433436f38b2269ecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2b8d464f8dbe7a433436f38b2269ecd">&#9670;&nbsp;</a></span>getParam() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4495,7 +5592,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a5dda0d2b26527e537b52ef90d44bc2fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dda0d2b26527e537b52ef90d44bc2fc">&#9670;&nbsp;</a></span>getPerfProfile() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dda0d2b26527e537b52ef90d44bc2fc">&#9670;&nbsp;</a></span>getPerfProfile() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4522,7 +5619,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a5dda0d2b26527e537b52ef90d44bc2fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dda0d2b26527e537b52ef90d44bc2fc">&#9670;&nbsp;</a></span>getPerfProfile() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dda0d2b26527e537b52ef90d44bc2fc">&#9670;&nbsp;</a></span>getPerfProfile() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4549,7 +5646,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a5dda0d2b26527e537b52ef90d44bc2fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dda0d2b26527e537b52ef90d44bc2fc">&#9670;&nbsp;</a></span>getPerfProfile() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dda0d2b26527e537b52ef90d44bc2fc">&#9670;&nbsp;</a></span>getPerfProfile() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4576,7 +5673,34 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a5dda0d2b26527e537b52ef90d44bc2fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dda0d2b26527e537b52ef90d44bc2fc">&#9670;&nbsp;</a></span>getPerfProfile() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dda0d2b26527e537b52ef90d44bc2fc">&#9670;&nbsp;</a></span>getPerfProfile() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP int64 cv::dnn::Net::getPerfProfile </td>
+          <td>(</td>
+          <td class="paramtype">CV_OUT std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>timings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns overall time for inference and timings (in ticks) for layers. Indexes in returned vector correspond to layers ids. Some layers can be fused with others, in this case zero ticks count will be return for that skipped layers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timings</td><td>vector for tick timings for all layers. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>overall ticks for model inference. </dd></dl>
+
+</div>
+</div>
+<a id="a5dda0d2b26527e537b52ef90d44bc2fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dda0d2b26527e537b52ef90d44bc2fc">&#9670;&nbsp;</a></span>getPerfProfile() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4603,7 +5727,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a5e69bd6c20f21ed8aa04982cbce17cfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e69bd6c20f21ed8aa04982cbce17cfc">&#9670;&nbsp;</a></span>readFromModelOptimizer() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e69bd6c20f21ed8aa04982cbce17cfc">&#9670;&nbsp;</a></span>readFromModelOptimizer() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4648,7 +5772,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a5e69bd6c20f21ed8aa04982cbce17cfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e69bd6c20f21ed8aa04982cbce17cfc">&#9670;&nbsp;</a></span>readFromModelOptimizer() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e69bd6c20f21ed8aa04982cbce17cfc">&#9670;&nbsp;</a></span>readFromModelOptimizer() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4693,7 +5817,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a5e69bd6c20f21ed8aa04982cbce17cfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e69bd6c20f21ed8aa04982cbce17cfc">&#9670;&nbsp;</a></span>readFromModelOptimizer() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e69bd6c20f21ed8aa04982cbce17cfc">&#9670;&nbsp;</a></span>readFromModelOptimizer() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4738,7 +5862,52 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a5e69bd6c20f21ed8aa04982cbce17cfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e69bd6c20f21ed8aa04982cbce17cfc">&#9670;&nbsp;</a></span>readFromModelOptimizer() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e69bd6c20f21ed8aa04982cbce17cfc">&#9670;&nbsp;</a></span>readFromModelOptimizer() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static CV_WRAP <a class="el" href="classcv_1_1dnn_1_1_net.html">Net</a> cv::dnn::Net::readFromModelOptimizer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>xml</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>bin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a network from Intel's Model Optimizer intermediate representation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">xml</td><td>XML configuration file with network's topology. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bin</td><td>Binary file with trained weights. Networks imported from Intel's Model Optimizer are launched in Intel's Inference Engine backend. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5e69bd6c20f21ed8aa04982cbce17cfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e69bd6c20f21ed8aa04982cbce17cfc">&#9670;&nbsp;</a></span>readFromModelOptimizer() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4783,7 +5952,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="abda1797f888e88b5a0d18055a282a9fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abda1797f888e88b5a0d18055a282a9fd">&#9670;&nbsp;</a></span>setInput() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abda1797f888e88b5a0d18055a282a9fd">&#9670;&nbsp;</a></span>setInput() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4838,7 +6007,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="abda1797f888e88b5a0d18055a282a9fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abda1797f888e88b5a0d18055a282a9fd">&#9670;&nbsp;</a></span>setInput() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abda1797f888e88b5a0d18055a282a9fd">&#9670;&nbsp;</a></span>setInput() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4893,7 +6062,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="abda1797f888e88b5a0d18055a282a9fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abda1797f888e88b5a0d18055a282a9fd">&#9670;&nbsp;</a></span>setInput() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abda1797f888e88b5a0d18055a282a9fd">&#9670;&nbsp;</a></span>setInput() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4948,7 +6117,62 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="abda1797f888e88b5a0d18055a282a9fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abda1797f888e88b5a0d18055a282a9fd">&#9670;&nbsp;</a></span>setInput() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abda1797f888e88b5a0d18055a282a9fd">&#9670;&nbsp;</a></span>setInput() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP void cv::dnn::Net::setInput </td>
+          <td>(</td>
+          <td class="paramtype">InputArray&#160;</td>
+          <td class="paramname"><em>blob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>scalefactor</em> = <code>1.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_scalar__.html">Scalar</a> &amp;&#160;</td>
+          <td class="paramname"><em>mean</em> = <code><a class="el" href="classcv_1_1_scalar__.html">Scalar</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the new input value for the network. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blob</td><td>A new blob. Should have CV_32F or CV_8U depth. </td></tr>
+    <tr><td class="paramname">name</td><td>A name of input layer. </td></tr>
+    <tr><td class="paramname">scalefactor</td><td>An optional normalization scale. </td></tr>
+    <tr><td class="paramname">mean</td><td>An optional mean subtraction values. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classcv_1_1dnn_1_1_net.html#aa2ee9291052a33a4de0ca94b4be5acf9" title="Connects output of the first layer to input of the second layer.">connect(String, String)</a> to know format of the descriptor.</dd></dl>
+<p>If scale or mean values are specified, a final input blob is computed as: </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[input(n,c,h,w) = scalefactor \times (blob(n,c,h,w) - mean_c)\]" src="form_371.png"/>
+</p>
+ 
+</div>
+</div>
+<a id="abda1797f888e88b5a0d18055a282a9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abda1797f888e88b5a0d18055a282a9fd">&#9670;&nbsp;</a></span>setInput() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5003,7 +6227,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1ba94fbca1400b87d73e7f7e597f3448"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ba94fbca1400b87d73e7f7e597f3448">&#9670;&nbsp;</a></span>setInputsNames() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ba94fbca1400b87d73e7f7e597f3448">&#9670;&nbsp;</a></span>setInputsNames() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5024,7 +6248,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1ba94fbca1400b87d73e7f7e597f3448"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ba94fbca1400b87d73e7f7e597f3448">&#9670;&nbsp;</a></span>setInputsNames() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ba94fbca1400b87d73e7f7e597f3448">&#9670;&nbsp;</a></span>setInputsNames() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5045,7 +6269,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1ba94fbca1400b87d73e7f7e597f3448"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ba94fbca1400b87d73e7f7e597f3448">&#9670;&nbsp;</a></span>setInputsNames() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ba94fbca1400b87d73e7f7e597f3448">&#9670;&nbsp;</a></span>setInputsNames() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5066,7 +6290,28 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1ba94fbca1400b87d73e7f7e597f3448"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ba94fbca1400b87d73e7f7e597f3448">&#9670;&nbsp;</a></span>setInputsNames() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ba94fbca1400b87d73e7f7e597f3448">&#9670;&nbsp;</a></span>setInputsNames() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP void cv::dnn::Net::setInputsNames </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classcv_1_1_string.html">String</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inputBlobNames</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets outputs names of the network input pseudo layer. </p>
+<p>Each net always has special own the network input pseudo layer with id=0. This layer stores the user blobs only and don't make any computations. In fact, this layer provides the only way to pass user data into the network. As any other layer, this layer can label its outputs and this function provides an easy way to do this. </p>
+
+</div>
+</div>
+<a id="a1ba94fbca1400b87d73e7f7e597f3448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ba94fbca1400b87d73e7f7e597f3448">&#9670;&nbsp;</a></span>setInputsNames() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5087,7 +6332,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae11415f99f4731ac502aa8d8535784a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae11415f99f4731ac502aa8d8535784a6">&#9670;&nbsp;</a></span>setParam() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae11415f99f4731ac502aa8d8535784a6">&#9670;&nbsp;</a></span>setParam() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5133,7 +6378,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae11415f99f4731ac502aa8d8535784a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae11415f99f4731ac502aa8d8535784a6">&#9670;&nbsp;</a></span>setParam() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae11415f99f4731ac502aa8d8535784a6">&#9670;&nbsp;</a></span>setParam() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5179,7 +6424,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae11415f99f4731ac502aa8d8535784a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae11415f99f4731ac502aa8d8535784a6">&#9670;&nbsp;</a></span>setParam() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae11415f99f4731ac502aa8d8535784a6">&#9670;&nbsp;</a></span>setParam() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5225,7 +6470,53 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae11415f99f4731ac502aa8d8535784a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae11415f99f4731ac502aa8d8535784a6">&#9670;&nbsp;</a></span>setParam() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae11415f99f4731ac502aa8d8535784a6">&#9670;&nbsp;</a></span>setParam() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP void cv::dnn::Net::setParam </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcv_1_1dnn_1_1_net.html#a6962dbfe16ce1ae18c67de9f5f2912ef">LayerId</a>&#160;</td>
+          <td class="paramname"><em>layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;&#160;</td>
+          <td class="paramname"><em>blob</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the new value for the learned param of the layer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layer</td><td>name or id of the layer. </td></tr>
+    <tr><td class="paramname">numParam</td><td>index of the layer parameter in the <a class="el" href="classcv_1_1dnn_1_1_layer.html#a1b734d4ae93d53c6e220dd574ee1500f" title="List of learned parameters must be stored here to allow read them by using Net::getParam().">Layer::blobs</a> array. </td></tr>
+    <tr><td class="paramname">blob</td><td>the new value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classcv_1_1dnn_1_1_layer.html#a1b734d4ae93d53c6e220dd574ee1500f" title="List of learned parameters must be stored here to allow read them by using Net::getParam().">Layer::blobs</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If shape of the new blob differs from the previous shape, then the following forward pass may fail. </dd></dl>
+
+</div>
+</div>
+<a id="ae11415f99f4731ac502aa8d8535784a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae11415f99f4731ac502aa8d8535784a6">&#9670;&nbsp;</a></span>setParam() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5271,7 +6562,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a68cfab300fe6d301901f42808b54a8e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68cfab300fe6d301901f42808b54a8e6">&#9670;&nbsp;</a></span>setPreferableBackend() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a68cfab300fe6d301901f42808b54a8e6">&#9670;&nbsp;</a></span>setPreferableBackend() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5299,7 +6590,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a68cfab300fe6d301901f42808b54a8e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68cfab300fe6d301901f42808b54a8e6">&#9670;&nbsp;</a></span>setPreferableBackend() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a68cfab300fe6d301901f42808b54a8e6">&#9670;&nbsp;</a></span>setPreferableBackend() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5327,7 +6618,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a68cfab300fe6d301901f42808b54a8e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68cfab300fe6d301901f42808b54a8e6">&#9670;&nbsp;</a></span>setPreferableBackend() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a68cfab300fe6d301901f42808b54a8e6">&#9670;&nbsp;</a></span>setPreferableBackend() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5355,7 +6646,35 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a68cfab300fe6d301901f42808b54a8e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68cfab300fe6d301901f42808b54a8e6">&#9670;&nbsp;</a></span>setPreferableBackend() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a68cfab300fe6d301901f42808b54a8e6">&#9670;&nbsp;</a></span>setPreferableBackend() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP void cv::dnn::Net::setPreferableBackend </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>backendId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ask network to use specific computation backend where it supported. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">backendId</td><td>backend identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>Backend</dd></dl>
+<p>If <a class="el" href="interface_open_c_v.html">OpenCV</a> is compiled with Intel's Inference Engine library, DNN_BACKEND_DEFAULT means DNN_BACKEND_INFERENCE_ENGINE. Otherwise it equals to DNN_BACKEND_OPENCV. </p>
+
+</div>
+</div>
+<a id="a68cfab300fe6d301901f42808b54a8e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68cfab300fe6d301901f42808b54a8e6">&#9670;&nbsp;</a></span>setPreferableBackend() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5383,7 +6702,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aefe119345df2491584b68e9775d48151"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefe119345df2491584b68e9775d48151">&#9670;&nbsp;</a></span>setPreferableTarget() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe119345df2491584b68e9775d48151">&#9670;&nbsp;</a></span>setPreferableTarget() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5424,7 +6743,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aefe119345df2491584b68e9775d48151"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefe119345df2491584b68e9775d48151">&#9670;&nbsp;</a></span>setPreferableTarget() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe119345df2491584b68e9775d48151">&#9670;&nbsp;</a></span>setPreferableTarget() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5465,7 +6784,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aefe119345df2491584b68e9775d48151"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefe119345df2491584b68e9775d48151">&#9670;&nbsp;</a></span>setPreferableTarget() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe119345df2491584b68e9775d48151">&#9670;&nbsp;</a></span>setPreferableTarget() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5506,7 +6825,48 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aefe119345df2491584b68e9775d48151"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefe119345df2491584b68e9775d48151">&#9670;&nbsp;</a></span>setPreferableTarget() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe119345df2491584b68e9775d48151">&#9670;&nbsp;</a></span>setPreferableTarget() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CV_WRAP void cv::dnn::Net::setPreferableTarget </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>targetId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ask network to make computations on specific target device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">targetId</td><td>target identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>Target</dd></dl>
+<p>List of supported combinations backend / target: </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">DNN_BACKEND_OPENCV  </th><th class="markdownTableHeadNone">DNN_BACKEND_INFERENCE_ENGINE  </th><th class="markdownTableHeadNone">DNN_BACKEND_HALIDE   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">DNN_TARGET_CPU  </td><td class="markdownTableBodyNone">+  </td><td class="markdownTableBodyNone">+  </td><td class="markdownTableBodyNone">+   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">DNN_TARGET_OPENCL  </td><td class="markdownTableBodyNone">+  </td><td class="markdownTableBodyNone">+  </td><td class="markdownTableBodyNone">+   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">DNN_TARGET_OPENCL_FP16  </td><td class="markdownTableBodyNone">+  </td><td class="markdownTableBodyNone">+  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">DNN_TARGET_MYRIAD  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">+  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">DNN_TARGET_FPGA  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">+  </td><td class="markdownTableBodyNone"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="aefe119345df2491584b68e9775d48151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe119345df2491584b68e9775d48151">&#9670;&nbsp;</a></span>setPreferableTarget() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

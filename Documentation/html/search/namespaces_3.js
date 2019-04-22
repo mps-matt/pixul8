@@ -1,20 +1,11 @@
 var searchData=
 [
-  ['customrenderers',['CustomRenderers',['../namespace_pix_ul8_1_1i_o_s_1_1_custom_renderers.html',1,'PixUl8::iOS']]],
-  ['delegates',['Delegates',['../namespace_pix_ul8_1_1i_o_s_1_1_delegates.html',1,'PixUl8::iOS']]],
-  ['extensionviews',['ExtensionViews',['../namespace_pix_ul8_1_1_views_1_1_extension_views.html',1,'PixUl8::Views']]],
-  ['interfaces',['Interfaces',['../namespace_pix_ul8_1_1_interfaces.html',1,'PixUl8']]],
-  ['ios',['iOS',['../namespace_pix_ul8_1_1i_o_s.html',1,'PixUl8']]],
-  ['models',['Models',['../namespace_pix_ul8_1_1i_o_s_1_1_models.html',1,'PixUl8.iOS.Models'],['../namespace_pix_ul8_1_1_models.html',1,'PixUl8.Models']]],
-  ['native',['Native',['../namespace_pix_ul8_1_1_native.html',1,'PixUl8']]],
-  ['nativeviews',['NativeViews',['../namespace_pix_ul8_1_1_views_1_1_native_views.html',1,'PixUl8::Views']]],
-  ['opencv',['OpenCV',['../namespace_pix_ul8_1_1_open_c_v.html',1,'PixUl8']]],
-  ['pixul8',['PixUl8',['../namespace_pix_ul8.html',1,'']]],
-  ['renderers',['Renderers',['../namespace_pix_ul8_1_1i_o_s_1_1_renderers.html',1,'PixUl8::iOS']]],
-  ['services',['Services',['../namespace_pix_ul8_1_1i_o_s_1_1_services.html',1,'PixUl8.iOS.Services'],['../namespace_pix_ul8_1_1_services.html',1,'PixUl8.Services']]],
-  ['tests',['Tests',['../namespace_pix_ul8_1_1_tests.html',1,'PixUl8']]],
-  ['uiviewmodels',['UIViewModels',['../namespace_pix_ul8_1_1i_o_s_1_1_u_i_view_models.html',1,'PixUl8::iOS']]],
-  ['uiviews',['UIViews',['../namespace_pix_ul8_1_1i_o_s_1_1_u_i_views.html',1,'PixUl8::iOS']]],
-  ['viewmodels',['ViewModels',['../namespace_pix_ul8_1_1_view_models.html',1,'PixUl8']]],
-  ['views',['Views',['../namespace_pix_ul8_1_1_views.html',1,'PixUl8']]]
+  ['droid',['Droid',['../namespace_slide_over_kit_1_1_droid.html',1,'SlideOverKit.Droid'],['../namespace_slide_over_kit_1_1_more_sample_1_1_droid.html',1,'SlideOverKit.MoreSample.Droid']]],
+  ['ios',['iOS',['../namespace_slide_over_kit_1_1i_o_s.html',1,'SlideOverKit.iOS'],['../namespace_slide_over_kit_1_1_more_sample_1_1i_o_s.html',1,'SlideOverKit.MoreSample.iOS']]],
+  ['moresample',['MoreSample',['../namespace_slide_over_kit_1_1_more_sample.html',1,'SlideOverKit']]],
+  ['renderer',['Renderer',['../namespace_slide_over_kit_1_1_more_sample_1_1_u_w_p_1_1_renderer.html',1,'SlideOverKit::MoreSample::UWP']]],
+  ['sample',['Sample',['../namespace_slide_over_kit_1_1_sample.html',1,'SlideOverKit']]],
+  ['slideoverkit',['SlideOverKit',['../namespace_slide_over_kit.html',1,'']]],
+  ['uitests',['UITests',['../namespace_slide_over_kit_1_1_sample_1_1_u_i_tests.html',1,'SlideOverKit::Sample']]],
+  ['uwp',['UWP',['../namespace_slide_over_kit_1_1_more_sample_1_1_u_w_p.html',1,'SlideOverKit.MoreSample.UWP'],['../namespace_slide_over_kit_1_1_u_w_p.html',1,'SlideOverKit.UWP']]]
 ];

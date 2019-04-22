@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::LineIterator Class Reference</title>
+<title>PixUl8: cv::LineIterator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -160,6 +158,25 @@ uchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <a class="el" href="classcv_1_1_point__.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_line_iterator.html#afeddb548b519ef727e3d07b2361cd8e1">pos</a> () const</td></tr>
 <tr class="memdesc:afeddb548b519ef727e3d07b2361cd8e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns coordinates of the current pixel <br /></td></tr>
 <tr class="separator:afeddb548b519ef727e3d07b2361cd8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac83a4c574ce6a50a78a52d7eee10371b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_line_iterator.html#ac83a4c574ce6a50a78a52d7eee10371b">LineIterator</a> (const <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;img, <a class="el" href="classcv_1_1_point__.html">Point</a> pt1, <a class="el" href="classcv_1_1_point__.html">Point</a> pt2, int connectivity=8, bool leftToRight=false)</td></tr>
+<tr class="memdesc:ac83a4c574ce6a50a78a52d7eee10371b"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the iterator  <a href="#ac83a4c574ce6a50a78a52d7eee10371b">More...</a><br /></td></tr>
+<tr class="separator:ac83a4c574ce6a50a78a52d7eee10371b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472c66bd629e43a6ce75022a5336de5a"><td class="memItemLeft" align="right" valign="top"><a id="a472c66bd629e43a6ce75022a5336de5a"></a>
+uchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_line_iterator.html#a472c66bd629e43a6ce75022a5336de5a">operator *</a> ()</td></tr>
+<tr class="memdesc:a472c66bd629e43a6ce75022a5336de5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns pointer to the current pixel <br /></td></tr>
+<tr class="separator:a472c66bd629e43a6ce75022a5336de5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70052c25251e3387d8ab80d86febef95"><td class="memItemLeft" align="right" valign="top"><a id="a70052c25251e3387d8ab80d86febef95"></a>
+<a class="el" href="classcv_1_1_line_iterator.html">LineIterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_line_iterator.html#a70052c25251e3387d8ab80d86febef95">operator++</a> ()</td></tr>
+<tr class="memdesc:a70052c25251e3387d8ab80d86febef95"><td class="mdescLeft">&#160;</td><td class="mdescRight">prefix increment operator (++it). shifts iterator to the next pixel <br /></td></tr>
+<tr class="separator:a70052c25251e3387d8ab80d86febef95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c1edcfb30865c5abec03e48f91bcdc"><td class="memItemLeft" align="right" valign="top"><a id="a79c1edcfb30865c5abec03e48f91bcdc"></a>
+<a class="el" href="classcv_1_1_line_iterator.html">LineIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_line_iterator.html#a79c1edcfb30865c5abec03e48f91bcdc">operator++</a> (int)</td></tr>
+<tr class="memdesc:a79c1edcfb30865c5abec03e48f91bcdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">postfix increment operator (it++). shifts iterator to the next pixel <br /></td></tr>
+<tr class="separator:a79c1edcfb30865c5abec03e48f91bcdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeddb548b519ef727e3d07b2361cd8e1"><td class="memItemLeft" align="right" valign="top"><a id="afeddb548b519ef727e3d07b2361cd8e1"></a>
+<a class="el" href="classcv_1_1_point__.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1_line_iterator.html#afeddb548b519ef727e3d07b2361cd8e1">pos</a> () const</td></tr>
+<tr class="memdesc:afeddb548b519ef727e3d07b2361cd8e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns coordinates of the current pixel <br /></td></tr>
+<tr class="separator:afeddb548b519ef727e3d07b2361cd8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -201,7 +218,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>plusStep</b></td></tr>
 <p>The number of pixels along the line is stored in LineIterator::count. The method <a class="el" href="classcv_1_1_line_iterator.html#afeddb548b519ef727e3d07b2361cd8e1" title="returns coordinates of the current pixel">LineIterator::pos</a> returns the current position in the image:</p>
 <div class="fragment"><div class="line"><span class="comment">// grabs pixels along the line (pt1, pt2)</span></div><div class="line"><span class="comment">// from 8-bit 3-channel image to the buffer</span></div><div class="line"><a class="code" href="classcv_1_1_line_iterator.html#ac83a4c574ce6a50a78a52d7eee10371b">LineIterator</a> it(img, pt1, pt2, 8);</div><div class="line"><a class="code" href="classcv_1_1_line_iterator.html#ac83a4c574ce6a50a78a52d7eee10371b">LineIterator</a> it2 = it;</div><div class="line">vector&lt;Vec3b&gt; buf(it.count);</div><div class="line"></div><div class="line"><span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; it.count; i++, ++it)</div><div class="line">    buf[i] = *(<span class="keyword">const</span> Vec3b*)*it;</div><div class="line"></div><div class="line"><span class="comment">// alternative way of iterating through the line</span></div><div class="line"><span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; it2.count; i++, ++it2)</div><div class="line">{</div><div class="line">    Vec3b val = img.at&lt;Vec3b&gt;(it2.pos());</div><div class="line">    <a class="code" href="group__core__utils.html#gaf62bcd90f70e275191ab95136d85906b">CV_Assert</a>(buf[i] == val);</div><div class="line">}</div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac83a4c574ce6a50a78a52d7eee10371b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac83a4c574ce6a50a78a52d7eee10371b">&#9670;&nbsp;</a></span>LineIterator() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83a4c574ce6a50a78a52d7eee10371b">&#9670;&nbsp;</a></span>LineIterator() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -250,7 +267,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>plusStep</b></td></tr>
 </div>
 </div>
 <a id="ac83a4c574ce6a50a78a52d7eee10371b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac83a4c574ce6a50a78a52d7eee10371b">&#9670;&nbsp;</a></span>LineIterator() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83a4c574ce6a50a78a52d7eee10371b">&#9670;&nbsp;</a></span>LineIterator() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -299,7 +316,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>plusStep</b></td></tr>
 </div>
 </div>
 <a id="ac83a4c574ce6a50a78a52d7eee10371b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac83a4c574ce6a50a78a52d7eee10371b">&#9670;&nbsp;</a></span>LineIterator() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83a4c574ce6a50a78a52d7eee10371b">&#9670;&nbsp;</a></span>LineIterator() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -348,7 +365,56 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>plusStep</b></td></tr>
 </div>
 </div>
 <a id="ac83a4c574ce6a50a78a52d7eee10371b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac83a4c574ce6a50a78a52d7eee10371b">&#9670;&nbsp;</a></span>LineIterator() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83a4c574ce6a50a78a52d7eee10371b">&#9670;&nbsp;</a></span>LineIterator() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::LineIterator::LineIterator </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcv_1_1_mat.html">Mat</a> &amp;&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcv_1_1_point__.html">Point</a>&#160;</td>
+          <td class="paramname"><em>pt1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcv_1_1_point__.html">Point</a>&#160;</td>
+          <td class="paramname"><em>pt2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>connectivity</em> = <code>8</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>leftToRight</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>initializes the iterator </p>
+<p>creates iterators for the line connecting pt1 and pt2 the line will be clipped on the image boundaries the line is 8-connected or 4-connected If leftToRight=true, then the iteration is always done from the left-most point to the right most, not to depend on the ordering of pt1 and pt2 parameters </p>
+
+</div>
+</div>
+<a id="ac83a4c574ce6a50a78a52d7eee10371b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83a4c574ce6a50a78a52d7eee10371b">&#9670;&nbsp;</a></span>LineIterator() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

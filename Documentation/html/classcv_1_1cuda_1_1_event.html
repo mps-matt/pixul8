@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::cuda::Event Class Reference</title>
+<title>PixUl8: cv::cuda::Event Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -100,24 +98,6 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a> = 0x00, 
 <a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723">BLOCKING_SYNC</a> = 0x01, 
 <a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6">DISABLE_TIMING</a> = 0x02, 
-<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755">INTERPROCESS</a> = 0x04
-<br />
- }</td></tr>
-<tr class="separator:aa912544338415c5f8c8e55e85a139bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa912544338415c5f8c8e55e85a139bfb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfb">CreateFlags</a> { <br />
-&#160;&#160;<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a> = 0x00, 
-<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723">BLOCKING_SYNC</a> = 0x01, 
-<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6">DISABLE_TIMING</a> = 0x02, 
-<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755">INTERPROCESS</a> = 0x04, 
-<br />
-&#160;&#160;<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a> = 0x00, 
-<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723">BLOCKING_SYNC</a> = 0x01, 
-<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6">DISABLE_TIMING</a> = 0x02, 
-<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755">INTERPROCESS</a> = 0x04, 
-<br />
-&#160;&#160;<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a> = 0x00, 
-<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723">BLOCKING_SYNC</a> = 0x01, 
-<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6">DISABLE_TIMING</a> = 0x02, 
 <a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755">INTERPROCESS</a> = 0x04, 
 <br />
 &#160;&#160;<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a> = 0x00, 
@@ -146,11 +126,77 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a> = 0x00, 
 <a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723">BLOCKING_SYNC</a> = 0x01, 
 <a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6">DISABLE_TIMING</a> = 0x02, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755">INTERPROCESS</a> = 0x04, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a> = 0x00, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723">BLOCKING_SYNC</a> = 0x01, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6">DISABLE_TIMING</a> = 0x02, 
 <a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755">INTERPROCESS</a> = 0x04
 <br />
  }</td></tr>
 <tr class="separator:aa912544338415c5f8c8e55e85a139bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa912544338415c5f8c8e55e85a139bfb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfb">CreateFlags</a> { <br />
+&#160;&#160;<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a> = 0x00, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723">BLOCKING_SYNC</a> = 0x01, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6">DISABLE_TIMING</a> = 0x02, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755">INTERPROCESS</a> = 0x04, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a> = 0x00, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723">BLOCKING_SYNC</a> = 0x01, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6">DISABLE_TIMING</a> = 0x02, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755">INTERPROCESS</a> = 0x04, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a> = 0x00, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723">BLOCKING_SYNC</a> = 0x01, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6">DISABLE_TIMING</a> = 0x02, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755">INTERPROCESS</a> = 0x04, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a> = 0x00, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723">BLOCKING_SYNC</a> = 0x01, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6">DISABLE_TIMING</a> = 0x02, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755">INTERPROCESS</a> = 0x04, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a> = 0x00, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723">BLOCKING_SYNC</a> = 0x01, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6">DISABLE_TIMING</a> = 0x02, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755">INTERPROCESS</a> = 0x04
+<br />
+ }</td></tr>
+<tr class="separator:aa912544338415c5f8c8e55e85a139bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa912544338415c5f8c8e55e85a139bfb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfb">CreateFlags</a> { <br />
+&#160;&#160;<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a> = 0x00, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723">BLOCKING_SYNC</a> = 0x01, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6">DISABLE_TIMING</a> = 0x02, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755">INTERPROCESS</a> = 0x04, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a> = 0x00, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723">BLOCKING_SYNC</a> = 0x01, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6">DISABLE_TIMING</a> = 0x02, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755">INTERPROCESS</a> = 0x04, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a> = 0x00, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723">BLOCKING_SYNC</a> = 0x01, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6">DISABLE_TIMING</a> = 0x02, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755">INTERPROCESS</a> = 0x04, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a> = 0x00, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723">BLOCKING_SYNC</a> = 0x01, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6">DISABLE_TIMING</a> = 0x02, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755">INTERPROCESS</a> = 0x04, 
+<br />
+&#160;&#160;<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a> = 0x00, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723">BLOCKING_SYNC</a> = 0x01, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6">DISABLE_TIMING</a> = 0x02, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755">INTERPROCESS</a> = 0x04
+<br />
+ }</td></tr>
+<tr class="separator:aa912544338415c5f8c8e55e85a139bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa912544338415c5f8c8e55e85a139bfb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfb">CreateFlags</a> { <br />
+&#160;&#160;<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a> = 0x00, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723">BLOCKING_SYNC</a> = 0x01, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6">DISABLE_TIMING</a> = 0x02, 
+<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755">INTERPROCESS</a> = 0x04, 
+<br />
 &#160;&#160;<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a> = 0x00, 
 <a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723">BLOCKING_SYNC</a> = 0x01, 
 <a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6">DISABLE_TIMING</a> = 0x02, 
@@ -236,9 +282,28 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1cuda_1_1_event.html#aa57a4f5827c54710436c895c1346ce0d">waitForCompletion</a> ()</td></tr>
 <tr class="memdesc:aa57a4f5827c54710436c895c1346ce0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">waits for an event to complete <br /></td></tr>
 <tr class="separator:aa57a4f5827c54710436c895c1346ce0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0814620c851f40e2d304ae8682446c"><td class="memItemLeft" align="right" valign="top"><a id="a8e0814620c851f40e2d304ae8682446c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> (<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfb">CreateFlags</a> flags=<a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502">DEFAULT</a>)</td></tr>
+<tr class="separator:a8e0814620c851f40e2d304ae8682446c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81021ecb82ef875935c20f74f053d5c3"><td class="memItemLeft" align="right" valign="top"><a id="a81021ecb82ef875935c20f74f053d5c3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1cuda_1_1_event.html#a81021ecb82ef875935c20f74f053d5c3">record</a> (<a class="el" href="classcv_1_1cuda_1_1_stream.html">Stream</a> &amp;stream=<a class="el" href="classcv_1_1cuda_1_1_stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())</td></tr>
+<tr class="memdesc:a81021ecb82ef875935c20f74f053d5c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">records an event <br /></td></tr>
+<tr class="separator:a81021ecb82ef875935c20f74f053d5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4cff2204d3bd883376e87885d7b8287"><td class="memItemLeft" align="right" valign="top"><a id="aa4cff2204d3bd883376e87885d7b8287"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1cuda_1_1_event.html#aa4cff2204d3bd883376e87885d7b8287">queryIfComplete</a> () const</td></tr>
+<tr class="memdesc:aa4cff2204d3bd883376e87885d7b8287"><td class="mdescLeft">&#160;</td><td class="mdescRight">queries an event's status <br /></td></tr>
+<tr class="separator:aa4cff2204d3bd883376e87885d7b8287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57a4f5827c54710436c895c1346ce0d"><td class="memItemLeft" align="right" valign="top"><a id="aa57a4f5827c54710436c895c1346ce0d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1cuda_1_1_event.html#aa57a4f5827c54710436c895c1346ce0d">waitForCompletion</a> ()</td></tr>
+<tr class="memdesc:aa57a4f5827c54710436c895c1346ce0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">waits for an event to complete <br /></td></tr>
+<tr class="separator:aa57a4f5827c54710436c895c1346ce0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a871ed8b4c5f721f4898e3c407d781a2c"><td class="memItemLeft" align="right" valign="top"><a id="a871ed8b4c5f721f4898e3c407d781a2c"></a>
+static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1cuda_1_1_event.html#a871ed8b4c5f721f4898e3c407d781a2c">elapsedTime</a> (const <a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> &amp;start, const <a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> &amp;end)</td></tr>
+<tr class="memdesc:a871ed8b4c5f721f4898e3c407d781a2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the elapsed time between events <br /></td></tr>
+<tr class="separator:a871ed8b4c5f721f4898e3c407d781a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a871ed8b4c5f721f4898e3c407d781a2c"><td class="memItemLeft" align="right" valign="top"><a id="a871ed8b4c5f721f4898e3c407d781a2c"></a>
 static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcv_1_1cuda_1_1_event.html#a871ed8b4c5f721f4898e3c407d781a2c">elapsedTime</a> (const <a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> &amp;start, const <a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> &amp;end)</td></tr>
 <tr class="memdesc:a871ed8b4c5f721f4898e3c407d781a2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the elapsed time between events <br /></td></tr>
@@ -264,7 +329,7 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>EventAccessor</b></
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="aa912544338415c5f8c8e55e85a139bfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa912544338415c5f8c8e55e85a139bfb">&#9670;&nbsp;</a></span>CreateFlags <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa912544338415c5f8c8e55e85a139bfb">&#9670;&nbsp;</a></span>CreateFlags <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -276,6 +341,14 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>EventAccessor</b></
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502"></a>DEFAULT&#160;</td><td class="fielddoc"><p>Default event flag </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723"></a>BLOCKING_SYNC&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> uses blocking synchronization </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6"></a>DISABLE_TIMING&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> will not record timing data </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755"></a>INTERPROCESS&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> is suitable for interprocess use. DisableTiming must be set </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502"></a>DEFAULT&#160;</td><td class="fielddoc"><p>Default event flag </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723"></a>BLOCKING_SYNC&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> uses blocking synchronization </p>
 </td></tr>
@@ -312,7 +385,7 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>EventAccessor</b></
 </div>
 </div>
 <a id="aa912544338415c5f8c8e55e85a139bfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa912544338415c5f8c8e55e85a139bfb">&#9670;&nbsp;</a></span>CreateFlags <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa912544338415c5f8c8e55e85a139bfb">&#9670;&nbsp;</a></span>CreateFlags <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -324,6 +397,14 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>EventAccessor</b></
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502"></a>DEFAULT&#160;</td><td class="fielddoc"><p>Default event flag </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723"></a>BLOCKING_SYNC&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> uses blocking synchronization </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6"></a>DISABLE_TIMING&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> will not record timing data </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755"></a>INTERPROCESS&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> is suitable for interprocess use. DisableTiming must be set </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502"></a>DEFAULT&#160;</td><td class="fielddoc"><p>Default event flag </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723"></a>BLOCKING_SYNC&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> uses blocking synchronization </p>
 </td></tr>
@@ -360,7 +441,7 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>EventAccessor</b></
 </div>
 </div>
 <a id="aa912544338415c5f8c8e55e85a139bfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa912544338415c5f8c8e55e85a139bfb">&#9670;&nbsp;</a></span>CreateFlags <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa912544338415c5f8c8e55e85a139bfb">&#9670;&nbsp;</a></span>CreateFlags <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -372,6 +453,14 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>EventAccessor</b></
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502"></a>DEFAULT&#160;</td><td class="fielddoc"><p>Default event flag </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723"></a>BLOCKING_SYNC&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> uses blocking synchronization </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6"></a>DISABLE_TIMING&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> will not record timing data </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755"></a>INTERPROCESS&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> is suitable for interprocess use. DisableTiming must be set </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502"></a>DEFAULT&#160;</td><td class="fielddoc"><p>Default event flag </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723"></a>BLOCKING_SYNC&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> uses blocking synchronization </p>
 </td></tr>
@@ -408,7 +497,7 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>EventAccessor</b></
 </div>
 </div>
 <a id="aa912544338415c5f8c8e55e85a139bfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa912544338415c5f8c8e55e85a139bfb">&#9670;&nbsp;</a></span>CreateFlags <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa912544338415c5f8c8e55e85a139bfb">&#9670;&nbsp;</a></span>CreateFlags <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -420,6 +509,70 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>EventAccessor</b></
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502"></a>DEFAULT&#160;</td><td class="fielddoc"><p>Default event flag </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723"></a>BLOCKING_SYNC&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> uses blocking synchronization </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6"></a>DISABLE_TIMING&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> will not record timing data </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755"></a>INTERPROCESS&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> is suitable for interprocess use. DisableTiming must be set </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502"></a>DEFAULT&#160;</td><td class="fielddoc"><p>Default event flag </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723"></a>BLOCKING_SYNC&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> uses blocking synchronization </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6"></a>DISABLE_TIMING&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> will not record timing data </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755"></a>INTERPROCESS&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> is suitable for interprocess use. DisableTiming must be set </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502"></a>DEFAULT&#160;</td><td class="fielddoc"><p>Default event flag </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723"></a>BLOCKING_SYNC&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> uses blocking synchronization </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6"></a>DISABLE_TIMING&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> will not record timing data </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755"></a>INTERPROCESS&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> is suitable for interprocess use. DisableTiming must be set </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502"></a>DEFAULT&#160;</td><td class="fielddoc"><p>Default event flag </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723"></a>BLOCKING_SYNC&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> uses blocking synchronization </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6"></a>DISABLE_TIMING&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> will not record timing data </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755"></a>INTERPROCESS&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> is suitable for interprocess use. DisableTiming must be set </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502"></a>DEFAULT&#160;</td><td class="fielddoc"><p>Default event flag </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723"></a>BLOCKING_SYNC&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> uses blocking synchronization </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6"></a>DISABLE_TIMING&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> will not record timing data </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755"></a>INTERPROCESS&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> is suitable for interprocess use. DisableTiming must be set </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="aa912544338415c5f8c8e55e85a139bfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa912544338415c5f8c8e55e85a139bfb">&#9670;&nbsp;</a></span>CreateFlags <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classcv_1_1cuda_1_1_event.html#aa912544338415c5f8c8e55e85a139bfb">cv::cuda::Event::CreateFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502"></a>DEFAULT&#160;</td><td class="fielddoc"><p>Default event flag </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723"></a>BLOCKING_SYNC&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> uses blocking synchronization </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfbac40978be292eb5b6c71c2397a09492e6"></a>DISABLE_TIMING&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> will not record timing data </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba19e267c618cf423f2b97ae48e1a50755"></a>INTERPROCESS&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> is suitable for interprocess use. DisableTiming must be set </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba9acac875e908b02c02d3baf924dee502"></a>DEFAULT&#160;</td><td class="fielddoc"><p>Default event flag </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aa912544338415c5f8c8e55e85a139bfba447f0ba4fbf64606117323774cbc6723"></a>BLOCKING_SYNC&#160;</td><td class="fielddoc"><p><a class="el" href="classcv_1_1cuda_1_1_event.html">Event</a> uses blocking synchronization </p>
 </td></tr>

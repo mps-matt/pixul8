@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: Imgproc_draw</title>
+<title>PixUl8: Imgproc_draw</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -90,6 +88,8 @@ Macros</h2></td></tr>
 <tr class="separator:ga16fe14b01ea8dffdf2405dc5534e5f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga16fe14b01ea8dffdf2405dc5534e5f15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__draw.html#ga16fe14b01ea8dffdf2405dc5534e5f15">CV_RGB</a>(r,  g,  b)&#160;&#160;&#160;<a class="el" href="classcv_1_1_scalar__.html">cv::Scalar</a>((b), (g), (r), 0)</td></tr>
 <tr class="separator:ga16fe14b01ea8dffdf2405dc5534e5f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16fe14b01ea8dffdf2405dc5534e5f15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__draw.html#ga16fe14b01ea8dffdf2405dc5534e5f15">CV_RGB</a>(r,  g,  b)&#160;&#160;&#160;<a class="el" href="classcv_1_1_scalar__.html">cv::Scalar</a>((b), (g), (r), 0)</td></tr>
+<tr class="separator:ga16fe14b01ea8dffdf2405dc5534e5f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -127,6 +127,15 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777">cv::MARKER_DIAMOND</a> = 3, 
 <a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942">cv::MARKER_SQUARE</a> = 4, 
 <a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5">cv::MARKER_TRIANGLE_UP</a> = 5, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717">cv::MARKER_TRIANGLE_DOWN</a> = 6, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6">cv::MARKER_CROSS</a> = 0, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315">cv::MARKER_TILTED_CROSS</a> = 1, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba0a858eb18225e1bece395b5eb6a7d0c7">cv::MARKER_STAR</a> = 2, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777">cv::MARKER_DIAMOND</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942">cv::MARKER_SQUARE</a> = 4, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5">cv::MARKER_TRIANGLE_UP</a> = 5, 
 <a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717">cv::MARKER_TRIANGLE_DOWN</a> = 6
 <br />
  }</td></tr>
@@ -166,6 +175,15 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777">cv::MARKER_DIAMOND</a> = 3, 
 <a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942">cv::MARKER_SQUARE</a> = 4, 
 <a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5">cv::MARKER_TRIANGLE_UP</a> = 5, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717">cv::MARKER_TRIANGLE_DOWN</a> = 6, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6">cv::MARKER_CROSS</a> = 0, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315">cv::MARKER_TILTED_CROSS</a> = 1, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba0a858eb18225e1bece395b5eb6a7d0c7">cv::MARKER_STAR</a> = 2, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777">cv::MARKER_DIAMOND</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942">cv::MARKER_SQUARE</a> = 4, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5">cv::MARKER_TRIANGLE_UP</a> = 5, 
 <a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717">cv::MARKER_TRIANGLE_DOWN</a> = 6
 <br />
  }</td></tr>
@@ -205,6 +223,15 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777">cv::MARKER_DIAMOND</a> = 3, 
 <a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942">cv::MARKER_SQUARE</a> = 4, 
 <a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5">cv::MARKER_TRIANGLE_UP</a> = 5, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717">cv::MARKER_TRIANGLE_DOWN</a> = 6, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6">cv::MARKER_CROSS</a> = 0, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315">cv::MARKER_TILTED_CROSS</a> = 1, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba0a858eb18225e1bece395b5eb6a7d0c7">cv::MARKER_STAR</a> = 2, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777">cv::MARKER_DIAMOND</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942">cv::MARKER_SQUARE</a> = 4, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5">cv::MARKER_TRIANGLE_UP</a> = 5, 
 <a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717">cv::MARKER_TRIANGLE_DOWN</a> = 6
 <br />
  }</td></tr>
@@ -243,6 +270,63 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777">cv::MARKER_DIAMOND</a> = 3, 
 <a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942">cv::MARKER_SQUARE</a> = 4, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5">cv::MARKER_TRIANGLE_UP</a> = 5, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717">cv::MARKER_TRIANGLE_DOWN</a> = 6, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6">cv::MARKER_CROSS</a> = 0, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315">cv::MARKER_TILTED_CROSS</a> = 1, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba0a858eb18225e1bece395b5eb6a7d0c7">cv::MARKER_STAR</a> = 2, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777">cv::MARKER_DIAMOND</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942">cv::MARKER_SQUARE</a> = 4, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5">cv::MARKER_TRIANGLE_UP</a> = 5, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717">cv::MARKER_TRIANGLE_DOWN</a> = 6
+<br />
+ }</td></tr>
+<tr class="memdesc:ga0ad87faebef1039ec957737ecc633b7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible set of marker types used for the <a class="el" href="group__imgproc__draw.html#ga1bd5e2307dabbd488dfe155d5c9abdd7" title="Draws a marker on a predefined position in an image.">cv::drawMarker</a> function.  <a href="group__imgproc__draw.html#ga0ad87faebef1039ec957737ecc633b7b">More...</a><br /></td></tr>
+<tr class="separator:ga0ad87faebef1039ec957737ecc633b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ad87faebef1039ec957737ecc633b7b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__draw.html#ga0ad87faebef1039ec957737ecc633b7b">cv::MarkerTypes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6">cv::MARKER_CROSS</a> = 0, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315">cv::MARKER_TILTED_CROSS</a> = 1, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba0a858eb18225e1bece395b5eb6a7d0c7">cv::MARKER_STAR</a> = 2, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777">cv::MARKER_DIAMOND</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942">cv::MARKER_SQUARE</a> = 4, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5">cv::MARKER_TRIANGLE_UP</a> = 5, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717">cv::MARKER_TRIANGLE_DOWN</a> = 6, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6">cv::MARKER_CROSS</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315">cv::MARKER_TILTED_CROSS</a> = 1, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba0a858eb18225e1bece395b5eb6a7d0c7">cv::MARKER_STAR</a> = 2, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777">cv::MARKER_DIAMOND</a> = 3, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942">cv::MARKER_SQUARE</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5">cv::MARKER_TRIANGLE_UP</a> = 5, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717">cv::MARKER_TRIANGLE_DOWN</a> = 6, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6">cv::MARKER_CROSS</a> = 0, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315">cv::MARKER_TILTED_CROSS</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba0a858eb18225e1bece395b5eb6a7d0c7">cv::MARKER_STAR</a> = 2, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777">cv::MARKER_DIAMOND</a> = 3, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942">cv::MARKER_SQUARE</a> = 4, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5">cv::MARKER_TRIANGLE_UP</a> = 5, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717">cv::MARKER_TRIANGLE_DOWN</a> = 6, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6">cv::MARKER_CROSS</a> = 0, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315">cv::MARKER_TILTED_CROSS</a> = 1, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba0a858eb18225e1bece395b5eb6a7d0c7">cv::MARKER_STAR</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777">cv::MARKER_DIAMOND</a> = 3, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942">cv::MARKER_SQUARE</a> = 4, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5">cv::MARKER_TRIANGLE_UP</a> = 5, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717">cv::MARKER_TRIANGLE_DOWN</a> = 6, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6">cv::MARKER_CROSS</a> = 0, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315">cv::MARKER_TILTED_CROSS</a> = 1, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba0a858eb18225e1bece395b5eb6a7d0c7">cv::MARKER_STAR</a> = 2, 
+<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777">cv::MARKER_DIAMOND</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942">cv::MARKER_SQUARE</a> = 4, 
 <a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5">cv::MARKER_TRIANGLE_UP</a> = 5, 
 <a class="el" href="group__imgproc__draw.html#gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717">cv::MARKER_TRIANGLE_DOWN</a> = 6
 <br />
@@ -317,7 +401,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga16fe14b01ea8dffdf2405dc5534e5f15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga16fe14b01ea8dffdf2405dc5534e5f15">&#9670;&nbsp;</a></span>CV_RGB <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga16fe14b01ea8dffdf2405dc5534e5f15">&#9670;&nbsp;</a></span>CV_RGB <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,7 +436,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ga16fe14b01ea8dffdf2405dc5534e5f15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga16fe14b01ea8dffdf2405dc5534e5f15">&#9670;&nbsp;</a></span>CV_RGB <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga16fe14b01ea8dffdf2405dc5534e5f15">&#9670;&nbsp;</a></span>CV_RGB <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -387,7 +471,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ga16fe14b01ea8dffdf2405dc5534e5f15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga16fe14b01ea8dffdf2405dc5534e5f15">&#9670;&nbsp;</a></span>CV_RGB <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga16fe14b01ea8dffdf2405dc5534e5f15">&#9670;&nbsp;</a></span>CV_RGB <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -422,7 +506,42 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ga16fe14b01ea8dffdf2405dc5534e5f15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga16fe14b01ea8dffdf2405dc5534e5f15">&#9670;&nbsp;</a></span>CV_RGB <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga16fe14b01ea8dffdf2405dc5534e5f15">&#9670;&nbsp;</a></span>CV_RGB <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CV_RGB</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">r, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">g, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="classcv_1_1_scalar__.html">cv::Scalar</a>((b), (g), (r), 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="interface_open_c_v.html">OpenCV</a> color channel order is BGR[A] </p>
+
+</div>
+</div>
+<a id="ga16fe14b01ea8dffdf2405dc5534e5f15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga16fe14b01ea8dffdf2405dc5534e5f15">&#9670;&nbsp;</a></span>CV_RGB <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -458,7 +577,7 @@ Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga0ad87faebef1039ec957737ecc633b7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0ad87faebef1039ec957737ecc633b7b">&#9670;&nbsp;</a></span>MarkerTypes <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ad87faebef1039ec957737ecc633b7b">&#9670;&nbsp;</a></span>MarkerTypes <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -472,6 +591,20 @@ Functions</h2></td></tr>
 <p>Possible set of marker types used for the <a class="el" href="group__imgproc__draw.html#ga1bd5e2307dabbd488dfe155d5c9abdd7" title="Draws a marker on a predefined position in an image.">cv::drawMarker</a> function. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6"></a>MARKER_CROSS&#160;</td><td class="fielddoc"><p>A crosshair marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315"></a>MARKER_TILTED_CROSS&#160;</td><td class="fielddoc"><p>A 45 degree tilted crosshair marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba0a858eb18225e1bece395b5eb6a7d0c7"></a>MARKER_STAR&#160;</td><td class="fielddoc"><p>A star marker shape, combination of cross and tilted cross. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777"></a>MARKER_DIAMOND&#160;</td><td class="fielddoc"><p>A diamond marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942"></a>MARKER_SQUARE&#160;</td><td class="fielddoc"><p>A square marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5"></a>MARKER_TRIANGLE_UP&#160;</td><td class="fielddoc"><p>An upwards pointing triangle marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717"></a>MARKER_TRIANGLE_DOWN&#160;</td><td class="fielddoc"><p>A downwards pointing triangle marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6"></a>MARKER_CROSS&#160;</td><td class="fielddoc"><p>A crosshair marker shape. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315"></a>MARKER_TILTED_CROSS&#160;</td><td class="fielddoc"><p>A 45 degree tilted crosshair marker shape. </p>
 </td></tr>
@@ -532,7 +665,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ga0ad87faebef1039ec957737ecc633b7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0ad87faebef1039ec957737ecc633b7b">&#9670;&nbsp;</a></span>MarkerTypes <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ad87faebef1039ec957737ecc633b7b">&#9670;&nbsp;</a></span>MarkerTypes <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -546,6 +679,20 @@ Functions</h2></td></tr>
 <p>Possible set of marker types used for the <a class="el" href="group__imgproc__draw.html#ga1bd5e2307dabbd488dfe155d5c9abdd7" title="Draws a marker on a predefined position in an image.">cv::drawMarker</a> function. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6"></a>MARKER_CROSS&#160;</td><td class="fielddoc"><p>A crosshair marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315"></a>MARKER_TILTED_CROSS&#160;</td><td class="fielddoc"><p>A 45 degree tilted crosshair marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba0a858eb18225e1bece395b5eb6a7d0c7"></a>MARKER_STAR&#160;</td><td class="fielddoc"><p>A star marker shape, combination of cross and tilted cross. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777"></a>MARKER_DIAMOND&#160;</td><td class="fielddoc"><p>A diamond marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942"></a>MARKER_SQUARE&#160;</td><td class="fielddoc"><p>A square marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5"></a>MARKER_TRIANGLE_UP&#160;</td><td class="fielddoc"><p>An upwards pointing triangle marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717"></a>MARKER_TRIANGLE_DOWN&#160;</td><td class="fielddoc"><p>A downwards pointing triangle marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6"></a>MARKER_CROSS&#160;</td><td class="fielddoc"><p>A crosshair marker shape. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315"></a>MARKER_TILTED_CROSS&#160;</td><td class="fielddoc"><p>A 45 degree tilted crosshair marker shape. </p>
 </td></tr>
@@ -606,7 +753,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ga0ad87faebef1039ec957737ecc633b7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0ad87faebef1039ec957737ecc633b7b">&#9670;&nbsp;</a></span>MarkerTypes <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ad87faebef1039ec957737ecc633b7b">&#9670;&nbsp;</a></span>MarkerTypes <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -620,6 +767,20 @@ Functions</h2></td></tr>
 <p>Possible set of marker types used for the <a class="el" href="group__imgproc__draw.html#ga1bd5e2307dabbd488dfe155d5c9abdd7" title="Draws a marker on a predefined position in an image.">cv::drawMarker</a> function. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6"></a>MARKER_CROSS&#160;</td><td class="fielddoc"><p>A crosshair marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315"></a>MARKER_TILTED_CROSS&#160;</td><td class="fielddoc"><p>A 45 degree tilted crosshair marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba0a858eb18225e1bece395b5eb6a7d0c7"></a>MARKER_STAR&#160;</td><td class="fielddoc"><p>A star marker shape, combination of cross and tilted cross. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777"></a>MARKER_DIAMOND&#160;</td><td class="fielddoc"><p>A diamond marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942"></a>MARKER_SQUARE&#160;</td><td class="fielddoc"><p>A square marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5"></a>MARKER_TRIANGLE_UP&#160;</td><td class="fielddoc"><p>An upwards pointing triangle marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717"></a>MARKER_TRIANGLE_DOWN&#160;</td><td class="fielddoc"><p>A downwards pointing triangle marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6"></a>MARKER_CROSS&#160;</td><td class="fielddoc"><p>A crosshair marker shape. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315"></a>MARKER_TILTED_CROSS&#160;</td><td class="fielddoc"><p>A 45 degree tilted crosshair marker shape. </p>
 </td></tr>
@@ -680,7 +841,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ga0ad87faebef1039ec957737ecc633b7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0ad87faebef1039ec957737ecc633b7b">&#9670;&nbsp;</a></span>MarkerTypes <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ad87faebef1039ec957737ecc633b7b">&#9670;&nbsp;</a></span>MarkerTypes <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -694,6 +855,108 @@ Functions</h2></td></tr>
 <p>Possible set of marker types used for the <a class="el" href="group__imgproc__draw.html#ga1bd5e2307dabbd488dfe155d5c9abdd7" title="Draws a marker on a predefined position in an image.">cv::drawMarker</a> function. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6"></a>MARKER_CROSS&#160;</td><td class="fielddoc"><p>A crosshair marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315"></a>MARKER_TILTED_CROSS&#160;</td><td class="fielddoc"><p>A 45 degree tilted crosshair marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba0a858eb18225e1bece395b5eb6a7d0c7"></a>MARKER_STAR&#160;</td><td class="fielddoc"><p>A star marker shape, combination of cross and tilted cross. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777"></a>MARKER_DIAMOND&#160;</td><td class="fielddoc"><p>A diamond marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942"></a>MARKER_SQUARE&#160;</td><td class="fielddoc"><p>A square marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5"></a>MARKER_TRIANGLE_UP&#160;</td><td class="fielddoc"><p>An upwards pointing triangle marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717"></a>MARKER_TRIANGLE_DOWN&#160;</td><td class="fielddoc"><p>A downwards pointing triangle marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6"></a>MARKER_CROSS&#160;</td><td class="fielddoc"><p>A crosshair marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315"></a>MARKER_TILTED_CROSS&#160;</td><td class="fielddoc"><p>A 45 degree tilted crosshair marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba0a858eb18225e1bece395b5eb6a7d0c7"></a>MARKER_STAR&#160;</td><td class="fielddoc"><p>A star marker shape, combination of cross and tilted cross. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777"></a>MARKER_DIAMOND&#160;</td><td class="fielddoc"><p>A diamond marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942"></a>MARKER_SQUARE&#160;</td><td class="fielddoc"><p>A square marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5"></a>MARKER_TRIANGLE_UP&#160;</td><td class="fielddoc"><p>An upwards pointing triangle marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717"></a>MARKER_TRIANGLE_DOWN&#160;</td><td class="fielddoc"><p>A downwards pointing triangle marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6"></a>MARKER_CROSS&#160;</td><td class="fielddoc"><p>A crosshair marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315"></a>MARKER_TILTED_CROSS&#160;</td><td class="fielddoc"><p>A 45 degree tilted crosshair marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba0a858eb18225e1bece395b5eb6a7d0c7"></a>MARKER_STAR&#160;</td><td class="fielddoc"><p>A star marker shape, combination of cross and tilted cross. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777"></a>MARKER_DIAMOND&#160;</td><td class="fielddoc"><p>A diamond marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942"></a>MARKER_SQUARE&#160;</td><td class="fielddoc"><p>A square marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5"></a>MARKER_TRIANGLE_UP&#160;</td><td class="fielddoc"><p>An upwards pointing triangle marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717"></a>MARKER_TRIANGLE_DOWN&#160;</td><td class="fielddoc"><p>A downwards pointing triangle marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6"></a>MARKER_CROSS&#160;</td><td class="fielddoc"><p>A crosshair marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315"></a>MARKER_TILTED_CROSS&#160;</td><td class="fielddoc"><p>A 45 degree tilted crosshair marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba0a858eb18225e1bece395b5eb6a7d0c7"></a>MARKER_STAR&#160;</td><td class="fielddoc"><p>A star marker shape, combination of cross and tilted cross. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777"></a>MARKER_DIAMOND&#160;</td><td class="fielddoc"><p>A diamond marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942"></a>MARKER_SQUARE&#160;</td><td class="fielddoc"><p>A square marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5"></a>MARKER_TRIANGLE_UP&#160;</td><td class="fielddoc"><p>An upwards pointing triangle marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717"></a>MARKER_TRIANGLE_DOWN&#160;</td><td class="fielddoc"><p>A downwards pointing triangle marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6"></a>MARKER_CROSS&#160;</td><td class="fielddoc"><p>A crosshair marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315"></a>MARKER_TILTED_CROSS&#160;</td><td class="fielddoc"><p>A 45 degree tilted crosshair marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba0a858eb18225e1bece395b5eb6a7d0c7"></a>MARKER_STAR&#160;</td><td class="fielddoc"><p>A star marker shape, combination of cross and tilted cross. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777"></a>MARKER_DIAMOND&#160;</td><td class="fielddoc"><p>A diamond marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942"></a>MARKER_SQUARE&#160;</td><td class="fielddoc"><p>A square marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5"></a>MARKER_TRIANGLE_UP&#160;</td><td class="fielddoc"><p>An upwards pointing triangle marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717"></a>MARKER_TRIANGLE_DOWN&#160;</td><td class="fielddoc"><p>A downwards pointing triangle marker shape. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga0ad87faebef1039ec957737ecc633b7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ad87faebef1039ec957737ecc633b7b">&#9670;&nbsp;</a></span>MarkerTypes <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgproc__draw.html#ga0ad87faebef1039ec957737ecc633b7b">cv::MarkerTypes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Possible set of marker types used for the <a class="el" href="group__imgproc__draw.html#ga1bd5e2307dabbd488dfe155d5c9abdd7" title="Draws a marker on a predefined position in an image.">cv::drawMarker</a> function. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6"></a>MARKER_CROSS&#160;</td><td class="fielddoc"><p>A crosshair marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315"></a>MARKER_TILTED_CROSS&#160;</td><td class="fielddoc"><p>A 45 degree tilted crosshair marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba0a858eb18225e1bece395b5eb6a7d0c7"></a>MARKER_STAR&#160;</td><td class="fielddoc"><p>A star marker shape, combination of cross and tilted cross. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba251c06214b8a99e4b6dc8c8fdb687777"></a>MARKER_DIAMOND&#160;</td><td class="fielddoc"><p>A diamond marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7babedf82b4e6ba35afccde7be1be38d942"></a>MARKER_SQUARE&#160;</td><td class="fielddoc"><p>A square marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba5ce952b9fed10c08179bb62fc69040f5"></a>MARKER_TRIANGLE_UP&#160;</td><td class="fielddoc"><p>An upwards pointing triangle marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba780ea58a5ba880ff39d4b7964e289717"></a>MARKER_TRIANGLE_DOWN&#160;</td><td class="fielddoc"><p>A downwards pointing triangle marker shape. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba7d025812f89324d7644fdeb5a9b9e9a6"></a>MARKER_CROSS&#160;</td><td class="fielddoc"><p>A crosshair marker shape. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga0ad87faebef1039ec957737ecc633b7ba3dd6b390b68dec4b9e95892992c37315"></a>MARKER_TILTED_CROSS&#160;</td><td class="fielddoc"><p>A 45 degree tilted crosshair marker shape. </p>
 </td></tr>

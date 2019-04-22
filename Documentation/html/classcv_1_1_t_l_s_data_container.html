@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: cv::TLSDataContainer Class Reference</title>
+<title>PixUl8: cv::TLSDataContainer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -87,15 +85,29 @@ Inheritance diagram for cv::TLSDataContainer:</div>
 <area href="classcv_1_1_t_l_s_data.html" alt="cv::TLSData&lt; T &gt;" shape="rect" coords="236,112,462,136"/>
 <area href="classcv_1_1_t_l_s_data.html" alt="cv::TLSData&lt; T &gt;" shape="rect" coords="236,168,462,192"/>
 <area href="classcv_1_1_t_l_s_data.html" alt="cv::TLSData&lt; T &gt;" shape="rect" coords="236,224,462,248"/>
-<area href="classcv_1_1_t_l_s_data.html" alt="cv::TLSData&lt; cv::instr::NodeDataTls &gt;" shape="rect" coords="236,280,462,304"/>
+<area href="classcv_1_1_t_l_s_data.html" alt="cv::TLSData&lt; T &gt;" shape="rect" coords="236,280,462,304"/>
 <area href="classcv_1_1_t_l_s_data.html" alt="cv::TLSData&lt; cv::instr::NodeDataTls &gt;" shape="rect" coords="236,336,462,360"/>
 <area href="classcv_1_1_t_l_s_data.html" alt="cv::TLSData&lt; cv::instr::NodeDataTls &gt;" shape="rect" coords="236,392,462,416"/>
 <area href="classcv_1_1_t_l_s_data.html" alt="cv::TLSData&lt; cv::instr::NodeDataTls &gt;" shape="rect" coords="236,448,462,472"/>
+<area href="classcv_1_1_t_l_s_data.html" alt="cv::TLSData&lt; cv::instr::NodeDataTls &gt;" shape="rect" coords="236,504,462,528"/>
+<area href="classcv_1_1_t_l_s_data.html" alt="cv::TLSData&lt; cv::instr::NodeDataTls &gt;" shape="rect" coords="236,560,462,584"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ace0bad31d5b53059247d6fa3070fc3a0"><td class="memItemLeft" align="right" valign="top"><a id="ace0bad31d5b53059247d6fa3070fc3a0"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>getData</b> () const</td></tr>
+<tr class="separator:ace0bad31d5b53059247d6fa3070fc3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13487b759ad6e80b5ac95171f5973027"><td class="memItemLeft" align="right" valign="top"><a id="a13487b759ad6e80b5ac95171f5973027"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>createDataInstance</b> () const =0</td></tr>
+<tr class="separator:a13487b759ad6e80b5ac95171f5973027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9969d79ef0b1acb9e26548a283e1059"><td class="memItemLeft" align="right" valign="top"><a id="ab9969d79ef0b1acb9e26548a283e1059"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteDataInstance</b> (void *pData) const =0</td></tr>
+<tr class="separator:ab9969d79ef0b1acb9e26548a283e1059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60db91833dbbbcb7d3406b819de3b272"><td class="memItemLeft" align="right" valign="top"><a id="a60db91833dbbbcb7d3406b819de3b272"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>cleanup</b> ()</td></tr>
+<tr class="separator:a60db91833dbbbcb7d3406b819de3b272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace0bad31d5b53059247d6fa3070fc3a0"><td class="memItemLeft" align="right" valign="top"><a id="ace0bad31d5b53059247d6fa3070fc3a0"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><b>getData</b> () const</td></tr>
 <tr class="separator:ace0bad31d5b53059247d6fa3070fc3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,6 +165,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>key_</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a5fd371340f0dd7e193a4ab09795dbda6"><td class="memItemLeft" align="right" valign="top"><a id="a5fd371340f0dd7e193a4ab09795dbda6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>gatherData</b> (std::vector&lt; void * &gt; &amp;data) const</td></tr>
+<tr class="separator:a5fd371340f0dd7e193a4ab09795dbda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c2c374fb21c3bf8421e28290df3630"><td class="memItemLeft" align="right" valign="top"><a id="af8c2c374fb21c3bf8421e28290df3630"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()</td></tr>
+<tr class="separator:af8c2c374fb21c3bf8421e28290df3630"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fd371340f0dd7e193a4ab09795dbda6"><td class="memItemLeft" align="right" valign="top"><a id="a5fd371340f0dd7e193a4ab09795dbda6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>gatherData</b> (std::vector&lt; void * &gt; &amp;data) const</td></tr>
 <tr class="separator:a5fd371340f0dd7e193a4ab09795dbda6"><td class="memSeparator" colspan="2">&#160;</td></tr>

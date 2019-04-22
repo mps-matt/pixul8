@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: Imgproc_c</title>
+<title>PixUl8: Imgproc_c</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -93,6 +91,67 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:gae842717d2116ce52fac4727bd02d4eb0"><td class="memItemLeft" align="right" valign="top"><a id="gae842717d2116ce52fac4727bd02d4eb0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>cvCalcBackProject</b>(image,  dst,  hist)&#160;&#160;&#160;cvCalcArrBackProject((<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a>**)image, dst, hist)</td></tr>
+<tr class="separator:gae842717d2116ce52fac4727bd02d4eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga633a12e74beb80ea22c690d12d9915cb"><td class="memItemLeft" align="right" valign="top"><a id="ga633a12e74beb80ea22c690d12d9915cb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>cvCalcBackProjectPatch</b>(image,  dst,  range,  hist,  method,  factor)&#160;&#160;&#160;cvCalcArrBackProjectPatch( (<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a>**)image, dst, range, hist, method, factor )</td></tr>
+<tr class="separator:ga633a12e74beb80ea22c690d12d9915cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0bbcfe5cf6dfb89747c48d124da67c64"><td class="memItemLeft" align="right" valign="top"><a id="ga0bbcfe5cf6dfb89747c48d124da67c64"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_FILLED</b>&#160;&#160;&#160;-1</td></tr>
+<tr class="separator:ga0bbcfe5cf6dfb89747c48d124da67c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32a38de93cb76391d98a1545d587a8ff"><td class="memItemLeft" align="right" valign="top"><a id="ga32a38de93cb76391d98a1545d587a8ff"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_AA</b>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:ga32a38de93cb76391d98a1545d587a8ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga419a1fc5285d1742e4808d63732c31ad"><td class="memItemLeft" align="right" valign="top"><a id="ga419a1fc5285d1742e4808d63732c31ad"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>cvDrawRect</b>&#160;&#160;&#160;cvRectangle</td></tr>
+<tr class="separator:ga419a1fc5285d1742e4808d63732c31ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf73695a68e6782512f0ecb958e22ece"><td class="memItemLeft" align="right" valign="top"><a id="gaaf73695a68e6782512f0ecb958e22ece"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>cvDrawLine</b>&#160;&#160;&#160;cvLine</td></tr>
+<tr class="separator:gaaf73695a68e6782512f0ecb958e22ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66a67686039a3997def8c1ea4994294d"><td class="memItemLeft" align="right" valign="top"><a id="ga66a67686039a3997def8c1ea4994294d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>cvDrawCircle</b>&#160;&#160;&#160;cvCircle</td></tr>
+<tr class="separator:ga66a67686039a3997def8c1ea4994294d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70a0a0e5b57ac41e0051e37b3e249505"><td class="memItemLeft" align="right" valign="top"><a id="ga70a0a0e5b57ac41e0051e37b3e249505"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>cvDrawEllipse</b>&#160;&#160;&#160;cvEllipse</td></tr>
+<tr class="separator:ga70a0a0e5b57ac41e0051e37b3e249505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5d6df8e82501399f3f619f30e3fa0f9"><td class="memItemLeft" align="right" valign="top"><a id="gaf5d6df8e82501399f3f619f30e3fa0f9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>cvDrawPolyLine</b>&#160;&#160;&#160;cvPolyLine</td></tr>
+<tr class="separator:gaf5d6df8e82501399f3f619f30e3fa0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d99d5caee87b79157e1b9d491be9c25"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_NEXT_LINE_POINT</b>(line_iterator)</td></tr>
+<tr class="separator:ga8d99d5caee87b79157e1b9d491be9c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15c8488369d94bc5ff00836859da4cf3"><td class="memItemLeft" align="right" valign="top"><a id="ga15c8488369d94bc5ff00836859da4cf3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_FONT_HERSHEY_SIMPLEX</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ga15c8488369d94bc5ff00836859da4cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c1600a7994221230ba2e9b7bd835f01"><td class="memItemLeft" align="right" valign="top"><a id="ga3c1600a7994221230ba2e9b7bd835f01"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_FONT_HERSHEY_PLAIN</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ga3c1600a7994221230ba2e9b7bd835f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f709df2f80855399f42d6ca4b3db818"><td class="memItemLeft" align="right" valign="top"><a id="ga2f709df2f80855399f42d6ca4b3db818"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_FONT_HERSHEY_DUPLEX</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ga2f709df2f80855399f42d6ca4b3db818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5b6e76528d1eb546b8c425b80568b19"><td class="memItemLeft" align="right" valign="top"><a id="gad5b6e76528d1eb546b8c425b80568b19"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_FONT_HERSHEY_COMPLEX</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:gad5b6e76528d1eb546b8c425b80568b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaafa920c2a58d66756073813934290b32"><td class="memItemLeft" align="right" valign="top"><a id="gaafa920c2a58d66756073813934290b32"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_FONT_HERSHEY_TRIPLEX</b>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:gaafa920c2a58d66756073813934290b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee7bee788a4f4fd2aff89c38b7277a64"><td class="memItemLeft" align="right" valign="top"><a id="gaee7bee788a4f4fd2aff89c38b7277a64"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_FONT_HERSHEY_COMPLEX_SMALL</b>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:gaee7bee788a4f4fd2aff89c38b7277a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8592da082e69a71c558e38faef3ad2b1"><td class="memItemLeft" align="right" valign="top"><a id="ga8592da082e69a71c558e38faef3ad2b1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_FONT_HERSHEY_SCRIPT_SIMPLEX</b>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:ga8592da082e69a71c558e38faef3ad2b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae29525ea0d8010b79b657827bf9d2fe9"><td class="memItemLeft" align="right" valign="top"><a id="gae29525ea0d8010b79b657827bf9d2fe9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_FONT_HERSHEY_SCRIPT_COMPLEX</b>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:gae29525ea0d8010b79b657827bf9d2fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12cfb7a768bfc561259f7fd36f38a4dd"><td class="memItemLeft" align="right" valign="top"><a id="ga12cfb7a768bfc561259f7fd36f38a4dd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_FONT_ITALIC</b>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:ga12cfb7a768bfc561259f7fd36f38a4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6dd5dab67ad63b70c583128b366f26ad"><td class="memItemLeft" align="right" valign="top"><a id="ga6dd5dab67ad63b70c583128b366f26ad"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CV_FONT_VECTOR0</b>&#160;&#160;&#160;CV_FONT_HERSHEY_SIMPLEX</td></tr>
+<tr class="separator:ga6dd5dab67ad63b70c583128b366f26ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd47b69c3f9fc86ba30c92488645229d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__c.html#gadd47b69c3f9fc86ba30c92488645229d">CV_INIT_3X3_DELTAS</a>(deltas,  step,  nch)</td></tr>
+<tr class="separator:gadd47b69c3f9fc86ba30c92488645229d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae842717d2116ce52fac4727bd02d4eb0"><td class="memItemLeft" align="right" valign="top"><a id="gae842717d2116ce52fac4727bd02d4eb0"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>cvCalcBackProject</b>(image,  dst,  hist)&#160;&#160;&#160;cvCalcArrBackProject((<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a>**)image, dst, hist)</td></tr>
 <tr class="separator:gae842717d2116ce52fac4727bd02d4eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -412,6 +471,24 @@ typedef struct _CvContourScanner *&#160;</td><td class="memItemRight" valign="bo
 <tr class="separator:ga126c3960af8241b0065211bcb0c4c4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga601b02375a2915aa2e653562da03cd93"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_cv_convexity_defect.html">CvConvexityDefect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__c.html#ga601b02375a2915aa2e653562da03cd93">CvConvexityDefect</a></td></tr>
 <tr class="separator:ga601b02375a2915aa2e653562da03cd93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga006b1ff87dfa7cf766db6c6a09a43310"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_cv_font.html">CvFont</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__c.html#ga006b1ff87dfa7cf766db6c6a09a43310">CvFont</a></td></tr>
+<tr class="separator:ga006b1ff87dfa7cf766db6c6a09a43310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae187bc007c9e041da9b97dcfe0431b64"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_cv_connected_comp.html">CvConnectedComp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__c.html#gae187bc007c9e041da9b97dcfe0431b64">CvConnectedComp</a></td></tr>
+<tr class="separator:gae187bc007c9e041da9b97dcfe0431b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga738efca5ab93feb8333bbe24f8d57839"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_cv_moments.html">CvMoments</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__c.html#ga738efca5ab93feb8333bbe24f8d57839">CvMoments</a></td></tr>
+<tr class="separator:ga738efca5ab93feb8333bbe24f8d57839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85a4d1d82e0dd8e0faa464584472747a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_cv_hu_moments.html">CvHuMoments</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__c.html#ga85a4d1d82e0dd8e0faa464584472747a">CvHuMoments</a></td></tr>
+<tr class="separator:ga85a4d1d82e0dd8e0faa464584472747a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7976571b4fb9c00f8f63e864a3d6cfe7"><td class="memItemLeft" align="right" valign="top"><a id="ga7976571b4fb9c00f8f63e864a3d6cfe7"></a>
+typedef float(CV_CDECL *&#160;</td><td class="memItemRight" valign="bottom"><b>CvDistanceFunction</b>) (const float *a, const float *b, void *user_param)</td></tr>
+<tr class="separator:ga7976571b4fb9c00f8f63e864a3d6cfe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11d28023276f66bd42d8a7f97a0712ae"><td class="memItemLeft" align="right" valign="top"><a id="ga11d28023276f66bd42d8a7f97a0712ae"></a>
+typedef struct _CvContourScanner *&#160;</td><td class="memItemRight" valign="bottom"><b>CvContourScanner</b></td></tr>
+<tr class="separator:ga11d28023276f66bd42d8a7f97a0712ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga126c3960af8241b0065211bcb0c4c4ee"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_cv_chain_pt_reader.html">CvChainPtReader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__c.html#ga126c3960af8241b0065211bcb0c4c4ee">CvChainPtReader</a></td></tr>
+<tr class="separator:ga126c3960af8241b0065211bcb0c4c4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga601b02375a2915aa2e653562da03cd93"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_cv_convexity_defect.html">CvConvexityDefect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__c.html#ga601b02375a2915aa2e653562da03cd93">CvConvexityDefect</a></td></tr>
+<tr class="separator:ga601b02375a2915aa2e653562da03cd93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -439,7 +516,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9">CV_BLUR</a> =1, 
 <a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1">CV_GAUSSIAN</a> =2, 
 <a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56">CV_MEDIAN</a> =3, 
-<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0">CV_BILATERAL</a> =4
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0">CV_BILATERAL</a> =4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2aa06086448eff38b500b296baa0ff6590">CV_BLUR_NO_SCALE</a> =0, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9">CV_BLUR</a> =1, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1">CV_GAUSSIAN</a> =2, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56">CV_MEDIAN</a> =3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0">CV_BILATERAL</a> =4
 <br />
  }</td></tr>
 <tr class="separator:ga68a3a4144ad5ad650bed7f0ede3611c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -744,6 +828,11 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>CV_SHAPE_RECT</b> =0, 
 <b>CV_SHAPE_CROSS</b> =1, 
 <b>CV_SHAPE_ELLIPSE</b> =2, 
+<a class="el" href="group__imgproc__c.html#ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59">CV_SHAPE_CUSTOM</a> =100, 
+<br />
+&#160;&#160;<b>CV_SHAPE_RECT</b> =0, 
+<b>CV_SHAPE_CROSS</b> =1, 
+<b>CV_SHAPE_ELLIPSE</b> =2, 
 <a class="el" href="group__imgproc__c.html#ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59">CV_SHAPE_CUSTOM</a> =100
 <br />
  }</td></tr>
@@ -892,7 +981,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9">CV_BLUR</a> =1, 
 <a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1">CV_GAUSSIAN</a> =2, 
 <a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56">CV_MEDIAN</a> =3, 
-<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0">CV_BILATERAL</a> =4
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0">CV_BILATERAL</a> =4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2aa06086448eff38b500b296baa0ff6590">CV_BLUR_NO_SCALE</a> =0, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9">CV_BLUR</a> =1, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1">CV_GAUSSIAN</a> =2, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56">CV_MEDIAN</a> =3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0">CV_BILATERAL</a> =4
 <br />
  }</td></tr>
 <tr class="separator:ga68a3a4144ad5ad650bed7f0ede3611c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1197,6 +1293,11 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>CV_SHAPE_RECT</b> =0, 
 <b>CV_SHAPE_CROSS</b> =1, 
 <b>CV_SHAPE_ELLIPSE</b> =2, 
+<a class="el" href="group__imgproc__c.html#ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59">CV_SHAPE_CUSTOM</a> =100, 
+<br />
+&#160;&#160;<b>CV_SHAPE_RECT</b> =0, 
+<b>CV_SHAPE_CROSS</b> =1, 
+<b>CV_SHAPE_ELLIPSE</b> =2, 
 <a class="el" href="group__imgproc__c.html#ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59">CV_SHAPE_CUSTOM</a> =100
 <br />
  }</td></tr>
@@ -1345,7 +1446,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9">CV_BLUR</a> =1, 
 <a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1">CV_GAUSSIAN</a> =2, 
 <a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56">CV_MEDIAN</a> =3, 
-<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0">CV_BILATERAL</a> =4
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0">CV_BILATERAL</a> =4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2aa06086448eff38b500b296baa0ff6590">CV_BLUR_NO_SCALE</a> =0, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9">CV_BLUR</a> =1, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1">CV_GAUSSIAN</a> =2, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56">CV_MEDIAN</a> =3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0">CV_BILATERAL</a> =4
 <br />
  }</td></tr>
 <tr class="separator:ga68a3a4144ad5ad650bed7f0ede3611c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1650,6 +1758,11 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>CV_SHAPE_RECT</b> =0, 
 <b>CV_SHAPE_CROSS</b> =1, 
 <b>CV_SHAPE_ELLIPSE</b> =2, 
+<a class="el" href="group__imgproc__c.html#ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59">CV_SHAPE_CUSTOM</a> =100, 
+<br />
+&#160;&#160;<b>CV_SHAPE_RECT</b> =0, 
+<b>CV_SHAPE_CROSS</b> =1, 
+<b>CV_SHAPE_ELLIPSE</b> =2, 
 <a class="el" href="group__imgproc__c.html#ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59">CV_SHAPE_CUSTOM</a> =100
 <br />
  }</td></tr>
@@ -1798,7 +1911,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9">CV_BLUR</a> =1, 
 <a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1">CV_GAUSSIAN</a> =2, 
 <a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56">CV_MEDIAN</a> =3, 
-<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0">CV_BILATERAL</a> =4
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0">CV_BILATERAL</a> =4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2aa06086448eff38b500b296baa0ff6590">CV_BLUR_NO_SCALE</a> =0, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9">CV_BLUR</a> =1, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1">CV_GAUSSIAN</a> =2, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56">CV_MEDIAN</a> =3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0">CV_BILATERAL</a> =4
 <br />
  }</td></tr>
 <tr class="separator:ga68a3a4144ad5ad650bed7f0ede3611c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2103,6 +2223,11 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>CV_SHAPE_RECT</b> =0, 
 <b>CV_SHAPE_CROSS</b> =1, 
 <b>CV_SHAPE_ELLIPSE</b> =2, 
+<a class="el" href="group__imgproc__c.html#ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59">CV_SHAPE_CUSTOM</a> =100, 
+<br />
+&#160;&#160;<b>CV_SHAPE_RECT</b> =0, 
+<b>CV_SHAPE_CROSS</b> =1, 
+<b>CV_SHAPE_ELLIPSE</b> =2, 
 <a class="el" href="group__imgproc__c.html#ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59">CV_SHAPE_CUSTOM</a> =100
 <br />
  }</td></tr>
@@ -2227,6 +2352,471 @@ Enumerations</h2></td></tr>
 <b>CV_HOUGH_GRADIENT</b> =3
  }</td></tr>
 <tr class="separator:ga43388e1f7af29dbdb6d85d27cc90de4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga68a3a4144ad5ad650bed7f0ede3611c2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__c.html#ga68a3a4144ad5ad650bed7f0ede3611c2">SmoothMethod_c</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2aa06086448eff38b500b296baa0ff6590">CV_BLUR_NO_SCALE</a> =0, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9">CV_BLUR</a> =1, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1">CV_GAUSSIAN</a> =2, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56">CV_MEDIAN</a> =3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0">CV_BILATERAL</a> =4, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2aa06086448eff38b500b296baa0ff6590">CV_BLUR_NO_SCALE</a> =0, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9">CV_BLUR</a> =1, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1">CV_GAUSSIAN</a> =2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56">CV_MEDIAN</a> =3, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0">CV_BILATERAL</a> =4, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2aa06086448eff38b500b296baa0ff6590">CV_BLUR_NO_SCALE</a> =0, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9">CV_BLUR</a> =1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1">CV_GAUSSIAN</a> =2, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56">CV_MEDIAN</a> =3, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0">CV_BILATERAL</a> =4, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2aa06086448eff38b500b296baa0ff6590">CV_BLUR_NO_SCALE</a> =0, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9">CV_BLUR</a> =1, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1">CV_GAUSSIAN</a> =2, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56">CV_MEDIAN</a> =3, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0">CV_BILATERAL</a> =4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2aa06086448eff38b500b296baa0ff6590">CV_BLUR_NO_SCALE</a> =0, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9">CV_BLUR</a> =1, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1">CV_GAUSSIAN</a> =2, 
+<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56">CV_MEDIAN</a> =3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__c.html#gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0">CV_BILATERAL</a> =4
+<br />
+ }</td></tr>
+<tr class="separator:ga68a3a4144ad5ad650bed7f0ede3611c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1584402d41f56895b87dbf596adacab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CV_GAUSSIAN_5x5</b> = 7
+ }</td></tr>
+<tr class="separator:gaa1584402d41f56895b87dbf596adacab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25fedc2e05f00a733e7ac26dcd390d49"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CV_SCHARR</b> =-1, 
+<b>CV_MAX_SOBEL_KSIZE</b> =7
+ }</td></tr>
+<tr class="separator:ga25fedc2e05f00a733e7ac26dcd390d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9659ba9c59ba63f32c7533e57ed37fa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>CV_BGR2BGRA</b> =0, 
+<b>CV_RGB2RGBA</b> =CV_BGR2BGRA, 
+<b>CV_BGRA2BGR</b> =1, 
+<b>CV_RGBA2RGB</b> =CV_BGRA2BGR, 
+<br />
+&#160;&#160;<b>CV_BGR2RGBA</b> =2, 
+<b>CV_RGB2BGRA</b> =CV_BGR2RGBA, 
+<b>CV_RGBA2BGR</b> =3, 
+<b>CV_BGRA2RGB</b> =CV_RGBA2BGR, 
+<br />
+&#160;&#160;<b>CV_BGR2RGB</b> =4, 
+<b>CV_RGB2BGR</b> =CV_BGR2RGB, 
+<b>CV_BGRA2RGBA</b> =5, 
+<b>CV_RGBA2BGRA</b> =CV_BGRA2RGBA, 
+<br />
+&#160;&#160;<b>CV_BGR2GRAY</b> =6, 
+<b>CV_RGB2GRAY</b> =7, 
+<b>CV_GRAY2BGR</b> =8, 
+<b>CV_GRAY2RGB</b> =CV_GRAY2BGR, 
+<br />
+&#160;&#160;<b>CV_GRAY2BGRA</b> =9, 
+<b>CV_GRAY2RGBA</b> =CV_GRAY2BGRA, 
+<b>CV_BGRA2GRAY</b> =10, 
+<b>CV_RGBA2GRAY</b> =11, 
+<br />
+&#160;&#160;<b>CV_BGR2BGR565</b> =12, 
+<b>CV_RGB2BGR565</b> =13, 
+<b>CV_BGR5652BGR</b> =14, 
+<b>CV_BGR5652RGB</b> =15, 
+<br />
+&#160;&#160;<b>CV_BGRA2BGR565</b> =16, 
+<b>CV_RGBA2BGR565</b> =17, 
+<b>CV_BGR5652BGRA</b> =18, 
+<b>CV_BGR5652RGBA</b> =19, 
+<br />
+&#160;&#160;<b>CV_GRAY2BGR565</b> =20, 
+<b>CV_BGR5652GRAY</b> =21, 
+<b>CV_BGR2BGR555</b> =22, 
+<b>CV_RGB2BGR555</b> =23, 
+<br />
+&#160;&#160;<b>CV_BGR5552BGR</b> =24, 
+<b>CV_BGR5552RGB</b> =25, 
+<b>CV_BGRA2BGR555</b> =26, 
+<b>CV_RGBA2BGR555</b> =27, 
+<br />
+&#160;&#160;<b>CV_BGR5552BGRA</b> =28, 
+<b>CV_BGR5552RGBA</b> =29, 
+<b>CV_GRAY2BGR555</b> =30, 
+<b>CV_BGR5552GRAY</b> =31, 
+<br />
+&#160;&#160;<b>CV_BGR2XYZ</b> =32, 
+<b>CV_RGB2XYZ</b> =33, 
+<b>CV_XYZ2BGR</b> =34, 
+<b>CV_XYZ2RGB</b> =35, 
+<br />
+&#160;&#160;<b>CV_BGR2YCrCb</b> =36, 
+<b>CV_RGB2YCrCb</b> =37, 
+<b>CV_YCrCb2BGR</b> =38, 
+<b>CV_YCrCb2RGB</b> =39, 
+<br />
+&#160;&#160;<b>CV_BGR2HSV</b> =40, 
+<b>CV_RGB2HSV</b> =41, 
+<b>CV_BGR2Lab</b> =44, 
+<b>CV_RGB2Lab</b> =45, 
+<br />
+&#160;&#160;<b>CV_BayerBG2BGR</b> =46, 
+<b>CV_BayerGB2BGR</b> =47, 
+<b>CV_BayerRG2BGR</b> =48, 
+<b>CV_BayerGR2BGR</b> =49, 
+<br />
+&#160;&#160;<b>CV_BayerBG2RGB</b> =CV_BayerRG2BGR, 
+<b>CV_BayerGB2RGB</b> =CV_BayerGR2BGR, 
+<b>CV_BayerRG2RGB</b> =CV_BayerBG2BGR, 
+<b>CV_BayerGR2RGB</b> =CV_BayerGB2BGR, 
+<br />
+&#160;&#160;<b>CV_BGR2Luv</b> =50, 
+<b>CV_RGB2Luv</b> =51, 
+<b>CV_BGR2HLS</b> =52, 
+<b>CV_RGB2HLS</b> =53, 
+<br />
+&#160;&#160;<b>CV_HSV2BGR</b> =54, 
+<b>CV_HSV2RGB</b> =55, 
+<b>CV_Lab2BGR</b> =56, 
+<b>CV_Lab2RGB</b> =57, 
+<br />
+&#160;&#160;<b>CV_Luv2BGR</b> =58, 
+<b>CV_Luv2RGB</b> =59, 
+<b>CV_HLS2BGR</b> =60, 
+<b>CV_HLS2RGB</b> =61, 
+<br />
+&#160;&#160;<b>CV_BayerBG2BGR_VNG</b> =62, 
+<b>CV_BayerGB2BGR_VNG</b> =63, 
+<b>CV_BayerRG2BGR_VNG</b> =64, 
+<b>CV_BayerGR2BGR_VNG</b> =65, 
+<br />
+&#160;&#160;<b>CV_BayerBG2RGB_VNG</b> =CV_BayerRG2BGR_VNG, 
+<b>CV_BayerGB2RGB_VNG</b> =CV_BayerGR2BGR_VNG, 
+<b>CV_BayerRG2RGB_VNG</b> =CV_BayerBG2BGR_VNG, 
+<b>CV_BayerGR2RGB_VNG</b> =CV_BayerGB2BGR_VNG, 
+<br />
+&#160;&#160;<b>CV_BGR2HSV_FULL</b> = 66, 
+<b>CV_RGB2HSV_FULL</b> = 67, 
+<b>CV_BGR2HLS_FULL</b> = 68, 
+<b>CV_RGB2HLS_FULL</b> = 69, 
+<br />
+&#160;&#160;<b>CV_HSV2BGR_FULL</b> = 70, 
+<b>CV_HSV2RGB_FULL</b> = 71, 
+<b>CV_HLS2BGR_FULL</b> = 72, 
+<b>CV_HLS2RGB_FULL</b> = 73, 
+<br />
+&#160;&#160;<b>CV_LBGR2Lab</b> = 74, 
+<b>CV_LRGB2Lab</b> = 75, 
+<b>CV_LBGR2Luv</b> = 76, 
+<b>CV_LRGB2Luv</b> = 77, 
+<br />
+&#160;&#160;<b>CV_Lab2LBGR</b> = 78, 
+<b>CV_Lab2LRGB</b> = 79, 
+<b>CV_Luv2LBGR</b> = 80, 
+<b>CV_Luv2LRGB</b> = 81, 
+<br />
+&#160;&#160;<b>CV_BGR2YUV</b> = 82, 
+<b>CV_RGB2YUV</b> = 83, 
+<b>CV_YUV2BGR</b> = 84, 
+<b>CV_YUV2RGB</b> = 85, 
+<br />
+&#160;&#160;<b>CV_BayerBG2GRAY</b> = 86, 
+<b>CV_BayerGB2GRAY</b> = 87, 
+<b>CV_BayerRG2GRAY</b> = 88, 
+<b>CV_BayerGR2GRAY</b> = 89, 
+<br />
+&#160;&#160;<b>CV_YUV2RGB_NV12</b> = 90, 
+<b>CV_YUV2BGR_NV12</b> = 91, 
+<b>CV_YUV2RGB_NV21</b> = 92, 
+<b>CV_YUV2BGR_NV21</b> = 93, 
+<br />
+&#160;&#160;<b>CV_YUV420sp2RGB</b> = CV_YUV2RGB_NV21, 
+<b>CV_YUV420sp2BGR</b> = CV_YUV2BGR_NV21, 
+<b>CV_YUV2RGBA_NV12</b> = 94, 
+<b>CV_YUV2BGRA_NV12</b> = 95, 
+<br />
+&#160;&#160;<b>CV_YUV2RGBA_NV21</b> = 96, 
+<b>CV_YUV2BGRA_NV21</b> = 97, 
+<b>CV_YUV420sp2RGBA</b> = CV_YUV2RGBA_NV21, 
+<b>CV_YUV420sp2BGRA</b> = CV_YUV2BGRA_NV21, 
+<br />
+&#160;&#160;<b>CV_YUV2RGB_YV12</b> = 98, 
+<b>CV_YUV2BGR_YV12</b> = 99, 
+<b>CV_YUV2RGB_IYUV</b> = 100, 
+<b>CV_YUV2BGR_IYUV</b> = 101, 
+<br />
+&#160;&#160;<b>CV_YUV2RGB_I420</b> = CV_YUV2RGB_IYUV, 
+<b>CV_YUV2BGR_I420</b> = CV_YUV2BGR_IYUV, 
+<b>CV_YUV420p2RGB</b> = CV_YUV2RGB_YV12, 
+<b>CV_YUV420p2BGR</b> = CV_YUV2BGR_YV12, 
+<br />
+&#160;&#160;<b>CV_YUV2RGBA_YV12</b> = 102, 
+<b>CV_YUV2BGRA_YV12</b> = 103, 
+<b>CV_YUV2RGBA_IYUV</b> = 104, 
+<b>CV_YUV2BGRA_IYUV</b> = 105, 
+<br />
+&#160;&#160;<b>CV_YUV2RGBA_I420</b> = CV_YUV2RGBA_IYUV, 
+<b>CV_YUV2BGRA_I420</b> = CV_YUV2BGRA_IYUV, 
+<b>CV_YUV420p2RGBA</b> = CV_YUV2RGBA_YV12, 
+<b>CV_YUV420p2BGRA</b> = CV_YUV2BGRA_YV12, 
+<br />
+&#160;&#160;<b>CV_YUV2GRAY_420</b> = 106, 
+<b>CV_YUV2GRAY_NV21</b> = CV_YUV2GRAY_420, 
+<b>CV_YUV2GRAY_NV12</b> = CV_YUV2GRAY_420, 
+<b>CV_YUV2GRAY_YV12</b> = CV_YUV2GRAY_420, 
+<br />
+&#160;&#160;<b>CV_YUV2GRAY_IYUV</b> = CV_YUV2GRAY_420, 
+<b>CV_YUV2GRAY_I420</b> = CV_YUV2GRAY_420, 
+<b>CV_YUV420sp2GRAY</b> = CV_YUV2GRAY_420, 
+<b>CV_YUV420p2GRAY</b> = CV_YUV2GRAY_420, 
+<br />
+&#160;&#160;<b>CV_YUV2RGB_UYVY</b> = 107, 
+<b>CV_YUV2BGR_UYVY</b> = 108, 
+<b>CV_YUV2RGB_Y422</b> = CV_YUV2RGB_UYVY, 
+<b>CV_YUV2BGR_Y422</b> = CV_YUV2BGR_UYVY, 
+<br />
+&#160;&#160;<b>CV_YUV2RGB_UYNV</b> = CV_YUV2RGB_UYVY, 
+<b>CV_YUV2BGR_UYNV</b> = CV_YUV2BGR_UYVY, 
+<b>CV_YUV2RGBA_UYVY</b> = 111, 
+<b>CV_YUV2BGRA_UYVY</b> = 112, 
+<br />
+&#160;&#160;<b>CV_YUV2RGBA_Y422</b> = CV_YUV2RGBA_UYVY, 
+<b>CV_YUV2BGRA_Y422</b> = CV_YUV2BGRA_UYVY, 
+<b>CV_YUV2RGBA_UYNV</b> = CV_YUV2RGBA_UYVY, 
+<b>CV_YUV2BGRA_UYNV</b> = CV_YUV2BGRA_UYVY, 
+<br />
+&#160;&#160;<b>CV_YUV2RGB_YUY2</b> = 115, 
+<b>CV_YUV2BGR_YUY2</b> = 116, 
+<b>CV_YUV2RGB_YVYU</b> = 117, 
+<b>CV_YUV2BGR_YVYU</b> = 118, 
+<br />
+&#160;&#160;<b>CV_YUV2RGB_YUYV</b> = CV_YUV2RGB_YUY2, 
+<b>CV_YUV2BGR_YUYV</b> = CV_YUV2BGR_YUY2, 
+<b>CV_YUV2RGB_YUNV</b> = CV_YUV2RGB_YUY2, 
+<b>CV_YUV2BGR_YUNV</b> = CV_YUV2BGR_YUY2, 
+<br />
+&#160;&#160;<b>CV_YUV2RGBA_YUY2</b> = 119, 
+<b>CV_YUV2BGRA_YUY2</b> = 120, 
+<b>CV_YUV2RGBA_YVYU</b> = 121, 
+<b>CV_YUV2BGRA_YVYU</b> = 122, 
+<br />
+&#160;&#160;<b>CV_YUV2RGBA_YUYV</b> = CV_YUV2RGBA_YUY2, 
+<b>CV_YUV2BGRA_YUYV</b> = CV_YUV2BGRA_YUY2, 
+<b>CV_YUV2RGBA_YUNV</b> = CV_YUV2RGBA_YUY2, 
+<b>CV_YUV2BGRA_YUNV</b> = CV_YUV2BGRA_YUY2, 
+<br />
+&#160;&#160;<b>CV_YUV2GRAY_UYVY</b> = 123, 
+<b>CV_YUV2GRAY_YUY2</b> = 124, 
+<b>CV_YUV2GRAY_Y422</b> = CV_YUV2GRAY_UYVY, 
+<b>CV_YUV2GRAY_UYNV</b> = CV_YUV2GRAY_UYVY, 
+<br />
+&#160;&#160;<b>CV_YUV2GRAY_YVYU</b> = CV_YUV2GRAY_YUY2, 
+<b>CV_YUV2GRAY_YUYV</b> = CV_YUV2GRAY_YUY2, 
+<b>CV_YUV2GRAY_YUNV</b> = CV_YUV2GRAY_YUY2, 
+<b>CV_RGBA2mRGBA</b> = 125, 
+<br />
+&#160;&#160;<b>CV_mRGBA2RGBA</b> = 126, 
+<b>CV_RGB2YUV_I420</b> = 127, 
+<b>CV_BGR2YUV_I420</b> = 128, 
+<b>CV_RGB2YUV_IYUV</b> = CV_RGB2YUV_I420, 
+<br />
+&#160;&#160;<b>CV_BGR2YUV_IYUV</b> = CV_BGR2YUV_I420, 
+<b>CV_RGBA2YUV_I420</b> = 129, 
+<b>CV_BGRA2YUV_I420</b> = 130, 
+<b>CV_RGBA2YUV_IYUV</b> = CV_RGBA2YUV_I420, 
+<br />
+&#160;&#160;<b>CV_BGRA2YUV_IYUV</b> = CV_BGRA2YUV_I420, 
+<b>CV_RGB2YUV_YV12</b> = 131, 
+<b>CV_BGR2YUV_YV12</b> = 132, 
+<b>CV_RGBA2YUV_YV12</b> = 133, 
+<br />
+&#160;&#160;<b>CV_BGRA2YUV_YV12</b> = 134, 
+<b>CV_BayerBG2BGR_EA</b> = 135, 
+<b>CV_BayerGB2BGR_EA</b> = 136, 
+<b>CV_BayerRG2BGR_EA</b> = 137, 
+<br />
+&#160;&#160;<b>CV_BayerGR2BGR_EA</b> = 138, 
+<b>CV_BayerBG2RGB_EA</b> = CV_BayerRG2BGR_EA, 
+<b>CV_BayerGB2RGB_EA</b> = CV_BayerGR2BGR_EA, 
+<b>CV_BayerRG2RGB_EA</b> = CV_BayerBG2BGR_EA, 
+<br />
+&#160;&#160;<b>CV_BayerGR2RGB_EA</b> = CV_BayerGB2BGR_EA, 
+<b>CV_BayerBG2BGRA</b> =139, 
+<b>CV_BayerGB2BGRA</b> =140, 
+<b>CV_BayerRG2BGRA</b> =141, 
+<br />
+&#160;&#160;<b>CV_BayerGR2BGRA</b> =142, 
+<b>CV_BayerBG2RGBA</b> =CV_BayerRG2BGRA, 
+<b>CV_BayerGB2RGBA</b> =CV_BayerGR2BGRA, 
+<b>CV_BayerRG2RGBA</b> =CV_BayerBG2BGRA, 
+<br />
+&#160;&#160;<b>CV_BayerGR2RGBA</b> =CV_BayerGB2BGRA, 
+<b>CV_COLORCVT_MAX</b> = 143
+<br />
+ }</td></tr>
+<tr class="separator:gae9659ba9c59ba63f32c7533e57ed37fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8848ba91b4d70e862a9bef0c542166bb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>CV_INTER_NN</b> =0, 
+<b>CV_INTER_LINEAR</b> =1, 
+<b>CV_INTER_CUBIC</b> =2, 
+<b>CV_INTER_AREA</b> =3, 
+<br />
+&#160;&#160;<b>CV_INTER_LANCZOS4</b> =4
+<br />
+ }</td></tr>
+<tr class="separator:ga8848ba91b4d70e862a9bef0c542166bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ba449dd09c894762c7f8336ee806148"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CV_WARP_FILL_OUTLIERS</b> =8, 
+<b>CV_WARP_INVERSE_MAP</b> =16
+ }</td></tr>
+<tr class="separator:ga6ba449dd09c894762c7f8336ee806148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5b30479580723fe97bab56d9b69239d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__c.html#gab5b30479580723fe97bab56d9b69239d">MorphShapes_c</a> { <br />
+&#160;&#160;<b>CV_SHAPE_RECT</b> =0, 
+<b>CV_SHAPE_CROSS</b> =1, 
+<b>CV_SHAPE_ELLIPSE</b> =2, 
+<a class="el" href="group__imgproc__c.html#ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59">CV_SHAPE_CUSTOM</a> =100, 
+<br />
+&#160;&#160;<b>CV_SHAPE_RECT</b> =0, 
+<b>CV_SHAPE_CROSS</b> =1, 
+<b>CV_SHAPE_ELLIPSE</b> =2, 
+<a class="el" href="group__imgproc__c.html#ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59">CV_SHAPE_CUSTOM</a> =100, 
+<br />
+&#160;&#160;<b>CV_SHAPE_RECT</b> =0, 
+<b>CV_SHAPE_CROSS</b> =1, 
+<b>CV_SHAPE_ELLIPSE</b> =2, 
+<a class="el" href="group__imgproc__c.html#ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59">CV_SHAPE_CUSTOM</a> =100, 
+<br />
+&#160;&#160;<b>CV_SHAPE_RECT</b> =0, 
+<b>CV_SHAPE_CROSS</b> =1, 
+<b>CV_SHAPE_ELLIPSE</b> =2, 
+<a class="el" href="group__imgproc__c.html#ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59">CV_SHAPE_CUSTOM</a> =100, 
+<br />
+&#160;&#160;<b>CV_SHAPE_RECT</b> =0, 
+<b>CV_SHAPE_CROSS</b> =1, 
+<b>CV_SHAPE_ELLIPSE</b> =2, 
+<a class="el" href="group__imgproc__c.html#ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59">CV_SHAPE_CUSTOM</a> =100
+<br />
+ }</td></tr>
+<tr class="separator:gab5b30479580723fe97bab56d9b69239d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeffec68eb0d26e6322d67290de23341e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>CV_MOP_ERODE</b> =0, 
+<b>CV_MOP_DILATE</b> =1, 
+<b>CV_MOP_OPEN</b> =2, 
+<b>CV_MOP_CLOSE</b> =3, 
+<br />
+&#160;&#160;<b>CV_MOP_GRADIENT</b> =4, 
+<b>CV_MOP_TOPHAT</b> =5, 
+<b>CV_MOP_BLACKHAT</b> =6
+<br />
+ }</td></tr>
+<tr class="separator:gaeffec68eb0d26e6322d67290de23341e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7744dc40aef2cdb0b0167a0af2d61fa8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>CV_TM_SQDIFF</b> =0, 
+<b>CV_TM_SQDIFF_NORMED</b> =1, 
+<b>CV_TM_CCORR</b> =2, 
+<b>CV_TM_CCORR_NORMED</b> =3, 
+<br />
+&#160;&#160;<b>CV_TM_CCOEFF</b> =4, 
+<b>CV_TM_CCOEFF_NORMED</b> =5
+<br />
+ }</td></tr>
+<tr class="separator:ga7744dc40aef2cdb0b0167a0af2d61fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5bee302d8a6d0af3dceb2310b11aae71"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>CV_RETR_EXTERNAL</b> =0, 
+<b>CV_RETR_LIST</b> =1, 
+<b>CV_RETR_CCOMP</b> =2, 
+<b>CV_RETR_TREE</b> =3, 
+<br />
+&#160;&#160;<b>CV_RETR_FLOODFILL</b> =4
+<br />
+ }</td></tr>
+<tr class="separator:ga5bee302d8a6d0af3dceb2310b11aae71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e54f8b856a226353648fe9bf3a2469d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>CV_CHAIN_CODE</b> =0, 
+<b>CV_CHAIN_APPROX_NONE</b> =1, 
+<b>CV_CHAIN_APPROX_SIMPLE</b> =2, 
+<b>CV_CHAIN_APPROX_TC89_L1</b> =3, 
+<br />
+&#160;&#160;<b>CV_CHAIN_APPROX_TC89_KCOS</b> =4, 
+<b>CV_LINK_RUNS</b> =5
+<br />
+ }</td></tr>
+<tr class="separator:ga4e54f8b856a226353648fe9bf3a2469d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee16a1b9ad514650d7d3308e49406c56"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CV_POLY_APPROX_DP</b> = 0
+ }</td></tr>
+<tr class="separator:gaee16a1b9ad514650d7d3308e49406c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaa2b1a4b4bb2459592cb9a8aa485d06e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__imgproc__c.html#ggaaa2b1a4b4bb2459592cb9a8aa485d06ea6ae4597e01365cd5c3469dc2f5cd2fea">CV_CONTOURS_MATCH_I1</a> =1, 
+<a class="el" href="group__imgproc__c.html#ggaaa2b1a4b4bb2459592cb9a8aa485d06eae3011fca74bc54836e9457de352069eb">CV_CONTOURS_MATCH_I2</a> =2, 
+<a class="el" href="group__imgproc__c.html#ggaaa2b1a4b4bb2459592cb9a8aa485d06ead2141011f1cd57f6542c7da2412c9fe3">CV_CONTOURS_MATCH_I3</a> =3
+ }</td></tr>
+<tr class="separator:gaaa2b1a4b4bb2459592cb9a8aa485d06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade2caa3ca29956195be6f188d00c1577"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CV_CLOCKWISE</b> =1, 
+<b>CV_COUNTER_CLOCKWISE</b> =2
+ }</td></tr>
+<tr class="separator:gade2caa3ca29956195be6f188d00c1577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga519bae2660fb22580b6cda9aea6efbd8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>CV_COMP_CORREL</b> =0, 
+<b>CV_COMP_CHISQR</b> =1, 
+<b>CV_COMP_INTERSECT</b> =2, 
+<b>CV_COMP_BHATTACHARYYA</b> =3, 
+<br />
+&#160;&#160;<b>CV_COMP_HELLINGER</b> =CV_COMP_BHATTACHARYYA, 
+<b>CV_COMP_CHISQR_ALT</b> =4, 
+<b>CV_COMP_KL_DIV</b> =5
+<br />
+ }</td></tr>
+<tr class="separator:ga519bae2660fb22580b6cda9aea6efbd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13097a44ec8a9f86e0710092ce455686"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CV_DIST_MASK_3</b> =3, 
+<b>CV_DIST_MASK_5</b> =5, 
+<b>CV_DIST_MASK_PRECISE</b> =0
+ }</td></tr>
+<tr class="separator:ga13097a44ec8a9f86e0710092ce455686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga149c9a7426d6d17eeb4c0b0ad8fab2d8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CV_DIST_LABEL_CCOMP</b> = 0, 
+<b>CV_DIST_LABEL_PIXEL</b> = 1
+ }</td></tr>
+<tr class="separator:ga149c9a7426d6d17eeb4c0b0ad8fab2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5557bcc09802288f55bda4e41e1e6a5f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="group__imgproc__c.html#gga5557bcc09802288f55bda4e41e1e6a5fa85dc4b9e7225ea418574237f0490b2a6">CV_DIST_USER</a> =-1, 
+<a class="el" href="group__imgproc__c.html#gga5557bcc09802288f55bda4e41e1e6a5fa0b4bea01885957ad908478061c57e67b">CV_DIST_L1</a> =1, 
+<a class="el" href="group__imgproc__c.html#gga5557bcc09802288f55bda4e41e1e6a5fae60a48ac6e8738abf6746c4beb4a9962">CV_DIST_L2</a> =2, 
+<a class="el" href="group__imgproc__c.html#gga5557bcc09802288f55bda4e41e1e6a5fabac689302eb020962e5ef5615de87c07">CV_DIST_C</a> =3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__c.html#gga5557bcc09802288f55bda4e41e1e6a5fae76bff7327eb425bf30cca11e4bc1387">CV_DIST_L12</a> =4, 
+<a class="el" href="group__imgproc__c.html#gga5557bcc09802288f55bda4e41e1e6a5fabcb84a93465c9ac0e37c0e17d0faae7e">CV_DIST_FAIR</a> =5, 
+<a class="el" href="group__imgproc__c.html#gga5557bcc09802288f55bda4e41e1e6a5fac9d04b49e7f44944c936c707650327e4">CV_DIST_WELSCH</a> =6, 
+<a class="el" href="group__imgproc__c.html#gga5557bcc09802288f55bda4e41e1e6a5fa1725669ada87a92eea265d0346d09513">CV_DIST_HUBER</a> =7
+<br />
+ }</td></tr>
+<tr class="separator:ga5557bcc09802288f55bda4e41e1e6a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab77fb2611f2e1cadacc9bd3199428581"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="group__imgproc__c.html#ggab77fb2611f2e1cadacc9bd3199428581a6af8cb4caea50fb9578d4543aa7b6f20">CV_THRESH_BINARY</a> =0, 
+<a class="el" href="group__imgproc__c.html#ggab77fb2611f2e1cadacc9bd3199428581a5605ead87cfc7a9a8daa1448f7fba488">CV_THRESH_BINARY_INV</a> =1, 
+<a class="el" href="group__imgproc__c.html#ggab77fb2611f2e1cadacc9bd3199428581ab24c5803c81111f2758c91b14dd48cf1">CV_THRESH_TRUNC</a> =2, 
+<a class="el" href="group__imgproc__c.html#ggab77fb2611f2e1cadacc9bd3199428581aaab30b5f1f73c2e5b280982f35d7c46d">CV_THRESH_TOZERO</a> =3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__c.html#ggab77fb2611f2e1cadacc9bd3199428581ac166f17f23efb6bcc221e9df92917de5">CV_THRESH_TOZERO_INV</a> =4, 
+<b>CV_THRESH_MASK</b> =7, 
+<a class="el" href="group__imgproc__c.html#ggab77fb2611f2e1cadacc9bd3199428581a2456934f4f01402e80006a317ea2693e">CV_THRESH_OTSU</a> =8, 
+<a class="el" href="group__imgproc__c.html#ggab77fb2611f2e1cadacc9bd3199428581ad963b0512c243be1ec737eadfc4f3cfe">CV_THRESH_TRIANGLE</a> =16
+<br />
+ }</td></tr>
+<tr class="separator:gab77fb2611f2e1cadacc9bd3199428581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf175e39dfd1579f1352b872d55b1d917"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CV_ADAPTIVE_THRESH_MEAN_C</b> =0, 
+<b>CV_ADAPTIVE_THRESH_GAUSSIAN_C</b> =1
+ }</td></tr>
+<tr class="separator:gaf175e39dfd1579f1352b872d55b1d917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2c2119b9b3f1cec7bdc74021c832037"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CV_FLOODFILL_FIXED_RANGE</b> =(1 &lt;&lt; 16), 
+<b>CV_FLOODFILL_MASK_ONLY</b> =(1 &lt;&lt; 17)
+ }</td></tr>
+<tr class="separator:gaf2c2119b9b3f1cec7bdc74021c832037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea03429e255c6f8bc7307a836b204825"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CV_CANNY_L2_GRADIENT</b> =(1 &lt;&lt; 31)
+ }</td></tr>
+<tr class="separator:gaea03429e255c6f8bc7307a836b204825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad737bf65509f65c9b3dee69204d7fbb3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CV_HOUGH_STANDARD</b> =0, 
+<b>CV_HOUGH_PROBABILISTIC</b> =1, 
+<b>CV_HOUGH_MULTI_SCALE</b> =2, 
+<b>CV_HOUGH_GRADIENT</b> =3
+ }</td></tr>
+<tr class="separator:gad737bf65509f65c9b3dee69204d7fbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -2334,7 +2924,7 @@ void *hull_storage int orientation&#160;</td><td class="memItemRight" valign="bo
 const <a class="el" href="struct_cv_histogram.html">CvHistogram</a> <a class="el" href="struct_cv_histogram.html">CvHistogram</a> double scale&#160;</td><td class="memItemRight" valign="bottom"><b>CV_DEFAULT</b> (255))</td></tr>
 <tr class="separator:ga9368f4dfbc4d7a3de1d379ae7aba9aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga598e9535f8c34a02f7937b58dac1856f"><td class="memItemLeft" align="right" valign="top"><a id="ga598e9535f8c34a02f7937b58dac1856f"></a>
-<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> int distance_type&#160;</td><td class="memItemRight" valign="bottom"><b>CV_DEFAULT</b> (<a class="el" href="group__imgproc__c.html#ggafa4021aeedf4f0e01dca22c2df3de514ae60a48ac6e8738abf6746c4beb4a9962">CV_DIST_L2</a>)</td></tr>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> int distance_type&#160;</td><td class="memItemRight" valign="bottom"><b>CV_DEFAULT</b> (<a class="el" href="group__imgproc__c.html#gga5557bcc09802288f55bda4e41e1e6a5fae60a48ac6e8738abf6746c4beb4a9962">CV_DIST_L2</a>)</td></tr>
 <tr class="separator:ga598e9535f8c34a02f7937b58dac1856f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4eedd7dfa0ea698285cf3f895ed6776b"><td class="memItemLeft" align="right" valign="top"><a id="ga4eedd7dfa0ea698285cf3f895ed6776b"></a>
 <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> int distance_type int mask_size const float *mask <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *labels int labelType&#160;</td><td class="memItemRight" valign="bottom"><b>CV_DEFAULT</b> (CV_DIST_LABEL_CCOMP))</td></tr>
@@ -2343,7 +2933,7 @@ const <a class="el" href="struct_cv_histogram.html">CvHistogram</a> <a class="el
 <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> double int adaptive_method&#160;</td><td class="memItemRight" valign="bottom"><b>CV_DEFAULT</b> (CV_ADAPTIVE_THRESH_MEAN_C)</td></tr>
 <tr class="separator:ga8d3886b053e1a00c63b5682a1cfc5887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab7e1466acff71188bf9af2aaddd1c963"><td class="memItemLeft" align="right" valign="top"><a id="gab7e1466acff71188bf9af2aaddd1c963"></a>
-<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> double int adaptive_method int threshold_type&#160;</td><td class="memItemRight" valign="bottom"><b>CV_DEFAULT</b> (<a class="el" href="group__imgproc__c.html#gga499fc014c0b7e16e29511ac643091940a6af8cb4caea50fb9578d4543aa7b6f20">CV_THRESH_BINARY</a>)</td></tr>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> double int adaptive_method int threshold_type&#160;</td><td class="memItemRight" valign="bottom"><b>CV_DEFAULT</b> (<a class="el" href="group__imgproc__c.html#ggab77fb2611f2e1cadacc9bd3199428581a6af8cb4caea50fb9578d4543aa7b6f20">CV_THRESH_BINARY</a>)</td></tr>
 <tr class="separator:gab7e1466acff71188bf9af2aaddd1c963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7d44f6eed094b68eaf061d98270ffebc"><td class="memItemLeft" align="right" valign="top"><a id="ga7d44f6eed094b68eaf061d98270ffebc"></a>
 <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> double int adaptive_method int threshold_type int block_size double param1&#160;</td><td class="memItemRight" valign="bottom"><b>CV_DEFAULT</b> (5))</td></tr>
@@ -4010,11 +4600,419 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 <tr class="memitem:ga56d955ad271b90fdcbd2e6c96a9d4cd3"><td class="memItemLeft" align="right" valign="top"><a id="ga56d955ad271b90fdcbd2e6c96a9d4cd3"></a>
 <a class="el" href="struct_cv_seq.html">CvSeq</a> <a class="el" href="struct_cv_scalar.html">CvScalar</a> <a class="el" href="struct_cv_scalar.html">CvScalar</a> int&#160;</td><td class="memItemRight" valign="bottom"><b>max_level</b></td></tr>
 <tr class="separator:ga56d955ad271b90fdcbd2e6c96a9d4cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadab8ff3013a107a10b5cae506315646a"><td class="memItemLeft" align="right" valign="top"><a id="gadab8ff3013a107a10b5cae506315646a"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>sum</b></td></tr>
+<tr class="separator:gadab8ff3013a107a10b5cae506315646a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae27caca711ca5fa4c336f5c83e73ee77"><td class="memItemLeft" align="right" valign="top"><a id="gae27caca711ca5fa4c336f5c83e73ee77"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>sqsum</b></td></tr>
+<tr class="separator:gae27caca711ca5fa4c336f5c83e73ee77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76e3ae1b0675509698e45b95135c1aed"><td class="memItemLeft" align="right" valign="top"><a id="ga76e3ae1b0675509698e45b95135c1aed"></a>
+const <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>image2</b></td></tr>
+<tr class="separator:ga76e3ae1b0675509698e45b95135c1aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae576d74b28660674a413fdd0ae36a3b4"><td class="memItemLeft" align="right" valign="top"><a id="gae576d74b28660674a413fdd0ae36a3b4"></a>
+const <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>acc</b></td></tr>
+<tr class="separator:gae576d74b28660674a413fdd0ae36a3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75620528cfc7d5f1288004fa760804ee"><td class="memItemLeft" align="right" valign="top"><a id="ga75620528cfc7d5f1288004fa760804ee"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> double&#160;</td><td class="memItemRight" valign="bottom"><b>alpha</b></td></tr>
+<tr class="separator:ga75620528cfc7d5f1288004fa760804ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf2b96e41a49dc4d072b2a0707f56596"><td class="memItemLeft" align="right" valign="top"><a id="gaaf2b96e41a49dc4d072b2a0707f56596"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>dst</b></td></tr>
+<tr class="separator:gaaf2b96e41a49dc4d072b2a0707f56596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaecaf8d39ccebc1daaa89ee5f071a9090"><td class="memItemLeft" align="right" valign="top"><a id="gaecaf8d39ccebc1daaa89ee5f071a9090"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="struct_cv_point.html">CvPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>offset</b></td></tr>
+<tr class="separator:gaecaf8d39ccebc1daaa89ee5f071a9090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga217d51a46c1bcfec1157d02663e6e499"><td class="memItemLeft" align="right" valign="top"><a id="ga217d51a46c1bcfec1157d02663e6e499"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="struct_cv_point.html">CvPoint</a> int&#160;</td><td class="memItemRight" valign="bottom"><b>bordertype</b></td></tr>
+<tr class="separator:ga217d51a46c1bcfec1157d02663e6e499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga863a75780ba6c5de552f5361cb0d2c89"><td class="memItemLeft" align="right" valign="top"><a id="ga863a75780ba6c5de552f5361cb0d2c89"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> const <a class="el" href="struct_cv_mat.html">CvMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>kernel</b></td></tr>
+<tr class="separator:ga863a75780ba6c5de552f5361cb0d2c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8623df17157c2a7156fb9c28ef382e1"><td class="memItemLeft" align="right" valign="top"><a id="gaf8623df17157c2a7156fb9c28ef382e1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>extra_layers</b></td></tr>
+<tr class="separator:gaf8623df17157c2a7156fb9c28ef382e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3cede51fff3afeea0dbae57b71f59f3d"><td class="memItemLeft" align="right" valign="top"><a id="ga3cede51fff3afeea0dbae57b71f59f3d"></a>
+int double&#160;</td><td class="memItemRight" valign="bottom"><b>rate</b></td></tr>
+<tr class="separator:ga3cede51fff3afeea0dbae57b71f59f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac14bc2e984efdff6b1fa7e106f3ac14a"><td class="memItemLeft" align="right" valign="top"><a id="gac14bc2e984efdff6b1fa7e106f3ac14a"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> double&#160;</td><td class="memItemRight" valign="bottom"><b>sp</b></td></tr>
+<tr class="separator:gac14bc2e984efdff6b1fa7e106f3ac14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacecaf9a0f96f944ff768b10358b45839"><td class="memItemLeft" align="right" valign="top"><a id="gacecaf9a0f96f944ff768b10358b45839"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> double double&#160;</td><td class="memItemRight" valign="bottom"><b>sr</b></td></tr>
+<tr class="separator:gacecaf9a0f96f944ff768b10358b45839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ef275836228f2bc63122df9ce1fe363"><td class="memItemLeft" align="right" valign="top"><a id="ga2ef275836228f2bc63122df9ce1fe363"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>markers</b></td></tr>
+<tr class="separator:ga2ef275836228f2bc63122df9ce1fe363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga152326eb8ab5341b9bd064a595c12bcf"><td class="memItemLeft" align="right" valign="top"><a id="ga152326eb8ab5341b9bd064a595c12bcf"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> int&#160;</td><td class="memItemRight" valign="bottom"><b>xorder</b></td></tr>
+<tr class="separator:ga152326eb8ab5341b9bd064a595c12bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf808592e0e098f664fa9a775050020c5"><td class="memItemLeft" align="right" valign="top"><a id="gaf808592e0e098f664fa9a775050020c5"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> int int&#160;</td><td class="memItemRight" valign="bottom"><b>yorder</b></td></tr>
+<tr class="separator:gaf808592e0e098f664fa9a775050020c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a9fd13fa1f888f8baeda154bb1a3691"><td class="memItemLeft" align="right" valign="top"><a id="ga9a9fd13fa1f888f8baeda154bb1a3691"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> int&#160;</td><td class="memItemRight" valign="bottom"><b>code</b></td></tr>
+<tr class="separator:ga9a9fd13fa1f888f8baeda154bb1a3691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0266c0f57d08b19826f1498288595bc"><td class="memItemLeft" align="right" valign="top"><a id="gad0266c0f57d08b19826f1498288595bc"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> const <a class="el" href="struct_cv_mat.html">CvMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>map_matrix</b></td></tr>
+<tr class="separator:gad0266c0f57d08b19826f1498288595bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00147158cd32c0f762ad7d5917e6d8fd"><td class="memItemLeft" align="right" valign="top"><a id="ga00147158cd32c0f762ad7d5917e6d8fd"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>angle</b></td></tr>
+<tr class="separator:ga00147158cd32c0f762ad7d5917e6d8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf08b297b807a1b8810a4bbaa70ca3d99"><td class="memItemLeft" align="right" valign="top"><a id="gaf08b297b807a1b8810a4bbaa70ca3d99"></a>
+double double&#160;</td><td class="memItemRight" valign="bottom"><b>scale</b></td></tr>
+<tr class="separator:gaf08b297b807a1b8810a4bbaa70ca3d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12030967de9a1c5f70d8a597278bf05a"><td class="memItemLeft" align="right" valign="top"><a id="ga12030967de9a1c5f70d8a597278bf05a"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> const <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mapx</b></td></tr>
+<tr class="separator:ga12030967de9a1c5f70d8a597278bf05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b1cc27114417a2d1c3ba31de569dfe2"><td class="memItemLeft" align="right" valign="top"><a id="ga2b1cc27114417a2d1c3ba31de569dfe2"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> const <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> const <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mapy</b></td></tr>
+<tr class="separator:ga2b1cc27114417a2d1c3ba31de569dfe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90714ebeccca789e3abac84458ebbf71"><td class="memItemLeft" align="right" valign="top"><a id="ga90714ebeccca789e3abac84458ebbf71"></a>
+const <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mapxy</b></td></tr>
+<tr class="separator:ga90714ebeccca789e3abac84458ebbf71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d3e578079a6f5d58c01fc2dd9298431"><td class="memItemLeft" align="right" valign="top"><a id="ga8d3e578079a6f5d58c01fc2dd9298431"></a>
+const <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mapalpha</b></td></tr>
+<tr class="separator:ga8d3e578079a6f5d58c01fc2dd9298431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac74d5c2b1b8e008e97876b334e343b30"><td class="memItemLeft" align="right" valign="top"><a id="gac74d5c2b1b8e008e97876b334e343b30"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="struct_cv_point2_d32f.html">CvPoint2D32f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>center</b></td></tr>
+<tr class="separator:gac74d5c2b1b8e008e97876b334e343b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga404a4d60c53041fc1a1cd804d1c07cbb"><td class="memItemLeft" align="right" valign="top"><a id="ga404a4d60c53041fc1a1cd804d1c07cbb"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="struct_cv_point2_d32f.html">CvPoint2D32f</a> double&#160;</td><td class="memItemRight" valign="bottom"><b>M</b></td></tr>
+<tr class="separator:ga404a4d60c53041fc1a1cd804d1c07cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa127cf4ed721c001f0dd39efd29b9790"><td class="memItemLeft" align="right" valign="top"><a id="gaa127cf4ed721c001f0dd39efd29b9790"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="struct_cv_point2_d32f.html">CvPoint2D32f</a> double&#160;</td><td class="memItemRight" valign="bottom"><b>maxRadius</b></td></tr>
+<tr class="separator:gaa127cf4ed721c001f0dd39efd29b9790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad58a1e2076a587fcc1f9a33eb175b51e"><td class="memItemLeft" align="right" valign="top"><a id="gad58a1e2076a587fcc1f9a33eb175b51e"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> const <a class="el" href="struct_cv_mat.html">CvMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>camera_matrix</b></td></tr>
+<tr class="separator:gad58a1e2076a587fcc1f9a33eb175b51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f778a76ec97614752f79f89dc5bb131"><td class="memItemLeft" align="right" valign="top"><a id="ga1f778a76ec97614752f79f89dc5bb131"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> const <a class="el" href="struct_cv_mat.html">CvMat</a> const <a class="el" href="struct_cv_mat.html">CvMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>distortion_coeffs</b></td></tr>
+<tr class="separator:ga1f778a76ec97614752f79f89dc5bb131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80c756a9cb6c3bd1183d167795c18eae"><td class="memItemLeft" align="right" valign="top"><a id="ga80c756a9cb6c3bd1183d167795c18eae"></a>
+const <a class="el" href="struct_cv_mat.html">CvMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>dist_coeffs</b></td></tr>
+<tr class="separator:ga80c756a9cb6c3bd1183d167795c18eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga51837f120208319f026dc8c4a71e56e0"><td class="memItemLeft" align="right" valign="top"><a id="ga51837f120208319f026dc8c4a71e56e0"></a>
+const <a class="el" href="struct_cv_mat.html">CvMat</a> const <a class="el" href="struct_cv_mat.html">CvMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>R</b></td></tr>
+<tr class="separator:ga51837f120208319f026dc8c4a71e56e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b624d322c0af50677dde52c24a8e208"><td class="memItemLeft" align="right" valign="top"><a id="ga3b624d322c0af50677dde52c24a8e208"></a>
+const <a class="el" href="struct_cv_mat.html">CvMat</a> const <a class="el" href="struct_cv_mat.html">CvMat</a> const <a class="el" href="struct_cv_mat.html">CvMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>new_camera_matrix</b></td></tr>
+<tr class="separator:ga3b624d322c0af50677dde52c24a8e208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga061459acc9e078fa4699e0e349887215"><td class="memItemLeft" align="right" valign="top"><a id="ga061459acc9e078fa4699e0e349887215"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>rows</b></td></tr>
+<tr class="separator:ga061459acc9e078fa4699e0e349887215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09b134fdedcf1992f116e51586aab83b"><td class="memItemLeft" align="right" valign="top"><a id="ga09b134fdedcf1992f116e51586aab83b"></a>
+int int&#160;</td><td class="memItemRight" valign="bottom"><b>anchor_x</b></td></tr>
+<tr class="separator:ga09b134fdedcf1992f116e51586aab83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d3c9ff8f5f922e98e589a1644b97f89"><td class="memItemLeft" align="right" valign="top"><a id="ga6d3c9ff8f5f922e98e589a1644b97f89"></a>
+int int int&#160;</td><td class="memItemRight" valign="bottom"><b>anchor_y</b></td></tr>
+<tr class="separator:ga6d3c9ff8f5f922e98e589a1644b97f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9441d55ee8217146ade7775f35b642c3"><td class="memItemLeft" align="right" valign="top"><a id="ga9441d55ee8217146ade7775f35b642c3"></a>
+int int int int&#160;</td><td class="memItemRight" valign="bottom"><b>shape</b></td></tr>
+<tr class="separator:ga9441d55ee8217146ade7775f35b642c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe009251fa48e9266e8b38c63b7b8003"><td class="memItemLeft" align="right" valign="top"><a id="gafe009251fa48e9266e8b38c63b7b8003"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>temp</b></td></tr>
+<tr class="separator:gafe009251fa48e9266e8b38c63b7b8003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d478f3138e9216027607723d7dc945a"><td class="memItemLeft" align="right" valign="top"><a id="ga2d478f3138e9216027607723d7dc945a"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="struct___ipl_conv_kernel.html">IplConvKernel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>element</b></td></tr>
+<tr class="separator:ga2d478f3138e9216027607723d7dc945a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8bb091587abe659f1f154fd5f7bd664"><td class="memItemLeft" align="right" valign="top"><a id="gaf8bb091587abe659f1f154fd5f7bd664"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="struct___ipl_conv_kernel.html">IplConvKernel</a> int&#160;</td><td class="memItemRight" valign="bottom"><b>operation</b></td></tr>
+<tr class="separator:gaf8bb091587abe659f1f154fd5f7bd664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga155fbcf844810c2eb333c91505eb9169"><td class="memItemLeft" align="right" valign="top"><a id="ga155fbcf844810c2eb333c91505eb9169"></a>
+<a class="el" href="struct_cv_moments.html">CvMoments</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>moments</b></td></tr>
+<tr class="separator:ga155fbcf844810c2eb333c91505eb9169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a7cc62fb5dda4a1e48f61426d6a0be0"><td class="memItemLeft" align="right" valign="top"><a id="ga6a7cc62fb5dda4a1e48f61426d6a0be0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>x_order</b></td></tr>
+<tr class="separator:ga6a7cc62fb5dda4a1e48f61426d6a0be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d9a765d7b2fad6bbd96b4bdaa26006d"><td class="memItemLeft" align="right" valign="top"><a id="ga8d9a765d7b2fad6bbd96b4bdaa26006d"></a>
+int int&#160;</td><td class="memItemRight" valign="bottom"><b>y_order</b></td></tr>
+<tr class="separator:ga8d9a765d7b2fad6bbd96b4bdaa26006d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f88a9a8dd191a1b4c3131acd130dec0"><td class="memItemLeft" align="right" valign="top"><a id="ga3f88a9a8dd191a1b4c3131acd130dec0"></a>
+<a class="el" href="struct_cv_hu_moments.html">CvHuMoments</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>hu_moments</b></td></tr>
+<tr class="separator:ga3f88a9a8dd191a1b4c3131acd130dec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d93852899c445e76457745010aa0a5a"><td class="memItemLeft" align="right" valign="top"><a id="ga3d93852899c445e76457745010aa0a5a"></a>
+<a class="el" href="struct_cv_point.html">CvPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pt1</b></td></tr>
+<tr class="separator:ga3d93852899c445e76457745010aa0a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga902850a9e0c91c1564bccebb6d1759dd"><td class="memItemLeft" align="right" valign="top"><a id="ga902850a9e0c91c1564bccebb6d1759dd"></a>
+<a class="el" href="struct_cv_point.html">CvPoint</a> <a class="el" href="struct_cv_point.html">CvPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pt2</b></td></tr>
+<tr class="separator:ga902850a9e0c91c1564bccebb6d1759dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9db6ccf8d1a2abfd9a0a162547f9666"><td class="memItemLeft" align="right" valign="top"><a id="gac9db6ccf8d1a2abfd9a0a162547f9666"></a>
+<a class="el" href="struct_cv_point.html">CvPoint</a> <a class="el" href="struct_cv_point.html">CvPoint</a> void *&#160;</td><td class="memItemRight" valign="bottom"><b>buffer</b></td></tr>
+<tr class="separator:gac9db6ccf8d1a2abfd9a0a162547f9666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3dda0ce9b269462404396ce3e9eedf00"><td class="memItemLeft" align="right" valign="top"><a id="ga3dda0ce9b269462404396ce3e9eedf00"></a>
+const <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>templ</b></td></tr>
+<tr class="separator:ga3dda0ce9b269462404396ce3e9eedf00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga40d55b7cb8d50997fe33def0b3b76eac"><td class="memItemLeft" align="right" valign="top"><a id="ga40d55b7cb8d50997fe33def0b3b76eac"></a>
+const <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>result</b></td></tr>
+<tr class="separator:ga40d55b7cb8d50997fe33def0b3b76eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab9b9819cc20b34aa0ae2bfa4486e7a65"><td class="memItemLeft" align="right" valign="top"><a id="gab9b9819cc20b34aa0ae2bfa4486e7a65"></a>
+const <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> int&#160;</td><td class="memItemRight" valign="bottom"><b>method</b></td></tr>
+<tr class="separator:gab9b9819cc20b34aa0ae2bfa4486e7a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga930c0d1061f9be0d2ff2cecaed2dbf71"><td class="memItemLeft" align="right" valign="top"><a id="ga930c0d1061f9be0d2ff2cecaed2dbf71"></a>
+const <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>signature2</b></td></tr>
+<tr class="separator:ga930c0d1061f9be0d2ff2cecaed2dbf71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84226f42f87fdc01462ad7a7eac3d487"><td class="memItemLeft" align="right" valign="top"><a id="ga84226f42f87fdc01462ad7a7eac3d487"></a>
+const <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> int&#160;</td><td class="memItemRight" valign="bottom"><b>distance_type</b></td></tr>
+<tr class="separator:ga84226f42f87fdc01462ad7a7eac3d487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4be8b1b966b726e0e6975f5a230084cb"><td class="memItemLeft" align="right" valign="top"><a id="ga4be8b1b966b726e0e6975f5a230084cb"></a>
+<a class="el" href="struct_cv_mem_storage.html">CvMemStorage</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>storage</b></td></tr>
+<tr class="separator:ga4be8b1b966b726e0e6975f5a230084cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa2db73f45f0621ff974aefe645ab4c62"><td class="memItemLeft" align="right" valign="top"><a id="gaa2db73f45f0621ff974aefe645ab4c62"></a>
+<a class="el" href="struct_cv_mem_storage.html">CvMemStorage</a> <a class="el" href="struct_cv_seq.html">CvSeq</a> **&#160;</td><td class="memItemRight" valign="bottom"><b>first_contour</b></td></tr>
+<tr class="separator:gaa2db73f45f0621ff974aefe645ab4c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad20e144084dc96197dce2629ce89bb0c"><td class="memItemLeft" align="right" valign="top"><a id="gad20e144084dc96197dce2629ce89bb0c"></a>
+<a class="el" href="struct_cv_seq.html">CvSeq</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>new_contour</b></td></tr>
+<tr class="separator:gad20e144084dc96197dce2629ce89bb0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafbcad7e2fb0c0adb2492c861d2cc2684"><td class="memItemLeft" align="right" valign="top"><a id="gafbcad7e2fb0c0adb2492c861d2cc2684"></a>
+<a class="el" href="struct_cv_chain_pt_reader.html">CvChainPtReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>reader</b></td></tr>
+<tr class="separator:gafbcad7e2fb0c0adb2492c861d2cc2684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e5c1b1bef3aaad5af98436c73397964"><td class="memItemLeft" align="right" valign="top"><a id="ga4e5c1b1bef3aaad5af98436c73397964"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>header_size</b></td></tr>
+<tr class="separator:ga4e5c1b1bef3aaad5af98436c73397964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaabece9d4af1ab09d2f85ade473757e32"><td class="memItemLeft" align="right" valign="top"><a id="gaabece9d4af1ab09d2f85ade473757e32"></a>
+int <a class="el" href="struct_cv_mem_storage.html">CvMemStorage</a> int double&#160;</td><td class="memItemRight" valign="bottom"><b>eps</b></td></tr>
+<tr class="separator:gaabece9d4af1ab09d2f85ade473757e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7bea932e1cd0c79d103a7870a1921a4e"><td class="memItemLeft" align="right" valign="top"><a id="ga7bea932e1cd0c79d103a7870a1921a4e"></a>
+<a class="el" href="struct_cv_point2_d32f.html">CvPoint2D32f</a> float *&#160;</td><td class="memItemRight" valign="bottom"><b>radius</b></td></tr>
+<tr class="separator:ga7bea932e1cd0c79d103a7870a1921a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa904589fe53b9d0855be70217c674503"><td class="memItemLeft" align="right" valign="top"><a id="gaa904589fe53b9d0855be70217c674503"></a>
+const void *&#160;</td><td class="memItemRight" valign="bottom"><b>object2</b></td></tr>
+<tr class="separator:gaa904589fe53b9d0855be70217c674503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7249c6f0ee7ae47703937ade4484e71"><td class="memItemLeft" align="right" valign="top"><a id="gaf7249c6f0ee7ae47703937ade4484e71"></a>
+const <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>convexhull</b></td></tr>
+<tr class="separator:gaf7249c6f0ee7ae47703937ade4484e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c62ff9aa0c6549a8a350d65d604a644"><td class="memItemLeft" align="right" valign="top"><a id="ga0c62ff9aa0c6549a8a350d65d604a644"></a>
+const <a class="el" href="struct_cv_rect.html">CvRect</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>rect2</b></td></tr>
+<tr class="separator:ga0c62ff9aa0c6549a8a350d65d604a644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga350b3a83768fbff7ceba7d1be6fe3475"><td class="memItemLeft" align="right" valign="top"><a id="ga350b3a83768fbff7ceba7d1be6fe3475"></a>
+<a class="el" href="struct_cv_point2_d32f.html">CvPoint2D32f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pt</b> [4]</td></tr>
+<tr class="separator:ga350b3a83768fbff7ceba7d1be6fe3475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9325e85114e7b9ab738a23b62ea10a0"><td class="memItemLeft" align="right" valign="top"><a id="gad9325e85114e7b9ab738a23b62ea10a0"></a>
+const <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mat</b></td></tr>
+<tr class="separator:gad9325e85114e7b9ab738a23b62ea10a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9bacd7838f19522529fd9dc7542e4404"><td class="memItemLeft" align="right" valign="top"><a id="ga9bacd7838f19522529fd9dc7542e4404"></a>
+const <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="struct_cv_contour.html">CvContour</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>contour_header</b></td></tr>
+<tr class="separator:ga9bacd7838f19522529fd9dc7542e4404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9dfec626c83c539c0de3610e4645c32"><td class="memItemLeft" align="right" valign="top"><a id="gae9dfec626c83c539c0de3610e4645c32"></a>
+const <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="struct_cv_contour.html">CvContour</a> <a class="el" href="struct_cv_seq_block.html">CvSeqBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>block</b></td></tr>
+<tr class="separator:gae9dfec626c83c539c0de3610e4645c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e2f615530d8f509c159263ce5f8ee1d"><td class="memItemLeft" align="right" valign="top"><a id="ga3e2f615530d8f509c159263ce5f8ee1d"></a>
+<a class="el" href="struct_cv_point2_d32f.html">CvPoint2D32f</a> int&#160;</td><td class="memItemRight" valign="bottom"><b>measure_dist</b></td></tr>
+<tr class="separator:ga3e2f615530d8f509c159263ce5f8ee1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafcc291f06aa904173ea1ada4741707f6"><td class="memItemLeft" align="right" valign="top"><a id="gafcc291f06aa904173ea1ada4741707f6"></a>
+int *&#160;</td><td class="memItemRight" valign="bottom"><b>sizes</b></td></tr>
+<tr class="separator:gafcc291f06aa904173ea1ada4741707f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84612d8738bf935200cf32a103d8efe1"><td class="memItemLeft" align="right" valign="top"><a id="ga84612d8738bf935200cf32a103d8efe1"></a>
+int int&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
+<tr class="separator:ga84612d8738bf935200cf32a103d8efe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab60fbc54af325f6db106ca96909a8fc0"><td class="memItemLeft" align="right" valign="top"><a id="gab60fbc54af325f6db106ca96909a8fc0"></a>
+float **&#160;</td><td class="memItemRight" valign="bottom"><b>ranges</b></td></tr>
+<tr class="separator:gab60fbc54af325f6db106ca96909a8fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3fb6237eedf55ee0e6eeb8f08cd188d5"><td class="memItemLeft" align="right" valign="top"><a id="ga3fb6237eedf55ee0e6eeb8f08cd188d5"></a>
+int <a class="el" href="struct_cv_histogram.html">CvHistogram</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>hist</b></td></tr>
+<tr class="separator:ga3fb6237eedf55ee0e6eeb8f08cd188d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c3dc842ea71c5382d30510405b364b5"><td class="memItemLeft" align="right" valign="top"><a id="ga9c3dc842ea71c5382d30510405b364b5"></a>
+int <a class="el" href="struct_cv_histogram.html">CvHistogram</a> float *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
+<tr class="separator:ga9c3dc842ea71c5382d30510405b364b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7647afad3251f8f10fec3f5a86ab62f1"><td class="memItemLeft" align="right" valign="top"><a id="ga7647afad3251f8f10fec3f5a86ab62f1"></a>
+float *&#160;</td><td class="memItemRight" valign="bottom"><b>min_value</b></td></tr>
+<tr class="separator:ga7647afad3251f8f10fec3f5a86ab62f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d6b92660b0500936c7ec2c2cabbf936"><td class="memItemLeft" align="right" valign="top"><a id="ga0d6b92660b0500936c7ec2c2cabbf936"></a>
+float float *&#160;</td><td class="memItemRight" valign="bottom"><b>max_value</b></td></tr>
+<tr class="separator:ga0d6b92660b0500936c7ec2c2cabbf936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38d935d2d81b1aaccebdf6badbf59ba0"><td class="memItemLeft" align="right" valign="top"><a id="ga38d935d2d81b1aaccebdf6badbf59ba0"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>factor</b></td></tr>
+<tr class="separator:ga38d935d2d81b1aaccebdf6badbf59ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32b004637d3b8895570fd73c28492698"><td class="memItemLeft" align="right" valign="top"><a id="ga32b004637d3b8895570fd73c28492698"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>threshold</b></td></tr>
+<tr class="separator:ga32b004637d3b8895570fd73c28492698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e8c22d4d485ef8d8a1b3b7a9b94f0e4"><td class="memItemLeft" align="right" valign="top"><a id="ga4e8c22d4d485ef8d8a1b3b7a9b94f0e4"></a>
+const <a class="el" href="struct_cv_histogram.html">CvHistogram</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>hist2</b></td></tr>
+<tr class="separator:ga4e8c22d4d485ef8d8a1b3b7a9b94f0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7106e2abc437ad981830d14176d15f09"><td class="memItemLeft" align="right" valign="top"><a id="ga7106e2abc437ad981830d14176d15f09"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>number</b></td></tr>
+<tr class="separator:ga7106e2abc437ad981830d14176d15f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e12f6e5472cdb21ec13ab5365ffd987"><td class="memItemLeft" align="right" valign="top"><a id="ga7e12f6e5472cdb21ec13ab5365ffd987"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="struct_cv_size.html">CvSize</a>&#160;</td><td class="memItemRight" valign="bottom"><b>range</b></td></tr>
+<tr class="separator:ga7e12f6e5472cdb21ec13ab5365ffd987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadafca33a5b5031b92bb5fc441ac693d2"><td class="memItemLeft" align="right" valign="top"><a id="gadafca33a5b5031b92bb5fc441ac693d2"></a>
+const <a class="el" href="struct_cv_histogram.html">CvHistogram</a> <a class="el" href="struct_cv_histogram.html">CvHistogram</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>dst_hist</b></td></tr>
+<tr class="separator:gadafca33a5b5031b92bb5fc441ac693d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a36f5d9d7b616c2830e6fdca3e336c6"><td class="memItemLeft" align="right" valign="top"><a id="ga1a36f5d9d7b616c2830e6fdca3e336c6"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> double double int&#160;</td><td class="memItemRight" valign="bottom"><b>threshold_type</b></td></tr>
+<tr class="separator:ga1a36f5d9d7b616c2830e6fdca3e336c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga427cc9320072202b2b4e883f9e80f9f4"><td class="memItemLeft" align="right" valign="top"><a id="ga427cc9320072202b2b4e883f9e80f9f4"></a>
+<a class="el" href="struct_cv_point.html">CvPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>seed_point</b></td></tr>
+<tr class="separator:ga427cc9320072202b2b4e883f9e80f9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07e81df88d801bfa6a232eaab4fc8b85"><td class="memItemLeft" align="right" valign="top"><a id="ga07e81df88d801bfa6a232eaab4fc8b85"></a>
+<a class="el" href="struct_cv_point.html">CvPoint</a> <a class="el" href="struct_cv_scalar.html">CvScalar</a>&#160;</td><td class="memItemRight" valign="bottom"><b>new_val</b></td></tr>
+<tr class="separator:ga07e81df88d801bfa6a232eaab4fc8b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0934986249e7ba69309a154af3260f89"><td class="memItemLeft" align="right" valign="top"><a id="ga0934986249e7ba69309a154af3260f89"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>edges</b></td></tr>
+<tr class="separator:ga0934986249e7ba69309a154af3260f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3624a49ef9de4b4c14537d162ac49d26"><td class="memItemLeft" align="right" valign="top"><a id="ga3624a49ef9de4b4c14537d162ac49d26"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> double&#160;</td><td class="memItemRight" valign="bottom"><b>threshold1</b></td></tr>
+<tr class="separator:ga3624a49ef9de4b4c14537d162ac49d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f1cfe5469d77d47449d73966d484b84"><td class="memItemLeft" align="right" valign="top"><a id="ga9f1cfe5469d77d47449d73966d484b84"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> double double&#160;</td><td class="memItemRight" valign="bottom"><b>threshold2</b></td></tr>
+<tr class="separator:ga9f1cfe5469d77d47449d73966d484b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga223e965e192c7025d6c6be77305f515b"><td class="memItemLeft" align="right" valign="top"><a id="ga223e965e192c7025d6c6be77305f515b"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>corners</b></td></tr>
+<tr class="separator:ga223e965e192c7025d6c6be77305f515b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae59dd32a490ca2fad6a4a46af67e17e8"><td class="memItemLeft" align="right" valign="top"><a id="gae59dd32a490ca2fad6a4a46af67e17e8"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>eigenvv</b></td></tr>
+<tr class="separator:gae59dd32a490ca2fad6a4a46af67e17e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d7c85a0cd4aeceb7043475ac38fe836"><td class="memItemLeft" align="right" valign="top"><a id="ga2d7c85a0cd4aeceb7043475ac38fe836"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> int&#160;</td><td class="memItemRight" valign="bottom"><b>block_size</b></td></tr>
+<tr class="separator:ga2d7c85a0cd4aeceb7043475ac38fe836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35106468055b5473fa419a56f28465eb"><td class="memItemLeft" align="right" valign="top"><a id="ga35106468055b5473fa419a56f28465eb"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>eigenval</b></td></tr>
+<tr class="separator:ga35106468055b5473fa419a56f28465eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85aced528e9c1063bfd49846d5f1af76"><td class="memItemLeft" align="right" valign="top"><a id="ga85aced528e9c1063bfd49846d5f1af76"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>harris_response</b></td></tr>
+<tr class="separator:ga85aced528e9c1063bfd49846d5f1af76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3fc2704a5a1dd88fdd8c6d76754645f0"><td class="memItemLeft" align="right" valign="top"><a id="ga3fc2704a5a1dd88fdd8c6d76754645f0"></a>
+<a class="el" href="struct_cv_point2_d32f.html">CvPoint2D32f</a> int&#160;</td><td class="memItemRight" valign="bottom"><b>count</b></td></tr>
+<tr class="separator:ga3fc2704a5a1dd88fdd8c6d76754645f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31d2e5a438a6bb322126274298e0023a"><td class="memItemLeft" align="right" valign="top"><a id="ga31d2e5a438a6bb322126274298e0023a"></a>
+<a class="el" href="struct_cv_point2_d32f.html">CvPoint2D32f</a> int <a class="el" href="struct_cv_size.html">CvSize</a>&#160;</td><td class="memItemRight" valign="bottom"><b>win</b></td></tr>
+<tr class="separator:ga31d2e5a438a6bb322126274298e0023a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf1071bc733058b1f1af8dec75ab93adf"><td class="memItemLeft" align="right" valign="top"><a id="gaf1071bc733058b1f1af8dec75ab93adf"></a>
+<a class="el" href="struct_cv_point2_d32f.html">CvPoint2D32f</a> int <a class="el" href="struct_cv_size.html">CvSize</a> <a class="el" href="struct_cv_size.html">CvSize</a>&#160;</td><td class="memItemRight" valign="bottom"><b>zero_zone</b></td></tr>
+<tr class="separator:gaf1071bc733058b1f1af8dec75ab93adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac808aaac88b1d5574652acbfb70cdaf4"><td class="memItemLeft" align="right" valign="top"><a id="gac808aaac88b1d5574652acbfb70cdaf4"></a>
+<a class="el" href="struct_cv_point2_d32f.html">CvPoint2D32f</a> int <a class="el" href="struct_cv_size.html">CvSize</a> <a class="el" href="struct_cv_size.html">CvSize</a> <a class="el" href="struct_cv_term_criteria.html">CvTermCriteria</a>&#160;</td><td class="memItemRight" valign="bottom"><b>criteria</b></td></tr>
+<tr class="separator:gac808aaac88b1d5574652acbfb70cdaf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e1a9b65c22503df6c55c44af83aad1b"><td class="memItemLeft" align="right" valign="top"><a id="ga7e1a9b65c22503df6c55c44af83aad1b"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>eig_image</b></td></tr>
+<tr class="separator:ga7e1a9b65c22503df6c55c44af83aad1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac205173ec158badc3390b963eeb87c9a"><td class="memItemLeft" align="right" valign="top"><a id="gac205173ec158badc3390b963eeb87c9a"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>temp_image</b></td></tr>
+<tr class="separator:gac205173ec158badc3390b963eeb87c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4c82033b6451ac1c5ca8c80855f783b"><td class="memItemLeft" align="right" valign="top"><a id="gaf4c82033b6451ac1c5ca8c80855f783b"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="struct_cv_point2_d32f.html">CvPoint2D32f</a> int *&#160;</td><td class="memItemRight" valign="bottom"><b>corner_count</b></td></tr>
+<tr class="separator:gaf4c82033b6451ac1c5ca8c80855f783b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d2a3c6f6473a32a7a4d6df5bc38c57d"><td class="memItemLeft" align="right" valign="top"><a id="ga8d2a3c6f6473a32a7a4d6df5bc38c57d"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="struct_cv_point2_d32f.html">CvPoint2D32f</a> int double&#160;</td><td class="memItemRight" valign="bottom"><b>quality_level</b></td></tr>
+<tr class="separator:ga8d2a3c6f6473a32a7a4d6df5bc38c57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e46a052bd7949031bdb066097390a7f"><td class="memItemLeft" align="right" valign="top"><a id="ga6e46a052bd7949031bdb066097390a7f"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> <a class="el" href="struct_cv_point2_d32f.html">CvPoint2D32f</a> int double double&#160;</td><td class="memItemRight" valign="bottom"><b>min_distance</b></td></tr>
+<tr class="separator:ga6e46a052bd7949031bdb066097390a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3fef5dde04c4a918865d7163981ab10"><td class="memItemLeft" align="right" valign="top"><a id="gaa3fef5dde04c4a918865d7163981ab10"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>line_storage</b></td></tr>
+<tr class="separator:gaa3fef5dde04c4a918865d7163981ab10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d8783b6b909806d38134f1f342005bf"><td class="memItemLeft" align="right" valign="top"><a id="ga7d8783b6b909806d38134f1f342005bf"></a>
+void int double&#160;</td><td class="memItemRight" valign="bottom"><b>rho</b></td></tr>
+<tr class="separator:ga7d8783b6b909806d38134f1f342005bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90ba48f41646a904a861746079d43f17"><td class="memItemLeft" align="right" valign="top"><a id="ga90ba48f41646a904a861746079d43f17"></a>
+void int double double&#160;</td><td class="memItemRight" valign="bottom"><b>theta</b></td></tr>
+<tr class="separator:ga90ba48f41646a904a861746079d43f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga619215aef78fa210e6c249343ad6f5eb"><td class="memItemLeft" align="right" valign="top"><a id="ga619215aef78fa210e6c249343ad6f5eb"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>circle_storage</b></td></tr>
+<tr class="separator:ga619215aef78fa210e6c249343ad6f5eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab72596cdef510cb9cb1a2b07a9189912"><td class="memItemLeft" align="right" valign="top"><a id="gab72596cdef510cb9cb1a2b07a9189912"></a>
+void int double&#160;</td><td class="memItemRight" valign="bottom"><b>dp</b></td></tr>
+<tr class="separator:gab72596cdef510cb9cb1a2b07a9189912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf282458d33df07746d614fc2e83fb915"><td class="memItemLeft" align="right" valign="top"><a id="gaf282458d33df07746d614fc2e83fb915"></a>
+void int double double&#160;</td><td class="memItemRight" valign="bottom"><b>min_dist</b></td></tr>
+<tr class="separator:gaf282458d33df07746d614fc2e83fb915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4c138ad421cb7c04c0e7712cc888c3b"><td class="memItemLeft" align="right" valign="top"><a id="gac4c138ad421cb7c04c0e7712cc888c3b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>dist_type</b></td></tr>
+<tr class="separator:gac4c138ad421cb7c04c0e7712cc888c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaa568d70073af643d128aec36edc11bd"><td class="memItemLeft" align="right" valign="top"><a id="gaaa568d70073af643d128aec36edc11bd"></a>
+int double&#160;</td><td class="memItemRight" valign="bottom"><b>param</b></td></tr>
+<tr class="separator:gaaa568d70073af643d128aec36edc11bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga48d019f60ad3622468bbdd106d76618e"><td class="memItemLeft" align="right" valign="top"><a id="ga48d019f60ad3622468bbdd106d76618e"></a>
+int double double&#160;</td><td class="memItemRight" valign="bottom"><b>reps</b></td></tr>
+<tr class="separator:ga48d019f60ad3622468bbdd106d76618e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga54c99d614f6f66c437e8cb01d1e2fe1a"><td class="memItemLeft" align="right" valign="top"><a id="ga54c99d614f6f66c437e8cb01d1e2fe1a"></a>
+int double double double&#160;</td><td class="memItemRight" valign="bottom"><b>aeps</b></td></tr>
+<tr class="separator:ga54c99d614f6f66c437e8cb01d1e2fe1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7146038506976205c451bf9d62f663b4"><td class="memItemLeft" align="right" valign="top"><a id="ga7146038506976205c451bf9d62f663b4"></a>
+int double double double float *&#160;</td><td class="memItemRight" valign="bottom"><b>line</b></td></tr>
+<tr class="separator:ga7146038506976205c451bf9d62f663b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ea898fa4dd23d613d19923509d8e249"><td class="memItemLeft" align="right" valign="top"><a id="ga4ea898fa4dd23d613d19923509d8e249"></a>
+<a class="el" href="struct_cv_point.html">CvPoint</a> <a class="el" href="struct_cv_point.html">CvPoint</a> <a class="el" href="struct_cv_scalar.html">CvScalar</a>&#160;</td><td class="memItemRight" valign="bottom"><b>color</b></td></tr>
+<tr class="separator:ga4ea898fa4dd23d613d19923509d8e249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga54709f3b06b33b66763f1613cc7fb571"><td class="memItemLeft" align="right" valign="top"><a id="ga54709f3b06b33b66763f1613cc7fb571"></a>
+<a class="el" href="struct_cv_rect.html">CvRect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>r</b></td></tr>
+<tr class="separator:ga54709f3b06b33b66763f1613cc7fb571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9447463cf154fcf48fd979790bf647d6"><td class="memItemLeft" align="right" valign="top"><a id="ga9447463cf154fcf48fd979790bf647d6"></a>
+<a class="el" href="struct_cv_point.html">CvPoint</a> <a class="el" href="struct_cv_size.html">CvSize</a>&#160;</td><td class="memItemRight" valign="bottom"><b>axes</b></td></tr>
+<tr class="separator:ga9447463cf154fcf48fd979790bf647d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae46c356ae5eae88e86de0945ecce535"><td class="memItemLeft" align="right" valign="top"><a id="gaae46c356ae5eae88e86de0945ecce535"></a>
+<a class="el" href="struct_cv_point.html">CvPoint</a> <a class="el" href="struct_cv_size.html">CvSize</a> double double&#160;</td><td class="memItemRight" valign="bottom"><b>start_angle</b></td></tr>
+<tr class="separator:gaae46c356ae5eae88e86de0945ecce535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab22642cd5bba446dbb60f72130849f91"><td class="memItemLeft" align="right" valign="top"><a id="gab22642cd5bba446dbb60f72130849f91"></a>
+<a class="el" href="struct_cv_point.html">CvPoint</a> <a class="el" href="struct_cv_size.html">CvSize</a> double double double&#160;</td><td class="memItemRight" valign="bottom"><b>end_angle</b></td></tr>
+<tr class="separator:gab22642cd5bba446dbb60f72130849f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacff1e04dbf54c9402fc4fedefd2c9b87"><td class="memItemLeft" align="right" valign="top"><a id="gacff1e04dbf54c9402fc4fedefd2c9b87"></a>
+const <a class="el" href="struct_cv_point.html">CvPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pts</b></td></tr>
+<tr class="separator:gacff1e04dbf54c9402fc4fedefd2c9b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0debf5ed31754cbe6a2d5d3799ac7d3"><td class="memItemLeft" align="right" valign="top"><a id="gaf0debf5ed31754cbe6a2d5d3799ac7d3"></a>
+const <a class="el" href="struct_cv_point.html">CvPoint</a> int&#160;</td><td class="memItemRight" valign="bottom"><b>npts</b></td></tr>
+<tr class="separator:gaf0debf5ed31754cbe6a2d5d3799ac7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2730ea8d331d56b653a9bd464800705"><td class="memItemLeft" align="right" valign="top"><a id="gad2730ea8d331d56b653a9bd464800705"></a>
+<a class="el" href="struct_cv_point.html">CvPoint</a> const int int&#160;</td><td class="memItemRight" valign="bottom"><b>contours</b></td></tr>
+<tr class="separator:gad2730ea8d331d56b653a9bd464800705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b4c20ad4606da0483131d8334887035"><td class="memItemLeft" align="right" valign="top"><a id="ga5b4c20ad4606da0483131d8334887035"></a>
+<a class="el" href="struct_cv_point.html">CvPoint</a> const int int int&#160;</td><td class="memItemRight" valign="bottom"><b>is_closed</b></td></tr>
+<tr class="separator:ga5b4c20ad4606da0483131d8334887035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga473ad7afd12dfd7f50bfdb121546ecf4"><td class="memItemLeft" align="right" valign="top"><a id="ga473ad7afd12dfd7f50bfdb121546ecf4"></a>
+<a class="el" href="struct_cv_point.html">CvPoint</a> <a class="el" href="struct_cv_point.html">CvPoint</a> <a class="el" href="struct_cv_line_iterator.html">CvLineIterator</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>line_iterator</b></td></tr>
+<tr class="separator:ga473ad7afd12dfd7f50bfdb121546ecf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c26418680b543c9d49e0fa50387beb7"><td class="memItemLeft" align="right" valign="top"><a id="ga2c26418680b543c9d49e0fa50387beb7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>font_face</b></td></tr>
+<tr class="separator:ga2c26418680b543c9d49e0fa50387beb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad232f4a0c75619f6771b77f139c428c1"><td class="memItemLeft" align="right" valign="top"><a id="gad232f4a0c75619f6771b77f139c428c1"></a>
+int double&#160;</td><td class="memItemRight" valign="bottom"><b>hscale</b></td></tr>
+<tr class="separator:gad232f4a0c75619f6771b77f139c428c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07f39c807f592c16df9e15d1f12b7f89"><td class="memItemLeft" align="right" valign="top"><a id="ga07f39c807f592c16df9e15d1f12b7f89"></a>
+int double double&#160;</td><td class="memItemRight" valign="bottom"><b>vscale</b></td></tr>
+<tr class="separator:ga07f39c807f592c16df9e15d1f12b7f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16343090e80c4472521560f30113d96c"><td class="memItemLeft" align="right" valign="top"><a id="ga16343090e80c4472521560f30113d96c"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>text</b></td></tr>
+<tr class="separator:ga16343090e80c4472521560f30113d96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64134bb6e06c9eb9e583ca404fb9ee5e"><td class="memItemLeft" align="right" valign="top"><a id="ga64134bb6e06c9eb9e583ca404fb9ee5e"></a>
+const char <a class="el" href="struct_cv_point.html">CvPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>org</b></td></tr>
+<tr class="separator:ga64134bb6e06c9eb9e583ca404fb9ee5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad88487f46962716845d7ae032190ba79"><td class="memItemLeft" align="right" valign="top"><a id="gad88487f46962716845d7ae032190ba79"></a>
+const char <a class="el" href="struct_cv_point.html">CvPoint</a> const <a class="el" href="struct_cv_font.html">CvFont</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>font</b></td></tr>
+<tr class="separator:gad88487f46962716845d7ae032190ba79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f3c7e3fafeab30d8b0fffe52ae5242b"><td class="memItemLeft" align="right" valign="top"><a id="ga3f3c7e3fafeab30d8b0fffe52ae5242b"></a>
+const <a class="el" href="struct_cv_font.html">CvFont</a> <a class="el" href="struct_cv_size.html">CvSize</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>text_size</b></td></tr>
+<tr class="separator:ga3f3c7e3fafeab30d8b0fffe52ae5242b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95651caa23acde12caf9a96e42a796ba"><td class="memItemLeft" align="right" valign="top"><a id="ga95651caa23acde12caf9a96e42a796ba"></a>
+const <a class="el" href="struct_cv_font.html">CvFont</a> <a class="el" href="struct_cv_size.html">CvSize</a> int *&#160;</td><td class="memItemRight" valign="bottom"><b>baseline</b></td></tr>
+<tr class="separator:ga95651caa23acde12caf9a96e42a796ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e193b91453df3db5e0f2b55326e1f46"><td class="memItemLeft" align="right" valign="top"><a id="ga4e193b91453df3db5e0f2b55326e1f46"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
+<tr class="separator:ga4e193b91453df3db5e0f2b55326e1f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga54049bf4c7b3eaadcc161d2a3385b1b8"><td class="memItemLeft" align="right" valign="top"><a id="ga54049bf4c7b3eaadcc161d2a3385b1b8"></a>
+<a class="el" href="struct_cv_size.html">CvSize</a> int int&#160;</td><td class="memItemRight" valign="bottom"><b>arc_start</b></td></tr>
+<tr class="separator:ga54049bf4c7b3eaadcc161d2a3385b1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8362b2b783fa9b5020f72d7c06cd723b"><td class="memItemLeft" align="right" valign="top"><a id="ga8362b2b783fa9b5020f72d7c06cd723b"></a>
+<a class="el" href="struct_cv_size.html">CvSize</a> int int int&#160;</td><td class="memItemRight" valign="bottom"><b>arc_end</b></td></tr>
+<tr class="separator:ga8362b2b783fa9b5020f72d7c06cd723b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5763d62f5c6f37e64f38d25dddcc10fa"><td class="memItemLeft" align="right" valign="top"><a id="ga5763d62f5c6f37e64f38d25dddcc10fa"></a>
+<a class="el" href="struct_cv_size.html">CvSize</a> int int int <a class="el" href="struct_cv_point.html">CvPoint</a> int&#160;</td><td class="memItemRight" valign="bottom"><b>delta</b></td></tr>
+<tr class="separator:ga5763d62f5c6f37e64f38d25dddcc10fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadbc53f0a2ae231f4fb30fb213be65a50"><td class="memItemLeft" align="right" valign="top"><a id="gadbc53f0a2ae231f4fb30fb213be65a50"></a>
+<a class="el" href="struct_cv_seq.html">CvSeq</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>contour</b></td></tr>
+<tr class="separator:gadbc53f0a2ae231f4fb30fb213be65a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8feb6df0c80b5756cb5f8247373b31f3"><td class="memItemLeft" align="right" valign="top"><a id="ga8feb6df0c80b5756cb5f8247373b31f3"></a>
+<a class="el" href="struct_cv_seq.html">CvSeq</a> <a class="el" href="struct_cv_scalar.html">CvScalar</a>&#160;</td><td class="memItemRight" valign="bottom"><b>external_color</b></td></tr>
+<tr class="separator:ga8feb6df0c80b5756cb5f8247373b31f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb721a49742abd2b77c1db98fe58c635"><td class="memItemLeft" align="right" valign="top"><a id="gafb721a49742abd2b77c1db98fe58c635"></a>
+<a class="el" href="struct_cv_seq.html">CvSeq</a> <a class="el" href="struct_cv_scalar.html">CvScalar</a> <a class="el" href="struct_cv_scalar.html">CvScalar</a>&#160;</td><td class="memItemRight" valign="bottom"><b>hole_color</b></td></tr>
+<tr class="separator:gafb721a49742abd2b77c1db98fe58c635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56d955ad271b90fdcbd2e6c96a9d4cd3"><td class="memItemLeft" align="right" valign="top"><a id="ga56d955ad271b90fdcbd2e6c96a9d4cd3"></a>
+<a class="el" href="struct_cv_seq.html">CvSeq</a> <a class="el" href="struct_cv_scalar.html">CvScalar</a> <a class="el" href="struct_cv_scalar.html">CvScalar</a> int&#160;</td><td class="memItemRight" valign="bottom"><b>max_level</b></td></tr>
+<tr class="separator:ga56d955ad271b90fdcbd2e6c96a9d4cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gadd47b69c3f9fc86ba30c92488645229d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadd47b69c3f9fc86ba30c92488645229d">&#9670;&nbsp;</a></span>CV_INIT_3X3_DELTAS <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd47b69c3f9fc86ba30c92488645229d">&#9670;&nbsp;</a></span>CV_INIT_3X3_DELTAS <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4049,7 +5047,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="gadd47b69c3f9fc86ba30c92488645229d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadd47b69c3f9fc86ba30c92488645229d">&#9670;&nbsp;</a></span>CV_INIT_3X3_DELTAS <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd47b69c3f9fc86ba30c92488645229d">&#9670;&nbsp;</a></span>CV_INIT_3X3_DELTAS <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4084,7 +5082,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="gadd47b69c3f9fc86ba30c92488645229d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadd47b69c3f9fc86ba30c92488645229d">&#9670;&nbsp;</a></span>CV_INIT_3X3_DELTAS <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd47b69c3f9fc86ba30c92488645229d">&#9670;&nbsp;</a></span>CV_INIT_3X3_DELTAS <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4119,7 +5117,42 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="gadd47b69c3f9fc86ba30c92488645229d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadd47b69c3f9fc86ba30c92488645229d">&#9670;&nbsp;</a></span>CV_INIT_3X3_DELTAS <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd47b69c3f9fc86ba30c92488645229d">&#9670;&nbsp;</a></span>CV_INIT_3X3_DELTAS <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CV_INIT_3X3_DELTAS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">deltas, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">step, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">nch&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">((deltas)[0] =  (nch),  (deltas)[1] = -(step) + (nch),  \</div><div class="line">     (deltas)[2] = -(step), (deltas)[3] = -(step) - (nch),  \</div><div class="line">     (deltas)[4] = -(nch),  (deltas)[5] =  (step) - (nch),  \</div><div class="line">     (deltas)[6] =  (step), (deltas)[7] =  (step) + (nch))</div></div><!-- fragment --><p>initializes 8-element array for fast access to 3x3 neighborhood of a pixel </p>
+
+</div>
+</div>
+<a id="gadd47b69c3f9fc86ba30c92488645229d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd47b69c3f9fc86ba30c92488645229d">&#9670;&nbsp;</a></span>CV_INIT_3X3_DELTAS <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4154,7 +5187,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga8d99d5caee87b79157e1b9d491be9c25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8d99d5caee87b79157e1b9d491be9c25">&#9670;&nbsp;</a></span>CV_NEXT_LINE_POINT <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d99d5caee87b79157e1b9d491be9c25">&#9670;&nbsp;</a></span>CV_NEXT_LINE_POINT <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4172,7 +5205,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga8d99d5caee87b79157e1b9d491be9c25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8d99d5caee87b79157e1b9d491be9c25">&#9670;&nbsp;</a></span>CV_NEXT_LINE_POINT <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d99d5caee87b79157e1b9d491be9c25">&#9670;&nbsp;</a></span>CV_NEXT_LINE_POINT <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4190,7 +5223,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga8d99d5caee87b79157e1b9d491be9c25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8d99d5caee87b79157e1b9d491be9c25">&#9670;&nbsp;</a></span>CV_NEXT_LINE_POINT <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d99d5caee87b79157e1b9d491be9c25">&#9670;&nbsp;</a></span>CV_NEXT_LINE_POINT <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4208,7 +5241,25 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga8d99d5caee87b79157e1b9d491be9c25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8d99d5caee87b79157e1b9d491be9c25">&#9670;&nbsp;</a></span>CV_NEXT_LINE_POINT <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d99d5caee87b79157e1b9d491be9c25">&#9670;&nbsp;</a></span>CV_NEXT_LINE_POINT <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CV_NEXT_LINE_POINT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">line_iterator</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{                                                               \</div><div class="line">    int _line_iterator_mask = (line_iterator).err &lt; 0 ? -1 : 0; \</div><div class="line">    (line_iterator).err += (line_iterator).minus_delta +        \</div><div class="line">        ((line_iterator).plus_delta &amp; _line_iterator_mask);     \</div><div class="line">    (line_iterator).ptr += (line_iterator).minus_step +         \</div><div class="line">        ((line_iterator).plus_step &amp; _line_iterator_mask);      \</div><div class="line">}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ga8d99d5caee87b79157e1b9d491be9c25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d99d5caee87b79157e1b9d491be9c25">&#9670;&nbsp;</a></span>CV_NEXT_LINE_POINT <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4227,7 +5278,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga126c3960af8241b0065211bcb0c4c4ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga126c3960af8241b0065211bcb0c4c4ee">&#9670;&nbsp;</a></span>CvChainPtReader <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga126c3960af8241b0065211bcb0c4c4ee">&#9670;&nbsp;</a></span>CvChainPtReader <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4243,7 +5294,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga126c3960af8241b0065211bcb0c4c4ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga126c3960af8241b0065211bcb0c4c4ee">&#9670;&nbsp;</a></span>CvChainPtReader <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga126c3960af8241b0065211bcb0c4c4ee">&#9670;&nbsp;</a></span>CvChainPtReader <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4259,7 +5310,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga126c3960af8241b0065211bcb0c4c4ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga126c3960af8241b0065211bcb0c4c4ee">&#9670;&nbsp;</a></span>CvChainPtReader <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga126c3960af8241b0065211bcb0c4c4ee">&#9670;&nbsp;</a></span>CvChainPtReader <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4275,7 +5326,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga126c3960af8241b0065211bcb0c4c4ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga126c3960af8241b0065211bcb0c4c4ee">&#9670;&nbsp;</a></span>CvChainPtReader <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga126c3960af8241b0065211bcb0c4c4ee">&#9670;&nbsp;</a></span>CvChainPtReader <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_cv_chain_pt_reader.html">CvChainPtReader</a>
+ <a class="el" href="struct_cv_chain_pt_reader.html">CvChainPtReader</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Freeman chain reader state </p>
+
+</div>
+</div>
+<a id="ga126c3960af8241b0065211bcb0c4c4ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga126c3960af8241b0065211bcb0c4c4ee">&#9670;&nbsp;</a></span>CvChainPtReader <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4291,7 +5358,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="gae187bc007c9e041da9b97dcfe0431b64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae187bc007c9e041da9b97dcfe0431b64">&#9670;&nbsp;</a></span>CvConnectedComp <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gae187bc007c9e041da9b97dcfe0431b64">&#9670;&nbsp;</a></span>CvConnectedComp <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4307,7 +5374,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="gae187bc007c9e041da9b97dcfe0431b64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae187bc007c9e041da9b97dcfe0431b64">&#9670;&nbsp;</a></span>CvConnectedComp <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gae187bc007c9e041da9b97dcfe0431b64">&#9670;&nbsp;</a></span>CvConnectedComp <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4323,7 +5390,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="gae187bc007c9e041da9b97dcfe0431b64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae187bc007c9e041da9b97dcfe0431b64">&#9670;&nbsp;</a></span>CvConnectedComp <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gae187bc007c9e041da9b97dcfe0431b64">&#9670;&nbsp;</a></span>CvConnectedComp <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4339,7 +5406,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="gae187bc007c9e041da9b97dcfe0431b64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae187bc007c9e041da9b97dcfe0431b64">&#9670;&nbsp;</a></span>CvConnectedComp <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gae187bc007c9e041da9b97dcfe0431b64">&#9670;&nbsp;</a></span>CvConnectedComp <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_cv_connected_comp.html">CvConnectedComp</a>
+ <a class="el" href="struct_cv_connected_comp.html">CvConnectedComp</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Connected component structure </p>
+
+</div>
+</div>
+<a id="gae187bc007c9e041da9b97dcfe0431b64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae187bc007c9e041da9b97dcfe0431b64">&#9670;&nbsp;</a></span>CvConnectedComp <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4355,7 +5438,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga601b02375a2915aa2e653562da03cd93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga601b02375a2915aa2e653562da03cd93">&#9670;&nbsp;</a></span>CvConvexityDefect <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga601b02375a2915aa2e653562da03cd93">&#9670;&nbsp;</a></span>CvConvexityDefect <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4370,7 +5453,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga601b02375a2915aa2e653562da03cd93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga601b02375a2915aa2e653562da03cd93">&#9670;&nbsp;</a></span>CvConvexityDefect <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga601b02375a2915aa2e653562da03cd93">&#9670;&nbsp;</a></span>CvConvexityDefect <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4385,7 +5468,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga601b02375a2915aa2e653562da03cd93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga601b02375a2915aa2e653562da03cd93">&#9670;&nbsp;</a></span>CvConvexityDefect <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga601b02375a2915aa2e653562da03cd93">&#9670;&nbsp;</a></span>CvConvexityDefect <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4400,7 +5483,22 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga601b02375a2915aa2e653562da03cd93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga601b02375a2915aa2e653562da03cd93">&#9670;&nbsp;</a></span>CvConvexityDefect <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga601b02375a2915aa2e653562da03cd93">&#9670;&nbsp;</a></span>CvConvexityDefect <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_cv_convexity_defect.html">CvConvexityDefect</a>  <a class="el" href="struct_cv_convexity_defect.html">CvConvexityDefect</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Convexity defect </p>
+
+</div>
+</div>
+<a id="ga601b02375a2915aa2e653562da03cd93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga601b02375a2915aa2e653562da03cd93">&#9670;&nbsp;</a></span>CvConvexityDefect <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4415,7 +5513,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga006b1ff87dfa7cf766db6c6a09a43310"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga006b1ff87dfa7cf766db6c6a09a43310">&#9670;&nbsp;</a></span>CvFont <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga006b1ff87dfa7cf766db6c6a09a43310">&#9670;&nbsp;</a></span>CvFont <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4431,7 +5529,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga006b1ff87dfa7cf766db6c6a09a43310"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga006b1ff87dfa7cf766db6c6a09a43310">&#9670;&nbsp;</a></span>CvFont <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga006b1ff87dfa7cf766db6c6a09a43310">&#9670;&nbsp;</a></span>CvFont <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4447,7 +5545,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga006b1ff87dfa7cf766db6c6a09a43310"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga006b1ff87dfa7cf766db6c6a09a43310">&#9670;&nbsp;</a></span>CvFont <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga006b1ff87dfa7cf766db6c6a09a43310">&#9670;&nbsp;</a></span>CvFont <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4463,7 +5561,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga006b1ff87dfa7cf766db6c6a09a43310"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga006b1ff87dfa7cf766db6c6a09a43310">&#9670;&nbsp;</a></span>CvFont <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga006b1ff87dfa7cf766db6c6a09a43310">&#9670;&nbsp;</a></span>CvFont <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_cv_font.html">CvFont</a>
+ <a class="el" href="struct_cv_font.html">CvFont</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Font structure </p>
+
+</div>
+</div>
+<a id="ga006b1ff87dfa7cf766db6c6a09a43310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga006b1ff87dfa7cf766db6c6a09a43310">&#9670;&nbsp;</a></span>CvFont <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4479,7 +5593,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga85a4d1d82e0dd8e0faa464584472747a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga85a4d1d82e0dd8e0faa464584472747a">&#9670;&nbsp;</a></span>CvHuMoments <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga85a4d1d82e0dd8e0faa464584472747a">&#9670;&nbsp;</a></span>CvHuMoments <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4495,7 +5609,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga85a4d1d82e0dd8e0faa464584472747a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga85a4d1d82e0dd8e0faa464584472747a">&#9670;&nbsp;</a></span>CvHuMoments <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga85a4d1d82e0dd8e0faa464584472747a">&#9670;&nbsp;</a></span>CvHuMoments <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4511,7 +5625,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga85a4d1d82e0dd8e0faa464584472747a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga85a4d1d82e0dd8e0faa464584472747a">&#9670;&nbsp;</a></span>CvHuMoments <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga85a4d1d82e0dd8e0faa464584472747a">&#9670;&nbsp;</a></span>CvHuMoments <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4527,7 +5641,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga85a4d1d82e0dd8e0faa464584472747a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga85a4d1d82e0dd8e0faa464584472747a">&#9670;&nbsp;</a></span>CvHuMoments <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga85a4d1d82e0dd8e0faa464584472747a">&#9670;&nbsp;</a></span>CvHuMoments <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_cv_hu_moments.html">CvHuMoments</a>
+ <a class="el" href="struct_cv_hu_moments.html">CvHuMoments</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Hu invariants </p>
+
+</div>
+</div>
+<a id="ga85a4d1d82e0dd8e0faa464584472747a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga85a4d1d82e0dd8e0faa464584472747a">&#9670;&nbsp;</a></span>CvHuMoments <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4543,7 +5673,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga738efca5ab93feb8333bbe24f8d57839"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga738efca5ab93feb8333bbe24f8d57839">&#9670;&nbsp;</a></span>CvMoments <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga738efca5ab93feb8333bbe24f8d57839">&#9670;&nbsp;</a></span>CvMoments <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4559,7 +5689,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga738efca5ab93feb8333bbe24f8d57839"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga738efca5ab93feb8333bbe24f8d57839">&#9670;&nbsp;</a></span>CvMoments <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga738efca5ab93feb8333bbe24f8d57839">&#9670;&nbsp;</a></span>CvMoments <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4575,7 +5705,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga738efca5ab93feb8333bbe24f8d57839"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga738efca5ab93feb8333bbe24f8d57839">&#9670;&nbsp;</a></span>CvMoments <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga738efca5ab93feb8333bbe24f8d57839">&#9670;&nbsp;</a></span>CvMoments <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4591,7 +5721,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga738efca5ab93feb8333bbe24f8d57839"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga738efca5ab93feb8333bbe24f8d57839">&#9670;&nbsp;</a></span>CvMoments <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga738efca5ab93feb8333bbe24f8d57839">&#9670;&nbsp;</a></span>CvMoments <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_cv_moments.html">CvMoments</a>
+ <a class="el" href="struct_cv_moments.html">CvMoments</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Spatial and central moments </p>
+
+</div>
+</div>
+<a id="ga738efca5ab93feb8333bbe24f8d57839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga738efca5ab93feb8333bbe24f8d57839">&#9670;&nbsp;</a></span>CvMoments <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6059,8 +7205,371 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 
 </div>
 </div>
+<a id="gaa1584402d41f56895b87dbf596adacab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa1584402d41f56895b87dbf596adacab">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Filters used in pyramid decomposition </p>
+
+</div>
+</div>
+<a id="ga25fedc2e05f00a733e7ac26dcd390d49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga25fedc2e05f00a733e7ac26dcd390d49">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Special filters </p>
+
+</div>
+</div>
+<a id="gae9659ba9c59ba63f32c7533e57ed37fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae9659ba9c59ba63f32c7533e57ed37fa">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constants for color conversion </p>
+
+</div>
+</div>
+<a id="ga8848ba91b4d70e862a9bef0c542166bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8848ba91b4d70e862a9bef0c542166bb">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sub-pixel interpolation methods </p>
+
+</div>
+</div>
+<a id="ga6ba449dd09c894762c7f8336ee806148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6ba449dd09c894762c7f8336ee806148">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>... and other image warping flags </p>
+
+</div>
+</div>
+<a id="gaeffec68eb0d26e6322d67290de23341e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeffec68eb0d26e6322d67290de23341e">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Morphological operations </p>
+
+</div>
+</div>
+<a id="ga7744dc40aef2cdb0b0167a0af2d61fa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7744dc40aef2cdb0b0167a0af2d61fa8">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Template matching methods </p>
+
+</div>
+</div>
+<a id="ga5bee302d8a6d0af3dceb2310b11aae71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5bee302d8a6d0af3dceb2310b11aae71">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Contour retrieval modes </p>
+
+</div>
+</div>
+<a id="ga4e54f8b856a226353648fe9bf3a2469d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e54f8b856a226353648fe9bf3a2469d">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Contour approximation methods </p>
+
+</div>
+</div>
+<a id="gaee16a1b9ad514650d7d3308e49406c56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaee16a1b9ad514650d7d3308e49406c56">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Contour approximation algorithms </p>
+
+</div>
+</div>
+<a id="gaaa2b1a4b4bb2459592cb9a8aa485d06e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa2b1a4b4bb2459592cb9a8aa485d06e">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Shape matching methods </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaaa2b1a4b4bb2459592cb9a8aa485d06ea6ae4597e01365cd5c3469dc2f5cd2fea"></a>CV_CONTOURS_MATCH_I1&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_1(A,B) = \sum _{i=1...7} \left | \frac{1}{m^A_i} - \frac{1}{m^B_i} \right |\]" src="form_387.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaaa2b1a4b4bb2459592cb9a8aa485d06eae3011fca74bc54836e9457de352069eb"></a>CV_CONTOURS_MATCH_I2&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_2(A,B) = \sum _{i=1...7} \left | m^A_i - m^B_i \right |\]" src="form_388.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaaa2b1a4b4bb2459592cb9a8aa485d06ead2141011f1cd57f6542c7da2412c9fe3"></a>CV_CONTOURS_MATCH_I3&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_3(A,B) = \max _{i=1...7} \frac{ \left| m^A_i - m^B_i \right| }{ \left| m^A_i \right| }\]" src="form_389.png"/>
+</p>
+ </td></tr>
+</table>
+
+</div>
+</div>
+<a id="gade2caa3ca29956195be6f188d00c1577"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gade2caa3ca29956195be6f188d00c1577">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Shape orientation </p>
+
+</div>
+</div>
+<a id="ga519bae2660fb22580b6cda9aea6efbd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga519bae2660fb22580b6cda9aea6efbd8">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Histogram comparison methods </p>
+
+</div>
+</div>
+<a id="ga13097a44ec8a9f86e0710092ce455686"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga13097a44ec8a9f86e0710092ce455686">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mask size for distance transform </p>
+
+</div>
+</div>
+<a id="ga149c9a7426d6d17eeb4c0b0ad8fab2d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga149c9a7426d6d17eeb4c0b0ad8fab2d8">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Content of output label array: connected components or pixels </p>
+
+</div>
+</div>
+<a id="ga5557bcc09802288f55bda4e41e1e6a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5557bcc09802288f55bda4e41e1e6a5f">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Distance types for Distance Transform and M-estimators </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5557bcc09802288f55bda4e41e1e6a5fa85dc4b9e7225ea418574237f0490b2a6"></a>CV_DIST_USER&#160;</td><td class="fielddoc"><p>User defined distance </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5557bcc09802288f55bda4e41e1e6a5fa0b4bea01885957ad908478061c57e67b"></a>CV_DIST_L1&#160;</td><td class="fielddoc"><p>distance = |x1-x2| + |y1-y2| </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5557bcc09802288f55bda4e41e1e6a5fae60a48ac6e8738abf6746c4beb4a9962"></a>CV_DIST_L2&#160;</td><td class="fielddoc"><p>the simple euclidean distance </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5557bcc09802288f55bda4e41e1e6a5fabac689302eb020962e5ef5615de87c07"></a>CV_DIST_C&#160;</td><td class="fielddoc"><p>distance = max(|x1-x2|,|y1-y2|) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5557bcc09802288f55bda4e41e1e6a5fae76bff7327eb425bf30cca11e4bc1387"></a>CV_DIST_L12&#160;</td><td class="fielddoc"><p>L1-L2 metric: distance = 2(sqrt(1+x*x/2) - 1)) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5557bcc09802288f55bda4e41e1e6a5fabcb84a93465c9ac0e37c0e17d0faae7e"></a>CV_DIST_FAIR&#160;</td><td class="fielddoc"><p>distance = c^2(|x|/c-log(1+|x|/c)), c = 1.3998 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5557bcc09802288f55bda4e41e1e6a5fac9d04b49e7f44944c936c707650327e4"></a>CV_DIST_WELSCH&#160;</td><td class="fielddoc"><p>distance = c^2/2(1-exp(-(x/c)^2)), c = 2.9846 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5557bcc09802288f55bda4e41e1e6a5fa1725669ada87a92eea265d0346d09513"></a>CV_DIST_HUBER&#160;</td><td class="fielddoc"><p>distance = |x|&lt;c ? x^2/2 : c(|x|-c/2), c=1.345 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gab77fb2611f2e1cadacc9bd3199428581"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab77fb2611f2e1cadacc9bd3199428581">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Threshold types </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab77fb2611f2e1cadacc9bd3199428581a6af8cb4caea50fb9578d4543aa7b6f20"></a>CV_THRESH_BINARY&#160;</td><td class="fielddoc"><p>value = value &gt; threshold ? max_value : 0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab77fb2611f2e1cadacc9bd3199428581a5605ead87cfc7a9a8daa1448f7fba488"></a>CV_THRESH_BINARY_INV&#160;</td><td class="fielddoc"><p>value = value &gt; threshold ? 0 : max_value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab77fb2611f2e1cadacc9bd3199428581ab24c5803c81111f2758c91b14dd48cf1"></a>CV_THRESH_TRUNC&#160;</td><td class="fielddoc"><p>value = value &gt; threshold ? threshold : value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab77fb2611f2e1cadacc9bd3199428581aaab30b5f1f73c2e5b280982f35d7c46d"></a>CV_THRESH_TOZERO&#160;</td><td class="fielddoc"><p>value = value &gt; threshold ? value : 0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab77fb2611f2e1cadacc9bd3199428581ac166f17f23efb6bcc221e9df92917de5"></a>CV_THRESH_TOZERO_INV&#160;</td><td class="fielddoc"><p>value = value &gt; threshold ? 0 : value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab77fb2611f2e1cadacc9bd3199428581a2456934f4f01402e80006a317ea2693e"></a>CV_THRESH_OTSU&#160;</td><td class="fielddoc"><p>use Otsu algorithm to choose the optimal threshold value; combine the flag with one of the above CV_THRESH_* values </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab77fb2611f2e1cadacc9bd3199428581ad963b0512c243be1ec737eadfc4f3cfe"></a>CV_THRESH_TRIANGLE&#160;</td><td class="fielddoc"><p>use Triangle algorithm to choose the optimal threshold value; combine the flag with one of the above CV_THRESH_* values, but not with CV_THRESH_OTSU </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaf175e39dfd1579f1352b872d55b1d917"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf175e39dfd1579f1352b872d55b1d917">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adaptive threshold methods </p>
+
+</div>
+</div>
+<a id="gaf2c2119b9b3f1cec7bdc74021c832037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2c2119b9b3f1cec7bdc74021c832037">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>FloodFill flags </p>
+
+</div>
+</div>
+<a id="gaea03429e255c6f8bc7307a836b204825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea03429e255c6f8bc7307a836b204825">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Canny edge detector flags </p>
+
+</div>
+</div>
+<a id="gad737bf65509f65c9b3dee69204d7fbb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad737bf65509f65c9b3dee69204d7fbb3">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Variants of a Hough transform </p>
+
+</div>
+</div>
 <a id="gab5b30479580723fe97bab56d9b69239d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab5b30479580723fe97bab56d9b69239d">&#9670;&nbsp;</a></span>MorphShapes_c <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5b30479580723fe97bab56d9b69239d">&#9670;&nbsp;</a></span>MorphShapes_c <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6073,6 +7582,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 <p>Shapes of a structuring element for morphological operations </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__imgproc__filter.html#gac2db39b56866583a95a5680313c314ad" title="shape of the structuring element">cv::MorphShapes</a>, <a class="el" href="group__imgproc__filter.html#ga37a6222e3e71b3c570d1e8cbb4582798" title="Returns a structuring element of the specified size and shape for morphological operations.">cv::getStructuringElement</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59"></a>CV_SHAPE_CUSTOM&#160;</td><td class="fielddoc"><p>custom structuring element </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59"></a>CV_SHAPE_CUSTOM&#160;</td><td class="fielddoc"><p>custom structuring element </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59"></a>CV_SHAPE_CUSTOM&#160;</td><td class="fielddoc"><p>custom structuring element </p>
 </td></tr>
@@ -6085,7 +7596,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="gab5b30479580723fe97bab56d9b69239d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab5b30479580723fe97bab56d9b69239d">&#9670;&nbsp;</a></span>MorphShapes_c <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5b30479580723fe97bab56d9b69239d">&#9670;&nbsp;</a></span>MorphShapes_c <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6098,6 +7609,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 <p>Shapes of a structuring element for morphological operations </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__imgproc__filter.html#gac2db39b56866583a95a5680313c314ad" title="shape of the structuring element">cv::MorphShapes</a>, <a class="el" href="group__imgproc__filter.html#ga37a6222e3e71b3c570d1e8cbb4582798" title="Returns a structuring element of the specified size and shape for morphological operations.">cv::getStructuringElement</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59"></a>CV_SHAPE_CUSTOM&#160;</td><td class="fielddoc"><p>custom structuring element </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59"></a>CV_SHAPE_CUSTOM&#160;</td><td class="fielddoc"><p>custom structuring element </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59"></a>CV_SHAPE_CUSTOM&#160;</td><td class="fielddoc"><p>custom structuring element </p>
 </td></tr>
@@ -6110,7 +7623,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="gab5b30479580723fe97bab56d9b69239d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab5b30479580723fe97bab56d9b69239d">&#9670;&nbsp;</a></span>MorphShapes_c <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5b30479580723fe97bab56d9b69239d">&#9670;&nbsp;</a></span>MorphShapes_c <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6123,6 +7636,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 <p>Shapes of a structuring element for morphological operations </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__imgproc__filter.html#gac2db39b56866583a95a5680313c314ad" title="shape of the structuring element">cv::MorphShapes</a>, <a class="el" href="group__imgproc__filter.html#ga37a6222e3e71b3c570d1e8cbb4582798" title="Returns a structuring element of the specified size and shape for morphological operations.">cv::getStructuringElement</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59"></a>CV_SHAPE_CUSTOM&#160;</td><td class="fielddoc"><p>custom structuring element </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59"></a>CV_SHAPE_CUSTOM&#160;</td><td class="fielddoc"><p>custom structuring element </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59"></a>CV_SHAPE_CUSTOM&#160;</td><td class="fielddoc"><p>custom structuring element </p>
 </td></tr>
@@ -6135,7 +7650,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="gab5b30479580723fe97bab56d9b69239d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab5b30479580723fe97bab56d9b69239d">&#9670;&nbsp;</a></span>MorphShapes_c <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5b30479580723fe97bab56d9b69239d">&#9670;&nbsp;</a></span>MorphShapes_c <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6148,6 +7663,35 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 <p>Shapes of a structuring element for morphological operations </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__imgproc__filter.html#gac2db39b56866583a95a5680313c314ad" title="shape of the structuring element">cv::MorphShapes</a>, <a class="el" href="group__imgproc__filter.html#ga37a6222e3e71b3c570d1e8cbb4582798" title="Returns a structuring element of the specified size and shape for morphological operations.">cv::getStructuringElement</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59"></a>CV_SHAPE_CUSTOM&#160;</td><td class="fielddoc"><p>custom structuring element </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59"></a>CV_SHAPE_CUSTOM&#160;</td><td class="fielddoc"><p>custom structuring element </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59"></a>CV_SHAPE_CUSTOM&#160;</td><td class="fielddoc"><p>custom structuring element </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59"></a>CV_SHAPE_CUSTOM&#160;</td><td class="fielddoc"><p>custom structuring element </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59"></a>CV_SHAPE_CUSTOM&#160;</td><td class="fielddoc"><p>custom structuring element </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gab5b30479580723fe97bab56d9b69239d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5b30479580723fe97bab56d9b69239d">&#9670;&nbsp;</a></span>MorphShapes_c <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgproc__c.html#gab5b30479580723fe97bab56d9b69239d">MorphShapes_c</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Shapes of a structuring element for morphological operations </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__imgproc__filter.html#gac2db39b56866583a95a5680313c314ad" title="shape of the structuring element">cv::MorphShapes</a>, <a class="el" href="group__imgproc__filter.html#ga37a6222e3e71b3c570d1e8cbb4582798" title="Returns a structuring element of the specified size and shape for morphological operations.">cv::getStructuringElement</a> </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59"></a>CV_SHAPE_CUSTOM&#160;</td><td class="fielddoc"><p>custom structuring element </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59"></a>CV_SHAPE_CUSTOM&#160;</td><td class="fielddoc"><p>custom structuring element </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggab5b30479580723fe97bab56d9b69239dae7372371053c086eb9cf79d41769af59"></a>CV_SHAPE_CUSTOM&#160;</td><td class="fielddoc"><p>custom structuring element </p>
 </td></tr>
@@ -6160,7 +7704,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </div>
 </div>
 <a id="ga68a3a4144ad5ad650bed7f0ede3611c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga68a3a4144ad5ad650bed7f0ede3611c2">&#9670;&nbsp;</a></span>SmoothMethod_c <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga68a3a4144ad5ad650bed7f0ede3611c2">&#9670;&nbsp;</a></span>SmoothMethod_c <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6212,12 +7756,22 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0"></a>CV_BILATERAL&#160;</td><td class="fielddoc"><p>bilateral filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture, color sigma= sigma1 and spatial sigma= sigma2. If size1=0, the aperture square side is set to cvRound(sigma2*1.5)*2+1. See <a class="el" href="group__imgproc__filter.html#ga0373f92a136e10e9ec7c90a82032a332" title="Applies the bilateral filter to an image.">cv::bilateralFilter</a> </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2aa06086448eff38b500b296baa0ff6590"></a>CV_BLUR_NO_SCALE&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's). If you want to smooth different pixels with different-size box kernels, you can use the integral image that is computed using integral </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9"></a>CV_BLUR&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's) with subsequent scaling by <img class="formulaInl" alt="$1/(\texttt{size1}\cdot\texttt{size2})$" src="form_385.png"/> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1"></a>CV_GAUSSIAN&#160;</td><td class="fielddoc"><p>linear convolution with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> Gaussian kernel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56"></a>CV_MEDIAN&#160;</td><td class="fielddoc"><p>median filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0"></a>CV_BILATERAL&#160;</td><td class="fielddoc"><p>bilateral filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture, color sigma= sigma1 and spatial sigma= sigma2. If size1=0, the aperture square side is set to cvRound(sigma2*1.5)*2+1. See <a class="el" href="group__imgproc__filter.html#ga0373f92a136e10e9ec7c90a82032a332" title="Applies the bilateral filter to an image.">cv::bilateralFilter</a> </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga68a3a4144ad5ad650bed7f0ede3611c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga68a3a4144ad5ad650bed7f0ede3611c2">&#9670;&nbsp;</a></span>SmoothMethod_c <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga68a3a4144ad5ad650bed7f0ede3611c2">&#9670;&nbsp;</a></span>SmoothMethod_c <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6269,12 +7823,22 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0"></a>CV_BILATERAL&#160;</td><td class="fielddoc"><p>bilateral filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture, color sigma= sigma1 and spatial sigma= sigma2. If size1=0, the aperture square side is set to cvRound(sigma2*1.5)*2+1. See <a class="el" href="group__imgproc__filter.html#ga0373f92a136e10e9ec7c90a82032a332" title="Applies the bilateral filter to an image.">cv::bilateralFilter</a> </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2aa06086448eff38b500b296baa0ff6590"></a>CV_BLUR_NO_SCALE&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's). If you want to smooth different pixels with different-size box kernels, you can use the integral image that is computed using integral </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9"></a>CV_BLUR&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's) with subsequent scaling by <img class="formulaInl" alt="$1/(\texttt{size1}\cdot\texttt{size2})$" src="form_385.png"/> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1"></a>CV_GAUSSIAN&#160;</td><td class="fielddoc"><p>linear convolution with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> Gaussian kernel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56"></a>CV_MEDIAN&#160;</td><td class="fielddoc"><p>median filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0"></a>CV_BILATERAL&#160;</td><td class="fielddoc"><p>bilateral filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture, color sigma= sigma1 and spatial sigma= sigma2. If size1=0, the aperture square side is set to cvRound(sigma2*1.5)*2+1. See <a class="el" href="group__imgproc__filter.html#ga0373f92a136e10e9ec7c90a82032a332" title="Applies the bilateral filter to an image.">cv::bilateralFilter</a> </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga68a3a4144ad5ad650bed7f0ede3611c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga68a3a4144ad5ad650bed7f0ede3611c2">&#9670;&nbsp;</a></span>SmoothMethod_c <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga68a3a4144ad5ad650bed7f0ede3611c2">&#9670;&nbsp;</a></span>SmoothMethod_c <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6326,12 +7890,22 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0"></a>CV_BILATERAL&#160;</td><td class="fielddoc"><p>bilateral filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture, color sigma= sigma1 and spatial sigma= sigma2. If size1=0, the aperture square side is set to cvRound(sigma2*1.5)*2+1. See <a class="el" href="group__imgproc__filter.html#ga0373f92a136e10e9ec7c90a82032a332" title="Applies the bilateral filter to an image.">cv::bilateralFilter</a> </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2aa06086448eff38b500b296baa0ff6590"></a>CV_BLUR_NO_SCALE&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's). If you want to smooth different pixels with different-size box kernels, you can use the integral image that is computed using integral </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9"></a>CV_BLUR&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's) with subsequent scaling by <img class="formulaInl" alt="$1/(\texttt{size1}\cdot\texttt{size2})$" src="form_385.png"/> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1"></a>CV_GAUSSIAN&#160;</td><td class="fielddoc"><p>linear convolution with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> Gaussian kernel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56"></a>CV_MEDIAN&#160;</td><td class="fielddoc"><p>median filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0"></a>CV_BILATERAL&#160;</td><td class="fielddoc"><p>bilateral filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture, color sigma= sigma1 and spatial sigma= sigma2. If size1=0, the aperture square side is set to cvRound(sigma2*1.5)*2+1. See <a class="el" href="group__imgproc__filter.html#ga0373f92a136e10e9ec7c90a82032a332" title="Applies the bilateral filter to an image.">cv::bilateralFilter</a> </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga68a3a4144ad5ad650bed7f0ede3611c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga68a3a4144ad5ad650bed7f0ede3611c2">&#9670;&nbsp;</a></span>SmoothMethod_c <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga68a3a4144ad5ad650bed7f0ede3611c2">&#9670;&nbsp;</a></span>SmoothMethod_c <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6344,6 +7918,83 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>arrtype</b></td></tr>
 <p>Image smooth methods </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2aa06086448eff38b500b296baa0ff6590"></a>CV_BLUR_NO_SCALE&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's). If you want to smooth different pixels with different-size box kernels, you can use the integral image that is computed using integral </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9"></a>CV_BLUR&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's) with subsequent scaling by <img class="formulaInl" alt="$1/(\texttt{size1}\cdot\texttt{size2})$" src="form_385.png"/> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1"></a>CV_GAUSSIAN&#160;</td><td class="fielddoc"><p>linear convolution with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> Gaussian kernel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56"></a>CV_MEDIAN&#160;</td><td class="fielddoc"><p>median filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0"></a>CV_BILATERAL&#160;</td><td class="fielddoc"><p>bilateral filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture, color sigma= sigma1 and spatial sigma= sigma2. If size1=0, the aperture square side is set to cvRound(sigma2*1.5)*2+1. See <a class="el" href="group__imgproc__filter.html#ga0373f92a136e10e9ec7c90a82032a332" title="Applies the bilateral filter to an image.">cv::bilateralFilter</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2aa06086448eff38b500b296baa0ff6590"></a>CV_BLUR_NO_SCALE&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's). If you want to smooth different pixels with different-size box kernels, you can use the integral image that is computed using integral </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9"></a>CV_BLUR&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's) with subsequent scaling by <img class="formulaInl" alt="$1/(\texttt{size1}\cdot\texttt{size2})$" src="form_385.png"/> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1"></a>CV_GAUSSIAN&#160;</td><td class="fielddoc"><p>linear convolution with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> Gaussian kernel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56"></a>CV_MEDIAN&#160;</td><td class="fielddoc"><p>median filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0"></a>CV_BILATERAL&#160;</td><td class="fielddoc"><p>bilateral filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture, color sigma= sigma1 and spatial sigma= sigma2. If size1=0, the aperture square side is set to cvRound(sigma2*1.5)*2+1. See <a class="el" href="group__imgproc__filter.html#ga0373f92a136e10e9ec7c90a82032a332" title="Applies the bilateral filter to an image.">cv::bilateralFilter</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2aa06086448eff38b500b296baa0ff6590"></a>CV_BLUR_NO_SCALE&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's). If you want to smooth different pixels with different-size box kernels, you can use the integral image that is computed using integral </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9"></a>CV_BLUR&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's) with subsequent scaling by <img class="formulaInl" alt="$1/(\texttt{size1}\cdot\texttt{size2})$" src="form_385.png"/> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1"></a>CV_GAUSSIAN&#160;</td><td class="fielddoc"><p>linear convolution with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> Gaussian kernel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56"></a>CV_MEDIAN&#160;</td><td class="fielddoc"><p>median filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0"></a>CV_BILATERAL&#160;</td><td class="fielddoc"><p>bilateral filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture, color sigma= sigma1 and spatial sigma= sigma2. If size1=0, the aperture square side is set to cvRound(sigma2*1.5)*2+1. See <a class="el" href="group__imgproc__filter.html#ga0373f92a136e10e9ec7c90a82032a332" title="Applies the bilateral filter to an image.">cv::bilateralFilter</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2aa06086448eff38b500b296baa0ff6590"></a>CV_BLUR_NO_SCALE&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's). If you want to smooth different pixels with different-size box kernels, you can use the integral image that is computed using integral </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9"></a>CV_BLUR&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's) with subsequent scaling by <img class="formulaInl" alt="$1/(\texttt{size1}\cdot\texttt{size2})$" src="form_385.png"/> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1"></a>CV_GAUSSIAN&#160;</td><td class="fielddoc"><p>linear convolution with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> Gaussian kernel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56"></a>CV_MEDIAN&#160;</td><td class="fielddoc"><p>median filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0"></a>CV_BILATERAL&#160;</td><td class="fielddoc"><p>bilateral filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture, color sigma= sigma1 and spatial sigma= sigma2. If size1=0, the aperture square side is set to cvRound(sigma2*1.5)*2+1. See <a class="el" href="group__imgproc__filter.html#ga0373f92a136e10e9ec7c90a82032a332" title="Applies the bilateral filter to an image.">cv::bilateralFilter</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2aa06086448eff38b500b296baa0ff6590"></a>CV_BLUR_NO_SCALE&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's). If you want to smooth different pixels with different-size box kernels, you can use the integral image that is computed using integral </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9"></a>CV_BLUR&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's) with subsequent scaling by <img class="formulaInl" alt="$1/(\texttt{size1}\cdot\texttt{size2})$" src="form_385.png"/> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1"></a>CV_GAUSSIAN&#160;</td><td class="fielddoc"><p>linear convolution with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> Gaussian kernel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56"></a>CV_MEDIAN&#160;</td><td class="fielddoc"><p>median filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0"></a>CV_BILATERAL&#160;</td><td class="fielddoc"><p>bilateral filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture, color sigma= sigma1 and spatial sigma= sigma2. If size1=0, the aperture square side is set to cvRound(sigma2*1.5)*2+1. See <a class="el" href="group__imgproc__filter.html#ga0373f92a136e10e9ec7c90a82032a332" title="Applies the bilateral filter to an image.">cv::bilateralFilter</a> </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga68a3a4144ad5ad650bed7f0ede3611c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga68a3a4144ad5ad650bed7f0ede3611c2">&#9670;&nbsp;</a></span>SmoothMethod_c <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgproc__c.html#ga68a3a4144ad5ad650bed7f0ede3611c2">SmoothMethod_c</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Image smooth methods </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2aa06086448eff38b500b296baa0ff6590"></a>CV_BLUR_NO_SCALE&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's). If you want to smooth different pixels with different-size box kernels, you can use the integral image that is computed using integral </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9"></a>CV_BLUR&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's) with subsequent scaling by <img class="formulaInl" alt="$1/(\texttt{size1}\cdot\texttt{size2})$" src="form_385.png"/> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2a5f9c9d19089c103e1324b65ef51b77b1"></a>CV_GAUSSIAN&#160;</td><td class="fielddoc"><p>linear convolution with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> Gaussian kernel </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2a0110fa78c2574e7eceb7e4d3a9015a56"></a>CV_MEDIAN&#160;</td><td class="fielddoc"><p>median filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2af3992d7005749422f871b7ea70e975b0"></a>CV_BILATERAL&#160;</td><td class="fielddoc"><p>bilateral filter with a <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size1}$" src="form_386.png"/> square aperture, color sigma= sigma1 and spatial sigma= sigma2. If size1=0, the aperture square side is set to cvRound(sigma2*1.5)*2+1. See <a class="el" href="group__imgproc__filter.html#ga0373f92a136e10e9ec7c90a82032a332" title="Applies the bilateral filter to an image.">cv::bilateralFilter</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2aa06086448eff38b500b296baa0ff6590"></a>CV_BLUR_NO_SCALE&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's). If you want to smooth different pixels with different-size box kernels, you can use the integral image that is computed using integral </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga68a3a4144ad5ad650bed7f0ede3611c2abd20b6c1b1f0779073712a370a3c64f9"></a>CV_BLUR&#160;</td><td class="fielddoc"><p>linear convolution with <img class="formulaInl" alt="$\texttt{size1}\times\texttt{size2}$" src="form_384.png"/> box kernel (all 1's) with subsequent scaling by <img class="formulaInl" alt="$1/(\texttt{size1}\cdot\texttt{size2})$" src="form_385.png"/> </p>
 </td></tr>

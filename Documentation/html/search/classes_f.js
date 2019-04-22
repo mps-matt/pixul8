@@ -46,7 +46,7 @@ var searchData=
   ['planeportraitprojector',['PlanePortraitProjector',['../structcv_1_1detail_1_1_plane_portrait_projector.html',1,'cv::detail']]],
   ['planeportraitwarper',['PlanePortraitWarper',['../classcv_1_1detail_1_1_plane_portrait_warper.html',1,'cv::detail']]],
   ['planeprojector',['PlaneProjector',['../structcv_1_1detail_1_1_plane_projector.html',1,'cv::detail']]],
-  ['planewarper',['PlaneWarper',['../classcv_1_1_plane_warper.html',1,'cv::PlaneWarper'],['../classcv_1_1detail_1_1_plane_warper.html',1,'cv::detail::PlaneWarper']]],
+  ['planewarper',['PlaneWarper',['../classcv_1_1detail_1_1_plane_warper.html',1,'cv::detail::PlaneWarper'],['../classcv_1_1_plane_warper.html',1,'cv::PlaneWarper']]],
   ['planewarpergpu',['PlaneWarperGpu',['../classcv_1_1detail_1_1_plane_warper_gpu.html',1,'cv::detail']]],
   ['platform',['Platform',['../classcv_1_1ocl_1_1_platform.html',1,'cv::ocl']]],
   ['platforminfo',['PlatformInfo',['../classcv_1_1ocl_1_1_platform_info.html',1,'cv::ocl']]],

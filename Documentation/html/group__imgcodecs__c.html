@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: C API</title>
+<title>PixUl8: C API</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -76,6 +74,15 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:gae2412bc5e976253abcce89bc1ee92ab6"><td class="memItemLeft" align="right" valign="top"><a id="gae2412bc5e976253abcce89bc1ee92ab6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>cvvLoadImage</b>(name)&#160;&#160;&#160;cvLoadImage((name),1)</td></tr>
+<tr class="separator:gae2412bc5e976253abcce89bc1ee92ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga874c7044a7cffb0eb1bd938b2fa769e6"><td class="memItemLeft" align="right" valign="top"><a id="ga874c7044a7cffb0eb1bd938b2fa769e6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>cvvSaveImage</b>&#160;&#160;&#160;cvSaveImage</td></tr>
+<tr class="separator:ga874c7044a7cffb0eb1bd938b2fa769e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeafc2cc810c00a91c8e33d0c5f701630"><td class="memItemLeft" align="right" valign="top"><a id="gaeafc2cc810c00a91c8e33d0c5f701630"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>cvvConvertImage</b>&#160;&#160;&#160;cvConvertImage</td></tr>
+<tr class="separator:gaeafc2cc810c00a91c8e33d0c5f701630"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae2412bc5e976253abcce89bc1ee92ab6"><td class="memItemLeft" align="right" valign="top"><a id="gae2412bc5e976253abcce89bc1ee92ab6"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>cvvLoadImage</b>(name)&#160;&#160;&#160;cvLoadImage((name),1)</td></tr>
 <tr class="separator:gae2412bc5e976253abcce89bc1ee92ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -307,6 +314,54 @@ Enumerations</h2></td></tr>
 <b>CV_CVTIMG_SWAP_RB</b> =2
  }</td></tr>
 <tr class="separator:gae1878ac4294a2bc52aea03eb107a1a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc0c38f700ebf3e7a492bff433e2f82d"><td class="memItemLeft" align="right" valign="top"><a id="gacc0c38f700ebf3e7a492bff433e2f82d"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>CV_LOAD_IMAGE_UNCHANGED</b> =-1, 
+<b>CV_LOAD_IMAGE_GRAYSCALE</b> =0, 
+<b>CV_LOAD_IMAGE_COLOR</b> =1, 
+<b>CV_LOAD_IMAGE_ANYDEPTH</b> =2, 
+<br />
+&#160;&#160;<b>CV_LOAD_IMAGE_ANYCOLOR</b> =4, 
+<b>CV_LOAD_IMAGE_IGNORE_ORIENTATION</b> =128
+<br />
+ }</td></tr>
+<tr class="separator:gacc0c38f700ebf3e7a492bff433e2f82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53c34ce12fcc0006a2ff6626ef1a167a"><td class="memItemLeft" align="right" valign="top"><a id="ga53c34ce12fcc0006a2ff6626ef1a167a"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>CV_IMWRITE_JPEG_QUALITY</b> =1, 
+<b>CV_IMWRITE_JPEG_PROGRESSIVE</b> =2, 
+<b>CV_IMWRITE_JPEG_OPTIMIZE</b> =3, 
+<b>CV_IMWRITE_JPEG_RST_INTERVAL</b> =4, 
+<br />
+&#160;&#160;<b>CV_IMWRITE_JPEG_LUMA_QUALITY</b> =5, 
+<b>CV_IMWRITE_JPEG_CHROMA_QUALITY</b> =6, 
+<b>CV_IMWRITE_PNG_COMPRESSION</b> =16, 
+<b>CV_IMWRITE_PNG_STRATEGY</b> =17, 
+<br />
+&#160;&#160;<b>CV_IMWRITE_PNG_BILEVEL</b> =18, 
+<b>CV_IMWRITE_PNG_STRATEGY_DEFAULT</b> =0, 
+<b>CV_IMWRITE_PNG_STRATEGY_FILTERED</b> =1, 
+<b>CV_IMWRITE_PNG_STRATEGY_HUFFMAN_ONLY</b> =2, 
+<br />
+&#160;&#160;<b>CV_IMWRITE_PNG_STRATEGY_RLE</b> =3, 
+<b>CV_IMWRITE_PNG_STRATEGY_FIXED</b> =4, 
+<b>CV_IMWRITE_PXM_BINARY</b> =32, 
+<b>CV_IMWRITE_EXR_TYPE</b> = 48, 
+<br />
+&#160;&#160;<b>CV_IMWRITE_WEBP_QUALITY</b> =64, 
+<b>CV_IMWRITE_PAM_TUPLETYPE</b> = 128, 
+<b>CV_IMWRITE_PAM_FORMAT_NULL</b> = 0, 
+<b>CV_IMWRITE_PAM_FORMAT_BLACKANDWHITE</b> = 1, 
+<br />
+&#160;&#160;<b>CV_IMWRITE_PAM_FORMAT_GRAYSCALE</b> = 2, 
+<b>CV_IMWRITE_PAM_FORMAT_GRAYSCALE_ALPHA</b> = 3, 
+<b>CV_IMWRITE_PAM_FORMAT_RGB</b> = 4, 
+<b>CV_IMWRITE_PAM_FORMAT_RGB_ALPHA</b> = 5
+<br />
+ }</td></tr>
+<tr class="separator:ga53c34ce12fcc0006a2ff6626ef1a167a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacef0e9915c7819215e3a44e70da721cd"><td class="memItemLeft" align="right" valign="top"><a id="gacef0e9915c7819215e3a44e70da721cd"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CV_CVTIMG_FLIP</b> =1, 
+<b>CV_CVTIMG_SWAP_RB</b> =2
+ }</td></tr>
+<tr class="separator:gacef0e9915c7819215e3a44e70da721cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -331,6 +386,12 @@ const <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:gad62b16ab219ae2483e8a3d921c44cc97"><td class="memItemLeft" align="right" valign="top"><a id="gad62b16ab219ae2483e8a3d921c44cc97"></a>
+const <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>image</b></td></tr>
+<tr class="separator:gad62b16ab219ae2483e8a3d921c44cc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf2b96e41a49dc4d072b2a0707f56596"><td class="memItemLeft" align="right" valign="top"><a id="gaaf2b96e41a49dc4d072b2a0707f56596"></a>
+<a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>dst</b></td></tr>
+<tr class="separator:gaaf2b96e41a49dc4d072b2a0707f56596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad62b16ab219ae2483e8a3d921c44cc97"><td class="memItemLeft" align="right" valign="top"><a id="gad62b16ab219ae2483e8a3d921c44cc97"></a>
 const <a class="el" href="group__core__c.html#gac5046bc0456e9295d80b37774384798c">CvArr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>image</b></td></tr>
 <tr class="separator:gad62b16ab219ae2483e8a3d921c44cc97"><td class="memSeparator" colspan="2">&#160;</td></tr>

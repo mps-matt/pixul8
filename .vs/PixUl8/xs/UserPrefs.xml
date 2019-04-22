@@ -1,8 +1,5 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8.Tests/BaseViewModelTests.cs">
-    <Files>
-      <File FileName="PixUl8.Tests/BaseViewModelTests.cs" Line="77" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">

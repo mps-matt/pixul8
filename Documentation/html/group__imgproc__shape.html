@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: Imgproc_shape</title>
+<title>PixUl8: Imgproc_shape</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -122,6 +120,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3">cv::CC_STAT_WIDTH</a> = 2, 
 <a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0">cv::CC_STAT_HEIGHT</a> = 3, 
 <a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420">cv::CC_STAT_AREA</a> = 4, 
+<b>CC_STAT_MAX</b> = 5, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a8a0c81e606e442a2bf4746b1abc2a3d7">cv::CC_STAT_LEFT</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a695f44a2482881b5c0bd3033b5ee7947">cv::CC_STAT_TOP</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3">cv::CC_STAT_WIDTH</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0">cv::CC_STAT_HEIGHT</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420">cv::CC_STAT_AREA</a> = 4, 
 <b>CC_STAT_MAX</b> = 5
 <br />
  }</td></tr>
@@ -140,6 +146,10 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e">cv::CCL_GRANA</a> = 1, 
 <a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd">cv::CCL_WU</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43">cv::CCL_DEFAULT</a> = -1, 
+<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e">cv::CCL_GRANA</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd">cv::CCL_WU</a> = 0, 
 <a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43">cv::CCL_DEFAULT</a> = -1, 
 <a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e">cv::CCL_GRANA</a> = 1
 <br />
@@ -170,12 +180,24 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d">cv::RETR_LIST</a> = 1, 
 <a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b">cv::RETR_CCOMP</a> = 2, 
 <a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3">cv::RETR_TREE</a> = 3, 
-<b>RETR_FLOODFILL</b> = 4
+<b>RETR_FLOODFILL</b> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7">cv::RETR_EXTERNAL</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d">cv::RETR_LIST</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b">cv::RETR_CCOMP</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3">cv::RETR_TREE</a> = 3, 
+<br />
+&#160;&#160;<b>RETR_FLOODFILL</b> = 4
 <br />
  }</td></tr>
 <tr class="memdesc:ga819779b9857cc2f8601e6526a3a5bc71"><td class="mdescLeft">&#160;</td><td class="mdescRight">mode of the contour retrieval algorithm  <a href="group__imgproc__shape.html#ga819779b9857cc2f8601e6526a3a5bc71">More...</a><br /></td></tr>
 <tr class="separator:ga819779b9857cc2f8601e6526a3a5bc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4303f45752694956374734a03c54d5ff"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__shape.html#ga4303f45752694956374734a03c54d5ff">cv::ContourApproximationModes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281">cv::CHAIN_APPROX_NONE</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921">cv::CHAIN_APPROX_SIMPLE</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f">cv::CHAIN_APPROX_TC89_L1</a> = 3, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2">cv::CHAIN_APPROX_TC89_KCOS</a> = 4, 
+<br />
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281">cv::CHAIN_APPROX_NONE</a> = 1, 
 <a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921">cv::CHAIN_APPROX_SIMPLE</a> = 2, 
 <a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f">cv::CHAIN_APPROX_TC89_L1</a> = 3, 
@@ -213,6 +235,10 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0">cv::CONTOURS_MATCH_I3</a> =3, 
 <a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a">cv::CONTOURS_MATCH_I1</a> =1, 
 <a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae">cv::CONTOURS_MATCH_I2</a> =2, 
+<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0">cv::CONTOURS_MATCH_I3</a> =3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a">cv::CONTOURS_MATCH_I1</a> =1, 
+<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae">cv::CONTOURS_MATCH_I2</a> =2, 
 <a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0">cv::CONTOURS_MATCH_I3</a> =3
 <br />
  }</td></tr>
@@ -231,6 +257,10 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158">cv::INTERSECT_FULL</a> = 2, 
 <a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931">cv::INTERSECT_NONE</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324">cv::INTERSECT_PARTIAL</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158">cv::INTERSECT_FULL</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931">cv::INTERSECT_NONE</a> = 0, 
 <a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324">cv::INTERSECT_PARTIAL</a> = 1, 
 <a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158">cv::INTERSECT_FULL</a> = 2
 <br />
@@ -266,6 +296,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3">cv::CC_STAT_WIDTH</a> = 2, 
 <a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0">cv::CC_STAT_HEIGHT</a> = 3, 
 <a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420">cv::CC_STAT_AREA</a> = 4, 
+<b>CC_STAT_MAX</b> = 5, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a8a0c81e606e442a2bf4746b1abc2a3d7">cv::CC_STAT_LEFT</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a695f44a2482881b5c0bd3033b5ee7947">cv::CC_STAT_TOP</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3">cv::CC_STAT_WIDTH</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0">cv::CC_STAT_HEIGHT</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420">cv::CC_STAT_AREA</a> = 4, 
 <b>CC_STAT_MAX</b> = 5
 <br />
  }</td></tr>
@@ -284,6 +322,10 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e">cv::CCL_GRANA</a> = 1, 
 <a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd">cv::CCL_WU</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43">cv::CCL_DEFAULT</a> = -1, 
+<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e">cv::CCL_GRANA</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd">cv::CCL_WU</a> = 0, 
 <a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43">cv::CCL_DEFAULT</a> = -1, 
 <a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e">cv::CCL_GRANA</a> = 1
 <br />
@@ -314,12 +356,24 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d">cv::RETR_LIST</a> = 1, 
 <a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b">cv::RETR_CCOMP</a> = 2, 
 <a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3">cv::RETR_TREE</a> = 3, 
-<b>RETR_FLOODFILL</b> = 4
+<b>RETR_FLOODFILL</b> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7">cv::RETR_EXTERNAL</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d">cv::RETR_LIST</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b">cv::RETR_CCOMP</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3">cv::RETR_TREE</a> = 3, 
+<br />
+&#160;&#160;<b>RETR_FLOODFILL</b> = 4
 <br />
  }</td></tr>
 <tr class="memdesc:ga819779b9857cc2f8601e6526a3a5bc71"><td class="mdescLeft">&#160;</td><td class="mdescRight">mode of the contour retrieval algorithm  <a href="group__imgproc__shape.html#ga819779b9857cc2f8601e6526a3a5bc71">More...</a><br /></td></tr>
 <tr class="separator:ga819779b9857cc2f8601e6526a3a5bc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4303f45752694956374734a03c54d5ff"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__shape.html#ga4303f45752694956374734a03c54d5ff">cv::ContourApproximationModes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281">cv::CHAIN_APPROX_NONE</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921">cv::CHAIN_APPROX_SIMPLE</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f">cv::CHAIN_APPROX_TC89_L1</a> = 3, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2">cv::CHAIN_APPROX_TC89_KCOS</a> = 4, 
+<br />
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281">cv::CHAIN_APPROX_NONE</a> = 1, 
 <a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921">cv::CHAIN_APPROX_SIMPLE</a> = 2, 
 <a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f">cv::CHAIN_APPROX_TC89_L1</a> = 3, 
@@ -357,6 +411,10 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0">cv::CONTOURS_MATCH_I3</a> =3, 
 <a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a">cv::CONTOURS_MATCH_I1</a> =1, 
 <a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae">cv::CONTOURS_MATCH_I2</a> =2, 
+<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0">cv::CONTOURS_MATCH_I3</a> =3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a">cv::CONTOURS_MATCH_I1</a> =1, 
+<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae">cv::CONTOURS_MATCH_I2</a> =2, 
 <a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0">cv::CONTOURS_MATCH_I3</a> =3
 <br />
  }</td></tr>
@@ -375,6 +433,10 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158">cv::INTERSECT_FULL</a> = 2, 
 <a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931">cv::INTERSECT_NONE</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324">cv::INTERSECT_PARTIAL</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158">cv::INTERSECT_FULL</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931">cv::INTERSECT_NONE</a> = 0, 
 <a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324">cv::INTERSECT_PARTIAL</a> = 1, 
 <a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158">cv::INTERSECT_FULL</a> = 2
 <br />
@@ -410,6 +472,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3">cv::CC_STAT_WIDTH</a> = 2, 
 <a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0">cv::CC_STAT_HEIGHT</a> = 3, 
 <a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420">cv::CC_STAT_AREA</a> = 4, 
+<b>CC_STAT_MAX</b> = 5, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a8a0c81e606e442a2bf4746b1abc2a3d7">cv::CC_STAT_LEFT</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a695f44a2482881b5c0bd3033b5ee7947">cv::CC_STAT_TOP</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3">cv::CC_STAT_WIDTH</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0">cv::CC_STAT_HEIGHT</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420">cv::CC_STAT_AREA</a> = 4, 
 <b>CC_STAT_MAX</b> = 5
 <br />
  }</td></tr>
@@ -428,6 +498,10 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e">cv::CCL_GRANA</a> = 1, 
 <a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd">cv::CCL_WU</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43">cv::CCL_DEFAULT</a> = -1, 
+<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e">cv::CCL_GRANA</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd">cv::CCL_WU</a> = 0, 
 <a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43">cv::CCL_DEFAULT</a> = -1, 
 <a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e">cv::CCL_GRANA</a> = 1
 <br />
@@ -458,12 +532,24 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d">cv::RETR_LIST</a> = 1, 
 <a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b">cv::RETR_CCOMP</a> = 2, 
 <a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3">cv::RETR_TREE</a> = 3, 
-<b>RETR_FLOODFILL</b> = 4
+<b>RETR_FLOODFILL</b> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7">cv::RETR_EXTERNAL</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d">cv::RETR_LIST</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b">cv::RETR_CCOMP</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3">cv::RETR_TREE</a> = 3, 
+<br />
+&#160;&#160;<b>RETR_FLOODFILL</b> = 4
 <br />
  }</td></tr>
 <tr class="memdesc:ga819779b9857cc2f8601e6526a3a5bc71"><td class="mdescLeft">&#160;</td><td class="mdescRight">mode of the contour retrieval algorithm  <a href="group__imgproc__shape.html#ga819779b9857cc2f8601e6526a3a5bc71">More...</a><br /></td></tr>
 <tr class="separator:ga819779b9857cc2f8601e6526a3a5bc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4303f45752694956374734a03c54d5ff"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__shape.html#ga4303f45752694956374734a03c54d5ff">cv::ContourApproximationModes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281">cv::CHAIN_APPROX_NONE</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921">cv::CHAIN_APPROX_SIMPLE</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f">cv::CHAIN_APPROX_TC89_L1</a> = 3, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2">cv::CHAIN_APPROX_TC89_KCOS</a> = 4, 
+<br />
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281">cv::CHAIN_APPROX_NONE</a> = 1, 
 <a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921">cv::CHAIN_APPROX_SIMPLE</a> = 2, 
 <a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f">cv::CHAIN_APPROX_TC89_L1</a> = 3, 
@@ -501,6 +587,10 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0">cv::CONTOURS_MATCH_I3</a> =3, 
 <a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a">cv::CONTOURS_MATCH_I1</a> =1, 
 <a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae">cv::CONTOURS_MATCH_I2</a> =2, 
+<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0">cv::CONTOURS_MATCH_I3</a> =3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a">cv::CONTOURS_MATCH_I1</a> =1, 
+<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae">cv::CONTOURS_MATCH_I2</a> =2, 
 <a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0">cv::CONTOURS_MATCH_I3</a> =3
 <br />
  }</td></tr>
@@ -519,6 +609,10 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158">cv::INTERSECT_FULL</a> = 2, 
 <a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931">cv::INTERSECT_NONE</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324">cv::INTERSECT_PARTIAL</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158">cv::INTERSECT_FULL</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931">cv::INTERSECT_NONE</a> = 0, 
 <a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324">cv::INTERSECT_PARTIAL</a> = 1, 
 <a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158">cv::INTERSECT_FULL</a> = 2
 <br />
@@ -554,6 +648,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3">cv::CC_STAT_WIDTH</a> = 2, 
 <a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0">cv::CC_STAT_HEIGHT</a> = 3, 
 <a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420">cv::CC_STAT_AREA</a> = 4, 
+<b>CC_STAT_MAX</b> = 5, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a8a0c81e606e442a2bf4746b1abc2a3d7">cv::CC_STAT_LEFT</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a695f44a2482881b5c0bd3033b5ee7947">cv::CC_STAT_TOP</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3">cv::CC_STAT_WIDTH</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0">cv::CC_STAT_HEIGHT</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420">cv::CC_STAT_AREA</a> = 4, 
 <b>CC_STAT_MAX</b> = 5
 <br />
  }</td></tr>
@@ -572,6 +674,10 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e">cv::CCL_GRANA</a> = 1, 
 <a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd">cv::CCL_WU</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43">cv::CCL_DEFAULT</a> = -1, 
+<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e">cv::CCL_GRANA</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd">cv::CCL_WU</a> = 0, 
 <a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43">cv::CCL_DEFAULT</a> = -1, 
 <a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e">cv::CCL_GRANA</a> = 1
 <br />
@@ -602,12 +708,24 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d">cv::RETR_LIST</a> = 1, 
 <a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b">cv::RETR_CCOMP</a> = 2, 
 <a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3">cv::RETR_TREE</a> = 3, 
-<b>RETR_FLOODFILL</b> = 4
+<b>RETR_FLOODFILL</b> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7">cv::RETR_EXTERNAL</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d">cv::RETR_LIST</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b">cv::RETR_CCOMP</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3">cv::RETR_TREE</a> = 3, 
+<br />
+&#160;&#160;<b>RETR_FLOODFILL</b> = 4
 <br />
  }</td></tr>
 <tr class="memdesc:ga819779b9857cc2f8601e6526a3a5bc71"><td class="mdescLeft">&#160;</td><td class="mdescRight">mode of the contour retrieval algorithm  <a href="group__imgproc__shape.html#ga819779b9857cc2f8601e6526a3a5bc71">More...</a><br /></td></tr>
 <tr class="separator:ga819779b9857cc2f8601e6526a3a5bc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4303f45752694956374734a03c54d5ff"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__shape.html#ga4303f45752694956374734a03c54d5ff">cv::ContourApproximationModes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281">cv::CHAIN_APPROX_NONE</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921">cv::CHAIN_APPROX_SIMPLE</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f">cv::CHAIN_APPROX_TC89_L1</a> = 3, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2">cv::CHAIN_APPROX_TC89_KCOS</a> = 4, 
+<br />
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281">cv::CHAIN_APPROX_NONE</a> = 1, 
 <a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921">cv::CHAIN_APPROX_SIMPLE</a> = 2, 
 <a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f">cv::CHAIN_APPROX_TC89_L1</a> = 3, 
@@ -645,6 +763,10 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0">cv::CONTOURS_MATCH_I3</a> =3, 
 <a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a">cv::CONTOURS_MATCH_I1</a> =1, 
 <a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae">cv::CONTOURS_MATCH_I2</a> =2, 
+<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0">cv::CONTOURS_MATCH_I3</a> =3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a">cv::CONTOURS_MATCH_I1</a> =1, 
+<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae">cv::CONTOURS_MATCH_I2</a> =2, 
 <a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0">cv::CONTOURS_MATCH_I3</a> =3
 <br />
  }</td></tr>
@@ -663,6 +785,186 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158">cv::INTERSECT_FULL</a> = 2, 
 <a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931">cv::INTERSECT_NONE</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324">cv::INTERSECT_PARTIAL</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158">cv::INTERSECT_FULL</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931">cv::INTERSECT_NONE</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324">cv::INTERSECT_PARTIAL</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158">cv::INTERSECT_FULL</a> = 2
+<br />
+ }</td></tr>
+<tr class="memdesc:gaaf0eb9e10bd5adcbd446cd31fea2db68"><td class="mdescLeft">&#160;</td><td class="mdescRight">types of intersection between rectangles  <a href="group__imgproc__shape.html#gaaf0eb9e10bd5adcbd446cd31fea2db68">More...</a><br /></td></tr>
+<tr class="separator:gaaf0eb9e10bd5adcbd446cd31fea2db68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7099124c0390051c6970a987e7dc5c5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__shape.html#gac7099124c0390051c6970a987e7dc5c5">cv::ConnectedComponentsTypes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a8a0c81e606e442a2bf4746b1abc2a3d7">cv::CC_STAT_LEFT</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a695f44a2482881b5c0bd3033b5ee7947">cv::CC_STAT_TOP</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3">cv::CC_STAT_WIDTH</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0">cv::CC_STAT_HEIGHT</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420">cv::CC_STAT_AREA</a> = 4, 
+<b>CC_STAT_MAX</b> = 5, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a8a0c81e606e442a2bf4746b1abc2a3d7">cv::CC_STAT_LEFT</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a695f44a2482881b5c0bd3033b5ee7947">cv::CC_STAT_TOP</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3">cv::CC_STAT_WIDTH</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0">cv::CC_STAT_HEIGHT</a> = 3, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420">cv::CC_STAT_AREA</a> = 4, 
+<b>CC_STAT_MAX</b> = 5, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a8a0c81e606e442a2bf4746b1abc2a3d7">cv::CC_STAT_LEFT</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a695f44a2482881b5c0bd3033b5ee7947">cv::CC_STAT_TOP</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3">cv::CC_STAT_WIDTH</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0">cv::CC_STAT_HEIGHT</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420">cv::CC_STAT_AREA</a> = 4, 
+<b>CC_STAT_MAX</b> = 5, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a8a0c81e606e442a2bf4746b1abc2a3d7">cv::CC_STAT_LEFT</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a695f44a2482881b5c0bd3033b5ee7947">cv::CC_STAT_TOP</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3">cv::CC_STAT_WIDTH</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0">cv::CC_STAT_HEIGHT</a> = 3, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420">cv::CC_STAT_AREA</a> = 4, 
+<b>CC_STAT_MAX</b> = 5, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a8a0c81e606e442a2bf4746b1abc2a3d7">cv::CC_STAT_LEFT</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a695f44a2482881b5c0bd3033b5ee7947">cv::CC_STAT_TOP</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3">cv::CC_STAT_WIDTH</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0">cv::CC_STAT_HEIGHT</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420">cv::CC_STAT_AREA</a> = 4, 
+<b>CC_STAT_MAX</b> = 5
+<br />
+ }</td></tr>
+<tr class="memdesc:gac7099124c0390051c6970a987e7dc5c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">connected components algorithm output formats  <a href="group__imgproc__shape.html#gac7099124c0390051c6970a987e7dc5c5">More...</a><br /></td></tr>
+<tr class="separator:gac7099124c0390051c6970a987e7dc5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ed7784614678adccb699c70fb841075"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__shape.html#ga5ed7784614678adccb699c70fb841075">cv::ConnectedComponentsAlgorithmsTypes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd">cv::CCL_WU</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43">cv::CCL_DEFAULT</a> = -1, 
+<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e">cv::CCL_GRANA</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd">cv::CCL_WU</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43">cv::CCL_DEFAULT</a> = -1, 
+<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e">cv::CCL_GRANA</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd">cv::CCL_WU</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43">cv::CCL_DEFAULT</a> = -1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e">cv::CCL_GRANA</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd">cv::CCL_WU</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43">cv::CCL_DEFAULT</a> = -1, 
+<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e">cv::CCL_GRANA</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd">cv::CCL_WU</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43">cv::CCL_DEFAULT</a> = -1, 
+<a class="el" href="group__imgproc__shape.html#gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e">cv::CCL_GRANA</a> = 1
+<br />
+ }</td></tr>
+<tr class="memdesc:ga5ed7784614678adccb699c70fb841075"><td class="mdescLeft">&#160;</td><td class="mdescRight">connected components algorithm  <a href="group__imgproc__shape.html#ga5ed7784614678adccb699c70fb841075">More...</a><br /></td></tr>
+<tr class="separator:ga5ed7784614678adccb699c70fb841075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga819779b9857cc2f8601e6526a3a5bc71"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__shape.html#ga819779b9857cc2f8601e6526a3a5bc71">cv::RetrievalModes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7">cv::RETR_EXTERNAL</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d">cv::RETR_LIST</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b">cv::RETR_CCOMP</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3">cv::RETR_TREE</a> = 3, 
+<br />
+&#160;&#160;<b>RETR_FLOODFILL</b> = 4, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7">cv::RETR_EXTERNAL</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d">cv::RETR_LIST</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b">cv::RETR_CCOMP</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3">cv::RETR_TREE</a> = 3, 
+<b>RETR_FLOODFILL</b> = 4, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7">cv::RETR_EXTERNAL</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d">cv::RETR_LIST</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b">cv::RETR_CCOMP</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3">cv::RETR_TREE</a> = 3, 
+<b>RETR_FLOODFILL</b> = 4, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7">cv::RETR_EXTERNAL</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d">cv::RETR_LIST</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b">cv::RETR_CCOMP</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3">cv::RETR_TREE</a> = 3, 
+<b>RETR_FLOODFILL</b> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7">cv::RETR_EXTERNAL</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d">cv::RETR_LIST</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b">cv::RETR_CCOMP</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3">cv::RETR_TREE</a> = 3, 
+<br />
+&#160;&#160;<b>RETR_FLOODFILL</b> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:ga819779b9857cc2f8601e6526a3a5bc71"><td class="mdescLeft">&#160;</td><td class="mdescRight">mode of the contour retrieval algorithm  <a href="group__imgproc__shape.html#ga819779b9857cc2f8601e6526a3a5bc71">More...</a><br /></td></tr>
+<tr class="separator:ga819779b9857cc2f8601e6526a3a5bc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4303f45752694956374734a03c54d5ff"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__shape.html#ga4303f45752694956374734a03c54d5ff">cv::ContourApproximationModes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281">cv::CHAIN_APPROX_NONE</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921">cv::CHAIN_APPROX_SIMPLE</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f">cv::CHAIN_APPROX_TC89_L1</a> = 3, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2">cv::CHAIN_APPROX_TC89_KCOS</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281">cv::CHAIN_APPROX_NONE</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921">cv::CHAIN_APPROX_SIMPLE</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f">cv::CHAIN_APPROX_TC89_L1</a> = 3, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2">cv::CHAIN_APPROX_TC89_KCOS</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281">cv::CHAIN_APPROX_NONE</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921">cv::CHAIN_APPROX_SIMPLE</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f">cv::CHAIN_APPROX_TC89_L1</a> = 3, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2">cv::CHAIN_APPROX_TC89_KCOS</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281">cv::CHAIN_APPROX_NONE</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921">cv::CHAIN_APPROX_SIMPLE</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f">cv::CHAIN_APPROX_TC89_L1</a> = 3, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2">cv::CHAIN_APPROX_TC89_KCOS</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281">cv::CHAIN_APPROX_NONE</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921">cv::CHAIN_APPROX_SIMPLE</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f">cv::CHAIN_APPROX_TC89_L1</a> = 3, 
+<a class="el" href="group__imgproc__shape.html#gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2">cv::CHAIN_APPROX_TC89_KCOS</a> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:ga4303f45752694956374734a03c54d5ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">the contour approximation algorithm  <a href="group__imgproc__shape.html#ga4303f45752694956374734a03c54d5ff">More...</a><br /></td></tr>
+<tr class="separator:ga4303f45752694956374734a03c54d5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2b97a230b51856d09a2d934b78c015f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__shape.html#gaf2b97a230b51856d09a2d934b78c015f">cv::ShapeMatchModes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a">cv::CONTOURS_MATCH_I1</a> =1, 
+<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae">cv::CONTOURS_MATCH_I2</a> =2, 
+<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0">cv::CONTOURS_MATCH_I3</a> =3, 
+<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a">cv::CONTOURS_MATCH_I1</a> =1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae">cv::CONTOURS_MATCH_I2</a> =2, 
+<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0">cv::CONTOURS_MATCH_I3</a> =3, 
+<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a">cv::CONTOURS_MATCH_I1</a> =1, 
+<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae">cv::CONTOURS_MATCH_I2</a> =2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0">cv::CONTOURS_MATCH_I3</a> =3, 
+<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a">cv::CONTOURS_MATCH_I1</a> =1, 
+<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae">cv::CONTOURS_MATCH_I2</a> =2, 
+<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0">cv::CONTOURS_MATCH_I3</a> =3, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a">cv::CONTOURS_MATCH_I1</a> =1, 
+<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae">cv::CONTOURS_MATCH_I2</a> =2, 
+<a class="el" href="group__imgproc__shape.html#ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0">cv::CONTOURS_MATCH_I3</a> =3
+<br />
+ }</td></tr>
+<tr class="memdesc:gaf2b97a230b51856d09a2d934b78c015f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape matching methods.  <a href="group__imgproc__shape.html#gaf2b97a230b51856d09a2d934b78c015f">More...</a><br /></td></tr>
+<tr class="separator:gaf2b97a230b51856d09a2d934b78c015f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf0eb9e10bd5adcbd446cd31fea2db68"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__imgproc__shape.html#gaaf0eb9e10bd5adcbd446cd31fea2db68">cv::RectanglesIntersectTypes</a> { <br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931">cv::INTERSECT_NONE</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324">cv::INTERSECT_PARTIAL</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158">cv::INTERSECT_FULL</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931">cv::INTERSECT_NONE</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324">cv::INTERSECT_PARTIAL</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158">cv::INTERSECT_FULL</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931">cv::INTERSECT_NONE</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324">cv::INTERSECT_PARTIAL</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158">cv::INTERSECT_FULL</a> = 2, 
+<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931">cv::INTERSECT_NONE</a> = 0, 
+<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324">cv::INTERSECT_PARTIAL</a> = 1, 
+<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158">cv::INTERSECT_FULL</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931">cv::INTERSECT_NONE</a> = 0, 
 <a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324">cv::INTERSECT_PARTIAL</a> = 1, 
 <a class="el" href="group__imgproc__shape.html#ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158">cv::INTERSECT_FULL</a> = 2
 <br />
@@ -783,7 +1085,7 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga5ed7784614678adccb699c70fb841075"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5ed7784614678adccb699c70fb841075">&#9670;&nbsp;</a></span>ConnectedComponentsAlgorithmsTypes <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ed7784614678adccb699c70fb841075">&#9670;&nbsp;</a></span>ConnectedComponentsAlgorithmsTypes <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -797,6 +1099,12 @@ Variables</h2></td></tr>
 <p>connected components algorithm </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd"></a>CCL_WU&#160;</td><td class="fielddoc"><p>SAUF algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43"></a>CCL_DEFAULT&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e"></a>CCL_GRANA&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd"></a>CCL_WU&#160;</td><td class="fielddoc"><p>SAUF algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43"></a>CCL_DEFAULT&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
 </td></tr>
@@ -825,7 +1133,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="ga5ed7784614678adccb699c70fb841075"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5ed7784614678adccb699c70fb841075">&#9670;&nbsp;</a></span>ConnectedComponentsAlgorithmsTypes <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ed7784614678adccb699c70fb841075">&#9670;&nbsp;</a></span>ConnectedComponentsAlgorithmsTypes <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -839,6 +1147,12 @@ Variables</h2></td></tr>
 <p>connected components algorithm </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd"></a>CCL_WU&#160;</td><td class="fielddoc"><p>SAUF algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43"></a>CCL_DEFAULT&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e"></a>CCL_GRANA&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd"></a>CCL_WU&#160;</td><td class="fielddoc"><p>SAUF algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43"></a>CCL_DEFAULT&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
 </td></tr>
@@ -867,7 +1181,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="ga5ed7784614678adccb699c70fb841075"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5ed7784614678adccb699c70fb841075">&#9670;&nbsp;</a></span>ConnectedComponentsAlgorithmsTypes <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ed7784614678adccb699c70fb841075">&#9670;&nbsp;</a></span>ConnectedComponentsAlgorithmsTypes <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -881,6 +1195,12 @@ Variables</h2></td></tr>
 <p>connected components algorithm </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd"></a>CCL_WU&#160;</td><td class="fielddoc"><p>SAUF algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43"></a>CCL_DEFAULT&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e"></a>CCL_GRANA&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd"></a>CCL_WU&#160;</td><td class="fielddoc"><p>SAUF algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43"></a>CCL_DEFAULT&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
 </td></tr>
@@ -909,7 +1229,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="ga5ed7784614678adccb699c70fb841075"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5ed7784614678adccb699c70fb841075">&#9670;&nbsp;</a></span>ConnectedComponentsAlgorithmsTypes <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ed7784614678adccb699c70fb841075">&#9670;&nbsp;</a></span>ConnectedComponentsAlgorithmsTypes <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -946,12 +1266,66 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e"></a>CCL_GRANA&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd"></a>CCL_WU&#160;</td><td class="fielddoc"><p>SAUF algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43"></a>CCL_DEFAULT&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e"></a>CCL_GRANA&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga5ed7784614678adccb699c70fb841075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ed7784614678adccb699c70fb841075">&#9670;&nbsp;</a></span>ConnectedComponentsAlgorithmsTypes <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgproc__shape.html#ga5ed7784614678adccb699c70fb841075">cv::ConnectedComponentsAlgorithmsTypes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>connected components algorithm </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd"></a>CCL_WU&#160;</td><td class="fielddoc"><p>SAUF algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43"></a>CCL_DEFAULT&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e"></a>CCL_GRANA&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd"></a>CCL_WU&#160;</td><td class="fielddoc"><p>SAUF algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43"></a>CCL_DEFAULT&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e"></a>CCL_GRANA&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd"></a>CCL_WU&#160;</td><td class="fielddoc"><p>SAUF algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43"></a>CCL_DEFAULT&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e"></a>CCL_GRANA&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd"></a>CCL_WU&#160;</td><td class="fielddoc"><p>SAUF algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43"></a>CCL_DEFAULT&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e"></a>CCL_GRANA&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a4476efe365d027c5df2022ad7a7281dd"></a>CCL_WU&#160;</td><td class="fielddoc"><p>SAUF algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a378ff4e70aad734acfcedcea8ceb8d43"></a>CCL_DEFAULT&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5ed7784614678adccb699c70fb841075a88db65fb1d9b8e3833672f53a98b9c9e"></a>CCL_GRANA&#160;</td><td class="fielddoc"><p>BBDT algorithm for 8-way connectivity, SAUF algorithm for 4-way connectivity. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gac7099124c0390051c6970a987e7dc5c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac7099124c0390051c6970a987e7dc5c5">&#9670;&nbsp;</a></span>ConnectedComponentsTypes <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac7099124c0390051c6970a987e7dc5c5">&#9670;&nbsp;</a></span>ConnectedComponentsTypes <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1004,12 +1378,22 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420"></a>CC_STAT_AREA&#160;</td><td class="fielddoc"><p>The total area (in pixels) of the connected component. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a8a0c81e606e442a2bf4746b1abc2a3d7"></a>CC_STAT_LEFT&#160;</td><td class="fielddoc"><p>The leftmost (x) coordinate which is the inclusive start of the bounding box in the horizontal direction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a695f44a2482881b5c0bd3033b5ee7947"></a>CC_STAT_TOP&#160;</td><td class="fielddoc"><p>The topmost (y) coordinate which is the inclusive start of the bounding box in the vertical direction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3"></a>CC_STAT_WIDTH&#160;</td><td class="fielddoc"><p>The horizontal size of the bounding box. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0"></a>CC_STAT_HEIGHT&#160;</td><td class="fielddoc"><p>The vertical size of the bounding box. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420"></a>CC_STAT_AREA&#160;</td><td class="fielddoc"><p>The total area (in pixels) of the connected component. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gac7099124c0390051c6970a987e7dc5c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac7099124c0390051c6970a987e7dc5c5">&#9670;&nbsp;</a></span>ConnectedComponentsTypes <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac7099124c0390051c6970a987e7dc5c5">&#9670;&nbsp;</a></span>ConnectedComponentsTypes <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1062,12 +1446,22 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420"></a>CC_STAT_AREA&#160;</td><td class="fielddoc"><p>The total area (in pixels) of the connected component. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a8a0c81e606e442a2bf4746b1abc2a3d7"></a>CC_STAT_LEFT&#160;</td><td class="fielddoc"><p>The leftmost (x) coordinate which is the inclusive start of the bounding box in the horizontal direction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a695f44a2482881b5c0bd3033b5ee7947"></a>CC_STAT_TOP&#160;</td><td class="fielddoc"><p>The topmost (y) coordinate which is the inclusive start of the bounding box in the vertical direction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3"></a>CC_STAT_WIDTH&#160;</td><td class="fielddoc"><p>The horizontal size of the bounding box. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0"></a>CC_STAT_HEIGHT&#160;</td><td class="fielddoc"><p>The vertical size of the bounding box. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420"></a>CC_STAT_AREA&#160;</td><td class="fielddoc"><p>The total area (in pixels) of the connected component. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gac7099124c0390051c6970a987e7dc5c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac7099124c0390051c6970a987e7dc5c5">&#9670;&nbsp;</a></span>ConnectedComponentsTypes <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac7099124c0390051c6970a987e7dc5c5">&#9670;&nbsp;</a></span>ConnectedComponentsTypes <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1120,12 +1514,22 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420"></a>CC_STAT_AREA&#160;</td><td class="fielddoc"><p>The total area (in pixels) of the connected component. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a8a0c81e606e442a2bf4746b1abc2a3d7"></a>CC_STAT_LEFT&#160;</td><td class="fielddoc"><p>The leftmost (x) coordinate which is the inclusive start of the bounding box in the horizontal direction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a695f44a2482881b5c0bd3033b5ee7947"></a>CC_STAT_TOP&#160;</td><td class="fielddoc"><p>The topmost (y) coordinate which is the inclusive start of the bounding box in the vertical direction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3"></a>CC_STAT_WIDTH&#160;</td><td class="fielddoc"><p>The horizontal size of the bounding box. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0"></a>CC_STAT_HEIGHT&#160;</td><td class="fielddoc"><p>The vertical size of the bounding box. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420"></a>CC_STAT_AREA&#160;</td><td class="fielddoc"><p>The total area (in pixels) of the connected component. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gac7099124c0390051c6970a987e7dc5c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac7099124c0390051c6970a987e7dc5c5">&#9670;&nbsp;</a></span>ConnectedComponentsTypes <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac7099124c0390051c6970a987e7dc5c5">&#9670;&nbsp;</a></span>ConnectedComponentsTypes <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1178,12 +1582,90 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420"></a>CC_STAT_AREA&#160;</td><td class="fielddoc"><p>The total area (in pixels) of the connected component. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a8a0c81e606e442a2bf4746b1abc2a3d7"></a>CC_STAT_LEFT&#160;</td><td class="fielddoc"><p>The leftmost (x) coordinate which is the inclusive start of the bounding box in the horizontal direction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a695f44a2482881b5c0bd3033b5ee7947"></a>CC_STAT_TOP&#160;</td><td class="fielddoc"><p>The topmost (y) coordinate which is the inclusive start of the bounding box in the vertical direction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3"></a>CC_STAT_WIDTH&#160;</td><td class="fielddoc"><p>The horizontal size of the bounding box. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0"></a>CC_STAT_HEIGHT&#160;</td><td class="fielddoc"><p>The vertical size of the bounding box. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420"></a>CC_STAT_AREA&#160;</td><td class="fielddoc"><p>The total area (in pixels) of the connected component. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gac7099124c0390051c6970a987e7dc5c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac7099124c0390051c6970a987e7dc5c5">&#9670;&nbsp;</a></span>ConnectedComponentsTypes <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgproc__shape.html#gac7099124c0390051c6970a987e7dc5c5">cv::ConnectedComponentsTypes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>connected components algorithm output formats </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a8a0c81e606e442a2bf4746b1abc2a3d7"></a>CC_STAT_LEFT&#160;</td><td class="fielddoc"><p>The leftmost (x) coordinate which is the inclusive start of the bounding box in the horizontal direction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a695f44a2482881b5c0bd3033b5ee7947"></a>CC_STAT_TOP&#160;</td><td class="fielddoc"><p>The topmost (y) coordinate which is the inclusive start of the bounding box in the vertical direction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3"></a>CC_STAT_WIDTH&#160;</td><td class="fielddoc"><p>The horizontal size of the bounding box. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0"></a>CC_STAT_HEIGHT&#160;</td><td class="fielddoc"><p>The vertical size of the bounding box. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420"></a>CC_STAT_AREA&#160;</td><td class="fielddoc"><p>The total area (in pixels) of the connected component. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a8a0c81e606e442a2bf4746b1abc2a3d7"></a>CC_STAT_LEFT&#160;</td><td class="fielddoc"><p>The leftmost (x) coordinate which is the inclusive start of the bounding box in the horizontal direction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a695f44a2482881b5c0bd3033b5ee7947"></a>CC_STAT_TOP&#160;</td><td class="fielddoc"><p>The topmost (y) coordinate which is the inclusive start of the bounding box in the vertical direction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3"></a>CC_STAT_WIDTH&#160;</td><td class="fielddoc"><p>The horizontal size of the bounding box. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0"></a>CC_STAT_HEIGHT&#160;</td><td class="fielddoc"><p>The vertical size of the bounding box. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420"></a>CC_STAT_AREA&#160;</td><td class="fielddoc"><p>The total area (in pixels) of the connected component. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a8a0c81e606e442a2bf4746b1abc2a3d7"></a>CC_STAT_LEFT&#160;</td><td class="fielddoc"><p>The leftmost (x) coordinate which is the inclusive start of the bounding box in the horizontal direction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a695f44a2482881b5c0bd3033b5ee7947"></a>CC_STAT_TOP&#160;</td><td class="fielddoc"><p>The topmost (y) coordinate which is the inclusive start of the bounding box in the vertical direction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3"></a>CC_STAT_WIDTH&#160;</td><td class="fielddoc"><p>The horizontal size of the bounding box. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0"></a>CC_STAT_HEIGHT&#160;</td><td class="fielddoc"><p>The vertical size of the bounding box. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420"></a>CC_STAT_AREA&#160;</td><td class="fielddoc"><p>The total area (in pixels) of the connected component. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a8a0c81e606e442a2bf4746b1abc2a3d7"></a>CC_STAT_LEFT&#160;</td><td class="fielddoc"><p>The leftmost (x) coordinate which is the inclusive start of the bounding box in the horizontal direction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a695f44a2482881b5c0bd3033b5ee7947"></a>CC_STAT_TOP&#160;</td><td class="fielddoc"><p>The topmost (y) coordinate which is the inclusive start of the bounding box in the vertical direction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3"></a>CC_STAT_WIDTH&#160;</td><td class="fielddoc"><p>The horizontal size of the bounding box. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0"></a>CC_STAT_HEIGHT&#160;</td><td class="fielddoc"><p>The vertical size of the bounding box. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420"></a>CC_STAT_AREA&#160;</td><td class="fielddoc"><p>The total area (in pixels) of the connected component. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a8a0c81e606e442a2bf4746b1abc2a3d7"></a>CC_STAT_LEFT&#160;</td><td class="fielddoc"><p>The leftmost (x) coordinate which is the inclusive start of the bounding box in the horizontal direction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a695f44a2482881b5c0bd3033b5ee7947"></a>CC_STAT_TOP&#160;</td><td class="fielddoc"><p>The topmost (y) coordinate which is the inclusive start of the bounding box in the vertical direction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5ab69ee34d70419c81c730f36a7bfdb1d3"></a>CC_STAT_WIDTH&#160;</td><td class="fielddoc"><p>The horizontal size of the bounding box. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5aad4fa0b2f6876bc9c3d0650337e97ff0"></a>CC_STAT_HEIGHT&#160;</td><td class="fielddoc"><p>The vertical size of the bounding box. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac7099124c0390051c6970a987e7dc5c5a7e5c9122c65d8546055fdf68db911420"></a>CC_STAT_AREA&#160;</td><td class="fielddoc"><p>The total area (in pixels) of the connected component. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga4303f45752694956374734a03c54d5ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4303f45752694956374734a03c54d5ff">&#9670;&nbsp;</a></span>ContourApproximationModes <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4303f45752694956374734a03c54d5ff">&#9670;&nbsp;</a></span>ContourApproximationModes <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1228,12 +1710,20 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2"></a>CHAIN_APPROX_TC89_KCOS&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281"></a>CHAIN_APPROX_NONE&#160;</td><td class="fielddoc"><p>stores absolutely all the contour points. That is, any 2 subsequent points (x1,y1) and (x2,y2) of the contour will be either horizontal, vertical or diagonal neighbors, that is, max(abs(x1-x2),abs(y2-y1))==1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921"></a>CHAIN_APPROX_SIMPLE&#160;</td><td class="fielddoc"><p>compresses horizontal, vertical, and diagonal segments and leaves only their end points. For example, an up-right rectangular contour is encoded with 4 points. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f"></a>CHAIN_APPROX_TC89_L1&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2"></a>CHAIN_APPROX_TC89_KCOS&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga4303f45752694956374734a03c54d5ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4303f45752694956374734a03c54d5ff">&#9670;&nbsp;</a></span>ContourApproximationModes <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4303f45752694956374734a03c54d5ff">&#9670;&nbsp;</a></span>ContourApproximationModes <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1278,12 +1768,20 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2"></a>CHAIN_APPROX_TC89_KCOS&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281"></a>CHAIN_APPROX_NONE&#160;</td><td class="fielddoc"><p>stores absolutely all the contour points. That is, any 2 subsequent points (x1,y1) and (x2,y2) of the contour will be either horizontal, vertical or diagonal neighbors, that is, max(abs(x1-x2),abs(y2-y1))==1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921"></a>CHAIN_APPROX_SIMPLE&#160;</td><td class="fielddoc"><p>compresses horizontal, vertical, and diagonal segments and leaves only their end points. For example, an up-right rectangular contour is encoded with 4 points. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f"></a>CHAIN_APPROX_TC89_L1&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2"></a>CHAIN_APPROX_TC89_KCOS&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga4303f45752694956374734a03c54d5ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4303f45752694956374734a03c54d5ff">&#9670;&nbsp;</a></span>ContourApproximationModes <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4303f45752694956374734a03c54d5ff">&#9670;&nbsp;</a></span>ContourApproximationModes <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1328,12 +1826,20 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2"></a>CHAIN_APPROX_TC89_KCOS&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281"></a>CHAIN_APPROX_NONE&#160;</td><td class="fielddoc"><p>stores absolutely all the contour points. That is, any 2 subsequent points (x1,y1) and (x2,y2) of the contour will be either horizontal, vertical or diagonal neighbors, that is, max(abs(x1-x2),abs(y2-y1))==1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921"></a>CHAIN_APPROX_SIMPLE&#160;</td><td class="fielddoc"><p>compresses horizontal, vertical, and diagonal segments and leaves only their end points. For example, an up-right rectangular contour is encoded with 4 points. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f"></a>CHAIN_APPROX_TC89_L1&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2"></a>CHAIN_APPROX_TC89_KCOS&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga4303f45752694956374734a03c54d5ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4303f45752694956374734a03c54d5ff">&#9670;&nbsp;</a></span>ContourApproximationModes <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4303f45752694956374734a03c54d5ff">&#9670;&nbsp;</a></span>ContourApproximationModes <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1378,12 +1884,78 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2"></a>CHAIN_APPROX_TC89_KCOS&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281"></a>CHAIN_APPROX_NONE&#160;</td><td class="fielddoc"><p>stores absolutely all the contour points. That is, any 2 subsequent points (x1,y1) and (x2,y2) of the contour will be either horizontal, vertical or diagonal neighbors, that is, max(abs(x1-x2),abs(y2-y1))==1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921"></a>CHAIN_APPROX_SIMPLE&#160;</td><td class="fielddoc"><p>compresses horizontal, vertical, and diagonal segments and leaves only their end points. For example, an up-right rectangular contour is encoded with 4 points. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f"></a>CHAIN_APPROX_TC89_L1&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2"></a>CHAIN_APPROX_TC89_KCOS&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga4303f45752694956374734a03c54d5ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4303f45752694956374734a03c54d5ff">&#9670;&nbsp;</a></span>ContourApproximationModes <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgproc__shape.html#ga4303f45752694956374734a03c54d5ff">cv::ContourApproximationModes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the contour approximation algorithm </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281"></a>CHAIN_APPROX_NONE&#160;</td><td class="fielddoc"><p>stores absolutely all the contour points. That is, any 2 subsequent points (x1,y1) and (x2,y2) of the contour will be either horizontal, vertical or diagonal neighbors, that is, max(abs(x1-x2),abs(y2-y1))==1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921"></a>CHAIN_APPROX_SIMPLE&#160;</td><td class="fielddoc"><p>compresses horizontal, vertical, and diagonal segments and leaves only their end points. For example, an up-right rectangular contour is encoded with 4 points. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f"></a>CHAIN_APPROX_TC89_L1&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2"></a>CHAIN_APPROX_TC89_KCOS&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281"></a>CHAIN_APPROX_NONE&#160;</td><td class="fielddoc"><p>stores absolutely all the contour points. That is, any 2 subsequent points (x1,y1) and (x2,y2) of the contour will be either horizontal, vertical or diagonal neighbors, that is, max(abs(x1-x2),abs(y2-y1))==1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921"></a>CHAIN_APPROX_SIMPLE&#160;</td><td class="fielddoc"><p>compresses horizontal, vertical, and diagonal segments and leaves only their end points. For example, an up-right rectangular contour is encoded with 4 points. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f"></a>CHAIN_APPROX_TC89_L1&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2"></a>CHAIN_APPROX_TC89_KCOS&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281"></a>CHAIN_APPROX_NONE&#160;</td><td class="fielddoc"><p>stores absolutely all the contour points. That is, any 2 subsequent points (x1,y1) and (x2,y2) of the contour will be either horizontal, vertical or diagonal neighbors, that is, max(abs(x1-x2),abs(y2-y1))==1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921"></a>CHAIN_APPROX_SIMPLE&#160;</td><td class="fielddoc"><p>compresses horizontal, vertical, and diagonal segments and leaves only their end points. For example, an up-right rectangular contour is encoded with 4 points. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f"></a>CHAIN_APPROX_TC89_L1&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2"></a>CHAIN_APPROX_TC89_KCOS&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281"></a>CHAIN_APPROX_NONE&#160;</td><td class="fielddoc"><p>stores absolutely all the contour points. That is, any 2 subsequent points (x1,y1) and (x2,y2) of the contour will be either horizontal, vertical or diagonal neighbors, that is, max(abs(x1-x2),abs(y2-y1))==1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921"></a>CHAIN_APPROX_SIMPLE&#160;</td><td class="fielddoc"><p>compresses horizontal, vertical, and diagonal segments and leaves only their end points. For example, an up-right rectangular contour is encoded with 4 points. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f"></a>CHAIN_APPROX_TC89_L1&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2"></a>CHAIN_APPROX_TC89_KCOS&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffad4aa16339a775165205eace7ab0ca281"></a>CHAIN_APPROX_NONE&#160;</td><td class="fielddoc"><p>stores absolutely all the contour points. That is, any 2 subsequent points (x1,y1) and (x2,y2) of the contour will be either horizontal, vertical or diagonal neighbors, that is, max(abs(x1-x2),abs(y2-y1))==1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa210f5588bdd354a5cecfc8f84036c921"></a>CHAIN_APPROX_SIMPLE&#160;</td><td class="fielddoc"><p>compresses horizontal, vertical, and diagonal segments and leaves only their end points. For example, an up-right rectangular contour is encoded with 4 points. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa9366da75a87276e3b416b379fc2e5f7f"></a>CHAIN_APPROX_TC89_L1&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4303f45752694956374734a03c54d5ffa17de33c2e9849cc11926727da97673f2"></a>CHAIN_APPROX_TC89_KCOS&#160;</td><td class="fielddoc"><p>applies one of the flavors of the Teh-Chin chain approximation algorithm <b>[TehChin89]</b> </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaaf0eb9e10bd5adcbd446cd31fea2db68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaf0eb9e10bd5adcbd446cd31fea2db68">&#9670;&nbsp;</a></span>RectanglesIntersectTypes <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf0eb9e10bd5adcbd446cd31fea2db68">&#9670;&nbsp;</a></span>RectanglesIntersectTypes <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1420,12 +1992,18 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158"></a>INTERSECT_FULL&#160;</td><td class="fielddoc"><p>One of the rectangle is fully enclosed in the other. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931"></a>INTERSECT_NONE&#160;</td><td class="fielddoc"><p>No intersection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324"></a>INTERSECT_PARTIAL&#160;</td><td class="fielddoc"><p>There is a partial intersection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158"></a>INTERSECT_FULL&#160;</td><td class="fielddoc"><p>One of the rectangle is fully enclosed in the other. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaaf0eb9e10bd5adcbd446cd31fea2db68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaf0eb9e10bd5adcbd446cd31fea2db68">&#9670;&nbsp;</a></span>RectanglesIntersectTypes <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf0eb9e10bd5adcbd446cd31fea2db68">&#9670;&nbsp;</a></span>RectanglesIntersectTypes <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1462,12 +2040,18 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158"></a>INTERSECT_FULL&#160;</td><td class="fielddoc"><p>One of the rectangle is fully enclosed in the other. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931"></a>INTERSECT_NONE&#160;</td><td class="fielddoc"><p>No intersection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324"></a>INTERSECT_PARTIAL&#160;</td><td class="fielddoc"><p>There is a partial intersection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158"></a>INTERSECT_FULL&#160;</td><td class="fielddoc"><p>One of the rectangle is fully enclosed in the other. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaaf0eb9e10bd5adcbd446cd31fea2db68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaf0eb9e10bd5adcbd446cd31fea2db68">&#9670;&nbsp;</a></span>RectanglesIntersectTypes <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf0eb9e10bd5adcbd446cd31fea2db68">&#9670;&nbsp;</a></span>RectanglesIntersectTypes <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1504,12 +2088,18 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158"></a>INTERSECT_FULL&#160;</td><td class="fielddoc"><p>One of the rectangle is fully enclosed in the other. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931"></a>INTERSECT_NONE&#160;</td><td class="fielddoc"><p>No intersection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324"></a>INTERSECT_PARTIAL&#160;</td><td class="fielddoc"><p>There is a partial intersection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158"></a>INTERSECT_FULL&#160;</td><td class="fielddoc"><p>One of the rectangle is fully enclosed in the other. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaaf0eb9e10bd5adcbd446cd31fea2db68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaf0eb9e10bd5adcbd446cd31fea2db68">&#9670;&nbsp;</a></span>RectanglesIntersectTypes <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf0eb9e10bd5adcbd446cd31fea2db68">&#9670;&nbsp;</a></span>RectanglesIntersectTypes <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1523,6 +2113,60 @@ Variables</h2></td></tr>
 <p>types of intersection between rectangles </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931"></a>INTERSECT_NONE&#160;</td><td class="fielddoc"><p>No intersection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324"></a>INTERSECT_PARTIAL&#160;</td><td class="fielddoc"><p>There is a partial intersection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158"></a>INTERSECT_FULL&#160;</td><td class="fielddoc"><p>One of the rectangle is fully enclosed in the other. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931"></a>INTERSECT_NONE&#160;</td><td class="fielddoc"><p>No intersection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324"></a>INTERSECT_PARTIAL&#160;</td><td class="fielddoc"><p>There is a partial intersection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158"></a>INTERSECT_FULL&#160;</td><td class="fielddoc"><p>One of the rectangle is fully enclosed in the other. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931"></a>INTERSECT_NONE&#160;</td><td class="fielddoc"><p>No intersection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324"></a>INTERSECT_PARTIAL&#160;</td><td class="fielddoc"><p>There is a partial intersection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158"></a>INTERSECT_FULL&#160;</td><td class="fielddoc"><p>One of the rectangle is fully enclosed in the other. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931"></a>INTERSECT_NONE&#160;</td><td class="fielddoc"><p>No intersection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324"></a>INTERSECT_PARTIAL&#160;</td><td class="fielddoc"><p>There is a partial intersection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158"></a>INTERSECT_FULL&#160;</td><td class="fielddoc"><p>One of the rectangle is fully enclosed in the other. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931"></a>INTERSECT_NONE&#160;</td><td class="fielddoc"><p>No intersection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324"></a>INTERSECT_PARTIAL&#160;</td><td class="fielddoc"><p>There is a partial intersection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158"></a>INTERSECT_FULL&#160;</td><td class="fielddoc"><p>One of the rectangle is fully enclosed in the other. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaaf0eb9e10bd5adcbd446cd31fea2db68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf0eb9e10bd5adcbd446cd31fea2db68">&#9670;&nbsp;</a></span>RectanglesIntersectTypes <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgproc__shape.html#gaaf0eb9e10bd5adcbd446cd31fea2db68">cv::RectanglesIntersectTypes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>types of intersection between rectangles </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931"></a>INTERSECT_NONE&#160;</td><td class="fielddoc"><p>No intersection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324"></a>INTERSECT_PARTIAL&#160;</td><td class="fielddoc"><p>There is a partial intersection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a550989694bd768cf6ece0ec22018a158"></a>INTERSECT_FULL&#160;</td><td class="fielddoc"><p>One of the rectangle is fully enclosed in the other. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a95c76c017c89f3f21d861a79cba00931"></a>INTERSECT_NONE&#160;</td><td class="fielddoc"><p>No intersection. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaaf0eb9e10bd5adcbd446cd31fea2db68a8f0ccc169f6af6d878adc7c84b632324"></a>INTERSECT_PARTIAL&#160;</td><td class="fielddoc"><p>There is a partial intersection. </p>
 </td></tr>
@@ -1551,7 +2195,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="ga819779b9857cc2f8601e6526a3a5bc71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga819779b9857cc2f8601e6526a3a5bc71">&#9670;&nbsp;</a></span>RetrievalModes <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga819779b9857cc2f8601e6526a3a5bc71">&#9670;&nbsp;</a></span>RetrievalModes <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1596,12 +2240,20 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3"></a>RETR_TREE&#160;</td><td class="fielddoc"><p>retrieves all of the contours and reconstructs a full hierarchy of nested contours. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7"></a>RETR_EXTERNAL&#160;</td><td class="fielddoc"><p>retrieves only the extreme outer contours. It sets <code>hierarchy[i][2]=hierarchy[i][3]=-1</code> for all the contours. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d"></a>RETR_LIST&#160;</td><td class="fielddoc"><p>retrieves all of the contours without establishing any hierarchical relationships. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b"></a>RETR_CCOMP&#160;</td><td class="fielddoc"><p>retrieves all of the contours and organizes them into a two-level hierarchy. At the top level, there are external boundaries of the components. At the second level, there are boundaries of the holes. If there is another contour inside a hole of a connected component, it is still put at the top level. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3"></a>RETR_TREE&#160;</td><td class="fielddoc"><p>retrieves all of the contours and reconstructs a full hierarchy of nested contours. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga819779b9857cc2f8601e6526a3a5bc71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga819779b9857cc2f8601e6526a3a5bc71">&#9670;&nbsp;</a></span>RetrievalModes <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga819779b9857cc2f8601e6526a3a5bc71">&#9670;&nbsp;</a></span>RetrievalModes <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1646,12 +2298,20 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3"></a>RETR_TREE&#160;</td><td class="fielddoc"><p>retrieves all of the contours and reconstructs a full hierarchy of nested contours. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7"></a>RETR_EXTERNAL&#160;</td><td class="fielddoc"><p>retrieves only the extreme outer contours. It sets <code>hierarchy[i][2]=hierarchy[i][3]=-1</code> for all the contours. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d"></a>RETR_LIST&#160;</td><td class="fielddoc"><p>retrieves all of the contours without establishing any hierarchical relationships. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b"></a>RETR_CCOMP&#160;</td><td class="fielddoc"><p>retrieves all of the contours and organizes them into a two-level hierarchy. At the top level, there are external boundaries of the components. At the second level, there are boundaries of the holes. If there is another contour inside a hole of a connected component, it is still put at the top level. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3"></a>RETR_TREE&#160;</td><td class="fielddoc"><p>retrieves all of the contours and reconstructs a full hierarchy of nested contours. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga819779b9857cc2f8601e6526a3a5bc71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga819779b9857cc2f8601e6526a3a5bc71">&#9670;&nbsp;</a></span>RetrievalModes <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga819779b9857cc2f8601e6526a3a5bc71">&#9670;&nbsp;</a></span>RetrievalModes <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1696,12 +2356,20 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3"></a>RETR_TREE&#160;</td><td class="fielddoc"><p>retrieves all of the contours and reconstructs a full hierarchy of nested contours. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7"></a>RETR_EXTERNAL&#160;</td><td class="fielddoc"><p>retrieves only the extreme outer contours. It sets <code>hierarchy[i][2]=hierarchy[i][3]=-1</code> for all the contours. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d"></a>RETR_LIST&#160;</td><td class="fielddoc"><p>retrieves all of the contours without establishing any hierarchical relationships. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b"></a>RETR_CCOMP&#160;</td><td class="fielddoc"><p>retrieves all of the contours and organizes them into a two-level hierarchy. At the top level, there are external boundaries of the components. At the second level, there are boundaries of the holes. If there is another contour inside a hole of a connected component, it is still put at the top level. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3"></a>RETR_TREE&#160;</td><td class="fielddoc"><p>retrieves all of the contours and reconstructs a full hierarchy of nested contours. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <a id="ga819779b9857cc2f8601e6526a3a5bc71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga819779b9857cc2f8601e6526a3a5bc71">&#9670;&nbsp;</a></span>RetrievalModes <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga819779b9857cc2f8601e6526a3a5bc71">&#9670;&nbsp;</a></span>RetrievalModes <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1715,6 +2383,72 @@ Variables</h2></td></tr>
 <p>mode of the contour retrieval algorithm </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7"></a>RETR_EXTERNAL&#160;</td><td class="fielddoc"><p>retrieves only the extreme outer contours. It sets <code>hierarchy[i][2]=hierarchy[i][3]=-1</code> for all the contours. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d"></a>RETR_LIST&#160;</td><td class="fielddoc"><p>retrieves all of the contours without establishing any hierarchical relationships. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b"></a>RETR_CCOMP&#160;</td><td class="fielddoc"><p>retrieves all of the contours and organizes them into a two-level hierarchy. At the top level, there are external boundaries of the components. At the second level, there are boundaries of the holes. If there is another contour inside a hole of a connected component, it is still put at the top level. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3"></a>RETR_TREE&#160;</td><td class="fielddoc"><p>retrieves all of the contours and reconstructs a full hierarchy of nested contours. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7"></a>RETR_EXTERNAL&#160;</td><td class="fielddoc"><p>retrieves only the extreme outer contours. It sets <code>hierarchy[i][2]=hierarchy[i][3]=-1</code> for all the contours. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d"></a>RETR_LIST&#160;</td><td class="fielddoc"><p>retrieves all of the contours without establishing any hierarchical relationships. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b"></a>RETR_CCOMP&#160;</td><td class="fielddoc"><p>retrieves all of the contours and organizes them into a two-level hierarchy. At the top level, there are external boundaries of the components. At the second level, there are boundaries of the holes. If there is another contour inside a hole of a connected component, it is still put at the top level. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3"></a>RETR_TREE&#160;</td><td class="fielddoc"><p>retrieves all of the contours and reconstructs a full hierarchy of nested contours. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7"></a>RETR_EXTERNAL&#160;</td><td class="fielddoc"><p>retrieves only the extreme outer contours. It sets <code>hierarchy[i][2]=hierarchy[i][3]=-1</code> for all the contours. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d"></a>RETR_LIST&#160;</td><td class="fielddoc"><p>retrieves all of the contours without establishing any hierarchical relationships. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b"></a>RETR_CCOMP&#160;</td><td class="fielddoc"><p>retrieves all of the contours and organizes them into a two-level hierarchy. At the top level, there are external boundaries of the components. At the second level, there are boundaries of the holes. If there is another contour inside a hole of a connected component, it is still put at the top level. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3"></a>RETR_TREE&#160;</td><td class="fielddoc"><p>retrieves all of the contours and reconstructs a full hierarchy of nested contours. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7"></a>RETR_EXTERNAL&#160;</td><td class="fielddoc"><p>retrieves only the extreme outer contours. It sets <code>hierarchy[i][2]=hierarchy[i][3]=-1</code> for all the contours. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d"></a>RETR_LIST&#160;</td><td class="fielddoc"><p>retrieves all of the contours without establishing any hierarchical relationships. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b"></a>RETR_CCOMP&#160;</td><td class="fielddoc"><p>retrieves all of the contours and organizes them into a two-level hierarchy. At the top level, there are external boundaries of the components. At the second level, there are boundaries of the holes. If there is another contour inside a hole of a connected component, it is still put at the top level. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3"></a>RETR_TREE&#160;</td><td class="fielddoc"><p>retrieves all of the contours and reconstructs a full hierarchy of nested contours. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7"></a>RETR_EXTERNAL&#160;</td><td class="fielddoc"><p>retrieves only the extreme outer contours. It sets <code>hierarchy[i][2]=hierarchy[i][3]=-1</code> for all the contours. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d"></a>RETR_LIST&#160;</td><td class="fielddoc"><p>retrieves all of the contours without establishing any hierarchical relationships. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b"></a>RETR_CCOMP&#160;</td><td class="fielddoc"><p>retrieves all of the contours and organizes them into a two-level hierarchy. At the top level, there are external boundaries of the components. At the second level, there are boundaries of the holes. If there is another contour inside a hole of a connected component, it is still put at the top level. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3"></a>RETR_TREE&#160;</td><td class="fielddoc"><p>retrieves all of the contours and reconstructs a full hierarchy of nested contours. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga819779b9857cc2f8601e6526a3a5bc71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga819779b9857cc2f8601e6526a3a5bc71">&#9670;&nbsp;</a></span>RetrievalModes <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgproc__shape.html#ga819779b9857cc2f8601e6526a3a5bc71">cv::RetrievalModes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>mode of the contour retrieval algorithm </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7"></a>RETR_EXTERNAL&#160;</td><td class="fielddoc"><p>retrieves only the extreme outer contours. It sets <code>hierarchy[i][2]=hierarchy[i][3]=-1</code> for all the contours. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d"></a>RETR_LIST&#160;</td><td class="fielddoc"><p>retrieves all of the contours without establishing any hierarchical relationships. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8ca70c3ed5bba1e22010bfc80f77bd6b"></a>RETR_CCOMP&#160;</td><td class="fielddoc"><p>retrieves all of the contours and organizes them into a two-level hierarchy. At the top level, there are external boundaries of the components. At the second level, there are boundaries of the holes. If there is another contour inside a hole of a connected component, it is still put at the top level. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a8a4007a261e2373675d10c76a6e50fb3"></a>RETR_TREE&#160;</td><td class="fielddoc"><p>retrieves all of the contours and reconstructs a full hierarchy of nested contours. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a93c1313a873e336c4b9577624609beb7"></a>RETR_EXTERNAL&#160;</td><td class="fielddoc"><p>retrieves only the extreme outer contours. It sets <code>hierarchy[i][2]=hierarchy[i][3]=-1</code> for all the contours. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga819779b9857cc2f8601e6526a3a5bc71a6511ee0f5faf06d4b8cacbdd032f774d"></a>RETR_LIST&#160;</td><td class="fielddoc"><p>retrieves all of the contours without establishing any hierarchical relationships. </p>
 </td></tr>
@@ -1751,7 +2485,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="gaf2b97a230b51856d09a2d934b78c015f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf2b97a230b51856d09a2d934b78c015f">&#9670;&nbsp;</a></span>ShapeMatchModes <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2b97a230b51856d09a2d934b78c015f">&#9670;&nbsp;</a></span>ShapeMatchModes <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1815,12 +2549,24 @@ Variables</h2></td></tr>
 <img class="formulaDsp" alt="\[I_3(A,B) = \max _{i=1...7} \frac{ \left| m^A_i - m^B_i \right| }{ \left| m^A_i \right| }\]" src="form_389.png"/>
 </p>
  </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a"></a>CONTOURS_MATCH_I1&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_1(A,B) = \sum _{i=1...7} \left | \frac{1}{m^A_i} - \frac{1}{m^B_i} \right |\]" src="form_387.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae"></a>CONTOURS_MATCH_I2&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_2(A,B) = \sum _{i=1...7} \left | m^A_i - m^B_i \right |\]" src="form_388.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0"></a>CONTOURS_MATCH_I3&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_3(A,B) = \max _{i=1...7} \frac{ \left| m^A_i - m^B_i \right| }{ \left| m^A_i \right| }\]" src="form_389.png"/>
+</p>
+ </td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaf2b97a230b51856d09a2d934b78c015f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf2b97a230b51856d09a2d934b78c015f">&#9670;&nbsp;</a></span>ShapeMatchModes <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2b97a230b51856d09a2d934b78c015f">&#9670;&nbsp;</a></span>ShapeMatchModes <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1884,12 +2630,24 @@ Variables</h2></td></tr>
 <img class="formulaDsp" alt="\[I_3(A,B) = \max _{i=1...7} \frac{ \left| m^A_i - m^B_i \right| }{ \left| m^A_i \right| }\]" src="form_389.png"/>
 </p>
  </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a"></a>CONTOURS_MATCH_I1&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_1(A,B) = \sum _{i=1...7} \left | \frac{1}{m^A_i} - \frac{1}{m^B_i} \right |\]" src="form_387.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae"></a>CONTOURS_MATCH_I2&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_2(A,B) = \sum _{i=1...7} \left | m^A_i - m^B_i \right |\]" src="form_388.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0"></a>CONTOURS_MATCH_I3&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_3(A,B) = \max _{i=1...7} \frac{ \left| m^A_i - m^B_i \right| }{ \left| m^A_i \right| }\]" src="form_389.png"/>
+</p>
+ </td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaf2b97a230b51856d09a2d934b78c015f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf2b97a230b51856d09a2d934b78c015f">&#9670;&nbsp;</a></span>ShapeMatchModes <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2b97a230b51856d09a2d934b78c015f">&#9670;&nbsp;</a></span>ShapeMatchModes <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1953,12 +2711,24 @@ Variables</h2></td></tr>
 <img class="formulaDsp" alt="\[I_3(A,B) = \max _{i=1...7} \frac{ \left| m^A_i - m^B_i \right| }{ \left| m^A_i \right| }\]" src="form_389.png"/>
 </p>
  </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a"></a>CONTOURS_MATCH_I1&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_1(A,B) = \sum _{i=1...7} \left | \frac{1}{m^A_i} - \frac{1}{m^B_i} \right |\]" src="form_387.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae"></a>CONTOURS_MATCH_I2&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_2(A,B) = \sum _{i=1...7} \left | m^A_i - m^B_i \right |\]" src="form_388.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0"></a>CONTOURS_MATCH_I3&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_3(A,B) = \max _{i=1...7} \frac{ \left| m^A_i - m^B_i \right| }{ \left| m^A_i \right| }\]" src="form_389.png"/>
+</p>
+ </td></tr>
 </table>
 
 </div>
 </div>
 <a id="gaf2b97a230b51856d09a2d934b78c015f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf2b97a230b51856d09a2d934b78c015f">&#9670;&nbsp;</a></span>ShapeMatchModes <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2b97a230b51856d09a2d934b78c015f">&#9670;&nbsp;</a></span>ShapeMatchModes <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1975,6 +2745,99 @@ Variables</h2></td></tr>
 <p>and <img class="formulaInl" alt="$h^A_i, h^B_i$" src="form_403.png"/> are the Hu moments of <img class="formulaInl" alt="$A$" src="form_4.png"/> and <img class="formulaInl" alt="$B$" src="form_401.png"/> , respectively. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a"></a>CONTOURS_MATCH_I1&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_1(A,B) = \sum _{i=1...7} \left | \frac{1}{m^A_i} - \frac{1}{m^B_i} \right |\]" src="form_387.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae"></a>CONTOURS_MATCH_I2&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_2(A,B) = \sum _{i=1...7} \left | m^A_i - m^B_i \right |\]" src="form_388.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0"></a>CONTOURS_MATCH_I3&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_3(A,B) = \max _{i=1...7} \frac{ \left| m^A_i - m^B_i \right| }{ \left| m^A_i \right| }\]" src="form_389.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a"></a>CONTOURS_MATCH_I1&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_1(A,B) = \sum _{i=1...7} \left | \frac{1}{m^A_i} - \frac{1}{m^B_i} \right |\]" src="form_387.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae"></a>CONTOURS_MATCH_I2&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_2(A,B) = \sum _{i=1...7} \left | m^A_i - m^B_i \right |\]" src="form_388.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0"></a>CONTOURS_MATCH_I3&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_3(A,B) = \max _{i=1...7} \frac{ \left| m^A_i - m^B_i \right| }{ \left| m^A_i \right| }\]" src="form_389.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a"></a>CONTOURS_MATCH_I1&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_1(A,B) = \sum _{i=1...7} \left | \frac{1}{m^A_i} - \frac{1}{m^B_i} \right |\]" src="form_387.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae"></a>CONTOURS_MATCH_I2&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_2(A,B) = \sum _{i=1...7} \left | m^A_i - m^B_i \right |\]" src="form_388.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0"></a>CONTOURS_MATCH_I3&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_3(A,B) = \max _{i=1...7} \frac{ \left| m^A_i - m^B_i \right| }{ \left| m^A_i \right| }\]" src="form_389.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a"></a>CONTOURS_MATCH_I1&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_1(A,B) = \sum _{i=1...7} \left | \frac{1}{m^A_i} - \frac{1}{m^B_i} \right |\]" src="form_387.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae"></a>CONTOURS_MATCH_I2&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_2(A,B) = \sum _{i=1...7} \left | m^A_i - m^B_i \right |\]" src="form_388.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0"></a>CONTOURS_MATCH_I3&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_3(A,B) = \max _{i=1...7} \frac{ \left| m^A_i - m^B_i \right| }{ \left| m^A_i \right| }\]" src="form_389.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a"></a>CONTOURS_MATCH_I1&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_1(A,B) = \sum _{i=1...7} \left | \frac{1}{m^A_i} - \frac{1}{m^B_i} \right |\]" src="form_387.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae"></a>CONTOURS_MATCH_I2&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_2(A,B) = \sum _{i=1...7} \left | m^A_i - m^B_i \right |\]" src="form_388.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0"></a>CONTOURS_MATCH_I3&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_3(A,B) = \max _{i=1...7} \frac{ \left| m^A_i - m^B_i \right| }{ \left| m^A_i \right| }\]" src="form_389.png"/>
+</p>
+ </td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaf2b97a230b51856d09a2d934b78c015f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2b97a230b51856d09a2d934b78c015f">&#9670;&nbsp;</a></span>ShapeMatchModes <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__imgproc__shape.html#gaf2b97a230b51856d09a2d934b78c015f">cv::ShapeMatchModes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shape matching methods. </p>
+<p><img class="formulaInl" alt="$A$" src="form_4.png"/> denotes object1, <img class="formulaInl" alt="$B$" src="form_401.png"/> denotes object2</p>
+<p><img class="formulaInl" alt="$\begin{array}{l} m^A_i = \mathrm{sign} (h^A_i) \cdot \log{h^A_i} \\ m^B_i = \mathrm{sign} (h^B_i) \cdot \log{h^B_i} \end{array}$" src="form_402.png"/></p>
+<p>and <img class="formulaInl" alt="$h^A_i, h^B_i$" src="form_403.png"/> are the Hu moments of <img class="formulaInl" alt="$A$" src="form_4.png"/> and <img class="formulaInl" alt="$B$" src="form_401.png"/> , respectively. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a"></a>CONTOURS_MATCH_I1&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_1(A,B) = \sum _{i=1...7} \left | \frac{1}{m^A_i} - \frac{1}{m^B_i} \right |\]" src="form_387.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa729e15b1d4ca50c4145446a5804ee5ae"></a>CONTOURS_MATCH_I2&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_2(A,B) = \sum _{i=1...7} \left | m^A_i - m^B_i \right |\]" src="form_388.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa949ec266fc8e9cebadc559c333bb94f0"></a>CONTOURS_MATCH_I3&#160;</td><td class="fielddoc"><p class="formulaDsp">
+<img class="formulaDsp" alt="\[I_3(A,B) = \max _{i=1...7} \frac{ \left| m^A_i - m^B_i \right| }{ \left| m^A_i \right| }\]" src="form_389.png"/>
+</p>
+ </td></tr>
+<tr><td class="fieldname"><a id="ggaf2b97a230b51856d09a2d934b78c015fa9db666505795ed6c663fcd2f9f70e84a"></a>CONTOURS_MATCH_I1&#160;</td><td class="fielddoc"><p class="formulaDsp">
 <img class="formulaDsp" alt="\[I_1(A,B) = \sum _{i=1...7} \left | \frac{1}{m^A_i} - \frac{1}{m^B_i} \right |\]" src="form_387.png"/>
 </p>
  </td></tr>

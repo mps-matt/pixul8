@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pixul8: Camera Calibration and 3D Reconstruction</title>
+<title>PixUl8: Camera Calibration and 3D Reconstruction</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="iTunesArtwork@2x"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">pixul8
-   &#160;<span id="projectnumber">3.0</span>
+   <div id="projectname">PixUl8
+   &#160;<span id="projectnumber">3.1</span>
    </div>
-   <div id="projectbrief">Camera App implementing manual controls</div>
   </td>
  </tr>
  </tbody>
@@ -100,21 +98,21 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga9e8ffd0cccc9273e9334d80db2a14d15"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a6ffbc2749c8e3766c92b1ed3c1e7a462">cv::LMEDS</a> = 4, 
-<a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858">cv::RANSAC</a> = 8, 
-<a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a9b817ea4d511588fb4a1ee89a47b1217">cv::RHO</a> = 16
+<tr class="memitem:ga9e8ffd0cccc9273e9334d80db2a14d15"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a6ffbc2749c8e3766c92b1ed3c1e7a462">cv::LMEDS</a> = 4, 
+<a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858">cv::RANSAC</a> = 8, 
+<a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a9b817ea4d511588fb4a1ee89a47b1217">cv::RHO</a> = 16
  }</td></tr>
 <tr class="memdesc:ga9e8ffd0cccc9273e9334d80db2a14d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of the robust estimation algorithm  <a href="group__calib3d.html#ga9e8ffd0cccc9273e9334d80db2a14d15">More...</a><br /></td></tr>
 <tr class="separator:ga9e8ffd0cccc9273e9334d80db2a14d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga399140175919325d93e19dc058339ec8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
 &#160;&#160;<b>SOLVEPNP_ITERATIVE</b> = 0, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5bad03e9d693cb8732706cf9548f23fc25b">cv::SOLVEPNP_EPNP</a> = 1, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5baeac3df31d2bf4b2ca1003d509aeea1dc">cv::SOLVEPNP_P3P</a> = 2, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5ba578cf85b9a848c5ca343ea2e77030c32">cv::SOLVEPNP_DLS</a> = 3, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ead03e9d693cb8732706cf9548f23fc25b">cv::SOLVEPNP_EPNP</a> = 1, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806eaeac3df31d2bf4b2ca1003d509aeea1dc">cv::SOLVEPNP_P3P</a> = 2, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea578cf85b9a848c5ca343ea2e77030c32">cv::SOLVEPNP_DLS</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5ba7c1c4d9b871d69c8693671194a62cb50">cv::SOLVEPNP_UPNP</a> = 4, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5ba7740031075cbea61d8b24171d51fc220">cv::SOLVEPNP_AP3P</a> = 5, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5ba8defd1c64ff74e406a3a830eef251e53">cv::SOLVEPNP_MAX_COUNT</a>
+&#160;&#160;<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea7c1c4d9b871d69c8693671194a62cb50">cv::SOLVEPNP_UPNP</a> = 4, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea7740031075cbea61d8b24171d51fc220">cv::SOLVEPNP_AP3P</a> = 5, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea8defd1c64ff74e406a3a830eef251e53">cv::SOLVEPNP_MAX_COUNT</a>
 <br />
  }</td></tr>
 <tr class="separator:ga399140175919325d93e19dc058339ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,39 +148,39 @@ Enumerations</h2></td></tr>
 <b>CALIB_TILTED_MODEL</b> = 0x40000, 
 <b>CALIB_FIX_TAUX_TAUY</b> = 0x80000, 
 <br />
-&#160;&#160;<a class="el" href="group__calib3d.html#gga4d282711121b1f2f6bd2a7dae519b9efa916d73d3a0e47f36615b2eb94a86ae96">cv::CALIB_USE_QR</a> = 0x100000, 
+&#160;&#160;<a class="el" href="group__calib3d.html#ggac86685a0f918d674c305a43f49616c6da916d73d3a0e47f36615b2eb94a86ae96">cv::CALIB_USE_QR</a> = 0x100000, 
 <b>CALIB_FIX_TANGENT_DIST</b> = 0x200000, 
 <b>CALIB_FIX_INTRINSIC</b> = 0x00100, 
 <b>CALIB_SAME_FOCAL_LENGTH</b> = 0x00200, 
 <br />
 &#160;&#160;<b>CALIB_ZERO_DISPARITY</b> = 0x00400, 
-<a class="el" href="group__calib3d.html#gga4d282711121b1f2f6bd2a7dae519b9efa047bf1e4364af64689d07330a59b0a74">cv::CALIB_USE_LU</a> = (1 &lt;&lt; 17), 
-<a class="el" href="group__calib3d.html#gga4d282711121b1f2f6bd2a7dae519b9efadc7f25acefcf7a854c53a3a18372ec19">cv::CALIB_USE_EXTRINSIC_GUESS</a> = (1 &lt;&lt; 22)
+<a class="el" href="group__calib3d.html#ggac86685a0f918d674c305a43f49616c6da047bf1e4364af64689d07330a59b0a74">cv::CALIB_USE_LU</a> = (1 &lt;&lt; 17), 
+<a class="el" href="group__calib3d.html#ggac86685a0f918d674c305a43f49616c6dadc7f25acefcf7a854c53a3a18372ec19">cv::CALIB_USE_EXTRINSIC_GUESS</a> = (1 &lt;&lt; 22)
 <br />
  }</td></tr>
 <tr class="separator:gae47e362ab6bd9ea60b7c0c75495e8f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga234057c65114861f52a325c0aa192add"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289ca46552ef51e86843af3789718e4355d69">cv::FM_7POINT</a> = 1, 
-<a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289ca7cceb68141bd61e993c6da371aa8399f">cv::FM_8POINT</a> = 2, 
-<a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289ca21579541aff80e7750d5499265a2e971">cv::FM_LMEDS</a> = 4, 
-<a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289caed27573602ec5e0e6de1f541eb2d9b8d">cv::FM_RANSAC</a> = 8
+<tr class="memitem:ga234057c65114861f52a325c0aa192add"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391a46552ef51e86843af3789718e4355d69">cv::FM_7POINT</a> = 1, 
+<a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391a7cceb68141bd61e993c6da371aa8399f">cv::FM_8POINT</a> = 2, 
+<a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391a21579541aff80e7750d5499265a2e971">cv::FM_LMEDS</a> = 4, 
+<a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391aed27573602ec5e0e6de1f541eb2d9b8d">cv::FM_RANSAC</a> = 8
  }</td></tr>
 <tr class="memdesc:ga234057c65114861f52a325c0aa192add"><td class="mdescLeft">&#160;</td><td class="mdescRight">the algorithm for finding fundamental matrix  <a href="group__calib3d.html#ga234057c65114861f52a325c0aa192add">More...</a><br /></td></tr>
 <tr class="separator:ga234057c65114861f52a325c0aa192add"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga007e96ac9ae7673775222d9040d1dc6f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a6ffbc2749c8e3766c92b1ed3c1e7a462">cv::LMEDS</a> = 4, 
-<a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858">cv::RANSAC</a> = 8, 
-<a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a9b817ea4d511588fb4a1ee89a47b1217">cv::RHO</a> = 16
+<tr class="memitem:ga007e96ac9ae7673775222d9040d1dc6f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a6ffbc2749c8e3766c92b1ed3c1e7a462">cv::LMEDS</a> = 4, 
+<a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858">cv::RANSAC</a> = 8, 
+<a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a9b817ea4d511588fb4a1ee89a47b1217">cv::RHO</a> = 16
  }</td></tr>
 <tr class="memdesc:ga007e96ac9ae7673775222d9040d1dc6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of the robust estimation algorithm  <a href="group__calib3d.html#ga007e96ac9ae7673775222d9040d1dc6f">More...</a><br /></td></tr>
 <tr class="separator:ga007e96ac9ae7673775222d9040d1dc6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac20c2043a30c358125a85168bbf549fe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
 &#160;&#160;<b>SOLVEPNP_ITERATIVE</b> = 0, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5bad03e9d693cb8732706cf9548f23fc25b">cv::SOLVEPNP_EPNP</a> = 1, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5baeac3df31d2bf4b2ca1003d509aeea1dc">cv::SOLVEPNP_P3P</a> = 2, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5ba578cf85b9a848c5ca343ea2e77030c32">cv::SOLVEPNP_DLS</a> = 3, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ead03e9d693cb8732706cf9548f23fc25b">cv::SOLVEPNP_EPNP</a> = 1, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806eaeac3df31d2bf4b2ca1003d509aeea1dc">cv::SOLVEPNP_P3P</a> = 2, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea578cf85b9a848c5ca343ea2e77030c32">cv::SOLVEPNP_DLS</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5ba7c1c4d9b871d69c8693671194a62cb50">cv::SOLVEPNP_UPNP</a> = 4, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5ba7740031075cbea61d8b24171d51fc220">cv::SOLVEPNP_AP3P</a> = 5, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5ba8defd1c64ff74e406a3a830eef251e53">cv::SOLVEPNP_MAX_COUNT</a>
+&#160;&#160;<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea7c1c4d9b871d69c8693671194a62cb50">cv::SOLVEPNP_UPNP</a> = 4, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea7740031075cbea61d8b24171d51fc220">cv::SOLVEPNP_AP3P</a> = 5, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea8defd1c64ff74e406a3a830eef251e53">cv::SOLVEPNP_MAX_COUNT</a>
 <br />
  }</td></tr>
 <tr class="separator:gac20c2043a30c358125a85168bbf549fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,39 +216,39 @@ Enumerations</h2></td></tr>
 <b>CALIB_TILTED_MODEL</b> = 0x40000, 
 <b>CALIB_FIX_TAUX_TAUY</b> = 0x80000, 
 <br />
-&#160;&#160;<a class="el" href="group__calib3d.html#gga4d282711121b1f2f6bd2a7dae519b9efa916d73d3a0e47f36615b2eb94a86ae96">cv::CALIB_USE_QR</a> = 0x100000, 
+&#160;&#160;<a class="el" href="group__calib3d.html#ggac86685a0f918d674c305a43f49616c6da916d73d3a0e47f36615b2eb94a86ae96">cv::CALIB_USE_QR</a> = 0x100000, 
 <b>CALIB_FIX_TANGENT_DIST</b> = 0x200000, 
 <b>CALIB_FIX_INTRINSIC</b> = 0x00100, 
 <b>CALIB_SAME_FOCAL_LENGTH</b> = 0x00200, 
 <br />
 &#160;&#160;<b>CALIB_ZERO_DISPARITY</b> = 0x00400, 
-<a class="el" href="group__calib3d.html#gga4d282711121b1f2f6bd2a7dae519b9efa047bf1e4364af64689d07330a59b0a74">cv::CALIB_USE_LU</a> = (1 &lt;&lt; 17), 
-<a class="el" href="group__calib3d.html#gga4d282711121b1f2f6bd2a7dae519b9efadc7f25acefcf7a854c53a3a18372ec19">cv::CALIB_USE_EXTRINSIC_GUESS</a> = (1 &lt;&lt; 22)
+<a class="el" href="group__calib3d.html#ggac86685a0f918d674c305a43f49616c6da047bf1e4364af64689d07330a59b0a74">cv::CALIB_USE_LU</a> = (1 &lt;&lt; 17), 
+<a class="el" href="group__calib3d.html#ggac86685a0f918d674c305a43f49616c6dadc7f25acefcf7a854c53a3a18372ec19">cv::CALIB_USE_EXTRINSIC_GUESS</a> = (1 &lt;&lt; 22)
 <br />
  }</td></tr>
 <tr class="separator:ga91b75e26c5445934a60ca4d1f3f267e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8c5f15883bd34d2537cb56526df2b5d6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289ca46552ef51e86843af3789718e4355d69">cv::FM_7POINT</a> = 1, 
-<a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289ca7cceb68141bd61e993c6da371aa8399f">cv::FM_8POINT</a> = 2, 
-<a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289ca21579541aff80e7750d5499265a2e971">cv::FM_LMEDS</a> = 4, 
-<a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289caed27573602ec5e0e6de1f541eb2d9b8d">cv::FM_RANSAC</a> = 8
+<tr class="memitem:ga8c5f15883bd34d2537cb56526df2b5d6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391a46552ef51e86843af3789718e4355d69">cv::FM_7POINT</a> = 1, 
+<a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391a7cceb68141bd61e993c6da371aa8399f">cv::FM_8POINT</a> = 2, 
+<a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391a21579541aff80e7750d5499265a2e971">cv::FM_LMEDS</a> = 4, 
+<a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391aed27573602ec5e0e6de1f541eb2d9b8d">cv::FM_RANSAC</a> = 8
  }</td></tr>
 <tr class="memdesc:ga8c5f15883bd34d2537cb56526df2b5d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">the algorithm for finding fundamental matrix  <a href="group__calib3d.html#ga8c5f15883bd34d2537cb56526df2b5d6">More...</a><br /></td></tr>
 <tr class="separator:ga8c5f15883bd34d2537cb56526df2b5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga430b313c7b588e777d26d459befb7b22"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a6ffbc2749c8e3766c92b1ed3c1e7a462">cv::LMEDS</a> = 4, 
-<a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858">cv::RANSAC</a> = 8, 
-<a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a9b817ea4d511588fb4a1ee89a47b1217">cv::RHO</a> = 16
+<tr class="memitem:ga430b313c7b588e777d26d459befb7b22"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a6ffbc2749c8e3766c92b1ed3c1e7a462">cv::LMEDS</a> = 4, 
+<a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858">cv::RANSAC</a> = 8, 
+<a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a9b817ea4d511588fb4a1ee89a47b1217">cv::RHO</a> = 16
  }</td></tr>
 <tr class="memdesc:ga430b313c7b588e777d26d459befb7b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of the robust estimation algorithm  <a href="group__calib3d.html#ga430b313c7b588e777d26d459befb7b22">More...</a><br /></td></tr>
 <tr class="separator:ga430b313c7b588e777d26d459befb7b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1dc1c59f8ad0707cdfe98c64336e0387"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
 &#160;&#160;<b>SOLVEPNP_ITERATIVE</b> = 0, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5bad03e9d693cb8732706cf9548f23fc25b">cv::SOLVEPNP_EPNP</a> = 1, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5baeac3df31d2bf4b2ca1003d509aeea1dc">cv::SOLVEPNP_P3P</a> = 2, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5ba578cf85b9a848c5ca343ea2e77030c32">cv::SOLVEPNP_DLS</a> = 3, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ead03e9d693cb8732706cf9548f23fc25b">cv::SOLVEPNP_EPNP</a> = 1, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806eaeac3df31d2bf4b2ca1003d509aeea1dc">cv::SOLVEPNP_P3P</a> = 2, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea578cf85b9a848c5ca343ea2e77030c32">cv::SOLVEPNP_DLS</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5ba7c1c4d9b871d69c8693671194a62cb50">cv::SOLVEPNP_UPNP</a> = 4, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5ba7740031075cbea61d8b24171d51fc220">cv::SOLVEPNP_AP3P</a> = 5, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5ba8defd1c64ff74e406a3a830eef251e53">cv::SOLVEPNP_MAX_COUNT</a>
+&#160;&#160;<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea7c1c4d9b871d69c8693671194a62cb50">cv::SOLVEPNP_UPNP</a> = 4, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea7740031075cbea61d8b24171d51fc220">cv::SOLVEPNP_AP3P</a> = 5, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea8defd1c64ff74e406a3a830eef251e53">cv::SOLVEPNP_MAX_COUNT</a>
 <br />
  }</td></tr>
 <tr class="separator:ga1dc1c59f8ad0707cdfe98c64336e0387"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -286,39 +284,39 @@ Enumerations</h2></td></tr>
 <b>CALIB_TILTED_MODEL</b> = 0x40000, 
 <b>CALIB_FIX_TAUX_TAUY</b> = 0x80000, 
 <br />
-&#160;&#160;<a class="el" href="group__calib3d.html#gga4d282711121b1f2f6bd2a7dae519b9efa916d73d3a0e47f36615b2eb94a86ae96">cv::CALIB_USE_QR</a> = 0x100000, 
+&#160;&#160;<a class="el" href="group__calib3d.html#ggac86685a0f918d674c305a43f49616c6da916d73d3a0e47f36615b2eb94a86ae96">cv::CALIB_USE_QR</a> = 0x100000, 
 <b>CALIB_FIX_TANGENT_DIST</b> = 0x200000, 
 <b>CALIB_FIX_INTRINSIC</b> = 0x00100, 
 <b>CALIB_SAME_FOCAL_LENGTH</b> = 0x00200, 
 <br />
 &#160;&#160;<b>CALIB_ZERO_DISPARITY</b> = 0x00400, 
-<a class="el" href="group__calib3d.html#gga4d282711121b1f2f6bd2a7dae519b9efa047bf1e4364af64689d07330a59b0a74">cv::CALIB_USE_LU</a> = (1 &lt;&lt; 17), 
-<a class="el" href="group__calib3d.html#gga4d282711121b1f2f6bd2a7dae519b9efadc7f25acefcf7a854c53a3a18372ec19">cv::CALIB_USE_EXTRINSIC_GUESS</a> = (1 &lt;&lt; 22)
+<a class="el" href="group__calib3d.html#ggac86685a0f918d674c305a43f49616c6da047bf1e4364af64689d07330a59b0a74">cv::CALIB_USE_LU</a> = (1 &lt;&lt; 17), 
+<a class="el" href="group__calib3d.html#ggac86685a0f918d674c305a43f49616c6dadc7f25acefcf7a854c53a3a18372ec19">cv::CALIB_USE_EXTRINSIC_GUESS</a> = (1 &lt;&lt; 22)
 <br />
  }</td></tr>
 <tr class="separator:gafe29d320cbd8c2cd6e1b400f5dd4a704"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaec509ee7db4520958f919da98cf49570"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289ca46552ef51e86843af3789718e4355d69">cv::FM_7POINT</a> = 1, 
-<a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289ca7cceb68141bd61e993c6da371aa8399f">cv::FM_8POINT</a> = 2, 
-<a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289ca21579541aff80e7750d5499265a2e971">cv::FM_LMEDS</a> = 4, 
-<a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289caed27573602ec5e0e6de1f541eb2d9b8d">cv::FM_RANSAC</a> = 8
+<tr class="memitem:gaec509ee7db4520958f919da98cf49570"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391a46552ef51e86843af3789718e4355d69">cv::FM_7POINT</a> = 1, 
+<a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391a7cceb68141bd61e993c6da371aa8399f">cv::FM_8POINT</a> = 2, 
+<a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391a21579541aff80e7750d5499265a2e971">cv::FM_LMEDS</a> = 4, 
+<a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391aed27573602ec5e0e6de1f541eb2d9b8d">cv::FM_RANSAC</a> = 8
  }</td></tr>
 <tr class="memdesc:gaec509ee7db4520958f919da98cf49570"><td class="mdescLeft">&#160;</td><td class="mdescRight">the algorithm for finding fundamental matrix  <a href="group__calib3d.html#gaec509ee7db4520958f919da98cf49570">More...</a><br /></td></tr>
 <tr class="separator:gaec509ee7db4520958f919da98cf49570"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab8dae27619d5b4de59d43c01c5c5c3a0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a6ffbc2749c8e3766c92b1ed3c1e7a462">cv::LMEDS</a> = 4, 
-<a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858">cv::RANSAC</a> = 8, 
-<a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a9b817ea4d511588fb4a1ee89a47b1217">cv::RHO</a> = 16
+<tr class="memitem:gab8dae27619d5b4de59d43c01c5c5c3a0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a6ffbc2749c8e3766c92b1ed3c1e7a462">cv::LMEDS</a> = 4, 
+<a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858">cv::RANSAC</a> = 8, 
+<a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a9b817ea4d511588fb4a1ee89a47b1217">cv::RHO</a> = 16
  }</td></tr>
 <tr class="memdesc:gab8dae27619d5b4de59d43c01c5c5c3a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of the robust estimation algorithm  <a href="group__calib3d.html#gab8dae27619d5b4de59d43c01c5c5c3a0">More...</a><br /></td></tr>
 <tr class="separator:gab8dae27619d5b4de59d43c01c5c5c3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga17b1907ac25b264eff4476aee2078e5b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
 &#160;&#160;<b>SOLVEPNP_ITERATIVE</b> = 0, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5bad03e9d693cb8732706cf9548f23fc25b">cv::SOLVEPNP_EPNP</a> = 1, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5baeac3df31d2bf4b2ca1003d509aeea1dc">cv::SOLVEPNP_P3P</a> = 2, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5ba578cf85b9a848c5ca343ea2e77030c32">cv::SOLVEPNP_DLS</a> = 3, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ead03e9d693cb8732706cf9548f23fc25b">cv::SOLVEPNP_EPNP</a> = 1, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806eaeac3df31d2bf4b2ca1003d509aeea1dc">cv::SOLVEPNP_P3P</a> = 2, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea578cf85b9a848c5ca343ea2e77030c32">cv::SOLVEPNP_DLS</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5ba7c1c4d9b871d69c8693671194a62cb50">cv::SOLVEPNP_UPNP</a> = 4, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5ba7740031075cbea61d8b24171d51fc220">cv::SOLVEPNP_AP3P</a> = 5, 
-<a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5ba8defd1c64ff74e406a3a830eef251e53">cv::SOLVEPNP_MAX_COUNT</a>
+&#160;&#160;<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea7c1c4d9b871d69c8693671194a62cb50">cv::SOLVEPNP_UPNP</a> = 4, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea7740031075cbea61d8b24171d51fc220">cv::SOLVEPNP_AP3P</a> = 5, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea8defd1c64ff74e406a3a830eef251e53">cv::SOLVEPNP_MAX_COUNT</a>
 <br />
  }</td></tr>
 <tr class="separator:ga17b1907ac25b264eff4476aee2078e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,24 +352,92 @@ Enumerations</h2></td></tr>
 <b>CALIB_TILTED_MODEL</b> = 0x40000, 
 <b>CALIB_FIX_TAUX_TAUY</b> = 0x80000, 
 <br />
-&#160;&#160;<a class="el" href="group__calib3d.html#gga4d282711121b1f2f6bd2a7dae519b9efa916d73d3a0e47f36615b2eb94a86ae96">cv::CALIB_USE_QR</a> = 0x100000, 
+&#160;&#160;<a class="el" href="group__calib3d.html#ggac86685a0f918d674c305a43f49616c6da916d73d3a0e47f36615b2eb94a86ae96">cv::CALIB_USE_QR</a> = 0x100000, 
 <b>CALIB_FIX_TANGENT_DIST</b> = 0x200000, 
 <b>CALIB_FIX_INTRINSIC</b> = 0x00100, 
 <b>CALIB_SAME_FOCAL_LENGTH</b> = 0x00200, 
 <br />
 &#160;&#160;<b>CALIB_ZERO_DISPARITY</b> = 0x00400, 
-<a class="el" href="group__calib3d.html#gga4d282711121b1f2f6bd2a7dae519b9efa047bf1e4364af64689d07330a59b0a74">cv::CALIB_USE_LU</a> = (1 &lt;&lt; 17), 
-<a class="el" href="group__calib3d.html#gga4d282711121b1f2f6bd2a7dae519b9efadc7f25acefcf7a854c53a3a18372ec19">cv::CALIB_USE_EXTRINSIC_GUESS</a> = (1 &lt;&lt; 22)
+<a class="el" href="group__calib3d.html#ggac86685a0f918d674c305a43f49616c6da047bf1e4364af64689d07330a59b0a74">cv::CALIB_USE_LU</a> = (1 &lt;&lt; 17), 
+<a class="el" href="group__calib3d.html#ggac86685a0f918d674c305a43f49616c6dadc7f25acefcf7a854c53a3a18372ec19">cv::CALIB_USE_EXTRINSIC_GUESS</a> = (1 &lt;&lt; 22)
 <br />
  }</td></tr>
 <tr class="separator:ga4d282711121b1f2f6bd2a7dae519b9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf1db89d10fff5171efa7297a8825289c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289ca46552ef51e86843af3789718e4355d69">cv::FM_7POINT</a> = 1, 
-<a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289ca7cceb68141bd61e993c6da371aa8399f">cv::FM_8POINT</a> = 2, 
-<a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289ca21579541aff80e7750d5499265a2e971">cv::FM_LMEDS</a> = 4, 
-<a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289caed27573602ec5e0e6de1f541eb2d9b8d">cv::FM_RANSAC</a> = 8
+<tr class="memitem:gaf1db89d10fff5171efa7297a8825289c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391a46552ef51e86843af3789718e4355d69">cv::FM_7POINT</a> = 1, 
+<a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391a7cceb68141bd61e993c6da371aa8399f">cv::FM_8POINT</a> = 2, 
+<a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391a21579541aff80e7750d5499265a2e971">cv::FM_LMEDS</a> = 4, 
+<a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391aed27573602ec5e0e6de1f541eb2d9b8d">cv::FM_RANSAC</a> = 8
  }</td></tr>
 <tr class="memdesc:gaf1db89d10fff5171efa7297a8825289c"><td class="mdescLeft">&#160;</td><td class="mdescRight">the algorithm for finding fundamental matrix  <a href="group__calib3d.html#gaf1db89d10fff5171efa7297a8825289c">More...</a><br /></td></tr>
 <tr class="separator:gaf1db89d10fff5171efa7297a8825289c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b16d3b8a27d2fbcce7857c838c29956"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a6ffbc2749c8e3766c92b1ed3c1e7a462">cv::LMEDS</a> = 4, 
+<a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858">cv::RANSAC</a> = 8, 
+<a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a9b817ea4d511588fb4a1ee89a47b1217">cv::RHO</a> = 16
+ }</td></tr>
+<tr class="memdesc:ga5b16d3b8a27d2fbcce7857c838c29956"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of the robust estimation algorithm  <a href="group__calib3d.html#ga5b16d3b8a27d2fbcce7857c838c29956">More...</a><br /></td></tr>
+<tr class="separator:ga5b16d3b8a27d2fbcce7857c838c29956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga217bae838704b8f530205570178f806e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>SOLVEPNP_ITERATIVE</b> = 0, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ead03e9d693cb8732706cf9548f23fc25b">cv::SOLVEPNP_EPNP</a> = 1, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806eaeac3df31d2bf4b2ca1003d509aeea1dc">cv::SOLVEPNP_P3P</a> = 2, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea578cf85b9a848c5ca343ea2e77030c32">cv::SOLVEPNP_DLS</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea7c1c4d9b871d69c8693671194a62cb50">cv::SOLVEPNP_UPNP</a> = 4, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea7740031075cbea61d8b24171d51fc220">cv::SOLVEPNP_AP3P</a> = 5, 
+<a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea8defd1c64ff74e406a3a830eef251e53">cv::SOLVEPNP_MAX_COUNT</a>
+<br />
+ }</td></tr>
+<tr class="separator:ga217bae838704b8f530205570178f806e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b559166f77b6b8613ac1928a60d56c9"><td class="memItemLeft" align="right" valign="top"><a id="ga8b559166f77b6b8613ac1928a60d56c9"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CALIB_CB_ADAPTIVE_THRESH</b> = 1, 
+<b>CALIB_CB_NORMALIZE_IMAGE</b> = 2, 
+<b>CALIB_CB_FILTER_QUADS</b> = 4, 
+<b>CALIB_CB_FAST_CHECK</b> = 8
+ }</td></tr>
+<tr class="separator:ga8b559166f77b6b8613ac1928a60d56c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee8b949d2e68c987e6020f735b5be2bf"><td class="memItemLeft" align="right" valign="top"><a id="gaee8b949d2e68c987e6020f735b5be2bf"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CALIB_CB_SYMMETRIC_GRID</b> = 1, 
+<b>CALIB_CB_ASYMMETRIC_GRID</b> = 2, 
+<b>CALIB_CB_CLUSTERING</b> = 4
+ }</td></tr>
+<tr class="separator:gaee8b949d2e68c987e6020f735b5be2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac86685a0f918d674c305a43f49616c6d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>CALIB_USE_INTRINSIC_GUESS</b> = 0x00001, 
+<b>CALIB_FIX_ASPECT_RATIO</b> = 0x00002, 
+<b>CALIB_FIX_PRINCIPAL_POINT</b> = 0x00004, 
+<b>CALIB_ZERO_TANGENT_DIST</b> = 0x00008, 
+<br />
+&#160;&#160;<b>CALIB_FIX_FOCAL_LENGTH</b> = 0x00010, 
+<b>CALIB_FIX_K1</b> = 0x00020, 
+<b>CALIB_FIX_K2</b> = 0x00040, 
+<b>CALIB_FIX_K3</b> = 0x00080, 
+<br />
+&#160;&#160;<b>CALIB_FIX_K4</b> = 0x00800, 
+<b>CALIB_FIX_K5</b> = 0x01000, 
+<b>CALIB_FIX_K6</b> = 0x02000, 
+<b>CALIB_RATIONAL_MODEL</b> = 0x04000, 
+<br />
+&#160;&#160;<b>CALIB_THIN_PRISM_MODEL</b> = 0x08000, 
+<b>CALIB_FIX_S1_S2_S3_S4</b> = 0x10000, 
+<b>CALIB_TILTED_MODEL</b> = 0x40000, 
+<b>CALIB_FIX_TAUX_TAUY</b> = 0x80000, 
+<br />
+&#160;&#160;<a class="el" href="group__calib3d.html#ggac86685a0f918d674c305a43f49616c6da916d73d3a0e47f36615b2eb94a86ae96">cv::CALIB_USE_QR</a> = 0x100000, 
+<b>CALIB_FIX_TANGENT_DIST</b> = 0x200000, 
+<b>CALIB_FIX_INTRINSIC</b> = 0x00100, 
+<b>CALIB_SAME_FOCAL_LENGTH</b> = 0x00200, 
+<br />
+&#160;&#160;<b>CALIB_ZERO_DISPARITY</b> = 0x00400, 
+<a class="el" href="group__calib3d.html#ggac86685a0f918d674c305a43f49616c6da047bf1e4364af64689d07330a59b0a74">cv::CALIB_USE_LU</a> = (1 &lt;&lt; 17), 
+<a class="el" href="group__calib3d.html#ggac86685a0f918d674c305a43f49616c6dadc7f25acefcf7a854c53a3a18372ec19">cv::CALIB_USE_EXTRINSIC_GUESS</a> = (1 &lt;&lt; 22)
+<br />
+ }</td></tr>
+<tr class="separator:gac86685a0f918d674c305a43f49616c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe9b2eaa9283cc63b607fcae8d9db391"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391a46552ef51e86843af3789718e4355d69">cv::FM_7POINT</a> = 1, 
+<a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391a7cceb68141bd61e993c6da371aa8399f">cv::FM_8POINT</a> = 2, 
+<a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391a21579541aff80e7750d5499265a2e971">cv::FM_LMEDS</a> = 4, 
+<a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391aed27573602ec5e0e6de1f541eb2d9b8d">cv::FM_RANSAC</a> = 8
+ }</td></tr>
+<tr class="memdesc:gabe9b2eaa9283cc63b607fcae8d9db391"><td class="mdescLeft">&#160;</td><td class="mdescRight">the algorithm for finding fundamental matrix  <a href="group__calib3d.html#gabe9b2eaa9283cc63b607fcae8d9db391">More...</a><br /></td></tr>
+<tr class="separator:gabe9b2eaa9283cc63b607fcae8d9db391"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -466,15 +532,15 @@ CV_EXPORTS_W float&#160;</td><td class="memItemRight" valign="bottom"><a class="
 <tr class="memitem:ga6feb320acc8cb87c9c841c364edb7f9c"><td class="memItemLeft" align="right" valign="top">CV_EXPORTS void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__calib3d.html#ga6feb320acc8cb87c9c841c364edb7f9c">cv::convertPointsHomogeneous</a> (InputArray src, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> dst)</td></tr>
 <tr class="memdesc:ga6feb320acc8cb87c9c841c364edb7f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts points to/from homogeneous coordinates.  <a href="group__calib3d.html#ga6feb320acc8cb87c9c841c364edb7f9c">More...</a><br /></td></tr>
 <tr class="separator:ga6feb320acc8cb87c9c841c364edb7f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga619e471a28ae6103d2aabffd8d6d75a8"><td class="memItemLeft" align="right" valign="top">CV_EXPORTS_W <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__calib3d.html#ga619e471a28ae6103d2aabffd8d6d75a8">cv::findFundamentalMat</a> (InputArray points1, InputArray points2, int method=<a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289caed27573602ec5e0e6de1f541eb2d9b8d">FM_RANSAC</a>, double ransacReprojThreshold=3., double confidence=0.99, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> mask=noArray())</td></tr>
+<tr class="memitem:ga619e471a28ae6103d2aabffd8d6d75a8"><td class="memItemLeft" align="right" valign="top">CV_EXPORTS_W <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__calib3d.html#ga619e471a28ae6103d2aabffd8d6d75a8">cv::findFundamentalMat</a> (InputArray points1, InputArray points2, int method=<a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391aed27573602ec5e0e6de1f541eb2d9b8d">FM_RANSAC</a>, double ransacReprojThreshold=3., double confidence=0.99, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> mask=noArray())</td></tr>
 <tr class="memdesc:ga619e471a28ae6103d2aabffd8d6d75a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates a fundamental matrix from the corresponding points in two images.  <a href="group__calib3d.html#ga619e471a28ae6103d2aabffd8d6d75a8">More...</a><br /></td></tr>
 <tr class="separator:ga619e471a28ae6103d2aabffd8d6d75a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa995bb80c795df36348d28fe4f3ffb5f"><td class="memItemLeft" align="right" valign="top">CV_EXPORTS <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__calib3d.html#gaa995bb80c795df36348d28fe4f3ffb5f">cv::findFundamentalMat</a> (InputArray points1, InputArray points2, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> mask, int method=<a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289caed27573602ec5e0e6de1f541eb2d9b8d">FM_RANSAC</a>, double ransacReprojThreshold=3., double confidence=0.99)</td></tr>
+<tr class="memitem:gaa995bb80c795df36348d28fe4f3ffb5f"><td class="memItemLeft" align="right" valign="top">CV_EXPORTS <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__calib3d.html#gaa995bb80c795df36348d28fe4f3ffb5f">cv::findFundamentalMat</a> (InputArray points1, InputArray points2, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> mask, int method=<a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391aed27573602ec5e0e6de1f541eb2d9b8d">FM_RANSAC</a>, double ransacReprojThreshold=3., double confidence=0.99)</td></tr>
 <tr class="separator:gaa995bb80c795df36348d28fe4f3ffb5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4898efca2fcbf9a6ca0654593789029b"><td class="memItemLeft" align="right" valign="top">CV_EXPORTS_W <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__calib3d.html#ga4898efca2fcbf9a6ca0654593789029b">cv::findEssentialMat</a> (InputArray points1, InputArray points2, InputArray cameraMatrix, int method=<a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858">RANSAC</a>, double prob=0.999, double <a class="el" href="group__imgproc__misc.html#gabd93e7119f2b85135109ab4b1f4f9eaf">threshold</a>=1.0, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> mask=noArray())</td></tr>
+<tr class="memitem:ga4898efca2fcbf9a6ca0654593789029b"><td class="memItemLeft" align="right" valign="top">CV_EXPORTS_W <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__calib3d.html#ga4898efca2fcbf9a6ca0654593789029b">cv::findEssentialMat</a> (InputArray points1, InputArray points2, InputArray cameraMatrix, int method=<a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858">RANSAC</a>, double prob=0.999, double <a class="el" href="group__imgproc__misc.html#gabd93e7119f2b85135109ab4b1f4f9eaf">threshold</a>=1.0, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> mask=noArray())</td></tr>
 <tr class="memdesc:ga4898efca2fcbf9a6ca0654593789029b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates an essential matrix from the corresponding points in two images.  <a href="group__calib3d.html#ga4898efca2fcbf9a6ca0654593789029b">More...</a><br /></td></tr>
 <tr class="separator:ga4898efca2fcbf9a6ca0654593789029b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga31bf8cb9b210639e998d039a0dcf61e9"><td class="memItemLeft" align="right" valign="top">CV_EXPORTS_W <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__calib3d.html#ga31bf8cb9b210639e998d039a0dcf61e9">cv::findEssentialMat</a> (InputArray points1, InputArray points2, double focal=1.0, <a class="el" href="classcv_1_1_point__.html">Point2d</a> pp=<a class="el" href="classcv_1_1_point__.html">Point2d</a>(0, 0), int method=<a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858">RANSAC</a>, double prob=0.999, double <a class="el" href="group__imgproc__misc.html#gabd93e7119f2b85135109ab4b1f4f9eaf">threshold</a>=1.0, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> mask=noArray())</td></tr>
+<tr class="memitem:ga31bf8cb9b210639e998d039a0dcf61e9"><td class="memItemLeft" align="right" valign="top">CV_EXPORTS_W <a class="el" href="classcv_1_1_mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__calib3d.html#ga31bf8cb9b210639e998d039a0dcf61e9">cv::findEssentialMat</a> (InputArray points1, InputArray points2, double focal=1.0, <a class="el" href="classcv_1_1_point__.html">Point2d</a> pp=<a class="el" href="classcv_1_1_point__.html">Point2d</a>(0, 0), int method=<a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858">RANSAC</a>, double prob=0.999, double <a class="el" href="group__imgproc__misc.html#gabd93e7119f2b85135109ab4b1f4f9eaf">threshold</a>=1.0, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> mask=noArray())</td></tr>
 <tr class="separator:ga31bf8cb9b210639e998d039a0dcf61e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae5824f9d14002fa77923152b25d2e5f7"><td class="memItemLeft" align="right" valign="top">CV_EXPORTS_W void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__calib3d.html#gae5824f9d14002fa77923152b25d2e5f7">cv::decomposeEssentialMat</a> (InputArray E, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> R1, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> R2, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> t)</td></tr>
 <tr class="memdesc:gae5824f9d14002fa77923152b25d2e5f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decompose an essential matrix to possible rotations and translation.  <a href="group__calib3d.html#gae5824f9d14002fa77923152b25d2e5f7">More...</a><br /></td></tr>
@@ -515,10 +581,10 @@ CV_EXPORTS_W void&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 <tr class="memitem:ga9f0e299a84561d47adc278f9ca73b909"><td class="memItemLeft" align="right" valign="top">CV_EXPORTS_W int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__calib3d.html#ga9f0e299a84561d47adc278f9ca73b909">cv::estimateAffine3D</a> (InputArray src, InputArray dst, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> out, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> inliers, double ransacThreshold=3, double confidence=0.99)</td></tr>
 <tr class="memdesc:ga9f0e299a84561d47adc278f9ca73b909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes an optimal affine transformation between two 3D point sets.  <a href="group__calib3d.html#ga9f0e299a84561d47adc278f9ca73b909">More...</a><br /></td></tr>
 <tr class="separator:ga9f0e299a84561d47adc278f9ca73b909"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad25ad3c0165e31d2d1ea40cfb53d7e52"><td class="memItemLeft" align="right" valign="top">CV_EXPORTS_W <a class="el" href="classcv_1_1_mat.html">cv::Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__calib3d.html#gad25ad3c0165e31d2d1ea40cfb53d7e52">cv::estimateAffine2D</a> (InputArray from, InputArray to, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> inliers=noArray(), int method=<a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858">RANSAC</a>, double ransacReprojThreshold=3, size_t maxIters=2000, double confidence=0.99, size_t refineIters=10)</td></tr>
+<tr class="memitem:gad25ad3c0165e31d2d1ea40cfb53d7e52"><td class="memItemLeft" align="right" valign="top">CV_EXPORTS_W <a class="el" href="classcv_1_1_mat.html">cv::Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__calib3d.html#gad25ad3c0165e31d2d1ea40cfb53d7e52">cv::estimateAffine2D</a> (InputArray from, InputArray to, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> inliers=noArray(), int method=<a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858">RANSAC</a>, double ransacReprojThreshold=3, size_t maxIters=2000, double confidence=0.99, size_t refineIters=10)</td></tr>
 <tr class="memdesc:gad25ad3c0165e31d2d1ea40cfb53d7e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes an optimal affine transformation between two 2D point sets.  <a href="group__calib3d.html#gad25ad3c0165e31d2d1ea40cfb53d7e52">More...</a><br /></td></tr>
 <tr class="separator:gad25ad3c0165e31d2d1ea40cfb53d7e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga756dcd87483938fa43c0ad98f2ae6561"><td class="memItemLeft" align="right" valign="top">CV_EXPORTS_W <a class="el" href="classcv_1_1_mat.html">cv::Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__calib3d.html#ga756dcd87483938fa43c0ad98f2ae6561">cv::estimateAffinePartial2D</a> (InputArray from, InputArray to, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> inliers=noArray(), int method=<a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858">RANSAC</a>, double ransacReprojThreshold=3, size_t maxIters=2000, double confidence=0.99, size_t refineIters=10)</td></tr>
+<tr class="memitem:ga756dcd87483938fa43c0ad98f2ae6561"><td class="memItemLeft" align="right" valign="top">CV_EXPORTS_W <a class="el" href="classcv_1_1_mat.html">cv::Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__calib3d.html#ga756dcd87483938fa43c0ad98f2ae6561">cv::estimateAffinePartial2D</a> (InputArray from, InputArray to, <a class="el" href="classcv_1_1___output_array.html">OutputArray</a> inliers=noArray(), int method=<a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858">RANSAC</a>, double ransacReprojThreshold=3, size_t maxIters=2000, double confidence=0.99, size_t refineIters=10)</td></tr>
 <tr class="memdesc:ga756dcd87483938fa43c0ad98f2ae6561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes an optimal limited affine transformation with 4 degrees of freedom between two 2D point sets.  <a href="group__calib3d.html#ga756dcd87483938fa43c0ad98f2ae6561">More...</a><br /></td></tr>
 <tr class="separator:ga756dcd87483938fa43c0ad98f2ae6561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9553cd9fdd37e01a26d36ff2a3facd64"><td class="memItemLeft" align="right" valign="top">CV_EXPORTS_W int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__calib3d.html#ga9553cd9fdd37e01a26d36ff2a3facd64">cv::decomposeHomographyMat</a> (InputArray H, InputArray K, <a class="el" href="classcv_1_1___output_array.html">OutputArrayOfArrays</a> rotations, <a class="el" href="classcv_1_1___output_array.html">OutputArrayOfArrays</a> translations, <a class="el" href="classcv_1_1___output_array.html">OutputArrayOfArrays</a> normals)</td></tr>
@@ -671,11 +737,11 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
 
 <p>type of the robust estimation algorithm </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab8dae27619d5b4de59d43c01c5c5c3a0a6ffbc2749c8e3766c92b1ed3c1e7a462"></a>LMEDS&#160;</td><td class="fielddoc"><p>least-median of squares algorithm </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5b16d3b8a27d2fbcce7857c838c29956a6ffbc2749c8e3766c92b1ed3c1e7a462"></a>LMEDS&#160;</td><td class="fielddoc"><p>least-median of squares algorithm </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858"></a>RANSAC&#160;</td><td class="fielddoc"><p>RANSAC algorithm. </p>
+<tr><td class="fieldname"><a id="gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858"></a>RANSAC&#160;</td><td class="fielddoc"><p>RANSAC algorithm. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggab8dae27619d5b4de59d43c01c5c5c3a0a9b817ea4d511588fb4a1ee89a47b1217"></a>RHO&#160;</td><td class="fielddoc"><p>RHO algorithm. </p>
+<tr><td class="fieldname"><a id="gga5b16d3b8a27d2fbcce7857c838c29956a9b817ea4d511588fb4a1ee89a47b1217"></a>RHO&#160;</td><td class="fielddoc"><p>RHO algorithm. </p>
 </td></tr>
 </table>
 
@@ -695,11 +761,11 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
 
 <p>type of the robust estimation algorithm </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab8dae27619d5b4de59d43c01c5c5c3a0a6ffbc2749c8e3766c92b1ed3c1e7a462"></a>LMEDS&#160;</td><td class="fielddoc"><p>least-median of squares algorithm </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5b16d3b8a27d2fbcce7857c838c29956a6ffbc2749c8e3766c92b1ed3c1e7a462"></a>LMEDS&#160;</td><td class="fielddoc"><p>least-median of squares algorithm </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858"></a>RANSAC&#160;</td><td class="fielddoc"><p>RANSAC algorithm. </p>
+<tr><td class="fieldname"><a id="gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858"></a>RANSAC&#160;</td><td class="fielddoc"><p>RANSAC algorithm. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggab8dae27619d5b4de59d43c01c5c5c3a0a9b817ea4d511588fb4a1ee89a47b1217"></a>RHO&#160;</td><td class="fielddoc"><p>RHO algorithm. </p>
+<tr><td class="fieldname"><a id="gga5b16d3b8a27d2fbcce7857c838c29956a9b817ea4d511588fb4a1ee89a47b1217"></a>RHO&#160;</td><td class="fielddoc"><p>RHO algorithm. </p>
 </td></tr>
 </table>
 
@@ -717,17 +783,17 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5bad03e9d693cb8732706cf9548f23fc25b"></a>SOLVEPNP_EPNP&#160;</td><td class="fielddoc"><p>EPnP: Efficient Perspective-n-Point Camera Pose Estimation <b>[lepetit2009epnp]</b>. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ead03e9d693cb8732706cf9548f23fc25b"></a>SOLVEPNP_EPNP&#160;</td><td class="fielddoc"><p>EPnP: Efficient Perspective-n-Point Camera Pose Estimation <b>[lepetit2009epnp]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5baeac3df31d2bf4b2ca1003d509aeea1dc"></a>SOLVEPNP_P3P&#160;</td><td class="fielddoc"><p>Complete Solution Classification for the Perspective-Three-Point Problem <b>[gao2003complete]</b>. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806eaeac3df31d2bf4b2ca1003d509aeea1dc"></a>SOLVEPNP_P3P&#160;</td><td class="fielddoc"><p>Complete Solution Classification for the Perspective-Three-Point Problem <b>[gao2003complete]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5ba578cf85b9a848c5ca343ea2e77030c32"></a>SOLVEPNP_DLS&#160;</td><td class="fielddoc"><p>A Direct Least-Squares (DLS) Method for PnP <b>[hesch2011direct]</b>. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea578cf85b9a848c5ca343ea2e77030c32"></a>SOLVEPNP_DLS&#160;</td><td class="fielddoc"><p>A Direct Least-Squares (DLS) Method for PnP <b>[hesch2011direct]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5ba7c1c4d9b871d69c8693671194a62cb50"></a>SOLVEPNP_UPNP&#160;</td><td class="fielddoc"><p>Exhaustive Linearization for Robust Camera Pose and Focal Length Estimation <b>[penate2013exhaustive]</b>. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea7c1c4d9b871d69c8693671194a62cb50"></a>SOLVEPNP_UPNP&#160;</td><td class="fielddoc"><p>Exhaustive Linearization for Robust Camera Pose and Focal Length Estimation <b>[penate2013exhaustive]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5ba7740031075cbea61d8b24171d51fc220"></a>SOLVEPNP_AP3P&#160;</td><td class="fielddoc"><p>An Efficient Algebraic Solution to the Perspective-Three-Point Problem <b>[Ke17]</b>. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea7740031075cbea61d8b24171d51fc220"></a>SOLVEPNP_AP3P&#160;</td><td class="fielddoc"><p>An Efficient Algebraic Solution to the Perspective-Three-Point Problem <b>[Ke17]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5ba8defd1c64ff74e406a3a830eef251e53"></a>SOLVEPNP_MAX_COUNT&#160;</td><td class="fielddoc"><p>Used for count. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea8defd1c64ff74e406a3a830eef251e53"></a>SOLVEPNP_MAX_COUNT&#160;</td><td class="fielddoc"><p>Used for count. </p>
 </td></tr>
 </table>
 
@@ -745,11 +811,11 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4d282711121b1f2f6bd2a7dae519b9efa916d73d3a0e47f36615b2eb94a86ae96"></a>CALIB_USE_QR&#160;</td><td class="fielddoc"><p>use QR instead of <a class="el" href="classcv_1_1_s_v_d.html" title="Singular Value Decomposition.">SVD</a> decomposition for solving. Faster but potentially less precise </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggac86685a0f918d674c305a43f49616c6da916d73d3a0e47f36615b2eb94a86ae96"></a>CALIB_USE_QR&#160;</td><td class="fielddoc"><p>use QR instead of <a class="el" href="classcv_1_1_s_v_d.html" title="Singular Value Decomposition.">SVD</a> decomposition for solving. Faster but potentially less precise </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga4d282711121b1f2f6bd2a7dae519b9efa047bf1e4364af64689d07330a59b0a74"></a>CALIB_USE_LU&#160;</td><td class="fielddoc"><p>use LU instead of <a class="el" href="classcv_1_1_s_v_d.html" title="Singular Value Decomposition.">SVD</a> decomposition for solving. much faster but potentially less precise </p>
+<tr><td class="fieldname"><a id="ggac86685a0f918d674c305a43f49616c6da047bf1e4364af64689d07330a59b0a74"></a>CALIB_USE_LU&#160;</td><td class="fielddoc"><p>use LU instead of <a class="el" href="classcv_1_1_s_v_d.html" title="Singular Value Decomposition.">SVD</a> decomposition for solving. much faster but potentially less precise </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga4d282711121b1f2f6bd2a7dae519b9efadc7f25acefcf7a854c53a3a18372ec19"></a>CALIB_USE_EXTRINSIC_GUESS&#160;</td><td class="fielddoc"><p>for stereoCalibrate </p>
+<tr><td class="fieldname"><a id="ggac86685a0f918d674c305a43f49616c6dadc7f25acefcf7a854c53a3a18372ec19"></a>CALIB_USE_EXTRINSIC_GUESS&#160;</td><td class="fielddoc"><p>for stereoCalibrate </p>
 </td></tr>
 </table>
 
@@ -769,13 +835,13 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
 
 <p>the algorithm for finding fundamental matrix </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaf1db89d10fff5171efa7297a8825289ca46552ef51e86843af3789718e4355d69"></a>FM_7POINT&#160;</td><td class="fielddoc"><p>7-point algorithm </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391a46552ef51e86843af3789718e4355d69"></a>FM_7POINT&#160;</td><td class="fielddoc"><p>7-point algorithm </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggaf1db89d10fff5171efa7297a8825289ca7cceb68141bd61e993c6da371aa8399f"></a>FM_8POINT&#160;</td><td class="fielddoc"><p>8-point algorithm </p>
+<tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391a7cceb68141bd61e993c6da371aa8399f"></a>FM_8POINT&#160;</td><td class="fielddoc"><p>8-point algorithm </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggaf1db89d10fff5171efa7297a8825289ca21579541aff80e7750d5499265a2e971"></a>FM_LMEDS&#160;</td><td class="fielddoc"><p>least-median algorithm. 7-point algorithm is used. </p>
+<tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391a21579541aff80e7750d5499265a2e971"></a>FM_LMEDS&#160;</td><td class="fielddoc"><p>least-median algorithm. 7-point algorithm is used. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggaf1db89d10fff5171efa7297a8825289caed27573602ec5e0e6de1f541eb2d9b8d"></a>FM_RANSAC&#160;</td><td class="fielddoc"><p>RANSAC algorithm. It needs at least 15 points. 7-point algorithm is used. </p>
+<tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391aed27573602ec5e0e6de1f541eb2d9b8d"></a>FM_RANSAC&#160;</td><td class="fielddoc"><p>RANSAC algorithm. It needs at least 15 points. 7-point algorithm is used. </p>
 </td></tr>
 </table>
 
@@ -793,17 +859,17 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5bad03e9d693cb8732706cf9548f23fc25b"></a>SOLVEPNP_EPNP&#160;</td><td class="fielddoc"><p>EPnP: Efficient Perspective-n-Point Camera Pose Estimation <b>[lepetit2009epnp]</b>. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ead03e9d693cb8732706cf9548f23fc25b"></a>SOLVEPNP_EPNP&#160;</td><td class="fielddoc"><p>EPnP: Efficient Perspective-n-Point Camera Pose Estimation <b>[lepetit2009epnp]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5baeac3df31d2bf4b2ca1003d509aeea1dc"></a>SOLVEPNP_P3P&#160;</td><td class="fielddoc"><p>Complete Solution Classification for the Perspective-Three-Point Problem <b>[gao2003complete]</b>. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806eaeac3df31d2bf4b2ca1003d509aeea1dc"></a>SOLVEPNP_P3P&#160;</td><td class="fielddoc"><p>Complete Solution Classification for the Perspective-Three-Point Problem <b>[gao2003complete]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5ba578cf85b9a848c5ca343ea2e77030c32"></a>SOLVEPNP_DLS&#160;</td><td class="fielddoc"><p>A Direct Least-Squares (DLS) Method for PnP <b>[hesch2011direct]</b>. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea578cf85b9a848c5ca343ea2e77030c32"></a>SOLVEPNP_DLS&#160;</td><td class="fielddoc"><p>A Direct Least-Squares (DLS) Method for PnP <b>[hesch2011direct]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5ba7c1c4d9b871d69c8693671194a62cb50"></a>SOLVEPNP_UPNP&#160;</td><td class="fielddoc"><p>Exhaustive Linearization for Robust Camera Pose and Focal Length Estimation <b>[penate2013exhaustive]</b>. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea7c1c4d9b871d69c8693671194a62cb50"></a>SOLVEPNP_UPNP&#160;</td><td class="fielddoc"><p>Exhaustive Linearization for Robust Camera Pose and Focal Length Estimation <b>[penate2013exhaustive]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5ba7740031075cbea61d8b24171d51fc220"></a>SOLVEPNP_AP3P&#160;</td><td class="fielddoc"><p>An Efficient Algebraic Solution to the Perspective-Three-Point Problem <b>[Ke17]</b>. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea7740031075cbea61d8b24171d51fc220"></a>SOLVEPNP_AP3P&#160;</td><td class="fielddoc"><p>An Efficient Algebraic Solution to the Perspective-Three-Point Problem <b>[Ke17]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5ba8defd1c64ff74e406a3a830eef251e53"></a>SOLVEPNP_MAX_COUNT&#160;</td><td class="fielddoc"><p>Used for count. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea8defd1c64ff74e406a3a830eef251e53"></a>SOLVEPNP_MAX_COUNT&#160;</td><td class="fielddoc"><p>Used for count. </p>
 </td></tr>
 </table>
 
@@ -823,11 +889,11 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
 
 <p>type of the robust estimation algorithm </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab8dae27619d5b4de59d43c01c5c5c3a0a6ffbc2749c8e3766c92b1ed3c1e7a462"></a>LMEDS&#160;</td><td class="fielddoc"><p>least-median of squares algorithm </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5b16d3b8a27d2fbcce7857c838c29956a6ffbc2749c8e3766c92b1ed3c1e7a462"></a>LMEDS&#160;</td><td class="fielddoc"><p>least-median of squares algorithm </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858"></a>RANSAC&#160;</td><td class="fielddoc"><p>RANSAC algorithm. </p>
+<tr><td class="fieldname"><a id="gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858"></a>RANSAC&#160;</td><td class="fielddoc"><p>RANSAC algorithm. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggab8dae27619d5b4de59d43c01c5c5c3a0a9b817ea4d511588fb4a1ee89a47b1217"></a>RHO&#160;</td><td class="fielddoc"><p>RHO algorithm. </p>
+<tr><td class="fieldname"><a id="gga5b16d3b8a27d2fbcce7857c838c29956a9b817ea4d511588fb4a1ee89a47b1217"></a>RHO&#160;</td><td class="fielddoc"><p>RHO algorithm. </p>
 </td></tr>
 </table>
 
@@ -845,17 +911,17 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5bad03e9d693cb8732706cf9548f23fc25b"></a>SOLVEPNP_EPNP&#160;</td><td class="fielddoc"><p>EPnP: Efficient Perspective-n-Point Camera Pose Estimation <b>[lepetit2009epnp]</b>. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ead03e9d693cb8732706cf9548f23fc25b"></a>SOLVEPNP_EPNP&#160;</td><td class="fielddoc"><p>EPnP: Efficient Perspective-n-Point Camera Pose Estimation <b>[lepetit2009epnp]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5baeac3df31d2bf4b2ca1003d509aeea1dc"></a>SOLVEPNP_P3P&#160;</td><td class="fielddoc"><p>Complete Solution Classification for the Perspective-Three-Point Problem <b>[gao2003complete]</b>. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806eaeac3df31d2bf4b2ca1003d509aeea1dc"></a>SOLVEPNP_P3P&#160;</td><td class="fielddoc"><p>Complete Solution Classification for the Perspective-Three-Point Problem <b>[gao2003complete]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5ba578cf85b9a848c5ca343ea2e77030c32"></a>SOLVEPNP_DLS&#160;</td><td class="fielddoc"><p>A Direct Least-Squares (DLS) Method for PnP <b>[hesch2011direct]</b>. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea578cf85b9a848c5ca343ea2e77030c32"></a>SOLVEPNP_DLS&#160;</td><td class="fielddoc"><p>A Direct Least-Squares (DLS) Method for PnP <b>[hesch2011direct]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5ba7c1c4d9b871d69c8693671194a62cb50"></a>SOLVEPNP_UPNP&#160;</td><td class="fielddoc"><p>Exhaustive Linearization for Robust Camera Pose and Focal Length Estimation <b>[penate2013exhaustive]</b>. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea7c1c4d9b871d69c8693671194a62cb50"></a>SOLVEPNP_UPNP&#160;</td><td class="fielddoc"><p>Exhaustive Linearization for Robust Camera Pose and Focal Length Estimation <b>[penate2013exhaustive]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5ba7740031075cbea61d8b24171d51fc220"></a>SOLVEPNP_AP3P&#160;</td><td class="fielddoc"><p>An Efficient Algebraic Solution to the Perspective-Three-Point Problem <b>[Ke17]</b>. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea7740031075cbea61d8b24171d51fc220"></a>SOLVEPNP_AP3P&#160;</td><td class="fielddoc"><p>An Efficient Algebraic Solution to the Perspective-Three-Point Problem <b>[Ke17]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5ba8defd1c64ff74e406a3a830eef251e53"></a>SOLVEPNP_MAX_COUNT&#160;</td><td class="fielddoc"><p>Used for count. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea8defd1c64ff74e406a3a830eef251e53"></a>SOLVEPNP_MAX_COUNT&#160;</td><td class="fielddoc"><p>Used for count. </p>
 </td></tr>
 </table>
 
@@ -873,11 +939,11 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4d282711121b1f2f6bd2a7dae519b9efa916d73d3a0e47f36615b2eb94a86ae96"></a>CALIB_USE_QR&#160;</td><td class="fielddoc"><p>use QR instead of <a class="el" href="classcv_1_1_s_v_d.html" title="Singular Value Decomposition.">SVD</a> decomposition for solving. Faster but potentially less precise </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggac86685a0f918d674c305a43f49616c6da916d73d3a0e47f36615b2eb94a86ae96"></a>CALIB_USE_QR&#160;</td><td class="fielddoc"><p>use QR instead of <a class="el" href="classcv_1_1_s_v_d.html" title="Singular Value Decomposition.">SVD</a> decomposition for solving. Faster but potentially less precise </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga4d282711121b1f2f6bd2a7dae519b9efa047bf1e4364af64689d07330a59b0a74"></a>CALIB_USE_LU&#160;</td><td class="fielddoc"><p>use LU instead of <a class="el" href="classcv_1_1_s_v_d.html" title="Singular Value Decomposition.">SVD</a> decomposition for solving. much faster but potentially less precise </p>
+<tr><td class="fieldname"><a id="ggac86685a0f918d674c305a43f49616c6da047bf1e4364af64689d07330a59b0a74"></a>CALIB_USE_LU&#160;</td><td class="fielddoc"><p>use LU instead of <a class="el" href="classcv_1_1_s_v_d.html" title="Singular Value Decomposition.">SVD</a> decomposition for solving. much faster but potentially less precise </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga4d282711121b1f2f6bd2a7dae519b9efadc7f25acefcf7a854c53a3a18372ec19"></a>CALIB_USE_EXTRINSIC_GUESS&#160;</td><td class="fielddoc"><p>for stereoCalibrate </p>
+<tr><td class="fieldname"><a id="ggac86685a0f918d674c305a43f49616c6dadc7f25acefcf7a854c53a3a18372ec19"></a>CALIB_USE_EXTRINSIC_GUESS&#160;</td><td class="fielddoc"><p>for stereoCalibrate </p>
 </td></tr>
 </table>
 
@@ -897,13 +963,13 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
 
 <p>the algorithm for finding fundamental matrix </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaf1db89d10fff5171efa7297a8825289ca46552ef51e86843af3789718e4355d69"></a>FM_7POINT&#160;</td><td class="fielddoc"><p>7-point algorithm </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391a46552ef51e86843af3789718e4355d69"></a>FM_7POINT&#160;</td><td class="fielddoc"><p>7-point algorithm </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggaf1db89d10fff5171efa7297a8825289ca7cceb68141bd61e993c6da371aa8399f"></a>FM_8POINT&#160;</td><td class="fielddoc"><p>8-point algorithm </p>
+<tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391a7cceb68141bd61e993c6da371aa8399f"></a>FM_8POINT&#160;</td><td class="fielddoc"><p>8-point algorithm </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggaf1db89d10fff5171efa7297a8825289ca21579541aff80e7750d5499265a2e971"></a>FM_LMEDS&#160;</td><td class="fielddoc"><p>least-median algorithm. 7-point algorithm is used. </p>
+<tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391a21579541aff80e7750d5499265a2e971"></a>FM_LMEDS&#160;</td><td class="fielddoc"><p>least-median algorithm. 7-point algorithm is used. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggaf1db89d10fff5171efa7297a8825289caed27573602ec5e0e6de1f541eb2d9b8d"></a>FM_RANSAC&#160;</td><td class="fielddoc"><p>RANSAC algorithm. It needs at least 15 points. 7-point algorithm is used. </p>
+<tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391aed27573602ec5e0e6de1f541eb2d9b8d"></a>FM_RANSAC&#160;</td><td class="fielddoc"><p>RANSAC algorithm. It needs at least 15 points. 7-point algorithm is used. </p>
 </td></tr>
 </table>
 
@@ -921,11 +987,11 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4d282711121b1f2f6bd2a7dae519b9efa916d73d3a0e47f36615b2eb94a86ae96"></a>CALIB_USE_QR&#160;</td><td class="fielddoc"><p>use QR instead of <a class="el" href="classcv_1_1_s_v_d.html" title="Singular Value Decomposition.">SVD</a> decomposition for solving. Faster but potentially less precise </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggac86685a0f918d674c305a43f49616c6da916d73d3a0e47f36615b2eb94a86ae96"></a>CALIB_USE_QR&#160;</td><td class="fielddoc"><p>use QR instead of <a class="el" href="classcv_1_1_s_v_d.html" title="Singular Value Decomposition.">SVD</a> decomposition for solving. Faster but potentially less precise </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga4d282711121b1f2f6bd2a7dae519b9efa047bf1e4364af64689d07330a59b0a74"></a>CALIB_USE_LU&#160;</td><td class="fielddoc"><p>use LU instead of <a class="el" href="classcv_1_1_s_v_d.html" title="Singular Value Decomposition.">SVD</a> decomposition for solving. much faster but potentially less precise </p>
+<tr><td class="fieldname"><a id="ggac86685a0f918d674c305a43f49616c6da047bf1e4364af64689d07330a59b0a74"></a>CALIB_USE_LU&#160;</td><td class="fielddoc"><p>use LU instead of <a class="el" href="classcv_1_1_s_v_d.html" title="Singular Value Decomposition.">SVD</a> decomposition for solving. much faster but potentially less precise </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga4d282711121b1f2f6bd2a7dae519b9efadc7f25acefcf7a854c53a3a18372ec19"></a>CALIB_USE_EXTRINSIC_GUESS&#160;</td><td class="fielddoc"><p>for stereoCalibrate </p>
+<tr><td class="fieldname"><a id="ggac86685a0f918d674c305a43f49616c6dadc7f25acefcf7a854c53a3a18372ec19"></a>CALIB_USE_EXTRINSIC_GUESS&#160;</td><td class="fielddoc"><p>for stereoCalibrate </p>
 </td></tr>
 </table>
 
@@ -945,11 +1011,11 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
 
 <p>type of the robust estimation algorithm </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab8dae27619d5b4de59d43c01c5c5c3a0a6ffbc2749c8e3766c92b1ed3c1e7a462"></a>LMEDS&#160;</td><td class="fielddoc"><p>least-median of squares algorithm </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5b16d3b8a27d2fbcce7857c838c29956a6ffbc2749c8e3766c92b1ed3c1e7a462"></a>LMEDS&#160;</td><td class="fielddoc"><p>least-median of squares algorithm </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858"></a>RANSAC&#160;</td><td class="fielddoc"><p>RANSAC algorithm. </p>
+<tr><td class="fieldname"><a id="gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858"></a>RANSAC&#160;</td><td class="fielddoc"><p>RANSAC algorithm. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggab8dae27619d5b4de59d43c01c5c5c3a0a9b817ea4d511588fb4a1ee89a47b1217"></a>RHO&#160;</td><td class="fielddoc"><p>RHO algorithm. </p>
+<tr><td class="fieldname"><a id="gga5b16d3b8a27d2fbcce7857c838c29956a9b817ea4d511588fb4a1ee89a47b1217"></a>RHO&#160;</td><td class="fielddoc"><p>RHO algorithm. </p>
 </td></tr>
 </table>
 
@@ -967,17 +1033,17 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5bad03e9d693cb8732706cf9548f23fc25b"></a>SOLVEPNP_EPNP&#160;</td><td class="fielddoc"><p>EPnP: Efficient Perspective-n-Point Camera Pose Estimation <b>[lepetit2009epnp]</b>. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ead03e9d693cb8732706cf9548f23fc25b"></a>SOLVEPNP_EPNP&#160;</td><td class="fielddoc"><p>EPnP: Efficient Perspective-n-Point Camera Pose Estimation <b>[lepetit2009epnp]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5baeac3df31d2bf4b2ca1003d509aeea1dc"></a>SOLVEPNP_P3P&#160;</td><td class="fielddoc"><p>Complete Solution Classification for the Perspective-Three-Point Problem <b>[gao2003complete]</b>. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806eaeac3df31d2bf4b2ca1003d509aeea1dc"></a>SOLVEPNP_P3P&#160;</td><td class="fielddoc"><p>Complete Solution Classification for the Perspective-Three-Point Problem <b>[gao2003complete]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5ba578cf85b9a848c5ca343ea2e77030c32"></a>SOLVEPNP_DLS&#160;</td><td class="fielddoc"><p>A Direct Least-Squares (DLS) Method for PnP <b>[hesch2011direct]</b>. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea578cf85b9a848c5ca343ea2e77030c32"></a>SOLVEPNP_DLS&#160;</td><td class="fielddoc"><p>A Direct Least-Squares (DLS) Method for PnP <b>[hesch2011direct]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5ba7c1c4d9b871d69c8693671194a62cb50"></a>SOLVEPNP_UPNP&#160;</td><td class="fielddoc"><p>Exhaustive Linearization for Robust Camera Pose and Focal Length Estimation <b>[penate2013exhaustive]</b>. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea7c1c4d9b871d69c8693671194a62cb50"></a>SOLVEPNP_UPNP&#160;</td><td class="fielddoc"><p>Exhaustive Linearization for Robust Camera Pose and Focal Length Estimation <b>[penate2013exhaustive]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5ba7740031075cbea61d8b24171d51fc220"></a>SOLVEPNP_AP3P&#160;</td><td class="fielddoc"><p>An Efficient Algebraic Solution to the Perspective-Three-Point Problem <b>[Ke17]</b>. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea7740031075cbea61d8b24171d51fc220"></a>SOLVEPNP_AP3P&#160;</td><td class="fielddoc"><p>An Efficient Algebraic Solution to the Perspective-Three-Point Problem <b>[Ke17]</b>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga17b1907ac25b264eff4476aee2078e5ba8defd1c64ff74e406a3a830eef251e53"></a>SOLVEPNP_MAX_COUNT&#160;</td><td class="fielddoc"><p>Used for count. </p>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea8defd1c64ff74e406a3a830eef251e53"></a>SOLVEPNP_MAX_COUNT&#160;</td><td class="fielddoc"><p>Used for count. </p>
 </td></tr>
 </table>
 
@@ -995,11 +1061,11 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4d282711121b1f2f6bd2a7dae519b9efa916d73d3a0e47f36615b2eb94a86ae96"></a>CALIB_USE_QR&#160;</td><td class="fielddoc"><p>use QR instead of <a class="el" href="classcv_1_1_s_v_d.html" title="Singular Value Decomposition.">SVD</a> decomposition for solving. Faster but potentially less precise </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggac86685a0f918d674c305a43f49616c6da916d73d3a0e47f36615b2eb94a86ae96"></a>CALIB_USE_QR&#160;</td><td class="fielddoc"><p>use QR instead of <a class="el" href="classcv_1_1_s_v_d.html" title="Singular Value Decomposition.">SVD</a> decomposition for solving. Faster but potentially less precise </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga4d282711121b1f2f6bd2a7dae519b9efa047bf1e4364af64689d07330a59b0a74"></a>CALIB_USE_LU&#160;</td><td class="fielddoc"><p>use LU instead of <a class="el" href="classcv_1_1_s_v_d.html" title="Singular Value Decomposition.">SVD</a> decomposition for solving. much faster but potentially less precise </p>
+<tr><td class="fieldname"><a id="ggac86685a0f918d674c305a43f49616c6da047bf1e4364af64689d07330a59b0a74"></a>CALIB_USE_LU&#160;</td><td class="fielddoc"><p>use LU instead of <a class="el" href="classcv_1_1_s_v_d.html" title="Singular Value Decomposition.">SVD</a> decomposition for solving. much faster but potentially less precise </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga4d282711121b1f2f6bd2a7dae519b9efadc7f25acefcf7a854c53a3a18372ec19"></a>CALIB_USE_EXTRINSIC_GUESS&#160;</td><td class="fielddoc"><p>for stereoCalibrate </p>
+<tr><td class="fieldname"><a id="ggac86685a0f918d674c305a43f49616c6dadc7f25acefcf7a854c53a3a18372ec19"></a>CALIB_USE_EXTRINSIC_GUESS&#160;</td><td class="fielddoc"><p>for stereoCalibrate </p>
 </td></tr>
 </table>
 
@@ -1019,13 +1085,13 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
 
 <p>the algorithm for finding fundamental matrix </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaf1db89d10fff5171efa7297a8825289ca46552ef51e86843af3789718e4355d69"></a>FM_7POINT&#160;</td><td class="fielddoc"><p>7-point algorithm </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391a46552ef51e86843af3789718e4355d69"></a>FM_7POINT&#160;</td><td class="fielddoc"><p>7-point algorithm </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggaf1db89d10fff5171efa7297a8825289ca7cceb68141bd61e993c6da371aa8399f"></a>FM_8POINT&#160;</td><td class="fielddoc"><p>8-point algorithm </p>
+<tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391a7cceb68141bd61e993c6da371aa8399f"></a>FM_8POINT&#160;</td><td class="fielddoc"><p>8-point algorithm </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggaf1db89d10fff5171efa7297a8825289ca21579541aff80e7750d5499265a2e971"></a>FM_LMEDS&#160;</td><td class="fielddoc"><p>least-median algorithm. 7-point algorithm is used. </p>
+<tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391a21579541aff80e7750d5499265a2e971"></a>FM_LMEDS&#160;</td><td class="fielddoc"><p>least-median algorithm. 7-point algorithm is used. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggaf1db89d10fff5171efa7297a8825289caed27573602ec5e0e6de1f541eb2d9b8d"></a>FM_RANSAC&#160;</td><td class="fielddoc"><p>RANSAC algorithm. It needs at least 15 points. 7-point algorithm is used. </p>
+<tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391aed27573602ec5e0e6de1f541eb2d9b8d"></a>FM_RANSAC&#160;</td><td class="fielddoc"><p>RANSAC algorithm. It needs at least 15 points. 7-point algorithm is used. </p>
 </td></tr>
 </table>
 
@@ -1045,13 +1111,113 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
 
 <p>the algorithm for finding fundamental matrix </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaf1db89d10fff5171efa7297a8825289ca46552ef51e86843af3789718e4355d69"></a>FM_7POINT&#160;</td><td class="fielddoc"><p>7-point algorithm </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391a46552ef51e86843af3789718e4355d69"></a>FM_7POINT&#160;</td><td class="fielddoc"><p>7-point algorithm </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggaf1db89d10fff5171efa7297a8825289ca7cceb68141bd61e993c6da371aa8399f"></a>FM_8POINT&#160;</td><td class="fielddoc"><p>8-point algorithm </p>
+<tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391a7cceb68141bd61e993c6da371aa8399f"></a>FM_8POINT&#160;</td><td class="fielddoc"><p>8-point algorithm </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggaf1db89d10fff5171efa7297a8825289ca21579541aff80e7750d5499265a2e971"></a>FM_LMEDS&#160;</td><td class="fielddoc"><p>least-median algorithm. 7-point algorithm is used. </p>
+<tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391a21579541aff80e7750d5499265a2e971"></a>FM_LMEDS&#160;</td><td class="fielddoc"><p>least-median algorithm. 7-point algorithm is used. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggaf1db89d10fff5171efa7297a8825289caed27573602ec5e0e6de1f541eb2d9b8d"></a>FM_RANSAC&#160;</td><td class="fielddoc"><p>RANSAC algorithm. It needs at least 15 points. 7-point algorithm is used. </p>
+<tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391aed27573602ec5e0e6de1f541eb2d9b8d"></a>FM_RANSAC&#160;</td><td class="fielddoc"><p>RANSAC algorithm. It needs at least 15 points. 7-point algorithm is used. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga5b16d3b8a27d2fbcce7857c838c29956"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b16d3b8a27d2fbcce7857c838c29956">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>type of the robust estimation algorithm </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5b16d3b8a27d2fbcce7857c838c29956a6ffbc2749c8e3766c92b1ed3c1e7a462"></a>LMEDS&#160;</td><td class="fielddoc"><p>least-median of squares algorithm </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858"></a>RANSAC&#160;</td><td class="fielddoc"><p>RANSAC algorithm. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5b16d3b8a27d2fbcce7857c838c29956a9b817ea4d511588fb4a1ee89a47b1217"></a>RHO&#160;</td><td class="fielddoc"><p>RHO algorithm. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga217bae838704b8f530205570178f806e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga217bae838704b8f530205570178f806e">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ead03e9d693cb8732706cf9548f23fc25b"></a>SOLVEPNP_EPNP&#160;</td><td class="fielddoc"><p>EPnP: Efficient Perspective-n-Point Camera Pose Estimation <b>[lepetit2009epnp]</b>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806eaeac3df31d2bf4b2ca1003d509aeea1dc"></a>SOLVEPNP_P3P&#160;</td><td class="fielddoc"><p>Complete Solution Classification for the Perspective-Three-Point Problem <b>[gao2003complete]</b>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea578cf85b9a848c5ca343ea2e77030c32"></a>SOLVEPNP_DLS&#160;</td><td class="fielddoc"><p>A Direct Least-Squares (DLS) Method for PnP <b>[hesch2011direct]</b>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea7c1c4d9b871d69c8693671194a62cb50"></a>SOLVEPNP_UPNP&#160;</td><td class="fielddoc"><p>Exhaustive Linearization for Robust Camera Pose and Focal Length Estimation <b>[penate2013exhaustive]</b>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea7740031075cbea61d8b24171d51fc220"></a>SOLVEPNP_AP3P&#160;</td><td class="fielddoc"><p>An Efficient Algebraic Solution to the Perspective-Three-Point Problem <b>[Ke17]</b>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga217bae838704b8f530205570178f806ea8defd1c64ff74e406a3a830eef251e53"></a>SOLVEPNP_MAX_COUNT&#160;</td><td class="fielddoc"><p>Used for count. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gac86685a0f918d674c305a43f49616c6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac86685a0f918d674c305a43f49616c6d">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggac86685a0f918d674c305a43f49616c6da916d73d3a0e47f36615b2eb94a86ae96"></a>CALIB_USE_QR&#160;</td><td class="fielddoc"><p>use QR instead of <a class="el" href="classcv_1_1_s_v_d.html" title="Singular Value Decomposition.">SVD</a> decomposition for solving. Faster but potentially less precise </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac86685a0f918d674c305a43f49616c6da047bf1e4364af64689d07330a59b0a74"></a>CALIB_USE_LU&#160;</td><td class="fielddoc"><p>use LU instead of <a class="el" href="classcv_1_1_s_v_d.html" title="Singular Value Decomposition.">SVD</a> decomposition for solving. much faster but potentially less precise </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac86685a0f918d674c305a43f49616c6dadc7f25acefcf7a854c53a3a18372ec19"></a>CALIB_USE_EXTRINSIC_GUESS&#160;</td><td class="fielddoc"><p>for stereoCalibrate </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gabe9b2eaa9283cc63b607fcae8d9db391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabe9b2eaa9283cc63b607fcae8d9db391">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the algorithm for finding fundamental matrix </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391a46552ef51e86843af3789718e4355d69"></a>FM_7POINT&#160;</td><td class="fielddoc"><p>7-point algorithm </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391a7cceb68141bd61e993c6da371aa8399f"></a>FM_8POINT&#160;</td><td class="fielddoc"><p>8-point algorithm </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391a21579541aff80e7750d5499265a2e971"></a>FM_LMEDS&#160;</td><td class="fielddoc"><p>least-median algorithm. 7-point algorithm is used. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggabe9b2eaa9283cc63b607fcae8d9db391aed27573602ec5e0e6de1f541eb2d9b8d"></a>FM_RANSAC&#160;</td><td class="fielddoc"><p>RANSAC algorithm. It needs at least 15 points. 7-point algorithm is used. </p>
 </td></tr>
 </table>
 
@@ -1989,7 +2155,7 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>method</em> = <code><a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858">RANSAC</a></code>, </td>
+          <td class="paramname"><em>method</em> = <code><a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858">RANSAC</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2033,8 +2199,8 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
     <tr><td class="paramname">to</td><td>Second input 2D point set containing <img class="formulaInl" alt="$(x,y)$" src="form_143.png"/>. </td></tr>
     <tr><td class="paramname">inliers</td><td>Output vector indicating which points are inliers (1-inlier, 0-outlier). </td></tr>
     <tr><td class="paramname">method</td><td>Robust method used to compute transformation. The following methods are possible:<ul>
-<li><a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858" title="RANSAC algorithm.">cv::RANSAC</a> - RANSAC-based robust method</li>
-<li><a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a6ffbc2749c8e3766c92b1ed3c1e7a462" title="least-median of squares algorithm">cv::LMEDS</a> - Least-Median robust method RANSAC is the default method. </li>
+<li><a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858" title="RANSAC algorithm.">cv::RANSAC</a> - RANSAC-based robust method</li>
+<li><a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a6ffbc2749c8e3766c92b1ed3c1e7a462" title="least-median of squares algorithm">cv::LMEDS</a> - Least-Median robust method RANSAC is the default method. </li>
 </ul>
 </td></tr>
     <tr><td class="paramname">ransacReprojThreshold</td><td>Maximum reprojection error in the RANSAC algorithm to consider a point as an inlier. Applies only to RANSAC. </td></tr>
@@ -2155,7 +2321,7 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>method</em> = <code><a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858">RANSAC</a></code>, </td>
+          <td class="paramname"><em>method</em> = <code><a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858">RANSAC</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2196,8 +2362,8 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
     <tr><td class="paramname">to</td><td>Second input 2D point set. </td></tr>
     <tr><td class="paramname">inliers</td><td>Output vector indicating which points are inliers. </td></tr>
     <tr><td class="paramname">method</td><td>Robust method used to compute transformation. The following methods are possible:<ul>
-<li><a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858" title="RANSAC algorithm.">cv::RANSAC</a> - RANSAC-based robust method</li>
-<li><a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a6ffbc2749c8e3766c92b1ed3c1e7a462" title="least-median of squares algorithm">cv::LMEDS</a> - Least-Median robust method RANSAC is the default method. </li>
+<li><a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858" title="RANSAC algorithm.">cv::RANSAC</a> - RANSAC-based robust method</li>
+<li><a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a6ffbc2749c8e3766c92b1ed3c1e7a462" title="least-median of squares algorithm">cv::LMEDS</a> - Least-Median robust method RANSAC is the default method. </li>
 </ul>
 </td></tr>
     <tr><td class="paramname">ransacReprojThreshold</td><td>Maximum reprojection error in the RANSAC algorithm to consider a point as an inlier. Applies only to RANSAC. </td></tr>
@@ -2602,7 +2768,7 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>method</em> = <code><a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858">RANSAC</a></code>, </td>
+          <td class="paramname"><em>method</em> = <code><a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858">RANSAC</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2689,7 +2855,7 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>method</em> = <code><a class="el" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858">RANSAC</a></code>, </td>
+          <td class="paramname"><em>method</em> = <code><a class="el" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858">RANSAC</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2762,7 +2928,7 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>method</em> = <code><a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289caed27573602ec5e0e6de1f541eb2d9b8d">FM_RANSAC</a></code>, </td>
+          <td class="paramname"><em>method</em> = <code><a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391aed27573602ec5e0e6de1f541eb2d9b8d">FM_RANSAC</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2813,7 +2979,7 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
 </p>
 <p>where <img class="formulaInl" alt="$F$" src="form_108.png"/> is a fundamental matrix, <img class="formulaInl" alt="$p_1$" src="form_17.png"/> and <img class="formulaInl" alt="$p_2$" src="form_18.png"/> are corresponding points in the first and the second images, respectively.</p>
 <p>The function calculates the fundamental matrix using one of four methods listed above and returns the found fundamental matrix. Normally just one matrix is found. But in case of the 7-point algorithm, the function may return up to 3 solutions ( <img class="formulaInl" alt="$9 \times 3$" src="form_109.png"/> matrix that stores all 3 matrices sequentially).</p>
-<p>The calculated fundamental matrix may be passed further to computeCorrespondEpilines that finds the epipolar lines corresponding to the specified points. It can also be passed to stereoRectifyUncalibrated to compute the rectification transformation. : </p><div class="fragment"><div class="line"><span class="comment">// Example. Estimation of fundamental matrix using the RANSAC algorithm</span></div><div class="line"><span class="keywordtype">int</span> point_count = 100;</div><div class="line">vector&lt;Point2f&gt; points1(point_count);</div><div class="line">vector&lt;Point2f&gt; points2(point_count);</div><div class="line"></div><div class="line"><span class="comment">// initialize the points here ...</span></div><div class="line"><span class="keywordflow">for</span>( <span class="keywordtype">int</span> i = 0; i &lt; point_count; i++ )</div><div class="line">{</div><div class="line">    points1[i] = ...;</div><div class="line">    points2[i] = ...;</div><div class="line">}</div><div class="line"></div><div class="line">Mat fundamental_matrix =</div><div class="line"> <a class="code" href="group__calib3d.html#ga619e471a28ae6103d2aabffd8d6d75a8">findFundamentalMat</a>(points1, points2, <a class="code" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289caed27573602ec5e0e6de1f541eb2d9b8d">FM_RANSAC</a>, 3, 0.99);</div></div><!-- fragment --> 
+<p>The calculated fundamental matrix may be passed further to computeCorrespondEpilines that finds the epipolar lines corresponding to the specified points. It can also be passed to stereoRectifyUncalibrated to compute the rectification transformation. : </p><div class="fragment"><div class="line"><span class="comment">// Example. Estimation of fundamental matrix using the RANSAC algorithm</span></div><div class="line"><span class="keywordtype">int</span> point_count = 100;</div><div class="line">vector&lt;Point2f&gt; points1(point_count);</div><div class="line">vector&lt;Point2f&gt; points2(point_count);</div><div class="line"></div><div class="line"><span class="comment">// initialize the points here ...</span></div><div class="line"><span class="keywordflow">for</span>( <span class="keywordtype">int</span> i = 0; i &lt; point_count; i++ )</div><div class="line">{</div><div class="line">    points1[i] = ...;</div><div class="line">    points2[i] = ...;</div><div class="line">}</div><div class="line"></div><div class="line">Mat fundamental_matrix =</div><div class="line"> <a class="code" href="group__calib3d.html#ga619e471a28ae6103d2aabffd8d6d75a8">findFundamentalMat</a>(points1, points2, <a class="code" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391aed27573602ec5e0e6de1f541eb2d9b8d">FM_RANSAC</a>, 3, 0.99);</div></div><!-- fragment --> 
 </div>
 </div>
 <a id="gaa995bb80c795df36348d28fe4f3ffb5f"></a>
@@ -2844,7 +3010,7 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>method</em> = <code><a class="el" href="group__calib3d.html#ggaf1db89d10fff5171efa7297a8825289caed27573602ec5e0e6de1f541eb2d9b8d">FM_RANSAC</a></code>, </td>
+          <td class="paramname"><em>method</em> = <code><a class="el" href="group__calib3d.html#ggabe9b2eaa9283cc63b607fcae8d9db391aed27573602ec5e0e6de1f541eb2d9b8d">FM_RANSAC</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3339,7 +3505,7 @@ InputArrayOfArrays InputArrayOfArrays <a class="el" href="classcv_1_1___input_ou
   </table>
   </dd>
 </dl>
-<p>This function can be used to process output E and mask from findEssentialMat. In this scenario, points1 and points2 are the same input for findEssentialMat. : </p><div class="fragment"><div class="line"><span class="comment">// Example. Estimation of fundamental matrix using the RANSAC algorithm</span></div><div class="line"><span class="keywordtype">int</span> point_count = 100;</div><div class="line">vector&lt;Point2f&gt; points1(point_count);</div><div class="line">vector&lt;Point2f&gt; points2(point_count);</div><div class="line"></div><div class="line"><span class="comment">// initialize the points here ...</span></div><div class="line"><span class="keywordflow">for</span>( <span class="keywordtype">int</span> i = 0; i &lt; point_count; i++ )</div><div class="line">{</div><div class="line">    points1[i] = ...;</div><div class="line">    points2[i] = ...;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// cametra matrix with both focal lengths = 1, and principal point = (0, 0)</span></div><div class="line">Mat cameraMatrix = <a class="code" href="classcv_1_1_mat.html#a2cf9b9acde7a9852542bbc20ef851ed2">Mat::eye</a>(3, 3, CV_64F);</div><div class="line"></div><div class="line">Mat E, R, t, mask;</div><div class="line"></div><div class="line">E = <a class="code" href="group__calib3d.html#ga4898efca2fcbf9a6ca0654593789029b">findEssentialMat</a>(points1, points2, cameraMatrix, <a class="code" href="group__calib3d.html#ggab8dae27619d5b4de59d43c01c5c5c3a0a390ccfe4ff62244cbd057214adf1a858">RANSAC</a>, 0.999, 1.0, mask);</div><div class="line"><a class="code" href="group__calib3d.html#ga642fb9eaea85d38b5966755ccc981888">recoverPose</a>(E, points1, points2, cameraMatrix, R, t, mask);</div></div><!-- fragment --> 
+<p>This function can be used to process output E and mask from findEssentialMat. In this scenario, points1 and points2 are the same input for findEssentialMat. : </p><div class="fragment"><div class="line"><span class="comment">// Example. Estimation of fundamental matrix using the RANSAC algorithm</span></div><div class="line"><span class="keywordtype">int</span> point_count = 100;</div><div class="line">vector&lt;Point2f&gt; points1(point_count);</div><div class="line">vector&lt;Point2f&gt; points2(point_count);</div><div class="line"></div><div class="line"><span class="comment">// initialize the points here ...</span></div><div class="line"><span class="keywordflow">for</span>( <span class="keywordtype">int</span> i = 0; i &lt; point_count; i++ )</div><div class="line">{</div><div class="line">    points1[i] = ...;</div><div class="line">    points2[i] = ...;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// cametra matrix with both focal lengths = 1, and principal point = (0, 0)</span></div><div class="line">Mat cameraMatrix = <a class="code" href="classcv_1_1_mat.html#a2cf9b9acde7a9852542bbc20ef851ed2">Mat::eye</a>(3, 3, CV_64F);</div><div class="line"></div><div class="line">Mat E, R, t, mask;</div><div class="line"></div><div class="line">E = <a class="code" href="group__calib3d.html#ga4898efca2fcbf9a6ca0654593789029b">findEssentialMat</a>(points1, points2, cameraMatrix, <a class="code" href="group__calib3d.html#gga5b16d3b8a27d2fbcce7857c838c29956a390ccfe4ff62244cbd057214adf1a858">RANSAC</a>, 0.999, 1.0, mask);</div><div class="line"><a class="code" href="group__calib3d.html#ga642fb9eaea85d38b5966755ccc981888">recoverPose</a>(E, points1, points2, cameraMatrix, R, t, mask);</div></div><!-- fragment --> 
 </div>
 </div>
 <a id="gab1973dedd2ea66e1722e23ff71f1c03a"></a>
@@ -4033,12 +4199,12 @@ Estimation" (<b>[penate2013exhaustive]</b>). In this case the function also esti
 <p>The function estimates an object pose given a set of object points, their corresponding image projections, as well as the camera matrix and the distortion coefficients. This function finds such a pose that minimizes reprojection error, that is, the sum of squared distances between the observed projections imagePoints and the projected (using projectPoints ) objectPoints. The use of RANSAC makes the function resistant to outliers.</p>
 <dl class="section note"><dt>Note</dt><dd><ul>
 <li>An example of how to use solvePNPRansac for object detection can be found at opencv_source_code/samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/</li>
-<li>The default method used to estimate the camera pose for the Minimal Sample Sets step is <a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5bad03e9d693cb8732706cf9548f23fc25b" title="EPnP: Efficient Perspective-n-Point Camera Pose Estimation .">SOLVEPNP_EPNP</a>. Exceptions are:<ul>
-<li>if you choose <a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5baeac3df31d2bf4b2ca1003d509aeea1dc" title="Complete Solution Classification for the Perspective-Three-Point Problem .">SOLVEPNP_P3P</a> or <a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5ba7740031075cbea61d8b24171d51fc220" title="An Efficient Algebraic Solution to the Perspective-Three-Point Problem .">SOLVEPNP_AP3P</a>, these methods will be used.</li>
-<li>if the number of input points is equal to 4, <a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5baeac3df31d2bf4b2ca1003d509aeea1dc" title="Complete Solution Classification for the Perspective-Three-Point Problem .">SOLVEPNP_P3P</a> is used.</li>
+<li>The default method used to estimate the camera pose for the Minimal Sample Sets step is <a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ead03e9d693cb8732706cf9548f23fc25b" title="EPnP: Efficient Perspective-n-Point Camera Pose Estimation .">SOLVEPNP_EPNP</a>. Exceptions are:<ul>
+<li>if you choose <a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806eaeac3df31d2bf4b2ca1003d509aeea1dc" title="Complete Solution Classification for the Perspective-Three-Point Problem .">SOLVEPNP_P3P</a> or <a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea7740031075cbea61d8b24171d51fc220" title="An Efficient Algebraic Solution to the Perspective-Three-Point Problem .">SOLVEPNP_AP3P</a>, these methods will be used.</li>
+<li>if the number of input points is equal to 4, <a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806eaeac3df31d2bf4b2ca1003d509aeea1dc" title="Complete Solution Classification for the Perspective-Three-Point Problem .">SOLVEPNP_P3P</a> is used.</li>
 </ul>
 </li>
-<li>The method used to estimate the camera pose using all the inliers is defined by the flags parameters unless it is equal to <a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5baeac3df31d2bf4b2ca1003d509aeea1dc" title="Complete Solution Classification for the Perspective-Three-Point Problem .">SOLVEPNP_P3P</a> or <a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5ba7740031075cbea61d8b24171d51fc220" title="An Efficient Algebraic Solution to the Perspective-Three-Point Problem .">SOLVEPNP_AP3P</a>. In this case, the method <a class="el" href="group__calib3d.html#gga17b1907ac25b264eff4476aee2078e5bad03e9d693cb8732706cf9548f23fc25b" title="EPnP: Efficient Perspective-n-Point Camera Pose Estimation .">SOLVEPNP_EPNP</a> will be used instead. </li>
+<li>The method used to estimate the camera pose using all the inliers is defined by the flags parameters unless it is equal to <a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806eaeac3df31d2bf4b2ca1003d509aeea1dc" title="Complete Solution Classification for the Perspective-Three-Point Problem .">SOLVEPNP_P3P</a> or <a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ea7740031075cbea61d8b24171d51fc220" title="An Efficient Algebraic Solution to the Perspective-Three-Point Problem .">SOLVEPNP_AP3P</a>. In this case, the method <a class="el" href="group__calib3d.html#gga217bae838704b8f530205570178f806ead03e9d693cb8732706cf9548f23fc25b" title="EPnP: Efficient Perspective-n-Point Camera Pose Estimation .">SOLVEPNP_EPNP</a> will be used instead. </li>
 </ul>
 </dd></dl>
 
