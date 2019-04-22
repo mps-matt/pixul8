@@ -1,9 +1,12 @@
 ﻿<Properties StartupConfiguration="{D8331C93-8BE5-43BE-B052-61B617CA6151}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="PixUl8.Tests/BaseViewModelTests.cs">
+    <Files>
+      <File FileName="PixUl8.Tests/BaseViewModelTests.cs" Line="77" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="PixUl8" expanded="True" selected="True" />
+          <Node name="PixUl8" expanded="True" />
         </State>
       </Pad>
     </Pads>
@@ -11,7 +14,7 @@
   <MonoDevelop.Ide.ItemProperties.PixUl8.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.594cc34fe22a6ae2a5ef467001700a60305909ef" />
   <MonoDevelop.Ide.ItemProperties.PixUl8 HideGettingStarted="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8/Views/ExtensionViews/HelpPage.xaml" relfile="PixUl8/PixUl8/Views/ExtensionViews/HelpPage.xaml" line="2" column="1" />

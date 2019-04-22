@@ -38,9 +38,12 @@
 /Users/mattstark/.nuget/packages/acr.userdialogs/7.0.4/lib/xamarinios10/Acr.UserDialogs.dll
 /Users/mattstark/.nuget/packages/btprogresshud/1.2.0.6/lib/Xamarin.iOS10/BTProgressHUD.dll
 /Users/mattstark/.nuget/packages/slideoverkit/2.1.6.2/lib/Xamarin.iOS10/SlideOverKit.iOS.dll
+/Users/mattstark/.nuget/packages/xamarin.google.ios.mobileads/7.38.0/lib/Xamarin.iOS10/Google.MobileAds.dll
 /Users/mattstark/Documents/GitHub/pixul8/PixUl8.OpenCV/bin/Debug/PixUl8.OpenCV.dll
+/Users/mattstark/.nuget/packages/xamarin.tocropview/1.1.0/lib/xamarinios10/TOCropViewController.dll
 /Users/mattstark/.nuget/packages/morelinq/3.1.1/lib/netstandard2.0/MoreLinq.dll
 /Users/mattstark/.nuget/packages/xam.plugins.settings/3.1.1/lib/Xamarin.iOS10/Plugin.Settings.dll
 /Users/mattstark/.nuget/packages/xam.plugins.settings/3.1.1/lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll
+/Users/mattstark/.nuget/packages/xamarin.testcloud.agent/0.21.8/lib/Xamarin.iOS/Calabash.dll
 /Users/mattstark/.nuget/packages/rg.plugins.popup/1.1.5.188/lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll
 /Users/mattstark/.nuget/packages/toasts.forms.plugin/3.3.2/lib/Xamarin.iOS10/Toasts.Forms.Plugin.iOS.dll

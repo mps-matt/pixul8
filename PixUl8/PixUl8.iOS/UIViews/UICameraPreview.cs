@@ -1083,6 +1083,7 @@ namespace PixUl8.iOS.UIViews
                     UITouch touch = touches.AnyObject as UITouch;
                     TapToFocus(touch.LocationInView(this));
                 });
+                leftHandButton.AccessibilityLabel = "_switchCamera";
                 leftHandButton.BackgroundColor = UIColor.Clear;
                 leftHandButton.Frame = new CGRect(-50, y - 200, 150, 200);
                 var rightSwipeGesture = new UISwipeGestureRecognizer(() => SwipeHandlerSwitchCamera(SwipeType.Right)) { Direction = UISwipeGestureRecognizerDirection.Right };
@@ -1091,6 +1092,7 @@ namespace PixUl8.iOS.UIViews
 
 
                 SwipeButton rightHandButton = new SwipeButton();
+                rightHandButton.AccessibilityLabel = "_switchCamera2";
                 rightHandButton.SetTouchCallback((touches) =>
                 {
                     UITouch touch = touches.AnyObject as UITouch;

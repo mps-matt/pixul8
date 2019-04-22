@@ -231,7 +231,9 @@
 -r=/Users/mattstark/.nuget/packages/xamarin.forms/3.6.0.293080/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/mattstark/.nuget/packages/xamarin.forms/3.6.0.293080/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/mattstark/.nuget/packages/xamarin.google.ios.mobileads/7.38.0/lib/Xamarin.iOS10/Google.MobileAds.dll
+-r=/Users/mattstark/.nuget/packages/xamarin.testcloud.agent/0.21.8/lib/Xamarin.iOS/Calabash.dll
 -r=/Users/mattstark/.nuget/packages/xamarin.tocropview/1.1.0/lib/xamarinios10/TOCropViewController.dll
+-r=/Users/mattstark/.nuget/packages/xamarin.uitest/2.2.7/lib/portable-net45+win8+wp8/Xamarin.UITest.dll
 -r=/Users/mattstark/Documents/GitHub/pixul8/PixUl8.OpenCV/bin/Debug/PixUl8.OpenCV.dll
 --target-framework=Xamarin.iOS,v1.0
 --root-assembly=/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/bin/iPhone/Debug/PixUl8.iOS.exe

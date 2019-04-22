@@ -47,6 +47,12 @@ namespace PixUl8.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+
+            #if DEBUG
+                Xamarin.Calabash.Start();
+            #endif
+
             MobileAds.Configure("ca-app-pub-1763214636278611~2386943003");
 
             LoadApplication(new App());
@@ -67,6 +73,7 @@ namespace PixUl8.iOS
                 StartObservers();
             });
 
+
             Rg.Plugins.Popup.Popup.Init();
 
             UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert, (approved, err) => {
@@ -86,9 +93,13 @@ namespace PixUl8.iOS
 
             ToastNotification.Init();
             DependencyService.Register<ToastNotification>(); // Register your dependency
+                
+            #if DEBUG
+                Debug.WriteLine("DEBUG MODE");
+            #else
+                SKStoreReviewController.RequestReview();
+            #endif
 
-
-            SKStoreReviewController.RequestReview();
             StartSession();
 
             return result;
@@ -149,7 +160,7 @@ namespace PixUl8.iOS
         }
 
 
-        #region Private Helper Audio Functions
+#region Private Helper Audio Functions
 
         /// <summary>
         /// Saves the and set volume.
@@ -219,7 +230,7 @@ namespace PixUl8.iOS
         }
 
 
-        #endregion
+#endregion
 
     }
 }

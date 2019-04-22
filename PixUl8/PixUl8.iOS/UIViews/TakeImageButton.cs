@@ -36,6 +36,8 @@ namespace PixUl8.iOS.UIViews
             this.Frame = new CGRect(frame.X, frame.Y, frame.Width, frame.Height);
             this.BackgroundColor = UIColor.Clear;
 
+            this.AccessibilityLabel = "_takeImageButton";
+
             this.Alpha = 1;
         }
 

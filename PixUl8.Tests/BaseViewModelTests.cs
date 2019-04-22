@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using FakeItEasy;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PixUl8.Interfaces;
@@ -64,6 +65,20 @@ namespace PixUl8.Tests
             vm.IsBusy = true;
 
             Assert.IsTrue(vm.IsBusy == true);
+        }
+
+        /// <summary>
+        /// Tests is the show ad function
+        /// </summary>
+        [TestMethod]
+        public async Task ShowAdTest()
+        {
+            BaseViewModel vm = new BaseViewModel(hapticService, settingsService, toastNotificator, urlService, adService);
+
+            await vm.ShowAdAsync();
+
+            A.CallTo(() => adService.ShowAdAsync()).MustHaveHappened();
+
         }
     }
 }

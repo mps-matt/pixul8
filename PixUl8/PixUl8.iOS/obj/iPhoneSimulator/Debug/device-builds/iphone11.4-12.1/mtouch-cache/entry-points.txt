@@ -979,8 +979,266 @@ Function=xamarin_localized_string_format_9
 	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_init_nsthread
 	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=GADAdSizeFromCGSize
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Function=GADAdSizeFullWidthPortraitWithHeight
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Function=GADAdSizeFullWidthLandscapeWithHeight
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Function=GADAdSizeEqualToSize
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Function=CGSizeFromGADAdSize
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Function=IsGADAdSizeValid
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Function=GADAdSizeIsFluid
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Function=NSStringFromGADAdSize
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Function=NSValueFromGADAdSize
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Function=GADAdSizeFromNSValue
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=kGADAdSizeBanner
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=kGADAdSizeFluid
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=kGADAdSizeFullBanner
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=kGADAdSizeInvalid
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=kGADAdSizeLargeBanner
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=kGADAdSizeLeaderboard
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=kGADAdSizeMediumRectangle
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=kGADAdSizeSkyscraper
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=kGADAdSizeSmartBannerLandscape
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=kGADAdSizeSmartBannerPortrait
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeCustomTemplateAdMediaViewKey
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADNativeCustomTemplateAd
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=kGADSimulatorID
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADRequest
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADRequestError
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADRewardBasedVideoAd
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADAdChoicesView
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADAdLoader
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADAdLoaderOptions
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=kGADAdLoaderAdTypeDFPBanner
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=kGADAdLoaderAdTypeNativeAppInstall
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=kGADAdLoaderAdTypeNativeContent
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=kGADAdLoaderAdTypeNativeCustomTemplate
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=kGADAdLoaderAdTypeUnifiedNative
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADAdReward
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADAudioVideoManager
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADBannerView
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADCorrelator
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADCorrelatorAdLoaderOptions
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADCustomEventExtras
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADCustomEventRequest
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADDebugOptionsViewController
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADDefaultInAppPurchase
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADDynamicHeightSearchRequest
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADExtras
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADInAppPurchase
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADInterstitial
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADMaxAdContentRatingGeneral
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADMaxAdContentRatingMatureAudience
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADMaxAdContentRatingParentalGuidance
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADMaxAdContentRatingTeen
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADMediaContent
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADMediatedNativeAdNotificationSource
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADMediaView
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADMobileAds
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADMultipleAdsAdLoaderOptions
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADMuteThisAdReason
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADNativeAd
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADNativeAdImage
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADNativeAdImageAdLoaderOptions
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADNativeAdViewAdOptions
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADNativeAppInstallAd
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADNativeAppInstallAdView
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeAppInstallAdChoicesViewAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeAppInstallAttributionIconAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeAppInstallAttributionTextAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeAppInstallBackgroundAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeAppInstallBodyAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeAppInstallCallToActionAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeAppInstallHeadlineAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeAppInstallIconAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeAppInstallImageAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeAppInstallMediaViewAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeAppInstallPriceAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeAppInstallStarRatingAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeAppInstallStoreAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADNativeContentAd
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADNativeContentAdView
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeContentAdChoicesViewAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeContentAdvertiserAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeContentAttributionIconAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeContentAttributionTextAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeContentBackgroundAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeContentBodyAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeContentCallToActionAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeContentHeadlineAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeContentImageAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeContentLogoAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADNativeContentMediaViewAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADNativeExpressAdView
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADNativeMuteThisAdLoaderOptions
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADRequestConfiguration
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADSearchBannerView
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADSearchRequest
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADUnifiedNativeAd
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADUnifiedNativeAdChoicesViewAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADUnifiedNativeAdvertiserAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADUnifiedNativeBodyAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADUnifiedNativeCallToActionAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADUnifiedNativeHeadlineAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADUnifiedNativeIconAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADUnifiedNativeImageAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADUnifiedNativeMediaViewAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADUnifiedNativePriceAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADUnifiedNativeStarRatingAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=GADUnifiedNativeStoreAsset
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADUnifiedNativeAdView
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADVideoController
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_GADVideoOptions
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_PACAdProvider
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_PACConsentForm
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=PACErrorDomain
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=PACUserDefaultsRootKey
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=PACVersionString
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_PACConsentInformation
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_DFPBannerView
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_DFPBannerViewOptions
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_DFPCustomRenderedAd
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_DFPInterstitial
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+Field=kDFPSimulatorID
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
+ObjectiveCClass=OBJC_CLASS_$_DFPRequest
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/Google.MobileAds.dll
 ObjectiveCClass=OBJC_CLASS_$_OpenCV
 	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/PixUl8.OpenCV.dll
+ObjectiveCClass=OBJC_CLASS_$_TOActivityCroppedImageProvider
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/TOCropViewController.dll
+ObjectiveCClass=OBJC_CLASS_$_TOCropOverlayView
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/TOCropViewController.dll
+ObjectiveCClass=OBJC_CLASS_$_TOCroppedImageAttributes
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/TOCropViewController.dll
+ObjectiveCClass=OBJC_CLASS_$_TOCropScrollView
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/TOCropViewController.dll
+ObjectiveCClass=OBJC_CLASS_$_TOCropToolbar
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/TOCropViewController.dll
+ObjectiveCClass=OBJC_CLASS_$_TOCropView
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/TOCropViewController.dll
+ObjectiveCClass=OBJC_CLASS_$_TOCropViewController
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/TOCropViewController.dll
+ObjectiveCClass=OBJC_CLASS_$_TOCropViewControllerTransitioning
+	/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.4-12.1/mtouch-cache/1-Link/TOCropViewController.dll
 Function=mono_pmip
 Function=xamarin_dyn_objc_msgSend
 Function=xamarin_dyn_objc_msgSendSuper

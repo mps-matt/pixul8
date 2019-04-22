@@ -261,6 +261,20 @@ namespace PixUl8.Tests
         }
 
 
+        /// <summary>
+        /// Tests going to the privacy policy with the url service
+        /// </summary>
+        /// <returns>The HDRO ff.</returns>
+        [TestMethod]
+        public async Task GoToprivacyPolicyTest()
+        {
+            HomeViewModel vm = new HomeViewModel(hapticService, settingsService, toastNotificator, urlService, adService, mocked: true);
+            await vm.PrivacyAsync();
+
+            A.CallTo(() => urlService.GoToPrivacyPolicy()).MustHaveHappened();
+        }
+
+
 
 
 

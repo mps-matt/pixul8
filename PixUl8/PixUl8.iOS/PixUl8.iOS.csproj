@@ -43,7 +43,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhone\Debug</OutputPath>
-    <DefineConstants>DEBUG</DefineConstants>
+    <DefineConstants>__IOS__;__MOBILE__;__UNIFIED__;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
@@ -66,7 +66,9 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <AssemblyName>PixUL8.iOS</AssemblyName>
     <CodesignProvision>pixul8-dev-natty</CodesignProvision>
-  </PropertyGroup>
+    <MtouchUseThumb></MtouchUseThumb>
+    <MtouchFloat32></MtouchFloat32>
+<RunCodeAnalysis>false</RunCodeAnalysis>  </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
@@ -304,6 +306,12 @@
     </PackageReference>
     <PackageReference Include="Xamarin.Google.iOS.MobileAds">
       <Version>7.38.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.UITest">
+      <Version>2.2.7</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.TestCloud.Agent">
+      <Version>0.21.8</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,11 @@
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.UITests/bin/Debug/PixUl8.UITests.dll
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.UITests/bin/Debug/PixUl8.UITests.pdb
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.UITests/bin/Debug/nunit.framework.dll
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.UITests/bin/Debug/Xamarin.UITest.dll
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.UITests/bin/Debug/nunit.framework.xml
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.UITests/bin/Debug/Xamarin.UITest.xml
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.UITests/obj/Debug/PixUl8.UITests.csprojAssemblyReference.cache
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.UITests/obj/Debug/PixUl8.UITests.csproj.CoreCompileInputs.cache
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.UITests/obj/Debug/PixUl8.UITests.csproj.CopyComplete
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.UITests/obj/Debug/PixUl8.UITests.dll
+/Users/mattstark/Documents/GitHub/pixul8/PixUl8.UITests/obj/Debug/PixUl8.UITests.pdb

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixUl8.Native", "PixUl8.Ope
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixUl8.Tests", "PixUl8.Tests\PixUl8.Tests.csproj", "{A79FDCA0-C59D-4C4E-B2BB-180760D0486B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixUl8.UITests", "PixUl8.UITests\PixUl8.UITests.csproj", "{A9B2A35C-CB9C-4F9A-9C4D-798F9D66D135}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		PixUl8\PixUl8\PixUl8.projitems*{a1c29f6d-1930-4b5a-b91c-6c6e42d35952}*SharedItemsImports = 13
@@ -51,6 +53,14 @@ Global
 		{A79FDCA0-C59D-4C4E-B2BB-180760D0486B}.Release|iPhone.Build.0 = Release|Any CPU
 		{A79FDCA0-C59D-4C4E-B2BB-180760D0486B}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{A79FDCA0-C59D-4C4E-B2BB-180760D0486B}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{A9B2A35C-CB9C-4F9A-9C4D-798F9D66D135}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{A9B2A35C-CB9C-4F9A-9C4D-798F9D66D135}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{A9B2A35C-CB9C-4F9A-9C4D-798F9D66D135}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{A9B2A35C-CB9C-4F9A-9C4D-798F9D66D135}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{A9B2A35C-CB9C-4F9A-9C4D-798F9D66D135}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{A9B2A35C-CB9C-4F9A-9C4D-798F9D66D135}.Release|iPhone.Build.0 = Release|Any CPU
+		{A9B2A35C-CB9C-4F9A-9C4D-798F9D66D135}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{A9B2A35C-CB9C-4F9A-9C4D-798F9D66D135}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
