@@ -28,6 +28,7 @@ namespace PixUl8.iOS.Services
 
             try
             {
+
                 Debug.WriteLine("Ad display began..");
                 var request = Request.GetDefaultRequest();
                 //request.TestDevices = new string[1] { "3f746386811c6a50ff6e86f9a186b23a" };
@@ -52,6 +53,7 @@ namespace PixUl8.iOS.Services
                 };
 
                 Debug.WriteLine("Waiting for ad to load...");
+                
 
             }
             catch (Exception e)

@@ -164,13 +164,18 @@ namespace PixUl8.iOS.Delegates
 
             try
             {
-          
-                imageArray = NSArray.FromObjects(images.ToArray());
+                if (UICameraPreview.SCALE == 3)
+                {
 
-                fused = _openCV.Fuse(imageArray);
-                fixedRet = new UIImage(fused.CGImage, 1, images[0].Orientation);
+                    imageArray = NSArray.FromObjects(images.ToArray());
 
-                return fixedRet;
+                    fused = _openCV.Fuse(imageArray);
+                    fixedRet = new UIImage(fused.CGImage, 1, images[0].Orientation);
+
+                    return fixedRet;
+                }
+                else
+                    return images[1];
 
             }
             finally
@@ -201,7 +206,7 @@ namespace PixUl8.iOS.Delegates
                 cropped = CropToBounds(uncropped, UICameraPreview.BOUNDS.Size);
 
                 //Sort out photo orientation
-                switch(orientation)
+                switch (orientation)
                 {
                     case UIDeviceOrientation.LandscapeLeft:
                         if (IsFrontFacing)
@@ -237,6 +242,7 @@ namespace PixUl8.iOS.Delegates
                     default:
                         break;
                 }
+
                 //Request access to device photo lib
                 var status = await PHPhotoLibrary.RequestAuthorizationAsync();
 

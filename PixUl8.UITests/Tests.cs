@@ -41,7 +41,7 @@ namespace PixUl8.UITests
         /// Tests launching the app
         /// </summary>
         [Test]
-        public void AppLaunches()
+        public async Task AppLaunches()
         {
             app.Screenshot("First screen.");
         }
@@ -51,9 +51,9 @@ namespace PixUl8.UITests
         /// Takes the photo test
         /// </summary>
         [Test]
-        public void TakePhoto()
+        public async Task TakePhoto()
         {
-
+            await Task.Delay(3000);
             app.WaitForElement(x => x.Marked("_takeImageButton"));
             app.Tap(c => c.Marked("_takeImageButton"));
         }
@@ -62,9 +62,9 @@ namespace PixUl8.UITests
         /// Takes the photo with volume button test
         /// </summary>
         [Test]
-        public void TakePhotoWithVolume()
+        public async Task TakePhotoWithVolume()
         {
-
+            await Task.Delay(3000);
             app.WaitForElement(x => x.Marked("_takeImageButton"));
             app.PressVolumeDown();
         }
@@ -73,9 +73,9 @@ namespace PixUl8.UITests
         /// Pinchs to zoom test
         /// </summary>
         [Test]
-        public void PinchToZoom()
+        public async Task PinchToZoom()
         {
-
+            await Task.Delay(3000);
             app.WaitForElement(x => x.Marked("_takeImageButton"));
 
             var windowQuery = app.Query().First();
@@ -90,9 +90,9 @@ namespace PixUl8.UITests
         /// Pinchs to zoom then take photo test
         /// </summary>
         [Test]
-        public void PinchToZoomThenTakePhoto()
+        public async Task PinchToZoomThenTakePhoto()
         {
-
+            await Task.Delay(3000);
             app.WaitForElement(x => x.Marked("_takeImageButton"));
 
             var windowQuery = app.Query().First();
@@ -110,9 +110,9 @@ namespace PixUl8.UITests
         /// Taps to focus test
         /// </summary>
         [Test]
-        public void TapToFocus()
+        public async Task TapToFocus()
         {
-
+            await Task.Delay(3000);
             app.WaitForElement(x => x.Marked("_takeImageButton"));
 
             var windowQuery = app.Query().First();
@@ -127,9 +127,9 @@ namespace PixUl8.UITests
         /// Taps to focus then take photo test
         /// </summary>
         [Test]
-        public void TapToFocusThenTakePhoto()
+        public async Task TapToFocusThenTakePhoto()
         {
-
+            await Task.Delay(3000);
             app.WaitForElement(x => x.Marked("_takeImageButton"));
 
             var windowQuery = app.Query().First();
@@ -147,9 +147,9 @@ namespace PixUl8.UITests
         /// Switchs the camera to front test
         /// </summary>
         [Test]
-        public void SwitchCameraToFront()
+        public async Task SwitchCameraToFront()
         {
-
+            await Task.Delay(3000);
             app.WaitForElement(x => x.Marked("_takeImageButton"));
 
             var windowQuery = app.Query().First();
@@ -169,9 +169,9 @@ namespace PixUl8.UITests
         /// Switchs the camera to front then take photo test
         /// </summary>
         [Test]
-        public void SwitchCameraToFrontThenTakePhoto()
+        public async Task SwitchCameraToFrontThenTakePhoto()
         {
-
+            await Task.Delay(3000);
             app.WaitForElement(x => x.Marked("_takeImageButton"));
 
             var windowQuery = app.Query().First();
@@ -192,9 +192,9 @@ namespace PixUl8.UITests
         /// Activates the flash test
         /// </summary>
         [Test]
-        public void ActivateFlash()
+        public async Task ActivateFlash()
         {
-
+            await Task.Delay(3000);
             app.WaitForElement(x => x.Marked("_takeImageButton"));
 
             var windowQuery = app.Query().First();
@@ -214,9 +214,9 @@ namespace PixUl8.UITests
         /// Activates the flash and take photo test
         /// </summary>
         [Test]
-        public void ActivateFlashAndTakePhoto()
+        public async Task ActivateFlashAndTakePhoto()
         {
-
+            await Task.Delay(3000);
             app.WaitForElement(x => x.Marked("_takeImageButton"));
 
             var windowQuery = app.Query().First();
@@ -237,9 +237,9 @@ namespace PixUl8.UITests
         /// Activates the hdr test
         /// </summary>
         [Test]
-        public void ActivateHDR()
+        public async Task ActivateHDR()
         {
-
+            await Task.Delay(3000);
             app.WaitForElement(x => x.Marked("_takeImageButton"));
 
             var windowQuery = app.Query().First();
@@ -260,9 +260,9 @@ namespace PixUl8.UITests
         /// Activates the HDRA nd take photo test
         /// </summary>
         [Test]
-        public void ActivateHDRAndTakePhoto()
+        public async Task ActivateHDRAndTakePhoto()
         {
-
+            await Task.Delay(3000);
             app.WaitForElement(x => x.Marked("_takeImageButton"));
 
             var windowQuery = app.Query().First();
@@ -284,9 +284,9 @@ namespace PixUl8.UITests
         /// Opens and closes help menu test
         /// </summary>
         [Test]
-        public void OpenCloseHelpMenu()
+        public async Task OpenCloseHelpMenu()
         {
-
+            await Task.Delay(3000);
             app.WaitForElement(x => x.Marked("_takeImageButton"));
 
             var windowQuery = app.Query().First();
@@ -309,9 +309,9 @@ namespace PixUl8.UITests
         /// Opens and closes settings menu test
         /// </summary>
         [Test]
-        public void OpenCloseSettingsMenu()
+        public async Task OpenCloseSettingsMenu()
         {
-
+            await Task.Delay(3000);
             app.WaitForElement(x => x.Marked("_takeImageButton"));
 
             var windowQuery = app.Query().First();
@@ -332,9 +332,9 @@ namespace PixUl8.UITests
         /// Opens and closes library menu test
         /// </summary>
         [Test]
-        public void OpenCloseLibraryMenu()
+        public async Task OpenCloseLibraryMenu()
         {
-
+            await Task.Delay(3000);
             app.WaitForElement(x => x.Marked("_takeImageButton"));
 
             var windowQuery = app.Query().First();
@@ -361,8 +361,9 @@ namespace PixUl8.UITests
         /// Activates the manual mode test
         /// </summary>
         [Test]
-        public void ActivateManual()
+        public async Task ActivateManual()
         {
+            await Task.Delay(3000);
             app.WaitForElement(x => x.Marked("_takeImageButton"));
 
             var windowQuery = app.Query().First();
@@ -385,8 +386,9 @@ namespace PixUl8.UITests
         /// Activates the manual mode then take photo test
         /// </summary>
         [Test]
-        public void ActivateManualThenTakePhoto()
+        public async Task ActivateManualThenTakePhoto()
         {
+            await Task.Delay(3000);
             app.WaitForElement(x => x.Marked("_takeImageButton"));
 
             var windowQuery = app.Query().First();

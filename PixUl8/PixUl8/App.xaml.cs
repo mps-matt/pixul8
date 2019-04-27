@@ -45,6 +45,7 @@ namespace PixUl8
 		protected override void OnResume ()
 		{
             MessagingCenter.Send<App>(this, "OnResume");
-		}
+            MessagingCenter.Send<App>((App)App.Current, "reboot");
+        }
 	}
 }

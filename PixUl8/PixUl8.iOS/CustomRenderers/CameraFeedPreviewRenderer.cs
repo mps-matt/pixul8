@@ -35,9 +35,19 @@ namespace PixUl8.iOS.CustomRenderers
             {
                 case nameof(CameraView.Activated):
                     bool activated = (Element as CameraView).Activated;
-                    uiCameraPreview.Activated = activated;
+                    var options = (Element as CameraView).Camera;
+
                     if (activated)
-                        SetNativeControl(uiCameraPreview);
+                    {
+                        uiCameraPreview.Activated = activated;
+                        SetUpCamera(activated, options);
+                    }
+                    else
+                    {
+                        uiCameraPreview.Activated = activated;
+                        uiCameraPreview?.Dispose();
+                    }
+
                     break;
 
                 case nameof(CameraView.FlashOn):
@@ -121,6 +131,8 @@ namespace PixUl8.iOS.CustomRenderers
             if (currentlyActive)
                 SetNativeControl(uiCameraPreview);
         }
+
+
 
 
     }

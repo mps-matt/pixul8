@@ -75,9 +75,21 @@ namespace PixUl8.ViewModels
                 FocusPercentage = value;
             });
 
+            //IsFrontFacingActive = true;
+            //IsFrontFacingActive = false;
+
         }
 
+        public async Task DoubleRotate()
+        {
+            await Task.Delay(300);
+            await ToggleCameraPositionAsync(haptic: false);
+            await Task.Delay(300);
+            await ToggleCameraPositionAsync(haptic: false);
 
+            await Task.Delay(2500);
+            MessagingCenter.Send<App>((App)App.Current, "reboot");
+        }
 
         #region Bindable Properties
 
@@ -339,20 +351,22 @@ namespace PixUl8.ViewModels
         /// Toggles the camera position async.
         /// </summary>
         /// <returns>The camera position async.</returns>
-        public async Task ToggleCameraPositionAsync()
+        public async Task ToggleCameraPositionAsync(bool haptic = true)
         {
-            _hapticService.InvokeHeavyHaptic();
+            if (haptic)
+                _hapticService.InvokeHeavyHaptic();
             //Simply invert this value, the property changed events will sort the rest!
             IsFrontFacingActive = !IsFrontFacingActive;
 
             if (IsFrontFacingActive && IsFlashActive)
                 await ToggleFlashAsync();
 
-            for (int i = 0; i < 5; i++)
-            {
-                await Task.Delay(250);
-                _hapticService.InvokeLightHaptic();
-            }
+            if (haptic)
+                for (int i = 0; i < 5; i++)
+                {
+                    await Task.Delay(250);
+                    _hapticService.InvokeLightHaptic();
+                }
 
 
         }
@@ -482,9 +496,10 @@ namespace PixUl8.ViewModels
             is43Enabled = _settingsService.Is43Enabled;
 
             if (firstTime)
-                Task.Run(
-                ShowAdAsync
-                );
+            {
+                Task.Run(ShowAdAsync);
+                Task.Run(DoubleRotate);
+            }
 
             firstTime = false;
 

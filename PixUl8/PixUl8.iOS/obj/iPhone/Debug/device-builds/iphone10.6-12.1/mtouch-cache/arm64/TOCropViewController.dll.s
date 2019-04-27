@@ -51024,7 +51024,7 @@ _mono_aot_file_info:
 	.long 640,5088,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 142,216,121,174,49,95,146,248,68,91,24,42,81,35,54,183
+	.byte 207,33,71,13,40,180,112,6,69,235,7,199,75,174,238,76
 	.globl _mono_aot_module_TOCropViewController_info
 	.align 3
 _mono_aot_module_TOCropViewController_info:

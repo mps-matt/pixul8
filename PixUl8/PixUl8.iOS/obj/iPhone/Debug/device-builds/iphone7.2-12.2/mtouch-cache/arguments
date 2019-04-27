@@ -1,0 +1,4 @@
+# Version: 12.2.1.13 (d15-9: a4332c90)
+# [first argument, ignore] # @/Users/mattstark/Documents/GitHub/pixul8/PixUl8/PixUl8.iOS/obj/iPhone/Debug/device-builds/iphone7.2-12.2/response-file.rsp
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.2.1.13/lib/mtouch/mtouch.exe \
+	'--gcc_flags=-ObjC -lz -lsqlite3' \

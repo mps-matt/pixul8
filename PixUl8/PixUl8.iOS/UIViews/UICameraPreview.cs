@@ -45,6 +45,13 @@ namespace PixUl8.iOS.UIViews
     /// </summary>
     public class UICameraPreview : UIView, IAVCaptureMetadataOutputObjectsDelegate
     {
+        protected override void Dispose(bool disposing)
+        {
+            MessagingCenter.Unsubscribe<App>(this, "reboot");
+            base.Dispose(disposing);
+          
+        }
+
         /// <summary>
         /// The hdrcapturecount.
         /// </summary>
@@ -484,6 +491,13 @@ namespace PixUl8.iOS.UIViews
 
             if (HDRCAPTURECOUNT % 3 != 0 || HDRCAPTURECOUNT % 2 == 0)
                 throw new Exception("NON-DIVISABLE CAPTURE COUNT");
+                
+            MessagingCenter.Subscribe<App>(this, "reboot", (sender) => {
+                if (Activated)
+                    CaptureSession.StartRunning();
+            });
+
+           
         }
 
        
@@ -889,7 +903,7 @@ namespace PixUl8.iOS.UIViews
 
             CaptureSession.StopRunning();
 
-
+            MessagingCenter.Unsubscribe<App>(this, "reboot");
         }
 
         /// <summary>

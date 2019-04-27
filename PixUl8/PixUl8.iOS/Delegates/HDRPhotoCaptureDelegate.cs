@@ -211,14 +211,20 @@ namespace PixUl8.iOS.Delegates
 
             try
             {
+                if (UICameraPreview.SCALE == 3)
+                {
+                    imageArray = NSArray.FromObjects(images.ToArray());
 
-                imageArray = NSArray.FromObjects(images.ToArray());
+                    //Call to the objective c lib here
+                    fused = _openCV.FuseAllign(imageArray, 2.4f);
+                    fixedRet = new UIImage(fused.CGImage, 1, images[0].Orientation);
 
-                //Call to the objective c lib here
-                fused = _openCV.FuseAllign(imageArray, 2.4f);
-                fixedRet = new UIImage(fused.CGImage, 1, images[0].Orientation);
-
-                return fixedRet;
+                    return fixedRet;
+                }
+                else
+                {
+                    return new UIImage(images[1].CGImage);
+                }
 
             }
             finally
@@ -243,15 +249,21 @@ namespace PixUl8.iOS.Delegates
 
             try
             {
+                if (UICameraPreview.SCALE == 3)
+                {
+                    imageArray = NSArray.FromObjects(images.ToArray());
 
-                imageArray = NSArray.FromObjects(images.ToArray());
+                    //Call to objective-c lib
 
-                //Call to objective-c lib
+                    fused = _openCV.Fuse(imageArray);
+                    fixedRet = new UIImage(fused.CGImage, 1, images[0].Orientation);
 
-                fused = _openCV.Fuse(imageArray);
-                fixedRet = new UIImage(fused.CGImage, 1, images[0].Orientation);
-
-                return fixedRet;
+                    return fixedRet;
+                }
+                else
+                {
+                    return new UIImage(images[1].CGImage);
+                }
 
             }
             finally
