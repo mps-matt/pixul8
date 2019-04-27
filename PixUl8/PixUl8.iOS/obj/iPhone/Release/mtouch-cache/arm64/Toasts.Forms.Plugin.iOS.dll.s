@@ -13349,7 +13349,7 @@ _mono_aot_file_info:
 	.long 280,5832,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 42,31,100,123,192,122,173,37,44,223,178,22,30,166,92,1
+	.byte 176,72,106,196,186,167,24,117,186,145,96,216,135,208,158,113
 	.globl _mono_aot_module_Toasts_Forms_Plugin_iOS_info
 	.align 3
 _mono_aot_module_Toasts_Forms_Plugin_iOS_info:

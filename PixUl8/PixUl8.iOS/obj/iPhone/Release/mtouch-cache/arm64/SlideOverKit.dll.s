@@ -7944,7 +7944,7 @@ _mono_aot_file_info:
 	.long 248,2328,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 55,131,148,212,111,164,76,124,204,96,148,65,17,9,221,140
+	.byte 40,117,114,127,108,234,46,247,50,164,252,213,117,252,186,35
 	.globl _mono_aot_module_SlideOverKit_info
 	.align 3
 _mono_aot_module_SlideOverKit_info:
