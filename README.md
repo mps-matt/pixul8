@@ -1,3 +1,7 @@
+This is a fork of my old repository. This was my final year university project and does not implement good testing, patterns or SOLID principles. It is not reflective of my current coding style. I just want to keep it around as it was a fun project while I was a naive student! For this project, alongside the dissertation, I received a First.
+
+The most interesting part of this project is its implementation of the Objective-C++ library that is binded into the Xamarin.iOS project.
+
 # Pixul8 Source Folder
 
 PixUl8 is a new camera app for iOS devices running iOS 12 or greater.
@@ -23,11 +27,6 @@ PixUl8 relies on the following dependencies:
 
 To build PixUl8 yourself, you will need a MacOs Device running MacOs Mojave or greater with Visual Studio For Mac installed. 
 As this app uses the camera, it will also require a physical iOS device running iOS 12 or greater as Simulator does not allow access to the camera.
-
-# App Store 
-
-PixUl8 is available on the Applpe App Store at the following URL:
-https://itunes.apple.com/tt/app/pixul8/id1441269948?mt=8&ign-mpt=uo%3D2
 
 # Generated Documentation Is available at
 
